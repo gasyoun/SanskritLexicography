@@ -208,9 +208,9 @@ def main():
     pref = norm_period(resolve_period(ls_key)) if ls_key else None
     rows = idx.get(slp1, [])
     if not rows:
-        print('no corpus attestation for key %r' % slp1); return
+        print('no corpus attestation for key {!r}'.format(slp1)); return
     print('=== %s : %d attestations across the corpus%s ==='
-          % (slp1, len(rows), (' | <ls>=%s → prefer %s' % (ls_key, pref)) if ls_key else ''))
+          % (slp1, len(rows), (' | <ls>={} → prefer {}'.format(ls_key, pref)) if ls_key else ''))
     for s in harvest(rows, pref):
         star = ' ◀ cited stratum' if s['period'] == pref else ''
         print('· %s · %s (%d)%s' % (s['period'], s['genre'], s['total'], star))

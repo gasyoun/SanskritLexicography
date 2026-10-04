@@ -380,9 +380,9 @@ def test_a_subprocess_killed_at_a_boundary_recovers_on_restart(tmp_path):
     script = tmp_path / 'crash.py'
     script.write_text(
         'import os, sys\n'
-        'sys.path.insert(0, %r)\n'
+        'sys.path.insert(0, {!r})\n'
         'from pwg_pipeline import faults, model, promotion, repository\n'
-        'root = %r\n'
+        'root = {!r}\n'
         'repo = repository.open_repository(os.path.join(root, "c.sqlite"))\n'
         'repo.create_campaign(model.Campaign(campaign_id="c", scope="s",\n'
         '    language="ru", route=model.ROUTE_XAI, max_calls=1,\n'
@@ -400,17 +400,16 @@ def test_a_subprocess_killed_at_a_boundary_recovers_on_restart(tmp_path):
         '             (model.CAPTURED, model.AUDITED),\n'
         '             (model.AUDITED, model.AWAITING_REVIEW)):\n'
         '    repo.transition_job("j", a, b)\n'
-        'rows = [{"tm_record_id": "r0", "target_string": "x",\n'
-        '         "generation": {"route_id": "xai-tm"}}]\n'
+        'rows = [{{"tm_record_id": "r0", "target_string": "x",\n'
+        '         "generation": {{"route_id": "xai-tm"}}}}]\n'
         'svc = promotion.PromotionService(repo, campaign_id="c",\n'
         '    journal_dir=os.path.join(root, "journal"),\n'
         '    fault_hook=faults.env_hook())\n'
         'svc.prepare(promotion_id="p", verdict=v, rows=rows,\n'
         '    store_path=os.path.join(root, "store.jsonl"),\n'
-        '    review_receipt=%r, implementer="crash")\n'
+        '    review_receipt={!r}, implementer="crash")\n'
         'svc.commit("p", rows)\n'
-        'print("no crash")\n'
-        % (SRC, str(tmp_path), REVIEW_RECEIPT), encoding='utf-8')
+        'print("no crash")\n'.format(SRC, str(tmp_path), REVIEW_RECEIPT), encoding='utf-8')
     environment = dict(os.environ,
                        PWG_PIPELINE_FAULT=faults.AFTER_STORE_COMMIT,
                        PYTHONIOENCODING='utf-8')

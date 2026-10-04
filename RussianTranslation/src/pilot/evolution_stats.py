@@ -280,26 +280,22 @@ def _trends(days, cards_cum, cov_pwg, rigor, requeue, tokens, minutes,
     d = _delta_pct(tok_f, tok_l)
     if d is not None:
         if abs(d) < 1:
-            out.append('Per-window output tokens held ~flat at %.0f.' % tok_l)
+            out.append('Per-window output tokens held ~flat at {:.0f}.'.format(tok_l))
         else:
-            out.append('Per-window output tokens %s %.0f%% (%.0f→%.0f) — cost %s.'
-                       % ('fell' if d < 0 else 'rose', abs(d), tok_f, tok_l,
+            out.append('Per-window output tokens {} {:.0f}% ({:.0f}→{:.0f}) — cost {}.'.format('fell' if d < 0 else 'rose', abs(d), tok_f, tok_l,
                           'down' if d < 0 else 'up'))
     min_f, min_l = _first_last(minutes)
     d = _delta_pct(min_f, min_l)
     if d is not None and abs(d) >= 1:
-        out.append('Per-window wall-clock %s %.0f%% (%.1f→%.1f min) — %s.'
-                   % ('fell' if d < 0 else 'rose', abs(d), min_f, min_l,
+        out.append('Per-window wall-clock {} {:.0f}% ({:.1f}→{:.1f} min) — {}.'.format('fell' if d < 0 else 'rose', abs(d), min_f, min_l,
                       'faster' if d < 0 else 'slower'))
     rq_f, rq_l = _first_last(requeue)
     if rq_f is not None and rq_l is not None:
-        out.append('Requeue rate moved %.1f%%→%.1f%% (a rise can reflect stricter gates, not worse output).'
-                   % (rq_f, rq_l))
+        out.append('Requeue rate moved {:.1f}%→{:.1f}% (a rise can reflect stricter gates, not worse output).'.format(rq_f, rq_l))
     if rigor:
-        out.append('Academic-rigor index (cards with full model+pipeline provenance) at %.0f%%.'
-                   % rigor[-1])
+        out.append('Academic-rigor index (cards with full model+pipeline provenance) at {:.0f}%.'.format(rigor[-1]))
     if cov_pwg:
-        out.append('Coverage of PWG headwords at %.2f%% (DCS-attested share higher).' % cov_pwg[-1])
+        out.append('Coverage of PWG headwords at {:.2f}% (DCS-attested share higher).'.format(cov_pwg[-1]))
     if mode_counts:
         top = max(mode_counts.items(), key=lambda x: x[1])
         out.append('Dominant recorded failure mode: "%s" (%d of %d gallery entries).'
@@ -321,11 +317,11 @@ def main():
     with open(out, 'w', encoding='utf-8') as f:
         json.dump(stats, f, ensure_ascii=False, indent=1)
     hl = stats.get('headline', {})
-    print('evolution_stats -> %s' % out)
+    print('evolution_stats -> {}'.format(out))
     print('  span   : %s' % (stats.get('span') or 'empty'))
-    print('  cards  : %s  roots: %s' % (hl.get('total_cards'), hl.get('total_roots')))
+    print('  cards  : {}  roots: {}'.format(hl.get('total_cards'), hl.get('total_roots')))
     for t in stats.get('trends', []):
-        print('  trend  : %s' % t)
+        print('  trend  : {}'.format(t))
 
 
 if __name__ == '__main__':

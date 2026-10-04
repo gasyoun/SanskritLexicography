@@ -283,24 +283,23 @@ def main():
 
     panels_by_id = {} if args.no_evidence else evidence.build_panels(chosen)
 
-    legend = "".join("<div><span class=\"chip\">%s</span> %s</div>"
-                     % (esc(l), esc(LABEL_RU[l])) for l in LABELS)
+    legend = "".join("<div><span class=\"chip\">{}</span> {}</div>".format(esc(l), esc(LABEL_RU[l])) for l in LABELS)
     items = []
     for r in chosen:
         # MG: «Это все надо давать ДО, а не ПОСЛЕ» — the evidence sits between
         # the rendering and the label, so it is read before the label is judged.
-        panels = [("Санскрит (sa)", "<pre>%s</pre>" % esc(r.get("sa"))),
-                  ("Русский (ru)", "<pre>%s</pre>" % mark_cyrillic(esc(r.get("ru"))))]
+        panels = [("Санскрит (sa)", "<pre>{}</pre>".format(esc(r.get("sa")))),
+                  ("Русский (ru)", "<pre>{}</pre>".format(mark_cyrillic(esc(r.get("ru")))))]
         if not args.no_evidence:
             panels.extend(evidence.render_panels(panels_by_id[str(r["id"])]))
         panels.append(("Ярлык LLM · типология MQM",
-                       "<pre><b>%s</b></pre>%s" % (esc(r["label"]), legend)))
+                       "<pre><b>{}</b></pre>{}".format(esc(r["label"]), legend)))
         items.append({
             "id": str(r["id"]),
             "filt": r["period"],
-            "question": ("Верен ли ярлык LLM <b>«%s»</b> для этого перевода? "
+            "question": ("Верен ли ярлык LLM <b>«{}»</b> для этого перевода? "
                          '<span class="muted">(reject → выберите правильный ярлык '
-                         "из списка ниже)</span>" % esc(r["label"])),
+                         "из списка ниже)</span>".format(esc(r["label"]))),
             "title": r.get("sa") or r.get("slp1") or str(r["id"]),
             "badges": [r["period"], r["kind"], r.get("work") or ""],
             # H1802: the label is a required select control, so the note is
@@ -322,7 +321,7 @@ def main():
                         "; каждая карточка несёт словарь, корень и контексты ДО голоса")),
         "footer": ("Approve = ярлык LLM верен · Reject = неверен (выберите правильный "
                    "ярлык из списка) · Defer = на адjudication. Экспорт "
-                   "валидируется против review/locks/%s.lock.json." % sheet_id),
+                   "валидируется против review/locks/{}.lock.json.".format(sheet_id)),
         "approve_label": "Label верен", "reject_label": "Label неверен",
         "filters": [(p, p) for p in sorted(periods)],
         "generated": generated,
@@ -339,7 +338,7 @@ def main():
     config["preflight"] = {"allow_slp1_tokens": tuple(sorted(
         declared_slp1_tokens(chosen, panels_by_id)))}
     config.update(standard_config(
-        save_as="RussianTranslation\\review\\%s_decisions.json" % sheet_id))
+        save_as="RussianTranslation\\review\\{}_decisions.json".format(sheet_id)))
     # H2991/H3105 — «Сохранить в GitHub»: each pack writes
     # decisions/<sheet_id>/pack-NN.json to the public inbox and hydrates from it
     # on load, so 32 packs stop meaning 32 files to shepherd by hand and
@@ -386,8 +385,8 @@ def main():
         print("G6 sheet: %d cards -> %d packs of <=%d"
               % (len(items), n_packs, args.pack_size))
         for p in paths:
-            print("    %s" % p)
-        print("  lock -> %s" % lock)
+            print("    {}".format(p))
+        print("  lock -> {}".format(lock))
     else:
         print("G6 sheet: %d cards -> %s\n  lock -> %s" % (len(items), args.out, lock))
     if panels_by_id:
@@ -398,7 +397,7 @@ def main():
         if args.coverage_json:
             with io.open(args.coverage_json, "w", encoding="utf-8", newline="\n") as fh:
                 json.dump(panels_by_id, fh, ensure_ascii=False, indent=1, sort_keys=True)
-            print("  coverage -> %s" % args.coverage_json)
+            print("  coverage -> {}".format(args.coverage_json))
 
 
 if __name__ == "__main__":

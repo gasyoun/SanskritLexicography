@@ -153,7 +153,7 @@ def parse_cue_file(path):
                             'text': str(r['text']).strip(),
                             'asr_conf': r.get('asr_conf')})
         return out
-    sys.exit('unsupported cue file (want .vtt/.srt/.json/.jsonl): %s' % path)
+    sys.exit('unsupported cue file (want .vtt/.srt/.json/.jsonl): {}'.format(path))
 
 
 # ------------------------------------------------------------------- pairing
@@ -214,7 +214,7 @@ def to_corpus_rows(pairs, work, media=None, extra=None):
         if len(sa) < MIN_CUE_CHARS or not build_tmx.has_cyr(ru):
             dropped += 1
             continue
-        group = '%s:%s' % (work, passage)
+        group = '{}:{}'.format(work, passage)
         anchors = {'modality': MODALITY_ORAL,
                    't_start': p.get('t_start'), 't_end': p.get('t_end')}
         if media:
@@ -238,44 +238,44 @@ def to_corpus_rows(pairs, work, media=None, extra=None):
 def convert(sa_path, ru_path, pairs_path, work, media, out_path, sample=None):
     if pairs_path:
         pairs = load_pairs(pairs_path)
-        src_note = 'pairs=%s' % os.path.basename(pairs_path)
+        src_note = 'pairs={}'.format(os.path.basename(pairs_path))
     else:
         if not (sa_path and ru_path):
             sys.exit('convert needs either --pairs, or both --sa and --ru')
         sa_cues = parse_cue_file(sa_path)
         ru_cues = parse_cue_file(ru_path)
         pairs = pair_cues(sa_cues, ru_cues)
-        src_note = 'sa=%s ru=%s' % (os.path.basename(sa_path), os.path.basename(ru_path))
+        src_note = 'sa={} ru={}'.format(os.path.basename(sa_path), os.path.basename(ru_path))
     if sample is not None:
         pairs = pairs[:sample]
     rows, kept, dropped = to_corpus_rows(pairs, work, media)
     if not rows:
         sys.exit('convert: 0 valid oral pairs (all cues failed the never-invent '
-                 'guards). Check that the Russian track carries Cyrillic. (%s)' % src_note)
+                 'guards). Check that the Russian track carries Cyrillic. ({})'.format(src_note))
     os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
     with open(out_path, 'w', encoding='utf-8', newline='\n') as out:
         for r in rows:
             out.write(json.dumps(r, ensure_ascii=False) + '\n')
-    print('ingest_oral: %s -> %s' % (src_note, out_path))
+    print('ingest_oral: {} -> {}'.format(src_note, out_path))
     print('  %d oral verse-pairs kept, %d dropped (guard), %d jsonl rows, work=%s%s'
-          % (kept, dropped, len(rows), work, (' media=%s' % media) if media else ''))
-    print('  next: copy to SamudraManthanam/web/corpus_builder/jsonl/%s.jsonl, then '
-          '`python build_l0.py build --work %s`' % (work, work))
+          % (kept, dropped, len(rows), work, (' media={}'.format(media)) if media else ''))
+    print('  next: copy to SamudraManthanam/web/corpus_builder/jsonl/{}.jsonl, then '
+          '`python build_l0.py build --work {}`'.format(work, work))
     return 0
 
 
 def inspect(path):
     cues = parse_cue_file(path)
     if not cues:
-        sys.exit('inspect: 0 cues parsed from %s' % path)
+        sys.exit('inspect: 0 cues parsed from {}'.format(path))
     dur = (cues[-1].get('t_end') or 0) - (cues[0].get('t_start') or 0)
     ncyr = sum(1 for c in cues if build_tmx.has_cyr(c['text']))
-    print('inspect: %s' % path)
+    print('inspect: {}'.format(path))
     print('  %d cues, span %.1fs .. %.1fs (%.1fs), %d carry Cyrillic'
           % (len(cues), cues[0].get('t_start') or 0, cues[-1].get('t_end') or 0,
              dur, ncyr))
     for c in cues[:3]:
-        print('  [%.2f-%.2f] %s' % (c.get('t_start') or 0, c.get('t_end') or 0,
+        print('  [{:.2f}-{:.2f}] {}'.format(c.get('t_start') or 0, c.get('t_end') or 0,
                                     c['text'][:60]))
     return 0
 
@@ -322,7 +322,7 @@ def selftest():
     assert len(sa_cues) == 3, 'expected 3 sa cues, got %d' % len(sa_cues)
     assert len(ru_cues) == 3, 'expected 3 ru cues, got %d' % len(ru_cues)
     assert sa_cues[0]['t_start'] == 1.0 and sa_cues[0]['t_end'] == 4.5, sa_cues[0]
-    assert sa_cues[2]['text'] == 'uh ...', 'inline <c> tag not stripped: %r' % sa_cues[2]['text']
+    assert sa_cues[2]['text'] == 'uh ...', 'inline <c> tag not stripped: {!r}'.format(sa_cues[2]['text'])
 
     pairs = pair_cues(sa_cues, ru_cues)
     assert len(pairs) == 3

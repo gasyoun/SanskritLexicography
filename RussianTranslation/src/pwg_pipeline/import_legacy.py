@@ -54,7 +54,7 @@ class ImportRefusal(RuntimeError):
 def _row_count(path: str) -> int:
     if path.endswith('.sqlite') or path.endswith('.db'):
         try:
-            connection = sqlite3.connect('file:%s?mode=ro' % path.replace('\\', '/'),
+            connection = sqlite3.connect('file:{}?mode=ro'.format(path.replace('\\', '/')),
                                          uri=True)
         except sqlite3.Error:
             return 0
@@ -66,7 +66,7 @@ def _row_count(path: str) -> int:
                 if not name.replace('_', '').isalnum():
                     continue
                 total += int(connection.execute(
-                    'SELECT COUNT(*) FROM "%s"' % name).fetchone()[0])
+                    'SELECT COUNT(*) FROM "{}"'.format(name)).fetchone()[0])
             return total
         finally:
             connection.close()
@@ -90,7 +90,7 @@ def import_source(repository: Repository, *, source_kind: str, path: str,
     """Import one legacy source as immutable, hash-keyed evidence."""
     model.require_choice(source_kind, SOURCE_KINDS, 'import.source_kind')
     if not os.path.exists(path):
-        raise ImportRefusal('legacy source does not exist: %s' % path)
+        raise ImportRefusal('legacy source does not exist: {}'.format(path))
     digest = sha256_file(path)
     import_id, was_new = repository.record_import(
         source_kind=source_kind, source_path=os.path.abspath(path),
@@ -135,7 +135,7 @@ def legacy_projection(value: Mapping[str, Any]) -> dict[str, str]:
     def walk(node: Any, prefix: str) -> None:
         if isinstance(node, Mapping):
             for key in sorted(node):
-                walk(node[key], '%s.%s' % (prefix, key) if prefix else str(key))
+                walk(node[key], '{}.{}'.format(prefix, key) if prefix else str(key))
         elif isinstance(node, list):
             for index, item in enumerate(node):
                 walk(item, '%s[%d]' % (prefix, index))

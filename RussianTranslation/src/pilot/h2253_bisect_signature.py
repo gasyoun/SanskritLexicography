@@ -27,7 +27,7 @@ def git(args, cwd=REPO, check=True):
 
 
 def run_at(commit):
-    wt = os.path.join(tempfile.gettempdir(), 'h2253bisect_%s' % commit[:9])
+    wt = os.path.join(tempfile.gettempdir(), 'h2253bisect_{}'.format(commit[:9]))
     subprocess.run(['git', 'worktree', 'remove', '--force', wt], cwd=REPO,
                    capture_output=True, text=True, encoding='utf-8', errors='replace')
     r = git(['worktree', 'add', '--detach', wt, commit], check=False)

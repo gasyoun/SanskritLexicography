@@ -63,8 +63,7 @@ def main() -> int:
     print('pool: %d distinct cards   whole-card in production: %d   presplit: %d'
           % (len(table), len(whole), len(split)))
     print('thresholds (read from the production module, not restated here): '
-          'cite floor %s, sense budget %s'
-          % (gen_opt_harness2.PRESPLIT_SOLO_CITE_FLOOR,
+          'cite floor {}, sense budget {}'.format(gen_opt_harness2.PRESPLIT_SOLO_CITE_FLOOR,
              gen_opt_harness2.SENSE_PRESPLIT_BUDGET))
     print('\n%-14s %7s %6s %6s %7s  %s' % ('key1', 'bytes', 'cite', 'senses', 'phold', 'lane'))
     for key in sorted(table, key=lambda k: (not table[k]['whole_card'],
@@ -89,7 +88,7 @@ def main() -> int:
                        'h2591_sample_whole_card': inside,
                        'cards': table}, handle, ensure_ascii=False, indent=1, sort_keys=True)
             handle.write('\n')
-        print('wrote %s' % args.out)
+        print('wrote {}'.format(args.out))
     return 0
 
 

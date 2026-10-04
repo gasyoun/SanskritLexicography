@@ -185,7 +185,7 @@ def _extract_json(text: str) -> Any:
         try:
             return json.loads(match.group(0))
         except json.JSONDecodeError as exc:
-            raise ProviderError('provider reply is malformed JSON: %s' % exc)
+            raise ProviderError('provider reply is malformed JSON: {}'.format(exc))
 
 
 class _OpenAICompatibleAdapter:
@@ -223,13 +223,12 @@ class _OpenAICompatibleAdapter:
         key = os.environ.get(self.key_env)
         if not key:
             raise ProviderUnavailable(
-                '%s is unset; the %s adapter track stops here'
-                % (self.key_env, self.name))
+                '{} is unset; the {} adapter track stops here'.format(self.key_env, self.name))
         try:
             from openai import OpenAI
         except ImportError as exc:
             raise ProviderUnavailable(
-                'the %s adapter needs the openai SDK: %s' % (self.name, exc))
+                'the {} adapter needs the openai SDK: {}'.format(self.name, exc))
         return OpenAI(api_key=key, base_url=self.base_url,
                       timeout=timeout_ms / 1000.0, max_retries=0)
 
@@ -419,8 +418,7 @@ ADAPTERS: dict[str, type] = {
 def adapter_for(name: str):
     """Instantiate a registered adapter by operator-facing name."""
     if name not in ADAPTERS:
-        raise ProviderError('unknown provider adapter: %r (known: %s)'
-                            % (name, ', '.join(sorted(ADAPTERS))))
+        raise ProviderError('unknown provider adapter: {!r} (known: {})'.format(name, ', '.join(sorted(ADAPTERS))))
     return ADAPTERS[name]()
 
 
@@ -429,7 +427,7 @@ def estimate_cost_usd(route: str, *, input_tokens: int,
     """Worst-case list-price cost, used for the pre-dispatch ceiling check."""
     prices = PRICE_PER_MTOK_USD.get(route)
     if prices is None:
-        raise ProviderError('no price card for route %r' % (route,))
+        raise ProviderError('no price card for route {!r}'.format(route))
     return round((input_tokens * prices['input']
                   + max_output_tokens * prices['output']) / 1e6, 6)
 

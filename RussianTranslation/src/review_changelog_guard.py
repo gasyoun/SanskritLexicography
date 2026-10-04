@@ -36,7 +36,7 @@ def run_git(args):
     p = subprocess.run(["git"] + args, text=True, encoding="utf-8",
                        stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     if p.returncode:
-        raise SystemExit(p.stderr.strip() or "git command failed: %s" % " ".join(args))
+        raise SystemExit(p.stderr.strip() or "git command failed: {}".format(" ".join(args)))
     return p.stdout
 
 
@@ -51,13 +51,13 @@ def changed_files(args):
         out = run_git(["diff", "--cached", "--name-only", "--diff-filter=ACMR"])
         return [norm(p) for p in out.splitlines() if p.strip()]
     if args.base and args.head:
-        spec = "%s...%s" % (args.base, args.head)
+        spec = "{}...{}".format(args.base, args.head)
         p = subprocess.run(["git", "diff", "--name-only", "--diff-filter=ACMR", spec],
                            text=True, encoding="utf-8", stdout=subprocess.PIPE,
                            stderr=subprocess.PIPE)
         if p.returncode:
             out = run_git(["diff", "--name-only", "--diff-filter=ACMR",
-                           "%s..%s" % (args.base, args.head)])
+                           "{}..{}".format(args.base, args.head)])
             return [norm(x) for x in out.splitlines() if x.strip()]
         return [norm(x) for x in p.stdout.splitlines() if x.strip()]
     out = run_git(["diff", "--name-only", "--diff-filter=ACMR", "HEAD"])
@@ -88,11 +88,10 @@ def check(paths):
     unwaived = [p for p in review_files if not has_bypass_marker(p)]
     if not unwaived:
         return 0
-    print("Major review/audit files changed without %s:" % CHANGELOG, file=sys.stderr)
+    print("Major review/audit files changed without {}:".format(CHANGELOG), file=sys.stderr)
     for path in unwaived:
-        print("  - %s" % path, file=sys.stderr)
-    print("\nAdd a changelog entry, or add an auditable '%s' marker to the review file."
-          % BYPASS_MARKER, file=sys.stderr)
+        print("  - {}".format(path), file=sys.stderr)
+    print("\nAdd a changelog entry, or add an auditable '{}' marker to the review file.".format(BYPASS_MARKER), file=sys.stderr)
     return 1
 
 

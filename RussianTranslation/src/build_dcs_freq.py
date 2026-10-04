@@ -212,12 +212,12 @@ def main():
     if args.selftest:
         return selftest()
     if not os.path.exists(args.sqlite):
-        sys.exit('DCS sqlite not found: %s' % args.sqlite)
+        sys.exit('DCS sqlite not found: {}'.format(args.sqlite))
     table = build(args.sqlite)
     with open(args.out, 'w', encoding='utf-8') as f:
         json.dump(table, f, ensure_ascii=False)
     m = table['meta']
-    print('wrote %s' % args.out)
+    print('wrote {}'.format(args.out))
     print('  total tokens      : %d' % m['total_tokens'])
     print('  distinct lemmas   : %d' % m['distinct_lemmas'])
     print('  hapax lemmas      : %d' % m['hapax_count'])

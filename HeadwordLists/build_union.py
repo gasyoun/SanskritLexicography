@@ -105,7 +105,7 @@ def main():
     for k in sorted(union, key=lambda x: (len(x), x)):
         if k in folded: continue
         g = ''.join(sorted(gender.get(k, ()))) or '-'
-        mf = 'mf(%s)' % '/'.join(sorted(fem_mark[k])) if k in fem_mark else ''
+        mf = 'mf({})'.format('/'.join(sorted(fem_mark[k]))) if k in fem_mark else ''
         rows.append((k, iast(k), str(len(union[k])), ' '.join(sorted(union[k])), g, mf))
     with open(os.path.join(OUT, "union_headwords.tsv"), "w", encoding="utf-8", newline="\n") as fh:
         fh.write("slp1\tiast\tn_dicts\tdicts\tgender\tfem_fold\n")

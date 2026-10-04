@@ -95,9 +95,8 @@ def api_key(provider, env=None):
     env = env if env is not None else os.environ
     key = env.get(PROVIDERS[provider]['key_env'])
     if not key:
-        raise SystemExit('openrouter_worker: %s is not set — key values live in '
-                         'env/.secrets only (R5.2), never in a repo'
-                         % PROVIDERS[provider]['key_env'])
+        raise SystemExit('openrouter_worker: {} is not set — key values live in '
+                         'env/.secrets only (R5.2), never in a repo'.format(PROVIDERS[provider]['key_env']))
     return key
 
 
@@ -132,9 +131,9 @@ def freeze_sample(store, out_dir, size=40, seed='20260802'):
     Refuses to overwrite an existing manifest: FROZEN means frozen."""
     manifest_path = os.path.join(out_dir, 'sample_manifest.json')
     if os.path.exists(manifest_path):
-        raise SystemExit('E1 sample already frozen at %s — a frozen sample is never '
+        raise SystemExit('E1 sample already frozen at {} — a frozen sample is never '
                          'regenerated (R2.3); delete deliberately if the experiment '
-                         'must restart from zero' % manifest_path)
+                         'must restart from zero'.format(manifest_path))
     by_layer = {}
     with open(store, encoding='utf-8') as f:
         for line in f:
@@ -147,7 +146,7 @@ def freeze_sample(store, out_dir, size=40, seed='20260802'):
                 by_layer.setdefault(layer, set()).add(sub)
     total = sum(len(v) for v in by_layer.values())
     if not total:
-        raise SystemExit('E1 freeze: store %s yielded no subcards' % store)
+        raise SystemExit('E1 freeze: store {} yielded no subcards'.format(store))
     rng = random.Random('e1:' + seed)
     picked = []
     for layer in sorted(by_layer):

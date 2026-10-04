@@ -77,7 +77,7 @@ def _manifest(tmp, *, credit=True, keys=None):
     for index, key in enumerate(keys):
         inputs[key] = {
             'skeleton': 'sense {T%d} gloss\n' % (index + 1),
-            'portrait': '{"key1": "%s"}' % key,
+            'portrait': '{{"key1": "{}"}}'.format(key),
             'ls': 1, 'sk': 0, 'senses': 1, 'source_senses': 1, 'nws': 0,
         }
     manifest = {
@@ -146,7 +146,7 @@ def _wrapper(*, cards, cost=0.42, usage=True, model='claude-opus-5'):
 def _good_card(key, token):
     return {'key1': key, 'notes': '',
             'records': [{'grammar': '', 'senses': [
-                {'tag': '1', 'german': 'gloss %s' % token, 'russian': 'глосса %s' % token}]}]}
+                {'tag': '1', 'german': 'gloss {}'.format(token), 'russian': 'глосса {}'.format(token)}]}]}
 
 
 def _caller_factory(*, model='claude-opus-5', usage=True, drop_token_for=(),
@@ -155,7 +155,7 @@ def _caller_factory(*, model='claude-opus-5', usage=True, drop_token_for=(),
 
     def caller(argv, prompt, timeout):
         is_prep = pcc.PREP_OPEN in prompt
-        key = next(k for k in KEYS if ('=== CARD %s ===' % k) in prompt)
+        key = next(k for k in KEYS if ('=== CARD {} ==='.format(k)) in prompt)
         token = '{T%d}' % (KEYS.index(key) + 1)
         card = _good_card(key, '' if key in drop_token_for and is_prep else token)
         if log is not None:
@@ -219,7 +219,7 @@ def test_context_hash_and_tm_fence():
         assert report['conditions']['tm_fence_intact']
 
         # A context whose sealed hash no longer replays is fatal, not a warning.
-        path = os.path.join(context_dir, '%s.context.json' % pcc._stem(KEYS[0]))
+        path = os.path.join(context_dir, '{}.context.json'.format(pcc._stem(KEYS[0])))
         with open(path, encoding='utf-8') as handle:
             value = json.load(handle)
         value['sense_count'] = (value['sense_count'] or 0) + 5
@@ -239,7 +239,7 @@ def test_context_hash_and_tm_fence():
 def test_fuzzy_hit_never_reusable():
     with tempfile.TemporaryDirectory() as tmp:
         plan, _mp, _m, context_dir = _plan(tmp)
-        path = os.path.join(context_dir, '%s.context.json' % pcc._stem(KEYS[0]))
+        path = os.path.join(context_dir, '{}.context.json'.format(pcc._stem(KEYS[0])))
         with open(path, encoding='utf-8') as handle:
             value = json.load(handle)
         value['tm_hits'][0]['may_auto_reuse'] = True          # fuzzy claimed as exact reuse
@@ -548,7 +548,7 @@ def test_fragment_lane_arm_a_is_the_production_fragment_call():
             # The call addresses FRAGMENT keys, not the card — that is what makes it a
             # fragment-lane call rather than a whole-card call with fewer senses in it.
             assert '=== CARD %s_f0 (fragment 1/%d) ===' % (key, len(group)) in prompt_a
-            assert '=== CARD %s ===' % key not in prompt_a
+            assert '=== CARD {} ==='.format(key) not in prompt_a
 
         report = pcc.check(plan, ledger_path=os.path.join(tmp, 'l.json'), run_id='frag')
         assert report['ok'] and report['network_calls'] == 0
@@ -668,7 +668,7 @@ def test_go_rests_on_the_paired_margin_not_on_how_fast_an_arm_failed():
 
         def failing_a_slowly(argv, prompt, timeout):
             is_prep = pcc.PREP_OPEN in prompt
-            key = next(k for k in KEYS if ('=== CARD %s ===' % k) in prompt)
+            key = next(k for k in KEYS if ('=== CARD {} ==='.format(k)) in prompt)
             if key == slow_failure['key'] and not is_prep:
                 wrapper = _wrapper(cards=[])
                 wrapper.pop('structured_output')
@@ -709,7 +709,7 @@ def test_dropped_usage_block_is_recovered_from_modelusage_and_disclosed():
 
         def dropped_block(argv, prompt, timeout):
             is_prep = pcc.PREP_OPEN in prompt
-            key = next(k for k in KEYS if ('=== CARD %s ===' % k) in prompt)
+            key = next(k for k in KEYS if ('=== CARD {} ==='.format(k)) in prompt)
             card = _good_card(key, '{T%d}' % (KEYS.index(key) + 1))
             wrapper = _wrapper(cards=[card])
             wrapper['usage'] = {k: 0 for k in wrapper['usage']}
@@ -841,7 +841,7 @@ def test_pair_count_may_shrink_but_never_grow():
                 pcc.build_plan(manifest_path, context_dir, pair_count=bad)
             except pcc.FenceFailure:
                 continue
-            raise AssertionError('pair_count=%r must be refused' % bad)
+            raise AssertionError('pair_count={!r} must be refused'.format(bad))
         print('  ok   pair_count may shrink the sample, never grow past the ceiling')
 
 
@@ -966,8 +966,7 @@ def selftest() -> int:
                 case()
             except BaseException as exc:
                 failed.append(case.__name__)
-                print('  FAIL %s -- %s: %s'
-                      % (case.__name__, exc.__class__.__name__, exc))
+                print('  FAIL {} -- {}: {}'.format(case.__name__, exc.__class__.__name__, exc))
     if failed:
         print('prep_context_compare selftest: FAIL (%d/%d): %s'
               % (len(failed), len(CASES), ', '.join(failed)))

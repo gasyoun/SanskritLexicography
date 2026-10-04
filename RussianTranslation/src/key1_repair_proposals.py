@@ -222,7 +222,7 @@ def classify_key1(key1, subgroups):
                 'class': 'rename', 'key1': key1, 'intended_lemmas': [sd],
                 'printed_head': sorted(set(heads)),
                 'rows_affected': len(grp),
-                'action': 'set key1 to %s (no printed-head arbitration)' % sd,
+                'action': 'set key1 to {} (no printed-head arbitration)'.format(sd),
             }
 
 

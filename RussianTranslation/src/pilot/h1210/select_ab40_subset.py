@@ -120,7 +120,7 @@ def main():
         'keys': keys,
         'detail': chosen,
     }
-    out_path = os.path.join(HERE, 'H1210_ab40_worklist.%s.json' % a.date)
+    out_path = os.path.join(HERE, 'H1210_ab40_worklist.{}.json'.format(a.date))
     with io.open(out_path, 'w', encoding='utf-8', newline='\n') as fh:
         json.dump(out, fh, ensure_ascii=False, indent=2)
         fh.write('\n')
@@ -130,7 +130,7 @@ def main():
         fh.write('\n'.join(chosen_ids) + '\n')
 
     print('wrote %s (%d cards)' % (out_path, len(chosen)))
-    print('wrote %s' % ids_path)
+    print('wrote {}'.format(ids_path))
     for p in plan:
         print('  %-3s in100=%-3d taken=%-3d %s'
               % (p['stratum'], p['in_100'], p['taken'],

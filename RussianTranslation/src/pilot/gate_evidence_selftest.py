@@ -73,7 +73,7 @@ def assert_missing_sidecar_fails(path, gate_id):
         ge.require_sidecar(path + '.absent', gate_id=gate_id)
     except ge.MissingEvidenceError:
         return
-    raise AssertionError('%s: a missing sidecar must FAIL the consumer' % gate_id)
+    raise AssertionError('{}: a missing sidecar must FAIL the consumer'.format(gate_id))
 
 
 # --------------------------------------------------------------------------- #
@@ -86,7 +86,7 @@ def pin_launch_ledger():
 
     def write_ledger(path, body):
         with open(path, 'w', encoding='utf-8', newline='\n') as f:
-            f.write('# ledger\n\n```json launch_failure_ledger\n%s\n```\n' % body)
+            f.write('# ledger\n\n```json launch_failure_ledger\n{}\n```\n'.format(body))
 
     entry = """[{"id": "L1", "handoff": "H3748", "date": "2026-08-31",
       "title": "t", "lane": "pc", "model": "m", "orchestrator": "o",
@@ -279,7 +279,7 @@ def pin_spot_check_daily():
         #     a green surveillance day in which nothing whatsoever was examined. The
         #     spike ruled the emptiness legitimate (there was nothing to sample), so
         #     the PASS survives, now stamped with the named class.
-        report = os.path.join(out, 'spotcheck_%s.json' % date)
+        report = os.path.join(out, 'spotcheck_{}.json'.format(date))
         scd.main(['--date', date, '--fraction', '1.0', '--records-dir', records,
                   '--out-dir', out, '--store', os.path.join(td, 'absent.jsonl')])
         payload = ge.require_sidecar(ge.sidecar_for(report), gate_id='spot_check_daily')
@@ -563,7 +563,7 @@ def pin_corpus_gate_coverage():
                 'name': 'independent_dict_coverage', 'evaluations': 100, 'hits': 42}
             assert by_name['corpus_examples']['evaluations'] == 10
             src = [i for i in payload2['inputs_examined']
-                   if i['name'] == 'source:%s' % cg.INDEP[0]][0]
+                   if i['name'] == 'source:{}'.format(cg.INDEP[0])][0]
             assert src['units'] == 1, src
         finally:
             cg.SOURCES_PRESENT.clear()
@@ -694,7 +694,7 @@ def pin_interop_validity_on_release():
 
     tei = os.path.join(ROOT, 'release', 'tei_lex0.xml')
     if not os.path.exists(tei):
-        print('     (skipped: %s is not in this checkout)' % tei)
+        print('     (skipped: {} is not in this checkout)'.format(tei))
         return
     try:
         vi.validate_tei(tei)
@@ -840,9 +840,9 @@ def main():
             fn()
         except Exception as exc:
             failures.append((name, exc))
-            print('  RED  %s: %s: %s' % (name, type(exc).__name__, exc))
+            print('  RED  {}: {}: {}'.format(name, type(exc).__name__, exc))
         else:
-            print('  ok   %s' % name)
+            print('  ok   {}'.format(name))
     if failures:
         print('gate_evidence_selftest: %d/%d pin(s) RED' % (len(failures), len(PINS)))
         return 1

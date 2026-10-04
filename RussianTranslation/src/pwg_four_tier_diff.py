@@ -105,7 +105,7 @@ def main(argv):
     keys = keys or DEFAULT_KEYS
     found = records_for(keys)
     print('H3948 before/after segmentation diff (READ-ONLY)')
-    print('corpus: %s' % pwg_mask.PWG)
+    print('corpus: {}'.format(pwg_mask.PWG))
     print('each entry is printed twice, in full: as the pre-H3948 parser '
           'segmented it and as it segments now\n')
     missing = [k for k in keys if k not in found]
@@ -113,7 +113,7 @@ def main(argv):
         if k in found:
             report(k, found[k], width)
     if missing:
-        print('not found in the corpus: %s' % ', '.join(missing))
+        print('not found in the corpus: {}'.format(', '.join(missing)))
         return 1
     return 0
 

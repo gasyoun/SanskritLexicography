@@ -69,7 +69,7 @@ def sha256_of(path):
 
 def key_of(row):
     """H3300 row identity, with the legacy pair only as a last resort."""
-    return row.get("row_key") or "%s::%s#0" % (row.get("subcard"),
+    return row.get("row_key") or "{}::{}#0".format(row.get("subcard"),
                                                row.get("sense_tag"))
 
 
@@ -106,7 +106,7 @@ def diff(before, after):
             "placement_reason": a_rel.get("placement_reason"),
             "target_sense": (a_rel.get("insertion_point") or {}).get("target_sense"),
         })
-        moves["%s -> %s" % (old, new)] += 1
+        moves["{} -> {}".format(old, new)] += 1
     summary["removed_rows"] = len(set(b_by) - set(a_by))
     summary["changed_rows"] = len(entries)
     summary["before_rows"] = len(before)
@@ -156,7 +156,7 @@ def main():
     print("OUT OF SCOPE (any other label move)         : %d" % len(other))
     if other:
         for e in other[:10]:
-            print("  ! %s  %s -> %s" % (e["row_key"], e["subtype_before"],
+            print("  ! {}  {} -> {}".format(e["row_key"], e["subtype_before"],
                                         e["subtype_after"]))
 
     if a.summary_only or not a.out:
@@ -224,23 +224,23 @@ def selftest():
     # A bare-pair join would ledger the placed sibling as if it had changed.
     changed_keys = {e["row_key"] for e in entries}
     check("a::1#1" not in changed_keys,
-          "the placed duplicate sibling is NOT ledgered: %r" % changed_keys)
+          "the placed duplicate sibling is NOT ledgered: {!r}".format(changed_keys))
 
     # a move that is not "placed label -> its own twin" must be flagged, loudly
     entries2, _m, _s = diff([row("d::1#0", "restate", False)],
                             [row("d::1#0", "sch_star", False)])
     _in, other2 = classify(entries2)
-    check(len(other2) == 1, "a cross-family move is out of scope: %r" % other2)
+    check(len(other2) == 1, "a cross-family move is out of scope: {!r}".format(other2))
     # …and so is a twin reverting to a plain label on an unplaced row
     entries3, _m, _s = diff([row("e::1#0", "restate_unplaced", False)],
                             [row("e::1#0", "restate", False)])
     _in, other3 = classify(entries3)
-    check(len(other3) == 1, "a reverting twin is out of scope: %r" % other3)
+    check(len(other3) == 1, "a reverting twin is out of scope: {!r}".format(other3))
     # …and a twin claimed on a PLACED row, which W5a would also reject
     entries4, _m, _s = diff([row("f::1#0", "restate", True, "1")],
                             [row("f::1#0", "restate_unplaced", True, "1")])
     _in, other4 = classify(entries4)
-    check(len(other4) == 1, "a twin on a placed row is out of scope: %r" % other4)
+    check(len(other4) == 1, "a twin on a placed row is out of scope: {!r}".format(other4))
 
     print("h3752_relabel_ledger selftest:", "PASS" if ok else "FAIL")
     return 0 if ok else 1

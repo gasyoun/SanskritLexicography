@@ -120,7 +120,7 @@ def finish(ids):
     update_hashes(ids)
     remaining = drifted_ids()
     if remaining:
-        print("STILL DRIFTED: %s" % ", ".join(remaining))
+        print("STILL DRIFTED: {}".format(", ".join(remaining)))
         return 1
     print("lang parity ledger clean")
     return 0

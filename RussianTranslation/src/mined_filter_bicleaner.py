@@ -117,7 +117,7 @@ def composite_score(rec):
 
 def cmd_score(a):
     if not os.path.exists(a.inp):
-        sys.exit('input not found: %s' % a.inp)
+        sys.exit('input not found: {}'.format(a.inp))
     rows = [json.loads(l) for l in open(a.inp, encoding='utf-8') if l.strip()]
     os.makedirs(os.path.dirname(a.out), exist_ok=True) if os.path.dirname(a.out) else None
     with open(a.out, 'w', encoding='utf-8', newline='\n') as f:
@@ -131,8 +131,8 @@ def cmd_score(a):
 
 def cmd_promote(a):
     if not os.path.exists(a.inp):
-        sys.exit('mined-tier input not found: %s (H224 output is gitignored and absent '
-                 'from this machine -- see the module docstring)' % a.inp)
+        sys.exit('mined-tier input not found: {} (H224 output is gitignored and absent '
+                 'from this machine -- see the module docstring)'.format(a.inp))
     rows = [json.loads(l) for l in open(a.inp, encoding='utf-8') if l.strip()]
     promoted = kept = 0
     os.makedirs(os.path.dirname(a.out), exist_ok=True) if os.path.dirname(a.out) else None
@@ -154,7 +154,7 @@ def cmd_report(a):
     the committed 30-row precision sample (the only locally-available
     mined-tier ground truth -- see docstring)."""
     if not os.path.exists(a.sample):
-        sys.exit('precision sample not found: %s' % a.sample)
+        sys.exit('precision sample not found: {}'.format(a.sample))
     rows = [json.loads(l) for l in open(a.sample, encoding='utf-8') if l.strip()]
     n = len(rows)
     scored = []
@@ -178,8 +178,8 @@ def cmd_report(a):
           % (baseline_promoted, n, baseline_precision, 100 * baseline_precision))
     print('report: A4 composite gate (threshold=%.2f): promoted=%d/%d, precision=%s, recall=%s'
           % (a.threshold, len(gate_kept), n,
-             'n/a' if gate_precision != gate_precision else '%.3f (%.1f%%)' % (gate_precision, 100 * gate_precision),
-             'n/a' if gate_recall != gate_recall else '%.3f' % gate_recall))
+             'n/a' if gate_precision != gate_precision else '{:.3f} ({:.1f}%)'.format(gate_precision, 100 * gate_precision),
+             'n/a' if gate_recall != gate_recall else '{:.3f}'.format(gate_recall)))
     if gate_precision == gate_precision and gate_precision >= baseline_precision:
         print('report: gate matches/beats the H224 single-model baseline precision '
               'while filtering %d/%d low-confidence rows' % (n - len(gate_kept), n))

@@ -75,7 +75,7 @@ def resolve(root, key):
     """Absolute path of a REL/ENV_LAYOUT entry under `root`."""
     rel = REL.get(key) or ENV_LAYOUT.get(key)
     if not rel:
-        raise KeyError('data_root.resolve: unknown key %r' % key)
+        raise KeyError('data_root.resolve: unknown key {!r}'.format(key))
     return _join(root, rel)
 
 
@@ -88,7 +88,7 @@ def apply(root, env=None, ensure_dirs=False):
     if env is None:
         env = os.environ
     if not os.path.isdir(root):
-        raise SystemExit('data_root: --data-root %s is not a directory' % root)
+        raise SystemExit('data_root: --data-root {} is not a directory'.format(root))
     if ensure_dirs:
         for sub in SUBDIRS:
             os.makedirs(_join(root, sub), exist_ok=True)

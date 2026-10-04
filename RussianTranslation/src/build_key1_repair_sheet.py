@@ -67,12 +67,12 @@ def build_items(props):
         items.append({
             'id': p['id'],
             'filt': p['class'],
-            'title': '%s → %s [%s]' % (_iast(p['key1']), intended, label),
+            'title': '{} → {} [{}]'.format(_iast(p['key1']), intended, label),
             'badges': [label, '%d строк' % p['rows_affected']],
             'question': q,
             'panels': [('Первая строка карточки (de, IAST)',
-                        '<code>%s</code>' % html.escape(
-                            source_text_to_iast(p['sample_de'], 'pwg')))],
+                        '<code>{}</code>'.format(html.escape(
+                            source_text_to_iast(p['sample_de'], 'pwg'))))],
         })
     return items
 

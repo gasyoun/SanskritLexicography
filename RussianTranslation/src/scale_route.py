@@ -55,7 +55,7 @@ def main():
     manifest = [{'key1': k, 'path': c['path'], 'covered': c['covered'],
                  'n_records': c['n_records'], 'n_senses': c['n_senses'],
                  'corpus': c['corpus'], 'dict': c['dict'], 'kow': c['kow']} for k, c in order]
-    mpath = os.path.join(OUT, 'scale_manifest.%s.json' % section)
+    mpath = os.path.join(OUT, 'scale_manifest.{}.json'.format(section))
     json.dump(manifest, open(mpath, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
 
     npath = collections.Counter(c['path'] for c in cards.values())
@@ -66,7 +66,7 @@ def main():
           % (npath['heavy'], npath['light']))
     print('  covered (dict/corpus/KOW reuse): %d (%.0f%%)' % (ncov, 100.0 * ncov / max(len(cards), 1)))
     print('  → coverage-first core (heavy & covered, done first): %d' % heavy_cov)
-    print('  manifest → %s' % os.path.basename(mpath))
+    print('  manifest → {}'.format(os.path.basename(mpath)))
     print('  first 12 in run order:')
     for e in manifest[:12]:
         print('    %-14s %-6s sens=%-2d rec=%d corpus=%-4d dict=%d'

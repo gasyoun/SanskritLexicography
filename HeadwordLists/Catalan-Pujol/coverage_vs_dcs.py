@@ -132,7 +132,7 @@ L = ['# Catalan-Pujol lemmas attested in the DCS corpus but in **no** CDSL dicti
 for cat_id, title in GROUPS:
     rows = sorted(buckets.get(cat_id, []), key=lambda x: (-x[0], x[1]))
     if not rows: continue
-    L += ['## %s (%d)' % (title, len(rows)), '', '_%s_' % descr[cat_id], '',
+    L += ['## %s (%d)' % (title, len(rows)), '', '_{}_'.format(descr[cat_id]), '',
           '| DCS band | normalised key | Pujol headword |', '|--:|---|---|']
     for band, key, pj in rows:
         L.append('| %d | `%s` | %s |' % (band, key, pj))

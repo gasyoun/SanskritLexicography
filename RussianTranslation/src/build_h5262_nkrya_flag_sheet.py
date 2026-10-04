@@ -98,13 +98,12 @@ def evidence_panel(r):
         ('Вхождений, срез 1800–1899 (82 млн слов)', _num(r.get('hits_19c'))),
     ]
     if r.get('form'):
-        rows.append(('Проверена словоформа «%s», вхождений' % r['form'],
+        rows.append(('Проверена словоформа «{}», вхождений'.format(r['form']),
                      _num(r.get('form_hits_main'))))
     rows.append(('Употреблений в сторе / карточек', '%d / %d'
                  % (r['occurrences'], len(r.get('cards') or []))))
-    return ('<table style="border-collapse:collapse">%s</table>'
-            % ''.join('<tr><td class="muted" style="padding:2px 10px 2px 0">%s</td>'
-                      '<td><b>%s</b></td></tr>' % (esc(k), esc(v)) for k, v in rows))
+    return ('<table style="border-collapse:collapse">{}</table>'.format(''.join('<tr><td class="muted" style="padding:2px 10px 2px 0">{}</td>'
+                      '<td><b>{}</b></td></tr>'.format(esc(k), esc(v)) for k, v in rows)))
 
 
 def cards_panel(ctx_cards):
@@ -112,34 +111,29 @@ def cards_panel(ctx_cards):
         return '<div class="muted">Контекст карточек не извлечён.</div>'
     items = []
     for c in ctx_cards:
-        spans = ' · '.join('<span class="ru">%s</span>' % esc(human(s)) for s in c['ru_spans'])
+        spans = ' · '.join('<span class="ru">{}</span>'.format(esc(human(s))) for s in c['ru_spans'])
         items.append(
-            '<li style="margin-bottom:8px"><b>%s</b> <span class="muted">(%s, %s)</span>'
-            '<div>RU: %s</div><div class="muted">DE (PWG): %s</div></li>'
-            # The store carries `iast` for almost every card; where it is missing the
-            # fallback must still be transliterated, never raw SLP1 (H5468: «viS» on the
-            # one context card without an `iast`, which the preflight reads as a leak).
-            % (esc(c.get('iast') or slp1_iast(c.get('key1') or '')), esc(c['subcard']),
+            '<li style="margin-bottom:8px"><b>{}</b> <span class="muted">({}, {})</span>'
+            '<div>RU: {}</div><div class="muted">DE (PWG): {}</div></li>'.format(esc(c.get('iast') or slp1_iast(c.get('key1') or '')), esc(c['subcard']),
                esc(c.get('review_status') or '—'), spans,
                esc(' · '.join(human(g) for g in c.get('de_gloss') or []) or '—')))
-    return '<ul style="margin:0;padding-left:18px">%s</ul>' % ''.join(items)
+    return '<ul style="margin:0;padding-left:18px">{}</ul>'.format(''.join(items))
 
 
 def build_item(r, ctx_cards):
     lid = 'L-' + r['lemma']
     question = (
-        '<b>«%s»</b> (%s) — %s'
+        '<b>«{}»</b> ({}) — {}'
         '<div style="margin-top:8px">Одобрить = <b>слово — дефект глоссы: открыть строку '
         'исправления для карточек ниже</b> (агент предложит замену, её утверждают отдельно).'
         '</div><div class="muted" style="margin-top:6px;font-weight:normal">Отклонить = '
-        'оставить слово; в списке причин укажите, почему.</div>'
-        % (esc(r['lemma']), esc(r['pos']), esc(' + '.join(CLASS_RU.get(c, c)
+        'оставить слово; в списке причин укажите, почему.</div>'.format(esc(r['lemma']), esc(r['pos']), esc(' + '.join(CLASS_RU.get(c, c)
                                                           for c in r['classes']))))
     return {
         'id': lid,
         'filt': r['classes'][0].lower(),
         'title': r['lemma'],
-        'badges': r['classes'] + ['ipm %s' % _num(r.get('ipm'))],
+        'badges': r['classes'] + ['ipm {}'.format(_num(r.get('ipm')))],
         'question': question,
         'panels': [
             ('Данные НКРЯ (ruscorpora.ru API, 24-09-2026)', evidence_panel(r)),
@@ -302,7 +296,7 @@ def build_sheet(rows, ctx, batch, generated=GENERATED, out=None):
         },
     }
     config.update(standard_config(
-        save_as='RussianTranslation\\review\\%s_decisions.json' % sheet_id))
+        save_as='RussianTranslation\\review\\{}_decisions.json'.format(sheet_id)))
 
     doc = render_review_sheet(
         items, config, extras=True, manifest=manifest,
@@ -331,7 +325,7 @@ def main(argv=None):
     ap.add_argument('--context', default=CONTEXT)
     ap.add_argument('--assignments', default=ASSIGNMENTS)
     ap.add_argument('--generated', default=None,
-                    help='sheet date (default: today UTC; sheet 1 is %s)' % GENERATED)
+                    help='sheet date (default: today UTC; sheet 1 is {})'.format(GENERATED))
     ap.add_argument('--out')
     a = ap.parse_args(argv)
 

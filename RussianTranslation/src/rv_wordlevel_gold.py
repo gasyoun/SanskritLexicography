@@ -128,8 +128,8 @@ def cmd_sample(a):
     by_target = collections.Counter(r['target'] for r in picked)
     by_stratum = collections.Counter(r['frequency_stratum'] for r in picked)
     print('gold sample: %d rows -> %s' % (len(picked), a.out))
-    print('  by target : %s' % dict(by_target))
-    print('  by stratum: %s' % dict(by_stratum))
+    print('  by target : {}'.format(dict(by_target)))
+    print('  by stratum: {}'.format(dict(by_stratum)))
     return 0
 
 
@@ -155,9 +155,9 @@ def cmd_sheet(a):
     for (loc, translator), items in sorted(
             by_loc.items(), key=lambda kv: ([int(x) for x in kv[0][0].split('.')], kv[0][1])):
         text = (stanzas[loc]['translations'][translator]['text'] or '').replace('\n', ' / ')
-        lines.append('## %s · %s' % (loc, translator))
+        lines.append('## {} · {}'.format(loc, translator))
         lines.append('')
-        lines.append('> %s' % text)
+        lines.append('> {}'.format(text))
         lines.append('')
         for r in sorted(items, key=lambda r: r['token_index']):
             lines.append('- `%s` (%s, freq %d) → **%s**  _conf %.3f%s_'
@@ -176,8 +176,7 @@ def cmd_score(a):
     gold = load_arm(a.gold)
     labelled = [r for r in gold if r['verdict'] in ('correct', 'incorrect')]
     if not labelled:
-        sys.exit('no adjudicated rows in %s -- fill `verdict` with correct/incorrect first'
-                 % a.gold)
+        sys.exit('no adjudicated rows in {} -- fill `verdict` with correct/incorrect first'.format(a.gold))
 
     per_target = {}
     for target in TARGETS:
@@ -207,13 +206,13 @@ def cmd_score(a):
             print('  %-3s n=%3d  correct=%3d  precision=%.1f%%  %s'
                   % (t, v['n'], v['correct'], 100 * v['precision'],
                      'PASS' if v['precision'] >= PRECISION_BAR else 'FAIL'))
-    print('  languages passing: %s ; failing: %s' % (passed or 'none', failed or 'none'))
+    print('  languages passing: {} ; failing: {}'.format(passed or 'none', failed or 'none'))
     if not passed:
         print('  -> STOP CONDITION 3 (all three below the bar): ship spine A alone, mark '
               'layer B low_confidence, report. Do not tune blind.')
 
     _write_report(a, per_target, by_stratum, mutual, flagged, passed, failed, len(gold))
-    print('  -> %s' % a.out)
+    print('  -> {}'.format(a.out))
     return 0
 
 
@@ -262,10 +261,9 @@ def _write_report(a, per_target, by_stratum, mutual, flagged, passed, failed, n_
                      'The 0.20 confidence gate is NOT re-tuned to rescue the number — that is '
                      'the blind tuning R14 and risk K2 exist to forbid.' % (PRECISION_BAR * 100))
     elif failed:
-        lines.append('Languages **%s** clear the bar and ship normally. Languages **%s** fall '
+        lines.append('Languages **{}** clear the bar and ship normally. Languages **{}** fall '
                      'below it and ship flagged `low_confidence`, excluded from the '
-                     'contradiction gate (R14 marked default).'
-                     % (', '.join(passed), ', '.join(failed)))
+                     'contradiction gate (R14 marked default).'.format(', '.join(passed), ', '.join(failed)))
     else:
         lines.append('All languages clear the %.0f %% bar; layer B ships unflagged.'
                      % (PRECISION_BAR * 100))

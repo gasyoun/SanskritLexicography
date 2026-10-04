@@ -32,7 +32,7 @@ def main():
         raise SystemExit('gold scaffold contains duplicate id/slp1 keys')
     packet_paths = sorted(glob.glob(os.path.join(args.packet_dir, '*.csv')))
     if not packet_paths:
-        raise SystemExit('no packet CSVs found in %s' % args.packet_dir)
+        raise SystemExit('no packet CSVs found in {}'.format(args.packet_dir))
     seen = []
     for path in packet_paths:
         seen.extend(key(r) for r in read_rows(path))

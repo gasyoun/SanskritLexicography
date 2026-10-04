@@ -58,7 +58,7 @@ def test_d1_missing_votes_pending_exit0() -> None:
             dry_run=True,
         )
         if report.get('status') != 'pending_votes':
-            fail('test_d1_missing_votes_pending_exit0', 'status=%r' % report.get('status'))
+            fail('test_d1_missing_votes_pending_exit0', 'status={!r}'.format(report.get('status')))
             return
         # CLI path
         proc = subprocess.run(
@@ -75,7 +75,7 @@ def test_d1_missing_votes_pending_exit0() -> None:
             encoding='utf-8',
         )
         if proc.returncode != 0:
-            fail('test_d1_missing_votes_pending_exit0', 'cli rc=%s stderr=%s' % (
+            fail('test_d1_missing_votes_pending_exit0', 'cli rc={} stderr={}'.format(
                 proc.returncode, proc.stderr[:300]))
             return
         if 'pending_votes' not in proc.stdout:
@@ -110,14 +110,14 @@ def test_d2_synthetic_nonempty_delta() -> None:
             dry_run=True,
         )
         if report.get('status') != 'dry_run':
-            fail('test_d2_synthetic_nonempty_delta', 'status=%r' % report.get('status'))
+            fail('test_d2_synthetic_nonempty_delta', 'status={!r}'.format(report.get('status')))
             return
         if report.get('tokens_that_would_change', 0) < 2:
-            fail('test_d2_synthetic_nonempty_delta', 'tokens=%r' % report.get('tokens_that_would_change'))
+            fail('test_d2_synthetic_nonempty_delta', 'tokens={!r}'.format(report.get('tokens_that_would_change')))
             return
         counts = report.get('counts') or {}
         if counts.get('approve') != 2 or counts.get('reject') != 1:
-            fail('test_d2_synthetic_nonempty_delta', 'counts=%r' % counts)
+            fail('test_d2_synthetic_nonempty_delta', 'counts={!r}'.format(counts))
             return
         if counts.get('missing_from_store', 0) < 1:
             fail('test_d2_synthetic_nonempty_delta', 'expected missing_from_store')
@@ -154,7 +154,7 @@ def test_d3_write_requires_env_gate() -> None:
             except SystemExit as exc:
                 msg = str(exc)
                 if aed.ENV_ALLOW_APPLY not in msg and 'refuse' not in msg.lower():
-                    fail('test_d3_write_requires_env_gate', 'unexpected exit: %s' % msg)
+                    fail('test_d3_write_requires_env_gate', 'unexpected exit: {}'.format(msg))
                     return
             # With env set, apply stamps the temp store.
             os.environ[aed.ENV_ALLOW_APPLY] = '1'
@@ -165,11 +165,11 @@ def test_d3_write_requires_env_gate() -> None:
                 dry_run=False,
             )
             if report.get('status') != 'applied':
-                fail('test_d3_write_requires_env_gate', 'status=%r' % report.get('status'))
+                fail('test_d3_write_requires_env_gate', 'status={!r}'.format(report.get('status')))
                 return
             rows = aed.iter_store_rows(store)
             if not rows or rows[0].get('editorial_decision') != 'approve':
-                fail('test_d3_write_requires_env_gate', 'row not stamped: %r' % rows)
+                fail('test_d3_write_requires_env_gate', 'row not stamped: {!r}'.format(rows))
                 return
         finally:
             if old is None:

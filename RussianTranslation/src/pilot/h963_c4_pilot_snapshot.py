@@ -77,8 +77,8 @@ os.makedirs(ATTEMPT, exist_ok=True)
 print("=" * 78)
 print("H963 c4 owner-override pilot — runtime-data inventory (READ-ONLY on shared)")
 print("=" * 78)
-print("stamped (UTC): %s" % datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"))
-print("attempt dir  : %s" % ATTEMPT)
+print("stamped (UTC): {}".format(datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")))
+print("attempt dir  : {}".format(ATTEMPT))
 print()
 
 inventory = []
@@ -104,7 +104,7 @@ BASE_ROWS = store_rec["rows"]
 print("-" * 78)
 print("OPTIMISTIC-CONCURRENCY BASE")
 print("  store rows   : %d" % BASE_ROWS)
-print("  store sha256 : %s" % BASE_HASH)
+print("  store sha256 : {}".format(BASE_HASH))
 print("-" * 78)
 
 # --- copy runtime inputs into the isolated worktree ---------------------------
@@ -113,7 +113,7 @@ scratch_store = os.path.join(ATTEMPT, "store_scratch.jsonl")
 shutil.copy2(store_rec["path"], scratch_store)
 copies["store_scratch"] = stat_row("store_scratch", scratch_store, True)
 print("\ncopied store -> scratch promotion target")
-print("  %s" % scratch_store)
+print("  {}".format(scratch_store))
 print("  rows=%d sha256=%s" % (copies["store_scratch"]["rows"], copies["store_scratch"]["sha256"]))
 if copies["store_scratch"]["sha256"] != BASE_HASH:
     print("ABORT: scratch copy hash != base hash (torn copy)")
@@ -156,5 +156,5 @@ manifest = {
 mpath = os.path.join(ATTEMPT, "runtime_snapshot_manifest.json")
 with open(mpath, "w", encoding="utf-8", newline="\n") as f:
     json.dump(manifest, f, ensure_ascii=False, indent=1)
-print("\nwrote runtime snapshot manifest: %s" % mpath)
+print("\nwrote runtime snapshot manifest: {}".format(mpath))
 print("\nSNAPSHOT OK — no shared file was modified; zero model calls made.")

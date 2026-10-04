@@ -121,7 +121,7 @@ class ScriptedAdapter:
             parsed = json.loads(response.raw_text)
         except (json.JSONDecodeError, ValueError) as exc:
             raise providers.ProviderError(
-                'scripted reply is malformed JSON: %s' % exc)
+                'scripted reply is malformed JSON: {}'.format(exc))
         rows = parsed.get('fragments') if isinstance(parsed, Mapping) else None
         if not isinstance(rows, list):
             raise providers.ProviderError('scripted reply has no fragments list')
@@ -223,7 +223,7 @@ def run_campaign(fixture_dir: str, workdir: str, *,
             outcome = paid.execute(
                 adapter, job_ids=[job_id], job_payloads=payload,
                 requested_model=requested_model,
-                idempotency_key='%s:%s:1' % (campaign_id, job_id),
+                idempotency_key='{}:{}:1'.format(campaign_id, job_id),
                 estimated_input_tokens=200, max_output_tokens=256)
         except kernel.GlobalStop:
             repository.transition_job(job_id, model.RUNNING, model.FAILED,
@@ -249,7 +249,7 @@ def run_campaign(fixture_dir: str, workdir: str, *,
             service.prepare_promotion(verdict, rows)
             if spec.get('promote', True):
                 store_rows.extend(rows)
-                promotion_id = '%s.%s' % (campaign_id, job_id)
+                promotion_id = '{}.{}'.format(campaign_id, job_id)
                 promoter.prepare(
                     promotion_id=promotion_id, verdict=verdict,
                     rows=list(store_rows), store_path=store_path,
@@ -331,12 +331,11 @@ def diff(expected: Mapping[str, Any], actual: Mapping[str, Any]) -> list[str]:
         if isinstance(left, Mapping) and isinstance(right, Mapping):
             for key in sorted(set(left) | set(right)):
                 if key not in left:
-                    findings.append('%s.%s: unexpected %r' % (path, key, right[key]))
+                    findings.append('{}.{}: unexpected {!r}'.format(path, key, right[key]))
                 elif key not in right:
-                    findings.append('%s.%s: missing (expected %r)'
-                                    % (path, key, left[key]))
+                    findings.append('{}.{}: missing (expected {!r})'.format(path, key, left[key]))
                 else:
-                    walk(left[key], right[key], '%s.%s' % (path, key))
+                    walk(left[key], right[key], '{}.{}'.format(path, key))
         elif isinstance(left, list) and isinstance(right, list):
             if len(left) != len(right):
                 findings.append('%s: length %d != %d' % (path, len(left),
@@ -344,7 +343,7 @@ def diff(expected: Mapping[str, Any], actual: Mapping[str, Any]) -> list[str]:
             for index, (a, b) in enumerate(zip(left, right)):
                 walk(a, b, '%s[%d]' % (path, index))
         elif left != right:
-            findings.append('%s: %r != %r' % (path, left, right))
+            findings.append('{}: {!r} != {!r}'.format(path, left, right))
 
     walk(expected, actual, '$')
     return findings
@@ -366,7 +365,7 @@ def replay(fixture_dir: str, *, workdir: str | None = None,
             expected = json.load(handle)
         mismatches = diff(expected, actual)
         if exact and mismatches:
-            raise ReplayMismatch('%s: %s' % (os.path.basename(fixture_dir),
+            raise ReplayMismatch('{}: {}'.format(os.path.basename(fixture_dir),
                                              '; '.join(mismatches)))
         return {
             'schema': SCHEMA,
@@ -387,7 +386,7 @@ def replay_matrix(matrix_dir: str, *, exact: bool = True) -> dict[str, Any]:
     for name in CAMPAIGNS:
         directory = os.path.join(matrix_dir, name)
         if not os.path.isdir(directory):
-            raise ReplayMismatch('frozen campaign is missing: %s' % directory)
+            raise ReplayMismatch('frozen campaign is missing: {}'.format(directory))
         reports.append(replay(directory, exact=exact))
     return {
         'schema': 'pwg.pipeline.replay_matrix.v1',

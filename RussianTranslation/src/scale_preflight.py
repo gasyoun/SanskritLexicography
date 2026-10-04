@@ -99,7 +99,7 @@ _section_cache = {}
 def load_section(letter):
     if letter in _section_cache:
         return _section_cache[letter]
-    path = os.path.join(OUT, 'scale_manifest.%s.json' % letter)
+    path = os.path.join(OUT, 'scale_manifest.{}.json'.format(letter))
     d = {}
     if os.path.exists(path):
         for e in json.load(open(path, encoding='utf-8')):
@@ -145,7 +145,7 @@ def main():
     pipeline = build_pipeline(a)
 
     if not os.path.exists(a.manifest):
-        print('NO freq manifest at %s — run: python freq_route.py' % a.manifest)
+        print('NO freq manifest at {} — run: python freq_route.py'.format(a.manifest))
         return 2
     rows = json.load(open(a.manifest, encoding='utf-8'))[:a.top]
     if not rows:
@@ -221,8 +221,7 @@ def main():
         d = per_pass.get(name)
         if d:
             print('     %-9s in %5.1fM  out %4.1fM  $%-6.0f' % (name, d['in'] / 1e6, d['out'] / 1e6, d['cost']))
-    print('   TOTAL  input ≈ %.1fM | output ≈ %.1fM | cost ≈ $%.0f%s'
-          % (in_tok / 1e6, out_tok / 1e6, cost, '' if a.budget is None else '  (budget $%.0f)' % a.budget))
+    print('   TOTAL  input ≈ {:.1f}M | output ≈ {:.1f}M | cost ≈ ${:.0f}{}'.format(in_tok / 1e6, out_tok / 1e6, cost, '' if a.budget is None else '  (budget ${:.0f})'.format(a.budget)))
     save = 100.0 * (1 - cost / base_cost) if base_cost else 0.0
     print('   for comparison: ORIGINAL estimate (%d full Opus passes, no cache) ≈ $%.0f  → this config = %.0f%% less'
           % (BASE_PASSES, base_cost, save))
@@ -243,7 +242,7 @@ def main():
                    % (len(blockers), ' [fatal under --strict]' if not a.strict else ''))
     else:
         verdict = 'CLEARED FOR SCALE-UP'
-    print('   => %s' % verdict)
+    print('   => {}'.format(verdict))
     return 1 if fail else 0
 
 

@@ -49,8 +49,7 @@ def main():
     base = (os.environ.get('DEEPSEEK_BASE_URL') or env.get('DEEPSEEK_BASE_URL')
             or 'https://api.deepseek.com')
     if a.model != ds.DEFAULT_MODEL:
-        print('WARN: canary model override %s (DEFAULT_MODEL still %s)'
-              % (a.model, ds.DEFAULT_MODEL), file=sys.stderr)
+        print('WARN: canary model override {} (DEFAULT_MODEL still {})'.format(a.model, ds.DEFAULT_MODEL), file=sys.stderr)
     ds.refuse_if_peak()
     client = ds.DeepSeek(base, key, a.model, a.max_tokens, timeout=a.timeout,
                          reasoning_effort=a.reasoning_effort)
@@ -60,7 +59,7 @@ def main():
     with open(a.out, 'w', encoding='utf-8', newline='\n') as journal:
         for k in CANARY_KEYS:
             user = json.dumps({'key1': k, 'task': 'stream-hold canary'}, ensure_ascii=False)
-            text, rec = client.chat(SYSTEM, user, 'canary:%s' % k)
+            text, rec = client.chat(SYSTEM, user, 'canary:{}'.format(k))
             err = (rec or {}).get('error') or ''
             row = {
                 'key1': k,
@@ -71,19 +70,18 @@ def main():
             if (rec or {}).get('fence') == '401/402':
                 journal.write(json.dumps(row, ensure_ascii=False) + '\n')
                 journal.flush()
-                sys.exit('REFUSE: DeepSeek 401/402 on %s' % k)
+                sys.exit('REFUSE: DeepSeek 401/402 on {}'.format(k))
             if 'IncompleteRead' in err:
                 journal.write(json.dumps(row, ensure_ascii=False) + '\n')
                 journal.flush()
-                sys.exit('FAIL: IncompleteRead after retries on %s: %s' % (k, err))
+                sys.exit('FAIL: IncompleteRead after retries on {}: {}'.format(k, err))
             if text is None:
                 n_fail += 1
             else:
                 n_ok += 1
             journal.write(json.dumps(row, ensure_ascii=False) + '\n')
             journal.flush()
-            print('  %s ok=%s transport=%s attempts=%s reasoning=%s $partial=%s'
-                  % (k, row['ok'], rec.get('transport'), rec.get('transport_attempts'),
+            print('  {} ok={} transport={} attempts={} reasoning={} $partial={}'.format(k, row['ok'], rec.get('transport'), rec.get('transport_attempts'),
                      rec.get('reasoning_tokens'), rec.get('error') or '-'),
                   flush=True)
     wall = time.time() - t0

@@ -58,7 +58,7 @@ def _structural_check(doc):
         raise Reject("schema: top level is not an object")
     for field in ("sheet_id", "generated", "decided", "content_hash", "items"):
         if field not in doc:
-            raise Reject("schema: required field '%s' missing" % field)
+            raise Reject("schema: required field '{}' missing".format(field))
     if not isinstance(doc["sheet_id"], str) or not doc["sheet_id"]:
         raise Reject("schema: sheet_id must be a non-empty string")
     if not isinstance(doc["generated"], str) or not doc["generated"]:
@@ -105,7 +105,7 @@ def _schema_check(doc, legacy=False):
     try:
         jsonschema.validate(probe, schema)
     except jsonschema.ValidationError as e:
-        raise Reject("schema: %s" % e.message)
+        raise Reject("schema: {}".format(e.message))
     return "jsonschema"
 
 
@@ -124,8 +124,7 @@ def _pack_for_hash(lock, content_hash_value):
 def _log_legacy_accept(locks_dir, path, sheet_id):
     log_path = os.path.join(locks_dir, "allow_legacy.log")
     with io.open(log_path, "a", encoding="utf-8", newline="\n") as fh:
-        fh.write("%s\t--allow-legacy accepted\t%s\tsheet_id=%s\n"
-                 % (datetime.date.today().isoformat(), os.path.basename(path), sheet_id))
+        fh.write("{}\t--allow-legacy accepted\t{}\tsheet_id={}\n".format(datetime.date.today().isoformat(), os.path.basename(path), sheet_id))
     return log_path
 
 
@@ -142,18 +141,17 @@ def validate(path, locks_dir=None, allow_legacy=False, quiet=False):
         with io.open(path, encoding="utf-8") as fh:
             doc = json.load(fh)
     except OSError as e:
-        raise Reject("io: cannot read %s (%s)" % (path, e))
+        raise Reject("io: cannot read {} ({})".format(path, e))
     except ValueError as e:
-        raise Reject("json: %s is not valid JSON (%s)" % (path, e))
+        raise Reject("json: {} is not valid JSON ({})".format(path, e))
 
     engine = _schema_check(doc, legacy=allow_legacy)
 
     sheet_id = doc["sheet_id"]
     lock_path = os.path.join(locks_dir, sheet_id + ".lock.json")
     if not os.path.exists(lock_path):
-        raise Reject("binding: unknown sheet_id '%s' — no lock at %s (was the sheet "
-                     "generated through review_binding, or does a retro-lock need minting?)"
-                     % (sheet_id, lock_path))
+        raise Reject("binding: unknown sheet_id '{}' — no lock at {} (was the sheet "
+                     "generated through review_binding, or does a retro-lock need minting?)".format(sheet_id, lock_path))
     with io.open(lock_path, encoding="utf-8") as fh:
         lock = json.load(fh)
 
@@ -162,12 +160,12 @@ def validate(path, locks_dir=None, allow_legacy=False, quiet=False):
             raise Reject("binding: UNBOUND export — no content_hash. Pre-standard "
                          "files pass only via --allow-legacy (logged), never silently.")
         if lock.get("mode") != "retro-unstamped":
-            raise Reject("binding: --allow-legacy refused — lock for '%s' is mode '%s', "
+            raise Reject("binding: --allow-legacy refused — lock for '{}' is mode '{}', "
                          "so its sheet DOES stamp content_hash; an export without one "
-                         "did not come from that sheet" % (sheet_id, lock.get("mode")))
+                         "did not come from that sheet".format(sheet_id, lock.get("mode")))
         log_path = _log_legacy_accept(locks_dir, path, sheet_id)
         say("WARNING: legacy unbound export accepted via --allow-legacy "
-            "(logged to %s)" % log_path)
+            "(logged to {})".format(log_path))
     # H3098 — a packset is one instrument spread over a parent and N pack pages,
     # all sharing this sheet_id. An export from pack-02 carries THAT PAGE's
     # content_hash and only that page's ids, so it must be checked against the
@@ -181,10 +179,9 @@ def validate(path, locks_dir=None, allow_legacy=False, quiet=False):
             extra = ("" if not packs else
                      " This sheet is a packset of %d packs; the export matches neither "
                      "the parent nor any pack." % len(packs))
-            raise Reject("binding: content_hash mismatch — export carries %s, lock has %s. "
-                         "The votes were cast against a different generation of '%s'; "
-                         "do not apply them to this one.%s"
-                         % (doc["content_hash"], lock["content_hash"], sheet_id, extra))
+            raise Reject("binding: content_hash mismatch — export carries {}, lock has {}. "
+                         "The votes were cast against a different generation of '{}'; "
+                         "do not apply them to this one.{}".format(doc["content_hash"], lock["content_hash"], sheet_id, extra))
         if pack is not None:
             say("binding: export is pack-%s of packset '%s' (%d of %d items)"
                 % (pack["name"], sheet_id, pack["n_items"], lock.get("n_items", 0)))
@@ -250,7 +247,7 @@ def _selftest():
             validate(dump("good.json", good), locks_dir=td, quiet=True)
             check(True, "accepts a genuine bound export")
         except Reject as e:
-            check(False, "accepts a genuine bound export (%s)" % e)
+            check(False, "accepts a genuine bound export ({})".format(e))
 
         bad_sheet = dict(good, sheet_id="hand-corrupted")
         rejected(dump("bad_sheet.json", bad_sheet), td,
@@ -270,7 +267,7 @@ def _selftest():
             _structural_check(good)
             check(True, "structural fallback accepts the genuine export")
         except Reject as e:
-            check(False, "structural fallback accepts the genuine export (%s)" % e)
+            check(False, "structural fallback accepts the genuine export ({})".format(e))
         try:
             _structural_check(bad_schema)
             check(False, "structural fallback rejects the bad enum (was accepted!)")
@@ -294,7 +291,7 @@ def _selftest():
             check("unbound.json" in log, "--allow-legacy accepts a legacy export against "
                                          "a retro lock AND logs it")
         except Reject as e:
-            check(False, "--allow-legacy legacy accept (%s)" % e)
+            check(False, "--allow-legacy legacy accept ({})".format(e))
 
         drift = dict(good, items=good["items"] + [{"id": "invented", "decision": None, "note": ""}])
         rejected(dump("drift.json", drift), td,
@@ -324,7 +321,7 @@ def main(argv):
         try:
             validate(path, locks_dir=locks_dir, allow_legacy=allow_legacy)
         except Reject as e:
-            print("REJECTED %s\n  %s" % (path, e))
+            print("REJECTED {}\n  {}".format(path, e))
             return 1
     return 0
 

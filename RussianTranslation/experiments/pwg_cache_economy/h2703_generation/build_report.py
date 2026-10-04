@@ -53,7 +53,7 @@ def main():
     lines.append('')
     lines.append('_Created: 14-08-2026 · Last updated: 14-08-2026_')
     lines.append('')
-    lines.append('**Generation-lane verdict: %s.** Adoption is not decided here; that is [H2704 (Grok 4.6) — PWG cache economy residual C: PREP/TM proof, bounded L3, and adoption verdict](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2704-Grok_SanskritLexicography_pwg-cache-economy-prep-tm-adoption-verdict_14.08.26.md).' % verdict)
+    lines.append('**Generation-lane verdict: {}.** Adoption is not decided here; that is [H2704 (Grok 4.6) — PWG cache economy residual C: PREP/TM proof, bounded L3, and adoption verdict](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2704-Grok_SanskritLexicography_pwg-cache-economy-prep-tm-adoption-verdict_14.08.26.md).'.format(verdict))
     lines.append('')
     lines.append('Rule: [VERDICT_RULE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2703_generation/VERDICT_RULE.md). Spend: [SPEND_AUTH.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2703_generation/SPEND_AUTH.md). Summary: [run/summary.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2703_generation/run/summary.json).')
     lines.append('')
@@ -61,18 +61,18 @@ def main():
     lines.append('')
     lines.append('| Clause | Sealed value | Measured | Hold |')
     lines.append('|---|---|---|:---:|')
-    lines.append('| Pairs | 22 | %s | %s |' % (
+    lines.append('| Pairs | 22 | {} | {} |'.format(
         summary.get('pairs_complete'),
         'yes' if summary.get('pairs_complete') == 22 else 'no'))
-    lines.append('| Parseable | ≥42/44 | %s/44 (%s) | %s |' % (
+    lines.append('| Parseable | ≥42/44 | {}/44 ({}) | {} |'.format(
         summary.get('parseable'),
         pct(summary.get('parseable') or 0, 44),
         'yes' if (summary.get('parseable') or 0) >= 42 else 'no'))
     lines.append('| Served model | deepseek-v4-pro | see per-slot table | %s |' % (
         'yes' if not any(r.get('fail') for r in []) else 'no'))
-    lines.append('| Unique det_clean cards | context (H2676=21) | %s | n/a |' % summary.get('unique_clean_cards'))
-    lines.append('| USD / unique clean | H2676 $0.01991 | %s | n/a |' % summary.get('usd_per_unique_clean'))
-    lines.append('| Canonical hashes | equal freeze | %s | %s |' % (
+    lines.append('| Unique det_clean cards | context (H2676=21) | {} | n/a |'.format(summary.get('unique_clean_cards')))
+    lines.append('| USD / unique clean | H2676 $0.01991 | {} | n/a |'.format(summary.get('usd_per_unique_clean')))
+    lines.append('| Canonical hashes | equal freeze | {} | {} |'.format(
         after.get('equal'), 'yes' if after.get('equal') else 'no'))
     lines.append('| Promotable | false | false | yes |')
     lines.append('')
@@ -82,18 +82,18 @@ def main():
     lines.append('')
     lines.append('| Arm | n | total USD | mean USD | median USD | mean cache-hit tokens |')
     lines.append('|---|---:|---:|---:|---:|---:|')
-    lines.append('| cold | %s | %s | %s | %s | %s |' % (
+    lines.append('| cold | {} | {} | {} | {} | {} |'.format(
         cold.get('n'), cold.get('total_usd'), cold.get('mean_usd'),
         cold.get('median_usd'), cold.get('mean_cache_hit_tokens')))
-    lines.append('| warm | %s | %s | %s | %s | %s |' % (
+    lines.append('| warm | {} | {} | {} | {} | {} |'.format(
         warm.get('n'), warm.get('total_usd'), warm.get('mean_usd'),
         warm.get('median_usd'), warm.get('mean_cache_hit_tokens')))
     lines.append('')
-    lines.append('Paired delta (warm − cold): n=%s mean=%s median=%s bootstrap 95%% CI [%s, %s].' % (
+    lines.append('Paired delta (warm − cold): n={} mean={} median={} bootstrap 95% CI [{}, {}].'.format(
         delta.get('n'), delta.get('mean_usd'), delta.get('median_usd'),
         (boot.get('lo') if boot else None), (boot.get('hi') if boot else None)))
     lines.append('')
-    lines.append('Total attributable USD **%s**. Retry amplification **%s**. A cache hit is explanatory, not an accepted artifact. Output tokens still dominate Pro cost, so a warm prefix hit need not lower USD per card.' % (
+    lines.append('Total attributable USD **{}**. Retry amplification **{}**. A cache hit is explanatory, not an accepted artifact. Output tokens still dominate Pro cost, so a warm prefix hit need not lower USD per card.'.format(
         summary.get('total_usd'), summary.get('retry_amplification')))
     lines.append('')
     lines.append('## Per pair')
@@ -111,7 +111,7 @@ def main():
                 key_by_rid[rid] = key1
     for row in summary.get('pairs') or []:
         label = key_by_rid.get(row.get('request_id')) or (row.get('request_id') or '')[:12]
-        lines.append('| `%s` | %s | %s | %s | %s | %s | %s | %s | %s |' % (
+        lines.append('| `{}` | {} | {} | {} | {} | {} | {} | {} | {} |'.format(
             label,
             row.get('cold_parseable'), row.get('warm_parseable'),
             row.get('cold_det_clean'), row.get('warm_det_clean'),

@@ -107,7 +107,7 @@ def scan_corpus(targets):
 def load_register_layer(tsv_path, k1s):
     """k1 → [register-layer rows] for the sampled pwg/pw headwords."""
     if not os.path.exists(tsv_path):
-        print('WARN: register TSV absent (%s) — pwg_register empty' % tsv_path,
+        print('WARN: register TSV absent ({}) — pwg_register empty'.format(tsv_path),
               file=sys.stderr)
         return {}
     out = {}
@@ -133,7 +133,7 @@ def main():
         elif a == '--out':
             out_path = args[i + 1]; i += 2
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
 
     lemmas, k1s = sample_targets(sample)
     print('targets: %d lemmas, %d pwg/pw k1s' % (len(lemmas), len(k1s)))

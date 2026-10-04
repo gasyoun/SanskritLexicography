@@ -69,10 +69,8 @@ def main():
             mark = '  <== this record' if pos == (0 if idx is None else idx) else ''
             print('  [%2d] L%-10s <pc>%s  <h>%-4s k1=%s%s'
                   % (pos, e.L, pc_str(e.vol, e.col), e.h or '-', e.k1, mark))
-        print('  stored : column=%s volume=%s page=%s'
-              % (b.get('column'), b.get('volume'), b.get('page')))
-        print('  fixed  : column=%s volume=%s page=%s (page = (col+1)//2 = %s)'
-              % (a.get('column'), a.get('volume'), a.get('page'),
+        print('  stored : column={} volume={} page={}'.format(b.get('column'), b.get('volume'), b.get('page')))
+        print('  fixed  : column={} volume={} page={} (page = (col+1)//2 = {})'.format(a.get('column'), a.get('volume'), a.get('page'),
                  page_of(recs[0 if idx is None else idx].col) if recs else '-'))
     print('=' * 78)
     print('%d sub-card(s) shown' % len(seen))

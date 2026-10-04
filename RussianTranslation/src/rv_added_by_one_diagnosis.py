@@ -105,7 +105,7 @@ def structural_facts():
     ))
 
     converse_defs = all(
-        any(l.strip().startswith('- "%s"' % c) for l in dt.SYSTEM.splitlines())
+        any(l.strip().startswith('- "{}"'.format(c)) for l in dt.SYSTEM.splitlines())
         for c in ASYMMETRIC)
     facts.append((
         'the two class definitions are converse relations over one event',
@@ -162,11 +162,10 @@ def structural_facts():
     facts.append((
         'GUARD: the K3 coarse projection is invariant under the converse relabelling',
         dt.COARSE_MAP['added_by_one'] == dt.COARSE_MAP['omitted_by_one'],
-        'COARSE_MAP now sends both converse names to %r. Before H2192 it sent added_by_one '
+        'COARSE_MAP now sends both converse names to {!r}. Before H2192 it sent added_by_one '
         'to \'divergence\' and omitted_by_one to \'omission\', so a semantically vacuous '
         'choice between two names for one event moved the COARSE class too -- the very '
-        'projection K3 collapses to was not invariant under the defect.'
-        % dt.COARSE_MAP['added_by_one'],
+        'projection K3 collapses to was not invariant under the defect.'.format(dt.COARSE_MAP['added_by_one']),
     ))
 
     return facts
@@ -176,9 +175,9 @@ def cmd_structural(a):
     facts = structural_facts()
     print('structural degeneracy of the asymmetric classes, and the H2192 guards (no data read)')
     for name, holds, detail in facts:
-        print('  [%s] %s' % ('x' if holds else ' ', name))
+        print('  [{}] {}'.format('x' if holds else ' ', name))
         for line in _wrap(detail, 92):
-            print('        %s' % line)
+            print('        {}'.format(line))
     print('  verdict: %d/%d properties hold' % (sum(1 for _, h, _ in facts if h), len(facts)))
     return 0
 
@@ -246,9 +245,9 @@ def surplus_stats(pilot_path=PILOT_PATH, stanza_path=dt.STANZA_PATH):
             ma = any(markers(da.get('text')))
             mb = any(markers(db.get('text')))
             if ma != mb:
-                one_sided['%s|%s' % (a, b)] += 1
+                one_sided['{}|{}'.format(a, b)] += 1
             elif ma and mb:
-                both_sided['%s|%s' % (a, b)] += 1
+                both_sided['{}|{}'.format(a, b)] += 1
 
     labels = collections.Counter()
     by_method = collections.Counter()
@@ -378,7 +377,7 @@ def cmd_backfill(a):
         with open(out, 'w', encoding='utf-8', newline='\n') as f:
             for r in rows:
                 f.write(json.dumps(r, ensure_ascii=False) + '\n')
-        print('  wrote %s' % out)
+        print('  wrote {}'.format(out))
     return 0
 
 
@@ -463,7 +462,7 @@ def selftest():
     assert len(facts) == 6, facts
     assert sum(1 for n, _, _ in facts if n.startswith('GUARD:')) == 4, facts
     for name, holds, _ in facts:
-        assert holds, 'structural property does not hold: %s' % name
+        assert holds, 'structural property does not hold: {}'.format(name)
 
     # The converse-degeneracy claim in one executable line: on an unordered pair the two
     # labels describe one and the same configuration.

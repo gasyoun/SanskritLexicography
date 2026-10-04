@@ -15,7 +15,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 
 def prefix_group_id(provider, requested_model, stable_prefix_sha256):
-    return '%s|%s|%s' % (provider, requested_model, stable_prefix_sha256)
+    return '{}|{}|{}'.format(provider, requested_model, stable_prefix_sha256)
 
 
 def schedule(items, resume=None):
@@ -77,7 +77,7 @@ def selftest():
     ids_a = [row['request_id'] for row in a]
     ids_b = [row['request_id'] for row in b]
     if ids_a != ids_b:
-        raise AssertionError('schedule is not deterministic: %s vs %s' % (ids_a, ids_b))
+        raise AssertionError('schedule is not deterministic: {} vs {}'.format(ids_a, ids_b))
     # Groups contiguous.
     seen = []
     last = None
@@ -85,13 +85,13 @@ def selftest():
         gid = row['prefix_group_id']
         if gid != last:
             if gid in seen:
-                raise AssertionError('group %s is not contiguous' % gid)
+                raise AssertionError('group {} is not contiguous'.format(gid))
             seen.append(gid)
             last = gid
     # First of prefix aa/pro is ordinal 0 = cold; ordinal 3 = warm.
     by_id = {row['request_id']: row for row in a}
     if by_id['r0']['cold_warm'] != 'cold' or by_id['r3']['cold_warm'] != 'warm':
-        raise AssertionError('cold/warm assignment wrong: %s' % by_id)
+        raise AssertionError('cold/warm assignment wrong: {}'.format(by_id))
     if by_id['r0']['source_ordinal'] != 0 or by_id['r3']['source_ordinal'] != 3:
         raise AssertionError('source ordinal lost')
     # Resume preserves cold/warm even if the remaining set would reassign.

@@ -114,7 +114,7 @@ def do_restore(args):
     print("restore: quarantine holds %d row(s), %d not currently in the store"
           % (len(quarantined), len(back)))
     for row in back:
-        print("  + %s / %r" % (row.get("subcard"), row.get("sense_tag")))
+        print("  + {} / {!r}".format(row.get("subcard"), row.get("sense_tag")))
     if not back:
         print("nothing to restore")
         return 0
@@ -146,8 +146,8 @@ def main(argv=None):
                     help="actually write the store (default is dry-run)")
     args = ap.parse_args(argv)
 
-    print("store:    %s" % args.store)
-    print("gatelogs: %s" % args.gatelogs)
+    print("store:    {}".format(args.store))
+    print("gatelogs: {}".format(args.gatelogs))
     if args.restore:
         return do_restore(args)
 
@@ -161,8 +161,7 @@ def main(argv=None):
         print("  idx=%d subcard=%s sense_tag=%r flags=%s human_touched=%s"
               % (i, row.get("subcard"), row.get("sense_tag"), flags, touched))
         if touched:
-            raise SystemExit("REFUSE: row %s is human-touched -- do not remove"
-                             % row.get("subcard"))
+            raise SystemExit("REFUSE: row {} is human-touched -- do not remove".format(row.get("subcard")))
     if not hits:
         print("nothing to do")
         return 0
@@ -172,17 +171,17 @@ def main(argv=None):
     kept = [row for i, row in enumerate(rows) if i not in remove_idx]
 
     quarantine_path = os.path.join(
-        args.gatelogs, "h4342_sanloss_requeue_%s.quarantine.jsonl" % args.date_tag)
+        args.gatelogs, "h4342_sanloss_requeue_{}.quarantine.jsonl".format(args.date_tag))
     requeue_path = os.path.join(
-        args.gatelogs, "h4342_sanloss_requeue_%s.requeue.keys.txt" % args.date_tag)
+        args.gatelogs, "h4342_sanloss_requeue_{}.requeue.keys.txt".format(args.date_tag))
 
     if not args.execute:
         print("DRY-RUN: would remove %d row(s) (%d -> %d), quarantine -> %s, requeue -> %s"
               % (len(removed), len(rows), len(kept), quarantine_path, requeue_path))
         return 0
     if os.path.exists(quarantine_path):
-        raise SystemExit("REFUSE: %s already exists -- pass a fresh --date-tag rather than "
-                         "overwriting an earlier run's evidence" % quarantine_path)
+        raise SystemExit("REFUSE: {} already exists -- pass a fresh --date-tag rather than "
+                         "overwriting an earlier run's evidence".format(quarantine_path))
 
     os.makedirs(args.gatelogs, exist_ok=True)
     with open(quarantine_path, "w", encoding="utf-8", newline="\n") as f:
@@ -197,7 +196,7 @@ def main(argv=None):
           "store now %d rows"
           % (len(removed), backup, quarantine_path, requeue_path, len(kept)))
     print("REVERSIBLE: python src/pilot/h4342_fixes/h4342_requeue_sanloss.py "
-          "--restore %s --execute" % quarantine_path)
+          "--restore {} --execute".format(quarantine_path))
     return 0
 
 

@@ -54,7 +54,7 @@ def count_jsonl(path, required):
                     fail('%s line %d missing %s' % (path, i, field))
             n += 1
     if not n:
-        fail('%s is empty' % path)
+        fail('{} is empty'.format(path))
     return n
 
 
@@ -82,7 +82,7 @@ def validate_gate_statuses(edition_dir, manifest):
     expected = load_gate_statuses(os.path.join(edition_dir, 'roadmap', 'quality_gates.jsonl'))
     missing_prefixes = sorted(p for p in REQUIRED_GATES if not any(k.startswith(p) for k in got))
     if missing_prefixes:
-        fail('manifest gate_statuses missing gates: %s' % ', '.join(missing_prefixes))
+        fail('manifest gate_statuses missing gates: {}'.format(', '.join(missing_prefixes)))
     if got != expected:
         fail('manifest gate_statuses do not match edition roadmap/quality_gates.jsonl')
 
@@ -101,21 +101,21 @@ def main():
         hint = ('; validate an edition subdirectory created by make_edition_cut.py, '
                 'for example release/edition_v1')
         if editions:
-            hint += '; found edition candidate(s): %s' % ', '.join(editions)
-        fail('missing release_manifest.json%s' % hint)
+            hint += '; found edition candidate(s): {}'.format(', '.join(editions))
+        fail('missing release_manifest.json{}'.format(hint))
     manifest = json.load(open(manifest_path, encoding='utf-8'))
     validate_gate_statuses(args.edition_dir, manifest)
     files = manifest.get('files') or {}
     missing = sorted(REQUIRED - set(files))
     if missing:
-        fail('manifest missing required files: %s' % ', '.join(missing))
+        fail('manifest missing required files: {}'.format(', '.join(missing)))
     for rel, meta in files.items():
         path = os.path.join(args.edition_dir, rel.replace('/', os.sep))
         if not os.path.exists(path):
-            fail('manifest file missing on disk: %s' % rel)
+            fail('manifest file missing on disk: {}'.format(rel))
         got = sha256(path)
         if got != meta.get('sha256'):
-            fail('hash mismatch for %s' % rel)
+            fail('hash mismatch for {}'.format(rel))
 
     ET.parse(os.path.join(args.edition_dir, 'tei_lex0.xml'))
     ttl = open(os.path.join(args.edition_dir, 'ontolex.ttl'), encoding='utf-8').read()
@@ -131,5 +131,5 @@ if __name__ == '__main__':
     try:
         main()
     except Exception as e:
-        print('RELEASE CHECK FAILED: %s' % e, file=sys.stderr)
+        print('RELEASE CHECK FAILED: {}'.format(e), file=sys.stderr)
         raise SystemExit(1)

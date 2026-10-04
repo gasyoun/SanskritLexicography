@@ -117,17 +117,15 @@ def main() -> int:
                  (row['started_utc'] or '')[:19], (row['ended_utc'] or '')[:19],
                  row['wall_s'], row['usage_total'], row['returned_model'] or 'UNATTESTED'))
 
-    print('\nrefusals (rc=1): %s  ordinal-contiguous=%s'
-          % (report['refused_ordinals'], report['ordinal_contiguous']))
+    print('\nrefusals (rc=1): {}  ordinal-contiguous={}'.format(report['refused_ordinals'], report['ordinal_contiguous']))
     if report['refusal_span_utc']:
-        print('refusal span:    %s .. %s' % (report['refusal_span_utc']['from_utc'][:19],
+        print('refusal span:    {} .. {}'.format(report['refusal_span_utc']['from_utc'][:19],
                                              report['refusal_span_utc']['to_utc'][:19]))
     print('clean calls inside that span: %s' % (report['clean_calls_inside_the_span'] or 'none'))
-    print('zero-usage: all=%s  rc=0 only=%s' % (report['zero_usage_calls'],
+    print('zero-usage: all={}  rc=0 only={}'.format(report['zero_usage_calls'],
                                                 report['zero_usage_rc0_calls']))
     print('unattested: %s' % (report['unattested_calls'] or 'none'))
-    print('\nconsistent with ONE provider limit window: %s'
-          % report['consistent_with_a_limit_window'])
+    print('\nconsistent with ONE provider limit window: {}'.format(report['consistent_with_a_limit_window']))
     print('NOTE: consistency is not proof. The provider exposes no queryable limit history,'
           '\n      and `claude auth status --json` reports subscription only, so this'
           '\n      remains a proxy — it can refute a window, never confirm one.')
@@ -139,7 +137,7 @@ def main() -> int:
                        'calls': rows, 'report': report}, handle,
                       ensure_ascii=False, indent=1)
             handle.write('\n')
-        print('wrote %s' % args.out)
+        print('wrote {}'.format(args.out))
     return 0
 
 

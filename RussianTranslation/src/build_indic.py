@@ -155,6 +155,6 @@ def build(fname, code, attribution):
 
 if __name__ == '__main__':
     if not os.path.isdir(SRC):
-        sys.exit('babylon source dir not found: %s' % SRC)
+        sys.exit('babylon source dir not found: {}'.format(SRC))
     total = sum(build(f, c, a) for f, c, a in SOURCES)
     print('TOTAL keyed Hindi sense entries: %d' % total)

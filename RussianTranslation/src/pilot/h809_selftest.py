@@ -49,17 +49,16 @@ def test_cost_rate_table_sonnet5_formula():
     import perf_preflight as pp
     p = pwc.PRICE
     if round(p['cache_write'], 6) != round(1.25 * p['input'], 6):
-        fail('cache_write must be 1.25x input (5m TTL): %s vs %s'
-             % (p['cache_write'], 1.25 * p['input']))
+        fail('cache_write must be 1.25x input (5m TTL): {} vs {}'.format(p['cache_write'], 1.25 * p['input']))
     if round(p['cache_read'], 6) != round(0.10 * p['input'], 6):
-        fail('cache_read must be 0.1x input: %s vs %s' % (p['cache_read'], 0.10 * p['input']))
+        fail('cache_read must be 0.1x input: {} vs {}'.format(p['cache_read'], 0.10 * p['input']))
     if (p['input'], p['output']) != (3.00, 15.00):
-        fail('Sonnet 5 list input/output must be $3/$15, got %s/%s' % (p['input'], p['output']))
+        fail('Sonnet 5 list input/output must be $3/$15, got {}/{}'.format(p['input'], p['output']))
     AS_RUN_USD = 79.83                  # pril10_w1 as-run (rates identical under Sonnet 5 list)
     if pp.PER_AGENT_USD != round(AS_RUN_USD / 230, 3):
-        fail('PER_AGENT_USD must equal round($79.83/230, 3)=0.347, got %s' % pp.PER_AGENT_USD)
+        fail('PER_AGENT_USD must equal round($79.83/230, 3)=0.347, got {}'.format(pp.PER_AGENT_USD))
     if pp.PER_AGENT_TOKENS != 184000:
-        fail('PER_AGENT_TOKENS must stay 184000, got %s' % pp.PER_AGENT_TOKENS)
+        fail('PER_AGENT_TOKENS must stay 184000, got {}'.format(pp.PER_AGENT_TOKENS))
 
 
 def test_cache_write_is_ttl_priced_and_reconciles_with_the_vendor():
@@ -78,12 +77,11 @@ def test_cache_write_is_ttl_priced_and_reconciles_with_the_vendor():
     import parse_workflow_cost as pwc
     p = pwc.PRICE
     if round(p['cache_write_5m'], 6) != round(1.25 * p['input'], 6):
-        fail('cache_write_5m must be 1.25x input: %s' % p['cache_write_5m'])
+        fail('cache_write_5m must be 1.25x input: {}'.format(p['cache_write_5m']))
     if round(p['cache_write_1h'], 6) != round(2.00 * p['input'], 6):
-        fail('cache_write_1h must be 2.0x input: %s' % p['cache_write_1h'])
+        fail('cache_write_1h must be 2.0x input: {}'.format(p['cache_write_1h']))
     if round(p['cache_write'], 6) != round(p['cache_write_5m'], 6):
-        fail('legacy PRICE["cache_write"] must stay the 5m rate, got %s vs %s'
-             % (p['cache_write'], p['cache_write_5m']))
+        fail('legacy PRICE["cache_write"] must stay the 5m rate, got {} vs {}'.format(p['cache_write'], p['cache_write_5m']))
     if round(pwc.cache_write_rate('1h') / pwc.cache_write_rate('5m'), 4) != 1.6:
         fail('1h writes must cost 1.6x a 5m write')
     try:
@@ -96,8 +94,7 @@ def test_cache_write_is_ttl_priced_and_reconciles_with_the_vendor():
     # TTL-less legacy envelope -> 5m bucket, flagged unknown (history must not move)
     t5, t1, known = pwc.split_cache_creation({'cache_creation_input_tokens': 1000})
     if (t5, t1, known) != (1000, 0, False):
-        fail('a TTL-less envelope must fall back to 5m and report ttl_known=False, got %r'
-             % ((t5, t1, known),))
+        fail('a TTL-less envelope must fall back to 5m and report ttl_known=False, got {!r}'.format((t5, t1, known)))
 
     # H2190: reporting defaults to 5m (history frozen); a cost GATE asks for '1h' and
     # gets the fail-closed figure, because under-refusing spends money.
@@ -117,14 +114,14 @@ def test_cache_write_is_ttl_priced_and_reconciles_with_the_vendor():
     env = os.path.join(os.path.dirname(os.path.dirname(HERE)),
                        'pwg_ru', 'h2158', 'raw_slow', 'cli_nakzatra_1.envelope.json')
     if not os.path.exists(env):
-        fail('H2158 ground-truth envelope missing: %s' % env)
+        fail('H2158 ground-truth envelope missing: {}'.format(env))
     with open(env, encoding='utf-8') as fh:
         raw = json.load(fh)['raw']
     billed = list(raw['modelUsage'].values())[0]['costUSD']
     computed = pwc.usage_cost(raw['usage'])
     if round(computed, 6) != round(billed, 6):
         fail('usage_cost must reconcile with the vendor cost on the H2158 envelope: '
-             'computed $%.6f vs billed $%.6f' % (computed, billed))
+             'computed ${:.6f} vs billed ${:.6f}'.format(computed, billed))
     # and prove the OLD single-rate table would NOT have reconciled — otherwise this
     # test would still pass after a regression back to a TTL-blind constant.
     u = raw['usage']
@@ -153,10 +150,9 @@ def test_no_pwg_window_index_autoselect():
         open(os.path.join(out, name), 'w').close()
     used = nps.used_window_indices('no_pwg_w', here=here, out=out)
     if used != {1, 2, 3, 4, 5}:
-        fail('used_window_indices must yield {1..5} (w05_rq1 counts as 5), got %s' % sorted(used))
+        fail('used_window_indices must yield {{1..5}} (w05_rq1 counts as 5), got {}'.format(sorted(used)))
     if nps.next_free_index('no_pwg_w', here=here, out=out) != 6:
-        fail('next_free_index must be 6, got %s'
-             % nps.next_free_index('no_pwg_w', here=here, out=out))
+        fail('next_free_index must be 6, got {}'.format(nps.next_free_index('no_pwg_w', here=here, out=out)))
     empty = tempfile.mkdtemp()
     if nps.next_free_index('no_pwg_w', here=empty, out=empty) != 2:
         fail('next_free_index on empty dirs must floor at 2')
@@ -172,7 +168,7 @@ def test_no_pwg_promotion_command_is_scoped_and_executable():
         '--glob "src/pilot/output/wf_output.no_pwg_w07.json" '
         '--gen-model-version claude-sonnet-5')
     if cmd != expected:
-        fail('promotion command drifted: %r' % cmd)
+        fail('promotion command drifted: {!r}'.format(cmd))
     try:
         nps.promotion_command('wf_output.json', 'sonnet')
     except ValueError:

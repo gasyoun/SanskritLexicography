@@ -119,8 +119,8 @@ def main():
 
     dist = collections.Counter(c['stratum'] for c in picked)
     print('population cards: %d | sampled: %d (seed %d)' % (total, len(picked), args.seed))
-    print('sample by stratum: %s' % dict(sorted(dist.items())))
-    print('wrote %s' % args.out)
+    print('sample by stratum: {}'.format(dict(sorted(dist.items()))))
+    print('wrote {}'.format(args.out))
 
 
 if __name__ == '__main__':

@@ -178,7 +178,7 @@ def loaded_reason(state=None,
     avail = state.get('host_avail_phys_mb')
     reasons = []
     if pct is not None and pct >= commit_pct_warn:
-        reasons.append('commit charge %.1f%% >= %.1f%%' % (pct, commit_pct_warn))
+        reasons.append('commit charge {:.1f}% >= {:.1f}%'.format(pct, commit_pct_warn))
     if avail is not None and avail < avail_phys_mb_warn:
         reasons.append('%d MB physical free < %d MB' % (avail, avail_phys_mb_warn))
     if not reasons:

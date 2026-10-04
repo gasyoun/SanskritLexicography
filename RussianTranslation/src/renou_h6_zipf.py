@@ -162,13 +162,13 @@ def main():
         elif a == '--out-svg':
             out_svg = args[i + 1]; i += 2
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
 
     dcs_index = load_dcs_index(index_path)
     paths = [p for p in sorted(glob.glob(os.path.join(d, '*.renou.jsonl')))
              if os.path.basename(p).split('.')[0] in CANON]
     if not paths:
-        raise SystemExit('no canonical {code}.renou.jsonl in %s' % d)
+        raise SystemExit('no canonical {{code}}.renou.jsonl in {}'.format(d))
 
     rows, per_dict, no_freq = collect_samples(paths, dcs_index)
     print('samples with both ls & dcs, freq>0: %d (dropped %d with no/zero freq)'
@@ -180,15 +180,15 @@ def main():
     clf, a, b, x50 = fit_logistic(rows)
     freq50 = 10 ** x50 if np.isfinite(x50) else float('nan')
 
-    print('\nlogistic fit: P(exact) = sigmoid(%.4f * log10(freq) + %.4f)' % (a, b))
-    print('P(exact) crosses 50%% at log10(freq)=%.3f  ->  freq ≈ %.1f DCS texts' % (x50, freq50))
+    print('\nlogistic fit: P(exact) = sigmoid({:.4f} * log10(freq) + {:.4f})'.format(a, b))
+    print('P(exact) crosses 50% at log10(freq)={:.3f}  ->  freq ≈ {:.1f} DCS texts'.format(x50, freq50))
     print('\nper-bin table (log10freq_mid, n, exact, dcs_adds, dcs_misses, conflict):')
     for bb in bins:
         print('  %.2f  n=%-6d exact=%.3f dcs_adds=%.3f dcs_misses=%.3f conflict=%.3f'
               % (bb['mid'], bb['n'], bb['exact'], bb['dcs_adds'], bb['dcs_misses'], bb['conflict']))
 
     make_figure(rows, bins, clf, x50, out_svg)
-    print('\n-> %s' % out_svg)
+    print('\n-> {}'.format(out_svg))
 
     result = {
         'n_samples': len(rows), 'dropped_no_freq': no_freq, 'per_dict': dict(per_dict),
@@ -199,7 +199,7 @@ def main():
     out_json = os.path.join(HERE, 'renou_h6_zipf_result.json')
     with open(out_json, 'w', encoding='utf-8') as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
-    print('-> %s' % out_json)
+    print('-> {}'.format(out_json))
 
 
 if __name__ == '__main__':

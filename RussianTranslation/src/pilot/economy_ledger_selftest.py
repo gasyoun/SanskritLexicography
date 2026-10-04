@@ -54,20 +54,20 @@ def test_synthetic_agents_per_clean_and_band():
     run = led['runs'][0]
 
     if run['agents_per_clean'] != 2.0:
-        fail('agents_per_clean must be 10/5=2.0, got %s' % run['agents_per_clean'])
+        fail('agents_per_clean must be 10/5=2.0, got {}'.format(run['agents_per_clean']))
     if run['status'] != 'priced':
-        fail('full row must be status=priced, got %s' % run['status'])
+        fail('full row must be status=priced, got {}'.format(run['status']))
 
     # hand-computed band for 1,000,000 tokens over 5 clean:
     #   floor = 1e6 * 0.30 / 1e6 / 5 = 0.06 ; ceil = 1e6 * 3.00 /1e6 /5 = 0.60
     #   true_upper = 1e6 * 15.00 /1e6 /5 = 3.00
     band = run['cost_per_clean']
     if not approx(band['floor_usd'], 0.06):
-        fail('band floor must be 0.06, got %s' % band['floor_usd'])
+        fail('band floor must be 0.06, got {}'.format(band['floor_usd']))
     if not approx(band['ceil_usd'], 0.60):
-        fail('band ceil must be 0.60, got %s' % band['ceil_usd'])
+        fail('band ceil must be 0.60, got {}'.format(band['ceil_usd']))
     if not approx(band['true_upper_output_rate_usd'], 3.00):
-        fail('band true_upper must be 3.00, got %s' % band['true_upper_output_rate_usd'])
+        fail('band true_upper must be 3.00, got {}'.format(band['true_upper_output_rate_usd']))
     if 'EXCLUDES output premium' not in band['basis']:
         fail('band basis must flag the excluded output premium')
 
@@ -83,7 +83,7 @@ def test_clean_zero_is_wasted_never_divided():
     led = el.build_ledger(rows)
     wasted = [r for r in led['runs'] if r['run_id'] == 'r_wasted'][0]
     if wasted['status'] != 'wasted_calls':
-        fail('clean=0 must be status=wasted_calls, got %s' % wasted['status'])
+        fail('clean=0 must be status=wasted_calls, got {}'.format(wasted['status']))
     if wasted['agents_per_clean'] is not None:
         fail('clean=0 must NEVER carry an agents_per_clean value')
     if wasted['cost_per_clean'] is not None:
@@ -103,11 +103,9 @@ def test_clean_zero_is_wasted_never_divided():
     # aggregate excludes the wasted run entirely (only the full run's 10/5 counts).
     agg = led['aggregate']
     if agg['total_tokens'] != 1_500_000 or agg['total_clean'] != 5:
-        fail('pooled band must include wasted tokens (1.5M) over 5 clean, got %s/%s'
-             % (agg['total_tokens'], agg['total_clean']))
+        fail('pooled band must include wasted tokens (1.5M) over 5 clean, got {}/{}'.format(agg['total_tokens'], agg['total_clean']))
     if not approx(agg['agents_per_clean_incl_requeues'], 2.0):
-        fail('agents_per_clean aggregate must exclude the wasted run (10/5=2.0), got %s'
-             % agg['agents_per_clean_incl_requeues'])
+        fail('agents_per_clean aggregate must exclude the wasted run (10/5=2.0), got {}'.format(agg['agents_per_clean_incl_requeues']))
 
 
 # ---------------------------------------------------------------------------
@@ -121,7 +119,7 @@ def test_nulled_row_incomplete_but_priced():
     run = led['runs'][0]
 
     if run['provenance'] != 'nulled_note':
-        fail('nulled row provenance must be nulled_note, got %s' % run['provenance'])
+        fail('nulled row provenance must be nulled_note, got {}'.format(run['provenance']))
     if run['agents_used'] is not None:
         fail('agents_used must stay None (note carries no agents_used key)')
     if 'calls_per_clean_incomplete' not in run['flags']:
@@ -129,7 +127,7 @@ def test_nulled_row_incomplete_but_priced():
     if run['agents_per_clean'] is not None:
         fail('nulled row must NOT produce an agents_per_clean value')
     if run['status'] != 'incomplete':
-        fail('nulled row status must be incomplete, got %s' % run['status'])
+        fail('nulled row status must be incomplete, got {}'.format(run['status']))
 
     # but clean+tokens recovered from the note -> band IS priced.
     # floor = 800000*0.30/1e6/4 = 0.06 ; ceil = 800000*3.00/1e6/4 = 0.60
@@ -137,7 +135,7 @@ def test_nulled_row_incomplete_but_priced():
     if band is None:
         fail('nulled row tokens MUST still be priced (clean+tokens recovered from note)')
     if not approx(band['floor_usd'], 0.06) or not approx(band['ceil_usd'], 0.60):
-        fail('nulled row band must be [0.06,0.60], got %s' % band)
+        fail('nulled row band must be [0.06,0.60], got {}'.format(band))
 
 
 # ---------------------------------------------------------------------------
@@ -160,13 +158,13 @@ def test_dedup_on_run_id_not_window():
     if len(led2['runs']) != 2:
         fail('exact re-append of a run_id must be idempotent, got %d rows' % len(led2['runs']))
     if led2['conflicting_run_ids']:
-        fail('an exact re-append is NOT a conflict, got %s' % led2['conflicting_run_ids'])
+        fail('an exact re-append is NOT a conflict, got {}'.format(led2['conflicting_run_ids']))
 
     # re-append of same run_id with DIFFERENT figures -> conflict surfaced
     rows3 = rows + [outcome_row('r_fresh', 'no_pwg_w03', agents_used=99, clean=5, tokens=1_000_000)]
     led3 = el.build_ledger(rows3)
     if led3['conflicting_run_ids'] != ['r_fresh']:
-        fail('conflicting re-append must surface run_id, got %s' % led3['conflicting_run_ids'])
+        fail('conflicting re-append must surface run_id, got {}'.format(led3['conflicting_run_ids']))
 
 
 # ---------------------------------------------------------------------------
@@ -214,7 +212,7 @@ def test_write_ledger_roundtrip():
     el.write_ledger(out, rows=rows, source_log='synthetic.jsonl')
     payload = json.load(open(out, encoding='utf-8'))
     if payload['schema'] != 'pwg.economy_ledger.v1':
-        fail('written ledger must carry schema pwg.economy_ledger.v1, got %s' % payload['schema'])
+        fail('written ledger must carry schema pwg.economy_ledger.v1, got {}'.format(payload['schema']))
     if payload['runs'][0]['agents_per_clean'] != 2.0:
         fail('written ledger figures must survive the round-trip')
 
@@ -231,47 +229,41 @@ def test_integration_real_frozen_log():
                      '5/9 enter agents-per-clean '
                      '(1 has clean=0 -> wasted_calls; 3 nulled -> incomplete)')
     if led['coverage']['line'] != expected_line:
-        fail('coverage line drifted:\n  got: %s\n  exp: %s'
-             % (led['coverage']['line'], expected_line))
+        fail('coverage line drifted:\n  got: {}\n  exp: {}'.format(led['coverage']['line'], expected_line))
     cov = led['coverage']
     if (cov['outcome_rows'], cov['structured_agents_used'], cov['enter_agents_per_clean'],
             cov['clean0_wasted'], cov['nulled_incomplete']) != (9, 6, 5, 1, 3):
-        fail('coverage counts drifted: %s' % cov)
+        fail('coverage counts drifted: {}'.format(cov))
 
     # -- per-run w07 -> 38/5 = 7.6 --
     w07 = [r for r in led['runs'] if r['run_id'] == 'wf_5ed6f8e0-b0b'][0]
     if w07['agents_per_clean'] != 7.6:
-        fail('w07 (wf_5ed6f8e0-b0b) agents_per_clean must be 38/5=7.6, got %s'
-             % w07['agents_per_clean'])
+        fail('w07 (wf_5ed6f8e0-b0b) agents_per_clean must be 38/5=7.6, got {}'.format(w07['agents_per_clean']))
 
     agg = led['aggregate']
 
     # -- headline aggregate: 139 agents / 49 clean = 2.836735 (incl requeues) --
     if agg['agents_per_clean_incl_requeues'] != round(139 / 49, 6):
-        fail('agents_per_clean incl requeues must be 139/49=2.836735, got %s'
-             % agg['agents_per_clean_incl_requeues'])
+        fail('agents_per_clean incl requeues must be 139/49=2.836735, got {}'.format(agg['agents_per_clean_incl_requeues']))
     if agg['agents_per_clean_incl_requeues_label'] != 'total agents to fully drain incl. requeues':
         fail('headline aggregate MUST be labeled "total agents to fully drain incl. requeues"')
 
     # -- first-pass: 95 agents / 27 clean = 3.518519 --
     if agg['agents_per_clean_first_pass'] != round(95 / 27, 6):
-        fail('first-pass agents_per_clean must be 95/27=3.518519, got %s'
-             % agg['agents_per_clean_first_pass'])
+        fail('first-pass agents_per_clean must be 95/27=3.518519, got {}'.format(agg['agents_per_clean_first_pass']))
 
     # -- pooled cost band: 13,739,312 tokens / 59 clean --
     if agg['total_tokens'] != 13_739_312 or agg['total_clean'] != 59:
-        fail('pooled totals must be 13,739,312 tokens / 59 clean, got %s/%s'
-             % (agg['total_tokens'], agg['total_clean']))
+        fail('pooled totals must be 13,739,312 tokens / 59 clean, got {}/{}'.format(agg['total_tokens'], agg['total_clean']))
     band = agg['cost_per_clean_band']
     # hand-pinned REAL numbers (recomputed honestly from the frozen log; the audit's cited
     # $0.073-$0.731 did NOT reconstruct — these are what the log actually yields):
     if band['floor_usd'] != 0.069861:
-        fail('pooled floor must be $0.069861 (cache-read rate), got %s' % band['floor_usd'])
+        fail('pooled floor must be $0.069861 (cache-read rate), got {}'.format(band['floor_usd']))
     if band['ceil_usd'] != 0.698609:
-        fail('pooled ceil must be $0.698609 (fresh-input rate), got %s' % band['ceil_usd'])
+        fail('pooled ceil must be $0.698609 (fresh-input rate), got {}'.format(band['ceil_usd']))
     if band['true_upper_output_rate_usd'] != 3.493045:
-        fail('true upper (output rate) must be $3.493045, got %s'
-             % band['true_upper_output_rate_usd'])
+        fail('true upper (output rate) must be $3.493045, got {}'.format(band['true_upper_output_rate_usd']))
     # the band figures must also equal the formula recomputed straight from PRICE
     # (formula pin: a rate edit breaks this loudly, like h809_selftest's cache-multiplier pin)
     if not approx(band['ceil_usd'], round(13_739_312 * pwc.PRICE['input'] / 1e6 / 59, 6)):
@@ -281,12 +273,11 @@ def test_integration_real_frozen_log():
 
     # -- wasted (row 6, h317_w1b): 58 agents / 1,798,042 tokens, 0 clean --
     if agg['wasted_agents'] != 58 or agg['wasted_tokens'] != 1_798_042:
-        fail('wasted totals must be 58 agents / 1,798,042 tokens, got %s/%s'
-             % (agg['wasted_agents'], agg['wasted_tokens']))
+        fail('wasted totals must be 58 agents / 1,798,042 tokens, got {}/{}'.format(agg['wasted_agents'], agg['wasted_tokens']))
 
     # -- no spurious conflicts on the real log (all 9 run_ids distinct) --
     if led['conflicting_run_ids']:
-        fail('real log must yield no conflicting_run_ids, got %s' % led['conflicting_run_ids'])
+        fail('real log must yield no conflicting_run_ids, got {}'.format(led['conflicting_run_ids']))
 
 
 def test_gate_strict_vs_legacy_missing_data():
@@ -343,11 +334,11 @@ def test_all_wasted_summary_does_not_crash():
     led = el.build_ledger(rows)
     agg = led['aggregate']
     if agg['agents_per_clean_incl_requeues'] is not None or agg['cost_per_clean_band'] is not None:
-        fail('an all-wasted log must yield None aggregates, got %r' % agg)
+        fail('an all-wasted log must yield None aggregates, got {!r}'.format(agg))
     lines = el.summary_lines(led)           # must NOT raise on the None aggregates
     joined = '\n'.join(lines)
     if 'n/a' not in joined or 'wasted: 14 agents' not in joined:
-        fail('all-wasted summary must report n/a + the wasted totals, got:\n%s' % joined)
+        fail('all-wasted summary must report n/a + the wasted totals, got:\n{}'.format(joined))
 
 
 def main():

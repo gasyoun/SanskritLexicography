@@ -57,9 +57,9 @@ def require_sibling(path, what):
     ok = os.path.exists(path)
     if not ok and os.environ.get('CSL_SIBLING_ROOT'):
         raise FileNotFoundError(
-            '%s not found at %s -- CSL_SIBLING_ROOT=%r was set, asserting the '
+            '{} not found at {} -- CSL_SIBLING_ROOT={!r} was set, asserting the '
             'siblings exist, so this is an error, not an optional-table '
-            'degradation' % (what, path, os.environ['CSL_SIBLING_ROOT']))
+            'degradation'.format(what, path, os.environ['CSL_SIBLING_ROOT']))
     return ok
 
 

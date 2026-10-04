@@ -170,7 +170,7 @@ def cmd_validate(args: argparse.Namespace) -> int:
             args.canonical, require_provenance=not args.no_provenance,
             require_schema=args.require_schema)
     except validation.ValidationError as exc:
-        sys.stderr.write('validate: %s\n' % exc)
+        sys.stderr.write('validate: {}\n'.format(exc))
         return EXIT_STOP
     fence = validation.fence_report(report)
     if args.out:
@@ -187,7 +187,7 @@ def cmd_replay(args: argparse.Namespace) -> int:
     try:
         report = replay_module.replay_matrix(args.matrix, exact=args.exact)
     except replay_module.ReplayMismatch as exc:
-        sys.stderr.write('replay: %s\n' % exc)
+        sys.stderr.write('replay: {}\n'.format(exc))
         return EXIT_STOP
     _emit(report)
     return EXIT_OK if report['exact'] else EXIT_STOP
@@ -212,7 +212,7 @@ def cmd_review(args: argparse.Namespace) -> int:
         try:
             _emit(review_module.verify(args.packet, args.receipt))
         except review_module.ReviewRefusal as exc:
-            sys.stderr.write('review verify: %s\n' % exc)
+            sys.stderr.write('review verify: {}\n'.format(exc))
             return EXIT_REFUSED
         return EXIT_OK
     _emit({'schema': SCHEMA, 'command': 'review',
@@ -231,15 +231,14 @@ def cmd_canary(args: argparse.Namespace) -> int:
     names = [name.strip() for name in args.providers.split(',') if name.strip()]
     unknown = [name for name in names if name not in CANARY_PROVIDERS]
     if unknown:
-        sys.stderr.write('canary: unknown provider(s): %s\n' % ', '.join(unknown))
+        sys.stderr.write('canary: unknown provider(s): {}\n'.format(', '.join(unknown)))
         return EXIT_REFUSED
     if args.max_calls > CANARY_MAX_CALLS:
         sys.stderr.write('canary: --max-calls may not exceed %d\n'
                          % CANARY_MAX_CALLS)
         return EXIT_REFUSED
     if args.cost_ceiling_usd > CANARY_COST_CEILING_USD:
-        sys.stderr.write('canary: --cost-ceiling-usd may not exceed %.2f\n'
-                         % CANARY_COST_CEILING_USD)
+        sys.stderr.write('canary: --cost-ceiling-usd may not exceed {:.2f}\n'.format(CANARY_COST_CEILING_USD))
         return EXIT_REFUSED
     if len(names) > args.max_calls:
         sys.stderr.write('canary: %d providers do not fit in --max-calls %d\n'
@@ -257,7 +256,7 @@ def cmd_canary(args: argparse.Namespace) -> int:
     try:
         for name in names:
             adapter = providers.adapter_for(name)
-            campaign_id = 'canary-%s' % name
+            campaign_id = 'canary-{}'.format(name)
             # One campaign per provider, each with exactly one call: an
             # unavailable provider can never release its slot to the other.
             repository.create_campaign(model.Campaign(
@@ -265,7 +264,7 @@ def cmd_canary(args: argparse.Namespace) -> int:
                 route=adapter.route, max_calls=1,
                 cost_ceiling_usd=args.cost_ceiling_usd / max(len(names), 1),
                 promotable=False, created_by='pwg_pipeline.cli.canary'))
-            job_id = '%s.job' % campaign_id
+            job_id = '{}.job'.format(campaign_id)
             repository.add_job(model.Job(
                 job_id=job_id, campaign_id=campaign_id, kind='fragment',
                 source_identity=CANARY_PROMPT['fragment_id'],
@@ -281,7 +280,7 @@ def cmd_canary(args: argparse.Namespace) -> int:
                 outcome = paid.execute(
                     adapter, job_ids=[job_id], job_payloads=[CANARY_PROMPT],
                     requested_model=(args.model or adapter.default_model),
-                    idempotency_key='%s:canary:1' % campaign_id,
+                    idempotency_key='{}:canary:1'.format(campaign_id),
                     timeout_ms=args.timeout_ms,
                     max_output_tokens=args.max_output_tokens,
                     estimated_input_tokens=200)
@@ -312,7 +311,7 @@ def cmd_canary(args: argparse.Namespace) -> int:
                                           ' call is not released to any other'
                                           ' provider'})
             envelopes.append(envelope)
-            seal(os.path.join(workdir, 'envelope.%s.json' % name), envelope)
+            seal(os.path.join(workdir, 'envelope.{}.json'.format(name)), envelope)
 
         total_cost = sum(float(env['usage'].get('observed_cost_usd') or 0.0)
                          for env in envelopes)

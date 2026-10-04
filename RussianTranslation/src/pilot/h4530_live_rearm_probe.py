@@ -34,11 +34,10 @@ def main(argv=None):
     live = sorted(n for n in (os.listdir(artifacts) if os.path.isdir(artifacts) else []))
     print('coordinator artifacts: %s (%d entries)' % (artifacts, len(live)))
     for name in live:
-        print('   %s' % name)
+        print('   {}'.format(name))
 
     used = plan.used_window_indices(args.prefix, coord_dir=args.coord_dir)
-    print('used indices for prefix %r (incl. coordinator artifacts): %s'
-          % (args.prefix, sorted(used)))
+    print('used indices for prefix {!r} (incl. coordinator artifacts): {}'.format(args.prefix, sorted(used)))
 
     roots = []
     simulated = set(used)
@@ -52,8 +51,7 @@ def main(argv=None):
         roots.append(root)
         simulated.add(idx)          # the attempt prepares, then dies before wf_output
 
-    print('PASS: two consecutive re-arms, static prefix, zero manual id bumps -> %s'
-          % ', '.join(roots))
+    print('PASS: two consecutive re-arms, static prefix, zero manual id bumps -> {}'.format(', '.join(roots)))
     return 0
 
 

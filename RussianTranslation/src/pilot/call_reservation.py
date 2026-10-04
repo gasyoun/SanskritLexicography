@@ -52,7 +52,7 @@ def normalize_telemetry(value):
     for name in TOKEN_FIELDS:
         number = value.get(name, 0)
         if not _valid_number(number):
-            raise ValueError('%s must be finite, non-negative and non-boolean' % name)
+            raise ValueError('{} must be finite, non-negative and non-boolean'.format(name))
         out[name] = number
     cost = value.get('observed_cost_usd', 0)
     if not _valid_number(cost):
@@ -68,7 +68,7 @@ def normalize_telemetry(value):
         if value.get(name) is None:
             continue
         if not _valid_number(value[name]):
-            raise ValueError('%s must be finite, non-negative and non-boolean' % name)
+            raise ValueError('{} must be finite, non-negative and non-boolean'.format(name))
         out[name] = value[name]
     # Additive only: a pre-accounting ledger contains no key and normalizes to
     # exactly its historical bytes. Newly finalized calls may carry the v1
@@ -206,14 +206,14 @@ def _read(path):
         value = json.load(f)
     if (not isinstance(value, dict) or value.get('schema') != SCHEMA
             or not isinstance(value.get('runs'), dict)):
-        raise ValueError('call reservation ledger schema mismatch: %s' % path)
+        raise ValueError('call reservation ledger schema mismatch: {}'.format(path))
     for run_id, run in value['runs'].items():
         if not isinstance(run_id, str) or not run_id or not isinstance(run, dict):
-            raise ValueError('call reservation ledger has an invalid run: %s' % path)
+            raise ValueError('call reservation ledger has an invalid run: {}'.format(path))
         limit = run.get('max_calls')
         if limit is not None and (
                 isinstance(limit, bool) or not isinstance(limit, int) or limit < 0):
-            raise ValueError('%s: saved max_calls is invalid' % run_id)
+            raise ValueError('{}: saved max_calls is invalid'.format(run_id))
         reservations = run.get('reservations')
         spent = run.get('calls_spent')
         next_ordinal = run.get('next_ordinal')
@@ -223,7 +223,7 @@ def _read(path):
                 or isinstance(next_ordinal, bool)
                 or not isinstance(next_ordinal, int)
                 or next_ordinal != spent + 1):
-            raise ValueError('%s: reservation counters are inconsistent' % run_id)
+            raise ValueError('{}: reservation counters are inconsistent'.format(run_id))
         ids, idempotency_keys, ordinals = set(), set(), []
         for item in reservations:
             if (not isinstance(item, dict)
@@ -234,22 +234,22 @@ def _read(path):
                     or not isinstance(item.get('ordinal'), int)
                     or not isinstance(item.get('purpose'), str)
                     or not item['purpose']):
-                raise ValueError('%s: reservation entry is invalid' % run_id)
+                raise ValueError('{}: reservation entry is invalid'.format(run_id))
             ids.add(item['reservation_id'])
             ordinals.append(item['ordinal'])
             idempotency_key = item.get('idempotency_key')
             if idempotency_key is not None:
                 if (not isinstance(idempotency_key, str) or not idempotency_key
                         or idempotency_key in idempotency_keys):
-                    raise ValueError('%s: reservation idempotency key is invalid' % run_id)
+                    raise ValueError('{}: reservation idempotency key is invalid'.format(run_id))
                 idempotency_keys.add(idempotency_key)
             if item.get('finalized'):
                 normalize_telemetry(item.get('telemetry'))
                 evidence = item.get('finalization_evidence')
                 if evidence is not None and not isinstance(evidence, dict):
-                    raise ValueError('%s: finalization evidence is invalid' % run_id)
+                    raise ValueError('{}: finalization evidence is invalid'.format(run_id))
         if ordinals != list(range(1, spent + 1)):
-            raise ValueError('%s: reservation ordinals are inconsistent' % run_id)
+            raise ValueError('{}: reservation ordinals are inconsistent'.format(run_id))
         # ``usage`` was added to the same v1 schema after the original
         # reservation-only deployment.  Its one supported migration is handled
         # by _initialize; once present it must exactly equal the reservations.
@@ -272,7 +272,7 @@ def _read(path):
                 expected['pending_calls'] == 0
                 and expected['unevaluable_calls'] == 0)
             if usage != expected:
-                raise ValueError('%s: cumulative usage is inconsistent' % run_id)
+                raise ValueError('{}: cumulative usage is inconsistent'.format(run_id))
     return value
 
 
@@ -340,7 +340,7 @@ class CallReservationLedger:
         with _os_lock(absolute + '.lock'):
             run = _read(absolute)['runs'].get(str(run_id))
             if run is None:
-                raise ValueError('call reservation run missing: %s' % run_id)
+                raise ValueError('call reservation run missing: {}'.format(run_id))
             max_calls = run.get('max_calls')
         return cls(absolute, run_id, max_calls)
 
@@ -357,8 +357,7 @@ class CallReservationLedger:
             saved = run.get('max_calls')
             if saved != self.max_calls:
                 raise ValueError(
-                    'call reservation max_calls mismatch for run %s: saved=%r requested=%r'
-                    % (self.run_id, saved, self.max_calls))
+                    'call reservation max_calls mismatch for run {}: saved={!r} requested={!r}'.format(self.run_id, saved, self.max_calls))
             if 'usage' not in run:
                 # Forward-compatible adoption of a v1 reservation-only file.
                 usage = _empty_usage()
@@ -383,7 +382,7 @@ class CallReservationLedger:
             data = _read(self.path)
             run = data['runs'].get(self.run_id)
             if run is None:
-                raise ValueError('call reservation run disappeared: %s' % self.run_id)
+                raise ValueError('call reservation run disappeared: {}'.format(self.run_id))
             if idempotency_key is not None:
                 existing = next((row for row in run.get('reservations', [])
                                  if row.get('idempotency_key') == idempotency_key), None)
@@ -444,11 +443,11 @@ class CallReservationLedger:
             data = _read(self.path)
             run = data['runs'].get(self.run_id)
             if run is None:
-                raise ValueError('call reservation run disappeared: %s' % self.run_id)
+                raise ValueError('call reservation run disappeared: {}'.format(self.run_id))
             item = next((row for row in run.get('reservations', [])
                          if row.get('reservation_id') == reservation_id), None)
             if item is None:
-                raise ValueError('unknown call reservation: %s' % reservation_id)
+                raise ValueError('unknown call reservation: {}'.format(reservation_id))
             if item.get('finalized'):
                 if item.get('telemetry') != normalized:
                     raise ValueError('reservation already finalized with different telemetry')
@@ -480,7 +479,7 @@ class CallReservationLedger:
         with _os_lock(self.lock_path):
             run = _read(self.path)['runs'].get(self.run_id)
             if run is None:
-                raise ValueError('call reservation run missing: %s' % self.run_id)
+                raise ValueError('call reservation run missing: {}'.format(self.run_id))
             return json.loads(json.dumps(run))
 
     def spent(self):

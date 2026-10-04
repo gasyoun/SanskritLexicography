@@ -68,7 +68,7 @@ def poly_class(n_senses):
 
 
 def stable_hex(salt, key1):
-    return ident.sha256_bytes('%s:%s' % (salt, key1))
+    return ident.sha256_bytes('{}:{}'.format(salt, key1))
 
 
 def load_first200_keys():
@@ -209,7 +209,7 @@ def allocate_stratified(rows, n, salt):
         assigned += quotas[key]
     leftover_keys = sorted(
         groups,
-        key=lambda k: (stable_hex(salt, '%s|%s' % k), k),
+        key=lambda k: (stable_hex(salt, '{}|{}'.format(*k)), k),
     )
     while assigned < n:
         progressed = False
@@ -252,7 +252,7 @@ def build_census(run_dir):
     slots = drain.load_assembled_de(assembled_path)
     missing = [k for k in first200 if k not in slots]
     if missing:
-        raise CensusError('first-200 keys missing assembled DE: %s' % missing[:8])
+        raise CensusError('first-200 keys missing assembled DE: {}'.format(missing[:8]))
     committed = committed_prep_keys()
     tm_card = canonical_sidecar(os.path.join(HERE, 'translation_memory.ru.json'))
     tm_frag = canonical_sidecar(os.path.join(HERE, 'translation_memory.frag.ru.jsonl'))

@@ -60,10 +60,10 @@ def main():
         manifest = json.load(handle)
     inp = manifest['inputs'][KEY]
     skeleton = inp['skeleton']
-    print('key            : %s' % KEY)
-    print('field          : %s' % manifest['field'])
+    print('key            : {}'.format(KEY))
+    print('field          : {}'.format(manifest['field']))
     print('source counts  : ls=%d sk=%d' % (inp['ls'], inp['sk']))
-    print('skeleton tokens: %s' % ' '.join(german_anchor.tokens(skeleton)))
+    print('skeleton tokens: {}'.format(' '.join(german_anchor.tokens(skeleton))))
 
     card = build_masked_card(skeleton)
     german_tokens = [t for sense in german_anchor.card_senses(card)
@@ -75,13 +75,12 @@ def main():
 
     ok, info = german_anchor.plan(card, skeleton)
     print('')
-    print('german_anchor.plan -> ok=%s info=%s' % (ok, json.dumps(info, ensure_ascii=False)))
+    print('german_anchor.plan -> ok={} info={}'.format(ok, json.dumps(info, ensure_ascii=False)))
     ok2, info2 = german_anchor.reanchor(card, skeleton)
-    print('german_anchor.reanchor -> ok=%s info=%s' % (ok2, json.dumps(info2, ensure_ascii=False)))
+    print('german_anchor.reanchor -> ok={} info={}'.format(ok2, json.dumps(info2, ensure_ascii=False)))
     print('')
     if not ok:
-        print('VERDICT: the repair CANNOT touch this card. Refusal reason %r -- every source'
-              % info.get('reason'))
+        print('VERDICT: the repair CANNOT touch this card. Refusal reason {!r} -- every source'.format(info.get('reason')))
         print('         span is present in `german`; the drop is in `russian`, a field')
         print('         `german_anchor` neither reads nor writes (module docstring,')
         print('         DELIBERATE SCOPE LIMITS). Two independent defects, not one:')

@@ -131,8 +131,7 @@ class Samudra:
     def __init__(self, db_path):
         self.conn = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
         cur = self.conn.execute(
-            "SELECT slug, id FROM sources WHERE slug IN (%s)"
-            % ",".join("?" * len(PARVA_SLUGS)), list(PARVA_SLUGS.values()))
+            "SELECT slug, id FROM sources WHERE slug IN ({})".format(",".join("?" * len(PARVA_SLUGS))), list(PARVA_SLUGS.values()))
         self.slug_to_id = dict(cur.fetchall())
         missing = set(PARVA_SLUGS.values()) - set(self.slug_to_id)
         if missing:

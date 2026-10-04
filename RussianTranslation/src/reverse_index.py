@@ -78,7 +78,7 @@ def _emit(header, body):
 
 def build():
     if not os.path.exists(PWG):
-        sys.exit('PWG source not found: %s' % PWG)
+        sys.exit('PWG source not found: {}'.format(PWG))
     index = {}
     rows = []
     n_total = n_indexed = n_nolex = n_unknown_gender = 0
@@ -98,7 +98,7 @@ def build():
         # nominal_grammar._STEM_SECTIONS) to keep the per-word table compact.
         g = nominal_grammar_for(k1, lex, accented=k2)
         token = g['zaliznyak_index']
-        key = '%s#%s' % (k1, hom) if hom else k1
+        key = '{}#{}'.format(k1, hom) if hom else k1
         index.setdefault(token, []).append(key)
         rows.append((k1, hom, lex, k2 or '', token, g['stem_class'],
                      '+'.join(g['compound_members']) if g['compound_members'] else '',
@@ -126,7 +126,7 @@ def build():
     print('  indexed (have <lex>): %d' % n_indexed)
     print('  skipped no <lex>: %d ; unknown gender tag: %d' % (n_nolex, n_unknown_gender))
     print('  distinct paradigm tokens: %d' % len(index))
-    print('wrote %s, %s, %s' % (os.path.basename(IDX_JSON), os.path.basename(STATS_TSV),
+    print('wrote {}, {}, {}'.format(os.path.basename(IDX_JSON), os.path.basename(STATS_TSV),
                                 os.path.basename(HW_TSV)))
     print('\nTop 15 paradigms:')
     for c, t in stats[:15]:
@@ -167,11 +167,11 @@ def show(token):
     member count and a few example headwords."""
     members = _load().get(token, [])
     if not members:
-        print('no headwords with index %s' % token)
+        print('no headwords with index {}'.format(token))
         return
     k1, lex = _representative(token)
     print('=== paradigm %s — %d headwords ===' % (token, len(members)))
-    print('representative: %s [%s]\n' % (k1, lex))
+    print('representative: {} [{}]\n'.format(k1, lex))
     print(render_paradigm(paradigm_for(k1, lex)))
     print('\nexamples:', ', '.join(members[:12]) + (' …' if len(members) > 12 else ''))
 

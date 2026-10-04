@@ -85,8 +85,7 @@ def _examples_panel(ring, legend=False):
     plain = ring.replace("<b>", "").replace("</b>", "")
     for key, before, after in _EX_ROWS:
         rows.append(
-            "<tr><td><code>%s</code></td><td>%s</td><td>%s</td></tr>"
-            % (key,
+            "<tr><td><code>{}</code></td><td>{}</td><td>{}</td></tr>".format(key,
                anatomy.highlight(before),
                anatomy.highlight(after.replace("{R}", plain)))
         )
@@ -104,7 +103,7 @@ def _examples_panel(ring, legend=False):
 
 _FONT_PANEL = (
     "<p>Перепись cmap 324 установленных семейств + растровая проба файлов "
-    "шрифтов (Pillow), 15-08-2026 — <a href='%s'>полный отчёт</a>:</p>"
+    "шрифтов (Pillow), 15-08-2026 — <a href='{}'>полный отчёт</a>:</p>"
     "<table>"
     "<tr><th>Знак</th><th>Шрифтов</th><th>Стек веб-карточки</th><th>Растровая проба</th></tr>"
     "<tr><td>˚ U+02DA</td><td>271/324</td><td>Segoe UI ✅ Roboto ✅</td>"
@@ -119,7 +118,7 @@ _FONT_PANEL = (
     "<p>Живая проба на ЭТОМ экране (то, что вы видите прямо сейчас): "
     "<b>॰-</b> · <b>-॰</b> | <b>˚-</b> · <b>-˚</b> | <b>°-</b> · <b>-°</b> — "
     "если первый кружок отличается по посадке/весу от двух других или показан "
-    "прямоугольником, это и есть эффект fallback.</p>" % PROOF_HREF
+    "прямоугольником, это и есть эффект fallback.</p>".format(PROOF_HREF)
 )
 
 
@@ -274,11 +273,10 @@ def build(out_dir=None, force_lock=False):
         # except save_banner (its default bakes in this sheet's own
         # sheet_id/save_as, so a fixed preset string would drop them).
         "ui_strings": dict(RU_UI_STRINGS, save_banner=(
-            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
-            '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
-            'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
-            'листу относятся эти решения).'
-            % (esc(SHEET_ID), esc(SAVE_AS), esc(SHEET_ID)))),
+            '&#128229; Ваш экспорт скачивается как <code>{}_decisions.json</code> '
+            '&rarr; сохраните его в <code>{}</code> (значение <code>sheet_id</code> '
+            'внутри файла — <code>{}</code> — так следующая сессия узнаёт, к какому '
+            'листу относятся эти решения).'.format(esc(SHEET_ID), esc(SAVE_AS), esc(SHEET_ID)))),
     }
     cfg.update(standard_config(save_as=SAVE_AS))
 
@@ -309,8 +307,8 @@ def build(out_dir=None, force_lock=False):
     lock_path = review_binding.lock_from_html(out, gate=None)
 
     print("H2805 Q3 deploy sheet: %d cards -> %s" % (len(cards), out))
-    print("  %s" % chash)
-    print("  lock -> %s" % lock_path)
+    print("  {}".format(chash))
+    print("  lock -> {}".format(lock_path))
     return out, chash, lock_path
 
 

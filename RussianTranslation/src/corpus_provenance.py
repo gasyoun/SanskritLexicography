@@ -61,17 +61,17 @@ def main():
     if args[0] == '--root':
         needle = args[1]
         match = lambda r: needle in (r.get('slp1') or '')
-        title = "SLP1 forms containing %r" % needle
+        title = "SLP1 forms containing {!r}".format(needle)
         group_key = lambda r: (r.get('slp1'), r.get('ru'))
     elif args[0] == '--ru':
         needle = args[1]
         match = lambda r: needle.lower() in (r.get('ru') or '').lower()
-        title = "Russian renderings matching %r" % needle
+        title = "Russian renderings matching {!r}".format(needle)
         group_key = lambda r: (r.get('ru'), r.get('slp1'))
     else:
         form = args[0]
         match = lambda r: (r.get('slp1') or '') == form
-        title = "SLP1 form %r" % form
+        title = "SLP1 form {!r}".format(form)
         group_key = lambda r: (r.get('slp1'), r.get('ru'))
 
     groups = defaultdict(list)
@@ -81,21 +81,21 @@ def main():
     if not groups:
         print('no corpus attestations found.'); return
 
-    print('=== provenance: %s ===' % title)
+    print('=== provenance: {} ==='.format(title))
     print('(each rendering -> count, period span, and the texts:passages attesting it)\n')
     for key in sorted(groups, key=lambda k: -len(groups[k])):
         recs = groups[key]
-        works = sorted({'%s:%s' % (x.get('work'), x.get('passage')) for x in recs})
+        works = sorted({'{}:{}'.format(x.get('work'), x.get('passage')) for x in recs})
         periods = sorted({x.get('period') for x in recs if x.get('period')})
         a, b = key
         print('%-22s -> %-26s  (n=%d)' % (a, b, len(recs)))
-        print('    period(s): %s' % '; '.join(periods))
+        print('    period(s): {}'.format('; '.join(periods)))
         if show_renou:
             regs = Counter(to_register(x.get('genre'), x.get('work')) for x in recs)
-            print('    renou register(s): %s' % ', '.join(
-                '%s×%d' % (r, c) for r, c in regs.most_common()))
+            print('    renou register(s): {}'.format(', '.join(
+                '%s×%d' % (r, c) for r, c in regs.most_common())))
         shown = works[:limit]
-        print('    source(s): %s%s' % (', '.join(shown),
+        print('    source(s): {}{}'.format(', '.join(shown),
               '  …+%d more' % (len(works) - limit) if len(works) > limit else ''))
         print()
 

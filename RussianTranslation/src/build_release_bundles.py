@@ -171,10 +171,9 @@ def write_public_full(pwg_tm_path, out_dir):
                 % (tmx_escape_attr(VERSION),
                    tmx_escape_attr(time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())), len(tus)))
         for tuid, key1, de, ru in tus:
-            f.write('  <tu tuid=%s>\n   <prop type="sa-key1">%s</prop>\n'
-                    '   <tuv xml:lang="de"><seg>%s</seg></tuv>\n'
-                    '   <tuv xml:lang="ru"><seg>%s</seg></tuv>\n  </tu>\n'
-                    % (tmx_escape_attr(tuid), escape(key1), escape(de), escape(ru)))
+            f.write('  <tu tuid={}>\n   <prop type="sa-key1">{}</prop>\n'
+                    '   <tuv xml:lang="de"><seg>{}</seg></tuv>\n'
+                    '   <tuv xml:lang="ru"><seg>{}</seg></tuv>\n  </tu>\n'.format(tmx_escape_attr(tuid), escape(key1), escape(de), escape(ru)))
         f.write(' </body>\n</tmx>\n')
     return jsonl_out, tmx_out, len(rows)
 
@@ -228,7 +227,7 @@ RU_SURFACE_KEYS = ('ru', 'russian', 'russian_text', 'target_text')
 def build(pwg_tm_path=DEFAULT_PWG_TM, corpus_lexicon_path=DEFAULT_CORPUS_LEXICON,
           rights_table_path=DEFAULT_RIGHTS_TABLE, out_dir=OUT_DIR):
     if not os.path.exists(pwg_tm_path):
-        sys.exit('PWG TM publication file not found: %s' % pwg_tm_path)
+        sys.exit('PWG TM publication file not found: {}'.format(pwg_tm_path))
     os.makedirs(out_dir, exist_ok=True)
     rights_table = load_rights_table(rights_table_path)
 
@@ -278,7 +277,7 @@ def audit_rights(bundle_dir=OUT_DIR):
     violations = []
     checked_files = []
     if not os.path.isdir(bundle_dir):
-        print('AUDIT: bundle dir not found: %s (nothing to check)' % bundle_dir)
+        print('AUDIT: bundle dir not found: {} (nothing to check)'.format(bundle_dir))
         return 0
     for name in sorted(os.listdir(bundle_dir)):
         path = os.path.join(bundle_dir, name)
@@ -302,9 +301,9 @@ def audit_rights(bundle_dir=OUT_DIR):
             with open(path, encoding='utf-8') as f:
                 content = f.read()
             if 'public_full' not in name and has_cyr(content):
-                violations.append('%s: RU text present in a non-public_full TMX' % name)
-    print('AUDIT --audit-rights over %s' % bundle_dir)
-    print('  files checked: %s' % ', '.join(checked_files))
+                violations.append('{}: RU text present in a non-public_full TMX'.format(name))
+    print('AUDIT --audit-rights over {}'.format(bundle_dir))
+    print('  files checked: {}'.format(', '.join(checked_files)))
     if violations:
         print('  FAIL: %d grey RU surface string violation(s):' % len(violations))
         for v in violations[:50]:

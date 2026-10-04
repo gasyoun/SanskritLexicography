@@ -164,10 +164,9 @@ def canary_section() -> dict:
         'executed': False,
         'disposition': (
             'ready to run' if all(available.values()) else
-            'NOT RUN: %s credential(s) absent; each adapter track stops alone'
-            ' and its unused call is never released to the other provider'
-            % ', '.join(sorted(name for name, present in available.items()
-                               if not present))),
+            'NOT RUN: {} credential(s) absent; each adapter track stops alone'
+            ' and its unused call is never released to the other provider'.format(', '.join(sorted(name for name, present in available.items()
+                               if not present)))),
         'command': ('python -m pwg_pipeline canary --providers xai,deepseek'
                     ' --max-calls 2 --cost-ceiling-usd 4 --no-retry'
                     ' --non-promotable'),

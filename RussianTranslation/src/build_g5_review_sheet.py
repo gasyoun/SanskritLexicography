@@ -488,11 +488,10 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
         was = pinned_lock.get("item_digests") or legacy_digests_from_sheet(args.out)
         if not was:
             raise SystemExit(
-                "--pin-ids: the lock carries no item_digests and %s could not be "
+                "--pin-ids: the lock carries no item_digests and {} could not be "
                 "read in the pre-H1808 panel format, so drift cannot be proven.\n"
                 "  Re-issuing blind could change what a half-finished vote is "
-                "voting on. Re-run without --pin-ids to cut a fresh sheet."
-                % os.path.basename(args.out or ""))
+                "voting on. Re-run without --pin-ids to cut a fresh sheet.".format(os.path.basename(args.out or "")))
         drift = sorted(i for i, d in digests.items() if was.get(i) != d)
         if drift:
             raise SystemExit(
@@ -528,13 +527,12 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
         "footer": ("Одобрить = готово к печати (<code>run_batch</code> пометит как "
                    "<code>approved</code>) · Отклонить = не годен · Отложить = в "
                    "<code>needs_review</code>. Экспорт валидируется против "
-                   "<code>review/locks/%s.lock.json</code> перед любым применением.<br>"
+                   "<code>review/locks/{}.lock.json</code> перед любым применением.<br>"
                    "Пометы NWS расшифрованы в правой колонке и "
                    "фильтруются полосой фасетов над карточками; полный словарь "
-                   "со статистикой — <a href=\"%s\" target=\"_blank\" "
+                   "со статистикой — <a href=\"{}\" target=\"_blank\" "
                    "rel=\"noopener\"><code>NWS_TAG_VOCABULARY_CENSUS_2026-07.md</code></a>.<br>"
-                   "Слева немецкий источник, справа печать; разметка store — за ссылкой. Цвета: %s"
-                   % (SHEET_ID, cardrender.CENSUS_URL, cardrender.legend_html())),
+                   "Слева немецкий источник, справа печать; разметка store — за ссылкой. Цвета: {}".format(SHEET_ID, cardrender.CENSUS_URL, cardrender.legend_html())),
         "approve_label": "Готово к печати", "reject_label": "Не годно",
         "filters": [(s, _stratum_ru(s)) for s in strata],
         # H1847 — browse by the NWS tag vocabulary, not just by stratum. Chips
@@ -549,16 +547,15 @@ def finish(args, chosen, store_rec, queue, n_decided, n_german, n_mflag, pinned_
                           "require_reject_note": True},
     }
     config.update(standard_config(
-        save_as="RussianTranslation\\review\\%s_decisions.json" % SHEET_ID))
+        save_as="RussianTranslation\\review\\{}_decisions.json".format(SHEET_ID)))
     # H3103/U6: reviewer chrome (download/save buttons, keyboard hints, timer
     # strings) via RU_UI_STRINGS; save_banner excluded from the preset (bakes
     # in sheet_id/save_as), built here per its docstring.
     config["ui_strings"] = dict(RU_UI_STRINGS, save_banner=(
-        '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
-        '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
-        'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
-        'листу относятся эти решения).'
-        % (esc(SHEET_ID), esc(config["save_as"]), esc(SHEET_ID))))
+        '&#128229; Ваш экспорт скачивается как <code>{}_decisions.json</code> '
+        '&rarr; сохраните его в <code>{}</code> (значение <code>sheet_id</code> '
+        'внутри файла — <code>{}</code> — так следующая сессия узнаёт, к какому '
+        'листу относятся эти решения).'.format(esc(SHEET_ID), esc(config["save_as"]), esc(SHEET_ID))))
 
     # H1650 / Б: machine-flags auto-rejected count as rejects in N=150 stats
     n_human = len(items)

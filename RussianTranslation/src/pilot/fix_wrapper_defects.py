@@ -74,7 +74,7 @@ def run_store(dry=False):
     default_local = os.path.join(SRC, 'pwg_ru_translated.jsonl')
     store = canonical_store(default_local)
     if not os.path.exists(store):
-        sys.exit('STORE ABSENT: %s' % store)
+        sys.exit('STORE ABSENT: {}'.format(store))
 
     rows = []
     with open(store, encoding='utf-8') as f:
@@ -87,7 +87,7 @@ def run_store(dry=False):
     for r in rows:
         ru = r.get('ru') or ''
         de = r.get('de') or ''
-        label = '%s|%s|%s' % (r.get('key1'), r.get('subcard'), r.get('sense_tag'))
+        label = '{}|{}|{}'.format(r.get('key1'), r.get('subcard'), r.get('sense_tag'))
 
         d1_before = find_d1(ru)
         new_ru, n1 = fix_d1(ru)
@@ -109,7 +109,7 @@ def run_store(dry=False):
             r['ru'] = ru
 
     print('STORE MODE %s' % ('(DRY RUN)' if dry else ''))
-    print('store              : %s' % store)
+    print('store              : {}'.format(store))
     print('rows               : %d' % len(rows))
     print('D1 rows fixed      : %d (%d spans)' % (
         len(d1_touched), sum(n for _, n in d1_touched)))
@@ -123,13 +123,13 @@ def run_store(dry=False):
         bak = store + '.h1651.bak'
         if not os.path.exists(bak):
             shutil.copyfile(store, bak)
-            print('backup             : %s' % bak)
+            print('backup             : {}'.format(bak))
         # H2146: locked (PromoteClaim) + unique per-run backup + atomic replace — the
         # fixed '.tmp' rewrite was unlocked (last-writer-wins, FINDINGS §513); the
         # one-time .h1651.bak above stays as the pre-campaign forensic copy.
         from store_write import locked_store_rewrite
         locked_store_rewrite(store, rows, tag='h1651fix')
-        print('wrote              : %s' % store)
+        print('wrote              : {}'.format(store))
 
     return {
         'd1_rows': len(d1_touched),

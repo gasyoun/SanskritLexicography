@@ -30,17 +30,17 @@ FAILURES = []
 
 def check(name, got, want):
     if got == want:
-        print('  ok   %s' % name)
+        print('  ok   {}'.format(name))
     else:
-        print('  FAIL %s\n       got  %r\n       want %r' % (name, got, want))
+        print('  FAIL {}\n       got  {!r}\n       want {!r}'.format(name, got, want))
         FAILURES.append(name)
 
 
 def check_true(name, cond, detail=''):
     if cond:
-        print('  ok   %s' % name)
+        print('  ok   {}'.format(name))
     else:
-        print('  FAIL %s %s' % (name, detail))
+        print('  FAIL {} {}'.format(name, detail))
         FAILURES.append(name)
 
 
@@ -103,10 +103,10 @@ def test_join_is_pada_granular():
     print('the join (offline fixture)')
     padas, _ = rp.pada_split(HN_784_1, 4)
     cov = [rp._coverage(p, rp.slp1_iast(QUOTE_784_1)) for p in padas]
-    check_true('pāda a not selected (%.2f)' % cov[0], cov[0] < rp.PADA_HIT, cov)
-    check_true('pāda b not selected (%.2f)' % cov[1], cov[1] < rp.PADA_HIT, cov)
-    check_true('pāda c selected (%.2f)' % cov[2], cov[2] >= rp.PADA_HIT, cov)
-    check_true('pāda d selected (%.2f)' % cov[3], cov[3] >= rp.PADA_HIT, cov)
+    check_true('pāda a not selected ({:.2f})'.format(cov[0]), cov[0] < rp.PADA_HIT, cov)
+    check_true('pāda b not selected ({:.2f})'.format(cov[1]), cov[1] < rp.PADA_HIT, cov)
+    check_true('pāda c selected ({:.2f})'.format(cov[2]), cov[2] >= rp.PADA_HIT, cov)
+    check_true('pāda d selected ({:.2f})'.format(cov[3]), cov[3] >= rp.PADA_HIT, cov)
     check_true('PWG daghānā vs rvlinks dadhānā survives folding',
                cov[2] >= 0.85, cov[2])
 

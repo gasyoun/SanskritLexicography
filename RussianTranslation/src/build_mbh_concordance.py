@@ -137,7 +137,7 @@ def cmd_build(args):
     cs_dir = args.cs_dir or CS_DIR
     dirs = parvan_dirs(cs_dir)
     if not dirs:
-        sys.exit('no MBH concordances under %s (local-only input; absent in CI)' % cs_dir)
+        sys.exit('no MBH concordances under {} (local-only input; absent in CI)'.format(cs_dir))
     rows = []
     for pno in sorted(dirs):
         seq, _ = load_concordance(cs_dir, dirs[pno])
@@ -201,7 +201,7 @@ def _mbh_sanskrit(db):
     """canonical_id → IAST line, for every MBH `#sa` row. One full pass: the
     fts5 `canonical_id` column is UNINDEXED, so per-key queries each cost a
     table scan and a naive loop takes hours."""
-    con = sqlite3.connect('file:%s?mode=ro' % db, uri=True)
+    con = sqlite3.connect('file:{}?mode=ro'.format(db), uri=True)
     try:
         return {cid: txt for cid, txt in
                 con.execute('select canonical_id, line_text from corpus_lines')
@@ -247,11 +247,11 @@ def cmd_validate(args):
     cs_dir = args.cs_dir or CS_DIR
     dirs = parvan_dirs(cs_dir)
     if not dirs:
-        sys.exit('no MBH concordances under %s' % cs_dir)
+        sys.exit('no MBH concordances under {}'.format(cs_dir))
     if not os.path.exists(CORPUS_DB):
-        sys.exit('corpus.db absent (%s) — validation needs the local corpus' % CORPUS_DB)
+        sys.exit('corpus.db absent ({}) — validation needs the local corpus'.format(CORPUS_DB))
     if not os.path.exists(RU_STORE):
-        sys.exit('RU store absent (%s) — validation needs the local store' % RU_STORE)
+        sys.exit('RU store absent ({}) — validation needs the local store'.format(RU_STORE))
 
     sa = _mbh_sanskrit(CORPUS_DB)
     works = {}
@@ -353,14 +353,14 @@ def cmd_validate(args):
                  % (len(unique), ex, 100.0 * ex / (len(unique) or 1)))
     verdict = ('REJECTED — the cumulative map does not reconstruct PWG\'s Calcutta '
                'numbering; MBH. stays unmapped_locus_scheme')
-    lines.append('VERDICT: %s' % verdict)
+    lines.append('VERDICT: {}'.format(verdict))
 
     for ln in lines:
         print(ln)
     if args.report:
         with open(args.report, 'w', encoding='utf-8', newline='\n') as fh:
             fh.write('\n'.join(lines) + '\n')
-        print('wrote %s' % args.report)
+        print('wrote {}'.format(args.report))
 
 
 # --- selftest ----------------------------------------------------------------
@@ -374,7 +374,7 @@ def cmd_selftest(_args):
     fails = []
 
     def check(cond, msg):
-        (print('  ok  - %s' % msg) if cond else fails.append(msg))
+        (print('  ok  - {}'.format(msg)) if cond else fails.append(msg))
 
     with open(OUT_CUM, encoding='utf-8') as fh:
         rows = list(csv.DictReader(fh, delimiter='\t'))
@@ -419,7 +419,7 @@ def cmd_selftest(_args):
     print()
     if fails:
         for f in fails:
-            print('  FAIL - %s' % f)
+            print('  FAIL - {}'.format(f))
         sys.exit('%d selftest check(s) FAILED' % len(fails))
     print('build_mbh_concordance selftest: all checks green')
 

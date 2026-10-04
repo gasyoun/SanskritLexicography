@@ -64,7 +64,7 @@ def assert_scratch_store(path: str) -> str:
     for fenced in CANONICAL_FENCE:
         if normalized.endswith(fenced):
             raise FenceViolation(
-                'Wave 1 must not write the canonical store: %s' % normalized)
+                'Wave 1 must not write the canonical store: {}'.format(normalized))
     return normalized
 
 
@@ -73,18 +73,15 @@ def verify_receipt(receipt: Mapping[str, Any], *, commit: str | None = None,
     """Require a hash-bound receipt signed by somebody other than the author."""
     for field in ('schema', 'reviewer', 'commit', 'bundle_sha256', 'disposition'):
         if not receipt.get(field):
-            raise PromotionRefusal('review receipt lacks %r' % field)
+            raise PromotionRefusal('review receipt lacks {!r}'.format(field))
     if str(receipt['disposition']).lower() not in ('approved', 'approve'):
-        raise PromotionRefusal('review receipt is not an approval: %r'
-                               % receipt['disposition'])
+        raise PromotionRefusal('review receipt is not an approval: {!r}'.format(receipt['disposition']))
     if implementer and str(receipt['reviewer']) == implementer:
         raise PromotionRefusal(
-            'the implementer may not sign their own review receipt (%s)'
-            % implementer)
+            'the implementer may not sign their own review receipt ({})'.format(implementer))
     if commit and str(receipt['commit']) != commit:
         raise PromotionRefusal(
-            'review receipt is bound to commit %s, not %s'
-            % (receipt['commit'], commit))
+            'review receipt is bound to commit {}, not {}'.format(receipt['commit'], commit))
 
 
 class PromotionService:
@@ -105,7 +102,7 @@ class PromotionService:
     # -- journal -----------------------------------------------------------
 
     def journal_path(self, promotion_id: str) -> str:
-        return os.path.join(self.journal_dir, '%s.journal.json' % promotion_id)
+        return os.path.join(self.journal_dir, '{}.journal.json'.format(promotion_id))
 
     def _write_journal(self, promotion_id: str,
                        journal: Mapping[str, Any]) -> None:
@@ -122,8 +119,7 @@ class PromotionService:
         with open(path, encoding='utf-8') as handle:
             journal = json.load(handle)
         if journal.get('schema') != SCHEMA:
-            raise PromotionRefusal('unsupported journal schema %r at %s'
-                                   % (journal.get('schema'), path))
+            raise PromotionRefusal('unsupported journal schema {!r} at {}'.format(journal.get('schema'), path))
         model.require_choice(str(journal.get('phase')), PHASES,
                              'promotion.phase')
         return journal
@@ -154,8 +150,7 @@ class PromotionService:
         """Validate everything recursively, then journal a PREPARED intent."""
         if verdict.verdict_class != model.VERDICT_CLEAN:
             raise PromotionRefusal(
-                'promotion requires a clean verdict, got %r'
-                % verdict.verdict_class)
+                'promotion requires a clean verdict, got {!r}'.format(verdict.verdict_class))
         verify_receipt(review_receipt, implementer=implementer)
         normalized = assert_scratch_store(store_path)
 
@@ -173,8 +168,7 @@ class PromotionService:
         if existing is not None:
             if existing['store']['after_sha256'] != after:
                 raise PromotionRefusal(
-                    'an open journal for %s promotes different bytes'
-                    % promotion_id)
+                    'an open journal for {} promotes different bytes'.format(promotion_id))
             return existing
 
         journal = {
@@ -211,7 +205,7 @@ class PromotionService:
         """Drive a prepared promotion to ``complete``; safe to re-enter."""
         journal = self._read_journal(promotion_id)
         if journal is None:
-            raise PromotionRefusal('no prepared journal for %s' % promotion_id)
+            raise PromotionRefusal('no prepared journal for {}'.format(promotion_id))
         payload = jsonl_bytes(list(rows))
         if sha256_bytes(payload) != journal['store']['after_sha256']:
             raise PromotionRefusal(
@@ -228,8 +222,7 @@ class PromotionService:
         """
         journal = self._read_journal(promotion_id)
         if journal is None:
-            raise PromotionRefusal('no journal to reconcile for %s'
-                                   % promotion_id)
+            raise PromotionRefusal('no journal to reconcile for {}'.format(promotion_id))
         payload = jsonl_bytes(list(rows)) if rows is not None else None
         if payload is not None and \
                 sha256_bytes(payload) != journal['store']['after_sha256']:
@@ -263,8 +256,7 @@ class PromotionService:
             committed = sha256_file(store_path)
             if committed != target:
                 raise PromotionRefusal(
-                    'committed store bytes %s do not match the journalled %s'
-                    % (committed, target))
+                    'committed store bytes {} do not match the journalled {}'.format(committed, target))
             observation = self.derived_builder(store_path)
             faults.fault(self.fault_hook, faults.AFTER_DERIVED_REBUILD)
             journal['derived'] = {'validated_at': utc_now(),
@@ -289,7 +281,7 @@ class PromotionService:
         if not os.path.exists(store_path):
             return None
         backup = os.path.join(self.journal_dir,
-                              '%s.store.backup' % promotion_id)
+                              '{}.store.backup'.format(promotion_id))
         with open(store_path, 'rb') as handle:
             legacy_journal.atomic_write_bytes(backup, handle.read())
         return backup
@@ -304,14 +296,14 @@ class PromotionService:
         if state == model.AWAITING_REVIEW:
             self.repository.transition_job(
                 job_id, model.AWAITING_REVIEW, model.APPLY_PREPARED,
-                reason='promotion:%s' % journal['promotion_id'])
+                reason='promotion:{}'.format(journal['promotion_id']))
             state = model.APPLY_PREPARED
         if state not in wanted:
             return
         for following in wanted[wanted.index(state) + 1:]:
             self.repository.transition_job(
                 job_id, state, following,
-                reason='promotion:%s' % journal['promotion_id'],
+                reason='promotion:{}'.format(journal['promotion_id']),
                 evidence_sha=journal['store'].get('after_sha256'))
             state = following
 
@@ -320,7 +312,7 @@ class PromotionService:
     def seal_receipt(self, promotion_id: str, path: str) -> dict[str, Any]:
         journal = self._read_journal(promotion_id)
         if journal is None:
-            raise PromotionRefusal('no journal for %s' % promotion_id)
+            raise PromotionRefusal('no journal for {}'.format(promotion_id))
         return seal(path, {
             'schema': 'pwg.pipeline.promotion_receipt.v1',
             'promotion_id': promotion_id,
@@ -341,8 +333,7 @@ def default_derived_builder(store_path: str) -> dict[str, Any]:
     report = validation.validate_jsonl(store_path)
     if not validation.is_clean(report):
         raise PromotionRefusal(
-            'derived validation refused the committed store: %s'
-            % report['by_code'])
+            'derived validation refused the committed store: {}'.format(report['by_code']))
     return {
         'kind': 'derived_validation',
         'path': report['path'],

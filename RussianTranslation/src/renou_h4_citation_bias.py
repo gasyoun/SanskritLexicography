@@ -159,7 +159,7 @@ def main():
         elif a == '--out':
             out_path = args[i + 1]; i += 2
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
 
     u_shares, u_total, u_counts = usage_shares()
     # registers reachable by the usage route at all (>0 attestations)
@@ -215,7 +215,7 @@ def main():
 
     with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(result, f, ensure_ascii=False, indent=1)
-    print('wrote %s' % out_path)
+    print('wrote {}'.format(out_path))
 
     # console summary: headline registers
     for code in CANON:
@@ -225,7 +225,7 @@ def main():
         for r in ('epic', 'rgveda', 'kavya'):
             if r in br:
                 b = br[r]
-                line.append('%s log2=%.2f [%.2f,%.2f]' % (
+                line.append('{} log2={:.2f} [{:.2f},{:.2f}]'.format(
                     r, b['log2_bias'],
                     b['log2_bias_ci95'][0] if b['log2_bias_ci95'][0] is not None else float('nan'),
                     b['log2_bias_ci95'][1] if b['log2_bias_ci95'][1] is not None else float('nan')))

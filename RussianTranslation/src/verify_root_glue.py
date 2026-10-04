@@ -104,7 +104,7 @@ def check_lossless_and_segmentation(strict):
     print('## A. Losslessness (hard invariant)')
     print('   records with boundaries scanned : %d' % n_rec)
     print('   round-trip FAILURES             : %d  -> %s'
-          % (n_lossy, 'PASS' if n_lossy == 0 else 'FAIL ' + ', '.join('%s/%s' % w for w in worst[:10])))
+          % (n_lossy, 'PASS' if n_lossy == 0 else 'FAIL ' + ', '.join('{}/{}'.format(*w) for w in worst[:10])))
     print('## B. Segmentation correctness (warn%s)' % (', escalated by --strict' if strict else ''))
     print('   <div n="p"> total / recognised-as-boundary / NOT-split : %d / %d / %d (%.1f%%)'
           % (np_raw, np_recognized, np_miss, 100.0 * np_miss / max(np_raw, 1)))

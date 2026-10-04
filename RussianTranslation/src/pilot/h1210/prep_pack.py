@@ -460,7 +460,7 @@ def compound_candidates_from_key(key1: str) -> list[str]:
         if key1.endswith(tail) and len(key1) > len(tail) + 2:
             head = key1[: -len(tail)]
             if head:
-                cands.append('%s + %s' % (head, tail))
+                cands.append('{} + {}'.format(head, tail))
     return cands[:5]
 
 
@@ -658,13 +658,13 @@ def apply_hard_flags(pack: dict, *, card: dict | None, slot: dict | None,
         if isinstance(cx.get('n_senses'), int):
             n_senses = max(n_senses, cx['n_senses'])
         if cx.get('complex'):
-            notes.append('payload complexity.complex=true score=%s' % cx.get('score'))
+            notes.append('payload complexity.complex=true score={}'.format(cx.get('score')))
     if not has_de_source and not slot and not card and n_senses == 0:
         hf['no_pwg'] = True
         notes.append('no DE source (no store row, no payload card, no raw/translate)')
     if slot and 'pwg' not in layers and layers:
         # has store rows but none from pwg layer
-        notes.append('store layers=%s (no pwg)' % ','.join(sorted(layers)))
+        notes.append('store layers={} (no pwg)'.format(','.join(sorted(layers))))
     if n_senses >= POLYSEMY_SENSE_FLOOR:
         hf['polysemy'] = True
         notes.append('polysemy: n_senses=%d >= %d' % (n_senses, POLYSEMY_SENSE_FLOOR))
@@ -856,7 +856,7 @@ def fill_one(key1: str, *, model: str, payload_idx: dict, store_idx: dict,
         else:
             pack['sense_inventory'] = sense_inventory_from_de_text(
                 de_blob, source_note='de_raw:' + os.path.basename(de_src['source']))
-        pack['hard_flags']['notes'].append('de_source=%s' % de_src['source'])
+        pack['hard_flags']['notes'].append('de_source={}'.format(de_src['source']))
         pack['source_evidence'] = {
             'kind': 'de_source',
             'locator': de_src['source'],
@@ -875,7 +875,7 @@ def fill_one(key1: str, *, model: str, payload_idx: dict, store_idx: dict,
                 pack['sense_inventory'] = sense_inventory_from_payload(card)
         else:
             pack['sense_inventory'] = sense_inventory_from_payload(card)
-        pack['hard_flags']['notes'].append('de_source=%s' % kind)
+        pack['hard_flags']['notes'].append('de_source={}'.format(kind))
         pack['source_evidence'] = {
             'kind': kind,
             'locator': card.get('_prep_source_locator'),
@@ -958,8 +958,8 @@ def write_pack(out_dir: str, pack: dict) -> str:
         stem = safe_name(pack['key1'])
     except Exception:
         stem = pack['key1']
-    path = os.path.join(out_dir, '%s.json' % stem)
-    fd, tmp = tempfile.mkstemp(prefix='.%s.' % stem, suffix='.tmp', dir=out_dir)
+    path = os.path.join(out_dir, '{}.json'.format(stem))
+    fd, tmp = tempfile.mkstemp(prefix='.{}.'.format(stem), suffix='.tmp', dir=out_dir)
     try:
         with os.fdopen(fd, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(pack, f, ensure_ascii=False, indent=1)
@@ -1075,12 +1075,12 @@ def write_compact_context(out_dir: str, pack: dict) -> str:
         stem = safe_name(pack['key1'])
     except Exception:
         stem = pack['key1']
-    path = os.path.join(out_dir, '%s.context.json' % stem)
+    path = os.path.join(out_dir, '{}.context.json'.format(stem))
     encoded = json.dumps(value, ensure_ascii=False, indent=1) + '\n'
     if os.path.exists(path):
         with open(path, encoding='utf-8') as handle:
             if handle.read() != encoded:
-                raise SystemExit('prep_pack: existing compact context differs: %s' % path)
+                raise SystemExit('prep_pack: existing compact context differs: {}'.format(path))
         return path
     with open(path, 'x', encoding='utf-8', newline='\n') as handle:
         handle.write(encoded)
@@ -1154,7 +1154,7 @@ def flash_messages(pack: dict) -> tuple[str, str]:
 def _flash_draft_for_pack(client: ds.DeepSeek, pack: dict) -> dict:
     """One Flash call: optional RU skeleton + route_hint. Mutates pack, returns it."""
     system, user = flash_messages(pack)
-    text, call = client.chat(system, user, 'prep:%s' % pack['key1'])
+    text, call = client.chat(system, user, 'prep:{}'.format(pack['key1']))
     finish = (call or {}).get('finish_reason')
     parse_ok = False
     obj = None
@@ -1192,7 +1192,7 @@ def _flash_draft_for_pack(client: ds.DeepSeek, pack: dict) -> dict:
         pack['store_write'] = False
         return pack
     if parse_err is not None:
-        pack['hard_flags']['notes'].append('live parse fail: %s' % parse_err)
+        pack['hard_flags']['notes'].append('live parse fail: {}'.format(parse_err))
         pack['route_hint'] = 'full_worker'
         pack['store_write'] = False
         return pack
@@ -1255,7 +1255,7 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
             stem = safe_name(k)
         except Exception:
             stem = k
-        existing = os.path.join(out_dir, '%s.json' % stem)
+        existing = os.path.join(out_dir, '{}.json'.format(stem))
         if os.path.exists(existing):
             skipped_paths.append(existing)
             print('  skip %-24s existing sidecar' % k, flush=True)
@@ -1283,8 +1283,7 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
                 done[k] = fut.result()
             except Exception as e:
                 p = next(x for x in packs if x['key1'] == k)
-                p['hard_flags']['notes'].append('live worker exception: %s: %s'
-                                                % (type(e).__name__, e))
+                p['hard_flags']['notes'].append('live worker exception: {}: {}'.format(type(e).__name__, e))
                 p['route_hint'] = 'full_worker'
                 p['store_write'] = False
                 done[k] = p
@@ -1336,7 +1335,7 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
         for k in pending_keys:
             if k not in done:
                 p = next(x for x in packs if x['key1'] == k)
-                p['hard_flags']['notes'].append('live: skipped after 401/402 on %s' % fence_hit)
+                p['hard_flags']['notes'].append('live: skipped after 401/402 on {}'.format(fence_hit))
                 p['route_hint'] = 'full_worker'
                 p['store_write'] = False
                 done[k] = p
@@ -1348,16 +1347,16 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
             stem = safe_name(k)
         except Exception:
             stem = k
-        path = os.path.join(out_dir, '%s.json' % stem)
+        path = os.path.join(out_dir, '{}.json'.format(stem))
         if path not in paths:
             paths.append(path)
     # Optional cost summary on stderr
     try:
-        print('live cost: %s' % json.dumps(client.cost(), ensure_ascii=False), flush=True)
+        print('live cost: {}'.format(json.dumps(client.cost(), ensure_ascii=False)), flush=True)
     except Exception:
         pass
     if fence_hit:
-        raise SystemExit('REFUSE: DeepSeek 401/402 on %s' % fence_hit)
+        raise SystemExit('REFUSE: DeepSeek 401/402 on {}'.format(fence_hit))
     return paths
 
 
@@ -1726,12 +1725,12 @@ def main(argv=None) -> int:
         payload_idx.update(manifest_idx)
     store_idx = {'by_key': {}, 'all_keys': []}
     if not args.dry and store_path:
-        print('store: %s' % store_path, flush=True)
+        print('store: {}'.format(store_path), flush=True)
         store_idx = load_store_index(store_path, wanted=set(keys))
         print('store index: %d wanted keys with rows, %d key universe'
               % (len(store_idx['by_key']), len(store_idx['all_keys'])), flush=True)
     if input_dir:
-        print('input-dir: %s' % input_dir, flush=True)
+        print('input-dir: {}'.format(input_dir), flush=True)
 
     if args.live:
         paths = produce_live(keys, args.out_dir, model, args.env_file,

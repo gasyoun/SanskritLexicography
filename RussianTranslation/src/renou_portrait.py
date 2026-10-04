@@ -125,13 +125,13 @@ def cmd_demo(path, words):
             print('%-14s %s%s' % (o['iast'], o.get('renou_enriched'),
                   '  [малоинформативно]' if p and p.get('renou_low_info') else ''))
             print('   label: %s' % (p['renou_label'] if p else '—'))
-            print('   первое свидетельство: %s%s' % (p['renou_first'] or '—',
+            print('   первое свидетельство: {}{}'.format(p['renou_first'] or '—',
                   ('  · ' + p['renou_note']) if p and p['renou_note'] else '') if p else '—')
-            print('   provenance: %s' % o.get('renou_provenance'))
+            print('   provenance: {}'.format(o.get('renou_provenance')))
             if p and p.get('renou_register_label'):
-                print('   регистр: %s%s' % (p['renou_register_label'],
+                print('   регистр: {}{}'.format(p['renou_register_label'],
                       '  [малоинформативно]' if p.get('renou_register_low_info') else ''))
-                print('   register provenance: %s' % o.get('renou_register_provenance'))
+                print('   register provenance: {}'.format(o.get('renou_register_provenance')))
             want.discard(o['iast'])
             if not want:
                 break

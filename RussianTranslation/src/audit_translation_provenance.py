@@ -36,7 +36,7 @@ def unresolved_note(prov):
     alias = prov.get('model') or 'unknown'
     date = prov.get('generated_at') or 'unknown-date'
     wf_file = prov.get('wf_file') or 'unknown-wf'
-    return "version unresolved - alias %r at %s (wf_file=%s)" % (alias, date, wf_file)
+    return "version unresolved - alias {!r} at {} (wf_file={})".format(alias, date, wf_file)
 
 
 def audit(path):
@@ -156,7 +156,7 @@ def print_report(result):
         print()
         print('First stale (re-run) examples:')
         for ex in result['stale_examples']:
-            print('  line=%s key1=%s ord=%s  %s' % ex)
+            print('  line={} key1={} ord={}  {}'.format(*ex))
     print()
     print('Top RU model/version groups:')
     for (model, version), n in result['by_model'].most_common(12):
@@ -170,12 +170,12 @@ def print_report(result):
         print()
         print('First missing-version examples:')
         for ex in result['missing_examples']:
-            print('  line=%s key1=%s subcard=%s model=%s generated_at=%s wf_file=%s' % ex)
+            print('  line={} key1={} subcard={} model={} generated_at={} wf_file={}'.format(*ex))
     if result['unresolved_examples']:
         print()
         print('First unresolved-note examples:')
         for ex in result['unresolved_examples']:
-            print('  line=%s key1=%s subcard=%s note=%s' % ex)
+            print('  line={} key1={} subcard={} note={}'.format(*ex))
 
 
 def selftest():
@@ -219,7 +219,7 @@ def main():
     if args.selftest:
         return selftest()
     if not os.path.exists(args.store):
-        sys.exit('no store %r' % args.store)
+        sys.exit('no store {!r}'.format(args.store))
     result = audit(args.store)
     print_report(result)
     if args.write:

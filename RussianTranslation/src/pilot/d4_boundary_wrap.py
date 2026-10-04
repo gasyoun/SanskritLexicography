@@ -215,7 +215,7 @@ def scan_store(store_path):
             ru = row.get('ru') or ''
             if not is_ru_n0_candidate(de, ru):
                 continue
-            label = '%s|%s|%s' % (row.get('key1'), row.get('subcard'), row.get('sense_tag'))
+            label = '{}|{}|{}'.format(row.get('key1'), row.get('subcard'), row.get('sense_tag'))
             ok, result = try_boundary_wrap(de, ru)
             if ok:
                 eligible.append((line_number, label))
@@ -233,11 +233,11 @@ def main():
     default_local = os.path.join(SRC, 'pwg_ru_translated.jsonl')
     store = args.store or canonical_store(default_local)
     if not os.path.exists(store):
-        sys.exit('STORE ABSENT: %s' % store)
+        sys.exit('STORE ABSENT: {}'.format(store))
 
     eligible, ineligible = scan_store(store)
     total_ineligible = sum(len(v) for v in ineligible.values())
-    print('store                          : %s' % store)
+    print('store                          : {}'.format(store))
     print('D4 ru_n==0 rows total          : %d' % (len(eligible) + total_ineligible))
     print('  mechanically eligible        : %d' % len(eligible))
     print('  ineligible (manual review)   : %d' % total_ineligible)

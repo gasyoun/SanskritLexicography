@@ -45,7 +45,7 @@ def table():
             # when CSL_SIBLING_ROOT was explicitly set (H1902) — that is the operator
             # asserting the siblings exist, so a missing table there is an error, not
             # a degradation.
-            sys.stderr.write('pwg_ab: table source not found (%s); <ab> tooltips disabled\n' % AB)
+            sys.stderr.write('pwg_ab: table source not found ({}); <ab> tooltips disabled\n'.format(AB))
             return _AB
         for line in open(AB, encoding='utf-8'):
             if '\t' not in line:
@@ -88,7 +88,7 @@ def is_diasystem(en):
 
 def cmd_lookup(args):
     r = resolve(args[0])
-    print('%s = %s / %s' % (r['abbrev'], r['de'], r['en']) if r else '(not in pwgab)')
+    print('{} = {} / {}'.format(r['abbrev'], r['de'], r['en']) if r else '(not in pwgab)')
 
 
 def cmd_coverage(args):

@@ -73,7 +73,7 @@ def build_digest(root, date):
     gatelogs = dr.resolve(root, 'gatelogs_dir')
     lanes = day_ticks(telemetry, date)
     spot = None
-    spot_path = os.path.join(telemetry, 'spotcheck_%s.json' % date)
+    spot_path = os.path.join(telemetry, 'spotcheck_{}.json'.format(date))
     if os.path.exists(spot_path):
         spot = json.load(open(spot_path, encoding='utf-8'))
     freezes = sorted(os.path.basename(p) for p in
@@ -86,7 +86,7 @@ def build_digest(root, date):
         if r.get('date') == date]
     promoted = scd.day_promotion_records(dr.resolve(root, 'manifests_dir'), date)
 
-    lines = ['# Nonstop lanes — daily digest %s' % date, '']
+    lines = ['# Nonstop lanes — daily digest {}'.format(date), '']
     if not lanes:
         lines.append('**No lane ticked today.** If lanes were expected, the timers '
                      'are the first suspect (this line IS the alarm).')
@@ -111,15 +111,14 @@ def build_digest(root, date):
                                     spot.get('sev3_count') or 0,
                                     spot.get('san_loss_in_store')))
     else:
-        lines.append('- spot-check: **MISSING for %s** (INCONCLUSIVE, not clean)' % date)
+        lines.append('- spot-check: **MISSING for {}** (INCONCLUSIVE, not clean)'.format(date))
     lines.append('- freezes: %s' % (', '.join(freezes) or 'none'))
     lines.append('- pauses: %s' % (', '.join(pauses) or 'none'))
     lines.append('- parked today: %d%s' % (len(parked_today),
-                 (' — ' + '; '.join('%s (%s)' % (r.get('key'), r.get('reason'))
+                 (' — ' + '; '.join('{} ({})'.format(r.get('key'), r.get('reason'))
                                     for r in parked_today[:5])) if parked_today else ''))
     lines.append('')
-    lines.append('_Generated %s UTC by digest_daily.py (H2175 R4.4)._'
-                 % time.strftime('%H:%M', time.gmtime()))
+    lines.append('_Generated {} UTC by digest_daily.py (H2175 R4.4)._'.format(time.strftime('%H:%M', time.gmtime())))
     return '\n'.join(lines) + '\n'
 
 
@@ -138,11 +137,11 @@ def main(argv=None):
         ap.error('--data-root is required')
     text = build_digest(args.data_root, args.date)
     out = os.path.join(dr.resolve(args.data_root, 'telemetry_dir'),
-                       'digest_%s.md' % args.date)
+                       'digest_{}.md'.format(args.date))
     os.makedirs(os.path.dirname(out), exist_ok=True)
     with open(out, 'w', encoding='utf-8', newline='\n') as f:
         f.write(text)
-    print('digest -> %s' % out)
+    print('digest -> {}'.format(out))
     if args.issue:
         proc = subprocess.run(['gh', 'issue', 'comment', str(args.issue),
                                '--repo', args.repo, '--body-file', out],
@@ -168,7 +167,7 @@ def selftest():
                                 'reason': 'live_gate_no_go_all_roster'}) + '\n')
             f.write(json.dumps({'ts': now - 86400 * 3, 'verdict': 'window',
                                 'window_cost_usd': 9.9}) + '\n')   # old, excluded
-        with open(os.path.join(tdir, 'spotcheck_%s.json' % date), 'w',
+        with open(os.path.join(tdir, 'spotcheck_{}.json'.format(date)), 'w',
                   encoding='utf-8', newline='\n') as f:
             json.dump({'sampled': ['a'], 'population': 10, 'sev3_count': 1,
                        'san_loss_in_store': False}, f)
@@ -181,9 +180,9 @@ def selftest():
         assert 'parked today: 1' in text and 'weird~~1' in text
         assert '$9.9' not in text, 'old ticks leaked into the day digest'
         # missing spot-check is called out as INCONCLUSIVE, never silently clean
-        os.remove(os.path.join(tdir, 'spotcheck_%s.json' % date))
+        os.remove(os.path.join(tdir, 'spotcheck_{}.json'.format(date)))
         text2 = build_digest(td, date)
-        assert 'MISSING for %s' % date in text2
+        assert 'MISSING for {}'.format(date) in text2
     print('digest_daily selftest: PASS (day scoping, lane summary, spot-check '
           'inconclusive-when-missing, parked surfacing)')
     return 0

@@ -66,8 +66,8 @@ SL = os.path.dirname(REPO)                                  # SanskritLexicograp
 ADJ_TSV = os.path.join(REPO, 'research', 'pwg_compound_differs_adjudication.tsv')
 REVIEW_DIR = os.path.join(REPO, 'review')
 SHEET_ID = 'sanskritlexicography-pwg-compound-rules_ratify30'
-SHEET_HTML = os.path.join(REVIEW_DIR, '%s_review.html' % SHEET_ID)
-MANIFEST_JSON = os.path.join(REVIEW_DIR, '%s_evidence_manifest.json' % SHEET_ID)
+SHEET_HTML = os.path.join(REVIEW_DIR, '{}_review.html'.format(SHEET_ID))
+MANIFEST_JSON = os.path.join(REVIEW_DIR, '{}_evidence_manifest.json'.format(SHEET_ID))
 SEED = 1887
 TARGET = 30
 PER_RULE_FLOOR = 3
@@ -252,8 +252,8 @@ def gloss_ab(s):
                 vis, title = _AB_RU.display(tok)
             except Exception:
                 pass
-        return ('<abbr title="%s">%s</abbr>' % (esc(title), esc(vis))) if title \
-            else '<abbr>%s</abbr>' % esc(vis)
+        return ('<abbr title="{}">{}</abbr>'.format(esc(title), esc(vis))) if title \
+            else '<abbr>{}</abbr>'.format(esc(vis))
     return _AB.sub(one, s or '')
 
 
@@ -275,7 +275,7 @@ def iast_pwg_paren(s):
     for m in _SPAN.finditer(s):
         out.append(esc(s[pos:m.start()]))
         if m.group(1) is not None:
-            out.append('<i>%s</i>' % esc(slp1_iast(m.group(1))))
+            out.append('<i>{}</i>'.format(esc(slp1_iast(m.group(1)))))
         else:
             out.append(gloss_ab(m.group(0)))
         pos = m.end()
@@ -333,7 +333,7 @@ def iast_evidence(s):
             k, v = chunk.split('=', 1)
             k = _EV_KEYS.get(k.strip(), k.strip())
             vals = ' | '.join(_ev_val(p.strip()) for p in v.split('|') if p.strip())
-            out.append(('%s: %s' % (k, vals)) if vals else k)
+            out.append(('{}: {}'.format(k, vals)) if vals else k)
         else:
             out.append(slp1_iast(chunk))
     return '; '.join(out)
@@ -346,7 +346,7 @@ def src_cell(raw, body_html):
     """
     if not (raw or '').strip():
         return '—'
-    return '<code title="источник (SLP1): %s">%s</code>' % (esc(raw), body_html)
+    return '<code title="источник (SLP1): {}">{}</code>'.format(esc(raw), body_html)
 
 
 # --------------------------------------------------------- MW display split
@@ -375,15 +375,14 @@ def mw_display_split(index_members, rule, k2_raw=''):
         m = _ANUSVARA_TAIL.match(parts[1])
         if m:
             parts = [parts[0] + 'M', m.group(1)]
-            note = ('MW печатает %s: анусвара отделена дефисом и стоит справа от '
-                    'границы. Это запись, а не утверждение, что <i>%s</i> — '
+            note = ('MW печатает {}: анусвара отделена дефисом и стоит справа от '
+                    'границы. Это запись, а не утверждение, что <i>{}</i> — '
                     'самостоятельное слово; здесь она приклеена обратно к первой '
-                    'части.' % (k2_shown, esc(slp1_iast(m.group(0)))))
+                    'части.'.format(k2_shown, esc(slp1_iast(m.group(0)))))
     if "'" in (k2_raw or ''):
         note = ((note + ' ') if note else '') + (
-            'В %s апостроф — <b>аваграха</b>: он стоит на месте начального '
-            '<i>a</i>, выпавшего по сандхи, то есть восходит к <i>%s</i>.'
-            % (k2_shown, esc(iast_mw_k2(k2_raw.replace("'", 'a')))))
+            'В {} апостроф — <b>аваграха</b>: он стоит на месте начального '
+            '<i>a</i>, выпавшего по сандхи, то есть восходит к <i>{}</i>.'.format(k2_shown, esc(iast_mw_k2(k2_raw.replace("'", 'a')))))
     return ' + '.join(slp1_iast(p) for p in parts), note
 
 
@@ -456,11 +455,10 @@ def build_items(sample, columns, deriv, rule_sizes, queue_total):
 
         # ---- the claim being ratified, with how much of the queue rides on it
         n_rule = rule_sizes.get(r['rule'], 0)
-        q = ['<p class="claim"><b>Правило:</b> %s '
-             '<span class="stat">— покрывает %s строк очереди (%.1f %% из %s)</span></p>'
-             % (esc(rule['ru']), _thou(n_rule), 100.0 * n_rule / max(1, queue_total),
+        q = ['<p class="claim"><b>Правило:</b> {} '
+             '<span class="stat">— покрывает {} строк очереди ({:.1f} % из {})</span></p>'.format(esc(rule['ru']), _thou(n_rule), 100.0 * n_rule / max(1, queue_total),
                 _thou(queue_total)),
-             '<p>%s</p>' % rule['claim']]
+             '<p>{}</p>'.format(rule['claim'])]
 
         # ---- both sides, IAST, with what each side IS.
         # The source cell is dropped when it would only repeat the split (MG
@@ -477,17 +475,16 @@ def build_items(sample, columns, deriv, rule_sizes, queue_total):
             '<table class="sides"><tr><th></th><th>членение</th><th>что напечатано в словаре</th></tr>'
             '<tr><td><b>PWG</b><br><span class="prov">члены как ЛЕКСЕМЫ, '
             'из этимологической скобки статьи</span></td>'
-            '<td class="split">%s</td><td>%s</td></tr>'
+            '<td class="split">{}</td><td>{}</td></tr>'
             '<tr><td><b>MW split</b><br><span class="prov">сегментация MW '
             '&lt;k2&gt; эм-дефисами (Дж. Фундербёрк); по построению склады&shy;вается '
             'обратно в заголовок</span></td>'
-            '<td class="split">%s</td><td>%s</td></tr></table>'
-            % (esc(pwg_i), pwg_src_cell, esc(idx_i), mw_src_cell))
+            '<td class="split">{}</td><td>{}</td></tr></table>'.format(esc(pwg_i), pwg_src_cell, esc(idx_i), mw_src_cell))
         if mw_note:
-            q.append('<p class="note">%s</p>' % mw_note)
+            q.append('<p class="note">{}</p>'.format(mw_note))
         # MG's binary ruling — only where MW actually lists more than two.
         if len([p for p in (r['index_members'] or '').split('+') if p.strip()]) > 2:
-            q.append('<p class="note">%s</p>' % BINARY_NOTE)
+            q.append('<p class="note">{}</p>'.format(BINARY_NOTE))
         fields += ['pwg_members', 'index_members']
         if (r.get('pwg_source_paren') or '').strip():
             fields.append('pwg_source_paren')
@@ -495,8 +492,7 @@ def build_items(sample, columns, deriv, rule_sizes, queue_total):
             fields.append('mw_k2_raw')
 
         if (r.get('evidence') or '').strip():
-            q.append('<p class="ev"><b>Что именно различается:</b> %s</p>'
-                     % src_cell(r['evidence'], esc(iast_evidence(r['evidence']))))
+            q.append('<p class="ev"><b>Что именно различается:</b> {}</p>'.format(src_cell(r['evidence'], esc(iast_evidence(r['evidence'])))))
             fields.append('evidence')
 
         # ---- panels
@@ -506,19 +502,19 @@ def build_items(sample, columns, deriv, rule_sizes, queue_total):
         links = []
         href = pwg_entry_href(k1)
         if href:
-            links.append('<a href="%s">статья PWG (со-локация kosha)</a>' % href)
+            links.append('<a href="{}">статья PWG (со-локация kosha)</a>'.format(href))
             fields.append('pwg_entry_href')
         col = columns.get(k1)
         if col:
             sh = pwg_scan_href(re.sub(r'\D', '', col.split('-')[-1]) or 0)
             if sh:
-                links.append('<a href="%s">скан PWG, столбец %s</a>' % (sh, esc(col)))
+                links.append('<a href="{}">скан PWG, столбец {}</a>'.format(sh, esc(col)))
                 fields.append('pwg_scan')
         else:
             omitted.append('скан PWG: столбец для этого заголовка отсутствует в pwg_columns.tsv')
-        links.append('<a href="%s">MW в Cologne</a>' % CDSL_MW)
+        links.append('<a href="{}">MW в Cologne</a>'.format(CDSL_MW))
         if (r.get('L_id') or '').strip():
-            links.append('PWG <code>L%s</code>' % esc(r['L_id']))
+            links.append('PWG <code>L{}</code>'.format(esc(r['L_id'])))
             fields.append('L_id')
         panels.append(('Источники', ' · '.join(links)))
 
@@ -526,7 +522,7 @@ def build_items(sample, columns, deriv, rule_sizes, queue_total):
         f = (r.get('dcs_freq') or '').strip()
         if f and f not in ('0', ''):
             panels.append(('Частотность',
-                           'DCS: <b>%s</b> вхождений корпуса.' % esc(f)))
+                           'DCS: <b>{}</b> вхождений корпуса.'.format(esc(f))))
             fields.append('dcs_freq')
         else:
             panels.append(('Частотность',
@@ -547,8 +543,8 @@ def build_items(sample, columns, deriv, rule_sizes, queue_total):
         good, bad = valid_sutras(raw)
         suppressed_total += len(bad)
         if good:
-            hl = ' · '.join('<a href="%s">P. %s</a>' % (sutra_href(g), esc(g)) for g in good)
-            body = 'Сутры: %s' % hl
+            hl = ' · '.join('<a href="{}">P. {}</a>'.format(sutra_href(g), esc(g)) for g in good)
+            body = 'Сутры: {}'.format(hl)
             fields.append('panini_sutras')
         else:
             body = '<span class="miss">Сутр Панини для этого заголовка нет.</span>'
@@ -560,9 +556,9 @@ def build_items(sample, columns, deriv, rule_sizes, queue_total):
                      % (len(bad), esc(', '.join(bad[:4]))))
         gana = (drow.get('ganas') or '').strip()
         if gana:
-            body += ('<br>Гана: <b>%s</b>%s' % (
+            body += ('<br>Гана: <b>{}</b>{}'.format(
                 esc(slp1_iast(gana)),
-                ' (подтверждена сутрой %s)' % esc(drow.get('gana_sutras', ''))
+                ' (подтверждена сутрой {})'.format(esc(drow.get('gana_sutras', '')))
                 if (drow.get('gana_corroborated') or '').strip() in ('1', 'true', 'True')
                 else ''))
             fields.append('ganas')
@@ -582,7 +578,7 @@ def build_items(sample, columns, deriv, rule_sizes, queue_total):
             # «Правило:» (where it carries its claim and its row count) and in the
             # facet bar (where it filters); the badge said nothing the other two
             # did not already say.
-            'title': '%s' % iast,
+            'title': '{}'.format(iast),
             'title_href': href,
             'question': ''.join(q),
             'panels': panels,
@@ -659,13 +655,12 @@ def render(sample, columns, deriv, rule_sizes, quota, queue_total, generated=GEN
             'словарей (этимологическая скобка PWG и &lt;k2&gt; MW — если он не '
             'повторяет членение слово в слово), частота DCS, ссылки на статью и скан. '
             '<b>Тип самасы не показан ни на одной карточке</b>, и это не пропуск '
-            'конкретной карточки: в <a href="%s">SamasaChakram</a> есть таксономия '
+            'конкретной карточки: в <a href="{}">SamasaChakram</a> есть таксономия '
             '(4 класса / 10 семейств / 58 подтипов) и 20 разобранных примеров, но '
             'соответствия «заголовок → подтип» нет ни в одном репозитории. Чтобы его '
             'назначить, нужен классификатор по двум членам и их падежному отношению '
             '(татпуруша / кармадхарая / бахуврихи / двандва / авьяибхава) — '
-            'отдельная работа, не побочный продукт этого голосования.'
-            % KOSHA_WHEEL),
+            'отдельная работа, не побочный продукт этого голосования.'.format(KOSHA_WHEEL)),
         'approve_label': 'Правило верно',
         'reject_label': 'Правило ломается',
         'reject_labels': REJECT_LABELS,
@@ -684,7 +679,7 @@ def render(sample, columns, deriv, rule_sizes, quota, queue_total, generated=GEN
         'generated': generated,
         'font_scale': 1.5,
         'extra_css': EXTRA_CSS,
-        'save_as': r'RussianTranslation\review\%s_decisions.json' % SHEET_ID,
+        'save_as': r'RussianTranslation\review\{}_decisions.json'.format(SHEET_ID),
         'strict_review': {'require_reject_note': True},
         # The emitter's own chrome is English by default; this sheet is Russian.
         # NOTE: the per-card "Defer" button and the "Reason" select label are NOT
@@ -825,8 +820,8 @@ def main():
         with io.open(SHEET_HTML, 'w', encoding='utf-8', newline='\n') as f:
             f.write(html)
         man.write(MANIFEST_JSON)
-        print('wrote sheet    -> %s' % SHEET_HTML)
-        print('wrote manifest -> %s' % MANIFEST_JSON)
+        print('wrote sheet    -> {}'.format(SHEET_HTML))
+        print('wrote manifest -> {}'.format(MANIFEST_JSON))
         print('cards: %d over %d rules; suppressed %d impossible sutra refs'
               % (len(items), len(sizes), suppressed))
         print('preflight: PASS (%d prior-art artifacts declared)' % len(man.joined))

@@ -33,30 +33,30 @@ for g in order:
             '<span class="rc">%d</span>'
             '<span class="ex">%s</span></div>'
             % (a['surface'], a['pratyaya_deva'], a['pratyaya'], a['function'], a['apte_roots'], ex))
-    rows.append('<section class="grp"><h2>%s</h2>%s</section>' % (g, ''.join(cells)))
+    rows.append('<section class="grp"><h2>{}</h2>{}</section>'.format(g, ''.join(cells)))
 
 POSTER = '''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/>
 <title>Sanskrit affixes — wall chart</title>
 <style>
-@page { size: A4 landscape; margin: 10mm; }
-body { font-family: "Segoe UI", system-ui, sans-serif; color: #1a1a18; background: #fff; margin: 14px; }
-h1 { font-size: 20px; margin: 0 0 2px; }
-.sub { color: #5f5e5a; font-size: 11px; margin: 0 0 10px; }
-.cols { column-count: 3; column-gap: 14px; }
-.grp { break-inside: avoid; border: 0.5px solid #d3d1c7; border-radius: 6px; padding: 6px 8px; margin: 0 0 10px; }
-.grp h2 { font-size: 12px; color: #534ab7; margin: 0 0 4px; border-bottom: 0.5px solid #eee; padding-bottom: 2px; }
-.row { display: grid; grid-template-columns: 38px 64px 1fr 22px; gap: 4px; align-items: baseline; font-size: 10px; padding: 1px 0; }
-.sfx { font-weight: 600; font-size: 12px; }
-.pr { color: #3c3489; }
-.fn { color: #444; }
-.rc { color: #888; text-align: right; }
-.ex { grid-column: 1 / -1; color: #777; font-style: italic; font-size: 9.5px; margin: 0 0 1px 38px; }
-@media print { .grp { border-color: #bbb; } }
+@page {{ size: A4 landscape; margin: 10mm; }}
+body {{ font-family: "Segoe UI", system-ui, sans-serif; color: #1a1a18; background: #fff; margin: 14px; }}
+h1 {{ font-size: 20px; margin: 0 0 2px; }}
+.sub {{ color: #5f5e5a; font-size: 11px; margin: 0 0 10px; }}
+.cols {{ column-count: 3; column-gap: 14px; }}
+.grp {{ break-inside: avoid; border: 0.5px solid #d3d1c7; border-radius: 6px; padding: 6px 8px; margin: 0 0 10px; }}
+.grp h2 {{ font-size: 12px; color: #534ab7; margin: 0 0 4px; border-bottom: 0.5px solid #eee; padding-bottom: 2px; }}
+.row {{ display: grid; grid-template-columns: 38px 64px 1fr 22px; gap: 4px; align-items: baseline; font-size: 10px; padding: 1px 0; }}
+.sfx {{ font-weight: 600; font-size: 12px; }}
+.pr {{ color: #3c3489; }}
+.fn {{ color: #444; }}
+.rc {{ color: #888; text-align: right; }}
+.ex {{ grid-column: 1 / -1; color: #777; font-style: italic; font-size: 9.5px; margin: 0 0 1px 38px; }}
+@media print {{ .grp {{ border-color: #bbb; }} }}
 </style></head><body>
 <h1>Sanskrit affixes — what forms what</h1>
 <p class="sub">Grouped by function · the number = Apte productivity (distinct roots taking the affix) · surface suffix ← Pāṇinian pratyaya · one example each. Built from affix_map.tsv.</p>
-<div class="cols">%s</div>
-</body></html>''' % ''.join(rows)
+<div class="cols">{}</div>
+</body></html>'''.format(''.join(rows))
 
 # ---------------------------------------------------------------- quiz (data-driven MCQ)
 QUIZ = '''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/>
@@ -127,11 +127,11 @@ render();
 cards = []
 for a in AFX:
     ex = ', '.join(e['word_iast'] for e in a['examples'][:3])
-    front = '%s (%s) →' % (a['pratyaya_deva'], a['pratyaya'])
-    back = '-%s · %s · %s%s%s' % (a['surface'], a['function'], ' '.join(a['anubandha']),
+    front = '{} ({}) →'.format(a['pratyaya_deva'], a['pratyaya'])
+    back = '-{} · {} · {}{}{}'.format(a['surface'], a['function'], ' '.join(a['anubandha']),
                                   ('  ⟨e.g. ' + ex + '⟩') if ex else '',
                                   ('  ' + a['dsg_url']) if a.get('dsg_url') else '')
-    cards.append('%s\t%s' % (front, back))
+    cards.append('{}\t{}'.format(front, back))
 
 open(os.path.join(HERE, 'affix_poster.html'), 'w', encoding='utf-8').write(POSTER)
 open(os.path.join(HERE, 'affix_quiz.html'), 'w', encoding='utf-8').write(QUIZ)

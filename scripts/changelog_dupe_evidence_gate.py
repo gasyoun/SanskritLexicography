@@ -98,7 +98,7 @@ def main(argv=None):
                                   'this repo ships no changelog, so no entry can repeat')
         ev.assert_nonvacuous()
         ev.emit(evidence_path)
-        print('no changelog found in %s — nothing to check' % args.repo)
+        print('no changelog found in {} — nothing to check'.format(args.repo))
         return 0
 
     with open(root, encoding='utf-8') as fh:
@@ -111,12 +111,10 @@ def main(argv=None):
     for path in changelogs:
         if path == root:
             continue
-        ev.add_input('unexamined_changelog:%s'
-                     % os.path.relpath(path, args.repo).replace('\\', '/'),
+        ev.add_input('unexamined_changelog:{}'.format(os.path.relpath(path, args.repo).replace('\\', '/')),
                      path=path, units=0)
         ev.warnings.append(
-            'C8-3: %s exists and is NOT compared by this gate (root-only scope)'
-            % os.path.relpath(path, args.repo).replace('\\', '/'))
+            'C8-3: {} exists and is NOT compared by this gate (root-only scope)'.format(os.path.relpath(path, args.repo).replace('\\', '/')))
 
     dupes, skipped = cdb.find_duplicates(text, cdb.load_allowlist(args.repo))
     ev.add_predicate('entry_uniqueness', evaluations=compared, hits=len(dupes),
@@ -128,7 +126,7 @@ def main(argv=None):
     except ge.VacuousGateError as exc:
         ev.set_verdict('fail')
         ev.emit(evidence_path)
-        print('CHANGELOG DUPLICATE GATE: %s' % exc)
+        print('CHANGELOG DUPLICATE GATE: {}'.format(exc))
         return 1
     ev.emit(evidence_path)
 

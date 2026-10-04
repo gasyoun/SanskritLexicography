@@ -36,7 +36,7 @@ FAILS = []
 
 
 def check(cond, label):
-    print("  %s %s" % ("ok  " if cond else "FAIL", label))
+    print("  {} {}".format("ok  " if cond else "FAIL", label))
     if not cond:
         FAILS.append(label)
 
@@ -199,7 +199,7 @@ def main():
 
     print()
     if FAILS:
-        print("packset binding selftest FAILED: %s" % ", ".join(FAILS))
+        print("packset binding selftest FAILED: {}".format(", ".join(FAILS)))
         return 1
     print("packset binding selftest OK")
     return 0

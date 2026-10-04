@@ -95,7 +95,7 @@ def main():
 
     state = pipeline_version.git_source_state(ROOT)
     if state.get('worktree_dirty') is not True:
-        sys.exit('canary precondition failed: tree is not dirty (%r)' % state)
+        sys.exit('canary precondition failed: tree is not dirty ({!r})'.format(state))
 
     store = tempfile.mkstemp(prefix='h3982_canary_store_', suffix='.jsonl')[1]
     os.remove(store)
@@ -118,18 +118,17 @@ def main():
     checked, hashes = 0, set()
     for r in rows:
         pl = (r.get('provenance') or {}).get('pipeline') or {}
-        assert pl.get('source_commit'), 'row %s has no source_commit' % r.get('key1')
+        assert pl.get('source_commit'), 'row {} has no source_commit'.format(r.get('key1'))
         assert pl.get('worktree_dirty') is True, \
-            'row %s must record the dirty tree it was produced by' % r.get('key1')
+            'row {} must record the dirty tree it was produced by'.format(r.get('key1'))
         assert pl.get('dirty_component_sha'), 'a dirty row must identify its delta'
         for name in pipeline_version.COMPONENTS:
-            sha = pl.get('%s_sha' % name)
-            assert sha, 'row %s missing %s_sha' % (r.get('key1'), name)
+            sha = pl.get('{}_sha'.format(name))
+            assert sha, 'row {} missing {}_sha'.format(r.get('key1'), name)
             if sha == 'na':
                 continue
             blob = pipeline_version.resolve_blob(sha, archive_dir=archive_dir)
-            assert blob, 'RECORDED-BUT-UNRESOLVABLE %s_sha=%s -- the gap one layer down' \
-                % (name, sha)
+            assert blob, 'RECORDED-BUT-UNRESOLVABLE {}_sha={} -- the gap one layer down'.format(name, sha)
             hashes.add(sha)
         checked += 1
 

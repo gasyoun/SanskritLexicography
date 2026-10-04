@@ -105,7 +105,7 @@ def cite_of(seg):
     sv = ''
     if m.group('sv'):
         sv = ' ' + re.sub(r'\s*\)', ')', re.sub(r'\(\s*', '(', m.group('sv').strip()))
-    return '%s : %s%s' % (m.group('name').strip(), m.group('page'), sv)
+    return '{} : {}{}'.format(m.group('name').strip(), m.group('page'), sv)
 
 
 def lemma_tag(seg):
@@ -214,7 +214,7 @@ _LET = 'A-Za-zÀ-ÿĀ-ỿ'
 
 
 def located_in(cand, row):
-    return any(c and re.search(r'(?<![%s])%s(?![%s])' % (_LET, re.escape(c), _LET), row)
+    return any(c and re.search(r'(?<![{}]){}(?![{}])'.format(_LET, re.escape(c), _LET), row)
                for c in cand)
 
 
@@ -222,14 +222,14 @@ def check_result(key):
     frag = nws_fragment(key)
     if frag is None:
         return {'key': key, 'verdict': 'NO-RAW', 'returncode': 1,
-                'lines': ['  no raw input for %s' % key], 'rejected': False}
+                'lines': ['  no raw input for {}'.format(key)], 'rejected': False}
     if not frag:
         return {'key': key, 'verdict': 'NO-NWS', 'returncode': 1,
-                'lines': ['  no NWS fragment for %s' % key], 'rejected': False}
+                'lines': ['  no NWS fragment for {}'.format(key)], 'rejected': False}
     entries = split(frag)
     rows = card_rows(key)
     if rows is None:
-        lines = ['  no merged card output/%s.merged.md — split only:' % key]
+        lines = ['  no merged card output/{}.merged.md — split only:'.format(key)]
         for e in entries:
             lines.append('   %-26s | %s' % (' / '.join(e['owners']), e['gloss'][:70]))
         return {'key': key, 'verdict': 'NO-CARD', 'returncode': 1,
@@ -243,14 +243,12 @@ def check_result(key):
         hit = [r for r in rows if located_in(cand, r)]
         if not hit:
             miss += 1
-            lines.append('   ?  no unique locator for owner %s — verify by hand (gloss: %s)'
-                         % ('/'.join(exp), e['gloss'][:50]))
+            lines.append('   ?  no unique locator for owner {} — verify by hand (gloss: {})'.format('/'.join(exp), e['gloss'][:50]))
             continue
         # PASS if ANY located row is correctly attributed
         if not any(any(s and s in row_owner(r) for s in exp) for r in hit):
             bad += 1
-            lines.append('   ✗  «%s» card owner=[%s]  expected=[%s]'
-                         % (cand[0], row_owner(hit[0]), '/'.join(exp)))
+            lines.append('   ✗  «{}» card owner=[{}]  expected=[{}]'.format(cand[0], row_owner(hit[0]), '/'.join(exp)))
     verdict = 'CLEAN' if not bad else 'MISATTRIBUTION'
     lines.append('  → %s (%d mismatch%s%s)' % (
         verdict, bad, '' if bad == 1 else 'es',
@@ -349,8 +347,7 @@ def selftest():
     arv_ok = (len(arv) == 5 and arv_sur == ARVANT_SURNAMES
               and arv[-1]['owners'] == ['Hillebrandt 1885 : 72 (s.v. árvant)']
               and arv[-1]['gloss'].startswith('Adj f [f zu árvant ]'))
-    print('  condensed cross-ref owner (H4539) %s — owners=%s' %
-          ('ok' if arv_ok else '✗', '/'.join(str(s) for s in arv_sur)))
+    print('  condensed cross-ref owner (H4539) {} — owners={}'.format('ok' if arv_ok else '✗', '/'.join(str(s) for s in arv_sur)))
     ok = ok and arv_ok
 
     old_inp, old_outp = INP, OUTP
@@ -369,7 +366,7 @@ def selftest():
             res = check_result(key)
             lit_ok = res['verdict'] == 'CLEAN'
             print('  root-split literal stem resolver %s' %
-                  ('ok' if lit_ok else '✗ got %s' % res['verdict']))
+                  ('ok' if lit_ok else '✗ got {}'.format(res['verdict'])))
             ok = ok and lit_ok
             # 4. H4539: check_result CLEAN on the canary card (was MISATTRIBUTION)
             akey = 'arvant~~h0_zz_nws00'
@@ -379,8 +376,7 @@ def selftest():
                 ARVANT_CARD)
             ares = check_result(akey)
             cr_ok = ares['verdict'] == 'CLEAN'
-            print('  condensed cross-ref check_result (H4539) %s — %s' %
-                  ('ok' if cr_ok else '✗', ares['lines'][-1].strip()))
+            print('  condensed cross-ref check_result (H4539) {} — {}'.format('ok' if cr_ok else '✗', ares['lines'][-1].strip()))
             ok = ok and cr_ok
     finally:
         globals()['INP'] = old_inp
@@ -396,8 +392,8 @@ def main():
     key = sys.argv[2]
     if cmd == 'split':
         for e in split(nws_fragment(key)):
-            print('  [%s] %s%s' % (' / '.join(e['owners']) or '?',
-                                   ('<%s> ' % e['lemma']) if e['lemma'] else '',
+            print('  [{}] {}{}'.format(' / '.join(e['owners']) or '?',
+                                   ('<{}> '.format(e['lemma'])) if e['lemma'] else '',
                                    e['gloss'][:90]))
     elif cmd == 'check':
         sys.exit(check(key))

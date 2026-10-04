@@ -170,7 +170,7 @@ def _selftest():
     ga = ("{#yadA ca pfTivIM sarvAM yajamAno 'nuparyagAH#}\n"
           "<ls>MBH. 12,8081.</ls>")
     out, n_col, n_kept = collapse(ga)
-    check("#} <ls>MBH" in out, "the motivating case joins: %r" % out[-40:])
+    check("#} <ls>MBH" in out, "the motivating case joins: {!r}".format(out[-40:]))
     check((n_col, n_kept) == (1, 0), "one inherited wrap collapsed, none kept")
 
     div = "{%достигать%}: {#ko vA#}\n<div n=\"1\"> 1) {%обретать%}"
@@ -194,7 +194,7 @@ def _selftest():
     page = "{#aBIpsatI#}\n<ls>MBH. 1,6469.</ls>\n[Page1-0651]\n{#aBIpsantI#}"
     outp, n_colp, n_keptp = collapse(page)
     check("\n" not in outp and n_colp == 3,
-          "a page-marker line collapses on both sides: %r" % outp)
+          "a page-marker line collapses on both sides: {!r}".format(outp))
 
     check(collapse("одна строка")[0] == "одна строка", "a body with no newline is untouched")
     check(collapse("")[0] == "" and collapse(None)[0] == "", "empty/None is safe")
@@ -213,7 +213,7 @@ def _selftest():
 
     kinds = [k for _, k, _, _ in classify_sites(page)]
     check(kinds == ["inherited", "inherited", "inherited"],
-          "classify_sites labels every site: %r" % kinds)
+          "classify_sites labels every site: {!r}".format(kinds))
     check([k for _, k, _, _ in classify_sites(div)] == ["structural"],
           "classify_sites finds the structural one")
 

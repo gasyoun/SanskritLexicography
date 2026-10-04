@@ -83,9 +83,9 @@ def norm_k2(line):
 
 def load_dict(code):
     """-> (membership:set, profile:dict) for one dict from its now-2026 files."""
-    files = sorted(glob.glob(os.path.join(SRC, "%s-unique-key*.txt" % code)))
+    files = sorted(glob.glob(os.path.join(SRC, "{}-unique-key*.txt".format(code))))
     if not files:
-        raise SystemExit("no now-2026 files for %s" % code)
+        raise SystemExit("no now-2026 files for {}".format(code))
     member = set()
     prof = {"files": " ".join(os.path.basename(f) for f in files),
             "raw_lines": 0, "bare_keys": 0,
@@ -137,8 +137,8 @@ def build():
                                [str(p[c]) for c in cols[4:]]) + "\n")
     byn = collections.Counter(len(v) for v in union.values())
     print("union over %d dicts: %d headwords -> %s" % (len(DICTS), len(union), tsv))
-    print("corroboration: %s" % ", ".join("n=%d:%d" % (n, byn.get(n, 0))
-                                          for n in sorted(byn)))
+    print("corroboration: {}".format(", ".join("n=%d:%d" % (n, byn.get(n, 0))
+                                          for n in sorted(byn))))
     return union, profiles
 
 

@@ -232,10 +232,10 @@ def render_report(source_map, table, stats):
     L = []
     L.append("# C2 — re-window delta report on the corrected work dates")
     L.append("")
-    L.append("_Created: %s · Handoff [H4728](https://github.com/gasyoun/Uprava/blob/main/"
-             "handoffs/%s-OxAlpha_SanskritLexicography_xwalk-b9-work-dating-rewindow_"
+    L.append("_Created: {} · Handoff [H4728](https://github.com/gasyoun/Uprava/blob/main/"
+             "handoffs/{}-OxAlpha_SanskritLexicography_xwalk-b9-work-dating-rewindow_"
              "14.09.26.md) · Table [C2P2_WORK_DATING_TABLE.md](C2P2_WORK_DATING_TABLE.md) "
-             "· Phase 1 [C2P1_ATTESTATION_WINDOW.md](C2P1_ATTESTATION_WINDOW.md)_" % (TODAY, HANDOFF))
+             "· Phase 1 [C2P1_ATTESTATION_WINDOW.md](C2P1_ATTESTATION_WINDOW.md)_".format(TODAY, HANDOFF))
     L.append("")
     L.append("_Dr. Mārcis Gasūns_")
     L.append("")
@@ -263,27 +263,24 @@ def render_report(source_map, table, stats):
         r = works[s]
         effect = ("dropped (dating-invalid)" if not r["dating_valid"]
                   else "repointed into the sourced range")
-        L.append("| `%s` | %s | %s | %s – %s | %s | %s |" % (
+        L.append("| `{}` | {} | {} | {} – {} | {} | {} |".format(
             s, r["name"], fmt_year(r["map_date"]), fmt_year(r["earliest"]),
             fmt_year(r["latest"]), r["confidence"], effect))
     L.append("")
-    L.append("## Date-range recount (%s windows with ≥1 dated work)" % n(stats["windows"]))
+    L.append("## Date-range recount ({} windows with ≥1 dated work)".format(n(stats["windows"])))
     L.append("")
     L.append("| Measure | Windows |")
     L.append("| --- | --- |")
-    L.append("| windows recounted | %s |" % n(stats["windows"]))
-    L.append("| bounds unchanged | %s |" % n(stats["unchanged"]))
-    L.append("| any bound moved | %s |" % n(stats["moved_any"]))
-    L.append("| `earliest` moved | %s (earlier %s · later %s) |"
-             % (n(stats["earliest_moved"]), n(stats["earliest_earlier"]),
+    L.append("| windows recounted | {} |".format(n(stats["windows"])))
+    L.append("| bounds unchanged | {} |".format(n(stats["unchanged"])))
+    L.append("| any bound moved | {} |".format(n(stats["moved_any"])))
+    L.append("| `earliest` moved | {} (earlier {} · later {}) |".format(n(stats["earliest_moved"]), n(stats["earliest_earlier"]),
                 n(stats["earliest_later"])))
-    L.append("| `latest` moved | %s (later %s · earlier %s) |"
-             % (n(stats["latest_moved"]), n(stats["latest_later"]),
+    L.append("| `latest` moved | {} (later {} · earlier {}) |".format(n(stats["latest_moved"]), n(stats["latest_later"]),
                 n(stats["latest_earlier"])))
-    L.append("| any bound widened | %s |" % n(stats["widened"]))
-    L.append("| any bound tightened | %s |" % n(stats["tightened"]))
-    L.append("| window VANISHED (only dated works were dating-invalid) | %s |"
-             % n(stats["vanished"]))
+    L.append("| any bound widened | {} |".format(n(stats["widened"])))
+    L.append("| any bound tightened | {} |".format(n(stats["tightened"])))
+    L.append("| window VANISHED (only dated works were dating-invalid) | {} |".format(n(stats["vanished"])))
     L.append("")
     L.append("Most movement is the point→range change itself (a work that was one number "
              "is now a bracket, so bounds widen by construction) plus the seven real "
@@ -300,7 +297,7 @@ def render_report(source_map, table, stats):
     L.append("| --- | --- | --- | --- | --- |")
     for s in conflicts:
         p = stats["per_siglum"][s]
-        L.append("| `%s` | %s | %s | %s | %s |" % (
+        L.append("| `{}` | {} | {} | {} | {} |".format(
             s, n(p["citing"]), n(p["earliest_moved"]), n(p["latest_moved"]),
             n(p["vanished"])))
     L.append("")
@@ -455,14 +452,14 @@ def main():
 
     if args.check:
         for f in fails:
-            print("FAIL %s" % f)
+            print("FAIL {}".format(f))
         print("%s — %s windows recounted, %d failures"
               % ("PASS" if not fails else "FAIL", n(stats["windows"]), len(fails)))
         return 1 if fails else 0
 
     if fails:
         for f in fails:
-            print("FAIL %s" % f)
+            print("FAIL {}".format(f))
         print("refusing to emit over %d invariant failures" % len(fails))
         return 1
 
@@ -474,13 +471,12 @@ def main():
     with open(OUT_REPORT_PATH, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(report_text)
 
-    print("windows recounted: %s | unchanged %s | moved_any %s | earliest moved %s | "
-          "latest moved %s | widened %s | tightened %s | vanished %s"
-          % (n(stats["windows"]), n(stats["unchanged"]), n(stats["moved_any"]),
+    print("windows recounted: {} | unchanged {} | moved_any {} | earliest moved {} | "
+          "latest moved {} | widened {} | tightened {} | vanished {}".format(n(stats["windows"]), n(stats["unchanged"]), n(stats["moved_any"]),
              n(stats["earliest_moved"]), n(stats["latest_moved"]),
              n(stats["widened"]), n(stats["tightened"]), n(stats["vanished"])))
-    print("wrote %s" % OUT_MAP_PATH)
-    print("wrote %s" % OUT_REPORT_PATH)
+    print("wrote {}".format(OUT_MAP_PATH))
+    print("wrote {}".format(OUT_REPORT_PATH))
     return 0
 
 

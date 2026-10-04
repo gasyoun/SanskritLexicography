@@ -36,7 +36,7 @@ PER_SHEET = 10
 def sheet1_lemmas(rev=PUBLISHED_REV, repo=None):
     """The ten lemmas the published sheet 1 actually carries."""
     out = subprocess.run(
-        ["git", "show", "%s:RussianTranslation/reports/H5262_flags.json" % rev],
+        ["git", "show", "{}:RussianTranslation/reports/H5262_flags.json".format(rev)],
         capture_output=True, cwd=repo or os.path.dirname(HERE), check=True)
     old = json.loads(out.stdout.decode("utf-8"))
     return [r["lemma"] for r in old["flagged"][:PER_SHEET]]
@@ -49,19 +49,19 @@ def main(argv=None):
     a = ap.parse_args(argv)
 
     if os.path.exists(a.assignments):
-        raise SystemExit("%s already exists — seeding is a one-time step, refusing to "
-                         "overwrite an append-only ledger." % a.assignments)
+        raise SystemExit("{} already exists — seeding is a one-time step, refusing to "
+                         "overwrite an append-only ledger.".format(a.assignments))
 
     lemmas = sheet1_lemmas(a.rev)
     doc = {"handoff": "H5468", "per_sheet": PER_SHEET, "note": B.ASSIGN_NOTE,
-           "seeded_from": "%s:RussianTranslation/reports/H5262_flags.json" % a.rev,
+           "seeded_from": "{}:RussianTranslation/reports/H5262_flags.json".format(a.rev),
            "assigned": {lemma: 1 for lemma in lemmas}}
     doc["lemmas_assigned"] = len(doc["assigned"])
     doc["batches"] = 1
     B.save_assignments(doc, a.assignments)
     print("seeded batch 1 with %d published lemmas -> %s" % (len(lemmas), a.assignments))
     for lemma in lemmas:
-        print("  %s" % lemma)
+        print("  {}".format(lemma))
     return 0
 
 

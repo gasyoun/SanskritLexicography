@@ -101,8 +101,8 @@ def _stamp_p2_sheet(html_text, card_ids):
     if 'const SHEET_ID =' not in html_text:
         raise ValueError('expected const SHEET_ID declaration in P2 sheet')
     stamped = html_text.replace(
-        'const SHEET_ID = "%s";' % SHEET_ID,
-        'const SHEET_ID = "%s";\nconst CONTENT_HASH = %s;\nconst IDS = %s;' % (
+        'const SHEET_ID = "{}";'.format(SHEET_ID),
+        'const SHEET_ID = "{}";\nconst CONTENT_HASH = {};\nconst IDS = {};'.format(
             SHEET_ID, json.dumps(chash), json.dumps(list(card_ids))),
         1,
     )
@@ -122,8 +122,7 @@ def _stamp_p2_sheet(html_text, card_ids):
     # Visible chip in the header title area (best-effort).
     chip = (
         ' &middot; bound <code class="bindchip" title="content_hash — binds this '
-        'sheet\'s decisions.json export to exactly this HTML">%s…</code>'
-        % chash[:19]
+        'sheet\'s decisions.json export to exactly this HTML">{}…</code>'.format(chash[:19])
     )
     # Insert after the heading text if present.
     marker = 'adjudicator spot-check (blind)'

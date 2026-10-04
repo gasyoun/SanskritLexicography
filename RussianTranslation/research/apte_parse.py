@@ -149,7 +149,7 @@ def _compute():
                 s = b['method'].split(':')[1] if ':' in b['method'] else b['method']
                 mwsuf[s] = mwsuf.get(s, 0) + 1
     except Exception as e:
-        print('  (MW wsfx cross unavailable: %s)' % e)
+        print('  (MW wsfx cross unavailable: {})'.format(e))
     return upa, suf, mwsuf, aff_iast
 
 
@@ -216,10 +216,10 @@ def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'demo'
     if cmd in ('productivity', 'crossmap'):
         if not os.path.exists(BABYLON):
-            print('missing %s' % BABYLON); return
+            print('missing {}'.format(BABYLON)); return
         (crossmap if cmd == 'crossmap' else productivity)(); return
     if not os.path.exists(BABYLON):
-        print('missing %s — fetch apte-hi.babylon from indic-dict/stardict-sanskrit' % BABYLON)
+        print('missing {} — fetch apte-hi.babylon from indic-dict/stardict-sanskrit'.format(BABYLON))
         return
     n, roots, prefixed, sidecar = build()
     v01 = load_verbs01_roots()
@@ -233,13 +233,13 @@ def main():
         with open(os.path.join(HERE, 'apte_roots.tsv'), 'w', encoding='utf-8') as f:
             f.write('root_slp1\thw_dev\tin_verbs01\thindi_gloss\n')
             for hw in sorted(roots):
-                f.write('%s\t%s\t%s\t%s\n' % (hw, roots[hw]['hw_dev'],
+                f.write('{}\t{}\t{}\t{}\n'.format(hw, roots[hw]['hw_dev'],
                         'Y' if hw in v01 else 'N', roots[hw]['gloss'][:80]))
         with open(os.path.join(HERE, 'apte_sidecar.tsv'), 'w', encoding='utf-8') as f:
             f.write('hw_slp1\tpos\tparse\thindi_gloss\n')
             for hw in sorted(sidecar):
                 r = sidecar[hw]
-                f.write('%s\t%s\t%s\t%s\n' % (hw, r['pos'],
+                f.write('{}\t{}\t{}\t{}\n'.format(hw, r['pos'],
                         '+'.join(r['parse_parts']), r['gloss'][:100]))
         print('  wrote apte_roots.tsv (%d) + apte_sidecar.tsv (%d)' % (len(roots), len(sidecar)))
     print('  BU-family sample:')

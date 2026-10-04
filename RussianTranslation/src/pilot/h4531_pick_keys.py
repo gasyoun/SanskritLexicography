@@ -40,7 +40,7 @@ def main(argv=None):
     keys, total, detail = pick(args.root, args.input_dir, args.count)
     print('eligible sub-cards with raw+portrait: %d' % total)
     print('picked %d (smallest raw bytes): %s' % (len(keys), ','.join(keys)))
-    print('bytes: %s' % ' '.join('%s=%d' % (key, size) for size, key in detail))
+    print('bytes: {}'.format(' '.join('%s=%d' % (key, size) for size, key in detail)))
     return 0
 
 

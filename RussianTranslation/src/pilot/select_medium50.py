@@ -142,7 +142,7 @@ def main():
         'keys': [c['key1'] for c in selected],
         'detail': selected,
     }
-    out_path = os.path.join(RT, 'src', 'pilot', 'H317_medium50_worklist.%s.json' % args.date)
+    out_path = os.path.join(RT, 'src', 'pilot', 'H317_medium50_worklist.{}.json'.format(args.date))
     json.dump(out, open(out_path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print('band4 total=%d checked=%d matched=%d selected=%d' % (
         len(band4), checked, len(candidates), len(selected)))

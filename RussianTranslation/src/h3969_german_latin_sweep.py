@@ -93,7 +93,7 @@ _ALL_TOKENS = sorted(
     list(GERMAN_TO_LATIN) + list(RESIDUE_TOKENS), key=len, reverse=True
 )
 _HIT = re.compile(
-    r"(?<!%s)(%s)\.?(?!%s)" % (_WORD, "|".join(re.escape(t) for t in _ALL_TOKENS), _WORD)
+    r"(?<!{})({})\.?(?!{})".format(_WORD, "|".join(re.escape(t) for t in _ALL_TOKENS), _WORD)
 )
 
 _DEFAULT_STORE = canonical_store(os.path.join(HERE, "pwg_ru_translated.jsonl"))
@@ -191,7 +191,7 @@ def apply_sweep(store_path=None, field="ru"):
 
 def _print_census(tag, store_path):
     by_token, by_layer, rows_hit, rows_total, residue_ctx = census(store_path)
-    print("%s  store=%s" % (tag, store_path))
+    print("{}  store={}".format(tag, store_path))
     print("  rows scanned: %d   rows with a hit: %d   hits: %d"
           % (rows_total, rows_hit, sum(by_token.values())))
     print("  by token: %s" % (", ".join("%s x%d" % (t, c)
@@ -199,7 +199,7 @@ def _print_census(tag, store_path):
     print("  by layer: %s" % (", ".join("%s %d" % (l, c)
                                         for l, c in by_layer.most_common()) or "(none)"))
     for key1, layer, ctx in residue_ctx:
-        print("  RESIDUE key1=%s layer=%s  ...%s..." % (key1, layer, ctx))
+        print("  RESIDUE key1={} layer={}  ...{}...".format(key1, layer, ctx))
     return by_token, by_layer, rows_hit, rows_total
 
 
@@ -210,7 +210,7 @@ def selftest():
         nonlocal ok
         if got != want:
             ok = False
-            print("FAIL %s: got %r want %r" % (label, got, want))
+            print("FAIL {}: got {!r} want {!r}".format(label, got, want))
 
     check("plain akk", sweep_body("идти (Akk)")[0],
           "идти (Acc.)")
@@ -264,9 +264,9 @@ def main(argv=None):
     _print_census("PRE ", store)
     rows_changed, subs, by_token, by_layer = apply_sweep(store)
     print("APPLIED  rows changed: %d   substitutions: %d" % (rows_changed, subs))
-    print("  by token: %s" % ", ".join("%s->%s x%d" % (t, GERMAN_TO_LATIN[t], c)
-                                       for t, c in by_token.most_common()))
-    print("  by layer: %s" % ", ".join("%s %d" % (l, c) for l, c in by_layer.most_common()))
+    print("  by token: {}".format(", ".join("%s->%s x%d" % (t, GERMAN_TO_LATIN[t], c)
+                                       for t, c in by_token.most_common())))
+    print("  by layer: {}".format(", ".join("%s %d" % (l, c) for l, c in by_layer.most_common())))
     _print_census("POST", store)
     return 0
 

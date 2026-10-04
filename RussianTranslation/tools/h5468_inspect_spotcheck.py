@@ -22,6 +22,6 @@ for key in sorted(doc):
         for row in value:
             print(json.dumps(row, ensure_ascii=False)[:400])
     elif not isinstance(value, dict):
-        print("%s = %s" % (key, value))
+        print("{} = {}".format(key, value))
     else:
-        print("%s = %s" % (key, json.dumps(value, ensure_ascii=False)[:400]))
+        print("{} = {}".format(key, json.dumps(value, ensure_ascii=False)[:400]))

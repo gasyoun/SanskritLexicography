@@ -357,22 +357,18 @@ def gate(ledger, ceil_agents_per_clean=None, ceil_cost_per_clean=None, strict=Fa
         if apc is None:
             if strict:
                 breaches.append('agents_per_clean unevaluable (no clean cards / incomplete '
-                                'accounting) but a ceiling of %.4f was requested — fail-closed'
-                                % ceil_agents_per_clean)
+                                'accounting) but a ceiling of {:.4f} was requested — fail-closed'.format(ceil_agents_per_clean))
         elif apc > ceil_agents_per_clean:
-            breaches.append('agents_per_clean_incl_requeues %.4f > ceiling %.4f'
-                            % (apc, ceil_agents_per_clean))
+            breaches.append('agents_per_clean_incl_requeues {:.4f} > ceiling {:.4f}'.format(apc, ceil_agents_per_clean))
     if ceil_cost_per_clean is not None:
         if cost is None:
             if strict:
                 breaches.append('cost_per_clean unevaluable (no priced clean cards / incomplete '
-                                'accounting) but a ceiling of $%.4f was requested — fail-closed'
-                                % ceil_cost_per_clean)
+                                'accounting) but a ceiling of ${:.4f} was requested — fail-closed'.format(ceil_cost_per_clean))
         elif cost > ceil_cost_per_clean:
-            breaches.append('cost_per_clean ceil $%.4f > ceiling $%.4f'
-                            % (cost, ceil_cost_per_clean))
+            breaches.append('cost_per_clean ceil ${:.4f} > ceiling ${:.4f}'.format(cost, ceil_cost_per_clean))
     for b in breaches:
-        sys.stderr.write('ECONOMY GATE BREACH: %s\n' % b)
+        sys.stderr.write('ECONOMY GATE BREACH: {}\n'.format(b))
     return 1 if breaches else 0
 
 
@@ -388,15 +384,14 @@ def summary_lines(ledger):
     if incl is None:
         lines.append('agents_per_clean: n/a — no clean cards in scope (all runs wasted/nulled)')
     else:
-        lines.append('%s: %.3f (%s)' % (agg['agents_per_clean_incl_requeues_label'], incl,
+        lines.append('{}: {:.3f} ({})'.format(agg['agents_per_clean_incl_requeues_label'], incl,
                                         agg['agents_per_clean_incl_requeues_basis']))
     fp = agg['agents_per_clean_first_pass']
     if fp is not None:
-        lines.append('first-pass agents_per_clean: %.3f' % fp)
+        lines.append('first-pass agents_per_clean: {:.3f}'.format(fp))
     if band is not None:
-        lines.append('cost per clean: $%.4f .. $%.4f (fresh-input ceil, excludes output premium; '
-                     'true upper $%.4f at output rate)'
-                     % (band['floor_usd'], band['ceil_usd'], band['true_upper_output_rate_usd']))
+        lines.append('cost per clean: ${:.4f} .. ${:.4f} (fresh-input ceil, excludes output premium; '
+                     'true upper ${:.4f} at output rate)'.format(band['floor_usd'], band['ceil_usd'], band['true_upper_output_rate_usd']))
     else:
         lines.append('cost per clean: n/a — no clean cards in scope')
     lines.append('wasted: %d agents / %d tokens on clean=0 runs'

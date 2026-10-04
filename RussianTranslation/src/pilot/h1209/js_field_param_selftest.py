@@ -53,21 +53,19 @@ def test_templates_parameterized():
     for path in surfaces:
         text = open(path, encoding='utf-8').read()
         base = os.path.basename(path)
-        check('%s reads PAYLOAD.field' % base, 'PAYLOAD.field' in text)
-        check('%s has TARGET_FIELD' % base, 'const TARGET_FIELD' in text)
-        check('%s has CONTROLLER_PROMPT' % base, 'CONTROLLER_PROMPT' in text)
+        check('{} reads PAYLOAD.field'.format(base), 'PAYLOAD.field' in text)
+        check('{} has TARGET_FIELD'.format(base), 'const TARGET_FIELD' in text)
+        check('{} has CONTROLLER_PROMPT'.format(base), 'CONTROLLER_PROMPT' in text)
         # No remaining hardcoded controller language pair outside the default helper.
         # The default helper is allowed to mention German->Russian as the russian branch.
         hard_ctrl = re.findall(
             r"QUALITY CONTROLLER for a PWG German->Russian", text)
         # Exactly one default path may still contain the RU string (defaultControllerPrompt).
-        check('%s does not hardcode controller pair outside default helper'
-              % base, len(hard_ctrl) <= 1, 'count=%d' % len(hard_ctrl))
+        check('{} does not hardcode controller pair outside default helper'.format(base), len(hard_ctrl) <= 1, 'count=%d' % len(hard_ctrl))
         if base != 'control_template.js':
             # Gate must use TARGET_FIELD bracket access, not s.russian literals in active code.
             # Comments may still say "russian"; ban the active access form.
-            check('%s gate uses s[TARGET_FIELD] not s.russian'
-                  % base, 's[TARGET_FIELD]' in text and "s.russian" not in text)
+            check('{} gate uses s[TARGET_FIELD] not s.russian'.format(base), 's[TARGET_FIELD]' in text and "s.russian" not in text)
 
 
 def test_prep_inject_ru_and_en():
@@ -96,18 +94,18 @@ def test_prep_inject_ru_and_en():
             if '"russian"' in blob and '"english"' not in blob.replace('english', ''):
                 m['output_schema'] = json.loads(
                     blob.replace('"russian"', '"english"'))
-        pl_path = os.path.join(tmp, 'payload_%s.json' % field)
+        pl_path = os.path.join(tmp, 'payload_{}.json'.format(field))
         prep.write_payloads(m, pl_path, keys=keys, manifest_name=os.path.basename(MANIFEST))
         pl = json.load(open(pl_path, encoding='utf-8'))
-        check('%s payload.field' % field, pl.get('field') == field)
-        check('%s controller_prompt carries pair' % field,
+        check('{} payload.field'.format(field), pl.get('field') == field)
+        check('{} controller_prompt carries pair'.format(field),
               want_pair in (pl.get('controller_prompt') or ''))
-        check('%s controller_prompt has {key1}' % field,
+        check('{} controller_prompt has {{key1}}'.format(field),
               '{key1}' in (pl.get('controller_prompt') or ''))
 
-        args_path = os.path.join(tmp, 'args_%s.json' % field)
+        args_path = os.path.join(tmp, 'args_{}.json'.format(field))
         # build_args needs output_schema — use the (possibly rewritten) man.
-        man_path = os.path.join(tmp, 'man_%s.json' % field)
+        man_path = os.path.join(tmp, 'man_{}.json'.format(field))
         with open(man_path, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(m, f, ensure_ascii=False)
         # Inline the two transforms build_args.main does (avoid argv).
@@ -125,15 +123,15 @@ def test_prep_inject_ru_and_en():
         with open(args_path, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(payload, f, ensure_ascii=False)
 
-        out_js = os.path.join(tmp, 'wf_%s.js' % field)
+        out_js = os.path.join(tmp, 'wf_{}.js'.format(field))
         inject.inject(os.path.join(HERE, 'wf_template.js'), args_path, out_js)
         emitted = open(out_js, encoding='utf-8').read()
-        check('%s inject under WORKFLOW_SCRIPT_CAP' % field,
+        check('{} inject under WORKFLOW_SCRIPT_CAP'.format(field),
               len(emitted.encode('utf-8')) <= inject.WORKFLOW_SCRIPT_CAP)
         # Payload is embedded as a JSON literal; field must appear in the script body.
-        check('%s injected script carries field=%s' % (field, field),
-              '"field": "%s"' % field in emitted or '"field":"%s"' % field in emitted)
-        check('%s injected script carries %s controller pair' % (field, want_pair),
+        check('{} injected script carries field={}'.format(field, field),
+              '"field": "{}"'.format(field) in emitted or '"field":"{}"'.format(field) in emitted)
+        check('{} injected script carries {} controller pair'.format(field, want_pair),
               want_pair in emitted)
         # EN must not leave a Russian-only controller hardcode as the sole path.
         if field == 'english':
@@ -182,7 +180,7 @@ def test_canonical_audit_ru_fixture():
     statuses = [r.get('final_status') for r in sr['results']]
     check('RU canary all clean statuses',
           all(s in ('clean-no-review', 'clean-controller-approved') for s in statuses),
-          'statuses=%r' % statuses)
+          'statuses={!r}'.format(statuses))
     # Authoritative audit on each card_out.
     cards_out = {c['key1']: c['card'] for c in sr.get('cards_out') or []}
     rows = {r['key1']: r for r in sr['results']}
@@ -198,8 +196,7 @@ def test_canonical_audit_ru_fixture():
         fg = rep.get('fidelity_german') or {}
         if ft.get('ok') is False or fg.get('ok') is False:
             ok_all = False
-            print('    card %s: fidelity_german=%s fidelity_translation=%s'
-                  % (k, fg.get('ok'), ft.get('ok')))
+            print('    card {}: fidelity_german={} fidelity_translation={}'.format(k, fg.get('ok'), ft.get('ok')))
     check('canonical_audit RU fixture fidelity ok', ok_all)
 
 

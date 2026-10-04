@@ -81,15 +81,15 @@ def assert_contract(manifest, config_dir):
     validate_profile(manifest, config_dir, only_profile='c4')
 
     check(manifest['schema'] == SCHEMA_V2,
-          'canary manifest must be %s, got %r' % (SCHEMA_V2, manifest.get('schema')))
+          'canary manifest must be {}, got {!r}'.format(SCHEMA_V2, manifest.get('schema')))
     keys = manifest['meta']['selected_keys']
     check(keys == [cmb.CANARY_KEY],
-          'canary manifest must select exactly the canary key, got %r' % (keys,))
+          'canary manifest must select exactly the canary key, got {!r}'.format(keys))
     check(manifest['batches'] == [[cmb.CANARY_KEY]],
-          'canary batches must drive exactly the one canary key, got %r' % (manifest['batches'],))
+          'canary batches must drive exactly the one canary key, got {!r}'.format(manifest['batches']))
     check(manifest['key_provenance'] == {cmb.CANARY_KEY: 'synthetic_control'},
           'the canary MUST stay synthetic_control -- canary_gate and the promoter C-05 '
-          'refusal both key off it; got %r' % (manifest['key_provenance'],))
+          'refusal both key off it; got {!r}'.format(manifest['key_provenance']))
     check(manifest['execution']['model_identifier'] == manifest['model'],
           'v2 execution model_identifier must equal the executable model')
 
@@ -105,12 +105,11 @@ def assert_canary_geometry(manifest):
     """The D-Q silent-SAN-LOSS geometry (H994) the control exists to exercise."""
     payload = manifest['inputs'][cmb.CANARY_KEY]
     check(payload['ls'] == 0 and payload['sk'] == 0,
-          'the canary must carry ZERO <ls> and ZERO {#..#}: that is what makes a dropped '
-          'sense INVISIBLE to the accept() fidelity gate (0 == 0 passes). Got ls=%r sk=%r'
-          % (payload['ls'], payload['sk']))
+          'the canary must carry ZERO <ls> and ZERO {{#..#}}: that is what makes a dropped '
+          'sense INVISIBLE to the accept() fidelity gate (0 == 0 passes). Got ls={!r} sk={!r}'.format(payload['ls'], payload['sk']))
     check(payload['senses'] == 3 and payload['source_senses'] == 3,
           'the canary must carry exactly 3 senses (the SAN-LOSS soft guard counts them); '
-          'got senses=%r source_senses=%r' % (payload['senses'], payload['source_senses']))
+          'got senses={!r} source_senses={!r}'.format(payload['senses'], payload['source_senses']))
 
     # Prompt shape (H2245 step 2): the canary rides the PRODUCTION masked-inline path, and on
     # pure gloss the mask is provably an IDENTITY transform -- zero placeholders emitted. That
@@ -118,18 +117,16 @@ def assert_canary_geometry(manifest):
     # change ever produced a placeholder here, the canary would stop being pure gloss and this
     # assertion is where that is caught.
     check(manifest['placeholder_maps'][cmb.CANARY_KEY] == [],
-          'the pure-gloss canary must mask to ZERO {Tn} placeholders (identity transform); '
-          'a non-empty map means the canary is no longer pure gloss: %r'
-          % (manifest['placeholder_maps'][cmb.CANARY_KEY],))
+          'the pure-gloss canary must mask to ZERO {{Tn}} placeholders (identity transform); '
+          'a non-empty map means the canary is no longer pure gloss: {!r}'.format(manifest['placeholder_maps'][cmb.CANARY_KEY]))
     check(manifest['meta']['mode'] == 'nominal_masked',
-          'the canary must ride the production nominal_masked prompt path, got %r'
-          % (manifest['meta']['mode'],))
+          'the canary must ride the production nominal_masked prompt path, got {!r}'.format(manifest['meta']['mode']))
 
 
 def assert_matches_golden(manifest):
     """Diff the fresh build against the committed known-good artifact."""
     if not os.path.exists(GOLDEN):
-        raise AssertionError('golden canary manifest missing: %s' % GOLDEN)
+        raise AssertionError('golden canary manifest missing: {}'.format(GOLDEN))
     with open(GOLDEN, encoding='utf-8') as fh:
         golden = json.load(fh)
     validate_manifest(golden, require_v2=True)          # the committed artifact is itself valid
@@ -140,11 +137,11 @@ def assert_matches_golden(manifest):
         differing = sorted(k for k in set(fresh_cmp) | set(golden_cmp)
                            if fresh_cmp.get(k) != golden_cmp.get(k))
         raise AssertionError(
-            'builder output drifted from the committed golden manifest in %r.\n'
+            'builder output drifted from the committed golden manifest in {!r}.\n'
             'If the change is intended, regenerate the artifact:\n'
             '  python src/pilot/canary_manifest_build.py --profile-slot c4 '
             '--config-dir <dir> --outdir <tmp>\n'
-            'and copy execution_manifest.canary.json over %s' % (differing, GOLDEN))
+            'and copy execution_manifest.canary.json over {}'.format(differing, GOLDEN))
 
 
 def assert_safe_mode_pin_is_explicit_and_sha_bound(tmp):
@@ -162,17 +159,16 @@ def assert_safe_mode_pin_is_explicit_and_sha_bound(tmp):
     """
     shas = {}
     for pin in (True, False):
-        config_dir = os.path.join(tmp, 'pin%s' % pin, '.claude')
+        config_dir = os.path.join(tmp, 'pin{}'.format(pin), '.claude')
         os.makedirs(config_dir)
         manifest_path, _harness, _pf, sha = cmb.build(
-            'c4', config_dir, os.path.join(tmp, 'out%s' % pin), 'nominal_c4canary',
+            'c4', config_dir, os.path.join(tmp, 'out{}'.format(pin)), 'nominal_c4canary',
             cli_safe_mode=pin)
         with open(manifest_path, encoding='utf-8') as fh:
             manifest = json.load(fh)
         validate_manifest(manifest, require_v2=True)     # pinning must not break the contract
         check(manifest['execution']['cli_safe_mode'] is pin,
-              'cli_safe_mode=%r was not pinned into the execution block, got %r'
-              % (pin, manifest['execution'].get('cli_safe_mode')))
+              'cli_safe_mode={!r} was not pinned into the execution block, got {!r}'.format(pin, manifest['execution'].get('cli_safe_mode')))
         check(sha == cmb.sha256_file(manifest_path),
               'the returned sha256 does not cover the pinned manifest -- the arm the '
               'receipt claims could be swapped behind a digest the worker still accepts')

@@ -83,11 +83,11 @@ def measure_tei(path):
     same shape of blindness the duplicates got in through.
     """
     if not os.path.exists(path):
-        return 0, 0, 'missing TEI file: %s' % path
+        return 0, 0, 'missing TEI file: {}'.format(path)
     root = ET.parse(path).getroot()
     if not root.tag.endswith('TEI'):
-        return 0, 0, 'TEI root is not TEI: %s' % root.tag
-    entries = root.findall('.//{%s}entry' % TEI_NS)
+        return 0, 0, 'TEI root is not TEI: {}'.format(root.tag)
+    entries = root.findall('.//{{{}}}entry'.format(TEI_NS))
     if not entries:
         return 0, 0, 'TEI contains no entries'
     ids = collections.Counter(e.get(XML_ID) for e in entries if e.get(XML_ID) is not None)
@@ -113,7 +113,7 @@ def validate_tei(path):
 def measure_ontolex(path):
     """(declared_entries, distinct_subjects, error_or_None) — measure without raising."""
     if not os.path.exists(path):
-        return 0, 0, 'missing OntoLex file: %s' % path
+        return 0, 0, 'missing OntoLex file: {}'.format(path)
     try:
         import rdflib
     except ImportError:                                   # pragma: no cover - env guard
@@ -154,7 +154,7 @@ def validate_ontolex(path):
 
 def validate_reverse(path):
     if not os.path.exists(path):
-        fail('missing reverse index: %s' % path)
+        fail('missing reverse index: {}'.format(path))
     n = 0
     with open(path, encoding='utf-8') as f:
         for i, line in enumerate(f, 1):
@@ -217,7 +217,7 @@ def main(argv=None):
 
     if failures:
         for line in failures:
-            print('INTEROP CHECK FAILED: %s' % line, file=sys.stderr)
+            print('INTEROP CHECK FAILED: {}'.format(line), file=sys.stderr)
         return 1
     print('interop validation OK: TEI entries=%d (%d distinct ids) | OntoLex entries=%d '
           '(%d distinct subjects) | reverse rows=%d' % (tei, tei_ids, ttl, ttl_ids, rev))

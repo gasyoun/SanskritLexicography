@@ -75,10 +75,10 @@ def main():
     text = io.open(LEDGER, encoding='utf-8', newline='').read()
     match = FENCE.search(text)
     if not match:
-        raise SystemExit('no fenced launch_failure_ledger block in %s' % LEDGER)
+        raise SystemExit('no fenced launch_failure_ledger block in {}'.format(LEDGER))
     entries = json.loads(match.group(1))
     if any(row.get('id') == ENTRY['id'] for row in entries):
-        print('entry %s already present' % ENTRY['id'])
+        print('entry {} already present'.format(ENTRY['id']))
         return 0
     entries.append(ENTRY)
     body = json.dumps(entries, ensure_ascii=False, indent=1)

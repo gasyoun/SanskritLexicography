@@ -32,14 +32,14 @@ import german_residue_scan as grs
 
 DATE = '2026-07-19'
 PWG_RU = os.path.join(os.path.dirname(SRC), 'pwg_ru')
-WORKLIST = os.path.join(PWG_RU, 'H1302_GERMAN_RESIDUE_REQUEUE_WORKLIST_%s.jsonl' % DATE)
-ROOTS = os.path.join(PWG_RU, 'H1302_GERMAN_RESIDUE_REQUEUE_ROOTS_%s.txt' % DATE)
+WORKLIST = os.path.join(PWG_RU, 'H1302_GERMAN_RESIDUE_REQUEUE_WORKLIST_{}.jsonl'.format(DATE))
+ROOTS = os.path.join(PWG_RU, 'H1302_GERMAN_RESIDUE_REQUEUE_ROOTS_{}.txt'.format(DATE))
 
 
 def main():
     store = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
     if not os.path.exists(store):
-        sys.exit('STORE ABSENT: %s' % store)
+        sys.exit('STORE ABSENT: {}'.format(store))
     hits, n_rows = grs.run(store)
     b = [h for h in hits if h['suggested_class'] == 'b']
     roots = OrderedDict()          # key1 -> set(subcard)
@@ -53,19 +53,19 @@ def main():
                 'requeue_note': 'retranslate German prose residue; requeue_from_audit.py --no-tm',
             }, ensure_ascii=False) + '\n')
     with open(ROOTS, 'w', encoding='utf-8') as f:
-        f.write('# H1302 German-residue class-(b) requeue roots (%s)\n' % DATE)
+        f.write('# H1302 German-residue class-(b) requeue roots ({})\n'.format(DATE))
         f.write('# feed each to: python src/pilot/requeue_from_audit.py <root> --defect  (--no-tm implied)\n')
         f.write('# %d roots, %d subcards, %d hits\n' % (len(roots), sum(len(s) for s in roots.values()), len(b)))
         for k in roots:
-            f.write('%s\n' % k)
+            f.write('{}\n'.format(k))
     tok = Counter(h['token'].lower() for h in b)
     print('rows scanned        : %d' % n_rows)
     print('class-(b) hits      : %d' % len(b))
     print('unique roots        : %d' % len(roots))
     print('unique subcards     : %d' % sum(len(s) for s in roots.values()))
     print('top tokens          : ' + ', '.join('%s=%d' % (t, c) for t, c in tok.most_common(12)))
-    print('wrote               : %s' % WORKLIST)
-    print('wrote               : %s' % ROOTS)
+    print('wrote               : {}'.format(WORKLIST))
+    print('wrote               : {}'.format(ROOTS))
 
 
 if __name__ == '__main__':

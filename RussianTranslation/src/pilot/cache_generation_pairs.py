@@ -95,7 +95,7 @@ def load_cohort():
     by_key = {card['key1']: card for card in payload['cards']}
     missing = [key for key in order if key not in by_key]
     if missing:
-        raise GateStop('payload missing keys: %s' % missing)
+        raise GateStop('payload missing keys: {}'.format(missing))
     cards = [by_key[key] for key in order]
     return {
         'sample': sample,
@@ -313,9 +313,9 @@ def expand_and_check_pairs(slots):
             raise GateStop('request %s has %d slots' % (rid, len(members)))
         labels = [m['cold_warm'] for m in members]
         if labels != ['cold', 'warm']:
-            raise GateStop('pair %s not contiguous cold/warm: %s' % (rid, labels))
+            raise GateStop('pair {} not contiguous cold/warm: {}'.format(rid, labels))
         if members[0]['slot_ordinal'] + 1 != members[1]['slot_ordinal']:
-            raise GateStop('pair %s slots are not contiguous' % rid)
+            raise GateStop('pair {} slots are not contiguous'.format(rid))
 
 
 class PairRunner:
@@ -345,7 +345,7 @@ class PairRunner:
             'source_commit': source_commit,
             'baseline_manifest_sha256': self.freeze_body.get('manifest_sha256'),
             'cohort_sha256': cohort_sha,
-            'pricing_version': 'deepseek-v4-pro/%s' % price_card,
+            'pricing_version': 'deepseek-v4-pro/{}'.format(price_card),
             'n': N_PAIRS,
             'call_ceiling': MAX_BASE_CALLS,
             'cost_ceiling_usd': COST_CEILING_USD,
@@ -487,8 +487,8 @@ class PairRunner:
         reservation = self.reservations.reserve(
             purpose='h2703-generation',
             profile=REQUESTED_MODEL,
-            detail='%s:%s' % (slot['key1'], slot['cold_warm']),
-            idempotency_key='%s:%s' % (slot['request_id'], slot['cold_warm']),
+            detail='{}:{}'.format(slot['key1'], slot['cold_warm']),
+            idempotency_key='{}:{}'.format(slot['request_id'], slot['cold_warm']),
         )
         attempt = reservation['ordinal']
         self.led.append({
@@ -507,7 +507,7 @@ class PairRunner:
         })
         system = compiled['system']
         user = compiled['user']
-        label = '%s:%s' % (slot['key1'], slot['cold_warm'])
+        label = '{}:{}'.format(slot['key1'], slot['cold_warm'])
         t0 = time.time()
         text, rec = self.ds.chat(system, user, label)
         usage, usage_reason = usage_from_rec(rec)
@@ -588,7 +588,7 @@ class PairRunner:
                 prior['card'] = None
         resp_path = os.path.join(
             self.run_dir, 'responses',
-            '%s.%s.json' % (slot['request_id'], slot['cold_warm']))
+            '{}.{}.json'.format(slot['request_id'], slot['cold_warm']))
         publishable = {
             'request_id': slot['request_id'],
             'cold_warm': slot['cold_warm'],
@@ -705,9 +705,9 @@ def main(argv=None):
             'kind': 'stop',
             'detail': {'reason': exc.reason},
         }, terminal=True)
-        print('STOP %s' % exc.reason, flush=True)
+        print('STOP {}'.format(exc.reason), flush=True)
     except Exception as exc:
-        note = '%s: %s' % (type(exc).__name__, exc)
+        note = '{}: {}'.format(type(exc).__name__, exc)
         try:
             runner.led.append({
                 'kind': 'stop',
@@ -715,7 +715,7 @@ def main(argv=None):
             }, terminal=True)
         except Exception:
             pass
-        print('STOP runner_exception %s' % note, flush=True)
+        print('STOP runner_exception {}'.format(note), flush=True)
         raise
     summary = runner.write_summary(note)
     after_path = os.path.join(EXP_DIR, 'canonical_hash_after.json')
@@ -730,8 +730,7 @@ def main(argv=None):
     }
     with open(after_path, 'w', encoding='utf-8', newline='\n') as handle:
         handle.write(ident.canonical_dumps(after_body))
-    print('verdict=%s parseable=%s unique_clean=%s usd=%s'
-          % (summary['generation_lane_verdict'], summary['parseable'],
+    print('verdict={} parseable={} unique_clean={} usd={}'.format(summary['generation_lane_verdict'], summary['parseable'],
              summary['unique_clean_cards'], summary['total_usd']),
           flush=True)
     return 0 if summary['generation_lane_verdict'] != 'FAIL' else 2

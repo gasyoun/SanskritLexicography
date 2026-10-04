@@ -350,7 +350,7 @@ def main():
         'keys': [f['key1'] for f in picked],
         'detail': picked,
     }
-    out_path = os.path.join(HERE, 'H1210_ab100_worklist.%s.json' % a.date)
+    out_path = os.path.join(HERE, 'H1210_ab100_worklist.{}.json'.format(a.date))
     with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
         f.write('\n')

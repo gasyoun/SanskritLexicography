@@ -511,14 +511,14 @@ def selftest():
             print('  PASS: ' + test.__name__)
         except BaseException as exc:
             failed.append(test.__name__)
-            print('  FAIL: %s -- %s: %s' % (
+            print('  FAIL: {} -- {}: {}'.format(
                 test.__name__, exc.__class__.__name__, exc))
     if failed:
         print('gateway_external_selftest: FAILED (%d/%d): %s' % (
             len(failed), len(TESTS), ', '.join(failed)))
         return False
     print('gateway_external_selftest: PASS (%d/%d groups)' % (len(TESTS), len(TESTS)))
-    print('  semantic signatures: request=%s schema=%s result=%s' % (
+    print('  semantic signatures: request={} schema={} result={}'.format(
         SEMANTIC_SIGNATURES['request'], SEMANTIC_SIGNATURES['schema'],
         SEMANTIC_SIGNATURES['result']))
     return True

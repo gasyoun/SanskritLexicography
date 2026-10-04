@@ -36,7 +36,7 @@ SEC_LABELS = {'caus', 'desid', 'intens', 'partic', 'pass', 'insens'}
 
 def read_record(path, L):
     """Return (metaline, datalines, lendline) for the <L>L... record, or None."""
-    want = '<L>%s<' % L
+    want = '<L>{}<'.format(L)
     with codecs.open(path, encoding='utf-8') as f:
         lines = [ln.rstrip('\r\n') for ln in f]
     i = 0
@@ -86,7 +86,7 @@ def glue(cards):
 def run(path, L):
     rec = read_record(path, L)
     if rec is None:
-        print('  L=%s NOT FOUND' % L); return False
+        print('  L={} NOT FOUND'.format(L)); return False
     meta, data, lend = rec
     k1 = re.search(r'<k1>([^<]*)', meta)
     k1 = k1.group(1) if k1 else '?'
@@ -105,7 +105,7 @@ def run(path, L):
 if __name__ == '__main__':
     path = sys.argv[1] if len(sys.argv) > 1 else '../../../csl-orig/v02/pwg/pwg.txt'
     Ls = sys.argv[2:] if len(sys.argv) > 2 else ['55166', '21814', '72578']
-    print('PWG root-record segmenter prototype  (source: %s)' % path)
+    print('PWG root-record segmenter prototype  (source: {})'.format(path))
     ok = all([run(path, L) for L in Ls])
     print('ALL ROUND-TRIPS LOSSLESS' if ok else 'SOME ROUND-TRIPS FAILED')
     sys.exit(0 if ok else 1)

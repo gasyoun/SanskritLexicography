@@ -144,7 +144,7 @@ def compare(profiles, key):
         pairs = [jaccard(p1['tn_tokens'], p2['tn_tokens'])
                  for _n1, p1 in d1 for _n2, p2 in d2]
         between = {
-            'arms': '%s|%s' % (a1, a2),
+            'arms': '{}|{}'.format(a1, a2),
             'sense_range': {a1: [min(s1), max(s1)], a2: [min(s2), max(s2)]},
             # Do the two arms' sense counts even separate? If their ranges overlap, the
             # arm cannot be read off the count -- the flag is not what moved it.
@@ -157,7 +157,7 @@ def compare(profiles, key):
 def report(raw_dir, out_json=None):
     profiles = collect(raw_dir)
     if not profiles:
-        print('no card envelopes under %s' % raw_dir, file=sys.stderr)
+        print('no card envelopes under {}'.format(raw_dir), file=sys.stderr)
         return 2
     keys = sorted({k for (k, _a, _n) in profiles})
     payload, all_problems, all_agree = [], [], []
@@ -170,7 +170,7 @@ def report(raw_dir, out_json=None):
                   % (key, arm, n, prof['records'], prof['senses'],
                      prof['senses_with_target'], len(prof['tn_tokens']),
                      prof['target_chars'], prof['german_chars']))
-        all_problems.extend('%s: %s' % (key, p) for p in problems)
+        all_problems.extend('{}: {}'.format(key, p) for p in problems)
         all_agree.append((key, agreement))
         payload.append({'key': key, 'agreement': agreement, 'problems': problems,
                         'draws': [{'arm': a, 'n': n,
@@ -187,7 +187,7 @@ def report(raw_dir, out_json=None):
         for arm, info in sorted(agreement['within'].items()):
             print('  %-10s %-6s senses %-9s spread %d   records %-7s   {Tn} d=%s'
                   % (key, arm, info['senses'], info['sense_spread'], info['records'],
-                     'n/a' if info['tn_distance'] is None else '%.3f' % info['tn_distance']))
+                     'n/a' if info['tn_distance'] is None else '{:.3f}'.format(info['tn_distance'])))
 
     print('\n== between-arm (the flag VARIED) ==')
     for key, agreement in all_agree:
@@ -197,7 +197,7 @@ def report(raw_dir, out_json=None):
         print('  %-10s sense ranges %s   ranges overlap: %s   mean {Tn} d=%s'
               % (key, json.dumps(b['sense_range']),
                  'YES' if b['sense_ranges_overlap'] else 'NO',
-                 'n/a' if b['mean_tn_distance'] is None else '%.3f' % b['mean_tn_distance']))
+                 'n/a' if b['mean_tn_distance'] is None else '{:.3f}'.format(b['mean_tn_distance'])))
 
     # The decision rule, stated before reading the numbers:
     #   * a DEFECT (sense with no content, literal SAN-LOSS/UNMAPPED) refuses on its own,
@@ -211,7 +211,7 @@ def report(raw_dir, out_json=None):
                     for _k, a in all_agree)
     print('\n== content verdict ==')
     for problem in all_problems:
-        print('  DEFECT %s' % problem)
+        print('  DEFECT {}'.format(problem))
     if all_problems:
         verdict = ('REFUSE — a card lost content (above). That is loss, not variation, and '
                    'it refuses the flip on its own regardless of the arm comparison.')
@@ -228,7 +228,7 @@ def report(raw_dir, out_json=None):
     else:
         verdict = ('INCONCLUSIVE — arms reproduce but do not separate, or vice versa. '
                    'Do not read this as a licence to flip.')
-    print('  %s' % verdict)
+    print('  {}'.format(verdict))
     clean = not all_problems
 
     if out_json:
@@ -236,7 +236,7 @@ def report(raw_dir, out_json=None):
             json.dump({'raw_dir': raw_dir, 'per_key': payload, 'no_content_loss': clean, 'verdict': verdict,
                        'problems': all_problems}, fh, ensure_ascii=False, indent=2)
             fh.write('\n')
-        print('\nwrote %s' % out_json)
+        print('\nwrote {}'.format(out_json))
     return 0 if clean else 1
 
 

@@ -72,16 +72,16 @@ def build_items():
     out = []
     for iid, key1, reach, sev, src, tgt, prop, why in ITEMS:
         badges = ["x%d" % reach, sev]
-        head = "%s — %s ⇒ %s" % (
+        head = "{} — {} ⇒ {}".format(
             html.escape(slp1_iast(key1)) if key1 else "(entry)",
             html.escape(src), html.escape(tgt))
-        q = "<b>%s</b><br><span style='opacity:.8'>%s</span>" % (head, html.escape(why))
+        q = "<b>{}</b><br><span style='opacity:.8'>{}</span>".format(head, html.escape(why))
         href = pwg_entry_href(key1) if key1 else None
-        link = ("<p><a href='%s'>PWG entry %s</a></p>" % (href, html.escape(key1))) \
+        link = ("<p><a href='{}'>PWG entry {}</a></p>".format(href, html.escape(key1))) \
             if href else ""
         panels = [
             ("Carried fill (wave-1, in publication TM)", q),
-            ("Proposed correction", "<b>%s</b>%s" % (
+            ("Proposed correction", "<b>{}</b>{}".format(
                 html.escape(prop),
                 " <i>(approve removes the fill; row re-unfills)</i>"
                 if prop.startswith("(") else "")),

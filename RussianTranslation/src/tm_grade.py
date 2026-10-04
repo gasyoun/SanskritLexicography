@@ -154,8 +154,8 @@ def qe_comet_factory():
     try:
         model = load_from_checkpoint(download_model('Unbabel/wmt22-cometkiwi-da'))
     except Exception as e:
-        sys.stderr.write('qe: comet import ok but model load failed (%s); '
-                         'falling back to proxy\n' % e)
+        sys.stderr.write('qe: comet import ok but model load failed ({}); '
+                         'falling back to proxy\n'.format(e))
         return None
 
     def score(rec):
@@ -175,7 +175,7 @@ def qe_nn_api_factory(backend):
     try:
         import nn_api
     except Exception as e:
-        sys.stderr.write('qe: nn_api import failed (%s)\n' % e)
+        sys.stderr.write('qe: nn_api import failed ({})\n'.format(e))
         return None
     if not nn_api.qe_available(backend):
         return None
@@ -203,7 +203,7 @@ def qe_deepseek_factory():
     try:
         import tm_retrieval_eval as ev
     except Exception as e:
-        sys.stderr.write('qe: deepseek factory import failed (%s)\n' % e)
+        sys.stderr.write('qe: deepseek factory import failed ({})\n'.format(e))
         return None
     key, _src = ev.load_deepseek_key()
     if not key:
@@ -215,8 +215,8 @@ def qe_deepseek_factory():
     def score(rec):
         src = rec.get('sa') or rec.get('source_string') or rec.get('slp1') or ''
         mt = rec.get('ru') or rec.get('target_string') or ''
-        keyh = hashlib.sha256(('deepseek-qe\n%s\n%s' % (src, mt)).encode('utf-8')).hexdigest()[:24]
-        cache_p = os.path.join(cache_dir, 'qe-deepseek-%s.json' % keyh)
+        keyh = hashlib.sha256(('deepseek-qe\n{}\n{}'.format(src, mt)).encode('utf-8')).hexdigest()[:24]
+        cache_p = os.path.join(cache_dir, 'qe-deepseek-{}.json'.format(keyh))
         if os.path.exists(cache_p):
             hit = json.load(open(cache_p, encoding='utf-8'))
             return max(0.0, min(1.0, float(hit['quality'])))
@@ -373,7 +373,7 @@ def load_align(path):
     if not path:
         return amap
     if not os.path.exists(path):
-        sys.exit('align sidecar not found: %s (run tm_align.py cross first)' % path)
+        sys.exit('align sidecar not found: {} (run tm_align.py cross first)'.format(path))
     with open(path, encoding='utf-8') as f:
         for line in f:
             line = line.strip()
@@ -390,15 +390,15 @@ def load_align(path):
 
 def cmd_grade(a):
     if not os.path.exists(a.inp):
-        sys.exit('input not found: %s (corpus_lexicon.jsonl is gitignored -- build it '
-                 'first)' % a.inp)
+        sys.exit('input not found: {} (corpus_lexicon.jsonl is gitignored -- build it '
+                 'first)'.format(a.inp))
     weights = load_weights()
     qe_fn, qe_name = make_qe(a.qe)
     amap = load_align(getattr(a, 'align', None))
     if amap:
         print('grade: %d real tm_align confidences loaded (supersede the align proxy)'
               % len(amap))
-    print('grade: building consensus index over %s ...' % os.path.basename(a.inp),
+    print('grade: building consensus index over {} ...'.format(os.path.basename(a.inp)),
           flush=True)
     idx = build_consensus(a.inp)
     print('grade: %d distinct (passage,key) segments indexed' % len(idx))
@@ -433,7 +433,7 @@ DEFECTIVE = {'partial', 'wrong-sense', 'hallucinated'}
 
 def cmd_calibrate(a):
     if not os.path.exists(a.gold):
-        sys.exit('gold set not found: %s' % a.gold)
+        sys.exit('gold set not found: {}'.format(a.gold))
     weights = load_weights()
     qe_fn, qe_name = make_qe(a.qe)
     idx = build_consensus(a.inp) if os.path.exists(a.inp) else {}
@@ -449,7 +449,7 @@ def cmd_calibrate(a):
         cross[r.get('label')][g['grade']] += 1
 
     print('calibrate: %d gold rows, qe=%s, weights=%s' % (len(rows), qe_name, W))
-    print('  thresholds: A>=%.2f (+corrob.), B>=%.2f' % (T_A, T_B))
+    print('  thresholds: A>={:.2f} (+corrob.), B>={:.2f}'.format(T_A, T_B))
     print('\n  label            n   mean_score   grade dist (A/B/C)')
     print('  ' + '-' * 58)
     accept_scores, defect_scores = [], []
@@ -465,9 +465,9 @@ def cmd_calibrate(a):
         ma = sum(accept_scores) / len(accept_scores)
         md = sum(defect_scores) / len(defect_scores)
         auc = _auc(accept_scores, defect_scores)
-        print('\n  separation: mean(acceptable)=%.3f  mean(defective)=%.3f  '
-              'gap=%.3f' % (ma, md, ma - md))
-        print('  ranking AUC (acceptable scored above defective): %.3f' % auc)
+        print('\n  separation: mean(acceptable)={:.3f}  mean(defective)={:.3f}  '
+              'gap={:.3f}'.format(ma, md, ma - md))
+        print('  ranking AUC (acceptable scored above defective): {:.3f}'.format(auc))
         # leakage: defective rows that reached A (should be ~0)
         a_leak = sum(cross[l]['A'] for l in DEFECTIVE)
         print('  defective-in-A leakage: %d (want 0)' % a_leak)
@@ -519,7 +519,7 @@ def cmd_calibrate_gold(a):
     the result is written as PRELIMINARY (stop condition, not a hard failure
     -- the plan keeps A1/A3/A4/A6 moving regardless)."""
     if not os.path.exists(a.gold):
-        sys.exit('frozen gold not found: %s (run build_grade_gold.py build first)' % a.gold)
+        sys.exit('frozen gold not found: {} (run build_grade_gold.py build first)'.format(a.gold))
     rows = [json.loads(l) for l in open(a.gold, encoding='utf-8') if l.strip()]
     weights = load_weights()
     qe_fn, qe_name = make_qe(a.qe)
@@ -538,21 +538,21 @@ def cmd_calibrate_gold(a):
         bands.append((hi, lo, (means[hi] + means[lo]) / 2))
     passed = not (rho != rho) and rho >= QE_RHO_FLOOR  # rho!=rho guards NaN
     if passed:
-        status = 'DEFENSIBLE (rho >= %.2f floor; backend=%s)' % (QE_RHO_FLOOR, qe_name)
+        status = 'DEFENSIBLE (rho >= {:.2f} floor; backend={})'.format(QE_RHO_FLOOR, qe_name)
     elif qe_name == 'proxy':
-        status = ('PRELIMINARY (rho < %.2f floor; backend=proxy surface heuristic, '
-                  'not semantic, not comet)' % QE_RHO_FLOOR)
+        status = ('PRELIMINARY (rho < {:.2f} floor; backend=proxy surface heuristic, '
+                  'not semantic, not comet)'.format(QE_RHO_FLOOR))
     else:
-        status = ('PRELIMINARY (rho < %.2f floor; genuine backend=%s; '
-                  'negative result published; proxy remains rho=%.4f labelled '
-                  'preliminary)' % (QE_RHO_FLOOR, qe_name, PROXY_RHO_PRELIMINARY))
+        status = ('PRELIMINARY (rho < {:.2f} floor; genuine backend={}; '
+                  'negative result published; proxy remains rho={:.4f} labelled '
+                  'preliminary)'.format(QE_RHO_FLOOR, qe_name, PROXY_RHO_PRELIMINARY))
 
     md = _render_calibration_md(qe_name, len(rows), rho, means, bands, passed, status)
     with open(a.out, 'w', encoding='utf-8', newline='\n') as f:
         f.write(md)
     print('calibrate-gold: qe=%s, n=%d, Spearman rho=%.4f -> %s' % (qe_name, len(rows), rho, status))
     print('  mean score by grade: %s' % {g: round(m, 4) for g, m in means.items()})
-    print('  -> %s' % a.out)
+    print('  -> {}'.format(a.out))
     return 0 if passed or qe_name == 'proxy' else 0  # measurement command; never fails the run
 
 
@@ -565,17 +565,16 @@ def _render_calibration_md(qe_name, n, rho, means, bands, passed, status):
     lines.append('Generated by `tm_grade.py calibrate-gold` (Grok 4.6, `grok-4.6`), '
                  'H2686 Track D, against `gold/grade_gold.jsonl` (n=%d).' % n)
     lines.append('')
-    lines.append('**QE backend used: `%s`.** This name is the backend that actually '
+    lines.append('**QE backend used: `{}`.** This name is the backend that actually '
                  'scored the rows. A proxy run is never labelled comet or labse. A '
-                 'labse run is never labelled comet.' % qe_name)
+                 'labse run is never labelled comet.'.format(qe_name))
     if qe_name == 'proxy':
         lines.append('')
         lines.append('This is the **surface-shape proxy** (Cyrillic coverage, length, '
                      'latin leak). It is not a semantic model. Historical measurement '
-                     'on this gold: Spearman rho = **%.4f** (preliminary). '
+                     'on this gold: Spearman rho = **{:.4f}** (preliminary). '
                      'COMET-QE still does not serve '
-                     '([`research/nn_api_smoketest.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/nn_api_smoketest.md)).'
-                     % PROXY_RHO_PRELIMINARY)
+                     '([`research/nn_api_smoketest.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/nn_api_smoketest.md)).'.format(PROXY_RHO_PRELIMINARY))
     elif qe_name == 'labse':
         lines.append('')
         lines.append('Genuine named backend: `sentence-transformers/LaBSE` via '
@@ -583,26 +582,24 @@ def _render_calibration_md(qe_name, n, rho, means, bands, passed, status):
                      '`qe(..., backend="labse")`. Score = `(cosine+1)/2` in [0,1]; '
                      'Spearman uses ranks, so the affine map does not change rho. '
                      'This is **not** COMET-QE. The proxy baseline on the same gold '
-                     'remains rho=**%.4f**, labelled preliminary, and is not rewritten.'
-                     % PROXY_RHO_PRELIMINARY)
+                     'remains rho=**{:.4f}**, labelled preliminary, and is not rewritten.'.format(PROXY_RHO_PRELIMINARY))
     elif qe_name == 'deepseek':
         lines.append('')
         lines.append('Genuine named backend: DeepSeek `deepseek-v4-flash` JSON judge '
                      '(H2686 repair after LaBSE failed to load in-process). '
                      'This is **not** COMET-QE and **not** the proxy heuristic. '
-                     'The proxy baseline on the same gold remains rho=**%.4f**, '
-                     'labelled preliminary, and is not rewritten.'
-                     % PROXY_RHO_PRELIMINARY)
+                     'The proxy baseline on the same gold remains rho=**{:.4f}**, '
+                     'labelled preliminary, and is not rewritten.'.format(PROXY_RHO_PRELIMINARY))
     elif qe_name == 'comet':
         lines.append('')
-        lines.append('Genuine Unbabel COMET-QE path served. Proxy rho=%.4f stays on '
-                     'record as the heuristic baseline.' % PROXY_RHO_PRELIMINARY)
+        lines.append('Genuine Unbabel COMET-QE path served. Proxy rho={:.4f} stays on '
+                     'record as the heuristic baseline.'.format(PROXY_RHO_PRELIMINARY))
     lines.append('')
     lines.append('## Result')
     lines.append('')
-    lines.append('- Spearman rho (QE score vs A/B/C grade, A=2/B=1/C=0): **%.4f**' % rho)
-    lines.append('- Floor: rho >= %.2f' % QE_RHO_FLOOR)
-    lines.append('- **Status: %s**' % status)
+    lines.append('- Spearman rho (QE score vs A/B/C grade, A=2/B=1/C=0): **{:.4f}**'.format(rho))
+    lines.append('- Floor: rho >= {:.2f}'.format(QE_RHO_FLOOR))
+    lines.append('- **Status: {}**'.format(status))
     lines.append('')
     lines.append('## Mean QE score by grade')
     lines.append('')
@@ -610,7 +607,7 @@ def _render_calibration_md(qe_name, n, rho, means, bands, passed, status):
     lines.append('|---|---|')
     for g in ('A', 'B', 'C'):
         if g in means:
-            lines.append('| %s | %.4f |' % (g, means[g]))
+            lines.append('| {} | {:.4f} |'.format(g, means[g]))
     lines.append('')
     lines.append('## Calibration band (candidate thresholds)')
     lines.append('')
@@ -618,7 +615,7 @@ def _render_calibration_md(qe_name, n, rho, means, bands, passed, status):
         lines.append('| Boundary | Midpoint score |')
         lines.append('|---|---|')
         for hi, lo, mid in bands:
-            lines.append('| %s / %s | %.4f |' % (hi, lo, mid))
+            lines.append('| {} / {} | {:.4f} |'.format(hi, lo, mid))
     else:
         lines.append('(insufficient grade diversity to derive a band)')
     lines.append('')
@@ -671,9 +668,9 @@ def selftest():
         {'passage': '3.1', 'slp1': 'yoga', 'ru': 'усилие', 'sa': 'y', 'work': 'b'},
     ])
     n, c, _ = consensus_signal({'passage': '2.47', 'slp1': 'karman'}, idx)
-    assert n == 2 and c == 1.0, 'agreeing works -> full consensus, got %s/%s' % (n, c)
+    assert n == 2 and c == 1.0, 'agreeing works -> full consensus, got {}/{}'.format(n, c)
     n2, c2, _ = consensus_signal({'passage': '3.1', 'slp1': 'yoga'}, idx)
-    assert n2 == 2 and c2 == 0.5, 'split works -> 0.5 consensus, got %s/%s' % (n2, c2)
+    assert n2 == 2 and c2 == 0.5, 'split works -> 0.5 consensus, got {}/{}'.format(n2, c2)
     # written_agree: a distinct written work with the same normalized rendering
     _, _, wa = consensus_signal({'passage': '2.47', 'slp1': 'karman',
                                  'ru': 'действие', 'work': 'oral-talk'}, idx)
@@ -689,9 +686,9 @@ def selftest():
     # a defective (echo) unit is C.
     qe_fn = qe_proxy
     gA = grade_unit(clean, FIXTURE_WEIGHTS, qe_fn, idx)
-    assert gA['grade'] == 'A', 'corroborated clean gloss should be A, got %s' % gA
+    assert gA['grade'] == 'A', 'corroborated clean gloss should be A, got {}'.format(gA)
     gB = grade_unit(clean, FIXTURE_WEIGHTS, qe_fn, {})   # no consensus index
-    assert gB['grade'] == 'B', 'uncorroborated clean gloss should be B, got %s' % gB
+    assert gB['grade'] == 'B', 'uncorroborated clean gloss should be B, got {}'.format(gB)
     gC = grade_unit(leak, FIXTURE_WEIGHTS, qe_fn, {})
     assert gC['grade'] in ('B', 'C') and gC['grade'] != 'A', 'leak must not be A'
     # adjudicated overlay forces A
@@ -704,7 +701,7 @@ def selftest():
     oral = dict(clean, modality='oral')
     gOral = grade_unit(oral, FIXTURE_WEIGHTS, qe_fn, idx)
     assert gOral['grade'] == 'A' and gOral['written_agree'], \
-        'oral agreeing with a written work must promote to A, got %s' % gOral
+        'oral agreeing with a written work must promote to A, got {}'.format(gOral)
     assert gOral['score'] < gA['score'], 'oral penalty must lower the composite'
     assert gOral['modality'] == 'oral'
     # oral-only consensus: corroborated, composite over the A floor, but NO written
@@ -720,7 +717,7 @@ def selftest():
     gOral2 = grade_unit(oral2, FIXTURE_WEIGHTS, qe_fn, idx_oral)
     assert gOral2['score'] >= T_A and gOral2['consensus'] == 1.0, gOral2
     assert gOral2['grade'] == 'B' and not gOral2['written_agree'], \
-        'oral-only consensus must stay capped at B, got %s' % gOral2
+        'oral-only consensus must stay capped at B, got {}'.format(gOral2)
     # no consensus at all: oral stays below the A gate; adjudication still lifts.
     gOralAlone = grade_unit(oral, FIXTURE_WEIGHTS, qe_fn, {})
     assert gOralAlone['grade'] == 'B', 'uncorroborated oral must not reach A'

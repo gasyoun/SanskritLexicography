@@ -77,8 +77,7 @@ def main():
     print('completed wall_ms: min=%d max=%d p50=%d p90=%d p95=%d p99=%d' % (
         min(vals), max(vals), percentile(vals, 50), percentile(vals, 90),
         percentile(vals, 95), percentile(vals, 99)))
-    print('censored wall_ms (kill ceilings hit, NOT durations): %s' %
-          sorted(sp['wall_ms'] for sp in censored))
+    print('censored wall_ms (kill ceilings hit, NOT durations): {}'.format(sorted(sp['wall_ms'] for sp in censored)))
 
 
 if __name__ == '__main__':

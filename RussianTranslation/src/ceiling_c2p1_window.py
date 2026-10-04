@@ -277,7 +277,7 @@ def main():
     print('heads (numbered-sense entries): %d (stratum-pairing mismatches: %d)'
           % (heads, head_mismatch), file=sys.stderr)
     print('senses: %d' % len(rows), file=sys.stderr)
-    print('coverage: %s' % dict(buckets), file=sys.stderr)
+    print('coverage: {}'.format(dict(buckets)), file=sys.stderr)
     print('C7 residue: %d unresolved citation instances, %d distinct sigla'
           % (sum(global_unmapped.values()), len(global_unmapped)), file=sys.stderr)
     print('wrote %s (%d rows)' % (OUT_ASSET, len(rows)), file=sys.stderr)
@@ -307,14 +307,10 @@ def write_report(rows, buckets, global_unmapped, heads, head_mismatch,
     L.append('')
     L.append('| Bucket | Definition | Senses | Share |')
     L.append('| --- | --- | --- | --- |')
-    L.append('| Windowed | >= 1 cited work carries a map date | %s |'
-             % pct(windowed))
-    L.append('| Undated-only | >= 1 resolvable citation, none dated | %s |'
-             % pct(undated_only))
-    L.append('| Unresolvable | citations present, none resolve to the map | %s |'
-             % pct(no_resolvable))
-    L.append('| Citation-less | no `<ls>` element in the sense segment | %s |'
-             % pct(no_cit))
+    L.append('| Windowed | >= 1 cited work carries a map date | {} |'.format(pct(windowed)))
+    L.append('| Undated-only | >= 1 resolvable citation, none dated | {} |'.format(pct(undated_only)))
+    L.append('| Unresolvable | citations present, none resolve to the map | {} |'.format(pct(no_resolvable)))
+    L.append('| Citation-less | no `<ls>` element in the sense segment | {} |'.format(pct(no_cit)))
     L.append('| **Total** | all numbered senses (current canon) | **%d** | 100%% |' % total)
     L.append('')
     L.append('## Segmentation note (stratum pairing)')
@@ -359,7 +355,7 @@ def write_report(rows, buckets, global_unmapped, heads, head_mismatch,
         rest = sum(n for _, n in global_unmapped.most_common()[TOP_UNMAPPED:])
         L.append('| … %d further sigla | %d |' % (len(global_unmapped) - TOP_UNMAPPED, rest))
     L.append('')
-    L.append('## Deterministic hand-check sample (%s)' % HANDCHECK_N)
+    L.append('## Deterministic hand-check sample ({})'.format(HANDCHECK_N))
     L.append('')
     L.append('Every %d-th windowed sense in file order, with the verbatim `<ls>` '
              'elements from the digitized printed entry '
@@ -375,7 +371,7 @@ def write_report(rows, buckets, global_unmapped, heads, head_mismatch,
         if shown % stride:
             continue
         seg = r['_seg']
-        tags = ['<ls%s>%s</ls>' % (a, re.sub(r'\s+', ' ', i.strip()))
+        tags = ['<ls{}>{}</ls>'.format(a, re.sub(r'\s+', ' ', i.strip()))
                 for a, i in blm.LS.findall(seg)]
         shown_tags = '; '.join(tags[:8]) + (' … +%d more' % (len(tags) - 8)
                                             if len(tags) > 8 else '')

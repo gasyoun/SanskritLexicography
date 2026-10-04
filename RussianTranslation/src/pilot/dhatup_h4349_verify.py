@@ -32,7 +32,7 @@ PW = os.path.join(GH, 'csl-orig', 'v02', 'pw', 'pw.txt')
 # genuinely cannot supply the corpora and say so out loud.
 _missing = [x for x in (ART, PWG, PW) if not os.path.exists(x)]
 if _missing:
-    print('dhatup_h4349_verify: cannot verify — absent: %s' % ', '.join(_missing))
+    print('dhatup_h4349_verify: cannot verify — absent: {}'.format(', '.join(_missing)))
     raise SystemExit(0 if '--skip-if-absent' in sys.argv else 2)
 
 d = json.load(open(ART, encoding='utf-8'))
@@ -70,7 +70,7 @@ with open(PWG, encoding='utf-8') as f:
             continue
         for rx in (CITE, CONT, FULL):
             for m in rx.finditer(line):
-                coord = '%s,%s' % (m.group(1), m.group(2))
+                coord = '{},{}'.format(m.group(1), m.group(2))
                 cited.add(coord)
                 if rx is not FULL:
                     spelled_out.add(coord)
@@ -110,10 +110,10 @@ check('every shipped coordinate is one PWG actually cites',
 # about a coverage improvement.
 check('match_rate is the ratio it claims to be',
       round(100.0 * len(table) / (len(cited) - len(refused_c)), 1)
-      == st['match_rate'] == 83.2, '%s%%' % st['match_rate'])
+      == st['match_rate'] == 83.2, '{}%'.format(st['match_rate']))
 check('H1333 rate is 68.9%% off the same denominator',
       round(100.0 * counts['pwg'] / (len(cited) - len(refused_c)), 1)
-      == st['match_rate_pwg'] == 68.9, '%s%%' % st['match_rate_pwg'])
+      == st['match_rate_pwg'] == 68.9, '{}%'.format(st['match_rate_pwg']))
 
 # --- every shipped row is in the attested space -----------------------------------
 # H4438. The ceiling is built from `spelled_out`, NOT from `cited`. A form-C citation
@@ -137,9 +137,9 @@ check('the two the screen refused are the two the adjudication named',
       refused_c == {'6,113', '27,71'}, repr(sorted(refused_c)))
 check('neither refused coordinate is in the table', not (refused_c & set(table)))
 for _r in d.get('_refused_form_c_out_of_space', []):
-    check('%s is published with the ceiling it failed' % _r['coord'],
+    check('{} is published with the ceiling it failed'.format(_r['coord']),
           isinstance(_r.get('spelled_out_ceiling'), int) and _r.get('claimants'),
-          'ceiling %s, claimants %r' % (_r.get('spelled_out_ceiling'), _r.get('claimants')))
+          'ceiling {}, claimants {!r}'.format(_r.get('spelled_out_ceiling'), _r.get('claimants')))
 check('gaṇa 1 ceiling is 1, which is what refuses 1,840 and 1,960',
       ceil[1] == 1, 'ceiling %d' % ceil[1])
 refused = {x['coord'] for x in d['_out_of_coordinate_space']}
@@ -150,7 +150,7 @@ check('neither refused coordinate is in the table', not (refused & set(table)))
 # Both were refuted by an independent verifier. They are pinned as ABSENT, with the
 # source evidence that condemns each, so a future loosening of the screens fails here.
 for coord in ('32,56', '33,67'):
-    check('%s is not shipped' % coord, coord not in table,
+    check('{} is not shipped'.format(coord), coord not in table,
           repr(table.get(coord, {}).get('root_slp1')))
 src = open(PWG, encoding='utf-8').read().splitlines()
 ev = {
@@ -160,10 +160,10 @@ ev = {
     '33,88': ('tras',),
 }
 for coord, roots in ev.items():
-    lines = [l for l in src if 'DHĀTUP. %s<' % coord in l]
+    lines = [l for l in src if 'DHĀTUP. {}<'.format(coord) in l]
     for root in roots:
-        check('PWG evidence: %s is cited in a %s article' % (coord, root),
-              any('{#%s#}' % root in l for l in lines),
+        check('PWG evidence: {} is cited in a {} article'.format(coord, root),
+              any('{{#{}#}}'.format(root) in l for l in lines),
               '%d citing lines' % len(lines))
 check('PWG never cites 33,67', '33,67' not in cited)
 # NB: this asserts the CONSTRUCTION exists in pw, NOT that the guard fires on it.
@@ -181,7 +181,7 @@ BUILDER = os.path.join(SRC, 'build_dhatup_palsule.py')
 _digest = hashlib.sha256(open(BUILDER, 'rb').read()).hexdigest()
 check('artifact is stamped with the sha256 of the builder that wrote it',
       st.get('builder_sha256') == _digest,
-      'stamped %s… committed %s…' % (str(st.get('builder_sha256'))[:12], _digest[:12]))
+      'stamped {}… committed {}…'.format(str(st.get('builder_sha256'))[:12], _digest[:12]))
 
 # --- H4386: the two sibling screens are mandatory, read off the builder's source ---
 # This file's whole premise is that a bug in the builder's own bookkeeping must not be
@@ -202,7 +202,7 @@ if _fn is not None:
     _positional = [a.arg for a in _fn.args.args]
     check('both screens are keyword-only',
           {'same_book_conflicted', 'pwg_cited'} <= set(_kwonly),
-          'kwonly=%r positional=%r' % (_kwonly, _positional))
+          'kwonly={!r} positional={!r}'.format(_kwonly, _positional))
     check('neither screen has a default — omitting one is a TypeError, not an '
           'unscreened pass',
           all(_defaults.get(k) is None for k in ('same_book_conflicted', 'pwg_cited')),
@@ -261,7 +261,7 @@ if _fn is not None:
                 _covered.add(_c.value)
     check('the screen validation covers BOTH screens, not pwg_cited alone',
           _covered == {'same_book_conflicted', 'pwg_cited'},
-          'covered %r — the H4349 defect was on the same-book side' % sorted(_covered))
+          'covered {!r} — the H4349 defect was on the same-book side'.format(sorted(_covered)))
 
 # --- H4386: pw's published refusal split is a partition of its 40 citations --------
 # The six terms ABBREVIATIONS_RU.md publishes, plus the two empty buckets, must add to
@@ -272,7 +272,7 @@ with open(PW, encoding='utf-8') as f:
     for line in f:
         for rx in (CITE, CONT, FULL):
             for m in rx.finditer(line):
-                pw_cited.add('%s,%s' % (m.group(1), m.group(2)))
+                pw_cited.add('{},{}'.format(m.group(1), m.group(2)))
 check('pw cites %d coordinates, re-counted from the corpus' % len(pw_cited),
       len(pw_cited) == st['pw_coords_cited'] == 41,
       '_stats says %d' % st['pw_coords_cited'])

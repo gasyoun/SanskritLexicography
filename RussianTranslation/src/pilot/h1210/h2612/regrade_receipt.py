@@ -71,9 +71,9 @@ def main() -> int:
         'original_verdict': (original or {}).get('verdict'),
     }))
 
-    print('original verdict : %s (%s)' % ((original or {}).get('verdict'),
+    print('original verdict : {} ({})'.format((original or {}).get('verdict'),
                                           (original or {}).get('receipt_sha256', '')[:16]))
-    print('regraded verdict : %s (%s)' % (receipt['verdict'],
+    print('regraded verdict : {} ({})'.format(receipt['verdict'],
                                           receipt['receipt_sha256'][:16]))
     paired = receipt['paired_deltas']
     print('arm-total wall gain %+.2f %%  ->  paired wall gain %+.2f %% over %d unit(s), '
@@ -83,7 +83,7 @@ def main() -> int:
              paired['unit_count'], paired['prep_faster_units']))
     print('paired token gain %+.2f %% (negative = PREP costs more)'
           % (100 * (paired['non_cache_token_relative_gain'] or 0)))
-    print('wrote %s' % out)
+    print('wrote {}'.format(out))
     return 0
 
 

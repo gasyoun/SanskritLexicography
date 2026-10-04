@@ -32,7 +32,7 @@ except ImportError as exc:      # fail closed with the fix, never a silent fallb
         "csl_pyutil.nkrya is missing (H5282 moved the NKRYa client there).\n"
         "Install the pinned shared package:\n"
         "  pip install -r requirements.txt\n"
-        "original error: %s" % exc)
+        "original error: {}".format(exc))
 
 # Re-exported so `import nkrya_client as nk` keeps working verbatim.
 from csl_pyutil.nkrya import (

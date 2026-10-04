@@ -52,7 +52,7 @@ def one_call(cwd):
     try:
         w = json.loads(proc.stdout)
     except Exception as exc:
-        return {'error': 'unparseable envelope: %s' % exc, 'wall_ms': wall}
+        return {'error': 'unparseable envelope: {}'.format(exc), 'wall_ms': wall}
     u = w.get('usage', {}) or {}
     cc = u.get('cache_creation', {}) or {}
     return {

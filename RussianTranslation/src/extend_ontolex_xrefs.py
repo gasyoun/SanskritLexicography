@@ -64,11 +64,10 @@ def main():
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write('# H1350 W1.8 -- additive xref sidecar (pwglex:seeAlso), layered onto pwg_de_lexicon.ttl\n')
         f.write('# generator: RussianTranslation/src/extend_ontolex_xrefs.py, source edges: resolve_xrefs.py (W1.7)\n')
-        f.write('@prefix pwglex: <%svocab#> .\n' % args.base_iri)
+        f.write('@prefix pwglex: <{}vocab#> .\n'.format(args.base_iri))
         f.write('@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .\n\n')
         for eid, target in triples:
-            f.write('<%sentry/%s/de> pwglex:seeAlso <%slemma/%s> .\n'
-                     % (args.base_iri, eid, args.base_iri, iri_local(target)))
+            f.write('<{}entry/{}/de> pwglex:seeAlso <{}lemma/{}> .\n'.format(args.base_iri, eid, args.base_iri, iri_local(target)))
     print(f'wrote {out_path} ({len(triples)} pwglex:seeAlso triples over {len(set(t[0] for t in triples))} entries)')
 
 

@@ -69,12 +69,12 @@ def load_decisions(path: str | None) -> dict[str, Any] | None:
     with open(path, encoding='utf-8') as f:
         data = json.load(f)
     if not isinstance(data, dict):
-        raise ValueError('decisions file must be a JSON object: %s' % path)
+        raise ValueError('decisions file must be a JSON object: {}'.format(path))
     items = data.get('items')
     if items is None:
         data['items'] = []
     elif not isinstance(items, list):
-        raise ValueError('decisions.items must be a list: %s' % path)
+        raise ValueError('decisions.items must be a list: {}'.format(path))
     return data
 
 
@@ -211,8 +211,7 @@ def apply_stamps(
 
     if os.environ.get(ENV_ALLOW_APPLY) != '1':
         raise SystemExit(
-            'refuse store write: set %s=1 to apply (wave-1 default is dry-run only)'
-            % ENV_ALLOW_APPLY
+            'refuse store write: set {}=1 to apply (wave-1 default is dry-run only)'.format(ENV_ALLOW_APPLY)
         )
 
     touch_by_key = {t['key']: t for t in (plan.get('would_touch') or []) if t.get('key')}
@@ -255,13 +254,11 @@ def render_markdown(report: Mapping[str, Any]) -> str:
     lines = [
         '# Editorial decisions delta',
         '',
-        '- status: `%s`' % report.get('status'),
-        '- dry_run: `%s`' % report.get('dry_run'),
-        '- tokens_that_would_change: **%s**' % report.get('tokens_that_would_change', counts.get('would_stamp', 0)),
-        '- approve/reject/defer: %s / %s / %s'
-        % (counts.get('approve', 0), counts.get('reject', 0), counts.get('defer', 0)),
-        '- in_store / missing: %s / %s'
-        % (counts.get('in_store', 0), counts.get('missing_from_store', 0)),
+        '- status: `{}`'.format(report.get('status')),
+        '- dry_run: `{}`'.format(report.get('dry_run')),
+        '- tokens_that_would_change: **{}**'.format(report.get('tokens_that_would_change', counts.get('would_stamp', 0))),
+        '- approve/reject/defer: {} / {} / {}'.format(counts.get('approve', 0), counts.get('reject', 0), counts.get('defer', 0)),
+        '- in_store / missing: {} / {}'.format(counts.get('in_store', 0), counts.get('missing_from_store', 0)),
         '',
         '## Sample keys in store',
         '',
@@ -269,14 +266,14 @@ def render_markdown(report: Mapping[str, Any]) -> str:
     samples = report.get('sample_keys_in_store') or []
     if samples:
         for k in samples:
-            lines.append('- `%s`' % k)
+            lines.append('- `{}`'.format(k))
     else:
         lines.append('- _(none)_')
     lines.extend(['', '## Sample keys missing from store', ''])
     missing = report.get('sample_keys_missing') or []
     if missing:
         for k in missing:
-            lines.append('- `%s`' % k)
+            lines.append('- `{}`'.format(k))
     else:
         lines.append('- _(none)_')
     lines.append('')
@@ -388,7 +385,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         '--no-dry-run',
         dest='dry_run',
         action='store_false',
-        help='attempt apply (requires %s=1)' % ENV_ALLOW_APPLY,
+        help='attempt apply (requires {}=1)'.format(ENV_ALLOW_APPLY),
     )
     ap.add_argument('--json-out', default='', help='write full JSON report here')
     ap.add_argument('--md-out', default='', help='write markdown delta here')

@@ -53,8 +53,7 @@ def main() -> int:
         return sum((e.get('wall_ms') or 0) for e in items) / 1000
 
     print('=== 1. as the receipt computes it (every call) ===')
-    print('A %7.0f s   B %7.0f s   wall gain %+.2f %%'
-          % (wall(by_arm['A']), wall(by_arm['B']),
+    print('A {:7.0f} s   B {:7.0f} s   wall gain {:+.2f} %'.format(wall(by_arm['A']), wall(by_arm['B']),
              100 * (gain(wall(by_arm['A']), wall(by_arm['B'])) or 0)))
 
     produced = {arm: [e for e in items if e.get('result_sha256')]
@@ -92,12 +91,10 @@ def main() -> int:
         with open(receipt_path, encoding='utf-8') as handle:
             receipt = json.load(handle)
         headline = receipt['deltas']['wall_ms_relative_gain']
-        print('receipt margin %+.2f %% vs paired %+.2f %% — the GO rule needs > +10.00 %%'
-              % (100 * headline, 100 * (paired or 0)))
+        print('receipt margin {:+.2f} % vs paired {:+.2f} % — the GO rule needs > +10.00 %'.format(100 * headline, 100 * (paired or 0)))
         print('token axis: %+.2f %% (negative = PREP costs MORE)'
               % (100 * receipt['deltas']['non_cache_token_relative_gain']))
-        print('audited cards lost by PREP: %s (negative = PREP gained)'
-              % receipt['deltas']['audited_cards_lost_by_prep'])
+        print('audited cards lost by PREP: {} (negative = PREP gained)'.format(receipt['deltas']['audited_cards_lost_by_prep']))
         if paired is not None and (paired > 0.10) != (headline > 0.10):
             print('*** the paired margin CROSSES the threshold the headline margin sits on: '
                   'the GO does not survive decomposition ***')

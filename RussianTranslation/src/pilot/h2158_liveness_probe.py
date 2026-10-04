@@ -58,9 +58,9 @@ def main():
     if args.max_turns:
         argv += ['--max-turns', str(args.max_turns)]
     env = dict(os.environ, CLAUDE_CONFIG_DIR=CONFIG_DIR)
-    print('config dir : %s' % CONFIG_DIR)
-    print('cwd        : %s' % bare_cli_cwd())
-    print('timeout    : %.0f s' % args.timeout)
+    print('config dir : {}'.format(CONFIG_DIR))
+    print('cwd        : {}'.format(bare_cli_cwd()))
+    print('timeout    : {:.0f} s'.format(args.timeout))
     started = time.monotonic()
     try:
         proc = subprocess.run(argv, capture_output=True, encoding='utf-8',
@@ -73,25 +73,25 @@ def main():
             out = out.decode('utf-8', 'replace')
         if isinstance(err, bytes):
             err = err.decode('utf-8', 'replace')
-        print('\nVERDICT: HUNG after %.0f s on a FIVE-TOKEN prompt.' % wall)
+        print('\nVERDICT: HUNG after {:.0f} s on a FIVE-TOKEN prompt.'.format(wall))
         print('The lane is down at the ACCOUNT/CLI level, not at the pwg_ru prompt.')
-        print('drained stdout tail: %r' % out[-400:])
-        print('drained stderr tail: %r' % err[-400:])
+        print('drained stdout tail: {!r}'.format(out[-400:]))
+        print('drained stderr tail: {!r}'.format(err[-400:]))
         return 1
     wall = time.monotonic() - started
     print('\nreturncode : %d' % proc.returncode)
-    print('wall       : %.1f s' % wall)
+    print('wall       : {:.1f} s'.format(wall))
     try:
         wrapper = json.loads(proc.stdout)
     except Exception as exc:
-        print('VERDICT: returned in %.1f s but the envelope is unreadable (%s)' % (wall, exc))
-        print('stdout tail: %r' % (proc.stdout or '')[-400:])
-        print('stderr tail: %r' % (proc.stderr or '')[-400:])
+        print('VERDICT: returned in {:.1f} s but the envelope is unreadable ({})'.format(wall, exc))
+        print('stdout tail: {!r}'.format((proc.stdout or '')[-400:]))
+        print('stderr tail: {!r}'.format((proc.stderr or '')[-400:]))
         return 1
     # Persist BEFORE interpreting. The reason the pre-H2095 gate series is undecomposable
     # is that its envelopes were gitignored; a probe that prints and discards repeats it.
     os.makedirs(args.out, exist_ok=True)
-    path = os.path.join(args.out, '%s.envelope.json' % args.tag)
+    path = os.path.join(args.out, '{}.envelope.json'.format(args.tag))
     with open(path, 'w', encoding='utf-8') as fh:
         json.dump({'argv_tail': argv[-8:], 'wall_s': round(wall, 1),
                    'returncode': proc.returncode, 'raw': wrapper}, fh,
@@ -99,16 +99,15 @@ def main():
 
     usage = wrapper.get('usage') or {}
     creation = usage.get('cache_creation') or {}
-    print('is_error   : %s' % wrapper.get('is_error'))
-    print('result     : %r' % str(wrapper.get('result'))[:300])
-    print('subtype    : %r' % wrapper.get('subtype'))
-    print('usage      : create=%s read=%s in=%s out=%s'
-          % (usage.get('cache_creation_input_tokens'), usage.get('cache_read_input_tokens'),
+    print('is_error   : {}'.format(wrapper.get('is_error')))
+    print('result     : {!r}'.format(str(wrapper.get('result'))[:300]))
+    print('subtype    : {!r}'.format(wrapper.get('subtype')))
+    print('usage      : create={} read={} in={} out={}'.format(usage.get('cache_creation_input_tokens'), usage.get('cache_read_input_tokens'),
              usage.get('input_tokens'), usage.get('output_tokens')))
-    print('ttl split  : 1h=%s 5m=%s' % (creation.get('ephemeral_1h_input_tokens'),
+    print('ttl split  : 1h={} 5m={}'.format(creation.get('ephemeral_1h_input_tokens'),
                                         creation.get('ephemeral_5m_input_tokens')))
-    print('cost_usd   : %s' % wrapper.get('total_cost_usd'))
-    print('envelope   : %s' % path)
+    print('cost_usd   : {}'.format(wrapper.get('total_cost_usd')))
+    print('envelope   : {}'.format(path))
     if wrapper.get('is_error'):
         print('\nVERDICT: the call RETURNED (so the lane is not hung) but reports '
               'is_error=True. It still BILLED -- read the subtype above before calling '

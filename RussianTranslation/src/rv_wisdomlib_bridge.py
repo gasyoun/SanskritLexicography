@@ -179,7 +179,7 @@ def build_role2(wl, rv_lemmas):
 def cmd_build(a):
     for path in (WORD_TRADITIONS, ENTRIES_INDEX, LEMMA_PATH):
         if not os.path.exists(path):
-            sys.exit('required input missing (stop condition 1): %s' % path)
+            sys.exit('required input missing (stop condition 1): {}'.format(path))
 
     wl = load_word_traditions()
     entries = load_entries_index()
@@ -202,12 +202,12 @@ def cmd_build(a):
           % (len(role2), 100.0 * len(role2) / len(wl) if wl else 0))
     print('  entries_index rows / keys           : %d / %s' % (len(entries), sorted(entry_keys)))
     print('  gloss-bearing keys present          : %s' % (gloss_text_available or 'NONE'))
-    print('  tradition histogram                 : %s' % dict(trad_hist))
-    print('  -> %s' % BRIDGE_OUT)
+    print('  tradition histogram                 : {}'.format(dict(trad_hist)))
+    print('  -> {}'.format(BRIDGE_OUT))
 
     _write_report(len(wl), len(rv_lemmas), role2, entries, entry_keys,
                   gloss_text_available, trad_hist)
-    print('  -> %s' % REPORT_OUT)
+    print('  -> {}'.format(REPORT_OUT))
     return 0
 
 
@@ -245,7 +245,7 @@ def _write_report(n_wl, n_rv, role2, entries, entry_keys, gloss_text_available, 
     lines.append('| RV lemmas (distinct folded join keys) | %d |' % n_rv)
     lines.append('| Role-2 joined rows | %d |' % len(role2))
     lines.append('| `entries_index.jsonl` rows | %d |' % len(entries))
-    lines.append('| `entries_index.jsonl` keys | `%s` |' % '`, `'.join(sorted(entry_keys)))
+    lines.append('| `entries_index.jsonl` keys | `{}` |'.format('`, `'.join(sorted(entry_keys))))
     lines.append('| Any gloss-bearing key present | %s |' % ('yes' if gloss_text_available else 'no'))
     lines.append('')
     lines.append('## Tradition histogram over the joined rows')
@@ -316,7 +316,7 @@ def selftest():
     src = open(os.path.abspath(__file__), encoding='utf-8').read()
     imported = _re.findall(
         r'^\s*(?:import|from)\s+(urllib|requests|httpx|socket|aiohttp|http)\b', src, _re.M)
-    assert not imported, 'network module(s) imported: %s (R17 forbids a crawl)' % imported
+    assert not imported, 'network module(s) imported: {} (R17 forbids a crawl)'.format(imported)
 
     print('rv_wisdomlib_bridge selftest OK -- reused fold_key join (ASCII slug = IAST), '
           'role-2 build, role-1/3 gloss-absence probe, zero-network guard')

@@ -82,12 +82,12 @@ def main():
     args = ap.parse_args()
 
     if not os.path.exists(BAK):
-        sys.exit('REFUSED: pre-repair backup absent -- the 468 are no longer identifiable: %s' % BAK)
+        sys.exit('REFUSED: pre-repair backup absent -- the 468 are no longer identifiable: {}'.format(BAK))
     actual = sha256_file(BAK)
     if actual != EXPECT_BAK_SHA:
-        sys.exit('REFUSED: backup sha %s != PR #510 report %s' % (actual[:16], EXPECT_BAK_SHA[:16]))
-    print('pre-repair backup : %s' % os.path.basename(BAK))
-    print('  sha256 verified : %s... (matches PR #510 report)' % actual[:24])
+        sys.exit('REFUSED: backup sha {} != PR #510 report {}'.format(actual[:16], EXPECT_BAK_SHA[:16]))
+    print('pre-repair backup : {}'.format(os.path.basename(BAK)))
+    print('  sha256 verified : {}... (matches PR #510 report)'.format(actual[:24]))
 
     bak, cur = rows_of(BAK), rows_of(STORE)
     print('  backup rows     : %d (expect %d)' % (len(bak), EXPECT_BAK_ROWS))
@@ -121,8 +121,8 @@ def main():
                  % (EXPECT_REMOVED, len(removed)))
     got_q = {r.get('subcard') for r in removed}
     if got_q != QUARANTINED:
-        sys.exit('REFUSED: removed rows are not the known C-42 quarantine pair: %s' % sorted(got_q))
-    print('  -> the 2 removed rows ARE the C-42 quarantine pair: %s' % sorted(got_q))
+        sys.exit('REFUSED: removed rows are not the known C-42 quarantine pair: {}'.format(sorted(got_q)))
+    print('  -> the 2 removed rows ARE the C-42 quarantine pair: {}'.format(sorted(got_q)))
     if j != len(cur):
         sys.exit('REFUSED: %d current rows never aligned.' % (len(cur) - j))
 
@@ -149,7 +149,7 @@ def main():
     print('  of these, iast also synthesised               : %d' % len(iast_syn))
     print('  of these, grammar also defaulted to ""        : %d' % len(gram_syn))
     print('  distinct derived heads                        : %d' % len(heads))
-    print('  top derived heads: %s' % ', '.join('%s x%d' % (repr(h), c) for h, c in heads.most_common(6)))
+    print('  top derived heads: {}'.format(', '.join('%s x%d' % (repr(h), c) for h, c in heads.most_common(6))))
 
     already = sum(1 for r in targets if (r.get('provenance') or {}).get('h_reconstructed'))
     print('  already stamped                               : %d' % already)
@@ -175,7 +175,7 @@ def main():
     from promote_lock import PromoteClaim
     with PromoteClaim(STORE):
         stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
-        backup = '%s.pre-hstamp.%s.bak' % (STORE, stamp)
+        backup = '{}.pre-hstamp.{}.bak'.format(STORE, stamp)
         with open(STORE, 'rb') as s, open(backup, 'wb') as d:
             d.write(s.read())
         tmp = STORE + '.tmp'
@@ -186,7 +186,7 @@ def main():
 
     print()
     print('APPLIED: %d row(s) stamped h_reconstructed=true' % len(targets))
-    print('backup : %s' % os.path.basename(backup))
+    print('backup : {}'.format(os.path.basename(backup)))
 
     # Prove it, by re-reading from disk.
     fresh = rows_of(STORE)

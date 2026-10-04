@@ -114,7 +114,7 @@ def test_e_every_missing_field_refuses(td):
         record = copy.deepcopy(VALID)
         mutate(record)
         ok, why, _ = cla.admit(2, path=_write(td, record))
-        assert not ok, 'a record broken at [%s] was ADMITTED: %s' % (label, why)
+        assert not ok, 'a record broken at [{}] was ADMITTED: {}'.format(label, why)
     print('  (e) %d record defects each refuse width 2 (no "assume yes" branch): PASS'
           % len(cases))
 

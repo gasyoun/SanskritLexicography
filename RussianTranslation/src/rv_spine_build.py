@@ -170,8 +170,7 @@ def verify_stanza_invariants(stats):
                 '%s: expected %d absent_from_source, got %d' % (key, expected, actual))
     geldner_locs = set(stats['absent_locations']['geldner_de_1951'])
     if geldner_locs != EXPECTED_GELDNER_ABSENT_LOCATIONS:
-        problems.append('geldner absent locations mismatch: got %s, expected %s'
-                         % (sorted(geldner_locs), sorted(EXPECTED_GELDNER_ABSENT_LOCATIONS)))
+        problems.append('geldner absent locations mismatch: got {}, expected {}'.format(sorted(geldner_locs), sorted(EXPECTED_GELDNER_ABSENT_LOCATIONS)))
     for key, count in stats['empty_counts'].items():
         if count != 0:
             problems.append('%s: expected 0 empty rows, got %d' % (key, count))
@@ -504,7 +503,7 @@ def run_build():
           % (row_count, byte_count / (1024.0 * 1024.0), oversized))
 
     write_schema()
-    print('wrote %s' % SCHEMA_OUT)
+    print('wrote {}'.format(SCHEMA_OUT))
 
     os.makedirs(RUN_LOG_DIR, exist_ok=True)
     log_path = os.path.join(RUN_LOG_DIR, 'spine_build_run_log.md')
@@ -514,7 +513,7 @@ def run_build():
         f.write('- canonical stanzas: %d\n' % len(canonical_locations))
         f.write('- total RV tokens: %d\n' % total_tokens)
         f.write('- distinct lemma/form-keyed groups: %d\n' % len(lemma_records))
-        f.write('- absent_from_source counts: %s\n' % stanza_stats['absent_counts'])
+        f.write('- absent_from_source counts: {}\n'.format(stanza_stats['absent_counts']))
         f.write('- TSV rows: %d (%.1f MB, oversized=%s)\n\n' % (
             row_count, byte_count / (1024.0 * 1024.0), oversized))
         if extras_log:

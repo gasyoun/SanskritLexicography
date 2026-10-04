@@ -72,10 +72,10 @@ def main(argv=None):
 
     if not os.path.exists(STORE):
         print(
-            "live store absent (%s) — nothing to re-extract.\n"
+            "live store absent ({}) — nothing to re-extract.\n"
             "This is expected anywhere but the machine that holds the canonical\n"
             "store; the committed extract and pin are unchanged. Run --check to\n"
-            "verify them." % (STORE,)
+            "verify them.".format(STORE)
         )
         return 0
 

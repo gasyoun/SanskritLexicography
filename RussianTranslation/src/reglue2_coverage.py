@@ -248,7 +248,7 @@ def main(argv=None):
     if a.json:
         with io.open(a.json, "w", encoding="utf-8") as fh:
             json.dump(result, fh, ensure_ascii=False, indent=1)
-        print("\nwrote %s" % a.json)
+        print("\nwrote {}".format(a.json))
     return 0
 
 
