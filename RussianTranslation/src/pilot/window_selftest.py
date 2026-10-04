@@ -5421,6 +5421,8 @@ def test_coordinator_mixed_lane_public_state_sequence():
     from types import SimpleNamespace
 
     old_coord = os.environ.get('PWG_COORDINATOR_DIR')
+    old_store_env = os.environ.get('PWG_RU_STORE')
+    old_tm_dir_env = os.environ.get('PWG_RU_TM_DIR')
     original_run = coordinator.run_cmd
     original_audit = coordinator.run_audit
     original_store = coordinator.promote_final_cards.DEFAULT_STORE
@@ -5430,6 +5432,15 @@ def test_coordinator_mixed_lane_public_state_sequence():
         store = os.path.join(tmp, 'store.jsonl')
         open(store, 'w', encoding='utf-8').close()
         coordinator.promote_final_cards.DEFAULT_STORE = store
+        # H5948: the promotion's derived-TM rebuild calls translation_memory.build() with
+        # out=None, and since 9b1936cd that refuses any non-canonical source store. This
+        # fixture's scratch store IS this test's whole universe, so make it canonical via
+        # the sanctioned env seams (store file + sidecar dir) instead of letting the build
+        # resolve the real main-worktree sidecar.
+        tm_dir = os.path.join(tmp, 'tm')
+        os.makedirs(tm_dir)
+        os.environ['PWG_RU_STORE'] = store
+        os.environ['PWG_RU_TM_DIR'] = tm_dir
         initial_dir = os.path.join(tmp, 'artifacts', 'lease')
         os.makedirs(initial_dir)
         origin_manifest = os.path.join(initial_dir, 'execution_manifest.lease.json')
@@ -5608,6 +5619,14 @@ def test_coordinator_mixed_lane_public_state_sequence():
                 os.environ.pop('PWG_COORDINATOR_DIR', None)
             else:
                 os.environ['PWG_COORDINATOR_DIR'] = old_coord
+            if old_store_env is None:
+                os.environ.pop('PWG_RU_STORE', None)
+            else:
+                os.environ['PWG_RU_STORE'] = old_store_env
+            if old_tm_dir_env is None:
+                os.environ.pop('PWG_RU_TM_DIR', None)
+            else:
+                os.environ['PWG_RU_TM_DIR'] = old_tm_dir_env
 
 
 def test_promote_nominal_key1():
