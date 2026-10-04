@@ -84,7 +84,7 @@ def main():
     if fails:
         print('  FAILURES (%d):' % len(fails))
         for L, k1, why in fails[:20]:
-            print('    L=%s k1=%s : %s' % (L, k1, why))
+            print('    L={} k1={} : {}'.format(L, k1, why))
 
 
 if __name__ == '__main__':

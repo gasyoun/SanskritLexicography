@@ -62,7 +62,7 @@ def rvlinks_provenance():
     except Exception:
         commit = 'unknown'
     return ('extracted by rv_griffith_extract.py (H1843) from '
-            'rvlinks/RV_sa-hn-ru-de-en_1.html @ %s' % commit)
+            'rvlinks/RV_sa-hn-ru-de-en_1.html @ {}'.format(commit))
 
 
 def load_canonical_locations():
@@ -153,22 +153,21 @@ def main():
         f.write('- duplicate loci (kept first, logged): %d\n' % len(stats['duplicates_kept_first']))
         f.write('- stamps with no `<p class="en">` block: %d\n' % len(stats['no_en_block']))
         f.write('- loci not in the VedaWeb canonical set (skipped): %d\n' % len(stats['not_in_canonical_set']))
-        f.write('- unmatched share (S1 spike, VERIFICATION K5, must be <= 2%%): **%.3f%%**\n\n'
-                % stats['unmatched_share_pct'])
+        f.write('- unmatched share (S1 spike, VERIFICATION K5, must be <= 2%): **{:.3f}%**\n\n'.format(stats['unmatched_share_pct']))
         if stats['duplicates_kept_first']:
             f.write('## Duplicate loci\n\n')
             for loc in stats['duplicates_kept_first']:
-                f.write('- %s\n' % loc)
+                f.write('- {}\n'.format(loc))
             f.write('\n')
         if stats['no_en_block']:
             f.write('## Stamps with no en block\n\n')
             for loc in stats['no_en_block']:
-                f.write('- %s\n' % loc)
+                f.write('- {}\n'.format(loc))
             f.write('\n')
         if stats['not_in_canonical_set']:
             f.write('## Loci not in VedaWeb canonical set\n\n')
             for loc in stats['not_in_canonical_set']:
-                f.write('- %s\n' % loc)
+                f.write('- {}\n'.format(loc))
             f.write('\n')
         f.write('_Dr. Mārcis Gasūns_\n')
 

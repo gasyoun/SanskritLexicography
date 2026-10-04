@@ -122,8 +122,8 @@ def split_prompt(manifest, key):
     whole = build_prompt(manifest, [key])
     if prefix + tail != whole:
         raise AssertionError(
-            'prompt split is not byte-identical to build_prompt for key %r -- the two '
-            'arms would price different prompts; refusing to measure' % key)
+            'prompt split is not byte-identical to build_prompt for key {!r} -- the two '
+            'arms would price different prompts; refusing to measure'.format(key))
     return prefix, tail
 
 
@@ -247,7 +247,7 @@ def verify_auth(client):
         if status == 401:
             return ('NO -- HTTP 401, the key is present but INVALID (expired, revoked, '
                     'or from a different account). The API arm cannot run.')
-        return 'NO -- %s%s' % (name, '' if status is None else ' (HTTP %s)' % status)
+        return 'NO -- {}{}'.format(name, '' if status is None else ' (HTTP {})'.format(status))
     n = len(getattr(page, 'data', []) or [])
     return 'yes -- GET /v1/models authenticated (%d model%s visible), 0 tokens billed' % (
         n, '' if n == 1 else 's')
@@ -264,7 +264,7 @@ def api_client():
     import anthropic
     for var in ('ANTHROPIC_API_KEY', 'ANTHROPIC_AUTH_TOKEN'):
         if os.environ.get(var):
-            return anthropic.Anthropic(), '%s present in environment' % var
+            return anthropic.Anthropic(), '{} present in environment'.format(var)
     if os.path.exists(SECRETS_ENV):
         with open(SECRETS_ENV, encoding='utf-8') as fh:
             for line in fh:
@@ -276,10 +276,9 @@ def api_client():
                     value = value.strip().strip('"').strip("'")
                     if value:
                         return (anthropic.Anthropic(api_key=value),
-                                '%s read from %s' % (name.strip(), SECRETS_ENV))
-    return None, ('no ANTHROPIC_API_KEY / ANTHROPIC_AUTH_TOKEN in environment, none in %s, '
-                  'and the `ant` CLI is absent, so no OAuth profile can be resolved either'
-                  % SECRETS_ENV)
+                                '{} read from {}'.format(name.strip(), SECRETS_ENV))
+    return None, ('no ANTHROPIC_API_KEY / ANTHROPIC_AUTH_TOKEN in environment, none in {}, '
+                  'and the `ant` CLI is absent, so no OAuth profile can be resolved either'.format(SECRETS_ENV))
 
 
 def main():
@@ -307,12 +306,12 @@ def main():
     keys = list((manifest.get('meta') or {}).get('selected_keys') or [])[:args.keys]
     client, auth_note = api_client()
 
-    print('manifest      : %s' % args.manifest)
-    print('model         : %s' % manifest['model'])
-    print('cards         : %s' % ', '.join(keys))
-    print('auth          : %s' % auth_note)
-    print('auth verified : %s' % verify_auth(client))
-    print('bare cli cwd  : %s' % bare_cli_cwd())
+    print('manifest      : {}'.format(args.manifest))
+    print('model         : {}'.format(manifest['model']))
+    print('cards         : {}'.format(', '.join(keys)))
+    print('auth          : {}'.format(auth_note))
+    print('auth verified : {}'.format(verify_auth(client)))
+    print('bare cli cwd  : {}'.format(bare_cli_cwd()))
     for key in keys:
         prefix, tail = split_prompt(manifest, key)          # raises if not byte-identical
         print('split %-10s: prefix %6d chars (cacheable) + tail %6d chars (volatile) '
@@ -321,9 +320,9 @@ def main():
     arms = [a.strip() for a in args.arms.split(',') if a.strip()]
     unknown = [a for a in arms if a not in ('api', 'cli')]
     if unknown:
-        print('unknown arm(s): %s' % ', '.join(unknown), file=sys.stderr)
+        print('unknown arm(s): {}'.format(', '.join(unknown)), file=sys.stderr)
         return 2
-    print('arms          : %s' % ', '.join(arms))
+    print('arms          : {}'.format(', '.join(arms)))
     if not args.run:
         print('\n--check only; no calls issued. Re-run with --run to spend.')
         return 0
@@ -333,8 +332,8 @@ def main():
               'baseline alone, and record the result as INCONCLUSIVE.', file=sys.stderr)
         return 2
     if len(arms) < 2:
-        print('\nNOTE: single-arm run (%s). This is a BASELINE, not an A/B -- it cannot '
-              'support a GO/NO-GO by itself.' % arms[0])
+        print('\nNOTE: single-arm run ({}). This is a BASELINE, not an A/B -- it cannot '
+              'support a GO/NO-GO by itself.'.format(arms[0]))
 
     os.makedirs(args.out, exist_ok=True)
     rows = []
@@ -369,7 +368,7 @@ def main():
                              'cache_write_5m': CACHE_WRITE_5M,
                              'cache_read': PRICE['cache_read']},
                    'rows': rows}, fh, ensure_ascii=False, indent=2)
-    print('\nraw envelopes + rows.json written to %s (committed, not gitignored)' % args.out)
+    print('\nraw envelopes + rows.json written to {} (committed, not gitignored)'.format(args.out))
     return 0
 
 

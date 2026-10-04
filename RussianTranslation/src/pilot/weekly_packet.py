@@ -32,7 +32,7 @@ import parked_queue
 def iso_week(ts):
     t = time.gmtime(ts)
     y, w, _ = time.strftime('%G %V %u', t).split()
-    return '%s-W%s' % (y, w)
+    return '{}-W{}'.format(y, w)
 
 
 def week_rows(telemetry_dir, week):
@@ -93,9 +93,9 @@ def experiment_verdicts(root):
         name = os.path.basename(os.path.dirname(path))
         try:
             v = json.load(open(path, encoding='utf-8'))
-            out.append('%s: %s' % (name, v.get('verdict') or json.dumps(v)[:120]))
+            out.append('{}: {}'.format(name, v.get('verdict') or json.dumps(v)[:120]))
         except (OSError, ValueError):
-            out.append('%s: UNREADABLE verdict.json' % name)
+            out.append('{}: UNREADABLE verdict.json'.format(name))
     return out
 
 
@@ -108,7 +108,7 @@ def build_packet(root, week, now=None):
                                            dr.resolve(root, 'parked_dir')})
     first_promo = first_auto_promotion(dr.resolve(root, 'manifests_dir'))
 
-    lines = ['# Nonstop lanes — weekly packet %s' % week, '',
+    lines = ['# Nonstop lanes — weekly packet {}'.format(week), '',
              '| lane | ticks | windows | failed | skips | cost USD |',
              '|---|---|---|---|---|---|']
     for lane, rows in sorted(lanes.items()):
@@ -124,7 +124,7 @@ def build_packet(root, week, now=None):
               '- sev-3: %d · all severities: %d' % (sev3, defects), '',
               '## Parked items awaiting a ruling (%d)' % len(parked)]
     for r in parked[:20]:
-        lines.append('- `%s` — %s (%s)' % (r.get('key'), r.get('reason'),
+        lines.append('- `{}` — {} ({})'.format(r.get('key'), r.get('reason'),
                                            r.get('date')))
     if len(parked) > 20:
         lines.append('- … +%d more' % (len(parked) - 20))
@@ -136,21 +136,18 @@ def build_packet(root, week, now=None):
     lines += ['', '## Staged decisions DUE']
     if first_promo:
         expiry = first_promo + 7 * 86400
-        status = ('EXPIRED %s — auto-promote is OFF until explicitly renewed'
-                  % time.strftime('%Y-%m-%d', time.gmtime(expiry))
+        status = ('EXPIRED {} — auto-promote is OFF until explicitly renewed'.format(time.strftime('%Y-%m-%d', time.gmtime(expiry)))
                   if now > expiry else
-                  'expires %s' % time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(expiry)))
-        lines.append('- **Auto-promote trial renewal (contract §5):** first use %s; %s. '
-                     'Renew / stage down to auto-launch-only / return to human review.'
-                     % (time.strftime('%Y-%m-%d', time.gmtime(first_promo)), status))
+                  'expires {}'.format(time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime(expiry))))
+        lines.append('- **Auto-promote trial renewal (contract §5):** first use {}; {}. '
+                     'Renew / stage down to auto-launch-only / return to human review.'.format(time.strftime('%Y-%m-%d', time.gmtime(first_promo)), status))
     else:
         lines.append('- Auto-promote trial: not started yet (no auto-promotion on record).')
     lines.append('- **Account map (R3.1):** judge the 1 PC + 1 prod + 1 routines + 1 '
                  'interactive split against this week\'s numbers — possibly 3 '
                  'production accounts on the prod box.')
     lines.append('')
-    lines.append('_Generated %s UTC by weekly_packet.py (H2175 R4.4)._'
-                 % time.strftime('%Y-%m-%d %H:%M', time.gmtime(now)))
+    lines.append('_Generated {} UTC by weekly_packet.py (H2175 R4.4)._'.format(time.strftime('%Y-%m-%d %H:%M', time.gmtime(now))))
     return '\n'.join(lines) + '\n'
 
 
@@ -167,11 +164,11 @@ def main(argv=None):
         ap.error('--data-root is required')
     text = build_packet(args.data_root, args.week)
     out = os.path.join(dr.resolve(args.data_root, 'telemetry_dir'),
-                       'weekly_packet_%s.md' % args.week)
+                       'weekly_packet_{}.md'.format(args.week))
     os.makedirs(os.path.dirname(out), exist_ok=True)
     with open(out, 'w', encoding='utf-8', newline='\n') as f:
         f.write(text)
-    print('weekly packet -> %s' % out)
+    print('weekly packet -> {}'.format(out))
     return 0
 
 

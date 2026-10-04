@@ -148,11 +148,10 @@ def load_l0_translation_units(path, work):
 
 def cmd_pilot(a):
     if not os.path.exists(a.l0):
-        sys.exit('L0 file not found: %s (run `python build_l0.py build --work %s` first)'
-                 % (a.l0, PILOT_WORK))
+        sys.exit('L0 file not found: {} (run `python build_l0.py build --work {}` first)'.format(a.l0, PILOT_WORK))
     units = load_l0_translation_units(a.l0, a.work)
     if not units:
-        sys.exit('no translation units found for work=%s in %s' % (a.work, a.l0))
+        sys.exit('no translation units found for work={} in {}'.format(a.work, a.l0))
     units.sort(key=lambda r: r.get('group') or '')
 
     import nn_api
@@ -200,7 +199,7 @@ def cmd_pilot(a):
              'PASS' if passed else 'FAIL (preliminary)'))
     print('pilot: any-to-any retrieval precision (diagnostic, order ignored) = %d/%d = %.3f'
           % (correct, len(sample_idx), precision_retrieval))
-    print('  -> %s' % a.out)
+    print('  -> {}'.format(a.out))
     return 0
 
 
@@ -225,11 +224,10 @@ def _render_md(work, pool_size, n_sample, correct, precision_retrieval,
     lines.append('')
     lines.append('Prose narrative order IS monotone (verses are read/translated in sequence) — '
                  'this is exactly why A5/B3 reach for Vecalign rather than bare any-to-any '
-                 'retrieval, so this is the metric the %.2f floor gates on.' % PRECISION_FLOOR)
+                 'retrieval, so this is the metric the {:.2f} floor gates on.'.format(PRECISION_FLOOR))
     lines.append('')
     lines.append('- 1-1 aligned groups: %d, of which %d land on the true pair' % (va_total, va_correct))
-    lines.append('- **Precision@sample = %.3f** (floor %.2f) -> **%s**'
-                 % (precision_vecalign, PRECISION_FLOOR, 'PASS' if passed else 'FAIL — preliminary'))
+    lines.append('- **Precision@sample = {:.3f}** (floor {:.2f}) -> **{}**'.format(precision_vecalign, PRECISION_FLOOR, 'PASS' if passed else 'FAIL — preliminary'))
     lines.append('')
     lines.append('## Any-to-any retrieval precision (diagnostic, order ignored)')
     lines.append('')
@@ -265,11 +263,11 @@ def selftest():
     M = margin_matrix(S)
     assert len(M) == 4 and len(M[0]) == 4
     top1 = margin_retrieve_top1(M)
-    assert top1 == [0, 1, 2, 3], 'diagonal matrix must retrieve the diagonal, got %s' % top1
+    assert top1 == [0, 1, 2, 3], 'diagonal matrix must retrieve the diagonal, got {}'.format(top1)
 
     path = vecalign_dp(M)
     ones = [(ii, jj) for (ii, jj) in path if len(ii) == 1 and len(jj) == 1]
-    assert all(ii == jj for ii, jj in ones), 'vecalign should recover the diagonal, got %s' % path
+    assert all(ii == jj for ii, jj in ones), 'vecalign should recover the diagonal, got {}'.format(path)
     assert sum(len(ii) for ii, _ in path) == 4 and sum(len(jj) for _, jj in path) == 4
 
     assert abs(_cos([1.0, 0.0], [1.0, 0.0]) - 1.0) < 1e-9

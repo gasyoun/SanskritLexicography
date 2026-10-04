@@ -160,7 +160,7 @@ def build_variant(dict_code: str, rows: list[dict], bodies: dict[str, str],
             "title": f"{r['k1']}  ({dict_code} <L>{r['l_id']})",
             "question": CARD_QUESTION,
             "panels": [("определение (после снятия разметки)",
-                        "<p>%s</p>" % html.escape(body or "(пусто)")),
+                        "<p>{}</p>".format(html.escape(body or "(пусто)"))),
                        ("рубрика WS2.4", RUBRIC_HTML)],
         })
     n = len(items)

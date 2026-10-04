@@ -118,8 +118,8 @@ def main() -> None:
       FROM token t
       JOIN sentence s ON s.id = t.sentence_id
       JOIN chapter c ON c.chapter_id = s.chapter_id
-      WHERE c.text_id IN (%s) AND t.lemma_id != 0
-      GROUP BY t.lemma_id, c.text_id""" % ",".join(str(tids[n]) for n in sorted(tids))
+      WHERE c.text_id IN ({}) AND t.lemma_id != 0
+      GROUP BY t.lemma_id, c.text_id""".format(",".join(str(tids[n]) for n in sorted(tids)))
     for lemma_id, tid, n in cur.execute(q):
         a = agg[lemma_id]
         a[1] += n

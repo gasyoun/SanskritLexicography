@@ -35,11 +35,11 @@ def load_run(path, run_id=None):
         data = json.load(handle)
     runs = data.get('runs') or {}
     if not runs:
-        raise SystemExit('ledger has no runs: %s' % path)
+        raise SystemExit('ledger has no runs: {}'.format(path))
     if run_id is None:
         run_id = sorted(runs)[-1]
     if run_id not in runs:
-        raise SystemExit('run_id %r not in ledger (have: %s)' % (run_id, ', '.join(sorted(runs))))
+        raise SystemExit('run_id {!r} not in ledger (have: {})'.format(run_id, ', '.join(sorted(runs))))
     return run_id, runs[run_id]
 
 
@@ -52,8 +52,8 @@ def wall_ms(row):
 
 def report(run_id, run):
     rows = run.get('reservations') or []
-    print('run_id      : %s' % run_id)
-    print('max_calls   : %s' % run.get('max_calls'))
+    print('run_id      : {}'.format(run_id))
+    print('max_calls   : {}'.format(run.get('max_calls')))
     print('reservations: %d' % len(rows))
     print()
     print(HEADER % ('#', 'purpose', 'detail', 'evaluable', 'wall_ms', 'dur_ms', 'api_ms', 'usd'))
@@ -77,7 +77,7 @@ def report(run_id, run):
             wall if wall is not None else '-',
             tel.get('duration_ms') or '-',
             tel.get('duration_api_ms') or '-',
-            ('%.4f' % cost) if cost else '-',
+            ('{:.4f}'.format(cost)) if cost else '-',
         ))
 
     print()
@@ -92,8 +92,7 @@ def report(run_id, run):
     print('unevaluable calls : %d of %d finalized' % (len(buckets[False]), finalized))
     print('subagent tokens   : %d total' % subagent_total)
     usage = run.get('usage') or {}
-    print('recorded floor    : $%.4f  (cost_evaluable=%s)'
-          % (usage.get('observed_cost_usd') or 0, usage.get('cost_evaluable')))
+    print('recorded floor    : ${:.4f}  (cost_evaluable={})'.format(usage.get('observed_cost_usd') or 0, usage.get('cost_evaluable')))
     if buckets[False]:
         print()
         print('NOTE: the recorded cost is a FLOOR. Each unevaluable call was a real paid spawn')

@@ -406,7 +406,7 @@ def query(census_path, ledger_path, limit=None, offline=False, order="risk",
                 # written for an uncached-offline miss or a transient API error would
                 # retire a lemma that was never actually answered.
                 name = type(exc).__name__
-                last_error = "%s: %s" % (name, str(exc)[:200])
+                last_error = "{}: {}".format(name, str(exc)[:200])
                 if "Offline" in name:
                     uncached += 1
                     continue
@@ -577,7 +577,7 @@ def report(census_path, ledger_path, flags_path, out_path):
 
     lines = []
     w = lines.append
-    w("_Created: %s · Last updated: %s_" % (today, today))
+    w("_Created: {} · Last updated: {}_".format(today, today))
     w("")
     w("# H5262 — NKRYa ipm census of the PWG-RU store's content words")
     w("")
@@ -592,15 +592,15 @@ def report(census_path, ledger_path, flags_path, out_path):
     w("| Measure | Value |")
     w("|---|---|")
     w("| Store cards read | %d |" % census["store_cards"])
-    w("| Gloss scope | %s |" % census["gloss_scope"])
+    w("| Gloss scope | {} |".format(census["gloss_scope"]))
     w("| Cyrillic tokens seen | %d |" % census["tokens_seen"])
     w("| Content tokens kept | %d |" % census["tokens_content"])
     w("| Tokens skipped (function word, name, <3 chars) | %d |"
       % census["skipped"].get("non-content-or-name", 0))
     w("| **Distinct content lemmas** | **%d** |" % census["distinct_lemmas"])
     w("| Hapax lemmas (1 occurrence) | %d |" % hapax)
-    w("| Lemmatizer | %s |" % census["lemmatizer"])
-    w("| Extraction wall-clock | %.1f s |" % census["elapsed_s"])
+    w("| Lemmatizer | {} |".format(census["lemmatizer"]))
+    w("| Extraction wall-clock | {:.1f} s |".format(census["elapsed_s"]))
     w("")
     w("Distinct lemmas by part of speech: "
       + ", ".join("%s %d" % kv for kv in pos_hist.most_common()) + ".")
@@ -639,10 +639,9 @@ def report(census_path, ledger_path, flags_path, out_path):
     live = [r for r in ledger.values() if "hits_main" in r or r.get("queried_utc", "") > "2026-09-24T15"]
     w("Lookup order is **risk-first** (`risk_order`): lemmas pymorphy3's dictionary does not "
       "know, then hapax lemmas longest-first, then the rest — so a partial pass has already "
-      "spent its calls where the flags are. A lemma below %.0f ipm (or with no NKRYa word "
+      "spent its calls where the flags are. A lemma below {:.0f} ipm (or with no NKRYa word "
       "portrait) also gets its concordance hits in MAIN and in the 1800–1899 slice; a "
-      "zero-hit lemma is re-checked by its surface form before it may be called absent."
-      % HITS_BELOW_IPM)
+      "zero-hit lemma is re-checked by its surface form before it may be called absent.".format(HITS_BELOW_IPM))
     w("")
     if stamps:
         w("First verdict %s, last %s; %d verdicts carry live hit counts."
@@ -701,7 +700,7 @@ def report(census_path, ledger_path, flags_path, out_path):
         w("| Lemma | Classes | Measurement | Defect? | Note |")
         w("|---|---|---|---|---|")
         for r in rows:
-            w("| %s | %s | %s | %s | %s |" % (r["lemma"], r["classes"], r["measurement"],
+            w("| {} | {} | {} | {} | {} |".format(r["lemma"], r["classes"], r["measurement"],
                                               r["defect"], r["note"]))
         w("")
         n += 1

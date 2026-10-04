@@ -223,14 +223,14 @@ def cmd_census(args):
     rows = _read_store()
     picked, sizes = select(rows)
     print("store rows: %d" % len(rows))
-    print("store sha256: %s" % file_sha256(STORE))
+    print("store sha256: {}".format(file_sha256(STORE)))
     elig = sum(1 for r in rows if eligible(features(r)))
     print("eligible (RU asserts a meaning, target != source): %d" % elig)
     for st in STRATA:
         print("  %-15s pool=%-5d picked=%d" % (st, sizes[st], len(picked[st])))
     short = [st for st in STRATA if len(picked[st]) < N_PER_STRATUM]
     if short:
-        print("UNDERFILLED: %s" % ", ".join(short))
+        print("UNDERFILLED: {}".format(", ".join(short)))
         return 1
     return 0
 
@@ -282,7 +282,7 @@ def cmd_freeze(args):
     }
     _write_json(MANIFEST, manifest)
     print("froze %d records -> %s" % (len(frozen), SAMPLE))
-    print("manifest -> %s" % MANIFEST)
+    print("manifest -> {}".format(MANIFEST))
     return 0
 
 
@@ -313,26 +313,24 @@ def cmd_controls(args):
     twins = [c["id"] for c in spec["controls"]
              if c["base_record_id"] in frozen_ids]
     if twins:
-        print("REFUSE: control base(s) also ship unmutated in the packet — %s. "
-              "Draw the base from an eligible record outside the frozen 30."
-              % ", ".join(twins), file=sys.stderr)
+        print("REFUSE: control base(s) also ship unmutated in the packet — {}. "
+              "Draw the base from an eligible record outside the frozen 30.".format(", ".join(twins)), file=sys.stderr)
         return 1
     store_by_id = {r["record_id"]: r for r in _read_store()}
     blind, key = [], []
     for c in spec["controls"]:
         base = store_by_id.get(c["base_record_id"])
         if base is None:
-            print("REFUSE: control %s — base record not in the store" % c["id"],
+            print("REFUSE: control {} — base record not in the store".format(c["id"]),
                   file=sys.stderr)
             return 1
         tgt = base["target_string"]
         if c["find"] not in tgt:
-            print("REFUSE: control %s — find-string absent from base target"
-                  % c["id"], file=sys.stderr)
+            print("REFUSE: control {} — find-string absent from base target".format(c["id"]), file=sys.stderr)
             return 1
         mutated = tgt.replace(c["find"], c["replace"], 1)
         if mutated == tgt:
-            print("REFUSE: control %s — mutation was a no-op" % c["id"],
+            print("REFUSE: control {} — mutation was a no-op".format(c["id"]),
                   file=sys.stderr)
             return 1
         rec = {
@@ -377,7 +375,7 @@ def cmd_controls(args):
                                "controls": key, "packet_id_map": id_map,
                                "sealed_until": "independent review recorded"})
     print("controls -> %s (%d)" % (CONTROLS, len(blind)))
-    print("sealed key + id map -> %s" % CONTROLS_KEY)
+    print("sealed key + id map -> {}".format(CONTROLS_KEY))
     print("blind packet -> %s (%d items, opaque ids)" % (PACKET, len(packet)))
     return 0
 
@@ -389,19 +387,18 @@ def cmd_verify(args):
     fails = []
     live_store = file_sha256(STORE)
     if live_store != manifest["store"]["sha256"]:
-        fails.append("store sha256 drifted: %s != %s"
-                     % (live_store, manifest["store"]["sha256"]))
+        fails.append("store sha256 drifted: {} != {}".format(live_store, manifest["store"]["sha256"]))
     rows = _read_store()
     by_id = {r["record_id"]: r for r in rows}
     for rec in manifest["records"]:
         live = by_id.get(rec["record_id"])
         if live is None:
-            fails.append("record vanished: %s" % rec["record_id"])
+            fails.append("record vanished: {}".format(rec["record_id"]))
             continue
         if live.get("source_hash") != rec["source_hash"]:
-            fails.append("source_hash drift: %s" % rec["record_id"])
+            fails.append("source_hash drift: {}".format(rec["record_id"]))
         if live.get("target_hash") != rec["target_hash"]:
-            fails.append("target_hash drift: %s" % rec["record_id"])
+            fails.append("target_hash drift: {}".format(rec["record_id"]))
     picked, _ = select(rows)
     reselected = [r["record_id"] for st in STRATA for r in picked[st]]
     if reselected != [r["record_id"] for r in manifest["records"]]:
@@ -411,7 +408,7 @@ def cmd_verify(args):
         fails.append("sample30.jsonl sha256 drifted")
     if fails:
         for f in fails:
-            print("FAIL %s" % f)
+            print("FAIL {}".format(f))
         return 1
     print("VERIFY OK — store %s, %d records, re-selection reproduces the frozen list"
           % (live_store[:12], len(manifest["records"])))
@@ -481,13 +478,12 @@ def cmd_show(args):
         print("=" * 78)
         print("[%02d] %s  |  %s  |  %s" % (i, r.get("stratum"), r["sense_id"],
                                            r.get("iast")))
-        print("     n_senses=%s n_ls=%s gloss de/ru=%s/%s len=%s"
-              % (r["features"]["n_senses"], r["features"]["n_ls"],
+        print("     n_senses={} n_ls={} gloss de/ru={}/{} len={}".format(r["features"]["n_senses"], r["features"]["n_ls"],
                  r["features"]["n_gloss_de"], r["features"]["n_gloss_ru"],
                  r["features"]["src_len"]))
         for p in r["gloss_pairs"]:
             print("  %2d DE: %s" % (p["i"], p["de"]))
-            print("     RU: %s" % p["ru"])
+            print("     RU: {}".format(p["ru"]))
         if args.full:
             print("  --- full source ---")
             print(r["source_string"])
@@ -505,7 +501,7 @@ def cmd_score(args):
     rev = json.load(io.open(args.path, encoding="utf-8"))
     got = {v["id"]: v.get("verdict") for v in rev["verdicts"]}
     rc = 0
-    print("reviewer: %s (%s)" % (rev.get("reviewer"), rev.get("model_version")))
+    print("reviewer: {} ({})".format(rev.get("reviewer"), rev.get("model_version")))
     for c in key["controls"]:
         actual = got.get(c.get("packet_id") or c["id"])
         if c["kind"] == "positive":
@@ -531,7 +527,7 @@ def cmd_selftest(args):
 
     def check(name, cond):
         nonlocal ok
-        print("%s %s" % ("ok  " if cond else "FAIL", name))
+        print("{} {}".format("ok  " if cond else "FAIL", name))
         ok = ok and cond
 
     check("strata priority order pinned",

@@ -473,7 +473,7 @@ def zaliznyak_index(slp1, lex, accented=None, stem_class=None,
     if compound_members:
         flags += '+%d' % len(compound_members)         # N-member compound
 
-    core = '%s·%s' % (gender, tnum)
+    core = '{}·{}'.format(gender, tnum)
     return core + (stress if stress != '—' else '') + flags
 
 
@@ -536,7 +536,7 @@ def selftest():
     ]
     for slp1, lex, want in cases:
         got = nominal_grammar_for(slp1, lex)['stem_class']
-        assert got == want, 'stem_class(%s,%s)=%s want %s' % (slp1, lex, got, want)
+        assert got == want, 'stem_class({},{})={} want {}'.format(slp1, lex, got, want)
     # compound join
     rec = nominal_grammar_for('aMSakaraRa', 'm.')
     assert rec['compound_members'] == ['aMSa', 'karaRa'], rec['compound_members']
@@ -566,7 +566,7 @@ def selftest():
     ]
     for slp1, lex, acc, want in idx_cases:
         got = zaliznyak_index(slp1, lex, accented=acc)
-        assert got == want, 'index(%s,%s)=%s want %s' % (slp1, lex, got, want)
+        assert got == want, 'index({},{})={} want {}'.format(slp1, lex, got, want)
     print('selftest OK')
 
 
@@ -585,7 +585,7 @@ def main():
         slp1 = rest[0]
         lex = rest[1] if len(rest) > 1 else 'm.'
         rec = nominal_grammar_for(slp1, lex)
-        title = '%s [%s]  %s  (%s, %s)' % (slp1, lex, rec['zaliznyak_index'],
+        title = '{} [{}]  {}  ({}, {})'.format(slp1, lex, rec['zaliznyak_index'],
                                            rec['stem_class'], rec['declension_sections'])
         print(render_paradigm(paradigm_for(slp1, lex), title=title))
         return
@@ -621,7 +621,7 @@ def main():
         lex = rest[1] if len(rest) > 1 else 'm.'
         tab = paradigm_for(slp1, lex)
         if tab is None:
-            print('no paradigm (unsupported gender %r or vidyut unavailable)' % lex)
+            print('no paradigm (unsupported gender {!r} or vidyut unavailable)'.format(lex))
             return
         print(json.dumps(tab, ensure_ascii=False, indent=2))
         return

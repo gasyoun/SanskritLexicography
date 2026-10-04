@@ -186,7 +186,7 @@ def main():
             # joinable to src/_review_queue.csv and the store (the legacy
             # 2026-06 CSV lacked it and its ord:N ids no longer resolve).
             "review_id": o.get("review_id")
-                         or ("ord:%s" % ordv if ordv.isdigit() else ""),
+                         or ("ord:{}".format(ordv) if ordv.isdigit() else ""),
             "key1": o.get("key1", ""),
             "key2": o.get("key2", ""),
             "attested": bool(o.get("attested")),
@@ -220,7 +220,7 @@ def main():
           (sum(1 for r in rows if r["attested"]), len(rows)))
 
     write_md(rows)
-    print("wrote guide -> %s" % MD)
+    print("wrote guide -> {}".format(MD))
 
 
 def _md_table(rows):

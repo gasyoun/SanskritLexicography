@@ -129,7 +129,7 @@ def evaluate_stratified(gold_rows, n_skipped, corpus_path, min_reportable):
         result = _score_rows(rows, candidates)
         result['reportable'] = result['covered'] >= min_reportable
         del result['per_lemma']
-        cell_results['%s|%s' % (band, pos)] = result
+        cell_results['{}|{}'.format(band, pos)] = result
 
     overall = _score_rows(gold_rows, candidates)
     del overall['per_lemma']

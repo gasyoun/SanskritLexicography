@@ -97,4 +97,4 @@ with open(out, "w", encoding="utf-8", newline="\n") as f:
                "source_worklist": "nominal_batch_worklist.json (pril10 Tier-2 LEADS)",
                "runnable_total": len(detail), "with_inputs": len(rows),
                "candidates": rows}, f, ensure_ascii=False, indent=1)
-print("\nwrote %s" % out)
+print("\nwrote {}".format(out))

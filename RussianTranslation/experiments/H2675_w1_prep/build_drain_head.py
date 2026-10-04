@@ -72,7 +72,7 @@ def load_freq_order(path: str) -> list[tuple[int, str, int]]:
     with open(path, encoding='utf-8') as handle:
         header = handle.readline()
         if 'k1_slp1' not in header:
-            raise SystemExit('freq tsv missing k1_slp1 header: %s' % path)
+            raise SystemExit('freq tsv missing k1_slp1 header: {}'.format(path))
         for line in handle:
             parts = line.rstrip('\n').split('\t')
             if len(parts) < 3:
@@ -163,10 +163,10 @@ def main(argv=None) -> int:
     if not freq_path or not os.path.exists(freq_path):
         raise SystemExit('no pwg_freq_order.tsv')
     if not os.path.exists(args.assembled):
-        raise SystemExit('no assembled_cards.jsonl at %s' % args.assembled)
+        raise SystemExit('no assembled_cards.jsonl at {}'.format(args.assembled))
 
-    print('freq: %s' % freq_path, flush=True)
-    print('assembled: %s' % args.assembled, flush=True)
+    print('freq: {}'.format(freq_path), flush=True)
+    print('assembled: {}'.format(args.assembled), flush=True)
     freq = load_freq_order(freq_path)
     print('freq rows: %d' % len(freq), flush=True)
     assembled = load_assembled_de(args.assembled)

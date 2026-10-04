@@ -139,20 +139,20 @@ def parse_verdict(text):
     """Tolerate a fenced or prose-wrapped JSON object; fail loud otherwise."""
     match = JSON_BLOCK.search(text or '')
     if not match:
-        raise ValueError('no JSON object in judge reply: %r' % (text or '')[:200])
+        raise ValueError('no JSON object in judge reply: {!r}'.format((text or '')[:200]))
     return json.loads(match.group(0))
 
 
 def normalise_verdict(raw):
     dc = str(raw.get('defect_class') or '').strip()
     if dc not in Q.SEVERITY_RUBRIC:
-        raise ValueError('judge returned unknown defect_class %r' % dc)
+        raise ValueError('judge returned unknown defect_class {!r}'.format(dc))
     fid = str(raw.get('fidelity') or '').strip().lower()
     eq = str(raw.get('equivalence') or '').strip().lower()
     if fid not in ('pass', 'fail'):
-        raise ValueError('bad fidelity %r' % fid)
+        raise ValueError('bad fidelity {!r}'.format(fid))
     if eq not in ('correct', 'fail'):
-        raise ValueError('bad equivalence %r' % eq)
+        raise ValueError('bad equivalence {!r}'.format(eq))
     return {
         'defect_class': dc,
         'fidelity': fid,
@@ -280,20 +280,20 @@ def cmd_run(args):
     if not key:
         raise SystemExit('OPENROUTER_API_KEY not set (looked in env and %s)'
                          % (args.env_file or ENV_FILE))
-    print('key source: %s' % where)
+    print('key source: {}'.format(where))
     rows = [json.loads(line) for line in io.open(args.sidecar, encoding='utf-8')
             if line.strip()]
     print('rows to re-score: %d' % len(rows))
     os.makedirs(args.out, exist_ok=True)
 
-    print('\n== independent judge %s ==' % INDEPENDENT_JUDGE)
+    print('\n== independent judge {} =='.format(INDEPENDENT_JUDGE))
     ind_rows, ind_spend = judge_all(key, INDEPENDENT_JUDGE, rows, 'grok-4.5')
     ind_errors = Q.independence_errors(ind_rows)
     ind_consistency = Q.check_severity_consistency(ind_rows)
 
     self_rows, self_spend, self_errors, self_consistency = [], {}, [], []
     if not args.skip_self_score:
-        print('\n== authorised self-score %s ==' % AUTHORISED_SELF_JUDGE)
+        print('\n== authorised self-score {} =='.format(AUTHORISED_SELF_JUDGE))
         self_rows, self_spend = judge_all(
             key, AUTHORISED_SELF_JUDGE, rows, 'grok-4.6')
         self_errors = Q.independence_errors(self_rows)
@@ -342,17 +342,16 @@ def cmd_run(args):
     print('\nindependent %s: serious %d/%d, fidelity %d, equivalence %d'
           % (INDEPENDENT_JUDGE, ind['scores']['serious'], ind['scores']['n'],
              ind['scores']['fidelity_pass'], ind['scores']['equivalence_correct']))
-    print('independence_errors (must be empty): %r' % ind_errors)
-    print('severity consistency violations: %r' % ind_consistency)
+    print('independence_errors (must be empty): {!r}'.format(ind_errors))
+    print('severity consistency violations: {!r}'.format(ind_consistency))
     if self_rows:
         s = receipt['authorised_self_score']['scores']
         print('self-score %s: serious %d/%d (NOT independent, %d guard errors)'
               % (AUTHORISED_SELF_JUDGE, s['serious'], s['n'], len(self_errors)))
-        print('agreement: class %.2f severity %.2f'
-              % (receipt['agreement']['defect_class_agreement'],
+        print('agreement: class {:.2f} severity {:.2f}'.format(receipt['agreement']['defect_class_agreement'],
                  receipt['agreement']['severity_agreement']))
-    print('total cost USD: %s' % receipt['total_cost_usd'])
-    print('wrote %s' % rp)
+    print('total cost USD: {}'.format(receipt['total_cost_usd']))
+    print('wrote {}'.format(rp))
     return 0
 
 
@@ -414,7 +413,7 @@ def cmd_packet(args):
         fh.write('\n'.join(lines))
 
     print('blind packet: %d rows -> %s' % (len(items), pk))
-    print('judging brief -> %s' % brief)
+    print('judging brief -> {}'.format(brief))
     leaked = [k for it in items for k in it
               if k in ('target_before', 'codes', 'actions', 'judge_before')]
     print('H2877 state leaked into the packet: %d fields' % len(leaked))
@@ -486,7 +485,7 @@ def cmd_project(args):
         with io.open(args.out, 'w', encoding='utf-8', newline='\n') as fh:
             json.dump(out, fh, ensure_ascii=False, indent=2)
             fh.write('\n')
-        print('wrote %s' % args.out)
+        print('wrote {}'.format(args.out))
     return 0
 
 
@@ -523,7 +522,7 @@ def selftest():
     item = blind_item(row)
     assert item['target'] == 'AFTER'
     leaked = set(item) & {'target_before', 'codes', 'actions', 'judge_before'}
-    assert not leaked, 'blind item leaks H2877 state: %r' % leaked
+    assert not leaked, 'blind item leaks H2877 state: {!r}'.format(leaked)
     print('pwg_tm_serious10_rescore selftest OK - guard, derived severity, blindness')
     return 0
 

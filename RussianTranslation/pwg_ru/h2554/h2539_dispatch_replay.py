@@ -39,7 +39,7 @@ def observed_dispatch_prompt(transcript, dispatch_id):
                     and block.get('id') == dispatch_id):
                 matches.append((block.get('input') or {}).get('prompt'))
     if len(matches) != 1 or not isinstance(matches[0], str):
-        raise RuntimeError('dispatch prompt is not unique: %s' % dispatch_id)
+        raise RuntimeError('dispatch prompt is not unique: {}'.format(dispatch_id))
     return matches[0]
 
 
@@ -50,9 +50,9 @@ def main():
     evidence = HERE.parent / 'h2539' / 'evidence'
     rows = []
     for name, dispatch_id in DISPATCHES.items():
-        ticket = json.loads((evidence / ('%s_ticket.json' % name)).read_text(
+        ticket = json.loads((evidence / ('{}_ticket.json'.format(name))).read_text(
             encoding='utf-8'))
-        legacy = json.loads((evidence / ('%s_attestation.json' % name)).read_text(
+        legacy = json.loads((evidence / ('{}_attestation.json'.format(name))).read_text(
             encoding='utf-8'))
         observed_prompt = observed_dispatch_prompt(args.transcript, dispatch_id)
         expected_prompt = ticket['request']['prompt']

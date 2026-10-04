@@ -58,28 +58,28 @@ def validate(source_map, table):
     missing = sorted(set(source_map) - set(works))
     extra = sorted(set(works) - set(source_map))
     if missing:
-        fails.append("sigla in ls_source_map.json with no curated row: %s" % ", ".join(missing))
+        fails.append("sigla in ls_source_map.json with no curated row: {}".format(", ".join(missing)))
     if extra:
-        fails.append("curated rows for sigla absent from ls_source_map.json: %s" % ", ".join(extra))
+        fails.append("curated rows for sigla absent from ls_source_map.json: {}".format(", ".join(extra)))
 
     for siglum in sorted(works):
         row = works[siglum]
-        where = "[%s]" % siglum
+        where = "[{}]".format(siglum)
 
         for field in ("name", "map_date", "earliest", "latest", "confidence", "dating_valid", "sources"):
             if field not in row:
-                fails.append("%s missing field %r" % (where, field))
+                fails.append("{} missing field {!r}".format(where, field))
         if fails and any(where in f for f in fails[-1:]):
             continue
 
         if row["confidence"] not in CONFIDENCE:
-            fails.append("%s confidence %r not one of %s" % (where, row["confidence"], CONFIDENCE))
+            fails.append("{} confidence {!r} not one of {}".format(where, row["confidence"], CONFIDENCE))
         if row["earliest"] > row["latest"]:
             fails.append("%s earliest %d > latest %d" % (where, row["earliest"], row["latest"]))
 
         # Every date carries a citation. A date without one is a gap, not a guess.
         if not row["sources"]:
-            fails.append("%s has a date with no source — that is a gap, not a guess" % where)
+            fails.append("{} has a date with no source — that is a gap, not a guess".format(where))
         for i, src in enumerate(row["sources"]):
             if src.get("ref") not in sources:
                 fails.append("%s source[%d] ref %r not in the sources block" % (where, i, src.get("ref")))
@@ -97,13 +97,13 @@ def validate(source_map, table):
 
         # Contested datings are routed to a decision, never self-ruled.
         if row["confidence"] == "contested" and not row.get("decide"):
-            fails.append("%s is contested but carries no @DECIDE id" % where)
+            fails.append("{} is contested but carries no @DECIDE id".format(where))
         if row.get("decide") and row["decide"] not in table["decisions"]:
-            fails.append("%s decide %r is not in the decisions block" % (where, row["decide"]))
+            fails.append("{} decide {!r} is not in the decisions block".format(where, row["decide"]))
 
         # A siglum that cannot date anything must say so in the machine field too.
         if row["confidence"] == "invalid" and row["dating_valid"]:
-            fails.append("%s confidence invalid but dating_valid true" % where)
+            fails.append("{} confidence invalid but dating_valid true".format(where))
 
         # map_date_conflict must agree with the arithmetic, so it cannot drift.
         conflict = not (row["earliest"] <= row["map_date"] <= row["latest"])
@@ -117,7 +117,7 @@ def validate(source_map, table):
 
     for did in sorted(table["decisions"]):
         if not any(w.get("decide") == did for w in works.values()):
-            fails.append("decision %s is declared but no work routes to it" % did)
+            fails.append("decision {} is declared but no work routes to it".format(did))
 
     return fails
 
@@ -203,7 +203,7 @@ def n(x):
 def fmt_range(row):
     if row["earliest"] == row["latest"]:
         return fmt_year(row["earliest"])
-    return "%s – %s" % (fmt_year(row["earliest"]), fmt_year(row["latest"]))
+    return "{} – {}".format(fmt_year(row["earliest"]), fmt_year(row["latest"]))
 
 
 CONF_MARK = {
@@ -229,9 +229,9 @@ def render(source_map, table, stats):
     out.append("| --- | --- | --- | --- | --- | --- | --- |")
     for siglum in sorted(works, key=lambda s: (works[s]["earliest"], works[s]["latest"], s)):
         row = works[siglum]
-        mapv = "**%s**" % fmt_year(row["map_date"]) if row.get("map_date_conflict") else fmt_year(row["map_date"])
+        mapv = "**{}**".format(fmt_year(row["map_date"])) if row.get("map_date_conflict") else fmt_year(row["map_date"])
         refs = ", ".join(sorted({s["ref"] for s in row["sources"]}))
-        out.append("| `%s` | %s | %s | %s | %s | %s | %s |" % (
+        out.append("| `{}` | {} | {} | {} | {} | {} | {} |".format(
             siglum, row["name"], fmt_range(row), mapv, CONF_MARK[row["confidence"]],
             refs, row.get("decide") or "—"))
     out.append("")
@@ -249,7 +249,7 @@ def render(source_map, table, stats):
     out.append("")
     out.append("**Map-date conflicts (%d):** %s — recorded here, **not** written back into "
                "`ls_source_map.json`, which phase 1's committed store consumed."
-               % (len(conflicts), ", ".join("`%s`" % s for s in conflicts)))
+               % (len(conflicts), ", ".join("`{}`".format(s) for s in conflicts)))
     out.append("")
 
     out.append("## Dating-invalid sigla — what phase 1's windows are actually reporting")
@@ -261,13 +261,12 @@ def render(source_map, table, stats):
     out.append("")
     out.append("| Measure | Windows |")
     out.append("| --- | --- |")
-    out.append("| windows with at least one dated work | %s |" % n(stats["windows"]))
-    out.append("| … containing a dating-invalid siglum | %s (%.1f%%) |"
-               % (n(stats["touching_invalid"]), 100.0 * stats["touching_invalid"] / max(stats["windows"], 1)))
+    out.append("| windows with at least one dated work | {} |".format(n(stats["windows"])))
+    out.append("| … containing a dating-invalid siglum | {} ({:.1f}%) |".format(n(stats["touching_invalid"]), 100.0 * stats["touching_invalid"] / max(stats["windows"], 1)))
     for siglum, cnt in sorted(stats["per_invalid_siglum"].items(), key=lambda kv: -kv[1]):
-        out.append("| … of which cite `%s` | %s |" % (siglum, n(cnt)))
-    out.append("| … whose ONLY dated works are invalid (window would vanish) | %s |" % n(stats["only_invalid"]))
-    out.append("| windows whose `latest` is set by an invalid siglum | %s |" % n(stats["latest_set_by_invalid"]))
+        out.append("| … of which cite `{}` | {} |".format(siglum, n(cnt)))
+    out.append("| … whose ONLY dated works are invalid (window would vanish) | {} |".format(n(stats["only_invalid"])))
+    out.append("| windows whose `latest` is set by an invalid siglum | {} |".format(n(stats["latest_set_by_invalid"])))
     out.append("")
     out.append("**If the curated table replaced the point dates:** `earliest` would move on %s "
                "windows and `latest` on %s, out of %s. Most of that is not error correction but "
@@ -285,19 +284,19 @@ def render(source_map, table, stats):
     out.append("")
     for did in sorted(table["decisions"], key=decide_sort):
         rows = sorted(s for s, r in works.items() if r.get("decide") == did)
-        out.append("- **%s** — %s _(sigla: %s)_" % (did, table["decisions"][did],
-                                                    ", ".join("`%s`" % s for s in rows)))
+        out.append("- **{}** — {} _(sigla: {})_".format(did, table["decisions"][did],
+                                                    ", ".join("`{}`".format(s) for s in rows)))
     out.append("")
 
     out.append("## Bibliography")
     out.append("")
     for key in sorted(sources):
         s = sources[key]
-        line = "- **`%s`** — %s" % (key, s["citation"])
+        line = "- **`{}`** — {}".format(key, s["citation"])
         if s.get("on_disk"):
-            line += " _(held in this repository: [%s](%s))_" % (s["on_disk"], s["on_disk"])
+            line += " _(held in this repository: [{}]({}))_".format(s["on_disk"], s["on_disk"])
         if s.get("note"):
-            line += " %s" % s["note"]
+            line += " {}".format(s["note"])
         out.append(line)
     out.append("")
     return "\n".join(out)
@@ -308,7 +307,7 @@ def write_block(memo_path, block):
         text = fh.read()
     i, j = text.find(START), text.find(END)
     if i < 0 or j < 0:
-        raise SystemExit("generated markers not found in %s" % memo_path)
+        raise SystemExit("generated markers not found in {}".format(memo_path))
     new = text[: i + len(START)] + "\n" + block + text[j:]
     if new != text:
         with open(memo_path, "w", encoding="utf-8", newline="\n") as fh:
@@ -388,7 +387,7 @@ def main():
 
     if args.check or not args.report:
         for f in fails:
-            print("FAIL %s" % f)
+            print("FAIL {}".format(f))
         print("%s — %d sigla, %d curated rows, %d failures"
               % ("PASS" if not fails else "FAIL", len(source_map), len(table["works"]), len(fails)))
         if fails:
@@ -402,7 +401,7 @@ def main():
 
     stats = measure(table, WINDOW_PATH)
     changed = write_block(MEMO_PATH, render(source_map, table, stats))
-    print("%s %s" % ("rewrote" if changed else "unchanged", MEMO_PATH))
+    print("{} {}".format("rewrote" if changed else "unchanged", MEMO_PATH))
     return 0
 
 

@@ -303,7 +303,7 @@ def main():
         elif a == '--seed':
             seed = int(args[i + 1]); i += 2
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
 
     items, composition = build_sample(seed)
     with open(out, 'w', encoding='utf-8', newline='\n') as f:

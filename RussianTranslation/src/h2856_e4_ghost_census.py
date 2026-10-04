@@ -418,7 +418,7 @@ def write_report(n, n_absent_exact, n_absent_renou, n_corpus_rows, corpus_slp1,
     lines.append('| term | β | SE | odds ratio | 95% CI |')
     lines.append('|---|--:|--:|--:|--:|')
     for name, b, se, or_, lo, hi in model_rows:
-        lines.append('| %s | %.4f | %.4f | %.3f | [%.3f, %.3f] |' % (name, b, se, or_, lo, hi))
+        lines.append('| {} | {:.4f} | {:.4f} | {:.3f} | [{:.3f}, {:.3f}] |'.format(name, b, se, or_, lo, hi))
     lines.append('')
     ls_row = [r for r in model_rows if r[0] == 'ls_only'][0]
     lines.append('**Headline: the `ls_only` (lexicographers-only-citation) odds ratio is %.2f '

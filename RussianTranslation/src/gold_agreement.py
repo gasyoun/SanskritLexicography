@@ -101,7 +101,7 @@ def main(argv=None):
     agreement_path = os.path.join(out_dir, 'double_review_agreement.md')
     rows = load(path)
     if not rows:
-        sys.exit('human gold labels are empty: %s' % path)
+        sys.exit('human gold labels are empty: {}'.format(path))
     final, meta, by_id = item_labels(rows)
     os.makedirs(out_dir, exist_ok=True)
     n, good, part, err, p, lo, hi = stats(final, meta, lambda _: True)
@@ -109,7 +109,7 @@ def main(argv=None):
              '| metric | value |', '|---|---|',
              '| unique items | %d |' % len(final),
              '| reviewer rows | %d |' % len(rows),
-             '| precision | %.1f%% (95%% CI %.1f-%.1f) |' % (100*p, 100*lo, 100*hi),
+             '| precision | {:.1f}% (95% CI {:.1f}-{:.1f}) |'.format(100*p, 100*lo, 100*hi),
              '| partial | %.1f%% |' % (100 * part / max(n, 1)),
              '| errors | %.1f%% |' % (100 * err / max(n, 1)), '',
              '## By period', '',
@@ -132,7 +132,7 @@ def main(argv=None):
               '| metric | value |', '|---|---|',
               '| double-reviewed items | %d |' % pair_n,
               '| percent agreement | %.1f%% |' % (100 * po),
-              '| Cohen kappa | %s |' % ('n/a' if kap is None else '%.3f' % kap)]
+              '| Cohen kappa | %s |' % ('n/a' if kap is None else '{:.3f}'.format(kap))]
     open(agreement_path, 'w', encoding='utf-8').write('\n'.join(alines) + '\n')
 
     ev.add_input('labels', path=path, units=len(rows))
@@ -145,7 +145,7 @@ def main(argv=None):
     if not args.fixture and not release_mode:
         ev.warnings.append(
             'C6-01: --fixture was not passed and the input is not the default gold path, '
-            'so the >=1-kappa-pair release guard is DISARMED for this run (%s)' % path)
+            'so the >=1-kappa-pair release guard is DISARMED for this run ({})'.format(path))
     ev.set_verdict('pass')
     if not pair_n:
         ev.declare_expected_empty(
@@ -155,8 +155,8 @@ def main(argv=None):
     ev.assert_nonvacuous()
     ev.emit(args.evidence or ge.sidecar_for(agreement_path))
 
-    print('human precision report → %s' % precision_path)
-    print('double-review agreement → %s' % agreement_path)
+    print('human precision report → {}'.format(precision_path))
+    print('double-review agreement → {}'.format(agreement_path))
     print(ev.summary())
 
 

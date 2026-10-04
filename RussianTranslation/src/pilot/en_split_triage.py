@@ -151,7 +151,7 @@ def main():
         print('   Only a card that persists after several INDEPENDENT solo tries is a genuine')
         print('   splitter candidate. Below: residual ranked by risk = retry priority order.\n')
     else:
-        print('learned high-precision cuts: <ls> >= %s  OR  est_out_tok >= %s' % (ls_cut, tok_cut))
+        print('learned high-precision cuts: <ls> >= {}  OR  est_out_tok >= {}'.format(ls_cut, tok_cut))
         print('  (nothing that PASSED reached these; so anything at/above is size-bound.)\n')
         print('--- SPLIT (%d) — head-split first, do NOT waste an LLM try ---' % len(split))
         for r, k, f in sorted(split, key=lambda x: -x[2]['ls']):

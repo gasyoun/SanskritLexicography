@@ -89,7 +89,7 @@ def load_l0_index(path):
                  'ru_tr': set(ru stems), 'ru_comm': set(ru stems)}.
     Light: ~100k groups, sets of short strings."""
     if not os.path.exists(path):
-        sys.exit('L0 file not found: %s (run build_l0.py build first)' % path)
+        sys.exit('L0 file not found: {} (run build_l0.py build first)'.format(path))
     idx = {}
     with open(path, encoding='utf-8') as f:
         for line in f:
@@ -183,14 +183,14 @@ def embed_aligner_factory(model_id=None):
         import torch
         from transformers import AutoModel, AutoTokenizer
     except Exception as e:
-        sys.stderr.write('embed: transformers/torch unavailable (%s) -> proxy\n' % e)
+        sys.stderr.write('embed: transformers/torch unavailable ({}) -> proxy\n'.format(e))
         return None
     try:
         tok = AutoTokenizer.from_pretrained(model_id)
         model = AutoModel.from_pretrained(model_id, output_hidden_states=True)
         model.eval()
     except Exception as e:
-        sys.stderr.write('embed: model %s load failed (%s) -> proxy\n' % (model_id, e))
+        sys.stderr.write('embed: model {} load failed ({}) -> proxy\n'.format(model_id, e))
         return None
 
     LAYER = int(os.environ.get('TM_ALIGN_LAYER', '8'))
@@ -286,7 +286,7 @@ def awesome_align_confidence(rec, embed_fn=None):
         # in CI (see requirements.txt) -- degrade to 0.0 rather than crash a
         # fixture-only selftest. Live runs (this repo's own machine) always have
         # the package, so this path is a CI/no-network safety net, not the norm.
-        sys.stderr.write('tm_align: awesome_align_confidence embed unavailable (%s) -> 0.0\n' % e)
+        sys.stderr.write('tm_align: awesome_align_confidence embed unavailable ({}) -> 0.0\n'.format(e))
         return 0.0
     return max(0.0, min(1.0, _cos(va, vb)))
 
@@ -309,7 +309,7 @@ def cmd_awesome_cross(a):
     """Score every row of a pairs file (mined-tier or gold) with the awesome-align
     style confidence; write a sidecar."""
     if not os.path.exists(a.inp):
-        sys.exit('input not found: %s' % a.inp)
+        sys.exit('input not found: {}'.format(a.inp))
     rows = [json.loads(l) for l in open(a.inp, encoding='utf-8') if l.strip()]
     os.makedirs(os.path.dirname(a.out), exist_ok=True) if os.path.dirname(a.out) else None
     with open(a.out, 'w', encoding='utf-8', newline='\n') as f:
@@ -326,7 +326,7 @@ def cmd_awesome_calibrate(a):
     the committed precision sample's known verdicts, and replace the flat
     97%% gate with a calibrated threshold. Writes the curve to ALIGN_GATE.md."""
     if not os.path.exists(a.sample):
-        sys.exit('precision sample not found: %s' % a.sample)
+        sys.exit('precision sample not found: {}'.format(a.sample))
     rows = [json.loads(l) for l in open(a.sample, encoding='utf-8') if l.strip()]
     scored = []
     for r in rows:
@@ -363,15 +363,14 @@ def cmd_awesome_calibrate(a):
           % (n, n_pos, n - n_pos))
     for c in curve:
         print('  t=%.1f  kept=%2d  P=%s  R=%s' % (c['threshold'], c['kept'],
-              'n/a' if c['precision'] != c['precision'] else '%.3f' % c['precision'],
-              'n/a' if c['recall'] != c['recall'] else '%.3f' % c['recall']))
+              'n/a' if c['precision'] != c['precision'] else '{:.3f}'.format(c['precision']),
+              'n/a' if c['recall'] != c['recall'] else '{:.3f}'.format(c['recall'])))
     if calibrated:
-        print('  calibrated gate: agreement >= %.2f (replaces the flat %.0f%% rate)'
-              % (calibrated['threshold'], FLAT_GATE * 100))
+        print('  calibrated gate: agreement >= {:.2f} (replaces the flat {:.0f}% rate)'.format(calibrated['threshold'], FLAT_GATE * 100))
     else:
         print('  no threshold clears the flat gate on this sample -> keeping flat %.0f%%'
               % (FLAT_GATE * 100))
-    print('  -> %s' % a.out)
+    print('  -> {}'.format(a.out))
     return 0
 
 
@@ -408,19 +407,18 @@ def _render_gate_md(n, n_pos, curve, calibrated):
     lines.append('| Threshold | Kept | TP | FP | Precision | Recall |')
     lines.append('|---|---|---|---|---|---|')
     for c in curve:
-        p = 'n/a' if c['precision'] != c['precision'] else '%.3f' % c['precision']
-        r = 'n/a' if c['recall'] != c['recall'] else '%.3f' % c['recall']
+        p = 'n/a' if c['precision'] != c['precision'] else '{:.3f}'.format(c['precision'])
+        r = 'n/a' if c['recall'] != c['recall'] else '{:.3f}'.format(c['recall'])
         lines.append('| %.1f | %d | %d | %d | %s | %s |'
                      % (c['threshold'], c['kept'], c['tp'], c['fp'], p, r))
     lines.append('')
     lines.append('## Gate decision')
     lines.append('')
     if calibrated:
-        lines.append('**Calibrated gate: `agreement >= %.2f`** (precision %.3f, recall %.3f '
-                     'on this sample) replaces the flat `%.0f%%` rate previously applied '
+        lines.append('**Calibrated gate: `agreement >= {:.2f}`** (precision {:.3f}, recall {:.3f} '
+                     'on this sample) replaces the flat `{:.0f}%` rate previously applied '
                      'uniformly to every mined pair — every mined pair now gets its OWN '
-                     'per-pair confidence instead of the whole-sample average.'
-                     % (calibrated['threshold'], calibrated['precision'],
+                     'per-pair confidence instead of the whole-sample average.'.format(calibrated['threshold'], calibrated['precision'],
                         calibrated['recall'], FLAT_GATE * 100))
     else:
         lines.append('No threshold on this sample beats the flat `%.0f%%` baseline precision '
@@ -436,8 +434,8 @@ def _render_gate_md(n, n_pos, curve, calibrated):
 # ------------------------------------------------------------------------- cross
 def cmd_cross(a):
     if not os.path.exists(a.l1):
-        sys.exit('L1 lexicon not found: %s (corpus_lexicon.jsonl is gitignored -- '
-                 'build it first)' % a.l1)
+        sys.exit('L1 lexicon not found: {} (corpus_lexicon.jsonl is gitignored -- '
+                 'build it first)'.format(a.l1))
     l0 = load_l0_index(a.l0)
     print('cross: %d L0 verse groups indexed' % len(l0))
     aligner = None
@@ -447,8 +445,7 @@ def cmd_cross(a):
             print('cross: embed backend unavailable -> proxy on full corpus')
             a.backend = 'proxy'
         else:
-            print('cross: embed backend ready (model=%s, layer=%s)'
-                  % (aligner.model_id, aligner.layer))
+            print('cross: embed backend ready (model={}, layer={})'.format(aligner.model_id, aligner.layer))
     # embed needs the ordered verse words per group; proxy only needs the index.
     l0_words = load_l0_words(a.l0) if a.backend == 'embed' else {}
     dist = collections.Counter()
@@ -477,8 +474,7 @@ def cmd_cross(a):
                 break
     print('cross: %d L1 pairs scored (backend=%s) -> %s' % (n, a.backend, a.out))
     if n:
-        print('  mean alignment_confidence: %.4f   grounded (>0): %.1f%%'
-              % (conf_sum / n, 100 * grounded / n))
+        print('  mean alignment_confidence: {:.4f}   grounded (>0): {:.1f}%'.format(conf_sum / n, 100 * grounded / n))
         print('  L1 pairs with no L0 verse indexed: %d (%.1f%%) -- these score 0 for '
               'lack of a parent, not for being wrong' % (no_l0, 100 * no_l0 / n))
         for b in ('0.0', '(0,0.3]', '(0.3,0.6]', '(0.6,0.9]', '(0.9,1.0]'):
@@ -520,7 +516,7 @@ def _bucket(c):
 
 def cmd_agree(a):
     if not os.path.exists(a.align):
-        sys.exit('align sidecar not found: %s (run `cross` first)' % a.align)
+        sys.exit('align sidecar not found: {} (run `cross` first)'.format(a.align))
     dist = collections.Counter()
     conf_sum = n = argmax_agree = argmax_seen = 0
     bykind = collections.defaultdict(lambda: [0, 0.0])

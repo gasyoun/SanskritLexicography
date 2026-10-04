@@ -70,7 +70,7 @@ def test_prompt_derived_mutations_fail_closed():
         mutate(bad)
         try:
             validate_complete_schema(bad, schema)
-            raise AssertionError('mutation accepted: %s' % name)
+            raise AssertionError('mutation accepted: {}'.format(name))
         except ValueError:
             pass
 

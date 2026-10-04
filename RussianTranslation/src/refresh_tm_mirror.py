@@ -269,8 +269,8 @@ def selftest():
         rows = [row('k1', 's', '1', 'de1', 'ru-one'),
                 row('k2', 's', '1', 'de2', mid_ru),
                 row('k3', 's', '1', 'de3', 'ru-three')]
-        sp = os.path.join(td, 'src_%s.jsonl' % name)
-        mp = os.path.join(td, 'mirror_%s.jsonl' % name)
+        sp = os.path.join(td, 'src_{}.jsonl'.format(name))
+        mp = os.path.join(td, 'mirror_{}.jsonl'.format(name))
         with io.open(sp, 'w', encoding='utf-8', newline='\n') as f:
             for r in rows:
                 f.write(json.dumps(r, ensure_ascii=False) + '\n')
@@ -370,7 +370,7 @@ def run_refresh(src, mirror, ledger, handoff, apply=False, force=False,
     print('  mirror-only superseded   %d  (acknowledged)' % len(b['superseded']))
     print('  mirror-only unexplained  %d' % len(b['unexplained']))
     for r in b['unexplained'][:20]:
-        print('    ! %s | %s | %s | %s' % (r.get('key1'), r.get('subcard'),
+        print('    ! {} | {} | {} | {}'.format(r.get('key1'), r.get('subcard'),
                                            r.get('sense_tag'), (r.get('ru') or '')[:60]))
 
     guards = run_guards(src_rows, mirror_rows, report, max_drop)
@@ -395,8 +395,8 @@ def run_refresh(src, mirror, ledger, handoff, apply=False, force=False,
             raw = f.read()
         if not raw.endswith(b'\n'):
             raise ValueError(
-                'src %s is not LF-only JSONL with a trailing newline; a byte-exact '
-                'mirror copy is impossible — refusing to re-serialize' % src)
+                'src {} is not LF-only JSONL with a trailing newline; a byte-exact '
+                'mirror copy is impossible — refusing to re-serialize'.format(src))
         lines = raw.decode('utf-8').split('\n')[:-1]
         backup = locked_store_rewrite(mirror, lines, tag=handoff.lower())
         after_sha = sha256_file(mirror)
@@ -404,8 +404,8 @@ def run_refresh(src, mirror, ledger, handoff, apply=False, force=False,
             if backup and os.path.exists(backup):
                 shutil.copy2(backup, mirror)
             raise RuntimeError(
-                'mirror rewrite drifted from src bytes (%s -> %s, expected %s); '
-                'backup restored' % (before_sha[:12], after_sha[:12], src_sha[:12]))
+                'mirror rewrite drifted from src bytes ({} -> {}, expected {}); '
+                'backup restored'.format(before_sha[:12], after_sha[:12], src_sha[:12]))
     else:
         print('\nDRY RUN — nothing written. Re-run with --apply to refresh the mirror.')
         after_sha = before_sha
@@ -437,13 +437,13 @@ def run_refresh(src, mirror, ledger, handoff, apply=False, force=False,
         with io.open(ledger, 'a', encoding='utf-8', newline='\n') as f:
             f.write(json.dumps(entry, ensure_ascii=False) + '\n')
         print('\nrefreshed. backup=%s' % (os.path.basename(backup) if backup else 'none'))
-        print('mirror sha %s -> %s' % (before_sha[:12], after_sha[:12]))
-        print('ledger += %s' % ledger)
+        print('mirror sha {} -> {}'.format(before_sha[:12], after_sha[:12]))
+        print('ledger += {}'.format(ledger))
     if receipt:
         with io.open(receipt, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(entry, f, ensure_ascii=False, indent=1)
             f.write('\n')
-        print('receipt -> %s' % receipt)
+        print('receipt -> {}'.format(receipt))
     return entry
 
 

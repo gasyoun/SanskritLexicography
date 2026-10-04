@@ -67,9 +67,9 @@ def main() -> int:
 
     print('unit %s arm %s · %d fragments · %d prompt bytes'
           % (args.unit, args.arm, card['group_fragments'], len(prompt.encode('utf-8'))))
-    print('plan  %s' % plan['plan_sha256'])
-    print('prompt %s (verified against the sealed plan)' % sealed)
-    print('dispatching with a %.0f s ceiling — ONE call, outside the sealed ledger' % args.timeout)
+    print('plan  {}'.format(plan['plan_sha256']))
+    print('prompt {} (verified against the sealed plan)'.format(sealed))
+    print('dispatching with a {:.0f} s ceiling — ONE call, outside the sealed ledger'.format(args.timeout))
 
     argv = pcc.build_argv(plan, manifest)
     started = time.monotonic()
@@ -108,15 +108,14 @@ def main() -> int:
           % (report['wall_s'], report['timed_out'], report['returncode'],
              report['returned_model'], report['tokens_total']))
     if report['terminal'].get('subtype'):
-        print('subtype=%s terminal_reason=%s num_turns=%s'
-              % (report['terminal']['subtype'], report['terminal'].get('terminal_reason'),
+        print('subtype={} terminal_reason={} num_turns={}'.format(report['terminal']['subtype'], report['terminal'].get('terminal_reason'),
                  report['terminal'].get('num_turns')))
 
     if args.out:
         with open(args.out, 'w', encoding='utf-8', newline='\n') as handle:
             json.dump(report, handle, ensure_ascii=False, indent=1, sort_keys=True)
             handle.write('\n')
-        print('wrote %s' % args.out)
+        print('wrote {}'.format(args.out))
     return 0 if not report['timed_out'] else 2
 
 

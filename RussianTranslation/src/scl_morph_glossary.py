@@ -289,9 +289,9 @@ def cmd_report(_args):
         "",
         "## Misses (%d) and ambiguity" % len(misses),
         "",
-        ("- Uncovered: %s — typology: indeclinables/avyaya without analyzer entry "
+        ("- Uncovered: {} — typology: indeclinables/avyaya without analyzer entry "
          "(tatas, anamitram), compound members (mahā), pro-drop pronoun fragments (sa), "
-         "middle-participle morphology (amṛṣyamāṇaḥ), split-compound residue (apāṃsi)." % ", ".join("`%s`" % m for m in misses)) if misses else "- No misses.",
+         "middle-participle morphology (amṛṣyamāṇaḥ), split-compound residue (apāṃsi).".format(", ".join("`{}`".format(m) for m in misses))) if misses else "- No misses.",
         "",
         "- Forms with >1 competing analysis (homograph/polysemy — the adjudication value): %d/40." % multi,
         "",

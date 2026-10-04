@@ -127,7 +127,7 @@ def main():
     for st in ('I', 'II', 'III', 'IV', 'V'):
         print('  %-3s %-15s %3d sources · %7d citations'
               % (st, RENOU_NAME[st], by_src.get(st, 0), by_cit.get(st, 0)))
-    print('→ %s' % os.path.basename(OUT))
+    print('→ {}'.format(os.path.basename(OUT)))
 
 
 if __name__ == '__main__':

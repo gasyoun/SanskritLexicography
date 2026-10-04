@@ -37,7 +37,7 @@ EMBED_MODEL = 'sentence-transformers/LaBSE'
 
 def _cache_path(kind, key):
     h = hashlib.sha256(key.encode('utf-8')).hexdigest()[:24]
-    return os.path.join(CACHE_DIR, '%s-%s.json' % (kind, h))
+    return os.path.join(CACHE_DIR, '{}-{}.json'.format(kind, h))
 
 
 def _cache_get(kind, key):
@@ -82,8 +82,8 @@ def _embed_model_instance():
         cache_hint = os.path.join(os.path.expanduser('~'), '.cache', 'huggingface',
                                   'hub', 'models--sentence-transformers--LaBSE')
         if os.path.isdir(cache_hint):
-            sys.stderr.write('nn_api: online load failed (%s) -> retrying from '
-                             'local cache (HF_HUB_OFFLINE)\n' % e)
+            sys.stderr.write('nn_api: online load failed ({}) -> retrying from '
+                             'local cache (HF_HUB_OFFLINE)\n'.format(e))
             try:
                 os.environ['HF_HUB_OFFLINE'] = '1'
                 _embed_model = SentenceTransformer(EMBED_MODEL)
@@ -104,7 +104,7 @@ def embed(texts):
     out = [None] * len(texts)
     todo_idx, todo_txt = [], []
     for i, t in enumerate(texts):
-        hit = _cache_get('embed-%s' % EMBED_MODEL.replace('/', '_'), t)
+        hit = _cache_get('embed-{}'.format(EMBED_MODEL.replace('/', '_')), t)
         if hit is not None:
             out[i] = hit
         else:
@@ -115,7 +115,7 @@ def embed(texts):
         vecs = model.encode(todo_txt).tolist()
         for i, t, v in zip(todo_idx, todo_txt, vecs):
             out[i] = v
-            _cache_put('embed-%s' % EMBED_MODEL.replace('/', '_'), t, v)
+            _cache_put('embed-{}'.format(EMBED_MODEL.replace('/', '_')), t, v)
     return out
 
 
@@ -124,7 +124,7 @@ def embed_available():
         _embed_model_instance()
         return True
     except Exception as e:
-        sys.stderr.write('nn_api: embed unavailable (%s)\n' % e)
+        sys.stderr.write('nn_api: embed unavailable ({})\n'.format(e))
         return False
 
 
@@ -166,7 +166,7 @@ def qe(sa, ru, backend=QE_LABSE_BACKEND):
             return None
         score, _raw = qe_labse(sa, ru)
         return score
-    raise ValueError('unknown QE backend %r (not comet, not labse)' % backend)
+    raise ValueError('unknown QE backend {!r} (not comet, not labse)'.format(backend))
 
 
 def qe_available(backend=QE_LABSE_BACKEND):
@@ -244,8 +244,8 @@ def smoketest():
         report['embed']['true_pair_cosine'] = pairs
         report['embed']['mismatch_cosine'] = mismatch
         report['embed']['separates'] = min(pairs) > max(mismatch)
-        print('embed: LaBSE serves in-env. true-pair cosine %s vs mismatch %s '
-              '-> separates=%s' % (pairs, mismatch, report['embed']['separates']))
+        print('embed: LaBSE serves in-env. true-pair cosine {} vs mismatch {} '
+              '-> separates={}'.format(pairs, mismatch, report['embed']['separates']))
     else:
         print('embed: no backend serves in this environment')
 
@@ -268,13 +268,10 @@ def smoketest():
         report['qe']['true_pair'] = scores
         report['qe']['mismatch'] = {'cosine': round(mismatch_raw, 4),
                                     'unit': round(mismatch_unit, 4)}
-        print('qe: labse SERVES (%s). true-pair unit %s vs mismatch %.4f'
-              % (QE_LABSE_MODEL, [s['unit'] for s in scores], mismatch_unit))
-        print('qe: comet does NOT serve (%s) -- not labelled as comet'
-              % comet['reason'])
+        print('qe: labse SERVES ({}). true-pair unit {} vs mismatch {:.4f}'.format(QE_LABSE_MODEL, [s['unit'] for s in scores], mismatch_unit))
+        print('qe: comet does NOT serve ({}) -- not labelled as comet'.format(comet['reason']))
     else:
-        print('qe: no genuine backend serves (labse=%s; comet=%s)'
-              % (labse['reason'], comet['reason']))
+        print('qe: no genuine backend serves (labse={}; comet={})'.format(labse['reason'], comet['reason']))
     return report
 
 

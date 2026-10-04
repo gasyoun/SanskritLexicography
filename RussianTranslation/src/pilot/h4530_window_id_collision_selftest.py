@@ -49,7 +49,7 @@ def _mk(*parts):
 def _prepared_root(coord_dir, root):
     """The on-disk shape `plan_window` refuses to re-use: artifacts/<root>/manifest."""
     base = _mk(coord_dir, 'artifacts', root)
-    with open(os.path.join(base, 'execution_manifest.%s.json' % root), 'w',
+    with open(os.path.join(base, 'execution_manifest.{}.json'.format(root)), 'w',
               encoding='utf-8') as f:
         f.write('{}')
     return base
@@ -60,11 +60,11 @@ def test_prepared_headless_root_is_counted(td):
     _prepared_root(coord, 'h4213can02')
 
     blind = plan.next_free_index('h4213can', here=here, out=out)
-    assert blind == 2, 'precondition: without the coordinator dir the picker is blind (%r)' % blind
+    assert blind == 2, 'precondition: without the coordinator dir the picker is blind ({!r})'.format(blind)
 
     got = plan.next_free_index('h4213can', here=here, out=out, coord_dir=coord)
     assert got == 3, ('a prepared-but-unfinished headless root must consume its index, '
-                      'else every retry re-picks it and dies on the existence guard: %r' % got)
+                      'else every retry re-picks it and dies on the existence guard: {!r}'.format(got))
     assert plan.used_window_indices('h4213can', here, out, coord_dir=coord) == {2}
 
 
@@ -121,7 +121,7 @@ def main():
     for test in tests:
         with tempfile.TemporaryDirectory() as td:
             test(td)
-        print('  PASS %s' % test.__name__)
+        print('  PASS {}'.format(test.__name__))
     print('h4530 window-id collision selftest: PASS (%d checks — prepared headless roots '
           'consume their index, two static-prefix re-arms cannot collide, H809 refusal and '
           'the legacy disk scans intact)' % len(tests))

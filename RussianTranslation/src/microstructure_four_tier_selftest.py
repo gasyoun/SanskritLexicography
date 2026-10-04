@@ -276,10 +276,10 @@ def run(tests, label):
     for t in tests:
         try:
             t()
-            print('  ok    %s' % t.__name__)
+            print('  ok    {}'.format(t.__name__))
         except Exception as e:
             failed.append((t.__name__, e))
-            print('  FAIL  %s: %s' % (t.__name__, e))
+            print('  FAIL  {}: {}'.format(t.__name__, e))
     print('%s: %d/%d passed' % (label, len(tests) - len(failed), len(tests)))
     return failed
 
@@ -295,14 +295,14 @@ def main():
     prove_revert = '--prove-revert' in sys.argv
 
     print('H3948 four-tier segmentation selftest (READ-ONLY)')
-    print('corpus: %s' % pwg_mask.PWG)
+    print('corpus: {}'.format(pwg_mask.PWG))
     print()
     print('unit tests')
     failed = run(UNIT_TESTS, 'unit')
 
     if want_corpus:
         if not os.path.exists(pwg_mask.PWG):
-            print('\ncorpus tests SKIPPED — %s not present' % pwg_mask.PWG)
+            print('\ncorpus tests SKIPPED — {} not present'.format(pwg_mask.PWG))
         else:
             print('\ncorpus scan (123,366 records) …')
             CORPUS.update(scan_corpus())

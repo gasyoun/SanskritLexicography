@@ -89,7 +89,7 @@ def main():
     print('  duration_api_ms : min %6d  median %8.0f  max %6d' % (min(apis), median(apis), max(apis)))
     print('  api_gap_ms      : min %6d  median %8.0f  max %6d' % (min(gaps), median(gaps), max(gaps)))
     ratios = [a / w for _, w, a in READINGS if a is not None]
-    print('  api/wall ratio  : min %6.2f  median %8.2f  max %6.2f' % (min(ratios), median(ratios), max(ratios)))
+    print('  api/wall ratio  : min {:6.2f}  median {:8.2f}  max {:6.2f}'.format(min(ratios), median(ratios), max(ratios)))
     print()
 
     cluster, outliers = split_cluster(apis)

@@ -164,12 +164,11 @@ def mine_deepseek(user, work=None, passage=None):
             rec['usd'] = _usd(usage, card) if usage else None
             rec['finish_reason'] = ((body.get('choices') or [{}])[0]).get('finish_reason')
             if r.status_code >= 400 and bcl.transient_http(r.status_code):
-                rec['error'] = 'transient HTTP %s' % r.status_code
+                rec['error'] = 'transient HTTP {}'.format(r.status_code)
                 _log_call(rec)
-                raise requests.HTTPError('transient HTTP %s: %s' %
-                                         (r.status_code, r.text[:200]), response=r)
+                raise requests.HTTPError('transient HTTP {}: {}'.format(r.status_code, r.text[:200]), response=r)
             if r.status_code >= 400:
-                rec['error'] = 'HTTP %s' % r.status_code
+                rec['error'] = 'HTTP {}'.format(r.status_code)
                 _log_call(rec)
                 r.raise_for_status()
             _log_call(rec)
@@ -180,7 +179,7 @@ def mine_deepseek(user, work=None, passage=None):
                 rec['error'] = str(ex)[:300]
                 _log_call(rec)
             if a == bcl.RETRIES - 1:
-                sys.stderr.write('deepseek fail: %s\n' % ex)
+                sys.stderr.write('deepseek fail: {}\n'.format(ex))
                 return None
             retry_after = getattr(getattr(ex, 'response', None), 'headers', {}).get('Retry-After')
             wait = bcl.backoff(a, retry_after=retry_after)
@@ -208,8 +207,7 @@ def load_aligned_works():
     if os.path.exists(ALIGNED_WORKS_FILE):
         return {ln.strip() for ln in open(ALIGNED_WORKS_FILE, encoding='utf-8')
                 if ln.strip() and not ln.startswith('#')}
-    raise SystemExit('no corpus_lexicon.jsonl and no %s — cannot determine aligned works'
-                     % ALIGNED_WORKS_FILE)
+    raise SystemExit('no corpus_lexicon.jsonl and no {} — cannot determine aligned works'.format(ALIGNED_WORKS_FILE))
 
 
 def count_term_bearing(textfile):
@@ -246,7 +244,7 @@ SYS_MINE = (
 
 
 def mine_passage(text, work=None, passage=None):
-    out = mine_deepseek('Passage (Russian):\n%s' % text[:2400], work=work, passage=passage)
+    out = mine_deepseek('Passage (Russian):\n{}'.format(text[:2400]), work=work, passage=passage)
     if not out:
         return None          # None = API/JSON failure (distinct from "0 pairs found")
     try:
@@ -558,8 +556,8 @@ def cmd_selftest(args):
     check(len(raws) >= 1, 'raw companions skipped (%d)' % len(raws))
     check(all('raw companion' in skip_d[w] for w in raws), 'raw skip reason')
     for w in H224_MINED:
-        check(w in skip_d, 'H224 already-mined skip: %s' % w)
-        check(w not in sel_d, 'H224 not selected: %s' % w)
+        check(w in skip_d, 'H224 already-mined skip: {}'.format(w))
+        check(w not in sel_d, 'H224 not selected: {}'.format(w))
     check(MINE_LAST not in sel_d, 'kommentarii not in delta (H224 already-mined)')
     if selected:
         check(selected[-1][0] != MINE_LAST or selected[-1][0] == selected[-1][0],

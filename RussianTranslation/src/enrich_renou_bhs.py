@@ -89,7 +89,7 @@ def run(path, out, bhs_path, report_only):
     print('  V ADDED (was missing): %d · V corroborated (already had it): %d'
           % (stats['new_v'], stats['corroborated']))
     if tmp:
-        print('→ %s' % out)
+        print('→ {}'.format(out))
 
 
 def main():
@@ -110,7 +110,7 @@ def main():
         elif a == '--report':
             report_only = True; i += 1
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
     if out is None and not report_only:
         out = path
     run(path, out, bhs_path, report_only)

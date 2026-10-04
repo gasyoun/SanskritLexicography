@@ -49,7 +49,7 @@ SPOTCHECK_MAX_AGE_SECONDS = 48 * 3600
 
 
 def spotcheck_path(telemetry_dir, date):
-    return os.path.join(telemetry_dir, 'spotcheck_%s.json' % date)
+    return os.path.join(telemetry_dir, 'spotcheck_{}.json'.format(date))
 
 
 def fresh_spotcheck(telemetry_dir, now=None, max_age=SPOTCHECK_MAX_AGE_SECONDS,
@@ -99,8 +99,8 @@ def fresh_spotcheck_evidence(telemetry_dir, now=None, max_age=SPOTCHECK_MAX_AGE_
         candidates += 1
         # Hashing here is the whole point: the predicate below reads only the mtime,
         # so without this the record could not say WHICH bytes were blessed.
-        ev.add_input('spotcheck:%s' % name, path=path, units=1)
-        ev.note('age_seconds:%s' % name, int(age))
+        ev.add_input('spotcheck:{}'.format(name), path=path, units=1)
+        ev.note('age_seconds:{}'.format(name), int(age))
         if age <= max_age and (best is None or age < best[0]):
             best = (age, path)
     ev.add_predicate('within_freshness_window', evaluations=candidates,
@@ -131,17 +131,15 @@ def tick(lane, data_root, date=None, fraction=0.10, judge_cmd=None, execute=Fals
         scd.main(argv)            # 0 clean, 1 = R4.1 inputs non-clean (not an error)
     except SystemExit as exc:     # argparse/refusal paths
         if exc.code not in (0, 1):
-            print('spot-check FAILED to run (code %s) — INCONCLUSIVE, not clean'
-                  % exc.code, file=sys.stderr)
+            print('spot-check FAILED to run (code {}) — INCONCLUSIVE, not clean'.format(exc.code), file=sys.stderr)
             return 1, None, False
     except Exception as exc:
-        print('spot-check raised %s: %s — INCONCLUSIVE, not clean'
-              % (type(exc).__name__, exc), file=sys.stderr)
+        print('spot-check raised {}: {} — INCONCLUSIVE, not clean'.format(type(exc).__name__, exc), file=sys.stderr)
         return 1, None, False
 
     report = spotcheck_path(telemetry, date)
     if not os.path.exists(report):
-        print('spot-check wrote no report for %s — INCONCLUSIVE' % date, file=sys.stderr)
+        print('spot-check wrote no report for {} — INCONCLUSIVE'.format(date), file=sys.stderr)
         return 1, None, False
 
     ns = argparse.Namespace(lane=lane, spotcheck=report, freeze_dir=gatelogs,

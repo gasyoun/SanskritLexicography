@@ -115,7 +115,7 @@ def expect_attestation_error(fn, needle):
 def test_exact_main_and_sidechain_dispatches_bind_end_to_end():
     for sidechain in (False, True):
         with tempfile.TemporaryDirectory() as tmp:
-            paths = base.fixture(tmp, run_id='scope-%s' % sidechain)
+            paths = base.fixture(tmp, run_id='scope-{}'.format(sidechain))
             ticket = base.prepare(paths)
             record, att_path = build(
                 tmp, ticket, [tool_use(ticket, sidechain=sidechain), tool_result()])
@@ -283,7 +283,7 @@ def selftest():
             print('  PASS: ' + test.__name__)
         except BaseException as exc:
             failed.append(test.__name__)
-            print('  FAIL: %s -- %s: %s' % (
+            print('  FAIL: {} -- {}: {}'.format(
                 test.__name__, exc.__class__.__name__, exc))
     if failed:
         print('gateway_attestation_selftest: FAILED (%d/%d): %s' % (

@@ -99,13 +99,12 @@ def deepseek(user, retries=None, system=None):
                                                  {'role': 'user', 'content': user}]},
                               timeout=(CONNECT_TIMEOUT, READ_TIMEOUT))
             if r.status_code >= 400 and transient_http(r.status_code):
-                raise requests.HTTPError('transient HTTP %s: %s' %
-                                         (r.status_code, r.text[:200]), response=r)
+                raise requests.HTTPError('transient HTTP {}: {}'.format(r.status_code, r.text[:200]), response=r)
             r.raise_for_status()
             return r.json()['choices'][0]['message']['content']
         except Exception as ex:
             if a == retries - 1:
-                sys.stderr.write('deepseek fail: %s\n' % ex)
+                sys.stderr.write('deepseek fail: {}\n'.format(ex))
                 return None
             retry_after = getattr(getattr(ex, 'response', None), 'headers', {}).get('Retry-After')
             wait = backoff(a, retry_after=retry_after)
@@ -115,7 +114,7 @@ def deepseek(user, retries=None, system=None):
 
 
 def align(sa_text, ru_text):
-    out = deepseek('Sanskrit (IAST): %s\n\nRussian: %s' % (sa_text[:1200], ru_text[:1500]))
+    out = deepseek('Sanskrit (IAST): {}\n\nRussian: {}'.format(sa_text[:1200], ru_text[:1500]))
     if not out:
         return []
     try:
@@ -229,11 +228,10 @@ def cmd_test(args):
     tf = args[0] if args else 'bhagavadgita-sementsov.jsonl'
     for g, work, passage, sa, targets in pairs_of(tf):
         st = STRATA.get(work, {})
-        print('work=%s group=%s passage=%s | %s · ~%s · %s'
-              % (work, g, passage, st.get('genre'), st.get('date_median'), st.get('period')))
+        print('work={} group={} passage={} | {} · ~{} · {}'.format(work, g, passage, st.get('genre'), st.get('date_median'), st.get('period')))
         print('SA:', sa[:170])
         for text, kind in targets:
-            print('--- %s ---' % kind.upper())
+            print('--- {} ---'.format(kind.upper()))
             print('  ', text[:150])
             for p in align(sa, text):
                 print('    %-16s → slp1=%-12s → %s' % (p.get('sa', ''), to_slp1(p.get('sa', '')), p.get('ru', '')))
@@ -359,7 +357,7 @@ def cmd_buildall(args):
         try:
             cmd_build([tf, str(10**9), str(workers)])
         except Exception as ex:
-            sys.stderr.write('ERROR %s: %s\n' % (work, ex))
+            sys.stderr.write('ERROR {}: {}\n'.format(work, ex))
 
 
 def main():

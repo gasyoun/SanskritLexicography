@@ -28,7 +28,7 @@ DENSE_LS = 30
 
 
 def die(message):
-    sys.exit('FAIL: %s' % message)
+    sys.exit('FAIL: {}'.format(message))
 
 
 def check(condition, message):
@@ -39,7 +39,7 @@ def check(condition, message):
 def parse_args(argv):
     root = argv[0] if argv else 'tyaj'
     mode = argv[1] if len(argv) > 1 and not argv[1].startswith('--') else 'body'
-    check(mode in ('body', 'headtest'), 'mode must be body or headtest, got %r' % mode)
+    check(mode in ('body', 'headtest'), 'mode must be body or headtest, got {!r}'.format(mode))
     keyfilter = None
     for arg in argv[1:]:
         if arg.startswith('--keys='):
@@ -49,7 +49,7 @@ def parse_args(argv):
 
 def selected_keys(root, mode, keyfilter):
     path, _stem = rootmap_path(root)
-    check(path, 'no rootmap for %r under %s' % (root, INP))
+    check(path, 'no rootmap for {!r} under {}'.format(root, INP))
     rm = load_json(path)
     subs = rm.get('sub_cards') or []
     keys = [s['subkey'] for s in subs]
@@ -64,7 +64,7 @@ def selected_keys(root, mode, keyfilter):
         keys = heads[:1] or keys[:1]
     if keyfilter:
         keys = [k for k in keys if k in keyfilter or k.split('~~')[-1] in keyfilter]
-        check(keys, 'no sub-cards matched --keys=%s' % sorted(keyfilter))
+        check(keys, 'no sub-cards matched --keys={}'.format(sorted(keyfilter)))
     return path, keys
 
 
@@ -72,8 +72,8 @@ def inline_inputs(keys):
     inputs, dense, input_hashes = {}, [], {}
     for key in keys:
         raw_path, portrait_path = input_paths(key)
-        check(os.path.exists(raw_path), 'missing raw input %s' % raw_path)
-        check(os.path.exists(portrait_path), 'missing portrait input %s' % portrait_path)
+        check(os.path.exists(raw_path), 'missing raw input {}'.format(raw_path))
+        check(os.path.exists(portrait_path), 'missing portrait input {}'.format(portrait_path))
         raw = read_text(raw_path)
         portrait = read_text(portrait_path)
         inputs[key] = {'raw': raw, 'portrait': portrait}
@@ -175,7 +175,7 @@ return { meta: META, results: out }
 
     src = src.replace("name: 'pwgru-pilot-a-section',", f"name: 'pwgru-opt-{root}',")
     for bad in ["readFileSync", "fileURLToPath", "import.meta", "console.error", "dirname("]:
-        check(bad not in src, "residual node-ism: %s" % bad)
+        check(bad not in src, "residual node-ism: {}".format(bad))
     agent_calls = len(re.findall(r'\bagent\(prompt,\s*\{', src))
     tool_guards = src.count('tools: []')
     check(agent_calls == tool_guards,

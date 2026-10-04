@@ -42,7 +42,7 @@ def test_a_binding_is_deterministic_round_robin():
 def test_b_fleet_guard_refuses_a_width_the_fleet_cannot_fill():
     ok, why = cld.fleet_guard(2, ['c1'])
     assert not ok and 'needs 2 distinct' in why and 'c1' in why, why
-    assert 'human roster act' in why, 'the refusal must say who can widen the fleet: %r' % why
+    assert 'human roster act' in why, 'the refusal must say who can widen the fleet: {!r}'.format(why)
     ok2, why2 = cld.fleet_guard(2, ['c1', 'c2'])
     assert ok2, why2
     ok3, why3 = cld.fleet_guard(1, ['c1'])
@@ -78,7 +78,7 @@ def test_d_wave_promotes_exactly_once_for_the_whole_accepted_set():
 
     promote_wave = cld.make_wave_promoter(promote_leases, 'claude-sonnet-5')
     receipt = promote_wave([{'id': 'w1'}, {'id': 'w2'}])
-    assert len(calls) == 1, 'a wave must promote ONCE, not per lease: %r' % (calls,)
+    assert len(calls) == 1, 'a wave must promote ONCE, not per lease: {!r}'.format(calls)
     assert calls[0] == (['w1', 'w2'], 'claude-sonnet-5'), calls
     assert receipt['members'] == ['w1', 'w2'] and receipt['promoted'] is True, receipt
     assert receipt['returncode'] == 0 and receipt['promoted_at'], receipt
@@ -140,11 +140,10 @@ def test_f_live_wave_runs_through_the_engine(td):
         admitted={'c1', 'c2'}, max_calls=4)
     assert sorted(d[0] for d in dispatched) == ['w1', 'w2'], dispatched
     assert sorted(d[1] for d in dispatched) == ['c1', 'c2'], (
-        'each lease must have been dispatched on its OWN profile: %r' % (dispatched,))
+        'each lease must have been dispatched on its OWN profile: {!r}'.format(dispatched))
     assert all(d[2] is True for d in dispatched), (
-        'a wave-dispatched window must carry wave_promote so run_window stands down: %r'
-        % (dispatched,))
-    assert len(promoted) == 1, 'exactly one promote per wave: %r' % (promoted,)
+        'a wave-dispatched window must carry wave_promote so run_window stands down: {!r}'.format(dispatched))
+    assert len(promoted) == 1, 'exactly one promote per wave: {!r}'.format(promoted)
     assert sorted(promoted[0]) == ['w1', 'w2'], promoted
     assert summary.get('peak_concurrency', 0) >= 1, summary
     print('  (f) a live-shaped wave dispatches per profile and promotes once: PASS')

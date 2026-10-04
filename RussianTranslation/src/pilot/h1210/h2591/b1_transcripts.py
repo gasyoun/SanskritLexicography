@@ -72,7 +72,7 @@ for first, last, path, rows in sessions:
     cc = sum(int(u.get('cache_creation_input_tokens') or 0) for u in usages)
     joined = ' '.join(texts).strip()
 
-    print('%s -> %s  (%.0fs)  %s' % (first.strftime('%H:%M:%S'), last.strftime('%H:%M:%S'),
+    print('{} -> {}  ({:.0f}s)  {}'.format(first.strftime('%H:%M:%S'), last.strftime('%H:%M:%S'),
                                      (last - first).total_seconds(),
                                      os.path.basename(path)[:8]))
     print('   turns=%d assistant_usage_blocks=%d in=%d out=%d cache_create=%d'
@@ -80,9 +80,9 @@ for first, last, path, rows in sessions:
     print('   stop_reasons=%s  api_error_msgs=%d' % (stops or None, len(errors)))
     if errors:
         for e in errors[:2]:
-            print('   !! API ERROR: %s' % e.replace('\n', ' ')[:220])
+            print('   !! API ERROR: {}'.format(e.replace('\n', ' ')[:220]))
     if joined:
-        print('   text head: %s' % joined.replace('\n', ' ')[:200])
+        print('   text head: {}'.format(joined.replace('\n', ' ')[:200]))
     else:
         print('   text head: <no assistant text>')
     print()

@@ -169,9 +169,8 @@ def _chronology(a, b):
     gap = ly - ey
     parts = ['<b>Хронология:</b> %s %s → %s %s (позже на %d лет).'
              % (esc(en), esc(el), esc(ln), esc(ll), gap)]
-    parts.append('%s мог знать перевод %s — расхождение здесь скорее '
-                 '<i>сознательный отход</i>, чем независимое чтение.'
-                 % (esc(ln), esc(en)))
+    parts.append('{} мог знать перевод {} — расхождение здесь скорее '
+                 '<i>сознательный отход</i>, чем независимое чтение.'.format(esc(ln), esc(en)))
     if a in EN_TRANSLATORS and b in EN_TRANSLATORS:
         parts.append('<b>Оба свидетеля здесь английские</b>, и между ними 118 лет: '
                      'Гриффит 1896 — викторианский, Джеймисон–Бреретон 2014 — '
@@ -182,7 +181,7 @@ def _chronology(a, b):
                      'а не «английский» как таковой: с 2014 года в слое есть и '
                      'Джеймисон–Бреретон. Английская сторона этого расхождения — '
                      'старая, и её стоит сверить с Дж.–Б. в блоке ниже.')
-    return '<div class="rv-chrono">%s</div>' % ' '.join(parts)
+    return '<div class="rv-chrono">{}</div>'.format(' '.join(parts))
 
 
 def _renou_band(witness):
@@ -199,11 +198,11 @@ def _renou_band(witness):
     bits = ['<b>Свидетель Рену (EVP %s):</b> Елизаренкова ссылается на него в этом '
             'месте %d раз.' % (esc(label), witness['mention_count'])]
     for q in witness.get('quotes_fr') or []:
-        bits.append('<span class="rv-renou-q">«%s»</span>' % esc(q))
+        bits.append('<span class="rv-renou-q">«{}»</span>'.format(esc(q)))
     if not witness.get('quotes_fr'):
         bits.append('<span class="muted">Прямой французской цитаты здесь нет — только '
                     'упоминание.</span>')
-    return '<div class="rv-renou">%s</div>' % ' '.join(bits)
+    return '<div class="rv-renou">{}</div>'.format(' '.join(bits))
 
 
 def _question(cls, ex, a, b, witness=None):
@@ -214,16 +213,14 @@ def _question(cls, ex, a, b, witness=None):
     band = _renou_band(witness)
     if band:
         parts.append(band)
-    parts.append('Модель присвоила класс <b>%s</b> — <i>%s</i>.'
-                 % (esc(cls), esc(CLASS_HELP.get(cls, ''))))
+    parts.append('Модель присвоила класс <b>{}</b> — <i>{}</i>.'.format(esc(cls), esc(CLASS_HELP.get(cls, ''))))
     if why:
-        parts.append('<div class="rv-why"><b>В чём разница:</b> %s</div>' % esc(why))
+        parts.append('<div class="rv-why"><b>В чём разница:</b> {}</div>'.format(esc(why)))
     else:
         parts.append('<div class="rv-why rv-nowhy"><b>Модель не объяснила разницу</b> — '
                      'это само по себе повод для Reject или Defer.</div>')
     if ex.get('asymmetry_note'):
-        parts.append('<div class="rv-asym"><b>⚠ Асимметрия переводов:</b> %s</div>'
-                     % esc(ex['asymmetry_note']))
+        parts.append('<div class="rv-asym"><b>⚠ Асимметрия переводов:</b> {}</div>'.format(esc(ex['asymmetry_note'])))
     parts.append('<span class="muted">Подсвеченное ниже — то место, из-за которого '
                  'присвоен класс. Approve = класс верен · Reject = неверен, '
                  '<b>выберите правильный класс</b> · Defer = по двум переводам не '
@@ -241,7 +238,7 @@ def load_explanations(path=EXPLAINED):
             line = line.strip()
             if line:
                 r = json.loads(line)
-                out['%s|%s' % (r['location'], r['pair'])] = r
+                out['{}|{}'.format(r['location'], r['pair'])] = r
     return out
 
 
@@ -285,7 +282,7 @@ def build_items(picked, stanzas, explained, witnesses=None):
     for location, pair_key, entry in picked:
         a, b = pair_key.split('|')
         stanza = stanzas[location]
-        ex = explained.get('%s|%s' % (location, pair_key)) or {}
+        ex = explained.get('{}|{}'.format(location, pair_key)) or {}
         spans = {a: (ex.get('span_a'), ex.get('span_a_verbatim', False)),
                  b: (ex.get('span_b'), ex.get('span_b_verbatim', False))}
         panels = []
@@ -295,33 +292,33 @@ def build_items(picked, stanzas, explained, witnesses=None):
             body, marked = highlight(t['text'], span, verbatim)
             note = ''
             if span and not marked:
-                note = ('<div class="rv-quote">Модель указала на: «%s» '
-                        '(не удалось подсветить дословно)</div>' % esc(span))
+                note = ('<div class="rv-quote">Модель указала на: «{}» '
+                        '(не удалось подсветить дословно)</div>'.format(esc(span)))
             elif not span:
                 note = '<div class="rv-quote">Здесь выделять нечего.</div>'
             panels.append((dv.TRANSLATOR_LABEL[key],
-                           '<div class="rv-rend">%s</div>%s' % (body, note)))
+                           '<div class="rv-rend">{}</div>{}'.format(body, note)))
         other = [k for k in dv.TRANSLATORS if k not in (a, b)]
         ctx = []
         for key in other:
             t = stanza['translations'][key]
             if t['status'] == 'present':
-                ctx.append('<b>%s:</b> %s' % (esc(dv.TRANSLATOR_LABEL[key]),
+                ctx.append('<b>{}:</b> {}'.format(esc(dv.TRANSLATOR_LABEL[key]),
                                               esc(t['text'] or '').replace('\n', ' / ')))
         if ctx:
             # Count it rather than hardcoding "два": with J-B the layer has five
             # translators, so a pair leaves three others, not two (H1910).
             panels.append(('Остальные переводы — %d (для контекста, не голосуются)'
                            % len(ctx),
-                           '<div class="rv-ctx">%s</div>' % '<br><br>'.join(ctx)))
+                           '<div class="rv-ctx">{}</div>'.format('<br><br>'.join(ctx))))
         witness = witnesses.get(location)
         badges = [entry['class'], 'маṇḍала %d' % stanza['mandala']]
         if witness:
             badges.append('Рену' + (' ⟨цитата⟩' if witness.get('has_quote') else ''))
         items.append({
-            'id': '%s|%s' % (location, pair_key),
+            'id': '{}|{}'.format(location, pair_key),
             'filt': entry['class'],
-            'title': 'RV %s — %s ↔ %s' % (location, a.split('_')[0], b.split('_')[0]),
+            'title': 'RV {} — {} ↔ {}'.format(location, a.split('_')[0], b.split('_')[0]),
             'badges': badges,
             'question': _question(entry['class'], ex, a, b, witness),
             'note_placeholder': 'reject → почему именно этот класс неверен',
@@ -335,23 +332,22 @@ def main():
     ap.add_argument('--pilot', default=os.path.join(PWG_RU_DIR, 'rv_divergence_pilot.jsonl'))
     ap.add_argument('--n', type=int, default=DEFAULT_N)
     ap.add_argument('--seed', type=int, default=DEFAULT_SEED)
-    ap.add_argument('--out', default=os.path.join(REVIEW_DIR, '%s.html' % SHEET_ID))
+    ap.add_argument('--out', default=os.path.join(REVIEW_DIR, '{}.html'.format(SHEET_ID)))
     ap.add_argument('--locks-dir', default=os.path.join(REVIEW_DIR, 'locks'))
     a = ap.parse_args()
 
     if not os.path.exists(a.pilot):
-        sys.exit('pilot not found: %s -- run `rv_divergence_type.py pilot` first' % a.pilot)
+        sys.exit('pilot not found: {} -- run `rv_divergence_type.py pilot` first'.format(a.pilot))
     stanzas = load_stanzas()
     rows = load_pilot(a.pilot)
     if not rows:
-        sys.exit('no model-decided pairs in %s' % a.pilot)
+        sys.exit('no model-decided pairs in {}'.format(a.pilot))
     picked = stratified_by_class(rows, a.n, a.seed)
     explained = load_explanations()
     if not explained:
-        sys.exit('no %s — run `python src/rv_divergence_explain.py run --ids …` first. '
-                 'A sheet without spans and explanations is the v1 defect (H1906).'
-                 % EXPLAINED)
-    missing = [p for p in picked if '%s|%s' % (p[0], p[1]) not in explained]
+        sys.exit('no {} — run `python src/rv_divergence_explain.py run --ids …` first. '
+                 'A sheet without spans and explanations is the v1 defect (H1906).'.format(EXPLAINED))
+    missing = [p for p in picked if '{}|{}'.format(p[0], p[1]) not in explained]
     if missing:
         print('WARN: %d of %d items have no explanation and will render bare'
               % (len(missing), len(picked)))
@@ -368,7 +364,7 @@ def main():
     # card quotes instead of highlighting -- stated in the subtitle rather than hidden
     n_unmarked = 0
     for loc, pair_key, _ in picked:
-        ex = explained.get('%s|%s' % (loc, pair_key)) or {}
+        ex = explained.get('{}|{}'.format(loc, pair_key)) or {}
         if ((ex.get('span_a') and not ex.get('span_a_verbatim'))
                 or (ex.get('span_b') and not ex.get('span_b_verbatim'))):
             n_unmarked += 1
@@ -410,12 +406,12 @@ def main():
             'Экспорт валидируется против review/locks/%s.lock.json перед применением.'
             '</div>'
             % (n_unmarked, len(items),
-               ', '.join('%s %.0f%%' % (c, 100.0 * dist[c] / total)
+               ', '.join('{} {:.0f}%'.format(c, 100.0 * dist[c] / total)
                          for c in dv.FIVE_CLASSES if dist[c]),
                SHEET_ID)),
         'approve_label': 'Класс верен',
         'reject_label': 'Класс неверен',
-        'reject_labels': [(c, '%s — %s' % (c, CLASS_HELP[c])) for c in dv.FIVE_CLASSES],
+        'reject_labels': [(c, '{} — {}'.format(c, CLASS_HELP[c])) for c in dv.FIVE_CLASSES],
         'filters': [(c, '%s (%d)' % (c, sum(1 for it in items if it['filt'] == c)))
                     for c in dv.FIVE_CLASSES if any(it['filt'] == c for it in items)],
         'generated': GENERATED,
@@ -450,14 +446,13 @@ def main():
         # save_banner overridden: RU_UI_STRINGS omits it on purpose (its default
         # bakes in the caller's own sheet_id/save_as).
         'ui_strings': dict(RU_UI_STRINGS, save_banner=(
-            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
-            '&rarr; сохраните его в <code>RussianTranslation\\review\\%s_decisions.json</code> '
-            '(значение <code>sheet_id</code> внутри файла — <code>%s</code> — так следующая '
-            'сессия узнаёт, к какому листу относятся эти решения).'
-            % (SHEET_ID, SHEET_ID, SHEET_ID))),
+            '&#128229; Ваш экспорт скачивается как <code>{}_decisions.json</code> '
+            '&rarr; сохраните его в <code>RussianTranslation\\review\\{}_decisions.json</code> '
+            '(значение <code>sheet_id</code> внутри файла — <code>{}</code> — так следующая '
+            'сессия узнаёт, к какому листу относятся эти решения).'.format(SHEET_ID, SHEET_ID, SHEET_ID))),
     }
     config.update(standard_config(
-        save_as='RussianTranslation\\review\\%s_decisions.json' % SHEET_ID))
+        save_as='RussianTranslation\\review\\{}_decisions.json'.format(SHEET_ID)))
 
     doc = render_review_sheet(items, config, extras=True,
                                    screening=screening_block(
@@ -473,10 +468,9 @@ def main():
                            locks_dir=a.locks_dir, gate='RV-DIVERGENCE',
                            source_html=a.out)
     print('divergence gate sheet: %d items -> %s' % (len(items), a.out))
-    print('  %s' % chash)
-    print('  lock -> %s' % lock_path)
-    print('  class mix in the sheet: %s'
-          % dict(collections.Counter(it['filt'] for it in items)))
+    print('  {}'.format(chash))
+    print('  lock -> {}'.format(lock_path))
+    print('  class mix in the sheet: {}'.format(dict(collections.Counter(it['filt'] for it in items))))
     return 0
 
 

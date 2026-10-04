@@ -180,7 +180,7 @@ def fmt_enr(e):
         return "n/a"
     if e == float("inf"):
         return "inf"
-    return "%.2fx" % e
+    return "{:.2f}x".format(e)
 
 
 def selftest():
@@ -247,7 +247,7 @@ def main(argv=None):
 
     orig = os.path.abspath(args.orig)
     if not os.path.isdir(orig):
-        print("ERROR: --orig dir not found: %s" % orig, file=sys.stderr)
+        print("ERROR: --orig dir not found: {}".format(orig), file=sys.stderr)
         return 2
 
     k1_all, annexure = load_target(orig, args.target, args.annexure_tag)
@@ -296,7 +296,7 @@ def main(argv=None):
         try:
             d_k1[c] = {k1 for k1, _k2, _b in iter_entries(dict_path(orig, c)) if k1}
         except Exception as ex:
-            print("WARN matrix dict %s failed: %s" % (c, ex), file=sys.stderr)
+            print("WARN matrix dict {} failed: {}".format(c, ex), file=sys.stderr)
 
     # ---- enrichment table ------------------------------------------------
     rows = []
@@ -304,7 +304,7 @@ def main(argv=None):
     for label, s, err in sources:
         if s is None:
             row = {"source_set": label, "n": None, "status": "ERROR:" + (err or "?")}
-            print("%s\tERROR %s" % (label, err))
+            print("{}\tERROR {}".format(label, err))
             rows.append(row)
             continue
         in_a, ashr, in_m, mshr, e = enrich(s, annexure, k1_all)

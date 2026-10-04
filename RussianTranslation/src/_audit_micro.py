@@ -64,7 +64,7 @@ def main():
     print('parsed cards: %d  (parse failures: %d)' % (cards, parsefail))
     print('homonym-numbered cards: %d  | headwords with >1 homonym: %d' % (homonyms, multi))
     print('senses parsed: %d  (%.1f per card)' % (senses, senses / max(cards, 1)))
-    print('equivalence-type: %s' % dict(eq))
+    print('equivalence-type: {}'.format(dict(eq)))
     print('<ls> citations: %d, resolved %d (%.1f%%)'
           % (cite_tot, cite_res, 100.0 * cite_res / max(cite_tot, 1)))
     print('<ab> abbrevs: %d, resolved %d (%.1f%%)'

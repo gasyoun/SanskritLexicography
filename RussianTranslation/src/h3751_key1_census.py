@@ -133,7 +133,7 @@ def write_report(path, result):
         pairs = result['pairs'].get(cls) or []
         if not pairs:
             continue
-        lines += ['', '### `%s`' % cls, '', '| stored `key1` | sub-card witness | rows |',
+        lines += ['', '### `{}`'.format(cls), '', '| stored `key1` | sub-card witness | rows |',
                   '|---|---|---|']
         for (key1, witness), n in pairs[:60]:
             lines.append('| `%s` | `%s` | %d |' % (key1, witness, n))
@@ -178,10 +178,10 @@ def main():
     if args.json:
         with io.open(args.json, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(result, f, ensure_ascii=False, indent=1)
-        print('wrote %s' % args.json)
+        print('wrote {}'.format(args.json))
     if args.report:
         write_report(args.report, result)
-        print('wrote %s' % args.report)
+        print('wrote {}'.format(args.report))
 
     decidable = findings.get('decidable_subcard_only') or []
     if not args.apply:
@@ -207,7 +207,7 @@ def main():
                        'changed': {'key1': {'old': before['key1'], 'new': r['key1']},
                                    'iast': {'old': before['iast'], 'new': r['iast']}}})
     bak = locked_store_rewrite(args.store, rows, tag='h3751k1')
-    print('rewrote %s (backup: %s)' % (args.store, bak))
+    print('rewrote {} (backup: {})'.format(args.store, bak))
     os.makedirs(os.path.dirname(args.ledger), exist_ok=True)
     with io.open(args.ledger, 'w', encoding='utf-8', newline='\n') as f:
         for row in ledger:

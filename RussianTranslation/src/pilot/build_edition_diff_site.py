@@ -180,29 +180,28 @@ def _badge(entry):
     # H3752: colour by the base label — an unplaced restate is still a restate —
     # but PRINT the full label, which is the whole point: the reader must see
     # that no PWG sense was identified for this supplement.
-    return ('<span class="badge" data-subtype="%s" style="background:%s">%s &middot; %s</span>'
-            % (st, BADGE_COLOR.get(base_subtype(st), BADGE_COLOR['unknown']),
+    return ('<span class="badge" data-subtype="{}" style="background:{}">{} &middot; {}</span>'.format(st, BADGE_COLOR.get(base_subtype(st), BADGE_COLOR['unknown']),
                html.escape(entry['label']), st))
 
 
 def render_key(key1, m):
-    parts = ['<section class="kw" id="%s">' % html.escape(key1, quote=True),
-             '<h2 class="iast">%s</h2>' % html.escape(key1)]
+    parts = ['<section class="kw" id="{}">'.format(html.escape(key1, quote=True)),
+             '<h2 class="iast">{}</h2>'.format(html.escape(key1))]
     used_targets = set()
     for s in m['pwg']:
         used_targets.add(s['sense_tag'])
-        tag = '' if s['sense_tag'].lower() in ('header', 'head') else '<span class="tag">%s)</span> ' % html.escape(s['sense_tag'])
+        tag = '' if s['sense_tag'].lower() in ('header', 'head') else '<span class="tag">{})</span> '.format(html.escape(s['sense_tag']))
         parts.append('<div class="sense">')
-        parts.append('<div class="pwg-line">%s%s %s</div>' % (tag, html.escape(s['de_text']), _badge(s)))
+        parts.append('<div class="pwg-line">{}{} {}</div>'.format(tag, html.escape(s['de_text']), _badge(s)))
         for supp in m['attach'].get(s['sense_tag'], []):
-            parts.append('<div class="suppl">%s %s</div>' % (_badge(supp), html.escape(supp['de_text'])))
+            parts.append('<div class="suppl">{} {}</div>'.format(_badge(supp), html.escape(supp['de_text'])))
         parts.append('</div>')
     leftover = [supp for tgt, supps in m['attach'].items() if tgt not in used_targets for supp in supps]
     extra = leftover + m['new']
     if extra:
         parts.append('<div class="new-block"><h4>Additional (not attached to a shown PWG sense)</h4>')
         for supp in extra:
-            parts.append('<div class="suppl">%s %s</div>' % (_badge(supp), html.escape(supp['de_text'])))
+            parts.append('<div class="suppl">{} {}</div>'.format(_badge(supp), html.escape(supp['de_text'])))
         parts.append('</div>')
     parts.append('</section>')
     return '\n'.join(parts)
@@ -246,7 +245,7 @@ DE text shown here is read-only -- never re-translated, never rewritten.</p>
 
 
 def render_page(model, counts):
-    nav = ''.join('<a href="#%s">%s</a>' % (html.escape(k, quote=True), html.escape(k)) for k in sorted(model))
+    nav = ''.join('<a href="#{}">{}</a>'.format(html.escape(k, quote=True), html.escape(k)) for k in sorted(model))
     body = '\n'.join(render_key(k, model[k]) for k in sorted(model))
     counts_html = ''.join('<li>%s: %d</li>' % (st, counts[st])
                           for st in ALL_SUBTYPES if counts.get(st))   # H3752
@@ -263,12 +262,12 @@ def selftest():
     expected = {'base', 'restate', 'pw_correct', 'sch_star', 'derived_sense',
                 'a2a_unplaced', 'nws_at_sense', 'foreign_fragment'}
     for st in expected:
-        assert ('data-subtype="%s"' % st) in page, 'missing badge for subtype %r' % st
+        assert ('data-subtype="{}"'.format(st)) in page, 'missing badge for subtype {!r}'.format(st)
     # every subtype rendered is a KNOWN edition_rel subtype -- no new typology invented
     found = set(re.findall(r'data-subtype="([a-z0-9_]+)"', page))
     assert found <= set(ALL_SUBTYPES), \
         'unknown subtype(s) rendered: %r' % (found - set(ALL_SUBTYPES))
-    assert found == expected, 'expected all 8 non-unknown subtypes, got %r' % found
+    assert found == expected, 'expected all 8 non-unknown subtypes, got {!r}'.format(found)
     # …and the reason is the one just given: sense 4 is absent from the skeleton.
     assert 'a2a' not in found, 'the unplaced a2a must not also render as placed'
     # H3752, the latent defect this exposed: `build_model` never built the sense
@@ -276,13 +275,13 @@ def selftest():
     # supplements that really do point at a live PWG sense keep their plain label
     # — which is what proves the index is wired, not merely imported.
     assert counts['restate'] >= 1 and counts.get('restate_unplaced', 0) == 0, \
-        'a supplement at a real PWG sense must stay `restate`: %r' % dict(counts)
+        'a supplement at a real PWG sense must stay `restate`: {!r}'.format(dict(counts))
     assert counts['nws_at_sense'] >= 1, \
-        'the NWS row at sense 2 must be placed: %r' % dict(counts)
+        'the NWS row at sense 2 must be placed: {!r}'.format(dict(counts))
     # DE not rewritten: the fixture's own gloss text passes through verbatim (unwrapped, not translated)
     for needle in ('to pull, sense one', 'to draw, sense two', 'gender corrected',
                    'addendum to an addendum', 'desiderative derived form', 'testword'):
-        assert needle in page, 'DE text altered/missing: %r' % needle
+        assert needle in page, 'DE text altered/missing: {!r}'.format(needle)
     # gender-conflict classification actually fired (not just default restate)
     assert counts['pw_correct'] >= 1 and counts['restate'] >= 1, counts
     print('build_edition_diff_site --selftest: OK (%d headwords, %d rows, subtypes=%r)'
@@ -304,7 +303,7 @@ def main():
     else:
         rows = load_store_rows(STORE, keys)
     if not rows:
-        sys.exit('no rows found for keys=%r (store=%s)' % (sorted(keys), STORE))
+        sys.exit('no rows found for keys={!r} (store={})'.format(sorted(keys), STORE))
     model, counts = build_model(rows)
     page = render_page(model, counts)
     os.makedirs(os.path.dirname(args.out) or '.', exist_ok=True)
@@ -314,7 +313,7 @@ def main():
     for st in SUBTYPES:
         if counts.get(st):
             print('  %-18s %d' % (st, counts[st]))
-    print('  wrote -> %s' % args.out)
+    print('  wrote -> {}'.format(args.out))
 
 
 if __name__ == '__main__':

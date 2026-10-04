@@ -194,9 +194,9 @@ def expand_and_check_pairs(slots, n_pairs):
             raise GateStop('request %s has %d slots' % (rid, len(members)))
         labels = [m['cold_warm'] for m in members]
         if labels != ['cold', 'warm']:
-            raise GateStop('pair %s not contiguous cold/warm: %s' % (rid, labels))
+            raise GateStop('pair {} not contiguous cold/warm: {}'.format(rid, labels))
         if members[0]['slot_ordinal'] + 1 != members[1]['slot_ordinal']:
-            raise GateStop('pair %s slots are not contiguous' % rid)
+            raise GateStop('pair {} slots are not contiguous'.format(rid))
 
 
 def canonical_snapshot(baseline=None):
@@ -349,7 +349,7 @@ class PairRunner:
             'source_commit': source_commit,
             'baseline_manifest_sha256': self.freeze_body.get('manifest_sha256'),
             'cohort_sha256': cohort_sha,
-            'pricing_version': 'deepseek-v4-flash/%s' % price_card,
+            'pricing_version': 'deepseek-v4-flash/{}'.format(price_card),
             'n': self.spec['n_pairs'],
             'call_ceiling': self.spec['max_base_calls'],
             'cost_ceiling_usd': self.spec['cost_ceiling_usd'],
@@ -489,8 +489,8 @@ class PairRunner:
         reservation = self.reservations.reserve(
             purpose=self.spec['purpose'],
             profile=REQUESTED_MODEL,
-            detail='%s:%s' % (slot['key1'], slot['cold_warm']),
-            idempotency_key='%s:%s' % (slot['request_id'], slot['cold_warm']),
+            detail='{}:{}'.format(slot['key1'], slot['cold_warm']),
+            idempotency_key='{}:{}'.format(slot['request_id'], slot['cold_warm']),
         )
         attempt = reservation['ordinal']
         self.led.append({
@@ -511,7 +511,7 @@ class PairRunner:
         user = compiled['user']
         t0 = time.time()
         text, rec = self.ds.chat(
-            system, user, 'prep:%s:%s' % (slot['key1'], slot['cold_warm']))
+            system, user, 'prep:{}:{}'.format(slot['key1'], slot['cold_warm']))
         usage, usage_reason = usage_from_rec(rec)
         cost, evaluable = rec_cost_usd(rec, usage)
         if evaluable and cost is not None:
@@ -590,7 +590,7 @@ class PairRunner:
                 prior['pack_out'] = None
         resp_path = os.path.join(
             self.run_dir, 'responses',
-            '%s.%s.json' % (slot['request_id'], slot['cold_warm']))
+            '{}.{}.json'.format(slot['request_id'], slot['cold_warm']))
         os.makedirs(os.path.dirname(resp_path), exist_ok=True)
         publishable = {
             'request_id': slot['request_id'],
@@ -743,7 +743,7 @@ def main(argv=None):
             'kind': 'stop',
             'detail': {'reason': exc.reason},
         }, terminal=True)
-        print('STOP %s' % exc.reason, flush=True)
+        print('STOP {}'.format(exc.reason), flush=True)
     summary = runner.write_summary(note)
     after_path = os.path.join(exp_dir, spec['mode'], 'canonical_hash_after.json')
     after_body = {
@@ -757,8 +757,7 @@ def main(argv=None):
     os.makedirs(os.path.dirname(after_path), exist_ok=True)
     with open(after_path, 'w', encoding='utf-8', newline='\n') as handle:
         handle.write(ident.canonical_dumps(after_body))
-    print('lane=%s parseable=%s unique_clean=%s usd=%s'
-          % (summary.get('prep_lane_verdict') or summary.get('generation_lane_verdict'),
+    print('lane={} parseable={} unique_clean={} usd={}'.format(summary.get('prep_lane_verdict') or summary.get('generation_lane_verdict'),
              summary['parseable'], summary['unique_clean_cards'],
              summary['total_usd']),
           flush=True)

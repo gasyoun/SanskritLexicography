@@ -37,7 +37,7 @@ def test_sibling_with_same_key_does_not_hide_a_quarantined_row():
     quarantined = [_row("m_a~~h0_zz_pw03", "main", "отмерять [SAN-LOSS]")]
     back = rq.rows_to_restore(quarantined, survivors)
     if back != quarantined:
-        fail("a same-key sibling hid the quarantined row: %r" % back)
+        fail("a same-key sibling hid the quarantined row: {!r}".format(back))
 
 
 def test_restore_is_idempotent():
@@ -46,7 +46,7 @@ def test_restore_is_idempotent():
     store = [_row("pat~~h0_zz_pw00", "2〉", "лететь")]
     first = rq.rows_to_restore(quarantined, store)
     if first != quarantined:
-        fail("first restore should return both rows, got %r" % first)
+        fail("first restore should return both rows, got {!r}".format(first))
     if rq.rows_to_restore(quarantined, store + first):
         fail("a second restore must find every row already present")
 
@@ -55,8 +55,7 @@ def test_duplicate_rows_are_counted_not_collapsed():
     dup = _row("m_a~~h0_zz_pw03", "main", "мерить")
     back = rq.rows_to_restore([dup, dup], [dup])
     if back != [dup]:
-        fail("two identical quarantined rows vs one in the store must restore one, got %r"
-             % back)
+        fail("two identical quarantined rows vs one in the store must restore one, got {!r}".format(back))
 
 
 def test_key_order_does_not_matter():
@@ -77,9 +76,9 @@ def main():
             test()
         except AssertionError as exc:
             failed += 1
-            print("  FAIL %s — %s" % (test.__name__, exc))
+            print("  FAIL {} — {}".format(test.__name__, exc))
         else:
-            print("  PASS %s" % test.__name__)
+            print("  PASS {}".format(test.__name__))
     if failed:
         print("h4342 requeue restore selftest: FAIL (%d/%d)" % (failed, len(tests)))
         return 1

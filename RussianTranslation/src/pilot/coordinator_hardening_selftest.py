@@ -34,9 +34,9 @@ def expect_refusal(fn, needle):
         fn()
     except SystemExit as exc:
         if needle not in str(exc):
-            raise AssertionError('expected %r in refusal, got %r' % (needle, str(exc)))
+            raise AssertionError('expected {!r} in refusal, got {!r}'.format(needle, str(exc)))
     else:
-        raise AssertionError('expected SystemExit containing %r' % needle)
+        raise AssertionError('expected SystemExit containing {!r}'.format(needle))
 
 
 def test_preflight_fail_closed():
@@ -139,9 +139,9 @@ def test_record_output_batch_progress():
     if seen != [
             ('a', 'a.json', 'run-a', 'sha-a'),
             ('b', 'b.json', 'run-b', 'sha-b')]:
-        raise AssertionError('batch did not remain sequential/fail-fast: %r' % (seen,))
+        raise AssertionError('batch did not remain sequential/fail-fast: {!r}'.format(seen))
     if len(payloads) != 2:
-        raise AssertionError('expected commit + failure progress, got %r' % payloads)
+        raise AssertionError('expected commit + failure progress, got {!r}'.format(payloads))
     if payloads[-1] != {
             'schema': coordinator.RECORD_BATCH_SCHEMA,
             'recorded': ['a'],
@@ -151,7 +151,7 @@ def test_record_output_batch_progress():
                 'type': 'SystemExit',
                 'message': 'synthetic second-item failure',
             }}:
-        raise AssertionError('unexpected failure receipt: %r' % payloads[-1])
+        raise AssertionError('unexpected failure receipt: {!r}'.format(payloads[-1]))
     expect_refusal(
         lambda: coordinator.record_output_batch(SimpleNamespace(
             record=[['a', 'a', '-', '-'], ['a', 'b', '-', '-']],
@@ -330,7 +330,7 @@ def test_h8_claim_preflight_timeout_is_bounded():
         if seen != [coordinator.PREPARE_TIMEOUT_SECONDS]:
             raise AssertionError(
                 'claim-path perf_preflight must be bounded by PREPARE_TIMEOUT_SECONDS '
-                '(%r); saw %r' % (coordinator.PREPARE_TIMEOUT_SECONDS, seen))
+                '({!r}); saw {!r}'.format(coordinator.PREPARE_TIMEOUT_SECONDS, seen))
     print('  H8 contract: claim-path perf_preflight receives timeout='
           'PREPARE_TIMEOUT_SECONDS')
 
@@ -365,8 +365,8 @@ def test_h8_claim_preflight_timeout_unwinds_clean():
         # Bounded termination: claim returned on the timeout, not on the child.
         if elapsed >= _H8_CHILD_SLEEP:
             raise AssertionError(
-                'claim waited %.1fs -- it ran the preflight to completion instead of '
-                'timing out at %.1fs' % (elapsed, _H8_INJECTED_TIMEOUT))
+                'claim waited {:.1f}s -- it ran the preflight to completion instead of '
+                'timing out at {:.1f}s'.format(elapsed, _H8_INJECTED_TIMEOUT))
 
         # The child really spawned, and was killed rather than merely abandoned.
         if not os.path.exists(started):
@@ -381,8 +381,7 @@ def test_h8_claim_preflight_timeout_unwinds_clean():
         else:
             raise AssertionError('preflight child %d survived the timeout' % child_pid)
         if os.path.exists(finished):
-            raise AssertionError('the preflight child ran to completion: %s' %
-                                 open(finished, encoding='utf-8').read().strip())
+            raise AssertionError('the preflight child ran to completion: {}'.format(open(finished, encoding='utf-8').read().strip()))
 
         # No lease, no partial state, no artifact directory, no registry event.
         p = coordinator.paths()
@@ -391,8 +390,7 @@ def test_h8_claim_preflight_timeout_unwinds_clean():
         if coordinator.load_state().get('leases'):
             raise AssertionError('a timed-out claim appended a lease')
         if os.path.exists(p['artifacts']) and os.listdir(p['artifacts']):
-            raise AssertionError('a timed-out claim left artifact dirs: %r' %
-                                 os.listdir(p['artifacts']))
+            raise AssertionError('a timed-out claim left artifact dirs: {!r}'.format(os.listdir(p['artifacts'])))
         if os.path.exists(p['registry']):
             raise AssertionError('a timed-out claim emitted a registry event')
 
@@ -465,8 +463,7 @@ def test_h4_claim_rejects_duplicate_lease_id():
         registry_after = (open(p['registry'], encoding='utf-8').read().splitlines()
                           if os.path.exists(p['registry']) else [])
         if registry_after != registry_before:
-            raise AssertionError('the refused claim emitted a registry event: %r' %
-                                 registry_after[len(registry_before):])
+            raise AssertionError('the refused claim emitted a registry event: {!r}'.format(registry_after[len(registry_before):]))
 
         # Same wording as register_prepared_lease, so both entry points speak with one voice.
         with coordinator.DirLock(p['lock'], wait_seconds=0):
@@ -478,7 +475,7 @@ def test_h4_claim_rejects_duplicate_lease_id():
             coordinator.claim(_h4_claim_args('h4-other-lease'))
         final = [lease.get('id') for lease in coordinator.load_state().get('leases') or []]
         if final != ['h4-dup-lease', 'h4-other-lease']:
-            raise AssertionError('expected both distinct leases, got %r' % final)
+            raise AssertionError('expected both distinct leases, got {!r}'.format(final))
     print('  H4: duplicate --lease-id refused (no second lease, no registry event, lock '
           'free); a distinct id still claims')
 
@@ -522,14 +519,14 @@ def test_h4527_nominal_defect_repair_prepare():
             coordinator.claim(_h4527_defect_repair_args('h4527dr-nom', key, 'darv_i', True))
             prep('h4527dr-nom')
         preflight_argv, harness_argv = calls
-        want = ['nominal_h4527dr-nom', '--nominal', '--keys=%s' % key, '--no-tm']
+        want = ['nominal_h4527dr-nom', '--nominal', '--keys={}'.format(key), '--no-tm']
         if preflight_argv[2:6] != want or preflight_argv[6:] != ['--json']:
-            raise AssertionError('nominal repair preflight argv: %r' % preflight_argv)
+            raise AssertionError('nominal repair preflight argv: {!r}'.format(preflight_argv))
         if harness_argv[2:6] != want:
-            raise AssertionError('nominal repair harness argv: %r' % harness_argv)
+            raise AssertionError('nominal repair harness argv: {!r}'.format(harness_argv))
         lease = coordinator.lease_by_id(coordinator.load_state(), 'h4527dr-nom')
         if lease['state'] != 'prepared' or lease['details'].get('nominal') is not True:
-            raise AssertionError('nominal repair lease not prepared: %r' % lease)
+            raise AssertionError('nominal repair lease not prepared: {!r}'.format(lease))
 
         # The verb-shaped defect-repair (no --nominal) is unchanged.
         del calls[:]
@@ -538,9 +535,9 @@ def test_h4527_nominal_defect_repair_prepare():
             prep('h4527dr-verb')
         preflight_argv, harness_argv = calls
         if preflight_argv[2:] != ['kf', '--keys=k~~h0', '--json']:
-            raise AssertionError('verb repair preflight argv changed: %r' % preflight_argv)
+            raise AssertionError('verb repair preflight argv changed: {!r}'.format(preflight_argv))
         if harness_argv[2:5] != ['kf', '--keys=k~~h0', '--no-tm']:
-            raise AssertionError('verb repair harness argv changed: %r' % harness_argv)
+            raise AssertionError('verb repair harness argv changed: {!r}'.format(harness_argv))
 
         before = coordinator.load_state().get('leases') or []
         args = _h4527_defect_repair_args('h4527-bad', None, None, True)
@@ -591,8 +588,7 @@ def test_h4527_defect_repair_requeue_is_tm_off():
             preflight_argv, requeue_argv = calls
             for argv in (preflight_argv, requeue_argv):
                 if ('--no-tm' in argv) != want_no_tm:
-                    raise AssertionError('%s transient requeue --no-tm should be %s: %r'
-                                         % (kind, want_no_tm, argv))
+                    raise AssertionError('{} transient requeue --no-tm should be {}: {!r}'.format(kind, want_no_tm, argv))
     finally:
         coordinator.run_cmd = saved
     print('  H4527: a defect-repair lease requeues TM-off on both children (transient too); '
@@ -630,14 +626,14 @@ def test_h5_corrupt_status_report_is_a_typed_audit_error():
         if not any('window_status.json unreadable' in e for e in errors):
             raise AssertionError(
                 'a missing window_status.json with a clean rc must be a named audit '
-                'error, not a silent unknown: %r' % errors)
+                'error, not a silent unknown: {!r}'.format(errors))
         if not any('audit_window.report.json unreadable' in e for e in errors):
             raise AssertionError(
                 'a missing audit_window.report.json with a clean rc must be a named '
-                'audit error, not a silent unknown: %r' % errors)
+                'audit error, not a silent unknown: {!r}'.format(errors))
         if lease.get('clean_output') is not None:
             raise AssertionError(
-                'a lease with a named audit error must not be promotable: %r' % lease)
+                'a lease with a named audit error must not be promotable: {!r}'.format(lease))
     print('  H5: corrupt/missing status+report with a clean rc records a typed audit '
           'error and fails closed, not a silent unknown')
 
@@ -669,13 +665,11 @@ def test_h3754_save_state_dashboard_reuse_matches_full_rescan():
             reused_running = coordinator.running_translation_leases(state, skip_expire=True)
             fresh_running = coordinator.running_translation_leases(state)
             if reused_running != fresh_running:
-                raise AssertionError('skip_expire reuse diverged on running leases: %r vs %r'
-                                     % (reused_running, fresh_running))
+                raise AssertionError('skip_expire reuse diverged on running leases: {!r} vs {!r}'.format(reused_running, fresh_running))
             reused_reserved = coordinator.reserved_translation_leases(state, skip_expire=True)
             fresh_reserved = coordinator.reserved_translation_leases(state)
             if reused_reserved != fresh_reserved:
-                raise AssertionError('skip_expire reuse diverged on reserved leases: %r vs %r'
-                                     % (reused_reserved, fresh_reserved))
+                raise AssertionError('skip_expire reuse diverged on reserved leases: {!r} vs {!r}'.format(reused_reserved, fresh_reserved))
 
             coordinator.save_state(state)
             with open(coordinator.paths()['dashboard'], encoding='utf-8') as f:
@@ -691,15 +685,14 @@ def test_h3754_save_state_dashboard_reuse_matches_full_rescan():
             if via_save_state != via_full_rescan:
                 raise AssertionError(
                     'reused-scan dashboard diverged from a from-scratch rescan:\n'
-                    'reused=%r\nrescan=%r' % (via_save_state, via_full_rescan))
+                    'reused={!r}\nrescan={!r}'.format(via_save_state, via_full_rescan))
 
             # And the TTL-expired lease must actually have flipped to terminal -- the
             # optimization must not have skipped the one expire_stale_leases call that
             # matters (the one inside prepare_state_for_save).
             expired = [l for l in state['leases'] if l['id'] == 'claimed-expiring'][0]
             if expired['state'] != 'expired':
-                raise AssertionError('TTL-expired lease was not expired by save_state: %r'
-                                     % expired)
+                raise AssertionError('TTL-expired lease was not expired by save_state: {!r}'.format(expired))
         finally:
             if saved_coord_dir is None:
                 os.environ.pop('PWG_COORDINATOR_DIR', None)

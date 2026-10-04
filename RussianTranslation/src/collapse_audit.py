@@ -271,7 +271,7 @@ def write_report(res, date, cen, out_md, out_jsonl, sheet=None):
     L = []
     L.append("# H2844 — 200-citation line-collapse audit")
     L.append("")
-    L.append("_Created: %s · Last updated: %s_" % (date, date))
+    L.append("_Created: {} · Last updated: {}_".format(date, date))
     L.append("")
     L.append("Acceptance evidence for "
              "[H2844](https://github.com/gasyoun/Uprava/blob/main/handoffs/"
@@ -288,19 +288,18 @@ def write_report(res, date, cen, out_md, out_jsonl, sheet=None):
     L.append("")
     L.append("## Method")
     L.append("")
-    L.append("- Population: every inherited wrap in the store's `%s` field whose "
-             "next line opens a `<ls>` citation — **%s sites**, spread over the %s "
-             "store rows that carry any newline at all."
-             % (res["field"], format(res["population"], ",d"),
+    L.append("- Population: every inherited wrap in the store's `{}` field whose "
+             "next line opens a `<ls>` citation — **{} sites**, spread over the {} "
+             "store rows that carry any newline at all.".format(res["field"], format(res["population"], ",d"),
                 format(res["rows_with_newlines"], ",d")))
     L.append("- Sample: `random.Random(%d).sample`, n=%d. Re-runnable verbatim: "
              "`python src/collapse_audit.py --n %d --seed %d`."
              % (res["seed"], res["sampled"], res["sampled"], res["seed"]))
     L.append("- Verdict per site is read off the **rendered** string by "
-             "[`collapse_audit.verdict`](%s/src/collapse_audit.py), which never "
+             "[`collapse_audit.verdict`]({}/src/collapse_audit.py), which never "
              "sees `collapse` — its selftest feeds it the pre-H2844 "
              "line-break-preserving render and requires `torn`, so a PASS is not "
-             "vacuous." % blob)
+             "vacuous.".format(blob))
     L.append("")
     L.append("## Store census (recomputed, not quoted)")
     L.append("")
@@ -311,13 +310,13 @@ def write_report(res, date, cen, out_md, out_jsonl, sheet=None):
                        ("newlines immediately before `<ls`", "newline_before_ls"),
                        ("classified inherited (collapse)", "inherited"),
                        ("classified structural (kept)", "structural")):
-        L.append("| %s | %s |" % (label, format(cen[key], ",d")))
+        L.append("| {} | {} |".format(label, format(cen[key], ",d")))
     L.append("")
-    L.append("The **%s** wraps before a `<ls` reproduce the H2844 figure exactly. "
+    L.append("The **{}** wraps before a `<ls` reproduce the H2844 figure exactly. "
              "The total newline count is above the 25,325 measured on 15-08-2026 "
              "because the store has kept growing since; the ratio the ruling rests "
              "on (the overwhelming majority of newlines sit in front of a citation) "
-             "is unchanged." % format(cen["newline_before_ls"], ",d"))
+             "is unchanged.".format(format(cen["newline_before_ls"], ",d")))
     L.append("")
     L.append("## Where the collapse lands (n=%d)" % res["sampled"])
     L.append("")
@@ -357,8 +356,7 @@ def write_report(res, date, cen, out_md, out_jsonl, sheet=None):
         L.append("|---|---|---|---|")
         for r in res["records"]:
             if r["verdict"] == "torn" or r["verdict_compact"] == "torn":
-                L.append("| %s | %s | `%s` | `%s` |"
-                         % (r["key1"], r["subcard"],
+                L.append("| {} | {} | `{}` | `{}` |".format(r["key1"], r["subcard"],
                             r["clause_tail"].replace("|", "\\|"),
                             r["citation_head"].replace("|", "\\|")))
         L.append("")
@@ -385,8 +383,8 @@ def write_report(res, date, cen, out_md, out_jsonl, sheet=None):
     L.append("SHA-256 over every sampled store body, taken before and after the "
              "whole audit run:")
     L.append("")
-    L.append("- before: `%s`" % res["store_digest_before"])
-    L.append("- after:  `%s`" % res["store_digest_after"])
+    L.append("- before: `{}`".format(res["store_digest_before"]))
+    L.append("- after:  `{}`".format(res["store_digest_after"]))
     L.append("- **%s**" % ("identical — no store byte changed"
                            if res["store_unchanged"] else "MUTATED — see above"))
     if sheet:
@@ -429,32 +427,32 @@ def selftest():
 
     page = "{#aBIpsatI#}\n[Page1-0651]\n<ls>MBH. 1,6469.</ls>"
     got = [preceding_class(c) for _, c, _ in sites(page)]
-    check(got == ["after_marker"], "a page-marker wrap is bucketed: %r" % got)
+    check(got == ["after_marker"], "a page-marker wrap is bucketed: {!r}".format(got))
 
     run = "<ls>M. 2,109.</ls>\n<ls>YĀJÑ. 1,28.</ls>"
     got = [preceding_class(c) for _, c, _ in sites(run)]
-    check(got == ["after_cite"], "a citation run is bucketed: %r" % got)
+    check(got == ["after_cite"], "a citation run is bucketed: {!r}".format(got))
 
     lead = "\n<ls>P. 1,1</ls>"
     got = [(preceding_class(c), verdict(c, t, collapse(lead)[0]))
            for _, c, t in sites(lead)]
     check(got == [("after_break", "orphan")],
-          "a leading wrap has no clause to join -> orphan: %r" % got)
+          "a leading wrap has no clause to join -> orphan: {!r}".format(got))
 
     gloss = "идти дорогой (Akk, Instr)\n<ls>RAGH. 12,52.</ls>"
     got = [preceding_class(c) for _, c, _ in sites(gloss)]
-    check(got == ["after_gloss"], "a gloss clause is bucketed: %r" % got)
+    check(got == ["after_gloss"], "a gloss clause is bucketed: {!r}".format(got))
 
     # a line that OPENS a sense and then carries clause text is still a clause —
     # the first run of this audit mis-filed 25 of 200 such sites as after_break
     opener = ('<div n="1">— 3) {#dUto na saMcarati Ke#}\n<ls>Spr. 4205.</ls>')
     got = [preceding_class(c) for _, c, _ in sites(opener)]
     check(got == ["after_gloss"],
-          "a sense-opening line WITH clause text is a clause: %r" % got)
+          "a sense-opening line WITH clause text is a clause: {!r}".format(got))
     bare = '{%идти%}\n<div n="2">\n<ls>P. 1,1</ls>'
     got = [preceding_class(c) for _, c, _ in sites(bare)]
     check(got == ["after_break"],
-          "a line that is only a unit opener has no clause: %r" % got)
+          "a line that is only a unit opener has no clause: {!r}".format(got))
     check(strip_openers('<div n="1">— 3)') == ""
           and strip_openers('<div n="1"> 3) {#x#}') == "{#x#}",
           "strip_openers peels every leading opener, once")
@@ -467,7 +465,7 @@ def selftest():
           "only the wraps that open a citation are sites: %r"
           % [i for i, _, _ in found2])
     v = [verdict(c, t, collapse(twice)[0]) for _, c, t in found2]
-    check(v == ["joined", "joined"], "both sites in one body judged: %r" % v)
+    check(v == ["joined", "joined"], "both sites in one body judged: {!r}".format(v))
     check([preceding_class(c) for _, c, _ in found2]
           == ["after_cite", "after_gloss"],
           "the two sites land in different buckets")
@@ -494,8 +492,7 @@ def main(argv=None):
         return selftest()
 
     if not os.path.exists(STORE):
-        print("no store at %s — point PWG_RU_DATA_ROOT at the tree that has it"
-              % STORE)
+        print("no store at {} — point PWG_RU_DATA_ROOT at the tree that has it".format(STORE))
         return 1
     cen = census(STORE, a.field)
     res = audit(a.n, a.seed, a.field)
@@ -521,10 +518,9 @@ def main(argv=None):
     print("  compact:  %d joined · %d orphan · %d torn"
           % (v.get("compact:joined", 0), v.get("compact:orphan", 0),
              v.get("compact:torn", 0)))
-    print("  buckets: %s" % res["buckets"])
-    print("  store unchanged: %s (%s)"
-          % (res["store_unchanged"], res["store_digest_before"]))
-    print("  -> %s" % out_md)
+    print("  buckets: {}".format(res["buckets"]))
+    print("  store unchanged: {} ({})".format(res["store_unchanged"], res["store_digest_before"]))
+    print("  -> {}".format(out_md))
     return 0 if (not v.get("torn") and not v.get("compact:torn")
                  and res["store_unchanged"]) else 1
 

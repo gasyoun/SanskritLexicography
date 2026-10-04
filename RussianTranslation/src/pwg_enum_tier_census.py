@@ -87,7 +87,7 @@ def census(limit=None):
             return any(a <= p < b for a, b in spans)
 
         for name, closer, pat in PATTERNS:
-            key = '%s/%s' % (name, closer)
+            key = '{}/{}'.format(name, closer)
             for m in pat.finditer(body):
                 p = m.start()
                 raw[key] += 1
@@ -124,14 +124,14 @@ def main():
     n_rec, raw, lb_ok, genuine, examples, roman_rows = census(limit)
 
     print('PWG enumeration-tier census (H3948 / FINDINGS §453)')
-    print('corpus: %s' % pwg_mask.PWG)
+    print('corpus: {}'.format(pwg_mask.PWG))
     print('records scanned: %d' % n_rec)
     print()
     print('%-16s %10s %14s %10s' % ('class/closer', 'raw', 'lookbehind_ok', 'genuine'))
     print('-' * 54)
     for name, tok in CLASSES:
         for closer, _ in CLOSERS:
-            key = '%s/%s' % (name, closer)
+            key = '{}/{}'.format(name, closer)
             if not raw[key]:
                 continue
             print('%-16s %10d %14d %10d' % (key, raw[key], lb_ok[key], genuine[key]))
@@ -157,7 +157,7 @@ def main():
               'leaf-only divisions: %d'
               % (len(roman_rows), with_kids, len(roman_rows) - with_kids))
         divs = collections.Counter(r[3] for r in roman_rows)
-        print('preceding <div n=> depth: %s' % dict(divs))
+        print('preceding <div n=> depth: {}'.format(dict(divs)))
 
     print()
     print('TOTAL genuine four-tier markers unrecognised by the pre-H3948 parser: %d'

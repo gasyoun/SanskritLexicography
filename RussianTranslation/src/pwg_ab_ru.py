@@ -234,13 +234,13 @@ def display(token):
     title   = the authoritative DE/EN expansion (pwg_ab), for the hover tooltip."""
     tok = token.strip()
     r = pwg_ab.resolve(tok)
-    title = ('%s — %s' % (r['de'], r['en'])) if r else None
+    title = ('{} — {}'.format(r['de'], r['en'])) if r else None
     return RU_MAP.get(tok, tok), title
 
 
 def cmd_lookup(args):
     vis, title = display(args[0])
-    print('%s -> %r  (title: %s)' % (args[0], vis, title))
+    print('{} -> {!r}  (title: {})'.format(args[0], vis, title))
 
 
 def cmd_coverage(_args):

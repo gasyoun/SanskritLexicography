@@ -43,7 +43,7 @@ def _write_jsonl(path: Path, rows: list[dict]) -> None:
 
 def test_fixture_blocks_banner():
     fixture = HERE / "examples" / "collision_events.example.jsonl"
-    assert fixture.exists(), "example fixture missing: %s" % fixture
+    assert fixture.exists(), "example fixture missing: {}".format(fixture)
     out = ks.collision_guard(fixture)
     assert out["measured"] is True
     assert out["blocked"] is True

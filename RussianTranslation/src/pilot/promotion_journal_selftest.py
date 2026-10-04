@@ -221,7 +221,7 @@ def test_prepared_fault_retry_and_immutable_intent() -> None:
             changed.update(patch)
             try:
                 pj.prepare(journal, **changed)
-                raise AssertionError('%s retry mismatch was accepted' % label)
+                raise AssertionError('{} retry mismatch was accepted'.format(label))
             except pj.JournalError:
                 pass
 

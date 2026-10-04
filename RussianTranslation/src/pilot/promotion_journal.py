@@ -177,7 +177,7 @@ def atomic_write_bytes(path: str, payload: bytes) -> str:
     directory = os.path.dirname(absolute) or '.'
     os.makedirs(directory, exist_ok=True)
     fd, tmp = tempfile.mkstemp(
-        prefix='.%s.' % os.path.basename(absolute), suffix='.tmp', dir=directory)
+        prefix='.{}.'.format(os.path.basename(absolute)), suffix='.tmp', dir=directory)
     try:
         with os.fdopen(fd, 'wb') as fh:
             fh.write(payload)
@@ -218,13 +218,13 @@ def load(path: str) -> dict[str, Any]:
 
 def validate(journal: Mapping[str, Any]) -> None:
     if journal.get('schema') != SCHEMA:
-        raise JournalError('unsupported journal schema %r' % journal.get('schema'))
+        raise JournalError('unsupported journal schema {!r}'.format(journal.get('schema')))
     if journal.get('phase') not in PHASES:
-        raise JournalError('invalid journal phase %r' % journal.get('phase'))
+        raise JournalError('invalid journal phase {!r}'.format(journal.get('phase')))
     for key in ('promotion_id', 'model_identifier', 'review_status',
                 'artifact_timestamp'):
         if not isinstance(journal.get(key), str) or not journal[key]:
-            raise JournalError('journal.%s must be a non-empty string' % key)
+            raise JournalError('journal.{} must be a non-empty string'.format(key))
     lease_ids = journal.get('lease_ids')
     bindings = journal.get('bindings')
     leases = journal.get('leases')
@@ -240,24 +240,23 @@ def validate(journal: Mapping[str, Any]) -> None:
         binding = bindings[lease_id]
         metrics = leases[lease_id]
         if not isinstance(binding, Mapping) or not isinstance(metrics, Mapping):
-            raise JournalError('%s binding/metrics must be objects' % lease_id)
+            raise JournalError('{} binding/metrics must be objects'.format(lease_id))
         for name in ('run_id', 'attempt_id'):
             value = binding.get(name)
             if value is not None and (not isinstance(value, str) or not value):
-                raise JournalError('%s.%s must be null or a non-empty string'
-                                   % (lease_id, name))
+                raise JournalError('{}.{} must be null or a non-empty string'.format(lease_id, name))
             if metrics.get(name) != value:
-                raise JournalError('%s metrics/binding %s mismatch' % (lease_id, name))
+                raise JournalError('{} metrics/binding {} mismatch'.format(lease_id, name))
         clean = metrics.get('clean_output')
         subcards = metrics.get('subcard_keys')
         if (not isinstance(clean, Mapping)
                 or not isinstance(clean.get('sha256'), str)
                 or not isinstance(clean.get('count'), int)):
-            raise JournalError('%s missing clean-output hash/count' % lease_id)
+            raise JournalError('{} missing clean-output hash/count'.format(lease_id))
         if (not isinstance(subcards, list) or not subcards
                 or subcards != sorted(set(subcards))
                 or metrics.get('subcards') != len(subcards)):
-            raise JournalError('%s has invalid sealed subcards' % lease_id)
+            raise JournalError('{} has invalid sealed subcards'.format(lease_id))
     expected_run_ids = {
         lease_id: bindings[lease_id]['run_id']
         for lease_id in lease_ids if bindings[lease_id].get('run_id')
@@ -277,12 +276,12 @@ def validate(journal: Mapping[str, Any]) -> None:
         raise JournalError('journal.store must be an object')
     for key in ('path', 'before_sha256', 'expected_after_sha256'):
         if not isinstance(store.get(key), str) or not store[key]:
-            raise JournalError('journal.store.%s must be a non-empty string' % key)
+            raise JournalError('journal.store.{} must be a non-empty string'.format(key))
     for key in ('before_rows', 'expected_after_rows'):
         if isinstance(store.get(key), bool) or not isinstance(store.get(key), int):
-            raise JournalError('journal.store.%s must be an int' % key)
+            raise JournalError('journal.store.{} must be an int'.format(key))
     if store['path'] != canonical_path(store['path']):
-        raise JournalError('journal.store.path is not canonical: %s' % store['path'])
+        raise JournalError('journal.store.path is not canonical: {}'.format(store['path']))
     backup = store.get('backup')
     if not isinstance(backup, Mapping) or not backup.get('path'):
         raise JournalError('journal.store.backup is required')
@@ -399,7 +398,7 @@ def prepare(
         existing = load(path)
         if _immutable_projection(existing) != _immutable_projection(candidate):
             raise JournalError(
-                'existing journal does not match this promotion intent: %s' % path)
+                'existing journal does not match this promotion intent: {}'.format(path))
         fault(fault_hook, 'prepared')
         return existing
     atomic_write_json(path, candidate)
@@ -416,16 +415,15 @@ def _advance(
 ) -> dict[str, Any]:
     """Durably advance exactly one phase; same-phase re-entry is idempotent."""
     if next_phase not in PHASES:
-        raise JournalError('unknown next phase %r' % next_phase)
+        raise JournalError('unknown next phase {!r}'.format(next_phase))
     journal = load(path)
     current = journal['phase']
     if current == next_phase:
         return journal
     if expected_phase is not None and current != expected_phase:
-        raise JournalError('phase is %s, expected %s' % (current, expected_phase))
+        raise JournalError('phase is {}, expected {}'.format(current, expected_phase))
     if _PHASE_INDEX[next_phase] != _PHASE_INDEX[current] + 1:
-        raise JournalError('refusing non-adjacent phase transition %s -> %s'
-                           % (current, next_phase))
+        raise JournalError('refusing non-adjacent phase transition {} -> {}'.format(current, next_phase))
     if updates:
         for key, value in updates.items():
             journal[key] = value
@@ -443,12 +441,12 @@ def verify_backup(journal: Mapping[str, Any], *, required: bool) -> None:
     path = sealed['path']
     if not os.path.isfile(path):
         if required:
-            raise JournalError('sealed promotion backup is missing: %s' % path)
+            raise JournalError('sealed promotion backup is missing: {}'.format(path))
         return
     observed = file_fingerprint(path)
     for field in ('sha256', 'rows', 'bytes'):
         if observed[field] != sealed[field]:
-            raise JournalError('sealed promotion backup %s mismatch' % field)
+            raise JournalError('sealed promotion backup {} mismatch'.format(field))
 
 
 def verify_committed_store(journal: Mapping[str, Any]) -> dict[str, Any]:
@@ -461,8 +459,7 @@ def verify_committed_store(journal: Mapping[str, Any]) -> dict[str, Any]:
             or observed['bytes'] != store['expected_after_bytes']):
         raise UnrelatedStoreError(
             'committed promotion journal no longer matches live store '
-            '(observed=%s expected=%s)'
-            % (observed.get('sha256'), store['expected_after_sha256']))
+            '(observed={} expected={})'.format(observed.get('sha256'), store['expected_after_sha256']))
     verify_backup(journal, required=True)
     return observed
 
@@ -491,7 +488,7 @@ def reconcile(
     before = store['before_sha256']
     after = store['expected_after_sha256']
     if not observed['exists']:
-        raise UnrelatedStoreError('canonical store is missing: %s' % store['path'])
+        raise UnrelatedStoreError('canonical store is missing: {}'.format(store['path']))
     result = {
         'promotion_id': journal['promotion_id'],
         'phase': journal['phase'],
@@ -513,8 +510,7 @@ def reconcile(
             return result
         raise UnrelatedStoreError(
             'live store hash is neither sealed before nor expected-after '
-            '(observed=%s before=%s after=%s)'
-            % (observed['sha256'], before, after))
+            '(observed={} before={} after={})'.format(observed['sha256'], before, after))
     verify_committed_store(journal)
     if journal['phase'] in ('derived_validated', 'coordinator_committed'):
         verify_sealed_artifacts(journal)
@@ -556,8 +552,7 @@ def mark_derived_validated(
         verify_sealed_artifacts(journal)
         return journal
     if journal['phase'] != 'store_committed':
-        raise JournalError('derived validation requires store_committed, got %s'
-                           % journal['phase'])
+        raise JournalError('derived validation requires store_committed, got {}'.format(journal['phase']))
     if not denylist_path or not card_tm_path or not fragment_tm_path:
         raise JournalError(
             'derived validation requires denylist plus existing validated '
@@ -571,17 +566,15 @@ def mark_derived_validated(
         frag_ok, frag_stats = tm.validate_tm_file(
             lang, fragment_tm_path, kind='fragment')
     except (OSError, ValueError, json.JSONDecodeError) as exc:
-        raise JournalError('derived TM validation failed: %s' % exc) from exc
+        raise JournalError('derived TM validation failed: {}'.format(exc)) from exc
     if not tm.validation_ok(card_stats) or not tm.validation_ok(frag_stats):
         raise JournalError(
-            'derived TM validation failed: card=%s fragment=%s'
-            % (dict(card_stats), dict(frag_stats)))
+            'derived TM validation failed: card={} fragment={}'.format(dict(card_stats), dict(frag_stats)))
     with open(card_tm_path, encoding='utf-8') as fh:
         card_payload = json.load(fh)
     if card_payload.get('built_at') != journal['artifact_timestamp']:
         raise JournalError(
-            'card TM built_at %r does not match journal artifact timestamp %r'
-            % (card_payload.get('built_at'), journal['artifact_timestamp']))
+            'card TM built_at {!r} does not match journal artifact timestamp {!r}'.format(card_payload.get('built_at'), journal['artifact_timestamp']))
     derived = dict(journal.get('derived') or {})
     current_errors = list(derived.get('errors') or [])
     supplied_errors = list(errors or [])
@@ -589,8 +582,7 @@ def mark_derived_validated(
         derived.setdefault('error_history', []).extend(supplied_errors)
         current_errors.extend(supplied_errors)
     if current_errors:
-        raise JournalError('derived artifacts have unresolved errors: %s'
-                           % current_errors)
+        raise JournalError('derived artifacts have unresolved errors: {}'.format(current_errors))
     now = journal['artifact_timestamp']
     card_fp = file_fingerprint(card_tm_path)
     card_fp.update({'validated': True, 'valid_rows': card_ok,
@@ -621,12 +613,11 @@ def verify_sealed_artifacts(journal_or_path: Mapping[str, Any] | str) -> None:
         raise JournalError('derived artifacts are not yet sealed')
     derived = journal.get('derived') or {}
     if derived.get('errors'):
-        raise JournalError('derived artifacts have unresolved errors: %s'
-                           % derived['errors'])
+        raise JournalError('derived artifacts have unresolved errors: {}'.format(derived['errors']))
     for kind in ('denylist', 'card_tm', 'fragment_tm'):
         sealed = derived.get(kind)
         if not isinstance(sealed, Mapping):
-            raise JournalError('missing sealed derived artifact %s' % kind)
+            raise JournalError('missing sealed derived artifact {}'.format(kind))
         observed = (file_fingerprint(sealed['path'], missing_ok=True)
                     if sealed.get('path') else {
                         'path': None, 'exists': False, 'sha256': None,
@@ -635,8 +626,7 @@ def verify_sealed_artifacts(journal_or_path: Mapping[str, Any] | str) -> None:
         for field in ('path', 'exists', 'sha256', 'bytes', 'rows'):
             if observed.get(field) != sealed.get(field):
                 raise JournalError(
-                    'sealed %s changed after validation (%s: %r != %r)'
-                    % (kind, field, observed.get(field), sealed.get(field)))
+                    'sealed {} changed after validation ({}: {!r} != {!r})'.format(kind, field, observed.get(field), sealed.get(field)))
 
 
 def record_derived_observation(
@@ -652,11 +642,10 @@ def record_derived_observation(
     derived-validation barrier still leaves timestamps, hashes, and errors.
     """
     if kind not in ('denylist', 'card_tm', 'fragment_tm'):
-        raise JournalError('unknown derived artifact kind %r' % kind)
+        raise JournalError('unknown derived artifact kind {!r}'.format(kind))
     journal = load(path)
     if journal['phase'] != 'store_committed':
-        raise JournalError('derived observations require store_committed, got %s'
-                           % journal['phase'])
+        raise JournalError('derived observations require store_committed, got {}'.format(journal['phase']))
     derived = dict(journal.get('derived') or {})
     observation = (file_fingerprint(artifact_path, missing_ok=True)
                    if artifact_path else {'path': None, 'exists': False,
@@ -668,9 +657,9 @@ def record_derived_observation(
         'kind': kind, **observation,
     })
     errors = [value for value in list(derived.get('errors') or [])
-              if not value.startswith('%s: ' % kind)]
+              if not value.startswith('{}: '.format(kind))]
     if error:
-        message = '%s: %s' % (kind, error)
+        message = '{}: {}'.format(kind, error)
         errors.append(message)
         derived.setdefault('error_history', []).append(message)
     derived['errors'] = errors
@@ -682,13 +671,13 @@ def record_derived_observation(
 
 def _require_utc_second_timestamp(value: Any, field: str) -> None:
     if not isinstance(value, str):
-        raise JournalError('%s must be a UTC second timestamp' % field)
+        raise JournalError('{} must be a UTC second timestamp'.format(field))
     try:
         parsed = datetime.datetime.strptime(value, '%Y-%m-%dT%H:%M:%SZ')
     except ValueError as exc:
-        raise JournalError('%s must be a UTC second timestamp' % field) from exc
+        raise JournalError('{} must be a UTC second timestamp'.format(field)) from exc
     if parsed.strftime('%Y-%m-%dT%H:%M:%SZ') != value:
-        raise JournalError('%s must be a UTC second timestamp' % field)
+        raise JournalError('{} must be a UTC second timestamp'.format(field))
 
 
 def _validate_promotion_registry_projection(
@@ -759,12 +748,11 @@ def _validate_promotion_registry_projection(
         outcome = lease_outcomes[lease_id]
         if outcome not in ('promoted', 'promoted_partial'):
             raise JournalError(
-                '%s has invalid coordinator lease outcome %r'
-                % (lease_id, outcome))
+                '{} has invalid coordinator lease outcome {!r}'.format(lease_id, outcome))
         lease = leases_by_id.get(lease_id)
         if lease is None:
             raise JournalError(
-                'expected coordinator state lacks lease %s' % lease_id)
+                'expected coordinator state lacks lease {}'.format(lease_id))
         metrics = journal['leases'][lease_id]
         clean_files = (metrics.get('clean_output') or {}).get('files') or []
         if (len(clean_files) != 1
@@ -772,13 +760,11 @@ def _validate_promotion_registry_projection(
                 or not clean_files[0].get('path')
                 or not clean_files[0].get('sha256')):
             raise JournalError(
-                '%s registry projection requires one sealed clean output'
-                % lease_id)
+                '{} registry projection requires one sealed clean output'.format(lease_id))
         for field in ('kind', 'target', 'artifact_dir'):
             if not isinstance(lease.get(field), str) or not lease[field]:
                 raise JournalError(
-                    'expected coordinator lease %s lacks %s'
-                    % (lease_id, field))
+                    'expected coordinator lease {} lacks {}'.format(lease_id, field))
         expected_lease_facts = {
             'state': outcome,
             'promoted_at': artifact_timestamp,
@@ -799,8 +785,7 @@ def _validate_promotion_registry_projection(
         for field, expected_value in expected_lease_facts.items():
             if lease.get(field) != expected_value:
                 raise JournalError(
-                    'expected coordinator lease %s has inconsistent %s'
-                    % (lease_id, field))
+                    'expected coordinator lease {} has inconsistent {}'.format(lease_id, field))
         binding = journal['bindings'][lease_id]
         if binding.get('run_id') is not None:
             attempts = lease.get('run_attempts')
@@ -808,8 +793,7 @@ def _validate_promotion_registry_projection(
             if (completed.get('run_id') != binding['run_id']
                     or completed.get('run_operation_id') != binding.get('attempt_id')):
                 raise JournalError(
-                    'expected coordinator lease %s lacks sealed run binding'
-                    % lease_id)
+                    'expected coordinator lease {} lacks sealed run binding'.format(lease_id))
         expected_events.append({
             'schema': PROMOTION_REGISTRY_SCHEMA,
             'ts': artifact_timestamp,
@@ -872,8 +856,7 @@ def prepare_coordinator_commit(
                 fault_hook=fault_hook,
             )
     if _PHASE_INDEX[journal['phase']] < _PHASE_INDEX['derived_validated']:
-        raise JournalError('coordinator intent requires derived_validated, got %s'
-                           % journal['phase'])
+        raise JournalError('coordinator intent requires derived_validated, got {}'.format(journal['phase']))
     if journal['phase'] != 'complete':
         verify_committed_store(journal)
         verify_sealed_artifacts(journal)
@@ -1049,7 +1032,7 @@ def mark_coordinator_committed(
 ) -> dict[str, Any]:
     """Adopt only an exact, previously sealed coordinator state."""
     if error:
-        raise JournalError('coordinator commit error: %s' % error)
+        raise JournalError('coordinator commit error: {}'.format(error))
     journal = load(path)
     if journal['phase'] == 'complete':
         return journal
@@ -1081,7 +1064,7 @@ def verify_registry_projection(journal: Mapping[str, Any]) -> None:
     try:
         raw = open(path, 'rb').read()
     except OSError as exc:
-        raise JournalError('sealed registry projection is unreadable: %s' % exc) from exc
+        raise JournalError('sealed registry projection is unreadable: {}'.format(exc)) from exc
     if raw and not raw.endswith(b'\n'):
         raise JournalError('sealed registry projection is not newline-terminated')
     try:
@@ -1157,7 +1140,7 @@ def advance(
         return mark_coordinator_committed(path)
     if next_phase == 'complete':
         return mark_complete(path)
-    raise JournalError('public advance cannot target %r' % next_phase)
+    raise JournalError('public advance cannot target {!r}'.format(next_phase))
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -1226,7 +1209,7 @@ def main(argv: list[str] | None = None) -> int:
             else:
                 result = mark_complete(args.journal)
     except (JournalError, OSError, json.JSONDecodeError) as exc:
-        print('REFUSED: %s' % exc, file=sys.stderr)
+        print('REFUSED: {}'.format(exc), file=sys.stderr)
         return 2
     print(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True))
     return 0

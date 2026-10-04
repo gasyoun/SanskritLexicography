@@ -167,16 +167,14 @@ class PaidCallKernel:
                 max_output_tokens=max_output_tokens)
         except providers.ProviderError as exc:
             raise KernelRefusal(
-                'no verified price card for route %r; a dollar-bounded campaign'
-                ' (ceiling USD %.2f) fails closed: %s'
-                % (route, self.campaign.cost_ceiling_usd, exc),
+                'no verified price card for route {!r}; a dollar-bounded campaign'
+                ' (ceiling USD {:.2f}) fails closed: {}'.format(route, self.campaign.cost_ceiling_usd, exc),
                 failure_class=FAILURE_CEILING) from exc
         projected = self.spent_usd() + estimate
         if projected > self.campaign.cost_ceiling_usd + 1e-9:
             raise KernelRefusal(
-                'worst-case cost USD %.4f would exceed the campaign ceiling'
-                ' USD %.2f (already spent USD %.4f)'
-                % (projected, self.campaign.cost_ceiling_usd, self.spent_usd()),
+                'worst-case cost USD {:.4f} would exceed the campaign ceiling'
+                ' USD {:.2f} (already spent USD {:.4f})'.format(projected, self.campaign.cost_ceiling_usd, self.spent_usd()),
                 failure_class=FAILURE_CEILING)
         return estimate
 
@@ -204,8 +202,7 @@ class PaidCallKernel:
         model.require_choice(route, model.ROUTES, 'adapter.route')
         if route not in model.BILLABLE_ROUTES:
             raise KernelRefusal(
-                'route %r is not billable and must not enter the paid kernel'
-                % route, failure_class=FAILURE_ROUTE)
+                'route {!r} is not billable and must not enter the paid kernel'.format(route), failure_class=FAILURE_ROUTE)
         if not job_ids:
             raise KernelRefusal('a call must be bound to at least one job',
                                 failure_class=FAILURE_BUDGET)
@@ -284,18 +281,17 @@ class PaidCallKernel:
                 'provider usage is missing or not evaluable',
                 model.CALL_MALFORMED, response=response)
             raise GlobalStop(
-                'unevaluable usage on call %s: accounting uncertainty halts the'
-                ' wave' % call.call_id, failure_class=FAILURE_UNEVALUABLE,
+                'unevaluable usage on call {}: accounting uncertainty halts the'
+                ' wave'.format(call.call_id), failure_class=FAILURE_UNEVALUABLE,
                 dispatched=True)
         served = response.served_model
         if served and requested_model and served != requested_model:
             self._finalize_failure(
                 call, request, artifacts, FAILURE_ROUTE,
-                'requested %r but %r was served' % (requested_model, served),
+                'requested {!r} but {!r} was served'.format(requested_model, served),
                 model.CALL_MALFORMED, response=response, usage=usage)
             raise GlobalStop(
-                'route substitution on call %s: requested %r, served %r'
-                % (call.call_id, requested_model, served),
+                'route substitution on call {}: requested {!r}, served {!r}'.format(call.call_id, requested_model, served),
                 failure_class=FAILURE_ROUTE, dispatched=True)
 
         try:
@@ -343,7 +339,7 @@ class PaidCallKernel:
               ) -> dict[str, Any]:
         directory = os.path.join(self.evidence_dir, call_id)
         os.makedirs(directory, exist_ok=True)
-        receipt = seal(os.path.join(directory, '%s.json' % kind), dict(value))
+        receipt = seal(os.path.join(directory, '{}.json'.format(kind)), dict(value))
         artifact = model.Artifact(
             artifact_id=new_id('artifact'), campaign_id=self.campaign_id,
             kind=kind, path=receipt['path'], sha256=receipt['sha256'])

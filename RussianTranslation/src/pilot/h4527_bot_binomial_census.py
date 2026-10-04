@@ -96,10 +96,10 @@ def census(path, n_examples):
                 old_mask = pm.classify_pct_detail(gloss, plain)['gloss_lang']
                 pra.MARKUP_TAG, pm.looks_botany_binomial = fixed_tag, fixed_bin
                 if old_mask != new_mask:
-                    mask_moves['%s->%s' % (old_mask, new_mask)] += 1
+                    mask_moves['{}->{}'.format(old_mask, new_mask)] += 1
                 if old == new:
                     continue
-                key = '%s->%s' % (old, new)
+                key = '{}->{}'.format(old, new)
                 moves[key] += 1
                 for tag in sorted(set(TAG_NAME.findall(gloss))):
                     moves_by_tag[(key, tag)] += 1
@@ -112,7 +112,7 @@ def census(path, n_examples):
         'braced_spans_with_markup': tagged,
         'masker_gloss_lang_moves': dict(mask_moves),
         'class_moves': dict(moves),
-        'class_moves_by_tag': {'%s %s' % k: v for k, v in sorted(moves_by_tag.items())},
+        'class_moves_by_tag': {'{} {}'.format(*k): v for k, v in sorted(moves_by_tag.items())},
         'examples': dict(examples),
     }
 

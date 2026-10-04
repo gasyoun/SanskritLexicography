@@ -222,13 +222,13 @@ def main():
           % (len(payload['overlap_proofs']['verb_remaining_x_nominal_remaining']),
              len(payload['overlap_proofs']['pwg_remaining_x_no_pwg_remaining'])))
     print('  UNIQUE REMAINING TOTAL (all lanes, headwords): %d' % payload['unique_remaining_total_headwords'])
-    print('  content hash: %s' % payload['content_hash_sha256_sorted_tagged_remaining'])
+    print('  content hash: {}'.format(payload['content_hash_sha256_sorted_tagged_remaining']))
 
     if a.json:
         os.makedirs(os.path.dirname(os.path.abspath(a.json)), exist_ok=True)
         with open(a.json, 'w', encoding='utf-8') as f:
             json.dump(payload, f, ensure_ascii=False, indent=1)
-        print('payload written: %s' % a.json)
+        print('payload written: {}'.format(a.json))
 
 
 if __name__ == '__main__':

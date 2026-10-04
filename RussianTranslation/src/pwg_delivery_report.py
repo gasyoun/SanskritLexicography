@@ -340,8 +340,7 @@ def build_report(data_repo=None):
                 'durable evidence.')
         else:
             report['delta']['explanation'] = (
-                'differs from the 04-09 audit baseline - newer digest; sha256 %s vs %s'
-                % (report['store_sha256'], base['store_sha256']))
+                'differs from the 04-09 audit baseline - newer digest; sha256 {} vs {}'.format(report['store_sha256'], base['store_sha256']))
     else:
         report['delta']['explanation'] = 'no store surface readable on this box — census unknown'
     return report
@@ -358,21 +357,21 @@ def render_md(r):
     lines = [
         '# PWG delivery report (derived, H4052)',
         '',
-        'Surface: `%s` · store sha256 `%s`' % (r['surface'], r['store_sha256'] or 'unknown'),
+        'Surface: `{}` · store sha256 `{}`'.format(r['surface'], r['store_sha256'] or 'unknown'),
         '',
         '| measure | value |',
         '|---|---|',
-        '| store sense rows | %s |' % c.get('sense_rows', 'unknown'),
-        '| headwords (distinct key1) | %s |' % c.get('headwords', 'unknown'),
-        '| subcards (distinct key1+subcard) | %s |' % c.get('subcards', 'unknown'),
-        '| approved | %s |' % f.get('approved', 'unknown'),
-        '| print-ready (store_flags predicate) | %s |' % f.get('print_ready', 'unknown'),
+        '| store sense rows | {} |'.format(c.get('sense_rows', 'unknown')),
+        '| headwords (distinct key1) | {} |'.format(c.get('headwords', 'unknown')),
+        '| subcards (distinct key1+subcard) | {} |'.format(c.get('subcards', 'unknown')),
+        '| approved | {} |'.format(f.get('approved', 'unknown')),
+        '| print-ready (store_flags predicate) | {} |'.format(f.get('print_ready', 'unknown')),
         '| review queue | %s |' % (json.dumps(f['review_queue']) if f['review_queue'] else 'unknown (surface absent on this box)'),
         '| gold labels | %s |' % (json.dumps(f['gold']) if f['gold'] else 'unknown (surface absent on this box)'),
         '| TM fragments | %s |' % (f['tm_fragments'] if f['tm_fragments'] is not None else 'unknown (surface absent on this box)'),
         '| released edition | no (G10 blocked) |',
         '| last row generated_at | %s |' % (r['durable_events']['last_row_generated_at'] or 'unknown'),
-        '| last mirror ledger entry | %s |' % json.dumps(r['durable_events']['last_mirror_refresh_ledger_entry']) if r['durable_events']['last_mirror_refresh_ledger_entry'] else '| last mirror ledger entry | unknown |',
+        '| last mirror ledger entry | {} |'.format(json.dumps(r['durable_events']['last_mirror_refresh_ledger_entry'])) if r['durable_events']['last_mirror_refresh_ledger_entry'] else '| last mirror ledger entry | unknown |',
         '',
         '## Lane A seven-key chain — one disposition per key',
         '',
@@ -380,7 +379,7 @@ def render_md(r):
         '|---|---|---|---|---|',
     ]
     for k in r['lane_a_seven_key_chain']['blocked_keys']:
-        lines.append('| `%s` | %s | %s | %s | %s |' % (
+        lines.append('| `{}` | {} | {} | {} | {} |'.format(
             k['safe_name'], k['class'], k['in_store'], k['disposition'], k['reason_code']))
     lines += [
         '',
@@ -388,9 +387,9 @@ def render_md(r):
         '(staged only, H3679) · audit-clean new=0 · promoted=0 · approved=0 · released=0 · '
         'durable fire inputs=%(fire_inputs_durable)d/7 keys' % r['lane_a_seven_key_chain'],
         '',
-        'Receipt classification (delivered-translation assertion): %s' % json.dumps(r['receipt_classification']),
+        'Receipt classification (delivered-translation assertion): {}'.format(json.dumps(r['receipt_classification'])),
         '',
-        'Delta: %s' % r['delta']['explanation'],
+        'Delta: {}'.format(r['delta']['explanation']),
         '',
         'Unknown surfaces (missing evidence is unknown, never zero): %s' % (', '.join(r['unknown_surfaces']) or 'none'),
         '',

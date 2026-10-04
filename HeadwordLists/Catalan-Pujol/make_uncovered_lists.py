@@ -119,7 +119,7 @@ for c in seen_order:
     with open(path,'w',encoding='utf-8') as f:
         f.write("# Catalan → CDSL-uncovered: `%s`  (%d headwords)\n\n"%(c,cat_counter[c]))
         f.write("> Headwords from the *Diccionari Sànscrit–Català* not found as a `<k1>` key in any of the %d CDSL dictionaries (`csl-orig/v02`), accent- and compound-insensitive.\n>\n"%ndicts)
-        f.write("> **Category:** %s\n\n"%DESC.get(c,''))
+        f.write("> **Category:** {}\n\n".format(DESC.get(c,'')))
         f.write("See [`../Sanskrit-Catalan-Wordlist-vs-Cologne.md`](../Sanskrit-Catalan-Wordlist-vs-Cologne.md) §4 for the full breakdown.\n\n")
         f.write("| # | Catalan headword | normalised SLP1 key |\n|---:|---|---|\n")
         for i,(hw,key) in enumerate(rows_c,1):

@@ -191,7 +191,7 @@ def main():
     # H2146: locked (PromoteClaim) + unique fsynced backup + atomic replace — the old
     # in-place rewrite was unlocked and left a truncated store on crash (FINDINGS §513).
     locked_store_rewrite(args.store, rows, tag='prefreq', no_backup=args.no_backup)
-    print('\nwrote annotated store -> %s' % args.store)
+    print('\nwrote annotated store -> {}'.format(args.store))
 
 
 if __name__ == '__main__':

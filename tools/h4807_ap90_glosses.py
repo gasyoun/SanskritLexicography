@@ -69,7 +69,7 @@ def main():
     ap.add_argument('--out', default=OUT)
     args = ap.parse_args()
     if not os.path.exists(AP90):
-        sys.exit('FATAL: %s missing' % AP90)
+        sys.exit('FATAL: {} missing'.format(AP90))
     out = {}
     n = 0
     for k1, body in records(AP90):
@@ -82,7 +82,7 @@ def main():
     if args.selftest:
         assert n > 30000, 'too few records: %d' % n
         probe = out.get('aha')
-        assert probe and 'particle' in probe.lower(), 'aha probe failed: %r' % probe
+        assert probe and 'particle' in probe.lower(), 'aha probe failed: {!r}'.format(probe)
         print('AP90 selftest OK records=%d glossed=%d' % (n, len(out)))
         return
     print('wrote %s records=%d glossed=%d' % (args.out, n, len(out)))

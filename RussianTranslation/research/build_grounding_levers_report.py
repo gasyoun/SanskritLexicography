@@ -40,9 +40,9 @@ CELLS = [
 
 
 def load(d, tag):
-    p = os.path.join(d, 'pwg_sense_dcs_attestation_%s.meta.json' % tag)
+    p = os.path.join(d, 'pwg_sense_dcs_attestation_{}.meta.json'.format(tag))
     if not os.path.isfile(p):
-        raise SystemExit('missing %s — re-run that cell' % p)
+        raise SystemExit('missing {} — re-run that cell'.format(p))
     return json.load(open(p, encoding='utf-8'))
 
 
@@ -96,8 +96,7 @@ def main():
     L.append('|---|---:|---:|---:|')
     for key, _tag, label in CELLS:
         s = S[key]
-        L.append('| %s | %s | %.2f%% | %s (%.2f%%) |'
-                 % (label, '{:,}'.format(s['pwg_senses_grounded']),
+        L.append('| {} | {} | {:.2f}% | {} ({:.2f}%) |'.format(label, '{:,}'.format(s['pwg_senses_grounded']),
                     100 * s['pwg_sense_join_rate'],
                     '{:,}'.format(s['pwg_senses_grounded_verse']),
                     100 * s['pwg_sense_join_rate_verse']))
@@ -116,33 +115,28 @@ def main():
     L.append('|---|---|---:|---:|')
     L.append('| — | H1632 as published | %d | — |' % b['pwg_senses_grounded'])
     L.append('| **A2 — passage depth** | the locus tiers see every DCS passage at an '
-             'address the frame cites, instead of the 3-passage viewer sample | %s | '
-             '**+%s (%.1f×)** |'
-             % ('{:,}'.format(a2['pwg_senses_grounded']),
+             'address the frame cites, instead of the 3-passage viewer sample | {} | '
+             '**+{} ({:.1f}×)** |'.format('{:,}'.format(a2['pwg_senses_grounded']),
                 '{:,}'.format(a2['pwg_senses_grounded'] - b['pwg_senses_grounded']),
                 a2['pwg_senses_grounded'] / b['pwg_senses_grounded']))
     L.append('| **A1 — frame width** | the same selection query run to exhaustion '
-             '(%s groups, %.1f× the frozen 500) instead of truncated at 500 | %s | '
-             '**+%s (%.1f×)** |'
-             % ('{:,}'.format(a1['n_pilot_groups']), a1['n_pilot_groups'] / 500.0,
+             '({} groups, {:.1f}× the frozen 500) instead of truncated at 500 | {} | '
+             '**+{} ({:.1f}×)** |'.format('{:,}'.format(a1['n_pilot_groups']), a1['n_pilot_groups'] / 500.0,
                 '{:,}'.format(a1['pwg_senses_grounded']),
                 '{:,}'.format(a1['pwg_senses_grounded'] - b['pwg_senses_grounded']),
                 a1['pwg_senses_grounded'] / b['pwg_senses_grounded']))
-    L.append('| A1+A2 | both | %s | +%s |'
-             % ('{:,}'.format(a12['pwg_senses_grounded']),
+    L.append('| A1+A2 | both | {} | +{} |'.format('{:,}'.format(a12['pwg_senses_grounded']),
                 '{:,}'.format(a12['pwg_senses_grounded'] - b['pwg_senses_grounded'])))
     L.append('| **B — text map** | 5 verified texts added to `PWG_TO_DCS_TEXT`, incl. the '
-             'dead `ṚV` key | %s | +%s _(+%s on top of A1+A2)_ |'
-             % ('{:,}'.format(a12b['pwg_senses_grounded']),
+             'dead `ṚV` key | {} | +{} _(+{} on top of A1+A2)_ |'.format('{:,}'.format(a12b['pwg_senses_grounded']),
                 '{:,}'.format(a12b['pwg_senses_grounded'] - b['pwg_senses_grounded']),
                 '{:,}'.format(a12b['pwg_senses_grounded'] - a12['pwg_senses_grounded'])))
     L.append('')
-    L.append('**The levers are strongly super-additive.** A1 alone adds %s grounded '
-             'senses and A2 alone adds %s, but together they add %s — far more than the '
-             '%s a purely additive model predicts. A wider frame cites more addresses, '
+    L.append('**The levers are strongly super-additive.** A1 alone adds {} grounded '
+             'senses and A2 alone adds {}, but together they add {} — far more than the '
+             '{} a purely additive model predicts. A wider frame cites more addresses, '
              'and only the full scan can find them; neither lever pays off without the '
-             'other.'
-             % ('{:,}'.format(a1['pwg_senses_grounded'] - b['pwg_senses_grounded']),
+             'other.'.format('{:,}'.format(a1['pwg_senses_grounded'] - b['pwg_senses_grounded']),
                 '{:,}'.format(a2['pwg_senses_grounded'] - b['pwg_senses_grounded']),
                 '{:,}'.format(a12['pwg_senses_grounded'] - b['pwg_senses_grounded']),
                 '{:,}'.format(a1['pwg_senses_grounded'] + a2['pwg_senses_grounded']
@@ -150,11 +144,10 @@ def main():
     L.append('')
     L.append('⚠️ **A1\'s effect on the *rate* is partly compositional, and must not be '
              'read as "grounding is easier further down the dictionary".** The frozen 500 '
-             'were ranked most-polysemous-first, so they carry %.1f leaf senses per group '
-             'against the wide frame\'s %.1f. A single grounded locus therefore lifts the '
+             'were ranked most-polysemous-first, so they carry {:.1f} leaf senses per group '
+             'against the wide frame\'s {:.1f}. A single grounded locus therefore lifts the '
              'rate more on a shallow entry than on a deep one. The absolute counts (the '
-             'column left of it) are the honest comparison.'
-             % (b['pwg_senses_total_known'] / b['n_pilot_groups'],
+             'column left of it) are the honest comparison.'.format(b['pwg_senses_total_known'] / b['n_pilot_groups'],
                 a1['pwg_senses_total_known'] / a1['n_pilot_groups']))
     L.append('')
 
@@ -211,8 +204,7 @@ def main():
 
     L.append('## Dictionary-wide re-classification')
     L.append('')
-    L.append('The residual classes over all %s PWG headword groups, before and after:'
-             % '{:,}'.format(allm['n_pilot_groups']))
+    L.append('The residual classes over all {} PWG headword groups, before and after:'.format('{:,}'.format(allm['n_pilot_groups'])))
     L.append('')
     if old_all:
         L.append('| class | H1632 | H1670 | Δ |')
@@ -222,26 +214,23 @@ def main():
                     'R4_grounded_alignment'):
             o = old_all['residual_classes'].get(cls, 0)
             n = allm['residual_classes'].get(cls, 0)
-            L.append('| `%s` | %s | %s | %+s |'
-                     % (cls, '{:,}'.format(o), '{:,}'.format(n),
+            L.append('| `{}` | {} | {} | {:+} |'.format(cls, '{:,}'.format(o), '{:,}'.format(n),
                         '{:,}'.format(n - o)))
         L.append('')
         r0o = old_all['residual_classes'].get('R0_grounding_not_computed', 0)
         r0n = allm['residual_classes'].get('R0_grounding_not_computed', 0)
-        L.append('**`R0_grounding_not_computed` shrank by %s groups (%.1f%%)** — from %s '
-                 'to %s — because the aligner now covers %s headword groups instead of '
-                 '500. `R4_grounded_alignment` grew from %s to %s.'
-                 % ('{:,}'.format(r0o - r0n), 100.0 * (r0o - r0n) / r0o,
+        L.append('**`R0_grounding_not_computed` shrank by {} groups ({:.1f}%)** — from {} '
+                 'to {} — because the aligner now covers {} headword groups instead of '
+                 '500. `R4_grounded_alignment` grew from {} to {}.'.format('{:,}'.format(r0o - r0n), 100.0 * (r0o - r0n) / r0o,
                     '{:,}'.format(r0o), '{:,}'.format(r0n),
                     '{:,}'.format(allm['n_groups_grounding_computed']),
                     '{:,}'.format(old_all['residual_classes'].get('R4_grounded_alignment', 0)),
                     '{:,}'.format(allm['residual_classes'].get('R4_grounded_alignment', 0))))
         L.append('')
-        L.append('Note what did **not** move: `R1_lemma_absent_from_dcs` fell by only %s '
-                 'and `R2_no_wordsem_tag` by %s. Those are the genuine data-availability '
+        L.append('Note what did **not** move: `R1_lemma_absent_from_dcs` fell by only {} '
+                 'and `R2_no_wordsem_tag` by {}. Those are the genuine data-availability '
                  'constrictions, and no amount of matcher reach touches them — H1632 was '
-                 'right about those two and wrong only about the third.'
-                 % ('{:,}'.format(old_all['residual_classes'].get('R1_lemma_absent_from_dcs', 0)
+                 'right about those two and wrong only about the third.'.format('{:,}'.format(old_all['residual_classes'].get('R1_lemma_absent_from_dcs', 0)
                                   - allm['residual_classes'].get('R1_lemma_absent_from_dcs', 0)),
                     '{:,}'.format(old_all['residual_classes'].get('R2_no_wordsem_tag', 0)
                                   - allm['residual_classes'].get('R2_no_wordsem_tag', 0))))
@@ -250,8 +239,8 @@ def main():
     L.append('## Lever B — what a locus crosswalk could still buy')
     L.append('')
     L.append('Every `<ls>` citation on a PWG leaf sense, classified by whether the corpus '
-             'side exists at all ([`pwg_ls_dcs_text_crosswalk_backlog.tsv`](%s/pwg_ls_dcs_text_crosswalk_backlog.tsv), '
-             '739,503 citations over 4,207 distinct abbrevs):' % BLOB)
+             'side exists at all ([`pwg_ls_dcs_text_crosswalk_backlog.tsv`]({}/pwg_ls_dcs_text_crosswalk_backlog.tsv), '
+             '739,503 citations over 4,207 distinct abbrevs):'.format(BLOB))
     L.append('')
     L.append('| class | abbrevs | citations | share |')
     L.append('|---|---:|---:|---:|')
@@ -283,10 +272,9 @@ def main():
              'number above is a **sense-level** grounding, which requires a sense tag to '
              'bind to; an untagged corpus has none, and none can be had without '
              'lemmatising and tagging it ourselves. What it can move is the **lemma-level** '
-             'attestation rate — %s of %s PWG headword groups (%.1f%%) have a DCS lemma, '
-             'leaving %s (%.1f%%) attested nowhere — and that is a different quantity with '
-             'a different denominator.'
-             % ('{:,}'.format(allm['n_lemma_attested']),
+             'attestation rate — {} of {} PWG headword groups ({:.1f}%) have a DCS lemma, '
+             'leaving {} ({:.1f}%) attested nowhere — and that is a different quantity with '
+             'a different denominator.'.format('{:,}'.format(allm['n_lemma_attested']),
                 '{:,}'.format(allm['n_pilot_groups']),
                 100.0 * allm['n_lemma_attested'] / allm['n_pilot_groups'],
                 '{:,}'.format(allm['n_pilot_groups'] - allm['n_lemma_attested']),
@@ -300,9 +288,8 @@ def main():
 
     L.append('## What this does NOT claim')
     L.append('')
-    L.append('- **Grounding outside the aligner\'s reach is still UNKNOWN, never 0.** %s '
-             'of the %s PWG groups remain `R0_grounding_not_computed`.'
-             % ('{:,}'.format(allm['residual_classes'].get('R0_grounding_not_computed', 0)),
+    L.append('- **Grounding outside the aligner\'s reach is still UNKNOWN, never 0.** {} '
+             'of the {} PWG groups remain `R0_grounding_not_computed`.'.format('{:,}'.format(allm['residual_classes'].get('R0_grounding_not_computed', 0)),
                 '{:,}'.format(allm['n_pilot_groups'])))
     L.append('- No PWG sense is mapped to a WordNet synset or an MW numbered sense.')
     L.append('- The `overlap` gloss-token tier is reported and **excluded** from every '
@@ -310,8 +297,8 @@ def main():
     L.append('- `locus-mbh` and `locus-chapter` are adhyāya/hymn-level **corroboration**, '
              'not exact-verse identity. The exact-verse column is given alongside every '
              'combined figure so neither can be quoted without the other.')
-    L.append('- Nothing here says the *remaining* residue is tractable: %.1f%% of PWG\'s '
-             'citation mass points at texts DCS does not carry.' % 49.7)
+    L.append('- Nothing here says the *remaining* residue is tractable: {:.1f}% of PWG\'s '
+             'citation mass points at texts DCS does not carry.'.format(49.7))
     L.append('')
 
     L.append('## Reproduce')
@@ -338,10 +325,10 @@ def main():
     L.append('```')
     L.append('')
     L.append('Deterministic, no LLM in the measurement path, no sampling, no RNG. The '
-             'aligner lives in [`build_sense_corpus_concordance.py`](%s/build_sense_corpus_concordance.py); '
+             'aligner lives in [`build_sense_corpus_concordance.py`]({}/build_sense_corpus_concordance.py); '
              'the DCS master is `VisualDCS/src/DCS-data-2026/dcs_full.sqlite` (920,883,200 '
              'bytes — the sibling `src/` and repo-root copies are 0-byte decoys and were '
-             'not read).' % KOSHA_BLOB)
+             'not read).'.format(KOSHA_BLOB))
     L.append('')
     L.append('_Dr. Mārcis Gasūns_')
 
@@ -351,7 +338,7 @@ def main():
           % (b['pwg_senses_grounded'], '{:,}'.format(a12b['pwg_senses_grounded']),
              a12b['pwg_senses_grounded'] / b['pwg_senses_grounded'],
              100 * b['pwg_sense_join_rate'], 100 * a12b['pwg_sense_join_rate']))
-    print('wrote %s' % out)
+    print('wrote {}'.format(out))
 
 
 if __name__ == '__main__':

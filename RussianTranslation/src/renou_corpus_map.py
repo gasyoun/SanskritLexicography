@@ -55,7 +55,7 @@ def to_register(genre, work=''):
 
 _emitted = {r for _, r in WORK_OVERRIDE} | {r for _, r in GENRE_SUPPLEMENT}
 _bad = _emitted - set(REGISTERS)
-assert not _bad, 'non-canonical register codes: %s' % _bad
+assert not _bad, 'non-canonical register codes: {}'.format(_bad)
 
 
 if __name__ == '__main__':

@@ -101,7 +101,7 @@ def cmd_prep(args):
     n = int(args[0]) if len(args) > 0 else 10
     offset = int(args[1]) if len(args) > 1 else 0
     if not os.path.exists(MANIFEST):
-        sys.exit('no %s — run: python scale_route.py a' % os.path.basename(MANIFEST))
+        sys.exit('no {} — run: python scale_route.py a'.format(os.path.basename(MANIFEST)))
     keys = [e['key1'] for e in json.load(open(MANIFEST, encoding='utf-8'))]
     batch = keys[offset:offset + n]
     if not batch:
@@ -125,7 +125,7 @@ def cmd_prep(args):
     print('  fresh    : %d (%s)' % (len(fresh), ' '.join(fresh) or '—'))
     print('  protected: %d (%s)  ← will NOT be overwritten' % (len(prot), ' '.join(prot) or '—'))
     print('  run_pilot_wf.js set to OFFSET=%d LIMIT=%d' % (offset, n))
-    print('  batch saved → %s' % os.path.basename(BATCH_FILE))
+    print('  batch saved → {}'.format(os.path.basename(BATCH_FILE)))
     print('\nNEXT (on your Max):')
     print('  1) run the workflow run_pilot_wf.js through your harness; save its JSON → wf_output.json')
     print('  2) python run_real_test.py audit wf_output.json')
@@ -143,7 +143,7 @@ def cmd_audit(args):
         sys.exit('usage: python run_real_test.py audit <wf_output.json>')
     wf_out = args[0]
     if not os.path.exists(wf_out):
-        sys.exit('no workflow output %r' % wf_out)
+        sys.exit('no workflow output {!r}'.format(wf_out))
     batch_meta = json.load(open(BATCH_FILE, encoding='utf-8')) if os.path.exists(BATCH_FILE) else {}
     batch = batch_meta.get('batch')
     protected = PROTECTED | set(batch_meta.get('protected') or [])
@@ -195,8 +195,7 @@ def cmd_audit(args):
     if gate_fail:
         print('\n  GATE: FAIL — %d card(s) rejected (F12 slide): %s' % (len(rejected), ' '.join(rejected)))
         if any(k in protected for k in bad_cards):
-            print('  (note: %s is protected & misattributed — fix the hand-authored card by hand)'
-                  % ' '.join(k for k in bad_cards if k in protected))
+            print('  (note: {} is protected & misattributed — fix the hand-authored card by hand)'.format(' '.join(k for k in bad_cards if k in protected)))
         sys.exit(1)
     print('\n  GATE: PASS — no F12 misattribution in fresh cards')
 

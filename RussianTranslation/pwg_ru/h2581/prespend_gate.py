@@ -45,7 +45,7 @@ def run_selftests():
     rows = []
     for name, expected in SELFTESTS:
         proc = subprocess.run(
-            [sys.executable, os.path.join(PILOT, '%s.py' % name)],
+            [sys.executable, os.path.join(PILOT, '{}.py'.format(name))],
             capture_output=True, encoding='utf-8', cwd=PILOT)
         tail = [line for line in (proc.stdout or '').splitlines() if line.strip()]
         rows.append({
@@ -89,8 +89,7 @@ def main():
         'stop_reason': (
             None if binding['session_is_gateway_bound']
             else 'session_not_bound_to_gateway: sealing a dispatch from this '
-                 'session as route=%s would be a false provenance claim'
-                 % GATEWAY_ROUTE),
+                 'session as route={} would be a false provenance claim'.format(GATEWAY_ROUTE)),
     }
     out = os.path.join(HERE, 'evidence', 'prespend_gate.json')
     os.makedirs(os.path.dirname(out), exist_ok=True)

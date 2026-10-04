@@ -92,7 +92,7 @@ def main():
                             'backup': os.path.basename(bak) if bak else None, 'src_sha256': sha(a.src),
                             'mirror_sha256': sha(a.mirror),
                             'rows': entries}, ensure_ascii=False) + '\n')
-    print('backup=%s  src_sha=%s  mirror refreshed (identical=%s)' % (os.path.basename(bak) if bak else '(fresh store)',
+    print('backup={}  src_sha={}  mirror refreshed (identical={})'.format(os.path.basename(bak) if bak else '(fresh store)',
                                                                       sha(a.src)[:12], sha(a.src) == sha(a.mirror)))
 
 

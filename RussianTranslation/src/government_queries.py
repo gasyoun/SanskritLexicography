@@ -128,7 +128,7 @@ def main():
         import government_census as gc
         census, origin = gc.census_or_load()
         gov_total = sum(n for k, n in census['kinds'].items() if k != 'paren-nongov')
-        print('census source: %s' % origin)
+        print('census source: {}'.format(origin))
         print('government markers (total)       : %d' % gov_total)
         print('  paren-single / variation / mit : %d / %d / %d' % (
             census['kinds'].get('paren-single', 0),
@@ -161,7 +161,7 @@ def main():
         print('(c) roots (layer=pwg) that carry a marker but never gen.: %d (unknown/no-marker: %d)' % (
             len(never), len(unknown)))
         for k in never[:args.limit]:
-            print('  %s' % k)
+            print('  {}'.format(k))
 
 
 if __name__ == '__main__':

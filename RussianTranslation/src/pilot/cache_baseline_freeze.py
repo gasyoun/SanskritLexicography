@@ -131,7 +131,7 @@ def selftest():
         if row['sha256'] is None and 'H2676' in row['path']
     ]
     if missing_required:
-        raise AssertionError('H2676 cohort files missing: %s' % missing_required)
+        raise AssertionError('H2676 cohort files missing: {}'.format(missing_required))
     with tempfile.TemporaryDirectory() as tmp:
         path = os.path.join(tmp, 'manifest.json')
         written = write_manifest(path)

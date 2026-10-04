@@ -265,7 +265,7 @@ def cmd_apply(args):
              sum(1 for r in out if r['residual_german_spans'])))
     for prov in sorted(counts):
         print('  %-16s %d' % (prov, counts[prov]))
-    print('wrote %s' % path)
+    print('wrote {}'.format(path))
     return 1 if unresolved else 0
 
 
@@ -303,7 +303,7 @@ def selftest():
     # §12.2, enforced against the canonical detector rather than asserted:
     # nothing in AUTHORED may be a whole-span apparatus token.
     bad = style_violations()
-    assert not bad, 'style-guide §12.2 violation - apparatus authored as a gloss: %r' % bad
+    assert not bad, 'style-guide §12.2 violation - apparatus authored as a gloss: {!r}'.format(bad)
     # And the two spans the detector does convict are kept, not translated.
     assert whole_span_apparatus('{%mit%}') is not False
     assert resolve('{%mit%}')[:2] == ('{%mit%}', 'apparatus_not_translated')

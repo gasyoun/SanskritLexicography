@@ -45,12 +45,12 @@ def fail(msg):
 def need_keys(obj, keys, where):
     miss = sorted(k for k in keys if k not in obj)
     if miss:
-        fail('%s missing keys: %s' % (where, ', '.join(miss)))
+        fail('{} missing keys: {}'.format(where, ', '.join(miss)))
 
 
 def need_list(obj, key, where):
     if not isinstance(obj.get(key), list):
-        fail('%s.%s must be a list' % (where, key))
+        fail('{}.{} must be a list'.format(where, key))
 
 
 def expected_card_count():
@@ -60,65 +60,65 @@ def expected_card_count():
 def validate_card(card, line_no):
     where = 'assembled card line %d' % line_no
     if not isinstance(card, dict):
-        fail('%s must be an object' % where)
+        fail('{} must be an object'.format(where))
     need_keys(card, CARD_REQUIRED, where)
     if '_quarantine' in card:
-        fail('%s leaked private _quarantine payload into export' % where)
+        fail('{} leaked private _quarantine payload into export'.format(where))
     if not card.get('key1'):
-        fail('%s key1 is empty' % where)
+        fail('{} key1 is empty'.format(where))
     need_list(card, 'records', where)
     if not isinstance(card.get('quarantined_records'), int) or card['quarantined_records'] < 0:
-        fail('%s.quarantined_records must be a non-negative integer' % where)
+        fail('{}.quarantined_records must be a non-negative integer'.format(where))
 
     att = card['attested_senses']
     if not isinstance(att, dict):
-        fail('%s.attested_senses must be an object' % where)
+        fail('{}.attested_senses must be an object'.format(where))
     need_keys(att, ATTESTED_REQUIRED, where + '.attested_senses')
     for key in ('dict', 'kow_reference', 'corpus'):
         if not isinstance(att.get(key), list):
-            fail('%s.attested_senses.%s must be a list' % (where, key))
+            fail('{}.attested_senses.{} must be a list'.format(where, key))
 
     rights = card['rights']
     if not isinstance(rights, dict):
-        fail('%s.rights must be an object' % where)
+        fail('{}.rights must be an object'.format(where))
     need_keys(rights, RIGHTS_REQUIRED, where + '.rights')
     if rights.get('corpus_rights') != 'approved-for-project-use':
-        fail('%s.rights.corpus_rights is not approved-for-project-use' % where)
+        fail('{}.rights.corpus_rights is not approved-for-project-use'.format(where))
 
     reuse = card['reuse']
     if not isinstance(reuse, dict):
-        fail('%s.reuse must be an object' % where)
+        fail('{}.reuse must be an object'.format(where))
     need_keys(reuse, REUSE_REQUIRED, where + '.reuse')
     if not isinstance(reuse.get('covered'), bool):
-        fail('%s.reuse.covered must be a boolean' % where)
+        fail('{}.reuse.covered must be a boolean'.format(where))
     for key in ('n_dict', 'n_kow', 'n_corpus', 'n_corpus_lex'):
         if not isinstance(reuse.get(key), int) or reuse[key] < 0:
-            fail('%s.reuse.%s must be a non-negative integer' % (where, key))
+            fail('{}.reuse.{} must be a non-negative integer'.format(where, key))
 
     for i, rec in enumerate(card['records']):
         rwhere = '%s.records[%d]' % (where, i)
         if not isinstance(rec, dict):
-            fail('%s must be an object' % rwhere)
+            fail('{} must be an object'.format(rwhere))
         need_keys(rec, RECORD_REQUIRED, rwhere)
         if not isinstance(rec.get('de_skeleton'), str):
-            fail('%s.de_skeleton must be a string' % rwhere)
+            fail('{}.de_skeleton must be a string'.format(rwhere))
         if not isinstance(rec.get('placeholders'), list):
-            fail('%s.placeholders must be a list' % rwhere)
+            fail('{}.placeholders must be a list'.format(rwhere))
         if rec.get('lossless') is not True:
-            fail('%s.lossless must be true in the normal export stream' % rwhere)
+            fail('{}.lossless must be true in the normal export stream'.format(rwhere))
 
 
 def validate_quarantine_row(row, line_no):
     where = 'quarantine line %d' % line_no
     if not isinstance(row, dict):
-        fail('%s must be an object' % where)
+        fail('{} must be an object'.format(where))
     need_keys(row, QUARANTINE_REQUIRED, where)
     if row.get('reason') != 'pwg_mask round-trip failed':
-        fail('%s has unexpected reason: %r' % (where, row.get('reason')))
+        fail('{} has unexpected reason: {!r}'.format(where, row.get('reason')))
     if not isinstance(row.get('record_no'), int) or row['record_no'] < 1:
-        fail('%s.record_no must be a positive integer' % where)
+        fail('{}.record_no must be a positive integer'.format(where))
     if not isinstance(row.get('placeholder_count'), int) or row['placeholder_count'] < 0:
-        fail('%s.placeholder_count must be a non-negative integer' % where)
+        fail('{}.placeholder_count must be a non-negative integer'.format(where))
 
 
 def load_jsonl(path):
@@ -161,9 +161,9 @@ def main():
     expected_cards = args.expected_cards
     out, quarantine_path = args.cards, args.quarantine
     if not os.path.exists(out):
-        fail('missing %s; run python assemble.py build first' % os.path.basename(out))
+        fail('missing {}; run python assemble.py build first'.format(os.path.basename(out)))
     if not os.path.exists(quarantine_path):
-        fail('missing %s; run python assemble.py build first' % os.path.basename(quarantine_path))
+        fail('missing {}; run python assemble.py build first'.format(os.path.basename(quarantine_path)))
 
     cards = load_jsonl(out)
     quarantine = load_jsonl(quarantine_path)
@@ -200,5 +200,5 @@ if __name__ == '__main__':
     try:
         main()
     except Exception as e:
-        print('ASSEMBLED EXPORT CHECK FAILED: %s' % e, file=sys.stderr)
+        print('ASSEMBLED EXPORT CHECK FAILED: {}'.format(e), file=sys.stderr)
         raise SystemExit(1)

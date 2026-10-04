@@ -183,7 +183,7 @@ def main():
         'verdict': 'DISPROVEN' if collateral else 'not disproven by these counterexamples',
         'reason': (
             ('The hypothesis fixes 5/8 flags but ALSO collapses source_senses to 1 for at least '
-             'one real, currently-unflagged, genuinely multi-row Nachtrag card (%s) -- cards '
+             'one real, currently-unflagged, genuinely multi-row Nachtrag card ({}) -- cards '
              'that legitimately store multiple real distinct-preverb correction rows today '
              '(see counterexamples[].emitted_rows). A future regeneration that dropped all but '
              'one of those rows would go completely undetected under the capped counter. No cap '
@@ -191,8 +191,7 @@ def main():
              'names" (breaks nothing, fixes 0/8) exists, because the fact that actually '
              'distinguishes a card that WILL be bundled into one stored row from one that WILL '
              'be split into several is the model\'s own generation-time decision -- unknowable '
-             'when count_source_senses(raw) runs pre-generation.'
-             % ', '.join(r['key'] for r in collateral))
+             'when count_source_senses(raw) runs pre-generation.'.format(', '.join(r['key'] for r in collateral)))
             if collateral else 'no collateral damage found among the probed counterexamples'
         ),
     }

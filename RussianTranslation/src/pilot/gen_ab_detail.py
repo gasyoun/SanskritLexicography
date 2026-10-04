@@ -31,7 +31,7 @@ def _ru(card):
     out = []
     for rec in card.get('records', []):
         for s in rec.get('senses', []):
-            out.append('- `[%s]` %s' % (s.get('tag', ''), s.get('russian', '').replace('\n', ' ')))
+            out.append('- `[{}]` {}'.format(s.get('tag', ''), s.get('russian', '').replace('\n', ' ')))
     return '\n'.join(out)
 
 
@@ -39,7 +39,7 @@ def _de(card):
     out = []
     for rec in card.get('records', []):
         for s in rec.get('senses', []):
-            out.append('- `[%s]` %s' % (s.get('tag', ''), s.get('german', '').replace('\n', ' ')))
+            out.append('- `[{}]` {}'.format(s.get('tag', ''), s.get('german', '').replace('\n', ' ')))
     return '\n'.join(out)
 
 
@@ -87,14 +87,14 @@ def main():
         win = arm_of(k, v['winner'])
         win_lbl = {'A': 'A — grammar OFF', 'B': 'B — grammar ON', 'tie': 'tie'}[win]
         iast = (B[k] or {}).get('iast', '')
-        L.append('### %s (%s) — winner: **%s**\n' % (k, iast, win_lbl))
-        dimline = ' · '.join('%s: %s' % (d, arm_of(k, v[d])) for d in DIMS[1:])
-        L.append('Per dimension (A/B/tie): %s\n' % dimline)
-        L.append('**Judge reason:** %s\n' % v.get('reason', ''))
+        L.append('### {} ({}) — winner: **{}**\n'.format(k, iast, win_lbl))
+        dimline = ' · '.join('{}: {}'.format(d, arm_of(k, v[d])) for d in DIMS[1:])
+        L.append('Per dimension (A/B/tie): {}\n'.format(dimline))
+        L.append('**Judge reason:** {}\n'.format(v.get('reason', '')))
         L.append('<details><summary>German source · arm A (OFF) Russian · arm B (ON) Russian</summary>\n')
-        L.append('**German source**\n\n%s\n' % _de(A[k]))
-        L.append('**Arm A (grammar OFF) — Russian**\n\n%s\n' % _ru(A[k]))
-        L.append('**Arm B (grammar ON) — Russian**\n\n%s\n' % _ru(B[k]))
+        L.append('**German source**\n\n{}\n'.format(_de(A[k])))
+        L.append('**Arm A (grammar OFF) — Russian**\n\n{}\n'.format(_ru(A[k])))
+        L.append('**Arm B (grammar ON) — Russian**\n\n{}\n'.format(_ru(B[k])))
         L.append('</details>\n')
 
     open(DOC, 'w', encoding='utf-8').write('\n'.join(L))

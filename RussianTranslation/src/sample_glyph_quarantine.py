@@ -150,18 +150,18 @@ def main():
     }
 
     out_json = args.out_json or os.path.join(
-        RT, 'reports', 'pwg_ru_glyph_quarantine_sample_%s.json' % today)
+        RT, 'reports', 'pwg_ru_glyph_quarantine_sample_{}.json'.format(today))
     os.makedirs(os.path.dirname(out_json), exist_ok=True)
     with open(out_json, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
         f.write('\n')
 
     out_md = args.out_md or os.path.join(
-        RT, 'pwg_ru', 'H_GLYPH_QUARANTINE_SAMPLE_REPORT_%s.md' % today.replace('-', ''))
+        RT, 'pwg_ru', 'H_GLYPH_QUARANTINE_SAMPLE_REPORT_{}.md'.format(today.replace('-', '')))
     lines = [
         '# Glyph quarantine sample — %d of %d (report only)' % (len(classified), len(rows)),
         '',
-        '_Created: %s · Last updated: %s_' % (
+        '_Created: {} · Last updated: {}_'.format(
             datetime.date.today().strftime('%d-%m-%Y'),
             datetime.date.today().strftime('%d-%m-%Y')),
         '',
@@ -209,7 +209,7 @@ def main():
         '2. **Mass re-translate is not authorised** by this sample alone. Next step if '
         'RU quality is in doubt: a human/paid read of a smaller nested sample of the '
         'segmentation_flag class (e.g. 30 cards), not a full paid re-run of 10k rows.',
-        '3. Machine-readable sample: `%s`.' % os.path.relpath(out_json, RT).replace('\\', '/'),
+        '3. Machine-readable sample: `{}`.'.format(os.path.relpath(out_json, RT).replace('\\', '/')),
         '',
         '_Dr. Mārcis Gasūns_',
         '',
@@ -219,7 +219,7 @@ def main():
         f.write('\n'.join(lines))
 
     print('sampled %d / %d -> %s' % (len(classified), len(rows), out_json))
-    print('report  -> %s' % out_md)
+    print('report  -> {}'.format(out_md))
     for cls, cnt in sorted(class_counts.items()):
         print('  %s: %d' % (cls, cnt))
     return 0

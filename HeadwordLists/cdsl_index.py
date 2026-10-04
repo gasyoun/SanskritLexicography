@@ -64,7 +64,7 @@ def build(source, idx=None, force=False):
     Duplicate L-ids: last occurrence wins, matching a direct-parse dict build.
     """
     if not os.path.exists(source):
-        raise SystemExit('cdsl_index: source not found: %s' % source)
+        raise SystemExit('cdsl_index: source not found: {}'.format(source))
     idx = idx or index_path(os.path.splitext(os.path.basename(source))[0])
     st = os.stat(source)
     if not force and os.path.exists(idx):
@@ -261,18 +261,18 @@ def _selftest():
         idx = CdslIndex.open(source_path('fix'))
         texts = {i: idx.record_text(i) for i in idx.ids()}
         if texts['1'] != '<L>1<pc>10,1<k1>agni<k2>agni\nbody one <lex>m.</lex>':
-            failures.append('rec1 text mismatch: %r' % texts['1'])
+            failures.append('rec1 text mismatch: {!r}'.format(texts['1']))
         if texts['3'] != '<L>3<pc>10,3<k1>agni<k2>agni<h>2\n':
-            failures.append('rec3 (empty body) mismatch: %r' % texts['3'])
+            failures.append('rec3 (empty body) mismatch: {!r}'.format(texts['3']))
         if texts['4'] != '<L>4<pc>10,4<k1>go<k2>go\nbody four':
-            failures.append('rec4 (<LEND>5 continuation) mismatch: %r' % texts['4'])
+            failures.append('rec4 (<LEND>5 continuation) mismatch: {!r}'.format(texts['4']))
         if idx.record('1') != ('10,1<k1>agni<k2>agni', 'body one <lex>m.</lex>'):
-            failures.append('record() shape mismatch: %r' % (idx.record('1'),))
+            failures.append('record() shape mismatch: {!r}'.format(idx.record('1')))
         if sorted(idx.ids_for_key('agni')) != ['1', '3']:
-            failures.append('ids_for_key: %r' % idx.ids_for_key('agni'))
+            failures.append('ids_for_key: {!r}'.format(idx.ids_for_key('agni')))
         chunks = list(idx.chunks())
         if chunks[0] != "1<pc>10,1<k1>agni<k2>agni\nbody one <lex>m.</lex>":
-            failures.append('chunk shape: %r' % chunks[0])
+            failures.append('chunk shape: {!r}'.format(chunks[0]))
         idx.close()
 
         # BOM: same fixture with a BOM must index identically
@@ -284,7 +284,7 @@ def _selftest():
         shutil.copy(src2, os.path.join(tmp, 'fixbom', 'fixbom.txt'))
         idx2 = CdslIndex.open(source_path('fixbom'))
         if sorted(idx2.ids()) != ['1', '2', '3', '4', '5']:
-            failures.append('BOM ids: %r' % idx2.ids())
+            failures.append('BOM ids: {!r}'.format(idx2.ids()))
         idx2.close()
 
         # staleness: touching the source forces a rebuild
@@ -294,21 +294,21 @@ def _selftest():
         con.close()
         n = build(source_path('fix'))
         if n != 5:
-            failures.append('rebuild count: %r' % n)
+            failures.append('rebuild count: {!r}'.format(n))
 
         # direct-parse parity on the fixture
         direct = direct_records(source_path('fix'))
         if set(direct) != {'1', '2', '3', '4', '5'}:
-            failures.append('direct fixture ids: %r' % sorted(direct))
+            failures.append('direct fixture ids: {!r}'.format(sorted(direct)))
         if direct['2'] != ('10,2<k1>akEk<k2>akEk', 'body two\nmore'):
-            failures.append('direct rec2: %r' % (direct['2'],))
+            failures.append('direct rec2: {!r}'.format(direct['2']))
         if direct['4'] != ('10,4<k1>go<k2>go', 'body four'):
-            failures.append('direct rec4 continuation: %r' % (direct['4'],))
+            failures.append('direct rec4 continuation: {!r}'.format(direct['4']))
         idx = CdslIndex.open(source_path('fix'))       # reopen (closed above)
         side = {i: idx.record(i) for i in ('1', '2', '3', '4', '5')}
         # reopen idx for the parity assertion (idx2 left it rebuilt-fresh)
         if any(side[i] != direct[i] for i in direct):
-            failures.append('fixture sidecar/direct parity: %r' % [(i, side[i], direct[i]) for i in direct if side[i]!=direct[i]][:2])
+            failures.append('fixture sidecar/direct parity: {!r}'.format([(i, side[i], direct[i]) for i in direct if side[i]!=direct[i]][:2]))
     finally:
         globals()['DEFAULT_CSL_ORIG'], globals()['IDX_DIR'] = old_orig, old_idx
         if tmp:
@@ -344,10 +344,10 @@ def main():
         for nm in names:
             src = source_path(nm)
             if not os.path.exists(src):
-                print('  skip %s: no source' % nm)
+                print('  skip {}: no source'.format(nm))
                 continue
             r = build(src, force=args.force)
-            print('  %s: %s' % (nm, 'fresh (skipped)' if r < 0 else '%d records' % r))
+            print('  {}: {}'.format(nm, 'fresh (skipped)' if r < 0 else '%d records' % r))
 
 
 if __name__ == '__main__':

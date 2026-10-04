@@ -78,7 +78,7 @@ def report_links(root, links_path):
     for r in inline:
         bybase.setdefault(r['base'], []).append(r['hw'])
     for base in sorted(bybase):
-        out.append('  <under base="%s">%s</under>' % (base, ' '.join(sorted(bybase[base]))))
+        out.append('  <under base="{}">{}</under>'.format(base, ' '.join(sorted(bybase[base]))))
     out.append('  <!-- %d capped (compound/deeper) recorded in link table only -->' % len(capped))
     out.append('</derivatives>')
     return out
@@ -116,14 +116,14 @@ def load_preverb_parses(path, L):
                 if m and curL is not None:
                     d[(curL, m.group(1))] = m.group(2)
     except FileNotFoundError:
-        print('  (note: %s not found — falling back to single-prefix parses)' % path)
+        print('  (note: {} not found — falling back to single-prefix parses)'.format(path))
     return {k: v for k, v in d.items() if k[0] == L}
 
 
 def glue_pwg(path, L, preverb_path):
     rec = seg.read_record(path, L)
     if rec is None:
-        print('L=%s not found' % L); return False
+        print('L={} not found'.format(L)); return False
     meta, data, lend = rec
     k1 = (re.search(r'<k1>([^<]*)', meta) or [None, '?'])[1]
     cards = seg.segment(data)
@@ -131,7 +131,7 @@ def glue_pwg(path, L, preverb_path):
     head = [c for c in cards if c['kind'] != 'prefix']
     pref = [c for c in cards if c['kind'] == 'prefix']
     for c in pref:
-        c['parse'] = pmap.get((L, c['upasarga']), '%s+%s' % (c['upasarga'], k1))
+        c['parse'] = pmap.get((L, c['upasarga']), '{}+{}'.format(c['upasarga'], k1))
     pref.sort(key=lambda c: parse_sort_key(c['parse']))
     new_data = []
     for c in head:
@@ -190,7 +190,7 @@ def collect_mw_preverbs(path, root):
 
 def glue_mw(path, root, links_path=None):
     heads, preverbs, skipped_cvi = collect_mw_preverbs(path, root)
-    out = ['<NESTED root="%s">' % root]
+    out = ['<NESTED root="{}">'.format(root)]
     for r in heads:
         out.extend(r['lines'])
     for r in preverbs:
@@ -202,7 +202,7 @@ def glue_mw(path, root, links_path=None):
     out.append('</NESTED>')
     print('  nested order: ' + ' '.join(r['parse'] for r in preverbs[:18]) + (' ...' if len(preverbs) > 18 else ''))
     # write the assembled article for inspection
-    fileout = 'glue_mw_%s.txt' % root
+    fileout = 'glue_mw_{}.txt'.format(root)
     with open(fileout, 'w', encoding='utf-8') as f:
         f.write('\n'.join(out) + '\n')
     print('  wrote %d lines to %s' % (len(out), fileout))

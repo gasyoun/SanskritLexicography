@@ -168,7 +168,7 @@ def selftest():
     # ---- the case from MG review point 6a, verbatim
     loci = split_ls_loci(None, "ṚV. 4,3,13. 10,18,4")
     check(loci == ["ṚV. 4,3,13.", "ṚV. 10,18,4"],
-          "review-6a citation splits into two addresses: %r" % (loci,))
+          "review-6a citation splits into two addresses: {!r}".format(loci))
 
     r = resolve_loci("pwg", None, "ṚV. 4,3,13. 10,18,4")
     check(r is not None and len(r) == 2, "both addresses resolve")
@@ -182,17 +182,16 @@ def selftest():
     for vis in ("ṚV. 4,3,13. 10,18,4", "AV. 11,4,26. 4,10,7.", "MBH. 12,8081."):
         first = split_ls_loci(None, vis)[0]
         check(vis.startswith(first),
-              "first address reconstructs the original prefix of %r" % vis)
+              "first address reconstructs the original prefix of {!r}".format(vis))
         check(lsr.generate_href("pwg", None, first)
               == lsr.generate_href("pwg", None, vis),
-              "splitting does not change how %r resolves" % vis)
+              "splitting does not change how {!r} resolves".format(vis))
 
     # ---- source abbreviations that CONTAIN the split boundary must survive
     for vis in ("AIT. BR. 6,33.", "BHĀG. P. 2,6,35.", "MED. t. 3",
                 "ŚAT. BR. 14,5,4,4.", "VERZ. D. OXF. H. 100,a."):
         check(len(split_ls_loci(None, vis)) == 1,
-              "multi-word source abbreviation is not torn apart: %r -> %r"
-              % (vis, split_ls_loci(None, vis)))
+              "multi-word source abbreviation is not torn apart: {!r} -> {!r}".format(vis, split_ls_loci(None, vis)))
 
     # ---- a work name carried in n=, address alone in the body
     check(split_ls_loci("ṚV.", "5,15,4.") == ["5,15,4."],
@@ -218,7 +217,7 @@ def selftest():
             ("83, N. 6", "a note marker is not a second address"),
             ("Verz. d. Oxf. H. 100,a. 101,b", "column letters are not a plain locus")):
         check(resolve_loci("pwg", "MBH. 3," if impure[0].isdigit() else None,
-                           impure) is None, "%s (%r)" % (why, impure))
+                           impure) is None, "{} ({!r})".format(why, impure))
     check(splittable("ṚV. 4,3,13. 10,18,4",
                      split_ls_loci(None, "ṚV. 4,3,13. 10,18,4")),
           "…while a genuine same-shape run still splits")

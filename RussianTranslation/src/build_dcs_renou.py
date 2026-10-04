@@ -319,7 +319,7 @@ def main():
         elif args[i] == '--limit':
             limit = int(args[i + 1]); i += 2
         else:
-            raise SystemExit('unknown option: %s' % args[i])
+            raise SystemExit('unknown option: {}'.format(args[i]))
     final, texts = build_index(limit)
     tmp = out + '.tmp'
     json.dump(final, open(tmp, 'w', encoding='utf-8'),
@@ -335,7 +335,7 @@ def main():
     print('lemmas indexed: %d' % len(final))
     print('lemmas carrying each state:', {k: cov.get(k, 0) for k in STATES})
     print('lemmas carrying each register:', {k: rcov.get(k, 0) for k in REGISTERS})
-    print('→ %s' % os.path.basename(out))
+    print('→ {}'.format(os.path.basename(out)))
 
 
 if __name__ == '__main__':

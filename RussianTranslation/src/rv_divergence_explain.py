@@ -110,13 +110,13 @@ def build_user(stanza, a, b, cls, why):
     tb = stanza['translations'][b]['text'] or ''
     gap = abs(TRANSLATOR_YEAR[a] - TRANSLATOR_YEAR[b])
     lines = [
-        'Ригведа %s.' % stanza['location'], '',
-        'Перевод A — %s:' % dv.TRANSLATOR_LABEL[a], ta.replace('\n', ' / '), '',
-        'Перевод B — %s:' % dv.TRANSLATOR_LABEL[b], tb.replace('\n', ' / '), '',
-        'Присвоенный класс: %s' % cls,
+        'Ригведа {}.'.format(stanza['location']), '',
+        'Перевод A — {}:'.format(dv.TRANSLATOR_LABEL[a]), ta.replace('\n', ' / '), '',
+        'Перевод B — {}:'.format(dv.TRANSLATOR_LABEL[b]), tb.replace('\n', ' / '), '',
+        'Присвоенный класс: {}'.format(cls),
     ]
     if why:
-        lines.append('Краткое обоснование модели (v1): %s' % why)
+        lines.append('Краткое обоснование модели (v1): {}'.format(why))
     lines.append('Разрыв между переводами: %d лет.' % gap)
     return '\n'.join(lines)
 
@@ -130,13 +130,13 @@ def verify_span(span, text):
 
 def explain_one(client, stanza, a, b, cls, why):
     text, call = client.chat(SYSTEM, build_user(stanza, a, b, cls, why),
-                             '%s|%s|%s' % (stanza['location'], a, b))
+                             '{}|{}|{}'.format(stanza['location'], a, b))
     if text is None:
-        return {'error': 'transport: %s' % call.get('error')}
+        return {'error': 'transport: {}'.format(call.get('error'))}
     try:
         obj, _ = ds_arm.extract_json(text)
     except ValueError as e:
-        return {'error': 'unparseable: %s' % e}
+        return {'error': 'unparseable: {}'.format(e)}
     ta = stanza['translations'][a]['text'] or ''
     tb = stanza['translations'][b]['text'] or ''
     span_a, ok_a = verify_span(obj.get('span_a'), ta)
@@ -154,7 +154,7 @@ def run(items, out_path, env_file, workers, model, provider):
     spec = dv.PROVIDERS[provider]
     key = os.environ.get(spec['key_env']) or ds_arm.load_env_file(env_file).get(spec['key_env'])
     if not key:
-        sys.exit('%s not found (env or --env-file)' % spec['key_env'])
+        sys.exit('{} not found (env or --env-file)'.format(spec['key_env']))
     client = ds_arm.DeepSeek(spec['base'], key, model, 1400)
 
     os.makedirs(os.path.dirname(out_path) or '.', exist_ok=True)
@@ -188,7 +188,7 @@ def run(items, out_path, env_file, workers, model, provider):
     print('  non-verbatim spans (quoted, not highlighted): %d' % stats['nonverbatim'])
     print('  asymmetry notes emitted: %d' % stats['asym'])
     print('  errors: %d' % stats['errors'])
-    print('  cost: $%.4f' % cost['usd'])
+    print('  cost: ${:.4f}'.format(cost['usd']))
     return 0
 
 
@@ -203,7 +203,7 @@ def load_items_from_pilot(pilot_path, ids):
                 continue
             rec = json.loads(line)
             for pair_key, entry in rec['pairs'].items():
-                key = '%s|%s' % (rec['location'], pair_key)
+                key = '{}|{}'.format(rec['location'], pair_key)
                 if key in want and entry.get('class'):
                     out.append((rec['location'], pair_key, entry['class'],
                                 entry.get('why') or ''))

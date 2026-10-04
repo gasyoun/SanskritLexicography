@@ -100,7 +100,7 @@ def build(slug):
 
 if __name__ == '__main__':
     if not os.path.isdir(SRC):
-        sys.exit('babylon source dir not found: %s' % SRC)
+        sys.exit('babylon source dir not found: {}'.format(SRC))
     # truncate once via the first kosha's 'w' mode, then append
     out_path = os.path.join(HERE, 'kosha_syn.jsonl')
     if os.path.exists(out_path):

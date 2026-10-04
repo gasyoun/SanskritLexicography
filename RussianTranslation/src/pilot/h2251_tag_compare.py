@@ -152,7 +152,7 @@ def pair_distances(draws, key):
     for arm1, arm2 in itertools.combinations(sorted(by_arm), 2):
         for n1, d1 in sorted(by_arm[arm1]):
             for n2, d2 in sorted(by_arm[arm2]):
-                between.append({'arms': '%s|%s' % (arm1, arm2),
+                between.append({'arms': '{}|{}'.format(arm1, arm2),
                                 'a': '%s#%d' % (arm1, n1), 'b': '%s#%d' % (arm2, n2),
                                 'distance': jaccard_distance(d1['tags'], d2['tags']),
                                 'free_text_distance': jaccard_distance(
@@ -183,21 +183,21 @@ def verdict(within, between):
                           'across arms. The H2189 divergence did not reproduce at all.')
     if w == 0.0 and b > 0.0:
         return ('flag', 'tag vocabulary is REPRODUCIBLE within each arm (mean within-arm '
-                        'distance 0.0) but differs across arms (mean %.3f): the vocabulary '
-                        'tracks --safe-mode, not the draw.' % b)
+                        'distance 0.0) but differs across arms (mean {:.3f}): the vocabulary '
+                        'tracks --safe-mode, not the draw.'.format(b))
     if w >= b:
         return ('draw', 'tag vocabulary varies run-to-run on the SAME arm at least as much '
-                        'as it does across arms (within %.3f >= between %.3f): the H2189 '
-                        'divergence is sampling variation, not a --safe-mode effect.' % (w, b))
-    return ('mixed', 'tag vocabulary is unstable within an arm (mean %.3f) AND differs more '
-                     'across arms (mean %.3f). Neither cause is excluded; do not read this '
-                     'as a licence to flip.' % (w, b))
+                        'as it does across arms (within {:.3f} >= between {:.3f}): the H2189 '
+                        'divergence is sampling variation, not a --safe-mode effect.'.format(w, b))
+    return ('mixed', 'tag vocabulary is unstable within an arm (mean {:.3f}) AND differs more '
+                     'across arms (mean {:.3f}). Neither cause is excluded; do not read this '
+                     'as a licence to flip.'.format(w, b))
 
 
 def report(raw_dir, out_json=None):
     draws = collect(raw_dir)
     if not draws:
-        print('no card envelopes under %s' % raw_dir, file=sys.stderr)
+        print('no card envelopes under {}'.format(raw_dir), file=sys.stderr)
         return 2
     keys = sorted({k for (_a, k, _n) in draws})
     per_key, all_within, all_between = [], [], []
@@ -212,10 +212,10 @@ def report(raw_dir, out_json=None):
                                  for arm, items in sorted(by_arm.items())},
                         'within': within, 'between': between})
 
-    print('raw dir : %s' % raw_dir)
+    print('raw dir : {}'.format(raw_dir))
     print('draws   : %d envelope(s) over %d card(s)' % (len(draws), len(keys)))
     for entry in per_key:
-        print('\n== %s ==' % entry['key'])
+        print('\n== {} =='.format(entry['key']))
         for arm, info in entry['arms'].items():
             short = min(info['draws'], MIN_REPEATS_PER_ARM) < MIN_REPEATS_PER_ARM
             print('  %-11s %d draw(s)%s  tags: %s'
@@ -223,11 +223,11 @@ def report(raw_dir, out_json=None):
                      ' · '.join(info['tags']) or '(none)'))
         for pair in entry['within']:
             print('  within  %-22s all %.3f   free-text %.3f'
-                  % ('%s vs %s' % (pair['a'], pair['b']),
+                  % ('{} vs {}'.format(pair['a'], pair['b']),
                      pair['distance'], pair['free_text_distance']))
         for pair in entry['between']:
             print('  between %-22s all %.3f   free-text %.3f'
-                  % ('%s vs %s' % (pair['a'], pair['b']),
+                  % ('{} vs {}'.format(pair['a'], pair['b']),
                      pair['distance'], pair['free_text_distance']))
 
     w, b = (mean([p['distance'] for p in all_within]),
@@ -237,11 +237,11 @@ def report(raw_dir, out_json=None):
     ruling, why = verdict(all_within, all_between)
     print('\n== ruling ==')
     print('mean within-arm  distance: %s (n=%d)'
-          % ('n/a' if w is None else '%.3f' % w, len(all_within)))
+          % ('n/a' if w is None else '{:.3f}'.format(w), len(all_within)))
     print('mean between-arm distance: %s (n=%d)'
-          % ('n/a' if b is None else '%.3f' % b, len(all_between)))
-    print('H2189 §4.2 tag divergence: %s' % ruling.upper())
-    print('  %s' % why)
+          % ('n/a' if b is None else '{:.3f}'.format(b), len(all_between)))
+    print('H2189 §4.2 tag divergence: {}'.format(ruling.upper()))
+    print('  {}'.format(why))
     # Reported, never ruled on. The verdict stays on the full tag set -- the metric this
     # tool was written with, BEFORE any of these numbers existed. The free-text split is
     # the sharper view of the same question (§4.2 was about the free-text labels; the bare
@@ -249,9 +249,8 @@ def report(raw_dir, out_json=None):
     # distance CONSERVATIVELY small), but choosing a metric after seeing the data is how a
     # measurement talks itself into a conclusion. It corroborates; it does not decide.
     print('\nfree-text tags only (reported, NOT the basis of the ruling):')
-    print('  mean within-arm  %s   mean between-arm %s'
-          % ('n/a' if wf is None else '%.3f' % wf,
-             'n/a' if bf is None else '%.3f' % bf))
+    print('  mean within-arm  {}   mean between-arm {}'.format('n/a' if wf is None else '{:.3f}'.format(wf),
+             'n/a' if bf is None else '{:.3f}'.format(bf)))
 
     payload = {'raw_dir': raw_dir, 'keys': keys, 'per_key': per_key,
                'mean_within_arm_distance': w, 'mean_between_arm_distance': b,
@@ -263,7 +262,7 @@ def report(raw_dir, out_json=None):
         with open(out_json, 'w', encoding='utf-8', newline='\n') as fh:
             json.dump(payload, fh, ensure_ascii=False, indent=2)
             fh.write('\n')
-        print('\nwrote %s' % out_json)
+        print('\nwrote {}'.format(out_json))
     return 0
 
 

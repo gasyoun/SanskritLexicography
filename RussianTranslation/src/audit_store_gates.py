@@ -127,7 +127,7 @@ def main():
     src_rows = load_rows(args.store)
     result = {'store': args.store, 'gates': gate_rows(src_rows)}
     g = result['gates']
-    print('=== store gate audit: %s' % args.store)
+    print('=== store gate audit: {}'.format(args.store))
     print('rows=%d hard_flagged_rows=%d hard=%s soft=%s' % (g['rows'], len(g['flagged']), g['hard'], g['soft']))
     print('identical-ru clusters=%d byte-identical id dups=%d' % (g['identical_ru_clusters'], g['byte_identical_id_dups']))
     for f in g['flagged']:
@@ -158,12 +158,12 @@ def main():
         if len(d['changed_ru']) > 10:
             print('   ... %d more (see --json)' % (len(d['changed_ru']) - 10))
     elif not args.no_mirror:
-        print('=== mirror not found: %s' % args.mirror)
+        print('=== mirror not found: {}'.format(args.mirror))
 
     if args.json:
         with open(args.json, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(result, f, ensure_ascii=False, indent=1)
-    print('FLAGGED_JSON: %s' % json.dumps([[f['key1'], f['subcard'], f['sense_tag']] for f in g['flagged']], ensure_ascii=False))
+    print('FLAGGED_JSON: {}'.format(json.dumps([[f['key1'], f['subcard'], f['sense_tag']] for f in g['flagged']], ensure_ascii=False)))
     sys.exit(1 if g['flagged'] else 0)
 
 

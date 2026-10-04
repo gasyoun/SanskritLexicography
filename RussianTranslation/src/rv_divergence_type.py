@@ -76,7 +76,7 @@ TRANSLATOR_LABEL = {
     'jamison_brereton_en_2014': 'Jamison-Brereton 2014, English',
 }
 PAIRS = [(a, b) for i, a in enumerate(TRANSLATORS) for b in TRANSLATORS[i + 1:]]
-PAIR_KEYS = ['%s|%s' % (a, b) for a, b in PAIRS]
+PAIR_KEYS = ['{}|{}'.format(a, b) for a, b in PAIRS]
 
 FIVE_CLASSES = [
     'agreement', 'lexical_variant', 'semantic_shift', 'omitted_by_one', 'added_by_one',
@@ -218,10 +218,10 @@ def deterministic_pairs(stanza):
         missing_a = sa in ('absent_from_source', 'empty')
         missing_b = sb in ('absent_from_source', 'empty')
         if missing_a or missing_b:
-            out['%s|%s' % (a, b)] = {
+            out['{}|{}'.format(a, b)] = {
                 'class': 'omitted_by_one',
                 'method': 'deterministic',
-                'why': 'stanza %s in %s' % (
+                'why': 'stanza {} in {}'.format(
                     sa if missing_a else sb, a if missing_a else b),
                 'missing_side': a if missing_a else b,
                 # H2192: the same direction the model arm now has to supply. Here it is a
@@ -242,11 +242,11 @@ def build_user_message(stanza, wanted_pairs):
         if t['status'] != 'present':
             continue
         text = (t['text'] or '').replace('\n', ' / ')
-        lines.append('- %s [%s]: %s' % (key, TRANSLATOR_LABEL[key], text))
+        lines.append('- {} [{}]: {}'.format(key, TRANSLATOR_LABEL[key], text))
     lines.append('')
     lines.append('Classify exactly these %d pair(s):' % len(wanted_pairs))
     for pk in wanted_pairs:
-        lines.append('- %s' % pk)
+        lines.append('- {}'.format(pk))
     return '\n'.join(lines)
 
 
@@ -272,7 +272,7 @@ def normalise_side(value, pair_key):
     hits = [t for t in (a, b) if t.split('_')[0] == raw]
     if len(hits) == 1:
         return hits[0], None
-    return None, 'unresolved: %r' % value
+    return None, 'unresolved: {!r}'.format(value)
 
 
 def type_one_stanza(client, stanza):
@@ -288,12 +288,12 @@ def type_one_stanza(client, stanza):
         return rec, None
     text, call = client.chat(SYSTEM, build_user_message(stanza, wanted), stanza['location'])
     if text is None:
-        rec['error'] = 'transport: %s' % call.get('error')
+        rec['error'] = 'transport: {}'.format(call.get('error'))
         return rec, call
     try:
         obj, repair = ds_arm.extract_json(text)
     except ValueError as e:
-        rec['error'] = 'unparseable: %s' % e
+        rec['error'] = 'unparseable: {}'.format(e)
         return rec, call
     if repair:
         rec['repair'] = repair
@@ -303,7 +303,7 @@ def type_one_stanza(client, stanza):
         cls = normalise_class(entry.get('class'))
         if cls is None:
             rec['pairs'][pk] = {'class': None, 'method': 'model',
-                                'why': 'unclassified: %r' % entry.get('class')}
+                                'why': 'unclassified: {!r}'.format(entry.get('class'))}
         else:
             row = {'class': cls, 'method': 'model', 'why': (entry.get('why') or '')[:160]}
             if cls in ASYMMETRIC_CLASSES:
@@ -325,8 +325,8 @@ def make_client(provider, model, env_file, max_tokens=2048):
     spec = PROVIDERS[provider]
     key = os.environ.get(spec['key_env']) or ds_arm.load_env_file(env_file).get(spec['key_env'])
     if not key:
-        sys.exit('%s not found in the environment or --env-file %r. This arm needs it; '
-                 'the other arm can still run.' % (spec['key_env'], env_file))
+        sys.exit('{} not found in the environment or --env-file {!r}. This arm needs it; '
+                 'the other arm can still run.'.format(spec['key_env'], env_file))
     return ds_arm.DeepSeek(spec['base'], key, model, max_tokens)
 
 
@@ -366,8 +366,7 @@ def run_arm(rows, out_path, arm, provider, model, env_file, workers, resume):
 
     cost = client.cost()
     print('arm %s (%s / %s): %d stanzas typed -> %s' % (arm, provider, model, len(todo), out_path))
-    print('  cost: %s in(miss) + %s in(hit) + %s out tokens = $%.4f'
-          % (cost['cache_miss_in_tokens'], cost['cache_hit_in_tokens'],
+    print('  cost: {} in(miss) + {} in(hit) + {} out tokens = ${:.4f}'.format(cost['cache_miss_in_tokens'], cost['cache_hit_in_tokens'],
              cost['out_tokens'], cost['usd']))
     errors = sum(1 for c in client.calls if c.get('error'))
     if errors:
@@ -430,9 +429,9 @@ def distribution(path):
 def cmd_report(a):
     fine, coarse, by_method, unclassified = distribution(a.inp)
     total = sum(fine.values())
-    print('divergence distribution -- %s' % a.inp)
+    print('divergence distribution -- {}'.format(a.inp))
     print('  labelled pairs: %d (%d unclassified)' % (total, unclassified))
-    print('  by method: %s' % dict(by_method))
+    print('  by method: {}'.format(dict(by_method)))
     print('  five-class:')
     for c in FIVE_CLASSES:
         print('    %-16s %6d  %5.1f%%' % (c, fine[c], 100.0 * fine[c] / total if total else 0))
@@ -473,8 +472,8 @@ def cmd_agree(a):
         return None, None, None
 
     print('inter-arm agreement (spike S2)')
-    print('  A: %s %s' % (a.a, arm_meta(a.a)))
-    print('  B: %s %s' % (a.b, arm_meta(a.b)))
+    print('  A: {} {}'.format(a.a, arm_meta(a.a)))
+    print('  B: {} {}'.format(a.b, arm_meta(a.b)))
     print('  overlapping (stanza x pair) labels: %d' % len(shared))
 
     model_only = [k for k in shared if la[k][1] == 'model' and lb[k][1] == 'model']
@@ -487,7 +486,7 @@ def cmd_agree(a):
                   if x is not None and y is not None]
         kf, af, nf = cohens_kappa(fine)
         kc, ac, nc = cohens_kappa(coarse)
-        print('  [%s]' % name)
+        print('  [{}]'.format(name))
         print('    five-class : n=%4d  observed agreement %5.1f%%  kappa %.3f' % (nf, 100 * af, kf))
         print('    coarse     : n=%4d  observed agreement %5.1f%%  kappa %.3f' % (nc, 100 * ac, kc))
 
@@ -643,9 +642,8 @@ def main():
     rows = load_stanzas()
     if a.cmd == 'full':
         if not os.path.exists(a.gate_decisions):
-            sys.exit('R13 STOP: the step-8 human gate has not been voted (%s missing). '
-                     'The full run stays queued -- this is the marked default, not a failure.'
-                     % a.gate_decisions)
+            sys.exit('R13 STOP: the step-8 human gate has not been voted ({} missing). '
+                     'The full run stays queued -- this is the marked default, not a failure.'.format(a.gate_decisions))
         sample = rows
     else:
         sample = stratified_sample(rows, a.n, seed=a.seed)

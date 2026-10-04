@@ -143,8 +143,8 @@ def entry_id_of(lemma, homonym=None):
     if not lemma:
         return 'pwg.entry:unresolved'
     if homonym:
-        return 'pwg.entry:%s:%s' % (lemma, homonym)
-    return 'pwg.entry:%s' % lemma
+        return 'pwg.entry:{}:{}'.format(lemma, homonym)
+    return 'pwg.entry:{}'.format(lemma)
 
 
 def sense_units(pub):
@@ -189,7 +189,7 @@ def fragment_id_of(fragment_class, parent_record_id, local_index, source_string)
         'i': local_index,
         'src': source_string or '',
     }
-    return 'pwg.frag.v1:%s:%s' % (fragment_class, sha256_json(payload))
+    return 'pwg.frag.v1:{}:{}'.format(fragment_class, sha256_json(payload))
 
 
 def reuse_key_of(fragment_class, source_string, structural_context):

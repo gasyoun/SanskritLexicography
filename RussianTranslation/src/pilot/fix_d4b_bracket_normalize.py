@@ -36,7 +36,7 @@ def run_store(dry=True):
     default_local = os.path.join(SRC, 'pwg_ru_translated.jsonl')
     store = canonical_store(default_local)
     if not os.path.exists(store):
-        sys.exit('STORE ABSENT: %s' % store)
+        sys.exit('STORE ABSENT: {}'.format(store))
 
     rows = []
     with open(store, encoding='utf-8') as f:
@@ -52,7 +52,7 @@ def run_store(dry=True):
         ru = r.get('ru') or ''
         if not is_ru_n0_candidate(de, ru):
             continue
-        label = '%s|%s|%s' % (r.get('key1'), r.get('subcard'), r.get('sense_tag'))
+        label = '{}|{}|{}'.format(r.get('key1'), r.get('subcard'), r.get('sense_tag'))
         ok_plain, _ = try_boundary_wrap(de, ru)
         if ok_plain:
             # Already handled by the H1702 exact-affix fixer -- out of scope here.
@@ -66,14 +66,14 @@ def run_store(dry=True):
             still_refused.setdefault(result_norm, []).append(label)
 
     print('D4B BRACKET NORMALIZE %s' % ('(DRY RUN)' if dry else ''))
-    print('store                          : %s' % store)
+    print('store                          : {}'.format(store))
     print('rows                           : %d' % len(rows))
     print('newly unlocked                 : %d' % len(newly_unlocked))
     print('still refused                  : %d' % sum(len(v) for v in still_refused.values()))
     for reason, labels in sorted(still_refused.items(), key=lambda x: -len(x[1])):
         print('  %-25s %d' % (reason, len(labels)))
     for _r, label, result in newly_unlocked:
-        print('  UNLOCKED: %s -> %s' % (label, result[:120]))
+        print('  UNLOCKED: {} -> {}'.format(label, result[:120]))
 
     if not dry and newly_unlocked:
         # H2146: locked (PromoteClaim) + unique per-run backup + atomic replace, same
@@ -81,7 +81,7 @@ def run_store(dry=True):
         # be the same last-writer-wins hazard FINDINGS §513 fixed for the sibling fixer.
         from store_write import locked_store_rewrite
         locked_store_rewrite(store, rows, tag='h2144fix')
-        print('wrote                          : %s' % store)
+        print('wrote                          : {}'.format(store))
 
     return {
         'rows_unlocked': len(newly_unlocked),

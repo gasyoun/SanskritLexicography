@@ -242,7 +242,7 @@ def make_figure(ev, lift, path):
     for name, style in (('A lemma-genre', '--'), ('B sense-genre', '-')):
         fpr, tpr, _ = ev['roc'][name]
         ax1.plot(fpr, tpr, style, lw=2,
-                 label='%s  (AUC=%.3f)' % (name, ev['aucs'][name]))
+                 label='{}  (AUC={:.3f})'.format(name, ev['aucs'][name]))
     ax1.plot([0, 1], [0, 1], ':', color='grey', lw=1)
     ax1.set_xlabel('false positive rate')
     ax1.set_ylabel('true positive rate')
@@ -290,20 +290,20 @@ def write_report(ev, lift, md_path, json_path, fig_rel):
     # honest, verdict-aware headline verb for the B-vs-A comparison
     if verdict == 'CONFIRMED':
         headline = ('Sense-resolved genre features (Model B) **beat** the lemma-union '
-                    'representation (Model A) by ΔAUC = %+.3f (95%% bootstrap CI '
-                    '[%+.3f, %+.3f]) — the CI excludes 0, so sense resolution adds real '
-                    'predictive signal.' % (ev['delta_mean'], lo, hi))
+                    'representation (Model A) by ΔAUC = {:+.3f} (95% bootstrap CI '
+                    '[{:+.3f}, {:+.3f}]) — the CI excludes 0, so sense resolution adds real '
+                    'predictive signal.'.format(ev['delta_mean'], lo, hi))
     elif verdict == 'NOT CONFIRMED':
         headline = ('Sense-resolved genre (Model B) is **worse** than the lemma-union '
-                    'representation (Model A): ΔAUC = %+.3f (95%% bootstrap CI '
-                    '[%+.3f, %+.3f], entirely below 0). The thesis is refuted at this '
-                    'scale.' % (ev['delta_mean'], lo, hi))
+                    'representation (Model A): ΔAUC = {:+.3f} (95% bootstrap CI '
+                    '[{:+.3f}, {:+.3f}], entirely below 0). The thesis is refuted at this '
+                    'scale.'.format(ev['delta_mean'], lo, hi))
     else:
         headline = ('Sense-resolved genre (Model B) shows **no advantage** over the '
-                    'lemma-union representation (Model A): ΔAUC = %+.3f (95%% bootstrap '
-                    'CI [%+.3f, %+.3f], straddling 0; the point estimate slightly favours '
+                    'lemma-union representation (Model A): ΔAUC = {:+.3f} (95% bootstrap '
+                    'CI [{:+.3f}, {:+.3f}], straddling 0; the point estimate slightly favours '
                     'the simpler lemma model). The memo\'s E2 thesis is **not supported** '
-                    'at this scale.' % (ev['delta_mean'], lo, hi))
+                    'at this scale.'.format(ev['delta_mean'], lo, hi))
 
     L = []
     L.append('# E2 — sense-level genre vs DCS corpus attestation')
@@ -317,7 +317,7 @@ def write_report(ev, lift, md_path, json_path, fig_rel):
              '`<ls>` citations, predicts whether the lemma survives into the living DCS '
              'corpus better than the lemma\'s aggregate (smeared) genre does.')
     L.append('')
-    L.append('**Verdict: %s.** %s' % (verdict, headline))
+    L.append('**Verdict: {}.** {}'.format(verdict, headline))
     L.append('')
     L.append('## Setup')
     L.append('')
@@ -328,7 +328,7 @@ def write_report(ev, lift, md_path, json_path, fig_rel):
              '(balanced target).' % (ev['n'], 100 * ev['base_rate']))
     L.append('- **Genre** from `annotate_genres.genres_for_text` (H339) — per-sense '
              '`<ls>` → `ls_source_map.json` curated label → coarse bucket '
-             '(%s).' % ', '.join(COARSE))
+             '({}).'.format(', '.join(COARSE)))
     L.append('- **No leakage:** PWG citations and DCS attestation are independent '
              'sources; the size baseline (n_senses, citation mass) absorbs the '
              '"richer lemmas are more attested" confound so genre is measured above it.')
@@ -337,14 +337,12 @@ def write_report(ev, lift, md_path, json_path, fig_rel):
     L.append('')
     L.append('| Model | Features | AUC |')
     L.append('|---|---|---:|')
-    L.append('| 0 | size only (n_senses, citation mass) | %.3f |' % aucs['0 size'])
-    L.append('| A | 0 + lemma **union** coarse-genre (6) | %.3f |' % aucs['A lemma-genre'])
-    L.append('| B | 0 + **sense-resolution** genre (entropy, spread, pure-sense fracs) | %.3f |'
-             % aucs['B sense-genre'])
-    L.append('| A+B | 0 + both | %.3f |' % aucs['A+B'])
+    L.append('| 0 | size only (n_senses, citation mass) | {:.3f} |'.format(aucs['0 size']))
+    L.append('| A | 0 + lemma **union** coarse-genre (6) | {:.3f} |'.format(aucs['A lemma-genre']))
+    L.append('| B | 0 + **sense-resolution** genre (entropy, spread, pure-sense fracs) | {:.3f} |'.format(aucs['B sense-genre']))
+    L.append('| A+B | 0 + both | {:.3f} |'.format(aucs['A+B']))
     L.append('')
-    L.append('ΔAUC(B−A) = **%+.3f**, 95%% bootstrap CI [%+.3f, %+.3f]. '
-             % (ev['delta_mean'], lo, hi) +
+    L.append('ΔAUC(B−A) = **{:+.3f}**, 95% bootstrap CI [{:+.3f}, {:+.3f}]. '.format(ev['delta_mean'], lo, hi) +
              ('The CI excludes 0, so sense-resolution adds real, independent '
               'predictive signal over the lemma aggregate.' if lo > 0 else
               'The CI includes 0 — the sense-resolution edge is not established at '
@@ -369,18 +367,17 @@ def write_report(ev, lift, md_path, json_path, fig_rel):
     L.append('## Interpretation')
     L.append('')
     L.append('1. **Attestation is mostly about citation volume, not genre.** The '
-             'size-only baseline already reaches AUC %.3f; adding genre (either '
-             'granularity) lifts it only ~%+.3f. How *much* PWG cites a word predicts '
-             'DCS survival far better than *what kind* of source it cites.'
-             % (aucs['0 size'], genre_gain))
+             'size-only baseline already reaches AUC {:.3f}; adding genre (either '
+             'granularity) lifts it only ~{:+.3f}. How *much* PWG cites a word predicts '
+             'DCS survival far better than *what kind* of source it cites.'.format(aucs['0 size'], genre_gain))
     L.append('2. **Genre still carries a real, interpretable signal** where it counts: '
              'a pure sense in %s significantly raises attestation odds (OR CI entirely '
              'above 1).' % (', '.join(sig) if sig else 'no bucket'))
     if null:
-        L.append('3. **Vedic-only senses do *not* predict DCS presence** (%s: OR CI '
+        L.append('3. **Vedic-only senses do *not* predict DCS presence** ({}: OR CI '
                  'includes 1) — consistent with DCS\'s epic/classical corpus weighting: '
                  'a purely-Vedic citation profile marks antiquarian vocabulary, not '
-                 'living-corpus survival.' % ', '.join(null))
+                 'living-corpus survival.'.format(', '.join(null)))
     L.append('%d. **But sense-resolution buys nothing here.** The lemma union already '
              'encodes "cites kāvya / purāṇa / …"; splitting that to the sense level '
              '(entropy, pure-sense fractions) adds no separable predictive power over '
@@ -390,7 +387,7 @@ def write_report(ev, lift, md_path, json_path, fig_rel):
              'portrait in V7). Re-run as the store grows past the current 219 verb-root '
              'families.' % (4 if null else 3, ev['n']))
     L.append('')
-    L.append('![ROC pair + per-genre lift](%s)' % fig_rel)
+    L.append('![ROC pair + per-genre lift]({})'.format(fig_rel))
     L.append('')
     L.append('## Reproduce')
     L.append('')
@@ -453,7 +450,7 @@ def main():
     if a.selftest:
         return selftest()
 
-    print('loading store %s ...' % a.store)
+    print('loading store {} ...'.format(a.store))
     lemmas = load_lemmas(a.store)
     print('  %d distinct headwords (normalised IAST)' % len(lemmas))
     dcs = load_dcs_attested(a.dcs)
@@ -462,8 +459,8 @@ def main():
     print('  %d lemmas with join key' % len(rows))
     ev = evaluate(rows)
     lift = per_genre_lift(rows)
-    print('AUC: ' + '  '.join('%s=%.3f' % (k, v) for k, v in ev['aucs'].items()))
-    print('ΔAUC(B-A)=%+.3f CI[%+.3f, %+.3f]' % (ev['delta_mean'], *ev['delta_ci']))
+    print('AUC: ' + '  '.join('{}={:.3f}'.format(k, v) for k, v in ev['aucs'].items()))
+    print('ΔAUC(B-A)={:+.3f} CI[{:+.3f}, {:+.3f}]'.format(ev['delta_mean'], *ev['delta_ci']))
 
     fig_path = os.path.join(FIG_DIR, 'sense_genre_attestation.png')
     make_figure(ev, lift, fig_path)

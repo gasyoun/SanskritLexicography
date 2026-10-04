@@ -42,9 +42,9 @@ print('The T2 prompt said: reproduce that sense\'s German skeleton line EXACTLY 
 for i, (line, const, got) in enumerate(
         zip(skeleton_lines, pinned, [s['german'] for s in senses]), start=1):
     print('\nsense %d' % i)
-    print('  fixture skeleton line   = %r' % line)
-    print('  schema pinned const     = %r' % const)
-    print('  model returned          = %r' % got)
+    print('  fixture skeleton line   = {!r}'.format(line))
+    print('  schema pinned const     = {!r}'.format(const))
+    print('  model returned          = {!r}'.format(got))
     print('  model == skeleton line? %s' % (got == line))
     print('  model == pinned const?  %s' % (got == const))
     print('  schema const == line?   %s' % (const == line))

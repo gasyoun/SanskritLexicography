@@ -212,9 +212,8 @@ def load_critical(dcs_sqlite):
     verses = defaultdict(list)  # (kanda, sarga, verse) -> [text parts]
     cur.execute(
         "SELECT chapter_id, sent_counter, sent_subcounter, text_sandhied "
-        "FROM sentence WHERE chapter_id IN (%s) "
-        "ORDER BY chapter_id, sent_counter, sent_subcounter"
-        % ','.join(str(c) for c in chapters))
+        "FROM sentence WHERE chapter_id IN ({}) "
+        "ORDER BY chapter_id, sent_counter, sent_subcounter".format(','.join(str(c) for c in chapters)))
     for chap_id, counter, sub, text in cur.fetchall():
         if counter is None:        # unnumbered line (colophon etc.) — no locus
             continue
@@ -285,8 +284,7 @@ def load_bombay_inventory(index_dir):
     for fname in BOMINDEX_FILES:
         path = os.path.join(index_dir, fname)
         if not os.path.exists(path):
-            sys.exit('%s not found in %s (ramayanabom clone @ %s)'
-                     % (fname, index_dir, BOMINDEX_COMMIT[:8]))
+            sys.exit('{} not found in {} (ramayanabom clone @ {})'.format(fname, index_dir, BOMINDEX_COMMIT[:8]))
         with open(path, encoding='utf-8') as fh:
             next(fh)                                   # header
             for line in fh:
@@ -343,7 +341,7 @@ def cmd_build_bombay(args):
     for r in rows:
         per_kanda[r[0]] += 1
     print('bombay inventory: %d sargas -> %s' % (len(rows), OUT_BINV))
-    print('  sargas per kāṇḍa: %s' % dict(sorted(per_kanda.items())))
+    print('  sargas per kāṇḍa: {}'.format(dict(sorted(per_kanda.items()))))
 
     if not os.path.exists(args.corpus_dir):
         print('corpus dir absent — numbering study skipped')
@@ -362,7 +360,7 @@ def cmd_build_bombay(args):
           % (len(bom_int), sum(1 for r in rows
                                if r[0] == 7 and 'interpolated' in r[8])))
     print('corpus sargas      : %d' % len(cor7))
-    print('bombay-only sargas : %s' % sorted(set(bom_int) - set(cor7)))
+    print('bombay-only sargas : {}'.format(sorted(set(bom_int) - set(cor7))))
     print('identical verse count: %d/%d (%.1f%%)'
           % (len(same), len(both), 100.0 * len(same) / len(both) if both else 0))
     deltas = [bom_int[s] - cor7[s] for s in both]
@@ -449,11 +447,11 @@ def cmd_build(args):
     ksverse = args.ksverse
     if not ksverse or not os.path.exists(ksverse):
         sys.exit('ksverse.js not found — pass --ksverse (fetch from '
-                 'sanskrit-lexicon-scans/ramayanagorr @ %s)' % KSVERSE_COMMIT[:8])
+                 'sanskrit-lexicon-scans/ramayanagorr @ {})'.format(KSVERSE_COMMIT[:8]))
     for path, what in [(args.corpus_dir, 'SamudraManthanam corpus dir'),
                        (args.dcs_sqlite, 'DCS sqlite')]:
         if not os.path.exists(path):
-            sys.exit('%s not found at %s (local-only store)' % (what, path))
+            sys.exit('{} not found at {} (local-only store)'.format(what, path))
 
     ginv = load_gorresio_inventory(ksverse)
     with open(OUT_GINV, 'w', encoding='utf-8', newline='') as fh:
@@ -638,7 +636,7 @@ def cmd_build_gorresio(args):
                 if cls in ('matched', 'fuzzy'):
                     sarga_rows.append((k, g_sarga, s_sarga))
             print('kanda %d: %s' % (k, dict(stats)))
-    print('verse map -> %s' % OUT_GSV)
+    print('verse map -> {}'.format(OUT_GSV))
 
     # Regenerate the sarga-level map CONTENT-BASED (supersedes the DTW draft).
     per_sarga = defaultdict(lambda: defaultdict(int))
@@ -661,7 +659,7 @@ def cmd_build_gorresio(args):
             conf = ('high' if share >= 0.6 and cnt >= 5 else
                     'medium' if share >= 0.3 else 'low')
             w.writerow([k, gs, nv, k, ss, cnt, share, conf, 'CONTENT-BASED'])
-    print('sarga map regenerated CONTENT-BASED -> %s' % OUT_GS)
+    print('sarga map regenerated CONTENT-BASED -> {}'.format(OUT_GS))
 
 
 def _load_ksverse(path):
@@ -677,7 +675,7 @@ def cmd_selftest(_args):
     fails = []
 
     def check(cond, msg):
-        (print('  ok  - %s' % msg) if cond else fails.append(msg))
+        (print('  ok  - {}'.format(msg)) if cond else fails.append(msg))
 
     inv = list(csv.DictReader(open(OUT_GINV, encoding='utf-8'), delimiter='\t'))
     check(len(inv) > 500, 'gorresio inventory has %d sargas (>500)' % len(inv))
@@ -689,8 +687,7 @@ def cmd_selftest(_args):
           % (fix[0]['n_verses'] if fix else '-'))
     for r in inv:
         if int(r['page_first']) > int(r['page_last']):
-            fails.append('inventory page range inverted at %s,%s'
-                         % (r['kanda'], r['sarga']))
+            fails.append('inventory page range inverted at {},{}'.format(r['kanda'], r['sarga']))
             break
 
     binv = list(csv.DictReader(open(OUT_BINV, encoding='utf-8'), delimiter='\t'))
@@ -719,8 +716,7 @@ def cmd_selftest(_args):
           'the genuine uttarakanda sarga 11 kept its own page span')
     for r in binv:
         if int(r['page_first']) > int(r['page_last']):
-            fails.append('bombay inventory page range inverted at %s,%s'
-                         % (r['kanda'], r['sarga']))
+            fails.append('bombay inventory page range inverted at {},{}'.format(r['kanda'], r['sarga']))
             break
 
     sc = list(csv.DictReader(open(OUT_SC, encoding='utf-8'), delimiter='\t'))
@@ -741,9 +737,8 @@ def cmd_selftest(_args):
         bad_cls = {r['class'] for r in k_rows} - {'self_aligned_critical',
                                                     'southern_only'}
         check(k_rows and not bad_cls,
-              'kanda %s rows are self_aligned_critical or southern_only, '
-              'never matched/fuzzy/moved (got extra classes %r)'
-              % (kk, bad_cls))
+              'kanda {} rows are self_aligned_critical or southern_only, '
+              'never matched/fuzzy/moved (got extra classes {!r})'.format(kk, bad_cls))
     sac = [r for r in sc if r['class'] == 'self_aligned_critical']
     check(len(sac) > 7000,
           'self_aligned_critical rows for kāṇḍas 6-7: %d (>7000)' % len(sac))
@@ -799,13 +794,11 @@ def cmd_selftest(_args):
     import citation_tm
     res = citation_tm.lookup('R. GORR.', '1,22,1')
     check(res.get('canonical_id') == '01_ramayana-balakanda:19.1',
-          'citation_tm R. GORR. 1,22,1 resolves via concordance (got %r)'
-          % res.get('canonical_id'))
+          'citation_tm R. GORR. 1,22,1 resolves via concordance (got {!r})'.format(res.get('canonical_id')))
     res = citation_tm.lookup('R.', '3,79,10')
     check(res.get('status') == 'miss'
           and res.get('reason') == 'no-southern-counterpart',
-          'R. 3,79,10 -> honest no-southern-counterpart miss (got %r/%r)'
-          % (res.get('status'), res.get('reason')))
+          'R. 3,79,10 -> honest no-southern-counterpart miss (got {!r}/{!r})'.format(res.get('status'), res.get('reason')))
     res = citation_tm.lookup('R. GORR.', '2,16,46')
     check(res.get('status') == 'miss'
           and res.get('reason') == 'no-southern-counterpart',
@@ -814,12 +807,11 @@ def cmd_selftest(_args):
           'Southern score 0.109)')
     res = citation_tm.lookup('R. GORR.', '5,10,1')
     check(res.get('canonical_id') == '05_ramayana-sundarakanda:2.51',
-          'citation_tm R. GORR. 5,10,1 resolves (Sundara live, got %r)'
-          % res.get('canonical_id'))
+          'citation_tm R. GORR. 5,10,1 resolves (Sundara live, got {!r})'.format(res.get('canonical_id')))
 
     if fails:
         for msg in fails:
-            print('  FAIL - %s' % msg)
+            print('  FAIL - {}'.format(msg))
         sys.exit('selftest: %d failure(s)' % len(fails))
     print('selftest: all green')
 

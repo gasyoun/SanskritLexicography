@@ -42,7 +42,7 @@ def pwg_by_parse(pwg, L):
     for c in RS.segment(data):
         if c['kind'] != 'prefix':
             continue
-        parse = pmap.get((L, c['upasarga']), '%s+%s' % (c['upasarga'], k1))
+        parse = pmap.get((L, c['upasarga']), '{}+{}'.format(c['upasarga'], k1))
         m = PCT.search('\n'.join(c['lines']))
         out[parse] = (c['upasarga'], (m.group(1).strip()[:46] if m else ''))
     return k1, out
@@ -69,19 +69,19 @@ def main():
     L = None
     with open(pwg, encoding='utf-8') as f:
         for line in f:
-            if line.startswith('<L>') and ('<k1>%s<' % root) in line:
+            if line.startswith('<L>') and ('<k1>{}<'.format(root)) in line:
                 m = re.search(r'<L>(\S+?)<', line)
                 L = m.group(1)
                 break
     if L is None:
-        print('PWG root %s not found' % root); return
+        print('PWG root {} not found'.format(root)); return
     k1, pwg_map = pwg_by_parse(pwg, L)
     mw_map = mw_by_parse(mw, root)
     keys = sorted(set(pwg_map) | set(mw_map), key=G.parse_sort_key)
     both = [k for k in keys if k in pwg_map and k in mw_map]
     pwg_only = [k for k in keys if k in pwg_map and k not in mw_map]
     mw_only = [k for k in keys if k in mw_map and k not in pwg_map]
-    out = ['# %s — PWG <-> MW merged root article (L=%s)' % (root, L), '',
+    out = ['# {} — PWG <-> MW merged root article (L={})'.format(root, L), '',
            '%d prefixes total: **%d in both**, %d PWG-only, %d MW-only.'
            % (len(keys), len(both), len(pwg_only), len(mw_only)), '',
            '| parse | PWG (de) | MW (en) |', '|---|---|---|']
@@ -89,8 +89,8 @@ def main():
         pg = pwg_map.get(k, ('', ''))[1]
         mg = mw_map.get(k, '')
         flag = '' if k in both else (' ⟂PWG' if k in pwg_only else ' ⟂MW')
-        out.append('| `%s`%s | %s | %s |' % (k, flag, pg.replace('|', '/'), mg.replace('|', '/')))
-    fileout = os.path.join(HERE, 'merge_%s.md' % root)
+        out.append('| `{}`{} | {} | {} |'.format(k, flag, pg.replace('|', '/'), mg.replace('|', '/')))
+    fileout = os.path.join(HERE, 'merge_{}.md'.format(root))
     open(fileout, 'w', encoding='utf-8').write('\n'.join(out) + '\n')
     print('PWG<->MW merge  %s (L=%s): %d prefixes  both=%d  PWG-only=%d  MW-only=%d -> %s'
           % (root, L, len(keys), len(both), len(pwg_only), len(mw_only),

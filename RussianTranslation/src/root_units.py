@@ -70,7 +70,7 @@ def manifest(L, pwg=PWG):
 
 def to_md(man):
     de = sum(1 for u in man['units'] if u['lang'] == ['de'])
-    L = ['# %s (L=%s) — segmented root manifest' % (man['key'], man['L']), '',
+    L = ['# {} (L={}) — segmented root manifest'.format(man['key'], man['L']), '',
          '%d sub-cards -> %d translation units (%d German to translate). '
          'root_key/upasarga/seg_index group + order the sub-cards.'
          % (man['sub_cards'], len(man['units']), de), '',
@@ -89,14 +89,14 @@ def main():
         L = sys.argv[2] if len(sys.argv) > 2 else '55166'
         pwg = sys.argv[3] if len(sys.argv) > 3 else PWG
         man = manifest(L, pwg)
-        print(to_md(man) if man else 'L=%s not found' % L)
+        print(to_md(man) if man else 'L={} not found'.format(L))
     elif cmd == 'write':
         os.makedirs(OUT, exist_ok=True)
         for L in sys.argv[2:]:
             man = manifest(L)
             if not man:
-                print('  L=%s not found' % L); continue
-            base = os.path.join(OUT, '%s_%s' % (man['safe'], L))
+                print('  L={} not found'.format(L)); continue
+            base = os.path.join(OUT, '{}_{}'.format(man['safe'], L))
             json.dump(man, open(base + '.json', 'w', encoding='utf-8'),
                       ensure_ascii=False, indent=1)
             open(base + '.md', 'w', encoding='utf-8').write(to_md(man))

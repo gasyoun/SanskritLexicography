@@ -83,7 +83,7 @@ def t1_provenance_cannot_be_substituted():
             except gw.GatewayProvenanceError:
                 pass
             else:
-                raise AssertionError('route %r admitted by the gateway adapter' % bad_route)
+                raise AssertionError('route {!r} admitted by the gateway adapter'.format(bad_route))
 
         try:
             gw.GatewayCall(ledger, gw.GATEWAY_ROUTE, '', ok)
@@ -405,7 +405,7 @@ def selftest():
             test()
         except BaseException as exc:
             failed.append(test.__name__)
-            print('  FAIL: %s -- %s: %s' % (test.__name__, exc.__class__.__name__, exc))
+            print('  FAIL: {} -- {}: {}'.format(test.__name__, exc.__class__.__name__, exc))
     if failed:
         print('gateway_route_selftest: FAILED (%d/%d): %s'
               % (len(failed), len(TESTS), ', '.join(failed)))

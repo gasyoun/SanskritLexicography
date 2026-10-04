@@ -114,7 +114,7 @@ def pwg_entry_href(root_slp1):
         from urllib.parse import quote
     except ImportError:  # pragma: no cover
         from urllib import quote
-    return "%s#pwg/%s?w=%s" % (KOSHA_COLOC, quote(col, safe=""), quote(root_slp1, safe=""))
+    return "{}#pwg/{}?w={}".format(KOSHA_COLOC, quote(col, safe=""), quote(root_slp1, safe=""))
 
 
 if __name__ == "__main__":

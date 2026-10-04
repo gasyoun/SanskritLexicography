@@ -39,8 +39,7 @@ def replace_output(tmp, dest):
         os.replace(tmp, dest)
     except PermissionError as e:
         raise RuntimeError(
-            'could not replace %s; existing export left untouched, temp output kept at %s'
-            % (dest, tmp)
+            'could not replace {}; existing export left untouched, temp output kept at {}'.format(dest, tmp)
         ) from e
 
 
@@ -231,13 +230,13 @@ def pretty(card):
     print('\n  ATTESTED RUSSIAN SENSES (reuse — already exist):')
     if a['dict']:
         for g in a['dict']:
-            print('    · [%s] %s' % (g['source'], _clean(g['gloss'])[:150]))
+            print('    · [{}] {}'.format(g['source'], _clean(g['gloss'])[:150]))
     if a['kow_reference']:
         for g in a['kow_reference']:
-            print('    · [KOW · reference] %s' % _clean(g)[:150])
+            print('    · [KOW · reference] {}'.format(_clean(g)[:150]))
     if a['corpus']:
         for e in a['corpus']:
-            print('    · [corpus %s %s] %s' % (e['work'], e['passage'], e['ru'][:120]))
+            print('    · [corpus {} {}] {}'.format(e['work'], e['passage'], e['ru'][:120]))
     cl = a.get('corpus_lexicon')
     if cl:
         print('  CORPUS-ATTESTED RUSSIAN by stratum (%d attestations):' % cl['n_attestations'])
@@ -245,13 +244,12 @@ def pretty(card):
             rends = ', '.join('%s(%d)' % (r['lemma'], r['count'])
                               for r in s['renderings'] if r.get('pos') != 'func')
             print('    · %-26s %s' % (s['period'], rends))
-        print('    → near-synonym set to DISCRIMINATE (Apresjan): %s'
-              % ' · '.join(cl['synonym_candidates']))
+        print('    → near-synonym set to DISCRIMINATE (Apresjan): {}'.format(' · '.join(cl['synonym_candidates'])))
     if not (a['dict'] or a['kow_reference'] or a['corpus'] or cl):
         print('    (none — long-tail headword; full German translation needed)')
     print('\n  GERMAN GLOSS — pending translation (stage 3):')
     for r in card['records']:
-        print('    %s' % r['de_skeleton'].replace('\n', ' ')[:200])
+        print('    {}'.format(r['de_skeleton'].replace('\n', ' ')[:200]))
     if card.get('quarantined_records'):
         print('  quarantined lossy record(s): %d → %s'
               % (card['quarantined_records'], os.path.basename(QUARANTINE)))
@@ -306,11 +304,11 @@ def parse_build_args(args):
         elif a == '--quarantine':
             quarantine = args[i + 1]; i += 2
         elif a.startswith('--'):
-            raise SystemExit('unknown build option: %s' % a)
+            raise SystemExit('unknown build option: {}'.format(a))
         elif n is None:
             n = int(a); i += 1
         else:
-            raise SystemExit('unexpected build argument: %s' % a)
+            raise SystemExit('unexpected build argument: {}'.format(a))
     return n, (offset or 0), out, quarantine
 
 

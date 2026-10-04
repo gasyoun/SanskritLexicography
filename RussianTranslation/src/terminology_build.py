@@ -119,8 +119,8 @@ def iter_terms(tm_path):
 
 def build(tm_path=DEFAULT_TM, out_dir=OUT_DIR):
     if not os.path.exists(tm_path):
-        sys.exit('TM publication file not found: %s (run build_tmx.py / the pwg_ru '
-                  'promotion pipeline first)' % tm_path)
+        sys.exit('TM publication file not found: {} (run build_tmx.py / the pwg_ru '
+                  'promotion pipeline first)'.format(tm_path))
     os.makedirs(out_dir, exist_ok=True)
     jsonl_out = os.path.join(out_dir, 'sa_ru_terminology.ru.jsonl')
     terms = sorted(iter_terms(tm_path), key=lambda t: t['key1'])

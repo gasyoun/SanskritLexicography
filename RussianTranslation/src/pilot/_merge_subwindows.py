@@ -19,7 +19,7 @@ def main():
         metas.append(payload['meta'])
         for r in payload['results']:
             if r['key'] in seen:
-                raise SystemExit('duplicate key across sub-windows: %r' % r['key'])
+                raise SystemExit('duplicate key across sub-windows: {!r}'.format(r['key']))
             seen.add(r['key'])
             results.append(r)
     # Single canonical META for the whole window: take the first, restore the full

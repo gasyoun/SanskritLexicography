@@ -69,10 +69,10 @@ INLINED = re.compile(r"get\('placeholders_ok'\)|get\(\"placeholders_ok\"\)")
 def test_no_gate_reinlines_the_conjunction():
     for name in GATE_MODULES:
         path = os.path.join(SRC, name)
-        assert os.path.exists(path), '%s is missing' % name
+        assert os.path.exists(path), '{} is missing'.format(name)
         src = io.open(path, encoding='utf-8').read()
-        assert not INLINED.search(src), '%s re-inlines the raw flag conjunction' % name
-        assert 'store_flags' in src, '%s does not import store_flags' % name
+        assert not INLINED.search(src), '{} re-inlines the raw flag conjunction'.format(name)
+        assert 'store_flags' in src, '{} does not import store_flags'.format(name)
 
 
 def test_review_counts_over_a_live_shaped_store(tmp_path, monkeypatch):

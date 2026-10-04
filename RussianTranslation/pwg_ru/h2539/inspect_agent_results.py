@@ -63,9 +63,9 @@ def main():
         verdict = 'REFUSED-BEFORE-DISPATCH (no model contact, no spend)' \
             if refused else 'DISPATCHED TO MODEL'
         print('--- Agent call #%d  line=%s  ts=%s' % (index, lineno, ts))
-        print('    subagent_type = %r' % payload.get('subagent_type'))
-        print('    is_error      = %r' % (is_error,))
-        print('    verdict       = %s' % verdict)
+        print('    subagent_type = {!r}'.format(payload.get('subagent_type')))
+        print('    is_error      = {!r}'.format(is_error))
+        print('    verdict       = {}'.format(verdict))
         print('    result_head   = %s' % (text[:190] or '<empty>'))
     print('\ntotal Agent tool_use blocks = %d' % len(agent_uses))
 

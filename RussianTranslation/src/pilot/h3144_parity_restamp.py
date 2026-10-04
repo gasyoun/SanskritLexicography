@@ -58,7 +58,7 @@ def sha256_of(rel_path):
 def add_entry():
     text, start, end, entries = pr.load_ledger()
     if any(e.get("id") == ENTRY_ID for e in entries):
-        print("ledger entry %s already present" % ENTRY_ID)
+        print("ledger entry {} already present".format(ENTRY_ID))
         return False
     entries.append({
         "id": ENTRY_ID,
@@ -76,7 +76,7 @@ def add_entry():
         "verified_sha256": {rel: sha256_of(rel) for rel in TRACKED},
     })
     pr.write_ledger(text, start, end, entries)
-    print("added ledger entry %s" % ENTRY_ID)
+    print("added ledger entry {}".format(ENTRY_ID))
     return True
 
 

@@ -47,7 +47,7 @@ def changed_files(base_ref, cwd='.'):
                            base_ref + '...HEAD'],
                           capture_output=True, text=True, encoding='utf-8', cwd=cwd)
     if proc.returncode:
-        raise SystemExit('ci_gate_runner: git diff failed: %s' % proc.stderr[-500:])
+        raise SystemExit('ci_gate_runner: git diff failed: {}'.format(proc.stderr[-500:]))
     return [l.strip().replace('\\', '/') for l in proc.stdout.splitlines() if l.strip()]
 
 
@@ -57,25 +57,24 @@ def check_wf_payload(path):
     try:
         wf = json.load(open(path, encoding='utf-8'))
     except (OSError, ValueError) as exc:
-        return ['%s: unreadable wf_output (%s)' % (path, exc)]
+        return ['{}: unreadable wf_output ({})'.format(path, exc)]
     results = wf.get('results') or []
     if not results:
-        violations.append('%s: wf_output with zero results' % path)
+        violations.append('{}: wf_output with zero results'.format(path))
     for r in results:
         key = r.get('key') or '?'
         card = r.get('card') or {}
         if marker_scan.tn_hits(card):
-            violations.append('%s: %s carries unrestored {Tn} residue' % (path, key))
+            violations.append('{}: {} carries unrestored {{Tn}} residue'.format(path, key))
         if marker_scan.marker_hits(card):
-            violations.append('%s: %s carries SAN-LOSS/UNMAPPED' % (path, key))
+            violations.append('{}: {} carries SAN-LOSS/UNMAPPED'.format(path, key))
         for rec in card.get('records') or []:
             for sense in rec.get('senses') or []:
                 if not sense.get('russian'):
-                    violations.append('%s: %s has an empty russian sense (%s)'
-                                      % (path, key, sense.get('tag')))
+                    violations.append('{}: {} has an empty russian sense ({})'.format(path, key, sense.get('tag')))
     usage = (wf.get('summary') or {}).get('usage')
     if not usage:
-        violations.append('%s: missing summary.usage telemetry block' % path)
+        violations.append('{}: missing summary.usage telemetry block'.format(path))
     return violations
 
 
@@ -110,7 +109,7 @@ def main(argv=None):
     print('ci gates: %d changed files (%s)' % (len(files), counts))
     if violations:
         for v in violations:
-            print('  ✗ %s' % v)
+            print('  ✗ {}'.format(v))
         return 1
     print('  ✓ gates green')
     return 0
@@ -160,13 +159,13 @@ def selftest():
                      'pwg_ru/h2174/out.canary.json'):
             src = os.path.join(RT_ROOT, real)
             if not os.path.isfile(src):          # fixture pruned -> skip, never fake a pass
-                print('  (skip %s — not in this checkout)' % real)
+                print('  (skip {} — not in this checkout)'.format(real))
                 continue
             card = json.load(open(src, encoding='utf-8'))['results'][0]['card']
             assert 'SAN-LOSS' in json.dumps(card, ensure_ascii=False), \
-                '%s no longer self-describes — this regression needs a new fixture' % real
+                '{} no longer self-describes — this regression needs a new fixture'.format(real)
             assert not marker_scan.marker_hits(card), \
-                '%s: free-text notes still trip the marker gate (#1073)' % real
+                '{}: free-text notes still trip the marker gate (#1073)'.format(real)
             assert not marker_scan.tn_hits(card), real
 
         # (5) TRUE POSITIVE through the FULL runner path: a marker in translated

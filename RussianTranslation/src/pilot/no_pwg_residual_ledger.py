@@ -133,7 +133,7 @@ def append_from_audit_report(report_path, source_window, path=RESIDUALS,
     for key in keys:
         if append_residual(
                 path, key,
-                reason='%s (%s)' % (reason_prefix, source_window),
+                reason='{} ({})'.format(reason_prefix, source_window),
                 source_window=source_window, latest=latest):
             n += 1
     return n, keys
@@ -246,7 +246,7 @@ def main(argv=None):
             print('check: all %d documented residuals are ledgered blocked' %
                   len(DOCUMENTED_RESIDUALS))
             return 0
-        print('check FAIL: missing blocked residual(s): %s' % ', '.join(missing))
+        print('check FAIL: missing blocked residual(s): {}'.format(', '.join(missing)))
         return 1
     if args.cmd == 'append-from-audit':
         if not args.report or not args.window:

@@ -364,10 +364,10 @@ def selftest():
                                  'editorial_decision_id': 'D42', 'provenance': {}})):
         merged, downgraded, protected = merge_store_rows([human_row], machine_new)
         assert merged == [human_row] and protected == ['x~~a'] and downgraded == [], \
-            'human overlay (%s) must survive a machine re-promote' % label
+            'human overlay ({}) must survive a machine re-promote'.format(label)
         assert merged[0]['review_status'] == human_row['review_status'] \
             and merged[0].get('reviewer') == human_row.get('reviewer'), \
-            'overlay fields must come back intact (%s)' % label
+            'overlay fields must come back intact ({})'.format(label)
     # Explicit override lands the machine attempt (deliberate re-translation).
     approved = [{'key1': 'x', 'subcard': 'x~~a', 'ru': 'human-kept',
                  'review_status': 'approved', 'reviewer': 'MG', 'provenance': {}}]
@@ -485,7 +485,7 @@ def selftest():
     for lease_id, key, m in (('L1', 'p_a~~h5_00_pwg00', meta), ('L2', k2, meta2)):
         d2 = os.path.join(bd, lease_id)
         os.makedirs(d2)
-        fp = os.path.join(d2, 'wf_output.clean.%s.json' % lease_id)
+        fp = os.path.join(d2, 'wf_output.clean.{}.json'.format(lease_id))
         with open(fp, 'w', encoding='utf-8') as f:
             json.dump({'meta': m, 'results': [{'key': key, 'card': entry['card']}]}, f)
         lease_files[lease_id] = (fp, key)
@@ -807,7 +807,7 @@ def selftest():
         assert after != before, '--merge --apply did not write'
         assert b'y~~keep' in after and b'pA' in after, 'merge must keep+land rows'
         baks = _baks()
-        assert len(baks) == 1, 'expected exactly one premerge backup, got %s' % baks
+        assert len(baks) == 1, 'expected exactly one premerge backup, got {}'.format(baks)
         assert open(os.path.join(hdir, baks[0]), 'rb').read() == before, \
             'the premerge backup must hold the pre-write store bytes'
         # (4) §611.1: the defect guard still gates the WRITE form — requeue.defect.

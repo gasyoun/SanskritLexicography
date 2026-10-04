@@ -99,7 +99,7 @@ def iri_local(s):
         if ch.isascii() and ch.isalnum():
             out.append(ch)
         else:
-            out.append(''.join('_x%02x_' % b for b in ch.encode('utf-8')))
+            out.append(''.join('_x{:02x}_'.format(b) for b in ch.encode('utf-8')))
     return ''.join(out) or 'x'
 
 
@@ -111,7 +111,7 @@ def esc(s):
 
 
 def lit(s, lang=None, dtype=None):
-    body = '"%s"' % esc(s)
+    body = '"{}"'.format(esc(s))
     if lang:
         return body + '@' + lang
     if dtype:
@@ -126,7 +126,7 @@ class IRI:
         self.base = base
 
     def __call__(self, path):
-        return '<%s%s>' % (self.base, path)
+        return '<{}{}>'.format(self.base, path)
 
 
 def extract_ls(text):
@@ -217,8 +217,8 @@ def prefixes(base):
         '@prefix lime:     <http://www.w3.org/ns/lemon/lime#> .',
         '@prefix lexinfo:  <http://www.lexinfo.net/ontology/3.0/lexinfo#> .',
         '@prefix lila:     <http://lila-erc.eu/ontologies/lila/> .',
-        '@prefix pwglex:   <%svocab#> .' % base,
-        '@prefix gr:       <%sgrade/> .' % base,
+        '@prefix pwglex:   <{}vocab#> .'.format(base),
+        '@prefix gr:       <{}grade/> .'.format(base),
         '',
     ]) + '\n'
 
@@ -235,21 +235,20 @@ GRADES = [
 
 def emit_vocab_and_lexicon(f, R, args):
     f.write('# --- lexicon + provenance ------------------------------------\n')
-    f.write('%s a lime:Lexicon ;\n' % R('lexicon/pwg-ru'))
+    f.write('{} a lime:Lexicon ;\n'.format(R('lexicon/pwg-ru')))
     f.write('  rdfs:label "PWG->Russian lexicon (Petersburg Dictionary)"@en ;\n')
     f.write('  dct:language "sa" ;\n')
     f.write('  dct:source <https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/> ;\n')
     f.write('  lime:language "sa" ; lime:language "ru" ;\n')
     f.write('  dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;\n')
-    f.write('  prov:wasGeneratedBy %s ;\n' % R('prov/export-lod'))
-    f.write('  dct:created "%s"^^xsd:date .\n\n' % esc(args.generated_at))
-    f.write('%s a prov:Activity ;\n' % R('prov/export-lod'))
+    f.write('  prov:wasGeneratedBy {} ;\n'.format(R('prov/export-lod')))
+    f.write('  dct:created "{}"^^xsd:date .\n\n'.format(esc(args.generated_at)))
+    f.write('{} a prov:Activity ;\n'.format(R('prov/export-lod')))
     f.write('  rdfs:label "PWG->RU LOD export (export_lod.py)" ;\n')
-    f.write('  prov:endedAtTime "%s"^^xsd:date .\n\n' % esc(args.generated_at))
-    f.write('%s a skos:ConceptScheme ; rdfs:label "PWG->RU evidence grades" .\n' % R('grade/scheme'))
+    f.write('  prov:endedAtTime "{}"^^xsd:date .\n\n'.format(esc(args.generated_at)))
+    f.write('{} a skos:ConceptScheme ; rdfs:label "PWG->RU evidence grades" .\n'.format(R('grade/scheme')))
     for slug, label, citable in GRADES:
-        f.write('gr:%s a skos:Concept ; skos:inScheme %s ; skos:prefLabel "%s"@en ; pwglex:citable %s .\n'
-                % (slug, R('grade/scheme'), esc(label), 'true' if citable else 'false'))
+        f.write('gr:{} a skos:Concept ; skos:inScheme {} ; skos:prefLabel "{}"@en ; pwglex:citable {} .\n'.format(slug, R('grade/scheme'), esc(label), 'true' if citable else 'false'))
     f.write('\n')
 
 
@@ -277,28 +276,28 @@ def card_carried_senses(card):
 
 def emit_card(f, R, card, eloc, lemma_seen, translations, stratum, rels, args, emitted_tr):
     key1 = card.get('key1')
-    lemma_iri = R('lemma/%s' % iri_local(key1))
+    lemma_iri = R('lemma/{}'.format(iri_local(key1)))
     entry_iri = R(eloc)
 
     if key1 not in lemma_seen:
         lemma_seen.add(key1)
-        f.write('%s a ontolex:Form, lila:Lemma ;\n' % lemma_iri)
-        f.write('  ontolex:writtenRep %s ;\n' % lit(key1, lang='sa-Latn-x-slp1'))
+        f.write('{} a ontolex:Form, lila:Lemma ;\n'.format(lemma_iri))
+        f.write('  ontolex:writtenRep {} ;\n'.format(lit(key1, lang='sa-Latn-x-slp1')))
         if card.get('iast'):
-            f.write('  ontolex:writtenRep %s ;\n' % lit(card.get('iast'), lang='sa-Latn'))
-        f.write('  pwglex:slp1 %s ;\n' % lit(key1))
-        f.write('  rdfs:label %s .\n' % lit(card.get('iast') or key1, lang='sa-Latn'))
+            f.write('  ontolex:writtenRep {} ;\n'.format(lit(card.get('iast'), lang='sa-Latn')))
+        f.write('  pwglex:slp1 {} ;\n'.format(lit(key1)))
+        f.write('  rdfs:label {} .\n'.format(lit(card.get('iast') or key1, lang='sa-Latn')))
 
-    f.write('%s a ontolex:LexicalEntry ;\n' % entry_iri)
-    f.write('  rdfs:label %s ;\n' % lit(card.get('iast') or key1, lang='sa-Latn'))
-    f.write('  dct:isPartOf %s ;\n' % R('lexicon/pwg-ru'))
-    f.write('  ontolex:canonicalForm %s ;\n' % lemma_iri)
+    f.write('{} a ontolex:LexicalEntry ;\n'.format(entry_iri))
+    f.write('  rdfs:label {} ;\n'.format(lit(card.get('iast') or key1, lang='sa-Latn')))
+    f.write('  dct:isPartOf {} ;\n'.format(R('lexicon/pwg-ru')))
+    f.write('  ontolex:canonicalForm {} ;\n'.format(lemma_iri))
     if card.get('key2') and card.get('key2') != key1:
-        f.write('  pwglex:key2 %s ;\n' % lit(card.get('key2')))
+        f.write('  pwglex:key2 {} ;\n'.format(lit(card.get('key2'))))
 
     # 1) card-carried senses
     carried = card_carried_senses(card)
-    carried_iris = [(R('sense/%s/%s' % (eloc, rec['frag'])), rec) for rec in carried]
+    carried_iris = [(R('sense/{}/{}'.format(eloc, rec['frag'])), rec) for rec in carried]
 
     # 2) translation store senses -- attach ONCE per key1 (homograph discipline:
     #    the assembled side carries no homonym key, so all store rows for a key1
@@ -317,8 +316,8 @@ def emit_card(f, R, card, eloc, lemma_seen, translations, stratum, rels, args, e
     for row in tr_rows:
         sub = row.get('subcard') or ''
         tag = row.get('sense_tag')
-        frag = 'tr/%s/%s' % (iri_local(sub), iri_local(tag if tag is not None else 'x'))
-        siri = R('sense/%s/%s' % (eloc, frag))
+        frag = 'tr/{}/{}'.format(iri_local(sub), iri_local(tag if tag is not None else 'x'))
+        siri = R('sense/{}/{}'.format(eloc, frag))
         tr_iris.append((siri, row))
         for raw, sigla, locus in extract_ls(row.get('ru')):
             slug = cite_slug(raw)
@@ -334,90 +333,90 @@ def emit_card(f, R, card, eloc, lemma_seen, translations, stratum, rels, args, e
 
     all_senses = [s for s, _ in carried_iris] + [s for s, _ in tr_iris]
     if all_senses:
-        f.write('  ontolex:sense %s .\n' % ', '.join(all_senses))
+        f.write('  ontolex:sense {} .\n'.format(', '.join(all_senses)))
     else:
         f.write('  rdfs:comment "no senses"@en .\n')
 
     for siri, rec in carried_iris:
-        f.write('%s a ontolex:LexicalSense ;\n' % siri)
-        f.write('  skos:definition %s ;\n' % lit(rec['gloss'], lang=rec['lang']))
-        f.write('  pwglex:evidenceGrade gr:%s ;\n' % rec['grade'])
-        f.write('  dct:source %s .\n' % lit(rec['src']))
+        f.write('{} a ontolex:LexicalSense ;\n'.format(siri))
+        f.write('  skos:definition {} ;\n'.format(lit(rec['gloss'], lang=rec['lang'])))
+        f.write('  pwglex:evidenceGrade gr:{} ;\n'.format(rec['grade']))
+        f.write('  dct:source {} .\n'.format(lit(rec['src'])))
 
     for siri, row in tr_iris:
         grade = GRADE.get(row.get('review_status'), 'machine-preview')
-        f.write('%s a ontolex:LexicalSense ;\n' % siri)
-        f.write('  skos:definition %s ;\n' % lit(row.get('ru'), lang='ru'))
+        f.write('{} a ontolex:LexicalSense ;\n'.format(siri))
+        f.write('  skos:definition {} ;\n'.format(lit(row.get('ru'), lang='ru')))
         if row.get('de'):
-            f.write('  pwglex:sourceGloss %s ;\n' % lit(row.get('de'), lang='de'))
-        f.write('  pwglex:senseTag %s ;\n' % lit(row.get('sense_tag')))
-        f.write('  pwglex:homonym %s ;\n' % lit(store_homonym(row)))
+            f.write('  pwglex:sourceGloss {} ;\n'.format(lit(row.get('de'), lang='de')))
+        f.write('  pwglex:senseTag {} ;\n'.format(lit(row.get('sense_tag'))))
+        f.write('  pwglex:homonym {} ;\n'.format(lit(store_homonym(row))))
         if row.get('equivalence_type'):
-            f.write('  pwglex:equivalenceType %s ;\n' % lit(row.get('equivalence_type')))
+            f.write('  pwglex:equivalenceType {} ;\n'.format(lit(row.get('equivalence_type'))))
         if row.get('source_type'):
-            f.write('  pwglex:sourceType %s ;\n' % lit(row.get('source_type')))
+            f.write('  pwglex:sourceType {} ;\n'.format(lit(row.get('source_type'))))
         if row.get('differentia'):
-            f.write('  pwglex:differentia %s ;\n' % lit(row.get('differentia'), lang='ru'))
-        f.write('  pwglex:evidenceGrade gr:%s ;\n' % grade)
+            f.write('  pwglex:differentia {} ;\n'.format(lit(row.get('differentia'), lang='ru')))
+        f.write('  pwglex:evidenceGrade gr:{} ;\n'.format(grade))
         prov = row.get('provenance') or {}
         if prov.get('model_version'):
-            f.write('  pwglex:model %s ;\n' % lit(prov.get('model_version')))
+            f.write('  pwglex:model {} ;\n'.format(lit(prov.get('model_version'))))
         if prov.get('generated_at'):
-            f.write('  prov:generatedAtTime %s ;\n' % lit(prov.get('generated_at'), dtype='xsd:dateTime'))
-        refs = sorted({R('citation/%s' % cite_slug(raw)) for raw, _, _ in extract_ls(row.get('ru')) if cite_slug(raw)})
+            f.write('  prov:generatedAtTime {} ;\n'.format(lit(prov.get('generated_at'), dtype='xsd:dateTime')))
+        refs = sorted({R('citation/{}'.format(cite_slug(raw))) for raw, _, _ in extract_ls(row.get('ru')) if cite_slug(raw)})
         if refs:
-            f.write('  dct:references %s ;\n' % ', '.join(refs))
+            f.write('  dct:references {} ;\n'.format(', '.join(refs)))
         tag = row.get('sense_tag')
         if tag is not None and str(tag) in attest_blocks:
-            f.write('  pwglex:attestation %s ;\n' % R('attestation/%s/%s' % (iri_local(key1), iri_local(str(tag)))))
-        f.write('  prov:wasAttributedTo %s .\n' % R('prov/export-lod'))
+            f.write('  pwglex:attestation {} ;\n'.format(R('attestation/{}/{}'.format(iri_local(key1), iri_local(str(tag))))))
+        f.write('  prov:wasAttributedTo {} .\n'.format(R('prov/export-lod')))
 
     for slug, (sigla, locus, raw) in cite_blocks.items():
-        f.write('%s a pwglex:Citation, prov:Entity ;\n' % R('citation/%s' % slug))
-        f.write('  rdfs:label %s ;\n' % lit(raw))
+        f.write('{} a pwglex:Citation, prov:Entity ;\n'.format(R('citation/{}'.format(slug))))
+        f.write('  rdfs:label {} ;\n'.format(lit(raw)))
         if sigla:
-            f.write('  pwglex:sourceSigla %s ;\n' % lit(sigla))
+            f.write('  pwglex:sourceSigla {} ;\n'.format(lit(sigla)))
         if locus:
-            f.write('  pwglex:locus %s ;\n' % lit(locus))
-        f.write('  pwglex:lsRaw %s .\n' % lit(raw))
+            f.write('  pwglex:locus {} ;\n'.format(lit(locus)))
+        f.write('  pwglex:lsRaw {} .\n'.format(lit(raw)))
 
     for tag, se in attest_blocks.items():
-        airi = R('attestation/%s/%s' % (iri_local(key1), iri_local(tag)))
-        f.write('%s a pwglex:StratumAttestation, prov:Entity ;\n' % airi)
+        airi = R('attestation/{}/{}'.format(iri_local(key1), iri_local(tag)))
+        f.write('{} a pwglex:StratumAttestation, prov:Entity ;\n'.format(airi))
         if se.get('stratum_label'):
-            f.write('  skos:prefLabel %s ;\n' % lit(se.get('stratum_label'), lang='ru'))
+            f.write('  skos:prefLabel {} ;\n'.format(lit(se.get('stratum_label'), lang='ru')))
         if se.get('renou_oldest'):
-            f.write('  pwglex:renouOldest %s ;\n' % lit(se.get('renou_oldest')))
+            f.write('  pwglex:renouOldest {} ;\n'.format(lit(se.get('renou_oldest'))))
         if se.get('renou_youngest'):
-            f.write('  pwglex:renouYoungest %s ;\n' % lit(se.get('renou_youngest')))
+            f.write('  pwglex:renouYoungest {} ;\n'.format(lit(se.get('renou_youngest'))))
         if se.get('date_min') is not None:
-            f.write('  pwglex:dateMin %s ;\n' % lit(se.get('date_min'), dtype='xsd:integer'))
+            f.write('  pwglex:dateMin {} ;\n'.format(lit(se.get('date_min'), dtype='xsd:integer')))
         if se.get('date_max') is not None:
-            f.write('  pwglex:dateMax %s ;\n' % lit(se.get('date_max'), dtype='xsd:integer'))
-        f.write('  pwglex:datedCitations %s .\n' % lit(se.get('n_dated_citations') or 0, dtype='xsd:integer'))
+            f.write('  pwglex:dateMax {} ;\n'.format(lit(se.get('date_max'), dtype='xsd:integer')))
+        f.write('  pwglex:datedCitations {} .\n'.format(lit(se.get('n_dated_citations') or 0, dtype='xsd:integer')))
 
     for idx, (siri, rr) in enumerate(rel_blocks, 1):
         rel = rr.get('relationship') or {}
         ins = rel.get('insertion_point') or {}
         riri = R('rel/%s/%s/%d' % (iri_local(key1), iri_local(str(rr.get('sense_tag'))), idx))
         tgt_key1 = ins.get('key1') or key1
-        f.write('%s a vartrans:SenseRelation ;\n' % riri)
-        f.write('  vartrans:source %s ;\n' % siri)
-        f.write('  vartrans:target %s ;\n' % R('entry/%s' % iri_local(tgt_key1)))
-        f.write('  vartrans:category %s ;\n' % lit('%s/%s' % (rel.get('op'), rel.get('direction'))))
-        f.write('  pwglex:relOp %s ;\n' % lit(rel.get('op')))
-        f.write('  pwglex:relDirection %s ;\n' % lit(rel.get('direction')))
+        f.write('{} a vartrans:SenseRelation ;\n'.format(riri))
+        f.write('  vartrans:source {} ;\n'.format(siri))
+        f.write('  vartrans:target {} ;\n'.format(R('entry/{}'.format(iri_local(tgt_key1)))))
+        f.write('  vartrans:category {} ;\n'.format(lit('{}/{}'.format(rel.get('op'), rel.get('direction')))))
+        f.write('  pwglex:relOp {} ;\n'.format(lit(rel.get('op'))))
+        f.write('  pwglex:relDirection {} ;\n'.format(lit(rel.get('direction'))))
         if rel.get('subtype'):
-            f.write('  pwglex:relSubtype %s ;\n' % lit(rel.get('subtype')))
+            f.write('  pwglex:relSubtype {} ;\n'.format(lit(rel.get('subtype'))))
         if rr.get('layer'):
-            f.write('  pwglex:layer %s ;\n' % lit(rr.get('layer')))
+            f.write('  pwglex:layer {} ;\n'.format(lit(rr.get('layer'))))
         if ins.get('homonym'):
-            f.write('  pwglex:targetHomonym %s ;\n' % lit(ins.get('homonym')))
+            f.write('  pwglex:targetHomonym {} ;\n'.format(lit(ins.get('homonym'))))
         if ins.get('target_sense'):
-            f.write('  pwglex:targetSenseTag %s ;\n' % lit(ins.get('target_sense')))
+            f.write('  pwglex:targetSenseTag {} ;\n'.format(lit(ins.get('target_sense'))))
         if rel.get('confidence'):
-            f.write('  pwglex:confidence %s ;\n' % lit(rel.get('confidence')))
-        f.write('  rdfs:comment %s .\n' % lit(rel.get('evidence') or ''))
+            f.write('  pwglex:confidence {} ;\n'.format(lit(rel.get('confidence'))))
+        f.write('  rdfs:comment {} .\n'.format(lit(rel.get('evidence') or '')))
 
     f.write('\n')
 
@@ -425,7 +424,7 @@ def emit_card(f, R, card, eloc, lemma_seen, translations, stratum, rels, args, e
 def entry_local_for(key1, counts):
     counts[key1] = counts.get(key1, 0) + 1
     n = counts[key1]
-    return 'entry/%s' % iri_local(key1) + ('' if n == 1 else '-%d' % n)
+    return 'entry/{}'.format(iri_local(key1)) + ('' if n == 1 else '-%d' % n)
 
 
 def export_lexicon(args):
@@ -443,7 +442,7 @@ def export_lexicon(args):
     n = 0
     with open(out, 'w', encoding='utf-8', newline='') as f:
         f.write('# PWG->RU LOD graph -- generated by export_lod.py (H350/E7)\n')
-        f.write('# base IRI: %s   generated: %s\n\n' % (args.base, args.generated_at))
+        f.write('# base IRI: {}   generated: {}\n\n'.format(args.base, args.generated_at))
         f.write(prefixes(args.base))
         emit_vocab_and_lexicon(f, R, args)
         for card in iter_cards(args):
@@ -451,7 +450,7 @@ def export_lexicon(args):
             emit_card(f, R, card, el, lemma_seen, translations, stratum, rels, args, emitted_tr)
             n += 1
     sys.stderr.write('lexical graph: %d entries -> %s\n' % (n, out))
-    print('OntoLex/vartrans/PROV LOD graph -> %s' % out)
+    print('OntoLex/vartrans/PROV LOD graph -> {}'.format(out))
 
 
 def export_dcs_freq(args):
@@ -471,23 +470,21 @@ def export_dcs_freq(args):
         f.write('# DCS frequency graph -- join by shared lemma IRI (export_lod.py dcs-freq)\n\n')
         f.write(prefixes(args.base))
         meta = freq.get('meta', {})
-        f.write('%s a prov:Entity ; rdfs:label "VisualDCS token frequency" ;\n' % R('dcs/dataset'))
-        f.write('  pwglex:totalTokens %s ; pwglex:distinctLemmas %s .\n\n'
-                % (lit(meta.get('total_tokens', 0), dtype='xsd:integer'),
+        f.write('{} a prov:Entity ; rdfs:label "VisualDCS token frequency" ;\n'.format(R('dcs/dataset')))
+        f.write('  pwglex:totalTokens {} ; pwglex:distinctLemmas {} .\n\n'.format(lit(meta.get('total_tokens', 0), dtype='xsd:integer'),
                    lit(meta.get('distinct_lemmas', 0), dtype='xsd:integer')))
         for iast, key1 in iast2key.items():
             fr = by_lemma.get(iast)
             if not fr:
                 continue
-            f.write('%s pwglex:dcsCount %s ; pwglex:dcsBand %s ; pwglex:dcsHapax %s ; pwglex:dcsCore80 %s .\n'
-                    % (R('lemma/%s' % iri_local(key1)),
+            f.write('{} pwglex:dcsCount {} ; pwglex:dcsBand {} ; pwglex:dcsHapax {} ; pwglex:dcsCore80 {} .\n'.format(R('lemma/{}'.format(iri_local(key1))),
                        lit(fr.get('count', 0), dtype='xsd:integer'),
                        lit(fr.get('band', 0), dtype='xsd:integer'),
                        'true' if fr.get('hapax') else 'false',
                        'true' if fr.get('core80') else 'false'))
             n += 1
     sys.stderr.write('dcs-freq graph: %d lemmas -> %s\n' % (n, out))
-    print('DCS frequency graph -> %s' % out)
+    print('DCS frequency graph -> {}'.format(out))
 
 
 # --------------------------------------------------------------------------- #
@@ -545,19 +542,18 @@ def de_card_senses(card):
 
 def emit_de_vocab(f, R, args):
     f.write('# --- German enrichment lexicon (PWG++) -----------------------\n')
-    f.write('%s a lime:Lexicon ;\n' % R('lexicon/pwg-de'))
+    f.write('{} a lime:Lexicon ;\n'.format(R('lexicon/pwg-de')))
     f.write('  rdfs:label "PWG German lexicon (Petersburg Dictionary, enriched)"@en ;\n')
     f.write('  dct:language "de" ; lime:language "de" ;\n')
     f.write('  dct:source <https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/> ;\n')
     f.write('  dct:license <https://creativecommons.org/publicdomain/mark/1.0/> ;\n')
-    f.write('  prov:wasGeneratedBy %s ;\n' % R('prov/export-lod-de'))
-    f.write('  dct:created "%s"^^xsd:date .\n\n' % esc(args.generated_at))
-    f.write('%s a prov:Activity ;\n' % R('prov/export-lod-de'))
+    f.write('  prov:wasGeneratedBy {} ;\n'.format(R('prov/export-lod-de')))
+    f.write('  dct:created "{}"^^xsd:date .\n\n'.format(esc(args.generated_at)))
+    f.write('{} a prov:Activity ;\n'.format(R('prov/export-lod-de')))
     f.write('  rdfs:label "PWG++ German enrichment export (export_lod.py de-lexicon)" ;\n')
-    f.write('  prov:endedAtTime "%s"^^xsd:date .\n\n' % esc(args.generated_at))
+    f.write('  prov:endedAtTime "{}"^^xsd:date .\n\n'.format(esc(args.generated_at)))
     slug, label, citable = DE_GRADE
-    f.write('gr:%s a skos:Concept ; skos:inScheme %s ; skos:prefLabel "%s"@en ; pwglex:citable %s .\n\n'
-            % (slug, R('grade/scheme'), esc(label), 'true' if citable else 'false'))
+    f.write('gr:{} a skos:Concept ; skos:inScheme {} ; skos:prefLabel "{}"@en ; pwglex:citable {} .\n\n'.format(slug, R('grade/scheme'), esc(label), 'true' if citable else 'false'))
 
 
 def emit_de_card(f, R, card, suffix, lemma_seen, stratum, args):
@@ -569,23 +565,23 @@ def emit_de_card(f, R, card, suffix, lemma_seen, stratum, args):
     if not senses:
         return 0
     ekey = iri_local(key1) + suffix
-    lemma_iri = R('lemma/%s' % iri_local(key1))
-    entry_iri = R('entry/%s/de' % ekey)
+    lemma_iri = R('lemma/{}'.format(iri_local(key1)))
+    entry_iri = R('entry/{}/de'.format(ekey))
 
     if key1 not in lemma_seen:
         lemma_seen.add(key1)
-        f.write('%s a ontolex:Form, lila:Lemma ;\n' % lemma_iri)
-        f.write('  ontolex:writtenRep %s ;\n' % lit(key1, lang='sa-Latn-x-slp1'))
+        f.write('{} a ontolex:Form, lila:Lemma ;\n'.format(lemma_iri))
+        f.write('  ontolex:writtenRep {} ;\n'.format(lit(key1, lang='sa-Latn-x-slp1')))
         if card.get('iast'):
-            f.write('  ontolex:writtenRep %s ;\n' % lit(card.get('iast'), lang='sa-Latn'))
-        f.write('  pwglex:slp1 %s ;\n' % lit(key1))
-        f.write('  rdfs:label %s .\n' % lit(card.get('iast') or key1, lang='sa-Latn'))
+            f.write('  ontolex:writtenRep {} ;\n'.format(lit(card.get('iast'), lang='sa-Latn')))
+        f.write('  pwglex:slp1 {} ;\n'.format(lit(key1)))
+        f.write('  rdfs:label {} .\n'.format(lit(card.get('iast') or key1, lang='sa-Latn')))
 
-    f.write('%s a ontolex:LexicalEntry ;\n' % entry_iri)
-    f.write('  rdfs:label %s ;\n' % lit(card.get('iast') or key1, lang='sa-Latn'))
+    f.write('{} a ontolex:LexicalEntry ;\n'.format(entry_iri))
+    f.write('  rdfs:label {} ;\n'.format(lit(card.get('iast') or key1, lang='sa-Latn')))
     f.write('  dct:language "de" ;\n')
-    f.write('  dct:isPartOf %s ;\n' % R('lexicon/pwg-de'))
-    f.write('  ontolex:canonicalForm %s ;\n' % lemma_iri)
+    f.write('  dct:isPartOf {} ;\n'.format(R('lexicon/pwg-de')))
+    f.write('  ontolex:canonicalForm {} ;\n'.format(lemma_iri))
 
     sense_iris, cite_blocks, attest_used = [], {}, {}
     key_strat = stratum.get(key1, {})
@@ -594,7 +590,7 @@ def emit_de_card(f, R, card, suffix, lemma_seen, stratum, args):
     for si, s in enumerate(senses, 1):
         frag = 'de/%d/%s%s' % (si, iri_local(str(s['n'])),
                                ('-' + iri_local(str(s['sub']))) if s['sub'] else '')
-        siri = R('sense/%s/%s' % (ekey, frag))
+        siri = R('sense/{}/{}'.format(ekey, frag))
         sense_iris.append((siri, s))
         for raw, sigla, locus in extract_ls(s['seg_text']):
             slug = cite_slug(raw)
@@ -604,55 +600,54 @@ def emit_de_card(f, R, card, suffix, lemma_seen, stratum, args):
             se = key_strat.get(int(s['n']))
             if se and se.get('stratum_label') and se.get('stratum_label') != '–':
                 attest_used[str(s['n'])] = se
-    f.write('  ontolex:sense %s .\n' % ', '.join(i for i, _ in sense_iris))
+    f.write('  ontolex:sense {} .\n'.format(', '.join(i for i, _ in sense_iris)))
 
     for siri, s in sense_iris:
-        f.write('%s a ontolex:LexicalSense ;\n' % siri)
-        f.write('  skos:definition %s ;\n' % lit(s['definition'], lang='de'))
+        f.write('{} a ontolex:LexicalSense ;\n'.format(siri))
+        f.write('  skos:definition {} ;\n'.format(lit(s['definition'], lang='de')))
         for g in s['glosses']:
-            f.write('  pwglex:germanEquivalent %s ;\n' % lit(g, lang='de'))
-        f.write('  pwglex:senseNumber %s ;\n' % lit(str(s['n'])))
+            f.write('  pwglex:germanEquivalent {} ;\n'.format(lit(g, lang='de')))
+        f.write('  pwglex:senseNumber {} ;\n'.format(lit(str(s['n']))))
         if s['sub']:
-            f.write('  pwglex:senseSub %s ;\n' % lit(str(s['sub'])))
-        f.write('  pwglex:equivalenceType %s ;\n' % lit(s['eqtype']))
+            f.write('  pwglex:senseSub {} ;\n'.format(lit(str(s['sub']))))
+        f.write('  pwglex:equivalenceType {} ;\n'.format(lit(s['eqtype'])))
         for pos in s['grammar']:
-            f.write('  pwglex:grammar %s ;\n' % lit(pos))
+            f.write('  pwglex:grammar {} ;\n'.format(lit(pos)))
         for d in s['diasystem']:
-            f.write('  pwglex:diasystem %s ;\n' % lit(d))
+            f.write('  pwglex:diasystem {} ;\n'.format(lit(d)))
         for st in s['strata']:
-            f.write('  pwglex:renouStratum %s ;\n' % lit(st))
-        refs = sorted({R('citation/%s' % cite_slug(raw))
+            f.write('  pwglex:renouStratum {} ;\n'.format(lit(st)))
+        refs = sorted({R('citation/{}'.format(cite_slug(raw)))
                        for raw, _, _ in extract_ls(s['seg_text']) if cite_slug(raw)})
         if refs:
-            f.write('  dct:references %s ;\n' % ', '.join(refs))
+            f.write('  dct:references {} ;\n'.format(', '.join(refs)))
         if str(s['n']) in attest_used:
-            f.write('  pwglex:attestation %s ;\n'
-                    % R('attestation/%s/%s' % (iri_local(key1), iri_local(str(s['n'])))))
-        f.write('  pwglex:evidenceGrade gr:%s .\n' % DE_GRADE[0])
+            f.write('  pwglex:attestation {} ;\n'.format(R('attestation/{}/{}'.format(iri_local(key1), iri_local(str(s['n']))))))
+        f.write('  pwglex:evidenceGrade gr:{} .\n'.format(DE_GRADE[0]))
 
     for slug, (sigla, locus, raw) in cite_blocks.items():
-        f.write('%s a pwglex:Citation, prov:Entity ;\n' % R('citation/%s' % slug))
-        f.write('  rdfs:label %s ;\n' % lit(raw))
+        f.write('{} a pwglex:Citation, prov:Entity ;\n'.format(R('citation/{}'.format(slug))))
+        f.write('  rdfs:label {} ;\n'.format(lit(raw)))
         if sigla:
-            f.write('  pwglex:sourceSigla %s ;\n' % lit(sigla))
+            f.write('  pwglex:sourceSigla {} ;\n'.format(lit(sigla)))
         if locus:
-            f.write('  pwglex:locus %s ;\n' % lit(locus))
-        f.write('  pwglex:lsRaw %s .\n' % lit(raw))
+            f.write('  pwglex:locus {} ;\n'.format(lit(locus)))
+        f.write('  pwglex:lsRaw {} .\n'.format(lit(raw)))
 
     for tag, se in attest_used.items():
-        airi = R('attestation/%s/%s' % (iri_local(key1), iri_local(tag)))
-        f.write('%s a pwglex:StratumAttestation, prov:Entity ;\n' % airi)
+        airi = R('attestation/{}/{}'.format(iri_local(key1), iri_local(tag)))
+        f.write('{} a pwglex:StratumAttestation, prov:Entity ;\n'.format(airi))
         if se.get('stratum_label'):
-            f.write('  skos:prefLabel %s ;\n' % lit(se.get('stratum_label'), lang='ru'))
+            f.write('  skos:prefLabel {} ;\n'.format(lit(se.get('stratum_label'), lang='ru')))
         if se.get('renou_oldest'):
-            f.write('  pwglex:renouOldest %s ;\n' % lit(se.get('renou_oldest')))
+            f.write('  pwglex:renouOldest {} ;\n'.format(lit(se.get('renou_oldest'))))
         if se.get('renou_youngest'):
-            f.write('  pwglex:renouYoungest %s ;\n' % lit(se.get('renou_youngest')))
+            f.write('  pwglex:renouYoungest {} ;\n'.format(lit(se.get('renou_youngest'))))
         if se.get('date_min') is not None:
-            f.write('  pwglex:dateMin %s ;\n' % lit(se.get('date_min'), dtype='xsd:integer'))
+            f.write('  pwglex:dateMin {} ;\n'.format(lit(se.get('date_min'), dtype='xsd:integer')))
         if se.get('date_max') is not None:
-            f.write('  pwglex:dateMax %s ;\n' % lit(se.get('date_max'), dtype='xsd:integer'))
-        f.write('  pwglex:datedCitations %s .\n' % lit(se.get('n_dated_citations') or 0, dtype='xsd:integer'))
+            f.write('  pwglex:dateMax {} ;\n'.format(lit(se.get('date_max'), dtype='xsd:integer')))
+        f.write('  pwglex:datedCitations {} .\n'.format(lit(se.get('n_dated_citations') or 0, dtype='xsd:integer')))
 
     f.write('\n')
     return len(sense_iris)
@@ -669,7 +664,7 @@ def export_de_lexicon(args):
     n_entry = n_sense = 0
     with open(out, 'w', encoding='utf-8', newline='') as f:
         f.write('# PWG++ German enrichment graph -- export_lod.py de-lexicon (H772)\n')
-        f.write('# base IRI: %s   generated: %s\n\n' % (args.base, args.generated_at))
+        f.write('# base IRI: {}   generated: {}\n\n'.format(args.base, args.generated_at))
         f.write(prefixes(args.base))
         emit_de_vocab(f, R, args)
         for card in iter_cards(args):
@@ -681,7 +676,7 @@ def export_de_lexicon(args):
                 n_entry += 1
                 n_sense += k
     sys.stderr.write('de-lexicon graph: %d entries / %d senses -> %s\n' % (n_entry, n_sense, out))
-    print('PWG++ German enrichment graph -> %s' % out)
+    print('PWG++ German enrichment graph -> {}'.format(out))
 
 
 # --------------------------------------------------------------------------- #
@@ -724,33 +719,32 @@ def _aggregate_lex(senses):
 
 def emit_grammar_vocab(f, R, args):
     f.write('# --- Grammar layer (Whitney root / nominal concordance) -------\n')
-    f.write('%s a lime:Lexicon ;\n' % R('lexicon/pwg-grammar'))
+    f.write('{} a lime:Lexicon ;\n'.format(R('lexicon/pwg-grammar')))
     f.write('  rdfs:label "PWG grammar layer (Whitney root + nominal concordance)"@en ;\n')
     f.write('  dct:source <https://github.com/gasyoun/WhitneyRoots> ;\n')
     f.write('  dct:license <https://creativecommons.org/licenses/by-sa/4.0/> ;\n')
-    f.write('  prov:wasGeneratedBy %s ;\n' % R('prov/export-lod-grammar'))
-    f.write('  dct:created "%s"^^xsd:date .\n\n' % esc(args.generated_at))
-    f.write('%s a prov:Activity ;\n' % R('prov/export-lod-grammar'))
+    f.write('  prov:wasGeneratedBy {} ;\n'.format(R('prov/export-lod-grammar')))
+    f.write('  dct:created "{}"^^xsd:date .\n\n'.format(esc(args.generated_at)))
+    f.write('{} a prov:Activity ;\n'.format(R('prov/export-lod-grammar')))
     f.write('  rdfs:label "Grammar layer export (export_lod.py grammar, H781)" ;\n')
-    f.write('  prov:endedAtTime "%s"^^xsd:date .\n\n' % esc(args.generated_at))
+    f.write('  prov:endedAtTime "{}"^^xsd:date .\n\n'.format(esc(args.generated_at)))
     slug, label, citable = GRAMMAR_GRADE
-    f.write('gr:%s a skos:Concept ; skos:inScheme %s ; skos:prefLabel "%s"@en ; pwglex:citable %s .\n\n'
-            % (slug, R('grade/scheme'), esc(label), 'true' if citable else 'false'))
+    f.write('gr:{} a skos:Concept ; skos:inScheme {} ; skos:prefLabel "{}"@en ; pwglex:citable {} .\n\n'.format(slug, R('grade/scheme'), esc(label), 'true' if citable else 'false'))
 
 
 def _emit_lemma_node(f, R, card, lemma_seen):
     """Idempotent shared lemma node -- byte-identical to emit_card's/emit_de_card's
     block, reused verbatim so the lemma serialization never diverges."""
     key1 = card.get('key1')
-    lemma_iri = R('lemma/%s' % iri_local(key1))
+    lemma_iri = R('lemma/{}'.format(iri_local(key1)))
     if key1 not in lemma_seen:
         lemma_seen.add(key1)
-        f.write('%s a ontolex:Form, lila:Lemma ;\n' % lemma_iri)
-        f.write('  ontolex:writtenRep %s ;\n' % lit(key1, lang='sa-Latn-x-slp1'))
+        f.write('{} a ontolex:Form, lila:Lemma ;\n'.format(lemma_iri))
+        f.write('  ontolex:writtenRep {} ;\n'.format(lit(key1, lang='sa-Latn-x-slp1')))
         if card.get('iast'):
-            f.write('  ontolex:writtenRep %s ;\n' % lit(card.get('iast'), lang='sa-Latn'))
-        f.write('  pwglex:slp1 %s ;\n' % lit(key1))
-        f.write('  rdfs:label %s .\n' % lit(card.get('iast') or key1, lang='sa-Latn'))
+            f.write('  ontolex:writtenRep {} ;\n'.format(lit(card.get('iast'), lang='sa-Latn')))
+        f.write('  pwglex:slp1 {} ;\n'.format(lit(key1)))
+        f.write('  rdfs:label {} .\n'.format(lit(card.get('iast') or key1, lang='sa-Latn')))
     return lemma_iri
 
 
@@ -785,67 +779,67 @@ def emit_grammar_card(f, R, card, lemma_seen, seen_keys, args):
     if len(wg_recs) == 1:
         rec = wg_recs[0]
         for cat, rng in sorted((rec.get('section_refs') or {}).items()):
-            sec_iri = R('section/%s/%s' % (iri_local(key1), iri_local(cat)))
-            sections.append((sec_iri, '%s §%s' % (cat, rng), cat, rng))
+            sec_iri = R('section/{}/{}'.format(iri_local(key1), iri_local(cat)))
+            sections.append((sec_iri, '{} §{}'.format(cat, rng), cat, rng))
         lines = ['  pwglex:grammarBranch "root" ;']
         if rec.get('class'):
-            lines.append('  pwglex:whitneyClass %s ;' % lit(rec.get('class')))
-            lines.append('  lexinfo:conjugationClass %s ;' % lit(rec.get('class')))
+            lines.append('  pwglex:whitneyClass {} ;'.format(lit(rec.get('class'))))
+            lines.append('  lexinfo:conjugationClass {} ;'.format(lit(rec.get('class'))))
         if rec.get('ppp'):
-            lines.append('  pwglex:ppp %s ;' % lit(rec.get('ppp')))
+            lines.append('  pwglex:ppp {} ;'.format(lit(rec.get('ppp'))))
         if sections:
-            lines.append('  pwglex:sectionRef %s ;' % ', '.join(s[0] for s in sections))
+            lines.append('  pwglex:sectionRef {} ;'.format(', '.join(s[0] for s in sections)))
         for irr in rec.get('irregularities') or []:
-            lines.append('  pwglex:irregularity %s ;' % lit(irr))
-        lines.append('  pwglex:evidenceGrade gr:%s .' % GRAMMAR_GRADE[0])
-        f.write('%s\n' % lemma_iri)
+            lines.append('  pwglex:irregularity {} ;'.format(lit(irr)))
+        lines.append('  pwglex:evidenceGrade gr:{} .'.format(GRAMMAR_GRADE[0]))
+        f.write('{}\n'.format(lemma_iri))
         f.write('\n'.join(lines) + '\n\n')
     elif len(wg_recs) > 1:
         # Homonym-keyed root (as/i/vid...): the PWG-homonym<->Whitney-homonym
         # alignment is unresolved -- flag, don't guess (GRAMMAR_LAYER.md).
-        f.write('%s pwglex:grammarBranch "root-ambiguous" ;\n' % lemma_iri)
+        f.write('{} pwglex:grammarBranch "root-ambiguous" ;\n'.format(lemma_iri))
         f.write('  pwglex:homonymAmbiguous true ;\n')
-        f.write('  rdfs:comment %s ;\n' % lit(
+        f.write('  rdfs:comment {} ;\n'.format(lit(
             '%d Whitney homonyms for this SLP1 root -- PWG<->Whitney homonym '
-            'alignment not resolved, no class/ppp attached' % len(wg_recs)))
-        f.write('  pwglex:evidenceGrade gr:%s .\n\n' % GRAMMAR_GRADE[0])
+            'alignment not resolved, no class/ppp attached' % len(wg_recs))))
+        f.write('  pwglex:evidenceGrade gr:{} .\n\n'.format(GRAMMAR_GRADE[0]))
     else:
         senses = list(de_card_senses(card))
         lex = _aggregate_lex(senses)
         ng = NG.nominal_grammar_for(key1, lex, accented=card.get('key2'))
         if ng.get('declension_sections'):
-            sections.append((R('section/%s/declension' % iri_local(key1)),
-                             'declension %s' % ng['declension_sections'], 'declension', ng['declension_sections']))
+            sections.append((R('section/{}/declension'.format(iri_local(key1))),
+                             'declension {}'.format(ng['declension_sections']), 'declension', ng['declension_sections']))
         if ng.get('paradigm_section'):
-            sections.append((R('section/%s/paradigm' % iri_local(key1)),
-                             'paradigm %s' % ng['paradigm_section'], 'paradigm', ng['paradigm_section']))
+            sections.append((R('section/{}/paradigm'.format(iri_local(key1))),
+                             'paradigm {}'.format(ng['paradigm_section']), 'paradigm', ng['paradigm_section']))
         if ng.get('compound_sections'):
-            sections.append((R('section/%s/compound' % iri_local(key1)),
-                             'compound %s' % ng['compound_sections'], 'compound', ng['compound_sections']))
+            sections.append((R('section/{}/compound'.format(iri_local(key1))),
+                             'compound {}'.format(ng['compound_sections']), 'compound', ng['compound_sections']))
         if ng.get('derivation_sections'):
-            sections.append((R('section/%s/derivation' % iri_local(key1)),
-                             'derivation %s' % ng['derivation_sections'], 'derivation', ng['derivation_sections']))
+            sections.append((R('section/{}/derivation'.format(iri_local(key1))),
+                             'derivation {}'.format(ng['derivation_sections']), 'derivation', ng['derivation_sections']))
         lines = ['  pwglex:grammarBranch "nominal" ;']
-        lines.append('  pwglex:stemClass %s ;' % lit(ng['stem_class']))
+        lines.append('  pwglex:stemClass {} ;'.format(lit(ng['stem_class'])))
         gender_iri = _LEXINFO_GENDER.get(ng.get('gender'))
         if gender_iri:
-            lines.append('  lexinfo:gender %s ;' % gender_iri)
+            lines.append('  lexinfo:gender {} ;'.format(gender_iri))
         for member in ng.get('compound_members') or []:
-            lines.append('  pwglex:compoundMember %s ;' % lit(member))
+            lines.append('  pwglex:compoundMember {} ;'.format(lit(member)))
         for irr in ng.get('irregularities') or []:
-            lines.append('  pwglex:irregularity %s ;' % lit(irr))
-        lines.append('  pwglex:zaliznyakIndex %s ;' % lit(ng['zaliznyak_index']))
+            lines.append('  pwglex:irregularity {} ;'.format(lit(irr)))
+        lines.append('  pwglex:zaliznyakIndex {} ;'.format(lit(ng['zaliznyak_index'])))
         if sections:
-            lines.append('  pwglex:sectionRef %s ;' % ', '.join(s[0] for s in sections))
-        lines.append('  pwglex:evidenceGrade gr:%s .' % GRAMMAR_GRADE[0])
-        f.write('%s\n' % lemma_iri)
+            lines.append('  pwglex:sectionRef {} ;'.format(', '.join(s[0] for s in sections)))
+        lines.append('  pwglex:evidenceGrade gr:{} .'.format(GRAMMAR_GRADE[0]))
+        f.write('{}\n'.format(lemma_iri))
         f.write('\n'.join(lines) + '\n\n')
 
     for sec_iri, label, cat, rng in sections:
-        f.write('%s a pwglex:GrammarSection ;\n' % sec_iri)
-        f.write('  rdfs:label %s ;\n' % lit(label))
-        f.write('  pwglex:sectionCategory %s ;\n' % lit(cat))
-        f.write('  pwglex:sectionRange %s .\n' % lit(rng))
+        f.write('{} a pwglex:GrammarSection ;\n'.format(sec_iri))
+        f.write('  rdfs:label {} ;\n'.format(lit(label)))
+        f.write('  pwglex:sectionCategory {} ;\n'.format(lit(cat)))
+        f.write('  pwglex:sectionRange {} .\n'.format(lit(rng)))
     if sections:
         f.write('\n')
     return 1
@@ -859,13 +853,13 @@ def export_grammar(args):
     n = 0
     with open(out, 'w', encoding='utf-8', newline='') as f:
         f.write('# Grammar layer graph -- export_lod.py grammar (H781)\n')
-        f.write('# base IRI: %s   generated: %s\n\n' % (args.base, args.generated_at))
+        f.write('# base IRI: {}   generated: {}\n\n'.format(args.base, args.generated_at))
         f.write(prefixes(args.base))
         emit_grammar_vocab(f, R, args)
         for card in iter_cards(args):
             n += emit_grammar_card(f, R, card, lemma_seen, seen_keys, args)
     sys.stderr.write('grammar graph: %d lemmas -> %s\n' % (n, out))
-    print('Grammar layer LOD graph -> %s' % out)
+    print('Grammar layer LOD graph -> {}'.format(out))
 
 
 def main():

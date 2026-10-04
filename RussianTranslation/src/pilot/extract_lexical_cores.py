@@ -79,7 +79,7 @@ def read_core(core):
     fname, kind, lemma_cols, pos_col = CORES[core]
     path = os.path.join(CORES_DIR, fname)
     if not os.path.exists(path):
-        sys.exit('missing source xls: %s' % path)
+        sys.exit('missing source xls: {}'.format(path))
     rows = list(_iter_xls_rows(path) if kind == 'xls' else _iter_xlsx_rows(path))
     order, meta, spread = [], {}, {}
     for i, row in enumerate(rows):

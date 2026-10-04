@@ -312,8 +312,8 @@ def build(out_dir=None, force_lock=False):
     lock_path = review_binding.lock_from_html(out, gate=None)
 
     print("H1306 style sheet: %d cards -> %s" % (len(cards), out))
-    print("  %s" % chash)
-    print("  lock -> %s" % lock_path)
+    print("  {}".format(chash))
+    print("  lock -> {}".format(lock_path))
     return out, chash, lock_path
 
 

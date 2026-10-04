@@ -182,11 +182,11 @@ def to_markdown(c):
     A("")
     dias = [k for k, _ in c["diasystem"].most_common()]
     doms = [k for k, _ in c["domain"].most_common()]
-    A("| dia \\\\ dom | " + " | ".join("`%s`" % d for d in doms) + " |")
+    A("| dia \\\\ dom | " + " | ".join("`{}`".format(d) for d in doms) + " |")
     A("|---" * (len(doms) + 1) + "|")
     for d in dias:
         cells = [str(c["matrix"][(d, k)]) if c["matrix"].get((d, k)) else "·" for k in doms]
-        A("| `%s` | " % d + " | ".join(cells) + " |")
+        A("| `{}` | ".format(d) + " | ".join(cells) + " |")
     A("")
     tot = sum(c["bracket"].values())
     A("## Bracket tags — position in the compound / part of speech")
@@ -212,7 +212,7 @@ def to_json(c):
     for key in ("diasystem", "domain", "bracket", "bracket_qualifier"):
         p[key] = dict(c[key])
     for key in ("matrix", "bracket_pairs", "diasystem_x_bracket"):
-        p[key] = {"%s\t%s" % k: v for k, v in c[key].items()}
+        p[key] = {"{}\t{}".format(*k): v for k, v in c[key].items()}
     for src, dst in (("lem_dia", "lemmas_by_diasystem"),
                      ("lem_dom", "lemmas_by_domain"),
                      ("lem_bracket", "lemmas_by_bracket")):
@@ -273,11 +273,11 @@ def main():
     c = census(args.dir, args.limit)
     if args.md_out:
         io.open(args.md_out, "w", encoding="utf-8", newline="\n").write(to_markdown(c))
-        print("wrote %s" % args.md_out)
+        print("wrote {}".format(args.md_out))
     if args.json_out:
         io.open(args.json_out, "w", encoding="utf-8", newline="\n").write(
             json.dumps(to_json(c), ensure_ascii=False, indent=1))
-        print("wrote %s" % args.json_out)
+        print("wrote {}".format(args.json_out))
     if not (args.md_out or args.json_out):
         sys.stdout.write(to_markdown(c))
     return 0

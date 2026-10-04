@@ -53,7 +53,7 @@ SHARED = ("Gen", "Dat", "Abl", "Nom", "Voc")
 #: the source's own abbreviation element, citations, and Sanskrit spans.
 _SKIP = re.compile(r"<ab>.*?</ab>|<ls\b[^>]*>.*?</ls>|\{[#%].*?[#%]\}", re.S)
 
-_HIT = re.compile(r"(?<![\wÀ-ɏ])(%s)(?![\wÀ-ɏ])" % "|".join(GERMAN_ONLY))
+_HIT = re.compile(r"(?<![\wÀ-ɏ])({})(?![\wÀ-ɏ])".format("|".join(GERMAN_ONLY)))
 
 
 def scan_body(text):
@@ -99,7 +99,7 @@ def selftest():
     # ---- MG's own line, in its pre-H2849 form: must fail the gate
     bad = "идти дорогой (Akk, Instr)."
     found = [m for m, _ in scan_body(bad)]
-    check(found == ["Akk", "Instr"], "MG's line fails the gate: %r" % found)
+    check(found == ["Akk", "Instr"], "MG's line fails the gate: {!r}".format(found))
     check(scan_body("приходить к чему-л. (Lok или нар. места)"),
           "Lok fails the gate too")
 
@@ -109,8 +109,8 @@ def selftest():
 
     # ---- the shared spellings are correct Latin and must NOT fire
     for word in SHARED:
-        check(scan_body("приходить кому-л. (%s.)" % word) == [],
-              "%s. is Latin as well as German — never flagged" % word)
+        check(scan_body("приходить кому-л. ({}.)".format(word)) == [],
+              "{}. is Latin as well as German — never flagged".format(word))
     check(scan_body("разбивать на куски. [Gen, unsp] ; MW : 1330") == [],
           "the [Gen, unsp] domain marker is not a case marker (H2849)")
 
@@ -131,21 +131,20 @@ def selftest():
     # local_default unchanged there), so open() raised IsADirectoryError and
     # the live-store leg below silently skipped while the gate reported PASS.
     check(_DEFAULT_STORE.endswith("pwg_ru_translated.jsonl"),
-          "default gate target is the store file, not a directory: %r"
-          % _DEFAULT_STORE)
+          "default gate target is the store file, not a directory: {!r}".format(_DEFAULT_STORE))
 
     # ---- the live store, which is the actual acceptance
     try:
         hits, rows = gate()
     except (IOError, OSError) as exc:
-        print("  skip  store not on this machine (%s)" % exc)
+        print("  skip  store not on this machine ({})".format(exc))
         hits, rows = [], 0
     if rows:
         check(not hits,
               "the live store carries no German case marker (%d rows, %d hits)"
               % (rows, len(hits)))
         for h in hits[:5]:
-            print("        %s [%s] %s — %s" % h)
+            print("        {} [{}] {} — {}".format(*h))
 
     print("ru_case_marker_gate selftest:", "PASS" if ok else "FAIL")
     return 0 if ok else 1

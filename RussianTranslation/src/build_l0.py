@@ -110,7 +110,7 @@ def sa_tokens(slp1_clean):
 def l0id(group, seg):
     """Stable, content-derived L0 id -- deterministic (no clock), disjoint from
     build_tmx's 'cl-' L1 tuids by the 'l0-' prefix."""
-    basis = '%s\x1f%s' % (group, seg)
+    basis = '{}\x1f{}'.format(group, seg)
     return 'l0-' + hashlib.sha256(basis.encode('utf-8')).hexdigest()[:16]
 
 
@@ -210,8 +210,8 @@ def units_for_group(group, d, work, strata, with_comm=True):
 
 def build(out_path, work=None, with_comm=True, sample=None, sm=SM):
     if not os.path.isdir(sm):
-        sys.exit('corpus source not found: %s\n(SamudraManthanam must be a sibling '
-                 'repo -- see build_corpus_lexicon.py SM path)' % sm)
+        sys.exit('corpus source not found: {}\n(SamudraManthanam must be a sibling '
+                 'repo -- see build_corpus_lexicon.py SM path)'.format(sm))
     strata = load_strata()
     if work:
         files = [work + '.jsonl']
@@ -225,7 +225,7 @@ def build(out_path, work=None, with_comm=True, sample=None, sm=SM):
         for fn in files:
             fp = os.path.join(sm, fn)
             if not os.path.exists(fp):
-                sys.stderr.write('skip (missing): %s\n' % fn)
+                sys.stderr.write('skip (missing): {}\n'.format(fn))
                 continue
             wname = fn[:-len('.jsonl')]
             for group, d in iter_groups(fp):
@@ -247,7 +247,7 @@ def build(out_path, work=None, with_comm=True, sample=None, sm=SM):
 
 def status(path):
     if not os.path.exists(path):
-        sys.exit('L0 file not found: %s (run `build_l0.py build` first)' % path)
+        sys.exit('L0 file not found: {} (run `build_l0.py build` first)'.format(path))
     dist = collections.Counter()
     works = set()
     sa_tok = ru_tok = n = 0
@@ -265,7 +265,7 @@ def status(path):
     print('corpus_l0: %d units (%d translation, %d commentary), %d works'
           % (n, dist['translation'], dist['commentary'], len(works)))
     if n:
-        print('  mean tokens/unit: sa %.1f  ru %.1f' % (sa_tok / n, ru_tok / n))
+        print('  mean tokens/unit: sa {:.1f}  ru {:.1f}'.format(sa_tok / n, ru_tok / n))
     return 0
 
 
@@ -291,8 +291,7 @@ FIXTURE = [
 def selftest():
     import tempfile
     assert clean_sa('samavetā yuyutsavaḥ । БхГ 1.1 kimakurvata ॥1 БхГ 1.1॥') \
-        == 'samavetā yuyutsavaḥ kimakurvata', 'sa clean failed: %r' \
-        % clean_sa('samavetā yuyutsavaḥ । БхГ 1.1 kimakurvata ॥1 БхГ 1.1॥')
+        == 'samavetā yuyutsavaḥ kimakurvata', 'sa clean failed: {!r}'.format(clean_sa('samavetā yuyutsavaḥ । БхГ 1.1 kimakurvata ॥1 БхГ 1.1॥'))
     assert has_cyr('поле') and not has_cyr('dharma')
     assert l0id('g', 's') == l0id('g', 's'), 'l0id not deterministic'
     assert l0id('g', 'ru') != l0id('g', 'comm1'), 'l0id must separate segs'

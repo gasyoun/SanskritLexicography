@@ -237,12 +237,12 @@ def main(argv=None):
 
     store_path = find_store(args.store)
     print('H3948 four-tier store impact (READ-ONLY)')
-    print('corpus: %s' % pwg_mask.PWG)
+    print('corpus: {}'.format(pwg_mask.PWG))
     print('store : %s' % (store_path or '(NOT FOUND)'))
     if not store_path:
         print('\nThe RU store is not on this machine. Tried:')
         for p in STORE_CANDIDATES:
-            print('  %s' % p)
+            print('  {}'.format(p))
         return 2
 
     old_maps, new_maps, records = scan_corpus(args.limit)
@@ -273,11 +273,9 @@ def main(argv=None):
           % st['tag_resolved_unchanged_rows'])
     print('    tag resolves to NO pre-H3948 sense id (unresolved class, '
           'claimed for neither bound): %d' % st['tag_unresolved_rows'])
-    print('    unresolved tag shapes: %s'
-          % ', '.join('%s×%d' % (s, c)
-                      for s, c in st['tag_unresolved_top_shapes']))
-    print('  most-affected key1 by row count: %s'
-          % ', '.join('%s×%d' % (k, c) for k, c in st['top_changed_key1_by_rows']))
+    print('    unresolved tag shapes: {}'.format(', '.join('%s×%d' % (s, c)
+                      for s, c in st['tag_unresolved_top_shapes'])))
+    print('  most-affected key1 by row count: {}'.format(', '.join('%s×%d' % (k, c) for k, c in st['top_changed_key1_by_rows'])))
     print('\nNo store row was written. Nothing was requeued or re-segmented.')
 
     if not args.no_report:
@@ -299,7 +297,7 @@ def main(argv=None):
         }
         with open(REPORT_PATH, 'w', encoding='utf-8') as fh:
             json.dump(payload, fh, ensure_ascii=False, indent=2, sort_keys=True)
-        print('report: %s' % os.path.abspath(REPORT_PATH))
+        print('report: {}'.format(os.path.abspath(REPORT_PATH)))
     return 0
 
 

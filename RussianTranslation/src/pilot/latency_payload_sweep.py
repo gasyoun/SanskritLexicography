@@ -120,7 +120,7 @@ def one_call(config_dir, claude, padding_bytes, *, route, window, account_label,
         'output_bytes': output_bytes,            # BYTE COUNT only -- never the output content
         'wall_s': round(time.monotonic() - t0, 2),
     }
-    tag = 'warmup' if warmup else 'seq=%s' % sample_index
+    tag = 'warmup' if warmup else 'seq={}'.format(sample_index)
     print('%s route=%s window=%s %s pad=%dB actual=%dB -> %d ms %s'
           % (ts, route, window, tag, padding_bytes, actual_bytes,
              latency_ms, cls), flush=True)

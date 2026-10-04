@@ -202,11 +202,11 @@ def inventory(config_dir):
 
 
 def print_inventory(rec):
-    caps = ', '.join('%s=%s' % (k, '-' if v is None else v)
+    caps = ', '.join('{}={}'.format(k, '-' if v is None else v)
                      for k, v in sorted(rec['capability_counts'].items()))
-    print('config dir        : %s%s' % (rec['config_dir'],
+    print('config dir        : {}{}'.format(rec['config_dir'],
                                         '' if rec['exists'] else '  (MISSING)'))
-    print('fingerprint       : %s' % rec['fingerprint'])
+    print('fingerprint       : {}'.format(rec['fingerprint']))
     print('profile CLAUDE.md : %d bytes' % rec['memory_bytes'])
     print('home  CLAUDE.md   : %d bytes  (%s)'
           % (rec['home_memory_bytes'], rec['home_memory_path']))
@@ -227,7 +227,7 @@ def _refuse_if_inside_repo(dest):
         if os.path.exists(os.path.join(probe, '.git')):
             raise SystemExit(
                 'REFUSING to build a credential-bearing profile inside the git working '
-                'tree at %s -- choose a --dest outside every clone.' % probe)
+                'tree at {} -- choose a --dest outside every clone.'.format(probe))
         parent = os.path.dirname(probe)
         if parent == probe:
             return
@@ -237,7 +237,7 @@ def _refuse_if_inside_repo(dest):
 def build(src, dest, refresh_creds=False):
     """Create (or re-sync) a minimal profile that authenticates as `src` and injects nothing."""
     if not os.path.isdir(src):
-        raise SystemExit('source profile does not exist: %s' % src)
+        raise SystemExit('source profile does not exist: {}'.format(src))
     _refuse_if_inside_repo(dest)
     os.makedirs(dest, exist_ok=True)
 
@@ -271,8 +271,8 @@ def build(src, dest, refresh_creds=False):
     with open(os.path.join(dest, 'settings.json'), 'w', encoding='utf-8') as fh:
         json.dump({}, fh, indent=2)
 
-    print('built minimal profile: %s' % dest)
-    print('  cloned identity from: %s' % src)
+    print('built minimal profile: {}'.format(dest))
+    print('  cloned identity from: {}'.format(src))
     print('  .claude.json keys dropped: %s' % (', '.join(dropped) or 'none'))
     print('  credentials: %s' % ('copied' if copied_creds
                                  else ('already present (use --refresh-creds to re-sync)'
@@ -280,8 +280,8 @@ def build(src, dest, refresh_creds=False):
     print('  settings.json: {} (no hooks, no statusLine, no permissions)')
     print('  no CLAUDE.md, no skills/commands/agents/plugins/references/rules')
     print('')
-    print('  fingerprint (source) : %s' % config_dir_fingerprint(src))
-    print('  fingerprint (minimal): %s' % config_dir_fingerprint(dest))
+    print('  fingerprint (source) : {}'.format(config_dir_fingerprint(src)))
+    print('  fingerprint (minimal): {}'.format(config_dir_fingerprint(dest)))
     print('  NOTE: different fingerprints => execution_contract.ActiveCallClaim takes a')
     print('        DIFFERENT kernel lock for each. They bill the SAME account, so running')
     print('        both at once bypasses the one-active-call guard. Treat the minimal')
@@ -309,7 +309,7 @@ def main():
 
     if args.scan_cwd:
         hits = cwd_ancestry_scan(args.scan_cwd)
-        print('ancestor scan from: %s' % os.path.abspath(args.scan_cwd))
+        print('ancestor scan from: {}'.format(os.path.abspath(args.scan_cwd)))
         if not hits:
             print('  (clean -- no ancestor memory files)')
         for hit in hits:
@@ -330,7 +330,7 @@ def main():
             print(json.dumps(recs, ensure_ascii=False, indent=2))
         else:
             for label, rec in zip(('PAID PROFILE', 'MINIMAL PROFILE'), recs):
-                print('== %s ==' % label)
+                print('== {} =='.format(label))
                 print_inventory(rec)
                 print('')
     return 0

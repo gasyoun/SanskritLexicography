@@ -75,10 +75,10 @@ USAGE = {'input_tokens': 4000, 'output_tokens': 1200,
 
 def check(label, condition, detail=''):
     if condition:
-        print('  ok   %s' % label)
+        print('  ok   {}'.format(label))
     else:
-        FAILURES.append('%s %s' % (label, detail))
-        print('  FAIL %s %s' % (label, detail))
+        FAILURES.append('{} {}'.format(label, detail))
+        print('  FAIL {} {}'.format(label, detail))
 
 
 def requests_for(count, model=abr.MODEL):
@@ -129,7 +129,7 @@ class FakeProvider:
 def run_one(tmp, requests, entries, max_calls=None, status='ended', run_id='r1'):
     provider = FakeProvider(entries=entries, status=status)
     ledger = CallReservationLedger(
-        os.path.join(tmp, '%s.ledger.json' % run_id), run_id,
+        os.path.join(tmp, '{}.ledger.json'.format(run_id)), run_id,
         max_calls=len(requests) if max_calls is None else max_calls)
     provider.ledger = ledger
     call = abr.AnthropicBatchesCall(ledger, provider.triple())
@@ -181,7 +181,7 @@ def test_reserve_before_submit(tmp):
     call, ledger, provider = run_one(tmp, requests, [], run_id='reserve')
     call.submit(requests, os.path.join(tmp, 'reserve.receipt.json'))
     check('B-03 all 4 reservations spent before submit', provider.spent_at_submit == 4,
-          'spent_at_submit=%r' % provider.spent_at_submit)
+          'spent_at_submit={!r}'.format(provider.spent_at_submit))
     check('B-03 provider called exactly once', provider.submits == 1)
 
     tight, _, tight_provider = run_one(tmp, requests, [], max_calls=2, run_id='tight')
@@ -206,7 +206,7 @@ def test_pricing(tmp):
          'cache_read_tokens': 0}, API_BATCH, SONNET_STANDARD_PER_MTOK_USD)
     check('B-05 envelope cost uses the batch schedule',
           abs(telemetry['observed_cost_usd'] - expected) < 1e-9,
-          '%r vs %r' % (telemetry['observed_cost_usd'], expected))
+          '{!r} vs {!r}'.format(telemetry['observed_cost_usd'], expected))
     check('B-05 absent usage is unevaluable, not zero',
           abr.normalize_usage({'input_tokens': 1}) is None)
 
@@ -232,7 +232,7 @@ def test_success_and_failures(tmp):
     good = envelopes[0]
     check('B-08 route recorded as batches', good['route'] == ANTHROPIC_BATCHES_ROUTE)
     check('B-08 success passes every gate', candidate_pass(good),
-          '%r %r' % (good['failure_class'], good['audit_reasons']))
+          '{!r} {!r}'.format(good['failure_class'], good['audit_reasons']))
     check('B-08 envelope is synthetic/non-promotable',
           good['provenance_class'] == 'synthetic_control' and good['promotable'] is False)
     check('B-06 rate_limit classified', envelopes[1]['failure_class'] == 'rate_limit',
@@ -252,7 +252,7 @@ def test_success_and_failures(tmp):
     check('B-08 re-retrieve reuses the sealed envelopes',
           [e['envelope_sha256'] for e in again] == [e['envelope_sha256'] for e in envelopes])
     check('B-08 sealed envelope verifies from disk',
-          verify_envelope(read_json(os.path.join(out, '%s.envelope.json' % ids[0]),
+          verify_envelope(read_json(os.path.join(out, '{}.envelope.json'.format(ids[0])),
                                     'envelope'))['envelope_sha256'] == good['envelope_sha256'])
 
 
@@ -299,7 +299,7 @@ def main():
     if FAILURES:
         print('\nFAIL: %d assertion(s)' % len(FAILURES))
         for row in FAILURES:
-            print('  - %s' % row)
+            print('  - {}'.format(row))
         return 1
     print('\nPASS anthropic_batches_route_selftest')
     return 0

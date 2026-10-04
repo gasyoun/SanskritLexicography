@@ -118,7 +118,7 @@ def make_figure(stats, out_svg):
     ax.set_ylim(0, 1.05)
     ax.tick_params(labelsize=9)
     for xi, m in zip(x, means):
-        ax.text(xi, m + 0.03, '%.3f' % m, ha='center', fontsize=9)
+        ax.text(xi, m + 0.03, '{:.3f}'.format(m), ha='center', fontsize=9)
     fig.tight_layout()
     os.makedirs(os.path.dirname(out_svg), exist_ok=True)
     fig.savefig(out_svg, format='svg', dpi=150)
@@ -137,14 +137,14 @@ def main():
         elif a == '--out-svg':
             out_svg = args[i + 1]; i += 2
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
 
     mw_path = os.path.join(d, 'mw.renou.jsonl')
     pwg_path = os.path.join(d, 'pwg.renou.jsonl')
     ap_path = os.path.join(d, 'ap.renou.jsonl')
     for p in (mw_path, pwg_path, ap_path):
         if not os.path.exists(p):
-            raise SystemExit('missing input: %s' % p)
+            raise SystemExit('missing input: {}'.format(p))
 
     mw, n_mw = load_ls_profiles(mw_path)
     pwg, n_pwg = load_ls_profiles(pwg_path)
@@ -187,11 +187,10 @@ def main():
             s['jaccard_mean'], s['jaccard_lo'], s['jaccard_hi'],
             s['containment_mean'], s['containment_lo'], s['containment_hi']))
 
-    print('\ncontainment gap (MW-PWG minus MW-AP) = %.4f, one-sided permutation p = %.4f'
-          % (gap, p_perm))
+    print('\ncontainment gap (MW-PWG minus MW-AP) = {:.4f}, one-sided permutation p = {:.4f}'.format(gap, p_perm))
 
     make_figure(stats, out_svg)
-    print('\n-> %s' % out_svg)
+    print('\n-> {}'.format(out_svg))
 
     result = {
         'n_mw_lines': n_mw, 'n_pwg_lines': n_pwg, 'n_ap_lines': n_ap,
@@ -202,7 +201,7 @@ def main():
     out_json = os.path.join(HERE, 'renou_h5_lineage_result.json')
     with open(out_json, 'w', encoding='utf-8') as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
-    print('-> %s' % out_json)
+    print('-> {}'.format(out_json))
 
 
 if __name__ == '__main__':
