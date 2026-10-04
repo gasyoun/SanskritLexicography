@@ -20,8 +20,8 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import cli, kernel, model, promotion, providers  # noqa: E402
-from pwg_pipeline.evidence import read_sealed  # noqa: E402
+from pwg_pipeline import cli, kernel, model, promotion, providers
+from pwg_pipeline.evidence import read_sealed
 
 
 @pytest.fixture(autouse=True)

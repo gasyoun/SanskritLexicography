@@ -46,9 +46,9 @@ for _p in (HERE, SRC):
 
 # Import-only, for the ONE canonical regex. Nothing here calls a promote/supersede path --
 # this script never writes to the store (Uprava FINDINGS §9 overlay-wipe class).
-from promote_final_cards import TN_RE                       # noqa: E402  C-01 single source
-from canary_gate import LITERAL_MARKERS                     # noqa: E402  same marker list
-from h2251_tag_compare import ENVELOPE_RE, load_cards       # noqa: E402  one envelope reader
+from promote_final_cards import TN_RE
+from canary_gate import LITERAL_MARKERS
+from h2251_tag_compare import ENVELOPE_RE, load_cards
 
 FIELD = 'russian'
 

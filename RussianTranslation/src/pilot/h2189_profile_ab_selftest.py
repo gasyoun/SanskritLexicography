@@ -23,9 +23,9 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-import h2189_min_profile as mp                                       # noqa: E402
-import h2189_profile_ab as ab                                        # noqa: E402
-from headless_worker import build_prompt                             # noqa: E402
+import h2189_min_profile as mp
+import h2189_profile_ab as ab
+from headless_worker import build_prompt
 
 MANIFEST = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                         'h1209_slice3.manifest.json')

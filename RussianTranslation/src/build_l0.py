@@ -46,7 +46,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 # same corpus source build_corpus_lexicon.py reads (verse-aligned Sa<->Ru).

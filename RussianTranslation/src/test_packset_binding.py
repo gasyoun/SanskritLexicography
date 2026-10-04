@@ -28,9 +28,9 @@ import tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.stdout.reconfigure(encoding="utf-8")
 
-import review_binding as rb  # noqa: E402
+import review_binding as rb
 
-from csl_pyutil import render_review_sheet_packset  # noqa: E402
+from csl_pyutil import render_review_sheet_packset
 
 FAILS = []
 

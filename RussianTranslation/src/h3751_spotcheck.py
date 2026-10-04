@@ -22,12 +22,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import corpus_gate as cg                                              # noqa: E402
-from pwg_homonym import index_by_form_key, split_subcard              # noqa: E402
-from pwg_page_index import (                                          # noqa: E402
+import corpus_gate as cg
+from pwg_homonym import index_by_form_key, split_subcard
+from pwg_page_index import (
     DEFAULT_SRC, compute_annotations, page_of, parse_source, pc_str,
 )
-from store_path import canonical_store                                # noqa: E402
+from store_path import canonical_store
 
 DEFAULT_STORE = canonical_store(os.path.join(HERE, 'pwg_ru_translated.jsonl'))
 

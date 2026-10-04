@@ -8,7 +8,7 @@ ROOT = os.path.normpath(os.path.join(
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import corpus_gate as cg  # noqa: E402
+import corpus_gate as cg
 
 
 def _seed_sources(td):

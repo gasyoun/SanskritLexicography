@@ -39,7 +39,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from rt_io import read_jsonl  # noqa: E402
+from rt_io import read_jsonl
 
 RT_ROOT = os.path.normpath(os.path.join(HERE, '..'))
 PWG_RU_DIR = os.path.join(RT_ROOT, 'pwg_ru')

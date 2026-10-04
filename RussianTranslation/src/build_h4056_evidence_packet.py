@@ -49,19 +49,19 @@ RT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(HERE, "pilot"))
 
-import build_g5_review_sheet as g5              # noqa: E402 (pick, card_digest, render pieces)
-import pwg_four_tier_store_impact as imp        # noqa: E402 (H3948 read-only recomputation)
-from review_residue_gate import visible_german, machine_flags  # noqa: E402
-from review_binding import stamp, write_lock, read_lock        # noqa: E402
-from review_sheet_standard import pwg_entry_href, slp1_iast    # noqa: E402
-from sheet_screening import screening_block                    # noqa: E402
-from etym.card_advisory import load_crosswalk, advisory_html   # noqa: E402
-from csl_pyutil import render_review_sheet                     # noqa: E402
-import store_path                              # noqa: E402 (canonical store resolver)
-import translation_memory as tm                # noqa: E402 (scratch TM build + lookup)
-import validate_decisions                      # noqa: E402
-import apply_decisions                         # noqa: E402
-import run_batch                               # noqa: E402 (review-id minting, G5 columns)
+import build_g5_review_sheet as g5
+import pwg_four_tier_store_impact as imp
+from review_residue_gate import visible_german, machine_flags
+from review_binding import stamp, write_lock, read_lock
+from review_sheet_standard import pwg_entry_href, slp1_iast
+from sheet_screening import screening_block
+from etym.card_advisory import load_crosswalk, advisory_html
+from csl_pyutil import render_review_sheet
+import store_path
+import translation_memory as tm
+import validate_decisions
+import apply_decisions
+import run_batch
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")

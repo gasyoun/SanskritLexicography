@@ -30,8 +30,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-import pwg_mask                                   # noqa: E402
-from microstructure import protected              # noqa: E402
+import pwg_mask
+from microstructure import protected
 
 LOOKBEHIND = re.compile(r'(?<![^\s—])')
 

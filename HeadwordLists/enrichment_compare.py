@@ -267,7 +267,7 @@ def main(argv=None):
                 _, got = load_source(orig, spec)
                 err = None
                 break
-            except Exception as ex:  # noqa: BLE001 — flagged, never fatal
+            except Exception as ex:
                 err = "%s (try %d)" % (ex, attempt + 1)
         sources.append((label, got, err))
     for spec in args.source_file:
@@ -279,7 +279,7 @@ def main(argv=None):
                 got = load_source_file(path)
                 err = None
                 break
-            except Exception as ex:  # noqa: BLE001
+            except Exception as ex:
                 err = "%s (try %d)" % (ex, attempt + 1)
         sources.append((label, got, err))
 
@@ -295,7 +295,7 @@ def main(argv=None):
     for c in matrix_dicts:
         try:
             d_k1[c] = {k1 for k1, _k2, _b in iter_entries(dict_path(orig, c)) if k1}
-        except Exception as ex:  # noqa: BLE001 — flagged, never fatal
+        except Exception as ex:
             print("WARN matrix dict %s failed: %s" % (c, ex), file=sys.stderr)
 
     # ---- enrichment table ------------------------------------------------

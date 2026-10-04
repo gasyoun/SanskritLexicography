@@ -19,7 +19,7 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 sys.path.insert(0, SRC)
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GH = sibling_root(SRC)
 
 ART = os.path.join(SRC, 'data', 'dhatup_palsule.json')

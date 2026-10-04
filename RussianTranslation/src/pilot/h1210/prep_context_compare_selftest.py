@@ -33,10 +33,10 @@ for _path in (HERE, PILOT, SRC):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-import prep_context_compare as pcc                          # noqa: E402
-import prep_pack                                            # noqa: E402
-from call_reservation import CallReservationLedger          # noqa: E402
-from headless_worker import build_fragment_prompt, build_prompt  # noqa: E402
+import prep_context_compare as pcc
+import prep_pack
+from call_reservation import CallReservationLedger
+from headless_worker import build_fragment_prompt, build_prompt
 
 KEYS = ['aKey%d' % i for i in range(1, pcc.PAIR_COUNT + 1)]
 
@@ -153,7 +153,7 @@ def _caller_factory(*, model='claude-opus-5', usage=True, drop_token_for=(),
                     wall_ms=1000, prep_wall_ms=None, log=None):
     """An injected caller: deterministic, offline, and arm-aware via the prompt bytes."""
 
-    def caller(argv, prompt, timeout):                       # noqa: ANN001
+    def caller(argv, prompt, timeout):
         is_prep = pcc.PREP_OPEN in prompt
         key = next(k for k in KEYS if ('=== CARD %s ===' % k) in prompt)
         token = '{T%d}' % (KEYS.index(key) + 1)
@@ -964,7 +964,7 @@ def selftest() -> int:
         for case in CASES:
             try:
                 case()
-            except BaseException as exc:                      # noqa: BLE001
+            except BaseException as exc:
                 failed.append(case.__name__)
                 print('  FAIL %s -- %s: %s'
                       % (case.__name__, exc.__class__.__name__, exc))

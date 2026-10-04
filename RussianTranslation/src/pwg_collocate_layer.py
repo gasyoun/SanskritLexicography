@@ -35,7 +35,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from _sanskrit_util_vendored import to_slp1  # noqa: E402
+from _sanskrit_util_vendored import to_slp1
 
 DEFAULT_CSV = os.path.join(
     HERE, '..', '..', '..', 'VisualDCS', 'derived-data', 'Lexical-Cores',

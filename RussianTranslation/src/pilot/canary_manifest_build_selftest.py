@@ -39,8 +39,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import canary_manifest_build as cmb                                      # noqa: E402
-from execution_contract import (SCHEMA_V2, config_dir_fingerprint,       # noqa: E402
+import canary_manifest_build as cmb
+from execution_contract import (SCHEMA_V2, config_dir_fingerprint,
                                 validate_manifest, validate_profile)
 
 GOLDEN = os.path.join(cmb.REPO, 'pwg_ru', 'h994', 'canary',

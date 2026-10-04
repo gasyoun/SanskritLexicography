@@ -57,11 +57,11 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 sys.path.insert(0, HERE)
-import build_p2_sheet as sheet  # noqa: E402  (shared renderer)
+import build_p2_sheet as sheet
 
 # H1404 binding (stamp/write_lock) lives under RussianTranslation; import path.
 sys.path.insert(0, os.path.join(REPO_ROOT, 'RussianTranslation', 'src'))
-from review_binding import write_lock  # noqa: E402
+from review_binding import write_lock
 
 VERDICTS = os.path.join(HERE, "p2_agent_verdicts.jsonl.gz")
 CANDIDATES = os.path.join(HERE, "crosswalk_candidates.jsonl.gz")

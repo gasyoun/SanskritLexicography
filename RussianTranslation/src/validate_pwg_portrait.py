@@ -25,10 +25,10 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import pwg_mask         # noqa: E402 -- reused record splitter
-import microstructure as ms  # noqa: E402 -- reused portrait parser (unmodified)
+import pwg_mask
+import microstructure as ms
 
-import jsonschema  # noqa: E402
+import jsonschema
 
 REPORTS_DIR = os.path.join(HERE, '..', 'reports')
 SCHEMA_PATH = os.path.join(HERE, '..', 'schemas', 'pwg_portrait_structural.schema.json')
@@ -74,7 +74,7 @@ def run(validator, limit=None):
         record_id = m.group(1) if m else '?'
         try:
             portrait = structural_portrait(buf)
-        except Exception as exc:  # noqa: BLE001 -- must classify, never crash the run
+        except Exception as exc:
             totals['fail'] += 1
             buckets['parse-error'] += 1
             failures.append({'record_id': record_id, 'failure_type': 'parse-error', 'detail': str(exc)[:200]})

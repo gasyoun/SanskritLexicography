@@ -16,9 +16,9 @@ import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
-import g5_card_render as g5cr  # noqa: E402
-import nws_ls_markup as nlm  # noqa: E402
-import pwg_sources  # noqa: E402
+import g5_card_render as g5cr
+import nws_ls_markup as nlm
+import pwg_sources
 
 # H2254 (07-08-2026): every resolution test below needs PWG's own Verzeichniss der
 # Abkürzungen, which lives in the SIBLING repo csl-pywork

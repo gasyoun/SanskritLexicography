@@ -48,7 +48,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import annotate_evidence as ae                                    # noqa: E402
+import annotate_evidence as ae
 
 LEXICON = os.path.join(HERE, 'corpus_lexicon.jsonl')
 FIXTURE = os.path.join(HERE, 'fixtures', 'corpus_lexicon.fixture.jsonl')

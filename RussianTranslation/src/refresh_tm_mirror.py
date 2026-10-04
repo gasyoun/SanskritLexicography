@@ -56,8 +56,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from store_path import canonical_data_repo, canonical_store  # noqa: E402
-from store_write import locked_store_rewrite  # noqa: E402  (H4055: the ONE sanctioned rewrite path)
+from store_path import canonical_data_repo, canonical_store
+from store_write import locked_store_rewrite
 # H3658: mirror + ledger resolve off the MAIN checkout, never the executing worktree.
 DATA = canonical_data_repo(HERE)
 # H3658: the ONE canonical store (H255 loss mode) - not this checkout's possibly-stale copy.

@@ -40,7 +40,7 @@ import os
 import sys
 
 from csl_pyutil import RU_UI_STRINGS, esc, mark_cyrillic, render_review_sheet
-from sheet_screening import screening_block  # noqa: E402
+from sheet_screening import screening_block
 
 from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config

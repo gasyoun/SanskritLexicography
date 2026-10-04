@@ -43,8 +43,8 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from store_path import canonical_store  # noqa: E402
-from store_write import locked_store_rewrite  # noqa: E402
+from store_path import canonical_store
+from store_write import locked_store_rewrite
 
 DEFAULT_STORE = canonical_store(os.path.join(HERE, "pwg_ru_translated.jsonl"))
 DEFAULT_LEDGER = os.path.join(HERE, "h3685_genitive_fix_ledger.jsonl")

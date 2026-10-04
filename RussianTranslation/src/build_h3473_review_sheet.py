@@ -20,8 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from csl_pyutil import render_review_sheet  # noqa: E402
-from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config  # noqa: E402
+from csl_pyutil import render_review_sheet
+from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config
 
 REVIEW = os.path.normpath(os.path.join(HERE, "..", "review"))
 

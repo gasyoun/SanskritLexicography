@@ -67,7 +67,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 
 CS_DIR = os.environ.get('MBH_EDITION_COMPARISON_DIR', os.path.join(
@@ -409,7 +409,7 @@ def cmd_selftest(_args):
           'Udyogaparvan total %d is below the PWG citation reaching 7656' % totals[5])
 
     sys.path.insert(0, HERE)
-    import citation_tm                                            # noqa: E402
+    import citation_tm
     rec = citation_tm.lookup('MBH.', '5,7331')
     check(rec['status'] == 'unmapped_locus_scheme',
           'MBH. 5,7331 still unmapped_locus_scheme (validation REJECTED the map)')

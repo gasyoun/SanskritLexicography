@@ -15,7 +15,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-import cohort_live_admission as cla  # noqa: E402
+import cohort_live_admission as cla
 
 VALID = {
     'schema': cla.SCHEMA,

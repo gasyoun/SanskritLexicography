@@ -23,8 +23,8 @@ for _path in (HERE, os.path.join(REPO, 'src')):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-import gateway_external as ext  # noqa: E402
-from call_reservation import CallReservationLedger  # noqa: E402
+import gateway_external as ext
+from call_reservation import CallReservationLedger
 
 
 MODEL = 'claude-opus-5'
@@ -509,7 +509,7 @@ def selftest():
         try:
             test()
             print('  PASS: ' + test.__name__)
-        except BaseException as exc:  # noqa: BLE001 - aggregate the entire matrix
+        except BaseException as exc:
             failed.append(test.__name__)
             print('  FAIL: %s -- %s: %s' % (
                 test.__name__, exc.__class__.__name__, exc))

@@ -30,7 +30,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, '..', 'src')
 sys.path.insert(0, SRC)
-import renou  # noqa: E402
+import renou
 
 SMAP = renou.load_map('pwg')
 

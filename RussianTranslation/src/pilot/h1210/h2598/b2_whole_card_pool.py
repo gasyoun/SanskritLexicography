@@ -31,8 +31,8 @@ PILOT = os.path.normpath(os.path.join(HERE, '..', '..'))
 sys.path.insert(0, PILOT)
 sys.path.insert(0, os.path.dirname(HERE))
 
-import gen_opt_harness2                                    # noqa: E402
-import prep_context_compare as pcc                         # noqa: E402
+import gen_opt_harness2
+import prep_context_compare as pcc
 
 H2591_KEYS = ('SvAsa', 'spfS', 'Srama', 'samIpa', 'vyavasTA', 'SudDi', 'rAtra', 'zoqaSan')
 

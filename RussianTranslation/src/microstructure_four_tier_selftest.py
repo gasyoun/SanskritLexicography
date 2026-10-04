@@ -37,8 +37,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-import microstructure as ms                      # noqa: E402
-import pwg_mask                                  # noqa: E402
+import microstructure as ms
+import pwg_mask
 
 # The exact §447 two-tier regexes, kept here so --prove-revert can put the
 # pre-H3948 parser back in process without editing microstructure.py.

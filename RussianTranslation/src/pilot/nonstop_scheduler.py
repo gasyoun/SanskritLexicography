@@ -46,10 +46,10 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-import data_root as dr                     # noqa: E402
-import lane_guard                          # noqa: E402
-import lane_spotcheck_tick                 # noqa: E402
-import profile_lane                        # noqa: E402
+import data_root as dr
+import lane_guard
+import lane_spotcheck_tick
+import profile_lane
 
 SCHEMA = 'pwg.scheduler_tick.v1'
 
@@ -377,7 +377,7 @@ def tick(cfg, runners):
         # A timed-out probe/canary/window is a RECORDED failure, never a silent gap.
         return done('window_failed', 'runner_timeout',
                     failed_step=_step_of(exc), timeout_s=getattr(exc, 'timeout', None))
-    except Exception as exc:                      # noqa: BLE001 — record, never vanish
+    except Exception as exc:
         return done('window_failed', 'runner_exception',
                     exception='%s: %s' % (type(exc).__name__, str(exc)[:300]))
 

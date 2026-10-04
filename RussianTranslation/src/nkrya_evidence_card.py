@@ -28,7 +28,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import nkrya_client as nk  # noqa: E402
+import nkrya_client as nk
 
 PAIR_DIST = (-3, 3)
 CATEGORY = {1: "очень редкое", 2: "редкое", 3: "скорее низкая", 4: "скорее высокая",

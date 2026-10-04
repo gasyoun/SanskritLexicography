@@ -14,7 +14,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root, require_sibling  # noqa: E402
+from sibling_root import sibling_root, require_sibling
 GH = sibling_root(HERE)
 AB = os.path.join(GH, 'csl-pywork', 'v02', 'distinctfiles', 'pwg', 'pywork', 'pwgab', 'pwgab_input.txt')
 PWG = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')

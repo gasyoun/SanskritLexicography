@@ -27,8 +27,8 @@ SRC = os.path.dirname(HERE)
 for p in (SRC, HERE):
     if p not in sys.path:
         sys.path.insert(0, p)
-from store_path import canonical_store            # noqa: E402
-import german_residue_scan as grs                  # noqa: E402
+from store_path import canonical_store
+import german_residue_scan as grs
 
 DATE = '2026-07-19'
 PWG_RU = os.path.join(os.path.dirname(SRC), 'pwg_ru')

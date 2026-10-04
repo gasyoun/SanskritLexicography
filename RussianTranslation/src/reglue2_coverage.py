@@ -49,10 +49,10 @@ os.environ.setdefault("LS_RESOLVER_QUIET", "1")
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from ls_links import LsLinks, HIT, LS_RE                       # noqa: E402
-from ls_split import split_ls_loci, resolve_loci               # noqa: E402
-from nws_citation_wrap import find_bare_citations, wrap_bare_citations  # noqa: E402
-from store_path import canonical_store                         # noqa: E402
+from ls_links import LsLinks, HIT, LS_RE
+from ls_split import split_ls_loci, resolve_loci
+from nws_citation_wrap import find_bare_citations, wrap_bare_citations
+from store_path import canonical_store
 
 #: Which cited work an ``<ls>`` belongs to, for the per-work breakdown. Order
 #: matters: ``AV(P)``/``AVP`` must be tried before a bare ``AV``.

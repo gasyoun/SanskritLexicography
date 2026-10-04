@@ -27,12 +27,12 @@ H1209 = os.path.join(HERE, 'h1209')
 if H1209 not in sys.path:
     sys.path.insert(0, H1209)
 
-import cache_identity as ident  # noqa: E402
-import gate_evidence as ge  # noqa: E402
-import deepseek_arm as ds_arm  # noqa: E402
-import headless_worker as hw  # noqa: E402
-import prep_pack  # noqa: E402
-import prep_slice  # noqa: E402
+import cache_identity as ident
+import gate_evidence as ge
+import deepseek_arm as ds_arm
+import headless_worker as hw
+import prep_pack
+import prep_slice
 
 FIXTURE_DIR = os.path.join(HERE, 'fixtures', 'pwg_cache_economy')
 

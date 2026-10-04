@@ -28,9 +28,9 @@ _SRC = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src')
 sys.path.insert(0, _SRC)
 sys.path.insert(0, os.path.join(_SRC, 'pilot'))
 
-import execution_contract  # noqa: E402
-import promote_final_cards as pfc  # noqa: E402
-import workflow_payload as wp  # noqa: E402
+import execution_contract
+import promote_final_cards as pfc
+import workflow_payload as wp
 
 
 # --- G5: an unaccountable row is a located failure ---------------------------

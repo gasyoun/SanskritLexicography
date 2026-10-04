@@ -17,9 +17,9 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import (apply as apply_module, audit, faults,  # noqa: E402
+from pwg_pipeline import (apply as apply_module, audit, faults,
                           kernel, model, promotion, providers, repository)
-from pwg_pipeline.evidence import sha256_file, tree_digest  # noqa: E402
+from pwg_pipeline.evidence import sha256_file, tree_digest
 
 CAMPAIGN = 'fault-campaign'
 PAYLOAD = [{'fragment_id': 'f1', 'fragment_class': 'definition_gloss',

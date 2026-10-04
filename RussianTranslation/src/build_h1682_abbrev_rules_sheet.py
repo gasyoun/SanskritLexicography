@@ -28,14 +28,14 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
-import h1682_abbrev_collapse as coll                              # noqa: E402
-import review_binding                                             # noqa: E402
-import store_path                                                 # noqa: E402
-from review_sheet_standard import (                               # noqa: E402
+import h1682_abbrev_collapse as coll
+import review_binding
+import store_path
+from review_sheet_standard import (
     NOTE_MIN_HEIGHT_PX, pwg_entry_href, slp1_iast, standard_config,
 )
-from csl_pyutil.review_sheet import render_review_sheet, esc, mark_cyrillic, RU_UI_STRINGS  # noqa: E402
-from sheet_screening import screening_block  # noqa: E402
+from csl_pyutil.review_sheet import render_review_sheet, esc, mark_cyrillic, RU_UI_STRINGS
+from sheet_screening import screening_block
 
 GENERATED = '2026-07-31'
 SHEET_ID = 'h1682_abbrev_rules'

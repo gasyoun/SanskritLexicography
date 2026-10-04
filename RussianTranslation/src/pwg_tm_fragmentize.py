@@ -25,8 +25,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_tm_canonical as C  # noqa: E402
-from markup_fidelity_gates import GLOSS_RE, SAN_RE  # noqa: E402
+import pwg_tm_canonical as C
+from markup_fidelity_gates import GLOSS_RE, SAN_RE
 
 LS_FULL = re.compile(r'<ls\b[^>]*>.*?</ls>', re.S)
 LEX_FULL = re.compile(r'<lex\b[^>]*>.*?</lex>', re.S)
@@ -66,7 +66,7 @@ def _rejoin_is_interrupted_glosses(text):
 # unknown <ab> already fell through to 'recurring_formula'; the extra PHRASES
 # (an der Spitze eines Comp., mit Ergänzung von, im Comp. vorangehend) add
 # recurring_formula fragment rows for formulae H2787 measured as real apparatus.
-from sanskrit_util import (  # noqa: E402
+from sanskrit_util import (
     GERMAN_GRAMMAR_AB as GRAMMAR_AB,
     GERMAN_FORMULA_AB as FORMULA_AB,
     GERMAN_FORMULA_PHRASES as _FORMULA_PHRASE_PATTERNS,

@@ -26,10 +26,10 @@ H1210 = os.path.join(RT, 'src', 'pilot', 'h1210')
 if H1210 not in sys.path:
     sys.path.insert(0, H1210)
 
-import deepseek_arm as ds  # noqa: E402
-import prep_pack  # noqa: E402
+import deepseek_arm as ds
+import prep_pack
 
-from build_drain_head import (  # noqa: E402
+from build_drain_head import (
     MAIN_ASSEMBLED,
     load_assembled_de,
     manifest_input,
@@ -69,7 +69,7 @@ def score_sidecars(out_dir: str, keys: list[str]) -> dict:
         try:
             from safe_filename import safe_name
             stem = safe_name(key1)
-        except Exception:  # noqa: BLE001
+        except Exception:
             stem = key1
         path = os.path.join(out_dir, '%s.json' % stem)
         if not os.path.exists(path):
@@ -255,7 +255,7 @@ def main(argv=None) -> int:
         try:
             from safe_filename import safe_name
             stem = safe_name(key1)
-        except Exception:  # noqa: BLE001
+        except Exception:
             stem = key1
         if not os.path.exists(os.path.join(out_dir, '%s.json' % stem)):
             still.append(key1)
@@ -272,7 +272,7 @@ def main(argv=None) -> int:
             try:
                 from safe_filename import safe_name
                 stem = safe_name(key1)
-            except Exception:  # noqa: BLE001
+            except Exception:
                 stem = key1
             if not os.path.exists(os.path.join(out_dir, '%s.json' % stem)):
                 todo.append(key1)

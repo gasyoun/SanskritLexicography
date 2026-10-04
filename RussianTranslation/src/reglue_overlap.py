@@ -51,7 +51,7 @@ DATA = os.environ.get("PWG_RU_DATA_ROOT", os.path.dirname(HERE))
 # linked worktree (FileNotFoundError) — i.e. the published sheet's "re-run to
 # reproduce" promise could never even be exercised in the sanctioned workflow.
 # Same resolution `build_reglue.py` already uses via store_path.py.
-from store_path import canonical_store, main_worktree_root          # noqa: E402
+from store_path import canonical_store, main_worktree_root
 
 STORE = canonical_store(os.path.join(DATA, "src", "pwg_ru_translated.jsonl"))
 _MAIN = main_worktree_root(HERE)

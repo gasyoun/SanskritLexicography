@@ -32,9 +32,9 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import release_readiness  # noqa: E402  (existing reader: review/gold counters)
-import store_flags        # noqa: E402  (existing reader: the G5 print-ready predicate)
-import store_path         # noqa: E402  (existing reader: canonical store resolution)
+import release_readiness
+import store_flags
+import store_path
 
 SEVEN_KEYS = (
     # safe name, SLP1 key1, class, reason code (evidence: FINDINGS §614 / H3663 §4)

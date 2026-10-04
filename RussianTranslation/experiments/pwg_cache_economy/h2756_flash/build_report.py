@@ -13,7 +13,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PILOT = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'src', 'pilot'))
 sys.path.insert(0, PILOT)
 
-import cache_prep_h2756 as h2756  # noqa: E402
+import cache_prep_h2756 as h2756
 
 RUN = os.path.join(HERE, 'h2756', 'run')
 SUMMARY = os.path.join(RUN, 'summary.json')

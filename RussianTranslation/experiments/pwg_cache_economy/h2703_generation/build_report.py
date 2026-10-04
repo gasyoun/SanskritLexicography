@@ -15,7 +15,7 @@ PILOT = os.path.join(RT, 'src', 'pilot')
 if PILOT not in sys.path:
     sys.path.insert(0, PILOT)
 
-import cache_economy_report as report  # noqa: E402
+import cache_economy_report as report
 
 
 def pct(n, d):

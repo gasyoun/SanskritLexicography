@@ -33,7 +33,7 @@ N = 2
 # H818 defect). headless_worker.claude_argv_prefix already resolves it to
 # [node, <cli>.cjs] -- reuse it rather than re-deriving the resolution.
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from headless_worker import claude_argv_prefix  # noqa: E402
+from headless_worker import claude_argv_prefix
 
 ARGV = claude_argv_prefix('claude') + [
     '-p', PROMPT, '--model', 'claude-sonnet-5',

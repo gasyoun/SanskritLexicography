@@ -32,11 +32,11 @@ for _path in (SRC, os.path.join(SRC, 'pilot')):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-import call_reservation  # noqa: E402  (hardened reservation ledger, reused)
+import call_reservation
 
-from . import faults, model, providers  # noqa: E402
-from .evidence import seal  # noqa: E402
-from .repository import Repository, new_id  # noqa: E402
+from . import faults, model, providers
+from .evidence import seal
+from .repository import Repository, new_id
 
 SCHEMA = 'pwg.pipeline.kernel.v1'
 
@@ -105,7 +105,7 @@ def _run_with_timeout(function: Callable[[], Any], timeout_ms: int) -> Any:
     def target() -> None:
         try:
             box['value'] = function()
-        except BaseException as exc:  # noqa: BLE001 - re-raised on the caller
+        except BaseException as exc:
             box['error'] = exc
 
     worker = threading.Thread(target=target, daemon=True,
@@ -261,7 +261,7 @@ class PaidCallKernel:
             return self._finalize_failure(call, request, artifacts,
                                           FAILURE_TIMEOUT, str(exc),
                                           model.CALL_TIMED_OUT)
-        except BaseException as exc:  # noqa: BLE001 - always terminally accounted
+        except BaseException as exc:
             return self._finalize_failure(call, request, artifacts,
                                           FAILURE_EXCEPTION, repr(exc),
                                           model.CALL_ERRORED)

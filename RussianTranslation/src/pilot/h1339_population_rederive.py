@@ -52,11 +52,11 @@ if SRC not in sys.path:
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import corpus_gate as cg                                        # noqa: E402
-import dict_merge as dm                                         # noqa: E402
-from store_path import canonical_store, main_worktree_root      # noqa: E402
-from verb_worklist import verb_universe, store_roots, has_rootmap  # noqa: E402
-from nominals_worklist import read_wordlist                     # noqa: E402
+import corpus_gate as cg
+import dict_merge as dm
+from store_path import canonical_store, main_worktree_root
+from verb_worklist import verb_universe, store_roots, has_rootmap
+from nominals_worklist import read_wordlist
 
 PREVERB = os.path.normpath(os.path.join(RT, '..', '..', 'PWG', 'verbs01', 'pwg_preverb1.txt'))
 CORES = ['pril5', 'pril10', 'sbornoe']

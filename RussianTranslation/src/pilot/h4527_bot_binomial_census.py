@@ -31,8 +31,8 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import prompt_rule_audit as pra  # noqa: E402
-import pwg_mask as pm  # noqa: E402
+import prompt_rule_audit as pra
+import pwg_mask as pm
 
 NEVER = re.compile(r'(?!x)x')
 TAG_NAME = re.compile(r'<([A-Za-z]+)')

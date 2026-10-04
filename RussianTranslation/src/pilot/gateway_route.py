@@ -50,13 +50,13 @@ for _p in (HERE, os.path.join(REPO, 'src')):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-from call_reservation import (  # noqa: E402
+from call_reservation import (
     CallLimitReached,
     CallReservationLedger,
     normalize_telemetry,
     unevaluable_telemetry,
 )
-from execution_contract import (  # noqa: E402
+from execution_contract import (
     PRODUCTION_HARD_TIMEOUT_MS,
     assert_timeout_within_ceiling,
 )
@@ -396,7 +396,7 @@ class GatewayCall:
         except subprocess.TimeoutExpired as exc:
             transport_error = '%s: %s' % (exc.__class__.__name__, exc)
             transport_timed_out = True
-        except BaseException as exc:  # noqa: BLE001 -- reservation is irreversible
+        except BaseException as exc:
             transport_error = '%s: %s' % (exc.__class__.__name__, exc)
         wall_ms = int((time.monotonic() - started) * 1000)
 

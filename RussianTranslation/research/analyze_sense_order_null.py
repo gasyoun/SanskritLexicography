@@ -37,7 +37,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 # Reuse the EXACT parsing + dating of the published metric, so any observed
 # figure here reproduces analyze_sense_order.py rather than re-deriving it.
-from analyze_sense_order import (  # noqa: E402
+from analyze_sense_order import (
     DEFAULT_PWG, entries, split_senses, citation_dates, kendall_tau,
 )
 

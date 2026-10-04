@@ -74,8 +74,8 @@ PER_RULE_FLOOR = 3
 GENERATED = '29-07-2026'
 
 sys.path.insert(0, SRC)
-from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config  # noqa: E402
-from review_evidence_preflight import (EvidenceManifest, preflight,            # noqa: E402
+from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config
+from review_evidence_preflight import (EvidenceManifest, preflight,
                                        valid_sutras, sutra_href)
 
 KOSHA_WHEEL = 'https://gasyoun.github.io/SamasaChakram/'

@@ -56,7 +56,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_tm_generate as G  # noqa: E402
+import pwg_tm_generate as G
 
 HANDOFF = 'H3628'
 SPAN = re.compile(r'\{%.*?%\}', re.S)

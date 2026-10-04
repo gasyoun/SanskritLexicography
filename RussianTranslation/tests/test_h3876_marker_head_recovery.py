@@ -22,7 +22,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
-import build_rollup_glossaries as brg          # noqa: E402
+import build_rollup_glossaries as brg
 
 
 def _maps():
@@ -119,8 +119,8 @@ def test_return_arity_is_four_so_the_tier_reaches_the_source_column():
 def test_new_tier_is_registered_with_the_wave2_precision_machinery():
     """A tier absent from TIERS is invisible to the per-tier precision report, so the
     panel would never measure the weakest evidence in the layer."""
-    import saru_gloss_aggregate                # noqa: E402
-    import saru_gloss_sample                   # noqa: E402
+    import saru_gloss_aggregate
+    import saru_gloss_sample
 
     for mod in (saru_gloss_sample, saru_gloss_aggregate):
         assert 'marker-head' in mod.TIERS, mod.__name__

@@ -25,8 +25,8 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-import data_root as dr          # noqa: E402
-import parked_queue             # noqa: E402
+import data_root as dr
+import parked_queue
 
 
 def iso_week(ts):

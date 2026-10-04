@@ -18,11 +18,11 @@ REPO = os.path.dirname(os.path.dirname(HERE))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import anthropic_messages_route as amr  # noqa: E402
-import route_compare as rc  # noqa: E402
-from call_reservation import CallReservationLedger  # noqa: E402
-from gateway_route import validate_complete_schema  # noqa: E402
-from route_transport import (  # noqa: E402
+import anthropic_messages_route as amr
+import route_compare as rc
+from call_reservation import CallReservationLedger
+from gateway_route import validate_complete_schema
+from route_transport import (
     ANTHROPIC_ROUTE, GATEWAY_ROUTE, TransportRefusal, atomic_json,
     canonical_hash, candidate_pass, verify_envelope,
 )

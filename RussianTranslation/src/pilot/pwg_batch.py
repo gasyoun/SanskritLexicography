@@ -434,7 +434,7 @@ def live_check(plan_path, transport=None):
     transport = transport or AnthropicBatchTransport.from_environment()
     try:
         result = transport.check(plan['model'])
-    except Exception as exc:  # noqa: BLE001 - public typed summary only
+    except Exception as exc:
         raise BatchRefusal('live authentication/model check failed: %s' % type(exc).__name__) from exc
     if not isinstance(result, dict) or not result.get('authenticated') \
             or not result.get('model_available') \
@@ -524,7 +524,7 @@ def submit(plan_path, *, state_path=None, ledger_path=None, transport=None, ledg
         batch_id = _provider_id(response)
         if batch_id is None:
             raise ValueError('create response has no provider batch id')
-    except BaseException as exc:  # noqa: BLE001 - create may have succeeded remotely
+    except BaseException as exc:
         state['status'] = 'ambiguous_submit'
         state['ambiguous_submit_at'] = _now()
         state['error_class'] = type(exc).__name__
@@ -547,7 +547,7 @@ def status(plan_path, *, state_path=None, transport=None):
     transport = transport or AnthropicBatchTransport.from_environment()
     try:
         provider = transport.retrieve(state['provider_batch_id'])
-    except Exception as exc:  # noqa: BLE001
+    except Exception as exc:
         raise BatchRefusal('batch status failed: %s' % type(exc).__name__) from exc
     state['provider_status'] = provider
     state['status_checked_at'] = _now()
@@ -672,7 +672,7 @@ def fetch(plan_path, *, state_path=None, ledger_path=None, out_dir=None,
     transport = transport or AnthropicBatchTransport.from_environment()
     try:
         provider_rows = list(transport.results(state['provider_batch_id']))
-    except Exception as exc:  # noqa: BLE001
+    except Exception as exc:
         raise BatchRefusal('batch result fetch failed: %s' % type(exc).__name__) from exc
     by_id = {}
     for row in provider_rows:

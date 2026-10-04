@@ -21,7 +21,7 @@ WT = r"C:\Users\user\Documents\GitHub\SanskritLexicography-h963-c4-live\RussianT
 SHARED_INP = r"C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation\src\pilot\input"
 
 sys.path.insert(0, os.path.join(WT, "src"))
-from safe_filename import safe_name  # noqa: E402
+from safe_filename import safe_name
 
 worklist = json.load(open(os.path.join(WT, "src", "pilot", "output",
                                        "nominal_batch_worklist.json"), encoding="utf-8"))

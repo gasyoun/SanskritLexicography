@@ -213,7 +213,7 @@ def build_manifest(sheet_id, items, panels_by_id, gold_set_path):
     already ruled. Every field here is one the evidence panels actually rendered.
     """
     man = EvidenceManifest(sheet_id, [it["id"] for it in items])
-    rel = lambda p: os.path.relpath(p, RT).replace("\\", "/")  # noqa: E731
+    rel = lambda p: os.path.relpath(p, RT).replace("\\", "/")
 
     man.declare_joined(rel(gold_set_path), ["id", "slp1", "sa", "ru", "kind",
                                             "period", "work", "label"])

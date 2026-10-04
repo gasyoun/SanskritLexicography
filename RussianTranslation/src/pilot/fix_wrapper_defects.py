@@ -33,7 +33,7 @@ if HERE not in sys.path:
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from wrapper_defect_scan import (  # noqa: E402
+from wrapper_defect_scan import (
     SKT_SPAN, GLOSS_SPAN, GUILLEMET_SPAN, find_d1,
 )
 

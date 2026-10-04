@@ -62,7 +62,7 @@ def load_transcoder():
             if cand not in sys.path:
                 sys.path.insert(0, cand)
             try:
-                from sanskrit_util import from_slp1, to_slp1  # noqa: F401
+                from sanskrit_util import from_slp1, to_slp1
                 return to_slp1, from_slp1
             except Exception:
                 continue

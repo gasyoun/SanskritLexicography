@@ -78,14 +78,14 @@ for _path in (HERE, PILOT, SRC):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-import det_gate                                              # noqa: E402
-import prep_pack                                             # noqa: E402
-import pwg_mask                                              # noqa: E402
-from sense_count import count_source_senses                  # noqa: E402
-from call_reservation import (                               # noqa: E402
+import det_gate
+import prep_pack
+import pwg_mask
+from sense_count import count_source_senses
+from call_reservation import (
     CallLimitReached, CallReservationLedger, telemetry_from_cli_wrapper,
     unevaluable_telemetry)
-from headless_worker import (                                # noqa: E402
+from headless_worker import (
     bare_cli_cwd, build_fragment_prompt, build_prompt, card_by_key, card_token_multiset,
     claude_argv_prefix, parse_cli_wrapper, structured_from_wrapper, token_multiset)
 
@@ -535,7 +535,7 @@ def load_contexts(context_dir: str, keys: list[str]) -> dict[str, dict]:
         try:
             from safe_filename import safe_name           # noqa: WPS433
             stem = safe_name(key)
-        except Exception:                                  # noqa: BLE001
+        except Exception:
             stem = key
         path = os.path.join(context_dir, '%s.context.json' % stem)
         if not os.path.exists(path):
@@ -941,7 +941,7 @@ class _NetworkTrap:
         self._saved = socket.socket.connect
         trap = self
 
-        def refuse(self_socket, *args, **kwargs):           # noqa: ANN001
+        def refuse(self_socket, *args, **kwargs):
             trap.calls += 1
             raise FenceFailure('offline check attempted a network connection')
 
@@ -1387,7 +1387,7 @@ def _stem(key: str) -> str:
     try:
         from safe_filename import safe_name                 # noqa: WPS433
         return safe_name(key)
-    except Exception:                                       # noqa: BLE001
+    except Exception:
         return key
 
 

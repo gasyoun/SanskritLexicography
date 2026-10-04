@@ -31,7 +31,7 @@ ROOT = os.path.normpath(os.path.join(
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import h5069_source_support_audit as aud  # noqa: E402
+import h5069_source_support_audit as aud
 
 
 def _feat(**kw):

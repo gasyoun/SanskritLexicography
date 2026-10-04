@@ -27,7 +27,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'src'))
 
-import german_anchor  # noqa: E402
+import german_anchor
 
 DEFAULT_ROOT = r"D:\ClaudeTools\profiles\claude1\.pwg_ru_evidence\c1\h3659"
 KEY = 'hasita~~h0_zz_pw'

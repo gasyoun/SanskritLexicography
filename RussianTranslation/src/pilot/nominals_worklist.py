@@ -49,9 +49,9 @@ OUT = os.path.join(HERE, 'output', 'nominal_batch_worklist.json')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import corpus_gate as cg                                       # noqa: E402
-import dict_merge as dm                                        # noqa: E402
-from store_path import canonical_store                         # noqa: E402
+import corpus_gate as cg
+import dict_merge as dm
+from store_path import canonical_store
 
 # One logical store shared across worktrees: the runnable/promoted counts must be read from the
 # SAME store a worktree drain promotes into (H255 w06 loss / H805).

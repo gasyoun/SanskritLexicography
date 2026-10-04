@@ -314,7 +314,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 try:
-    from generated_artifact_paths import GENERATED_SINGLE_WRITER_PATHS  # noqa: E402
+    from generated_artifact_paths import GENERATED_SINGLE_WRITER_PATHS
 except ImportError:
     # H4348: this file is vendored (cologne_batch_deploy.py, prepush-guard row)
     # into 14 sibling repos that never carry tools/generated_artifact_paths.py --
@@ -332,7 +332,7 @@ except ImportError:
 # design: a missing/broken logger degrades to exactly the old behaviour.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 try:
-    from guard_firing_log import log_firing  # noqa: E402
+    from guard_firing_log import log_firing
 except Exception:  # noqa: SE3 -- telemetry is optional; the guard is not
     log_firing = None
 
@@ -355,7 +355,7 @@ for _gate_dir in (Path(__file__).resolve().parent,
     if _gate_file.exists():
         try:
             sys.path.insert(0, str(_gate_dir))
-            import guard_escape_gate  # noqa: E402
+            import guard_escape_gate
         except Exception:  # noqa: SE3 -- advisory layer, never fatal
             guard_escape_gate = None
         break

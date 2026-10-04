@@ -75,9 +75,9 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from headless_worker import (                                        # noqa: E402
+from headless_worker import (
     bare_cli_cwd, build_prompt, card_block, claude_argv_prefix, parse_cli_wrapper)
-from parse_workflow_cost import PRICE, cache_write_rate              # noqa: E402
+from parse_workflow_cost import PRICE, cache_write_rate
 
 # The profile-bound config dir the paid CLI lane runs under (cache_prefix_stability_probe
 # pins the same one). Without it the child inherits whatever profile the session has.
@@ -241,7 +241,7 @@ def verify_auth(client):
         return 'NO -- no client (see the auth line above)'
     try:
         page = client.models.list(limit=1)
-    except Exception as exc:                                    # noqa: BLE001
+    except Exception as exc:
         name = type(exc).__name__
         status = getattr(exc, 'status_code', None)
         if status == 401:

@@ -48,15 +48,15 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from store_path import canonical_store  # noqa: E402
-import gate_evidence as ge  # noqa: E402
+from store_path import canonical_store
+import gate_evidence as ge
 
 SCHEMA = 'pwg.spotcheck_daily.v1'
 
 # single-sourced content policies (promote_final_cards owns TN_RE; canary_gate owns
 # the SAN-LOSS literal class) — import, never restate (H2158 lesson).
-import promote_final_cards as pfc  # noqa: E402
-import markup_fidelity_gates  # noqa: E402 — real span-survival gate (H3593/FINDINGS §589)
+import promote_final_cards as pfc
+import markup_fidelity_gates
 
 SAN_LOSS_RE = re.compile(r'SAN-LOSS|UNMAPPED')
 CONTENT_FIELDS = pfc.CONTENT_MASS_FIELDS
@@ -231,7 +231,7 @@ def judge_card(judge_cmd, key, rows, workdir):
         assert 0 <= sev <= 3
         return {'key': key, 'severity': sev, 'notes': verdict.get('notes'),
                 'status': 'judged'}
-    except Exception as exc:  # noqa: BLE001 — any judge failure is inconclusive
+    except Exception as exc:
         return {'key': key, 'status': 'judge_error', 'detail': str(exc)[:500]}
 
 

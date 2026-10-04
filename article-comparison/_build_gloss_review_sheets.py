@@ -31,7 +31,7 @@ HERE = Path(__file__).resolve().parent
 OUT_DIR = HERE.parent / "review"
 
 sys.path.append(str(HERE.parent / "RussianTranslation" / "src"))
-from review_sheet_standard import standard_config  # noqa: E402
+from review_sheet_standard import standard_config
 
 # V4 — the published per-word article page (the exact file the accepted votes
 # edit; publicly linked from article-comparison/README.md).

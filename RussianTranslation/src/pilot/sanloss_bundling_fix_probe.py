@@ -76,8 +76,8 @@ if SRC not in sys.path:
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from store_path import canonical_store                     # noqa: E402
-from sense_count import count_source_senses, _is_open_prefix  # noqa: E402
+from store_path import canonical_store
+from sense_count import count_source_senses, _is_open_prefix
 
 # The H1150 8 -- verbatim from softguard_falseflag_rate.json#sanloss.examples[].key
 H1150_EIGHT = [

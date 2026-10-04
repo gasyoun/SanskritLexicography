@@ -69,8 +69,8 @@ for _p in (HERE, os.path.join(HERE, "pilot")):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-import pwg_sources                                    # noqa: E402  <ls> siglum -> full title
-from build_article_site import _render as site_render  # noqa: E402  the canonical renderer
+import pwg_sources
+from build_article_site import _render as site_render
 
 # --------------------------------------------------------------------- NWS bracket tags
 #: Slot 1 of an NWS `[X, Y]` tag — the diasystem (tradition the sense belongs to).

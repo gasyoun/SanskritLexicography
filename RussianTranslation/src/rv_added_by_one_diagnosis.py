@@ -59,7 +59,7 @@ PWG_RU_DIR = os.path.join(RT_ROOT, 'pwg_ru')
 # Reuse the typer's own vocabulary rather than restating it -- if TRANSLATORS or COARSE_MAP
 # move, this diagnosis moves with them instead of silently measuring a stale taxonomy.
 sys.path.insert(0, HERE)
-import rv_divergence_type as dt  # noqa: E402
+import rv_divergence_type as dt
 
 PILOT_PATH = dt.PILOT_OUT
 SPIKE_ARMS = [

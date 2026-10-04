@@ -45,10 +45,10 @@ for _p in (SRC, PILOT):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-import markup_fidelity_gates as mfg                                  # noqa: E402
-import promote_final_cards as pfc                                    # noqa: E402
-from store_path import canonical_data_repo, canonical_store          # noqa: E402
-from store_write import locked_store_rewrite                         # noqa: E402
+import markup_fidelity_gates as mfg
+import promote_final_cards as pfc
+from store_path import canonical_data_repo, canonical_store
+from store_write import locked_store_rewrite
 
 DEFAULT_STORE = canonical_store(os.path.join(SRC, "pwg_ru_translated.jsonl"))
 DEFAULT_GATELOGS = os.path.join(canonical_data_repo(SRC), "gatelogs")

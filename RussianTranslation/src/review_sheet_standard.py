@@ -62,7 +62,7 @@ def slp1_iast(s):
     """SLP1 -> IAST for card-header display (V4); accents stripped."""
     try:
         sys.path.insert(0, os.path.join(HERE, "pilot"))
-        from build_article_site import slp1_iast as _site_slp1_iast  # noqa: PLC0415
+        from build_article_site import slp1_iast as _site_slp1_iast
         return _site_slp1_iast(s)
     except Exception:
         s = _ACCENT.sub("", s or "")

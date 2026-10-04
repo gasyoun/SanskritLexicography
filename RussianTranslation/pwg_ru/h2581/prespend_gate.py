@@ -27,7 +27,7 @@ for _path in (PILOT, os.path.normpath(os.path.join(HERE, '..', '..', 'src'))):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-from gateway_route import (  # noqa: E402
+from gateway_route import (
     GATEWAY_BASE_URL,
     GATEWAY_ROUTE,
     credential_status,

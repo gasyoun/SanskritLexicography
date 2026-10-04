@@ -27,7 +27,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from refresh_tm_mirror import load, sha256_file, semantic_diff  # noqa: E402
+from refresh_tm_mirror import load, sha256_file, semantic_diff
 
 # (handoff, mirror_before_file, mirror_after_file, expected_sha_before, expected_sha_after)
 TRANSITIONS = [

@@ -42,11 +42,11 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-import pwg_mask                                   # noqa: E402
-import translation_memory as tm_mod               # noqa: E402
-from window_common import INP, input_paths        # noqa: E402
-from xref_vocab import DEGENERATE_XREF_WORDS      # noqa: E402
-from gen_opt_harness2 import degenerate_passthrough_card  # noqa: E402
+import pwg_mask
+import translation_memory as tm_mod
+from window_common import INP, input_paths
+from xref_vocab import DEGENERATE_XREF_WORDS
+from gen_opt_harness2 import degenerate_passthrough_card
 
 _REPORT_DIR = os.path.join(RT, 'reports')
 _LAYER_LINE_RE = re.compile(r'^===\s*LAYER:.*$', re.M)

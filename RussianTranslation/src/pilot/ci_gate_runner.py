@@ -36,7 +36,7 @@ if HERE not in sys.path:
 # ``notes`` by construction — failed CI here even after H2174 had taught canary_gate to
 # pass it. Two gates, one card, two answers. See marker_scan's docstring for why the
 # marker scope (translated content) and the {Tn} scope (whole card) must stay different.
-import marker_scan  # noqa: E402
+import marker_scan
 
 #: RussianTranslation/ — the root the committed canary fixtures are addressed from.
 RT_ROOT = os.path.dirname(os.path.dirname(HERE))

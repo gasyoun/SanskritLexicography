@@ -15,7 +15,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 import corpus_harvest as ch
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 SM = os.path.normpath(os.path.join(GITHUB, 'SamudraManthanam',
                                    'web', 'corpus_builder', 'jsonl'))

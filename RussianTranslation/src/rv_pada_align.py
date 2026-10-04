@@ -109,7 +109,7 @@ def slp1_iast(s):
         pilot = os.path.join(HERE, 'pilot')
         if pilot not in sys.path:
             sys.path.insert(0, pilot)
-        from build_article_site import slp1_iast as _canonical  # noqa: PLC0415
+        from build_article_site import slp1_iast as _canonical
         return _canonical(s)
     except Exception:
         s = _ACCENT.sub('', s or '')
@@ -640,7 +640,7 @@ def default_store():
     """
     local = os.path.join(HERE, 'pwg_ru_translated.jsonl')
     try:
-        from store_path import canonical_store  # noqa: PLC0415
+        from store_path import canonical_store
         return canonical_store(local)
     except Exception:
         return local
@@ -891,7 +891,7 @@ def cmd_gate(args):
 
 
 def selftest():
-    from rv_pada_align_selftest import run  # noqa: PLC0415
+    from rv_pada_align_selftest import run
     return run()
 
 

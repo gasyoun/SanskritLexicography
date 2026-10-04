@@ -13,7 +13,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "src"))
 sys.stdout.reconfigure(encoding="utf-8")
 
-import h5262_ipm_audit as audit  # noqa: E402
+import h5262_ipm_audit as audit
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CENSUS = os.path.join(HERE, "..", "reports", "H5262_lemma_census.json")

@@ -18,7 +18,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import root_segment_proto as RS                              # noqa: E402
+import root_segment_proto as RS
 
 PWG = os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 PREVERB = os.path.join(HERE, '..', '..', '..', 'PWG', 'verbs01', 'pwg_preverb1.txt')

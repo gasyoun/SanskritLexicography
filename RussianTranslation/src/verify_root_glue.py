@@ -35,12 +35,12 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 sys.path.insert(0, os.path.join(HERE, '..', 'research'))
 sys.path.insert(0, HERE)
-import root_segment_proto as RS                       # noqa: E402  segment()/glue()/read_record()
-from safe_filename import safe_name                    # noqa: E402
+import root_segment_proto as RS
+from safe_filename import safe_name
 
 PWG = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 # H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.

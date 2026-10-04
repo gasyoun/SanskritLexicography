@@ -61,7 +61,7 @@ FULL_OUT = os.path.join(PWG_RU_DIR, 'rv_divergence.jsonl')
 
 # Reuse the committed H1210 arm-B HTTP client verbatim (see module docstring).
 sys.path.insert(0, os.path.join(HERE, 'pilot', 'h1210'))
-import deepseek_arm as ds_arm  # noqa: E402
+import deepseek_arm as ds_arm
 
 # H1910: five translators, so 5-choose-2 = 10 ordered-by-convention pairs, not 6.
 TRANSLATORS = [

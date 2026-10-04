@@ -23,7 +23,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 # resolve store/coordinator constants at import time). See selftest_isolation.py.
 if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from selftest_isolation import guard as _isolation_guard  # noqa: E402
+from selftest_isolation import guard as _isolation_guard
 _isolation_guard()
 
 HERE = os.path.dirname(os.path.abspath(__file__))

@@ -34,9 +34,9 @@ for _path in (SRC, os.path.join(SRC, 'pilot')):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-import call_reservation  # noqa: E402  (hardened reservation ledger, reused)
-from pwg_pipeline import evidence, kernel, model, providers  # noqa: E402
-from pwg_pipeline.repository import open_repository, utc_now  # noqa: E402
+import call_reservation
+from pwg_pipeline import evidence, kernel, model, providers
+from pwg_pipeline.repository import open_repository, utc_now
 
 SCHEMA = 'pwg.qualification.glm.v1'
 MANIFEST_SCHEMA = 'pwg.qualification.manifest.v1'

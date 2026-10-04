@@ -39,11 +39,11 @@ RT_ROOT = os.path.normpath(os.path.join(HERE, '..'))
 PWG_RU_DIR = os.path.join(RT_ROOT, 'pwg_ru')
 REVIEW_DIR = os.path.join(RT_ROOT, 'review')
 
-from csl_pyutil import RU_UI_STRINGS, render_review_sheet          # noqa: E402
-from sheet_screening import screening_block  # noqa: E402
-from review_binding import stamp, write_lock        # noqa: E402
-from review_sheet_standard import standard_config   # noqa: E402
-import rv_divergence_type as dv                     # noqa: E402
+from csl_pyutil import RU_UI_STRINGS, render_review_sheet
+from sheet_screening import screening_block
+from review_binding import stamp, write_lock
+from review_sheet_standard import standard_config
+import rv_divergence_type as dv
 
 STANZA_PATH = os.path.join(PWG_RU_DIR, 'rv_stanza_translations.jsonl')
 # v5 (H1910): five translators, and the Renou witness band. A NEW id on purpose -- v4 was

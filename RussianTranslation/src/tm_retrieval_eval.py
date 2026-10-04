@@ -36,7 +36,7 @@ GITHUB = os.path.normpath(os.path.join(REPO, '..'))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from rt_io import read_jsonl as load_jsonl, write_jsonl  # noqa: E402
+from rt_io import read_jsonl as load_jsonl, write_jsonl
 
 DEFAULT_GRADE_GOLD = os.path.join(ROOT, 'gold', 'grade_gold.jsonl')
 DEFAULT_SAMPLE = os.path.join(

@@ -15,7 +15,7 @@ for p in (HERE, os.path.dirname(HERE)):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-import profile_lane as pl  # noqa: E402
+import profile_lane as pl
 
 
 def _env_file(tmp, text, name='.env'):

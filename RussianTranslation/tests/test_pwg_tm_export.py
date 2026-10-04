@@ -9,13 +9,13 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import pwg_tm_canonical as C  # noqa: E402
-import pwg_tm_export_core as X  # noqa: E402
-import pwg_tm_export_loss as L  # noqa: E402
-import pwg_tm_migrate_v1 as M  # noqa: E402
-import export_pwg_tm_tei as TEI  # noqa: E402
-import export_pwg_tm_ontolex as OL  # noqa: E402
-import build_tmx  # noqa: E402
+import pwg_tm_canonical as C
+import pwg_tm_export_core as X
+import pwg_tm_export_loss as L
+import pwg_tm_migrate_v1 as M
+import export_pwg_tm_tei as TEI
+import export_pwg_tm_ontolex as OL
+import build_tmx
 
 FIX = os.path.join(ROOT, 'schemas', 'fixtures',
                    'pwg_tm_canonical.publication.fixture.jsonl')

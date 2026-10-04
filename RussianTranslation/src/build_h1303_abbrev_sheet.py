@@ -38,11 +38,11 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(HERE)                      # RussianTranslation/
 sys.path.insert(0, HERE)
-import store_path                               # noqa: E402
-import pwg_ab                                   # noqa: E402
-from pwg_ab_ru import RU_MAP                    # noqa: E402
-from csl_pyutil.review_sheet import render_review_sheet, esc, mark_cyrillic  # noqa: E402
-from sheet_screening import screening_block  # noqa: E402
+import store_path
+import pwg_ab
+from pwg_ab_ru import RU_MAP
+from csl_pyutil.review_sheet import render_review_sheet, esc, mark_cyrillic
+from sheet_screening import screening_block
 
 GENERATED = '2026-07-21'
 _AB = re.compile(r'<ab\b[^>]*>(.*?)</ab>', re.S)

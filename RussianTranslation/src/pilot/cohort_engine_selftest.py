@@ -74,16 +74,16 @@ sys.stderr.reconfigure(encoding='utf-8')
 # resolve store/coordinator constants at import time). See selftest_isolation.py.
 if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from selftest_isolation import guard as _isolation_guard  # noqa: E402
+from selftest_isolation import guard as _isolation_guard
 _isolation_guard()
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import bounded_staged_run as bsr                     # noqa: E402
-import bounded_supervisor as bs                      # noqa: E402
-import max_account_orchestrator as mao               # noqa: E402
+import bounded_staged_run as bsr
+import bounded_supervisor as bs
+import max_account_orchestrator as mao
 
 
 class MissingBehavior(AssertionError):
@@ -102,7 +102,7 @@ ENGINE_MISSING = (
 
 def load_cohort_engine():
     try:
-        import cohort_engine                          # noqa: F401
+        import cohort_engine
     except ModuleNotFoundError as exc:
         # Codex review #8: ONLY the engine module itself being absent is the sanctioned
         # Phase 0 RED. A transitive import failure inside an existing cohort_engine.py is

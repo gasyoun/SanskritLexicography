@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import apply_editorial_decisions as aed  # noqa: E402
+import apply_editorial_decisions as aed
 
 PASS = 0
 FAIL = 0

@@ -49,9 +49,9 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from promote_final_cards import SYNTHETIC_KEY_RE, TN_RE  # noqa: E402  C-01 single source
-import marker_scan  # noqa: E402  H2253 — one marker/{Tn} scope definition, two gates
-from execution_contract import PRODUCTION_HARD_TIMEOUT_MS  # noqa: E402  H2254 one ceiling
+from promote_final_cards import SYNTHETIC_KEY_RE, TN_RE
+import marker_scan
+from execution_contract import PRODUCTION_HARD_TIMEOUT_MS
 
 RECEIPT_SCHEMA = 'pwg.canary_gate_receipt.v1'
 # H2254: the fields a bounded live proof must be able to answer FROM ITS OWN ARTIFACT.

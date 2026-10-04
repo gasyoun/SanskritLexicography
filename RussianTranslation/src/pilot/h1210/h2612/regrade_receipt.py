@@ -30,7 +30,7 @@ for path in (os.path.dirname(HERE), os.path.dirname(os.path.dirname(HERE)),
     if path not in sys.path:
         sys.path.insert(0, path)
 
-import prep_context_compare as pcc                            # noqa: E402
+import prep_context_compare as pcc
 
 
 def main() -> int:

@@ -63,7 +63,7 @@ RT_ROOT = os.path.normpath(os.path.join(HERE, '..'))
 
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
-from rv_org_root import vedaweb_dir  # noqa: E402
+from rv_org_root import vedaweb_dir
 
 LEMMATIZATION = os.path.join(vedaweb_dir(HERE), 'lemmatization.json')
 PWG_RU_DIR = os.path.join(RT_ROOT, 'pwg_ru')

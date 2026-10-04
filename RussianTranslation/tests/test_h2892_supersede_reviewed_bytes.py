@@ -29,8 +29,8 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import store_write  # noqa: E402
-from promote_final_cards import human_touched, merge_store_rows  # noqa: E402
+import store_write
+from promote_final_cards import human_touched, merge_store_rows
 
 #: A row a human has ruled on: named reviewer AND an out-of-machine status.
 #: Non-ASCII on purpose — a serializer that flips ensure_ascii would rewrite this

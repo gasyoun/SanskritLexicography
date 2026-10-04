@@ -25,7 +25,7 @@ the historical "parent of src/" default for callers that omit `repo_root`.
 import os
 import sys
 
-from csl_pyutil.evidence import (  # noqa: F401  (re-exported for old importers)
+from csl_pyutil.evidence import (
     CYR,
     IAST,
     MIXED_SCRIPT,

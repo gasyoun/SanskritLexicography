@@ -40,7 +40,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import bli_eval  # noqa: E402  (content_tokens / rank_candidates / collect_candidates)
+import bli_eval
 
 DEFAULT_MIN_REPORTABLE = 5
 SKIP = 'SKIP'

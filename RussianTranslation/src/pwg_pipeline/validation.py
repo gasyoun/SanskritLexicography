@@ -163,7 +163,7 @@ def _jsonschema_or_fail(require_schema: bool):
     if not require_schema:
         return None
     try:
-        import jsonschema  # noqa: F401  (presence check only)
+        import jsonschema
     except ImportError as exc:
         raise ValidationError(
             'schema validation was required but jsonschema is unavailable: %s'

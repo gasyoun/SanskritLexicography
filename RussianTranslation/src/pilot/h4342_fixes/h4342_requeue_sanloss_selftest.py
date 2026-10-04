@@ -20,7 +20,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import h4342_requeue_sanloss as rq  # noqa: E402
+import h4342_requeue_sanloss as rq
 
 
 def _row(subcard, tag, ru):

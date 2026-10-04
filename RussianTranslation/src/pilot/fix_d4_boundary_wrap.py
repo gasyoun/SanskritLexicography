@@ -21,7 +21,7 @@ if HERE not in sys.path:
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from d4_boundary_wrap import is_ru_n0_candidate, try_boundary_wrap  # noqa: E402
+from d4_boundary_wrap import is_ru_n0_candidate, try_boundary_wrap
 
 
 def run_store(dry=False):

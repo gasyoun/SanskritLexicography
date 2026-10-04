@@ -39,7 +39,7 @@ import sys
 import tempfile
 import uuid
 
-from promote_lock import PromoteClaim, ClaimBusy, DEFAULT_TTL_SECONDS  # noqa: F401
+from promote_lock import PromoteClaim, ClaimBusy, DEFAULT_TTL_SECONDS
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')

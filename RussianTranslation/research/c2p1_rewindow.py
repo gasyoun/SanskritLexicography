@@ -43,7 +43,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from c2p2_dating_table import (   # noqa: E402  (prior art: proven re-window maths)
+from c2p2_dating_table import (
     MAP_PATH,
     TABLE_PATH,
     WINDOW_PATH,

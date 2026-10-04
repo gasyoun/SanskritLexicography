@@ -17,7 +17,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from promote_final_cards import (  # noqa: E402,F401
+from promote_final_cards import (
     ClaimBusy,
     PromoteClaim,
     PromotionContractError,

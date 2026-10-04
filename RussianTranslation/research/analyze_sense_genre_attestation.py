@@ -54,8 +54,8 @@ import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, '..', 'src')
 sys.path.insert(0, SRC)
-import renou            # noqa: E402  (<ls> siglum parser + ls_source_map loader)
-import annotate_genres  # noqa: E402  (H339: <ls> -> curated genre -> coarse rollup)
+import renou
+import annotate_genres
 
 DEFAULT_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 DEFAULT_DCS = os.path.join(SRC, 'dcs_freq_dims.json')

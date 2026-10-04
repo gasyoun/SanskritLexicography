@@ -16,7 +16,7 @@ HERE = Path(__file__).resolve().parent
 SCHEMA_PATH = HERE / 'evidence' / 't2_schema.json'
 sys.path.insert(0, str(HERE.parents[1] / 'src' / 'pilot'))
 
-from gateway_route import validate_complete_schema  # noqa: E402
+from gateway_route import validate_complete_schema
 
 SCHEMA = json.loads(SCHEMA_PATH.read_text(encoding='utf-8'))
 

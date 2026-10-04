@@ -45,7 +45,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_tm_wave2_policy as W2  # noqa: E402
+import pwg_tm_wave2_policy as W2
 
 HANDOFF = 'H2877'
 GATE_SAMPLE = 'H2684 n=400 seed 2684'

@@ -58,7 +58,7 @@ for _path in (HERE, os.path.join(HERE, 'pilot')):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-from pwg_pipeline import faults, kernel, model, providers, repository as repo_mod  # noqa: E402
+from pwg_pipeline import faults, kernel, model, providers, repository as repo_mod
 
 SCHEMA = 'h4053.quarantine_sample30.v1'
 

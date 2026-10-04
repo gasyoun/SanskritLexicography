@@ -38,10 +38,10 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-import data_root as dr                         # noqa: E402
-import gate_evidence as ge                     # noqa: E402
-import lane_guard                              # noqa: E402
-import spot_check_daily as scd                 # noqa: E402
+import data_root as dr
+import gate_evidence as ge
+import lane_guard
+import spot_check_daily as scd
 
 # A spotcheck report older than this no longer counts as live surveillance.
 # 48h, not 24h: the job runs daily, so one missed run is tolerated, two is not.
@@ -134,7 +134,7 @@ def tick(lane, data_root, date=None, fraction=0.10, judge_cmd=None, execute=Fals
             print('spot-check FAILED to run (code %s) — INCONCLUSIVE, not clean'
                   % exc.code, file=sys.stderr)
             return 1, None, False
-    except Exception as exc:      # noqa: BLE001 — a dead surveillance job is not a pass
+    except Exception as exc:
         print('spot-check raised %s: %s — INCONCLUSIVE, not clean'
               % (type(exc).__name__, exc), file=sys.stderr)
         return 1, None, False

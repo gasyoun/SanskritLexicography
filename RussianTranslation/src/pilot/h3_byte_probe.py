@@ -19,10 +19,10 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
-from selftest_isolation import guard as _isolation_guard  # noqa: E402
+from selftest_isolation import guard as _isolation_guard
 _isolation_guard()
 
-import window_common as wc  # noqa: E402
+import window_common as wc
 
 PAYLOAD = {
     'schema': 'pwg.window_status.v1',

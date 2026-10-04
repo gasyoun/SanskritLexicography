@@ -15,9 +15,9 @@ for _path in (HERE, os.path.join(REPO, 'src')):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-import gateway_attestation as att  # noqa: E402
-import gateway_external_selftest as base  # noqa: E402
-from gateway_route import canonical_json_bytes  # noqa: E402
+import gateway_attestation as att
+import gateway_external_selftest as base
+from gateway_route import canonical_json_bytes
 
 
 START = '2026-08-10T02:00:00.000Z'
@@ -281,7 +281,7 @@ def selftest():
         try:
             test()
             print('  PASS: ' + test.__name__)
-        except BaseException as exc:  # noqa: BLE001
+        except BaseException as exc:
             failed.append(test.__name__)
             print('  FAIL: %s -- %s: %s' % (
                 test.__name__, exc.__class__.__name__, exc))

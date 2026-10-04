@@ -23,7 +23,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import rv_pada_align as rp  # noqa: E402
+import rv_pada_align as rp
 
 FAILURES = []
 

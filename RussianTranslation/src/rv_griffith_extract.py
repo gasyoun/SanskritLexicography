@@ -23,7 +23,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB_ROOT = sibling_root(HERE)
 RVLINKS_HTML = os.path.join(GITHUB_ROOT, 'rvlinks', 'RV_sa-hn-ru-de-en_1.html')
 LEMMATIZATION = os.path.join(

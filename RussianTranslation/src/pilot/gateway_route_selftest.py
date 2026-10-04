@@ -26,9 +26,9 @@ for _p in (HERE, os.path.join(REPO, 'src')):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-import gateway_route as gw  # noqa: E402
-from call_reservation import CallReservationLedger  # noqa: E402
-from execution_contract import (  # noqa: E402
+import gateway_route as gw
+from call_reservation import CallReservationLedger
+from execution_contract import (
     HEADLESS_ROUTE,
     PRODUCTION_HARD_TIMEOUT_MS,
 )
@@ -74,7 +74,7 @@ def t1_provenance_cannot_be_substituted():
     """Route, model and provenance class are all unforgeable at construction."""
     with tempfile.TemporaryDirectory() as tmp:
         ledger = ledger_at(tmp, max_calls=1)
-        ok = lambda req: transcript([text_block('{"ok":true}')], usage=FULL_USAGE)  # noqa: E731
+        ok = lambda req: transcript([text_block('{"ok":true}')], usage=FULL_USAGE)
 
         for bad_route in (HEADLESS_ROUTE, 'c4', 'anthropic-routine-in-session',
                           'workflow', ''):
@@ -403,7 +403,7 @@ def selftest():
     for test in TESTS:
         try:
             test()
-        except BaseException as exc:  # noqa: BLE001 -- one failure must not hide the rest
+        except BaseException as exc:
             failed.append(test.__name__)
             print('  FAIL: %s -- %s: %s' % (test.__name__, exc.__class__.__name__, exc))
     if failed:

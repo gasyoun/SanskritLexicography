@@ -53,7 +53,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 os.environ.setdefault("LS_RESOLVER_QUIET", "1")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import ls_resolver as lsr                                      # noqa: E402
+import ls_resolver as lsr
 
 #: Regions of a store body that are never scanned: an existing citation element
 #: (already linked, and re-wrapping would nest elements) and a Sanskrit span

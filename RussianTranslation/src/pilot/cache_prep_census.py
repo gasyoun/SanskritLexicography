@@ -20,12 +20,12 @@ for path in (HERE, H1210, os.path.dirname(HERE)):
     if path not in sys.path:
         sys.path.insert(0, path)
 
-import autosplit_requeue as autosplit  # noqa: E402
-import cache_baseline_freeze as freeze  # noqa: E402
-import cache_identity as ident  # noqa: E402
-import cache_reuse as reuse  # noqa: E402
-import prep_pack  # noqa: E402
-from store_path import canonical_sidecar  # noqa: E402
+import autosplit_requeue as autosplit
+import cache_baseline_freeze as freeze
+import cache_identity as ident
+import cache_reuse as reuse
+import prep_pack
+from store_path import canonical_sidecar
 
 RT = os.path.dirname(os.path.dirname(HERE))
 REPO = os.path.dirname(RT)
@@ -248,7 +248,7 @@ def build_census(run_dir):
     drain_dir = os.path.join(RT, 'experiments', 'H2675_w1_prep')
     if drain_dir not in sys.path:
         sys.path.insert(0, drain_dir)
-    import build_drain_head as drain  # noqa: E402
+    import build_drain_head as drain
     slots = drain.load_assembled_de(assembled_path)
     missing = [k for k in first200 if k not in slots]
     if missing:

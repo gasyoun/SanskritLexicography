@@ -12,7 +12,7 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import synth_score as SS  # noqa: E402
+import synth_score as SS
 
 
 def test_norm_ls_collapses_whitespace_and_trailing_punct():
