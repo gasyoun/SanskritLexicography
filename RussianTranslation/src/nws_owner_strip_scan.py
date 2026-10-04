@@ -24,7 +24,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import nws_split as NS  # noqa: E402
+import nws_split as NS
 
 DEF_TAR = '/Users/mac/Documents/GitHub/pwg-ru-data/layers/nws.tar.gz'
 

@@ -30,8 +30,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from no_pwg_scale_plan import RESIDUALS, read_residuals  # noqa: E402
-from window_common import append_jsonl_line  # noqa: E402
+from no_pwg_scale_plan import RESIDUALS, read_residuals
+from window_common import append_jsonl_line
 
 SCHEMA = 'pwg.no_pwg_residual.v1'
 

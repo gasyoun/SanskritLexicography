@@ -37,11 +37,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import anthropic_batches_route as abr  # noqa: E402
-import headless_worker as hw  # noqa: E402
-from call_reservation import CallReservationLedger  # noqa: E402
-from execution_contract import PRODUCTION_HARD_TIMEOUT_MS  # noqa: E402
-from route_transport import (  # noqa: E402
+import anthropic_batches_route as abr
+import headless_worker as hw
+from call_reservation import CallReservationLedger
+from execution_contract import PRODUCTION_HARD_TIMEOUT_MS
+from route_transport import (
     TransportRefusal,
     atomic_json,
     build_request,

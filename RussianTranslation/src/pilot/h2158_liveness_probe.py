@@ -33,7 +33,7 @@ import time
 sys.stdout.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from headless_worker import bare_cli_cwd, claude_argv_prefix         # noqa: E402
+from headless_worker import bare_cli_cwd, claude_argv_prefix
 
 CONFIG_DIR = r'D:\ClaudeTools\profiles\claude4\.claude'
 

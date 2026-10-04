@@ -11,7 +11,7 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import slp1_norm  # noqa: E402
+import slp1_norm
 
 
 def test_canonical_slp1_join():

@@ -14,7 +14,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import backfill_tn_residue as repair
-from rt_io import write_jsonl  # noqa: E402
+from rt_io import write_jsonl
 
 
 def raw(path, text):

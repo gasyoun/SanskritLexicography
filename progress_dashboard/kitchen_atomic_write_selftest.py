@@ -44,7 +44,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 _HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(_HERE))
 
-import kitchen_slices as ks  # noqa: E402
+import kitchen_slices as ks
 
 _BLOB = 5000
 _SEED_SNAPSHOTS = 4000  # ~20 MB on disk once serialized

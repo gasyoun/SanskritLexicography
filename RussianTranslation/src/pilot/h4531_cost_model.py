@@ -17,7 +17,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from usage_accounting import (  # noqa: E402
+from usage_accounting import (
     API_BATCH, API_STANDARD, SONNET_STANDARD_PER_MTOK_USD, equivalent_usd)
 
 bundle = json.load(open(sys.argv[1], encoding='utf-8'))

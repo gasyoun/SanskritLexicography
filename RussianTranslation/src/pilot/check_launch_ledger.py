@@ -23,7 +23,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import gate_evidence as ge                                          # noqa: E402
+import gate_evidence as ge
 
 REPO_ROOT = os.path.dirname(os.path.dirname(HERE))
 LEDGER_MD = os.path.join(REPO_ROOT, 'LAUNCH_FUCKUPS.md')

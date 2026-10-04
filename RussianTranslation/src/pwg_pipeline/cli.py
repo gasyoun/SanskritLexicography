@@ -25,13 +25,13 @@ if __package__ in (None, ''):  # pragma: no cover - direct-script invocation
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     __package__ = 'pwg_pipeline'
 
-from . import audit as audit_module  # noqa: E402
-from . import apply as apply_module  # noqa: E402
-from . import (compat, import_legacy, kernel, model, promotion,  # noqa: E402
+from . import audit as audit_module
+from . import apply as apply_module
+from . import (compat, import_legacy, kernel, model, promotion,
                providers, replay as replay_module, review as review_module,
                validation)
-from .evidence import seal, sha256_text, tree_digest  # noqa: E402
-from .repository import open_repository  # noqa: E402
+from .evidence import seal, sha256_text, tree_digest
+from .repository import open_repository
 
 SCHEMA = 'pwg.pipeline.cli.v1'
 

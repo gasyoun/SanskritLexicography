@@ -37,8 +37,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from store_path import canonical_store, main_worktree_root      # noqa: E402
-from edition_rel import (                                       # noqa: E402
+from store_path import canonical_store, main_worktree_root
+from edition_rel import (
     SENSE_ASSERTING, build_pwg_gender_index, build_pwg_sense_index,
     edition_rel_for_row, pwg_correction_marker, unplaced_name,
 )

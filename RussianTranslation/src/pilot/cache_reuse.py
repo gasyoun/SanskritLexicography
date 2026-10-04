@@ -26,8 +26,8 @@ SRC = os.path.dirname(HERE)
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import cache_identity as ident  # noqa: E402
-import translation_memory as tm  # noqa: E402
+import cache_identity as ident
+import translation_memory as tm
 
 EXPERIMENTAL_FLAG = 'experimental'
 

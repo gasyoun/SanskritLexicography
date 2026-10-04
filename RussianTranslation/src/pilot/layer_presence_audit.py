@@ -40,7 +40,7 @@ STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import dict_merge as dm                                        # noqa: E402
+import dict_merge as dm
 
 
 def store_layers(store=STORE):

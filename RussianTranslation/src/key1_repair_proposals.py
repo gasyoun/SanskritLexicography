@@ -67,7 +67,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 GITHUB = os.path.normpath(os.path.join(REPO, '..', '..'))
 sys.path.insert(0, os.path.join(GITHUB, 'sanskrit-util', 'py'))
-from sanskrit_util import to_slp1     # noqa: E402  (canonical transcoder, SHARED_CODE)
+from sanskrit_util import to_slp1
 
 STORE = os.environ.get('PWG_RU_STORE', os.path.join(
     GITHUB, 'SanskritLexicography', 'RussianTranslation', 'src', 'pwg_ru_translated.jsonl'))

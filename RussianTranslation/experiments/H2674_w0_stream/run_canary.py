@@ -23,7 +23,7 @@ H1210 = os.path.join(RT, 'src', 'pilot', 'h1210')
 if H1210 not in sys.path:
     sys.path.insert(0, H1210)
 
-import deepseek_arm as ds  # noqa: E402
+import deepseek_arm as ds
 
 CANARY_KEYS = ('yaTepsita', 'viSvaha', 'viSa')
 SYSTEM = (

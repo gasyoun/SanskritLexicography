@@ -54,8 +54,8 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from store_path import canonical_store  # noqa: E402
-from store_write import locked_store_rewrite  # noqa: E402
+from store_path import canonical_store
+from store_write import locked_store_rewrite
 
 #: German-only markers and the Latin form each becomes. Bucket B only.
 #: ``Akk``/``Lok`` reuse H2849's shipped targets verbatim; ``Praes.`` is the ASCII

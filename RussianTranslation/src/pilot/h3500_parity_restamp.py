@@ -33,7 +33,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import parity_restamp as pr  # noqa: E402
+import parity_restamp as pr
 
 DRIFTED = "src/promote_final_cards.py"
 

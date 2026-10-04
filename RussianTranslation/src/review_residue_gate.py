@@ -66,8 +66,8 @@ for p in (HERE, PILOT):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-import german_residue_scan  # noqa: E402  (H1302 prose-residue detector)
-from pwg_ab_ru import RU_MAP  # noqa: E402  (render-time <ab> -> RU display)
+import german_residue_scan
+from pwg_ab_ru import RU_MAP
 
 H1303_INVENTORY = os.path.join(RT, "pwg_ru", "ABBREV_UNIFIED_LIST_PROPOSAL_2026-07.md")
 # | `tok` | freq | expansion | класс | ... — the H1303 unified 269-token table.

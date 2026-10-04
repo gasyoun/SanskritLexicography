@@ -41,9 +41,9 @@ SRC = os.path.dirname(HERE)
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import dict_merge as dm            # noqa: E402
-import pwg_mask                    # noqa: E402
-import corpus_gate as cg          # noqa: E402
+import dict_merge as dm
+import pwg_mask
+import corpus_gate as cg
 
 STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 OUTDIR = os.path.join(HERE, 'upstream_changes')

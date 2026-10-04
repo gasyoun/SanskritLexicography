@@ -21,8 +21,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import microstructure as ms          # noqa: E402
-import pwg_mask                      # noqa: E402
+import microstructure as ms
+import pwg_mask
 
 # The §447 two-tier forms, exactly as they stood before H3948.
 PRE_H3948_MARK = re.compile(r'(?<![^\s—])(?P<t>\d{1,2}|[a-z])[)〉]')

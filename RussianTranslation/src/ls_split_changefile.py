@@ -68,7 +68,7 @@ os.environ.setdefault("LS_RESOLVER_QUIET", "1")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from ls_split import split_ls_loci, resolve_loci                # noqa: E402
+from ls_split import split_ls_loci, resolve_loci
 
 ORG = os.path.dirname(os.path.dirname(os.path.dirname(HERE)))
 CSL_ORIG = os.environ.get("CSL_ORIG_DIR", os.path.join(ORG, "csl-orig"))

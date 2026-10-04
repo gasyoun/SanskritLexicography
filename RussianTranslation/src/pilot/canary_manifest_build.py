@@ -80,7 +80,7 @@ REPO = os.path.dirname(os.path.dirname(HERE))    # RussianTranslation/ (src/pilo
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from execution_contract import PRODUCTION_HARD_TIMEOUT_MS  # noqa: E402
+from execution_contract import PRODUCTION_HARD_TIMEOUT_MS
 
 # The curated H994 D-Q silent-sense-loss synthetic control. Its provenance_class is
 # synthetic_control, so canary_gate refuses to judge a real window as a canary.

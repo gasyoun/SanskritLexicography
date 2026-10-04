@@ -63,7 +63,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from execution_contract import config_dir_fingerprint                # noqa: E402
+from execution_contract import config_dir_fingerprint
 
 # The profile-bound config dir the paid CLI lane runs under today. Same constant as
 # h2158_route_ab.CONFIG_DIR and cache_prefix_stability_probe.CONFIG_DIR -- do not fork it.

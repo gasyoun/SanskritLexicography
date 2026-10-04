@@ -401,7 +401,7 @@ def query(census_path, ledger_path, limit=None, offline=False, order="risk",
                    "queried_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
             try:
                 rec.update(lookup(client, lemma, pos, row.get("forms") or (), hits_below))
-            except Exception as exc:                 # noqa: BLE001 — logged, not fatal
+            except Exception as exc:
                 # A failure is NEVER persisted: the ledger is the resume key, so a row
                 # written for an uncached-offline miss or a transient API error would
                 # retire a lemma that was never actually answered.

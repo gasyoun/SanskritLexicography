@@ -61,7 +61,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import parse_workflow_cost as pwc  # noqa: E402  (path insertion above must run first)
+import parse_workflow_cost as pwc
 
 # Single source of truth for $/million-token rates — do NOT duplicate rates here.
 PRICE = pwc.PRICE

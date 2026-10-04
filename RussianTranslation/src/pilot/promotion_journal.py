@@ -31,7 +31,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
-from promote_lock import PromoteClaim  # noqa: E402
+from promote_lock import PromoteClaim
 
 SCHEMA = 'pwg.promotion_journal.v1'
 COORDINATOR_STATE_SCHEMA = 'pwg.sla_coordinator.state.v1'

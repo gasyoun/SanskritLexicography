@@ -44,7 +44,7 @@ SRC = os.path.normpath(os.path.join(HERE, '..', 'src'))
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import refresh_tm_mirror as rtm  # noqa: E402
+import refresh_tm_mirror as rtm
 
 REPORTS = os.path.normpath(os.path.join(HERE, '..', 'reports'))
 HANDOFF = 'H4055'

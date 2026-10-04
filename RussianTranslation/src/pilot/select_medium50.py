@@ -28,9 +28,9 @@ PREVERB = os.path.normpath(os.path.join(RT, '..', '..', 'PWG', 'verbs01', 'pwg_p
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import microstructure as M   # noqa: E402
-import dict_merge as dm      # noqa: E402
-import corpus_gate as cg     # noqa: E402
+import microstructure as M
+import dict_merge as dm
+import corpus_gate as cg
 
 CASE = re.compile(r';; Case \d+: L=\d+, k1=(\S+), k2=\S+, code=\S+,')
 

@@ -47,8 +47,8 @@ RUN_DIR = os.path.join(PWG_RU_DIR, 'h1844')
 
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(HERE, 'pilot', 'h1210'))
-import deepseek_arm as ds_arm          # noqa: E402
-import rv_divergence_type as dv        # noqa: E402
+import deepseek_arm as ds_arm
+import rv_divergence_type as dv
 
 STANZA_PATH = os.path.join(PWG_RU_DIR, 'rv_stanza_translations.jsonl')
 DEFAULT_OUT = os.path.join(RUN_DIR, 'rv_divergence_explained.jsonl')

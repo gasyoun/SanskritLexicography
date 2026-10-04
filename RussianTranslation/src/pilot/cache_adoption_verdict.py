@@ -15,7 +15,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 RT = os.path.dirname(os.path.dirname(HERE))
 
-import cache_identity as ident  # noqa: E402
+import cache_identity as ident
 
 EXP_DIR = os.path.join(RT, 'experiments', 'pwg_cache_economy')
 H2676_USD = 0.01991

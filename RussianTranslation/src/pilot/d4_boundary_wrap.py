@@ -72,8 +72,8 @@ if HERE not in sys.path:
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import re  # noqa: E402
-from wrapper_defect_scan import GLOSS_SPAN, GUILLEMET_SPAN  # noqa: E402
+import re
+from wrapper_defect_scan import GLOSS_SPAN, GUILLEMET_SPAN
 
 ANCHOR_RE = re.compile(
     r'(\{#.*?#\})|(<ls\b[^>]*>.*?</ls>)|(<ab\b[^>]*>.*?</ab>)|(<is\b[^>]*>.*?</is>)',

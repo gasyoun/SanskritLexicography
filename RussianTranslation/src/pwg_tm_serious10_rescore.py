@@ -44,7 +44,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_tm_quality as Q  # noqa: E402
+import pwg_tm_quality as Q
 
 HANDOFF = 'H3611'
 BASE = 'https://openrouter.ai/api/v1'

@@ -80,8 +80,8 @@ if SRC not in sys.path:
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from store_path import canonical_store                      # noqa: E402  -- shared resolver
-from sense_count import count_source_senses                 # noqa: E402  -- REAL, imported
+from store_path import canonical_store
+from sense_count import count_source_senses
 
 H963 = os.path.join(RT, 'pwg_ru', 'h963')
 MANIFEST = os.path.join(H963, 'artifact_manifest.sha256')

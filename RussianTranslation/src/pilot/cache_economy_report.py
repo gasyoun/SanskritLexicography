@@ -20,8 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import cache_event_ledger as ledger  # noqa: E402
-import cache_identity as ident  # noqa: E402
+import cache_event_ledger as ledger
+import cache_identity as ident
 
 H2676_USD_PER_CLEAN = 0.01991
 H2676_DET_CLEAN = 21

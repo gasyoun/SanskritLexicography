@@ -63,10 +63,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import g5_card_render as g5cr           # noqa: E402  reuse _BRACKET_TAG, _norm
-import ls_resolver                      # noqa: E402  generate_href, roman_int20
-import pwg_sources                      # noqa: E402  the PWG-bibliography gate
-import store_path                       # noqa: E402  canonical_store() -- H255 loss-safety
+import g5_card_render as g5cr
+import ls_resolver
+import pwg_sources
+import store_path
 from store_write import locked_store_rewrite  # noqa: E402  H2146/H2153 locked writer
 
 sys.stdout.reconfigure(encoding='utf-8')

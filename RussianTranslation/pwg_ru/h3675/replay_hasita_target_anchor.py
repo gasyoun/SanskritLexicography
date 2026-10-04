@@ -23,8 +23,8 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'src'))
 
-import german_anchor  # noqa: E402
-import target_anchor  # noqa: E402
+import german_anchor
+import target_anchor
 
 DEFAULT_ROOT = r"D:\ClaudeTools\profiles\claude1\.pwg_ru_evidence\c1\h3659"
 KEY = 'hasita~~h0_zz_pw'
@@ -60,7 +60,7 @@ def main():
     print('field          : %s' % field)
     print('source counts  : ls=%d sk=%d' % (inp['ls'], inp['sk']))
 
-    card = target_anchor._card  # noqa: F841  (keeps the module import honest under linters)
+    card = target_anchor._card
     card = build_masked_card()
     senses = target_anchor.card_senses(card)
     for index, sense in enumerate(senses):

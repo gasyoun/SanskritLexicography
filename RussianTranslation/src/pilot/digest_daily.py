@@ -26,9 +26,9 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-import data_root as dr        # noqa: E402
-import parked_queue           # noqa: E402
-import spot_check_daily as scd  # noqa: E402
+import data_root as dr
+import parked_queue
+import spot_check_daily as scd
 
 
 def utc_date(ts):

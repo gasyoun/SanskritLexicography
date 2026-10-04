@@ -34,7 +34,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.environ.get("SANSKRIT_UTIL_PY", r"C:/Users/user/Documents/GitHub/sanskrit-util/py"))
-import sanskrit_util as su  # noqa: E402
+import sanskrit_util as su
 
 NCC_TXT = os.environ.get(
     "NCC_TXT",

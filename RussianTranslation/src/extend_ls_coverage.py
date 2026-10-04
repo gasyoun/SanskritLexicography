@@ -35,7 +35,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import pwg_sources as ps  # noqa: E402 -- reused, unmodified authoritative resolver
+import pwg_sources as ps
 
 REPORTS_DIR = os.path.join(HERE, '..', 'reports')
 SCHEMAS_DIR = os.path.join(HERE, '..', 'schemas')

@@ -35,7 +35,7 @@ import tempfile
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-import pipeline_version  # noqa: E402
+import pipeline_version
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)

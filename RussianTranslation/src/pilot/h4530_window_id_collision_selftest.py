@@ -37,7 +37,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import no_pwg_scale_plan as plan  # noqa: E402
+import no_pwg_scale_plan as plan
 
 
 def _mk(*parts):

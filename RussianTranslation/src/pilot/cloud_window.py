@@ -76,7 +76,7 @@ def run_cloud_window(window_id, items, translate_fn, *, model_identifier,
         t0 = time.time_ns()
         try:
             card, usage = translate_fn(item)
-        except Exception as exc:  # noqa: BLE001 — R4.2: park, don't block the lane
+        except Exception as exc:
             parked.append(parked_queue.park(
                 key, 'cloud translate_fn failed: %s' % str(exc).splitlines()[0],
                 source='cloud_window', lane='routine', env=parked_env))

@@ -22,10 +22,10 @@ if HERE not in sys.path:
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from d4_boundary_wrap import (  # noqa: E402
+from d4_boundary_wrap import (
     GLOSS_SPAN, is_ru_n0_candidate, scan_store, split_by_anchors, try_boundary_wrap,
 )
-from store_path import canonical_store  # noqa: E402
+from store_path import canonical_store
 
 BRACKET_NORMALIZE = str.maketrans({
     '〉': ')', '）': ')',

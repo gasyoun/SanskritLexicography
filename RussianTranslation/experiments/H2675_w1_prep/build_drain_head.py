@@ -24,7 +24,7 @@ H1210 = os.path.join(RT, 'src', 'pilot', 'h1210')
 if H1210 not in sys.path:
     sys.path.insert(0, H1210)
 
-import prep_pack  # noqa: E402
+import prep_pack
 
 MAIN_RT = r'C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTranslation'
 MAIN_ASSEMBLED = os.path.join(MAIN_RT, 'src', 'assembled_cards.jsonl')
@@ -44,7 +44,7 @@ def _safe_stem(key1: str) -> str:
     try:
         from safe_filename import safe_name
         return safe_name(key1)
-    except Exception:  # noqa: BLE001
+    except Exception:
         return key1
 
 

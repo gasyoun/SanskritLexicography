@@ -40,7 +40,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-from store_path import canonical_store  # noqa: E402
+from store_path import canonical_store
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))          # RussianTranslation/

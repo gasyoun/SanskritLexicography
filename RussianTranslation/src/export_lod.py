@@ -50,7 +50,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from rt_io import iter_jsonl  # noqa: E402
+from rt_io import iter_jsonl
 
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 DEFAULT_CARDS = os.path.join(HERE, 'assembled_cards.jsonl')

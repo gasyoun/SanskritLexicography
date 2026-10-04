@@ -38,7 +38,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 CSL = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02'))
 CANON = ('pwg', 'mw', 'pw', 'ap', 'ap90', 'ben', 'sch', 'bhs')
@@ -47,8 +47,8 @@ _ORDER = {s: i for i, s in enumerate(STATES)}
 SEED = 42
 
 sys.path.insert(0, HERE)
-import renou            # noqa: E402  (PWG/MW <ls> resolution + siglum map)
-import renou_sigla      # noqa: E402  (ap/ap90/ben/bhs siglum resolution)
+import renou
+import renou_sigla
 
 PWG_STYLE = {'pwg', 'pw', 'pwk', 'pwkvn', 'sch'}
 INLINE = {'ap', 'ap90', 'ben', 'bhs'}

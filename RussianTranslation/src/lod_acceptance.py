@@ -37,7 +37,7 @@ import tempfile
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-from rdflib import Graph  # noqa: E402
+from rdflib import Graph
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))

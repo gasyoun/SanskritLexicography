@@ -11,7 +11,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parents[1] / 'src' / 'pilot'))
 
-import gateway_attestation as att  # noqa: E402
+import gateway_attestation as att
 
 
 DISPATCHES = {

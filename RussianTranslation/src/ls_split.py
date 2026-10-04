@@ -50,7 +50,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 os.environ.setdefault("LS_RESOLVER_QUIET", "1")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import ls_resolver as lsr                                      # noqa: E402
+import ls_resolver as lsr
 
 #: The address-region boundary: a period, whitespace, then a digit. Applied only
 #: *after* the source prefix has been cut off, which is what keeps it away from

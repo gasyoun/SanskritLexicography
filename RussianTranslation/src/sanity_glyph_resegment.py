@@ -26,8 +26,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import pwg_mask  # noqa: E402
-import microstructure as ms  # noqa: E402
+import pwg_mask
+import microstructure as ms
 
 REPORTS_DIR = os.path.join(HERE, '..', 'reports')
 AUDIT_PATH = os.path.join(REPORTS_DIR, 'pwg_sense_glyph_audit.json')
@@ -188,7 +188,7 @@ def run(n, sample=None, post_fn=None):
                     % (rec['new_sense_count'], buf_text[:2500]))
             try:
                 verdict = post(user)
-            except Exception as exc:  # noqa: BLE001 -- classify as a skipped sample, not a hard stop
+            except Exception as exc:
                 row = {'record_id': rid, 'error': str(exc)[:200]}
             else:
                 row = {'record_id': rid, 'key1': rec.get('key1'),

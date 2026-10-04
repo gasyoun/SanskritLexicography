@@ -24,17 +24,17 @@ SRC = os.path.dirname(HERE)
 RT = os.path.dirname(SRC)
 REPO = os.path.dirname(RT)
 
-import cache_baseline_freeze as freeze  # noqa: E402
-import cache_economy_report as report  # noqa: E402
-import cache_event_ledger as ledger  # noqa: E402
-import cache_identity as ident  # noqa: E402
-import cache_pair_compare as pair_compare  # noqa: E402
-import cache_prep_census as census  # noqa: E402
-import cache_scheduler as sched  # noqa: E402
-import call_reservation as reserve  # noqa: E402
-import deepseek_arm as ds_arm  # noqa: E402
-import prep_pack  # noqa: E402
-import prompt_compiler as compiler  # noqa: E402
+import cache_baseline_freeze as freeze
+import cache_economy_report as report
+import cache_event_ledger as ledger
+import cache_identity as ident
+import cache_pair_compare as pair_compare
+import cache_prep_census as census
+import cache_scheduler as sched
+import call_reservation as reserve
+import deepseek_arm as ds_arm
+import prep_pack
+import prompt_compiler as compiler
 
 EXP_DIR = os.path.join(RT, 'experiments', 'pwg_cache_economy', 'h2704_prep')
 DEFAULT_ENV = os.path.join(os.path.dirname(REPO), 'ORS-FAQ', '.env')

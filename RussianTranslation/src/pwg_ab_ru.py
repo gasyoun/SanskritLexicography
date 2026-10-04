@@ -52,7 +52,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import pwg_ab  # noqa: E402
+import pwg_ab
 
 # The store is git-ignored local data, so a worktree checkout does not carry it;
 # PWG_RU_STORE lets census/coverage run from a worktree against the main clone.

@@ -27,8 +27,8 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent / "RussianTranslation" / "src" / "pilot"))
 
-import kitchen_slices as ks  # noqa: E402
-from dashboard_events import (  # noqa: E402
+import kitchen_slices as ks
+from dashboard_events import (
     OPERATOR_ONE_LINER_COLLISION,
     emit_collision,
 )

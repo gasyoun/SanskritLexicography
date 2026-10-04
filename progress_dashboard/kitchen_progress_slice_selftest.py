@@ -22,7 +22,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
-import kitchen_slices as ks  # noqa: E402
+import kitchen_slices as ks
 
 
 def test_none_not_measured():

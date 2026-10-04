@@ -17,7 +17,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import rt_io  # noqa: E402
+import rt_io
 
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 BASE_LABELS = os.path.join(ROOT, 'gold', 'human_gold_labels.jsonl')

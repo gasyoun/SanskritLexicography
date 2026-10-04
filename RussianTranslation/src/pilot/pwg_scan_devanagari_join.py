@@ -101,7 +101,7 @@ def parse_pwg_index(pwg_txt_path):
 
 def read_xlsx_rows(xlsx_path):
     """Yield (dev, translit, sense, numerik, Lref|int|None) per data row."""
-    import openpyxl  # noqa: PLC0415  repo-standard dep (see build_dhatup_*.py)
+    import openpyxl
 
     wb = openpyxl.load_workbook(xlsx_path, read_only=True, data_only=True)
     ws = wb[XLSX_SHEET]

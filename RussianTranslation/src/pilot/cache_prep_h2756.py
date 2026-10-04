@@ -19,9 +19,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import cache_economy_report as report  # noqa: E402
-import cache_identity as ident  # noqa: E402
-import cache_prep_census as census  # noqa: E402
+import cache_economy_report as report
+import cache_identity as ident
+import cache_prep_census as census
 
 RT = os.path.dirname(os.path.dirname(HERE))
 EXP = os.path.join(RT, 'experiments', 'pwg_cache_economy')

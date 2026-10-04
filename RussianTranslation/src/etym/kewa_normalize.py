@@ -32,10 +32,10 @@ import unicodedata
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                 "..", "..", "..", "..", "sanskrit-util", "py"))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from sanskrit_util import to_slp1  # noqa: E402  canonical transcoder, never a local copy
+from sanskrit_util import to_slp1
 
-from kewa_hk import hk_to_slp1  # noqa: E402
-from kewa_parse import iter_rows, strip_accents  # noqa: E402
+from kewa_hk import hk_to_slp1
+from kewa_parse import iter_rows, strip_accents
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")

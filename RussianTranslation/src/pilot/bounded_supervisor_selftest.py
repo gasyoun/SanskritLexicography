@@ -240,7 +240,7 @@ def test_g_satisfied_zero_delta(td):
         sup = BoundedSupervisor(plan, runner, cp, audit=audit,
                                 max_windows=10, empty_streak_cap=1)
         summ = sup.run()
-    except Exception as exc:  # noqa: BLE001 — a satisfied key must never be a hard error
+    except Exception as exc:
         raised = True
         summ = None
     assert not raised, 'a zero-store-delta requeue key must not be a hard error'

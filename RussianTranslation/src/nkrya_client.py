@@ -35,7 +35,7 @@ except ImportError as exc:      # fail closed with the fix, never a silent fallb
         "original error: %s" % exc)
 
 # Re-exported so `import nkrya_client as nk` keeps working verbatim.
-from csl_pyutil.nkrya import (          # noqa: F401  (re-export surface)
+from csl_pyutil.nkrya import (
     API, KEYCHAIN_SERVICE, TOKEN_ENV, SEED, SLICE_19C, STORE_HINT,
     MAX_RETRIES, DEFAULT_RATE_PER_MIN, DEFAULT_BURST,
     NkryaError, NkryaAuthError, NkryaOffline, TokenBucket,

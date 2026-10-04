@@ -25,7 +25,7 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import store_flags  # noqa: E402
+import store_flags
 
 # A row shaped exactly like the live store: review_status + key1/subcard/ru, and NONE
 # of the three legacy flags. This is the row the old conjunction scored as not ready.

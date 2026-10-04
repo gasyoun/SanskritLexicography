@@ -23,8 +23,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import cache_identity as ident  # noqa: E402
-import prompt_compiler as compiler  # noqa: E402
+import cache_identity as ident
+import prompt_compiler as compiler
 
 KNOWN_LEGACY = (
     'legacy_claude_v0',

@@ -34,7 +34,7 @@ SRC = os.path.dirname(HERE)
 for p in (SRC, HERE):
     if p not in sys.path:
         sys.path.insert(0, p)
-from store_path import canonical_store  # noqa: E402
+from store_path import canonical_store
 
 HANDOFF = 'H1302'
 DATE = '2026-07-19'

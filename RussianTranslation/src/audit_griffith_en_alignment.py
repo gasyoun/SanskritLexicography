@@ -47,7 +47,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 
 GITHUB = sibling_root(HERE)
 CORPUS_DB = os.environ.get(

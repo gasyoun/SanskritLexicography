@@ -19,8 +19,8 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import kernel, model, providers  # noqa: E402
-from pwg_pipeline.repository import open_repository  # noqa: E402
+from pwg_pipeline import kernel, model, providers
+from pwg_pipeline.repository import open_repository
 
 TOOLS = os.path.join(ROOT, 'tools')
 

@@ -75,11 +75,11 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from headless_worker import (                                        # noqa: E402
+from headless_worker import (
     bare_cli_cwd, build_prompt, claude_argv_prefix, parse_cli_wrapper)
-from h2189_min_profile import (                                      # noqa: E402
+from h2189_min_profile import (
     MIN_CONFIG_DIR, PAID_CONFIG_DIR, clean_cwd, cwd_ancestry_scan)
-from parse_workflow_cost import PRICE, cache_write_rate              # noqa: E402
+from parse_workflow_cost import PRICE, cache_write_rate
 
 CACHE_WRITE_1H = cache_write_rate('1h')
 

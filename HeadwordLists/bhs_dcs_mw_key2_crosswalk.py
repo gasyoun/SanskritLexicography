@@ -29,10 +29,10 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, "/Users/mac/Documents/GitHub/sanskrit-util/py")
-from sanskrit_util import to_slp1, slp1_form_key  # noqa: E402
+from sanskrit_util import to_slp1, slp1_form_key
 
 MARKER = re.compile(r"[˚()\-]")
-strip_markers = lambda s: MARKER.sub("", s)  # noqa: E731
+strip_markers = lambda s: MARKER.sub("", s)
 
 DB = Path("/Users/mac/Documents/GitHub/VisualDCS/src/DCS-data-2026/dcs_full.sqlite")
 NOW = REPO / "HeadwordLists" / "now-2026"

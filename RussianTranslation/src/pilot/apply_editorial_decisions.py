@@ -35,8 +35,8 @@ SRC = os.path.dirname(HERE)
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from store_path import canonical_store  # noqa: E402
-from store_write import locked_store_rewrite  # noqa: E402
+from store_path import canonical_store
+from store_write import locked_store_rewrite
 
 SCHEMA = 'pwg_ru.editorial_apply.v1'
 ENV_ALLOW_APPLY = 'PWG_RU_ALLOW_EDITORIAL_APPLY'

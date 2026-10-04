@@ -28,7 +28,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_page_index as fixed  # noqa: E402
+import pwg_page_index as fixed
 
 DEFAULT_REV = '7435178e0'
 REPO = os.path.normpath(os.path.join(HERE, '..', '..'))

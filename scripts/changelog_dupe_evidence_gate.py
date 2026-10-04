@@ -38,8 +38,8 @@ for _p in (HERE, PILOT):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-import changelog_duplicate_bullets as cdb                           # noqa: E402
-import gate_evidence as ge                                          # noqa: E402
+import changelog_duplicate_bullets as cdb
+import gate_evidence as ge
 
 #: Sibling changelogs the root-only gate does not reach. Discovered, not hardcoded —
 #: this list is only the search roots.

@@ -13,7 +13,7 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import compile_translatable as CT  # noqa: E402
+import compile_translatable as CT
 
 
 def test_owner_cite_trailing_stripped():

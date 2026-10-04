@@ -41,7 +41,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from edition_rel import base_subtype, is_unplaced_label   # noqa: E402
+from edition_rel import base_subtype, is_unplaced_label
 
 HANDOFF = "H3752"
 RULE = ("label re-derived from the sense-attachment result: a sense-asserting "

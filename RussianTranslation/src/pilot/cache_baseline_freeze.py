@@ -24,8 +24,8 @@ if SRC not in sys.path:
 RT = os.path.dirname(SRC)
 REPO = os.path.dirname(RT)
 
-import cache_identity as ident  # noqa: E402
-from store_path import canonical_sidecar, canonical_store  # noqa: E402
+import cache_identity as ident
+from store_path import canonical_sidecar, canonical_store
 
 OUT = os.path.join(RT, 'experiments', 'pwg_cache_economy', 'baseline', 'manifest.json')
 

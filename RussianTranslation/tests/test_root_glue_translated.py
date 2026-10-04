@@ -12,11 +12,11 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import root_glue_translated as RG  # noqa: E402
-from safe_filename import safe_name  # noqa: E402
+import root_glue_translated as RG
+from safe_filename import safe_name
 
 
-import pytest  # noqa: E402
+import pytest
 
 
 @pytest.fixture

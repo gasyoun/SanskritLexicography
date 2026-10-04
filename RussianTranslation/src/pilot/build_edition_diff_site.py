@@ -38,11 +38,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
 sys.path.insert(0, SRC)
-from edition_rel import (  # noqa: E402
+from edition_rel import (
     ALL_SUBTYPES, SUBTYPES, base_subtype, build_pwg_gender_index,
     build_pwg_sense_index, edition_rel_for_row,
 )
-from store_path import canonical_store  # noqa: E402
+from store_path import canonical_store
 
 STORE = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
 OUT_DIR = os.path.join(REPO, 'article_site')

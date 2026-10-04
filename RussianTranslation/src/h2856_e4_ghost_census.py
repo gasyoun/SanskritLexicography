@@ -59,7 +59,7 @@ SRC = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(SRC)
 GITHUB_ROOT = os.path.dirname(os.path.dirname(RT))
 sys.path.insert(0, SRC)
-from build_src import iast_to_slp1  # noqa: E402
+from build_src import iast_to_slp1
 
 HEADWORDS_FILE = os.path.join(RT, '..', 'HeadwordLists', 'now-2026', 'PWG-unique-key1-106082.txt')
 CORPUS_LEXICON = os.path.join(SRC, 'corpus_lexicon.jsonl')

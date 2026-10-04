@@ -59,8 +59,8 @@ PRICED_BY_ARM1 = 35
 GENERATED = '26-07-2026'
 
 sys.path.insert(0, SRC)
-from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config  # noqa: E402
-from review_binding import stamp, write_lock  # noqa: E402
+from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config
+from review_binding import stamp, write_lock
 
 
 def read_tsv(path):

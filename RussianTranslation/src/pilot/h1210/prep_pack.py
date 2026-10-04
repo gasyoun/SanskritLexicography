@@ -65,8 +65,8 @@ if PILOT not in sys.path:
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import deepseek_arm as ds  # noqa: E402
-import det_gate  # noqa: E402 — free Python twin of the H1209 JS gate (no Claude)
+import deepseek_arm as ds
+import det_gate
 
 SCHEMA_ID = 'pwg.prep_pack.v1'
 CONTEXT_SCHEMA_ID = 'pwg.prep_context.v1'
@@ -321,7 +321,7 @@ def load_de_source(key1: str, input_dir: str | None = None) -> dict | None:
                 with open(raw2, encoding='utf-8', errors='replace') as f:
                     text = f.read()
                 return {'text': text, 'source': raw2, 'units': None}
-        except Exception:  # noqa: BLE001
+        except Exception:
             pass
 
     # 2) translate/{key}.json unit dump (DE layer units)
@@ -508,7 +508,7 @@ def tm_content_addressed_hit(key1: str, input_dir: str | None) -> dict | None:
     try:
         from window_common import input_paths, sha256_file  # noqa: WPS433
         import translation_memory as tm  # noqa: WPS433
-    except Exception:  # noqa: BLE001
+    except Exception:
         return None
     raw_path, _portrait = input_paths(key1, input_dir=input_dir)
     if not os.path.exists(raw_path):
@@ -520,12 +520,12 @@ def tm_content_addressed_hit(key1: str, input_dir: str | None) -> dict | None:
                 raw_path = raw2
             else:
                 return None
-        except Exception:  # noqa: BLE001
+        except Exception:
             return None
     try:
         raw_sha = sha256_file(raw_path)
         entry = tm.lookup('ru', raw_sha)
-    except Exception:  # noqa: BLE001
+    except Exception:
         return None
     if not entry:
         return None
@@ -549,7 +549,7 @@ def tm_content_addressed_hit(key1: str, input_dir: str | None) -> dict | None:
                 if senses:
                     t = senses[0]
                     ru_preview = t[:120] + ('…' if len(t) > 120 else '')
-            except Exception:  # noqa: BLE001
+            except Exception:
                 pass
     return _classify_tm_hit({
         'rank': 1,
@@ -956,7 +956,7 @@ def write_pack(out_dir: str, pack: dict) -> str:
     try:
         from safe_filename import safe_name  # noqa: WPS433
         stem = safe_name(pack['key1'])
-    except Exception:  # noqa: BLE001
+    except Exception:
         stem = pack['key1']
     path = os.path.join(out_dir, '%s.json' % stem)
     fd, tmp = tempfile.mkstemp(prefix='.%s.' % stem, suffix='.tmp', dir=out_dir)
@@ -1073,7 +1073,7 @@ def write_compact_context(out_dir: str, pack: dict) -> str:
     try:
         from safe_filename import safe_name  # noqa: WPS433
         stem = safe_name(pack['key1'])
-    except Exception:  # noqa: BLE001
+    except Exception:
         stem = pack['key1']
     path = os.path.join(out_dir, '%s.context.json' % stem)
     encoded = json.dumps(value, ensure_ascii=False, indent=1) + '\n'
@@ -1253,7 +1253,7 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
         try:
             from safe_filename import safe_name  # noqa: WPS433
             stem = safe_name(k)
-        except Exception:  # noqa: BLE001
+        except Exception:
             stem = k
         existing = os.path.join(out_dir, '%s.json' % stem)
         if os.path.exists(existing):
@@ -1281,7 +1281,7 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
             k = futs[fut]
             try:
                 done[k] = fut.result()
-            except Exception as e:  # noqa: BLE001
+            except Exception as e:
                 p = next(x for x in packs if x['key1'] == k)
                 p['hard_flags']['notes'].append('live worker exception: %s: %s'
                                                 % (type(e).__name__, e))
@@ -1346,7 +1346,7 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
         try:
             from safe_filename import safe_name  # noqa: WPS433
             stem = safe_name(k)
-        except Exception:  # noqa: BLE001
+        except Exception:
             stem = k
         path = os.path.join(out_dir, '%s.json' % stem)
         if path not in paths:
@@ -1354,7 +1354,7 @@ def produce_live(keys: list[str], out_dir: str, model: str, env_file: str | None
     # Optional cost summary on stderr
     try:
         print('live cost: %s' % json.dumps(client.cost(), ensure_ascii=False), flush=True)
-    except Exception:  # noqa: BLE001
+    except Exception:
         pass
     if fence_hit:
         raise SystemExit('REFUSE: DeepSeek 401/402 on %s' % fence_hit)
@@ -1706,7 +1706,7 @@ def main(argv=None) -> int:
             cand = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
             if os.path.exists(cand):
                 store_path = cand
-        except Exception:  # noqa: BLE001
+        except Exception:
             pass
         if not store_path and os.path.exists(MAIN_STORE):
             store_path = MAIN_STORE

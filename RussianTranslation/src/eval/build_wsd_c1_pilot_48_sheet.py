@@ -55,13 +55,13 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
-from csl_pyutil import RU_UI_STRINGS, esc, mark_cyrillic  # noqa: E402
-from csl_pyutil.evidence import find_slp1  # noqa: E402
+from csl_pyutil import RU_UI_STRINGS, esc, mark_cyrillic
+from csl_pyutil.evidence import find_slp1
 
-from _sanskrit_util_vendored import source_line_to_iast  # noqa: E402
-from packset_output import emit_sheet  # noqa: E402
-from review_evidence_preflight import EvidenceManifest  # noqa: E402
-from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config  # noqa: E402
+from _sanskrit_util_vendored import source_line_to_iast
+from packset_output import emit_sheet
+from review_evidence_preflight import EvidenceManifest
+from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")

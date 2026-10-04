@@ -18,9 +18,9 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
-import build_dcs_maps          # noqa: E402
-import build_rollup_glossaries  # noqa: E402
-import build_vidyut_fallback    # noqa: E402
+import build_dcs_maps
+import build_rollup_glossaries
+import build_vidyut_fallback
 
 
 # --- Fixture A · W1.1 pseudo-root split -------------------------------------

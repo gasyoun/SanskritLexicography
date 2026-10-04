@@ -27,7 +27,7 @@ if hasattr(sys.stdout, "reconfigure"):
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-import build_h5262_nkrya_flag_sheet as B  # noqa: E402
+import build_h5262_nkrya_flag_sheet as B
 
 PUBLISHED_REV = "cdaba35cd"
 PER_SHEET = 10

@@ -527,7 +527,7 @@ def cmd_sheets(all_rubrics=False):
 # ------------------------------------------------------------------------ comet
 def cmd_comet():
     try:
-        from comet import download_model, load_from_checkpoint  # noqa
+        from comet import download_model, load_from_checkpoint
     except ImportError:
         print("BLOCKED: unbabel-comet is not installed. Steps (human/one-time):\n"
               "  1. pip install unbabel-comet\n"

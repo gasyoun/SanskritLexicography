@@ -17,8 +17,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import anthropic_batches_route as abr  # noqa: E402
-import anthropic_messages_route as amr  # noqa: E402
+import anthropic_batches_route as abr
+import anthropic_messages_route as amr
 
 
 def main():

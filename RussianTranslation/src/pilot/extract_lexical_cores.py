@@ -38,7 +38,7 @@ OUT_DIR = os.path.join(HERE, 'lexical_cores')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import build_src                                               # noqa: E402  canonical IAST->SLP1
+import build_src
 
 # core -> (filename, kind, lemma columns [0-based], pos column | None)
 # Приложение 5 is 7 periods x 2 cols (lemma, POS); lemmas sit in the even columns.

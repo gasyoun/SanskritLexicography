@@ -33,7 +33,7 @@ from store_write import locked_store_rewrite  # H2146/H3350 locked writer
 from promote_lock import PromoteClaim
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 BATCH_IN = os.path.join(HERE, '_batch_in.jsonl')

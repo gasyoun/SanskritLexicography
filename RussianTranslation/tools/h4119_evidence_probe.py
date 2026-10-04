@@ -50,8 +50,8 @@ for p in (SRC, os.path.join(SRC, 'pilot')):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-import store_path                                                  # noqa: E402
-import corpus_lexicon_lane as lane_mod                             # noqa: E402
+import store_path
+import corpus_lexicon_lane as lane_mod
 
 LOCAL_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 HOLDOUT_DEFAULT = 60
@@ -171,7 +171,7 @@ def probe_tm(rows, store_p, holdout_n=HOLDOUT_DEFAULT, lang='ru'):
         census['holdout'] = {'status': 'no_addressable_rows'}
         return census
 
-    import translation_memory as tm                                # noqa: E402
+    import translation_memory as tm
     step = max(1, len(addresses) // max(1, holdout_n))
     holdout = addresses[::step][:holdout_n]
     hold_set = set(holdout)

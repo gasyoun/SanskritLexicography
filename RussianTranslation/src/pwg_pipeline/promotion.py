@@ -29,11 +29,11 @@ for _path in (SRC, os.path.join(SRC, 'pilot')):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-import promotion_journal as legacy_journal  # noqa: E402  (durability primitives)
+import promotion_journal as legacy_journal
 
-from . import faults, model, validation  # noqa: E402
-from .evidence import jsonl_bytes, seal, sha256_bytes, sha256_file  # noqa: E402
-from .repository import Repository, utc_now  # noqa: E402
+from . import faults, model, validation
+from .evidence import jsonl_bytes, seal, sha256_bytes, sha256_file
+from .repository import Repository, utc_now
 
 SCHEMA = 'pwg.pipeline.promotion.v1'
 

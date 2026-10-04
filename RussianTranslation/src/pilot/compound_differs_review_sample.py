@@ -39,8 +39,8 @@ RARE_CLASS_QUOTA = 20   # guaranteed oversample of the rare member_count_diff cl
 GENERATED = '26-07-2026'
 
 sys.path.insert(0, SRC)
-from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config  # noqa: E402
-from review_binding import stamp, write_lock  # noqa: E402
+from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config
+from review_binding import stamp, write_lock
 
 
 def _members(s):

@@ -41,7 +41,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from probe_gold_strata import (  # noqa: E402  (local module, path set above)
+from probe_gold_strata import (
     content_tokens, gloss_text, lemma_key, load_dcs, merge_dcs,
     polysemy_bucket, sense_count,
 )

@@ -58,8 +58,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_mask              # noqa: E402
-import microstructure as ms  # noqa: E402
+import pwg_mask
+import microstructure as ms
 
 REPORTS_DIR = os.path.join(HERE, '..', 'reports')
 REPORT_PATH = os.path.join(REPORTS_DIR, 'H3948_four_tier_store_impact.json')

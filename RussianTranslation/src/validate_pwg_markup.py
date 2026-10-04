@@ -25,7 +25,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import pwg_mask  # noqa: E402 -- reused record splitter (H1350 architecture D-verdict: reuse)
+import pwg_mask
 
 REPORTS_DIR = os.path.join(HERE, '..', 'reports')
 

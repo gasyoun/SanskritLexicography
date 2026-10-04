@@ -32,7 +32,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.dirname(HERE)
 REPO = os.path.dirname(SRC)
 sys.path.insert(0, HERE)
-from window_common import input_paths  # noqa: E402
+from window_common import input_paths
 
 
 def feats(raw):

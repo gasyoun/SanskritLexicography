@@ -23,7 +23,7 @@ RUN = (dt.datetime(2026, 8, 12, 13, 25, 0, tzinfo=dt.timezone.utc),
 def parse(stamp):
     try:
         return dt.datetime.fromisoformat(str(stamp).replace('Z', '+00:00'))
-    except Exception:                                          # noqa: BLE001
+    except Exception:
         return None
 
 
@@ -34,7 +34,7 @@ for path in glob.glob(os.path.join(DIR, '*.jsonl')):
         for line in handle:
             try:
                 rows.append(json.loads(line))
-            except Exception:                                  # noqa: BLE001
+            except Exception:
                 pass
     stamps = [parse(r.get('timestamp')) for r in rows]
     stamps = [s for s in stamps if s]

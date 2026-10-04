@@ -27,7 +27,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', '..', '..', 'WhitneyRoots', 'scripts'))
-from sanskrit_util import to_slp1, iast_to_devanagari   # noqa: E402
+from sanskrit_util import to_slp1, iast_to_devanagari
 
 DSG_BASE = 'https://samskrtam.ru/sanskrit-lexicon/dsg/'
 

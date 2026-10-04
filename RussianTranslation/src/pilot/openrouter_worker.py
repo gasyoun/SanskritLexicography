@@ -37,7 +37,7 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from store_path import canonical_store   # noqa: E402
+from store_path import canonical_store
 
 SCHEMA_SAMPLE = 'pwg.e1_sample_manifest.v1'
 

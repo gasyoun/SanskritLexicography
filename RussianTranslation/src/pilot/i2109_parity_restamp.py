@@ -47,10 +47,10 @@ TRACKING = "https://github.com/gasyoun/SanskritLexicography/issues/2109"
 
 # H4408: ledger/checker mechanics live in parity_restamp.py; this receipt keeps
 # the #2109 MECHANISM/NOTE verdict text above.
-import os  # noqa: E402
+import os
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import parity_restamp as pr  # noqa: E402
+import parity_restamp as pr
 
 
 def flip_entry():

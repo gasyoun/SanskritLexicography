@@ -27,15 +27,15 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from markup_fidelity_gates import (  # noqa: E402
+from markup_fidelity_gates import (
     GLOSS_RE,
     dup_key,
     markup_span_flags,
     markup_wrapper_soft_flags,
     missing_target_flag,
 )
-from pwg_tm_gates import surface_form_flags  # noqa: E402
-from store_path import canonical_data_repo, canonical_store  # noqa: E402
+from pwg_tm_gates import surface_form_flags
+from store_path import canonical_data_repo, canonical_store
 
 # H3658: audit the ONE canonical store, not the executing checkout's possibly-stale copy —
 # promote_final_cards.py resolves canonically, so an un-ported auditor greens a different file.

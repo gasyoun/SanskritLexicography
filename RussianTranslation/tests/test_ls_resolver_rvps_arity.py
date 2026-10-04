@@ -21,7 +21,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
-import ls_resolver as lsr  # noqa: E402
+import ls_resolver as lsr
 
 
 # --- Rgveda-Pratisakhya (rvps) mislink --------------------------------------

@@ -15,7 +15,7 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import model, replay  # noqa: E402
+from pwg_pipeline import model, replay
 
 MATRIX = os.path.join(ROOT, 'tests', 'fixtures', 'pwg_pipeline')
 

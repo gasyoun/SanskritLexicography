@@ -130,7 +130,7 @@ def fetch_bodies(csl_root: Path, dict_code: str,
 
 def render_packset(items, config, screening, outdir: Path, sheet_id: str):
     """Call the house emitter (csl_pyutil) and write parent + packs."""
-    from csl_pyutil import render_review_sheet_packset  # noqa: E402
+    from csl_pyutil import render_review_sheet_packset
     out = render_review_sheet_packset(items, config, screening=screening)
     (outdir / f"{sheet_id}.html").write_text(out["parent"], encoding="utf-8")
     packdir = outdir / sheet_id
@@ -253,7 +253,7 @@ def main() -> None:
     args = ap.parse_args()
 
     try:
-        import csl_pyutil  # noqa: F401
+        import csl_pyutil
     except ImportError:
         venv = Path("/Users/mac/.venvs/sheet-smoke/bin/python")
         if venv.is_file():

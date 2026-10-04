@@ -52,13 +52,13 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
-from csl_pyutil import RU_UI_STRINGS, esc, mark_cyrillic, render_review_sheet  # noqa: E402
-from csl_pyutil.evidence import find_slp1  # noqa: E402
+from csl_pyutil import RU_UI_STRINGS, esc, mark_cyrillic, render_review_sheet
+from csl_pyutil.evidence import find_slp1
 
-from packset_output import emit_sheet  # noqa: E402
-from review_binding import stamp, write_lock  # noqa: E402
-from review_evidence_preflight import EvidenceManifest  # noqa: E402
-from review_sheet_standard import standard_config  # noqa: E402
+from packset_output import emit_sheet
+from review_binding import stamp, write_lock
+from review_evidence_preflight import EvidenceManifest
+from review_sheet_standard import standard_config
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")

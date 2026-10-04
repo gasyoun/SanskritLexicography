@@ -40,7 +40,7 @@ for _p in (HERE, SRC):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-import gate_evidence as ge                                          # noqa: E402
+import gate_evidence as ge
 
 PINS = []
 
@@ -838,7 +838,7 @@ def main():
     for name, fn in PINS:
         try:
             fn()
-        except Exception as exc:                    # noqa: BLE001 — report every pin
+        except Exception as exc:
             failures.append((name, exc))
             print('  RED  %s: %s: %s' % (name, type(exc).__name__, exc))
         else:

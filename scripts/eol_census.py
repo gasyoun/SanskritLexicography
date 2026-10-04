@@ -41,7 +41,7 @@ if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8")
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-import git_ops  # noqa: E402
+import git_ops
 
 _GIT_OPS = git_ops.GitOperations()
 

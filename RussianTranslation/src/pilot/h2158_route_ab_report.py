@@ -25,8 +25,8 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from headless_worker import build_prompt                             # noqa: E402
-from parse_workflow_cost import PRICE, cache_write_rate              # noqa: E402
+from headless_worker import build_prompt
+from parse_workflow_cost import PRICE, cache_write_rate
 
 # The campaign target H2152 6.6 states for the remaining bulk lane.
 CAMPAIGN_WORDS = 140_000

@@ -37,10 +37,10 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from store_path import canonical_store            # noqa: E402
-import promote_final_cards as pfc                 # noqa: E402
-from promote_lock import PromoteClaim              # noqa: E402
-import spot_check_daily as scd                    # noqa: E402
+from store_path import canonical_store
+import promote_final_cards as pfc
+from promote_lock import PromoteClaim
+import spot_check_daily as scd
 
 SCHEMA = 'pwg.lane_freeze.v1'
 SEV3_FREEZE_THRESHOLD = 2      # R4.1: >=2 sev-3/day freezes; 1 does not

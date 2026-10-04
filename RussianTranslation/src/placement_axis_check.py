@@ -29,8 +29,8 @@ sys.path.insert(0, HERE)
 # H3300: both inputs live in the MAIN checkout (gitignored); resolving them
 # relative to HERE made this gate unrunnable — and the sheet unverifiable — in
 # any linked worktree, i.e. exactly the sanctioned workflow.
-from store_path import canonical_store, main_worktree_root          # noqa: E402
-from rt_io import read_jsonl                                        # noqa: E402
+from store_path import canonical_store, main_worktree_root
+from rt_io import read_jsonl
 
 STORE = canonical_store(os.path.join(HERE, "pwg_ru_translated.jsonl"))
 _MAIN = main_worktree_root(HERE)
@@ -38,7 +38,7 @@ REL = (os.path.join(_MAIN, "RussianTranslation", "src",
                     "pwg_ru_relationships.jsonl") if _MAIN
        else os.path.join(HERE, "pwg_ru_relationships.jsonl"))
 
-from edition_rel import (  # noqa: E402
+from edition_rel import (
     ALL_SUBTYPES, SENSE_ASSERTING, base_subtype, build_pwg_sense_index,
     homonym_of, is_unplaced_label, lead_int, normalize_sense_tag,
     placement_label_consistent, pwg_correction_marker, sch_correction_marker,

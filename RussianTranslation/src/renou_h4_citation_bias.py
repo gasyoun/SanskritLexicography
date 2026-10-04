@@ -46,8 +46,8 @@ import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from renou_register import REGISTERS       # noqa: E402
-import renou_corpus_map as rcm             # noqa: E402
+from renou_register import REGISTERS
+import renou_corpus_map as rcm
 
 CANON = ('pwg', 'mw', 'pw', 'ap', 'ap90', 'ben', 'sch', 'bhs')
 

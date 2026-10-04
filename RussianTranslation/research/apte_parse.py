@@ -28,7 +28,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', '..', '..', 'WhitneyRoots', 'scripts'))
-from sanskrit_util import to_slp1, deva_to_iast            # noqa: E402
+from sanskrit_util import to_slp1, deva_to_iast
 
 BABYLON = os.path.join(HERE, 'external', 'apte-hi.babylon')
 VERBS01_MAP = os.path.join(HERE, '..', '..', '..', 'PWG', 'verbs01', 'pwg_verb_filter_map.txt')

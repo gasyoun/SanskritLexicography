@@ -30,7 +30,7 @@ REPO = HERE.parent
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(REPO / "RussianTranslation" / "src" / "pilot"))
 
-import kitchen_slices as ks  # noqa: E402
+import kitchen_slices as ks
 
 
 def _write_jsonl(path: Path, rows: list[dict]) -> None:
@@ -94,8 +94,8 @@ def test_missing_degrades_quietly():
 
 def test_emit_writes_canonical_without_events_path():
     """H2269 dual-run pin: canonical log must fill even when events_path is None."""
-    import max_account_orchestrator as mao  # noqa: E402
-    import run_observability as ro  # noqa: E402
+    import max_account_orchestrator as mao
+    import run_observability as ro
 
     class MemoryCallLedger:
         def reserve(self, *a, **k):

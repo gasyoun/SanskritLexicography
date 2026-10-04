@@ -23,8 +23,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import resolve_xrefs  # noqa: E402 -- reused, unmodified
-from export_lod import iri_local, esc  # noqa: E402 -- reused IRI/literal encoding
+import resolve_xrefs
+from export_lod import iri_local, esc
 
 
 def entries_in(base_ttl_path):

@@ -21,8 +21,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import root_segment_proto as RS                              # noqa: E402
-import root_glue as G                                        # noqa: E402
+import root_segment_proto as RS
+import root_glue as G
 
 PWG = os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 MW = os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'mw', 'mw.txt')

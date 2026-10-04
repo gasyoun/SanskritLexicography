@@ -54,9 +54,9 @@ sys.stderr.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from max_account_orchestrator import (_probe_call, _probe_prompt, EXACT_GEN_MODEL,
-                                      write_synthetic_preflight)  # noqa: E402
-from call_reservation import CallLimitReached, CallReservationLedger  # noqa: E402
-from execution_contract import ActiveCallClaim, config_dir_fingerprint  # noqa: E402
+                                      write_synthetic_preflight)
+from call_reservation import CallLimitReached, CallReservationLedger
+from execution_contract import ActiveCallClaim, config_dir_fingerprint
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MEASURED_SIZE = 6491  # padding_bytes of the D-K measured acceptance probe (-> 6828 actual, v1.9.17+)

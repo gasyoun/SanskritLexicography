@@ -47,7 +47,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 if os.path.join(HERE, 'pilot') not in sys.path:
     sys.path.insert(0, os.path.join(HERE, 'pilot'))
-import gate_evidence as ge                                          # noqa: E402
+import gate_evidence as ge
 
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 DEFAULT_RELEASE = os.path.join(ROOT, 'release')

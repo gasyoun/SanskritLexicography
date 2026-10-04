@@ -51,9 +51,9 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-import build_ls_map as blm       # noqa: E402  (<ls> regex + source_key)
-import sense_stratum as ss       # noqa: E402  (entries() <L>/<LEND> iteration)
-import renou                     # noqa: E402  (load_map)
+import build_ls_map as blm
+import sense_stratum as ss
+import renou
 
 # Top-level sense marker in the CURRENT canon: csl-orig now writes
 # «<div n="1"> 1〉» / «<div n="1">— 2〉»; the pre-reflow form was «… 1)».

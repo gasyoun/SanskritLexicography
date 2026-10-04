@@ -36,11 +36,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 
-from csl_pyutil.review_sheet import render_review_sheet, esc  # noqa: E402
-import review_binding  # noqa: E402
-from review_sheet_standard import standard_config  # noqa: E402
-from sheet_screening import screening_block  # noqa: E402
-from csl_pyutil import RU_UI_STRINGS, anatomy  # noqa: E402
+from csl_pyutil.review_sheet import render_review_sheet, esc
+import review_binding
+from review_sheet_standard import standard_config
+from sheet_screening import screening_block
+from csl_pyutil import RU_UI_STRINGS, anatomy
 
 GENERATED = "2026-08-15"
 SHEET_ID = "h2805_q3_deploy"

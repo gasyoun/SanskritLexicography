@@ -23,7 +23,7 @@ if HERE not in sys.path:
 
 # PR-A: the JSON/JSONL implementations live in rt_io; re-exported here so
 # every `import pwg_tm_canonical as C` consumer keeps its surface.
-from rt_io import (  # noqa: E402,F401
+from rt_io import (
     load_json,
     read_jsonl,
     save_json,

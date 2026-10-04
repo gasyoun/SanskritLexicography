@@ -46,10 +46,10 @@ os.environ.setdefault("LS_RESOLVER_QUIET", "1")
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-import mbh_locus                                                   # noqa: E402
-from build_mbh_verse_pages import iter_verses, can_build           # noqa: E402
-from ls_links import LS_RE, LsLinks                                # noqa: E402
-from store_path import canonical_store                             # noqa: E402
+import mbh_locus
+from build_mbh_verse_pages import iter_verses, can_build
+from ls_links import LS_RE, LsLinks
+from store_path import canonical_store
 
 try:
     from sanskrit_util import nfold
