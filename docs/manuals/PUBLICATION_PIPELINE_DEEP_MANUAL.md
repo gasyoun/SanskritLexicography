@@ -1,6 +1,6 @@
 # Publication pipeline — deep manual (papers · Brill book · docs_site)
 
-_Created: 11-07-2026 · Last updated: 20-08-2026_
+_Created: 11-07-2026 · Last updated: 04-10-2026_
 
 The subsystem deep manual for the **publication layer** of this workspace: the
 [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers)
@@ -27,7 +27,7 @@ All counts and states below verified against the tree on **11-07-2026**.
 
 | Asset | What it is | Contents (as of 11-07-2026) |
 |---|---|---|
-| [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Working directory for article manuscripts homed in *this* repo | 27 `.md` + 9 evidence `.csv` as of 20-08-2026 + `a31_origin_census.py` + the `a31/` and `sanskrit_in_numbers/` subdirectories — drafts/memos for A30, A31, A33–A36, A40, A42, A43, A58, A67 plus scoping notes |
+| [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Working directory for article manuscripts homed in *this* repo — **SWEPT 04-10-2026** under STANDING_POLICY_PAPER_WORK_PRIVATE_REPOS_ONLY ([#2385](https://github.com/gasyoun/SanskritLexicography/pull/2385)): all manuscripts/evidence moved to private repos; only the sweep canary ([CANARY_paper_priv.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/CANARY_paper_priv.md)) remains public (was 27 `.md` + 9 `.csv` + `a31_origin_census.py` + `a31/` + `sanskrit_in_numbers/` on 20-08-2026) |
 | [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) | Build folder for the single-authored monograph **M01**, *Digital Sanskrit Lexicography: The Dictionary as a Layered Evidence Graph* | [BOOK_PLAN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md) · [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md) · [RIGHTS_TABLE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/RIGHTS_TABLE.md) · [LITERATURE_CROSSWALK.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md) · [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md) · [chapters/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK/chapters) (all 14 chapter files `ch01`–`ch14` present as of 20-08-2026, plus intro, 5 part-bridges, conclusion) |
 | [docs_site/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site) | ZettelkastenWiki static-site builder publishing the pwg_ru research-conventions docs | [build_site.py](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/build_site.py) (103 lines) · [test_docs_site.py](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/test_docs_site.py) (4 tests) · [wiki/research/](https://github.com/gasyoun/SanskritLexicography/tree/master/docs_site/wiki/research) (10 docs, copies — sync caveats in §5.1) |
 
@@ -39,6 +39,13 @@ DOI minting, and site deployment are human-gated (§5, §7).
 ---
 
 ## 2. The paper lifecycle — idea to submission
+
+> **04-10-2026 sweep note (H5991):** the manuscript/evidence `papers/<Axx>*`
+> files linked in §2.1–§2.2 were moved to private repos under
+> STANDING_POLICY_PAPER_WORK_PRIVATE_REPOS_ONLY (#2385) — the blob links below
+> no longer resolve publicly; the lifecycle, ID discipline, and the
+> [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)
+> registry are unchanged.
 
 Every paper has a **stable, append-only ID** (`Axx`; monographs `Mxx`) in
 [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)

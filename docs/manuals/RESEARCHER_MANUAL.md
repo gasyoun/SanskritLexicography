@@ -1,6 +1,6 @@
 # Researcher Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 20-08-2026_
+_Created: 10-07-2026 · Last updated: 04-10-2026_
 
 For the **lexicographer, digital-humanities researcher, or historian of
 dictionaries** who wants to understand the intellectual programme here, cite its
@@ -78,8 +78,11 @@ a locked 14-chapter architecture with **all 14 chapter files present** as of
 [BRILL_PROPOSAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BRILL_PROPOSAL.md);
 canonical plan = BOOK_PLAN.md, which supersedes the roadmap's older 10-chapter sketch). Cross-repo paper status is tracked in
 [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md);
-working notes/reviews live in
-[papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers).
+working manuscripts/notes were swept out of the public
+[papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers)
+on 04-10-2026 (STANDING_POLICY_PAPER_WORK_PRIVATE_REPOS_ONLY,
+[#2385](https://github.com/gasyoun/SanskritLexicography/pull/2385)) — they live
+in private repos now, only the sweep canary remains public.
 
 ## 4. Research objects and datasets you can cite
 
@@ -100,8 +103,8 @@ The eight root registries (FINDINGS + its seven epistemic siblings) are not book
 apparatus a DSH/lexicography reviewer asks for and rarely gets. Cite findings by
 their stable `§N` number — **with the finding's date or title alongside**: the
 stability is a norm with known breaches (H616 repaired §70–§75; the 18-07-2026
-duplicate pairs at §80/§86/§87 are gone as of 20-08-2026 — 231 unique `### §N`
-headings, max §577 — and FINDINGS §92 itself measured ~65 wrong §-refs in a
+duplicate pairs at §80/§86/§87 are gone as of 20-08-2026 — 300 unique `### §N`
+headings, max §646, re-censused 04-10-2026 — and FINDINGS §92 itself measured ~65 wrong §-refs in a
 downstream register), so a bare number is not yet a safe citation key:
 
 - [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
