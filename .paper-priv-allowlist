@@ -1,4 +1,7 @@
-# .paper-priv-allowlist — manuscript-shape paths allowed to stay public.
-# One path/glob per line, `#` reason REQUIRED (published/preprint/licensed).
-# See paper-priv-guard.yml (tier-1) and Uprava paper_priv_sweep.py (tier-2).
-papers/CANARY_paper_priv.md	# positive control for the paper-priv sweep (H5908) — never delete; sweep expected-positive
+# .paper-priv-allowlist — manuscript-shape files this repo MAY keep in public.
+# One path/glob per line (shell-glob, repo-relative). Every active line
+# REQUIRES a reason comment on the same line or on the comment line(s) above:
+#   papers/foo.md  # published: <venue year> | preprint: <id> | license: <DOI>
+# Manuscripts live only in gasyoun/Uprava/papers
+# (STANDING_POLICY_PAPER_WORK_PRIVATE_REPOS_ONLY, 04-10-2026).
+# No active exemptions below — add lines only with a documented reason.
