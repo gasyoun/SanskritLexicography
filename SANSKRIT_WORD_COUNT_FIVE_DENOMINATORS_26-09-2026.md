@@ -1,6 +1,6 @@
 # Сколько всего слов в санскрите — решение как математическая задача: 5 знаменателей + ∞, аудит 6 интернет-мифов (RU)
 
-_Created: 26-09-2026 · Last updated: 26-09-2026_
+_Created: 26-09-2026 · Last updated: 05-10-2026 (H5509 verify-pass: знаменатель H сведён к величине решения H3538/CONTRADICTIONS §10 — первопубликация цитировала стёртый срез; рост H пересчитан по живому NOW_VS_THEN — 20 списков; гейт H5421 расширен на пробельные формы чисел)_
 
 _Handoff: [H5509 (OxAlpha `opencode/z-ai/glm-5.3-flash`)](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5509-OxAlpha_SanskritLexicography_sanskrit-word-count-five-denominators-myth-audit_26.09.26.md) · решения МГ 26-09-2026: HTML на github.io + этот .md, язык RU, оба DCS-знаменателя с разметкой, числа estate в ядре, просвещающий тон._
 
@@ -36,14 +36,14 @@ _Handoff: [H5509 (OxAlpha `opencode/z-ai/glm-5.3-flash`)](https://github.com/gas
 |---|---|---|---|---|
 | 1 | Корни D | dhātu по трём свидетелям традиции | 1 982 (Westergaard) · 2 247 (Mādhavīya) · 935 (Whitney, верифицированные) | [data/dhp/README.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/dhp/README.md), [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) |
 | 2 | Леммы L | различные леммы, аттестованные корпусом DCS | **98 606** (DCS-2026)¹ | [VisualDCS](https://github.com/gasyoun/VisualDCS) `dcs_lemma_summary.json` (A38) |
-| 3 | Headwords H | объединение 15 академических словарей CDSL | **323 425** (из них 17 386 статей MW без текстовой аттестации — «призраки»; независимая корроборация лишь 34,7%) | [union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) (C13), E47 |
+| 3 | Headwords H | объединение 15 академических словарей CDSL | **323 422** (из них 17 386 статей MW без текстовой аттестации — «призраки»; независимая корроборация лишь 34,7%) | [union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv) (C13; величина по решению H3538 — [CONTRADICTIONS §10](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#10-union-headword-total-323422-vs-323422), [RECIPES §5](https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#5-cross-dict-union-headword-index-323422--pwgmw94753--reproduce)), E47 |
 | 4 | Формы F | различные словоформы в корпусе | **408 000+** форм на 5 688 416 токенов / 270 текстов | E27 `dcs_form2lemma.tsv`, E44 |
 | 5 | Порождаемые G | парадигмальное пространство Пāнини | ≫ F: аттестовано лишь **10,44%** 24-клеточного падёжного пространства имён, медиана — 1 клетка на лемму (E52); 171 конечная глагольная клетка корпусно (E46) | [SanskritGrammar declension_cell_coverage](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/data/declension_cell_coverage), [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/paradigm_cell_coverage.md) |
 | 6 | Компаунды C | samāsa | **ℵ₀** (счётно-неограничено) | доказательство ниже |
 
 ¹ Развилка знаменателя (punch-list H044 «Fix ONE DCS denominator, never mix»): DCS-2021 даёт **83 239** аттестованных лемм ([dcs_lemma_summary.json](https://github.com/gasyoun/VisualDCS/blob/main/dcs_lemma_summary.json)). В тексте указаны оба с явной разметкой релиза: рост 83 239 → 98 606 между срезами сам показывает, что «число слов» зависит от корпуса и даты — четвёртая причина, почему единого ответа нет.
 
-Дополнительно: словарный рост H 2014 → 2026 — 1 055 081 → 1 206 384 строк по 18 сопоставимым спискам (+14,3%) ([NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md)): множество словарных статей **открыто**, ещё один довод против «итогового числа».
+Дополнительно: словарный рост H 2014 → 2026 — 1 264 957 → 1 416 311 строк по 20 сопоставимым спискам живого среза (+12,0%; на июньском срезе H044 было 18 списков и +14,3% — до добавления PD в июле, H1365) ([NOW_VS_THEN.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md)): множество словарных статей **открыто**, ещё один довод против «итогового числа».
 
 ## Доказательство |C| = ℵ₀
 
@@ -67,7 +67,7 @@ _Handoff: [H5509 (OxAlpha `opencode/z-ai/glm-5.3-flash`)](https://github.com/gas
 
 ### М3. «Monier-Williams содержит весь санскрит (~180 тысяч слов)»
 
-MW действительно имеет ≈ 185 803 статей ([mw_heritage_crosswalk.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv), C14). Ошибки: (a) словарь ≠ лексикон языка — 17 386 статей MW не имеют текстовой аттестации («призраки»), а независимая корроборация статей после схлопывания словарных семей — 34,7% (E47); (b) 15-словарный union на 43% больше (323 425); (c) H растёт (+14,3% за 12 лет) — «полноты» не существует.
+MW действительно имеет ≈ 185 803 статей ([mw_heritage_crosswalk.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv), C14). Ошибки: (a) словарь ≠ лексикон языка — 17 386 статей MW не имеют текстовой аттестации («призраки»), а независимая корроборация статей после схлопывания словарных семей — 34,7% (E47); (b) 15-словарный union на 43% больше (323 422); (c) H растёт (+14,3% за 12 лет) — «полноты» не существует.
 
 ### М4. «NASA признала санскрит лучшим языком для компьютеров»
 
