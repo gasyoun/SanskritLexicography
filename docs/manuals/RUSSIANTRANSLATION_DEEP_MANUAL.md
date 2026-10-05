@@ -1,6 +1,6 @@
 # RussianTranslation deep manual — the mw_ru and pwg_ru pipelines
 
-_Created: 11-07-2026 · Last updated: 01-09-2026_
+_Created: 11-07-2026 · Last updated: 04-10-2026_
 
 **LAST_VERIFIED:** 01-08-2026 · Grok 4.5 (`grok-4.5`) · [H2071](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2071-Grok_SanskritLexicography_rt-deep-manual-manifest-v2-steps-rewrite_01.08.26.md) — census residual “steps 4–7 still narrate historical Workflow” **closed**: §5 steps 4–9 document headless CLI + manifest v2 only; Workflow is forensics / historical note only (see §0 line 1 and step 4 historical note).
 
@@ -689,8 +689,11 @@ python src\pilot\script_census.py          # → src/pilot/SCRIPT_CENSUS.md
 python src\pilot\script_census.py --check  # drift gate
 ```
 
-Snapshot as of 24-07-2026: **306** Python files under `src/` (+ root
-`save_and_audit.py`), excluding archive / fixtures / nws bulk. See
+Snapshot as of 29-07-2026 (per the committed
+[SCRIPT_CENSUS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/SCRIPT_CENSUS.md)): **340** Python files under `src/` (+ root
+`save_and_audit.py`), excluding archive / fixtures / nws bulk — was 306 on
+24-07-2026. `script_census.py --check` reported DRIFT again on 04-10-2026
+(H5991): re-run the generator before the next production slice. See
 [SCRIPT_CENSUS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/SCRIPT_CENSUS.md).
 
 **Entry points only** (still hand-curated — the generator lists everything):

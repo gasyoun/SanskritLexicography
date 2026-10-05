@@ -19,9 +19,11 @@ schema change could silently rot --
 This selftest builds into a scratch dir against a scratch ``--config-dir`` and asserts all
 three, then diffs the fresh build against the committed golden artifact beside the fixture
 (``dq_canary_puregloss~~h0_zz_pw.manifest.v2.json``) so a later session can see exactly what
-changed. Two fields are volatile by construction and excluded from that diff: ``generated_at``
-(a timestamp) and ``config_dir_fingerprint`` (machine-bound) -- the fingerprint is instead
-asserted to equal the live hash of the scratch config dir, which is the stronger check.
+changed. Fields that are volatile by construction are excluded from that diff:
+``generated_at`` (a timestamp), ``config_dir_fingerprint`` (machine-bound) and
+``tm_available``/``suggest_tm`` (host TM-sidecar presence) -- the fingerprint is asserted to
+equal the live re-hash and the TM flags to equal the live existence probes, which are the
+stronger checks.
 
 Run standalone (``python src/pilot/canary_manifest_build_selftest.py``) or via
 ``window_selftest.py`` (``test_h2245_canary_manifest_builder``). Spends nothing.
@@ -45,9 +47,14 @@ from execution_contract import (SCHEMA_V2, config_dir_fingerprint,
 
 GOLDEN = os.path.join(cmb.REPO, 'pwg_ru', 'h994', 'canary',
                       cmb.CANARY_KEY + '.manifest.v2.json')
-# Volatile by construction: a timestamp and a machine-bound hash. Excluded from the golden
-# diff and checked separately (the fingerprint against a live re-hash, which is stricter).
-VOLATILE = ('generated_at', 'config_dir_fingerprint')
+# Volatile by construction: a timestamp and machine/host-bound facts. Excluded from the
+# golden diff and checked separately -- the fingerprint against a live re-hash (stronger),
+# tm_available/suggest_tm against the same live existence probe the builder ran
+# (translation_memory's canonical resolvers): whether the gitignored TM sidecars exist on
+# THIS host is runtime state, not builder shape, and pinning either to the regen host's
+# state made the golden diff fail on every host whose TM posture differed (H5948: CI red
+# since the golden picked up tm_available=true from a sidecar-equipped machine).
+VOLATILE = ('generated_at', 'config_dir_fingerprint', 'tm_available', 'suggest_tm')
 
 
 def check(condition, message):
@@ -99,6 +106,19 @@ def assert_contract(manifest, config_dir):
     check(manifest['execution']['config_dir_fingerprint'] == live,
           'config_dir_fingerprint is not the live hash of the bound config dir -- a copied '
           'literal would let this manifest fire against a profile it was never bound to')
+
+    # tm_available / suggest_tm are LIVE-COMPUTED host probes too (H5948): re-run the same
+    # existence probe the builder did (translation_memory's canonical resolvers) and require
+    # an exact match, so the golden diff can ignore them without losing the assertion.
+    import translation_memory as _tm
+    check(manifest['meta']['tm_available'] == os.path.exists(_tm.tm_path('ru')),
+          'tm_available does not match the live TM sidecar probe -- a stale copied literal '
+          'would misreport the reuse posture this canary will actually get')
+    check(manifest['meta']['suggest_tm'] == (
+        os.path.basename(_tm.suggest_tm_path('ru'))
+        if os.path.exists(_tm.suggest_tm_path('ru')) else None),
+        'suggest_tm does not match the live suggest-TM sidecar probe -- a stale copied '
+        'literal would misreport the suggest posture this canary will actually get')
 
 
 def assert_canary_geometry(manifest):

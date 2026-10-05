@@ -1,6 +1,6 @@
 # SanskritLexicography workspace manual — for agents
 
-_Created: 10-07-2026 · Last updated: 16-09-2026_
+_Created: 10-07-2026 · Last updated: 04-10-2026_
 
 Human twin (Russian):
 [MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_HUMAN_RU.md).
@@ -93,7 +93,10 @@ moved). Read fresh, in this order:
 [.ai_state.md](https://github.com/gasyoun/SanskritLexicography/blob/master/.ai_state.md)
 (root) → [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
 (human gates). One durable correction worth pinning: the ACC×NCC P2 gate is
-**MG's vote on the local 49,019-row sheet + `apply_p2_decisions.py`** —
+**MG's 686-card spot-check of the agent adjudicator (H1657: all 49,019 Tier C/D
+rows already carry verdicts in
+`HeadwordLists/works_catalogue/p2_agent_verdicts.jsonl.gz`; then
+`p2_precision_gate.py` + `apply_p2_decisions.py`)** —
 [PR #264](https://github.com/gasyoun/SanskritLexicography/pull/264) itself
 merged 09-07-2026 and is not the gate.
 
