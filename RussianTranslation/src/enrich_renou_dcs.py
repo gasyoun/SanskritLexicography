@@ -134,7 +134,7 @@ def report(s, index_path, out):
     for st in STATES:
         print('    %-3s %-15s %d' % (st, renou.RENOU_NAME[st], s['enriched_by_state'].get(st, 0)))
     if out:
-        print('→ %s' % out)
+        print('→ {}'.format(out))
 
 
 def main():
@@ -155,7 +155,7 @@ def main():
         elif a == '--report':
             report_only = True; i += 1
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
     if not report_only and out is None:
         out = path
     run(path, out, index_path, report_only)

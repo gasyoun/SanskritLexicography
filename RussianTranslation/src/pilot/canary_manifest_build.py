@@ -80,7 +80,7 @@ REPO = os.path.dirname(os.path.dirname(HERE))    # RussianTranslation/ (src/pilo
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from execution_contract import PRODUCTION_HARD_TIMEOUT_MS  # noqa: E402
+from execution_contract import PRODUCTION_HARD_TIMEOUT_MS
 
 # The curated H994 D-Q silent-sense-loss synthetic control. Its provenance_class is
 # synthetic_control, so canary_gate refuses to judge a real window as a canary.
@@ -127,7 +127,7 @@ def build(profile_slot, config_dir, outdir, root, key=CANARY_KEY,
     portrait = os.path.join(fixture_dir, key + '.portrait.json')
     for path in (raw, portrait):
         if not os.path.exists(path):
-            raise SystemExit('canary fixture missing: %s' % path)
+            raise SystemExit('canary fixture missing: {}'.format(path))
     os.makedirs(outdir, exist_ok=True)
     manifest = os.path.join(outdir, 'execution_manifest.canary.json')
     harness = os.path.join(outdir, 'run_pilot_wf.canary.js')
@@ -135,35 +135,33 @@ def build(profile_slot, config_dir, outdir, root, key=CANARY_KEY,
 
     env = dict(os.environ, PWG_INPUT_DIR=fixture_dir)
     cmd = [sys.executable, os.path.join(HERE, 'gen_opt_harness2.py'), root,
-           '--nominal', '--no-grammar', '--keys=%s' % key,
-           '--synthetic-keys=%s' % key,
+           '--nominal', '--no-grammar', '--keys={}'.format(key),
+           '--synthetic-keys={}'.format(key),
            # H4054: pin the canary's call shape so the golden artifact stays diff-stable
            # against future generator-default drift (the one-key canary is one card per call
            # under any default).
            '--output-budget=1',
-           '--profile-slot=%s' % profile_slot,
+           '--profile-slot={}'.format(profile_slot),
            '--execution-route=claude-cli-headless',
            '--executor-lane=serial-whole-card',
            '--validation-method=audit_window+final_schema',
-           '--out=%s' % harness, '--manifest-out=%s' % manifest]
+           '--out={}'.format(harness), '--manifest-out={}'.format(manifest)]
     if config_dir:
-        cmd.append('--config-dir=%s' % config_dir)
+        cmd.append('--config-dir={}'.format(config_dir))
     proc = subprocess.run(cmd, cwd=REPO, env=env, text=True,
                           encoding='utf-8', capture_output=True)
     if proc.returncode:
-        raise SystemExit('gen_opt_harness2 failed:\n%s'
-                         % (proc.stderr or proc.stdout)[-2000:])
+        raise SystemExit('gen_opt_harness2 failed:\n{}'.format((proc.stderr or proc.stdout)[-2000:]))
 
     # The REAL lane preflight, not write_synthetic_preflight(): headless_worker refuses a
     # synthetic-probe preflight with "synthetic probe preflight cannot authorize manifest
     # execution" (that helper serves orchestrator probes that carry no manifest).
     pf = subprocess.run(
         [sys.executable, os.path.join(HERE, 'perf_preflight.py'), root,
-         '--nominal', '--no-grammar', '--keys=%s' % key, '--json'],
+         '--nominal', '--no-grammar', '--keys={}'.format(key), '--json'],
         cwd=REPO, env=env, text=True, encoding='utf-8', capture_output=True)
     if pf.returncode:
-        raise SystemExit('perf_preflight failed:\n%s'
-                         % (pf.stderr or pf.stdout)[-2000:])
+        raise SystemExit('perf_preflight failed:\n{}'.format((pf.stderr or pf.stdout)[-2000:]))
     with open(preflight, 'w', encoding='utf-8', newline='\n') as fh:
         fh.write(pf.stdout)
 
@@ -186,7 +184,7 @@ def main(argv=None):
     ap.add_argument('--no-cli-safe-mode', dest='cli_safe_mode', action='store_false',
                     help='pin execution.cli_safe_mode=false (spawn WITHOUT --safe-mode)')
     args = ap.parse_args(argv)
-    root = args.root or 'nominal_%scanary' % args.profile_slot
+    root = args.root or 'nominal_{}canary'.format(args.profile_slot)
 
     manifest, harness, preflight, sha = build(
         args.profile_slot, args.config_dir, args.outdir, root,
@@ -196,18 +194,17 @@ def main(argv=None):
     print('preflight :', preflight)
     print('sha256    :', sha)
     print('safe mode : %s' % ('(lane default -- key absent)' if args.cli_safe_mode is None
-                              else 'execution.cli_safe_mode=%s'
-                                   % json.dumps(args.cli_safe_mode)))
+                              else 'execution.cli_safe_mode={}'.format(json.dumps(args.cli_safe_mode))))
     print()
     print('next (ONE paid call):')
-    print('  python src/pilot/headless_worker.py %s \\' % manifest)
-    print('      --output %s/out.canary.json \\' % args.outdir)
-    print('      --status-out %s/status.canary.json \\' % args.outdir)
+    print('  python src/pilot/headless_worker.py {} \\'.format(manifest))
+    print('      --output {}/out.canary.json \\'.format(args.outdir))
+    print('      --status-out {}/status.canary.json \\'.format(args.outdir))
     print('      --only-profile %s --max-agents 1 --timeout %d --max-calls 3 \\'
           % (args.profile_slot, PRODUCTION_HARD_TIMEOUT_MS // 1000))
-    print('      --manifest-sha256 %s \\' % sha)
-    print('      --preflight %s \\' % preflight)
-    print('      --call-reservation %s/calls.canary.json --run-id <run-id>' % args.outdir)
+    print('      --manifest-sha256 {} \\'.format(sha))
+    print('      --preflight {} \\'.format(preflight))
+    print('      --call-reservation {}/calls.canary.json --run-id <run-id>'.format(args.outdir))
     return 0
 
 

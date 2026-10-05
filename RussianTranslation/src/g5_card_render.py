@@ -69,8 +69,8 @@ for _p in (HERE, os.path.join(HERE, "pilot")):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-import pwg_sources                                    # noqa: E402  <ls> siglum -> full title
-from build_article_site import _render as site_render  # noqa: E402  the canonical renderer
+import pwg_sources
+from build_article_site import _render as site_render
 
 # --------------------------------------------------------------------- NWS bracket tags
 #: Slot 1 of an NWS `[X, Y]` tag — the diasystem (tradition the sense belongs to).
@@ -177,7 +177,7 @@ def _norm(tok):
 
 
 def _abbr(visible, title):
-    return '<abbr class="nwstag" title="%s">%s</abbr>' % (
+    return '<abbr class="nwstag" title="{}">{}</abbr>'.format(
         title.replace('"', "&quot;"), visible)
 
 
@@ -194,10 +194,10 @@ def _gloss_bracket(m):
     gb = DOMAIN_RU.get(core) or DOMAIN_RU.get(_norm(core))
     if not ga and not gb:
         return m.group(0)
-    bits = ["%s — %s" % (a, ga or "диасистемная помета"),
-            "%s — %s" % (core, gb or "домен")]
+    bits = ["{} — {}".format(a, ga or "диасистемная помета"),
+            "{} — {}".format(core, gb or "домен")]
     if sv:
-        bits.append("%s — статья, к которой относится помета" % sv)
+        bits.append("{} — статья, к которой относится помета".format(sv))
     return _abbr(m.group(0), "; ".join(bits))
 
 
@@ -211,14 +211,14 @@ def _gloss_position(m):
         return m.group(0)
     title = POSITION_RU[k]
     if sub and sub in POSITION_RU:
-        title += "; %s — %s" % (sub, POSITION_RU[sub])
+        title += "; {} — {}".format(sub, POSITION_RU[sub])
     return _abbr(m.group(0), title)
 
 
 def _gloss_nws(m):
     return _abbr(m.group(0),
-                 "NWS — слой «Nachträge»: источник добавления и страница (%s). "
-                 "Это провенанс пометы, а не цитата из текста." % m.group("src").strip())
+                 "NWS — слой «Nachträge»: источник добавления и страница ({}). "
+                 "Это провенанс пометы, а не цитата из текста.".format(m.group("src").strip()))
 
 
 # --------------------------------------------------------------------- the card's own tags
@@ -317,18 +317,16 @@ def card_legend_html(tags, vocab=None):
         for v in vals:
             gloss = _SLOT_GLOSS[slot].get(v) or _SLOT_GLOSS[slot].get(_norm(v))
             share = corpus_share(slot, v, vocab)
-            bits.append('<span class="tagname">%s</span> — %s%s'
-                        % (v, gloss or "значение не установлено",
+            bits.append('<span class="tagname">{}</span> — {}{}'.format(v, gloss or "значение не установлено",
                            "" if share is None else
-                           ' <span class="tagshare">%.1f%% корпуса</span>' % share))
-        rows.append('<div class="tagrow"><span class="tagslot">%s</span>%s</div>'
-                    % (slot_ru, " · ".join(bits)))
+                           ' <span class="tagshare">{:.1f}% корпуса</span>'.format(share)))
+        rows.append('<div class="tagrow"><span class="tagslot">{}</span>{}</div>'.format(slot_ru, " · ".join(bits)))
     if tags.get("domain"):
-        rows.append('<div class="tagnote">%s</div>' % DOMAIN_NOTE_RU)
+        rows.append('<div class="tagnote">{}</div>'.format(DOMAIN_NOTE_RU))
     rows.append('<div class="tagnote">Полный словарь помет со статистикой: '
-                '<a href="%s" target="_blank" rel="noopener">NWS_TAG_VOCABULARY_CENSUS_2026-07.md</a>'
-                '</div>' % CENSUS_URL)
-    return '<div class="cardtags">%s</div>' % "".join(rows)
+                '<a href="{}" target="_blank" rel="noopener">NWS_TAG_VOCABULARY_CENSUS_2026-07.md</a>'
+                '</div>'.format(CENSUS_URL))
+    return '<div class="cardtags">{}</div>'.format("".join(rows))
 
 
 # --------------------------------------------------------------------- bare citations
@@ -358,9 +356,9 @@ def _bare_citation_html(m):
     # first sentence only — pwgbib entries run to a full bibliographic paragraph,
     # and a tooltip that long is unreadable at hover size
     short = re.split(r"(?<=[.!?])\s", src.strip(), maxsplit=1)[0].rstrip(".")
-    title = ("%s — %s. Ссылки нет: в этом слое цитата не размечена тегом ls, "
-             "а её сиглы не в конвенции PWG (H1809)." % (sig, short))
-    return '<span class="barecit" title="%s">%s</span>' % (
+    title = ("{} — {}. Ссылки нет: в этом слое цитата не размечена тегом ls, "
+             "а её сиглы не в конвенции PWG (H1809).".format(sig, short))
+    return '<span class="barecit" title="{}">{}</span>'.format(
         title.replace('"', "&quot;"), m.group(0))
 
 
@@ -420,7 +418,7 @@ def print_panel(ru_text):
     tooltip, `<ab>` its Russian equivalent with the German/English expansion in
     the tooltip, `{#…#}` italic IAST. Russian words are highlighted (V7)."""
     rendered = site_render(ru_text or "", "html", "ru")
-    return '<div class="printview">%s</div>' % annotate(mark_cyrillic(rendered))
+    return '<div class="printview">{}</div>'.format(annotate(mark_cyrillic(rendered)))
 
 
 def print_panel_de(de_text):
@@ -429,7 +427,7 @@ def print_panel_de(de_text):
     the RU column; running it on PWG German would paint nothing useful and
     would fail the split-layout 'no Russian bodies in .col-de' gate)."""
     rendered = site_render(de_text or "", "html", "de")
-    return '<div class="printview">%s</div>' % annotate(rendered)
+    return '<div class="printview">{}</div>'.format(annotate(rendered))
 
 
 def store_panel(ru_text):
@@ -452,7 +450,7 @@ def _anatomy_plain(chunk):
     out = annotate(escaped)
     if out == escaped:
         return None                     # nothing to add — let anatomy style it
-    return '<span style="color:#d8dce2">%s</span>' % out
+    return '<span style="color:#d8dce2">{}</span>'.format(out)
 
 
 def same_text(ru_text):
@@ -528,7 +526,7 @@ def _selftest():
                             ("{#brU#}", "brū", "bru- is a root, not the siglum br"),
                             ("{#hyu^gra#}", "hyugra", "ugra is Sanskrit, not the siglum gra")):
         check(want in print_panel(slp1),
-              "genuine Sanskrit is not shielded: %s" % why)
+              "genuine Sanskrit is not shielded: {}".format(why))
     check("pṭ" in print_panel("{#pw#}"),
           "a bare pw with no (= anchor is still treated as SLP1")
 
@@ -575,8 +573,7 @@ def _selftest():
     check_if(not have_etext, "class=lse" not in linked,
              "no presence table -> no e-text claim rendered at all",
              "presence table present, so the silent path is not exercised here")
-    print("  (pwgab table %s · pwgbib bibliography %s · MBh e-text %s)"
-          % ("present" if have_ab else "ABSENT", "present" if have_bib else "ABSENT",
+    print("  (pwgab table {} · pwgbib bibliography {} · MBh e-text {})".format("present" if have_ab else "ABSENT", "present" if have_bib else "ABSENT",
              "present" if have_etext else "ABSENT"))
 
     a = store_panel(ls)

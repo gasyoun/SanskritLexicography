@@ -24,7 +24,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import nws_split as NS  # noqa: E402
+import nws_split as NS
 
 DEF_TAR = '/Users/mac/Documents/GitHub/pwg-ru-data/layers/nws.tar.gz'
 
@@ -102,7 +102,7 @@ def main():
                     if len(samples['rescued_truncation']) < args.samples:
                         samples['rescued_truncation'].append(
                             (item.get('key1'), e.get('lemma'), g[:160],
-                             'OLD:%r' % o[:80], 'NEW:%r' % nw[:80]))
+                             'OLD:{!r}'.format(o[:80]), 'NEW:{!r}'.format(nw[:80])))
                 elif len(o) > len(nw):
                     # OLD kept text (cite not stripped) the NEW now strips
                     stats['rescued_miss'] += 1
@@ -114,7 +114,7 @@ def main():
 
     print(json.dumps(stats, ensure_ascii=False, indent=1))
     for kind, rows in samples.items():
-        print('\n== %s ==' % kind)
+        print('\n== {} =='.format(kind))
         for r in rows:
             print(' ', r)
 

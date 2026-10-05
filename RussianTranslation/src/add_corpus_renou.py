@@ -108,7 +108,7 @@ def main():
         elif a == '--report':
             report_only = True; i += 1
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
     if not name or state not in renou.STATES:
         raise SystemExit('require --name and --renou I|II|III|IV|V')
 
@@ -117,8 +117,8 @@ def main():
     pre = len(idx)
     res = fold(idx, sources, forms, name, state, date, force)
     if res.get('skipped'):
-        print('already folded: %s (use --force to re-apply)' % name); return
-    print('text: %s  → state %s  date %s' % (name, state, date))
+        print('already folded: {} (use --force to re-apply)'.format(name)); return
+    print('text: {}  → state {}  date {}'.format(name, state, date))
     print('  distinct word-forms: %d' % res['forms'])
     print('  NEW form keys added: %d' % res['added_new'])
     print('  existing index lemmas that GAINED state %s: %d' % (state, res['updated_existing']))
@@ -127,7 +127,7 @@ def main():
         print('  (report only — index not written)')
         return
     save_index(index_path, idx, sources)
-    print('→ %s  (sources: %s)' % (os.path.basename(index_path), ', '.join(sources)))
+    print('→ {}  (sources: {})'.format(os.path.basename(index_path), ', '.join(sources)))
 
 
 if __name__ == '__main__':

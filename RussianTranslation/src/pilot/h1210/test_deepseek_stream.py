@@ -10,7 +10,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-import deepseek_arm as ds  # noqa: E402
+import deepseek_arm as ds
 
 
 def main():

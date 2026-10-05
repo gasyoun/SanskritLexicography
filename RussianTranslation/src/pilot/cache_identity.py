@@ -179,7 +179,7 @@ def selftest():
     if dumped[:3] == b'\xef\xbb\xbf':
         raise AssertionError('BOM leaked into canonical bytes')
     if dumped != b'{"a":2,"b":1}\n':
-        raise AssertionError('canonical JSON is not sorted compact LF: %r' % dumped)
+        raise AssertionError('canonical JSON is not sorted compact LF: {!r}'.format(dumped))
     rec = build_request_record(base)
     if rec['promotable'] is not False:
         raise AssertionError('request records are never promotable')

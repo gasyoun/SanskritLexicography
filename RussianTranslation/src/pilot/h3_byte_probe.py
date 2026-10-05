@@ -19,10 +19,10 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
-from selftest_isolation import guard as _isolation_guard  # noqa: E402
+from selftest_isolation import guard as _isolation_guard
 _isolation_guard()
 
-import window_common as wc  # noqa: E402
+import window_common as wc
 
 PAYLOAD = {
     'schema': 'pwg.window_status.v1',
@@ -61,17 +61,17 @@ def main():
         wc.atomic_write_json(b, PAYLOAD)
         raw_a, raw_b = open(a, 'rb').read(), open(b, 'rb').read()
 
-    print('platform os.linesep : %r' % os.linesep)
-    print('current atomic_json          : %s' % describe(raw_a))
-    print('window_common.atomic_write_json: %s' % describe(raw_b))
+    print('platform os.linesep : {!r}'.format(os.linesep))
+    print('current atomic_json          : {}'.format(describe(raw_a)))
+    print('window_common.atomic_write_json: {}'.format(describe(raw_b)))
     print('identical bytes              : %s' % (raw_a == raw_b))
     if raw_a != raw_b:
         print('\nfirst divergence:')
         for i, (x, y) in enumerate(zip(raw_a, raw_b)):
             if x != y:
                 print('  offset %d: current=%r routed=%r' % (i, bytes([x]), bytes([y])))
-                print('  current head: %r' % raw_a[max(0, i - 12):i + 12])
-                print('  routed  head: %r' % raw_b[max(0, i - 12):i + 12])
+                print('  current head: {!r}'.format(raw_a[max(0, i - 12):i + 12]))
+                print('  routed  head: {!r}'.format(raw_b[max(0, i - 12):i + 12]))
                 break
         else:
             print('  (common prefix identical; lengths differ %d vs %d)'

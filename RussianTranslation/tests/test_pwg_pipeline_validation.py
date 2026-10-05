@@ -15,8 +15,8 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import validation  # noqa: E402
-from pwg_pipeline.evidence import sha256_file  # noqa: E402
+from pwg_pipeline import validation
+from pwg_pipeline.evidence import sha256_file
 
 
 def clean_row(index):

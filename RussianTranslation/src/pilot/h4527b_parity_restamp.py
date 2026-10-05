@@ -40,7 +40,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import parity_restamp as pr  # noqa: E402
+import parity_restamp as pr
 
 ENTRY_ID = 'probe_honest_question_h4527'
 BRIDGE_ID = 'probe_provenance_bridge_h4277'

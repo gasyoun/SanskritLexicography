@@ -19,7 +19,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 MW_TXT = os.path.normpath(
     os.path.join(GITHUB, 'csl-orig', 'v02', 'mw', 'mw.txt'))
@@ -75,7 +75,7 @@ def _parse_members(k2_raw):
 
 def build():
     if not os.path.exists(MW_TXT):
-        sys.exit('MW source not found: %s (clone sanskrit-lexicon/csl-orig as a sibling)' % MW_TXT)
+        sys.exit('MW source not found: {} (clone sanskrit-lexicon/csl-orig as a sibling)'.format(MW_TXT))
     lookup = {}
     n_scanned = n_compound = 0
     for line in open(MW_TXT, encoding='utf-8'):
@@ -136,7 +136,7 @@ def selftest():
         got = _parse_members(k2)
         if got != want:
             bad += 1
-            print('FAIL %r -> %r, want %r' % (k2, got, want))
+            print('FAIL {!r} -> {!r}, want {!r}'.format(k2, got, want))
     print('mw_compounds: %d/%d fixtures pass' % (len(_SELFTEST) - bad, len(_SELFTEST)))
     return 1 if bad else 0
 
@@ -156,9 +156,9 @@ def main():
         k1 = args[idx + 1]
         members = compound_for(k1)
         if members is None:
-            print('not a compound in MW: %r' % k1)
+            print('not a compound in MW: {!r}'.format(k1))
         else:
-            print('%s  →  %s' % (k1, '  +  '.join(members)))
+            print('{}  →  {}'.format(k1, '  +  '.join(members)))
         return
     print(__doc__)
 

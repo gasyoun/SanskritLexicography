@@ -63,7 +63,7 @@ def main():
             w.writerow(row)
     counts = collections.Counter((r.get('period') or '', r.get('kind') or '') for r in selected)
     print('double-review queue: %d row(s) -> %s' % (len(selected), args.out))
-    print('strata:', dict(sorted(('%s/%s' % k, v) for k, v in counts.items())))
+    print('strata:', dict(sorted(('{}/{}'.format(*k), v) for k, v in counts.items())))
 
 
 if __name__ == '__main__':

@@ -20,8 +20,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import cache_event_ledger as ledger  # noqa: E402
-import cache_identity as ident  # noqa: E402
+import cache_event_ledger as ledger
+import cache_identity as ident
 
 H2676_USD_PER_CLEAN = 0.01991
 H2676_DET_CLEAN = 21
@@ -227,7 +227,7 @@ def derive(manifest, events):
     generation_lane = 'INCONCLUSIVE'
     fail_reasons = []
     if stop_reason:
-        fail_reasons.append('stop:%s' % stop_reason)
+        fail_reasons.append('stop:{}'.format(stop_reason))
     if parseable_n < parseable_min:
         fail_reasons.append('parseable %d/%d' % (parseable_n, parseable_denom))
     if model_mismatch:
@@ -328,8 +328,7 @@ def main(argv=None):
     os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
     with open(args.out, 'w', encoding='utf-8', newline='\n') as handle:
         handle.write(ident.canonical_dumps(report))
-    print('generation_lane=%s parseable=%s/%s unique_clean=%s total_usd=%s'
-          % (report['generation_lane_verdict'], report['parseable'],
+    print('generation_lane={} parseable={}/{} unique_clean={} total_usd={}'.format(report['generation_lane_verdict'], report['parseable'],
              PARSEABLE_DENOM, report['unique_clean_cards'], report['total_usd']))
     return 0
 

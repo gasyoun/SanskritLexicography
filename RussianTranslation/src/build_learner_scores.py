@@ -32,7 +32,7 @@ import sys, os, io, json, re
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from slp1_norm import slp1_norm  # noqa: E402
+from slp1_norm import slp1_norm
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)                       # RussianTranslation/

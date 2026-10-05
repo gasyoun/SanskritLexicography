@@ -118,8 +118,8 @@ def row_apparatus_as_gloss(row):
         return False                       # real prose remains — not pure apparatus
     for sp in spans:
         if sp['category'] == 'uncertain':
-            print('store_flags: uncertain metalanguage %r treated as not-gloss '
-                  '(key1=%s)' % (sp['text'], row.get('key1')), file=sys.stderr)
+            print('store_flags: uncertain metalanguage {!r} treated as not-gloss '
+                  '(key1={})'.format(sp['text'], row.get('key1')), file=sys.stderr)
     return True
 
 

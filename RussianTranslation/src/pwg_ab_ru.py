@@ -52,7 +52,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import pwg_ab  # noqa: E402
+import pwg_ab
 
 # The store is git-ignored local data, so a worktree checkout does not carry it;
 # PWG_RU_STORE lets census/coverage run from a worktree against the main clone.
@@ -234,13 +234,13 @@ def display(token):
     title   = the authoritative DE/EN expansion (pwg_ab), for the hover tooltip."""
     tok = token.strip()
     r = pwg_ab.resolve(tok)
-    title = ('%s — %s' % (r['de'], r['en'])) if r else None
+    title = ('{} — {}'.format(r['de'], r['en'])) if r else None
     return RU_MAP.get(tok, tok), title
 
 
 def cmd_lookup(args):
     vis, title = display(args[0])
-    print('%s -> %r  (title: %s)' % (args[0], vis, title))
+    print('{} -> {!r}  (title: {})'.format(args[0], vis, title))
 
 
 def cmd_coverage(_args):

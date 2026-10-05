@@ -59,8 +59,8 @@ def classify(g):
 
 
 def ensure_inputs(section):
-    if not os.path.exists(os.path.join(OUT, 'scale_manifest.%s.json' % section)):
-        print('· building scale_manifest.%s.json …' % section)
+    if not os.path.exists(os.path.join(OUT, 'scale_manifest.{}.json'.format(section))):
+        print('· building scale_manifest.{}.json …'.format(section))
         subprocess.run([sys.executable, os.path.join(HERE, 'scale_route.py'), section],
                        cwd=HERE, check=True)
     print('· generating merged inputs (resumable) …')
@@ -70,7 +70,7 @@ def ensure_inputs(section):
 
 def audit(section):
     keys = [e['key1'] for e in json.load(
-        open(os.path.join(OUT, 'scale_manifest.%s.json' % section), encoding='utf-8'))]
+        open(os.path.join(OUT, 'scale_manifest.{}.json'.format(section)), encoding='utf-8'))]
     n_with = n_ent = 0
     bleeds, noown = [], []
     map_entries = map_q = map_resid = 0
@@ -105,7 +105,7 @@ def audit(section):
     from collections import Counter
     by_cls = Counter(classify(g) for _, g in nonempty)
 
-    print('\n=== NWS split-preview audit — %s-section ===' % section)
+    print('\n=== NWS split-preview audit — {}-section ==='.format(section))
     print('keys total            : %d' % len(keys))
     print('keys with NWS fragment: %d' % n_with)
     print('total NWS entries     : %d' % n_ent)
@@ -120,7 +120,7 @@ def audit(section):
         if classify(g) == 'OTHER':
             print('   ?? OTHER  %-12s …%s' % (k, g[-56:]))
     pct = (100.0 * len(nonempty) / n_ent) if n_ent else 0.0
-    print('real-loss rate        : %.2f%%' % pct)
+    print('real-loss rate        : {:.2f}%'.format(pct))
     print('owner-map cross-check : %d entries, %d [NWS: ?]  (split-preview: %d / %d)'
           % (map_entries, map_q, n_ent, len(noown)))
     ok = (map_entries == n_ent and map_q == len(noown) and map_resid == 0)

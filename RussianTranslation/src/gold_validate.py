@@ -26,7 +26,7 @@ def read_rows(path):
         rows = list(csv.DictReader(f))
     missing = REQUIRED - set(rows[0].keys() if rows else [])
     if missing:
-        fail('missing CSV columns: %s' % ', '.join(sorted(missing)))
+        fail('missing CSV columns: {}'.format(', '.join(sorted(missing))))
     return rows
 
 
@@ -81,5 +81,5 @@ if __name__ == '__main__':
     try:
         main()
     except Exception as e:
-        print('HUMAN GOLD CHECK FAILED: %s' % e, file=sys.stderr)
+        print('HUMAN GOLD CHECK FAILED: {}'.format(e), file=sys.stderr)
         raise SystemExit(1)

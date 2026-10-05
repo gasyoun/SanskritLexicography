@@ -46,7 +46,7 @@ class AttemptRunBinding:
         for name in ('run_id', 'attempt_id', 'lease_id'):
             value = getattr(self, name)
             if not isinstance(value, str) or not value.strip():
-                raise ValueError('AttemptRunBinding.%s must be a non-empty string' % name)
+                raise ValueError('AttemptRunBinding.{} must be a non-empty string'.format(name))
 
 
 @dataclass(frozen=True)
@@ -164,12 +164,12 @@ def receipt_from_mapping(data: Mapping[str, Any]) -> PromotionReceipt:
         raise ValueError('receipt must be a mapping')
     schema = data.get('schema')
     if schema != SCHEMA_V1:
-        raise ValueError('unsupported receipt schema %r (want %r)' % (schema, SCHEMA_V1))
+        raise ValueError('unsupported receipt schema {!r} (want {!r})'.format(schema, SCHEMA_V1))
 
     def _req_str(name: str) -> str:
         value = data.get(name)
         if not isinstance(value, str) or not value.strip():
-            raise ValueError('receipt.%s must be a non-empty string' % name)
+            raise ValueError('receipt.{} must be a non-empty string'.format(name))
         return value
 
     def _req_keys(name: str) -> tuple[str, ...]:
@@ -178,13 +178,13 @@ def receipt_from_mapping(data: Mapping[str, Any]) -> PromotionReceipt:
             value = []
         if not isinstance(value, list) or any(
                 not isinstance(k, str) or not k.strip() for k in value):
-            raise ValueError('receipt.%s must be a list of non-empty strings' % name)
+            raise ValueError('receipt.{} must be a list of non-empty strings'.format(name))
         # Stable unique order: first occurrence wins; duplicates are a schema error.
         seen: set[str] = set()
         out: list[str] = []
         for key in value:
             if key in seen:
-                raise ValueError('receipt.%s has duplicate key %r' % (name, key))
+                raise ValueError('receipt.{} has duplicate key {!r}'.format(name, key))
             seen.add(key)
             out.append(key)
         return tuple(out)
@@ -192,9 +192,9 @@ def receipt_from_mapping(data: Mapping[str, Any]) -> PromotionReceipt:
     def _req_int(name: str) -> int:
         value = data.get(name)
         if isinstance(value, bool) or not isinstance(value, int):
-            raise ValueError('receipt.%s must be an int' % name)
+            raise ValueError('receipt.{} must be an int'.format(name))
         if value < 0:
-            raise ValueError('receipt.%s must be >= 0' % name)
+            raise ValueError('receipt.{} must be >= 0'.format(name))
         return value
 
     tm = data.get('tm_rebuild')
@@ -206,7 +206,7 @@ def receipt_from_mapping(data: Mapping[str, Any]) -> PromotionReceipt:
     overlap = sorted(set(accepted) & set(rejected))
     if overlap:
         raise ValueError(
-            'receipt keys_accepted and keys_rejected overlap: %s' % ', '.join(overlap[:10]))
+            'receipt keys_accepted and keys_rejected overlap: {}'.format(', '.join(overlap[:10])))
 
     return PromotionReceipt(
         schema=schema,
@@ -252,7 +252,7 @@ def load_receipts(directory: str) -> list[PromotionReceipt]:
     """
     directory = os.path.abspath(directory)
     if not os.path.isdir(directory):
-        raise FileNotFoundError('receipts directory not found: %s' % directory)
+        raise FileNotFoundError('receipts directory not found: {}'.format(directory))
     names = sorted(
         n for n in os.listdir(directory)
         if n.endswith(RECEIPT_FILENAME_SUFFIX) and os.path.isfile(os.path.join(directory, n))
@@ -335,8 +335,7 @@ def reconcile_startup(
                 attempt_id=receipt.attempt_id,
                 keys=keys,
                 reason=(
-                    'partial presence: present=%s missing=%s'
-                    % (list(present), list(missing))
+                    'partial presence: present={} missing={}'.format(list(present), list(missing))
                 ),
             ))
         elif missing:
@@ -387,8 +386,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         for kind in (PROMOTE_MISSING, SKIP_ALREADY_PRESENT, ERROR_INCONSISTENT):
             print('%s: %d' % (kind, len(d[kind])))
             for action in d[kind]:
-                print('  - lease=%s keys=%s reason=%s'
-                      % (action['lease_id'], action['keys'], action['reason']))
+                print('  - lease={} keys={} reason={}'.format(action['lease_id'], action['keys'], action['reason']))
     return 0
 
 

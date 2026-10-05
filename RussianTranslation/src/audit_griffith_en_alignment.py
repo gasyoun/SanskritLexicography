@@ -47,7 +47,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 
 GITHUB = sibling_root(HERE)
 CORPUS_DB = os.environ.get(
@@ -107,7 +107,7 @@ def load_sa():
     """Same key shape, from the corpus `#sa` lines. Empty dict if the DB is absent."""
     if not os.path.exists(CORPUS_DB):
         return {}
-    con = sqlite3.connect('file:%s?mode=ro' % CORPUS_DB, uri=True)
+    con = sqlite3.connect('file:{}?mode=ro'.format(CORPUS_DB), uri=True)
     try:
         out = {}
         for cid, txt in con.execute(
@@ -168,12 +168,11 @@ def main():
     args = ap.parse_args()
 
     if not os.path.exists(GRIFFITH_EN_JSON):
-        print('SKIP: %s absent' % GRIFFITH_EN_JSON)
+        print('SKIP: {} absent'.format(GRIFFITH_EN_JSON))
         return
     sa = load_sa()
     if not sa:
-        print('SKIP: corpus.db absent (%s) — the Sanskrit side of the check is unavailable'
-              % CORPUS_DB)
+        print('SKIP: corpus.db absent ({}) — the Sanskrit side of the check is unavailable'.format(CORPUS_DB))
         return
     en = load_en()
     print('Griffith EN stanzas: %d   corpus SA stanzas: %d\n' % (len(en), len(sa)))

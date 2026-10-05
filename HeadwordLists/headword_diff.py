@@ -42,7 +42,7 @@ def src_path(d):
 
 def field_set(path, tag):
     txt = open(path, encoding="utf-8").read()
-    return set(m.group(1) for m in re.finditer(r'<%s>([^<]*)' % tag, txt))
+    return set(m.group(1) for m in re.finditer(r'<{}>([^<]*)'.format(tag), txt))
 
 def key2_forms(path):
     """Current <k2> headword forms as clean SLP1 (the print/citation form: keeps

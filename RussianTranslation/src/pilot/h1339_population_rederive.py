@@ -52,11 +52,11 @@ if SRC not in sys.path:
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import corpus_gate as cg                                        # noqa: E402
-import dict_merge as dm                                         # noqa: E402
-from store_path import canonical_store, main_worktree_root      # noqa: E402
-from verb_worklist import verb_universe, store_roots, has_rootmap  # noqa: E402
-from nominals_worklist import read_wordlist                     # noqa: E402
+import corpus_gate as cg
+import dict_merge as dm
+from store_path import canonical_store, main_worktree_root
+from verb_worklist import verb_universe, store_roots, has_rootmap
+from nominals_worklist import read_wordlist
 
 PREVERB = os.path.normpath(os.path.join(RT, '..', '..', 'PWG', 'verbs01', 'pwg_preverb1.txt'))
 CORES = ['pril5', 'pril10', 'sbornoe']
@@ -222,13 +222,13 @@ def main():
           % (len(payload['overlap_proofs']['verb_remaining_x_nominal_remaining']),
              len(payload['overlap_proofs']['pwg_remaining_x_no_pwg_remaining'])))
     print('  UNIQUE REMAINING TOTAL (all lanes, headwords): %d' % payload['unique_remaining_total_headwords'])
-    print('  content hash: %s' % payload['content_hash_sha256_sorted_tagged_remaining'])
+    print('  content hash: {}'.format(payload['content_hash_sha256_sorted_tagged_remaining']))
 
     if a.json:
         os.makedirs(os.path.dirname(os.path.abspath(a.json)), exist_ok=True)
         with open(a.json, 'w', encoding='utf-8') as f:
             json.dump(payload, f, ensure_ascii=False, indent=1)
-        print('payload written: %s' % a.json)
+        print('payload written: {}'.format(a.json))
 
 
 if __name__ == '__main__':

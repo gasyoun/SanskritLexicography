@@ -75,10 +75,10 @@ def fleet_guard(width, healthy_profiles):
     try:
         width = int(width or 1)
     except (TypeError, ValueError):
-        return False, 'cohort width %r is not an integer' % (width,)
+        return False, 'cohort width {!r} is not an integer'.format(width)
     fleet = sorted({p for p in (healthy_profiles or []) if isinstance(p, str) and p.strip()})
     if width < 1:
-        return False, 'cohort width must be >= 1: %r' % (width,)
+        return False, 'cohort width must be >= 1: {!r}'.format(width)
     if not fleet:
         return False, ('no probed-healthy profile in the admitted fleet — a live cohort wave '
                        'needs at least one')
@@ -139,10 +139,10 @@ def run_cohort_live(windows, width, run_window, checkpoint_path, audit=None,
     missing = [w.get('id') or ('#%d' % i) for i, w in enumerate(windows) if not w.get('profile')]
     if missing:
         raise SystemExit('cohort_live_dispatch: every live cohort window needs a profile '
-                         'binding (assign_profiles); missing on: %s' % ', '.join(missing))
+                         'binding (assign_profiles); missing on: {}'.format(', '.join(missing)))
     ok, why = fleet_guard(width, admitted or {w['profile'] for w in windows})
     if not ok:
-        raise SystemExit('cohort_live_dispatch: %s' % why)
+        raise SystemExit('cohort_live_dispatch: {}'.format(why))
     engine = ce.CohortEngine(
         windows, run_window, checkpoint_path, audit=audit, promote_wave=promote_wave,
         rebuild_tm=rebuild_tm, width=width, admitted=admitted, parked=parked,

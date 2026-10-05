@@ -54,7 +54,7 @@ def fetch(s, token, word):
 
 
 def frag(name, html):
-    m = re.compile(r'\$%s_lemmas = \$\("(.*?)"\);' % name, re.S).search(html)
+    m = re.compile(r'\${}_lemmas = \$\("(.*?)"\);'.format(name), re.S).search(html)
     if not m:
         return ''
     s = m.group(1).replace('\\n', ' ').replace('\\"', '"').replace('\\/', '/').replace("\\'", "'")
@@ -67,7 +67,7 @@ def section_keys(section):
     complete set we'd translate). Cached to a file so reap-restarts are instant
     (rebuilding the 4 dict indexes costs ~90s)."""
     os.makedirs(OUT, exist_ok=True)
-    cache = os.path.join(OUT, '_keys_%s.txt' % section)
+    cache = os.path.join(OUT, '_keys_{}.txt'.format(section))
     if os.path.exists(cache):
         return [l.strip() for l in open(cache, encoding='utf-8') if l.strip()]
     import dict_merge as dm

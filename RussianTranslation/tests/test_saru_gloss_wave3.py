@@ -12,7 +12,7 @@ from types import SimpleNamespace as T
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
-import build_compound_split as C   # noqa: E402
+import build_compound_split as C
 
 
 def tok(lemma):

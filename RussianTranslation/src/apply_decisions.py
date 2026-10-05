@@ -74,8 +74,7 @@ def apply_g5(doc, review_csv, reviewer, dry_run=False):
               "field; pass --reviewer (run_batch requires reviewer_id per decision)")
         return 1
     if not os.path.exists(review_csv):
-        print("ABORT G5: review CSV %s missing — run: python src/run_batch.py review_csv"
-              % review_csv)
+        print("ABORT G5: review CSV {} missing — run: python src/run_batch.py review_csv".format(review_csv))
         return 1
     with io.open(review_csv, encoding="utf-8-sig", newline="") as fh:
         reader = csv.DictReader(fh)
@@ -125,7 +124,7 @@ def g6_rows(doc, gold_meta, reviewer):
     for it in _decided_items(doc):
         meta = gold_meta.get(it["id"])
         if meta is None:
-            problems.append("%s: not in gold_set" % it["id"])
+            problems.append("{}: not in gold_set".format(it["id"]))
             continue
         llm_label = meta.get("label", "")
         note = (it.get("note") or "").strip()
@@ -139,17 +138,15 @@ def g6_rows(doc, gold_meta, reviewer):
                 # H1802: the emitter's required single-select control — preferred
                 # over the note-prefix convention whenever the export carries it.
                 if reject_label not in G6_LABELS:
-                    problems.append("%s: reject_label %r is not one of %s"
-                                    % (it["id"], reject_label, "|".join(sorted(G6_LABELS))))
+                    problems.append("{}: reject_label {!r} is not one of {}".format(it["id"], reject_label, "|".join(sorted(G6_LABELS))))
                     continue
                 human_label = reject_label
             else:
                 # Legacy fallback for sheets exported before H1802.
                 first = note.split()[0].strip(".,;:—-").lower() if note else ""
                 if first not in G6_LABELS:
-                    problems.append("%s: reject note must START with the correct label "
-                                    "(one of %s); got %r"
-                                    % (it["id"], "|".join(sorted(G6_LABELS)), note[:40]))
+                    problems.append("{}: reject note must START with the correct label "
+                                    "(one of {}); got {!r}".format(it["id"], "|".join(sorted(G6_LABELS)), note[:40]))
                     continue
                 human_label = first
         else:  # defer
@@ -181,7 +178,7 @@ def apply_g6(doc, gold_set, out_dir, reviewer, dry_run=False):
         print("ABORT G6: no reviewer — pass --reviewer or use a strict-review sheet")
         return 1
     if not os.path.exists(gold_set):
-        print("ABORT G6: gold set %s missing" % gold_set)
+        print("ABORT G6: gold set {} missing".format(gold_set))
         return 1
     gold_meta = {}
     for line in io.open(gold_set, encoding="utf-8"):
@@ -191,11 +188,11 @@ def apply_g6(doc, gold_set, out_dir, reviewer, dry_run=False):
     try:
         rows = g6_rows(doc, gold_meta, reviewer)
     except Reject as e:
-        print("ABORT %s" % e)
+        print("ABORT {}".format(e))
         return 1
     sheet_slug = doc["sheet_id"].replace("/", "_")
-    out_csv = os.path.join(out_dir, "decisions_%s.csv" % sheet_slug)
-    out_jsonl = os.path.join(out_dir, "decisions_%s.labels.jsonl" % sheet_slug)
+    out_csv = os.path.join(out_dir, "decisions_{}.csv".format(sheet_slug))
+    out_jsonl = os.path.join(out_dir, "decisions_{}.labels.jsonl".format(sheet_slug))
     if dry_run:
         print("DRY-RUN G6: would write %d label row(s) -> %s and run gold_ingest -> %s"
               % (len(rows), out_csv, out_jsonl))
@@ -240,7 +237,7 @@ def main(argv):
         doc = validate_decisions.validate(paths[0], locks_dir=opts["--locks-dir"],
                                           allow_legacy=flags["--allow-legacy"])
     except Reject as e:
-        print("REJECTED %s\n  %s\n  (nothing applied)" % (paths[0], e))
+        print("REJECTED {}\n  {}\n  (nothing applied)".format(paths[0], e))
         return 1
 
     gate = opts["--gate"]
@@ -251,9 +248,8 @@ def main(argv):
             lock = json.load(fh)
         gate = lock.get("gate")
     if gate not in ("G5", "G6"):
-        print("PARKED: sheet '%s' carries no G5/G6 gate in its lock (gate=%r) — "
-              "pass --gate explicitly, or route this pilot/retired sheet by hand"
-              % (doc["sheet_id"], gate))
+        print("PARKED: sheet '{}' carries no G5/G6 gate in its lock (gate={!r}) — "
+              "pass --gate explicitly, or route this pilot/retired sheet by hand".format(doc["sheet_id"], gate))
         return 2
 
     reviewer = _reviewer(doc, opts["--reviewer"])
@@ -296,7 +292,7 @@ def _selftest():
         write_lock(sheet_id, chash, ids, "2026-07-25", locks_dir=td, gate="G6",
                    force=True)   # fixture: one sheet_id, several generations
         bad = dict(good, content_hash="sha256:" + "e" * 64)
-        marker = os.path.join(td, "decisions_%s.csv" % sheet_id)
+        marker = os.path.join(td, "decisions_{}.csv".format(sheet_id))
         rc = main([dump("bad.json", bad), "--locks-dir", td,
                    "--gold-set", os.path.join(td, "gs.jsonl"), "--out-dir", td])
         check(rc == 1 and not os.path.exists(marker),
@@ -312,7 +308,7 @@ def _selftest():
                                     ensure_ascii=False) + "\n")
         rc = main([dump("good.json", good), "--locks-dir", td,
                    "--gold-set", os.path.join(td, "gs.jsonl"), "--out-dir", td])
-        labels_path = os.path.join(td, "decisions_%s.labels.jsonl" % sheet_id)
+        labels_path = os.path.join(td, "decisions_{}.labels.jsonl".format(sheet_id))
         check(rc == 0 and os.path.exists(labels_path), "G6 route runs through gold_ingest")
         if os.path.exists(labels_path):
             labels = [json.loads(l) for l in io.open(labels_path, encoding="utf-8")]
@@ -327,7 +323,7 @@ def _selftest():
              "reject_label": "hallucinated"}])
         rc = main([dump("field_good.json", field_good), "--locks-dir", td,
                    "--gold-set", os.path.join(td, "gs.jsonl"), "--out-dir", td])
-        check(rc == 0, "G6 route accepts a reject_label field (rc=%s)" % rc)
+        check(rc == 0, "G6 route accepts a reject_label field (rc={})".format(rc))
         if rc == 0 and os.path.exists(labels_path):
             labels = [json.loads(l) for l in io.open(labels_path, encoding="utf-8")]
             check(sorted(r["human_label"] for r in labels) == ["correct", "hallucinated"],
@@ -386,7 +382,7 @@ def _selftest():
               and merged[ids[0]]["reviewer_id"] == "selftest",
               "G5 merge writes decisions + reviewer into the review CSV")
         g5_ok = rc == 0
-        check(g5_ok, "G5 route ends with run_batch validate_review green (rc=%s)" % rc)
+        check(g5_ok, "G5 route ends with run_batch validate_review green (rc={})".format(rc))
 
         # 5. G5 positional-id drift: 'row:NNNNNN:' review_ids embed the store
         # LINE POSITION at queue-mint time; when the store grows before the
@@ -420,7 +416,7 @@ def _selftest():
         finally:
             os.environ.pop("PWG_RU_STORE", None)
         check(rc == 0, "stale positional review_id resolves via its subcard#tag "
-                       "tail (rc=%s)" % rc)
+                       "tail (rc={})".format(rc))
 
     print("apply_decisions selftest " + ("OK" if ok else "FAILED"))
     return 0 if ok else 1

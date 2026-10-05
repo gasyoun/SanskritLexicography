@@ -27,15 +27,15 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from markup_fidelity_gates import (  # noqa: E402
+from markup_fidelity_gates import (
     GLOSS_RE,
     dup_key,
     markup_span_flags,
     markup_wrapper_soft_flags,
     missing_target_flag,
 )
-from pwg_tm_gates import surface_form_flags  # noqa: E402
-from store_path import canonical_data_repo, canonical_store  # noqa: E402
+from pwg_tm_gates import surface_form_flags
+from store_path import canonical_data_repo, canonical_store
 
 # H3658: audit the ONE canonical store, not the executing checkout's possibly-stale copy —
 # promote_final_cards.py resolves canonically, so an un-ported auditor greens a different file.
@@ -127,7 +127,7 @@ def main():
     src_rows = load_rows(args.store)
     result = {'store': args.store, 'gates': gate_rows(src_rows)}
     g = result['gates']
-    print('=== store gate audit: %s' % args.store)
+    print('=== store gate audit: {}'.format(args.store))
     print('rows=%d hard_flagged_rows=%d hard=%s soft=%s' % (g['rows'], len(g['flagged']), g['hard'], g['soft']))
     print('identical-ru clusters=%d byte-identical id dups=%d' % (g['identical_ru_clusters'], g['byte_identical_id_dups']))
     for f in g['flagged']:
@@ -158,12 +158,12 @@ def main():
         if len(d['changed_ru']) > 10:
             print('   ... %d more (see --json)' % (len(d['changed_ru']) - 10))
     elif not args.no_mirror:
-        print('=== mirror not found: %s' % args.mirror)
+        print('=== mirror not found: {}'.format(args.mirror))
 
     if args.json:
         with open(args.json, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(result, f, ensure_ascii=False, indent=1)
-    print('FLAGGED_JSON: %s' % json.dumps([[f['key1'], f['subcard'], f['sense_tag']] for f in g['flagged']], ensure_ascii=False))
+    print('FLAGGED_JSON: {}'.format(json.dumps([[f['key1'], f['subcard'], f['sense_tag']] for f in g['flagged']], ensure_ascii=False)))
     sys.exit(1 if g['flagged'] else 0)
 
 

@@ -135,14 +135,14 @@ def report(s, dict_name, out):
     pct = (100.0 * cited / s['units']) if s['units'] else 0.0
     print('  %s with a recognised citation (tagged): %d (%.1f%%)' % (unit, cited, pct))
     print('  multi-label %s (>1 state): %d' % (unit, s['multi']))
-    print('  Renou state distribution (%s carrying the state):' % unit)
+    print('  Renou state distribution ({} carrying the state):'.format(unit))
     for st in STATES:
         print('    %-3s %-15s %d' % (st, renou.RENOU_NAME[st], s['by_state'].get(st, 0)))
-    print('  oldest-citation state (first attestation per tagged %s):' % unit[:-1])
+    print('  oldest-citation state (first attestation per tagged {}):'.format(unit[:-1]))
     for st in STATES:
         print('    %-3s %-15s %d' % (st, renou.RENOU_NAME[st], s['oldest_state'].get(st, 0)))
     if out:
-        print('→ %s' % out)
+        print('→ {}'.format(out))
 
 
 def main():
@@ -161,7 +161,7 @@ def main():
         elif a == '--report':
             report_only = True; i += 1
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
     if not report_only and out is None:
         out = path   # in-place backfill
     run(path, out, dict_name, report_only)

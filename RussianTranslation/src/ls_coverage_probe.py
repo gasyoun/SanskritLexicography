@@ -77,25 +77,25 @@ def main():
 
     pc = lambda n: "%6d  %5.1f%%" % (n, 100.0 * n / max(tot, 1))
     print("<ls> occurrences in store : %d\n" % tot)
-    print("  both resolve            : %s" % pc(both))
-    print("  ls_resolver only        : %s" % pc(only_res))
-    print("  csl-lslink table only   : %s" % pc(only_tab))
-    print("  neither                 : %s" % pc(neither))
-    print("\n  ls_resolver total       : %s" % pc(both + only_res))
-    print("  csl-lslink total        : %s" % pc(both + only_tab))
-    print("  union                   : %s" % pc(both + only_res + only_tab))
+    print("  both resolve            : {}".format(pc(both)))
+    print("  ls_resolver only        : {}".format(pc(only_res)))
+    print("  csl-lslink table only   : {}".format(pc(only_tab)))
+    print("  neither                 : {}".format(pc(neither)))
+    print("\n  ls_resolver total       : {}".format(pc(both + only_res)))
+    print("  csl-lslink total        : {}".format(pc(both + only_tab)))
+    print("  union                   : {}".format(pc(both + only_res + only_tab)))
     print("\n  disagreeing hrefs (both resolved, different target): %d"
           % sum(disagree.values()))
     for (a, b), n in disagree.most_common(10):
         print("    %5d  resolver=%s   table=%s" % (n, a, b))
     for label, ex in (("table-only", ex_only_tab), ("resolver-only", ex_only_res)):
-        print("\n  %s examples:" % label)
+        print("\n  {} examples:".format(label))
         for t in ex:
-            print("    %s -> %s" % (t[0][:60], t[1][:80]))
+            print("    {} -> {}".format(t[0][:60], t[1][:80]))
     if ex_disagree:
         print("\n  disagreement examples:")
         for tag, r, t in ex_disagree:
-            print("    %s\n      resolver=%s\n      table   =%s" % (tag[:60], r, t))
+            print("    {}\n      resolver={}\n      table   ={}".format(tag[:60], r, t))
     return 0
 
 

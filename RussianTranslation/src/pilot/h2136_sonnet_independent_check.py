@@ -22,10 +22,10 @@ if HERE not in sys.path:
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from d4_boundary_wrap import (  # noqa: E402
+from d4_boundary_wrap import (
     GLOSS_SPAN, is_ru_n0_candidate, scan_store, split_by_anchors, try_boundary_wrap,
 )
-from store_path import canonical_store  # noqa: E402
+from store_path import canonical_store
 
 BRACKET_NORMALIZE = str.maketrans({
     '〉': ')', '）': ')',
@@ -47,7 +47,7 @@ def main():
     default_local = os.path.join(SRC, 'pwg_ru_translated.jsonl')
     store = canonical_store(default_local)
     rows = load_rows(store)
-    print('store: %s' % store)
+    print('store: {}'.format(store))
     print('rows : %d' % len(rows))
 
     eligible, ineligible = scan_store(store)
@@ -70,9 +70,9 @@ def main():
         row = json.loads(row_by_line[ln])
         de = (row.get('de') or '')[:160]
         ru = (row.get('ru') or '')[:160]
-        print('- [%s] %s' % (reason, label))
-        print('    DE: %s' % de)
-        print('    RU: %s' % ru)
+        print('- [{}] {}'.format(reason, label))
+        print('    DE: {}'.format(de))
+        print('    RU: {}'.format(ru))
 
     # fixed-row sample: rows with de_n == ru_n >= 1 (already wrapped, from prior H1702 apply)
     fixed_candidates = []
@@ -90,7 +90,7 @@ def main():
     bad = 0
     for ln, r in fixed_sample:
         ru = r.get('ru') or ''
-        label = '%s|%s|%s' % (r.get('key1'), r.get('subcard'), r.get('sense_tag'))
+        label = '{}|{}|{}'.format(r.get('key1'), r.get('subcard'), r.get('sense_tag'))
         swallowed = False
         for m in GLOSS_SPAN.finditer(ru):
             span = m.group(0)
@@ -98,7 +98,7 @@ def main():
                 swallowed = True
         if swallowed:
             bad += 1
-            print('  ANCHOR-SWALLOWED: %s' % label)
+            print('  ANCHOR-SWALLOWED: {}'.format(label))
     print('  anchor-swallowed-into-gloss: %d / %d' % (bad, len(fixed_sample)))
 
     # bracket-normalize probe on the ineligible pool

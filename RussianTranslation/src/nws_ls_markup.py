@@ -63,10 +63,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import g5_card_render as g5cr           # noqa: E402  reuse _BRACKET_TAG, _norm
-import ls_resolver                      # noqa: E402  generate_href, roman_int20
-import pwg_sources                      # noqa: E402  the PWG-bibliography gate
-import store_path                       # noqa: E402  canonical_store() -- H255 loss-safety
+import g5_card_render as g5cr
+import ls_resolver
+import pwg_sources
+import store_path
 from store_write import locked_store_rewrite  # noqa: E402  H2146/H2153 locked writer
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -218,7 +218,7 @@ def classify_general_bare_citation(ru, m):
     sig_norm = sig if sig.endswith('.') else sig + '.'
     if not pwg_sources.resolve(sig_norm):
         return 'residue_no_bib', sig
-    n_attr = '%s %s' % (sig_norm, loc_norm)
+    n_attr = '{} {}'.format(sig_norm, loc_norm)
     href = ls_resolver.generate_href('pwg', n_attr, '')
     if not href:
         return 'residue_no_href', n_attr
@@ -341,7 +341,7 @@ def census(path):
 
 def _wrap_ls(ru, m, n_attr):
     span = m.group(0)
-    return ru[:m.start()] + '<ls n="%s">%s</ls>' % (n_attr.replace('"', '&quot;'), span) + ru[m.end():]
+    return ru[:m.start()] + '<ls n="{}">{}</ls>'.format(n_attr.replace('"', '&quot;'), span) + ru[m.end():]
 
 
 def apply(path, backup=True, dry_run=False):
@@ -447,7 +447,7 @@ def _print_census(stats):
         note = (' (out of %d total shaped spans across NWS rows, '
                 'Roman-convention matches above excluded)' % stats['general_bare_citation_note']
                 if 'general_bare_citation_note' in stats else '')
-        print('H1909 general bare-citation discriminator%s:' % note)
+        print('H1909 general bare-citation discriminator{}:'.format(note))
         print('  resolved + marked: %d' % len(stats.get('general_resolved', [])))
         for key1, n_attr, href, span in stats.get('general_resolved', []):
             print('    ok   %-14s %-22r -> n=%r  %s' % (key1, span, n_attr, href))
@@ -457,7 +457,7 @@ def _print_census(stats):
             print('    --   %-14s %-30r %r' % (key1, detail, span))
         prov = stats.get('general_provenance', {})
         if prov:
-            print('  excluded as provenance-note noise: %s' % dict(prov))
+            print('  excluded as provenance-note noise: {}'.format(dict(prov)))
 
 
 def main():
@@ -470,7 +470,7 @@ def main():
 
     path = args.store or store_path.canonical_store(HERE)
     if not os.path.exists(path):
-        raise SystemExit('store not found: %s' % path)
+        raise SystemExit('store not found: {}'.format(path))
 
     if args.cmd == 'census':
         _print_census(census(path))

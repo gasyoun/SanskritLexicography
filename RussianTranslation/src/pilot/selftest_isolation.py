@@ -116,9 +116,9 @@ def isolate(scratch_root=None):
         if current:
             if _inside_repo(current):
                 raise SystemExit(
-                    'selftest isolation: %s points INSIDE the checkout (%s). A selftest must '
+                    'selftest isolation: {} points INSIDE the checkout ({}). A selftest must '
                     'never read or write production data; set it to a scratch path, or set '
-                    '%s=1 if this is deliberate.' % (env, current, ESCAPE_HATCH))
+                    '{}=1 if this is deliberate.'.format(env, current, ESCAPE_HATCH))
             pinned[env] = current
             continue
         target = os.path.join(root, basename)
@@ -155,7 +155,7 @@ def _report(changed):
         '\nSELFTEST ISOLATION VIOLATION: this run modified %d tracked production file(s):\n'
         % len(changed))
     for rel in changed:
-        sys.stderr.write('  - %s\n' % rel)
+        sys.stderr.write('  - {}\n'.format(rel))
     sys.stderr.write(
         'A selftest must not touch production data. Either redirect the write (add an env '
         'override + an entry in selftest_isolation.REDIRECTABLE) or stub it in the fixture. '
@@ -165,8 +165,7 @@ def _report(changed):
 def guard(scratch_root=None):
     """Isolate, then arm the exit tripwire. The one call a selftest needs."""
     if disabled():
-        sys.stderr.write('selftest isolation: DISABLED via %s=1 — production data is reachable\n'
-                         % ESCAPE_HATCH)
+        sys.stderr.write('selftest isolation: DISABLED via {}=1 — production data is reachable\n'.format(ESCAPE_HATCH))
         return {}
     pinned = isolate(scratch_root)
     before = tripwire()

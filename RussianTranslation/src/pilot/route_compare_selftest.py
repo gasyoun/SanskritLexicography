@@ -18,11 +18,11 @@ REPO = os.path.dirname(os.path.dirname(HERE))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import anthropic_messages_route as amr  # noqa: E402
-import route_compare as rc  # noqa: E402
-from call_reservation import CallReservationLedger  # noqa: E402
-from gateway_route import validate_complete_schema  # noqa: E402
-from route_transport import (  # noqa: E402
+import anthropic_messages_route as amr
+import route_compare as rc
+from call_reservation import CallReservationLedger
+from gateway_route import validate_complete_schema
+from route_transport import (
     ANTHROPIC_ROUTE, GATEWAY_ROUTE, TransportRefusal, atomic_json,
     canonical_hash, candidate_pass, verify_envelope,
 )
@@ -248,7 +248,7 @@ def _fake_prepare(p, prefix, run_id, request):
         'reservation_ordinal': reservation['ordinal'],
         'max_output_tokens': request['max_output_tokens'],
     }
-    atomic_json(p['%s_ticket' % prefix], ticket)
+    atomic_json(p['{}_ticket'.format(prefix)], ticket)
     return ticket
 
 
@@ -267,7 +267,7 @@ def test_full_state_machine_and_selection():
         def fake_record(p, prefix, run_id):
             request = t1 if prefix == 't1' else t2
             result = capability if prefix == 't1' else canary_result
-            ticket = rc.read_json(p['%s_ticket' % prefix])
+            ticket = rc.read_json(p['{}_ticket'.format(prefix)])
             assert ticket['max_output_tokens'] == request['max_output_tokens']
             source = fake_gateway_source(ticket, request, result)
             # The fake bridge finalizes the same reservation once.
@@ -329,7 +329,7 @@ def test_gateway_unknown_cost_preserves_usage_and_allows_call_three():
         def fake_record(p, prefix, run_id):
             request = t1 if prefix == 't1' else t2
             result = capability if prefix == 't1' else canary_result
-            ticket = rc.read_json(p['%s_ticket' % prefix])
+            ticket = rc.read_json(p['{}_ticket'.format(prefix)])
             source = fake_gateway_source(ticket, request, result, cost=None)
             book = CallReservationLedger.open_existing(p['ledger'], run_id)
             reservation = next(row for row in book.snapshot()['reservations']
@@ -377,7 +377,7 @@ def test_priced_gateway_content_failure_can_be_compared():
         def fake_record(p, prefix, run_id):
             request = t1 if prefix == 't1' else t2
             result = capability if prefix == 't1' else None
-            ticket = rc.read_json(p['%s_ticket' % prefix])
+            ticket = rc.read_json(p['{}_ticket'.format(prefix)])
             source = fake_gateway_source(
                 ticket, request, result, cost=0.05,
                 schema_compliant=(prefix == 't1'))
@@ -422,7 +422,7 @@ TESTS = [
 def selftest():
     for test in TESTS:
         test()
-        print('  PASS: %s' % test.__name__)
+        print('  PASS: {}'.format(test.__name__))
     print('route_compare_selftest: PASS (%d/%d groups)' % (len(TESTS), len(TESTS)))
     return True
 

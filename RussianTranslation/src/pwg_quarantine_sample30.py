@@ -58,7 +58,7 @@ for _path in (HERE, os.path.join(HERE, 'pilot')):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-from pwg_pipeline import faults, kernel, model, providers, repository as repo_mod  # noqa: E402
+from pwg_pipeline import faults, kernel, model, providers, repository as repo_mod
 
 SCHEMA = 'h4053.quarantine_sample30.v1'
 
@@ -228,7 +228,7 @@ def freeze_sample(parent_sample_path: str = DEFAULT_PARENT_SAMPLE,
         'review_classes': list(REVIEW_CLASSES),
         'review_class_assignment': (
             'assigned only by independent human review after an actual paid '
-            'generation; this packet ships every card as %s' % UNMEASURED),
+            'generation; this packet ships every card as {}'.format(UNMEASURED)),
         'cards': cards,
     }
 
@@ -261,7 +261,7 @@ def _load_cards(args: argparse.Namespace) -> tuple[list[dict], str, str]:
         with open(source, encoding='utf-8') as handle:
             packet = json.load(handle)
         if packet.get('kind') != 'frozen_nested_sample':
-            raise SystemExit('%s is not a frozen_nested_sample packet' % source)
+            raise SystemExit('{} is not a frozen_nested_sample packet'.format(source))
         cards = packet['cards']
     else:
         cards = []
@@ -296,7 +296,7 @@ def _old_ru_join(store_path: str, subcard: str) -> dict:
 def _open_call_rows(repository_db: str) -> list[dict]:
     """Read-only listing of unfinalized calls across ALL campaigns."""
     import sqlite3
-    connection = sqlite3.connect('file:%s?mode=ro' % repository_db, uri=True)
+    connection = sqlite3.connect('file:{}?mode=ro'.format(repository_db), uri=True)
     connection.row_factory = sqlite3.Row
     try:
         rows = connection.execute(
@@ -387,7 +387,7 @@ def run_sample(cards: list[dict], *, workdir: str, evidence_dir: str,
         '-r%d' % len(prior_campaigns) if done else '')
     plan = [{
         'job_id': '%s.job.%d' % (campaign_id, index),
-        'idempotency_key': sha256_text('%s:%s:%s' % (
+        'idempotency_key': sha256_text('{}:{}:{}'.format(
             BASE_CAMPAIGN, card.get('subcard'), card.get('input_hash'))),
         'card': card,
     } for index, card in enumerate(cards)]
@@ -586,7 +586,7 @@ def cmd_run(args: argparse.Namespace) -> int:
                          if row.get('state') == model.CALL_SUCCEEDED}
         campaign_prefix = 'h4053-quarantine-sample30'
         fresh = [card for card in cards
-                 if sha256_text('%s:%s:%s' % (
+                 if sha256_text('{}:{}:{}'.format(
                      campaign_prefix, card.get('subcard'),
                      card.get('input_hash'))) not in done_keys]
         if len(fresh) > args.max_calls:
@@ -618,10 +618,10 @@ def cmd_run(args: argparse.Namespace) -> int:
     summary['guard_unchanged'] = receipt.get('guard_unchanged')
     print(json.dumps(summary, ensure_ascii=False))
     if receipt.get('packet_path'):
-        print('packet -> %s' % receipt['packet_path'])
+        print('packet -> {}'.format(receipt['packet_path']))
     if receipt['refusals']:
         for ref in receipt['refusals']:
-            print('refusal: %s %s' % (ref['failure_class'], ref['detail']))
+            print('refusal: {} {}'.format(ref['failure_class'], ref['detail']))
         return EXIT_STOP
     if not args.dry_run and not receipt['guard_unchanged']:
         sys.stderr.write('run: guard surface changed — refusing to end\n')
@@ -806,7 +806,7 @@ def cmd_selftest(_args: argparse.Namespace) -> int:
     started = time.time()
     results = selftest()
     for name, detail in results.items():
-        print('PASS %s: %s' % (name, json.dumps(detail, ensure_ascii=False)))
+        print('PASS {}: {}'.format(name, json.dumps(detail, ensure_ascii=False)))
     print('selftest 6/6 in %.1fs' % (time.time() - started))
     return EXIT_OK
 

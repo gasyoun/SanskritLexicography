@@ -15,7 +15,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from headless_worker import build_prompt  # noqa: E402
+from headless_worker import build_prompt
 
 MANIFEST_PATH = os.path.join(HERE, 'h1209_slice3.manifest.json')
 OUT_DIR = os.path.normpath(os.path.join(HERE, '..', '..', 'pwg_ru', 'h2313', 'raw'))

@@ -50,13 +50,13 @@ for _p in (HERE, os.path.join(REPO, 'src')):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-from call_reservation import (  # noqa: E402
+from call_reservation import (
     CallLimitReached,
     CallReservationLedger,
     normalize_telemetry,
     unevaluable_telemetry,
 )
-from execution_contract import (  # noqa: E402
+from execution_contract import (
     PRODUCTION_HARD_TIMEOUT_MS,
     assert_timeout_within_ceiling,
 )
@@ -128,8 +128,7 @@ def assert_route(route):
     """Refuse any attempt to run this adapter under a borrowed route id."""
     if route != GATEWAY_ROUTE:
         raise GatewayProvenanceError(
-            'gateway adapter refuses execution_route=%r (this route is %r)'
-            % (route, GATEWAY_ROUTE))
+            'gateway adapter refuses execution_route={!r} (this route is {!r})'.format(route, GATEWAY_ROUTE))
     return route
 
 
@@ -137,7 +136,7 @@ def assert_not_impersonating(route):
     """Belt-and-braces: the gateway route may never carry a c4/headless id."""
     if route in FORBIDDEN_ROUTES:
         raise GatewayProvenanceError(
-            'gateway adapter may not impersonate production route %r' % (route,))
+            'gateway adapter may not impersonate production route {!r}'.format(route))
     return route
 
 
@@ -240,11 +239,11 @@ def structured_from_transcript(transcript):
     """
     text = final_text(transcript)
     if not text:
-        raise ValueError('%s: no final text block in gateway transcript' % EMPTY_OUTPUT)
+        raise ValueError('{}: no final text block in gateway transcript'.format(EMPTY_OUTPUT))
     try:
         value = json.loads(text)
     except json.JSONDecodeError as exc:
-        raise ValueError('gateway final block is not JSON: %s' % exc)
+        raise ValueError('gateway final block is not JSON: {}'.format(exc))
     if not isinstance(value, dict):
         raise ValueError('gateway final block is not a JSON object')
     return value
@@ -281,11 +280,10 @@ def validate_complete_schema(result, schema):
         Draft202012Validator.check_schema(schema)
         Draft202012Validator(schema).validate(result)
     except SchemaError as exc:
-        raise ValueError('gateway output schema is invalid: %s' % exc.message) from exc
+        raise ValueError('gateway output schema is invalid: {}'.format(exc.message)) from exc
     except ValidationError as exc:
         location = '/'.join(str(part) for part in exc.absolute_path) or '<root>'
-        raise ValueError('gateway final JSON schema failure at %s: %s'
-                         % (location, exc.message)) from exc
+        raise ValueError('gateway final JSON schema failure at {}: {}'.format(location, exc.message)) from exc
     return result
 
 
@@ -328,7 +326,7 @@ class GatewayCall:
             raise GatewayProvenanceError('gateway call requires an explicit model identifier')
         if provenance != SYNTHETIC_PROVENANCE:
             raise GatewayRefusal(
-                'H2504 qualification is synthetic-only; refusing provenance=%r' % (provenance,))
+                'H2504 qualification is synthetic-only; refusing provenance={!r}'.format(provenance))
         assert_timeout_within_ceiling(timeout_ms, 'gateway_route.timeout_ms')
         self.ledger = ledger
         self.route = route
@@ -347,8 +345,7 @@ class GatewayCall:
         if transcript.get('model') != self.model:
             return {'schema_compliant': False, 'cards_returned': 0, 'result': None,
                     'classification': 'provenance',
-                    'error': 'gateway returned model %r, expected exact model %r'
-                             % (transcript.get('model'), self.model)}
+                    'error': 'gateway returned model {!r}, expected exact model {!r}'.format(transcript.get('model'), self.model)}
         if self.timeout_ms and wall_ms > self.timeout_ms:
             return {'schema_compliant': False, 'cards_returned': 0, 'result': None,
                     'classification': 'timeout',
@@ -385,7 +382,7 @@ class GatewayCall:
             reservation = self.ledger.reserve(
                 purpose, profile=self.profile, detail=self.route)
         except CallLimitReached as exc:
-            raise GatewayRefusal('budget_exceeded:max_calls (%s)' % exc)
+            raise GatewayRefusal('budget_exceeded:max_calls ({})'.format(exc))
 
         started = time.monotonic()
         transcript = None
@@ -394,10 +391,10 @@ class GatewayCall:
         try:
             transcript = self.transport(request)
         except subprocess.TimeoutExpired as exc:
-            transport_error = '%s: %s' % (exc.__class__.__name__, exc)
+            transport_error = '{}: {}'.format(exc.__class__.__name__, exc)
             transport_timed_out = True
-        except BaseException as exc:  # noqa: BLE001 -- reservation is irreversible
-            transport_error = '%s: %s' % (exc.__class__.__name__, exc)
+        except BaseException as exc:
+            transport_error = '{}: {}'.format(exc.__class__.__name__, exc)
         wall_ms = int((time.monotonic() - started) * 1000)
 
         if transport_error is not None or not isinstance(transcript, dict):
@@ -463,7 +460,6 @@ def seal_envelope(path, envelope):
 
 if __name__ == '__main__':
     status = credential_status()
-    print('gateway_route: route=%s base=%s' % (GATEWAY_ROUTE, GATEWAY_BASE_URL))
-    print('  credential shape (booleans only): %s'
-          % json.dumps(status, sort_keys=True))
+    print('gateway_route: route={} base={}'.format(GATEWAY_ROUTE, GATEWAY_BASE_URL))
+    print('  credential shape (booleans only): {}'.format(json.dumps(status, sort_keys=True)))
     print('  hard ceiling: %d ms' % PRODUCTION_HARD_TIMEOUT_MS)

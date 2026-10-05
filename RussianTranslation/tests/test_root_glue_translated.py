@@ -12,11 +12,11 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import root_glue_translated as RG  # noqa: E402
-from safe_filename import safe_name  # noqa: E402
+import root_glue_translated as RG
+from safe_filename import safe_name
 
 
-import pytest  # noqa: E402
+import pytest
 
 
 @pytest.fixture
@@ -73,7 +73,7 @@ def test_glue_homonym_blocks(tmp_cfg):
         json.dump(rm, f)
     for sub in ('As_0', 'As_1'):
         with open(os.path.join(out, sub + '.merged.md'), 'w', encoding='utf-8') as f:
-            f.write('# %s\n\nтекст\n' % sub)
+            f.write('# {}\n\nтекст\n'.format(sub))
     RG.INP, RG.OUT = inp, out
     text = open(RG.glue('As', out), encoding='utf-8').read()
     assert 'Омоним 1' in text and 'Омоним 2' in text

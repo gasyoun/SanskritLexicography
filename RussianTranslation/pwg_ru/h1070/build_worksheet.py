@@ -180,15 +180,15 @@ def main():
     out_md = os.path.join(HERE, 'worksheet.md')
     with open(out_md, 'w', encoding='utf-8') as f:
         for r in rows:
-            f.write('### %(uid)s [%(tranche)s] %(key)s (%(iast)s) stratum=%(stratum)s\n'
-                    'DE: %(de)s\nEN: %(en)s\nMW [%(mw_scope)s]: %(mw)s\n\n' % r)
+            f.write('### {uid} [{tranche}] {key} ({iast}) stratum={stratum}\n'
+                    'DE: {de}\nEN: {en}\nMW [{mw_scope}]: {mw}\n\n'.format(**r))
 
     n_by = collections.Counter(r['tranche'] for r in rows)
     mw_by = collections.Counter(r['mw_scope'].split(':')[0] for r in rows)
     print('rows: %d  by tranche: %s' % (len(rows), dict(n_by)))
     print('FU1 cards sampled: %d (population %d, seed %d)' % (len(picked), total, args.seed))
-    print('mw scope: %s' % dict(mw_by))
-    print('wrote %s / %s' % (out_jsonl, out_md))
+    print('mw scope: {}'.format(dict(mw_by)))
+    print('wrote {} / {}'.format(out_jsonl, out_md))
 
 
 if __name__ == '__main__':

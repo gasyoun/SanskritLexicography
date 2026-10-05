@@ -17,13 +17,13 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import anthropic_batches_route as abr  # noqa: E402
-import anthropic_messages_route as amr  # noqa: E402
+import anthropic_batches_route as abr
+import anthropic_messages_route as amr
 
 
 def main():
     client, _ = abr.api_client()
-    print('credential source: %s' % abr.credential_note())
+    print('credential source: {}'.format(abr.credential_note()))
     verdict = amr.check_auth_and_model(client, model=abr.MODEL)
     print(json.dumps(verdict, ensure_ascii=False, sort_keys=True))
     return 0 if verdict.get('authenticated') and verdict.get('model_available') else 4

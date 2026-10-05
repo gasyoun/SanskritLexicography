@@ -19,9 +19,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import cache_economy_report as report  # noqa: E402
-import cache_identity as ident  # noqa: E402
-import cache_prep_census as census  # noqa: E402
+import cache_economy_report as report
+import cache_identity as ident
+import cache_prep_census as census
 
 RT = os.path.dirname(os.path.dirname(HERE))
 EXP = os.path.join(RT, 'experiments', 'pwg_cache_economy')
@@ -59,7 +59,7 @@ def verify_conclusions():
     deltas = []
 
     if prep.get('parseable') != 100:
-        deltas.append('Flash parseable %s != 100' % prep.get('parseable'))
+        deltas.append('Flash parseable {} != 100'.format(prep.get('parseable')))
     _near(float(prep['total_usd']), 0.041929, 6, 'Flash PREP spend')
     _near(float(prep['cold']['total_usd']), 0.022056, 6, 'Flash cold total')
     _near(float(prep['cold']['mean_usd']), 0.000441, 6, 'Flash cold mean')
@@ -79,12 +79,10 @@ def verify_conclusions():
     _near(same_card, 0.099, 3, 'Flash same-card save')
 
     if gen.get('parseable') != 42 or gen.get('attempted_slots') != 44:
-        deltas.append('Generation parseable %s/%s != 42/44'
-                      % (gen.get('parseable'), gen.get('attempted_slots')))
+        deltas.append('Generation parseable {}/{} != 42/44'.format(gen.get('parseable'), gen.get('attempted_slots')))
     _near(float(gen['total_usd']), 0.555956, 6, 'Generation spend')
     if gen.get('unique_clean_cards') != 20:
-        deltas.append('Generation unique_clean %s != 20'
-                      % gen.get('unique_clean_cards'))
+        deltas.append('Generation unique_clean {} != 20'.format(gen.get('unique_clean_cards')))
     _near(float(gen['usd_per_unique_clean']), 0.02780, 5, 'Generation USD/unique')
     vs_h2676 = float(gen['usd_per_unique_clean']) / 0.01991 - 1.0
     _near(vs_h2676, 0.396, 3, 'Generation vs H2676')
@@ -93,8 +91,7 @@ def verify_conclusions():
 
     if l3 is not None:
         if l3.get('parseable') != 192 or l3.get('attempted_slots') != 200:
-            deltas.append('L3 parseable %s/%s != 192/200'
-                          % (l3.get('parseable'), l3.get('attempted_slots')))
+            deltas.append('L3 parseable {}/{} != 192/200'.format(l3.get('parseable'), l3.get('attempted_slots')))
         _near(float(l3['total_usd']), 0.046207, 6, 'L3 spend')
 
     if deltas:
@@ -106,7 +103,7 @@ def verify_conclusions():
         'flash_pair_per_card': pair_per,
         'flash_vs_h2675': vs_h2675,
         'flash_same_card_save': same_card,
-        'generation_parseable': '%s/%s' % (gen['parseable'], gen['attempted_slots']),
+        'generation_parseable': '{}/{}'.format(gen['parseable'], gen['attempted_slots']),
         'generation_vs_h2676': vs_h2676,
     }
 
@@ -259,11 +256,11 @@ def flash_verdict(summary, save, hashes_equal):
     hi = ci.get('hi')
     reasons = []
     if attempted < 95 or parseable < 95:
-        reasons.append('parseable %s/%s' % (parseable, attempted or 100))
+        reasons.append('parseable {}/{}'.format(parseable, attempted or 100))
     if evaluable < parseable:
         reasons.append('unevaluable_billing')
     if retry not in (None, 1, 1.0):
-        reasons.append('retry_amplification %s' % retry)
+        reasons.append('retry_amplification {}'.format(retry))
     if not hashes_equal:
         reasons.append('canonical_hash_change')
     if summary.get('generation_lane_verdict') == 'FAIL':
@@ -333,8 +330,7 @@ def main(argv=None):
         args.seal = True
     if args.verify:
         replay = verify_conclusions()
-        print('CONCLUSIONS replay OK flash_vs_h2675=%.3f same_card=%.3f'
-              % (replay['flash_vs_h2675'], replay['flash_same_card_save']))
+        print('CONCLUSIONS replay OK flash_vs_h2675={:.3f} same_card={:.3f}'.format(replay['flash_vs_h2675'], replay['flash_same_card_save']))
     if args.seal:
         selected, pool, banned = select_50()
         path, body = write_manifest(selected)
@@ -343,7 +339,7 @@ def main(argv=None):
                  body['manifest_sha256'][:12]))
         overlap = set(body['keys']) & banned
         if overlap:
-            raise VerifyError('overlap after write: %s' % sorted(overlap)[:8])
+            raise VerifyError('overlap after write: {}'.format(sorted(overlap)[:8]))
     return 0
 
 

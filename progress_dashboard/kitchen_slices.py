@@ -104,7 +104,7 @@ def operator_strip(window_status: Path, speed: dict, act: dict) -> dict:
     if window_status.exists():
         try:
             ws = json.loads(window_status.read_text(encoding="utf-8"))
-        except Exception:  # noqa: BLE001
+        except Exception:
             ws = {}
     newest = speed.get("newest_card_at")
     oldest = speed.get("oldest_card_at")
@@ -572,7 +572,7 @@ def quality_slice(pilot_out: Path, rows: list[dict], events: Path) -> dict:
                 "ci95_wilson": fid.get("ci95_wilson"),
             }
             out["measured"] = True
-        except Exception:  # noqa: BLE001
+        except Exception:
             pass
 
     if rows:
@@ -681,7 +681,7 @@ def quality_timeseries_append(ts_path: Path, quality: dict, generated_at: str, t
     if ts_path.exists():
         try:
             ts = json.loads(ts_path.read_text(encoding="utf-8"))
-        except Exception:  # noqa: BLE001
+        except Exception:
             ts = {"snapshots": []}
     fid = quality.get("fidelity") or {}
     jdg = quality.get("judge_coverage") or {}
@@ -776,7 +776,7 @@ def eta_verb(rt: Path, speed: dict) -> dict:
         return {"measured": False}
     try:
         v = json.loads(wl.read_text(encoding="utf-8"))
-    except Exception:  # noqa: BLE001
+    except Exception:
         return {"measured": False}
 
     def n(key):
@@ -862,7 +862,7 @@ def measure_medium50_band(rt: Path, medium50_wl_path: Path | None = None) -> dic
         return out
     try:
         m50_wl = json.loads(m50_path.read_text(encoding="utf-8-sig"))
-    except Exception:  # noqa: BLE001 — missing/corrupt worklist must not crash builders
+    except Exception:
         return out
     m50_keys = m50_wl.get("keys") or []
     m50_total = m50_wl.get("n_selected") or len(m50_keys)
@@ -943,7 +943,7 @@ def eta_nominal(rt: Path, medium50_wl_path: Path | None = None) -> dict:
         return {"measured": False}
     try:
         nm = json.loads(wl.read_text(encoding="utf-8-sig"))
-    except Exception:  # noqa: BLE001
+    except Exception:
         return {"measured": False}
 
     def n(key):
@@ -1153,7 +1153,7 @@ def load_subscription(path: Path) -> dict:
         }
     try:
         raw = json.loads(path.read_text(encoding="utf-8"))
-    except Exception as e:  # noqa: BLE001
+    except Exception as e:
         return {
             "measured": False,
             "error": str(e)[:200],
@@ -1573,7 +1573,7 @@ def _live_orchestrator_jobs(db_path: Path | None, cap: int = 12) -> list[dict]:
                 }
             )
         con.close()
-    except Exception:  # noqa: BLE001
+    except Exception:
         return []
     return out
 

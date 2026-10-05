@@ -39,10 +39,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 
-from csl_pyutil.review_sheet import render_review_sheet, esc  # noqa: E402
-from sheet_screening import screening_block  # noqa: E402
-import review_binding  # noqa: E402
-from review_sheet_standard import standard_config  # noqa: E402
+from csl_pyutil.review_sheet import render_review_sheet, esc
+from sheet_screening import screening_block
+import review_binding
+from review_sheet_standard import standard_config
 
 GENERATED = "2026-07-31"
 SHEET_ID = "h1306_style"
@@ -312,8 +312,8 @@ def build(out_dir=None, force_lock=False):
     lock_path = review_binding.lock_from_html(out, gate=None)
 
     print("H1306 style sheet: %d cards -> %s" % (len(cards), out))
-    print("  %s" % chash)
-    print("  lock -> %s" % lock_path)
+    print("  {}".format(chash))
+    print("  lock -> {}".format(lock_path))
     return out, chash, lock_path
 
 

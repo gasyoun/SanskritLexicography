@@ -42,7 +42,7 @@ try:
     # C-01 single source, the same import canary_gate uses. A second literal
     # ``re.compile(r'\{T\d+\}')`` here is exactly the copy-paste this module exists
     # to prevent.
-    from promote_final_cards import TN_RE  # noqa: E402
+    from promote_final_cards import TN_RE
 except ImportError:                        # pragma: no cover — standalone/vendored use
     TN_RE = re.compile(r'\{T\d+\}')
 

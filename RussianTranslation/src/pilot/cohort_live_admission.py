@@ -77,15 +77,14 @@ def validate_record(record):
     if not isinstance(record, dict):
         return False, 'acceptance record is not a JSON object'
     if record.get('schema') != SCHEMA:
-        return False, ('acceptance record schema is %r, expected %r'
-                       % (record.get('schema'), SCHEMA))
+        return False, ('acceptance record schema is {!r}, expected {!r}'.format(record.get('schema'), SCHEMA))
 
     serial = record.get('serial_acceptance')
     if not isinstance(serial, dict):
         return False, 'acceptance record has no `serial_acceptance` block'
     for field in ('run_id', 'window_id', 'profile', 'completed_utc'):
         if not _nonblank(serial.get(field)):
-            return False, 'serial_acceptance.%s is missing or blank' % field
+            return False, 'serial_acceptance.{} is missing or blank'.format(field)
     if serial.get('byte_identical_to_serial') is not True:
         return False, ('serial_acceptance.byte_identical_to_serial is not true -- the live '
                        'window did not reproduce the serial route decisions/store bytes')
@@ -108,17 +107,17 @@ def validate_record(record):
         return False, 'acceptance record has no `reviewer_sign_off` block'
     for field in ('reviewer', 'session', 'dated'):
         if not _nonblank(review.get(field)):
-            return False, 'reviewer_sign_off.%s is missing or blank' % field
+            return False, 'reviewer_sign_off.{} is missing or blank'.format(field)
     if str(review.get('verdict') or '').strip().upper() != 'PASS':
-        return False, 'reviewer_sign_off.verdict is %r, not PASS' % (review.get('verdict'),)
+        return False, 'reviewer_sign_off.verdict is {!r}, not PASS'.format(review.get('verdict'))
     if not _evidence_list(review):
         return False, 'reviewer_sign_off.evidence is empty -- an unfalsifiable sign-off'
 
     width = record.get('max_admitted_width')
     if not isinstance(width, int) or isinstance(width, bool):
-        return False, 'max_admitted_width is not an integer: %r' % (width,)
+        return False, 'max_admitted_width is not an integer: {!r}'.format(width)
     if width < 1:
-        return False, 'max_admitted_width must be >= 1: %r' % (width,)
+        return False, 'max_admitted_width must be >= 1: {!r}'.format(width)
     if width > MAX_ADMITTED_WIDTH:
         # A record asking for more than the code cap is a defect IN THE RECORD, and the whole
         # record is rejected rather than silently clamped: somebody meant something by it.
@@ -130,7 +129,7 @@ def validate_record(record):
     if not isinstance(profiles, list) or not profiles or not all(_nonblank(p) for p in profiles):
         return False, 'admitted_profiles must be a non-empty list of profile names'
     if len(set(profiles)) != len(profiles):
-        return False, 'admitted_profiles contains duplicates: %r' % (profiles,)
+        return False, 'admitted_profiles contains duplicates: {!r}'.format(profiles)
     if len(profiles) < width:
         return False, ('admitted_profiles lists %d profile(s) but max_admitted_width is %d -- '
                        'a wave cannot be wider than its admitted fleet'
@@ -142,12 +141,12 @@ def load_record(path=None, rt_root=None):
     """(record_or_None, reason). Any read/parse failure is a refusal reason, never a raise."""
     path = path or record_path(rt_root)
     if not os.path.exists(path):
-        return None, 'no acceptance record at %s' % path
+        return None, 'no acceptance record at {}'.format(path)
     try:
         with open(path, encoding='utf-8') as handle:
-            return json.load(handle), 'loaded %s' % path
+            return json.load(handle), 'loaded {}'.format(path)
     except (OSError, ValueError) as exc:
-        return None, 'acceptance record at %s is unreadable: %s' % (path, exc)
+        return None, 'acceptance record at {} is unreadable: {}'.format(path, exc)
 
 
 def admit(width, path=None, rt_root=None):
@@ -158,7 +157,7 @@ def admit(width, path=None, rt_root=None):
     try:
         width = int(width or 1)
     except (TypeError, ValueError):
-        return False, 'cohort width %r is not an integer' % (width,), None
+        return False, 'cohort width {!r} is not an integer'.format(width), None
     if width <= 1:
         return True, 'serial route (width 1) -- no acceptance record required', None
     if width > MAX_ADMITTED_WIDTH:
@@ -175,8 +174,7 @@ def admit(width, path=None, rt_root=None):
     if width > int(record['max_admitted_width']):
         return False, ('acceptance record admits width %d; %d was requested'
                        % (record['max_admitted_width'], width)), record
-    return True, ('admitted by %s: serial window %s on %s, %s sign-off %s'
-                  % (os.path.basename(path or record_path(rt_root)),
+    return True, ('admitted by {}: serial window {} on {}, {} sign-off {}'.format(os.path.basename(path or record_path(rt_root)),
                      record['serial_acceptance']['run_id'],
                      record['serial_acceptance']['profile'],
                      record['reviewer_sign_off']['reviewer'],

@@ -13,7 +13,7 @@ import sys
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "src"))
 sys.stdout.reconfigure(encoding="utf-8")
 
-import h5262_ipm_audit as audit  # noqa: E402
+import h5262_ipm_audit as audit
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CENSUS = os.path.join(HERE, "..", "reports", "H5262_lemma_census.json")
@@ -26,8 +26,7 @@ by_lemma = {r["lemma"]: r for r in census["lemmas"]}
 wanted = {}
 for lemma in ARTIFACTS:
     row = by_lemma.get(lemma)
-    print("\n== %s == occurrences=%s forms=%s cards=%s"
-          % (lemma, row and row["occurrences"], row and row["forms"],
+    print("\n== {} == occurrences={} forms={} cards={}".format(lemma, row and row["occurrences"], row and row["forms"],
              row and row["cards"][:3]))
     for form in (row or {}).get("forms", []):
         wanted[form] = lemma
@@ -49,6 +48,6 @@ for rec in audit.iter_store(store):
         break
 
 for lemma in ARTIFACTS:
-    print("\n-- %s --" % lemma)
+    print("\n-- {} --".format(lemma))
     for snippet in seen.get(lemma, ["(no snippet found)"]):
         print("   ..." + snippet + "...")

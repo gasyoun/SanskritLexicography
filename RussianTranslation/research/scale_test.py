@@ -18,7 +18,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import root_segment_proto as RS                              # noqa: E402
+import root_segment_proto as RS
 
 PWG = os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 PREVERB = os.path.join(HERE, '..', '..', '..', 'PWG', 'verbs01', 'pwg_preverb1.txt')
@@ -84,7 +84,7 @@ def main():
     if fails:
         print('  FAILURES (%d):' % len(fails))
         for L, k1, why in fails[:20]:
-            print('    L=%s k1=%s : %s' % (L, k1, why))
+            print('    L={} k1={} : {}'.format(L, k1, why))
 
 
 if __name__ == '__main__':

@@ -33,7 +33,7 @@ def plain(s):
 
 
 def load(tag, root):
-    fp = os.path.join(ROOT, 'wf_output.%s.%s.json' % (tag, root))
+    fp = os.path.join(ROOT, 'wf_output.{}.{}.json'.format(tag, root))
     if not os.path.exists(fp):
         return {}
     out = {}
@@ -80,10 +80,10 @@ def main():
         rows = rows_for(root)
         lines.append('\n## %s — %d aligned sense rows (DE source / RU / EN)\n' % (root, len(rows)))
         for key, de, rr, ee in rows[:args.limit]:
-            lines.append('- **%s**' % key)
-            lines.append('  - DE: %s' % de[:200])
-            lines.append('  - RU: %s' % rr[:200])
-            lines.append('  - EN: %s' % ee[:200])
+            lines.append('- **{}**'.format(key))
+            lines.append('  - DE: {}'.format(de[:200]))
+            lines.append('  - RU: {}'.format(rr[:200]))
+            lines.append('  - EN: {}'.format(ee[:200]))
     text = '\n'.join(lines)
     if args.out:
         with open(args.out, 'w', encoding='utf-8') as f:

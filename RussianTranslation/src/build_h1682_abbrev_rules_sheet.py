@@ -28,14 +28,14 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
-import h1682_abbrev_collapse as coll                              # noqa: E402
-import review_binding                                             # noqa: E402
-import store_path                                                 # noqa: E402
-from review_sheet_standard import (                               # noqa: E402
+import h1682_abbrev_collapse as coll
+import review_binding
+import store_path
+from review_sheet_standard import (
     NOTE_MIN_HEIGHT_PX, pwg_entry_href, slp1_iast, standard_config,
 )
-from csl_pyutil.review_sheet import render_review_sheet, esc, mark_cyrillic, RU_UI_STRINGS  # noqa: E402
-from sheet_screening import screening_block  # noqa: E402
+from csl_pyutil.review_sheet import render_review_sheet, esc, mark_cyrillic, RU_UI_STRINGS
+from sheet_screening import screening_block
 
 GENERATED = '2026-07-31'
 SHEET_ID = 'h1682_abbrev_rules'
@@ -83,7 +83,7 @@ def _format_surface(tok, row):
     en = row.get('en') or ''
     exp = de or en or 'нет в pwgab'
     if de and en and en.casefold() != de.casefold():
-        exp = '%s / %s' % (de, en)
+        exp = '{} / {}'.format(de, en)
     prop = row.get('ru_proposed')
     if prop is None:
         prop_s = 'без фикс. RU (оставить + тултип)'
@@ -111,7 +111,7 @@ def collect_kwic(tokens, limit=MAX_EXAMPLES):
         return hits
     store = store_path.canonical_store(os.path.join(HERE, 'pwg_ru_translated.jsonl'))
     if not os.path.exists(store):
-        print('KWIC: store missing at %s' % store, file=sys.stderr)
+        print('KWIC: store missing at {}'.format(store), file=sys.stderr)
         return hits
     need = set(wanted)
     with io.open(store, encoding='utf-8') as f:
@@ -171,7 +171,7 @@ def _examples_html(examples):
         hw = esc(ex.get('iast') or ex.get('key1') or '?')
         href = ex.get('href')
         if href:
-            head = '<a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(href), hw)
+            head = '<a href="{}" target="_blank" rel="noopener">{}</a>'.format(esc(href), hw)
         else:
             head = hw
         lines.append(
@@ -180,7 +180,7 @@ def _examples_html(examples):
             '&nbsp;&nbsp;RU: %s'
             % (i, head, esc(ex.get('key1') or ''), esc(ex.get('de') or ''), esc(ex.get('ru') or ''))
         )
-    return '<div class="kwic">%s</div>' % '<br>'.join(lines)
+    return '<div class="kwic">{}</div>'.format('<br>'.join(lines))
 
 
 def _family_examples(surfaces, kwic):
@@ -223,8 +223,8 @@ def rule_card(label, bulk_toks, residue_toks, citation, by_token, kwic):
                 elif prop is None:
                     prop_s = 'без фикс. RU'
                 else:
-                    prop_s = 'предложение: %s (см. H2048 / N8 notes)' % prop
-                member_lines.append(' · '.join(parts) + '  →  %s' % prop_s)
+                    prop_s = 'предложение: {} (см. H2048 / N8 notes)'.format(prop)
+                member_lines.append(' · '.join(parts) + '  →  {}'.format(prop_s))
         members = '\n'.join(member_lines)
 
         # examples: first family by total freq
@@ -268,11 +268,11 @@ def rule_card(label, bulk_toks, residue_toks, citation, by_token, kwic):
 
         panels = [
             ('состав (форма · раскрытие · предложение · n=; регистровые семьи вместе)',
-             '<pre>%s</pre>' % esc(members)),
+             '<pre>{}</pre>'.format(esc(members))),
             ('примеры (до %d, для семьи с максимальной частотой в разделе)'
              % MAX_EXAMPLES,
              ex_html),
-            ('прецедент', '<pre>%s</pre>' % esc(citation)),
+            ('прецедент', '<pre>{}</pre>'.format(esc(citation))),
         ]
     else:
         q = (
@@ -285,15 +285,15 @@ def rule_card(label, bulk_toks, residue_toks, citation, by_token, kwic):
         )
         panels = [
             ('состав раздела (без фикс. RU → см. карточки ниже)',
-             '<pre>%s</pre>' % ' · '.join(esc(t) for t in sorted(residue_toks))),
-            ('прецедент', '<pre>%s</pre>' % esc(citation)),
+             '<pre>{}</pre>'.format(' · '.join(esc(t) for t in sorted(residue_toks)))),
+            ('прецедент', '<pre>{}</pre>'.format(esc(citation))),
         ]
         approve_hint = 'принять механизм'
 
     if residue_toks and bulk_toks:
         panels.append((
             'вынесено как неоднозначные (см. ниже)',
-            '<pre>%s</pre>' % ' · '.join(esc(t) for t in sorted(residue_toks)),
+            '<pre>{}</pre>'.format(' · '.join(esc(t) for t in sorted(residue_toks))),
         ))
 
     return {
@@ -307,7 +307,7 @@ def rule_card(label, bulk_toks, residue_toks, citation, by_token, kwic):
         ],
         'question': q,
         'panels': panels,
-        'note_placeholder': 'своя формулировка / комментарий (%s)' % approve_hint,
+        'note_placeholder': 'своя формулировка / комментарий ({})'.format(approve_hint),
     }
 
 
@@ -321,23 +321,21 @@ _CLS_BADGE_RU = {'OCR': 'неясное'}
 
 def residue_card(tok, row, kwic):
     exp = ' — '.join(x for x in (row['de'], row['en']) if x) or 'нет в pwgab'
-    cur = ('уже в RU_MAP: «%s»' % row['ru_map_current']) if row['ru_map_current'] else (
+    cur = ('уже в RU_MAP: «{}»'.format(row['ru_map_current'])) if row['ru_map_current'] else (
         'сейчас: латиница/оригинал + тултип')
     prop = row['ru_proposed']
     # Residue: OCR / German articles — usually no RU translation
     if prop is None:
         prop_display = 'оставить оригинал + тултип (не изобретать RU)'
         q = (
-            '<b>%s</b>&nbsp;→&nbsp;<b>%s</b>'
-            '&nbsp;&nbsp;<span class="muted">(раздел: %s)</span>'
-            % (esc(tok), esc(prop_display), esc(row['section']))
+            '<b>{}</b>&nbsp;→&nbsp;<b>{}</b>'
+            '&nbsp;&nbsp;<span class="muted">(раздел: {})</span>'.format(esc(tok), esc(prop_display), esc(row['section']))
         )
     else:
         prop_display = prop
         q = (
-            '<b>%s</b>&nbsp;→&nbsp;%s'
-            '&nbsp;&nbsp;<span class="muted">(раздел: %s)</span>'
-            % (esc(tok), mark_cyrillic('<b>%s</b>' % esc(prop_display)), esc(row['section']))
+            '<b>{}</b>&nbsp;→&nbsp;{}'
+            '&nbsp;&nbsp;<span class="muted">(раздел: {})</span>'.format(esc(tok), mark_cyrillic('<b>{}</b>'.format(esc(prop_display))), esc(row['section']))
         )
     panels = [
         ('данные',
@@ -348,9 +346,9 @@ def residue_card(tok, row, kwic):
     ]
     if row['note']:
         panels.append(('примечание (почему это неоднозначно)',
-                       '<pre>%s</pre>' % esc(row['note'])))
+                       '<pre>{}</pre>'.format(esc(row['note']))))
     return {
-        'id': 'ab:%s' % tok,
+        'id': 'ab:{}'.format(tok),
         'filt': 'ambig',
         'title': tok,
         'badges': ['%d×' % row['freq'], _CLS_BADGE_RU.get(row['cls'], row['cls'])],
@@ -375,14 +373,14 @@ def ls_cards():
     items = []
     for sig, freqs, exp, prop, note in _LS_BORDER:
         items.append({
-            'id': 'ls:%s' % sig,
+            'id': 'ls:{}'.format(sig),
             'filt': 'ls',
             'title': sig,
             'badges': [freqs, 'сигла'],
-            'question': '<b>%s</b>&nbsp;→&nbsp;%s' % (esc(sig), mark_cyrillic('<b>%s</b>' % esc(prop))),
+            'question': '<b>{}</b>&nbsp;→&nbsp;{}'.format(esc(sig), mark_cyrillic('<b>{}</b>'.format(esc(prop)))),
             'panels': [
-                ('данные', '<pre>расшифровка: %s</pre>' % esc(exp)),
-                ('примечание', '<pre>%s</pre>' % esc(note)),
+                ('данные', '<pre>расшифровка: {}</pre>'.format(esc(exp))),
+                ('примечание', '<pre>{}</pre>'.format(esc(note))),
             ],
             'note_placeholder': 'своя формулировка / комментарий',
         })
@@ -465,11 +463,10 @@ def build():
         # timer strings) via RU_UI_STRINGS; save_banner excluded from the
         # preset (bakes in sheet_id/save_as), built here per its docstring.
         'ui_strings': dict(RU_UI_STRINGS, save_banner=(
-            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
-            '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
-            'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
-            'листу относятся эти решения).'
-            % (esc(SHEET_ID), esc('pwg_ru/eval/h1682_abbrev_rules.decisions.json'), esc(SHEET_ID)))),
+            '&#128229; Ваш экспорт скачивается как <code>{}_decisions.json</code> '
+            '&rarr; сохраните его в <code>{}</code> (значение <code>sheet_id</code> '
+            'внутри файла — <code>{}</code> — так следующая сессия узнаёт, к какому '
+            'листу относятся эти решения).'.format(esc(SHEET_ID), esc('pwg_ru/eval/h1682_abbrev_rules.decisions.json'), esc(SHEET_ID)))),
     }
     config.update(standard_config(save_as='pwg_ru/eval/h1682_abbrev_rules.decisions.json'))
     # standard_config already sets note_min_height_px=88 and show_ids
@@ -491,8 +488,8 @@ def build():
 
     print('H1682 rules sheet v3 (H2047): %d cards (%d rule + %d ambiguous + %d ls + 1 meta) -> %s'
           % (len(items), n_rule_cards, n_residue_cards, len(_LS_BORDER), out))
-    print('  %s' % chash)
-    print('  lock -> %s' % lock_path)
+    print('  {}'.format(chash))
+    print('  lock -> {}'.format(lock_path))
     return out
 
 

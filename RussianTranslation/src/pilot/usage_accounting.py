@@ -109,7 +109,7 @@ def build(usage, *, billing_mode=UNKNOWN_GATEWAY, observed_cash_usd=None,
     deliberately downgraded to unknown.
     """
     if billing_mode not in BILLING_MODES:
-        raise ValueError('unsupported billing_mode: %r' % billing_mode)
+        raise ValueError('unsupported billing_mode: {!r}'.format(billing_mode))
     if observed_cash_usd is not None and not _number(observed_cash_usd):
         raise ValueError('observed_cash_usd must be null or non-negative finite number')
     if reported_equivalent_usd is not None and not _number(reported_equivalent_usd):
@@ -172,12 +172,12 @@ def validate(value):
     for name in TOKEN_FIELDS:
         token = value.get(name)
         if not isinstance(token, int) or isinstance(token, bool) or token < 0:
-            raise ValueError('%s must be a non-negative integer' % name)
+            raise ValueError('{} must be a non-negative integer'.format(name))
     if value.get('billing_mode') not in BILLING_MODES:
         raise ValueError('usage accounting billing_mode mismatch')
     for name in ('observed_cash_usd', 'list_equivalent_usd', 'credit_equivalent_usd'):
         if value.get(name) is not None and not _number(value[name]):
-            raise ValueError('%s must be null or non-negative finite number' % name)
+            raise ValueError('{} must be null or non-negative finite number'.format(name))
     if not isinstance(value.get('pricing_policy'), str) or not value['pricing_policy']:
         raise ValueError('pricing_policy must be non-empty text')
     if 'credit_claim_evidence' in value and value['credit_claim_evidence'] is not None \

@@ -27,7 +27,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 WROOT = os.path.normpath(os.path.join(GITHUB, 'WhitneyRoots'))
 CROSSWALK = os.path.join(WROOT, 'crosswalk', 'roots.csv')
@@ -57,7 +57,7 @@ def _load_exceptions():
             snip = (ref.get('snippet') or '').strip()
             if len(snip) > SNIPPET_CHARS:
                 snip = snip[:SNIPPET_CHARS].rstrip() + '…'
-            excs.append({'label': ref.get('label') or ('§%s' % ref.get('section')),
+            excs.append({'label': ref.get('label') or ('§{}'.format(ref.get('section'))),
                          'section': ref.get('section'), 'snippet': snip})
         if excs:
             out[str(wid)] = excs
@@ -79,7 +79,7 @@ def irregularities(rec):
     flags = []
     cls = rec.get('class') or ''
     if '|' in cls:
-        flags.append('multi_class:%s' % cls)            # >1 gaṇa (e.g. gam I|II)
+        flags.append('multi_class:{}'.format(cls))            # >1 gaṇa (e.g. gam I|II)
     if rec.get('class_uncertain'):
         flags.append('class_uncertain')                  # Whitney's "ROMAN ?"
     if not cls or cls == '—':
@@ -87,7 +87,7 @@ def irregularities(rec):
     # root-final nasal loss in the PPP (gam -> gatá, han -> hatá, man -> matá): the "m/n expelled"
     root, ppp = rec.get('root_slp1') or '', rec.get('ppp') or ''
     if root[-1:] in ('m', 'n') and ppp and (root[:-1] + 'ta') == _deaccent(ppp):
-        flags.append('root_final_nasal_loss(%s→%s)' % (root, ppp))
+        flags.append('root_final_nasal_loss({}→{})'.format(root, ppp))
     return flags
 
 
@@ -123,13 +123,13 @@ def _block(row, exceptions=None):
         if len(uniq) > MAX_EXC_FLAG:
             shown += ', +%d more' % (len(uniq) - MAX_EXC_FLAG)
         if shown:
-            rec['irregularities'].append('whitney_exception(%s)' % shown)
+            rec['irregularities'].append('whitney_exception({})'.format(shown))
     return rec
 
 
 def build():
     if not os.path.exists(CROSSWALK):
-        sys.exit('crosswalk not found: %s (clone gasyoun/WhitneyRoots as a sibling)' % CROSSWALK)
+        sys.exit('crosswalk not found: {} (clone gasyoun/WhitneyRoots as a sibling)'.format(CROSSWALK))
     exceptions = _load_exceptions()
     by_slp1 = {}
     for row in csv.DictReader(open(CROSSWALK, encoding='utf-8')):
@@ -167,8 +167,8 @@ def grammar_for(slp1, homonym=None):
         match = [r for r in recs if r.get('homonym') == str(homonym)]
         if not match and recs:
             have = ', '.join(sorted(r.get('homonym') or '?' for r in recs))
-            print('whitney_grammar: root %r has no Whitney homonym %r (has: %s) — returning '
-                  'no grammar rather than a wrong-homonym block' % (slp1, str(homonym), have),
+            print('whitney_grammar: root {!r} has no Whitney homonym {!r} (has: {}) — returning '
+                  'no grammar rather than a wrong-homonym block'.format(slp1, str(homonym), have),
                   file=sys.stderr)
         return match
     return recs
@@ -182,7 +182,7 @@ def main():
         slp1 = args[args.index('--show') + 1]
         recs = grammar_for(slp1)
         if not recs:
-            print('no Whitney record for %r' % slp1); return
+            print('no Whitney record for {!r}'.format(slp1)); return
         print(json.dumps(recs, ensure_ascii=False, indent=2))
         return
     print(__doc__)

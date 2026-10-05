@@ -27,7 +27,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, '..', 'src')
 sys.path.insert(0, SRC)
-import renou  # noqa: E402
+import renou
 
 ORIG = os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02')
 MW_TXT = os.path.join(ORIG, 'mw', 'mw.txt')

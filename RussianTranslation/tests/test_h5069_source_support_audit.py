@@ -31,7 +31,7 @@ ROOT = os.path.normpath(os.path.join(
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import h5069_source_support_audit as aud  # noqa: E402
+import h5069_source_support_audit as aud
 
 
 def _feat(**kw):
@@ -140,8 +140,8 @@ def test_no_control_is_built_from_a_record_the_packet_also_ships_plain():
     assert frozen, "manifest must list the frozen records"
     for c in spec["controls"]:
         assert c["base_record_id"] not in frozen, (
-            "control %s is built from a record the packet also ships "
-            "unmutated" % c["id"])
+            "control {} is built from a record the packet also ships "
+            "unmutated".format(c["id"]))
 
 
 # --- 3. gradeability -------------------------------------------------------

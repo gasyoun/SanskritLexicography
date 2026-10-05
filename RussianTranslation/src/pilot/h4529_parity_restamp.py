@@ -55,7 +55,7 @@ def main():
     print('H4529 parity re-stamp: %d entr%s drifted on %s'
           % (len(drift), 'y' if len(drift) == 1 else 'ies', ', '.join(TOUCHED)))
     for entry_id, rel in drift:
-        print('  - %s (%s)' % (entry_id, rel))
+        print('  - {} ({})'.format(entry_id, rel))
         if apply:
             lpc.update_hash(entry_id)
     if not apply:

@@ -36,7 +36,7 @@ CASE = re.compile(r';; Case \d+: L=\d+, k1=(\S+), k2=\S+, code=\S+,')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from safe_filename import candidate_names  # noqa: E402
+from safe_filename import candidate_names
 
 
 def verb_universe(path=PREVERB):

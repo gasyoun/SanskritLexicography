@@ -59,8 +59,8 @@ PRICED_BY_ARM1 = 35
 GENERATED = '26-07-2026'
 
 sys.path.insert(0, SRC)
-from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config  # noqa: E402
-from review_binding import stamp, write_lock  # noqa: E402
+from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config
+from review_binding import stamp, write_lock
 
 
 def read_tsv(path):
@@ -96,7 +96,7 @@ def load_arm1_ids(lock_dir=LOCK_DIR, sheet_id=ARM1_SHEET_ID):
             return set(ids), 'lock'
     frame = os.path.join(REVIEW_DIR, sheet_id + '_frame.tsv')
     if os.path.exists(frame):
-        ids = {('%s~~h%s' % (r['k1'], r['hom'])) if r['hom'] else r['k1']
+        ids = {('{}~~h{}'.format(r['k1'], r['hom'])) if r['hom'] else r['k1']
                for r in read_tsv(frame)}
         return ids, 'frame(no lock!)'
     return set(), 'none'
@@ -208,23 +208,22 @@ def build_items(rows):
     for r in rows:
         display = slp1_iast(r['k1'])
         href = pwg_entry_href(r['k1'])
-        title = display + (' (h%s)' % r['hom'] if r['hom'] else '')
+        title = display + (' (h{})'.format(r['hom']) if r['hom'] else '')
         badges = [r['vs_index_class'], r['length_bucket'], r['freq_bucket']]
         if r.get('freq_count') != '':
-            badges.append('DCS n=%s' % r['freq_count'])
+            badges.append('DCS n={}'.format(r['freq_count']))
         question = (
-            '<p><b>PWG-членение:</b> <code>%s</code></p>'
-            '<p><b>Членение в указателе (index):</b> <code>%s</code></p>'
-            '<p style="opacity:.75">Класс расхождения: <code>%s</code></p>'
-        ) % (_esc(r['pwg_members']) or '&mdash;',
+            '<p><b>PWG-членение:</b> <code>{}</code></p>'
+            '<p><b>Членение в указателе (index):</b> <code>{}</code></p>'
+            '<p style="opacity:.75">Класс расхождения: <code>{}</code></p>'
+        ).format(_esc(r['pwg_members']) or '&mdash;',
              _esc(r['index_members']) or '&mdash;', _esc(r['vs_index_class']))
         panels = []
         src = []
         if r.get('pwg_source_paren'):
-            src.append('<b>PWG (этимологическая скобка):</b> <code>%s</code>'
-                       % _esc(r['pwg_source_paren']))
+            src.append('<b>PWG (этимологическая скобка):</b> <code>{}</code>'.format(_esc(r['pwg_source_paren'])))
         if r.get('mw_k2_raw'):
-            src.append('<b>MW &lt;k2&gt;:</b> <code>%s</code>' % _esc(r['mw_k2_raw']))
+            src.append('<b>MW &lt;k2&gt;:</b> <code>{}</code>'.format(_esc(r['mw_k2_raw'])))
         if src:
             panels.append(('Источник (что реально написано в словарях)', '<br>'.join(src)))
         item = {
@@ -261,7 +260,7 @@ def render_sheet(rows, generated=GENERATED):
         'filters': [('member_count_diff', 'Разное число членов'),
                     ('same_count_diff_split', 'Одно число, другое членение')],
         'generated': generated,
-        'save_as': r'RussianTranslation\review\%s_decisions.json' % SHEET_ID,
+        'save_as': r'RussianTranslation\review\{}_decisions.json'.format(SHEET_ID),
     }
     config.update(standard_config(save_as=config['save_as']))
     return render_review_sheet(items, config)
@@ -314,7 +313,7 @@ def selftest():
     html_fields = ' '.join(json.dumps(it, ensure_ascii=False)
                            for it in build_items(frame_rows(s1, {})))
     for leak in ('stratum', 'agent_verdict', 'pwg_members-right', 'unresolved'):
-        assert leak not in html_fields, 'card leaks %r — the arm would not be blind' % leak
+        assert leak not in html_fields, 'card leaks {!r} — the arm would not be blind'.format(leak)
     # 35 is the smallest arm that can clear the 0.90 gate
     sys.path.insert(0, HERE)
     from adjudicate_compound_differs import wilson_lower
@@ -353,9 +352,9 @@ def main():
         report(plan, src, len(arm1_ids))
         print()
         print('wrote %d-card sample frame -> %s' % (len(rows_out), SAMPLE_FRAME_TSV))
-        print('wrote review sheet -> %s' % SHEET_HTML)
-        print('  %s' % chash)
-        print('  lock -> %s' % lock_path)
+        print('wrote review sheet -> {}'.format(SHEET_HTML))
+        print('  {}'.format(chash))
+        print('  lock -> {}'.format(lock_path))
         return
     sys.exit('usage: compound_differs_arm2_sample.py --report | --write | --selftest')
 

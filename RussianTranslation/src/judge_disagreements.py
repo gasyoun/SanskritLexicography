@@ -71,9 +71,9 @@ def main():
              ' `both-ok` / `both-wrong`, with a one-line reason. Only the cards where the two judges'
              ' disagreed are here (%d of %d).' % (len(disagree), n), '']
         for i, o, s, vd in disagree:
-            L += ['## `%s`  %s' % (i, '— ACCEPT/REJECT CONFLICT' if vd else '— severity gap'),
-                  '- **Opus:** ok=%s sev=%s — %s' % (o.get('ok'), o.get('severity'), o.get('note', '')),
-                  '- **Sonnet:** ok=%s sev=%s — %s' % (s.get('ok'), s.get('severity'), s.get('note', '')),
+            L += ['## `{}`  {}'.format(i, '— ACCEPT/REJECT CONFLICT' if vd else '— severity gap'),
+                  '- **Opus:** ok={} sev={} — {}'.format(o.get('ok'), o.get('severity'), o.get('note', '')),
+                  '- **Sonnet:** ok={} sev={} — {}'.format(s.get('ok'), s.get('severity'), s.get('note', '')),
                   '- **Your call:** ____ (opus / sonnet / both-ok / both-wrong) — reason: ']
             c = cards.get(i)
             if c:
@@ -81,7 +81,7 @@ def main():
                       '**body_ru**', '```', c.get('body_ru', ''), '```', '</details>']
             L.append('')
         open(a.out, 'w', encoding='utf-8').write('\n'.join(L) + '\n')
-        print('queue -> %s' % a.out)
+        print('queue -> {}'.format(a.out))
     return 0
 
 

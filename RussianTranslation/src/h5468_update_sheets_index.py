@@ -45,7 +45,7 @@ NOTE = (
 
 def hub_date(iso):
     y, m, d = iso.split("-")
-    return "%s-%s-%s" % (d, m, y)
+    return "{}-{}-{}".format(d, m, y)
 
 
 def rows():

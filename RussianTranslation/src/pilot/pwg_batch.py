@@ -63,7 +63,7 @@ def _file_bytes(path):
         with open(path, 'rb') as handle:
             return handle.read()
     except OSError as exc:
-        raise BatchRefusal('manifest unavailable: %s' % exc) from exc
+        raise BatchRefusal('manifest unavailable: {}'.format(exc)) from exc
 
 
 def _manifest(path):
@@ -71,18 +71,17 @@ def _manifest(path):
     try:
         value = json.loads(payload.decode('utf-8'))
     except (UnicodeError, json.JSONDecodeError) as exc:
-        raise BatchRefusal('manifest is not valid UTF-8 JSON: %s' % exc) from exc
+        raise BatchRefusal('manifest is not valid UTF-8 JSON: {}'.format(exc)) from exc
     if not isinstance(value, dict):
         raise BatchRefusal('manifest must be a JSON object')
     try:
         validate_manifest(value, require_v2=False)
     except (ValueError, KeyError) as exc:
-        raise BatchRefusal('manifest validation failed: %s' % exc) from exc
+        raise BatchRefusal('manifest validation failed: {}'.format(exc)) from exc
     model = value.get('model')
     if model not in SUPPORTED_MODELS:
         raise BatchRefusal(
-            'source manifest must explicitly name one supported model: %s'
-            % ', '.join(SUPPORTED_MODELS))
+            'source manifest must explicitly name one supported model: {}'.format(', '.join(SUPPORTED_MODELS)))
     maximum = (value.get('runtime') or {}).get('max_output_tokens')
     if isinstance(maximum, bool) or not isinstance(maximum, int) or maximum <= 0:
         raise BatchRefusal(
@@ -243,8 +242,7 @@ def compile_plan(manifest_path, *, max_requests=DEFAULT_MAX_REQUESTS,
     estimate = _estimate(requests)
     if estimate['batch_cash_upper_estimate_usd'] > cost_ceiling:
         raise BatchRefusal(
-            'estimated batch cash %.6f exceeds ceiling %.6f'
-            % (estimate['batch_cash_upper_estimate_usd'], cost_ceiling))
+            'estimated batch cash {:.6f} exceeds ceiling {:.6f}'.format(estimate['batch_cash_upper_estimate_usd'], cost_ceiling))
     plan = {
         'schema': PLAN_SCHEMA,
         'wave': wave,
@@ -348,7 +346,7 @@ def offline_check(plan_path):
         validate_complete_schema(
             plan, read_json(PLAN_SCHEMA_PATH, 'batch plan JSON schema'))
     except ValueError as exc:
-        raise BatchRefusal('batch plan JSON Schema failure: %s' % exc) from exc
+        raise BatchRefusal('batch plan JSON Schema failure: {}'.format(exc)) from exc
     payload, manifest = _manifest(plan['source_manifest_path'])
     if sha256_bytes(payload) != plan['source_manifest_sha256']:
         raise BatchRefusal('source manifest bytes changed after plan sealing')
@@ -434,8 +432,8 @@ def live_check(plan_path, transport=None):
     transport = transport or AnthropicBatchTransport.from_environment()
     try:
         result = transport.check(plan['model'])
-    except Exception as exc:  # noqa: BLE001 - public typed summary only
-        raise BatchRefusal('live authentication/model check failed: %s' % type(exc).__name__) from exc
+    except Exception as exc:
+        raise BatchRefusal('live authentication/model check failed: {}'.format(type(exc).__name__)) from exc
     if not isinstance(result, dict) or not result.get('authenticated') \
             or not result.get('model_available') \
             or result.get('returned_model') != plan['model']:
@@ -498,10 +496,10 @@ def submit(plan_path, *, state_path=None, ledger_path=None, transport=None, ledg
     try:
         for request in plan['requests']:
             reservations.append(ledger.reserve(
-                'batch:%s' % request['work']['kind'], profile=plan['model'],
+                'batch:{}'.format(request['work']['kind']), profile=plan['model'],
                 detail=request['custom_id'], idempotency_key=request['request_sha256']))
     except CallLimitReached as exc:
-        raise BatchRefusal('reservation_exhausted: %s' % exc) from exc
+        raise BatchRefusal('reservation_exhausted: {}'.format(exc)) from exc
     state = {
         'schema': STATE_SCHEMA,
         'plan_sha256': plan['plan_sha256'],
@@ -524,7 +522,7 @@ def submit(plan_path, *, state_path=None, ledger_path=None, transport=None, ledg
         batch_id = _provider_id(response)
         if batch_id is None:
             raise ValueError('create response has no provider batch id')
-    except BaseException as exc:  # noqa: BLE001 - create may have succeeded remotely
+    except BaseException as exc:
         state['status'] = 'ambiguous_submit'
         state['ambiguous_submit_at'] = _now()
         state['error_class'] = type(exc).__name__
@@ -547,8 +545,8 @@ def status(plan_path, *, state_path=None, transport=None):
     transport = transport or AnthropicBatchTransport.from_environment()
     try:
         provider = transport.retrieve(state['provider_batch_id'])
-    except Exception as exc:  # noqa: BLE001
-        raise BatchRefusal('batch status failed: %s' % type(exc).__name__) from exc
+    except Exception as exc:
+        raise BatchRefusal('batch status failed: {}'.format(type(exc).__name__)) from exc
     state['provider_status'] = provider
     state['status_checked_at'] = _now()
     _write_state(state_path, state)
@@ -672,8 +670,8 @@ def fetch(plan_path, *, state_path=None, ledger_path=None, out_dir=None,
     transport = transport or AnthropicBatchTransport.from_environment()
     try:
         provider_rows = list(transport.results(state['provider_batch_id']))
-    except Exception as exc:  # noqa: BLE001
-        raise BatchRefusal('batch result fetch failed: %s' % type(exc).__name__) from exc
+    except Exception as exc:
+        raise BatchRefusal('batch result fetch failed: {}'.format(type(exc).__name__)) from exc
     by_id = {}
     for row in provider_rows:
         custom_id = row.get('custom_id') if isinstance(row, dict) else None
@@ -785,7 +783,7 @@ def main(argv=None):
                 args.plan, state_path=args.state, ledger_path=args.ledger,
                 out_dir=args.out, next_plan_path=args.next_plan)['state']
     except BatchRefusal as exc:
-        print('REFUSED: %s' % exc, file=sys.stderr)
+        print('REFUSED: {}'.format(exc), file=sys.stderr)
         return 2
     print(json.dumps(result, ensure_ascii=False, sort_keys=True))
     return 0

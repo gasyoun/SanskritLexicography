@@ -470,7 +470,7 @@ def write_report(summary, rows, md_path, pins, sample, extra):
              'attributed to a **specific PWG sense**, and how much stays resolvable '
              'only at the **lemma** level?')
     L.append('')
-    L.append('**Frame: %s.** %s' % (extra['frame_label'], extra['frame_note']))
+    L.append('**Frame: {}.** {}'.format(extra['frame_label'], extra['frame_note']))
     L.append('')
     if s['pwg_sense_join_rate'] is not None:
         L.append('**Answer: sense-level attribution is a rounding error.** '
@@ -507,7 +507,7 @@ def write_report(summary, rows, md_path, pins, sample, extra):
     L.append('| Input | Role | SHA-256 (first 16) |')
     L.append('|---|---|---|')
     for p in pins:
-        L.append('| `%s` | %s | `%s` |' % (p['name'], p['role'], p['sha256'][:16]))
+        L.append('| `{}` | {} | `{}` |'.format(p['name'], p['role'], p['sha256'][:16]))
     L.append('')
     L.append('**Decoy check (mandatory for this repo).** The DCS master behind these '
              'derived tables is `VisualDCS/src/DCS-data-2026/dcs_full.sqlite` '
@@ -558,13 +558,12 @@ def write_report(summary, rows, md_path, pins, sample, extra):
     if not s['n_groups_grounding_computed']:
         L.append('**Not computed on this frame — and deliberately not reported as '
                  'zero.** The only PWG-sense↔DCS aligner that exists (H1455) was run '
-                 'over its own 500-headword frame; %s of this frame\'s %s groups lie '
+                 'over its own 500-headword frame; {} of this frame\'s {} groups lie '
                  'outside that run. For them the grounded count is *unknown*, not '
-                 'zero: publishing 0%% here would manufacture a dictionary-wide '
+                 'zero: publishing 0% here would manufacture a dictionary-wide '
                  'sense-grounding rate out of the absence of a job, which is precisely '
                  'the class of false number this work exists to avoid. Those groups '
-                 'are classed `R0_grounding_not_computed`.'
-                 % ('{:,}'.format(s['n_groups_grounding_unknown']),
+                 'are classed `R0_grounding_not_computed`.'.format('{:,}'.format(s['n_groups_grounding_unknown']),
                     '{:,}'.format(n)))
         L.append('')
         L.append('To obtain it, the aligner must be run over this frame — a separate '
@@ -574,10 +573,9 @@ def write_report(summary, rows, md_path, pins, sample, extra):
                  'selection.')
     else:
         if s['n_groups_grounding_unknown']:
-            L.append('Computed over the **%s of %s** groups the H1455 aligner covers; '
-                     'the remaining %s are `R0_grounding_not_computed` (unknown, not '
-                     'zero). Every rate below is denominated in the covered subset.'
-                     % ('{:,}'.format(s['n_groups_grounding_computed']),
+            L.append('Computed over the **{} of {}** groups the H1455 aligner covers; '
+                     'the remaining {} are `R0_grounding_not_computed` (unknown, not '
+                     'zero). Every rate below is denominated in the covered subset.'.format('{:,}'.format(s['n_groups_grounding_computed']),
                         '{:,}'.format(n),
                         '{:,}'.format(s['n_groups_grounding_unknown'])))
             L.append('')
@@ -603,13 +601,12 @@ def write_report(summary, rows, md_path, pins, sample, extra):
 
     L.append('## A ceiling inside the dictionary, before DCS is consulted')
     L.append('')
-    L.append('%s of the frame\'s `<ls>` citations hang on a **structural parent** '
+    L.append('{} of the frame\'s `<ls>` citations hang on a **structural parent** '
              'sense node — a numbered sense such as `1〉 m.` that has lettered children '
              '`1a`/`1b` and carries the citation itself. Those citations belong to the '
              'headword, but PWG does not assign them to any leaf sense, so no join '
              'can: they are unattributable at sense level **by the dictionary\'s own '
-             'structure**, independently of what DCS contains.'
-             % '{:,}'.format(extra['dropped_parent_loci']))
+             'structure**, independently of what DCS contains.'.format('{:,}'.format(extra['dropped_parent_loci'])))
     L.append('')
     L.append('This is worth separating from the corpus-side story below. Even a '
              'perfect corpus with perfect locus matching would leave these at '
@@ -620,15 +617,12 @@ def write_report(summary, rows, md_path, pins, sample, extra):
     L.append('| Quantity | DCS tokens | share |')
     L.append('|---|---:|---:|')
     ml = s['mass_dcs_lemma_tokens']
-    L.append('| Lemma-level mass over attested pilot lemmas | %s | 100%% |'
-             % '{:,}'.format(ml))
+    L.append('| Lemma-level mass over attested pilot lemmas | {} | 100% |'.format('{:,}'.format(ml)))
     L.append('| …of which carry a `m_wordsem` sense tag (the **ceiling** on any '
-             'sense-level claim) | %s | %.1f%% |'
-             % ('{:,}'.format(s['mass_dcs_sensetagged_tokens']),
+             'sense-level claim) | {} | {:.1f}% |'.format('{:,}'.format(s['mass_dcs_sensetagged_tokens']),
                 100 * s['sensetagged_mass_share']))
     L.append('| …sitting under a lemma with ≥1 grounded PWG sense (**upper bound**, '
-             'see caveat) | %s | %.1f%% |'
-             % ('{:,}'.format(s['mass_under_grounded_upper_bound']),
+             'see caveat) | {} | {:.1f}% |'.format('{:,}'.format(s['mass_under_grounded_upper_bound']),
                 100 * s['attributable_mass_share_upper_bound']))
     L.append('')
     L.append('⚠️ **The third row is an upper bound, not an achievement.** It counts '
@@ -645,12 +639,9 @@ def write_report(summary, rows, md_path, pins, sample, extra):
     L.append('')
     L.append('| Statistic | Value |')
     L.append('|---|---:|')
-    L.append('| median PWG leaf senses per sense-tagged lemma | %.1f |'
-             % s['median_pwg_senses_tagged_lemmas'])
-    L.append('| median DCS `wn` senses per sense-tagged lemma | %.1f |'
-             % s['median_dcs_senses_tagged_lemmas'])
-    L.append('| Spearman ρ (PWG sense count vs DCS sense count) | %.3f |'
-             % s['spearman_pwg_vs_dcs_sense_count'])
+    L.append('| median PWG leaf senses per sense-tagged lemma | {:.1f} |'.format(s['median_pwg_senses_tagged_lemmas']))
+    L.append('| median DCS `wn` senses per sense-tagged lemma | {:.1f} |'.format(s['median_dcs_senses_tagged_lemmas']))
+    L.append('| Spearman ρ (PWG sense count vs DCS sense count) | {:.3f} |'.format(s['spearman_pwg_vs_dcs_sense_count']))
     L.append('')
     L.append('PWG\'s divisions are 19th-c. German lexicographic sense articulation; '
              'DCS\'s are Sanskrit-WordNet synsets projected onto tokens. A weak rank '
@@ -671,8 +662,7 @@ def write_report(summary, rows, md_path, pins, sample, extra):
         c = s['residual_classes'].get(cls, 0)
         if not c and cls == 'R0_grounding_not_computed':
             continue
-        L.append('| `%s` | %s | %.1f%% | %s |'
-                 % (cls, '{:,}'.format(c), 100 * c / n, CLASS_GLOSS[cls]))
+        L.append('| `{}` | {} | {:.1f}% | {} |'.format(cls, '{:,}'.format(c), 100 * c / n, CLASS_GLOSS[cls]))
     L.append('')
     if not s['n_groups_grounding_computed']:
         L.append('_`R3` and `R4` are absent by construction on this frame: both require '
@@ -699,7 +689,7 @@ def write_report(summary, rows, md_path, pins, sample, extra):
              'overlap': 'no — shared gloss tokens are not a sense identification'}
     for tier, cnt in sorted(s['concordance_tier_rows'].items(),
                             key=lambda kv: -kv[1]):
-        L.append('| `%s` | %s | %s |' % (tier, '{:,}'.format(cnt),
+        L.append('| `{}` | {} | {} |'.format(tier, '{:,}'.format(cnt),
                                          admit.get(tier, 'no — untiered residue')))
     L.append('')
     L.append('The `ls` tier is by far the largest and is the reason a naive reading of '
@@ -725,8 +715,7 @@ def write_report(summary, rows, md_path, pins, sample, extra):
         L.append('| slp1 | PWG sense | tier | DCS locus |')
         L.append('|---|---|---|---|')
         for r in sample:
-            L.append('| `%s` | %s | `%s` | %s |'
-                     % (r['slp1'], r['sense_id'], r['method'], r['locus']))
+            L.append('| `{}` | {} | `{}` | {} |'.format(r['slp1'], r['sense_id'], r['method'], r['locus']))
     L.append('')
 
     L.append('## Known discrepancies (disclosed, not smoothed)')
@@ -997,9 +986,9 @@ def main():
     p_sfreq = os.path.join(kosha, 'data', 'frequency', 'sense_frequency.tsv')
     for p in (p_frame, p_conc, p_lfreq, p_sfreq, a.loci):
         if not os.path.isfile(p):
-            raise SystemExit('missing required input: %s' % p)
+            raise SystemExit('missing required input: {}'.format(p))
 
-    print('kosha  = %s' % kosha)
+    print('kosha  = {}'.format(kosha))
     pwg, dropped_parent_loci = load_pwg_senses(a.loci)
     print('pwg    = %d groups, %d leaf senses (dropped %d <ls> on non-leaf parents)'
           % (len(pwg), sum(len(v) for v in pwg.values()), dropped_parent_loci))
@@ -1061,10 +1050,10 @@ def main():
             'no number below is recomputed from the 921 MB DCS sqlite in this pass.'),
         'random': (
             'a uniform random sample of %d PWG headwords (seed %d)' % (a.n, a.seed),
-            'Drawn uniformly from all %s PWG headword groups with an explicit seed, so '
+            'Drawn uniformly from all {} PWG headword groups with an explicit seed, so '
             'it is reproducible and — unlike the H1455 frame — **not** selected for '
             'DCS attestation. This is the frame that answers "what share of PWG is '
-            'attested at all?".' % '{:,}'.format(len(pwg)),
+            'attested at all?".'.format('{:,}'.format(len(pwg))),
             'The frame is a **uniform random sample of %d PWG headword groups '
             '(seed %d)** drawn from all %s groups parsed out of '
             '`csl-orig/v02/pwg/pwg.txt`. It carries no DCS-attestation precondition, '
@@ -1082,14 +1071,13 @@ def main():
             'untouched; this one is written beside it.'
             % (len(frame), len(frame) / 500.0)),
         'all': (
-            'every PWG headword (%s groups)' % '{:,}'.format(len(pwg)),
+            'every PWG headword ({} groups)'.format('{:,}'.format(len(pwg))),
             'The complete dictionary — no sampling, no selection. Lemma-level '
             'coverage here is the population value, not an estimate.',
             'The frame is **every PWG headword group** parsed from '
-            '`csl-orig/v02/pwg/pwg.txt` (%s groups, %s leaf senses). No sampling and '
+            '`csl-orig/v02/pwg/pwg.txt` ({} groups, {} leaf senses). No sampling and '
             'no DCS-attestation precondition, so the lemma-level and sense-tag figures '
-            'are population values.'
-            % ('{:,}'.format(len(pwg)),
+            'are population values.'.format('{:,}'.format(len(pwg)),
                '{:,}'.format(sum(len(v) for v in pwg.values())))),
     }
     label, note, note_long = FRAME_TEXT[a.frame_mode]
@@ -1099,13 +1087,11 @@ def main():
     elif a.frame_mode == 'file':
         repro_export = 'python export_frame_sense_loci.py --all'
         repro_join = ('python pwg_sense_dcs_attestation_pilot.py --frame-mode file '
-                      '--frame %s --concordance %s --tag %s'
-                      % (os.path.basename(p_frame), os.path.basename(p_conc), tag))
+                      '--frame {} --concordance {} --tag {}'.format(os.path.basename(p_frame), os.path.basename(p_conc), tag))
     else:
         repro_export = 'python export_frame_sense_loci.py --all'
         repro_join = ('python pwg_sense_dcs_attestation_pilot.py --kosha ../../../kosha'
-                      ' --frame-mode %s%s'
-                      % (a.frame_mode,
+                      ' --frame-mode {}{}'.format(a.frame_mode,
                          ' --n %d --seed %d' % (a.n, a.seed)
                          if a.frame_mode == 'random' else ''))
 
@@ -1146,7 +1132,7 @@ def main():
     sample = collect_sample(p_conc, set(frame))
 
     os.makedirs(a.out_dir, exist_ok=True)
-    stem = 'pwg_sense_dcs_attestation_%s' % tag
+    stem = 'pwg_sense_dcs_attestation_{}'.format(tag)
     tsv_path = os.path.join(a.out_dir, stem + '.tsv')
     cols = ['slp1', 'hom', 'n_pwg_senses', 'n_pwg_senses_with_ls', 'n_pwg_ls_total',
             'dcs_lemma_count', 'n_dcs_wn_senses', 'dcs_sensetagged_count',
@@ -1194,7 +1180,7 @@ def main():
               % summary['n_groups_grounding_unknown'])
         print('sense-tagged mass share %.1f%%'
               % (100 * summary['sensetagged_mass_share']))
-        print('wrote %s.tsv + .meta.json + %s.md' % (stem, stem.upper()))
+        print('wrote {}.tsv + .meta.json + {}.md'.format(stem, stem.upper()))
         return
     print('grounded groups  %d/%d' % (summary['n_groups_grounded'],
                                       summary['n_pilot_groups']))
@@ -1202,7 +1188,7 @@ def main():
                                                summary['pwg_senses_total_known'],
                                                100 * summary['pwg_sense_join_rate']))
     print('sense-tagged mass share %.1f%%' % (100 * summary['sensetagged_mass_share']))
-    print('wrote %s.tsv + .meta.json + %s.md' % (stem, stem.upper()))
+    print('wrote {}.tsv + .meta.json + {}.md'.format(stem, stem.upper()))
 
 
 if __name__ == '__main__':

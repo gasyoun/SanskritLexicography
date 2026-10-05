@@ -66,8 +66,8 @@ class ScriptedRunner:
         self.run_windows.append(window)
         self.run_order.append(window['id'])
         if self.raise_on_call is not None and len(self.run_order) == self.raise_on_call:
-            raise RuntimeError('simulated crash while running %s' % window['id'])
-        path = os.path.join(self.td, 'wf_%s.json' % _safe(window['id']))
+            raise RuntimeError('simulated crash while running {}'.format(window['id']))
+        path = os.path.join(self.td, 'wf_{}.json'.format(_safe(window['id'])))
         with open(path, 'w', encoding='utf-8', newline='\n') as f:
             json.dump({'meta': {}, 'results': []}, f)
         return path
@@ -240,7 +240,7 @@ def test_g_satisfied_zero_delta(td):
         sup = BoundedSupervisor(plan, runner, cp, audit=audit,
                                 max_windows=10, empty_streak_cap=1)
         summ = sup.run()
-    except Exception as exc:  # noqa: BLE001 — a satisfied key must never be a hard error
+    except Exception as exc:
         raised = True
         summ = None
     assert not raised, 'a zero-store-delta requeue key must not be a hard error'
@@ -547,9 +547,9 @@ def test_q_h3_checkpoint_fsync(td):
         os.fsync, os.replace = real_fsync, real_replace
 
     if [kind for kind, _ in calls] != ['fsync', 'replace']:
-        raise AssertionError('expected exactly fsync-then-replace, got %r' % calls)
+        raise AssertionError('expected exactly fsync-then-replace, got {!r}'.format(calls))
     if calls[0][1] <= 0:
-        raise AssertionError('fsynced an empty descriptor: %r' % calls)
+        raise AssertionError('fsynced an empty descriptor: {!r}'.format(calls))
     raw = open(path, 'rb').read()
     if b'\r\n' in raw or not raw.endswith(b'\n'):
         raise AssertionError('checkpoint bytes changed (CRLF or missing trailing newline)')
@@ -627,7 +627,7 @@ def test_h2095_949_summary_carries_evaluability():
         sup.history = []
         out = sup.summary()
         for field in ('cost_evaluable', 'unevaluable_calls', 'pending_calls'):
-            assert field in out, '%s missing from summary(): %r' % (field, sorted(out))
+            assert field in out, '{} missing from summary(): {!r}'.format(field, sorted(out))
     assert sup.summary()['cost_evaluable'] is True
     assert hung.summary()['cost_evaluable'] is False
     assert hung.summary()['budget_spent'] == 0.0 and hung.summary()['unevaluable_calls'] == 3

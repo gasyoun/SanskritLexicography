@@ -50,8 +50,8 @@ for p in (SRC, os.path.join(SRC, 'pilot')):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-import store_path                                                  # noqa: E402
-import corpus_lexicon_lane as lane_mod                             # noqa: E402
+import store_path
+import corpus_lexicon_lane as lane_mod
 
 LOCAL_STORE = os.path.join(SRC, 'pwg_ru_translated.jsonl')
 HOLDOUT_DEFAULT = 60
@@ -79,7 +79,7 @@ def load_rows(path):
 def address_of(row, lang='ru'):
     """The entry-level TM address of a row, or None when it cannot be addressed."""
     raw = (row.get('provenance') or {}).get('input_raw_sha256')
-    return ('%s:%s' % (lang, raw)) if raw else None
+    return ('{}:{}'.format(lang, raw)) if raw else None
 
 
 # ------------------------------------------------------------------ P0
@@ -155,8 +155,8 @@ def probe_tm(rows, store_p, holdout_n=HOLDOUT_DEFAULT, lang='ru'):
             by_addr[a].append(r)
     addresses = sorted(by_addr)
     census = {
-        'address_unit': 'entry-level: %s:<provenance.input_raw_sha256>, one address '
-                        'per sub-card, many sense rows per address' % lang,
+        'address_unit': 'entry-level: {}:<provenance.input_raw_sha256>, one address '
+                        'per sub-card, many sense rows per address'.format(lang),
         'rows': len(rows),
         'rows_addressable': len(rows) - unaddressed,
         'rows_unaddressable_defer': unaddressed,
@@ -171,7 +171,7 @@ def probe_tm(rows, store_p, holdout_n=HOLDOUT_DEFAULT, lang='ru'):
         census['holdout'] = {'status': 'no_addressable_rows'}
         return census
 
-    import translation_memory as tm                                # noqa: E402
+    import translation_memory as tm
     step = max(1, len(addresses) // max(1, holdout_n))
     holdout = addresses[::step][:holdout_n]
     hold_set = set(holdout)
@@ -195,7 +195,7 @@ def probe_tm(rows, store_p, holdout_n=HOLDOUT_DEFAULT, lang='ru'):
                     continue
                 fout.write(s + '\n')
                 kept += 1
-        tm_out = os.path.join(tmpdir, 'translation_memory.holdout.%s.json' % lang)
+        tm_out = os.path.join(tmpdir, 'translation_memory.holdout.{}.json'.format(lang))
         tm.build(filtered, lang, out=tm_out)
         try:
             deny = set(tm.load_denylist()['addresses'])
@@ -232,7 +232,7 @@ def probe_tm(rows, store_p, holdout_n=HOLDOUT_DEFAULT, lang='ru'):
 def render(receipt):
     p0, p1, p2 = receipt['p0_sense_level'], receipt['p1_corpus_lane'], receipt['p2_tm']
     L = ['=== H4119 EVIDENCE PROBE (read-only) ===',
-         'store: %s' % receipt['store'],
+         'store: {}'.format(receipt['store']),
          '',
          '--- P0 per-sense evidence vs lemma-level roll-up ---',
          'store rows                          : %d (over %d distinct key1)' % (p0['rows'], p0['lemmas']),
@@ -242,12 +242,12 @@ def render(receipt):
              p0.get('rows_with_lemma_rollup', 0), p0['pct_rows_with_lemma_rollup']),
          'rows credited by the roll-up ALONE  : %d  <- the P0 over-count' % p0.get(
              'rows_credited_by_rollup_only', 0),
-         'roll-up / per-sense inflation       : x%.3f' % p0['inflation_factor'],
+         'roll-up / per-sense inflation       : x{:.3f}'.format(p0['inflation_factor']),
          '',
          '--- P1 corpus_lexicon as a sense-support lane ---']
     lx = p1['lexicon']
     if not lx['lexicon_present']:
-        L.append('lexicon ABSENT at %s — lane not measurable (NOT the same as 0 support)' % lx['lexicon_path'])
+        L.append('lexicon ABSENT at {} — lane not measurable (NOT the same as 0 support)'.format(lx['lexicon_path']))
     else:
         L += ['lexicon rows read / usable(ru)      : %d / %d' % (lx['rows_read'], lx['rows_usable']),
               'store key1 covered by the lane      : %d / %d (%.2f%%)' % (
@@ -256,14 +256,14 @@ def render(receipt):
                   'baseline_senses_supported_by_corpus_lane'],
               'matched / missed / ambiguous / none : %d / %d / %d / %d  (denominator %d rows)' % (
                   p1['matched'], p1['missed'], p1['ambiguous'], p1['no_lane'], p1['rows']),
-              'matched share of judgeable rows     : %.2f%%' % p1['matched_pct_of_judgeable'],
+              'matched share of judgeable rows     : {:.2f}%'.format(p1['matched_pct_of_judgeable']),
               'rows NEWLY supported by this lane   : %d' % p1['rows_newly_supported']]
     L += ['', '--- P2 TM, non-circular ---',
-          'address unit                        : %s' % p2['address_unit'],
+          'address unit                        : {}'.format(p2['address_unit']),
           'distinct addresses / rows           : %d over %d addressable rows (mean %.2f rows/address)' % (
               p2['distinct_addresses'], p2['rows_addressable'], p2['rows_per_address_mean']),
           'rows that cannot be addressed       : %d (defer)' % p2['rows_unaddressable_defer'],
-          'circular self-hit rate (EXCLUDED)   : %.1f%%' % p2['circular_selfhit_rate_pct']]
+          'circular self-hit rate (EXCLUDED)   : {:.1f}%'.format(p2['circular_selfhit_rate_pct'])]
     h = p2.get('holdout') or {}
     if 'hit' in h:
         L += ['hold-out replay                     : %d addresses withheld (%d store rows removed)' % (
@@ -271,14 +271,14 @@ def render(receipt):
               'hold-out hit / miss / defer         : %d / %d / %d  (hit rate %.2f%%)' % (
                   h['hit'], h['miss'], h['defer_denylisted'], h['hit_rate_pct'])]
     else:
-        L.append('hold-out replay                     : %s' % h.get('status', 'not run'))
+        L.append('hold-out replay                     : {}'.format(h.get('status', 'not run')))
     return '\n'.join(L)
 
 
 def run(args):
     store_p = resolve_store(args.store)
     if not os.path.exists(store_p):
-        raise SystemExit('store not found: %s' % store_p)
+        raise SystemExit('store not found: {}'.format(store_p))
     rows = load_rows(store_p)
     receipt = {
         'handoff': 'H4119',
@@ -295,7 +295,7 @@ def run(args):
         with open(args.json, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(receipt, f, ensure_ascii=False, indent=2, sort_keys=True)
             f.write('\n')
-        print('\nreceipt: %s' % args.json)
+        print('\nreceipt: {}'.format(args.json))
     return 0
 
 

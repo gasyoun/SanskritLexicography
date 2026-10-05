@@ -42,7 +42,7 @@ def utc_now() -> str:
 
 
 def new_id(prefix: str) -> str:
-    return '%s_%s' % (prefix, uuid.uuid4().hex)
+    return '{}_{}'.format(prefix, uuid.uuid4().hex)
 
 
 def _migration_sql(version: int) -> str:
@@ -148,7 +148,7 @@ class Repository:
             'SELECT * FROM campaigns WHERE campaign_id = ?',
             (campaign_id,)).fetchone()
         if row is None:
-            raise RepositoryError('unknown campaign: %s' % campaign_id)
+            raise RepositoryError('unknown campaign: {}'.format(campaign_id))
         return model.Campaign(
             campaign_id=row['campaign_id'], scope=row['scope'],
             language=row['language'], route=row['route'],
@@ -178,7 +178,7 @@ class Repository:
         row = self._conn.execute(
             'SELECT state FROM jobs WHERE job_id = ?', (job_id,)).fetchone()
         if row is None:
-            raise RepositoryError('unknown job: %s' % job_id)
+            raise RepositoryError('unknown job: {}'.format(job_id))
         return str(row['state'])
 
     def jobs_in_state(self, campaign_id: str, state: str) -> list[str]:
@@ -207,8 +207,7 @@ class Repository:
                     (job_id, require_artifact_kind)).fetchone()
                 if not int(row['n']):
                     raise RepositoryError(
-                        'transition %s -> %s requires a sealed %s artifact for %s'
-                        % (expected, following, require_artifact_kind, job_id))
+                        'transition {} -> {} requires a sealed {} artifact for {}'.format(expected, following, require_artifact_kind, job_id))
             cursor = conn.execute(
                 'UPDATE jobs SET state = ?, updated_at = ?'
                 ' WHERE job_id = ? AND state = ?',
@@ -218,10 +217,9 @@ class Repository:
                     'SELECT state FROM jobs WHERE job_id = ?',
                     (job_id,)).fetchone()
                 if actual is None:
-                    raise RepositoryError('unknown job: %s' % job_id)
+                    raise RepositoryError('unknown job: {}'.format(job_id))
                 raise ConcurrentModification(
-                    'job %s is in state %r, not the expected %r'
-                    % (job_id, actual['state'], expected))
+                    'job {} is in state {!r}, not the expected {!r}'.format(job_id, actual['state'], expected))
             conn.execute(
                 'INSERT INTO job_transitions (job_id, from_state, to_state,'
                 ' reason, evidence_sha, at) VALUES (?, ?, ?, ?, ?, ?)',
@@ -281,7 +279,7 @@ class Repository:
         row = self._conn.execute(
             'SELECT state FROM calls WHERE call_id = ?', (call_id,)).fetchone()
         if row is None:
-            raise RepositoryError('unknown call: %s' % call_id)
+            raise RepositoryError('unknown call: {}'.format(call_id))
         return str(row['state'])
 
     def transition_call(self, call_id: str, expected: str, following: str) -> str:
@@ -295,10 +293,9 @@ class Repository:
                     'SELECT state FROM calls WHERE call_id = ?',
                     (call_id,)).fetchone()
                 if actual is None:
-                    raise RepositoryError('unknown call: %s' % call_id)
+                    raise RepositoryError('unknown call: {}'.format(call_id))
                 raise ConcurrentModification(
-                    'call %s is in state %r, not the expected %r'
-                    % (call_id, actual['state'], expected))
+                    'call {} is in state {!r}, not the expected {!r}'.format(call_id, actual['state'], expected))
         return following
 
     def finalize_call(self, call_id: str, *, state: str,
@@ -321,7 +318,7 @@ class Repository:
             row = conn.execute(
                 'SELECT * FROM calls WHERE call_id = ?', (call_id,)).fetchone()
             if row is None:
-                raise RepositoryError('unknown call: %s' % call_id)
+                raise RepositoryError('unknown call: {}'.format(call_id))
             if row['finalized_at']:
                 existing = (row['state'], int(row['input_tokens']),
                             int(row['output_tokens']),
@@ -331,8 +328,7 @@ class Repository:
                             row['failure_class'])
                 if existing != payload:
                     raise RepositoryError(
-                        'call %s is already finalized with different accounting'
-                        % call_id)
+                        'call {} is already finalized with different accounting'.format(call_id))
                 return dict(row)
             conn.execute(
                 'UPDATE calls SET state = ?, input_tokens = ?, output_tokens = ?,'
@@ -387,8 +383,7 @@ class Repository:
             if existing is not None:
                 if str(existing['path']) != artifact.path:
                     raise RepositoryError(
-                        'artifact %s is already sealed at a different path: %s'
-                        % (artifact.sha256, existing['path']))
+                        'artifact {} is already sealed at a different path: {}'.format(artifact.sha256, existing['path']))
                 return artifact
             conn.execute(
                 'INSERT INTO artifacts (artifact_id, campaign_id, job_id,'
@@ -418,7 +413,7 @@ class Repository:
                 if str(existing['verdict_class']) != verdict.verdict_class:
                     raise RepositoryError(
                         'a different verdict is already bound to this result:'
-                        ' %s vs %s' % (existing['verdict_class'],
+                        ' {} vs {}'.format(existing['verdict_class'],
                                        verdict.verdict_class))
                 return verdict
             conn.execute(
@@ -442,8 +437,8 @@ class Repository:
             if existing is not None:
                 if str(existing['payload_sha256']) != payload_sha256:
                     raise RepositoryError(
-                        'intent %s for verdict %s is already recorded with a'
-                        ' different payload' % (intent, verdict_id))
+                        'intent {} for verdict {} is already recorded with a'
+                        ' different payload'.format(intent, verdict_id))
                 return str(existing['intent_id'])
             conn.execute(
                 'INSERT INTO apply_intents (intent_id, verdict_id, job_id,'
@@ -489,8 +484,7 @@ class Repository:
                 order = model.PROMOTION_STATES
                 if order.index(promotion.phase) < order.index(current):
                     raise RepositoryError(
-                        'promotion %s cannot move backwards %s -> %s'
-                        % (promotion.promotion_id, current, promotion.phase))
+                        'promotion {} cannot move backwards {} -> {}'.format(promotion.promotion_id, current, promotion.phase))
             conn.execute(
                 'UPDATE promotions SET phase = ?, before_sha256 = ?,'
                 ' after_sha256 = ?, journal_path = ?, updated_at = ?'
@@ -530,9 +524,8 @@ class Repository:
             if row is not None:
                 if str(row['content_sha256']) != content_sha256:
                     raise RepositoryError(
-                        'legacy import identity changed payload: %s'
-                        ' (imported=%s, now=%s)'
-                        % (normalized, row['content_sha256'], content_sha256))
+                        'legacy import identity changed payload: {}'
+                        ' (imported={}, now={})'.format(normalized, row['content_sha256'], content_sha256))
                 return str(row['import_id']), False
             identifier = new_id('import')
             conn.execute(
@@ -626,7 +619,7 @@ class Repository:
                 'state': job['state'],
                 'parent_job_id': job['parent_job_id'],
                 'transitions': [
-                    '%s->%s' % (row['from_state'], row['to_state'])
+                    '{}->{}'.format(row['from_state'], row['to_state'])
                     for row in self.transitions(str(job['job_id']))],
                 'calls': [dict(row) for row in calls],
                 'verdicts': [dict(row) for row in verdicts],

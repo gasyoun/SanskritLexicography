@@ -26,14 +26,14 @@ sys.stderr.reconfigure(encoding='utf-8')
 # resolve store/coordinator constants at import time). See selftest_isolation.py.
 if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from selftest_isolation import guard as _isolation_guard  # noqa: E402
+from selftest_isolation import guard as _isolation_guard
 _isolation_guard()
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import promotion_receipt as pr  # noqa: E402
+import promotion_receipt as pr
 
 FIXTURES = os.path.join(HERE, 'fixtures', 'cohort_scaffold')
 
@@ -68,7 +68,7 @@ def test_b1_schema_round_trip() -> None:
         created_at='2026-07-23T10:00:00Z',
     )
     if receipt.schema != pr.SCHEMA_V1:
-        fail('schema must be %r, got %r' % (pr.SCHEMA_V1, receipt.schema))
+        fail('schema must be {!r}, got {!r}'.format(pr.SCHEMA_V1, receipt.schema))
     if receipt.binding() != binding:
         fail('binding() must round-trip AttemptRunBinding fields')
 
@@ -76,11 +76,10 @@ def test_b1_schema_round_trip() -> None:
         path = os.path.join(tmp, 'lease-x' + pr.RECEIPT_FILENAME_SUFFIX)
         written = pr.write_receipt(path, receipt)
         if not os.path.isfile(written):
-            fail('write_receipt did not create %s' % written)
+            fail('write_receipt did not create {}'.format(written))
         loaded = pr.load_receipt(written)
         if loaded.to_dict() != receipt.to_dict():
-            fail('load_receipt != written receipt:\n  wrote=%s\n  load=%s'
-                 % (receipt.to_dict(), loaded.to_dict()))
+            fail('load_receipt != written receipt:\n  wrote={}\n  load={}'.format(receipt.to_dict(), loaded.to_dict()))
 
         # Directory loader picks the file by suffix.
         batch = pr.load_receipts(tmp)
@@ -115,7 +114,7 @@ def test_b1_schema_round_trip() -> None:
         except ValueError:
             pass
         else:
-            fail('expected ValueError for bad case %s: %r' % (label, payload))
+            fail('expected ValueError for bad case {}: {!r}'.format(label, payload))
 
 
 # ---------------------------------------------------------------------------
@@ -124,7 +123,7 @@ def test_b1_schema_round_trip() -> None:
 def _run_fixture(filename: str, expected_kind: str) -> pr.ReconcilePlan:
     fix = load_fixture(filename)
     if fix.get('expected_kind') != expected_kind:
-        fail('%s fixture expected_kind drift: %r' % (filename, fix.get('expected_kind')))
+        fail('{} fixture expected_kind drift: {!r}'.format(filename, fix.get('expected_kind')))
     receipts = [pr.receipt_from_mapping(r) for r in fix['receipts']]
     plan = pr.reconcile_startup(receipts, fix['observed_store_keys'])
     return plan
@@ -133,41 +132,38 @@ def _run_fixture(filename: str, expected_kind: str) -> pr.ReconcilePlan:
 def test_b2_promote_missing_fixture() -> None:
     plan = _run_fixture('promote_missing.json', pr.PROMOTE_MISSING)
     if len(plan.promote_missing) != 1:
-        fail('promote_missing fixture: want 1 promote action, got %s'
-             % plan.to_dict())
+        fail('promote_missing fixture: want 1 promote action, got {}'.format(plan.to_dict()))
     if plan.skip_already_present or plan.error_inconsistent:
-        fail('promote_missing fixture must not emit other buckets: %s'
-             % plan.to_dict())
+        fail('promote_missing fixture must not emit other buckets: {}'.format(plan.to_dict()))
     action = plan.promote_missing[0]
     if list(action.keys) != ['dah.1', 'dah.2']:
-        fail('promote_missing keys wrong: %s' % list(action.keys))
+        fail('promote_missing keys wrong: {}'.format(list(action.keys)))
     if action.lease_id != 'lease-dah-w01':
-        fail('promote_missing lease_id wrong: %s' % action.lease_id)
+        fail('promote_missing lease_id wrong: {}'.format(action.lease_id))
 
 
 def test_b2_skip_already_present_fixture() -> None:
     plan = _run_fixture('skip_already_present.json', pr.SKIP_ALREADY_PRESENT)
     if len(plan.skip_already_present) != 2:
-        fail('skip fixture: want 2 skip actions (double receipt), got %s'
-             % plan.to_dict())
+        fail('skip fixture: want 2 skip actions (double receipt), got {}'.format(plan.to_dict()))
     if plan.promote_missing or plan.error_inconsistent:
-        fail('skip fixture must not emit other buckets: %s' % plan.to_dict())
+        fail('skip fixture must not emit other buckets: {}'.format(plan.to_dict()))
     for action in plan.skip_already_present:
         if list(action.keys) != ['dah.1', 'dah.2']:
-            fail('skip keys wrong: %s' % list(action.keys))
+            fail('skip keys wrong: {}'.format(list(action.keys)))
 
 
 def test_b2_error_inconsistent_fixture() -> None:
     plan = _run_fixture('error_inconsistent.json', pr.ERROR_INCONSISTENT)
     if len(plan.error_inconsistent) != 2:
-        fail('error fixture: want 2 error actions, got %s' % plan.to_dict())
+        fail('error fixture: want 2 error actions, got {}'.format(plan.to_dict()))
     if plan.promote_missing or plan.skip_already_present:
-        fail('error fixture must not emit other buckets: %s' % plan.to_dict())
+        fail('error fixture must not emit other buckets: {}'.format(plan.to_dict()))
     reasons = ' | '.join(a.reason for a in plan.error_inconsistent)
     if 'partial presence' not in reasons:
-        fail('error fixture must include partial-presence reason: %s' % reasons)
+        fail('error fixture must include partial-presence reason: {}'.format(reasons))
     if 'row_count delta' not in reasons:
-        fail('error fixture must include row_count delta reason: %s' % reasons)
+        fail('error fixture must include row_count delta reason: {}'.format(reasons))
 
 
 def test_b2_fixture_files_present() -> None:
@@ -178,7 +174,7 @@ def test_b2_fixture_files_present() -> None:
     )
     missing = [n for n in required if not os.path.isfile(os.path.join(FIXTURES, n))]
     if missing:
-        fail('missing cohort_scaffold fixtures: %s' % missing)
+        fail('missing cohort_scaffold fixtures: {}'.format(missing))
 
 
 # ---------------------------------------------------------------------------
@@ -195,7 +191,7 @@ def test_empty_accept_skips() -> None:
     )
     plan = pr.reconcile_startup([receipt], ['anything'])
     if len(plan.skip_already_present) != 1:
-        fail('empty accept should skip, got %s' % plan.to_dict())
+        fail('empty accept should skip, got {}'.format(plan.to_dict()))
 
 
 def main() -> int:
@@ -214,9 +210,9 @@ def main() -> int:
             test()
         except Exception as exc:
             failed += 1
-            print('FAIL %s: %s' % (name, exc))
+            print('FAIL {}: {}'.format(name, exc))
         else:
-            print('ok   %s' % name)
+            print('ok   {}'.format(name))
     print()
     if failed:
         print('%d/%d failed' % (failed, len(tests)))

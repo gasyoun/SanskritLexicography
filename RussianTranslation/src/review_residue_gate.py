@@ -66,8 +66,8 @@ for p in (HERE, PILOT):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-import german_residue_scan  # noqa: E402  (H1302 prose-residue detector)
-from pwg_ab_ru import RU_MAP  # noqa: E402  (render-time <ab> -> RU display)
+import german_residue_scan
+from pwg_ab_ru import RU_MAP
 
 H1303_INVENTORY = os.path.join(RT, "pwg_ru", "ABBREV_UNIFIED_LIST_PROPOSAL_2026-07.md")
 # | `tok` | freq | expansion | класс | ... — the H1303 unified 269-token table.
@@ -85,8 +85,8 @@ _CONTEXT = 40
 def _load_ab_classes(path=H1303_INVENTORY):
     if not os.path.exists(path):
         raise FileNotFoundError(
-            "H1303 inventory missing: %s — the <ab> layer of the residue gate "
-            "cannot classify tokens without it" % path)
+            "H1303 inventory missing: {} — the <ab> layer of the residue gate "
+            "cannot classify tokens without it".format(path))
     txt = io.open(path, encoding="utf-8").read()
     classes = {m.group(1): m.group(3).strip() for m in _H1303_ROW.finditer(txt)}
     if len(classes) < 200:  # the committed inventory has 269 tokens
@@ -156,8 +156,7 @@ def machine_flags(ru_text, de_text):
     flags = []
     for m in _SA_WRAP.finditer(ru):
         if _CYRILLIC.search(m.group(1)):
-            flags.append(("D1", "Cyrillic inside {#…#}: %s" %
-                          m.group(0)[:60].replace("\n", " ")))
+            flags.append(("D1", "Cyrillic inside {{#…#}}: {}".format(m.group(0)[:60].replace("\n", " "))))
             break
     de_n = len(_GLOSS_WRAP.findall(de))
     ru_n = len(_GLOSS_WRAP.findall(ru))
@@ -276,7 +275,7 @@ def main():
         print("flagged (German): %d  (%.1f%%)" % (s["flagged"],
               100.0 * s["flagged"] / max(s["total"], 1)))
         print("clean           : %d" % s["clean"])
-        print("hits by layer   : %s" % json.dumps(s["hits_by_layer"], ensure_ascii=False))
+        print("hits by layer   : {}".format(json.dumps(s["hits_by_layer"], ensure_ascii=False)))
         if a.json:
             with io.open(a.json, "w", encoding="utf-8", newline="\n") as fh:
                 json.dump(s, fh, ensure_ascii=False, indent=2)

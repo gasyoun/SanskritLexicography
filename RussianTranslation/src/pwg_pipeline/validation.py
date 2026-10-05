@@ -52,8 +52,8 @@ def walk(value: Any, path: str = '$') -> Iterator[tuple[str, Any]]:
     yield path, value
     if isinstance(value, Mapping):
         for key in value:
-            child = '%s.%s' % (path, key) if _plain_key(key) \
-                else "%s['%s']" % (path, key)
+            child = '{}.{}'.format(path, key) if _plain_key(key) \
+                else "{}['{}']".format(path, key)
             yield from walk(value[key], child)
     elif isinstance(value, (list, tuple)):
         for index, item in enumerate(value):
@@ -100,12 +100,12 @@ def validate_row(row: Any, *, index: int,
     prefix = '$[%d]' % index
     if not isinstance(row, Mapping):
         return [{'code': INVALID_ROW, 'path': prefix,
-                 'detail': 'row is %s, not an object' % type(row).__name__}]
+                 'detail': 'row is {}, not an object'.format(type(row).__name__)}]
     findings = scan_value(row, prefix)
     if require_provenance and not any(key in row for key in REQUIRED_PROVENANCE):
         findings.append({
             'code': MISSING_PROVENANCE, 'path': prefix,
-            'detail': 'row carries none of %s' % ', '.join(REQUIRED_PROVENANCE)})
+            'detail': 'row carries none of {}'.format(', '.join(REQUIRED_PROVENANCE))})
     findings.extend(_hash_lineage_findings(row, prefix))
     findings.extend(_route_model_findings(row, prefix))
     for finding in findings:
@@ -144,8 +144,7 @@ def _route_model_findings(row: Mapping[str, Any],
         if route and requested and served and requested != served:
             findings.append({
                 'code': ROUTE_MODEL_MISMATCH, 'path': location,
-                'detail': 'requested %r but served %r on route %r'
-                          % (requested, served, route)})
+                'detail': 'requested {!r} but served {!r} on route {!r}'.format(requested, served, route)})
     return findings
 
 
@@ -163,11 +162,10 @@ def _jsonschema_or_fail(require_schema: bool):
     if not require_schema:
         return None
     try:
-        import jsonschema  # noqa: F401  (presence check only)
+        import jsonschema
     except ImportError as exc:
         raise ValidationError(
-            'schema validation was required but jsonschema is unavailable: %s'
-            % exc)
+            'schema validation was required but jsonschema is unavailable: {}'.format(exc))
     return jsonschema
 
 
@@ -223,7 +221,7 @@ def validate_jsonl(path: str, *, require_provenance: bool = True,
     after_digest = sha256_file(path)
     if before_digest != after_digest:
         raise ValidationError(
-            'the validated artifact changed during a read-only pass: %s' % path)
+            'the validated artifact changed during a read-only pass: {}'.format(path))
     return {
         'schema': SCHEMA,
         'validator_version': VALIDATOR_VERSION,

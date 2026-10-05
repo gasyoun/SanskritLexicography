@@ -23,7 +23,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import gate_evidence as ge                                          # noqa: E402
+import gate_evidence as ge
 
 REPO_ROOT = os.path.dirname(os.path.dirname(HERE))
 LEDGER_MD = os.path.join(REPO_ROOT, 'LAUNCH_FUCKUPS.md')
@@ -75,18 +75,18 @@ def parse_date(s):
     try:
         return _dt.date.fromisoformat(s)
     except ValueError:
-        raise SystemExit('invalid date %r, expected YYYY-MM-DD' % s)
+        raise SystemExit('invalid date {!r}, expected YYYY-MM-DD'.format(s))
 
 
 def load_ledger(path=LEDGER_MD):
     text = open(path, encoding='utf-8').read()
     m = FENCE_RE.search(text)
     if not m:
-        raise SystemExit('no ```json launch_failure_ledger fenced block found in %s' % path)
+        raise SystemExit('no ```json launch_failure_ledger fenced block found in {}'.format(path))
     try:
         entries = json.loads(m.group(1))
     except json.JSONDecodeError as e:
-        raise SystemExit('invalid JSON launch ledger: %s' % e)
+        raise SystemExit('invalid JSON launch ledger: {}'.format(e))
     if not isinstance(entries, list):
         raise SystemExit('launch ledger JSON must be a list')
     return entries
@@ -109,40 +109,39 @@ def check_entries(entries):
     for i, e in enumerate(entries):
         label = e.get('id') or '<entry %d>' % (i + 1)
         if not isinstance(e, dict):
-            violations.append('%s: entry must be an object' % label)
+            violations.append('{}: entry must be an object'.format(label))
             continue
         if label in seen_ids:
-            violations.append('%s: duplicate id' % label)
+            violations.append('{}: duplicate id'.format(label))
         seen_ids.add(label)
         for key in REQUIRED_TEXT:
             if not _has_value(e.get(key)):
-                violations.append('%s: missing non-empty %s' % (label, key))
+                violations.append('{}: missing non-empty {}'.format(label, key))
         if e.get('classification') and e.get('classification') not in VALID_CLASSES:
-            violations.append('%s: classification %r is not valid' % (label, e.get('classification')))
+            violations.append('{}: classification {!r} is not valid'.format(label, e.get('classification')))
         if e.get('residual_status') and e.get('residual_status') not in VALID_RESIDUAL:
-            violations.append('%s: residual_status %r is not valid' % (label, e.get('residual_status')))
+            violations.append('{}: residual_status {!r} is not valid'.format(label, e.get('residual_status')))
         try:
             parse_date(e.get('date', ''))
         except SystemExit as exc:
-            violations.append('%s: %s' % (label, exc))
+            violations.append('{}: {}'.format(label, exc))
         for bucket in ('expected', 'actual'):
             value = e.get(bucket)
             if not isinstance(value, dict):
-                violations.append('%s: %s must be an object with agents/tokens' % (label, bucket))
+                violations.append('{}: {} must be an object with agents/tokens'.format(label, bucket))
                 continue
             for field in ('agents', 'tokens'):
                 if not _has_value(value.get(field)):
-                    violations.append('%s: %s.%s is required' % (label, bucket, field))
+                    violations.append('{}: {}.{} is required'.format(label, bucket, field))
         if not isinstance(e.get('passes'), int) or e.get('passes') < 1:
-            violations.append('%s: passes must be an integer >= 1' % label)
+            violations.append('{}: passes must be an integer >= 1'.format(label))
         if e.get('classification') == 'unknown':
             shape = (e.get('lane', '').strip(), e.get('symptoms', '').strip().lower())
             unknown_shapes.setdefault(shape, []).append(label)
     for shape, labels in unknown_shapes.items():
         if len(labels) > 1:
             violations.append(
-                'unknown recurrence requires bug-hunt handoff: %s share %r' %
-                (', '.join(labels), shape[1][:80]))
+                'unknown recurrence requires bug-hunt handoff: {} share {!r}'.format(', '.join(labels), shape[1][:80]))
     return violations
 
 
@@ -175,15 +174,14 @@ def check_requested(entries, handoff=None, since=None):
     if handoff:
         matches = [e for e in entries if e.get('handoff') == handoff]
         if not matches:
-            violations.append('%s: no launch-failure ledger entry' % handoff)
+            violations.append('{}: no launch-failure ledger entry'.format(handoff))
     if since:
         present = {e.get('handoff') for e in entries if e.get('handoff')}
         for day, title, handoffs in launch_headings_since(since):
             for h in handoffs:
                 if h not in present:
                     violations.append(
-                        '%s: RUN_LOG launch heading on %s lacks ledger entry: %s' %
-                        (h, day, title))
+                        '{}: RUN_LOG launch heading on {} lacks ledger entry: {}'.format(h, day, title))
     return violations
 
 
@@ -218,7 +216,7 @@ def main(argv=None):
         if since and not headings:
             ev.declare_expected_empty(
                 'no_runlog_launch_headings',
-                'no launch-shaped RUN_LOG heading since %s to cross-check' % since)
+                'no launch-shaped RUN_LOG heading since {} to cross-check'.format(since))
         violations.extend(requested)
     if not entries:
         ev.declare_expected_empty(
@@ -228,7 +226,7 @@ def main(argv=None):
     try:
         ev.assert_nonvacuous()
     except ge.VacuousGateError as exc:
-        print('LAUNCH FAILURE LEDGER: %s' % exc)
+        print('LAUNCH FAILURE LEDGER: {}'.format(exc))
         ev.set_verdict('fail')
         ev.emit(args.evidence)
         return 1

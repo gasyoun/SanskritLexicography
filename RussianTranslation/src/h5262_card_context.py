@@ -55,8 +55,7 @@ def context(flags, store, per_lemma=3):
                 continue
             spans = GLOSS_SPAN.findall(rec.get("ru") or "")
             for lemma, forms in hits:
-                pat = re.compile(r"(?<![А-Яа-яЁё])(%s)(?![А-Яа-яЁё])"
-                                 % "|".join(re.escape(f) for f in forms), re.I)
+                pat = re.compile(r"(?<![А-Яа-яЁё])({})(?![А-Яа-яЁё])".format("|".join(re.escape(f) for f in forms)), re.I)
                 matched = [s.strip() for s in spans if pat.search(s)]
                 # `subcard` is not unique in the store — one subcard spans several sense
                 # records (live 24-09-2026) — so only a record whose gloss actually carries
@@ -95,7 +94,7 @@ def selftest():
           and ctx["союзить"][0]["ru_spans"] == ["союзить, соединять"]
           and ctx["союзить"][0]["de_gloss"] == ["verbinden, vereinigen"])
     if not ok:
-        raise SystemExit("SELFTEST FAIL: %r" % ctx)
+        raise SystemExit("SELFTEST FAIL: {!r}".format(ctx))
     print("h5262_card_context selftest OK (offline)")
     return 0
 

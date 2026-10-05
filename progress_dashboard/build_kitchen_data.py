@@ -44,7 +44,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 _sys_dir = str(Path(__file__).resolve().parent)
 if _sys_dir not in sys.path:
     sys.path.insert(0, _sys_dir)
-import kitchen_slices as ks  # noqa: E402
+import kitchen_slices as ks
 
 OUT = Path(__file__).resolve().parent
 REPO = OUT.parent
@@ -169,7 +169,7 @@ def activity_status() -> dict:
     if WINDOW_STATUS.exists():
         try:
             ws = json.loads(WINDOW_STATUS.read_text(encoding="utf-8"))
-        except Exception:  # noqa: BLE001
+        except Exception:
             ws = None
     return {
         "translation_on": active,
@@ -434,11 +434,11 @@ def economy_band() -> dict:
                 "summary": summary,
                 "spend": spend,
             }
-        except Exception as e:  # noqa: BLE001
+        except Exception as e:
             return {"measured": False, "error": str(e)[:200]}
     try:
         data = json.loads(ECONOMY.read_text(encoding="utf-8"))
-    except Exception as e:  # noqa: BLE001
+    except Exception as e:
         return {"measured": False, "error": str(e)[:200]}
     summary = data.get("summary") or data.get("aggregate") or data
     if not isinstance(summary, dict):

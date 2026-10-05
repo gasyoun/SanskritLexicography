@@ -225,7 +225,7 @@ def render_registers(stats):
         rows = [r for r in _KEY_REGS if s['reg_by_src'].get(r)]
         if not rows:
             continue
-        L.append('**%s** — %s' % (s['code'].upper(), ' · '.join(
+        L.append('**{}** — {}'.format(s['code'].upper(), ' · '.join(
             '%s: %d/%d/%d (ls/dcs/both)' % (
                 r, s['reg_by_src'][r].get('ls', 0), s['reg_by_src'][r].get('dcs', 0),
                 s['reg_by_src'][r].get('both', 0)) for r in rows)))
@@ -250,13 +250,13 @@ def main():
         elif a == '--suspects':
             n_suspects = int(args[i + 1]); i += 2
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
 
     dcs_index = load_dcs_index(index_path)
     paths = [p for p in sorted(glob.glob(os.path.join(d, '*.renou.jsonl')))
              if os.path.basename(p).split('.')[0] in CANON]
     if not paths:
-        raise SystemExit('no canonical {code}.renou.jsonl in %s' % d)
+        raise SystemExit('no canonical {{code}}.renou.jsonl in {}'.format(d))
     order = {c: i for i, c in enumerate(CANON)}
     paths.sort(key=lambda p: order[os.path.basename(p).split('.')[0]])
     stats = [audit_dict(p, dcs_index) for p in paths]
@@ -271,7 +271,7 @@ def main():
               % (fmt_pct(s['reg_entries'], s['entries']), s['reg_cov'].get('bhasya', 0),
                  s['reg_cov'].get('jaina', 0), s['reg_cov'].get('epig', 0), s['reg_low_info']))
     open(out, 'w', encoding='utf-8').write(render(stats, n_suspects))
-    print('\n→ %s' % out)
+    print('\n→ {}'.format(out))
 
 
 if __name__ == '__main__':

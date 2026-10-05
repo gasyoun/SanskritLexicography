@@ -25,8 +25,8 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from headless_worker import build_prompt                             # noqa: E402
-from parse_workflow_cost import PRICE, cache_write_rate              # noqa: E402
+from headless_worker import build_prompt
+from parse_workflow_cost import PRICE, cache_write_rate
 
 # The campaign target H2152 6.6 states for the remaining bulk lane.
 CAMPAIGN_WORDS = 140_000
@@ -105,7 +105,7 @@ def main():
             data = json.load(fh)
         rows, keys = data['rows'], data['keys']
     else:
-        print('_No rows.json at %s — offline shape analysis only._\n' % args.rows)
+        print('_No rows.json at {} — offline shape analysis only._\n'.format(args.rows))
         rows = []
         keys = list((manifest.get('meta') or {}).get('selected_keys') or [])[:2]
 
@@ -120,9 +120,8 @@ def main():
                  100.0 * s['prefix_chars'] / s['total_chars'], s['skeleton_words']))
     tot_chars = sum(s['total_chars'] for s in shapes) / len(shapes)
     tot_words = sum(s['skeleton_words'] for s in shapes) / len(shapes)
-    print('\nMean per card: **%.0f prompt chars**, **%.0f German words** '
-          '(≈ %.0f–%.0f prompt tokens at %.1f–%.1f chars/token).'
-          % (tot_chars, tot_words, tot_chars / CPT_HIGH, tot_chars / CPT_LOW,
+    print('\nMean per card: **{:.0f} prompt chars**, **{:.0f} German words** '
+          '(≈ {:.0f}–{:.0f} prompt tokens at {:.1f}–{:.1f} chars/token).'.format(tot_chars, tot_words, tot_chars / CPT_HIGH, tot_chars / CPT_LOW,
              CPT_LOW, CPT_HIGH))
 
     print('\n### Measured, per arm (median over successful calls)\n')
@@ -134,38 +133,37 @@ def main():
         s, bad = summarize(rows, arm)
         summaries[arm] = (s, bad)
         if s is None:
-            print('| %s | 0 | — | — | — | — | — | — | — |' % label)
+            print('| {} | 0 | — | — | — | — | — | — | — |'.format(label))
             continue
         print('| %s | %d | %.1f s | %s | %s | %s | %s | $%.4f | %s |'
               % (label, s['n'], s['wall_ms'] / 1000.0,
                  s['create'], s['read'], s['input'], s['output'], s['cost_1h'],
-                 ('$%.4f' % s['cost_env']) if s['cost_env'] is not None else 'n/a'))
+                 ('${:.4f}'.format(s['cost_env'])) if s['cost_env'] is not None else 'n/a'))
 
     for arm in ('cli', 'api'):
         s, bad = summaries[arm]
         if bad:
-            print('\n**%s failure classes:** %s' % (
+            print('\n**{} failure classes:** {}'.format(
                 arm, ', '.join(sorted({r['failure_class'] for r in bad}))))
         if s and s['first_create'] is not None and s['later_read'] is not None:
-            print('\n**%s cache reuse:** call #1 created %s tokens; later calls read a '
-                  'median %s. %s' % (
+            print('\n**{} cache reuse:** call #1 created {} tokens; later calls read a '
+                  'median {}. {}'.format(
                       arm, s['first_create'], s['later_read'],
                       'Reuse IS happening.' if (s['later_read'] or 0) > 0
                       else 'NO reuse — every call re-creates its prefix.'))
 
     cli, _ = summaries['cli']
     api, _ = summaries['api']
-    print('\n### Campaign projection — %s words remaining\n' % f'{CAMPAIGN_WORDS:,}')
+    print('\n### Campaign projection — {} words remaining\n'.format(f'{CAMPAIGN_WORDS:,}'))
     cards = CAMPAIGN_WORDS / tot_words if tot_words else None
     print('Assumptions, stated so they can be attacked:')
     print('')
-    print('1. Remaining bulk is **%s German words** (H2152 §6.6).' % f'{CAMPAIGN_WORDS:,}')
-    print('2. Cards resemble this manifest: **%.0f German words/card** → **≈ %s cards**.'
-          % (tot_words, f'{cards:,.0f}' if cards else '?'))
+    print('1. Remaining bulk is **{} German words** (H2152 §6.6).'.format(f'{CAMPAIGN_WORDS:,}'))
+    print('2. Cards resemble this manifest: **{:.0f} German words/card** → **≈ {} cards**.'.format(tot_words, f'{cards:,.0f}' if cards else '?'))
     print('3. One call per card (H2152: HOLD one-card; shape is not the lever).')
-    print('4. Sonnet 5 **list** rates ($%.2f in / $%.2f out / $%.2f 1h-write / $%.2f read '
+    print('4. Sonnet 5 **list** rates (${:.2f} in / ${:.2f} out / ${:.2f} 1h-write / ${:.2f} read '
           'per Mtok). The introductory $2/$10 promo is NOT applied — same basis as '
-          '`parse_workflow_cost.PRICE`.' % (PRICE['input'], PRICE['output'],
+          '`parse_workflow_cost.PRICE`.'.format(PRICE['input'], PRICE['output'],
                                             cache_write_rate('1h'), PRICE['cache_read']))
     print('5. Zero retries/heals. Every real campaign has both, so these are **floors**.')
     print('')
@@ -183,13 +181,12 @@ def main():
         tail = sum(s['tail_chars'] for s in shapes) / len(shapes)
         lo = model_api_cost(pre, tail, out_tok, CPT_HIGH, warm=True)
         hi = model_api_cost(pre, tail, out_tok, CPT_LOW, warm=False)
-        print('| Messages API | **MODELLED — not measured** | $%.4f–$%.4f | **$%s–$%s** |'
-              % (lo, hi, f'{lo * cards:,.0f}', f'{hi * cards:,.0f}'))
+        print('| Messages API | **MODELLED — not measured** | ${:.4f}–${:.4f} | **${}–${}** |'.format(lo, hi, f'{lo * cards:,.0f}', f'{hi * cards:,.0f}'))
         print('')
         print('> The API row is a MODEL, not a result. Low end = warm prefix (cache read) '
-              'at %.1f chars/token; high end = cold prefix (1h write) at %.1f chars/token. '
-              'It assumes output tokens match the CLI arm\'s measured median (%s). '
-              'It cannot close this handoff.' % (CPT_HIGH, CPT_LOW, out_tok))
+              'at {:.1f} chars/token; high end = cold prefix (1h write) at {:.1f} chars/token. '
+              'It assumes output tokens match the CLI arm\'s measured median ({}). '
+              'It cannot close this handoff.'.format(CPT_HIGH, CPT_LOW, out_tok))
     return 0
 
 

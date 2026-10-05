@@ -40,7 +40,7 @@ import os
 import sys
 
 from csl_pyutil import RU_UI_STRINGS, esc, mark_cyrillic, render_review_sheet
-from sheet_screening import screening_block  # noqa: E402
+from sheet_screening import screening_block
 
 from review_binding import stamp, write_lock
 from review_sheet_standard import standard_config
@@ -191,7 +191,7 @@ def build_items():
             ("Как сейчас (Кочергина)", mark_cyrillic(esc(it["asis"]))),
             ("Предлагается", mark_cyrillic(esc(it["proposed"]))),
             ("Аттестация / источники",
-             "<ul>%s</ul>" % "".join("<li>%s</li>" % esc(e) for e in it["evidence"])),
+             "<ul>{}</ul>".format("".join("<li>{}</li>".format(esc(e)) for e in it["evidence"]))),
         ]
         out.append({
             "id": it["id"],
@@ -223,11 +223,10 @@ def main():
         # overridden because RU_UI_STRINGS deliberately omits it (its default
         # bakes in the caller's own sheet_id/save_as).
         "ui_strings": dict(RU_UI_STRINGS, save_banner=(
-            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
-            '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
-            'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
-            'листу относятся эти решения).'
-            % (esc(SHEET_ID), esc("RussianTranslation\\review\\" + SHEET_ID + "_decisions.json"),
+            '&#128229; Ваш экспорт скачивается как <code>{}_decisions.json</code> '
+            '&rarr; сохраните его в <code>{}</code> (значение <code>sheet_id</code> '
+            'внутри файла — <code>{}</code> — так следующая сессия узнаёт, к какому '
+            'листу относятся эти решения).'.format(esc(SHEET_ID), esc("RussianTranslation\\review\\" + SHEET_ID + "_decisions.json"),
                esc(SHEET_ID)))),
     }
     config.update(standard_config(

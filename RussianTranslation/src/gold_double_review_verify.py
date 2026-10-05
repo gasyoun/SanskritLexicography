@@ -23,7 +23,7 @@ def main():
         rows = list(reader)
     missing_fields = [f for f in SECOND if f not in fields]
     if missing_fields:
-        raise SystemExit('missing second-review columns: %s' % ', '.join(missing_fields))
+        raise SystemExit('missing second-review columns: {}'.format(', '.join(missing_fields)))
     if len(rows) != args.sample_size:
         raise SystemExit('expected %d row(s), found %d' % (args.sample_size, len(rows)))
     prefilled = []
@@ -41,8 +41,7 @@ def main():
         raise SystemExit('double-review queue is empty')
     min_n, max_n = min(counts.values()), max(counts.values())
     if max_n - min_n > 1:
-        raise SystemExit('strata are imbalanced: %s' %
-                         dict(sorted(('%s/%s' % k, v) for k, v in counts.items())))
+        raise SystemExit('strata are imbalanced: {}'.format(dict(sorted(('{}/{}'.format(*k), v) for k, v in counts.items()))))
     print('double-review queue OK: %d row(s), %d strata, balance %d..%d' %
           (len(rows), len(counts), min_n, max_n))
 

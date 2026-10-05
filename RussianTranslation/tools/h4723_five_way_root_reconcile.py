@@ -97,9 +97,9 @@ def form_key(raw):
 def need(path):
     if not os.path.exists(path):
         sys.stderr.write(
-            "MISSING %s — this tool reads five sibling clones read-only; "
+            "MISSING {} — this tool reads five sibling clones read-only; "
             "clone it next to SanskritLexicography/ first (H4432: exit 2, "
-            "not a traceback).\n" % path)
+            "not a traceback).\n".format(path))
         sys.exit(2)
 
 
@@ -426,15 +426,15 @@ def main():
         write_tsv(rows)
         write_report(report)
         print('EMITTED %s (%d rows)' % (OUT_TSV, len(rows)))
-        print('EMITTED %s' % OUT_REPORT)
+        print('EMITTED {}'.format(OUT_REPORT))
         print('verdicts: ' + '; '.join(
-            '%s=%s' % (k, v['verdict'])
+            '{}={}'.format(k, v['verdict'])
             for k, v in report['sources'].items()))
         return 0
 
     # --check: recompute and diff against the committed report
     if not os.path.exists(OUT_REPORT):
-        sys.stderr.write('CHECK FAIL: no committed report at %s\n' % OUT_REPORT)
+        sys.stderr.write('CHECK FAIL: no committed report at {}\n'.format(OUT_REPORT))
         return 1
     committed = json.load(open(OUT_REPORT, encoding='utf-8'))
     if committed == report:
@@ -444,11 +444,11 @@ def main():
     diffs = []
     for src in set(committed['sources']) | set(report['sources']):
         if committed['sources'].get(src) != report['sources'].get(src):
-            diffs.append('sources.%s' % src)
+            diffs.append('sources.{}'.format(src))
     for k in ('rows', 'n_sources_histogram', 'all_four_root_legs', 'legs_sizes'):
         if committed['crosswalk'].get(k) != report['crosswalk'].get(k):
-            diffs.append('crosswalk.%s' % k)
-    sys.stderr.write('CHECK FAIL: drift in %s\n' % ', '.join(sorted(diffs)))
+            diffs.append('crosswalk.{}'.format(k))
+    sys.stderr.write('CHECK FAIL: drift in {}\n'.format(', '.join(sorted(diffs))))
     return 1
 
 

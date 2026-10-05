@@ -41,7 +41,7 @@ from collections import defaultdict
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-from rapidfuzz.distance import Levenshtein  # noqa: E402
+from rapidfuzz.distance import Levenshtein
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ACC_JSONL = os.path.join(HERE, "acc.jsonl")

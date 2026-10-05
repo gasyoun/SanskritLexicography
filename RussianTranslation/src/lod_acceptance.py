@@ -37,7 +37,7 @@ import tempfile
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-from rdflib import Graph  # noqa: E402
+from rdflib import Graph
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
@@ -52,7 +52,7 @@ FAILURES = []
 
 def check(name, ok, detail=''):
     mark = 'PASS' if ok else 'FAIL'
-    print('  [%s] %s%s' % (mark, name, (' -- ' + detail) if detail else ''))
+    print('  [{}] {}{}'.format(mark, name, (' -- ' + detail) if detail else ''))
     if not ok:
         FAILURES.append(name)
     return ok
@@ -99,7 +99,7 @@ def test_roundtrip(fixture_dir):
         ttl = g1.serialize(format='turtle')
         g2 = Graph(); g2.parse(data=ttl, format='turtle')
         iso = g1.isomorphic(g2)
-        ok = check('%s isomorphic after round-trip' % fn, iso,
+        ok = check('{} isomorphic after round-trip'.format(fn), iso,
                    '%d triples' % len(g1)) and ok
     return ok
 
@@ -111,13 +111,13 @@ def test_invariants(g):
     print('\nStructural invariants')
     ok = True
     ok = check('every LexicalSense has an evidence grade',
-               count(g, 'SELECT (COUNT(?s) AS ?n){?s a <%sLexicalSense> FILTER NOT EXISTS{?s <%sevidenceGrade> ?gg}}' % (ONTO, V)) == 0) and ok
+               count(g, 'SELECT (COUNT(?s) AS ?n){{?s a <{}LexicalSense> FILTER NOT EXISTS{{?s <{}evidenceGrade> ?gg}}}}'.format(ONTO, V)) == 0) and ok
     ok = check('every Citation has pwglex:lsRaw',
-               count(g, 'SELECT (COUNT(?c) AS ?n){?c a <%sCitation> FILTER NOT EXISTS{?c <%slsRaw> ?r}}' % (V, V)) == 0) and ok
+               count(g, 'SELECT (COUNT(?c) AS ?n){{?c a <{}Citation> FILTER NOT EXISTS{{?c <{}lsRaw> ?r}}}}'.format(V, V)) == 0) and ok
     ok = check('every StratumAttestation has renouOldest+dateMin',
-               count(g, 'SELECT (COUNT(?a) AS ?n){?a a <%sStratumAttestation> FILTER NOT EXISTS{?a <%srenouOldest> ?o}}' % (V, V)) == 0) and ok
+               count(g, 'SELECT (COUNT(?a) AS ?n){{?a a <{}StratumAttestation> FILTER NOT EXISTS{{?a <{}renouOldest> ?o}}}}'.format(V, V)) == 0) and ok
     ok = check('every SenseRelation has source+target',
-               count(g, 'SELECT (COUNT(?r) AS ?n){?r a <%sSenseRelation> FILTER(NOT EXISTS{?r <%ssource> ?s} || NOT EXISTS{?r <%starget> ?t})}' % (VART, VART, VART)) == 0) and ok
+               count(g, 'SELECT (COUNT(?r) AS ?n){{?r a <{}SenseRelation> FILTER(NOT EXISTS{{?r <{}source> ?s}} || NOT EXISTS{{?r <{}target> ?t}})}}'.format(VART, VART, VART)) == 0) and ok
     ok = check('no placeholder example.org IRI remains',
                count(g, 'SELECT (COUNT(*) AS ?n){?s ?p ?o FILTER(isIRI(?o) && CONTAINS(STR(?o),"example.org"))}') == 0) and ok
     return ok
@@ -179,18 +179,18 @@ def test_source_coverage(g, args, keys):
     print('\nB3. Source coverage (every <ls>, stratum, grade survives)')
     exp = source_expected(args, keys)
     ok = True
-    n_cite = count(g, 'SELECT (COUNT(DISTINCT ?c) AS ?n){?c a <%sCitation>}' % V)
+    n_cite = count(g, 'SELECT (COUNT(DISTINCT ?c) AS ?n){{?c a <{}Citation>}}'.format(V))
     ok = check('distinct citations match source', n_cite == len(exp['citations']),
                'graph=%d source=%d' % (n_cite, len(exp['citations']))) and ok
-    n_att = count(g, 'SELECT (COUNT(?a) AS ?n){?a a <%sStratumAttestation>}' % V)
+    n_att = count(g, 'SELECT (COUNT(?a) AS ?n){{?a a <{}StratumAttestation>}}'.format(V))
     ok = check('stratum attestations match source', n_att == len(exp['attest']),
                'graph=%d source=%d' % (n_att, len(exp['attest']))) and ok
-    n_rel = count(g, 'SELECT (COUNT(?r) AS ?n){?r a <%sSenseRelation>}' % VART)
+    n_rel = count(g, 'SELECT (COUNT(?r) AS ?n){{?r a <{}SenseRelation>}}'.format(VART))
     ok = check('vartrans relations match source', n_rel == exp['rels'],
                'graph=%d source=%d' % (n_rel, exp['rels'])) and ok
     for grade, exp_n in sorted(exp['grades'].items()):
-        gn = count(g, 'SELECT (COUNT(?s) AS ?n){?s <%sevidenceGrade> <%s%s>}' % (V, GR, grade))
-        ok = check('grade %s sense count matches source' % grade, gn == exp_n,
+        gn = count(g, 'SELECT (COUNT(?s) AS ?n){{?s <{}evidenceGrade> <{}{}>}}'.format(V, GR, grade))
+        ok = check('grade {} sense count matches source'.format(grade), gn == exp_n,
                    'graph=%d source=%d' % (gn, exp_n)) and ok
     return ok
 
@@ -208,7 +208,7 @@ def test_deterministic(args, keys, fixture_dir):
         for fn in ('pwg_ru_lod.ttl', 'dcs_freq.ttl'):
             with open(os.path.join(td, fn), 'rb') as a, open(os.path.join(fixture_dir, fn), 'rb') as b:
                 same = a.read() == b.read()
-            ok = check('%s regenerates byte-identical' % fn, same) and ok
+            ok = check('{} regenerates byte-identical'.format(fn), same) and ok
     return ok
 
 
@@ -241,17 +241,17 @@ def test_de_enrichment(fixture_dir, query_path):
             d.get('dcsCount'), d.get('sigla'), d.get('locus') or ''))
     # C2. every German entry is a real, language-tagged, lemma-anchored entry.
     ok = check('every German entry has dct:language "de" + canonicalForm',
-               count(g, 'SELECT (COUNT(?e) AS ?n){?e a <%sLexicalEntry> ; <http://purl.org/dc/terms/language> "de" '
-                        'FILTER NOT EXISTS{?e <%scanonicalForm> ?l}}' % (O, O)) == 0) and ok
+               count(g, 'SELECT (COUNT(?e) AS ?n){{?e a <{}LexicalEntry> ; <http://purl.org/dc/terms/language> "de" '
+                        'FILTER NOT EXISTS{{?e <{}canonicalForm> ?l}}}}'.format(O, O)) == 0) and ok
     # C3. RU and DE entries sit on the SAME lemma (siblings on one spine).
-    shared = count(g, 'SELECT (COUNT(DISTINCT ?lemma) AS ?n){'
-                      '?de a <%sLexicalEntry> ; <http://purl.org/dc/terms/language> "de" ; <%scanonicalForm> ?lemma . '
-                      '?ru a <%sLexicalEntry> ; <%scanonicalForm> ?lemma . FILTER(?ru != ?de)}' % (O, O, O, O))
+    shared = count(g, 'SELECT (COUNT(DISTINCT ?lemma) AS ?n){{'
+                      '?de a <{}LexicalEntry> ; <http://purl.org/dc/terms/language> "de" ; <{}canonicalForm> ?lemma . '
+                      '?ru a <{}LexicalEntry> ; <{}canonicalForm> ?lemma . FILTER(?ru != ?de)}}'.format(O, O, O, O))
     ok = check('lemmas carry >1 sibling entry (RU + DE on one lemma)', shared > 0, '%d lemmas' % shared) and ok
     # C4. every German sense carries the PWG-source evidence grade.
     ok = check('every German sense has evidenceGrade gr:pwg-source',
-               count(g, 'SELECT (COUNT(?s) AS ?n){?e <http://purl.org/dc/terms/language> "de" ; <%ssense> ?s '
-                        'FILTER NOT EXISTS{?s <%sevidenceGrade> <%spwg-source>}}' % (O, V, GR)) == 0) and ok
+               count(g, 'SELECT (COUNT(?s) AS ?n){{?e <http://purl.org/dc/terms/language> "de" ; <{}sense> ?s '
+                        'FILTER NOT EXISTS{{?s <{}evidenceGrade> <{}pwg-source>}}}}'.format(O, V, GR)) == 0) and ok
     return ok
 
 
@@ -278,7 +278,7 @@ def test_de_source_coverage(args, keys, fixture_dir):
         if card.get('key1') in keyset:
             exp += len(list(X.de_card_senses(card)))
     g = Graph(); g.parse(os.path.join(fixture_dir, 'pwg_de_lexicon.ttl'), format='turtle')
-    got = count(g, 'SELECT (COUNT(?s) AS ?n){?e <http://purl.org/dc/terms/language> "de" ; <%ssense> ?s}' % ONTO)
+    got = count(g, 'SELECT (COUNT(?s) AS ?n){{?e <http://purl.org/dc/terms/language> "de" ; <{}sense> ?s}}'.format(ONTO))
     return check('German sense count matches source', got == exp, 'graph=%d source=%d' % (got, exp))
 
 
@@ -307,20 +307,19 @@ def test_grammar_layer(fixture_dir, query_path):
     ok = check('grammar x entry x DCS-freq join returns rows', len(rows) > 0, '%d rows' % len(rows)) and ok
     branches = {str(r.asdict().get('branch')) for r in rows if r.asdict().get('branch')}
     ok = check('join covers both root and nominal branches', {'root', 'nominal'} <= branches,
-               'branches=%s' % sorted(branches)) and ok
+               'branches={}'.format(sorted(branches))) and ok
     for r in rows[:6]:
         d = r.asdict()
         print('       lemma=%-30s branch=%-8s info=%-10s dcs=%s' % (
             str(d.get('lemma')).rsplit('/', 1)[-1], d.get('branch'), d.get('grammarInfo'), d.get('dcsCount')))
     ok = check('every entity with stemClass also carries zaliznyakIndex',
-               count(g, 'SELECT (COUNT(?e) AS ?n){?e <%sstemClass> ?sc FILTER NOT EXISTS{?e <%szaliznyakIndex> ?z}}'
-                     % (V, V)) == 0) and ok
+               count(g, 'SELECT (COUNT(?e) AS ?n){{?e <{}stemClass> ?sc FILTER NOT EXISTS{{?e <{}zaliznyakIndex> ?z}}}}'.format(V, V)) == 0) and ok
     ok = check('every GrammarSection resource has a label',
-               count(g, 'SELECT (COUNT(?s) AS ?n){?s a <%sGrammarSection> '
-                        'FILTER NOT EXISTS{?s <http://www.w3.org/2000/01/rdf-schema#label> ?l}}' % V) == 0) and ok
+               count(g, 'SELECT (COUNT(?s) AS ?n){{?s a <{}GrammarSection> '
+                        'FILTER NOT EXISTS{{?s <http://www.w3.org/2000/01/rdf-schema#label> ?l}}}}'.format(V)) == 0) and ok
     ok = check('no lemma is both root and root-ambiguous/nominal at once',
-               count(g, 'SELECT (COUNT(?e) AS ?n){?e <%swhitneyClass> ?c . '
-                        '{?e <%sstemClass> ?sc} UNION {?e <%shomonymAmbiguous> ?a}}' % (V, V, V)) == 0) and ok
+               count(g, 'SELECT (COUNT(?e) AS ?n){{?e <{}whitneyClass> ?c . '
+                        '{{?e <{}stemClass> ?sc}} UNION {{?e <{}homonymAmbiguous> ?a}}}}'.format(V, V, V)) == 0) and ok
     return ok
 
 
@@ -368,13 +367,13 @@ def test_grammar_source_coverage(args, keys, fixture_dir):
         # >1 records: homonym-ambiguous -- no sections/irregularities/zaliznyak emitted
     g = Graph(); g.parse(os.path.join(fixture_dir, 'grammar.ttl'), format='turtle')
     ok = True
-    got_sections = count(g, 'SELECT (COUNT(?s) AS ?n){?s a <%sGrammarSection>}' % V)
+    got_sections = count(g, 'SELECT (COUNT(?s) AS ?n){{?s a <{}GrammarSection>}}'.format(V))
     ok = check('GrammarSection resource count matches source', got_sections == exp_sections,
                'graph=%d source=%d' % (got_sections, exp_sections)) and ok
-    got_irr = count(g, 'SELECT (COUNT(*) AS ?n){?e <%sirregularity> ?i}' % V)
+    got_irr = count(g, 'SELECT (COUNT(*) AS ?n){{?e <{}irregularity> ?i}}'.format(V))
     ok = check('irregularity triple count matches source', got_irr == exp_irregularities,
                'graph=%d source=%d' % (got_irr, exp_irregularities)) and ok
-    got_zal = count(g, 'SELECT (COUNT(?e) AS ?n){?e <%szaliznyakIndex> ?z}' % V)
+    got_zal = count(g, 'SELECT (COUNT(?e) AS ?n){{?e <{}zaliznyakIndex> ?z}}'.format(V))
     ok = check('zaliznyakIndex-carrying entity count matches source', got_zal == exp_zaliznyak,
                'graph=%d source=%d' % (got_zal, exp_zaliznyak)) and ok
     return ok
@@ -409,7 +408,7 @@ def main():
     ap.add_argument('--generated-at', default='2026-07-08')
     args = ap.parse_args()
 
-    print('LOD acceptance gate (H350/E7) -- fixture: %s' % args.fixture)
+    print('LOD acceptance gate (H350/E7) -- fixture: {}'.format(args.fixture))
     g = load_graphs(args.fixture)
     print('  loaded %d triples' % len(g))
     keys = read_keys(args.fixture)

@@ -29,10 +29,10 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, "/Users/mac/Documents/GitHub/sanskrit-util/py")
-from sanskrit_util import to_slp1, slp1_form_key  # noqa: E402
+from sanskrit_util import to_slp1, slp1_form_key
 
 MARKER = re.compile(r"[˚()\-]")
-strip_markers = lambda s: MARKER.sub("", s)  # noqa: E731
+strip_markers = lambda s: MARKER.sub("", s)
 
 DB = Path("/Users/mac/Documents/GitHub/VisualDCS/src/DCS-data-2026/dcs_full.sqlite")
 NOW = REPO / "HeadwordLists" / "now-2026"
@@ -118,8 +118,8 @@ def main() -> None:
       FROM token t
       JOIN sentence s ON s.id = t.sentence_id
       JOIN chapter c ON c.chapter_id = s.chapter_id
-      WHERE c.text_id IN (%s) AND t.lemma_id != 0
-      GROUP BY t.lemma_id, c.text_id""" % ",".join(str(tids[n]) for n in sorted(tids))
+      WHERE c.text_id IN ({}) AND t.lemma_id != 0
+      GROUP BY t.lemma_id, c.text_id""".format(",".join(str(tids[n]) for n in sorted(tids)))
     for lemma_id, tid, n in cur.execute(q):
         a = agg[lemma_id]
         a[1] += n

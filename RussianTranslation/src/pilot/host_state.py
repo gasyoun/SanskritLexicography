@@ -105,7 +105,7 @@ def memory_state():
             host_commit_pct=pct,
             host_memory_load_pct=int(stat.dwMemoryLoad),
         )
-    except Exception:                      # noqa: BLE001 -- rule 1, never raise
+    except Exception:
         return blank
 
 
@@ -144,13 +144,13 @@ def process_counts():
                 python += 1
             ok = kernel32.Process32NextW(snapshot, ctypes.byref(entry))
         return dict(host_proc_node=node, host_proc_python=python)
-    except Exception:                      # noqa: BLE001 -- rule 1, never raise
+    except Exception:
         return blank
     finally:
         if snapshot is not None and snapshot != _INVALID_HANDLE_VALUE:
             try:
                 ctypes.windll.kernel32.CloseHandle(snapshot)
-            except Exception:              # noqa: BLE001
+            except Exception:
                 pass
 
 
@@ -178,7 +178,7 @@ def loaded_reason(state=None,
     avail = state.get('host_avail_phys_mb')
     reasons = []
     if pct is not None and pct >= commit_pct_warn:
-        reasons.append('commit charge %.1f%% >= %.1f%%' % (pct, commit_pct_warn))
+        reasons.append('commit charge {:.1f}% >= {:.1f}%'.format(pct, commit_pct_warn))
     if avail is not None and avail < avail_phys_mb_warn:
         reasons.append('%d MB physical free < %d MB' % (avail, avail_phys_mb_warn))
     if not reasons:

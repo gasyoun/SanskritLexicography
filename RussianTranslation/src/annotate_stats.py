@@ -123,8 +123,7 @@ def _dcs_by_lemma(path=DCS_FREQ):
         if os.path.exists(path):
             _DCS_CACHE = json.load(open(path, encoding='utf-8')).get('by_lemma', {})
         else:
-            print('annotate_stats: %s absent — dcs_freq join skipped (fields left null)'
-                  % os.path.basename(path), file=sys.stderr)
+            print('annotate_stats: {} absent — dcs_freq join skipped (fields left null)'.format(os.path.basename(path)), file=sys.stderr)
             _DCS_CACHE = {}
     return _DCS_CACHE
 
@@ -153,7 +152,7 @@ def _grammar_for():
             from whitney_grammar import grammar_for
             _GRAMMAR_FN = grammar_for
         except Exception as e:               # pragma: no cover - defensive
-            print('annotate_stats: whitney_grammar unavailable (%s) — grammar join skipped' % e,
+            print('annotate_stats: whitney_grammar unavailable ({}) — grammar join skipped'.format(e),
                   file=sys.stderr)
             _GRAMMAR_FN = lambda slp1, homonym=None: []
     return _GRAMMAR_FN
@@ -417,11 +416,11 @@ def write_rollup(totals, script_version, model_version, path):
     with open(path, 'a', encoding='utf-8', newline='\n') as f:
         if header_needed:
             f.write('# RussianTranslation — results log\n\n')
-            f.write('_Created: %s · Last updated: %s_\n\n' % (date, date))
+            f.write('_Created: {} · Last updated: {}_\n\n'.format(date, date))
             f.write('Append-only, reverse-chronological. Each entry: date, context, '
                     'model tier, table.\n\n')
-        f.write('## %s — pwg_ru card stats rollup (annotate_stats.py)\n\n' % date)
-        f.write('Script v%s · %s\n\n' % (script_version, model_version))
+        f.write('## {} — pwg_ru card stats rollup (annotate_stats.py)\n\n'.format(date))
+        f.write('Script v{} · {}\n\n'.format(script_version, model_version))
         f.write('| metric | value |\n|---|---|\n')
         f.write('| lemmas | %d |\n' % totals['lemmas'])
         f.write('| records (homonym groups) | %d |\n' % totals['records'])
@@ -574,7 +573,7 @@ def main():
 
     if args.rollup:
         write_rollup(totals, script_version, args.model_version, args.rollup)
-        print('\nrollup appended -> %s' % args.rollup)
+        print('\nrollup appended -> {}'.format(args.rollup))
 
     if args.dry_run:
         print('\n(dry run — store not written)')
@@ -583,7 +582,7 @@ def main():
     # in-place rewrite was unlocked and left a truncated store on crash (FINDINGS §513).
     locked_store_rewrite(args.store, rows, tag='pre_stats',
                          no_backup=(args.no_backup or args.limit is not None))
-    print('\nwrote annotated store -> %s' % args.store)
+    print('\nwrote annotated store -> {}'.format(args.store))
 
 
 if __name__ == '__main__':

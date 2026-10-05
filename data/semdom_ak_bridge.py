@@ -27,7 +27,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
-from nltk.corpus import wordnet as wn  # noqa: E402
+from nltk.corpus import wordnet as wn
 
 HERE = Path(__file__).resolve().parent
 GH = HERE.parent.parent

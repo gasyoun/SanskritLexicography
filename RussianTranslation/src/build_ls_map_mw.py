@@ -19,7 +19,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 MW = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'mw', 'mw.txt'))
 OUT = os.path.join(HERE, 'ls_source_map_mw.json')
@@ -127,7 +127,7 @@ def main():
     for st in ('I', 'II', 'III', 'IV', 'V'):
         print('  %-3s %-15s %3d sources · %7d citations'
               % (st, RENOU_NAME[st], by_src.get(st, 0), by_cit.get(st, 0)))
-    print('→ %s' % os.path.basename(OUT))
+    print('→ {}'.format(os.path.basename(OUT)))
 
 
 if __name__ == '__main__':

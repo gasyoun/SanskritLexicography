@@ -49,19 +49,19 @@ RT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(HERE, "pilot"))
 
-import build_g5_review_sheet as g5              # noqa: E402 (pick, card_digest, render pieces)
-import pwg_four_tier_store_impact as imp        # noqa: E402 (H3948 read-only recomputation)
-from review_residue_gate import visible_german, machine_flags  # noqa: E402
-from review_binding import stamp, write_lock, read_lock        # noqa: E402
-from review_sheet_standard import pwg_entry_href, slp1_iast    # noqa: E402
-from sheet_screening import screening_block                    # noqa: E402
-from etym.card_advisory import load_crosswalk, advisory_html   # noqa: E402
-from csl_pyutil import render_review_sheet                     # noqa: E402
-import store_path                              # noqa: E402 (canonical store resolver)
-import translation_memory as tm                # noqa: E402 (scratch TM build + lookup)
-import validate_decisions                      # noqa: E402
-import apply_decisions                         # noqa: E402
-import run_batch                               # noqa: E402 (review-id minting, G5 columns)
+import build_g5_review_sheet as g5
+import pwg_four_tier_store_impact as imp
+from review_residue_gate import visible_german, machine_flags
+from review_binding import stamp, write_lock, read_lock
+from review_sheet_standard import pwg_entry_href, slp1_iast
+from sheet_screening import screening_block
+from etym.card_advisory import load_crosswalk, advisory_html
+from csl_pyutil import render_review_sheet
+import store_path
+import translation_memory as tm
+import validate_decisions
+import apply_decisions
+import run_batch
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -93,8 +93,8 @@ NO_VOTE_BANNER = (
     'решение о запросе голосов будет принято человеком только после оценки '
     'доказательств выравнивания/корпусов/TM (H4056, 04-09-2026). Элементы '
     'управления голосованием отключены; apply-маршрут для этого листа '
-    'заблокирован (gate %s). Пакет — демонстрация доказательств, а не запрос '
-    'одобрения.</div>' % GATE)
+    'заблокирован (gate {}). Пакет — демонстрация доказательств, а не запрос '
+    'одобрения.</div>'.format(GATE))
 
 
 def sha256_of(path):
@@ -193,7 +193,7 @@ def tm_demo(chosen, scratch_dir, store_path_):
     for r in chosen:
         raw = (r.get("provenance") or {}).get("input_raw_sha256")
         hit = tm.lookup("ru", raw, tm=tm_out) if raw else None
-        addr = "ru:%s" % raw if raw else None
+        addr = "ru:{}".format(raw) if raw else None
         results[review_id_of(r)] = {
             "address": addr,
             "result": "hit" if hit else "miss",
@@ -211,7 +211,7 @@ def verdict_panel(r, changed, tm_res):
     prov = r.get("provenance") or {}
 
     def row(k, v):
-        return "<tr><td>%s</td><td>%s</td></tr>" % (k, v)
+        return "<tr><td>{}</td><td>{}</td></tr>".format(k, v)
 
     # H4119 P0: the SENSE's own evidence is `row['evidence']`; `supports_senses` is a
     # LEMMA roll-up shared by every sense of this key1 and must be labelled as such.
@@ -223,9 +223,9 @@ def verdict_panel(r, changed, tm_res):
         if not items:
             return "— (у этого значения собственных свидетельств нет)"
         return "; ".join(
-            "<b>%s</b> — %s%s" % (
+            "<b>{}</b> — {}{}".format(
                 e.get("source"), e.get("relation"),
-                (": «%s»" % e["gloss_ref"]) if e.get("gloss_ref") else "")
+                (": «{}»".format(e["gloss_ref"])) if e.get("gloss_ref") else "")
             for e in items)
     bits = ["<h4>Машинный вердикт и доказательства (не оценка человека)</h4>",
             "<table class=\"verdict\">"]
@@ -233,32 +233,31 @@ def verdict_panel(r, changed, tm_res):
                     " · сегментация H3948: key1 вне изменённого набора (%d key1)"
                     % len(changed)))
     bits.append(row("Устойчивая идентичность",
-                    "<code>%s</code> (печатный омоним h=%s, sense_tag=%s)"
-                    % (r.get("subcard"), r.get("h"), r.get("sense_tag"))))
+                    "<code>{}</code> (печатный омоним h={}, sense_tag={})".format(r.get("subcard"), r.get("h"), r.get("sense_tag"))))
     bits.append(row("Печатная страница", str(r.get("page") or "н/д")))
     bits.append(row("Свидетельства ЭТОГО значения (по-сенсовые)", _ev_html(sense_ev)))
     bits.append(row("Сводка по ЛЕММЕ (не по значению; общая для всех значений "
                     "этого key1)",
-                    ("поддержали ≥1 значение леммы: %s" % ", ".join(supports))
+                    ("поддержали ≥1 значение леммы: {}".format(", ".join(supports)))
                     if supports else "—"))
     bits.append(row("Молчащие источники (уровень леммы)",
                     ", ".join(silent) if silent else "—"))
     bits.append(row("Противоречия корпусов", "нет" if not es.get("contradicts")
                     else json.dumps(es.get("contradicts"), ensure_ascii=False)))
     bits.append(row("Генерация (провенанс)",
-                    "%s · %s · %s" % (prov.get("model_version") or prov.get("model"),
+                    "{} · {} · {}".format(prov.get("model_version") or prov.get("model"),
                                       prov.get("generator"),
                                       prov.get("generated_at"))))
     bits.append(row("TM-адрес источника",
-                    "<code>%s…</code>" % (tm_res["address"] or "—")[:44]))
+                    "<code>{}…</code>".format((tm_res["address"] or "—")[:44])))
     bits.append(row("Результат TM-lookup",
-                    ("HIT — переиспользуется без вызова провайдера (trust=%s, "
-                     "policy=%s, denylist применён)" % (tm_res["trust_level"],
+                    ("HIT — переиспользуется без вызова провайдера (trust={}, "
+                     "policy={}, denylist применён)".format(tm_res["trust_level"],
                                                         tm_res["reuse_policy"]))
                     if tm_res["result"] == "hit" else
                     "miss (карточка не в TM этого контура)"))
-    bits.append(row("Дайджест содержимого", "<code>%s</code>" % g5.card_digest(
-        r.get("ru") or "", r.get("de") or "")))
+    bits.append(row("Дайджест содержимого", "<code>{}</code>".format(g5.card_digest(
+        r.get("ru") or "", r.get("de") or ""))))
     bits.append("</table>")
     return "".join(bits)
 
@@ -276,7 +275,7 @@ def disable_voting(doc):
 def cmd_build(args):
     store_p = resolve_store(args.store)
     if not os.path.exists(store_p):
-        raise SystemExit("store not found: %s" % store_p)
+        raise SystemExit("store not found: {}".format(store_p))
     store_sha = sha256_of(store_p)
     rows = load_store(store_p)
     changed, records = changed_key_set()
@@ -333,8 +332,7 @@ def cmd_build(args):
         "footer": ("Пакет доказательств H4056: печатный русский вид слева от "
                    "немецкого источника, машинные вердикты и TM-lookup на каждой "
                    "карточке. Управление голосованием отключено; любой экспорт "
-                   "этого листа не имеет производственного маршрута (gate %s)."
-                   % GATE),
+                   "этого листа не имеет производственного маршрута (gate {}).".format(GATE)),
         "approve_label": "н/д", "reject_label": "н/д",
         "filters": [(s, g5._stratum_ru(s)) for s in strata],
         "facets": facets,
@@ -446,7 +444,7 @@ def cmd_replay(args):
     lock = read_lock(sheet_id)
     check(lock is not None and lock["content_hash"] == chash,
           "committed lock binds the packet generation")
-    check(lock.get("gate") == GATE, "lock gate is %s (no production route)" % GATE)
+    check(lock.get("gate") == GATE, "lock gate is {} (no production route)".format(GATE))
 
     prod_sha_before = sha256_of(store_p)
     scratch = tempfile.mkdtemp(prefix="h4056_replay_")
@@ -477,7 +475,7 @@ def cmd_replay(args):
     # Three synthetic exports: approve / reject / defer, one third each.
     decisions = (["approve"] * 3 + ["reject"] * 3 + ["defer"] * (len(ids) - 6))
     items = [{"id": rid, "decision": d,
-              "note": "scratch-replay (%s)" % d if d == "reject" else ""}
+              "note": "scratch-replay ({})".format(d) if d == "reject" else ""}
              for rid, d in zip(ids, decisions)]
     good = _export(os.path.join(scratch, "decisions_good.json"),
                    sheet_id, chash, items)
@@ -488,7 +486,7 @@ def cmd_replay(args):
         rc_park = apply_decisions.main([good, "--locks-dir", locks_dir])
     finally:
         os.environ.pop("PWG_RU_STORE", None)
-    check(rc_park == 2, "default route PARKS (gate %s, rc=2, nothing written)" % GATE)
+    check(rc_park == 2, "default route PARKS (gate {}, rc=2, nothing written)".format(GATE))
 
     # 2. explicit G5 route in scratch: validate → merge → run_batch validate_review.
     os.environ["PWG_RU_STORE"] = store_copy
@@ -525,7 +523,7 @@ def cmd_replay(args):
     check(sha256_of(store_p) == prod_sha_before,
           "canonical store byte-identical after the replay")
     check(scratch.startswith(tempfile.gettempdir()),
-          "replay ran entirely in scratch (%s)" % scratch)
+          "replay ran entirely in scratch ({})".format(scratch))
 
     receipt = {
         "schema": "h4056-scratch-replay-receipt/v1",
@@ -544,7 +542,7 @@ def cmd_replay(args):
     with io.open(RECEIPT_PATH, "w", encoding="utf-8", newline="\n") as fh:
         json.dump(receipt, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
-    print("receipt -> %s" % RECEIPT_PATH)
+    print("receipt -> {}".format(RECEIPT_PATH))
     if not receipt["all_passed"]:
         return 1
     return 0
@@ -624,7 +622,7 @@ def _selftest():
         finally:
             if env is not None:
                 os.environ["PWG_RU_STORE"] = env
-        check(rc == 2, "an export bound to a %s lock parks (rc=2)" % GATE)
+        check(rc == 2, "an export bound to a {} lock parks (rc=2)".format(GATE))
 
     # 3. a stale-hash export is refused by the validator.
     with tempfile.TemporaryDirectory() as td:

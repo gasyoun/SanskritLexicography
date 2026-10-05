@@ -103,8 +103,7 @@ def legacy_report(rows):
         return int(allv[int((len(allv) - 1) * p)])
     print('\noverall (all %d calls): min=%d  p50=%d  p90=%d  max=%d  mean=%d  stdev=%d'
           % (len(ys), min(ys), pct(0.5), pct(0.9), max(ys), int(st.mean(ys)), int(st.pstdev(ys))))
-    print('input-bytes vs latency:  Pearson r=%.3f   OLS slope=%.3f ms/byte   R^2=%.3f'
-          % (r, slope, r2))
+    print('input-bytes vs latency:  Pearson r={:.3f}   OLS slope={:.3f} ms/byte   R^2={:.3f}'.format(r, slope, r2))
     print('ceiling breach (>%d ms): %d/%d = %.0f%% of calls'
           % (CEILING, len(over), len(rows), 100 * len(over) / len(rows)))
 
@@ -137,7 +136,7 @@ def decision_report(rows, ceiling, foreign_route, home_route, causality_ratio):
     fwins = sorted(w for (r, w) in stats if r == foreign_route)
     print('\n=== (A) FOREIGN OPERATIONAL READINESS (foreign satisfies the latency rule) ===')
     if not fwins:
-        print('  no foreign-route (%r) windows found -- cannot evaluate.' % foreign_route)
+        print('  no foreign-route ({!r}) windows found -- cannot evaluate.'.format(foreign_route))
         readiness = None
     else:
         tot = sum(stats[(foreign_route, w)]['n'] for w in fwins)
@@ -172,8 +171,7 @@ def decision_report(rows, ceiling, foreign_route, home_route, causality_ratio):
             print('  window %s: foreign median=%d ms vs home median=%d ms  ratio=%.2f  delta=%d ms  %s'
                   % (w, fm, hm, ratio, hm - fm,
                      'materially faster' if materially else 'not materially faster'))
-        print('  --> ROUTE CAUSALITY: %s (threshold ratio <= %.2f in every window)'
-              % ('SUGGESTED' if faster_all else 'INCONCLUSIVE', causality_ratio))
+        print('  --> ROUTE CAUSALITY: {} (threshold ratio <= {:.2f} in every window)'.format('SUGGESTED' if faster_all else 'INCONCLUSIVE', causality_ratio))
 
     print('\nNOTE: a diagnostic PASS is NOT a production GO -- provisioning 4 profiles and the '
           'bounded arvant + 1->10->20->100 acceptance is a SEPARATE gate.')

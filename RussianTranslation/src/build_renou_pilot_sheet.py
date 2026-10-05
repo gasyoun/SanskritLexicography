@@ -38,7 +38,7 @@ import re
 import sys
 
 from csl_pyutil import render_review_sheet
-from sheet_screening import screening_block  # noqa: E402
+from sheet_screening import screening_block
 from review_binding import stamp, write_lock
 from review_sheet_standard import pwg_entry_href, standard_config
 
@@ -85,21 +85,21 @@ def render_ls_citations(cites):
         return '<div class="muted">no resolved &lt;ls&gt; citations recovered</div>'
     rows = []
     for c in cites:
-        rows.append('<li><b>%s</b> — %s (state %s%s)</li>' % (
+        rows.append('<li><b>{}</b> — {} (state {}{})</li>'.format(
             esc(c.get('siglum')), esc(c.get('name')), esc(c.get('state')),
-            ', date %s' % c['date'] if c.get('date') is not None else ''))
-    return '<ul class="cites" style="margin:0;padding-left:18px">%s</ul>' % ''.join(rows)
+            ', date {}'.format(c['date']) if c.get('date') is not None else ''))
+    return '<ul class="cites" style="margin:0;padding-left:18px">{}</ul>'.format(''.join(rows))
 
 
 def _text_row(t, contested):
     hit = t.get('state') == contested
     style = 'background:rgba(122,162,247,.18);border-radius:4px;padding:0 4px;' if hit else ''
     regs = ' · '.join(t.get('registers') or ())
-    return ('<li style="%s"><b>%s</b> (%s) — state %s, conf %s%s</li>' % (
+    return ('<li style="{}"><b>{}</b> ({}) — state {}, conf {}{}</li>'.format(
         style, esc(t.get('text')),
         esc(t['date']) if t.get('date') is not None else '?',
         esc(t.get('state') or '?'), esc(t.get('conf')),
-        ' · %s' % esc(regs) if regs else ''))
+        ' · {}'.format(esc(regs)) if regs else ''))
 
 
 def render_state_texts(texts, contested, provenance):
@@ -107,10 +107,9 @@ def render_state_texts(texts, contested, provenance):
     hits = [t for t in (texts or []) if t.get('state') == contested]
     if not hits:
         prov = '+'.join((provenance or {}).get(contested, [])) or 'none'
-        return ('<div class="muted">no DCS text of state %s attests this lemma — '
-                'the state rests on: %s</div>' % (esc(contested), esc(prov)))
-    return ('<ul style="margin:0;padding-left:18px">%s</ul>'
-            % ''.join(_text_row(t, contested) for t in hits))
+        return ('<div class="muted">no DCS text of state {} attests this lemma — '
+                'the state rests on: {}</div>'.format(esc(contested), esc(prov)))
+    return ('<ul style="margin:0;padding-left:18px">{}</ul>'.format(''.join(_text_row(t, contested) for t in hits)))
 
 
 def render_all_texts(texts, contested):
@@ -119,7 +118,7 @@ def render_all_texts(texts, contested):
         return '<div class="muted">lemma not attested in the DCS corpus</div>'
     body = ''.join(_text_row(t, contested) for t in texts)
     return ('<div style="max-height:220px;overflow-y:auto">'
-            '<ul style="margin:0;padding-left:18px">%s</ul></div>' % body)
+            '<ul style="margin:0;padding-left:18px">{}</ul></div>'.format(body))
 
 
 def render_register_layer(rows, code):
@@ -132,14 +131,13 @@ def render_register_layer(rows, code):
         out.append('<div class="muted">PWG sibling profile — the layer reads '
                    'pwg.txt citations; PW condenses PWG</div>')
     for r in rows:
-        hom = ' &lt;h&gt;%s' % esc(r['hom']) if r.get('hom') else ''
+        hom = ' &lt;h&gt;{}'.format(esc(r['hom'])) if r.get('hom') else ''
         lex = (' · <b style="color:#e0af68">lexicon-only</b>'
                if r.get('lexicon_only') == '1' else '')
         out.append(
-            '<div style="margin-top:4px">L%s%s: register <b>%s</b> · earliest '
-            '<b>%s</b> · periods %s%s</div>'
-            '<div class="muted">genres: %s · %s citations · sources: %s</div>'
-            % (esc(r['L_id']), hom, esc(r['register'] or '—'),
+            '<div style="margin-top:4px">L{}{}: register <b>{}</b> · earliest '
+            '<b>{}</b> · periods {}{}</div>'
+            '<div class="muted">genres: {} · {} citations · sources: {}</div>'.format(esc(r['L_id']), hom, esc(r['register'] or '—'),
                esc(r['earliest_period'] or '—'),
                esc(r['periods'] or '—'), lex,
                esc(r['genres'] or '—'), esc(r['n_citations']),
@@ -166,25 +164,23 @@ def to_csl_pyutil_item(item, evidence, v1_notes):
     key2 = esc(item.get('headword_key2'))
     cstate = esc(item['contested_state'])
     cstate_name = esc(STATE_NAME.get(item['contested_state'], item['contested_state']))
-    enriched = ' '.join('<span class="chip">%s</span>' % esc(s)
+    enriched = ' '.join('<span class="chip">{}</span>'.format(esc(s))
                         for s in (item.get('renou_enriched') or [])) or '<span class="muted">none</span>'
     prov = item.get('renou_provenance') or {}
-    prov_chips = ' '.join('<span class="chip">%s: %s</span>' % (esc(st), esc('+'.join(prov[st])))
+    prov_chips = ' '.join('<span class="chip">{}: {}</span>'.format(esc(st), esc('+'.join(prov[st])))
                           for st in ('I', 'II', 'III', 'IV', 'V') if st in prov) \
         or '<span class="muted">none</span>'
-    question = ('Is state <b>%s</b> (%s) justified for <b>%s</b>?'
+    question = ('Is state <b>{}</b> ({}) justified for <b>{}</b>?'
                 '<div class="muted" style="margin-top:4px;font-weight:normal">'
-                'Evidence that counts for %s: %s</div>'
-                % (cstate, cstate_name, hw, cstate,
+                'Evidence that counts for {}: {}</div>'.format(cstate, cstate_name, hw, cstate,
                    esc(STATE_CRITERION.get(item['contested_state'], ''))))
 
     texts = evidence.get('lemmas', {}).get(item.get('headword_iast') or '', [])
     panels = [
         ('key2 / renou signal',
-         '<div>key2: %s</div><div style="margin-top:6px">%s</div><div style="margin-top:6px">%s</div>'
-         % (key2, enriched, prov_chips)),
+         '<div>key2: {}</div><div style="margin-top:6px">{}</div><div style="margin-top:6px">{}</div>'.format(key2, enriched, prov_chips)),
         ('Resolved <ls> citations', render_ls_citations(item.get('resolved_ls_citations'))),
-        ('DCS texts for state %s' % item['contested_state'],
+        ('DCS texts for state {}'.format(item['contested_state']),
          render_state_texts(texts, item['contested_state'], prov)),
         ('Full DCS attestation (%d texts)' % len(texts),
          render_all_texts(texts, item['contested_state'])),
@@ -198,8 +194,7 @@ def to_csl_pyutil_item(item, evidence, v1_notes):
     if item['item_id'] in v1_notes:
         dec, note = v1_notes[item['item_id']]
         panels.append(('Prior vote — v1 sheet, 19-07-2026 (superseded)',
-                       '<div><b>%s</b></div><div class="muted" style="white-space:pre-wrap">%s</div>'
-                       % (esc(dec), esc(note))))
+                       '<div><b>{}</b></div><div class="muted" style="white-space:pre-wrap">{}</div>'.format(esc(dec), esc(note))))
     out = {
         'id': item['item_id'],
         'filt': item['stratum'],
@@ -234,7 +229,7 @@ def main():
         elif a == '--out':
             out_path = args[i + 1]; i += 2
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
 
     rows = [json.loads(line) for line in open(sample_path, encoding='utf-8') if line.strip()]
     evidence = json.load(open(evidence_path, encoding='utf-8'))
@@ -262,7 +257,7 @@ def main():
     # chips I-V; panels are IAST/Latin only). No rating config: this is an
     # approve/reject/defer hypothesis sheet, not a DA translation-quality one.
     config.update(standard_config(
-        save_as='RussianTranslation\\review\\%s_decisions.json' % SHEET_ID))
+        save_as='RussianTranslation\\review\\{}_decisions.json'.format(SHEET_ID)))
     doc = render_review_sheet(items, config, extras=True,
                                    screening=screening_block(
                                        deterministic=0, lookup=0, agent=0,

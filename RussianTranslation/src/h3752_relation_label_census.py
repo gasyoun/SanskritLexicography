@@ -37,8 +37,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from store_path import canonical_store, main_worktree_root      # noqa: E402
-from edition_rel import (                                       # noqa: E402
+from store_path import canonical_store, main_worktree_root
+from edition_rel import (
     SENSE_ASSERTING, build_pwg_gender_index, build_pwg_sense_index,
     edition_rel_for_row, pwg_correction_marker, unplaced_name,
 )
@@ -251,12 +251,12 @@ def selftest():
     check(c["by_mode"]["C_found"] == 1,
           "mode C counted: %d" % c["by_mode"]["C_found"])
     check(c["relabel"]["restate"] == 2,
-          "both unplaced restates relabel: %r" % dict(c["relabel"]))
+          "both unplaced restates relabel: {!r}".format(dict(c["relabel"])))
     check("sch_star" not in c["relabel"],
-          "an additive subtype is never relabelled: %r" % dict(c["relabel"]))
+          "an additive subtype is never relabelled: {!r}".format(dict(c["relabel"])))
     # the census keys on the BASE name, so it reads the same before and after
     check(c["by_subtype"]["restate"] == 3,
-          "subtype census uses the base name: %r" % dict(c["by_subtype"]))
+          "subtype census uses the base name: {!r}".format(dict(c["by_subtype"])))
     check(abs(divergence(4132, 4132) - 1.0) < 1e-9, "divergence of equals is 1")
     check(divergence(8264, 4132) == 2.0, "a doubled population diverges 2x")
     check(divergence(2066, 4132) == 2.0, "a halved population diverges 2x too")
@@ -266,7 +266,7 @@ def selftest():
     ] + recs[:3])
     check(carried == 1, "only rows carrying edition_rel are counted: %d" % carried)
     check(len(changed) == 1 and changed[0]["subtype_after"] == "restate_unplaced",
-          "a stored stale label is reported for the ledger: %r" % changed)
+          "a stored stale label is reported for the ledger: {!r}".format(changed))
 
     print("h3752_relation_label_census selftest:", "PASS" if ok else "FAIL")
     return 0 if ok else 1
@@ -297,7 +297,7 @@ def main():
     if a.report:
         with io.open(a.report, "w", encoding="utf-8", newline="\n") as fh:
             fh.write("```\n" + text + "\n```\n")
-        print("wrote %s" % a.report)
+        print("wrote {}".format(a.report))
     return 0
 
 

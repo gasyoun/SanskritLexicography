@@ -49,9 +49,9 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from promote_final_cards import SYNTHETIC_KEY_RE, TN_RE  # noqa: E402  C-01 single source
-import marker_scan  # noqa: E402  H2253 — one marker/{Tn} scope definition, two gates
-from execution_contract import PRODUCTION_HARD_TIMEOUT_MS  # noqa: E402  H2254 one ceiling
+from promote_final_cards import SYNTHETIC_KEY_RE, TN_RE
+import marker_scan
+from execution_contract import PRODUCTION_HARD_TIMEOUT_MS
 
 RECEIPT_SCHEMA = 'pwg.canary_gate_receipt.v1'
 # H2254: the fields a bounded live proof must be able to answer FROM ITS OWN ARTIFACT.
@@ -96,12 +96,12 @@ def judge_payload(res, expect_senses=DEFAULT_EXPECT_SENSES):
         key = row.get('key') or '<missing-key>'
         keys.append(key)
         if not SYNTHETIC_KEY_RE.search(key):
-            reasons.append('%s: NOT a synthetic-control key — refusing to judge a real '
-                           'window as a canary' % key)
+            reasons.append('{}: NOT a synthetic-control key — refusing to judge a real '
+                           'window as a canary'.format(key))
             continue
         card = row.get('card')
         if not card:
-            reasons.append('%s: null card' % key)
+            reasons.append('{}: null card'.format(key))
             continue
         # H2253 (#1073): both scopes now come from ``marker_scan`` — the sibling
         # ci_gate_runner carried the identical whole-card scan and kept failing this
@@ -127,11 +127,10 @@ def judge_payload(res, expect_senses=DEFAULT_EXPECT_SENSES):
         hits = marker_scan.tn_hits(card)
         if hits:
             tn_hits.append((key, hits[:5]))
-            reasons.append('%s: unresolved TNMASK placeholder(s): %s'
-                           % (key, ', '.join(hits[:5])))
+            reasons.append('{}: unresolved TNMASK placeholder(s): {}'.format(key, ', '.join(hits[:5])))
         for marker in marker_scan.marker_hits(card):
             marker_hits.append((key, marker))
-            reasons.append('%s: literal %s marker in card' % (key, marker))
+            reasons.append('{}: literal {} marker in card'.format(key, marker))
     facts = {'keys': keys, 'sense_counts': sense_counts,
              'tn_hits': tn_hits, 'marker_hits': marker_hits}
     return ('GO' if not reasons else 'NO-GO'), reasons, facts
@@ -140,7 +139,7 @@ def judge_payload(res, expect_senses=DEFAULT_EXPECT_SENSES):
 def _atomic_write_json(path, payload):
     directory = os.path.dirname(os.path.abspath(path)) or '.'
     os.makedirs(directory, exist_ok=True)
-    fd, tmp = tempfile.mkstemp(prefix='.%s.' % os.path.basename(path),
+    fd, tmp = tempfile.mkstemp(prefix='.{}.'.format(os.path.basename(path)),
                                suffix='.tmp', dir=directory)
     try:
         with os.fdopen(fd, 'w', encoding='utf-8', newline='\n') as fh:
@@ -301,9 +300,9 @@ def cmd_judge(args):
     receipt['evidence'] = collect_evidence(res, args)
     if args.receipt:
         _atomic_write_json(args.receipt, receipt)
-    print('CANARY %s%s' % (verdict, ' -> %s' % args.receipt if args.receipt else ''))
+    print('CANARY {}{}'.format(verdict, ' -> {}'.format(args.receipt) if args.receipt else ''))
     for reason in reasons:
-        print('  - %s' % reason)
+        print('  - {}'.format(reason))
     return 0 if verdict == 'GO' else 2
 
 
@@ -311,7 +310,7 @@ def load_receipt(path):
     with open(path, encoding='utf-8') as fh:
         receipt = json.load(fh)
     if receipt.get('schema') != RECEIPT_SCHEMA:
-        raise ValueError('not a %s receipt: %s' % (RECEIPT_SCHEMA, path))
+        raise ValueError('not a {} receipt: {}'.format(RECEIPT_SCHEMA, path))
     return receipt
 
 
@@ -321,12 +320,10 @@ def enforce(receipt_path, max_age_seconds=DEFAULT_MAX_AGE_SECONDS, only_profile=
     try:
         receipt = load_receipt(receipt_path)
     except (OSError, ValueError, json.JSONDecodeError) as exc:
-        raise SystemExit('canary gate: cannot read a GO receipt at %s (%s) — run '
-                         '/pwg-live-gate step 2 then `canary_gate.py judge` (H2159)'
-                         % (receipt_path, exc))
+        raise SystemExit('canary gate: cannot read a GO receipt at {} ({}) — run '
+                         '/pwg-live-gate step 2 then `canary_gate.py judge` (H2159)'.format(receipt_path, exc))
     if receipt.get('verdict') != 'GO':
-        raise SystemExit('canary gate: receipt verdict is %r, not GO: %s'
-                         % (receipt.get('verdict'), '; '.join(receipt.get('reasons') or [])))
+        raise SystemExit('canary gate: receipt verdict is {!r}, not GO: {}'.format(receipt.get('verdict'), '; '.join(receipt.get('reasons') or [])))
     age = time.time() - float(receipt.get('judged_at_epoch') or 0)
     if age < 0 or age > max_age_seconds:
         raise SystemExit('canary gate: GO receipt is %.0f s old (max %d) — a paid window '
@@ -334,9 +331,8 @@ def enforce(receipt_path, max_age_seconds=DEFAULT_MAX_AGE_SECONDS, only_profile=
                          % (age, max_age_seconds))
     receipt_profile = receipt.get('profile_slot')
     if only_profile and receipt_profile and receipt_profile != only_profile:
-        raise SystemExit('canary gate: receipt is for profile %r, this run is '
-                         '--only-profile %r — gate the SAME profile you spend on'
-                         % (receipt_profile, only_profile))
+        raise SystemExit('canary gate: receipt is for profile {!r}, this run is '
+                         '--only-profile {!r} — gate the SAME profile you spend on'.format(receipt_profile, only_profile))
     return receipt
 
 

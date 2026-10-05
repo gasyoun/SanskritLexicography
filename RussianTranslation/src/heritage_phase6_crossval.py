@@ -165,7 +165,7 @@ def heritage_fetch(sl: str) -> str:
         with urllib.request.urlopen(req, timeout=90) as r:
             body = r.read().decode("utf-8", "replace")
             status, final = r.status, r.geturl()
-    except Exception as e:  # noqa: BLE001
+    except Exception as e:
         body = f"__ERROR__ {e.__class__.__name__}: {e}"
         status, final = -1, url
     _LAST_HIT[0] = time.time()

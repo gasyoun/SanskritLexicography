@@ -23,8 +23,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import corpus_gate as cg  # noqa: E402
-from rt_io import write_jsonl  # noqa: E402
+import corpus_gate as cg
+from rt_io import write_jsonl
 
 
 def _reset_index():

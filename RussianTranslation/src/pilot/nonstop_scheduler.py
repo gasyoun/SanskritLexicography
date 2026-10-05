@@ -46,10 +46,10 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-import data_root as dr                     # noqa: E402
-import lane_guard                          # noqa: E402
-import lane_spotcheck_tick                 # noqa: E402
-import profile_lane                        # noqa: E402
+import data_root as dr
+import lane_guard
+import lane_spotcheck_tick
+import profile_lane
 
 SCHEMA = 'pwg.scheduler_tick.v1'
 
@@ -97,11 +97,11 @@ def next_weekly_reset(now, day='MON', hour=0):
 def iso_week(ts):
     t = time.gmtime(ts)
     y, w, _ = time.strftime('%G %V %u', t).split()
-    return '%s-W%s' % (y, w)
+    return '{}-W{}'.format(y, w)
 
 
 def pause_path(gatelogs_dir, lane):
-    return os.path.join(gatelogs_dir, 'lane_pause_%s.json' % lane)
+    return os.path.join(gatelogs_dir, 'lane_pause_{}.json'.format(lane))
 
 
 def paused_until(gatelogs_dir, lane):
@@ -170,7 +170,7 @@ def _window_cost(calls_ledger_path):
         with open(calls_ledger_path, encoding='utf-8') as f:
             ledger = json.load(f)
     except (OSError, ValueError) as exc:
-        return None, [], 'unreadable reservation ledger (%s: %s)' % (
+        return None, [], 'unreadable reservation ledger ({}: {})'.format(
             type(exc).__name__, str(exc)[:120])
     rows = ledger.get('calls') or []
     cost = 0.0
@@ -210,7 +210,7 @@ class Runners:
         """Path of a fresh GO receipt for the profile, or None. Production: reuse a
         fresh receipt from gatelogs/, else run --canary-cmd when configured."""
         path = os.path.join(self.cfg['gatelogs_dir'],
-                            'canary_receipt_%s.json' % profile)
+                            'canary_receipt_{}.json'.format(profile))
         try:
             rec = json.load(open(path, encoding='utf-8'))
             age = now_epoch() - float(rec.get('judged_at_epoch') or 0)
@@ -236,17 +236,17 @@ class Runners:
         --execute with the H2157 ceilings + H2159 receipt + auto-promote trial."""
         cfg = self.cfg
         checkpoint = os.path.join(cfg['manifests_dir'],
-                                  'sched_%s.checkpoint.json' % cfg['lane'])
+                                  'sched_{}.checkpoint.json'.format(cfg['lane']))
         cmd = [sys.executable, os.path.join(HERE, 'bounded_staged_run.py'),
                '--plan', cfg['plan'], '--data-root', cfg['data_root'],
                '--coordinator', os.path.join(HERE, 'coordinator.py'),
                '--cwd', HERE, '--events',
-               os.path.join(cfg['gatelogs_dir'], 'sched_%s.events.jsonl' % cfg['lane']),
+               os.path.join(cfg['gatelogs_dir'], 'sched_{}.events.jsonl'.format(cfg['lane'])),
                '--checkpoint', checkpoint,
                '--execute', '--only-profile', profile,
                '--max-windows', '1',
                '--max-calls', str(cfg.get('max_calls', 40)),
-               '--cost-ceiling', '%.4f' % remaining_budget,
+               '--cost-ceiling', '{:.4f}'.format(remaining_budget),
                '--canary-receipt', receipt]
         if cfg.get('auto_promote_until'):
             cmd += ['--auto-promote-until', cfg['auto_promote_until']]
@@ -279,7 +279,7 @@ def tick(cfg, runners):
     record = {'schema': SCHEMA, 'lane': lane, 'tick_id': uuid.uuid4().hex[:12],
               'ts': int(started), 'week': iso_week(started), 'verdict': None}
     ledger_path = os.path.join(cfg['telemetry_dir'],
-                               'scheduler_ticks_%s.jsonl' % lane)
+                               'scheduler_ticks_{}.jsonl'.format(lane))
 
     def done(verdict, reason=None, **extra):
         record['verdict'] = verdict
@@ -288,8 +288,7 @@ def tick(cfg, runners):
         record.update(extra)
         record['elapsed_s'] = round(now_epoch() - started, 1)
         append_tick(ledger_path, record)
-        runners.commit_telemetry('telemetry(%s): tick %s %s'
-                                 % (lane, record['tick_id'], verdict))
+        runners.commit_telemetry('telemetry({}): tick {} {}'.format(lane, record['tick_id'], verdict))
         return record
 
     # 1. frozen lane (R4.1) — other lanes' schedulers are untouched by this file
@@ -342,9 +341,8 @@ def tick(cfg, runners):
             fresh = lane_spotcheck_tick.fresh_spotcheck(cfg['telemetry_dir'])
             if not fresh:
                 return done('skip', 'no_fresh_spotcheck_auto_promote_refused',
-                            hint='run lane_spotcheck_tick.py --lane %s daily; '
-                                 'auto-promote is gated on live R4.1 surveillance'
-                                 % lane)
+                            hint='run lane_spotcheck_tick.py --lane {} daily; '
+                                 'auto-promote is gated on live R4.1 surveillance'.format(lane))
             record['spotcheck'] = os.path.basename(fresh)
         # 6. the bounded window
         code, cost, rows, unevaluable = runners.bounded_run(profile, receipt, remaining)
@@ -361,7 +359,7 @@ def tick(cfg, runners):
             reset = next_weekly_reset(started, cfg.get('reset_day', 'MON'),
                                       cfg.get('reset_hour', 0))
             write_pause(cfg['gatelogs_dir'], lane, reset,
-                        'window_cost_unevaluable — %s' % unevaluable)
+                        'window_cost_unevaluable — {}'.format(unevaluable))
             return done('window_failed', 'window_cost_unevaluable_stop_closed',
                         paused_until=int(reset), week_spent_usd=spent)
         # 7. §270 quota-hang classification -> pause until the next weekly reset
@@ -377,9 +375,9 @@ def tick(cfg, runners):
         # A timed-out probe/canary/window is a RECORDED failure, never a silent gap.
         return done('window_failed', 'runner_timeout',
                     failed_step=_step_of(exc), timeout_s=getattr(exc, 'timeout', None))
-    except Exception as exc:                      # noqa: BLE001 — record, never vanish
+    except Exception as exc:
         return done('window_failed', 'runner_exception',
-                    exception='%s: %s' % (type(exc).__name__, str(exc)[:300]))
+                    exception='{}: {}'.format(type(exc).__name__, str(exc)[:300]))
 
 
 def _step_of(exc):
@@ -619,8 +617,7 @@ def selftest():
                  "'profile': sys.argv[2]}, open(sys.argv[1], 'w'))"
                  % int(now_epoch()))
         cfg_sp = dict(cfg, gatelogs_dir=gs,
-                      canary_cmd='%s -c %s {receipt} {profile}'
-                                 % (json.dumps(sys.executable), json.dumps(wcode)))
+                      canary_cmd='{} -c {} {{receipt}} {{profile}}'.format(json.dumps(sys.executable), json.dumps(wcode)))
         rc = Runners(cfg_sp).canary_receipt('c 4')
         assert rc and os.path.exists(rc), rc
         rec_sp = json.load(open(rc, encoding='utf-8'))

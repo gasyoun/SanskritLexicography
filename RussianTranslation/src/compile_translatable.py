@@ -229,10 +229,10 @@ def to_md(man):
     for u in man['units']:
         if u['layer'] != cur:
             cur = u['layer']
-            L += ['', '## %s' % cur, '',
+            L += ['', '## {}'.format(cur), '',
                   '| ref | lang | to translate | keep |', '|---|---|---|---|']
         keep = ' · '.join(u['keep'])[:60]
-        L.append('| %s | %s | %s | %s |' % (
+        L.append('| {} | {} | {} | {} |'.format(
             u['ref'][:32], ','.join(u['lang']),
             u['text'].replace('|', '\\|')[:120], keep.replace('|', '\\|')))
     return '\n'.join(L) + '\n'
@@ -300,7 +300,7 @@ def run_all(emit_md=False):
         rep.append('| %s | %d | %d |' % (l, lang_units.get(l, 0), cards_with.get(l, 0)))
     if errors:
         rep += ['', '## errors (first 30)', '']
-        rep += ['- `%s` — %s' % (k, e) for k, e in errors[:30]]
+        rep += ['- `{}` — {}'.format(k, e) for k, e in errors[:30]]
     open(os.path.join(OUT, '_SUMMARY.md'), 'w', encoding='utf-8').write('\n'.join(rep) + '\n')
     print('\n'.join(l for l in rep if not l.startswith('|') or l.startswith('| lang')))
     print('  wrote %d manifests -> %s  (summary: _SUMMARY.md)'

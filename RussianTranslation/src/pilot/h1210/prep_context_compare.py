@@ -78,14 +78,14 @@ for _path in (HERE, PILOT, SRC):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-import det_gate                                              # noqa: E402
-import prep_pack                                             # noqa: E402
-import pwg_mask                                              # noqa: E402
-from sense_count import count_source_senses                  # noqa: E402
-from call_reservation import (                               # noqa: E402
+import det_gate
+import prep_pack
+import pwg_mask
+from sense_count import count_source_senses
+from call_reservation import (
     CallLimitReached, CallReservationLedger, telemetry_from_cli_wrapper,
     unevaluable_telemetry)
-from headless_worker import (                                # noqa: E402
+from headless_worker import (
     bare_cli_cwd, build_fragment_prompt, build_prompt, card_by_key, card_token_multiset,
     claude_argv_prefix, parse_cli_wrapper, structured_from_wrapper, token_multiset)
 
@@ -259,7 +259,7 @@ def atomic_json(path: str, value) -> str:
     if os.path.exists(path):
         with open(path, encoding='utf-8') as handle:
             if handle.read() != encoded:
-                raise FenceFailure('immutable artifact would change: %s' % path)
+                raise FenceFailure('immutable artifact would change: {}'.format(path))
         return path
     tmp = path + '.tmp'
     with open(tmp, 'w', encoding='utf-8', newline='\n') as handle:
@@ -517,12 +517,12 @@ def arm_prompts(manifest: dict, key: str, context: dict, card: dict | None = Non
     """(arm A, arm B). A is production, untouched; B is A plus exactly one PREP block."""
     prompt_a = production_prompt(manifest, card or {}, key)
     if PREP_OPEN in prompt_a or PREP_CLOSE in prompt_a:
-        raise FenceFailure('production prompt already contains a PREP delimiter for %r' % key)
+        raise FenceFailure('production prompt already contains a PREP delimiter for {!r}'.format(key))
     prompt_b = prompt_a + context_block(context)
     if not prompt_b.startswith(prompt_a):
-        raise FenceFailure('arm B is not a byte-exact extension of arm A for %r' % key)
+        raise FenceFailure('arm B is not a byte-exact extension of arm A for {!r}'.format(key))
     if prompt_b.count(PREP_OPEN) != 1 or prompt_b.count(PREP_CLOSE) != 1:
-        raise FenceFailure('arm B must carry exactly one PREP block for %r' % key)
+        raise FenceFailure('arm B must carry exactly one PREP block for {!r}'.format(key))
     return prompt_a, prompt_b
 
 
@@ -535,16 +535,16 @@ def load_contexts(context_dir: str, keys: list[str]) -> dict[str, dict]:
         try:
             from safe_filename import safe_name           # noqa: WPS433
             stem = safe_name(key)
-        except Exception:                                  # noqa: BLE001
+        except Exception:
             stem = key
-        path = os.path.join(context_dir, '%s.context.json' % stem)
+        path = os.path.join(context_dir, '{}.context.json'.format(stem))
         if not os.path.exists(path):
-            raise FenceFailure('sealed context missing for %r: %s' % (key, path))
+            raise FenceFailure('sealed context missing for {!r}: {}'.format(key, path))
         with open(path, encoding='utf-8') as handle:
             value = json.load(handle)
         prep_pack.verify_compact_context(value)            # schema + hash + TM fence
         if value.get('key1') != key:
-            raise FenceFailure('context key mismatch: %r carries %r' % (key, value.get('key1')))
+            raise FenceFailure('context key mismatch: {!r} carries {!r}'.format(key, value.get('key1')))
         out[key] = {'path': path, 'context': value}
     return out
 
@@ -573,7 +573,7 @@ def build_plan(manifest_path: str, context_dir: str, *, model: str = REQUIRED_MO
                lane: str = 'whole', pair_count: int = PAIR_COUNT) -> dict:
     """Seal the immutable plan. Carries no clock reading, so it replays byte-identically."""
     if lane not in LANES:
-        raise FenceFailure('unknown lane %r; expected one of %r' % (lane, list(LANES)))
+        raise FenceFailure('unknown lane {!r}; expected one of {!r}'.format(lane, list(LANES)))
     if not isinstance(pair_count, int) or not 1 <= pair_count <= PAIR_COUNT:
         raise FenceFailure('pair_count must be an int in 1..%d; a plan may shrink the '
                            'sample, never grow it past the ceiling this rig was '
@@ -657,7 +657,7 @@ def build_plan(manifest_path: str, context_dir: str, *, model: str = REQUIRED_MO
             'not run through the coordinator/profile lane, so it carries no profile slot. '
             'It is a measurement rig, never a bulk execution path.',
             'the manifest declares model claude-sonnet-5 as the LANE default; both arms '
-            'explicitly request %s and the returned model is attested per call.' % model,
+            'explicitly request {} and the returned model is attested per call.'.format(model),
         ],
         'go_rule': ('GO only if PREP loses at most one additional audited card AND improves '
                     'wall time or total non-cache tokens by more than 10%; otherwise NO-GO'),
@@ -691,7 +691,7 @@ def build_plan(manifest_path: str, context_dir: str, *, model: str = REQUIRED_MO
             'manifest schema is pwg.headless_execution_manifest.v1 (unbound): a measurement '
             'rig, never a bulk execution path.',
             'the manifest declares model claude-sonnet-5 as the LANE default; both arms '
-            'explicitly request %s and the returned model is attested per call.' % model,
+            'explicitly request {} and the returned model is attested per call.'.format(model),
         ]
     if pair_count != PAIR_COUNT:
         # Keyed the same way `lane` is, and for the same reason: a plan sealed at the default
@@ -728,7 +728,7 @@ def build_plan(manifest_path: str, context_dir: str, *, model: str = REQUIRED_MO
             'manifest schema is pwg.headless_execution_manifest.v1 (unbound): a measurement '
             'rig, never a bulk execution path.',
             'the manifest declares model claude-sonnet-5 as the LANE default; both arms '
-            'explicitly request %s and the returned model is attested per call.' % model,
+            'explicitly request {} and the returned model is attested per call.'.format(model),
         ]
         plan['fences'] = ['no deepseek call', 'no store/TM/promotion/default write',
                           'fuzzy TM hit is never exact-content reuse', 'no automatic retry',
@@ -758,8 +758,8 @@ def resolve_manifest(plan: dict, manifest_path: str | None = None) -> str:
         if candidate and os.path.exists(candidate):
             if sha256_file(candidate) != plan['manifest_sha256']:
                 raise FenceFailure(
-                    'manifest at %s does not match the sealed SHA-256 — these are different '
-                    'bytes, not a relocated file' % candidate)
+                    'manifest at {} does not match the sealed SHA-256 — these are different '
+                    'bytes, not a relocated file'.format(candidate))
             return candidate
     raise FenceFailure('sealed manifest not found; tried: %r' % [c for c in candidates if c])
 
@@ -770,7 +770,7 @@ def verify_plan_hash(plan: dict) -> None:
         {k: v for k, v in plan.items()
          if k not in ('plan_sha256', '__plan_file__')}))
     if claimed != recomputed:
-        raise FenceFailure('plan hash mismatch: sealed %r recomputed %r' % (claimed, recomputed))
+        raise FenceFailure('plan hash mismatch: sealed {!r} recomputed {!r}'.format(claimed, recomputed))
 
 
 # --------------------------------------------------------------------------- billing
@@ -815,14 +815,13 @@ def check(plan: dict, *, ledger_path: str, run_id: str, authorize_unknown_billin
         for key in plan['keys']:
             card = plan['cards'][key]
             if unit_parent(card, key) not in (manifest.get('inputs') or {}):
-                raise FenceFailure('key %r absent from the manifest inputs' % key)
+                raise FenceFailure('key {!r} absent from the manifest inputs'.format(key))
             if card['source_kind'] != 'execution_manifest':
-                raise FenceFailure('context for %r is not manifest-sourced: %r'
-                                   % (key, card['source_kind']))
+                raise FenceFailure('context for {!r} is not manifest-sourced: {!r}'.format(key, card['source_kind']))
             if card['manifest_sha256_in_context'] != plan['manifest_sha256']:
-                raise FenceFailure('context for %r binds a different manifest SHA' % key)
+                raise FenceFailure('context for {!r} binds a different manifest SHA'.format(key))
             if not card['source_sha256']:
-                raise FenceFailure('context for %r carries no source SHA' % key)
+                raise FenceFailure('context for {!r} carries no source SHA'.format(key))
         report['conditions']['immutable_manifest_source'] = True
 
         # (2) valid, hash-replay-identical pwg.prep_context.v1
@@ -836,9 +835,9 @@ def check(plan: dict, *, ledger_path: str, run_id: str, authorize_unknown_billin
                 value = json.load(handle)
             prep_pack.verify_compact_context(value)
             if value['context_sha256'] != plan['cards'][key]['context_sha256']:
-                raise FenceFailure('context for %r no longer replays its sealed hash' % key)
+                raise FenceFailure('context for {!r} no longer replays its sealed hash'.format(key))
             if value['prep_semantic_sha256'] != plan['cards'][key]['prep_semantic_sha256']:
-                raise FenceFailure('semantic PREP hash drifted for %r' % key)
+                raise FenceFailure('semantic PREP hash drifted for {!r}'.format(key))
             contexts[key] = value
         report['conditions']['context_hash_replay'] = True
 
@@ -847,9 +846,9 @@ def check(plan: dict, *, ledger_path: str, run_id: str, authorize_unknown_billin
             card = plan['cards'][key]
             prompt_a, prompt_b = arm_prompts(manifest, key, contexts[key], card)
             if sha256_text(prompt_a) != plan['prompts'][key]['A']['sha256']:
-                raise FenceFailure('arm A prompt drifted from the sealed hash for %r' % key)
+                raise FenceFailure('arm A prompt drifted from the sealed hash for {!r}'.format(key))
             if sha256_text(prompt_b) != plan['prompts'][key]['B']['sha256']:
-                raise FenceFailure('arm B prompt drifted from the sealed hash for %r' % key)
+                raise FenceFailure('arm B prompt drifted from the sealed hash for {!r}'.format(key))
             # Re-derived from the production builder a SECOND time, independently of
             # `production_prompt`, so "arm A is untouched production" is a check and not a
             # restatement of the line that just built it.
@@ -861,9 +860,9 @@ def check(plan: dict, *, ledger_path: str, run_id: str, authorize_unknown_billin
             else:
                 expected = build_prompt(manifest, [parent])
             if prompt_a != expected:
-                raise FenceFailure('arm A is not the untouched production prompt for %r' % key)
+                raise FenceFailure('arm A is not the untouched production prompt for {!r}'.format(key))
         if plan['model'] != REQUIRED_MODEL:
-            raise FenceFailure('plan model is not %s: %r' % (REQUIRED_MODEL, plan['model']))
+            raise FenceFailure('plan model is not {}: {!r}'.format(REQUIRED_MODEL, plan['model']))
         if plan['output_schema_sha256'] != sha256_bytes(
                 canonical_bytes(manifest.get('output_schema'))):
             raise FenceFailure('output schema drifted from the sealed hash')
@@ -882,10 +881,10 @@ def check(plan: dict, *, ledger_path: str, run_id: str, authorize_unknown_billin
         for key, value in contexts.items():
             policy = value.get('tm_policy') or {}
             if value.get('promotable') is not False or policy.get('may_write') is not False:
-                raise FenceFailure('context for %r crossed the promotion/TM fence' % key)
+                raise FenceFailure('context for {!r} crossed the promotion/TM fence'.format(key))
             for hit in value.get('tm_hits') or []:
                 if hit.get('match_type') != 'exact_content_sha' and hit.get('may_auto_reuse'):
-                    raise FenceFailure('context for %r treats a fuzzy hit as reusable' % key)
+                    raise FenceFailure('context for {!r} treats a fuzzy hit as reusable'.format(key))
         report['conditions']['tm_fence_intact'] = True
 
         # (7) fresh reservation ledger at the ceiling THIS plan sealed (2 x pair_count).
@@ -941,7 +940,7 @@ class _NetworkTrap:
         self._saved = socket.socket.connect
         trap = self
 
-        def refuse(self_socket, *args, **kwargs):           # noqa: ANN001
+        def refuse(self_socket, *args, **kwargs):
             trap.calls += 1
             raise FenceFailure('offline check attempted a network connection')
 
@@ -1014,16 +1013,16 @@ def audit_fragment_group(plan: dict, uid: str, structured: dict) -> dict:
         returned = by_key.get(fragment['frag_key'])
         if not returned:
             defects.append('missing-or-mismatched-fragment-key')
-            issues.append('%s: missing-or-mismatched-fragment-key' % fragment['frag_key'])
+            issues.append('{}: missing-or-mismatched-fragment-key'.format(fragment['frag_key']))
             continue
         if not isinstance(returned.get('records'), list) or not returned['records']:
             defects.append('schema: fragment carries no records[]')
-            issues.append('%s: no records[]' % fragment['frag_key'])
+            issues.append('{}: no records[]'.format(fragment['frag_key']))
             continue
         expected = collections.Counter(fragment['skeleton_tokens'])
         if card_token_multiset(returned) != expected:
             defects.append('fragment-fidelity-reject')
-            issues.append('%s: fragment-fidelity-reject' % fragment['frag_key'])
+            issues.append('{}: fragment-fidelity-reject'.format(fragment['frag_key']))
             continue
         accepted += 1
     coverage = (accepted / len(fragments)) if fragments else None
@@ -1048,7 +1047,7 @@ def audit_result(plan: dict, key: str, structured: dict) -> dict:
         card = cards[0] if len(cards) == 1 else None
     if card is None:
         return {'schema_ok': False, 'audited': False, 'coverage': None,
-                'defects': ['schema: no card for %s' % key], 'issues': []}
+                'defects': ['schema: no card for {}'.format(key)], 'issues': []}
     if not isinstance(card.get('records'), list) or not card['records']:
         defects.append('schema: card carries no records[]')
     context = {'key1': key,
@@ -1099,14 +1098,14 @@ def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
         prompt = prompt_a if arm == 'A' else prompt_b
         prompt_sha = sha256_text(prompt)
         if prompt_sha != plan['prompts'][key][arm]['sha256']:
-            raise FenceFailure('prompt drifted from the sealed hash: %s/%s' % (key, arm))
+            raise FenceFailure('prompt drifted from the sealed hash: {}/{}'.format(key, arm))
 
         try:
             reservation = ledger.reserve(
-                'h2591-prep-context-compare', detail='%s/%s' % (key, arm),
+                'h2591-prep-context-compare', detail='{}/{}'.format(key, arm),
                 idempotency_key='%s:%d' % (plan['plan_sha256'], step['ordinal']))
         except CallLimitReached as exc:
-            stopped = 'reservation_ceiling: %s' % exc
+            stopped = 'reservation_ceiling: {}'.format(exc)
             break
 
         result = caller(argv, prompt, timeout)
@@ -1201,7 +1200,7 @@ def execute(plan: dict, *, ledger_path: str, run_id: str, out_dir: str,
 
         # Stop conditions — a stopped run is evidence, never an automatic retry.
         if returned_model and plan['model'] not in str(returned_model):
-            stopped = 'model_substitution: requested %s, returned %r' % (
+            stopped = 'model_substitution: requested {}, returned {!r}'.format(
                 plan['model'], returned_model)
             break
         if failure == 'timeout':
@@ -1338,7 +1337,7 @@ def usage_cross_check(telemetry: dict, wrapper) -> dict:
     report['agree'] = mine == theirs
     if not report['agree']:
         report['contradiction'] = (
-            'usage=%r modelUsage=%r' % (mine, theirs)
+            'usage={!r} modelUsage={!r}'.format(mine, theirs)
             if report['usage_total'] else
             'top-level usage is all-zero while modelUsage reports %d token(s) — the '
             'accounting block was dropped, not the spend' % sum(theirs.values()))
@@ -1387,7 +1386,7 @@ def _stem(key: str) -> str:
     try:
         from safe_filename import safe_name                 # noqa: WPS433
         return safe_name(key)
-    except Exception:                                       # noqa: BLE001
+    except Exception:
         return key
 
 
@@ -1676,8 +1675,7 @@ def main(argv=None) -> int:
         plan = build_plan(args.manifest, args.context_dir, selection=selection,
                           lane=args.lane, pair_count=pair_count)
         path = atomic_json(os.path.join(args.out_dir, 'plan.json'), plan)
-        print('sealed plan %s  lane=%s  plan_sha256=%s'
-              % (path, plan.get('lane', 'whole'), plan['plan_sha256']))
+        print('sealed plan {}  lane={}  plan_sha256={}'.format(path, plan.get('lane', 'whole'), plan['plan_sha256']))
         if plan.get('lane') == 'fragment':
             for uid in plan['keys']:
                 card = plan['cards'][uid]
@@ -1686,7 +1684,7 @@ def main(argv=None) -> int:
                          plan['prompts'][uid]['A']['bytes'],
                          plan['prompts'][uid]['B']['bytes']))
             for note in plan['group_selection_relaxations']:
-                print('  RELAXED: %s' % json.dumps(note, ensure_ascii=False, sort_keys=True))
+                print('  RELAXED: {}'.format(json.dumps(note, ensure_ascii=False, sort_keys=True)))
         return 0
 
     if args.check:

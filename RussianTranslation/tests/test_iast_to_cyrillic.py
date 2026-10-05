@@ -11,7 +11,7 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import iast_to_cyrillic as I2C  # noqa: E402
+import iast_to_cyrillic as I2C
 
 
 def test_basic_vowels_and_consonants():

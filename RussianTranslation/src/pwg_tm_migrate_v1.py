@@ -19,7 +19,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_tm_canonical as C  # noqa: E402
+import pwg_tm_canonical as C
 
 
 def migrate_path(publication, out_dir, generated_at=None):
@@ -49,7 +49,7 @@ def verify_fixture():
     with tempfile.TemporaryDirectory() as tmp:
         wrapped, receipt, _out = migrate_path(path, tmp, generated_at='1970-01-01T00:00:00Z')
     if not receipt['ok']:
-        return False, 'fixture reconcile failed: %s' % receipt
+        return False, 'fixture reconcile failed: {}'.format(receipt)
     if len(wrapped) != 2:
         return False, 'fixture expected 2 rows, got %d' % len(wrapped)
     ids = [row['record_id'] for row in wrapped]
@@ -77,9 +77,9 @@ def verify_live(publication):
         return False, 'expected %d publication rows, got %d (source drift/corruption)' % (
             C.EXPECTED_PUBLICATION_COUNT, receipt['in_count'])
     if receipt['in_types'].get('exact_card') != C.EXPECTED_EXACT_CARD:
-        return False, 'exact_card count drifted: %s' % receipt['in_types']
+        return False, 'exact_card count drifted: {}'.format(receipt['in_types'])
     if receipt['in_types'].get('exact_fragment') != C.EXPECTED_EXACT_FRAGMENT:
-        return False, 'exact_fragment count drifted: %s' % receipt['in_types']
+        return False, 'exact_fragment count drifted: {}'.format(receipt['in_types'])
     if not receipt['ok']:
         return False, 'live reconcile failed: %s' % {
             k: receipt[k] for k in (

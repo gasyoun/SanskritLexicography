@@ -22,7 +22,7 @@ import renou, renou_sigla
 import corpus_gate as cg
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 CSL = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02'))
 DEFAULT_INDEX = os.path.join(HERE, 'dcs_lemma_renou.json')
@@ -95,9 +95,9 @@ def merge_registers(ls_regs, dcs_regs):
 def run(code, out, index_path, report_only, min_support=renou.DCS_MIN_SUPPORT):
     src = os.path.join(CSL, code, code + '.txt')
     if not os.path.exists(src):
-        raise SystemExit('no source: %s' % src)
+        raise SystemExit('no source: {}'.format(src))
     if code not in PWG_STYLE and code not in INLINE and code != 'mw':
-        raise SystemExit('unknown dict code: %s' % code)
+        raise SystemExit('unknown dict code: {}'.format(code))
     index = json.load(open(index_path, encoding='utf-8'))
     data = open(src, encoding='utf-8').read()
     st = {'entries': 0, 'ls_tagged': 0, 'dcs_hit': 0,
@@ -163,7 +163,7 @@ def report(code, s, out):
         row = ' · '.join('%s %d' % (st, s[key].get(st, 0)) for st in STATES)
         print('  %-9s %s' % (label, row))
     if out:
-        print('  → %s' % os.path.basename(out))
+        print('  → {}'.format(os.path.basename(out)))
 
 
 def main():
@@ -187,7 +187,7 @@ def main():
         elif a == '--dcs-min-support':
             min_support = int(args[i + 1]); i += 2
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
     run(code, out, index_path, report_only, min_support)
 
 

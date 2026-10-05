@@ -24,7 +24,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_tm_canonical as C  # noqa: E402
+import pwg_tm_canonical as C
 
 HEADWORD_INDEX = os.path.join(HERE, 'headword_index.tsv')
 FREQ_ORDER = os.path.join(HERE, 'pwg_freq_order.tsv')

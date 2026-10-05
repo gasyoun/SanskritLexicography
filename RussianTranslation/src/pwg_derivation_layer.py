@@ -126,7 +126,7 @@ def main():
     args = ap.parse_args()
     for p, lbl in ((args.sg_root, 'SanskritGrammar root'), (args.index, 'headword index')):
         if not os.path.exists(p):
-            print('ERROR: %s not found: %s' % (lbl, p), file=sys.stderr)
+            print('ERROR: {} not found: {}'.format(lbl, p), file=sys.stderr)
             return 1
 
     lid_hom = load_lid_hom(args.sg_root)
@@ -185,13 +185,13 @@ def main():
                 gan.get('ganas', ''), gan.get('gana_sutras', ''), gan.get('corroborated', ''),
             ])
 
-    print('wrote %s' % args.out, file=sys.stderr)
+    print('wrote {}'.format(args.out), file=sys.stderr)
     print('rows with >=1 PWG layer: %d (homonym-pinned via map: %d)' % (n, precise_rows), file=sys.stderr)
     print('  derivation (taddhita) : %d' % cov['derivation'], file=sys.stderr)
     print('  panini sutra (k1-level): %d' % cov['panini'], file=sys.stderr)
     print('  compound (pwg)        : %d' % cov['compound'], file=sys.stderr)
     print('  gaṇa membership       : %d' % cov['gana'], file=sys.stderr)
-    print('compound cross-check vs index: %s' % dict(comp_status_ctr.most_common()), file=sys.stderr)
+    print('compound cross-check vs index: {}'.format(dict(comp_status_ctr.most_common())), file=sys.stderr)
     return 0
 
 

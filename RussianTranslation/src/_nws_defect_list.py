@@ -124,9 +124,9 @@ def section(title, rows, note, fixes=None):
     w(note)
     w('')
     for ia, k1, c in sorted(rows):
-        w('- **%s** (`%s`) — …%s…' % (ia, k1, c))
+        w('- **{}** (`{}`) — …{}…'.format(ia, k1, c))
         if fixes and k1 in fixes:
-            w('    - **Fix:** %s' % fixes[k1])
+            w('    - **Fix:** {}'.format(fixes[k1]))
     w('')
 
 section('Unmatched opening parenthesis — a closing `)` is missing', paren,

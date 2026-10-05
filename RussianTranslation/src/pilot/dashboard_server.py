@@ -100,8 +100,7 @@ class DashboardHandler(BaseHTTPRequestHandler):
     server_version = 'RussianTranslationDashboard/0.1'
 
     def log_message(self, fmt, *args):
-        print('%s - - [%s] %s' %
-              (self.address_string(), self.log_date_time_string(), fmt % args))
+        print('{} - - [{}] {}'.format(self.address_string(), self.log_date_time_string(), fmt % args))
 
     def send_bytes(self, content, content_type, status=200):
         self.send_response(status)
@@ -153,7 +152,7 @@ def main():
     server.dashboard_root = root
     server.refresh_ms = args.refresh_ms
     print('dashboard: http://%s:%d/' % (args.host, args.port))
-    print('root     : %s' % root)
+    print('root     : {}'.format(root))
     server.serve_forever()
 
 

@@ -26,8 +26,8 @@ SRC = os.path.dirname(HERE)
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import cache_identity as ident  # noqa: E402
-import translation_memory as tm  # noqa: E402
+import cache_identity as ident
+import translation_memory as tm
 
 EXPERIMENTAL_FLAG = 'experimental'
 
@@ -44,7 +44,7 @@ def assert_under_run(path, run_dir):
     except ValueError as exc:
         raise ReuseError('experimental path escapes run directory') from exc
     if common != run_dir:
-        raise ReuseError('experimental path escapes run directory: %s' % path)
+        raise ReuseError('experimental path escapes run directory: {}'.format(path))
     return path
 
 
@@ -183,7 +183,7 @@ def selftest():
 
         raw = 'card-bytes'
         raw_sha = ident.sha256_bytes(raw)
-        address = 'xx:%s' % raw_sha
+        address = 'xx:{}'.format(raw_sha)
         canon = os.path.join(tmp, 'translation_memory.xx.json')
         with open(canon, 'w', encoding='utf-8', newline='\n') as handle:
             json.dump({
@@ -238,7 +238,7 @@ def selftest():
 
         # Experimental-only miss on canonical, hit on experimental.
         exp_only_sha = ident.sha256_bytes('exp-only')
-        exp_addr = 'xx:%s' % exp_only_sha
+        exp_addr = 'xx:{}'.format(exp_only_sha)
         with open(exp, 'w', encoding='utf-8', newline='\n') as handle:
             json.dump({
                 'entries': {

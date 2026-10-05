@@ -18,9 +18,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import nn_api  # noqa: E402
-import tm_grade  # noqa: E402
-import tm_retrieval_eval as ev  # noqa: E402
+import nn_api
+import tm_grade
+import tm_retrieval_eval as ev
 
 RECEIPT = os.path.join(HERE, 'QE_BACKEND_RECEIPT.json')
 

@@ -26,7 +26,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 SM = os.path.normpath(os.path.join(GITHUB, 'SamudraManthanam',
                                    'web', 'corpus_builder', 'jsonl'))
@@ -36,7 +36,7 @@ PY = sys.executable
 
 
 def run(script_args):
-    print('  $ python %s' % ' '.join(script_args))
+    print('  $ python {}'.format(' '.join(script_args)))
     subprocess.run([PY] + script_args, cwd=HERE, check=False)
 
 
@@ -51,7 +51,7 @@ def main():
     work = a.work[:-6] if a.work.endswith('.jsonl') else a.work
     src = os.path.join(SM, work + '.jsonl')
     if not os.path.exists(src):
-        sys.exit('source not found: %s' % src)
+        sys.exit('source not found: {}'.format(src))
 
     # 1. validate
     sa = ru = ru_cyr = 0
@@ -81,9 +81,9 @@ def main():
     strata = json.load(open(STRATA_PATH, encoding='utf-8'))
     if work not in strata:
         if not (a.genre and a.date is not None):
-            sys.exit('work %r is not matched by any build_strata RULE.\n'
+            sys.exit('work {!r} is not matched by any build_strata RULE.\n'
                      'Either add a RULE in build_strata.py (preferred — keeps it reproducible),\n'
-                     'or pass --genre "..." and --date YEAR to inject an ad-hoc stratum.' % work)
+                     'or pass --genre "..." and --date YEAR to inject an ad-hoc stratum.'.format(work))
         import build_strata
         strata[work] = {'genre': a.genre, 'genre_code': 'GX', 'date_median': a.date,
                         'date_lo95': a.date, 'date_hi95': a.date,
@@ -91,10 +91,10 @@ def main():
                         'source': 'manual (add_corpus_text)', 'groups': 0, 'size': 1}
         json.dump(strata, open(STRATA_PATH, 'w', encoding='utf-8'),
                   ensure_ascii=False, indent=1, sort_keys=True)
-        print('  injected ad-hoc stratum: %s · %s · ~%s' % (a.genre, strata[work]['period'], a.date))
+        print('  injected ad-hoc stratum: {} · {} · ~{}'.format(a.genre, strata[work]['period'], a.date))
 
     # 3. align only this work (resumable)
-    print('aligning %s (DeepSeek, resumable)...' % work)
+    print('aligning {} (DeepSeek, resumable)...'.format(work))
     run(['build_corpus_lexicon.py', 'build', work + '.jsonl', str(10**9), a.workers])
 
     # 4. audit + coverage

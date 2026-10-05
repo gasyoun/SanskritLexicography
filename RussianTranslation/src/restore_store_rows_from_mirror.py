@@ -27,8 +27,8 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
-from store_write import locked_store_rewrite  # noqa: E402
+from sibling_root import sibling_root
+from store_write import locked_store_rewrite
 GITHUB = sibling_root(HERE)
 DATA = os.path.normpath(os.path.join(GITHUB, 'pwg-ru-data'))
 DEFAULT_SRC = os.path.join(HERE, 'pwg_ru_translated.jsonl')
@@ -92,7 +92,7 @@ def main():
                             'backup': os.path.basename(bak) if bak else None, 'src_sha256': sha(a.src),
                             'mirror_sha256': sha(a.mirror),
                             'rows': entries}, ensure_ascii=False) + '\n')
-    print('backup=%s  src_sha=%s  mirror refreshed (identical=%s)' % (os.path.basename(bak) if bak else '(fresh store)',
+    print('backup={}  src_sha={}  mirror refreshed (identical={})'.format(os.path.basename(bak) if bak else '(fresh store)',
                                                                       sha(a.src)[:12], sha(a.src) == sha(a.mirror)))
 
 

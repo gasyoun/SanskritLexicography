@@ -172,7 +172,7 @@ def cmd_align(a):
         sys.exit('align: the committed embedding aligner is unavailable in this environment '
                  '(transformers/torch or the model failed to load). Layer B cannot run; '
                  'spine A is unaffected.')
-    print('align: aligner ready (model=%s, layer=%s)' % (aligner.model_id, aligner.layer))
+    print('align: aligner ready (model={}, layer={})'.format(aligner.model_id, aligner.layer))
 
     os.makedirs(RUN_DIR, exist_ok=True)
     dist_all = collections.Counter()
@@ -223,8 +223,8 @@ def cmd_align(a):
           % (mutual_count, emitted, 100.0 * mutual_count / emitted if emitted else 0))
     _write_run_log(a, aligner, locations, total, emitted, dropped, skipped_absent,
                    mutual_count, dist_all, dist_by_target, time.time() - t0)
-    print('  rows -> %s' % a.out)
-    print('  run log -> %s' % a.run_log)
+    print('  rows -> {}'.format(a.out))
+    print('  run log -> {}'.format(a.run_log))
     return 0
 
 
@@ -247,8 +247,8 @@ def _write_run_log(a, aligner, locations, total, emitted, dropped, skipped_absen
     lines.append('_Created: 29-07-2026 · Last updated: 29-07-2026_')
     lines.append('')
     lines.append('Aligner: the committed `tm_align.embed_aligner_factory` (SimAlign-style '
-                 'contextual subword alignment), model `%s`, hidden layer %s. No new aligner '
-                 'was written (ARCHITECTURE §4, W1.9).' % (aligner.model_id, aligner.layer))
+                 'contextual subword alignment), model `{}`, hidden layer {}. No new aligner '
+                 'was written (ARCHITECTURE §4, W1.9).'.format(aligner.model_id, aligner.layer))
     lines.append('')
     lines.append('| Quantity | Value |')
     lines.append('|---|--:|')
@@ -260,8 +260,7 @@ def _write_run_log(a, aligner, locations, total, emitted, dropped, skipped_absen
     lines.append('| Dropped below the gate | %d |' % dropped)
     lines.append('| Mutual-argmax confirmed, of emitted | %d (%.1f%%) |'
                  % (mutual_count, 100.0 * mutual_count / emitted if emitted else 0))
-    lines.append('| Wall clock | %.1f s (%.2f s/stanza) |'
-                 % (elapsed, elapsed / len(locations) if locations else 0))
+    lines.append('| Wall clock | {:.1f} s ({:.2f} s/stanza) |'.format(elapsed, elapsed / len(locations) if locations else 0))
     lines.append('')
     lines.append('## Observed confidence distribution (pre-gate)')
     lines.append('')
@@ -292,7 +291,7 @@ def cmd_enrich(a):
     (ARCHITECTURE §5).
     """
     if not os.path.exists(WORDLEVEL_OUT):
-        sys.exit('no %s -- run `align` first' % WORDLEVEL_OUT)
+        sys.exit('no {} -- run `align` first'.format(WORDLEVEL_OUT))
     by_key = collections.defaultdict(dict)
     with open(WORDLEVEL_OUT, encoding='utf-8') as f:
         for line in f:

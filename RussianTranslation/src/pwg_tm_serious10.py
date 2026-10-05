@@ -45,7 +45,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_tm_wave2_policy as W2  # noqa: E402
+import pwg_tm_wave2_policy as W2
 
 HANDOFF = 'H2877'
 GATE_SAMPLE = 'H2684 n=400 seed 2684'
@@ -427,11 +427,11 @@ def cmd_report(args):
     print('judge spans unaddressed %d - false Russian claims left %d'
           % (receipt_obj['judge_spans_unaddressed'],
              receipt_obj['false_russian_claims_after']))
-    print('wave1 artefacts identical: %s' % receipt_obj['wave1_immutable']['identical'])
+    print('wave1 artefacts identical: {}'.format(receipt_obj['wave1_immutable']['identical']))
     for code in sorted(counts):
         print('  %s %-52s %d' % (code, TAXONOMY[code]['label'], counts[code]))
-    print('wrote %s' % sc)
-    print('wrote %s' % rp)
+    print('wrote {}'.format(sc))
+    print('wrote {}'.format(rp))
     return 0 if receipt_obj['wave1_immutable']['identical'] else 1
 
 

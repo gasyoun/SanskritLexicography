@@ -52,7 +52,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(HERE)
 REPO = os.path.dirname(RT)
 sys.path.insert(0, os.path.join(os.path.dirname(REPO), "sanskrit-util", "py"))
-from sanskrit_util import to_slp1  # noqa: E402
+from sanskrit_util import to_slp1
 
 WINDOW_IN = os.path.join(RT, "src", "pwg_sense_attestation_window.jsonl")
 WINDOW_OUT = os.path.join(RT, "src", "pwg_sense_attestation_window_cooc_expanded.jsonl")

@@ -36,7 +36,7 @@ GITHUB = os.path.normpath(os.path.join(REPO, '..'))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from rt_io import read_jsonl as load_jsonl, write_jsonl  # noqa: E402
+from rt_io import read_jsonl as load_jsonl, write_jsonl
 
 DEFAULT_GRADE_GOLD = os.path.join(ROOT, 'gold', 'grade_gold.jsonl')
 DEFAULT_SAMPLE = os.path.join(
@@ -130,8 +130,7 @@ def load_deepseek_key():
 def cmd_batch(a):
     """Legacy grade-A gold batch (H1457). Kept so older commands still work."""
     if not os.path.exists(a.grade_gold):
-        sys.exit('frozen gold not found: %s (run build_grade_gold.py build first)'
-                 % a.grade_gold)
+        sys.exit('frozen gold not found: {} (run build_grade_gold.py build first)'.format(a.grade_gold))
     rows = load_jsonl(a.grade_gold)
     a_rows = sorted((r for r in rows if r.get('grade') == 'A'),
                     key=lambda r: r.get('id', 0))
@@ -179,7 +178,7 @@ def freeze_batch(sample_path, adj_path, n_per_class=4, seed_key='fragment_id'):
     a translation arm).
     """
     if not os.path.exists(sample_path):
-        sys.exit('H2684 sample not found: %s' % sample_path)
+        sys.exit('H2684 sample not found: {}'.format(sample_path))
     adj = _adj_map(adj_path)
     by_class = defaultdict(list)
     copy_n = 0
@@ -243,7 +242,7 @@ def cmd_freeze(a):
         json.dump(manifest, f, ensure_ascii=False, indent=2)
         f.write('\n')
     print('freeze: %d cards (%s) -> %s' % (len(batch), meta['per_class_drawn'], a.out))
-    print('freeze: manifest %s sha256=%s' % (a.manifest, manifest['batch_sha256']))
+    print('freeze: manifest {} sha256={}'.format(a.manifest, manifest['batch_sha256']))
     return 0
 
 
@@ -541,7 +540,7 @@ def make_deepseek_fns(key, model=DEEPSEEK_MODEL):
                     parts.append('%d. DE: %s\n   RU: %s'
                                  % (i, hit.get('source_string'), hit.get('target_string')))
             parts.append('')
-        parts.append('SOURCE:\n%s' % src)
+        parts.append('SOURCE:\n{}'.format(src))
         text, rec = translator.chat(sys_tr, '\n'.join(parts),
                                     'tr-%s' % (card.get('fragment_id') or card.get('slp1')))
         _record('translate', rec)
@@ -647,7 +646,7 @@ def _render_blocked_md(n_cards):
 
 def _render_live_md(meta, no_tm, with_tm):
     if meta.get('engine') not in LIVE_ENGINES:
-        raise ValueError('live renderer refuses engine=%r' % meta.get('engine'))
+        raise ValueError('live renderer refuses engine={!r}'.format(meta.get('engine')))
     if meta.get('mock'):
         raise ValueError('live renderer refuses mock results')
     lines = []
@@ -656,9 +655,8 @@ def _render_live_md(meta, no_tm, with_tm):
     lines.append('_Created: 22-07-2026 · Last updated: 14-08-2026_')
     lines.append('')
     lines.append('Harness: [`tm_retrieval_eval.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_retrieval_eval.py) '
-                 '(Grok 4.6, `grok-4.6`). Engine **%s** / model **%s**. '
-                 'Frozen batch sha256 `%s`. Gold sha256 `%s`.'
-                 % (meta['engine'], meta.get('model'), meta.get('batch_sha256'),
+                 '(Grok 4.6, `grok-4.6`). Engine **{}** / model **{}**. '
+                 'Frozen batch sha256 `{}`. Gold sha256 `{}`.'.format(meta['engine'], meta.get('model'), meta.get('batch_sha256'),
                     meta.get('gold_sha256')))
     lines.append('')
     lines.append('Wave 1 is immutable. This measurement does not rewrite promoted '
@@ -671,7 +669,7 @@ def _render_live_md(meta, no_tm, with_tm):
     for name, arm in (('no-TM', no_tm), ('fragment-TM', with_tm)):
         lines.append('| %s | %d | %s | %d/%d (%.1f%%) | %.3f | %d | %.2f | %.6f | %d | %d |' % (
             name, arm['n'],
-            ('%.3f' % arm['mean_quality']) if arm['mean_quality'] == arm['mean_quality'] else 'nan',
+            ('{:.3f}'.format(arm['mean_quality'])) if arm['mean_quality'] == arm['mean_quality'] else 'nan',
             arm['serious_error_n'], arm['n'], 100 * arm['serious_error_rate'],
             arm['mean_edit'], arm['total_tokens'], arm['total_wall_clock_s'],
             arm['total_cost_usd'], arm['exact_reuse_n'], arm['fragment_reuse_n']))
@@ -694,18 +692,18 @@ def _render_live_md(meta, no_tm, with_tm):
     lines.append('| Class | n | mean quality | mean edit | serious error |')
     lines.append('|---|---:|---:|---:|---:|')
     for klass, st in _per_class(with_tm['rows'], 'fragment_class').items():
-        mq = 'nan' if st['mean_quality'] is None else '%.3f' % st['mean_quality']
+        mq = 'nan' if st['mean_quality'] is None else '{:.3f}'.format(st['mean_quality'])
         lines.append('| %s | %d | %s | %.3f | %d |'
                      % (klass, st['n'], mq, st['mean_edit'], st['serious_error_n']))
     lines.append('')
     lines.append('## Route / cost provenance')
     lines.append('')
-    lines.append('- Translate+judge route: `%s`' % meta.get('route'))
-    lines.append('- Requested model: `%s`' % meta.get('model'))
-    lines.append('- Price card: `%s`' % meta.get('price_card'))
+    lines.append('- Translate+judge route: `{}`'.format(meta.get('route')))
+    lines.append('- Requested model: `{}`'.format(meta.get('model')))
+    lines.append('- Price card: `{}`'.format(meta.get('price_card')))
     lines.append('- Ledger calls: **%d** (translate + judge, both arms)' % meta.get('ledger_calls', 0))
-    lines.append('- Total cost USD: **%.6f**' % meta.get('total_cost_usd', 0.0))
-    lines.append('- Mock: **%s**' % meta.get('mock'))
+    lines.append('- Total cost USD: **{:.6f}**'.format(meta.get('total_cost_usd', 0.0)))
+    lines.append('- Mock: **{}**'.format(meta.get('mock')))
     lines.append('')
     lines.append('_Dr. Mārcis Gasūns_')
     lines.append('')
@@ -714,17 +712,17 @@ def _render_live_md(meta, no_tm, with_tm):
 
 def cmd_run(a):
     if not os.path.exists(a.batch):
-        sys.exit('eval batch not found: %s (run `freeze` first)' % a.batch)
+        sys.exit('eval batch not found: {} (run `freeze` first)'.format(a.batch))
     cards = load_jsonl(a.batch)
     if a.engine == ENGINE_NONE:
         md = _render_blocked_md(len(cards))
         with open(a.out, 'w', encoding='utf-8', newline='\n') as f:
             f.write(md)
-        print('run: --engine none -> no live call; %s' % a.out)
+        print('run: --engine none -> no live call; {}'.format(a.out))
         return 0
 
     if a.engine != ENGINE_DEEPSEEK:
-        sys.exit('run: --engine %s not implemented' % a.engine)
+        sys.exit('run: --engine {} not implemented'.format(a.engine))
 
     key, key_src = load_deepseek_key()
     if not key:
@@ -733,8 +731,7 @@ def cmd_run(a):
         if os.path.isfile(repair) and repair not in candidate_env_files():
             pass
         sys.exit('run: no DEEPSEEK_API_KEY in env or known .env paths; '
-                 'one route repair already searched environ + %s'
-                 % candidate_env_files())
+                 'one route repair already searched environ + {}'.format(candidate_env_files()))
 
     translate_fn, judge_fn, ledger = make_deepseek_fns(key, model=a.model)
     exclude = {c.get('fragment_id') for c in cards}
@@ -817,7 +814,7 @@ def selftest():
     with_tm = run_arm(cards, _mock_translate_with_context, _mock_judge, tm_index=tm_index)
 
     assert no_tm['mean_quality'] < with_tm['mean_quality'], \
-        'the mock context-aided arm must score higher, got %s vs %s' % (no_tm, with_tm)
+        'the mock context-aided arm must score higher, got {} vs {}'.format(no_tm, with_tm)
     assert with_tm['total_tokens'] >= no_tm['total_tokens']
     assert all('wall_clock_s' in r for r in no_tm['rows'])
     assert all('edit' in r for r in no_tm['rows'])

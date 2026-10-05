@@ -38,11 +38,11 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(HERE)                      # RussianTranslation/
 sys.path.insert(0, HERE)
-import store_path                               # noqa: E402
-import pwg_ab                                   # noqa: E402
-from pwg_ab_ru import RU_MAP                    # noqa: E402
-from csl_pyutil.review_sheet import render_review_sheet, esc, mark_cyrillic  # noqa: E402
-from sheet_screening import screening_block  # noqa: E402
+import store_path
+import pwg_ab
+from pwg_ab_ru import RU_MAP
+from csl_pyutil.review_sheet import render_review_sheet, esc, mark_cyrillic
+from sheet_screening import screening_block
 
 GENERATED = '2026-07-21'
 _AB = re.compile(r'<ab\b[^>]*>(.*?)</ab>', re.S)
@@ -304,7 +304,7 @@ CLS_NAMES = {'нем': 'немецкое', 'лат': 'латинское/меж�
 toks = inventory()
 new_tokens = [t['token'] for t in toks if t['token'] not in O]
 for tok in new_tokens:
-    print('NEW-TOKEN (post-21-07-2026, needs a proposal pass): %r' % tok, file=sys.stderr)
+    print('NEW-TOKEN (post-21-07-2026, needs a proposal pass): {!r}'.format(tok), file=sys.stderr)
     O[tok] = dict(b='b', cls='OCR', ru=None,
                   note='токен появился в store после инвентаризации 21-07-2026 — нужен новый проход предложений')
 
@@ -313,17 +313,17 @@ items = []
 def card(t):
     o = O[t['token']]
     exp = ' — '.join(x for x in (t['de'], t['en']) if x) or 'нет в pwgab'
-    cur = ('уже в RU_MAP: «%s»' % t['ru_map']) if t['ru_map'] else 'сейчас: латиница/оригинал + тултип'
+    cur = ('уже в RU_MAP: «{}»'.format(t['ru_map'])) if t['ru_map'] else 'сейчас: латиница/оригинал + тултип'
     prop = o['ru'] if o['ru'] else '(без фиксированного соответствия — см. примечание)'
-    q = ('<b>%s</b>&nbsp;→&nbsp;' % esc(t['token'])
-         + mark_cyrillic('<b>%s</b>' % esc(prop))
-         + '&nbsp;&nbsp;<span class="muted">(%s)</span>' % esc(CLS_NAMES[o['cls']]))
+    q = ('<b>{}</b>&nbsp;→&nbsp;'.format(esc(t['token']))
+         + mark_cyrillic('<b>{}</b>'.format(esc(prop)))
+         + '&nbsp;&nbsp;<span class="muted">({})</span>'.format(esc(CLS_NAMES[o['cls']])))
     panels = [('данные', '<pre>расшифровка: %s\nчастота в store: %d\n%s</pre>'
                % (esc(exp), t['freq'], esc(cur)))]
     note = o.get('note')
     if note:
-        panels.append(('примечание', '<pre>%s</pre>' % esc(note)))
-    return {'id': 'ab:%s' % t['token'], 'filt': o['b'], 'title': t['token'],
+        panels.append(('примечание', '<pre>{}</pre>'.format(esc(note))))
+    return {'id': 'ab:{}'.format(t['token']), 'filt': o['b'], 'title': t['token'],
             'badges': ['%d×' % t['freq'], CLS_NAMES[o['cls']].split('/')[0]],
             'question': q,
             'panels': panels,
@@ -335,11 +335,11 @@ for sig, freqs, exp, prop, note in [
     ('ed. Bomb.', '221', 'Bombay edition', 'Бомбейская ред.', 'зафиксировано MG 19-07-2026 (N4); ls-территория, применение с H1307'),
     ('Verz. d. Oxf. H.', 'в ls-ссылках', 'Verzeichniss der Oxforder Handschriften (Aufrecht 1864)', 'Кат. оксф. рукоп.', 'N9: не оставлять по-немецки; ls-территория'),
     ('Spr. / Spr. (II)', 'десятки', 'Indische Sprüche (Böhtlingk)', 'оставить сиглой + тултип «Индийские изречения»', 'заглавие источника, как ṚV.; ls-территория')]:
-    items.append({'id': 'ls:%s' % sig, 'filt': 'c', 'title': sig,
+    items.append({'id': 'ls:{}'.format(sig), 'filt': 'c', 'title': sig,
                   'badges': [freqs, 'ls-сигла'],
-                  'question': '<b>%s</b>&nbsp;→&nbsp;%s' % (esc(sig), mark_cyrillic('<b>%s</b>' % esc(prop))),
-                  'panels': [('данные', '<pre>расшифровка: %s</pre>' % esc(exp)),
-                             ('примечание', '<pre>%s</pre>' % esc(note))],
+                  'question': '<b>{}</b>&nbsp;→&nbsp;{}'.format(esc(sig), mark_cyrillic('<b>{}</b>'.format(esc(prop)))),
+                  'panels': [('данные', '<pre>расшифровка: {}</pre>'.format(esc(exp))),
+                             ('примечание', '<pre>{}</pre>'.format(esc(note)))],
                   'note_placeholder': 'своя формулировка / комментарий'})
 items.append({'id': 'meta:architecture', 'filt': 'meta',
               'title': 'МЕТА: где применяется утвержденный список?',

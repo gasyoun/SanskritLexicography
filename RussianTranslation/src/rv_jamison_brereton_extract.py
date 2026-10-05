@@ -63,7 +63,7 @@ RT_ROOT = os.path.normpath(os.path.join(HERE, '..'))
 
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
-from rv_org_root import vedaweb_dir  # noqa: E402
+from rv_org_root import vedaweb_dir
 
 LEMMATIZATION = os.path.join(vedaweb_dir(HERE), 'lemmatization.json')
 PWG_RU_DIR = os.path.join(RT_ROOT, 'pwg_ru')
@@ -544,7 +544,7 @@ def report(records, per_hymn, stats, hymn_order, hymn_stanzas):
     print('stanzas extracted:            %d / %d canonical loci'
           % (len(records), len(canonical)))
     print('unmatched (missing) loci:     %d' % len(missing))
-    print('  first 20: %s' % missing[:20])
+    print('  first 20: {}'.format(missing[:20]))
     print('loci outside the canonical set: %d %s' % (len(extra), extra[:10]))
     dupes = [loc for loc, c in collections.Counter(
         r['location'] for r in records).items() if c > 1]
@@ -585,9 +585,8 @@ def main():
 
     if not os.path.exists(a.source):
         sys.exit(
-            'source OCR not found: %s\nIt is an input, never committed. Fetch it with the '
-            'curl command in this script\'s docstring (use /download/, not /stream/).'
-            % a.source)
+            'source OCR not found: {}\nIt is an input, never committed. Fetch it with the '
+            'curl command in this script\'s docstring (use /download/, not /stream/).'.format(a.source))
 
     with open(a.source, encoding='utf-8') as f:
         lines = f.read().split('\n')
@@ -638,9 +637,8 @@ def main():
             'publisher': 'Oxford University Press',
             'provenance': (
                 'extracted by rv_jamison_brereton_extract.py (H1910) from the archive.org '
-                'OCR %s, file %r; stanza segmentation anchored on the VedaWeb canonical '
-                'hymn sequence, per-hymn introductions and notes excluded'
-                % (ARCHIVE_IDENT, ARCHIVE_FILE)),
+                'OCR {}, file {!r}; stanza segmentation anchored on the VedaWeb canonical '
+                'hymn sequence, per-hymn introductions and notes excluded'.format(ARCHIVE_IDENT, ARCHIVE_FILE)),
             'known_limitations': (
                 "printed pada line breaks are not recoverable from this OCR (it inserts "
                 "blank lines within a printed line as often as between them), so each "
@@ -652,13 +650,13 @@ def main():
     with open(OUT_PATH, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(envelope, f, ensure_ascii=False, indent=2)
         f.write('\n')
-    print('wrote %s' % OUT_PATH)
+    print('wrote {}'.format(OUT_PATH))
 
     os.makedirs(RUN_LOG_DIR, exist_ok=True)
     with open(RUN_LOG_PATH, 'w', encoding='utf-8', newline='\n') as f:
         f.write('# Jamison-Brereton 2014 extraction run log (H1910)\n\n')
         f.write('_Created: 30-07-2026 · Last updated: 30-07-2026_\n\n')
-        f.write('- source: archive.org `%s`, `%s`\n' % (ARCHIVE_IDENT, ARCHIVE_FILE))
+        f.write('- source: archive.org `{}`, `{}`\n'.format(ARCHIVE_IDENT, ARCHIVE_FILE))
         f.write('- source lines: %d\n' % len(lines))
         f.write('- canonical hymns / stanzas: %d / %d\n'
                 % (len(hymn_order), total_canonical))
@@ -675,7 +673,7 @@ def main():
         f.write('- hymns with no heading of their own, resolved positionally inside the '
                 'previous heading\'s range: %d%s\n'
                 % (len(gap),
-                   ' (%s)' % ', '.join('%d.%d' % k for k in gap) if gap else ''))
+                   ' ({})'.format(', '.join('%d.%d' % k for k in gap)) if gap else ''))
         f.write('- commentary leaks (requirement 3, J-B introductions/notes inside a '
                 'stanza): %d\n' % len(leaks))
         f.write('- stanzas ending in page/running-head furniture: %d\n'
@@ -683,11 +681,11 @@ def main():
         if missing:
             f.write('\n## Unmatched loci\n\n')
             for loc in missing[:200]:
-                f.write('- %s\n' % loc)
+                f.write('- {}\n'.format(loc))
             if len(missing) > 200:
                 f.write('- ... %d more\n' % (len(missing) - 200))
         f.write('\n_Dr. Mārcis Gasūns_\n')
-    print('wrote %s' % RUN_LOG_PATH)
+    print('wrote {}'.format(RUN_LOG_PATH))
     return 0 if gates_ok else 1
 
 

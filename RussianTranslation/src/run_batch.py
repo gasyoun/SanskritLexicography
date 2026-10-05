@@ -33,7 +33,7 @@ from store_write import locked_store_rewrite  # H2146/H3350 locked writer
 from promote_lock import PromoteClaim
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 ROOT = os.path.normpath(os.path.join(HERE, '..'))
 BATCH_IN = os.path.join(HERE, '_batch_in.jsonl')
@@ -112,14 +112,14 @@ def _ensure_parent(path):
 def _store_review_id(row, pos=None):
     """Stable reviewer-facing id across legacy ord rows and promoted sense rows."""
     if row.get('ord') is not None:
-        return 'ord:%s' % row.get('ord')
+        return 'ord:{}'.format(row.get('ord'))
     sub = row.get('subcard')
     tag = row.get('sense_tag')
     prefix = 'row:%06d:' % pos if pos is not None else ''
     if sub is not None and tag is not None:
-        return '%ssubcard:%s#%s' % (prefix, sub, tag)
+        return '{}subcard:{}#{}'.format(prefix, sub, tag)
     if sub is not None:
-        return '%ssubcard:%s' % (prefix, sub)
+        return '{}subcard:{}'.format(prefix, sub)
     if pos is not None:
         return 'row:%d' % pos
     return ''
@@ -211,9 +211,8 @@ def cmd_collect(args):
         batch[rec_in['i']] = rec_in
     prov = provenance(os.path.splitext(os.path.basename(wf))[0], model)
     for d in pipeline_version.check():
-        print('  WARNING pipeline drift: %s files changed but version still v%s '
-              '(recorded %s → now %s) — bump pipeline_versions.json + freeze'
-              % (d['component'], d['version'], d['recorded_sha'], d['current_sha']))
+        print('  WARNING pipeline drift: {} files changed but version still v{} '
+              '(recorded {} → now {}) — bump pipeline_versions.json + freeze'.format(d['component'], d['version'], d['recorded_sha'], d['current_sha']))
     appended = ok = bad = mism = needs = 0
     out_lines = []
     for i, card in batch.items():
@@ -259,10 +258,8 @@ def cmd_collect(args):
     print('collected %d → %s  (ok %d, flagged %d, placeholder-mismatch %d, needs_review %d)'
           % (appended, os.path.basename(STORE), ok, bad, mism, needs))
     pl = prov['pipeline']
-    print('  provenance: %s @ %s (pwg %s, prompts %s)'
-          % (prov['translate_model'], prov['generated_at'], prov['pwg_src_commit'], prov['prompt_set_sha']))
-    print('  pipeline: prompt v%s · glossary v%s · script v%s'
-          % (pl['prompt_version'], pl['glossary_version'], pl['script_version']))
+    print('  provenance: {} @ {} (pwg {}, prompts {})'.format(prov['translate_model'], prov['generated_at'], prov['pwg_src_commit'], prov['prompt_set_sha']))
+    print('  pipeline: prompt v{} · glossary v{} · script v{}'.format(pl['prompt_version'], pl['glossary_version'], pl['script_version']))
 
 
 def cmd_status(args):
@@ -320,8 +317,7 @@ def cmd_review(args):
     print('review queue: %d card(s) need a human → %s (sorted by severity)'
           % (len(items), os.path.basename(REVIEW_Q)))
     for it in items[:15]:
-        print('  sev%s  id=%s  %s  key_match=%s ph_ok=%s  %s'
-              % (it['severity'], it['review_id'], it['key1'], it['key_match'],
+        print('  sev{}  id={}  {}  key_match={} ph_ok={}  {}'.format(it['severity'], it['review_id'], it['key1'], it['key_match'],
                  it['placeholders_ok'], (it['reason'] or '')[:60]))
 
 
@@ -330,7 +326,7 @@ def _attested_summary(attested):
     for a in attested or []:
         source = a.get('source') or a.get('code') or '?'
         gloss = _clean(a.get('gloss'))[:80]
-        bits.append('%s: %s' % (source, gloss))
+        bits.append('{}: {}'.format(source, gloss))
     return ' | '.join(bits)
 
 
@@ -339,7 +335,7 @@ def cmd_review_csv(args):
     Does not change review_status/reviewer/decision; those blank columns are for
     humans to fill in a copy of the CSV."""
     if not os.path.exists(REVIEW_Q):
-        print('no %s — run: python run_batch.py review' % os.path.basename(REVIEW_Q))
+        print('no {} — run: python run_batch.py review'.format(os.path.basename(REVIEW_Q)))
         return
     fields = ['review_id', 'severity', 'ord', 'key1', 'key2', 'review_status',
               'key_match', 'placeholders_ok', 'reason', 'attested',
@@ -402,7 +398,7 @@ def _review_row_id(row):
         return rid
     raw_ord = (row.get('ord') or '').strip()
     if raw_ord.isdigit():
-        return 'ord:%s' % int(raw_ord)
+        return 'ord:{}'.format(int(raw_ord))
     return ''
 
 
@@ -412,7 +408,7 @@ def _review_validation(rows):
     for i, row in enumerate(rows, 2):  # header is line 1
         raw_ord = (row.get('ord') or '').strip()
         review_id = _review_row_id(row)
-        label = review_id or ('ord=%s' % raw_ord if raw_ord else 'missing id')
+        label = review_id or ('ord={}'.format(raw_ord) if raw_ord else 'missing id')
         decision = (row.get('decision') or '').strip()
         reviewer = (row.get('reviewer_id') or '').strip()
         edit = (row.get('edit') or '').strip()
@@ -530,14 +526,14 @@ def _review_summary(rows, decisions, errors, store):
 def cmd_validate_review(args):
     path = args[0] if args else REVIEW_CSV
     if not os.path.exists(path):
-        sys.exit('no %s — run: python run_batch.py review_csv' % path)
+        sys.exit('no {} — run: python run_batch.py review_csv'.format(path))
     rows = _read_review_csv(path)
     errors, decisions = _review_validation(rows)
     store = _load_store_rows()
     by_id, by_suffix = _store_review_index(store)
     missing = sorted(rid for rid in decisions
                      if _resolve_review_row(rid, by_id, by_suffix) is None)
-    errors.extend('%s: not found in store' % rid for rid in missing)
+    errors.extend('{}: not found in store'.format(rid) for rid in missing)
     counts, _, _ = _review_summary(rows, decisions, errors, store)
     print('review CSV rows: %(rows)d | blank: %(blank)d | decisions: %(decisions)d' % counts)
     print('  print-ready candidates: %(print_ready_candidate)d | reject: %(reject)d | needs_review: %(needs_review)d' % counts)
@@ -555,14 +551,14 @@ def cmd_validate_review(args):
 def cmd_review_report(args):
     path = args[0] if args else REVIEW_CSV
     if not os.path.exists(path):
-        sys.exit('no %s — run: python run_batch.py review_csv' % path)
+        sys.exit('no {} — run: python run_batch.py review_csv'.format(path))
     rows = _read_review_csv(path)
     errors, decisions = _review_validation(rows)
     store = _load_store_rows()
     by_id, by_suffix = _store_review_index(store)
     missing = sorted(rid for rid in decisions
                      if _resolve_review_row(rid, by_id, by_suffix) is None)
-    errors.extend('%s: not found in store' % rid for rid in missing)
+    errors.extend('{}: not found in store'.format(rid) for rid in missing)
     counts, top, _ = _review_summary(rows, decisions, errors, store)
     lines = [
         '# Review readiness report',
@@ -585,14 +581,14 @@ def cmd_review_report(args):
         '|---:|---:|---|---|',
     ]
     for sev, ord_, key1, reason in top:
-        lines.append('| %s | %s | %s | %s |' % (
+        lines.append('| {} | {} | {} | {} |'.format(
             sev, ord_, key1, _clean(reason).replace('|', '\\|')[:140]))
     if errors:
         lines += ['', '## Validation Errors', '']
-        lines.extend('- %s' % e for e in errors[:50])
+        lines.extend('- {}'.format(e) for e in errors[:50])
     _ensure_parent(REVIEW_REPORT)
     open(REVIEW_REPORT, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
-    print('review readiness report → %s' % REVIEW_REPORT)
+    print('review readiness report → {}'.format(REVIEW_REPORT))
 
 
 def cmd_apply_review(args):
@@ -605,7 +601,7 @@ def cmd_apply_review(args):
     by_id, by_suffix = _store_review_index(store)
     missing = sorted(rid for rid in decisions
                      if _resolve_review_row(rid, by_id, by_suffix) is None)
-    errors.extend('%s: not found in store' % rid for rid in missing)
+    errors.extend('{}: not found in store'.format(rid) for rid in missing)
     if errors:
         for e in errors[:50]:
             print('  ERROR:', e)
@@ -701,7 +697,7 @@ def cmd_migrate_legacy(args):
               % (changed, len(rows), dict(sorted(review_counts.items()))))
         return
     if not changed:
-        print('store already migrated; review status: %s' % dict(sorted(review_counts.items())))
+        print('store already migrated; review status: {}'.format(dict(sorted(review_counts.items()))))
         return
     # H3350: legacy migration rewrites the store only through the H2146 lock
     # (PromoteClaim + fsynced backup + atomic replace); ClaimBusy propagates

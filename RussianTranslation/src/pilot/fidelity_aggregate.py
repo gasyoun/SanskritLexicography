@@ -96,14 +96,14 @@ def main():
     print('=== FIDELITY (Opus judge, DE->RU) ===')
     print('cards judged : %d' % n)
     print('precision    : %.1f%%  (good=%d, bad=%d)' % (100 * p, good, n - good))
-    print('95%% CI       : [%.1f%%, %.1f%%]  (Wilson)' % (100 * lo, 100 * hi))
-    print('severity hist: %s' % dict(sorted(sev.items())))
-    print('bad issues   : %s' % dict(issues.most_common()))
+    print('95% CI       : [{:.1f}%, {:.1f}%]  (Wilson)'.format(100 * lo, 100 * hi))
+    print('severity hist: {}'.format(dict(sorted(sev.items()))))
+    print('bad issues   : {}'.format(dict(issues.most_common())))
     print('by stratum:')
     for st, d in per.items():
         print('  %-12s n=%-3d precision=%.0f%% CI=[%.0f%%,%.0f%%]'
               % (st, d['n'], 100 * d['precision'], 100 * d['ci95'][0], 100 * d['ci95'][1]))
-    print('wrote %s' % args.out)
+    print('wrote {}'.format(args.out))
 
 
 if __name__ == '__main__':

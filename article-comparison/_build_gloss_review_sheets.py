@@ -31,7 +31,7 @@ HERE = Path(__file__).resolve().parent
 OUT_DIR = HERE.parent / "review"
 
 sys.path.append(str(HERE.parent / "RussianTranslation" / "src"))
-from review_sheet_standard import standard_config  # noqa: E402
+from review_sheet_standard import standard_config
 
 # V4 — the published per-word article page (the exact file the accepted votes
 # edit; publicly linked from article-comparison/README.md).
@@ -156,11 +156,10 @@ def main() -> None:
             # except save_banner (its default bakes in this sheet's own
             # sheet_id/save_as, so a fixed preset string would drop them).
             "ui_strings": dict(RU_UI_STRINGS, save_banner=(
-                '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
-                '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
-                'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
-                'листу относятся эти решения).'
-                % (esc(sheet_id), esc(save_as), esc(sheet_id)))),
+                '&#128229; Ваш экспорт скачивается как <code>{}_decisions.json</code> '
+                '&rarr; сохраните его в <code>{}</code> (значение <code>sheet_id</code> '
+                'внутри файла — <code>{}</code> — так следующая сессия узнаёт, к какому '
+                'листу относятся эти решения).'.format(esc(sheet_id), esc(save_as), esc(sheet_id)))),
             "title": f'Глосс-ревью {w["headword_display"]} — правки ручных RU-глосс',
             "subtitle": (
                 f'{w["headline"]} Источник: article-comparison/{w["source_file"]} '

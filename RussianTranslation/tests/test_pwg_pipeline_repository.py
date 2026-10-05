@@ -14,9 +14,9 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import (audit, import_legacy, kernel, model,  # noqa: E402
+from pwg_pipeline import (audit, import_legacy, kernel, model,
                           providers, repository)
-from pwg_pipeline.evidence import sha256_text, tree_digest  # noqa: E402
+from pwg_pipeline.evidence import sha256_text, tree_digest
 
 CAMPAIGN = 'test-campaign'
 

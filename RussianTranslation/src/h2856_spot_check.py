@@ -101,8 +101,8 @@ def write_report(results, n_total_absent):
     lines.append('| key1 | renou_any_dcs | prefix hits in corpus_lexicon.jsonl | verdict |')
     lines.append('|---|---|---|---|')
     for r in results:
-        hits_str = '; '.join('`%s`' % h['slp1'] for h in r['prefix_hits']) or '—'
-        lines.append('| `%s` | %s | %s | %s |' % (r['key1'], r['renou_any_dcs'], hits_str, r['verdict']))
+        hits_str = '; '.join('`{}`'.format(h['slp1']) for h in r['prefix_hits']) or '—'
+        lines.append('| `{}` | {} | {} | {} |'.format(r['key1'], r['renou_any_dcs'], hits_str, r['verdict']))
     lines.append('')
     lines.append('## Result')
     lines.append('')

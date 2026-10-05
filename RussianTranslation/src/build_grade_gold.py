@@ -102,7 +102,7 @@ def cohens_kappa(labels_a, labels_b, classes=('A', 'B', 'C')):
 
 def cmd_build(a):
     if not os.path.exists(a.gold):
-        sys.exit('gold set not found: %s' % a.gold)
+        sys.exit('gold set not found: {}'.format(a.gold))
     rows = [json.loads(l) for l in open(a.gold, encoding='utf-8') if l.strip()]
     out_rows = []
     r1_grades, r2_grades = [], []
@@ -137,12 +137,12 @@ def cmd_build(a):
         f.write(memo)
 
     print('build: %d rows -> %s' % (len(out_rows), a.out))
-    print('  rater1 (label_policy) dist: %s' % dict(dist1))
-    print('  rater2 (qe_composite) dist: %s' % dict(dist2))
+    print('  rater1 (label_policy) dist: {}'.format(dict(dist1)))
+    print('  rater2 (qe_composite) dist: {}'.format(dict(dist2)))
     print('  raw agreement: %d/%d (%.1f%%)' % (n_agree, len(out_rows),
                                                 100 * n_agree / len(out_rows)))
-    print("  Cohen's kappa: %.4f" % kappa)
-    print('  memo -> %s' % a.memo)
+    print("  Cohen's kappa: {:.4f}".format(kappa))
+    print('  memo -> {}'.format(a.memo))
     return 0
 
 
@@ -174,7 +174,7 @@ def _render_memo(n, dist1, dist2, kappa, n_agree, strata):
     lines.append('## Inter-rater agreement')
     lines.append('')
     lines.append('- Raw agreement: %d/%d (%.1f%%)' % (n_agree, n, 100 * n_agree / n))
-    lines.append("- Cohen's kappa (unweighted, 3-class A/B/C): **%.4f**" % kappa)
+    lines.append("- Cohen's kappa (unweighted, 3-class A/B/C): **{:.4f}**".format(kappa))
     lines.append('')
     lines.append('Rater 1 maps the existing H136 semantic label (correct/lemma-variant/'
                  'proper-name/partial/wrong-sense/hallucinated) deterministically to A/B/C. '
@@ -217,7 +217,7 @@ def _render_memo(n, dist1, dist2, kappa, n_agree, strata):
 
 def cmd_verify(a):
     if not os.path.exists(a.out):
-        sys.exit('frozen gold not found: %s (run `build` first)' % a.out)
+        sys.exit('frozen gold not found: {} (run `build` first)'.format(a.out))
     rows = [json.loads(l) for l in open(a.out, encoding='utf-8') if l.strip()]
     n = len(rows)
     missing = [r for r in rows if r.get('grade') not in ('A', 'B', 'C')]

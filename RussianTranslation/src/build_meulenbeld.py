@@ -72,7 +72,7 @@ def parse_block(blk):
 def build():
     path = os.path.join(SRC, FILE)
     if not os.path.exists(path):
-        sys.exit('not found: %s' % path)
+        sys.exit('not found: {}'.format(path))
     with open(path, encoding='utf-8') as f:
         blocks = re.split(r'\r?\n\r?\n', f.read())
     out_path = os.path.join(HERE, 'meulenbeld_plants.jsonl')

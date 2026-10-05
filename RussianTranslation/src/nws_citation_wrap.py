@@ -53,7 +53,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 os.environ.setdefault("LS_RESOLVER_QUIET", "1")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import ls_resolver as lsr                                      # noqa: E402
+import ls_resolver as lsr
 
 #: Regions of a store body that are never scanned: an existing citation element
 #: (already linked, and re-wrapping would nest elements) and a Sanskrit span
@@ -119,7 +119,7 @@ def _accept(work, addr):
         return None
     if not 1 <= book <= _MAX_BOOK[prefix]:
         return None
-    canon = "%s %s" % (prefix, addr)
+    canon = "{} {}".format(prefix, addr)
     try:
         href = lsr.generate_href("pwg", None, canon)
     except Exception:
@@ -178,7 +178,7 @@ def wrap_bare_citations(text):
     out, pos = [], 0
     for start, end, raw, _work, canon in hits:
         out.append(text[pos:start])
-        out.append('<ls n="%s">%s</ls>' % (html.escape(canon, quote=True), raw))
+        out.append('<ls n="{}">{}</ls>'.format(html.escape(canon, quote=True), raw))
         pos = end
     out.append(text[pos:])
     return "".join(out), len(hits)
@@ -195,17 +195,17 @@ def selftest():
     # ---- the control cases from the gā card (VERIFICATION §1, A5)
     hits = find_bare_citations("идти, входить в; уходить. ṚV 10,108,9")
     check(len(hits) == 1 and hits[0][4] == "ṚV. 10,108,9",
-          "bare ṚV 10,108,9 is recognised as ṚV. 10,108,9 (%r)" % (hits,))
+          "bare ṚV 10,108,9 is recognised as ṚV. 10,108,9 ({!r})".format(hits))
     wrapped, n = wrap_bare_citations("идти, входить в; уходить. ṚV 10,108,9")
     check(n == 1 and '<ls n="ṚV. 10,108,9">ṚV 10,108,9</ls>' in wrapped,
-          "wrap reproduces the store's own NWS element shape: %s" % wrapped)
+          "wrap reproduces the store's own NWS element shape: {}".format(wrapped))
     check(lsr.generate_href("pwg", "ṚV. 10,108,9", "ṚV 10,108,9"),
           "the emitted element resolves through the normal render path")
 
     # ---- the Roman-numeral MW form
     r = find_bare_citations("скрываться, бояться (?). ṚV x, 68, 1")
     check(len(r) == 1 and r[0][4] == "ṚV. 10,68,1",
-          "Roman maṇḍala x is converted to 10 (%r)" % (r,))
+          "Roman maṇḍala x is converted to 10 ({!r})".format(r))
     check(roman_to_int("iii") == 3 and roman_to_int("xiv") == 14,
           "subtractive Roman numerals")
     check(roman_to_int("xxx") is None and roman_to_int("") is None,

@@ -55,13 +55,13 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
-from csl_pyutil import RU_UI_STRINGS, esc, mark_cyrillic  # noqa: E402
-from csl_pyutil.evidence import find_slp1  # noqa: E402
+from csl_pyutil import RU_UI_STRINGS, esc, mark_cyrillic
+from csl_pyutil.evidence import find_slp1
 
-from _sanskrit_util_vendored import source_line_to_iast  # noqa: E402
-from packset_output import emit_sheet  # noqa: E402
-from review_evidence_preflight import EvidenceManifest  # noqa: E402
-from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config  # noqa: E402
+from _sanskrit_util_vendored import source_line_to_iast
+from packset_output import emit_sheet
+from review_evidence_preflight import EvidenceManifest
+from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -161,11 +161,9 @@ def render_menu(menu):
             html += (' <span style="opacity:.7" title="Статья PWG в этом месте '
                      'обрезана рамкой выборки">&hellip; ⟨обрезано⟩</span>')
         parts.append(
-            '<li style="margin-bottom:.42em"><b style="color:var(--accent)">[%s]</b> %s</li>'
-            % (esc(tag), html)
+            '<li style="margin-bottom:.42em"><b style="color:var(--accent)">[{}]</b> {}</li>'.format(esc(tag), html)
         )
-    return ('<ol style="margin:.3em 0 .1em 1.2em;line-height:1.55">%s</ol>'
-            % "".join(parts))
+    return ('<ol style="margin:.3em 0 .1em 1.2em;line-height:1.55">{}</ol>'.format("".join(parts)))
 
 
 def render_sentence(sentence, form):
@@ -191,15 +189,15 @@ def render_sentence(sentence, form):
         return box % s.replace(
             f,
             '<mark style="background:var(--accent);color:#000;padding:0 .18em;'
-            'border-radius:3px;font-weight:700">%s</mark>' % f,
+            'border-radius:3px;font-weight:700">{}</mark>'.format(f),
             1)
     return (box % s) + (
         '<p style="margin:.5em 0 0;opacity:.85"><b>Слово в разборе:</b> '
-        '<code>%s</code> &mdash; в предложении оно <b>не встречается в этой '
+        '<code>{}</code> &mdash; в предложении оно <b>не встречается в этой '
         'форме</b>: внешнее сандхи слило его с соседним словом, либо лемма '
         'определена неверно. Найдите его сами по смыслу; если это невозможно '
         '&mdash; &laquo;Не подходит / непригодно&raquo; с причиной '
-        '<code>wrong_lemma</code> (или <code>corrupt</code>).</p>' % f)
+        '<code>wrong_lemma</code> (или <code>corrupt</code>).</p>'.format(f))
 
 
 def band_stats(rows):
@@ -247,7 +245,7 @@ def build_items(rows, stats):
         out.append({
             "id": r["row_id"],
             "filt": band,
-            "title": "%s — %s" % (r["lemma_iast"], r["form"]),
+            "title": "{} — {}".format(r["lemma_iast"], r["form"]),
             "title_href": pwg_entry_href(key1),
             "badges": [
                 r["upos"],
@@ -370,14 +368,13 @@ def main(pack_size=0, hub_name=None, out_dir=None, locks_dir=None):
         "filters": filters,
         "identity_gate": {"patterns": [r"\bH\d{3,4}\b"], "labels": {}},
         "ui_strings": dict(RU_UI_STRINGS, save_banner=(
-            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
-            '&rarr; сохраните его в <code>RussianTranslation\\review\\%s_decisions.json</code> '
-            '(значение <code>sheet_id</code> внутри файла — <code>%s</code> — так следующая '
-            'сессия узнаёт, к какому листу относятся эти решения).'
-            % (SHEET_ID, SHEET_ID, SHEET_ID))),
+            '&#128229; Ваш экспорт скачивается как <code>{}_decisions.json</code> '
+            '&rarr; сохраните его в <code>RussianTranslation\\review\\{}_decisions.json</code> '
+            '(значение <code>sheet_id</code> внутри файла — <code>{}</code> — так следующая '
+            'сессия узнаёт, к какому листу относятся эти решения).'.format(SHEET_ID, SHEET_ID, SHEET_ID))),
     }
     config.update(standard_config(
-        save_as=r"RussianTranslation\review\%s_decisions.json" % SHEET_ID))
+        save_as=r"RussianTranslation\review\{}_decisions.json".format(SHEET_ID)))
 
     screening = {
         # (a) ran upstream at sampling time, not re-run here: sample_wsd_frame.py
@@ -424,12 +421,12 @@ def selftest():
     items = build_items(rows, stats)
     for it in items:
         assert it["id"] and it["title_href"], it
-        assert "<li" in it["panels"][0][1], "empty sense menu on %s" % it["id"]
+        assert "<li" in it["panels"][0][1], "empty sense menu on {}".format(it["id"])
         # Either the token is highlighted, or the card explicitly says it
         # could not be located -- never a silently unmarked sentence.
         assert ("<mark" in it["question"]
                 or "не встречается в этой форме" in it["question"]), \
-            "target form neither highlighted nor flagged on %s" % it["id"]
+            "target form neither highlighted nor flagged on {}".format(it["id"])
     unlocatable = sum(1 for r in rows if r["form"] not in r["sentence"])
     assert unlocatable == 4, (
         "sandhi-fused/unlocatable target count changed: %d (was 4/48 when the "
@@ -440,7 +437,7 @@ def selftest():
         menu_html = it["panels"][0][1]
         for bad in ("{#", "#}", "{@", "@}"):
             assert bad not in menu_html, \
-                "raw markup %r leaked into %s's menu" % (bad, it["id"])
+                "raw markup {!r} leaked into {}'s menu".format(bad, it["id"])
     n_opts = sum(len(split_menu(r["sense_menu"])) for r in rows)
     n_cut = sum(1 for r in rows for _t, b in split_menu(r["sense_menu"])
                 if close_truncated_markup(b)[1])

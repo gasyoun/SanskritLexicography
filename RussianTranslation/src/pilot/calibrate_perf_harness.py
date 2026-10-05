@@ -53,7 +53,7 @@ def apply_arm_set(args):
 
 
 def arm_name(output_budget, selfheal_budget, tm_mode, max_wide=None):
-    name = 'ob%s_sh%s_tm%s' % (output_budget, selfheal_budget, tm_mode)
+    name = 'ob{}_sh{}_tm{}'.format(output_budget, selfheal_budget, tm_mode)
     return name if max_wide is None else '%s_w%d' % (name, max_wide)
 
 
@@ -97,11 +97,11 @@ def build_command(args, out_js, output_budget, selfheal_budget, tm_mode, max_wid
         sys.executable,
         os.path.join(HERE, 'gen_opt_harness2.py'),
         args.root,
-        '--keys=%s' % ','.join(args.keys),
-        '--out=%s' % out_js,
-        '--output-budget=%s' % output_budget,
-        '--selfheal-budget=%s' % selfheal_budget,
-        '--lang=%s' % args.lang,
+        '--keys={}'.format(','.join(args.keys)),
+        '--out={}'.format(out_js),
+        '--output-budget={}'.format(output_budget),
+        '--selfheal-budget={}'.format(selfheal_budget),
+        '--lang={}'.format(args.lang),
     ]
     if args.nominal:
         cmd.append('--nominal')
@@ -110,11 +110,11 @@ def build_command(args, out_js, output_budget, selfheal_budget, tm_mode, max_wid
     if tm_mode == 'off':
         cmd.append('--no-tm')
     elif tm_mode == 'on':
-        cmd.append('--tm=%s' % args.tm_path if args.tm_path else '--tm')
+        cmd.append('--tm={}'.format(args.tm_path) if args.tm_path else '--tm')
     elif tm_mode == 'auto':
         cmd.append('--tm=auto')
     else:
-        raise ValueError('unknown tm mode %r' % tm_mode)
+        raise ValueError('unknown tm mode {!r}'.format(tm_mode))
     if max_wide is not None:
         cmd.append('--max-wide=%d' % max_wide)   # H1403 A7 width arm (width_policy bracket)
     return cmd
@@ -131,24 +131,24 @@ def write_readme(path, manifest):
         '',
         '## Fixed Inputs',
         '',
-        '- root: `%s`' % manifest['root'],
-        '- lang: `%s`' % manifest['lang'],
-        '- keys: `%s`' % ','.join(manifest['keys']),
-        '- generated_at: `%s`' % manifest['generated_at'],
+        '- root: `{}`'.format(manifest['root']),
+        '- lang: `{}`'.format(manifest['lang']),
+        '- keys: `{}`'.format(','.join(manifest['keys'])),
+        '- generated_at: `{}`'.format(manifest['generated_at']),
         '',
         '## Arms',
         '',
     ]
     for arm in manifest['arms']:
         lines.extend([
-            '### %s' % arm['name'],
+            '### {}'.format(arm['name']),
             '',
-            '- output_budget: `%s`' % arm['output_budget'],
-            '- selfheal_budget: `%s`' % arm['selfheal_budget'],
-            '- tm_mode: `%s`' % arm['tm_mode'],
-            '- harness: `%s`' % arm['harness'],
-            '- generator_status: `%s`' % arm['status'],
-            '- command: `%s`' % ' '.join(arm['command']),
+            '- output_budget: `{}`'.format(arm['output_budget']),
+            '- selfheal_budget: `{}`'.format(arm['selfheal_budget']),
+            '- tm_mode: `{}`'.format(arm['tm_mode']),
+            '- harness: `{}`'.format(arm['harness']),
+            '- generator_status: `{}`'.format(arm['status']),
+            '- command: `{}`'.format(' '.join(arm['command'])),
             '- workflow_output: TODO',
             '- audit_report: TODO',
             '- cost_summary: TODO',
@@ -192,7 +192,7 @@ def main(argv=None):
 
     stamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
     out_dir = os.path.abspath(args.out_dir or os.path.join(OUT, 'perf_calibration',
-                                                          '%s_%s' % (args.root, stamp)))
+                                                          '{}_{}'.format(args.root, stamp)))
     os.makedirs(out_dir, exist_ok=True)
 
     manifest = {
@@ -211,7 +211,7 @@ def main(argv=None):
     for output_budget, selfheal_budget, tm_mode, max_wide in itertools.product(
             args.output_budgets, args.selfheal_budgets, args.tm_modes, widths):
         name = arm_name(output_budget, selfheal_budget, tm_mode, max_wide)
-        out_js = os.path.join(out_dir, '%s.js' % name)
+        out_js = os.path.join(out_dir, '{}.js'.format(name))
         cmd = build_command(args, out_js, output_budget, selfheal_budget, tm_mode, max_wide)
         status, stdout, stderr = 'emit-only', '', ''
         if not args.emit_only:

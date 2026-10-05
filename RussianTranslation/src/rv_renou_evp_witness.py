@@ -39,7 +39,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from rt_io import read_jsonl  # noqa: E402
+from rt_io import read_jsonl
 
 RT_ROOT = os.path.normpath(os.path.join(HERE, '..'))
 PWG_RU_DIR = os.path.join(RT_ROOT, 'pwg_ru')
@@ -178,7 +178,7 @@ def main():
           % (stats['loci_covered'], len(canonical) if canonical else '?'))
     print('  with at least one quoted French fragment: %d' % stats['loci_with_quote'])
     per_mandala = collections.Counter(r['mandala'] for r in records)
-    print('  per mandala: %s' % dict(sorted(per_mandala.items())))
+    print('  per mandala: {}'.format(dict(sorted(per_mandala.items()))))
 
     if a.report:
         return 0
@@ -212,7 +212,7 @@ def main():
         for m in range(1, 11):
             f.write('| %d | %d |\n' % (m, per_mandala.get(m, 0)))
         f.write('\n_Dr. Mārcis Gasūns_\n')
-    print('wrote %s' % RUN_LOG_PATH)
+    print('wrote {}'.format(RUN_LOG_PATH))
     return 0
 
 

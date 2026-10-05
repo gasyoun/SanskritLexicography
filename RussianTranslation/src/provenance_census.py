@@ -40,7 +40,7 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-from store_path import canonical_store  # noqa: E402
+from store_path import canonical_store
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..'))          # RussianTranslation/
@@ -60,7 +60,7 @@ def _repo_toplevel(start=HERE):
 REPO = _repo_toplevel()
 MANIFEST = os.path.join(HERE, 'pipeline_versions.json')
 COMPONENTS = ('prompt', 'glossary', 'script')
-SHA_FIELDS = tuple('%s_sha' % c for c in COMPONENTS)
+SHA_FIELDS = tuple('{}_sha'.format(c) for c in COMPONENTS)
 
 MEASURED = 'measured'
 ASSERTED = 'asserted'
@@ -185,7 +185,7 @@ def component_patterns(manifest_path=MANIFEST):
 def pattern_scopes(patterns, prefix='RussianTranslation'):
     """The narrowest git pathspecs covering these glob patterns -- so `ls-tree`
     walks the component directories, not the whole RussianTranslation tree."""
-    return sorted({'%s/%s' % (prefix, pat.split('*')[0].rstrip('/'))
+    return sorted({'{}/{}'.format(prefix, pat.split('*')[0].rstrip('/'))
                    for pat in patterns})
 
 
@@ -238,8 +238,8 @@ def commit_series(since, until, patterns_by_component, prefix='RussianTranslatio
     paths = set()
     for pats in patterns_by_component.values():
         paths.update(pattern_scopes(pats, prefix))
-    log = _git('log', '--format=%H\t%cI', '--since=%s' % since,
-               '--until=%s' % until, '--', *sorted(paths))
+    log = _git('log', '--format=%H\t%cI', '--since={}'.format(since),
+               '--until={}'.format(until), '--', *sorted(paths))
     cache = {}
     out = []
     for line in log.splitlines():
@@ -248,7 +248,7 @@ def commit_series(since, until, patterns_by_component, prefix='RussianTranslatio
         commit, date = line.split('\t')
         entry = {'commit': commit[:8], 'date': date}
         for name, pats in patterns_by_component.items():
-            entry['%s_sha' % name] = component_sha_at(commit, pats, prefix, cache)
+            entry['{}_sha'.format(name)] = component_sha_at(commit, pats, prefix, cache)
         out.append(entry)
     return out
 
@@ -278,14 +278,14 @@ def reconstruction_probe(summary, since='2026-06-01', until='2026-09-01'):
     """
     patterns = component_patterns()
     series = commit_series(since, until, patterns)
-    seen = {name: {e['%s_sha' % name] for e in series} for name in COMPONENTS}
+    seen = {name: {e['{}_sha'.format(name)] for e in series} for name in COMPONENTS}
     checks = []
     for stamp in summary['stamps']:
         row = {'first': stamp['first'], 'rows': stamp['rows']}
         # LOOSE test: does the recorded sha occur at ANY commit in the window?
         # This is deliberately generous -- an upper bound on recoverability.
         for name in COMPONENTS:
-            sha = stamp['%s_sha' % name]
+            sha = stamp['{}_sha'.format(name)]
             row[name] = {'sha': sha, 'reproduced': sha in seen[name]}
         # STRICT test: the commit that was the newest component commit at the
         # moment the row was generated -- what a dated backfill would actually use.
@@ -297,7 +297,7 @@ def reconstruction_probe(summary, since='2026-06-01', until='2026-09-01'):
                 break
         row['strict_commit'] = prior['commit'] if prior else None
         row['strict_match'] = (
-            {name: (prior['%s_sha' % name] == stamp['%s_sha' % name])
+            {name: (prior['{}_sha'.format(name)] == stamp['{}_sha'.format(name)])
              for name in COMPONENTS} if prior else None)
         checks.append(row)
     reproduced = sum(1 for c in checks
@@ -411,8 +411,8 @@ def render_markdown(summary, probe=None, corr=None):
         e = summary['per_era'][era]
         L.append('| %s | %d | %d | %d |' % (era, e[MEASURED], e[ASSERTED], e[ABSENT]))
     L.append('')
-    L.append('measured span: %s .. %s' % tuple(summary['spans'][MEASURED]))
-    L.append('asserted span: %s .. %s' % tuple(summary['spans'][ASSERTED]))
+    L.append('measured span: {} .. {}'.format(*tuple(summary['spans'][MEASURED])))
+    L.append('asserted span: {} .. {}'.format(*tuple(summary['spans'][ASSERTED])))
     L.append('')
     L.append('| prompt | glossary | script | rows | first | last |')
     L.append('|---|---|---|---:|---|---|')
@@ -491,7 +491,7 @@ def main(argv=None):
     store = args.store or canonical_store(
         os.path.join(HERE, 'pwg_ru_translated.jsonl'))
     if not os.path.isfile(store):
-        print('store not found: %s' % store, file=sys.stderr)
+        print('store not found: {}'.format(store), file=sys.stderr)
         return 2
     summary = census(store)
     probe = (reconstruction_probe(summary, args.since, args.until)

@@ -25,8 +25,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_tm_canonical as C  # noqa: E402
-from markup_fidelity_gates import GLOSS_RE, SAN_RE  # noqa: E402
+import pwg_tm_canonical as C
+from markup_fidelity_gates import GLOSS_RE, SAN_RE
 
 LS_FULL = re.compile(r'<ls\b[^>]*>.*?</ls>', re.S)
 LEX_FULL = re.compile(r'<lex\b[^>]*>.*?</lex>', re.S)
@@ -55,7 +55,7 @@ def _rejoin_is_interrupted_glosses(text):
     while prev != text:
         prev = text
         text = _IS_GLOSS_JOIN.sub(
-            lambda m: '{%%%s %s %s%%}' % m.groups(), text)
+            lambda m: '{{%{} {} {}%}}'.format(*m.groups()), text)
     return text
 
 # H2876: the German-apparatus token inventories now live in ONE canonical place —
@@ -66,7 +66,7 @@ def _rejoin_is_interrupted_glosses(text):
 # unknown <ab> already fell through to 'recurring_formula'; the extra PHRASES
 # (an der Spitze eines Comp., mit Ergänzung von, im Comp. vorangehend) add
 # recurring_formula fragment rows for formulae H2787 measured as real apparatus.
-from sanskrit_util import (  # noqa: E402
+from sanskrit_util import (
     GERMAN_GRAMMAR_AB as GRAMMAR_AB,
     GERMAN_FORMULA_AB as FORMULA_AB,
     GERMAN_FORMULA_PHRASES as _FORMULA_PHRASE_PATTERNS,
@@ -104,7 +104,7 @@ def fragment_row(parent, fragment_class, source, target, index, tag, rec_h, mapp
                              mapped)
     src = source or ''
     tgt = target
-    ctx = '%s|%s|%s' % (locator.get('lemma_slp1') or '', tag or '', rec_h or '')
+    ctx = '{}|{}|{}'.format(locator.get('lemma_slp1') or '', tag or '', rec_h or '')
     frag_id = C.fragment_id_of(fragment_class, parent_id, index, src)
     return {
         'schema': C.SCHEMA,
@@ -271,11 +271,11 @@ def verify():
     frags = fragmentize_rows(parents)
     report = inventory(frags, parents)
     if not report['ok']:
-        return False, 'fixture inventory failed: %s' % report
+        return False, 'fixture inventory failed: {}'.format(report)
     if set(report['by_class']) != set(C.FRAGMENT_CLASSES):
-        return False, 'fixture missing class: %s' % report['by_class']
+        return False, 'fixture missing class: {}'.format(report['by_class'])
     if any(report['by_class'][c] < 1 for c in C.FRAGMENT_CLASSES):
-        return False, 'fixture empty class: %s' % report['by_class']
+        return False, 'fixture empty class: {}'.format(report['by_class'])
     schema = C.load_schema()
     for row in frags:
         ok, why = C.validate_canonical(row)

@@ -34,9 +34,9 @@ for _path in (SRC, os.path.join(SRC, 'pilot')):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-import call_reservation  # noqa: E402  (hardened reservation ledger, reused)
-from pwg_pipeline import evidence, kernel, model, providers  # noqa: E402
-from pwg_pipeline.repository import open_repository, utc_now  # noqa: E402
+import call_reservation
+from pwg_pipeline import evidence, kernel, model, providers
+from pwg_pipeline.repository import open_repository, utc_now
 
 SCHEMA = 'pwg.qualification.glm.v1'
 MANIFEST_SCHEMA = 'pwg.qualification.manifest.v1'
@@ -119,7 +119,7 @@ class StubGlmAdapter(providers.GlmFlashAdapter):
 def ok_payload(case: dict) -> dict:
     return {'fragments': [{
         'fragment_id': case['fragment_id'],
-        'target_string': 'RU<%s>' % case['source_string'],
+        'target_string': 'RU<{}>'.format(case['source_string']),
     }]}
 
 
@@ -242,21 +242,21 @@ def _with_synthetic_price_card(scenario):
 
 def _scenario_env(workdir: str, name: str, *, max_calls: int = 4,
                   cost_ceiling_usd: float = 4.0):
-    repository = open_repository(os.path.join(workdir, '%s.sqlite' % name))
-    campaign_id = 'h4057-%s' % name
+    repository = open_repository(os.path.join(workdir, '{}.sqlite'.format(name)))
+    campaign_id = 'h4057-{}'.format(name)
     repository.create_campaign(model.Campaign(
         campaign_id=campaign_id, scope='h4057-glm-qualification', language='ru',
         route=model.ROUTE_GLM, max_calls=max_calls,
         cost_ceiling_usd=cost_ceiling_usd, promotable=False,
         created_by='tools/h4057_glm_route_qualification.py'))
-    ledger_path = os.path.join(workdir, '%s_reservations.json' % name)
+    ledger_path = os.path.join(workdir, '{}_reservations.json'.format(name))
     paid = kernel.PaidCallKernel(
         repository, campaign_id=campaign_id,
         evidence_dir=os.path.join(workdir, 'evidence', name),
         ledger_path=ledger_path)
     ledger = call_reservation.CallReservationLedger(
         ledger_path, campaign_id, max_calls=max_calls)
-    job_id = '%s.job' % campaign_id
+    job_id = '{}.job'.format(campaign_id)
     repository.add_job(model.Job(
         job_id=job_id, campaign_id=campaign_id, kind='fragment',
         source_identity=CARD_CASES[0]['fragment_id'],
@@ -410,9 +410,9 @@ def build_manifest(cards_path: str, out_path: str, count: int,
     """
     if not os.path.exists(cards_path):
         raise SystemExit(
-            'build-manifest: card list %s not found. The canonical pwg_ru'
+            'build-manifest: card list {} not found. The canonical pwg_ru'
             ' store is local-only; export the qualification cards on the'
-            ' machine that holds the store, then seal here.' % cards_path)
+            ' machine that holds the store, then seal here.'.format(cards_path))
     cards = []
     with open(cards_path, encoding='utf-8') as handle:
         for line in handle:

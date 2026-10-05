@@ -33,7 +33,7 @@ def main():
             raws[k1].append('\n'.join(buf[1:]))
     for k in CARDS:
         if not portraits[k]:
-            print('  MISSING: %s' % k); continue
+            print('  MISSING: {}'.format(k)); continue
         json.dump(portraits[k], open(os.path.join(OUT, safe_name(k) + '.portrait.json'), 'w', encoding='utf-8'),
                   ensure_ascii=False, indent=1)
         # label records: first = main entry, rest = Nachträge/Addenda (patches keyed
@@ -49,7 +49,7 @@ def main():
         print('  %-12s %d record(s), %d senses, corpus n=%s'
               % (k, len(portraits[k]), ns,
                  sum((p.get('corpus_synonyms') or {}).get('n', 0) for p in portraits[k])))
-    print('wrote pilot inputs → %s' % OUT)
+    print('wrote pilot inputs → {}'.format(OUT))
 
 
 if __name__ == '__main__':

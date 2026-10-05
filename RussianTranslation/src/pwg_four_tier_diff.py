@@ -21,8 +21,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import microstructure as ms          # noqa: E402
-import pwg_mask                      # noqa: E402
+import microstructure as ms
+import pwg_mask
 
 # The §447 two-tier forms, exactly as they stood before H3948.
 PRE_H3948_MARK = re.compile(r'(?<![^\s—])(?P<t>\d{1,2}|[a-z])[)〉]')
@@ -105,7 +105,7 @@ def main(argv):
     keys = keys or DEFAULT_KEYS
     found = records_for(keys)
     print('H3948 before/after segmentation diff (READ-ONLY)')
-    print('corpus: %s' % pwg_mask.PWG)
+    print('corpus: {}'.format(pwg_mask.PWG))
     print('each entry is printed twice, in full: as the pre-H3948 parser '
           'segmented it and as it segments now\n')
     missing = [k for k in keys if k not in found]
@@ -113,7 +113,7 @@ def main(argv):
         if k in found:
             report(k, found[k], width)
     if missing:
-        print('not found in the corpus: %s' % ', '.join(missing))
+        print('not found in the corpus: {}'.format(', '.join(missing)))
         return 1
     return 0
 

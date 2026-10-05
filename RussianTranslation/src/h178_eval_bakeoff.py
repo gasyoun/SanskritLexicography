@@ -95,7 +95,7 @@ def load_store_rows():
 
 
 def row_id(r, i):
-    return "%s|%s|%s" % ((r.get("provenance") or {}).get("root", "?"),
+    return "{}|{}|{}".format((r.get("provenance") or {}).get("root", "?"),
                          r.get("subcard") or r.get("key1") or "?",
                          r.get("sense_tag") or i)
 
@@ -241,9 +241,8 @@ def cmd_judge():
             b = base.get(it["id"], {}).get("ru_baseline", "")
             cand_a = it["ru"] if a_is_store else b
             cand_b = b if a_is_store else it["ru"]
-            user = ("GERMAN SOURCE:\n%s\n\nRUSSIAN TRANSLATION (evaluate this for MQM/adequacy/"
-                    "fluency/DA):\n%s\n\nPAIRWISE — candidate A:\n%s\n\ncandidate B:\n%s"
-                    % (it["de"], it["ru"], cand_a, cand_b))
+            user = ("GERMAN SOURCE:\n{}\n\nRUSSIAN TRANSLATION (evaluate this for MQM/adequacy/"
+                    "fluency/DA):\n{}\n\nPAIRWISE — candidate A:\n{}\n\ncandidate B:\n{}".format(it["de"], it["ru"], cand_a, cand_b))
             out = ds(user, system=JUDGE_SYS)
             try:
                 m = re.search(r"\{.*\}", out or "", re.S)
@@ -369,19 +368,19 @@ RUBRIC_JS = """
 def _rubric_panel(kind, it, blinded):
     if kind == "mqm":
         rows = "".join(
-            '<div style="margin:3px 0">%s: <select data-rubric="%s">%s</select></div>' % (
+            '<div style="margin:3px 0">{}: <select data-rubric="{}">{}</select></div>'.format(
                 esc(cat), esc(cat),
-                "".join('<option value="%s">%s</option>' % (s, s) for s in SEVERITIES))
+                "".join('<option value="{}">{}</option>'.format(s, s) for s in SEVERITIES))
             for cat in MQM_CATS)
-        return ("<div class=\"panel\"><h4>MQM error severities</h4>%s"
+        return ("<div class=\"panel\"><h4>MQM error severities</h4>{}"
                 "<div class=\"muted\">approve = no errors; reject = errors marked; "
-                "put the worst error SPAN in the note (free text below the H178 line).</div></div>" % rows)
+                "put the worst error SPAN in the note (free text below the H178 line).</div></div>".format(rows))
     if kind == "likert":
-        sel = lambda name: '<select data-rubric="%s">%s</select>' % (
+        sel = lambda name: '<select data-rubric="{}">{}</select>'.format(
             name, "".join('<option>%d</option>' % i for i in range(1, 6)))
         return ("<div class=\"panel\"><h4>Likert 1–5</h4>"
-                "adequacy (meaning preserved): %s &nbsp;&nbsp; fluency (natural scholarly Russian): %s"
-                "</div>" % (sel("adequacy"), sel("fluency_likert")))
+                "adequacy (meaning preserved): {} &nbsp;&nbsp; fluency (natural scholarly Russian): {}"
+                "</div>".format(sel("adequacy"), sel("fluency_likert")))
     if kind == "da":
         # V1 (19-07-2026): the 0-100 slider is gone — the DA instrument is the
         # emitter's clickable 1-5 rating row below the card (config["rating"]
@@ -430,13 +429,12 @@ def cmd_sheets(all_rubrics=False):
         blinding[it["id"]] = rng.random() < 0.5  # a_is_store
     for sheet_id, title, kind, question, alab, rlab in SHEETS:
         if sheet_id in RETIRED_A2 and not all_rubrics:
-            print("skip retired A2 (H1650): %s — use --all-rubrics only for deliberate remake"
-                  % sheet_id)
+            print("skip retired A2 (H1650): {} — use --all-rubrics only for deliberate remake".format(sheet_id))
             continue
         items = []
         n_cite = 0
         for it in items_raw:
-            panels = [("German source (PWG 5-layer)", "<pre>%s</pre>" % esc(it["de"]))]
+            panels = [("German source (PWG 5-layer)", "<pre>{}</pre>".format(esc(it["de"])))]
             # V7: highlight the Russian under judgment (mark_cyrillic AFTER
             # esc); the German panel stays untouched. For pairwise BOTH
             # blinded candidates get the identical treatment so no visual
@@ -446,11 +444,11 @@ def cmd_sheets(all_rubrics=False):
                 a_is_store = blinding[it["id"]]
                 ca = it["ru"] if a_is_store else b
                 cb = b if a_is_store else it["ru"]
-                panels.append(("Candidate A", "<pre>%s</pre>" % mark_cyrillic(esc(ca))))
-                panels.append(("Candidate B", "<pre>%s</pre>" % mark_cyrillic(esc(cb))))
+                panels.append(("Candidate A", "<pre>{}</pre>".format(mark_cyrillic(esc(ca)))))
+                panels.append(("Candidate B", "<pre>{}</pre>".format(mark_cyrillic(esc(cb)))))
             else:
                 panels.append(("Russian translation (promoted store)",
-                               "<pre>%s</pre>" % mark_cyrillic(esc(it["ru"]))))
+                               "<pre>{}</pre>".format(mark_cyrillic(esc(it["ru"])))))
             # H1650: citation_tm evidence (N1 loop — ruling must reach the card)
             cite_h, cite_html = citation_evidence_panel(it.get("de") or "")
             panels.append((cite_h, cite_html))
@@ -461,7 +459,7 @@ def cmd_sheets(all_rubrics=False):
                 # V4: IAST headword as the card title (subcard · sense demoted
                 # to a badge; the full id stays citable via the V3 id chip).
                 "title": it.get("iast") or slp1_iast(it.get("root") or ""),
-                "badges": ["%s · %s" % (it["subcard"], it.get("sense_tag") or ""),
+                "badges": ["{} · {}".format(it["subcard"], it.get("sense_tag") or ""),
                            it["stratum"], it.get("layer") or ""],
                 "question": esc(question) + _rubric_panel(kind, it, blinding),
                 "panels": panels,
@@ -481,13 +479,11 @@ def cmd_sheets(all_rubrics=False):
         config = {
             "sheet_id": sheet_id, "title": title, "generated": GENERATED,
             "subtitle": (
-                "H178 B-1 bake-off. %s One human channel (MG) on DA only after A2; "
+                "H178 B-1 bake-off. {} One human channel (MG) on DA only after A2; "
                 "DeepSeek is the model channel; agreement is human×model or agent×human — "
-                "never human×human cross-rubric. %s"
-                % (FROZEN_SAMPLE_NOTE, retired_note)
+                "never human×human cross-rubric. {}".format(FROZEN_SAMPLE_NOTE, retired_note)
             ),
-            "footer": "Sheet %s — same 30 frozen glosses. H1650 citation_tm panel on every card."
-                      % sheet_id,
+            "footer": "Sheet {} — same 30 frozen glosses. H1650 citation_tm panel on every card.".format(sheet_id),
             "approve_label": alab, "reject_label": rlab,
             # reproduces the original all/unvoted/flagged/random filter set; render_review_sheet
             # always prepends "all" and appends "unvoted only" itself.
@@ -496,7 +492,7 @@ def cmd_sheets(all_rubrics=False):
         # 19-07-2026 standard: V3 id chips + V6 taller notes + V8 save-as
         # banner (shared fragment), and V1/V5 DA 1-5 rating on the da sheet.
         config.update(standard_config(
-            save_as="RussianTranslation\\pwg_ru\\eval\\%s.decisions.json" % sheet_id))
+            save_as="RussianTranslation\\pwg_ru\\eval\\{}.decisions.json".format(sheet_id)))
         if kind == "da":
             config["rating"] = DA_RATING
         # H1649/H1650 screening banner (csl-pyutil ≥0.8.0)
@@ -527,7 +523,7 @@ def cmd_sheets(all_rubrics=False):
 # ------------------------------------------------------------------------ comet
 def cmd_comet():
     try:
-        from comet import download_model, load_from_checkpoint  # noqa
+        from comet import download_model, load_from_checkpoint
     except ImportError:
         print("BLOCKED: unbabel-comet is not installed. Steps (human/one-time):\n"
               "  1. pip install unbabel-comet\n"

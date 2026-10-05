@@ -27,12 +27,12 @@ H1209 = os.path.join(HERE, 'h1209')
 if H1209 not in sys.path:
     sys.path.insert(0, H1209)
 
-import cache_identity as ident  # noqa: E402
-import gate_evidence as ge  # noqa: E402
-import deepseek_arm as ds_arm  # noqa: E402
-import headless_worker as hw  # noqa: E402
-import prep_pack  # noqa: E402
-import prep_slice  # noqa: E402
+import cache_identity as ident
+import gate_evidence as ge
+import deepseek_arm as ds_arm
+import headless_worker as hw
+import prep_pack
+import prep_slice
 
 FIXTURE_DIR = os.path.join(HERE, 'fixtures', 'pwg_cache_economy')
 
@@ -362,14 +362,13 @@ def selftest(evidence_path=None):
     rewritten = []
     for name in GOLDEN_NAMES:
         path = os.path.join(FIXTURE_DIR, name)
-        ev.add_input('golden:%s' % name, path=path, units=1)
+        ev.add_input('golden:{}'.format(name), path=path, units=1)
         if before[name] is not None and before[name] != ge.sha256_file(path):
             rewritten.append(name)
     if rewritten:
         ev.warnings.append(
-            'C3-1: write_golden_fixtures() rewrote %s before the comparison below, so '
-            'that half of this selftest is the compiler against itself'
-            % ', '.join(rewritten))
+            'C3-1: write_golden_fixtures() rewrote {} before the comparison below, so '
+            'that half of this selftest is the compiler against itself'.format(', '.join(rewritten)))
     ev.note('goldens_rewritten', rewritten)
     ev.note('sha256_before', before)
     claude = load_json('legacy_claude_prompt.json')
@@ -426,9 +425,9 @@ def selftest(evidence_path=None):
     ev.set_verdict('pass')
     ev.assert_nonvacuous()
     ev.emit(evidence_path or ge.default_sidecar('prompt_compiler_golden'))
-    print('prompt_compiler selftest: PASS (%s)' % ev.summary())
+    print('prompt_compiler selftest: PASS ({})'.format(ev.summary()))
     if rewritten:
-        print('  ^ %s' % ev.warnings[-1])
+        print('  ^ {}'.format(ev.warnings[-1]))
     return 0
 
 

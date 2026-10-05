@@ -48,7 +48,7 @@ def cache_write_rate(ttl):
     try:
         return PRICE['input'] * CACHE_WRITE_TTL_MULT[ttl]
     except KeyError:
-        raise ValueError("unknown cache-write TTL %r (expected '5m' or '1h')" % (ttl,))
+        raise ValueError("unknown cache-write TTL {!r} (expected '5m' or '1h')".format(ttl))
 
 
 def split_cache_creation(usage):

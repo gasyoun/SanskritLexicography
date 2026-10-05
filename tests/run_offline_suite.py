@@ -43,7 +43,7 @@ TARGETS = [
 
 
 def main(argv: list[str]) -> int:
-    import pytest  # noqa: E402  (imported late so the missing-dep message is readable)
+    import pytest
 
     # Belt and braces: the same env hardening conftest.py applies, set here too so
     # that modules imported by the pre-existing tests see it as well.

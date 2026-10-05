@@ -67,7 +67,7 @@ _LEGEND_ANCHORS = ("aṃśagaṇa", "paryantīkṛta", "paryavadāpayitar")
 
 def _import_sanskrit_util():
     try:
-        import sanskrit_util  # noqa: F401
+        import sanskrit_util
         return sanskrit_util
     except ImportError:
         pass
@@ -76,7 +76,7 @@ def _import_sanskrit_util():
         if cand.is_dir():
             sys.path.insert(0, str(cand))
             try:
-                import sanskrit_util  # noqa: F401
+                import sanskrit_util
                 return sanskrit_util
             except ImportError:
                 sys.path.pop(0)

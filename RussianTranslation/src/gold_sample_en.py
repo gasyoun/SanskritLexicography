@@ -50,7 +50,7 @@ SHEET_FIELDS = ['id', 'headword', 'de', 'en', 'human_label', 'notes']
 def band_label(row):
     f = row.get('dcs_freq') or {}
     b = f.get('band')
-    return 'band%s' % b if b is not None else 'band_na'
+    return 'band{}'.format(b) if b is not None else 'band_na'
 
 
 def cell_of(row):
@@ -105,7 +105,7 @@ def write_outputs(picked):
         '- Population: tri-lingual store rows carrying `en` (%d sampled).' % len(recs),
         '- Strata: DCS freq band x source_type x stratum, fixed seed, proportional with a per-cell floor.',
         '- Reviewer sheet shows headword + German (de) + English (en) only; label vocabulary: '
-        + ', '.join('`%s`' % l for l in LABELS) + '.',
+        + ', '.join('`{}`'.format(l) for l in LABELS) + '.',
         '- GOOD = {correct, lemma-variant, proper-name}; ERR = {wrong-sense, hallucinated}.',
         '- Two annotators -> `gold_agreement.py` reports precision (Wilson 95%% CI) + Cohen kappa.',
         '  The working sample aliases `period`=freq-band and `kind`=source_type so that scorer is',
@@ -149,7 +149,7 @@ def main():
     args = ap.parse_args()
 
     if not os.path.exists(args.store):
-        sys.exit('no store at %s' % args.store)
+        sys.exit('no store at {}'.format(args.store))
     rows = [json.loads(l) for l in open(args.store, encoding='utf-8') if l.strip()]
     en_rows = [r for r in rows if r.get('en')]
     if not en_rows:
@@ -165,9 +165,9 @@ def main():
         return
     recs, _ = write_outputs(picked)
     print('\nwrote working sample  -> %s (%d rows)' % (os.path.relpath(SAMPLE, ROOT), len(recs)))
-    print('wrote reviewer sheet  -> %s (MW hidden)' % os.path.relpath(SHEET, ROOT))
-    print('wrote METHODS note    -> %s' % os.path.relpath(METHODS, ROOT))
-    print('NEXT: src/gold_packet.py %s  (split into reviewer packets)' % os.path.relpath(SHEET, ROOT))
+    print('wrote reviewer sheet  -> {} (MW hidden)'.format(os.path.relpath(SHEET, ROOT)))
+    print('wrote METHODS note    -> {}'.format(os.path.relpath(METHODS, ROOT)))
+    print('NEXT: src/gold_packet.py {}  (split into reviewer packets)'.format(os.path.relpath(SHEET, ROOT)))
 
 
 if __name__ == '__main__':

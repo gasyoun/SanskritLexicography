@@ -76,9 +76,9 @@ def run_cloud_window(window_id, items, translate_fn, *, model_identifier,
         t0 = time.time_ns()
         try:
             card, usage = translate_fn(item)
-        except Exception as exc:  # noqa: BLE001 — R4.2: park, don't block the lane
+        except Exception as exc:
             parked.append(parked_queue.park(
-                key, 'cloud translate_fn failed: %s' % str(exc).splitlines()[0],
+                key, 'cloud translate_fn failed: {}'.format(str(exc).splitlines()[0]),
                 source='cloud_window', lane='routine', env=parked_env))
             continue
         t1 = time.time_ns()
@@ -111,14 +111,14 @@ def run_cloud_window(window_id, items, translate_fn, *, model_identifier,
     }
     if out_dir:
         os.makedirs(out_dir, exist_ok=True)
-        wf_path = os.path.join(out_dir, 'wf_output.%s.json' % window_id)
+        wf_path = os.path.join(out_dir, 'wf_output.{}.json'.format(window_id))
         # H5707 L9: promotion consumes this artifact — tmp + os.replace so a
         # crash mid-write can never leave a truncated wf_output behind.
         tmp_path = wf_path + '.landing.tmp'
         with open(tmp_path, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(wf, f, ensure_ascii=False, indent=1)
         os.replace(tmp_path, wf_path)
-        ledger = os.path.join(out_dir, '%s.usage.jsonl' % window_id)
+        ledger = os.path.join(out_dir, '{}.usage.jsonl'.format(window_id))
         with open(ledger, 'a', encoding='utf-8', newline='\n') as f:
             for row in usage_rows:
                 f.write(json.dumps(row, ensure_ascii=False) + '\n')

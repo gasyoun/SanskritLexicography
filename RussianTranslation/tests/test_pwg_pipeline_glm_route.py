@@ -19,8 +19,8 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import kernel, model, providers  # noqa: E402
-from pwg_pipeline.repository import open_repository  # noqa: E402
+from pwg_pipeline import kernel, model, providers
+from pwg_pipeline.repository import open_repository
 
 TOOLS = os.path.join(ROOT, 'tools')
 
@@ -92,7 +92,7 @@ def test_card_replays_keep_markup_verbatim():
     assert request.requested_model == 'glm-5.3-flash'
     reply = glm_reply({'fragments': [{
         'fragment_id': CARD['fragment_id'],
-        'target_string': 'RU<%s>' % CARD['source_string']}]})
+        'target_string': 'RU<{}>'.format(CARD['source_string'])}]})
     parsed = adapter.parse_result(reply)
     assert CARD['source_string'] in parsed['fragments'][0]['target_string']
     usage = adapter.normalize_usage(reply)
@@ -131,14 +131,14 @@ def test_no_price_card_exists_for_glm_and_none_is_borrowed():
 
 
 def _campaign(workdir, name, *, cost_ceiling_usd=4.0):
-    repository = open_repository(os.path.join(workdir, '%s.sqlite' % name))
-    campaign_id = 'h4057-%s' % name
+    repository = open_repository(os.path.join(workdir, '{}.sqlite'.format(name)))
+    campaign_id = 'h4057-{}'.format(name)
     repository.create_campaign(model.Campaign(
         campaign_id=campaign_id, scope='h4057-glm-qualification',
         language='ru', route=model.ROUTE_GLM, max_calls=4,
         cost_ceiling_usd=cost_ceiling_usd, promotable=False,
         created_by='tests/test_pwg_pipeline_glm_route.py'))
-    job_id = '%s.job' % campaign_id
+    job_id = '{}.job'.format(campaign_id)
     import hashlib
     repository.add_job(model.Job(
         job_id=job_id, campaign_id=campaign_id, kind='fragment',
@@ -148,7 +148,7 @@ def _campaign(workdir, name, *, cost_ceiling_usd=4.0):
     paid = kernel.PaidCallKernel(
         repository, campaign_id=campaign_id,
         evidence_dir=os.path.join(workdir, 'evidence', name),
-        ledger_path=os.path.join(workdir, '%s_ledger.json' % name))
+        ledger_path=os.path.join(workdir, '{}_ledger.json'.format(name)))
     return repository, paid, job_id
 
 
@@ -179,7 +179,7 @@ def test_the_kernel_accepts_glm_and_accounts_exactly_once(
         def invoke(self, request):
             return glm_reply({'fragments': [{
                 'fragment_id': CARD['fragment_id'],
-                'target_string': 'RU<%s>' % CARD['source_string']}]})
+                'target_string': 'RU<{}>'.format(CARD['source_string'])}]})
 
     try:
         outcome = paid.execute(Stub(), job_ids=[job_id], job_payloads=[CARD],

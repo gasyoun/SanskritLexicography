@@ -12,7 +12,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 SM = os.path.normpath(os.path.join(GITHUB, 'SamudraManthanam',
                                    'web', 'corpus_builder', 'jsonl'))
@@ -121,7 +121,7 @@ def main():
             print('TMX export:', msg)
             clean = clean and ok
         except Exception as e:
-            print('TMX export: validation skipped (%s)' % e)
+            print('TMX export: validation skipped ({})'.format(e))
 
     # H215 Slice 2: the grader's deterministic invariants (qe ordering, source
     # override, consensus, grade gates) are a cheap integrity check regardless of a
@@ -136,7 +136,7 @@ def main():
         print('TM grader selftest:', 'OK' if ok else 'FAILED')
         clean = clean and ok
     except Exception as e:
-        print('TM grader selftest: skipped (%s)' % e)
+        print('TM grader selftest: skipped ({})'.format(e))
 
     print('VERDICT:', 'CLEAN' if clean else 'CONTAMINATION FOUND')
     return 0 if clean else 1

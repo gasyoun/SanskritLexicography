@@ -53,9 +53,8 @@ HIGH_DISCRIMINATION = {'strong', 'adequate'}
 NWS_DIASYSTEMS = ('Śā', 'Ved', 'Gen', 'Buddh', 'Epigr', 'Tan', 'Reg', 'Kāv', 'Jin', 'Ep',
                    'Вед', 'Общ', 'Будд', 'Эпигр', 'Рег', 'Джайн', 'Поэт', 'Эп', 'Тан', 'Шастр')
 _NWS_TAG_RE = re.compile(
-    r'\[\s*(?:%s)\.?\s*,\s*(?P<dom1>[^\]]{1,60})\]'
-    r'|(?:%s)\.?\s*,\s*(?P<dom2>[^\s,()>]{1,15})\s*(?:\(|>)'
-    % ('|'.join(re.escape(d) for d in NWS_DIASYSTEMS),
+    r'\[\s*(?:{})\.?\s*,\s*(?P<dom1>[^\]]{{1,60}})\]'
+    r'|(?:{})\.?\s*,\s*(?P<dom2>[^\s,()>]{{1,15}})\s*(?:\(|>)'.format('|'.join(re.escape(d) for d in NWS_DIASYSTEMS),
        '|'.join(re.escape(d) for d in NWS_DIASYSTEMS)))
 _CYRILLIC_RE = re.compile(r'[Ѐ-ӿ]')
 _JUNK_RE = re.compile(r'[\d,]')
@@ -80,30 +79,30 @@ def fail(msg):
 
 def need_obj(obj, where):
     if not isinstance(obj, dict):
-        fail('%s must be an object' % where)
+        fail('{} must be an object'.format(where))
 
 
 def need_keys(obj, keys, where):
     miss = sorted(k for k in keys if k not in obj)
     if miss:
-        fail('%s missing keys: %s' % (where, ', '.join(miss)))
+        fail('{} missing keys: {}'.format(where, ', '.join(miss)))
 
 
 def need_str(obj, key, where, nonempty=False):
     if not isinstance(obj.get(key), str):
-        fail('%s.%s must be a string' % (where, key))
+        fail('{}.{} must be a string'.format(where, key))
     if nonempty and not obj[key]:
-        fail('%s.%s must be non-empty' % (where, key))
+        fail('{}.{} must be non-empty'.format(where, key))
 
 
 def need_bool(obj, key, where):
     if not isinstance(obj.get(key), bool):
-        fail('%s.%s must be a boolean' % (where, key))
+        fail('{}.{} must be a boolean'.format(where, key))
 
 
 def need_list(obj, key, where):
     if not isinstance(obj.get(key), list):
-        fail('%s.%s must be a list' % (where, key))
+        fail('{}.{} must be a list'.format(where, key))
 
 
 def result_items(raw):
@@ -168,7 +167,7 @@ def validate_issue(issue, where):
     need_obj(issue, where)
     need_keys(issue, ISSUE_REQUIRED, where)
     if not isinstance(issue.get('severity'), int) or not 1 <= issue['severity'] <= 5:
-        fail('%s.severity must be an integer 1..5' % where)
+        fail('{}.severity must be an integer 1..5'.format(where))
     need_str(issue, 'detail', where)
 
 
@@ -177,13 +176,13 @@ def validate_judge(judge, key1):
     need_keys(judge, JUDGE_REQUIRED, 'judge')
     need_str(judge, 'key1', 'judge', nonempty=True)
     if judge['key1'] != key1:
-        fail('judge.key1 %r does not match card.key1 %r' % (judge['key1'], key1))
+        fail('judge.key1 {!r} does not match card.key1 {!r}'.format(judge['key1'], key1))
     for key in ('ok', 'register_ok', 'sigla_kept', 'coverage_ok', 'corpus_used'):
         need_bool(judge, key, 'judge')
     if not isinstance(judge.get('severity'), int) or not 1 <= judge['severity'] <= 5:
         fail('judge.severity must be an integer 1..5')
     if judge.get('discrimination_quality') not in DISCRIMINATION_QUALITY:
-        fail('judge bad discrimination_quality: %r' % judge.get('discrimination_quality'))
+        fail('judge bad discrimination_quality: {!r}'.format(judge.get('discrimination_quality')))
     need_list(judge, 'issues', 'judge')
     for i, issue in enumerate(judge['issues']):
         validate_issue(issue, 'judge.issues[%d]' % i)
@@ -197,17 +196,16 @@ def validate_sense(sense, where):
         need_str(sense, key, where, nonempty=(key == 'tag'))
     defects = nws_tag_defects(sense.get('russian', ''))
     if defects:
-        fail('%s.russian: Cyrillic-valued or comma/digit-bearing NWS tag slot: %s'
-             % (where, '; '.join(defects)))
+        fail('{}.russian: Cyrillic-valued or comma/digit-bearing NWS tag slot: {}'.format(where, '; '.join(defects)))
     # Annotator fields: validated only when present (relaxed 2026-07-01 so dense
     # main-head cards recovered under the trimmed generation schema stay valid).
     for key in ('stratum', 'differentia'):
         if key in sense:
             need_str(sense, key, where)
     if 'equivalence_type' in sense and sense.get('equivalence_type') not in EQ_TYPES:
-        fail('%s bad equivalence_type: %r' % (where, sense.get('equivalence_type')))
+        fail('{} bad equivalence_type: {!r}'.format(where, sense.get('equivalence_type')))
     if 'source_type' in sense and sense.get('source_type') not in SOURCE_TYPES:
-        fail('%s bad source_type: %r' % (where, sense.get('source_type')))
+        fail('{} bad source_type: {!r}'.format(where, sense.get('source_type')))
     # Optional apparatus fields (added 2026-06-24, apparatus study). Validated
     # only when present, so existing cards stay valid.
     if 'government' in sense:
@@ -227,7 +225,7 @@ def validate_card(card):
     need_str(card, 'notes', 'card')
     need_list(card, 'records', 'card')
     if not card['records']:
-        fail('%s has no records' % card['key1'])
+        fail('{} has no records'.format(card['key1']))
     for i, rec in enumerate(card['records']):
         where = 'card.records[%d]' % i
         need_obj(rec, where)
@@ -236,7 +234,7 @@ def validate_card(card):
         need_str(rec, 'grammar', where)
         need_list(rec, 'senses', where)
         if not rec['senses']:
-            fail('%s.senses must not be empty' % where)
+            fail('{}.senses must not be empty'.format(where))
         for j, sense in enumerate(rec['senses']):
             validate_sense(sense, '%s.senses[%d]' % (where, j))
 
@@ -248,7 +246,7 @@ def validate_result(res, force_corpus_candidates=None):
     validate_card(card)
     key1 = card['key1']
     if 'key' in res and res['key'] != key1:
-        fail('result.key %r does not match card.key1 %r' % (res['key'], key1))
+        fail('result.key {!r} does not match card.key1 {!r}'.format(res['key'], key1))
     judge = res['judge']
     validate_judge(judge, key1)
 
@@ -257,8 +255,7 @@ def validate_result(res, force_corpus_candidates=None):
                          else force_corpus_candidates)
     if (corpus_candidates and judge.get('corpus_used') and
             judge.get('discrimination_quality') in HIGH_DISCRIMINATION and not has_diff):
-        fail('%s has corpus candidates and %s discrimination, but no non-empty differentia'
-             % (key1, judge.get('discrimination_quality')))
+        fail('{} has corpus candidates and {} discrimination, but no non-empty differentia'.format(key1, judge.get('discrimination_quality')))
 
 
 def load_results(path):
@@ -316,7 +313,7 @@ def cmd_selftest():
             validate_result(bad, force_corpus_candidates=True)
         except ValueError:
             continue
-        fail('selftest case unexpectedly passed: %s' % name)
+        fail('selftest case unexpectedly passed: {}'.format(name))
     print('final-card schema selftest OK: %d negative case(s)' % len(cases))
 
 
@@ -349,5 +346,5 @@ if __name__ == '__main__':
     try:
         main()
     except Exception as e:
-        print('FINAL-CARD SCHEMA CHECK FAILED: %s' % e, file=sys.stderr)
+        print('FINAL-CARD SCHEMA CHECK FAILED: {}'.format(e), file=sys.stderr)
         raise SystemExit(1)

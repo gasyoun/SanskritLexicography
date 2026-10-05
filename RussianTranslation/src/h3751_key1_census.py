@@ -42,11 +42,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import corpus_gate as cg                                              # noqa: E402
-from pwg_homonym import index_by_form_key, split_subcard              # noqa: E402
-from pwg_page_index import DEFAULT_SRC, parse_source                  # noqa: E402
-from store_path import canonical_store                                # noqa: E402
-from store_write import locked_store_rewrite                          # noqa: E402
+import corpus_gate as cg
+from pwg_homonym import index_by_form_key, split_subcard
+from pwg_page_index import DEFAULT_SRC, parse_source
+from store_path import canonical_store
+from store_write import locked_store_rewrite
 
 DEFAULT_STORE = canonical_store(os.path.join(HERE, 'pwg_ru_translated.jsonl'))
 DEFAULT_LEDGER = os.path.normpath(os.path.join(HERE, '..', 'reports',
@@ -133,7 +133,7 @@ def write_report(path, result):
         pairs = result['pairs'].get(cls) or []
         if not pairs:
             continue
-        lines += ['', '### `%s`' % cls, '', '| stored `key1` | sub-card witness | rows |',
+        lines += ['', '### `{}`'.format(cls), '', '| stored `key1` | sub-card witness | rows |',
                   '|---|---|---|']
         for (key1, witness), n in pairs[:60]:
             lines.append('| `%s` | `%s` | %d |' % (key1, witness, n))
@@ -178,10 +178,10 @@ def main():
     if args.json:
         with io.open(args.json, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(result, f, ensure_ascii=False, indent=1)
-        print('wrote %s' % args.json)
+        print('wrote {}'.format(args.json))
     if args.report:
         write_report(args.report, result)
-        print('wrote %s' % args.report)
+        print('wrote {}'.format(args.report))
 
     decidable = findings.get('decidable_subcard_only') or []
     if not args.apply:
@@ -207,7 +207,7 @@ def main():
                        'changed': {'key1': {'old': before['key1'], 'new': r['key1']},
                                    'iast': {'old': before['iast'], 'new': r['iast']}}})
     bak = locked_store_rewrite(args.store, rows, tag='h3751k1')
-    print('rewrote %s (backup: %s)' % (args.store, bak))
+    print('rewrote {} (backup: {})'.format(args.store, bak))
     os.makedirs(os.path.dirname(args.ledger), exist_ok=True)
     with io.open(args.ledger, 'w', encoding='utf-8', newline='\n') as f:
         for row in ledger:

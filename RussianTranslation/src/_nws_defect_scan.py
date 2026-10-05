@@ -65,7 +65,7 @@ for name, hits in buckets.items():
     print('=== %s : %d ===' % (name, len(hits)))
     for k1, ia, delta, s in hits[:40]:
         d = ' (+%d)' % delta if delta else ''
-        print('  [%s | %s]%s  …%s…' % (k1, ia, d, s.replace('\n', ' ')))
+        print('  [{} | {}]{}  …{}…'.format(k1, ia, d, s.replace('\n', ' ')))
     if len(hits) > 40:
         print('  … and %d more' % (len(hits) - 40))
     print()

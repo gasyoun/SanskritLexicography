@@ -21,7 +21,7 @@ if HERE not in sys.path:
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from d4_boundary_wrap import is_ru_n0_candidate, try_boundary_wrap  # noqa: E402
+from d4_boundary_wrap import is_ru_n0_candidate, try_boundary_wrap
 
 
 def run_store(dry=False):
@@ -29,7 +29,7 @@ def run_store(dry=False):
     default_local = os.path.join(SRC, 'pwg_ru_translated.jsonl')
     store = canonical_store(default_local)
     if not os.path.exists(store):
-        sys.exit('STORE ABSENT: %s' % store)
+        sys.exit('STORE ABSENT: {}'.format(store))
 
     rows = []
     with open(store, encoding='utf-8') as f:
@@ -44,7 +44,7 @@ def run_store(dry=False):
         ru = r.get('ru') or ''
         if not is_ru_n0_candidate(de, ru):
             continue
-        label = '%s|%s|%s' % (r.get('key1'), r.get('subcard'), r.get('sense_tag'))
+        label = '{}|{}|{}'.format(r.get('key1'), r.get('subcard'), r.get('sense_tag'))
         ok, result = try_boundary_wrap(de, ru)
         if ok:
             fixed.append(label)
@@ -55,7 +55,7 @@ def run_store(dry=False):
 
     total_ineligible = sum(len(v) for v in ineligible.values())
     print('D4 BOUNDARY WRAP %s' % ('(DRY RUN)' if dry else ''))
-    print('store                          : %s' % store)
+    print('store                          : {}'.format(store))
     print('rows                           : %d' % len(rows))
     print('rows fixed                     : %d' % len(fixed))
     print('rows left (manual review)      : %d' % total_ineligible)
@@ -66,13 +66,13 @@ def run_store(dry=False):
         bak = store + '.h1702.bak'
         if not os.path.exists(bak):
             shutil.copyfile(store, bak)
-            print('backup                         : %s' % bak)
+            print('backup                         : {}'.format(bak))
         # H2146: locked (PromoteClaim) + unique per-run backup + atomic replace — the
         # fixed '.tmp' rewrite was unlocked (last-writer-wins, FINDINGS §513); the
         # one-time .h1702.bak above stays as the pre-campaign forensic copy.
         from store_write import locked_store_rewrite
         locked_store_rewrite(store, rows, tag='h1702fix')
-        print('wrote                          : %s' % store)
+        print('wrote                          : {}'.format(store))
 
     return {
         'rows_fixed': len(fixed),

@@ -428,7 +428,7 @@ def selftest() -> int:
     if not (ut / "jev_probe.py").exists():
         sys.exit(f"jev_probe.py not found at {ut} (selftest needs it)")
     sys.path.insert(0, str(ut))
-    import jev_probe as _jp  # noqa: PLC0415
+    import jev_probe as _jp
     jp = _jp
     assert abs(spearman([1, 2, 3, 4], [10, 20, 30, 40]) - 1.0) < 1e-9
     assert abs(spearman([1, 2, 3, 4], [40, 30, 20, 10]) + 1.0) < 1e-9
@@ -485,7 +485,7 @@ def main() -> int:
                  "(H5275 client, sibling Uprava clone)")
     sys.path.insert(0, str(ut))
     global jp
-    import jev_probe as jp  # noqa: PLC0415
+    import jev_probe as jp
 
     defgen = Path(args.defgen_dir)
     if not (defgen / "frozen_sample.tsv").exists():

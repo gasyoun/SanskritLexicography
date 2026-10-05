@@ -20,15 +20,15 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 RESEARCH = os.path.join(HERE, '..', 'research')
 sys.path.insert(0, RESEARCH)
 sys.path.insert(0, HERE)
 
-import root_segment_proto as RS                       # noqa: E402
-from compile_translatable import PCT, INLINE_SA       # noqa: E402  ({%..%}, {#..#}/<is>)
-from safe_filename import safe_name                    # noqa: E402
+import root_segment_proto as RS
+from compile_translatable import PCT, INLINE_SA
+from safe_filename import safe_name
 
 PWG = os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 OUT = os.path.join(HERE, 'pilot', 'root_translate')
@@ -70,7 +70,7 @@ def manifest(L, pwg=PWG):
 
 def to_md(man):
     de = sum(1 for u in man['units'] if u['lang'] == ['de'])
-    L = ['# %s (L=%s) — segmented root manifest' % (man['key'], man['L']), '',
+    L = ['# {} (L={}) — segmented root manifest'.format(man['key'], man['L']), '',
          '%d sub-cards -> %d translation units (%d German to translate). '
          'root_key/upasarga/seg_index group + order the sub-cards.'
          % (man['sub_cards'], len(man['units']), de), '',
@@ -89,14 +89,14 @@ def main():
         L = sys.argv[2] if len(sys.argv) > 2 else '55166'
         pwg = sys.argv[3] if len(sys.argv) > 3 else PWG
         man = manifest(L, pwg)
-        print(to_md(man) if man else 'L=%s not found' % L)
+        print(to_md(man) if man else 'L={} not found'.format(L))
     elif cmd == 'write':
         os.makedirs(OUT, exist_ok=True)
         for L in sys.argv[2:]:
             man = manifest(L)
             if not man:
-                print('  L=%s not found' % L); continue
-            base = os.path.join(OUT, '%s_%s' % (man['safe'], L))
+                print('  L={} not found'.format(L)); continue
+            base = os.path.join(OUT, '{}_{}'.format(man['safe'], L))
             json.dump(man, open(base + '.json', 'w', encoding='utf-8'),
                       ensure_ascii=False, indent=1)
             open(base + '.md', 'w', encoding='utf-8').write(to_md(man))

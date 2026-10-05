@@ -204,7 +204,7 @@ def main():
     print('  backlog: %d unmapped abbrevs (%d tuple-comparable), %s citations'
           % (len(unmapped), len(safe),
              format(sum(r['citations'] for r in unmapped), ',')))
-    print('wrote %s' % a.out)
+    print('wrote {}'.format(a.out))
 
 
 if __name__ == '__main__':

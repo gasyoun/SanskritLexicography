@@ -28,7 +28,7 @@ def main() -> int:
     }
     for status, wanted in expected.items():
         found = {row['id'] for row in rows if row.get('status') == status}
-        assert found == wanted, '%s coverage drift: %r' % (status, sorted(wanted ^ found))
+        assert found == wanted, '{} coverage drift: {!r}'.format(status, sorted(wanted ^ found))
     coverage = value.get('coverage') or {}
     assert coverage.get('written_pwg_exact_fragment') == 'live'
     assert coverage.get('oral_transcript_units') == 'planned'

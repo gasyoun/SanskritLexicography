@@ -181,7 +181,7 @@ def scan_pwg(path):
             radical = bool(at_head and _HEAD_RADICAL.search(line))
             for rx in (_DHATUP, _DHATUP_N):
                 for mm in rx.finditer(line):
-                    coord = '%s,%s' % (mm.group(1), mm.group(2))
+                    coord = '{},{}'.format(mm.group(1), mm.group(2))
                     cell = coords[coord][key]
                     cell[slot] += 1
                     if nominal:
@@ -326,8 +326,7 @@ def main():
 
     missing = [p for p in (a.pwg, a.xls, a.artifact) if not os.path.exists(p)]
     if missing:
-        sys.stderr.write('dhatup_h4432_rebaseline_probe: absent, checked NOTHING: %s\n'
-                         % ', '.join(missing))
+        sys.stderr.write('dhatup_h4432_rebaseline_probe: absent, checked NOTHING: {}\n'.format(', '.join(missing)))
         return 2
 
     coords, entries = scan_pwg(a.pwg)
@@ -410,7 +409,7 @@ def main():
     print('pwg entries scanned            %d' % entries)
     for label, got, want, ok in checks:
         print('%-52s %-10s %-14s %s'
-              % (label, got, want if want == '(measured)' else 'want=%s' % want,
+              % (label, got, want if want == '(measured)' else 'want={}'.format(want),
                  '' if want == '(measured)' else ('OK' if ok else 'MISMATCH')))
     print('\nordered reading: newly resolved %d -> with a Palsule row %d, '
           'MW already fills %d, net new %d'
@@ -433,7 +432,7 @@ def main():
             cell = alt_c[c]
             print('    %-9s %-12s -> %-14s %s'
                   % (c, iast(base[c]) if c in base else '-', iast(cell),
-                     'SHIPPED as %s' % table[c]['source'] if c in table
+                     'SHIPPED as {}'.format(table[c]['source']) if c in table
                      else 'not shipped'))
 
     print('\nthe 18 reattributions of the narrow reading '
@@ -444,7 +443,7 @@ def main():
                  'no head-line citation' if not cell[HEAD] else 'verbal head line')
         print('  %-9s %-12s -> %-14s %-22s %s'
               % (c, iast(base[c]), iast(alt_n[c]), shape,
-                 'SHIPPED as %s' % table[c]['source'] if c in table else 'not shipped'))
+                 'SHIPPED as {}'.format(table[c]['source']) if c in table else 'not shipped'))
 
     # The scope evidence, one line per reattribution: what actually stands between the
     # coordinate's citation and the note the line-scoped test attributes to it.
@@ -452,7 +451,7 @@ def main():
           '(shipped article, line-scoped test says "disowned" for all 18):')
     heads = article_head_lines(a.pwg, {base[c] for c in m_n})
     for c in m_n:
-        pat = re.compile(r'DH[\u0100A]TUP\.\s*%s\s*,\s*%s\b' % tuple(c.split(',')))
+        pat = re.compile(r'DH[\u0100A]TUP\.\s*{}\s*,\s*{}\b'.format(*tuple(c.split(','))))
         line, mm = '', None
         for cand in heads.get(base[c], []):
             mm = pat.search(cand)
@@ -475,15 +474,13 @@ def main():
             wanted.add(alt_n[c])
         arts = article_lines(a.pwg, wanted)
         for c in m_n:
-            print('\n=== %s : %s (shipped) -> %s (proposed) ==='
-                  % (c, iast(base[c]), iast(alt_n[c])))
+            print('\n=== {} : {} (shipped) -> {} (proposed) ==='.format(c, iast(base[c]), iast(alt_n[c])))
             for role, k in (('SHIPPED', base[c]), ('PROPOSED', alt_n[c])):
-                print('--- %s article <k1>%s' % (role, k))
-                pat = re.compile(r'DH[ĀA]TUP\.\s*%s\s*,\s*%s\b'
-                                 % tuple(c.split(',')))
+                print('--- {} article <k1>{}'.format(role, k))
+                pat = re.compile(r'DH[ĀA]TUP\.\s*{}\s*,\s*{}\b'.format(*tuple(c.split(','))))
                 for i, line in enumerate(arts.get(k, [])):
                     if pat.search(line) or i == 0:
-                        print('    %s' % line)
+                        print('    {}'.format(line))
 
     print('\n%d checks, %d mismatched' % (len(checks), len(failed)))
     return 1 if failed else 0

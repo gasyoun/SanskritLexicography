@@ -27,7 +27,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from refresh_tm_mirror import load, sha256_file, semantic_diff  # noqa: E402
+from refresh_tm_mirror import load, sha256_file, semantic_diff
 
 # (handoff, mirror_before_file, mirror_after_file, expected_sha_before, expected_sha_after)
 TRANSITIONS = [
@@ -50,14 +50,14 @@ def compute(tm_dir, receipt_max_keys=100):
         for p in (before_path, after_path):
             if not os.path.exists(p):
                 raise SystemExit('missing local file (only present on the box that ran the '
-                                  'refresh): %s' % p)
+                                  'refresh): {}'.format(p))
         got_before = sha256_file(before_path)
         got_after = sha256_file(after_path)
         if got_before != exp_before:
-            raise SystemExit('%s mirror-before sha mismatch: got %s expected %s (%s)' % (
+            raise SystemExit('{} mirror-before sha mismatch: got {} expected {} ({})'.format(
                 handoff, got_before[:12], exp_before[:12], before_path))
         if got_after != exp_after:
-            raise SystemExit('%s mirror-after sha mismatch: got %s expected %s (%s)' % (
+            raise SystemExit('{} mirror-after sha mismatch: got {} expected {} ({})'.format(
                 handoff, got_after[:12], exp_after[:12], after_path))
         mirror_rows = load(before_path)
         src_rows = load(after_path)
@@ -104,11 +104,11 @@ def main():
             handoff, entry['changed_ru'], entry['shared_ids'], entry['ru_equal']))
 
     if not args.apply:
-        print('\nDRY RUN — nothing written. Re-run with --apply to annotate %s.' % ledger)
+        print('\nDRY RUN — nothing written. Re-run with --apply to annotate {}.'.format(ledger))
         return 0
 
     if not os.path.exists(ledger):
-        raise SystemExit('ledger not found: %s' % ledger)
+        raise SystemExit('ledger not found: {}'.format(ledger))
     touched = apply(ledger, ann)
     print('\nannotated %d row(s) in %s' % (touched, ledger))
     return 0

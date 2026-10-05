@@ -129,7 +129,7 @@ def raw_maps(source_dirs, wanted):
                 raw = fh.read()
             skeleton, ph, _stats = pwg_mask.mask(raw)
             if pwg_mask.restore(skeleton, ph) != raw:
-                raise RepairRefusal('mask round-trip failed for %s' % path)
+                raise RepairRefusal('mask round-trip failed for {}'.format(path))
             found[(key, sha)] = (ph, {
                 'kind': 'exact_raw', 'path': os.path.abspath(path), 'sha256': sha,
             })
@@ -138,7 +138,7 @@ def raw_maps(source_dirs, wanted):
 
 
 def _json_constant(line, name):
-    prefix = 'const %s = ' % name
+    prefix = 'const {} = '.format(name)
     if not line.startswith(prefix):
         return None
     value = line[len(prefix):].rstrip('\r\n')
@@ -187,8 +187,7 @@ def harness_maps(harness_dirs, wanted):
                     prior = found.get(address)
                     candidate = (phmaps[key], evidence)
                     if prior and prior[0] != candidate[0]:
-                        raise RepairRefusal('conflicting historical PH maps for %s @ %s'
-                                            % address)
+                        raise RepairRefusal('conflicting historical PH maps for {} @ {}'.format(*address))
                     found[address] = candidate
     return found
 
@@ -271,7 +270,7 @@ def plan_repair(store_path, source_dirs, harness_dirs):
                                     % (lineno, address[0], address[1]))
             ph, evidence = source
             try:
-                fixes = {field: restore_text(row[field], ph, '%s.%s' % (address[0], field))
+                fixes = {field: restore_text(row[field], ph, '{}.{}'.format(address[0], field))
                          for field in fields}
             except RepairRefusal as exc:
                 if address[0] not in QUARANTINE_SUBCARDS:
@@ -290,7 +289,7 @@ def plan_repair(store_path, source_dirs, harness_dirs):
                 continue
             if address[0] in QUARANTINE_SUBCARDS:
                 raise RepairRefusal('expected measured C-42 quarantine row unexpectedly became '
-                                    'restorable: %s' % address[0])
+                                    'restorable: {}'.format(address[0]))
             row.update(fixes)
             stats['placeholder_repaired'] += 1
             source_evidence[evidence['path']] = evidence
@@ -313,8 +312,7 @@ def plan_repair(store_path, source_dirs, harness_dirs):
         repaired.append(row)
 
     if not already_clean and set(q['subcard'] for q in quarantine) != QUARANTINE_SUBCARDS:
-        raise RepairRefusal('quarantine set drift: expected %s, got %s'
-                            % (sorted(QUARANTINE_SUBCARDS),
+        raise RepairRefusal('quarantine set drift: expected {}, got {}'.format(sorted(QUARANTINE_SUBCARDS),
                                sorted(q['subcard'] for q in quarantine)))
     if any(affected_fields(row) for row in repaired):
         raise RepairRefusal('post-repair store still contains raw {Tn}')
@@ -358,7 +356,7 @@ def jsonl_bytes(rows):
 def atomic_write_bytes(path, data):
     directory = os.path.dirname(os.path.abspath(path)) or '.'
     os.makedirs(directory, exist_ok=True)
-    fd, tmp = tempfile.mkstemp(prefix='.%s.' % os.path.basename(path), suffix='.tmp', dir=directory)
+    fd, tmp = tempfile.mkstemp(prefix='.{}.'.format(os.path.basename(path)), suffix='.tmp', dir=directory)
     try:
         with os.fdopen(fd, 'wb') as fh:
             fh.write(data)
@@ -381,9 +379,9 @@ def apply_repair(store_path, repaired, quarantine, expected_sha, quarantine_path
     with PromoteClaim(store_path):
         actual = sha256_file(store_path)
         if actual.lower() != expected_sha.lower():
-            raise RepairRefusal('source-hash drift: expected %s, got %s' % (expected_sha, actual))
+            raise RepairRefusal('source-hash drift: expected {}, got {}'.format(expected_sha, actual))
         stamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
-        backup = '%s.pre-h1080.%s.%s.bak' % (store_path, actual[:16], stamp)
+        backup = '{}.pre-h1080.{}.{}.bak'.format(store_path, actual[:16], stamp)
         with open(store_path, 'rb') as fh:
             original = fh.read()
         atomic_write_bytes(backup, original)
@@ -413,7 +411,7 @@ def main(argv=None):
 
     store_path = args.store or canonical_store(LOCAL_STORE)
     if not os.path.isfile(store_path):
-        raise RepairRefusal('canonical store does not exist: %s' % store_path)
+        raise RepairRefusal('canonical store does not exist: {}'.format(store_path))
     source_dirs = args.source_dir or [default_input_dir(store_path),
                                       default_recovery_dir(store_path)]
     harness_dirs = args.harness_dir or [default_harness_dir(store_path)]
@@ -431,8 +429,7 @@ def main(argv=None):
     if not args.expected_sha256:
         raise RepairRefusal('--apply requires --expected-sha256')
     if sha256_file(store_path).lower() != args.expected_sha256.lower():
-        raise RepairRefusal('source-hash drift: expected %s, got %s'
-                            % (args.expected_sha256, sha256_file(store_path)))
+        raise RepairRefusal('source-hash drift: expected {}, got {}'.format(args.expected_sha256, sha256_file(store_path)))
     if plan['stats'].get('already_clean'):
         if args.report:
             write_report(args.report, plan)
@@ -452,7 +449,7 @@ def main(argv=None):
     if args.report:
         write_report(args.report, plan)
     print(json.dumps(plan['stats'], ensure_ascii=False, sort_keys=True))
-    print('APPLIED: %s -> %s' % (plan['store_before_sha256'], after_sha))
+    print('APPLIED: {} -> {}'.format(plan['store_before_sha256'], after_sha))
     return 0
 
 
@@ -460,4 +457,4 @@ if __name__ == '__main__':
     try:
         sys.exit(main())
     except RepairRefusal as exc:
-        sys.exit('REFUSED: %s' % exc)
+        sys.exit('REFUSED: {}'.format(exc))

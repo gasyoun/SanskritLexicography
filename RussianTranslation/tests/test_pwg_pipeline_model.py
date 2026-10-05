@@ -12,8 +12,8 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import faults, model  # noqa: E402
-from pwg_pipeline import validation  # noqa: E402
+from pwg_pipeline import faults, model
+from pwg_pipeline import validation
 
 CLEAN_SHA = 'a' * 64
 

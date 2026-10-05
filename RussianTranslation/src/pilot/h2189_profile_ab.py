@@ -75,11 +75,11 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from headless_worker import (                                        # noqa: E402
+from headless_worker import (
     bare_cli_cwd, build_prompt, claude_argv_prefix, parse_cli_wrapper)
-from h2189_min_profile import (                                      # noqa: E402
+from h2189_min_profile import (
     MIN_CONFIG_DIR, PAID_CONFIG_DIR, clean_cwd, cwd_ancestry_scan)
-from parse_workflow_cost import PRICE, cache_write_rate              # noqa: E402
+from parse_workflow_cost import PRICE, cache_write_rate
 
 CACHE_WRITE_1H = cache_write_rate('1h')
 
@@ -131,8 +131,7 @@ def arm_cwd(name):
     path = clean_cwd(CLEAN_CWD_PATH)
     if path is None:
         raise SystemExit(
-            'arm %s needs an ancestry-clean cwd; %s still inherits: %s'
-            % (name, CLEAN_CWD_PATH,
+            'arm {} needs an ancestry-clean cwd; {} still inherits: {}'.format(name, CLEAN_CWD_PATH,
                ', '.join(h['path'] for h in cwd_ancestry_scan(CLEAN_CWD_PATH))))
     return path
 
@@ -273,7 +272,7 @@ def summarise(rows):
             def med(fn):
                 vals = sorted(v for v in (fn(r) for r in sel) if v is not None)
                 return vals[len(vals) // 2] if vals else None
-            out['%s/%s' % (arm, phase)] = {
+            out['{}/{}'.format(arm, phase)] = {
                 'n': len(sel),
                 'create': med(lambda r: r['usage'].get('cache_creation_input_tokens')),
                 'read': med(lambda r: r['usage'].get('cache_read_input_tokens')),
@@ -335,17 +334,17 @@ def main():
     arms = [a.strip() for a in args.arms.split(',') if a.strip()]
     unknown = [a for a in arms if a not in ARMS]
     if unknown:
-        print('unknown arm(s): %s (known: %s)' % (', '.join(unknown), ', '.join(ARM_ORDER)),
+        print('unknown arm(s): {} (known: {})'.format(', '.join(unknown), ', '.join(ARM_ORDER)),
               file=sys.stderr)
         return 2
 
-    print('manifest      : %s' % args.manifest)
-    print('model         : %s' % manifest['model'])
-    print('phase         : %s' % args.phase)
+    print('manifest      : {}'.format(args.manifest))
+    print('model         : {}'.format(manifest['model']))
+    print('phase         : {}'.format(args.phase))
     print('cards         : %s' % (', '.join(k for k in keys if k) or '(trivial prompt)'))
     bare = bare_cli_cwd()
     leak = cwd_ancestry_scan(bare) if bare else []
-    print('bare cli cwd  : %s' % bare)
+    print('bare cli cwd  : {}'.format(bare))
     print('  ancestry    : %d bytes injectable from %d ancestor file(s)%s'
           % (sum(h['bytes'] for h in leak), len(leak),
              '' if not leak else '  <- the residual tax bare_cli_cwd does not remove'))
@@ -373,13 +372,13 @@ def main():
             prompt = build_prompt(manifest, [key])
             print('prompt %-10s: %d chars from build_prompt (production surface)'
                   % (key, len(prompt)))
-    print('argv (arm %s): %s' % (arms[0],
+    print('argv (arm {}): {}'.format(arms[0],
                                  ' '.join(build_argv(arms[0], args.phase, manifest,
                                                      keys[0])[-6:])))
 
     if len(arms) < 2:
-        print('\nNOTE: single-arm run (%s). That is a BASELINE, not an A/B, and cannot '
-              'support a GO/NO-GO on its own.' % arms[0])
+        print('\nNOTE: single-arm run ({}). That is a BASELINE, not an A/B, and cannot '
+              'support a GO/NO-GO on its own.'.format(arms[0]))
     if not args.run:
         print('\n--check only; no calls issued. Re-run with --run to spend.')
         return 0
@@ -404,7 +403,7 @@ def main():
 
     print_table(rows)
     summary = summarise(rows)
-    print('\n== per-arm medians (%s phase) ==' % args.phase)
+    print('\n== per-arm medians ({} phase) =='.format(args.phase))
     print(json.dumps(summary, ensure_ascii=False, indent=2))
 
     if args.phase == 'card':
@@ -416,13 +415,13 @@ def main():
                   % (r['arm'], r['key'], r.get('cards_returned', 0),
                      r.get('schema_compliant'), r.get('profile_vocab_leaked') or 'none'))
 
-    rollup = os.path.join(args.out, 'h2189_%s_rows.json' % args.phase)
+    rollup = os.path.join(args.out, 'h2189_{}_rows.json'.format(args.phase))
     with open(rollup, 'w', encoding='utf-8') as fh:
         json.dump({'rows': rows, 'summary': summary,
                    'manifest': os.path.basename(args.manifest),
                    'model': manifest['model'],
                    'cache_write_1h_rate': CACHE_WRITE_1H}, fh, ensure_ascii=False, indent=2)
-    print('\nrows + summary: %s' % rollup)
+    print('\nrows + summary: {}'.format(rollup))
     return 0
 
 

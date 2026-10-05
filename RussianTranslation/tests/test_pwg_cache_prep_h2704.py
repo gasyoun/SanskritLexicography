@@ -8,12 +8,12 @@ H1210 = os.path.join(PILOT, 'h1210')
 sys.path.insert(0, PILOT)
 sys.path.insert(0, H1210)
 
-import cache_identity  # noqa: E402
-import cache_pair_compare  # noqa: E402
-import cache_prep_census as census  # noqa: E402
-import cache_prep_pairs as pairs  # noqa: E402
-import prep_pack  # noqa: E402
-import prompt_compiler  # noqa: E402
+import cache_identity
+import cache_pair_compare
+import cache_prep_census as census
+import cache_prep_pairs as pairs
+import prep_pack
+import prompt_compiler
 
 
 def test_prep_compiler_matches_live_flash_messages():

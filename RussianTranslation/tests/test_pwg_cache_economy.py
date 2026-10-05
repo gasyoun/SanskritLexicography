@@ -7,16 +7,16 @@ PILOT = os.path.normpath(os.path.join(
     os.path.dirname(os.path.abspath(__file__)), '..', 'src', 'pilot'))
 sys.path.insert(0, PILOT)
 
-import cache_baseline_freeze  # noqa: E402
-import cache_economy_report  # noqa: E402
-import cache_event_ledger  # noqa: E402
-import cache_generation_pairs as pairs  # noqa: E402
-import cache_identity  # noqa: E402
-import cache_migrate  # noqa: E402
-import cache_pair_compare  # noqa: E402
-import cache_reuse  # noqa: E402
-import cache_scheduler  # noqa: E402
-import prompt_compiler  # noqa: E402
+import cache_baseline_freeze
+import cache_economy_report
+import cache_event_ledger
+import cache_generation_pairs as pairs
+import cache_identity
+import cache_migrate
+import cache_pair_compare
+import cache_reuse
+import cache_scheduler
+import prompt_compiler
 
 
 def test_identity():

@@ -132,7 +132,7 @@ def draw_streamgraph(stack, outpath):
     for i, b in enumerate(birth_states):
         y0 = cum
         y1 = cum + series[i]
-        ax.fill_between(x, y0, y1, color=colors[i], label='born %s' % STATE_LABEL[b], linewidth=0)
+        ax.fill_between(x, y0, y1, color=colors[i], label='born {}'.format(STATE_LABEL[b]), linewidth=0)
         cum = y1
 
     ax.set_xticks(x)
@@ -164,12 +164,12 @@ def write_report(n_headwords, n_senses_total, n_senses_dated, stack, citations_b
     lines.append('')
     lines.append('## Alive senses per state (stacked by birth cohort)')
     lines.append('')
-    lines.append('| state | total alive | citations | ' + ' | '.join('born %s' % s for s in STATES) + ' |')
+    lines.append('| state | total alive | citations | ' + ' | '.join('born {}'.format(s) for s in STATES) + ' |')
     lines.append('|---|--:|--:|' + '--:|' * len(STATES))
     for s in STATES:
         row = [str(sum(stack[s].values())), str(citations_by_state.get(s, 0))]
         row += [str(stack[s].get(b, 0)) for b in STATES]
-        lines.append('| %s | %s |' % (STATE_LABEL[s], ' | '.join(row)))
+        lines.append('| {} | {} |'.format(STATE_LABEL[s], ' | '.join(row)))
     lines.append('')
     lines.append('## Finding: Renou state V is never populated in this artifact')
     lines.append('')
@@ -183,9 +183,8 @@ def write_report(n_headwords, n_senses_total, n_senses_dated, stack, citations_b
     lines.append('## Headline')
     lines.append('')
     if survival_rate_I_to_IV is not None:
-        lines.append('Of the senses first attested at state **I (Vedic)**, **%.1f%%** are still alive '
-                     'at state **IV (classical)** — total alive-sense count %s from I to IV (%s <-> %s).'
-                     % (100 * survival_rate_I_to_IV,
+        lines.append('Of the senses first attested at state **I (Vedic)**, **{:.1f}%** are still alive '
+                     'at state **IV (classical)** — total alive-sense count {} from I to IV ({} <-> {}).'.format(100 * survival_rate_I_to_IV,
                         'narrows' if survival_narrows else 'widens',
                         sum(stack['I'].values()), sum(stack['IV'].values())))
     lines.append('')

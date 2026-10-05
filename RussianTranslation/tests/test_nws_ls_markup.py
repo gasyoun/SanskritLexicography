@@ -16,9 +16,9 @@ import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
-import g5_card_render as g5cr  # noqa: E402
-import nws_ls_markup as nlm  # noqa: E402
-import pwg_sources  # noqa: E402
+import g5_card_render as g5cr
+import nws_ls_markup as nlm
+import pwg_sources
 
 # H2254 (07-08-2026): every resolution test below needs PWG's own Verzeichniss der
 # Abkürzungen, which lives in the SIBLING repo csl-pywork
@@ -177,7 +177,7 @@ def test_apply_round_trip_on_a_scratch_store(tmp_path):
     # CRLF-translation defect H2146 fixed). So: exactly one candidate, and its
     # bytes equal the pre-apply store.
     backups = sorted(tmp_path.glob('scratch.jsonl.h1809nws.*.bak'))
-    assert len(backups) == 1, 'expected exactly one unique backup, got %r' % backups
+    assert len(backups) == 1, 'expected exactly one unique backup, got {!r}'.format(backups)
     assert backups[0].read_bytes() == original_bytes
     assert backups[0].read_bytes() != store.read_bytes()  # it backs up the OLD text
 
@@ -218,7 +218,7 @@ def test_apply_twice_keeps_both_backups_distinct(tmp_path):
     nlm.apply(str(store), backup=True)
 
     backups = sorted(tmp_path.glob('scratch.jsonl.h1809nws.*.bak'))
-    assert len(backups) == 2, 'each run needs its own artifact, got %r' % backups
+    assert len(backups) == 2, 'each run needs its own artifact, got {!r}'.format(backups)
     assert len({p.name for p in backups}) == 2
 
 

@@ -103,8 +103,7 @@ def main():
                     continue
                 # keep tabs/newlines out of the TSV cells
                 gloss_de = (gloss_de or '').replace('\t', ' ').replace('\n', ' ')
-                f.write('%s\t%s\t%s\t%s\t%s\n'
-                        % (slp1, hom, sense_id, gloss_de, ls_loci))
+                f.write('{}\t{}\t{}\t{}\t{}\n'.format(slp1, hom, sense_id, gloss_de, ls_loci))
                 n_rows += 1
                 seen.add((slp1, hom or ''))
 
@@ -118,7 +117,7 @@ def main():
         if missing:
             print('frame groups with NO leaf-sense row: %d (e.g. %s)'
                   % (len(missing), sorted(missing)[:5]), file=sys.stderr)
-    print('written: %s' % a.out, file=sys.stderr)
+    print('written: {}'.format(a.out), file=sys.stderr)
 
 
 if __name__ == '__main__':

@@ -74,7 +74,7 @@ def sha256(path: Path) -> str:
 def load_master_keys(master_path: Path):
     """word = LAST tab field (source column may be empty). Returns
     (set_of_form_keys, total_data_lines, key_dupes, unmapped_words)."""
-    from sanskrit_util import SLP1_ALPHABET, slp1_form_key, to_slp1  # noqa: PLC0415
+    from sanskrit_util import SLP1_ALPHABET, slp1_form_key, to_slp1
 
     keys: set[str] = set()
     key_counts: Counter = Counter()

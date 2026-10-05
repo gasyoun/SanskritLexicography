@@ -27,7 +27,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 DEFAULT_FEED = os.path.normpath(os.path.join(
     GITHUB, 'kosha', 'data', 'frequency', 'lemma_frequency.tsv'))
@@ -39,7 +39,7 @@ OUT_REPORT = os.path.join(HERE, 'pwg_freq_order.report.json')
 # sanskrit_util is the canonical transcoder (SHARED_CODE §; SLP1-native CDSL keys).
 sys.path.insert(0, os.path.normpath(os.path.join(
     GITHUB, 'sanskrit-util', 'py')))
-from sanskrit_util import from_slp1  # noqa: E402
+from sanskrit_util import from_slp1
 
 
 def load_feed(path):

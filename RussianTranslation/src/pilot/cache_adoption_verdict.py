@@ -15,7 +15,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 RT = os.path.dirname(os.path.dirname(HERE))
 
-import cache_identity as ident  # noqa: E402
+import cache_identity as ident
 
 EXP_DIR = os.path.join(RT, 'experiments', 'pwg_cache_economy')
 H2676_USD = 0.01991
@@ -119,7 +119,7 @@ def main(argv=None):
     os.makedirs(os.path.dirname(args.out), exist_ok=True)
     with open(args.out, 'w', encoding='utf-8', newline='\n') as handle:
         handle.write(ident.canonical_dumps(body))
-    print('verdict=%s reasons=%s' % (body['verdict'], ','.join(body['reasons']) or 'none'))
+    print('verdict={} reasons={}'.format(body['verdict'], ','.join(body['reasons']) or 'none'))
     return 0
 
 

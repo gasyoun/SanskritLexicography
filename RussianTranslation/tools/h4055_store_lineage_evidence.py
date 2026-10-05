@@ -44,7 +44,7 @@ SRC = os.path.normpath(os.path.join(HERE, '..', 'src'))
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import refresh_tm_mirror as rtm  # noqa: E402
+import refresh_tm_mirror as rtm
 
 REPORTS = os.path.normpath(os.path.join(HERE, '..', 'reports'))
 HANDOFF = 'H4055'
@@ -60,7 +60,7 @@ def _write_json(path, obj):
     with io.open(path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(obj, f, ensure_ascii=False, indent=1)
         f.write('\n')
-    print('wrote %s' % path)
+    print('wrote {}'.format(path))
 
 
 def run_fixtures(reports):
@@ -130,7 +130,7 @@ def run_fixtures(reports):
               '"handoff": "H4055"' not in real_lines[-1])
 
     if failures:
-        raise SystemExit('acceptance FAILED: %s' % ', '.join(failures))
+        raise SystemExit('acceptance FAILED: {}'.format(', '.join(failures)))
     print('acceptance fixtures: PASS (%d checks)' % checks_run[0])
     return e_a, e_b
 
@@ -205,19 +205,19 @@ def build_matrix():
     m['surfaces'].append(surf)
 
     # 3. mirror git blob: the LFS POINTER is not the bytes
-    rc, out, err = _git(datarepo, 'cat-file', 'blob', 'HEAD:%s' % rel_mirror)
+    rc, out, err = _git(datarepo, 'cat-file', 'blob', 'HEAD:{}'.format(rel_mirror))
     pointer = _lfs_pointer(out) if rc == 0 else {}
     rc2, head_sha, _ = _git(datarepo, 'rev-parse', 'HEAD')
     rc3, subj, _ = _git(datarepo, 'log', '-1', '--format=%s', '--', rel_mirror)
     rc4, date, _ = _git(datarepo, 'log', '-1', '--format=%cI', '--', rel_mirror)
     m['surfaces'].append({
         'surface': 'mirror git blob (LFS pointer — never equated with bytes)',
-        'box': '%s @ %s' % (m['box']['node'], datarepo),
-        'path': '%s (git blob at HEAD)' % rel_mirror,
+        'box': '{} @ {}'.format(m['box']['node'], datarepo),
+        'path': '{} (git blob at HEAD)'.format(rel_mirror),
         'timestamp': date or None, 'sha256': pointer.get('oid_sha256'),
         'rows': None, 'producing_commit': head_sha or None,
         'producing_commit_subject': subj or None,
-        'availability': 'present' if rc == 0 else 'unreadable: %s' % err,
+        'availability': 'present' if rc == 0 else 'unreadable: {}'.format(err),
         'lfs_pointer': pointer,
         'pointer_oid_equals_hydrated_sha': bool(
             pointer.get('oid_sha256') and surf.get('sha256')
@@ -275,7 +275,7 @@ def build_matrix():
         if rc6 == 0:
             m['lineage_chain']['origin'] = {
                 'ref': ref, 'head': oref,
-                'availability': 'fetch %s' % ('ok' if rc5 == 0 else 'FAILED: %s' % ferr.strip())}
+                'availability': 'fetch %s' % ('ok' if rc5 == 0 else 'FAILED: {}'.format(ferr.strip()))}
             break
     else:
         m['lineage_chain']['origin'] = {'availability': 'no origin ref resolvable'}
@@ -285,13 +285,13 @@ def build_matrix():
 def matrix_md(m):
     lines = ['# H4055 — src/mirror/box evidence matrix',
              '',
-             '_Generated: %s · executor: %s (%s) · zero provider calls · live state read-only_' % (
+             '_Generated: {} · executor: {} ({}) · zero provider calls · live state read-only_'.format(
                  m['generated_at'], m['executor']['model'], m['executor']['route']),
              '',
              '| surface | box | timestamp | sha256 | rows | producing commit | availability |',
              '|---|---|---|---|---|---|---|']
     for s in m['surfaces']:
-        lines.append('| %s | %s | %s | `%s` | %s | %s | %s |' % (
+        lines.append('| {} | {} | {} | `{}` | {} | {} | {} |'.format(
             s['surface'], s['box'], s.get('timestamp') or '—',
             (s.get('sha256') or '—')[:12] + ('…' if s.get('sha256') else ''),
             s.get('rows') if s.get('rows') is not None else '—',
@@ -306,7 +306,7 @@ def matrix_md(m):
               '- LFS pointer oid `%s` (pointer ≠ bytes; oid recorded beside the sha)' % (
                   lc['lfs_pointer_oid_sha256'] or '—'),
               '- all three agree: **%s**' % ('yes' if lc['all_three_agree'] else 'NO'),
-              '- origin: %s' % json.dumps(lc['origin'], ensure_ascii=False),
+              '- origin: {}'.format(json.dumps(lc['origin'], ensure_ascii=False)),
               '',
               '## Cross-box equality',
               '',
@@ -328,8 +328,8 @@ def main():
     with io.open(os.path.join(REPORTS, 'H4055_store_mirror_box_matrix.md'), 'w',
                  encoding='utf-8', newline='\n') as f:
         f.write(matrix_md(m))
-    print('wrote %s' % os.path.join(REPORTS, 'H4055_store_mirror_box_matrix.md'))
-    print('lineage chain all-three-agree: %s' % m['lineage_chain']['all_three_agree'])
+    print('wrote {}'.format(os.path.join(REPORTS, 'H4055_store_mirror_box_matrix.md')))
+    print('lineage chain all-three-agree: {}'.format(m['lineage_chain']['all_three_agree']))
     return 0
 
 

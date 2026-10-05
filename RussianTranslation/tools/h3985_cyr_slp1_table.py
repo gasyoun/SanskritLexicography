@@ -29,7 +29,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
-from indic_transliteration import sanscript  # noqa: E402
+from indic_transliteration import sanscript
 
 HERE = Path(__file__).resolve().parent
 SL = HERE.parents[1]

@@ -33,7 +33,7 @@ def blocks(event):
 
 def main():
     if not os.path.isfile(TRANSCRIPT):
-        print('TRANSCRIPT NOT FOUND: %s' % TRANSCRIPT)
+        print('TRANSCRIPT NOT FOUND: {}'.format(TRANSCRIPT))
         return 1
     uses, results, unparseable = [], {}, 0
     with open(TRANSCRIPT, 'r', encoding='utf-8') as handle:
@@ -73,7 +73,7 @@ def main():
 
     print('transcript lines unparseable : %d' % unparseable)
     print('Agent tool_use blocks total  : %d' % len(uses))
-    print('ticket request_prompt_sha256 : %s' % TICKET_PROMPT_SHA)
+    print('ticket request_prompt_sha256 : {}'.format(TICKET_PROMPT_SHA))
     print()
     matched = [u for u in uses if u['prompt_sha256'] == TICKET_PROMPT_SHA]
     for use in uses:
@@ -81,8 +81,7 @@ def main():
         print('  line=%-6s id=%-30s sha=%s… len=%-6d -> result: %s'
               % (use['line'], use['id'], use['prompt_sha256'][:12],
                  use['prompt_len'],
-                 ('status=%s is_error=%s model=%s'
-                  % (result.get('status'), result.get('is_error'),
+                 ('status={} is_error={} model={}'.format(result.get('status'), result.get('is_error'),
                      result.get('resolvedModel'))) if result else 'NO RESULT'))
     print()
     print('MATCHING the sealed ticket prompt: %d' % len(matched))
@@ -92,8 +91,7 @@ def main():
         return 0
     for use in matched:
         result = results.get(use['id'], {})
-        print('VERDICT: dispatch %s status=%s model=%s'
-              % (use['id'], result.get('status'), result.get('resolvedModel')))
+        print('VERDICT: dispatch {} status={} model={}'.format(use['id'], result.get('status'), result.get('resolvedModel')))
     return 0
 
 
