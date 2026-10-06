@@ -170,7 +170,30 @@ def test_maybe_land_wiped_staging_redispatches_via_run(tmp_path, monkeypatch):
     monkeypatch.setattr(io, "open", wiping_open)  # synth_dispatch reads via io.open
     states = d.run()                             # OLD code: crash in _maybe_land
     assert states == {"k1": "failed"}            # redispatch ran, no output -> failed
-    assert any("staging vanished before first land" in h for h in job.history)
+    assert any("staging unreadable/vanished before first land" in h
+               for h in job.history)
+
+
+def test_run_survives_non_utf8_staging(tmp_path):
+    """Verifier residual (H5758 follow-up): a worker that wrote non-UTF-8
+    bytes makes _maybe_land's read raise UnicodeDecodeError (a ValueError,
+    NOT an OSError) — run() must redispatch, not crash."""
+    d, job = _make_dispatcher(str(tmp_path))
+    att = synth_dispatch.Attempt(job, 1,
+                                 subprocess.Popen([sys.executable, "-c", "pass"]),
+                                 os.path.join(d.staging_dir, "k1.attempt1.out"))
+    att.proc.wait()
+    d.running[job.key] = att
+    job.state = "running"
+    job.attempts = 1
+    d.queue.clear()
+    with open(att.staging, "wb") as f:           # malformed worker output
+        f.write(b"\xff\xfe halb\xfc GARBLE \x81\x82")
+    states = d.run()                             # OLD code: crash on decode
+    assert states == {"k1": "failed"}            # redispatch ran, then failed cleanly
+    assert job.attempts == 2
+    assert any("staging unreadable/vanished" in h and "codec can't decode" in h
+               for h in job.history)
 
 
 # ------------------------------------------------- cloud_window: land retry
