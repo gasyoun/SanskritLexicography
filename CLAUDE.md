@@ -29,7 +29,7 @@ dashboard inventory: [repo primer](https://github.com/gasyoun/SanskritLexicograp
 
 No single top-level build; tests/selftests exist and CI
 ([`.github/workflows/ci.yml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/ci.yml))
-includes an **offline contract-pins** job (H4353) running
+runs docs-site pytest plus an **offline contract-pins** job (H4353) running
 [`tests/run_offline_suite.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/run_offline_suite.py) — **201 pins** over the 62 in-scope
 modules outside `RussianTranslation`, network off, fixtures under
 `tests/fixtures` only, literal record-count floors per headword list
