@@ -393,12 +393,14 @@ class Dispatcher:
                     else:
                         try:
                             landed = self._maybe_land(att)
-                        except OSError as exc:
+                        except (OSError, ValueError) as exc:
                             # H5758: watcher wiped the staging file between the
                             # exists-check and the first read (or the outdir
-                            # itself) — nothing in memory yet, redispatch cleanly
+                            # itself), or the worker wrote non-UTF-8 bytes
+                            # (UnicodeDecodeError is a ValueError) — nothing
+                            # usable in memory, redispatch cleanly
                             self._fail_or_redispatch(
-                                att, f"staging vanished before first land: {exc}")
+                                att, f"staging unreadable/vanished before first land: {exc}")
                             continue
                         if landed is None:              # landing started, confirm later
                             continue
