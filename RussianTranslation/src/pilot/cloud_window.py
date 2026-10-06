@@ -41,6 +41,44 @@ EXECUTION_ROUTE = 'anthropic-routine-in-session'
 USAGE_KEYS = ('input_tokens', 'output_tokens', 'cache_creation_input_tokens',
               'cache_read_input_tokens')
 
+# H5758: bounded retry around the wf_output tmp+os.replace land — the repo
+# watcher can wipe the untracked tmp between write and replace, and the
+# window's results exist ONLY in memory at that point.
+WF_LAND_ATTEMPTS = 3
+WF_LAND_SLEEP_S = 0.5
+
+
+def _land_wf_output(payload, wf_path, attempts=None, sleep_s=None):
+    """Land ``payload`` at ``wf_path`` via tmp + os.replace (H5707 L9), with a
+    bounded retry against the repo-watcher race (H5758): the same wipe that
+    takes the dispatcher's staging files can take this untracked tmp between
+    the write and the replace — losing a completed PAID window whose results
+    are in-memory only. Returns ``wf_path`` on success; after ``attempts``
+    failures logs and returns None (log-and-keep-going: the caller still holds
+    the wf dict in memory and must not crash after the window completed)."""
+    attempts = WF_LAND_ATTEMPTS if attempts is None else attempts
+    sleep_s = WF_LAND_SLEEP_S if sleep_s is None else sleep_s
+    last_exc = None
+    for attempt in range(1, attempts + 1):
+        tmp_path = wf_path + '.landing.tmp'
+        try:
+            with open(tmp_path, 'w', encoding='utf-8', newline='\n') as f:
+                f.write(payload)
+            os.replace(tmp_path, wf_path)
+            return wf_path
+        except OSError as exc:
+            last_exc = exc
+            print('[cloud_window] WARNING: landing {} failed '
+                  '(attempt {}/{}): {}'.format(os.path.basename(wf_path),
+                                               attempt, attempts, exc),
+                  file=sys.stderr)
+            if attempt < attempts:
+                time.sleep(sleep_s)
+    print('[cloud_window] ERROR: could not land {} after {} attempts ({}); '
+          'wf_output kept in-memory only'.format(wf_path, attempts, last_exc),
+          file=sys.stderr)
+    return None
+
 
 def _sum_usage(rows):
     total = {k: 0 for k in USAGE_KEYS}
@@ -114,15 +152,21 @@ def run_cloud_window(window_id, items, translate_fn, *, model_identifier,
         wf_path = os.path.join(out_dir, 'wf_output.{}.json'.format(window_id))
         # H5707 L9: promotion consumes this artifact — tmp + os.replace so a
         # crash mid-write can never leave a truncated wf_output behind.
-        tmp_path = wf_path + '.landing.tmp'
-        with open(tmp_path, 'w', encoding='utf-8', newline='\n') as f:
-            json.dump(wf, f, ensure_ascii=False, indent=1)
-        os.replace(tmp_path, wf_path)
+        # H5758: bounded retry around the replace (see _land_wf_output) so a
+        # watcher wipe of the tmp cannot lose the completed window's
+        # in-memory-only results; on persistent failure log-and-keep-going.
+        landed_path = _land_wf_output(
+            json.dumps(wf, ensure_ascii=False, indent=1), wf_path)
         ledger = os.path.join(out_dir, '{}.usage.jsonl'.format(window_id))
         with open(ledger, 'a', encoding='utf-8', newline='\n') as f:
             for row in usage_rows:
                 f.write(json.dumps(row, ensure_ascii=False) + '\n')
-        wf['_wf_path'], wf['_usage_path'] = wf_path, ledger
+        wf['_usage_path'] = ledger
+        if landed_path:
+            wf['_wf_path'] = landed_path
+        else:
+            wf['_wf_land_error'] = ('wf_output not landed after {} attempts — '
+                                    'in-memory only'.format(WF_LAND_ATTEMPTS))
     return wf, usage_rows, parked
 
 
@@ -174,8 +218,53 @@ def selftest():
                                          model_identifier='claude-sonnet-5')
         assert wf2['summary']['usage']['observed_cost_usd'] is None
         assert wf2['summary']['usage']['cost_evaluable'] is False
+        # (7) H5758: the watcher wipes the tmp between write and os.replace —
+        # the bounded retry re-writes and lands; a PERSISTENT wipe
+        # log-and-keeps-going (results stay in memory, no _wf_path lie)
+        global WF_LAND_SLEEP_S
+        saved_sleep, WF_LAND_SLEEP_S = WF_LAND_SLEEP_S, 0.0
+        real_replace = os.replace
+        calls = {'n': 0}
+
+        def wiping_replace(src, dst):
+            calls['n'] += 1
+            if calls['n'] == 1:            # the watcher wipe — once
+                if os.path.exists(src):
+                    os.remove(src)
+                raise FileNotFoundError(src)
+            return real_replace(src, dst)
+
+        os.replace = wiping_replace
+        try:
+            wf3, _r3, _p3 = run_cloud_window(
+                'cw3', [{'key': 'r~~d'}], fake_translate,
+                model_identifier='claude-sonnet-5', out_dir=td,
+                parked_env={'PWG_PARKED_DIR': os.path.join(td, 'parked')})
+        finally:
+            os.replace = real_replace
+            WF_LAND_SLEEP_S = saved_sleep
+        assert calls['n'] >= 2 and os.path.exists(wf3['_wf_path'])
+        with open(wf3['_wf_path'], encoding='utf-8') as f:
+            assert json.load(f)['results'][0]['key'] == 'r~~d'
+
+        def always_failing_replace(src, dst):
+            raise FileNotFoundError(src)
+
+        WF_LAND_SLEEP_S = 0.0
+        os.replace = always_failing_replace
+        try:
+            wf4, _r4, _p4 = run_cloud_window(
+                'cw4', [{'key': 'r~~e'}], fake_translate,
+                model_identifier='claude-sonnet-5', out_dir=td,
+                parked_env={'PWG_PARKED_DIR': os.path.join(td, 'parked')})
+        finally:
+            os.replace = real_replace
+            WF_LAND_SLEEP_S = saved_sleep
+        assert '_wf_path' not in wf4 and wf4.get('_wf_land_error')
+        assert wf4['summary']['translated'] == 1 and wf4['results'][0]['key'] == 'r~~e'
     print('cloud_window selftest: PASS (collect_cards + rows_for compatibility, '
-          'cache-split usage, park-on-failure, wall stamps, cost fail-closed)')
+          'cache-split usage, park-on-failure, wall stamps, cost fail-closed, '
+          'H5758 land-retry + log-and-keep-going)')
     return 0
 
 

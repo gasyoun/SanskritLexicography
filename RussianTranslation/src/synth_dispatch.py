@@ -11,11 +11,15 @@ run (see PIPELINE_HISTORY.md "H234" entry):
   #3 34-min silent hang -> every attempt has a wall-clock kill-guard: if its
                            output file has not grown in --kill-after seconds
                            (default 600), the worker is killed.
-  #4 watcher wipe       -> workers author in a STAGING dir outside the repo;
-                           the wrapper lands the finished text atomically and
-                           re-verifies the landed sha after a delay (the
-                           /watcher-safe-commit pattern) — never a bare
-                           gitignored file the watcher can wipe mid-build.
+   #4 watcher wipe       -> workers author in a STAGING dir outside the repo;
+                            the wrapper lands the finished text atomically and
+                            re-verifies the landed sha after a delay (the
+                            /watcher-safe-commit pattern) — never a bare
+                            gitignored file the watcher can wipe mid-build.
+                            H5758: a re-land re-lands from MEMORY (the staged
+                            text is kept on the attempt, never re-read from a
+                            possibly-wiped staging file), and OSError in the
+                            poll loop re-dispatches instead of crashing run().
   #5 zombie overwrite   -> each attempt owns its own staging file and only the
                            CURRENT owner of a job may land; a re-dispatch only
                            happens after the old process is confirmed dead
@@ -211,6 +215,10 @@ class Attempt:
         self.land_sha = None
         self.land_attempts = 0
         self.land_confirm_at = None
+        # H5758: the landed text is held IN MEMORY from the first read — a
+        # re-land after a watcher wipe must never re-read the staging file
+        # (the watcher can wipe that too, failure #4).
+        self.land_text = None
 
     @property
     def id(self):
@@ -301,6 +309,9 @@ class Dispatcher:
         if not (os.path.exists(att.staging) and os.path.getsize(att.staging) > 0):
             return False
         text = io.open(att.staging, encoding="utf-8").read()
+        # H5758: hold the text in memory from this FIRST read — the poll-loop
+        # re-land path must never depend on the staging file still existing.
+        att.land_text = text
         # Start the watcher-safe landing NON-blocking: land atomically now and
         # confirm on a later poll pass (H5707 L8 — the old time.sleep(recheck_s)
         # here stalled kill-guard polling for every concurrently running worker
@@ -328,7 +339,13 @@ class Dispatcher:
         if att.land_attempts > LAND_RETRIES:
             raise RuntimeError(f"could not keep {job.final_path} in place after "
                                f"{LAND_RETRIES} landings")
-        text = io.open(att.staging, encoding="utf-8").read()
+        # H5758: re-land from MEMORY — the watcher that wiped the landed file
+        # can wipe the staging file too, and re-reading it here let
+        # FileNotFoundError escape run(), crashing the dispatcher and
+        # orphaning every concurrently running worker.
+        text = att.land_text
+        if text is None:   # unreachable via _maybe_land; guard against state loss
+            raise RuntimeError(f"{att.id}: landed text lost from memory (H5758)")
         att.land_sha = land_atomic(text, job.final_path)
         att.land_confirm_at = time.monotonic() + self.land_recheck_s
         log(f"WATCHER wiped/changed {os.path.basename(job.final_path)} after landing "
@@ -362,7 +379,11 @@ class Dispatcher:
                     try:
                         if self._confirm_landing(att):
                             del self.running[key]
-                    except RuntimeError as exc:
+                    # H5758: OSError joins RuntimeError — the watcher race can
+                    # surface as FileNotFoundError (staging/tmp wipe, wiped
+                    # outdir) and must never crash run(), which would orphan
+                    # every concurrently running worker.
+                    except (RuntimeError, OSError) as exc:
                         self._fail_or_redispatch(att, str(exc))
                     continue
                 rc = att.proc.poll()
@@ -370,7 +391,15 @@ class Dispatcher:
                     if rc != 0:
                         self._fail_or_redispatch(att, f"exit rc={rc}")
                     else:
-                        landed = self._maybe_land(att)
+                        try:
+                            landed = self._maybe_land(att)
+                        except OSError as exc:
+                            # H5758: watcher wiped the staging file between the
+                            # exists-check and the first read (or the outdir
+                            # itself) — nothing in memory yet, redispatch cleanly
+                            self._fail_or_redispatch(
+                                att, f"staging vanished before first land: {exc}")
+                            continue
                         if landed is None:              # landing started, confirm later
                             continue
                         if landed is not True:
@@ -555,8 +584,35 @@ def cmd_selftest(_args):
     assert n == 2 and io.open(target, encoding="utf-8").read() == "survives\n"
     ok += 1; print("PASS 7: watcher wipe detected on re-verify; re-landed")
 
+    # 8. H5758 watcher wipe BETWEEN confirmations: staging AND final vanish —
+    #    the re-land must come from MEMORY (the old code re-read the wiped
+    #    staging file, FileNotFoundError escaped run() and every concurrently
+    #    running worker was orphaned)
+    job8 = Job("w8", "-", os.path.join(tmp, "w8.final.txt"))
+    d8 = Dispatcher([job8], [py, worker, "good", "{output}", "{attempt}"],
+                    os.path.join(tmp, "staging8"), stagger_s=0, poll_s=0.05,
+                    land_recheck_s=0.05)
+    att8 = Attempt(job8, 1, subprocess.Popen([py, "-c", "pass"]),
+                   os.path.join(d8.staging_dir, "w8.attempt1.out"))
+    att8.proc.wait()
+    d8.running["w8"] = att8
+    job8.state = "running"
+    io.open(att8.staging, "w", encoding="utf-8").write(
+        "memory payload <ls>R. 1, 2</ls>\n")
+    assert d8._maybe_land(att8) is None and att8.land_text is not None
+    os.remove(att8.staging)              # the watcher wipe: staging AND final
+    os.remove(job8.final_path)
+    time.sleep(0.06)
+    assert d8._confirm_landing(att8) is False          # re-landed — from memory
+    assert not os.path.exists(att8.staging)            # proof: no staging re-read
+    assert io.open(job8.final_path, encoding="utf-8").read() == att8.land_text
+    time.sleep(0.06)
+    assert d8._confirm_landing(att8) is True and job8.state == "landed"
+    ok += 1; print("PASS 8: staging wiped between confirmations — "
+                   "re-landed from memory, dispatcher survived")
+
     shutil.rmtree(tmp, ignore_errors=True)
-    print(f"\nselftest: {ok}/7 PASS")
+    print(f"\nselftest: {ok}/8 PASS")
 
 
 def main():
