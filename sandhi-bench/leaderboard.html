@@ -55,14 +55,14 @@
     </tr></thead>
     <tbody>
       <tr><td class="num">1</td><td>Gold ceiling (DCS Unsandhied lineage)</td><td class="type">ceiling</td><td class="num"><strong>100.0</strong></td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="notes">by construction — the bench answers ARE the induced DCS gold splits (96.3% Gītā-gold inducer coverage)</td><td class="num">2026-10-06</td></tr>
-      <tr><td class="num">2</td><td>MFS (most-frequent split per surface, train-only)</td><td class="type">baseline — deterministic</td><td class="num"><strong>57.3</strong></td><td class="num">59.6</td><td class="num">9.4</td><td class="num">1940</td><td class="notes">surface-OOV rate on test 42.3% (identity fallback); the floor to beat</td><td class="num">2026-10-06</td></tr>
+      <tr><td class="num">2</td><td>MFS (most-frequent split per surface, train-only)</td><td class="type">baseline — deterministic</td><td class="num"><strong>57.3</strong></td><td class="num">59.6</td><td class="num">9.4</td><td class="num">1940</td><td class="notes">surface-OOV rate on test 42.5% (identity fallback); the floor to beat</td><td class="num">2026-10-06</td></tr>
       <tr><td class="num">3</td><td>LLM local · qwen2.5:7b-instruct (5-shot, temp 0)</td><td class="type">baseline — local LLM</td><td class="num"><strong>3.0</strong></td><td class="num">1.3</td><td class="num">—</td><td class="num">100-item seeded subsample</td><td class="notes">seeded subsample (seed 20261006), 5-shot from train, temp 0 — reproducible reference, not a frontier entry</td><td class="num">2026-10-06</td></tr>
     </tbody>
   </table>
   <div class="how">
     <strong>Scoring.</strong> A submission is a JSONL file of
     <code>{"id": "sb-…", "pred": "LEFT+RIGHT"}</code> over
-    <code>sandhi-bench/data/test.jsonl</code> (1,969 items), graded by
+    <code>sandhi-bench/data/test.jsonl</code> (1,940 items), graded by
     <code>python sandhi-bench/evaluate.py --pred your.jsonl --split test</code>
     (NFC → casefold → whitespace-collapse; unanswered = wrong). Metrics:
     exact accuracy + macro accuracy over rule categories.

@@ -36,14 +36,15 @@ def load_rows() -> list[dict]:
     mfs_t = RES / "mfs_results_test.json"
     mfs_d = RES / "mfs_results_dev.json"
     if mfs_t.is_file():
+        mfs = json.loads(mfs_t.read_text(encoding="utf-8"))
         rows.append({
             "system": "MFS (most-frequent split per surface, train-only)",
             "type": "baseline — deterministic",
-            "test_acc": acc(mfs_t), "dev_acc": acc(mfs_d) if mfs_d.is_file() else None,
-            "macro_test": acc(mfs_t, "macro_acc_by_category"),
-            "n_test": json.loads(mfs_t.read_text())["n"],
-            "notes": "surface-OOV rate on test 42.3% (identity fallback); "
-                     "the floor to beat",
+            "test_acc": mfs["exact_acc"], "dev_acc": acc(mfs_d) if mfs_d.is_file() else None,
+            "macro_test": mfs["macro_acc_by_category"],
+            "n_test": mfs["n"],
+            "notes": (f"surface-OOV rate on test {mfs['surface_oov_rate'] * 100:.1f}% "
+                      "(identity fallback); the floor to beat"),
             "date": "2026-10-06",
         })
     for p in sorted(RES.glob("llm_*_results_test.json")):
@@ -131,7 +132,7 @@ HTML = """<!DOCTYPE html>
   <div class="how">
     <strong>Scoring.</strong> A submission is a JSONL file of
     <code>{{"id": "sb-…", "pred": "LEFT+RIGHT"}}</code> over
-    <code>sandhi-bench/data/test.jsonl</code> (1,969 items), graded by
+    <code>sandhi-bench/data/test.jsonl</code> ({n_items:,} items), graded by
     <code>python sandhi-bench/evaluate.py --pred your.jsonl --split test</code>
     (NFC → casefold → whitespace-collapse; unanswered = wrong). Metrics:
     exact accuracy + macro accuracy over rule categories.
