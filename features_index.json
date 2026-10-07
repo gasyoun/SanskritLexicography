@@ -476,6 +476,13 @@
     "repo": "gasyoun/SanskritLexicography"
   },
   {
+    "id": "F52",
+    "section": "I. Data assets — query it, someone already spent the compute",
+    "title": "sandhi-bench v2 — public junction-recovery benchmark",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/sandhi-bench/",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
     "id": "MW",
     "section": "II. Dictionaries — the 44 digitised from canonical source text",
     "title": "Monier-Williams Sanskrit-English Dictionary",

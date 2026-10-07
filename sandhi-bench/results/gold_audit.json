@@ -1,0 +1,35 @@
+{
+  "audit": "gold_audit",
+  "passed": true,
+  "checks": {
+    "A1_provenance": {
+      "n_source_items": 7979,
+      "n_committed": 7979,
+      "mismatches": [],
+      "n_mismatches": 0
+    },
+    "A2_split_hygiene": {
+      "texts_in_multiple_splits": {},
+      "split_field_errors": [],
+      "n_split_field_errors": 0
+    },
+    "A3_identity": {
+      "n": 7979,
+      "duplicate_ids": [],
+      "contiguous_stable_ids": true
+    },
+    "A4_manifest": {
+      "counts_match": true,
+      "manifest": {
+        "train": 5561,
+        "dev": 478,
+        "test": 1940
+      },
+      "actual": {
+        "train": 5561,
+        "dev": 478,
+        "test": 1940
+      }
+    }
+  }
+}

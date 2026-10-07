@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0.0",
+  "bench": "sandhi-bench-v2",
+  "created": "2026-10-06",
+  "handoff": "H6063 (ruling B4 — public release)",
+  "task": "given the sandhied surface token in its sentence context, recover the original two-word junction LEFT+RIGHT",
+  "answer_format": "single string LEFT+RIGHT, one '+' , no spaces",
+  "splits": {
+    "scheme": "text-disjoint (a work appears in one split only)",
+    "seed": 20261004,
+    "seed_base": 20261004,
+    "n_texts": {
+      "train": 33,
+      "dev": 4,
+      "test": 5
+    },
+    "n_items": {
+      "train": 5561,
+      "dev": 478,
+      "test": 1940
+    }
+  },
+  "categories": {
+    "anusvāra / nasal": 139,
+    "consonant / other": 4352,
+    "visarga": 577,
+    "vowel coalescence": 2911
+  },
+  "source": {
+    "repo": "gasyoun/kosha",
+    "git": "790203061a9984224cda0cba15e57766cb2e1d37",
+    "path": "data/sandhi/*_sandhi.tsv",
+    "lineage": "DCS CoNLL-U gold Unsandhied= fields, induced by the kosha junction-rule inducer (method A, 96.3% Gita-gold coverage)",
+    "harvest_parser": "Uprava/tools/ssb_gen_f1_sandhi_pilot.py JUNCTION_RE (proven W1.1 pattern)"
+  },
+  "license": {
+    "bench_data": "CC BY-SA 4.0 (inherits DCS source share-alike)",
+    "code": "MIT (repository LICENSE)",
+    "redistribution": "derived measurements only; the raw DCS dump is not redistributed"
+  },
+  "excluded": {
+    "vedic": "no Vedic sandhi in this bench (ruling B5: separate split/bench if ever added)",
+    "scharf": "ScharfSandhi dataset not yet in the estate (ruling B10 says include when available)"
+  }
+}
