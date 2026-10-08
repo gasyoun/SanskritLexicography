@@ -1,13 +1,12 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 03-10-2026_
+_Created: 06-08-2026 · Last updated: 08-10-2026_
 
-This file guides Claude Code in this repository.
 
-> Org-level conventions (the wider `sanskrit-lexicon` ecosystem, the csl-orig
-> correction workflow, GitHub issue taxonomy, `.ai_state.md` protocol, Windows
-> encoding rules) live in [`../CLAUDE.md`](../Uprava-h4060-drain/CLAUDE.md) and load
-> automatically. This file covers only what is specific to **this** repository.
+> Org-level conventions (wider `sanskrit-lexicon` ecosystem, csl-orig correction
+> workflow, issue taxonomy, `.ai_state.md` protocol, Windows encoding rules) live in
+> [`github-spine CLAUDE.md`](https://github.com/gasyoun/github-spine/blob/main/CLAUDE.md)
+> and load automatically. This file covers only what is specific to **this** repository.
 
 ## What this repository is
 
@@ -35,9 +34,8 @@ fixtures under `tests/fixtures` only, literal record-count floors per
 headword list (evidence:
 [`tests/OFFLINE_CONTRACT_PINS_08-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/OFFLINE_CONTRACT_PINS_08-09-2026.md)).
 **Verify the pin count, never retype it** (H5426): `python tests/run_offline_suite.py --collect-only -q`
-prints the per-test-file breakdown; it summed to **201** on 24-09-2026 (6+4+18+15+30+110+11+7),
-matching this line. The module population (62) is the census
-in that dated evidence doc's title, re-derive it there before quoting it elsewhere.
+summed to **201** on 24-09-2026 (6+4+18+15+30+110+11+7). The module population (62) is the census
+in that evidence doc's title — re-derive it there before quoting.
 **Regenerating a list or
 changing a parser updates the pinned floor/vector in the same PR** — a
 shrink or silent contract change fails CI by design. Pre-commit hooks
@@ -105,15 +103,14 @@ introduced `## [X.Y.Z]`; **never `git tag -f` a published tag**.
 
 ## Encoding — BOM is inconsistent, check before editing
 
-Org rule "csl-orig files never have BOMs" **does not hold here**: some
-exports carry a UTF-8 BOM, some don't (e.g.
-[`MW-unique-key1-193978.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/MW-unique-key1-193978.txt) **has** BOM `EF BB BF`; its key2 sibling does
-**not**). Before transforming a file: `head -c 3 file | xxd`, preserve the
-existing BOM state on write, never silently add/strip one. All UTF-8.
+Org rule "csl-orig files never have BOMs" **does not hold here**: e.g.
+`HeadwordLists/then-2014/MW-unique-key1-193978.txt` **has** BOM `EF BB BF`,
+its key2 sibling does **not**. Before transforming a file: `head -c 3 file | xxd`,
+preserve the existing BOM state on write, never silently add/strip one. All UTF-8.
 
-Files too large for an editor: `sanhw1.xlsx`,
-`DCS_statistical_evaluation.htm` (~75 MB), `DCS-Moniers-roots-w-references.html`
-(~16 MB), PWG/PWK error lists — use streaming/CLI tools, not Read.
+Files too large for an editor: `sanhw1.xlsx`, `DCS_statistical_evaluation.htm`
+(~75 MB), `DCS-Moniers-roots-w-references.html` (~16 MB), PWG/PWK error lists —
+streaming/CLI tools, not Read.
 
 ## RussianTranslation/ — mw_ru
 
@@ -190,39 +187,31 @@ without an IAST witness or an onomasticon `<k1>`; render-collapsed ambiguous spe
   under `[Unreleased]` until dated.
 - [`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) frames the research
   direction (evidence-graded lexicography, csl-atlas review, paper pipeline
-  P1–P6) and orients this repo within the broader project.
+  P1–P6).
 
 ## Agent skills
 
-### Issue tracker
-
 GitHub issues in `gasyoun/SanskritLexicography`, driven by `gh`; PRs are
-**not** a triage surface. See
-[docs/agents/issue-tracker.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/issue-tracker.md).
+**not** a triage surface
+([docs/agents/issue-tracker.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/issue-tracker.md)).
+Five canonical triage roles (`needs-triage`, `needs-info`, `ready-for-agent`,
+`ready-for-human`, `wontfix`), used as-is
+([docs/agents/triage-labels.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/triage-labels.md)).
+Single-context domain docs: `CONTEXT.md` + `docs/adr/` at repo root (lazy);
+`CLAUDE.md` carries the current domain vocabulary
+([docs/agents/domain.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/domain.md)).
 
-### Triage labels
-
-Five canonical roles (`needs-triage`, `needs-info`, `ready-for-agent`,
-`ready-for-human`, `wontfix`), used as-is. See
-[docs/agents/triage-labels.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/triage-labels.md).
-
-### Domain docs
-
-Single-context layout: `CONTEXT.md` + `docs/adr/` at repo root (lazy);
-`CLAUDE.md` carries the current domain vocabulary. See
-[docs/agents/domain.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/domain.md).
-
-## Operational hazard notes
+## Hazards + memory
 
 Destructive-risk facts (do-not-rerun scripts, decoys, traps) are registered
 centrally in an org-private hub
-([Uprava DANGER_FACTS.md](https://github.com/gasyoun/Uprava/blob/main/DANGER_FACTS.md), org members only); the public-safe subset is
-mirrored in the generated block of
-[AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/AGENTS.md). Check before running anything that writes.
-
-## Memory store
-
-This repo keeps a committed memory store at [`.claude/projects/SanskritLexicography/memory/`](https://github.com/gasyoun/SanskritLexicography/tree/master/.claude/projects/SanskritLexicography/memory) per the org Memory-routing rule ([`/danger-memory`](https://github.com/gasyoun/claude-config/blob/main/commands/danger-memory.md)) — write dangerous/durable facts there and index each in its `MEMORY.md` (H4547).
+([Uprava DANGER_FACTS.md](https://github.com/gasyoun/Uprava/blob/main/DANGER_FACTS.md),
+org members only); the public-safe subset is mirrored in the generated block
+of [AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/AGENTS.md).
+Check before running anything that writes. Committed memory store:
+[`.claude/projects/SanskritLexicography/memory/`](https://github.com/gasyoun/SanskritLexicography/tree/master/.claude/projects/SanskritLexicography/memory)
+per the org Memory-routing rule — write dangerous/durable facts there, index
+each in its `MEMORY.md` (H4547).
 
 ## Repo guards
 
