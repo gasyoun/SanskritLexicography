@@ -184,8 +184,8 @@ def main():
         '|---|---:|',
         '| Population | %d |' % len(rows),
         '| Sampled | %d |' % len(classified),
-        '| Unique key1 in sample | %d |' % unique_keys,
-        '| Rows with audit join | %d |' % with_audit,
+        f'| Unique key1 in sample | {unique_keys:d} |',
+        f'| Rows with audit join | {with_audit:d} |',
         '',
         '### Class counts (mechanical)',
         '',
@@ -221,7 +221,7 @@ def main():
     print('sampled %d / %d -> %s' % (len(classified), len(rows), out_json))
     print('report  -> {}'.format(out_md))
     for cls, cnt in sorted(class_counts.items()):
-        print('  %s: %d' % (cls, cnt))
+        print(f'  {cls}: {cnt:d}')
     return 0
 
 

@@ -1079,19 +1079,16 @@ def verify_registry_projection(journal: Mapping[str, Any]) -> None:
             row = json.loads(line)
         except json.JSONDecodeError as exc:
             raise JournalError(
-                'sealed registry projection has malformed JSON at line %d'
-                % line_number) from exc
+                f'sealed registry projection has malformed JSON at line {line_number:d}') from exc
         if not isinstance(row, Mapping):
             raise JournalError(
-                'sealed registry projection line %d is not an object'
-                % line_number)
+                f'sealed registry projection line {line_number:d} is not an object')
         rows.append(row)
     for event in expected:
         matches = sum(row == event for row in rows)
         if matches != 1:
             raise JournalError(
-                'sealed registry event must exist exactly once (observed %d)'
-                % matches)
+                f'sealed registry event must exist exactly once (observed {matches:d})')
     fsync_existing_path(path)
 
 

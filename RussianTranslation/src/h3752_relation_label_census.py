@@ -211,7 +211,7 @@ def render(c, sidecar_rows, carried, changed):
             name, measured, claimed, d, "   HALT (>=2x)" if d >= 2.0 else ""))
     w("")
     w("canonical store `edition_rel` field (the ledgered half):")
-    w("  rows carrying edition_rel : %d" % carried)
+    w(f'  rows carrying edition_rel : {carried:d}')
     w("  rows whose subtype changes: %d" % len(changed))
     return "\n".join(L)
 
@@ -264,7 +264,7 @@ def selftest():
     carried, changed = store_edition_rel_census([
         dict(recs[3], edition_rel={"subtype": "restate"}),
     ] + recs[:3])
-    check(carried == 1, "only rows carrying edition_rel are counted: %d" % carried)
+    check(carried == 1, f'only rows carrying edition_rel are counted: {carried:d}')
     check(len(changed) == 1 and changed[0]["subtype_after"] == "restate_unplaced",
           "a stored stale label is reported for the ledger: {!r}".format(changed))
 

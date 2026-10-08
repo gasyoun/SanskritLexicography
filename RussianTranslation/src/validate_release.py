@@ -27,7 +27,7 @@ REQUIRED = {
     'roadmap/quality_gates.jsonl',
     'roadmap/scientific_hardening.json',
 }
-REQUIRED_GATES = {'G%d_' % i for i in range(1, 11)}
+REQUIRED_GATES = {f'G{i:d}_' for i in range(1, 11)}
 
 
 def sha256(path):
@@ -51,7 +51,7 @@ def count_jsonl(path, required):
             row = json.loads(line)
             for field in required:
                 if not row.get(field):
-                    fail('%s line %d missing %s' % (path, i, field))
+                    fail(f'{path} line {i:d} missing {field}')
             n += 1
     if not n:
         fail('{} is empty'.format(path))
@@ -67,7 +67,7 @@ def load_gate_statuses(path):
             row = json.loads(line)
             gid = row.get('id')
             if not gid:
-                fail('quality_gates.jsonl line %d missing id' % i)
+                fail(f'quality_gates.jsonl line {i:d} missing id')
             statuses[gid] = row.get('status')
     return statuses
 

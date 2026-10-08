@@ -241,8 +241,8 @@ def _write_report(n_wl, n_rv, role2, entries, entry_keys, gloss_text_available, 
     lines.append('')
     lines.append('| Input | Value |')
     lines.append('|---|--:|')
-    lines.append('| wisdomlib words carrying tradition tags | %d |' % n_wl)
-    lines.append('| RV lemmas (distinct folded join keys) | %d |' % n_rv)
+    lines.append(f'| wisdomlib words carrying tradition tags | {n_wl:d} |')
+    lines.append(f'| RV lemmas (distinct folded join keys) | {n_rv:d} |')
     lines.append('| Role-2 joined rows | %d |' % len(role2))
     lines.append('| `entries_index.jsonl` rows | %d |' % len(entries))
     lines.append('| `entries_index.jsonl` keys | `{}` |'.format('`, `'.join(sorted(entry_keys))))
@@ -253,7 +253,7 @@ def _write_report(n_wl, n_rv, role2, entries, entry_keys, gloss_text_available, 
     lines.append('| Tradition | Rows |')
     lines.append('|---|--:|')
     for t, n in trad_hist.most_common():
-        lines.append('| %s | %d |' % (t, n))
+        lines.append(f'| {t} | {n:d} |')
     if not trad_hist:
         lines.append('| (none) | 0 |')
     lines.append('')

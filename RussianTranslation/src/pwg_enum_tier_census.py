@@ -125,7 +125,7 @@ def main():
 
     print('PWG enumeration-tier census (H3948 / FINDINGS §453)')
     print('corpus: {}'.format(pwg_mask.PWG))
-    print('records scanned: %d' % n_rec)
+    print(f'records scanned: {n_rec:d}')
     print()
     print('%-16s %10s %14s %10s' % ('class/closer', 'raw', 'lookbehind_ok', 'genuine'))
     print('-' * 54)

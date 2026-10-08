@@ -328,8 +328,8 @@ def selftest():
     assert len(pairs) == 3
     rows, kept, dropped = to_corpus_rows(pairs, 'gita-lecture', media='gita01.mp3')
     # cue 3: sa='uh ...' (>=2 chars) but ru='…' has no Cyrillic -> dropped by guard
-    assert kept == 2, 'guard should keep 2 real pairs, kept %d' % kept
-    assert dropped == 1, 'guard should drop the untranslated cue, dropped %d' % dropped
+    assert kept == 2, f'guard should keep 2 real pairs, kept {kept:d}'
+    assert dropped == 1, f'guard should drop the untranslated cue, dropped {dropped:d}'
     assert len(rows) == 4, 'two rows per kept pair, got %d' % len(rows)
 
     sa_row = rows[0]

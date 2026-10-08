@@ -118,7 +118,7 @@ def run(out, index_path, report_only):
 
 def report(s, out):
     n = s['entries']
-    print('MW entries: %d' % n)
+    print(f'MW entries: {n:d}')
     print('  <ls>-tagged: %d (%.1f%%) · DCS-hit: %d (%.1f%%)'
           % (s['ls_tagged'], 100.0 * s['ls_tagged'] / n if n else 0,
              s['dcs_hit'], 100.0 * s['dcs_hit'] / n if n else 0))

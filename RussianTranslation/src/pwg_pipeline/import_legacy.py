@@ -138,7 +138,7 @@ def legacy_projection(value: Mapping[str, Any]) -> dict[str, str]:
                 walk(node[key], '{}.{}'.format(prefix, key) if prefix else str(key))
         elif isinstance(node, list):
             for index, item in enumerate(node):
-                walk(item, '%s[%d]' % (prefix, index))
+                walk(item, f'{prefix}[{index:d}]')
         else:
             flat[prefix] = json.dumps(node, ensure_ascii=False, sort_keys=True)
 

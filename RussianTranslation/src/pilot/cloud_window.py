@@ -179,7 +179,7 @@ def selftest():
             raise ValueError('unclassifiable german construction')
         card = {'iast': 'aṃśa', 'records': [
             {'h': item['key'], 'grammar': 'm',
-             'senses': [{'tag': 'sense%d' % n, 'german': 'Teil',
+             'senses': [{'tag': f'sense{n:d}', 'german': 'Teil',
                          'russian': 'часть, доля'} for n in (1, 2, 3)]}]}
         usage = {'input_tokens': 100, 'output_tokens': 50,
                  'cache_creation_input_tokens': 10, 'cache_read_input_tokens': 90,

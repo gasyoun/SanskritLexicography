@@ -88,17 +88,16 @@ def read_events(path):
     prev_seq = 0
     for index, line in enumerate(lines, 1):
         if not line:
-            raise LedgerError('empty ledger line at %d' % index)
+            raise LedgerError(f'empty ledger line at {index:d}')
         try:
             event = json.loads(line)
         except json.JSONDecodeError as exc:
-            raise LedgerError('torn/interleaved ledger at line %d: %s' % (index, exc))
+            raise LedgerError(f'torn/interleaved ledger at line {index:d}: {exc}')
         if not isinstance(event, dict):
-            raise LedgerError('ledger line %d is not an object' % index)
+            raise LedgerError(f'ledger line {index:d} is not an object')
         seq = event.get('seq')
         if not isinstance(seq, int) or seq != prev_seq + 1:
-            raise LedgerError('ledger seq gap at line %d (prev=%s got=%s)' % (
-                index, prev_seq, seq))
+            raise LedgerError(f'ledger seq gap at line {index:d} (prev={prev_seq} got={seq})')
         prev_seq = seq
         events.append(event)
     return events

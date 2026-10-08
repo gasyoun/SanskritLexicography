@@ -91,7 +91,7 @@ def read_rows(path):
             try:
                 rows.append(json.loads(line))
             except json.JSONDecodeError as exc:
-                raise RepairRefusal('malformed store JSON at line %d: %s' % (lineno, exc))
+                raise RepairRefusal(f'malformed store JSON at line {lineno:d}: {exc}')
     return rows
 
 
@@ -266,8 +266,7 @@ def plan_repair(store_path, source_dirs, harness_dirs):
             stats['placeholder_rows'] += 1
             source = maps.get(address)
             if source is None:
-                raise RepairRefusal('no exact raw/PH-map provenance for line %d %s @ %s'
-                                    % (lineno, address[0], address[1]))
+                raise RepairRefusal(f'no exact raw/PH-map provenance for line {lineno:d} {address[0]} @ {address[1]}')
             ph, evidence = source
             try:
                 fixes = {field: restore_text(row[field], ph, '{}.{}'.format(address[0], field))

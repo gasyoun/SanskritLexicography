@@ -115,8 +115,8 @@ def cmd_prep(args):
 
     # write OFFSET/LIMIT into the workflow so it translates exactly this window
     js = open(WF, encoding='utf-8').read()
-    js2 = re.sub(r'const OFFSET = \d+', 'const OFFSET = %d' % offset, js, count=1)
-    js2 = re.sub(r'const LIMIT = \d+', 'const LIMIT = %d' % n, js2, count=1)
+    js2 = re.sub(r'const OFFSET = \d+', f'const OFFSET = {offset:d}', js, count=1)
+    js2 = re.sub(r'const LIMIT = \d+', f'const LIMIT = {n:d}', js2, count=1)
     if js2 != js:
         open(WF, 'w', encoding='utf-8').write(js2)
 
@@ -124,7 +124,7 @@ def cmd_prep(args):
     print('  batch    :', ' '.join(batch))
     print('  fresh    : %d (%s)' % (len(fresh), ' '.join(fresh) or '—'))
     print('  protected: %d (%s)  ← will NOT be overwritten' % (len(prot), ' '.join(prot) or '—'))
-    print('  run_pilot_wf.js set to OFFSET=%d LIMIT=%d' % (offset, n))
+    print(f'  run_pilot_wf.js set to OFFSET={offset:d} LIMIT={n:d}')
     print('  batch saved → {}'.format(os.path.basename(BATCH_FILE)))
     print('\nNEXT (on your Max):')
     print('  1) run the workflow run_pilot_wf.js through your harness; save its JSON → wf_output.json')
@@ -186,9 +186,9 @@ def cmd_audit(args):
 
     print('\n=== REPORT ===')
     print('  cards audited      : %d' % len(keys))
-    print('  NWS audit CLEAN    : %d' % clean)
+    print(f'  NWS audit CLEAN    : {clean:d}')
     print('  F12 misattribution : %d %s' % (misattr, ('→ ' + ' '.join(bad_cards)) if bad_cards else ''))
-    print('  no-NWS / other     : %d' % noidx)
+    print(f'  no-NWS / other     : {noidx:d}')
     print('  judge pass rate    : see "publishable" line in section 1 above')
 
     gate_fail = [k for k in bad_cards if k not in protected]

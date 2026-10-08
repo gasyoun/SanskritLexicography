@@ -72,7 +72,7 @@ def build(source, idx=None, force=False):
             con = sqlite3.connect(idx)
             row = con.execute("select v from meta where k='source_stat'").fetchone()
             con.close()
-            if row and row[0] == '%d:%d' % (st.st_size, st.st_mtime_ns):
+            if row and row[0] == f'{st.st_size:d}:{st.st_mtime_ns:d}':
                 return -1                                   # fresh, skipped
         except sqlite3.Error:
             pass                                            # corrupt -> rebuild
@@ -119,7 +119,7 @@ def build(source, idx=None, force=False):
                 rec_start = None
             pos += len(raw)
     con.execute("insert into meta values('source_stat',?)",
-                ('%d:%d' % (st.st_size, st.st_mtime_ns),))
+                (f'{st.st_size:d}:{st.st_mtime_ns:d}',))
     con.execute("insert into meta values('source',?)", (os.path.abspath(source),))
     con.execute("insert into meta values('bom',?)", (bom.decode('latin1'),))
     con.commit()
@@ -347,7 +347,7 @@ def main():
                 print('  skip {}: no source'.format(nm))
                 continue
             r = build(src, force=args.force)
-            print('  {}: {}'.format(nm, 'fresh (skipped)' if r < 0 else '%d records' % r))
+            print('  {}: {}'.format(nm, 'fresh (skipped)' if r < 0 else f'{r:d} records'))
 
 
 if __name__ == '__main__':

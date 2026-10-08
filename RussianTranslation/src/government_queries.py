@@ -129,7 +129,7 @@ def main():
         census, origin = gc.census_or_load()
         gov_total = sum(n for k, n in census['kinds'].items() if k != 'paren-nongov')
         print('census source: {}'.format(origin))
-        print('government markers (total)       : %d' % gov_total)
+        print(f'government markers (total)       : {gov_total:d}')
         print('  paren-single / variation / mit : %d / %d / %d' % (
             census['kinds'].get('paren-single', 0),
             census['kinds'].get('paren-variation', 0),

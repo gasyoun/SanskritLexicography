@@ -284,12 +284,12 @@ def selftest():
     rows = []
     for i in range(400):
         rows.append({'location': '1.1.%d' % (i + 1), 'token_index': i % 5,
-                     'form': 'f%d' % i, 'lemma': 'l%d' % i,
+                     'form': f'f{i:d}', 'lemma': f'l{i:d}',
                      'translator': 'griffith_en_1896' if i % 3 == 2 else (
                          'elizarenkova_ru_1989' if i % 3 == 1 else 'grassmann_de_1876'),
-                     'target': TARGETS[i % 3], 'span': 's%d' % i,
+                     'target': TARGETS[i % 3], 'span': f's{i:d}',
                      'confidence': 0.5, 'low_confidence': False})
-    freq = {'l%d' % i: (1 if i % 4 == 0 else (5 if i % 4 == 1 else (50 if i % 4 == 2 else 500)))
+    freq = {f'l{i:d}': (1 if i % 4 == 0 else (5 if i % 4 == 1 else (50 if i % 4 == 2 else 500)))
             for i in range(400)}
     got = draw(rows, freq, 300, DEFAULT_SEED)
     assert len(got) == 300, len(got)

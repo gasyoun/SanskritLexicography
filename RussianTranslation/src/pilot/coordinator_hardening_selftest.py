@@ -379,7 +379,7 @@ def test_h8_claim_preflight_timeout_unwinds_clean():
                 break
             time.sleep(0.1)
         else:
-            raise AssertionError('preflight child %d survived the timeout' % child_pid)
+            raise AssertionError(f'preflight child {child_pid:d} survived the timeout')
         if os.path.exists(finished):
             raise AssertionError('the preflight child ran to completion: {}'.format(open(finished, encoding='utf-8').read().strip()))
 

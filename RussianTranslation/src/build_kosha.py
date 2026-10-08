@@ -106,4 +106,4 @@ if __name__ == '__main__':
     if os.path.exists(out_path):
         os.remove(out_path)
     total = sum(build(s) for s in KOSHAS)
-    print('TOTAL synonym rows: %d' % total)
+    print(f'TOTAL synonym rows: {total:d}')

@@ -341,7 +341,7 @@ def diff(expected: Mapping[str, Any], actual: Mapping[str, Any]) -> list[str]:
                 findings.append('%s: length %d != %d' % (path, len(left),
                                                          len(right)))
             for index, (a, b) in enumerate(zip(left, right)):
-                walk(a, b, '%s[%d]' % (path, index))
+                walk(a, b, f'{path}[{index:d}]')
         elif left != right:
             findings.append('{}: {!r} != {!r}'.format(path, left, right))
 

@@ -219,7 +219,7 @@ def test_prepare_contract_and_zero_one_n():
         prepare(many)
         for index in (2, 3):
             other = dict(many, purpose=PURPOSE + str(index),
-                         ticket_path=os.path.join(tmp, 'many%d.json' % index))
+                         ticket_path=os.path.join(tmp, f'many{index:d}.json'))
             prepare(other)
         blocked = dict(many, purpose='fourth', ticket_path=os.path.join(tmp, 'many4.json'))
         expect_refusal(lambda: prepare(blocked), 'max_calls')
@@ -455,7 +455,7 @@ def test_final_blocks_and_complete_json_schema():
     ]
     for index, blocks in enumerate(failures):
         with tempfile.TemporaryDirectory() as tmp:
-            paths = fixture(tmp, run_id='schema-%d' % index, max_calls=1)
+            paths = fixture(tmp, run_id=f'schema-{index:d}', max_calls=1)
             ticket = prepare(paths)
             env = record(paths, ticket, wrapper(ticket, blocks=blocks))
             assert env['schema_compliant'] is False, (index, env)

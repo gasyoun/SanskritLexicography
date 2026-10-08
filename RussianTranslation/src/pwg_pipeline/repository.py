@@ -65,7 +65,7 @@ class Repository:
                                      isolation_level=None)
         self._conn.row_factory = sqlite3.Row
         self._conn.execute('PRAGMA foreign_keys = ON')
-        self._conn.execute('PRAGMA busy_timeout = %d' % BUSY_TIMEOUT_MS)
+        self._conn.execute(f'PRAGMA busy_timeout = {BUSY_TIMEOUT_MS:d}')
         try:
             self._conn.execute('PRAGMA journal_mode = WAL')
         except sqlite3.DatabaseError:  # pragma: no cover - exotic filesystems

@@ -1049,7 +1049,7 @@ def main():
             'not a second parallel frame. Every input is a committed derived table; '
             'no number below is recomputed from the 921 MB DCS sqlite in this pass.'),
         'random': (
-            'a uniform random sample of %d PWG headwords (seed %d)' % (a.n, a.seed),
+            f'a uniform random sample of {a.n:d} PWG headwords (seed {a.seed:d})',
             'Drawn uniformly from all {} PWG headword groups with an explicit seed, so '
             'it is reproducible and — unlike the H1455 frame — **not** selected for '
             'DCS attestation. This is the frame that answers "what share of PWG is '
@@ -1092,7 +1092,7 @@ def main():
         repro_export = 'python export_frame_sense_loci.py --all'
         repro_join = ('python pwg_sense_dcs_attestation_pilot.py --kosha ../../../kosha'
                       ' --frame-mode {}{}'.format(a.frame_mode,
-                         ' --n %d --seed %d' % (a.n, a.seed)
+                         f' --n {a.n:d} --seed {a.seed:d}'
                          if a.frame_mode == 'random' else ''))
 
     extra = {

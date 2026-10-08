@@ -377,7 +377,7 @@ def _rubric_panel(kind, it, blinded):
                 "put the worst error SPAN in the note (free text below the H178 line).</div></div>".format(rows))
     if kind == "likert":
         sel = lambda name: '<select data-rubric="{}">{}</select>'.format(
-            name, "".join('<option>%d</option>' % i for i in range(1, 6)))
+            name, "".join(f'<option>{i:d}</option>' for i in range(1, 6)))
         return ("<div class=\"panel\"><h4>Likert 1–5</h4>"
                 "adequacy (meaning preserved): {} &nbsp;&nbsp; fluency (natural scholarly Russian): {}"
                 "</div>".format(sel("adequacy"), sel("fluency_likert")))
@@ -754,7 +754,7 @@ def cmd_agent_pass():
             }
             fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
             n += 1
-    print("agent_pass A2: %d rows -> %s" % (n, out_path))
+    print(f'agent_pass A2: {n:d} rows -> {out_path}')
     print("H274: use h178_da human decisions + this file for agent arms; "
           "every metric must say agent-vs-human or agent-only.")
     return 0

@@ -329,8 +329,7 @@ def cmd_build(idx, args):
             tot += 1
             cov += 1 if card['reuse']['covered'] else 0
             if tot % 5000 == 0:
-                print('  assembled %d card(s), covered %d, quarantined %d'
-                      % (tot, cov, qn), file=sys.stderr)
+                print(f'  assembled {tot:d} card(s), covered {cov:d}, quarantined {qn:d}', file=sys.stderr)
     replace_output(out_tmp, out)
     replace_output(quarantine_tmp, quarantine)
     print('wrote %d assembled cards to %s (%d with reuse, %.1f%%; quarantined %d lossy record(s) → %s)'

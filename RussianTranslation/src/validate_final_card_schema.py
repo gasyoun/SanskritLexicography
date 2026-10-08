@@ -185,7 +185,7 @@ def validate_judge(judge, key1):
         fail('judge bad discrimination_quality: {!r}'.format(judge.get('discrimination_quality')))
     need_list(judge, 'issues', 'judge')
     for i, issue in enumerate(judge['issues']):
-        validate_issue(issue, 'judge.issues[%d]' % i)
+        validate_issue(issue, f'judge.issues[{i:d}]')
     need_str(judge, 'note', 'judge')
 
 
@@ -214,7 +214,7 @@ def validate_sense(sense, where):
         need_list(sense, 'labels', where)
         for k, lab in enumerate(sense['labels']):
             if not isinstance(lab, str) or not lab:
-                fail('%s.labels[%d] must be a non-empty string' % (where, k))
+                fail(f'{where}.labels[{k:d}] must be a non-empty string')
 
 
 def validate_card(card):
@@ -227,7 +227,7 @@ def validate_card(card):
     if not card['records']:
         fail('{} has no records'.format(card['key1']))
     for i, rec in enumerate(card['records']):
-        where = 'card.records[%d]' % i
+        where = f'card.records[{i:d}]'
         need_obj(rec, where)
         need_keys(rec, RECORD_REQUIRED, where)
         need_str(rec, 'h', where)
@@ -236,7 +236,7 @@ def validate_card(card):
         if not rec['senses']:
             fail('{}.senses must not be empty'.format(where))
         for j, sense in enumerate(rec['senses']):
-            validate_sense(sense, '%s.senses[%d]' % (where, j))
+            validate_sense(sense, f'{where}.senses[{j:d}]')
 
 
 def validate_result(res, force_corpus_candidates=None):
@@ -339,7 +339,7 @@ def main():
     total = 0
     for path in paths:
         total += validate_file(path)
-    print('final-card schema validation OK: %d result(s)' % total)
+    print(f'final-card schema validation OK: {total:d} result(s)')
 
 
 if __name__ == '__main__':

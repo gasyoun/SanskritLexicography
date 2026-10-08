@@ -56,7 +56,7 @@ def main():
         if key not in samples:
             samples[key] = re.sub(r'<[^>]+>', '', inner).strip()[:50]
     print('PWG <ls> citations: %d total, %d distinct source keys' % (total, len(freq)))
-    print('top %d sources (key | count | sample):' % topn)
+    print(f'top {topn:d} sources (key | count | sample):')
     for k, c in freq.most_common(topn):
         print('  %-16s %7d   %s' % (k, c, samples.get(k, '')))
 

@@ -238,7 +238,7 @@ def main(argv=None):
         return selftest()
     if args.cmd == 'backfill':
         w, total = backfill_documented(args.path)
-        print('backfill: wrote %d of %d documented residual(s) to %s' % (w, total, args.path))
+        print(f'backfill: wrote {w:d} of {total:d} documented residual(s) to {args.path}')
         return 0
     if args.cmd == 'check':
         ok, missing = check_documented_are_ledgered(args.path)

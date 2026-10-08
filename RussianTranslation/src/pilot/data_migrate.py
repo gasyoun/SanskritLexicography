@@ -230,7 +230,7 @@ def selftest():
                   encoding='utf-8') as f:
             f.write('raw payload')
         for i in range(4):
-            with open(os.path.join(rt, 'src', 'pilot', 'nws', 'k%d.json' % i), 'w',
+            with open(os.path.join(rt, 'src', 'pilot', 'nws', f'k{i:d}.json'), 'w',
                       encoding='utf-8') as f:
                 f.write('{"n":%d}' % i)
         inv = {'schema': 'pwg.data_inventory.v1', 'rt_root': rt, 'rows': [

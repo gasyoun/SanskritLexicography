@@ -38,7 +38,7 @@ import prep_pack
 from call_reservation import CallReservationLedger
 from headless_worker import build_fragment_prompt, build_prompt
 
-KEYS = ['aKey%d' % i for i in range(1, pcc.PAIR_COUNT + 1)]
+KEYS = [f'aKey{i:d}' for i in range(1, pcc.PAIR_COUNT + 1)]
 
 
 # --------------------------------------------------------------------------- fixtures
@@ -59,7 +59,7 @@ def _fragment_lane(manifest, *, groups_per_key=2, heavy_key=None, heavy_groups=0
             size = 2 if group_index == 0 else 1
             groups.append([{'skeleton': 'frag %s g%d f%d {T%d}\n'
                                         % (key, group_index, slot, index + 1),
-                            'fsha': '%s-%d-%d' % (key, group_index, slot),
+                            'fsha': f'{key}-{group_index:d}-{slot:d}',
                             'ls': 1, 'si': slot, 'sk': 0}
                            for slot in range(size)])
         fragment_groups[key] = groups
@@ -536,7 +536,7 @@ def test_fragment_lane_arm_a_is_the_production_fragment_call():
         for uid in plan['keys']:
             card = plan['cards'][uid]
             key, index = card['key1'], card['group_index']
-            assert uid == '%s#g%d' % (key, index)
+            assert uid == f'{key}#g{index:d}'
             group = manifest['fragment_groups'][key][index]
             expected = build_fragment_prompt(manifest, key, group, list(card['indices']))
             contexts = pcc.load_contexts(os.path.join(tmp, 'contexts'), [key])
@@ -618,7 +618,7 @@ def test_fragment_audit_scores_each_fragment_against_its_own_skeleton():
         group = manifest['fragment_groups'][key][card['group_index']]
 
         def frag_card(index, text):
-            return {'key1': '%s_f%d' % (key, index), 'records': [
+            return {'key1': f'{key}_f{index:d}', 'records': [
                 {'grammar': '', 'senses': [{'tag': '1', 'german': text, 'russian': 'ру'}]}]}
 
         faithful = {'cards': [frag_card(index, group[index]['skeleton'])

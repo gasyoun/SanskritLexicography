@@ -242,7 +242,7 @@ def test_success_and_failures(tmp):
     check('B-06 canceled classified', envelopes[3]['failure_class'] == 'batch_canceled',
           envelopes[3]['failure_class'])
     for index in (1, 2, 3):
-        check('B-06 failed card cost is null not zero #%d' % index,
+        check(f'B-06 failed card cost is null not zero #{index:d}',
               envelopes[index]['observed_cost_usd'] is None
               and envelopes[index]['cost_evaluable'] is False)
     usage = ledger.usage()

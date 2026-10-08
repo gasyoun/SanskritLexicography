@@ -191,7 +191,7 @@ def test_source_coverage(g, args, keys):
     for grade, exp_n in sorted(exp['grades'].items()):
         gn = count(g, 'SELECT (COUNT(?s) AS ?n){{?s <{}evidenceGrade> <{}{}>}}'.format(V, GR, grade))
         ok = check('grade {} sense count matches source'.format(grade), gn == exp_n,
-                   'graph=%d source=%d' % (gn, exp_n)) and ok
+                   f'graph={gn:d} source={exp_n:d}') and ok
     return ok
 
 
@@ -247,7 +247,7 @@ def test_de_enrichment(fixture_dir, query_path):
     shared = count(g, 'SELECT (COUNT(DISTINCT ?lemma) AS ?n){{'
                       '?de a <{}LexicalEntry> ; <http://purl.org/dc/terms/language> "de" ; <{}canonicalForm> ?lemma . '
                       '?ru a <{}LexicalEntry> ; <{}canonicalForm> ?lemma . FILTER(?ru != ?de)}}'.format(O, O, O, O))
-    ok = check('lemmas carry >1 sibling entry (RU + DE on one lemma)', shared > 0, '%d lemmas' % shared) and ok
+    ok = check('lemmas carry >1 sibling entry (RU + DE on one lemma)', shared > 0, f'{shared:d} lemmas') and ok
     # C4. every German sense carries the PWG-source evidence grade.
     ok = check('every German sense has evidenceGrade gr:pwg-source',
                count(g, 'SELECT (COUNT(?s) AS ?n){{?e <http://purl.org/dc/terms/language> "de" ; <{}sense> ?s '
@@ -279,7 +279,7 @@ def test_de_source_coverage(args, keys, fixture_dir):
             exp += len(list(X.de_card_senses(card)))
     g = Graph(); g.parse(os.path.join(fixture_dir, 'pwg_de_lexicon.ttl'), format='turtle')
     got = count(g, 'SELECT (COUNT(?s) AS ?n){{?e <http://purl.org/dc/terms/language> "de" ; <{}sense> ?s}}'.format(ONTO))
-    return check('German sense count matches source', got == exp, 'graph=%d source=%d' % (got, exp))
+    return check('German sense count matches source', got == exp, f'graph={got:d} source={exp:d}')
 
 
 # --------------------------------------------------------------------------- #
@@ -369,13 +369,13 @@ def test_grammar_source_coverage(args, keys, fixture_dir):
     ok = True
     got_sections = count(g, 'SELECT (COUNT(?s) AS ?n){{?s a <{}GrammarSection>}}'.format(V))
     ok = check('GrammarSection resource count matches source', got_sections == exp_sections,
-               'graph=%d source=%d' % (got_sections, exp_sections)) and ok
+               f'graph={got_sections:d} source={exp_sections:d}') and ok
     got_irr = count(g, 'SELECT (COUNT(*) AS ?n){{?e <{}irregularity> ?i}}'.format(V))
     ok = check('irregularity triple count matches source', got_irr == exp_irregularities,
-               'graph=%d source=%d' % (got_irr, exp_irregularities)) and ok
+               f'graph={got_irr:d} source={exp_irregularities:d}') and ok
     got_zal = count(g, 'SELECT (COUNT(?e) AS ?n){{?e <{}zaliznyakIndex> ?z}}'.format(V))
     ok = check('zaliznyakIndex-carrying entity count matches source', got_zal == exp_zaliznyak,
-               'graph=%d source=%d' % (got_zal, exp_zaliznyak)) and ok
+               f'graph={got_zal:d} source={exp_zaliznyak:d}') and ok
     return ok
 
 

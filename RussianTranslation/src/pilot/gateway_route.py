@@ -349,8 +349,7 @@ class GatewayCall:
         if self.timeout_ms and wall_ms > self.timeout_ms:
             return {'schema_compliant': False, 'cards_returned': 0, 'result': None,
                     'classification': 'timeout',
-                    'error': 'wall_ms %d exceeded hard ceiling %d ms'
-                             % (wall_ms, self.timeout_ms)}
+                    'error': f'wall_ms {wall_ms:d} exceeded hard ceiling {self.timeout_ms:d} ms'}
         try:
             result = structured_from_transcript(transcript)
         except ValueError as exc:
@@ -462,4 +461,4 @@ if __name__ == '__main__':
     status = credential_status()
     print('gateway_route: route={} base={}'.format(GATEWAY_ROUTE, GATEWAY_BASE_URL))
     print('  credential shape (booleans only): {}'.format(json.dumps(status, sort_keys=True)))
-    print('  hard ceiling: %d ms' % PRODUCTION_HARD_TIMEOUT_MS)
+    print(f'  hard ceiling: {PRODUCTION_HARD_TIMEOUT_MS:d} ms')

@@ -151,12 +151,11 @@ def run_guards(src_rows, mirror_rows, report, max_drop):
     guards.append(('G2 content-loss', not lost,
                    '%d mirror-only row(s) have `ru` text found nowhere in the store' % len(lost)
                    if lost else
-                   'every mirror-only row is quarantined, id-churn, or acknowledged '
-                   'superseded (%d acked)' % acked))
+                   f'every mirror-only row is quarantined, id-churn, or acknowledged superseded ({acked:d} acked)'))
 
     drop = len(mirror_rows) - len(src_rows)
     guards.append(('G3 shrink', drop <= max_drop,
-                   'store is %d rows smaller than the mirror (cap %d)' % (drop, max_drop)))
+                   f'store is {drop:d} rows smaller than the mirror (cap {max_drop:d})'))
     return guards
 
 
@@ -242,7 +241,7 @@ def selftest():
 
     # 7. an oversized shrink blocks
     src = [row('k', 's', '1', 'de1', 'ru1')]
-    mir = [row('k%d' % i, 's', '1', 'de%d' % i, 'ru1') for i in range(20)]
+    mir = [row(f'k{i:d}', 's', '1', f'de{i:d}', 'ru1') for i in range(20)]
     rep = classify(src, mir)
     check('shrink past --max-drop -> G3 blocks', not _verdicts(src, mir, rep, 5)['G3 shrink'])
 

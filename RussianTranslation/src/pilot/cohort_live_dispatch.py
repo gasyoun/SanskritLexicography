@@ -136,7 +136,7 @@ def run_cohort_live(windows, width, run_window, checkpoint_path, audit=None,
     """
     import cohort_engine as ce
     windows = [dict(w) for w in (windows or [])]
-    missing = [w.get('id') or ('#%d' % i) for i, w in enumerate(windows) if not w.get('profile')]
+    missing = [w.get('id') or (f'#{i:d}') for i, w in enumerate(windows) if not w.get('profile')]
     if missing:
         raise SystemExit('cohort_live_dispatch: every live cohort window needs a profile '
                          'binding (assign_profiles); missing on: {}'.format(', '.join(missing)))

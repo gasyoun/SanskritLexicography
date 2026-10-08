@@ -291,8 +291,8 @@ def run_all(emit_md=False):
             print('  ... %d/%d (%.0fs)' % (i + 1, len(keys), time.time() - t0))
     rep = ['# a-section translatable-content compile — summary',
            '', '- cards compiled: **%d** (%d errors)' % (len(keys) - len(errors), len(errors)),
-           '- cards with an NWS layer: **%d**' % nws_cards,
-           '- total translatable units: **%d**' % tot_units,
+           f'- cards with an NWS layer: **{nws_cards:d}**',
+           f'- total translatable units: **{tot_units:d}**',
            '- elapsed: %.0fs' % (time.time() - t0), '',
            '## language spread (per unit / per card)', '',
            '| lang | units | cards |', '|---|---|---|']

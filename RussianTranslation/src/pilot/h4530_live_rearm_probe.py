@@ -44,9 +44,9 @@ def main(argv=None):
     for attempt in (1, 2):
         idx = max([1] + sorted(simulated)) + 1
         root = '%s%02d' % (args.prefix, idx)
-        print('re-arm %d -> %s' % (attempt, root))
+        print(f're-arm {attempt:d} -> {root}')
         if root in roots:
-            print('FAIL: re-arm %d re-picked %s (the H4342 stall)' % (attempt, root))
+            print(f'FAIL: re-arm {attempt:d} re-picked {root} (the H4342 stall)')
             return 1
         roots.append(root)
         simulated.add(idx)          # the attempt prepares, then dies before wf_output

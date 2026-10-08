@@ -314,7 +314,7 @@ def cmd_validate(args):
                  % (n_id, len(anchors)))
     lines.append('IDENTITY  n=%d  within ±2 %.1f%%  within ±10 %.1f%%' % (n_id, id2, id10))
     lines.append('NULL      n=%d  within ±2 %.1f%%  within ±10 %.1f%%' % (n_nu, nu2, nu10))
-    lines.append('PWG number past the end of the whole vulgate parvan: %d' % over)
+    lines.append(f'PWG number past the end of the whole vulgate parvan: {over:d}')
 
     # per-parvan linear rescale, fitted on half, scored on the held-out half
     bypar = collections.defaultdict(list)
@@ -403,10 +403,9 @@ def cmd_selftest(_args):
     # The measured shortfalls that sink the hypothesis — pinned so a silent
     # regeneration against a different (longer) witness is noticed, not absorbed.
     check(totals[3] < 17471,
-          'Vanaparvan total %d is below the PWG citation reaching 17471 '
-          '(the shortfall this table documents)' % totals[3])
+          f'Vanaparvan total {totals[3]:d} is below the PWG citation reaching 17471 (the shortfall this table documents)')
     check(totals[5] < 7656,
-          'Udyogaparvan total %d is below the PWG citation reaching 7656' % totals[5])
+          f'Udyogaparvan total {totals[5]:d} is below the PWG citation reaching 7656')
 
     sys.path.insert(0, HERE)
     import citation_tm

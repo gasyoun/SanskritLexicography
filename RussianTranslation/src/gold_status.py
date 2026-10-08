@@ -39,7 +39,7 @@ def main():
     if incomplete:
         print('first incomplete rows:')
         for line_no, rid, slp1, fields in incomplete[:25]:
-            print('  line %d id=%s slp1=%s missing=%s' % (line_no, rid, slp1, fields))
+            print(f'  line {line_no:d} id={rid} slp1={slp1} missing={fields}')
 
 
 if __name__ == '__main__':

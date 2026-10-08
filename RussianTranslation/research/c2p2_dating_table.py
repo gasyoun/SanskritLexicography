@@ -84,7 +84,7 @@ def validate(source_map, table):
             if src.get("ref") not in sources:
                 fails.append("%s source[%d] ref %r not in the sources block" % (where, i, src.get("ref")))
             if not src.get("claim"):
-                fails.append("%s source[%d] has no claim text" % (where, i))
+                fails.append(f'{where} source[{i:d}] has no claim text')
             if src.get("verified") not in VERIFIED:
                 fails.append("%s source[%d] verified %r not one of %s" % (where, i, src.get("verified"), VERIFIED))
             if src.get("verified") == "on-disk-quote":
@@ -93,7 +93,7 @@ def validate(source_map, table):
                     fails.append("%s source[%d] claims an on-disk quote but %r has no on_disk path"
                                  % (where, i, src.get("ref")))
                 if not src.get("locus"):
-                    fails.append("%s source[%d] is an on-disk quote with no printed locus" % (where, i))
+                    fails.append(f'{where} source[{i:d}] is an on-disk quote with no printed locus')
 
         # Contested datings are routed to a decision, never self-ruled.
         if row["confidence"] == "contested" and not row.get("decide"):
@@ -186,7 +186,7 @@ def measure(table, window_path):
 
 
 def fmt_year(y):
-    return "%d BCE" % (-y) if y < 0 else "%d CE" % y
+    return "%d BCE" % (-y) if y < 0 else f'{y:d} CE'
 
 
 def decide_sort(did):

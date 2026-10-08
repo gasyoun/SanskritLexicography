@@ -122,9 +122,9 @@ def build():
         for r in rows:
             f.write('\t'.join(r) + '\n')
 
-    print('PWG entries scanned: %d' % n_total)
-    print('  indexed (have <lex>): %d' % n_indexed)
-    print('  skipped no <lex>: %d ; unknown gender tag: %d' % (n_nolex, n_unknown_gender))
+    print(f'PWG entries scanned: {n_total:d}')
+    print(f'  indexed (have <lex>): {n_indexed:d}')
+    print(f'  skipped no <lex>: {n_nolex:d} ; unknown gender tag: {n_unknown_gender:d}')
     print('  distinct paradigm tokens: %d' % len(index))
     print('wrote {}, {}, {}'.format(os.path.basename(IDX_JSON), os.path.basename(STATS_TSV),
                                 os.path.basename(HW_TSV)))

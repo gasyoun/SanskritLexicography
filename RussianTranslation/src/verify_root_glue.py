@@ -102,18 +102,18 @@ def check_lossless_and_segmentation(strict):
                     missed[m.group(1).strip() if m else '(no <ab> label)'] += 1
     np_miss = np_raw - np_recognized
     print('## A. Losslessness (hard invariant)')
-    print('   records with boundaries scanned : %d' % n_rec)
+    print(f'   records with boundaries scanned : {n_rec:d}')
     print('   round-trip FAILURES             : %d  -> %s'
           % (n_lossy, 'PASS' if n_lossy == 0 else 'FAIL ' + ', '.join('{}/{}'.format(*w) for w in worst[:10])))
     print('## B. Segmentation correctness (warn%s)' % (', escalated by --strict' if strict else ''))
     print('   <div n="p"> total / recognised-as-boundary / NOT-split : %d / %d / %d (%.1f%%)'
           % (np_raw, np_recognized, np_miss, 100.0 * np_miss / max(np_raw, 1)))
-    print('   secondary sub-cards split out (caus/desid/intens/partic/pass/insens): %d' % n_secondary)
+    print(f'   secondary sub-cards split out (caus/desid/intens/partic/pass/insens): {n_secondary:d}')
     if missed:
         print('   still-merged <div n="p"> labels: '
-              + ', '.join('%s=%d' % (k, v) for k, v in missed.most_common(8)))
+              + ', '.join(f'{k}={v:d}' for k, v in missed.most_common(8)))
     seclike = sum(v for k, v in missed.items() if k.strip().rstrip('.').lower() in SECLABELS)
-    print('   => %d secondary-conjugation blocks still merged into the preceding sub-card.' % seclike)
+    print(f'   => {seclike:d} secondary-conjugation blocks still merged into the preceding sub-card.')
     lossless_ok = n_lossy == 0
     seg_ok = seclike == 0                              # all caus/desid/intens/partic now split
     return lossless_ok, seg_ok, seclike

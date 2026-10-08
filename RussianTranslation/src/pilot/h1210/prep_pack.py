@@ -667,7 +667,7 @@ def apply_hard_flags(pack: dict, *, card: dict | None, slot: dict | None,
         notes.append('store layers={} (no pwg)'.format(','.join(sorted(layers))))
     if n_senses >= POLYSEMY_SENSE_FLOOR:
         hf['polysemy'] = True
-        notes.append('polysemy: n_senses=%d >= %d' % (n_senses, POLYSEMY_SENSE_FLOOR))
+        notes.append(f'polysemy: n_senses={n_senses:d} >= {POLYSEMY_SENSE_FLOOR:d}')
     if de_bytes >= MONSTER_BYTES or len(pack['key1']) >= 24:
         hf['monster_length'] = True
         notes.append('monster: de_bytes=%d key1_len=%d' % (de_bytes, len(pack['key1'])))
@@ -760,7 +760,7 @@ def prep_level_gate(pack: dict) -> list[str]:
         # empty skeleton slots
         empty = sum(1 for x in skel if not str(x or '').strip())
         if empty:
-            issues.append('prep: ru_skeleton has %d empty slot(s)' % empty)
+            issues.append(f'prep: ru_skeleton has {empty:d} empty slot(s)')
     return issues
 
 
@@ -1684,7 +1684,7 @@ def main(argv=None) -> int:
             print('  gate %-24s ok=%s issues=%d route=%s'
                   % (pack['key1'], pack['det']['ok'], len(pack['det']['issues']),
                      pack['route_hint']), flush=True)
-        print('gate-only: ok=%d fail=%d (claude=never)' % (n_ok, n_bad))
+        print(f'gate-only: ok={n_ok:d} fail={n_bad:d} (claude=never)')
         return 0
 
     manifest_idx = {} if args.dry else load_manifest_index(args.manifest)
@@ -1773,10 +1773,8 @@ def main(argv=None) -> int:
         assert det.get('claude') is not True, 'det_gate path must never claim Claude'
     print('prep_pack %s: wrote %d sidecar(s) under %s (store_write=never)'
           % (mode, len(paths), args.out_dir))
-    print('  senses_total=%d tm_hits_total=%d keys_with_any_hard_flag=%d'
-          % (n_senses, n_tm, n_flag))
-    print('  free det_gate: ok=%d fail=%d claude=never'
-          % (n_gate_ok, n_gate_fail))
+    print(f'  senses_total={n_senses:d} tm_hits_total={n_tm:d} keys_with_any_hard_flag={n_flag:d}')
+    print(f'  free det_gate: ok={n_gate_ok:d} fail={n_gate_fail:d} claude=never')
     if context_paths:
         print('  compact contexts: %d under %s (promotable=false)'
               % (len(context_paths), args.context_out_dir))

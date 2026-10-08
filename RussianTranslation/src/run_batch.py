@@ -121,7 +121,7 @@ def _store_review_id(row, pos=None):
     if sub is not None:
         return '{}subcard:{}'.format(prefix, sub)
     if pos is not None:
-        return 'row:%d' % pos
+        return f'row:{pos:d}'
     return ''
 
 
@@ -415,15 +415,15 @@ def _review_validation(rows):
         if not decision:
             continue                    # blank = not reviewed yet
         if not review_id:
-            errors.append('line %d: review_id required for decision' % i)
+            errors.append(f'line {i:d}: review_id required for decision')
             continue
         if decision not in REVIEW_DECISIONS:
-            errors.append('line %d %s: bad decision %r' % (i, label, decision))
+            errors.append(f'line {i:d} {label}: bad decision {decision!r}')
         if not reviewer:
-            errors.append('line %d %s: reviewer_id required for decision' % (i, label))
+            errors.append(f'line {i:d} {label}: reviewer_id required for decision')
         if decision in PRINT_READY and (not _parse_bool_cell(row.get('key_match')) or
                                         not _parse_bool_cell(row.get('placeholders_ok'))):
-            errors.append('line %d %s: cannot mark non-integral row print-ready' % (i, label))
+            errors.append(f'line {i:d} {label}: cannot mark non-integral row print-ready')
         if decision in PRINT_READY and edit:
             pass                        # edit is optional; accepted when reviewer fixed text
         decisions[review_id] = {'decision': decision, 'reviewer': reviewer,

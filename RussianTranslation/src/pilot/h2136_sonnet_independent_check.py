@@ -53,7 +53,7 @@ def main():
     eligible, ineligible = scan_store(store)
     total_ineligible = sum(len(v) for v in ineligible.values())
     print('eligible (mechanical fix): %d' % len(eligible))
-    print('ineligible total          : %d' % total_ineligible)
+    print(f'ineligible total          : {total_ineligible:d}')
     for reason, items in sorted(ineligible.items(), key=lambda x: -len(x[1])):
         print('  %-28s %d' % (reason, len(items)))
 
@@ -117,8 +117,8 @@ def main():
             else:
                 still_refused += 1
     print('\n=== bracket-normalize probe (\\u3009/\\uff09 -> ")" etc.) ===')
-    print('  would unlock: %d' % unlocked)
-    print('  still refused: %d' % still_refused)
+    print(f'  would unlock: {unlocked:d}')
+    print(f'  still refused: {still_refused:d}')
 
 
 if __name__ == '__main__':

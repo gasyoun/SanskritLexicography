@@ -173,14 +173,14 @@ def main():
 
     n = len(rows)
     print('=== DCS FREQUENCY ANNOTATION ===')
-    print('store rows           : %d' % n)
+    print(f'store rows           : {n:d}')
     print('matched compound     : %d (%.1f%%)' % (kinds['compound'], 100 * kinds['compound'] / max(1, n)))
     print('matched sandhi-compound: %d (%.1f%%)' % (kinds['compound_sandhi'], 100 * kinds['compound_sandhi'] / max(1, n)))
     print('matched root-fallback: %d (%.1f%%)' % (kinds['root_fallback'], 100 * kinds['root_fallback'] / max(1, n)))
     print('absent from DCS      : %d (%.1f%%)' % (kinds['none'], 100 * kinds['none'] / max(1, n)))
-    print('band distribution    : ' + ', '.join('%d:%d' % (b, bands[b]) for b in range(5, -1, -1)))
-    print('hapax rows           : %d' % hapax)
-    print('core80 rows          : %d' % core)
+    print('band distribution    : ' + ', '.join(f'{b:d}:{bands[b]:d}' for b in range(5, -1, -1)))
+    print(f'hapax rows           : {hapax:d}')
+    print(f'core80 rows          : {core:d}')
     if dims:
         print('rows with POS dist   : %d (%.1f%%)' % (pos_n, 100 * pos_n / max(1, n)))
         print('rows with genre dist : %d (%.1f%%)' % (genre_n, 100 * genre_n / max(1, n)))

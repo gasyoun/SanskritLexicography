@@ -244,7 +244,7 @@ def _load_rows(path):
             try:
                 rows.append(json.loads(line))
             except json.JSONDecodeError as exc:
-                raise SystemExit('malformed store JSON at %s line %d: %s' % (path, lineno, exc))
+                raise SystemExit(f'malformed store JSON at {path} line {lineno:d}: {exc}')
     return rows
 
 
@@ -268,7 +268,7 @@ def normalize_nws_locus(sig, roman, loc):
         return None
     loc_norm = re.sub(r'\s*,\s*', ',', loc.strip())
     sig_norm = sig if sig.endswith('.') else sig + '.'
-    return '%s %d,%s' % (sig_norm, mandala, loc_norm)
+    return f'{sig_norm} {mandala:d},{loc_norm}'
 
 
 def resolve_nws_citation(sig, roman, loc):

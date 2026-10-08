@@ -102,9 +102,9 @@ def print_report(rows, records):
     print("distinct key1 with gov    : %d" % c["entries(key1)_with_government"])
     print("rows with case variation  : %d" % c["rows_with_variation"])
     print("by kind                   : " + ", ".join(
-        "%s:%d" % (k, v) for k, v in sorted(c["by_kind"].items())))
+        f'{k}:{v:d}' for k, v in sorted(c["by_kind"].items())))
     print("top case combos           : " + ", ".join(
-        "%s(%d)" % (combo, n) for combo, n in c["top_case_combos"]))
+        f'{combo}({n:d})' for combo, n in c["top_case_combos"]))
 
 
 def selftest():

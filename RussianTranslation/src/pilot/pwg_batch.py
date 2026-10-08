@@ -157,7 +157,7 @@ def _wave_zero_work(manifest):
                 yield {
                     'kind': 'fragment', 'key': key,
                     'group_index': group_index, 'indices': indices,
-                    'keys': ['%s_f%d' % (key, index) for index in indices],
+                    'keys': [f'{key}_f{index:d}' for index in indices],
                 }
 
 

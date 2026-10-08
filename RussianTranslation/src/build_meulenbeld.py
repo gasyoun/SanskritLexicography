@@ -86,7 +86,7 @@ def build():
             n += 1
             if rec['binomials']:
                 n_binom += 1
-    print('meulenbeld_plants.jsonl: %d headwords, %d with >=1 Latin binomial' % (n, n_binom))
+    print(f'meulenbeld_plants.jsonl: {n:d} headwords, {n_binom:d} with >=1 Latin binomial')
     return n
 
 if __name__ == '__main__':

@@ -240,7 +240,7 @@ def main():
     print('store                          : {}'.format(store))
     print('D4 ru_n==0 rows total          : %d' % (len(eligible) + total_ineligible))
     print('  mechanically eligible        : %d' % len(eligible))
-    print('  ineligible (manual review)   : %d' % total_ineligible)
+    print(f'  ineligible (manual review)   : {total_ineligible:d}')
     for reason, rows in sorted(ineligible.items(), key=lambda x: -len(x[1])):
         print('    %-25s %d' % (reason, len(rows)))
     return 0

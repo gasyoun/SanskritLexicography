@@ -58,7 +58,7 @@ def expected_card_count():
 
 
 def validate_card(card, line_no):
-    where = 'assembled card line %d' % line_no
+    where = f'assembled card line {line_no:d}'
     if not isinstance(card, dict):
         fail('{} must be an object'.format(where))
     need_keys(card, CARD_REQUIRED, where)
@@ -96,7 +96,7 @@ def validate_card(card, line_no):
             fail('{}.reuse.{} must be a non-negative integer'.format(where, key))
 
     for i, rec in enumerate(card['records']):
-        rwhere = '%s.records[%d]' % (where, i)
+        rwhere = f'{where}.records[{i:d}]'
         if not isinstance(rec, dict):
             fail('{} must be an object'.format(rwhere))
         need_keys(rec, RECORD_REQUIRED, rwhere)
@@ -109,7 +109,7 @@ def validate_card(card, line_no):
 
 
 def validate_quarantine_row(row, line_no):
-    where = 'quarantine line %d' % line_no
+    where = f'quarantine line {line_no:d}'
     if not isinstance(row, dict):
         fail('{} must be an object'.format(where))
     need_keys(row, QUARANTINE_REQUIRED, where)

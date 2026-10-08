@@ -472,7 +472,7 @@ def cmd_cross(a):
             n += 1
             if a.sample and n >= a.sample:
                 break
-    print('cross: %d L1 pairs scored (backend=%s) -> %s' % (n, a.backend, a.out))
+    print(f'cross: {n:d} L1 pairs scored (backend={a.backend}) -> {a.out}')
     if n:
         print('  mean alignment_confidence: {:.4f}   grounded (>0): {:.1f}%'.format(conf_sum / n, 100 * grounded / n))
         print('  L1 pairs with no L0 verse indexed: %d (%.1f%%) -- these score 0 for '

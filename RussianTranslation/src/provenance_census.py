@@ -409,7 +409,7 @@ def render_markdown(summary, probe=None, corr=None):
     L.append('|---|---:|---:|---:|')
     for era in sorted(summary['per_era']):
         e = summary['per_era'][era]
-        L.append('| %s | %d | %d | %d |' % (era, e[MEASURED], e[ASSERTED], e[ABSENT]))
+        L.append(f'| {era} | {e[MEASURED]:d} | {e[ASSERTED]:d} | {e[ABSENT]:d} |')
     L.append('')
     L.append('measured span: {} .. {}'.format(*tuple(summary['spans'][MEASURED])))
     L.append('asserted span: {} .. {}'.format(*tuple(summary['spans'][ASSERTED])))

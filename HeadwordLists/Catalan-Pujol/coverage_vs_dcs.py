@@ -91,7 +91,7 @@ print("  neither dict nor DCS            : %6d  (%.1f%%)" % (len(neither), 100 *
 
 print("\n--- sample: DCS-attested but in NO CDSL dictionary (top by band) ---")
 for k in sorted(dcs_only, key=lambda x: -dcs[x])[:25]:
-    print("  band %d  %s" % (dcs[k], k))
+    print(f'  band {dcs[k]:d}  {k}')
 
 # --- write the full categorised list of the DCS-attested / no-CDSL-dict lemmas ---
 def classify(p):
@@ -135,7 +135,7 @@ for cat_id, title in GROUPS:
     L += ['## %s (%d)' % (title, len(rows)), '', '_{}_'.format(descr[cat_id]), '',
           '| DCS band | normalised key | Pujol headword |', '|--:|---|---|']
     for band, key, pj in rows:
-        L.append('| %d | `%s` | %s |' % (band, key, pj))
+        L.append(f'| {band:d} | `{key}` | {pj} |')
     L.append('')
 open(OUTMD, 'w', encoding='utf-8', newline='\n').write('\n'.join(L))
 print('\nwrote %s (%d lemmas, %d groups)' % (OUTMD, len(dcs_only), sum(1 for g, _ in GROUPS if buckets.get(g))))

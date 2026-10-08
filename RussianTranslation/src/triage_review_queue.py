@@ -209,7 +209,7 @@ def main():
     print("triaged %d rows -> %s" % (len(rows), OUT))
     print("\nbucket x severity:")
     sevs = sorted({r["severity"] for r in rows})
-    print("  %-14s %s  total" % ("bucket", " ".join("s%d" % s for s in sevs)))
+    print("  %-14s %s  total" % ("bucket", " ".join(f's{s:d}' for s in sevs)))
     for b in ["C_source", "A_mechanical", "B_quality", "FAST_pass"]:
         brows = [r for r in rows if r["bucket"] == b]
         cells = Counter(r["severity"] for r in brows)

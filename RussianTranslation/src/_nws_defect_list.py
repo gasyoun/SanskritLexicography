@@ -91,8 +91,7 @@ w('([NWS_AUDIT_REPORT.md](NWS_AUDIT_REPORT.md)) surfaced only the one that also'
 w('breaks an owner cite (`vṛtrakhādá`). Most sit mid-gloss and are inherited from')
 w('condensing Monier-Williams parentheticals.')
 w('')
-w('**%d distinct entries.** Confidence: the paren and double-open classes are high'
-  % total)
+w(f'**{total:d} distinct entries.** Confidence: the paren and double-open classes are high')
 w('(excess *opening* parens cannot arise from the `1) 2)` enumeration convention,')
 w('which only adds closing `)`); the bracket class is high but worth a human glance')
 w('before sending, as a few `[ ]` could be intentional nesting.')

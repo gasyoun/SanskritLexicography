@@ -402,7 +402,7 @@ def select_sources(min_tb=15, include=None, exclude=None):
                 continue
         tb = count_term_bearing(f)
         if not forced and tb < min_tb:
-            skips.append((work, 'low-yield: %d term-bearing < min-tb %d' % (tb, min_tb)))
+            skips.append((work, f'low-yield: {tb:d} term-bearing < min-tb {min_tb:d}'))
             continue
         selected.append((work, tb))
     # cheap-first, then MINE_LAST forced to the very end (dominant cost)
@@ -431,7 +431,7 @@ def cmd_mineall(args):
 
     selected, skips = select_sources(min_tb, include, exclude)
     done = done_refs()
-    print('=== mineall selection (min-tb=%d) ===' % min_tb)
+    print(f'=== mineall selection (min-tb={min_tb:d}) ===')
     for work, reason in skips:
         print('  SKIP  %-52s %s' % (work, reason))
     print('  ---')
@@ -455,7 +455,7 @@ def cmd_mineall(args):
     mineable = [(w, tb, p) for w, tb, p in planned if p]
     skipped_done = len(planned) - len(mineable)
     if skipped_done:
-        print('skipping %d already-mined selected sources (done_refs complete)' % skipped_done)
+        print(f'skipping {skipped_done:d} already-mined selected sources (done_refs complete)')
     for idx, (work, tb, pending) in enumerate(mineable, 1):
         print('\n[%d/%d] mining %s (%d pending of %d term-bearing) ...'
               % (idx, len(mineable), work, pending, tb), flush=True)

@@ -189,7 +189,7 @@ def call_api(client, manifest, key, prefix, tail, max_tokens):
         # gives a hang (FINDINGS 270) or a destroyed rate-limit signal (FINDINGS 273).
         wall_ms = int((time.monotonic() - started) * 1000)
         return {'arm': 'api', 'key': key, 'wall_ms': wall_ms,
-                'failure_class': 'http_%d' % exc.status_code,
+                'failure_class': f'http_{exc.status_code:d}',
                 'error_type': getattr(exc, 'type', None),
                 'retry_after': exc.response.headers.get('retry-after'),
                 'detail': str(exc)[:400], 'usage': {}}, None
@@ -349,7 +349,7 @@ def main():
                 row['cost_usd_1h_write'] = round(repriced(row['usage'], CACHE_WRITE_1H), 6)
                 row['cost_usd_5m_write'] = round(repriced(row['usage'], CACHE_WRITE_5M), 6)
                 rows.append(row)
-                stem = '%s_%s_%d' % (arm, key, n)
+                stem = f'{arm}_{key}_{n:d}'
                 with open(os.path.join(args.out, stem + '.envelope.json'), 'w',
                           encoding='utf-8') as fh:
                     json.dump({'row': row, 'raw': raw}, fh, ensure_ascii=False, indent=2)

@@ -59,7 +59,7 @@ def park(key, reason, source, lane=None, extra=None, env=None):
     n = 1
     while os.path.exists(path):
         n += 1
-        path = os.path.join(d, '%s.%d.json' % (base, n))
+        path = os.path.join(d, f'{base}.{n:d}.json')
     record = {'schema': SCHEMA, 'parked_at': int(time.time()), 'date': day,
               'key': str(key), 'reason': str(reason).strip().splitlines()[0],
               'source': source, 'lane': lane or os.environ.get('PWG_LANE') or None}

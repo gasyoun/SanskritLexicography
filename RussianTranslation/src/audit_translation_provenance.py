@@ -226,7 +226,7 @@ def main():
         changed = mark_unresolved(result['rows'])
         write_rows(args.store, result['rows'])
         print()
-        print('wrote %s; marked %d legacy row(s) unresolved' % (args.store, changed))
+        print(f'wrote {args.store}; marked {changed:d} legacy row(s) unresolved')
     else:
         print()
         print('(report only; pass --write to mark unresolved legacy rows)')

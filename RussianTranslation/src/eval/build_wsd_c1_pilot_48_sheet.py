@@ -429,9 +429,7 @@ def selftest():
             "target form neither highlighted nor flagged on {}".format(it["id"])
     unlocatable = sum(1 for r in rows if r["form"] not in r["sentence"])
     assert unlocatable == 4, (
-        "sandhi-fused/unlocatable target count changed: %d (was 4/48 when the "
-        "sheet was designed) -- re-read render_sentence()'s docstring"
-        % unlocatable)
+        f'sandhi-fused/unlocatable target count changed: {unlocatable:d} (was 4/48 when the sheet was designed) -- re-read render_sentence()\'s docstring')
     # No raw PWG markup may survive into human-facing card text.
     for it in items:
         menu_html = it["panels"][0][1]
@@ -442,9 +440,7 @@ def selftest():
     n_cut = sum(1 for r in rows for _t, b in split_menu(r["sense_menu"])
                 if close_truncated_markup(b)[1])
     assert n_cut == 33, (
-        "frame-truncated option count changed: %d (was 33/352 when the sheet "
-        "was designed -- 32 with a half-eaten closer, 1 with the delimiter "
-        "cut away entirely)" % n_cut)
+        f'frame-truncated option count changed: {n_cut:d} (was 33/352 when the sheet was designed -- 32 with a half-eaten closer, 1 with the delimiter cut away entirely)')
     print("selftest: OK (%d rows, %d lemmas, %d menu options, bands %s)"
           % (len(rows), len(lemmas), n_opts, sorted(stats)))
 

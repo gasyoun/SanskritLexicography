@@ -163,7 +163,7 @@ def machine_flags(ru_text, de_text):
     if de_n and not ru_n and _GUILLEMET.search(ru):
         flags.append(("D3", "DE has %d {%%…%%} slots, RU has none and uses «…»" % de_n))
     elif de_n != ru_n:
-        flags.append(("D4", "gloss-slot count mismatch: DE %d vs RU %d" % (de_n, ru_n)))
+        flags.append(("D4", f'gloss-slot count mismatch: DE {de_n:d} vs RU {ru_n:d}'))
     return flags
 
 

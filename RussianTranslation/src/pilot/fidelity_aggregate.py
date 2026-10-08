@@ -94,7 +94,7 @@ def main():
         json.dump(report, f, ensure_ascii=False, indent=1)
 
     print('=== FIDELITY (Opus judge, DE->RU) ===')
-    print('cards judged : %d' % n)
+    print(f'cards judged : {n:d}')
     print('precision    : %.1f%%  (good=%d, bad=%d)' % (100 * p, good, n - good))
     print('95% CI       : [{:.1f}%, {:.1f}%]  (Wilson)'.format(100 * lo, 100 * hi))
     print('severity hist: {}'.format(dict(sorted(sev.items()))))

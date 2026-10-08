@@ -107,8 +107,8 @@ def main():
                 n_rows += 1
                 seen.add((slp1, hom or ''))
 
-    print('records scanned : %d' % n_records, file=sys.stderr)
-    print('leaf-sense rows : %d' % n_rows, file=sys.stderr)
+    print(f'records scanned : {n_records:d}', file=sys.stderr)
+    print(f'leaf-sense rows : {n_rows:d}', file=sys.stderr)
     if wanted is None:
         print('headword groups : %d' % len(seen), file=sys.stderr)
     else:

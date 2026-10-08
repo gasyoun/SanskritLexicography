@@ -274,8 +274,7 @@ def main():
     write_report(rows, buckets, global_unmapped, heads, head_mismatch,
                  fallback_total)
 
-    print('heads (numbered-sense entries): %d (stratum-pairing mismatches: %d)'
-          % (heads, head_mismatch), file=sys.stderr)
+    print(f'heads (numbered-sense entries): {heads:d} (stratum-pairing mismatches: {head_mismatch:d})', file=sys.stderr)
     print('senses: %d' % len(rows), file=sys.stderr)
     print('coverage: {}'.format(dict(buckets)), file=sys.stderr)
     print('C7 residue: %d unresolved citation instances, %d distinct sigla'
@@ -315,12 +314,8 @@ def write_report(rows, buckets, global_unmapped, heads, head_mismatch,
     L.append('')
     L.append('## Segmentation note (stratum pairing)')
     L.append('')
-    L.append('- Committed Renou proxy `pwg_sense_stratum.jsonl`: %d headwords, '
-             '%d senses.' % (st_heads, st_senses))
-    L.append('- This build: %d headwords with >= 1 top-level numbered sense, '
-             '%d senses. Sense counts pair with the stratum for the renou join '
-             'in %d senses; the rest carry null `renou_*` (counted, not dropped).'
-             % (heads, total, paired_senses))
+    L.append(f'- Committed Renou proxy `pwg_sense_stratum.jsonl`: {st_heads:d} headwords, {st_senses:d} senses.')
+    L.append(f'- This build: {heads:d} headwords with >= 1 top-level numbered sense, {total:d} senses. Sense counts pair with the stratum for the renou join in {paired_senses:d} senses; the rest carry null `renou_*` (counted, not dropped).')
     L.append('- Known upstream drift (found here): csl-orig reflowed top-level '
              'sense markers from «`<div n="1">N)`» to «`<div n="1">N〉`», so the '
              'committed `sense_stratum.SENSE_RE` matches 0 senses against the live '
@@ -334,14 +329,7 @@ def write_report(rows, buckets, global_unmapped, heads, head_mismatch,
              'from ls_source_map.json (%d distinct sigla). This is the standing '
              'C7 census; nothing was dropped.' % (unres_total, len(global_unmapped)))
     L.append('')
-    L.append('**Bounded fallback (documented, deterministic):** %d further '
-             'instances normalise to compound sigla whose final token is a pure '
-             'roman-numeral volume marker («HIT. I», «PAÑCAT. II», «Spr. (II)»); '
-             'these are retried ONCE with that token dropped and join the plain '
-             'siglum already in the map. No other inference is made — section '
-             'sigla («MED. gh.»), journals («Ind. St.») and catalogue refs '
-             '(«Verz. d. Oxf. H.») stay unresolved below.'
-             % fallback_total)
+    L.append(f'**Bounded fallback (documented, deterministic):** {fallback_total:d} further instances normalise to compound sigla whose final token is a pure roman-numeral volume marker («HIT. I», «PAÑCAT. II», «Spr. (II)»); these are retried ONCE with that token dropped and join the plain siglum already in the map. No other inference is made — section sigla («MED. gh.»), journals («Ind. St.») and catalogue refs («Verz. d. Oxf. H.») stay unresolved below.')
     L.append('')
     L.append('Windows are therefore **conservative lower bounds**: a sense whose '
              'only citations fall in the residue may still name dated works in '
@@ -350,7 +338,7 @@ def write_report(rows, buckets, global_unmapped, heads, head_mismatch,
     L.append('| Siglum | Instances |')
     L.append('| --- | --- |')
     for sig, n in global_unmapped.most_common(TOP_UNMAPPED):
-        L.append('| `%s` | %d |' % (sig, n))
+        L.append(f'| `{sig}` | {n:d} |')
     if len(global_unmapped) > TOP_UNMAPPED:
         rest = sum(n for _, n in global_unmapped.most_common()[TOP_UNMAPPED:])
         L.append('| … %d further sigla | %d |' % (len(global_unmapped) - TOP_UNMAPPED, rest))

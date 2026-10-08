@@ -535,7 +535,7 @@ def make_deepseek_fns(key, model=DEEPSEEK_MODEL):
             parts.append('FUZZY TM MATCHES (advisory; may be the wrong sense):')
             for i, hit in enumerate(context, 1):
                 if isinstance(hit, str):
-                    parts.append('%d. %s' % (i, hit))
+                    parts.append(f'{i:d}. {hit}')
                 else:
                     parts.append('%d. DE: %s\n   RU: %s'
                                  % (i, hit.get('source_string'), hit.get('target_string')))
@@ -631,8 +631,7 @@ def _render_blocked_md(n_cards):
     lines.append('')
     lines.append('_Created: 22-07-2026 · Last updated: 14-08-2026_')
     lines.append('')
-    lines.append('Harness: `tm_retrieval_eval.py` (Grok 4.6, `grok-4.6`), H2686 Track D. '
-                 'Requested engine=`none`. Cards in the named batch: %d.' % n_cards)
+    lines.append(f'Harness: `tm_retrieval_eval.py` (Grok 4.6, `grok-4.6`), H2686 Track D. Requested engine=`none`. Cards in the named batch: {n_cards:d}.')
     lines.append('')
     lines.append('## Status: BLOCKED — `--engine none` makes no live call')
     lines.append('')

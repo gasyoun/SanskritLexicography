@@ -109,8 +109,7 @@ def advisory_html(key1, crosswalk, iast=None):
                shown, html.escape(basis or "?")))
     out.append("</table>")
     if more:
-        out.append('<div class="etymadv-more">… ещё %d вхождений KEWA</div>'
-                   % more)
+        out.append(f"<div class=\"etymadv-more\">… ещё {more:d} вхождений KEWA</div>")
     out.append(_FOOT)
     return "".join(out)
 

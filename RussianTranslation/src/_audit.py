@@ -103,11 +103,11 @@ def main():
     print('contamination (all MUST be 0): placeholder-leak=%d non-Cyrillic=%d ru==sa=%d sqrt-key=%d dup=%d stratum-mismatch=%d un-stratified=%d'
           % (sum(leak.values()), nocyr, rusa, sqrt, dup, stratbad, unstrat))
     if new_works:
-        print('NEW works since last audit: ' + ', '.join('%s(+%d)' % (w, rows[w]) for w in new_works))
+        print('NEW works since last audit: ' + ', '.join(f'{w}(+{rows[w]:d})' for w in new_works))
     if bad:
         print('!! DIRTY works:')
         for w, c in bad.most_common():
-            print('   %s: %d contaminated rows (leak=%d)' % (w, c, leak[w]))
+            print(f'   {w}: {c:d} contaminated rows (leak={leak[w]:d})')
     json.dump({'rows': dict(rows), 'total': tot}, open(STATE, 'w', encoding='utf-8'))
     clean = not bad
 

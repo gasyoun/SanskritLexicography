@@ -47,7 +47,7 @@ def card_units(text, root_key, upasarga, seg_index, kind):
                  'lang': ['none'], 'text': '', 'keep': keep[:12]}]
     out = []
     for j, g in enumerate(glosses):
-        out.append({'layer': 'PWG-root', 'ref': ref + (':%d' % j if len(glosses) > 1 else ''),
+        out.append({'layer': 'PWG-root', 'ref': ref + (f':{j:d}' if len(glosses) > 1 else ''),
                     'root_key': root_key, 'upasarga': upasarga, 'seg_index': seg_index,
                     'kind': kind, 'lang': ['de'], 'text': g, 'keep': keep[:12]})
     return out

@@ -370,7 +370,7 @@ def tick(cfg, runners):
             return done('window_failed', 'quota_hang_pause_written',
                         paused_until=int(reset))
         return done('window' if code == 0 else 'window_failed',
-                    None if code == 0 else 'bounded_run_exit_%d' % code)
+                    None if code == 0 else f'bounded_run_exit_{code:d}')
     except subprocess.TimeoutExpired as exc:
         # A timed-out probe/canary/window is a RECORDED failure, never a silent gap.
         return done('window_failed', 'runner_timeout',

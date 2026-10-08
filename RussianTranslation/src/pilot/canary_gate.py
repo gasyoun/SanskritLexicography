@@ -122,8 +122,7 @@ def judge_payload(res, expect_senses=DEFAULT_EXPECT_SENSES):
                      if (sense.get('russian') or '').strip())
         sense_counts.append((key, senses))
         if senses != expect_senses:
-            reasons.append('%s: %d/%d senses with Russian content (canary SAN-LOSS '
-                           'shortfall)' % (key, senses, expect_senses))
+            reasons.append(f'{key}: {senses:d}/{expect_senses:d} senses with Russian content (canary SAN-LOSS shortfall)')
         hits = marker_scan.tn_hits(card)
         if hits:
             tn_hits.append((key, hits[:5]))

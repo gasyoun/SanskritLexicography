@@ -38,9 +38,9 @@ def main(argv=None):
     ap.add_argument('--count', type=int, default=24)
     args = ap.parse_args(argv)
     keys, total, detail = pick(args.root, args.input_dir, args.count)
-    print('eligible sub-cards with raw+portrait: %d' % total)
+    print(f'eligible sub-cards with raw+portrait: {total:d}')
     print('picked %d (smallest raw bytes): %s' % (len(keys), ','.join(keys)))
-    print('bytes: {}'.format(' '.join('%s=%d' % (key, size) for size, key in detail)))
+    print('bytes: {}'.format(' '.join(f'{key}={size:d}' for size, key in detail)))
     return 0
 
 
