@@ -15,7 +15,7 @@ _Provenance: full text read from the arXiv PDF (v2, 1 Sep 2026, 11 pp, [arxiv.or
 
 ## 1. The paper in five numbers (all §-anchored)
 
-- **Task:** grounded glossary generation — from a śloka + translation, recover sandhi- and samasa-resolved phrases and ground each meaning in the translation; benchmark of **31,316** śloka-translation-glossary triples from Vālmīki Rāmāyaṇa + Śrīmad Bhāgavatam (abstract; §3.1: train 25,050 / val 3,133 / test 3,133). Formalizes the traditional *pāṭha* commentary practice (§1).
+- **Task:** grounded glossary generation — from a śloka + translation, recover sandhi- and samasa-resolved phrases and ground each meaning in the translation; benchmark of **31,316** śloka-translation-glossary triples from Vālmīki Rāmāyaṇa + Śrīmad Bhāgavatam (abstract; §3.2: train 25,050 / val 3,133 / test 3,133). Formalizes the traditional *pāṭha* commentary practice (§1).
 - **Dominant failure mode:** over-segmentation — **Table 2** (error analysis over 174 low-scoring samples, bottom 5 % by Meaning Faithfulness, §6.2): Over-Segmentation **122/174 (70 %)**, General Segmentation Issues 22, Both Over+Under 12, Under-Segmentation 9, Semantic & Translation Errors 4, No Issues 5. Flagship example: *trasareṇuḥ* (त्रसरेणुः) wrongly split into *tra* + *sareṇuḥ* (§6.2, §A.5).
 - **Bottleneck claim:** "morphology-aware constraints and improved compound boundary modeling remain critical" (§6.2); conclusion §8: "morphology and compound boundary detection as the primary bottlenecks."
 - **Segmentation ablation:** predicted intermediate segmentation adds ~nothing (phi-4 Jaccard .716→.708), but **gold** segmentation raises Meaning Faithfulness **0.787 → 0.872** (§7.1, Table 4) — segmentation quality, not task scaffolding, is the lever.
