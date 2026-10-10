@@ -266,16 +266,12 @@ def _row_count_invariant_reason(receipt: PromotionReceipt) -> str | None:
     actual_delta = receipt.row_count_after - receipt.row_count_before
     if receipt.row_count_after < receipt.row_count_before:
         return (
-            'row_count_after (%d) < row_count_before (%d)'
-            % (receipt.row_count_after, receipt.row_count_before)
+            f'row_count_after ({receipt.row_count_after:d}) < row_count_before ({receipt.row_count_before:d})'
         )
     # Accepted keys are the rows the receipt claims were added; rejected never land.
     if actual_delta != expected_delta:
         return (
-            'row_count delta %d != len(keys_accepted) %d '
-            '(before=%d after=%d)'
-            % (actual_delta, expected_delta,
-               receipt.row_count_before, receipt.row_count_after)
+            f'row_count delta {actual_delta:d} != len(keys_accepted) {expected_delta:d} (before={receipt.row_count_before:d} after={receipt.row_count_after:d})'
         )
     return None
 

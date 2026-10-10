@@ -42,8 +42,8 @@ def check(cond, label):
 
 
 def _items(n):
-    return [{"id": "P%03d" % i, "filt": "a", "title": "card %d" % i,
-             "question": "Is card %d right?" % i, "panels": []}
+    return [{"id": "P%03d" % i, "filt": "a", "title": f'card {i:d}',
+             "question": f'Is card {i:d} right?', "panels": []}
             for i in range(1, n + 1)]
 
 

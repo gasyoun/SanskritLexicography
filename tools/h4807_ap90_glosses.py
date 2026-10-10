@@ -80,7 +80,7 @@ def main():
     with open(args.out, 'w', encoding='utf-8') as f:
         json.dump(out, f, ensure_ascii=False)
     if args.selftest:
-        assert n > 30000, 'too few records: %d' % n
+        assert n > 30000, f'too few records: {n:d}'
         probe = out.get('aha')
         assert probe and 'particle' in probe.lower(), 'aha probe failed: {!r}'.format(probe)
         print('AP90 selftest OK records=%d glossed=%d' % (n, len(out)))

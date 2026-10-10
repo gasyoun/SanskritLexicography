@@ -58,7 +58,7 @@ def run_store(dry=False):
     print('store                          : {}'.format(store))
     print('rows                           : %d' % len(rows))
     print('rows fixed                     : %d' % len(fixed))
-    print('rows left (manual review)      : %d' % total_ineligible)
+    print(f'rows left (manual review)      : {total_ineligible:d}')
     for reason, labels in sorted(ineligible.items(), key=lambda x: -len(x[1])):
         print('  %-25s %d' % (reason, len(labels)))
 

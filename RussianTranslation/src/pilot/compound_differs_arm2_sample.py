@@ -267,7 +267,7 @@ def render_sheet(rows, generated=GENERATED):
 
 
 def report(plan, arm1_src, n_arm1):
-    print('arm-1 ids: %d (from %s)' % (n_arm1, arm1_src))
+    print(f'arm-1 ids: {n_arm1:d} (from {arm1_src})')
     print()
     print('%-42s %6s %6s %6s %8s' % ('stratum', 'rows', 'arm1', 'avail', 'arm2'))
     total = 0
@@ -282,25 +282,25 @@ def report(plan, arm1_src, n_arm1):
               % (stratum, i['rows'], i['arm1_cards'], i['available'], i['target'], note))
         total += i['target']
     print()
-    print('arm-2 total: %d cards' % total)
+    print(f'arm-2 total: {total:d} cards')
 
 
 def selftest():
     rows = []
     for i in range(300):
-        rows.append({'id': 'big%d' % i, 'k1': 'big%d' % i, 'hom': '',
+        rows.append({'id': f'big{i:d}', 'k1': f'big{i:d}', 'hom': '',
                      'stratum': 'big', 'rule': 'big', 'verdict': 'pwg_members-right',
                      'pwg_members': 'a + b', 'index_members': 'a + c'})
     for i in range(20):
-        rows.append({'id': 'small%d' % i, 'k1': 'small%d' % i, 'hom': '',
+        rows.append({'id': f'small{i:d}', 'k1': f'small{i:d}', 'hom': '',
                      'stratum': 'small', 'rule': 'small', 'verdict': 'unresolved',
                      'pwg_members': 'a + b + c', 'index_members': 'a + b'})
-    arm1 = {'big%d' % i for i in range(40)}          # big is already priced
+    arm1 = {f'big{i:d}' for i in range(40)}          # big is already priced
     plan = allocate(rows, arm1)
     assert plan['big']['arm1_cards'] == 40 and plan['big']['target'] == 0, plan['big']
     assert plan['small']['target'] == 20 and plan['small']['census'], plan['small']
 
-    arm1_thin = {'big%d' % i for i in range(5)}      # big now needs pricing
+    arm1_thin = {f'big{i:d}' for i in range(5)}      # big now needs pricing
     plan2 = allocate(rows, arm1_thin)
     assert plan2['big']['target'] == PER_STRATUM, plan2['big']
     s1 = draw(plan2, seed=7)

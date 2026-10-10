@@ -252,7 +252,7 @@ def check_result(key):
     verdict = 'CLEAN' if not bad else 'MISATTRIBUTION'
     lines.append('  → %s (%d mismatch%s%s)' % (
         verdict, bad, '' if bad == 1 else 'es',
-        ', %d unlocated' % miss if miss else ''))
+        f', {miss:d} unlocated' if miss else ''))
     return {'key': key, 'verdict': verdict, 'returncode': 1 if bad else 0,
             'lines': lines, 'rejected': False}
 

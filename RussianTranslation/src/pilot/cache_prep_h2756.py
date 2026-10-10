@@ -47,7 +47,7 @@ def _near(got, expected, digits, label):
     scale = 10 ** digits
     if round(got * scale) != round(expected * scale):
         raise VerifyError(
-            '%s: got %s expected %s (digits=%d)' % (label, got, expected, digits))
+            f'{label}: got {got} expected {expected} (digits={digits:d})')
 
 
 def verify_conclusions():

@@ -31,7 +31,7 @@ print('cards: %d' % len(rows))
 print('prompt bytes: total=%d min=%d max=%d mean=%d'
       % (sum(prompt_bytes), min(prompt_bytes), max(prompt_bytes),
          sum(prompt_bytes) // len(prompt_bytes)))
-print('ESTIMATED tokens (bytes/4): input=%d output=%d' % (est_input, est_output))
+print(f'ESTIMATED tokens (bytes/4): input={est_input:d} output={est_output:d}')
 print('ESTIMATED standard USD: {:.4f}'.format(equivalent_usd(
     tokens, API_STANDARD, SONNET_STANDARD_PER_MTOK_USD)))
 print('ESTIMATED batch USD (50%): {:.4f}'.format(equivalent_usd(

@@ -72,7 +72,7 @@ def validate_portrait(p):
             fail('corpus_synonyms.by_stratum must be an object')
         need_list(cs, 'candidates', 'corpus_synonyms')
     for i, s in enumerate(p['senses']):
-        where = 'sense[%d]' % i
+        where = f'sense[{i:d}]'
         need_keys(s, SENSE_REQUIRED, where)
         if s['equivalence_type'] not in EQ_TYPES:
             fail('{} bad equivalence_type: {!r}'.format(where, s['equivalence_type']))
@@ -113,7 +113,7 @@ def main():
         checked += 1
         if checked >= n:
             break
-    print('portrait schema validation OK: %d portrait(s)' % checked)
+    print(f'portrait schema validation OK: {checked:d} portrait(s)')
 
 
 if __name__ == '__main__':

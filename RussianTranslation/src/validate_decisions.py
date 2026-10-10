@@ -73,19 +73,19 @@ def _structural_check(doc):
         raise Reject("schema: items must be an array")
     for i, item in enumerate(doc["items"]):
         if not isinstance(item, dict):
-            raise Reject("schema: items[%d] is not an object" % i)
+            raise Reject(f'schema: items[{i:d}] is not an object')
         if not isinstance(item.get("id"), str) or not item["id"]:
-            raise Reject("schema: items[%d].id must be a non-empty string" % i)
+            raise Reject(f'schema: items[{i:d}].id must be a non-empty string')
         if "decision" not in item:
-            raise Reject("schema: items[%d].decision missing" % i)
+            raise Reject(f'schema: items[{i:d}].decision missing')
         if item["decision"] is not None and item["decision"] not in DECISIONS:
             raise Reject("schema: items[%d].decision '%s' not in %s/null"
                          % (i, item["decision"], "|".join(DECISIONS)))
         if "note" in item and not isinstance(item["note"], str):
-            raise Reject("schema: items[%d].note must be a string" % i)
+            raise Reject(f'schema: items[{i:d}].note must be a string')
         if "rating" in item and item["rating"] is not None \
                 and not isinstance(item["rating"], (int, float)):
-            raise Reject("schema: items[%d].rating must be a number or null" % i)
+            raise Reject(f'schema: items[{i:d}].rating must be a number or null')
 
 
 def _schema_check(doc, legacy=False):

@@ -308,7 +308,7 @@ def build_report(
             if data is None:
                 missing_paths.append(path)
                 continue
-            sources.append(('extra_%d' % i, data))
+            sources.append((f'extra_{i:d}', data))
 
     if not sources:
         return {

@@ -68,7 +68,7 @@ def main():
             ru += 1
             if CYR.search(e.get('text') or ''):
                 ru_cyr += 1
-    print('source %s: %d sa, %d ru (%d with Cyrillic = real translations)' % (work, sa, ru, ru_cyr))
+    print(f'source {work}: {sa:d} sa, {ru:d} ru ({ru_cyr:d} with Cyrillic = real translations)')
     if ru_cyr == 0:
         sys.exit('no Cyrillic ru segments — nothing translatable to align.')
     if ru and ru_cyr < ru * 0.5:

@@ -320,8 +320,7 @@ def test_1_barrier_concurrency(td):
                  'width 2 must never overlap')
     summary = engine.run()
     assert probe2.peak >= 2, (
-        'measured peak_concurrency=%d — the cohort was not dispatched concurrently'
-        % probe2.peak)
+        f'measured peak_concurrency={probe2.peak:d} — the cohort was not dispatched concurrently')
     assert summary.get('peak_concurrency', 0) >= 2, summary
     assert probe2.peak_by_profile.get('c1', 0) <= 1, (
         'the two c1-bound leases overlapped (constraint 2: at most one job per '
@@ -538,7 +537,7 @@ def test_5_promotion_barrier_crash_exactly_once(td):
     assert len(promoter_b.commits) == 1, (
         'crash AFTER the commit must leave exactly one commit pre-resume: {!r}'.format(promoter_b.commits))
     assert tm_b.successes == 0, (
-        'the TM crash must leave zero SUCCESSFUL rebuilds pre-resume: %d' % tm_b.successes)
+        f'the TM crash must leave zero SUCCESSFUL rebuilds pre-resume: {tm_b.successes:d}')
     _forget_engine_module()
     engine_b_resumed = build_engine(windows, FakeWorker(td, ConcurrencyProbe()), cp_b,
                                     audit=clean_audit, promote_wave=promoter_b,
@@ -649,7 +648,7 @@ def test_6_reservation_ledger_max_calls(td):
         contract='max_calls=3 must fit 2 probes + 1 call and refuse the 4th consumption')
     summary = engine.run()
     consumed = len(probes_made) + summary.get('calls_spent', 0)
-    assert consumed <= 3, 'reservation exceeded: %d consumed of 3' % consumed
+    assert consumed <= 3, f'reservation exceeded: {consumed:d} consumed of 3'
     assert len(probe3.launches) == 1, probe3.launches
 
     # Codex review #3 (failures + retries consume the SAME ledger): a failed probe and a
@@ -681,8 +680,7 @@ def test_6_reservation_ledger_max_calls(td):
         pass                                    # the engine may surface either failure
     total_attempts = len(probe_attempts) + len(probe_f.launches)
     assert total_attempts <= 3, (
-        'failures/retries escaped the reservation ledger: %d attempts of 3 '
-        '(probes=%r launches=%r)' % (total_attempts, probe_attempts, probe_f.launches))
+        f'failures/retries escaped the reservation ledger: {total_attempts:d} attempts of 3 (probes={probe_attempts!r} launches={probe_f.launches!r})')
     assert probe_f.launches.count('leaseA') <= 1, (
         'the crashed leaseA worker was RETRIED against an exhausted reservation: {!r}'.format(probe_f.launches))
     assert 'leaseB' not in probe_f.launches, (
@@ -1223,7 +1221,7 @@ def main():
               'fixture defect. The suite must flip GREEN with no edits outside the '
               'build_engine adapter.' % (len(failures), total - len(failures)))
         return 1
-    print('cohort_engine_selftest: PASS (%d pins)' % total)
+    print(f'cohort_engine_selftest: PASS ({total:d} pins)')
     return 0
 
 

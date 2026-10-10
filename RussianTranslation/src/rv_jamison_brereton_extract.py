@@ -504,7 +504,7 @@ def build(lines, hymn_order, hymn_stanzas):
                     'createdAt': '0001-01-01 00:00:00+00:00',
                     'archived': False,
                     'text': text,
-                    'location': '%d.%d.%d' % (key[0], key[1], n),
+                    'location': f'{key[0]:d}.{key[1]:d}.{n:d}',
                 })
     records.sort(key=lambda r: [int(p) for p in r['location'].split('.')])
     stats = {
@@ -518,7 +518,7 @@ def build(lines, hymn_order, hymn_stanzas):
 
 
 def report(records, per_hymn, stats, hymn_order, hymn_stanzas):
-    canonical = {'%d.%d.%d' % (m, h, s)
+    canonical = {f'{m:d}.{h:d}.{s:d}'
                  for (m, h), ss in hymn_stanzas.items() for s in ss}
     got = {r['location'] for r in records}
     missing = sorted(canonical - got, key=lambda x: [int(p) for p in x.split('.')])
@@ -553,9 +553,7 @@ def report(records, per_hymn, stats, hymn_order, hymn_stanzas):
     print('empty texts:                  %d' % len(empties))
     lens = sorted(len(r['text']) for r in records)
     if lens:
-        print('text length: min %d  p05 %d  median %d  p95 %d  max %d'
-              % (lens[0], lens[len(lens) // 20], lens[len(lens) // 2],
-                 lens[len(lens) * 19 // 20], lens[-1]))
+        print(f'text length: min {lens[0]:d}  p05 {lens[len(lens) // 20]:d}  median {lens[len(lens) // 2]:d}  p95 {lens[len(lens) * 19 // 20]:d}  max {lens[-1]:d}')
     leaks = [r['location'] for r in records if COMMENTARY_RE.search(r['text'])]
     print('commentary leaks (requirement 3): %d %s' % (len(leaks), leaks[:12]))
     # Embedded page furniture is invisible to every count above -- it neither adds nor

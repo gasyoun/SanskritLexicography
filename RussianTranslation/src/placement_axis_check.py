@@ -122,7 +122,7 @@ def main():
     reasons = collections.Counter(
         r["relationship"].get("placement_reason") for r in rel)
     print("A4  placement_reason: " + " · ".join(
-        "%s=%d" % (k, reasons[k]) for k in REASONS))
+        f'{k}={reasons[k]:d}' for k in REASONS))
     unknown = set(reasons) - set(REASONS)
     if unknown:
         fail("A4", "placement_reason outside the contract: {!r}".format(sorted(unknown)))
@@ -197,7 +197,7 @@ def main():
     w2_placed = sum(1 for r in w2 if r["relationship"].get("placement"))
     print("W2  pwg_internal_correction rows: %d · placed %d (%.1f%%) · %s"
           % (len(w2), w2_placed, 100.0 * w2_placed / max(len(w2), 1),
-             " ".join("%s=%d" % (k, w2_reasons[k]) for k in REASONS)))
+             " ".join(f'{k}={w2_reasons[k]:d}' for k in REASONS)))
 
     # W2a — every such row really sits on the pwg layer and really carries a
     # marker. A row pulled out of the skeleton without a named printed cue
@@ -252,7 +252,7 @@ def main():
         r["relationship"].get("subtype") for r in w3)
     print("W3  sch rows: %d · corrective %d (%.1f%%) · %s"
           % (len(sch), len(w3), 100.0 * len(w3) / max(len(sch), 1),
-             " ".join("%s=%d" % (k, w3_kinds[k])
+             " ".join(f'{k}={w3_kinds[k]:d}'
                       for k in ("sch_correct", "sch_cancel"))))
 
     # W3a — the layer must be ABLE to be corrective. This is the whole point of
@@ -363,7 +363,7 @@ def main():
         (w5_unplaced if is_unplaced_label(st) else w5_placed)[base] += 1
     print("W5b sense-asserting labels · unplaced %d / placed %d · %s"
           % (sum(w5_unplaced.values()), sum(w5_placed.values()),
-             " ".join("%s=%d+%d" % (k, w5_placed[k], w5_unplaced[k])
+             " ".join(f'{k}={w5_placed[k]:d}+{w5_unplaced[k]:d}'
                       for k in sorted(SENSE_ASSERTING))))
 
     # W5c — STOP: the fix must not have emptied the corpus. `direction` and `op`

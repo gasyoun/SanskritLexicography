@@ -106,7 +106,7 @@ def main():
     print('wrote', summary_path)
     print(json.dumps(summary, ensure_ascii=False))
     if n_fail or n_ok != 3:
-        sys.exit('FAIL: canary %d/3 ok' % n_ok)
+        sys.exit(f'FAIL: canary {n_ok:d}/3 ok')
     if not summary['default_model_unchanged']:
         sys.exit('FAIL: DEFAULT_MODEL flipped')
     print('canary PASS 3/3')

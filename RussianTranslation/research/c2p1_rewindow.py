@@ -75,7 +75,7 @@ def n(x):
 
 
 def fmt_year(y):
-    return "%d BCE" % (-y) if y < 0 else "%d CE" % y
+    return "%d BCE" % (-y) if y < 0 else f'{y:d} CE'
 
 
 # ----------------------------------------------------------------------- delta

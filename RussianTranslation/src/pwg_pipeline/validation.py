@@ -57,7 +57,7 @@ def walk(value: Any, path: str = '$') -> Iterator[tuple[str, Any]]:
             yield from walk(value[key], child)
     elif isinstance(value, (list, tuple)):
         for index, item in enumerate(value):
-            yield from walk(item, '%s[%d]' % (path, index))
+            yield from walk(item, f'{path}[{index:d}]')
 
 
 def _plain_key(key: Any) -> bool:
@@ -97,7 +97,7 @@ def _identity_of(row: Mapping[str, Any]) -> str | None:
 def validate_row(row: Any, *, index: int,
                  require_provenance: bool = True) -> list[dict[str, Any]]:
     """Every defect in one row, with exact JSON paths."""
-    prefix = '$[%d]' % index
+    prefix = f'$[{index:d}]'
     if not isinstance(row, Mapping):
         return [{'code': INVALID_ROW, 'path': prefix,
                  'detail': 'row is {}, not an object'.format(type(row).__name__)}]
@@ -194,9 +194,9 @@ def validate_jsonl(path: str, *, require_provenance: bool = True,
             if identity is not None:
                 if identity in identities:
                     duplicate_findings.append({
-                        'code': DUPLICATE_IDENTITY, 'path': '$[%d]' % index,
+                        'code': DUPLICATE_IDENTITY, 'path': f'$[{index:d}]',
                         'identity': identity, 'row_index': index,
-                        'detail': 'first seen at row %d' % identities[identity]})
+                        'detail': f'first seen at row {identities[identity]:d}'})
                 else:
                     identities[identity] = index
         if not findings:

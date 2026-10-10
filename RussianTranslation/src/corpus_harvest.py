@@ -225,7 +225,7 @@ def main():
             variants = ('  [' + ', '.join(var[:5]) + ']') if var else ''
             print('     %4d  %-16s%s%s %s' % (r['count'], r['lemma'] + nm, variants, '', tag))
         if hid:
-            print('       (+%d function-word rendering(s) suppressed as noise)' % hid)
+            print(f'       (+{hid:d} function-word rendering(s) suppressed as noise)')
 
 
 if __name__ == '__main__':

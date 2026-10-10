@@ -62,7 +62,7 @@ def main():
         refused = bool(is_error) or 'not found' in text or 'BLOCKED' in text
         verdict = 'REFUSED-BEFORE-DISPATCH (no model contact, no spend)' \
             if refused else 'DISPATCHED TO MODEL'
-        print('--- Agent call #%d  line=%s  ts=%s' % (index, lineno, ts))
+        print(f'--- Agent call #{index:d}  line={lineno}  ts={ts}')
         print('    subagent_type = {!r}'.format(payload.get('subagent_type')))
         print('    is_error      = {!r}'.format(is_error))
         print('    verdict       = {}'.format(verdict))

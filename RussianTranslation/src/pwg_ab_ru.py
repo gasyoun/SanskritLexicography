@@ -301,8 +301,7 @@ def cmd_census(_args):
     by = collections.defaultdict(collections.Counter)
     for tok, c in freq.items():
         by[bucket(tok)][tok] = c
-    print('<ab> reaching the RU column: %d occurrences, %d distinct tokens'
-          % (total, distinct))
+    print(f'<ab> reaching the RU column: {total:d} occurrences, {distinct:d} distinct tokens')
     print('%-12s %10s %8s %10s %8s' % ('bucket', 'occurr.', '%', 'distinct', '%'))
     for name in ('B', 'A-mapped', 'residue', 'A-unmapped'):
         occ, dis = sum(by[name].values()), len(by[name])

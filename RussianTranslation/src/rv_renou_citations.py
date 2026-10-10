@@ -118,7 +118,7 @@ def process_file(mandala, path):
         cb = CITATION_ID_RE.search(line)
         if cb:
             hymn, stanza = int(cb.group(1)), int(cb.group(2))
-            location = '%d.%d.%d' % (mandala, hymn, stanza)
+            location = f'{mandala:d}.{hymn:d}.{stanza:d}'
         else:
             hymn = stanza = location = None
 
@@ -158,8 +158,7 @@ def main():
 
     total = len(all_records)
     total_quoted = sum(per_mandala_quoted.values())
-    print('wrote %s: %d mentions, %d quoted_fr, %d locus_unresolved'
-          % (OUT_PATH, total, total_quoted, unresolved_total))
+    print(f'wrote {OUT_PATH}: {total:d} mentions, {total_quoted:d} quoted_fr, {unresolved_total:d} locus_unresolved')
 
     os.makedirs(RUN_LOG_DIR, exist_ok=True)
     with open(RUN_LOG_PATH, 'w', encoding='utf-8', newline='\n') as f:
@@ -239,7 +238,7 @@ def main():
         f.write('\n')
 
     if total != SPEC_TABLE_TOTAL:
-        print('WARNING: grand total %d != spec 2213' % total, file=sys.stderr)
+        print(f'WARNING: grand total {total:d} != spec 2213', file=sys.stderr)
         return 1
     return 0
 

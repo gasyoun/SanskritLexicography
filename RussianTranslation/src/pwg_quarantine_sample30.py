@@ -169,9 +169,7 @@ def freeze_sample(parent_sample_path: str = DEFAULT_PARENT_SAMPLE,
             substitutions.append({
                 'replaces_parent_index': unavailable[slot]['parent_index'],
                 'key1': row.get('key1'), 'subcard': row.get('subcard'),
-                'rule': 'same stratified round-robin over the fresh '
-                        'population, deterministic order (subcard-sorted '
-                        'positional index), seed %d' % seed})
+                'rule': f'same stratified round-robin over the fresh population, deterministic order (subcard-sorted positional index), seed {seed:d}'})
             resolved.append((None, {}, row))
 
     picked: list[tuple] = []
@@ -386,7 +384,7 @@ def run_sample(cards: list[dict], *, workdir: str, evidence_dir: str,
     campaign_id = BASE_CAMPAIGN + (
         '-r%d' % len(prior_campaigns) if done else '')
     plan = [{
-        'job_id': '%s.job.%d' % (campaign_id, index),
+        'job_id': f'{campaign_id}.job.{index:d}',
         'idempotency_key': sha256_text('{}:{}:{}'.format(
             BASE_CAMPAIGN, card.get('subcard'), card.get('input_hash'))),
         'card': card,
@@ -459,7 +457,7 @@ def run_sample(cards: list[dict], *, workdir: str, evidence_dir: str,
                         rows.append(prior['packet_row'])
                     continue
                 if key in retired_keys:
-                    key = '%s:resume%d' % (key, retired_keys[key])
+                    key = f'{key}:resume{retired_keys[key]:d}'
                 prior = done.get(item['idempotency_key'])
                 if prior and prior.get('state') == model.CALL_SUCCEEDED:
                     receipt['resumed_skipped'] += 1
@@ -668,7 +666,7 @@ def selftest() -> dict:
     cards = [{'subcard': 'vid~~h0_zz_pw%02d' % index, 'key1': 'vid',
               'h': 'vid', 'sense_tag': '1',
               'reason': 'card sense-count changed',
-              'input_hash': sha256_text('card-%d' % index),
+              'input_hash': sha256_text(f'card-{index:d}'),
               'review_class': UNMEASURED,
               'ru_quality_verdict': NOT_MEASURED}
              for index in range(6)]

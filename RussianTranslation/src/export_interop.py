@@ -93,7 +93,7 @@ def card_glosses(card, translations, emitted=None):
         if d.get('gloss'):
             rows.append(('dict', d.get('code') or d.get('source') or 'dict', d.get('gloss')))
     for i, s in enumerate(card.get('kow_reference') or [], 1):
-        rows.append(('kow', 'kow-%d' % i, s))
+        rows.append(('kow', f'kow-{i:d}', s))
     for st in (card.get('corpus_lexicon') or {}).get('strata') or []:
         for r in st.get('renderings') or []:
             if r.get('lemma'):
@@ -132,7 +132,7 @@ def export_tei(args):
         for card in iter_cards(args.cards, args.limit):
             key1 = card.get('key1')
             idn[key1] += 1                      # unique xml:id across same-key1 homograph entries
-            cid = 'pwg-{}'.format(safe_id(key1)) + ('' if idn[key1] == 1 else '-%d' % idn[key1])
+            cid = 'pwg-{}'.format(safe_id(key1)) + ('' if idn[key1] == 1 else f'-{idn[key1]:d}')
             f.write('    <entry xml:id="{}">\n'.format(q(cid)))
             f.write('      <form><orth>{}</orth><pron notation="iast">{}</pron></form>\n'.format(q(card.get('key1')), q(card.get('iast'))))
             for source, ref, text in card_glosses(card, translations, emitted):
@@ -154,7 +154,7 @@ def export_ontolex(args):
         for card in iter_cards(args.cards, args.limit):
             key1 = card.get('key1')
             idn[key1] += 1
-            sid = safe_id(key1) + ('' if idn[key1] == 1 else '_%d' % idn[key1])
+            sid = safe_id(key1) + ('' if idn[key1] == 1 else f'_{idn[key1]:d}')
             f.write('pwg:{} a ontolex:LexicalEntry ;\n'.format(sid))
             f.write('  ontolex:canonicalForm [ ontolex:writtenRep "{}"@sa-Latn ] ;\n'.format(ttl(card.get('key1'))))
             senses = card_glosses(card, translations, emitted)
@@ -195,7 +195,7 @@ def export_reverse_index(args):
                                         'iast': card.get('iast'), 'source': source,
                                         'ref': ref}, ensure_ascii=False) + '\n')
                     count += 1
-    print('reverse index: %d row(s) -> %s' % (count, out))
+    print(f'reverse index: {count:d} row(s) -> {out}')
 
 
 def main():

@@ -22,9 +22,9 @@ def main() -> int:
     ids = [row.get('id') for row in rows]
     assert len(ids) == len(set(ids)), 'question IDs must be unique'
     expected = {
-        'will_answer': {'Q%d' % n for n in range(1, 8)},
-        'will_not_answer': {'N%d' % n for n in range(1, 12)},
-        'could_answer_later': {'F%d' % n for n in range(1, 9)},
+        'will_answer': {f'Q{n:d}' for n in range(1, 8)},
+        'will_not_answer': {f'N{n:d}' for n in range(1, 12)},
+        'could_answer_later': {f'F{n:d}' for n in range(1, 9)},
     }
     for status, wanted in expected.items():
         found = {row['id'] for row in rows if row.get('status') == status}

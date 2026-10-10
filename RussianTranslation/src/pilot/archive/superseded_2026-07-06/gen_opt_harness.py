@@ -88,7 +88,7 @@ def inline_inputs(keys):
 
 def replace_once(src, pattern, repl, label, flags=0):
     updated, count = re.subn(pattern, repl, src, flags=flags)
-    check(count == 1, '%s replacement count was %d, expected 1' % (label, count))
+    check(count == 1, f'{label} replacement count was {count:d}, expected 1')
     return updated
 
 
@@ -179,8 +179,7 @@ return { meta: META, results: out }
     agent_calls = len(re.findall(r'\bagent\(prompt,\s*\{', src))
     tool_guards = src.count('tools: []')
     check(agent_calls == tool_guards,
-          'translate agent tools guard mismatch: %d agent calls, %d tools guards' %
-          (agent_calls, tool_guards))
+          f'translate agent tools guard mismatch: {agent_calls:d} agent calls, {tool_guards:d} tools guards')
     check('const META = ' in src and 'return { meta: META, results: out }' in src,
           'workflow provenance meta missing')
 

@@ -264,7 +264,7 @@ def card_carried_senses(card):
             out.append({'frag': 'dict/%s/%d' % (iri_local(code), i), 'gloss': d.get('gloss'),
                         'lang': 'ru', 'grade': 'dict-attested', 'src': code})
     for i, s in enumerate(card.get('kow_reference') or [], 1):
-        out.append({'frag': 'kow/%d' % i, 'gloss': s, 'lang': 'ru', 'grade': 'kow', 'src': 'kow'})
+        out.append({'frag': f'kow/{i:d}', 'gloss': s, 'lang': 'ru', 'grade': 'kow', 'src': 'kow'})
     for st in (card.get('corpus_lexicon') or {}).get('strata') or []:
         for j, r in enumerate(st.get('renderings') or [], 1):
             if r.get('lemma'):
@@ -424,7 +424,7 @@ def emit_card(f, R, card, eloc, lemma_seen, translations, stratum, rels, args, e
 def entry_local_for(key1, counts):
     counts[key1] = counts.get(key1, 0) + 1
     n = counts[key1]
-    return 'entry/{}'.format(iri_local(key1)) + ('' if n == 1 else '-%d' % n)
+    return 'entry/{}'.format(iri_local(key1)) + ('' if n == 1 else f'-{n:d}')
 
 
 def export_lexicon(args):
@@ -670,7 +670,7 @@ def export_de_lexicon(args):
         for card in iter_cards(args):
             key1 = card.get('key1')
             counts[key1] = counts.get(key1, 0) + 1
-            suffix = '' if counts[key1] == 1 else '-%d' % counts[key1]
+            suffix = '' if counts[key1] == 1 else f'-{counts[key1]:d}'
             k = emit_de_card(f, R, card, suffix, lemma_seen, stratum, args)
             if k:
                 n_entry += 1

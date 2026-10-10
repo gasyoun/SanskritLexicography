@@ -33,7 +33,7 @@ senses = result['cards'][0]['records'][0]['senses']
 # --- 1. what the prompt told the model to reproduce, verbatim from the fixture ---
 skeleton_lines = [ln for ln in raw.splitlines() if ln.strip().startswith('—')]
 pinned = [
-    schema['$defs']['sense%d' % n]['properties']['german']['const']
+    schema['$defs'][f'sense{n:d}']['properties']['german']['const']
     for n in (1, 2, 3)
 ]
 

@@ -107,8 +107,8 @@ def audit(section):
 
     print('\n=== NWS split-preview audit — {}-section ==='.format(section))
     print('keys total            : %d' % len(keys))
-    print('keys with NWS fragment: %d' % n_with)
-    print('total NWS entries     : %d' % n_ent)
+    print(f'keys with NWS fragment: {n_with:d}')
+    print(f'total NWS entries     : {n_ent:d}')
     print('roman-cite BLEEDS     : %d' % len(bleeds))
     for k, s in bleeds[:20]:
         print('   ~ %-14s [%s]' % (k, s[:44]))
@@ -124,7 +124,7 @@ def audit(section):
     print('owner-map cross-check : %d entries, %d [NWS: ?]  (split-preview: %d / %d)'
           % (map_entries, map_q, n_ent, len(noown)))
     ok = (map_entries == n_ent and map_q == len(noown) and map_resid == 0)
-    print('owner-map residual contamination: %d' % map_resid)
+    print(f'owner-map residual contamination: {map_resid:d}')
     print('cross-check %s' % ('OK — map matches split-preview, 0 residual'
                               if ok else 'MISMATCH — investigate'))
     other = sum(1 for _, g in nonempty if classify(g) == 'OTHER')

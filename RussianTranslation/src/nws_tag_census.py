@@ -202,7 +202,7 @@ def to_markdown(c):
         A("| combination | occurrences |")
         A("|---|---:|")
         for (k, sub), v in c["bracket_pairs"].most_common(40):
-            A("| `[%s (%s)]` | %d |" % (k, sub, v))
+            A(f'| `[{k} ({sub})]` | {v:d} |')
         A("")
     return "\n".join(L) + "\n"
 

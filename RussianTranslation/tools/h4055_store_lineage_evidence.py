@@ -131,7 +131,7 @@ def run_fixtures(reports):
 
     if failures:
         raise SystemExit('acceptance FAILED: {}'.format(', '.join(failures)))
-    print('acceptance fixtures: PASS (%d checks)' % checks_run[0])
+    print(f'acceptance fixtures: PASS ({checks_run[0]:d} checks)')
     return e_a, e_b
 
 

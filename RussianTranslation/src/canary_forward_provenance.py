@@ -109,7 +109,7 @@ def main():
     sys.stderr.write(proc.stdout)
     sys.stderr.write(proc.stderr)
     if proc.returncode:
-        sys.exit('promote_final_cards.py exited %d' % proc.returncode)
+        sys.exit(f'promote_final_cards.py exited {proc.returncode:d}')
 
     rows = [json.loads(ln) for ln in open(store, encoding='utf-8') if ln.strip()]
     if not rows:

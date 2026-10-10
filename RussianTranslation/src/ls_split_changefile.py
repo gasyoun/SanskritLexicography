@@ -177,8 +177,8 @@ def main(argv=None):
     n_elem = sum(len(h[4]) for h in hits)
     n_addr = sum(len(c[1].split("<ls")) - 2 for h in hits for c in h[4])
     print("lines affected      : %d" % len(hits))
-    print("<ls> elements split : %d" % n_elem)
-    print("addresses gained    : %d" % n_addr)
+    print(f'<ls> elements split : {n_elem:d}')
+    print(f'addresses gained    : {n_addr:d}')
     works = collections.Counter()
     for h in hits:
         for old, _new in h[4]:
@@ -190,7 +190,7 @@ def main(argv=None):
         print("  %-22s %5d" % (k, v))
     print("\nsample:")
     for lnum, cur_L, old, new, ch in hits[:a.sample]:
-        print("  line %d (L=%s)" % (lnum, cur_L))
+        print(f'  line {lnum:d} (L={cur_L})')
         for o, n in ch[:1]:
             print("    old  {}".format(o[:110]))
             print("    new  {}".format(n[:130]))

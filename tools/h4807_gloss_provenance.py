@@ -228,7 +228,7 @@ def main():
                                       0, hw_tier, "", "", gk))
                 else:
                     gt, seg = gloss_verdict(gk, tm.segs[hw])
-                    verdict = "match_G%d" % gt if gt < 4 else "D2_no_text_match"
+                    verdict = f'match_G{gt:d}' if gt < 4 else "D2_no_text_match"
                     rows_mwap.append((slug, cls, source, gloss, verdict,
                                       gt, hw_tier, hw, seg, gk))
     sys.stderr.write("rows=%d\n" % total)
@@ -260,7 +260,7 @@ def main():
             tm = mw if r[1] == "cologne_mw" else ap90
             hw = tm.lookup(slug_to_slp1(r[0]))[0] if slug_to_slp1(r[0]) else None
             gt, _ = gloss_verdict(r[9], tm.segs[hw] if hw else [])
-            if ("match_G%d" % gt) == r[4]:
+            if (f'match_G{gt:d}') == r[4]:
                 reval += 1
 
     # ---- outputs ----
@@ -271,7 +271,7 @@ def main():
         for r in rows_mwap:
             f.write("\t".join(str(x) for x in (
                 r[0], r[1], r[2], r[4], r[5], r[6], r[7], r[8], r[3].replace("\t", " "))) + "\n")
-    samp_tsv = os.path.join(args.outdir, "h4807_sample%d.tsv" % args.sample)
+    samp_tsv = os.path.join(args.outdir, f'h4807_sample{args.sample:d}.tsv')
     with open(samp_tsv, "w", encoding="utf-8") as f:
         f.write("slug\tclass\tverdict\thw_slp1\tmatched_seg\tgloss\n")
         for r in samp:

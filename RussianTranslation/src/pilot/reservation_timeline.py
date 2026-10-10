@@ -90,7 +90,7 @@ def report(run_id, run):
     finalized = len(buckets[True]) + len(buckets[False])
     print()
     print('unevaluable calls : %d of %d finalized' % (len(buckets[False]), finalized))
-    print('subagent tokens   : %d total' % subagent_total)
+    print(f'subagent tokens   : {subagent_total:d} total')
     usage = run.get('usage') or {}
     print('recorded floor    : ${:.4f}  (cost_evaluable={})'.format(usage.get('observed_cost_usd') or 0, usage.get('cost_evaluable')))
     if buckets[False]:

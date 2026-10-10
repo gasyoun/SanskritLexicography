@@ -170,8 +170,7 @@ def main(argv=None):
     code, report, frozen = tick(args.lane, args.data_root, date=args.date,
                                 fraction=args.fraction, judge_cmd=args.judge_cmd,
                                 execute=args.execute, store=args.store)
-    print('lane %s surveillance tick: exit=%d frozen=%s report=%s'
-          % (args.lane, code, frozen, report))
+    print(f'lane {args.lane} surveillance tick: exit={code:d} frozen={frozen} report={report}')
     return code
 
 

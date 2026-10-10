@@ -101,7 +101,7 @@ def _failure(request, transport, expected):
 
 class HttpError(RuntimeError):
     def __init__(self, status):
-        super().__init__('http %d' % status)
+        super().__init__(f'http {status:d}')
         self.status_code = status
 
 

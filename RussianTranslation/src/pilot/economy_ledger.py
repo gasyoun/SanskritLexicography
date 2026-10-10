@@ -277,9 +277,7 @@ def build_ledger(rows, source_log=None):
                 % (a_fp, c_fp, len(first_pass_rows)),
             'cost_per_clean_band': pooled_band,
             'cost_per_clean_band_basis':
-                'pooled %d subagent_tokens over %d clean cards (blunt total / total clean, '
-                'all priced outcome rows incl. mixed lanes and the clean=0 wasted run)'
-                % (total_tokens, total_clean),
+                f'pooled {total_tokens:d} subagent_tokens over {total_clean:d} clean cards (blunt total / total clean, all priced outcome rows incl. mixed lanes and the clean=0 wasted run)',
             'total_tokens': total_tokens,
             'total_clean': total_clean,
             'wasted_agents': wasted_agents,

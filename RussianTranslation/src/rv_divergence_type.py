@@ -370,7 +370,7 @@ def run_arm(rows, out_path, arm, provider, model, env_file, workers, resume):
              cost['out_tokens'], cost['usd']))
     errors = sum(1 for c in client.calls if c.get('error'))
     if errors:
-        print('  transport failures: %d call(s)' % errors)
+        print(f'  transport failures: {errors:d} call(s)')
     return cost
 
 
@@ -430,7 +430,7 @@ def cmd_report(a):
     fine, coarse, by_method, unclassified = distribution(a.inp)
     total = sum(fine.values())
     print('divergence distribution -- {}'.format(a.inp))
-    print('  labelled pairs: %d (%d unclassified)' % (total, unclassified))
+    print(f'  labelled pairs: {total:d} ({unclassified:d} unclassified)')
     print('  by method: {}'.format(dict(by_method)))
     print('  five-class:')
     for c in FIVE_CLASSES:
@@ -570,7 +570,7 @@ def selftest():
     assert normalise_class('nonsense') is None
 
     # sampler: deterministic under a seed, proportional across mandalas, exact size
-    rows = [{'location': '%d.1.%d' % (m, i), 'mandala': m, 'hymn': 1, 'stanza': i,
+    rows = [{'location': f'{m:d}.1.{i:d}', 'mandala': m, 'hymn': 1, 'stanza': i,
              'translations': {k: dict(full) for k in TRANSLATORS}}
             for m in range(1, 11) for i in range(1, 101)]
     s1 = stratified_sample(rows, 200, seed=7)

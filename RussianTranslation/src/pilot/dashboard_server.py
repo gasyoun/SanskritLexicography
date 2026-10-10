@@ -151,7 +151,7 @@ def main():
     server = ThreadingHTTPServer((args.host, args.port), DashboardHandler)
     server.dashboard_root = root
     server.refresh_ms = args.refresh_ms
-    print('dashboard: http://%s:%d/' % (args.host, args.port))
+    print(f'dashboard: http://{args.host}:{args.port:d}/')
     print('root     : {}'.format(root))
     server.serve_forever()
 

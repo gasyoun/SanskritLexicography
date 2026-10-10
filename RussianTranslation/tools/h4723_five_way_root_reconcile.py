@@ -284,7 +284,7 @@ def build():
             'sanskritlex_rows': l4['rows'] if l4 else 0,
             'mwderiv_rows': l5['rows'] if l5 else 0,
             'mwderiv_classes': ';'.join(
-                '%s:%d' % (c, n_) for c, n_ in
+                f'{c}:{n_:d}' for c, n_ in
                 sorted(l5['classes'].items(), key=lambda x: -x[1])[:5]) if l5 else '',
             'slp1_native': (l1 or l3 or {}).get('slp1', ''),
         })
@@ -306,11 +306,7 @@ def build():
                 'recounted': {'records': len(wr_raw),
                               'distinct_form_keys': len(leg1)},
                 'verdict': 'MATCH' if len(wr_raw) == 750 else 'DRIFT',
-                'census_drift': 'H4700 census §A2 said "620 корней" — conflated '
-                                'with WhitneyRoots/crosswalk/mw_derivations.json '
-                                'by_whitney_no=%d roots (records=%d). Census row '
-                                'stale, file is 750.' % (n_wr_deriv_roots,
-                                                         n_wr_deriv_records),
+                'census_drift': f"H4700 census §A2 said \"620 корней\" — conflated with WhitneyRoots/crosswalk/mw_derivations.json by_whitney_no={n_wr_deriv_roots:d} roots (records={n_wr_deriv_records:d}). Census row stale, file is 750.",
             },
             'mws': {
                 'path': 'MWS/root_crosswalk/root_crosswalk.csv',

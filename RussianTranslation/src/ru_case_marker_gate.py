@@ -158,7 +158,7 @@ def main(argv=None):
     if a.selftest:
         return selftest()
     hits, rows = gate(field=a.field)
-    print("scanned %d rows, field %r" % (rows, a.field))
+    print(f'scanned {rows:d} rows, field {a.field!r}')
     if not hits:
         print("PASS — no German case abbreviation in Russian prose")
         return 0

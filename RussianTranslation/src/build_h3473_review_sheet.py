@@ -71,7 +71,7 @@ ITEMS = [
 def build_items():
     out = []
     for iid, key1, reach, sev, src, tgt, prop, why in ITEMS:
-        badges = ["x%d" % reach, sev]
+        badges = [f'x{reach:d}', sev]
         head = "{} — {} ⇒ {}".format(
             html.escape(slp1_iast(key1)) if key1 else "(entry)",
             html.escape(src), html.escape(tgt))
@@ -85,9 +85,7 @@ def build_items():
                 html.escape(prop),
                 " <i>(approve removes the fill; row re-unfills)</i>"
                 if prop.startswith("(") else "")),
-            ("Evidence", "<p>census: wave4_receipt/carried_fill_census.json · "
-                         "reach x%d promoted/quarantine rows · parent receipt: "
-                         "wave3_receipt/WAVE3_GATE_VERDICT.md</p>%s" % (reach, link)),
+            ("Evidence", f'<p>census: wave4_receipt/carried_fill_census.json · reach x{reach:d} promoted/quarantine rows · parent receipt: wave3_receipt/WAVE3_GATE_VERDICT.md</p>{link}'),
         ]
         out.append({"id": iid, "filt": sev.split(" ")[0], "title": head,
                     "badges": badges, "question": q, "panels": panels})

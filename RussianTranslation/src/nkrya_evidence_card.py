@@ -89,8 +89,7 @@ def render(card_id, german, current, data):
          "- **German span:** {}".format(german), "- **Current Russian:** {}".format(current),
          "- **Corpus:** НКРЯ, основной корпус (MAIN); 19th-century slice = texts created "
          "1800–1899.",
-         "- **Pair window:** the candidate lemma within %d words of the head lemma, "
-         "either order." % PAIR_DIST[1], ""]
+         f'- **Pair window:** the candidate lemma within {PAIR_DIST[1]:d} words of the head lemma, either order.', ""]
     L += ["## Heads", "", "| Head | Frequency | Sketch relations returned |", "|---|---|---|"]
     for h in data["heads"]:
         L.append("| {} | {} | {} |".format(h["lemma"], fmt_freq(h["freq"]),
@@ -113,7 +112,7 @@ def render(card_id, german, current, data):
         for ph in c["per_head"]:
             L.append("**{} + {}**".format(c["lemma"], ph["head"]))
             L.append("")
-            L += ["%d. %s" % (i, line) for i, line in enumerate(ph["lines"], 1)] or ["(no lines)"]
+            L += [f'{i:d}. {line}' for i, line in enumerate(ph["lines"], 1)] or ["(no lines)"]
             L.append("")
     L += ["## Provenance", "",
           "Cache entries (committed under `pwg_ru/nkrya_cache/`): " +

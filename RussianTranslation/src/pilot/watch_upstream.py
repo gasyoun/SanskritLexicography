@@ -189,7 +189,7 @@ def _render_md(md_path, payload, extra_md):
              'Flags promoted pwg_ru rows whose upstream source changed since the last run; '
              'the watcher never re-translates — re-runs go through the drain handoffs.', '',
              '_Last run: {}_'.format(payload['generated_at']), '',
-             '**%d promoted row-group(s) flagged stale this month.**' % total_stale, '']
+             f'**{total_stale:d} promoted row-group(s) flagged stale this month.**', '']
     for source in ('cologne', 'nws'):
         wl = payload['sources'].get(source)
         if wl is None:

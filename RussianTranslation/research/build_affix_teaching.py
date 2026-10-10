@@ -27,12 +27,7 @@ for g in order:
     for a in items:
         ex = a['examples'][0]['word_iast'] if a['examples'] else ''
         cells.append(
-            '<div class="row"><span class="sfx">-%s</span>'
-            '<span class="pr">%s %s</span>'
-            '<span class="fn">%s</span>'
-            '<span class="rc">%d</span>'
-            '<span class="ex">%s</span></div>'
-            % (a['surface'], a['pratyaya_deva'], a['pratyaya'], a['function'], a['apte_roots'], ex))
+            f"<div class=\"row\"><span class=\"sfx\">-{a['surface']}</span><span class=\"pr\">{a['pratyaya_deva']} {a['pratyaya']}</span><span class=\"fn\">{a['function']}</span><span class=\"rc\">{a['apte_roots']:d}</span><span class=\"ex\">{ex}</span></div>")
     rows.append('<section class="grp"><h2>{}</h2>{}</section>'.format(g, ''.join(cells)))
 
 POSTER = '''<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/>

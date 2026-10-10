@@ -93,7 +93,7 @@ def main():
         if show_renou:
             regs = Counter(to_register(x.get('genre'), x.get('work')) for x in recs)
             print('    renou register(s): {}'.format(', '.join(
-                '%s×%d' % (r, c) for r, c in regs.most_common())))
+                f'{r}×{c:d}'for r, c in regs.most_common())))
         shown = works[:limit]
         print('    source(s): {}{}'.format(', '.join(shown),
               '  …+%d more' % (len(works) - limit) if len(works) > limit else ''))
@@ -105,7 +105,7 @@ def main():
             for x in recs:
                 allregs[to_register(x.get('genre'), x.get('work'))] += 1
         tot = sum(allregs.values())
-        print('--- Renou register profile (all %d attestations in this query) ---' % tot)
+        print(f'--- Renou register profile (all {tot:d} attestations in this query) ---')
         for r, c in allregs.most_common():
             print('  %-10s %5d  %4.1f%%' % (r, c, 100 * c / tot))
 

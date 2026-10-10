@@ -59,11 +59,11 @@ def main():
         for k in roots:
             f.write('{}\n'.format(k))
     tok = Counter(h['token'].lower() for h in b)
-    print('rows scanned        : %d' % n_rows)
+    print(f'rows scanned        : {n_rows:d}')
     print('class-(b) hits      : %d' % len(b))
     print('unique roots        : %d' % len(roots))
     print('unique subcards     : %d' % sum(len(s) for s in roots.values()))
-    print('top tokens          : ' + ', '.join('%s=%d' % (t, c) for t, c in tok.most_common(12)))
+    print('top tokens          : ' + ', '.join(f'{t}={c:d}' for t, c in tok.most_common(12)))
     print('wrote               : {}'.format(WORKLIST))
     print('wrote               : {}'.format(ROOTS))
 

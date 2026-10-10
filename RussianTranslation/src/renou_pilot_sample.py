@@ -278,7 +278,7 @@ def build_sample(seed=SEED):
     item_id = 1
     composition = {}
     for label, name, fn, n in STRATA:
-        rng = random.Random('%d:%s' % (seed, label))
+        rng = random.Random(f'{seed:d}:{label}')
         picked = fn(all_recs, rng, n)
         composition[label] = {}
         for code, rec, state in picked:
@@ -315,7 +315,7 @@ def main():
         by_dict = composition.get(label, {})
         print('  %s (%s): %d items across %d dicts — %s'
               % (label, name, sum(by_dict.values()), len(by_dict),
-                 ', '.join('%s=%d' % (k, v) for k, v in sorted(by_dict.items()))))
+                 ', '.join(f'{k}={v:d}' for k, v in sorted(by_dict.items()))))
 
 
 if __name__ == '__main__':

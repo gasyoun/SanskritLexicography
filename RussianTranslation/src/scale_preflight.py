@@ -196,12 +196,12 @@ def main():
 
     print('# scale-up pre-flight — top %d of %s\n' % (len(rows), os.path.basename(a.manifest)))
     print('## 1. Coverage')
-    print('   heavy (full+judge): %d   light (single pass): %d' % (heavy, light))
+    print(f'   heavy (full+judge): {heavy:d}   light (single pass): {light:d}')
     print('   covered (dict/corpus/KOW reuse): %d (%.0f%%)'
           % (covered, 100.0 * covered / len(rows)))
     print('   note: keys absent from a scale_route section manifest are counted heavy/uncovered (worst case).')
-    print('## 2. Split-readiness (bytes > %d need sizing first)' % a.ceiling)
-    print('   already split (rootmap present): %d' % splits_ready)
+    print(f'## 2. Split-readiness (bytes > {a.ceiling:d} need sizing first)')
+    print(f'   already split (rootmap present): {splits_ready:d}')
     print('   2a. VERBAL ROOTS oversize, not yet split: %d  -> --root-split (prefix segmentation)' % len(roots))
     for k1, b, n in roots[:10]:
         print('      %-14s %6d bytes  %d <div p>  ->  python _pilot_gen_merged.py --root-split %s' % (k1, b, n, k1))

@@ -186,7 +186,7 @@ def main():
             ])
 
     print('wrote {}'.format(args.out), file=sys.stderr)
-    print('rows with >=1 PWG layer: %d (homonym-pinned via map: %d)' % (n, precise_rows), file=sys.stderr)
+    print(f'rows with >=1 PWG layer: {n:d} (homonym-pinned via map: {precise_rows:d})', file=sys.stderr)
     print('  derivation (taddhita) : %d' % cov['derivation'], file=sys.stderr)
     print('  panini sutra (k1-level): %d' % cov['panini'], file=sys.stderr)
     print('  compound (pwg)        : %d' % cov['compound'], file=sys.stderr)

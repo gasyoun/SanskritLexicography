@@ -164,7 +164,7 @@ def sample_from_dcs(n_top=20, n_mid=20, seed=4740):
       GROUP BY lower(m_unsandhied))
     SELECT f, n, rk FROM forms WHERE {cond}"""
     con = sqlite3.connect(DCS_DB)
-    top = con.execute(sql.format(cond="rk <= 500 ORDER BY rk LIMIT %d" % n_top)).fetchall()
+    top = con.execute(sql.format(cond=f'rk <= 500 ORDER BY rk LIMIT {n_top:d}')).fetchall()
     mid = con.execute(sql.format(cond="rk BETWEEN 500 AND 50000")).fetchall()
     con.close()
     random.Random(seed).shuffle(mid)
@@ -293,8 +293,7 @@ def cmd_report(_args):
          "(tatas, anamitram), compound members (mahā), pro-drop pronoun fragments (sa), "
          "middle-participle morphology (amṛṣyamāṇaḥ), split-compound residue (apāṃsi).".format(", ".join("`{}`".format(m) for m in misses))) if misses else "- No misses.",
         "",
-        "- Forms with >1 competing analysis (homograph/polysemy — the adjudication value): %d/40." % multi,
-        "",
+        f'- Forms with >1 competing analysis (homograph/polysemy — the adjudication value): {multi:d}/40.'        "",
         "## Checks",
         "",
         "- `python3 RussianTranslation/src/scl_morph_glossary.py selftest` → PASS (parser fixture, IAST↔SLP1 round-trip via canonical sanskrit-util)",

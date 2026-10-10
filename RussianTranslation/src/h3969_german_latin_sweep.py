@@ -194,9 +194,9 @@ def _print_census(tag, store_path):
     print("{}  store={}".format(tag, store_path))
     print("  rows scanned: %d   rows with a hit: %d   hits: %d"
           % (rows_total, rows_hit, sum(by_token.values())))
-    print("  by token: %s" % (", ".join("%s x%d" % (t, c)
+    print("  by token: %s" % (", ".join(f'{t} x{c:d}'
                                         for t, c in by_token.most_common()) or "(none)"))
-    print("  by layer: %s" % (", ".join("%s %d" % (l, c)
+    print("  by layer: %s" % (", ".join(f'{l} {c:d}'
                                         for l, c in by_layer.most_common()) or "(none)"))
     for key1, layer, ctx in residue_ctx:
         print("  RESIDUE key1={} layer={}  ...{}...".format(key1, layer, ctx))
@@ -263,10 +263,10 @@ def main(argv=None):
 
     _print_census("PRE ", store)
     rows_changed, subs, by_token, by_layer = apply_sweep(store)
-    print("APPLIED  rows changed: %d   substitutions: %d" % (rows_changed, subs))
-    print("  by token: {}".format(", ".join("%s->%s x%d" % (t, GERMAN_TO_LATIN[t], c)
+    print(f'APPLIED  rows changed: {rows_changed:d}   substitutions: {subs:d}')
+    print("  by token: {}".format(", ".join(f'{t}->{GERMAN_TO_LATIN[t]} x{c:d}'
                                        for t, c in by_token.most_common())))
-    print("  by layer: {}".format(", ".join("%s %d" % (l, c) for l, c in by_layer.most_common())))
+    print("  by layer: {}".format(", ".join(f'{l} {c:d}' for l, c in by_layer.most_common())))
     _print_census("POST", store)
     return 0
 

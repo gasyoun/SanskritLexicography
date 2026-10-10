@@ -597,7 +597,7 @@ def cmd_build_gorresio(args):
                 fh.write(json.dumps({'k': k, 's': s, 'v': v, 'iast': iast},
                                     ensure_ascii=False) + '\n')
     n = sum(len(v) for v in etext.values())
-    print('gorresio e-text: %d verses -> %s' % (n, OUT_GETEXT))
+    print(f'gorresio e-text: {n:d} verses -> {OUT_GETEXT}')
 
     southern = load_southern(args.corpus_dir)
 
@@ -773,7 +773,7 @@ def cmd_selftest(_args):
     for kk in ('5', '7'):
         n = sum(1 for r in gsv
                 if r['g_kanda'] == kk and r['class'] in ('matched', 'fuzzy'))
-        check(n > 300, 'kanda %s has %d mapped verses (>300)' % (kk, n))
+        check(n > 300, f'kanda {kk} has {n:d} mapped verses (>300)')
     # 'audit-rejected' = row switched off by a voted review sheet (the 26-07-2026
     # audit killed 4 half-verse-shift pairs); the citation_tm loader only reads
     # matched/fuzzy, so these are inert by construction — keep them for the trail.

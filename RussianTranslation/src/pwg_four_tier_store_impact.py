@@ -273,9 +273,8 @@ def main(argv=None):
           % st['tag_resolved_unchanged_rows'])
     print('    tag resolves to NO pre-H3948 sense id (unresolved class, '
           'claimed for neither bound): %d' % st['tag_unresolved_rows'])
-    print('    unresolved tag shapes: {}'.format(', '.join('%s×%d' % (s, c)
-                      for s, c in st['tag_unresolved_top_shapes'])))
-    print('  most-affected key1 by row count: {}'.format(', '.join('%s×%d' % (k, c) for k, c in st['top_changed_key1_by_rows'])))
+    print('    unresolved tag shapes: {}'.format(', '.join(f'{s}×{c:d}'                      for s, c in st['tag_unresolved_top_shapes'])))
+    print('  most-affected key1 by row count: {}'.format(', '.join(f'{k}×{c:d}'for k, c in st['top_changed_key1_by_rows'])))
     print('\nNo store row was written. Nothing was requeued or re-segmented.')
 
     if not args.no_report:

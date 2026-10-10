@@ -355,7 +355,7 @@ def _diff_paths(expected, got, prefix):
             return [prefix]
         out = []
         for i, val in enumerate(expected):
-            out.extend(_diff_paths(val, got[i], '%s[%d]' % (prefix, i)))
+            out.extend(_diff_paths(val, got[i], f'{prefix}[{i:d}]'))
         return out
     return [prefix]
 

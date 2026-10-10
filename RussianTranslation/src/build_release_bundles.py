@@ -265,7 +265,7 @@ def build(pwg_tm_path=DEFAULT_PWG_TM, corpus_lexicon_path=DEFAULT_CORPUS_LEXICON
     with open(os.path.join(out_dir, 'manifest.json'), 'w', encoding='utf-8', newline='\n') as f:
         json.dump(manifest, f, ensure_ascii=False, indent=2)
         f.write('\n')
-    print('public_full: %d records -> %s / %s' % (n_public, public_jsonl, public_tmx))
+    print(f'public_full: {n_public:d} records -> {public_jsonl} / {public_tmx}')
     print('derived_only: %d records (of %d corpus_lexicon rows) -> %s (+ %d-row sample -> %s)'
           % (n_derived, n_lexicon_in, derived_jsonl, min(n_derived, SAMPLE_SIZE), derived_sample))
     return manifest

@@ -158,9 +158,7 @@ def write_report(n_headwords, n_senses_total, n_senses_dated, stack, citations_b
                   'Re-run: `python src/h2856_v6_survival_streamgraph.py` from `RussianTranslation/`.')
     lines.append('')
     lines.append('## Input')
-    lines.append('`src/pwg_sense_stratum.jsonl` — %d headwords, %d senses total, %d senses with a '
-                 'dated Renou-state span (renou_oldest/renou_youngest both set). A load, not a '
-                 'derivation, per the memo\'s own note.' % (n_headwords, n_senses_total, n_senses_dated))
+    lines.append(f'`src/pwg_sense_stratum.jsonl` — {n_headwords:d} headwords, {n_senses_total:d} senses total, {n_senses_dated:d} senses with a dated Renou-state span (renou_oldest/renou_youngest both set). A load, not a derivation, per the memo\'s own note.')
     lines.append('')
     lines.append('## Alive senses per state (stacked by birth cohort)')
     lines.append('')

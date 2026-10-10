@@ -41,8 +41,7 @@ def main():
         labeled = []
         for i, body in enumerate(raws[k]):
             role = ('MAIN ENTRY' if i == 0 else
-                    'NACHTRÄGE / ADDENDA #%d — patches (added citations, corrigenda, new senses) '
-                    'keyed to the MAIN entry sense numbers; render every one in full' % i)
+                    f'NACHTRÄGE / ADDENDA #{i:d} — patches (added citations, corrigenda, new senses) keyed to the MAIN entry sense numbers; render every one in full')
             labeled.append('=== RECORD %d — %s ===\n\n%s' % (i + 1, role, body))
         open(os.path.join(OUT, safe_name(k) + '.raw.txt'), 'w', encoding='utf-8').write('\n\n'.join(labeled))
         ns = sum(len([s for s in p['senses'] if s['n'] != '0']) for p in portraits[k])

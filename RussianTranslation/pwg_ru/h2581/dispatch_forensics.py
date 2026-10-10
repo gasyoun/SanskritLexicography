@@ -71,7 +71,7 @@ def main():
                         if isinstance(detail, dict) else None,
                     }
 
-    print('transcript lines unparseable : %d' % unparseable)
+    print(f'transcript lines unparseable : {unparseable:d}')
     print('Agent tool_use blocks total  : %d' % len(uses))
     print('ticket request_prompt_sha256 : {}'.format(TICKET_PROMPT_SHA))
     print()

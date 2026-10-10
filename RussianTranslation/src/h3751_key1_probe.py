@@ -60,10 +60,10 @@ def main():
         for name in names:
             n = table.get(name, 0)
             out[label][name] = n
-            print('  %-22s %s' % (name, ('%d row(s) STILL PRESENT' % n) if n else 'absent'))
+            print('  %-22s %s' % (name, (f'{n:d} row(s) STILL PRESENT') if n else 'absent'))
 
     total = sum(sum(v.values()) for v in out.values() if isinstance(v, dict))
-    print('issue #1767 named examples still present: %d' % total)
+    print(f'issue #1767 named examples still present: {total:d}')
     if args.json:
         with io.open(args.json, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(out, f, ensure_ascii=False, indent=1)

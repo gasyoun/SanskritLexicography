@@ -166,9 +166,7 @@ def main():
     usage_reachable = {r for r, s in u_shares.items() if s > 0}
 
     result = {
-        'method': 'H4 dictionary citation bias — log2(citation_share / usage_share), '
-                  'entry-level citation unit, attestation-level usage unit, '
-                  '%d-rep bootstrap CI over entries' % reps,
+        'method': f'H4 dictionary citation bias — log2(citation_share / usage_share), entry-level citation unit, attestation-level usage unit, {reps:d}-rep bootstrap CI over entries',
         'seed': seed, 'reps': reps,
         'usage_side': {'total_attestations': u_total,
                         'shares': {r: u_shares.get(r, 0.0) for r in REGISTERS if r in usage_reachable}},
@@ -181,7 +179,7 @@ def main():
         n_entries = len(entries)
         n_with_ls_reg = sum(1 for s in reg_sets if s)
         c_shares = shares_from_sets(reg_sets, REGISTERS)
-        cis = bootstrap_ci(reg_sets, REGISTERS, reps, seed='%d:%s' % (seed, code))
+        cis = bootstrap_ci(reg_sets, REGISTERS, reps, seed=f'{seed:d}:{code}')
 
         both_route = {}
         one_route_ls_only = {}

@@ -113,7 +113,7 @@ def _run_with_timeout(function: Callable[[], Any], timeout_ms: int) -> Any:
     worker.start()
     worker.join(timeout_ms / 1000.0)
     if worker.is_alive():
-        raise TimeoutError('provider call exceeded %d ms' % timeout_ms)
+        raise TimeoutError(f'provider call exceeded {timeout_ms:d} ms')
     if 'error' in box:
         raise box['error']
     return box['value']
@@ -158,8 +158,7 @@ class PaidCallKernel:
         """
         if self.remaining_calls() <= 0:
             raise KernelRefusal(
-                'call ceiling reached for campaign %s (max_calls=%d)'
-                % (self.campaign_id, self.campaign.max_calls),
+                f'call ceiling reached for campaign {self.campaign_id} (max_calls={self.campaign.max_calls:d})',
                 failure_class=FAILURE_BUDGET)
         try:
             estimate = providers.estimate_cost_usd(

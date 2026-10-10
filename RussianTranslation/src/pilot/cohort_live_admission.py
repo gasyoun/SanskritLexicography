@@ -121,9 +121,7 @@ def validate_record(record):
     if width > MAX_ADMITTED_WIDTH:
         # A record asking for more than the code cap is a defect IN THE RECORD, and the whole
         # record is rejected rather than silently clamped: somebody meant something by it.
-        return False, ('max_admitted_width %d exceeds the code cap %d -- width %d has its own '
-                       'rung (evidence + a deliberate edit of MAX_ADMITTED_WIDTH); it is '
-                       'never granted by data' % (width, MAX_ADMITTED_WIDTH, width))
+        return False, (f'max_admitted_width {width:d} exceeds the code cap {MAX_ADMITTED_WIDTH:d} -- width {width:d} has its own rung (evidence + a deliberate edit of MAX_ADMITTED_WIDTH); it is never granted by data')
 
     profiles = record.get('admitted_profiles')
     if not isinstance(profiles, list) or not profiles or not all(_nonblank(p) for p in profiles):
@@ -161,10 +159,7 @@ def admit(width, path=None, rt_root=None):
     if width <= 1:
         return True, 'serial route (width 1) -- no acceptance record required', None
     if width > MAX_ADMITTED_WIDTH:
-        return False, ('cohort width %d exceeds the admitted maximum %d; width %d has its own '
-                       'acceptance rung and is refused regardless of any record '
-                       '(LAUNCH_FUCKUPS.md: Slice-D 18-wide, H317 3-wide)'
-                       % (width, MAX_ADMITTED_WIDTH, width)), None
+        return False, (f'cohort width {width:d} exceeds the admitted maximum {MAX_ADMITTED_WIDTH:d}; width {width:d} has its own acceptance rung and is refused regardless of any record (LAUNCH_FUCKUPS.md: Slice-D 18-wide, H317 3-wide)'), None
     record, reason = load_record(path=path, rt_root=rt_root)
     if record is None:
         return False, reason, None

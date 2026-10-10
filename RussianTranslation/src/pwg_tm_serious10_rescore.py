@@ -195,8 +195,7 @@ def call_judge(key, model, item, timeout=180, retries=3):
             last = exc
             if attempt + 1 < retries:
                 time.sleep(2 * (attempt + 1))
-    raise RuntimeError('judge %s failed after %d attempts: %r'
-                       % (model, retries, last))
+    raise RuntimeError(f'judge {model} failed after {retries:d} attempts: {last!r}')
 
 
 def judge_all(key, model, rows, judge_tag):

@@ -149,7 +149,7 @@ def main():
     mw, n_mw = load_ls_profiles(mw_path)
     pwg, n_pwg = load_ls_profiles(pwg_path)
     ap, n_ap = load_ls_profiles(ap_path)
-    print('lines: MW=%d PWG=%d AP=%d' % (n_mw, n_pwg, n_ap))
+    print(f'lines: MW={n_mw:d} PWG={n_pwg:d} AP={n_ap:d}')
     print('distinct key1: MW=%d PWG=%d AP=%d' % (len(mw), len(pwg), len(ap)))
 
     rows_pwg, n_shared_pwg = compare(mw, pwg)

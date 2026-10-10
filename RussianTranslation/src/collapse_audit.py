@@ -333,7 +333,7 @@ def write_report(res, date, cen, out_md, out_jsonl, sheet=None):
     }
     for key in ("after_gloss", "after_cite", "after_marker", "after_break"):
         if b.get(key):
-            L.append("| `%s` | %d | %s |" % (key, b[key], gloss[key]))
+            L.append(f'| `{key}` | {b[key]:d} | {gloss[key]} |')
     inside = b.get("after_gloss", 0) + b.get("after_cite", 0)
     L.append("")
     L.append("Inside a citation clause or run: **%d**. Outside: **%d**."
@@ -363,9 +363,7 @@ def write_report(res, date, cen, out_md, out_jsonl, sheet=None):
     else:
         orph = v.get("orphan", 0) + v.get("compact:orphan", 0)
         L.append("No torn sites in either rendering." + (
-            " The %d `orphan` rows are citations that already opened their own "
-            "unit in the store — the render did not move them; they are the "
-            "`after_break` sites above." % orph if orph else
+            f' The {orph:d} `orphan` rows are citations that already opened their own unit in the store — the render did not move them; they are the `after_break` sites above.' if orph else
             " No `orphan` rows either: every sampled wrap had a clause in front "
             "of it, and the render kept the two together."))
         L.append("")
@@ -376,7 +374,7 @@ def write_report(res, date, cen, out_md, out_jsonl, sheet=None):
              "store newline kept as a line break): %s. That is the defect P1 "
              "removed, and it is what the audit reports when tearing is real."
              % (res["sampled"],
-                ", ".join("%d %s" % (n, k) for k, n in sorted(ctrl.items()))))
+                ", ".join(f'{n:d} {k}' for k, n in sorted(ctrl.items()))))
     L.append("")
     L.append("## Store byte-identity")
     L.append("")

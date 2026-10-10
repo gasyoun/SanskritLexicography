@@ -299,8 +299,8 @@ def cmd_surplus(a):
                  100.0 * s['marked'][t] / p if p else 0))
     tot_one = sum(s['one_sided'].values())
     tot_both = sum(s['both_sided'].values())
-    print('  pairs where exactly ONE side carries a marker: %d' % tot_one)
-    print('  pairs where BOTH sides carry a marker:         %d' % tot_both)
+    print(f'  pairs where exactly ONE side carries a marker: {tot_one:d}')
+    print(f'  pairs where BOTH sides carry a marker:         {tot_both:d}')
     print('  top one-sided pairs:')
     for pk, n in s['one_sided'].most_common(5):
         print('    %-60s %6d' % (pk, n))
@@ -365,7 +365,7 @@ def cmd_backfill(a):
     rows, stats = backfill_direction(a.pilot)
     total = len(rows)
     print('direction backfill over the committed asymmetric labels (no model call)')
-    print('  asymmetric rows: %d' % total)
+    print(f'  asymmetric rows: {total:d}')
     for k in ('deterministic', 'recovered', 'ambiguous', 'unrecoverable'):
         print('    %-16s %6d  %5.1f%%' % (k, stats[k], 100.0 * stats[k] / total if total else 0))
     named = stats['deterministic'] + stats['recovered']

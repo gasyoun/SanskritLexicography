@@ -74,7 +74,7 @@ class ScriptedRunner:
 
 
 def make_plan(n):
-    return [{'id': 'w%d' % i, 'keys': ['k_%d' % i]} for i in range(n)]
+    return [{'id': f'w{i:d}', 'keys': [f'k_{i:d}']} for i in range(n)]
 
 
 def clean_report(cost=1):
@@ -420,8 +420,8 @@ def test_n_default_audit_fail_closed(td):
 
     for index, payload in enumerate(({}, {'results': []}, {'results': [{}]},
                                      {'results': [{'key': 'wrong', 'card': None}]})):
-        malformed = os.path.join(td, 'n-structural-%d.json' % index)
-        checkpoint = os.path.join(td, 'n-structural-%d.checkpoint.json' % index)
+        malformed = os.path.join(td, f'n-structural-{index:d}.json')
+        checkpoint = os.path.join(td, f'n-structural-{index:d}.checkpoint.json')
         with open(malformed, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(payload, f)
         sup = BoundedSupervisor(plan, lambda _window, path=malformed: path, checkpoint)

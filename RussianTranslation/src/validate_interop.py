@@ -69,7 +69,7 @@ def _dupe_report(counter, label):
     if not dupes:
         return None
     worst = sorted(dupes.items(), key=lambda kv: (-kv[1], kv[0]))
-    named = ', '.join('%s x%d' % (v, n) for v, n in worst[:MAX_NAMED_DUPES])
+    named = ', '.join(f'{v} x{n:d}' for v, n in worst[:MAX_NAMED_DUPES])
     return ('%s: %d duplicated value(s) across %d occurrence(s) — %s%s'
             % (label, len(dupes), sum(dupes.values()), named,
                ' …' if len(worst) > MAX_NAMED_DUPES else ''))
@@ -93,8 +93,7 @@ def measure_tei(path):
     ids = collections.Counter(e.get(XML_ID) for e in entries if e.get(XML_ID) is not None)
     missing = len(entries) - sum(ids.values())
     if missing:
-        return len(entries), len(ids), ('TEI has %d <entry> element(s) with no xml:id'
-                                        % missing)
+        return len(entries), len(ids), (f'TEI has {missing:d} <entry> element(s) with no xml:id')
     return len(entries), len(ids), _dupe_report(ids, 'TEI xml:id')
 
 
@@ -163,9 +162,9 @@ def validate_reverse(path):
             row = json.loads(line)
             for field in ('ru', 'key1'):
                 if not row.get(field):
-                    fail('reverse index line %d missing %s' % (i, field))
+                    fail(f'reverse index line {i:d} missing {field}')
             if 'source' not in row or 'ref' not in row:
-                fail('reverse index line %d missing source/ref' % i)
+                fail(f'reverse index line {i:d} missing source/ref')
             n += 1
     if not n:
         fail('reverse index is empty')
@@ -219,8 +218,7 @@ def main(argv=None):
         for line in failures:
             print('INTEROP CHECK FAILED: {}'.format(line), file=sys.stderr)
         return 1
-    print('interop validation OK: TEI entries=%d (%d distinct ids) | OntoLex entries=%d '
-          '(%d distinct subjects) | reverse rows=%d' % (tei, tei_ids, ttl, ttl_ids, rev))
+    print(f'interop validation OK: TEI entries={tei:d} ({tei_ids:d} distinct ids) | OntoLex entries={ttl:d} ({ttl_ids:d} distinct subjects) | reverse rows={rev:d}')
     return 0
 
 

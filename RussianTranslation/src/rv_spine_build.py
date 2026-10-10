@@ -167,13 +167,13 @@ def verify_stanza_invariants(stats):
         actual = stats['absent_counts'][key]
         if actual != expected:
             problems.append(
-                '%s: expected %d absent_from_source, got %d' % (key, expected, actual))
+                f'{key}: expected {expected:d} absent_from_source, got {actual:d}')
     geldner_locs = set(stats['absent_locations']['geldner_de_1951'])
     if geldner_locs != EXPECTED_GELDNER_ABSENT_LOCATIONS:
         problems.append('geldner absent locations mismatch: got {}, expected {}'.format(sorted(geldner_locs), sorted(EXPECTED_GELDNER_ABSENT_LOCATIONS)))
     for key, count in stats['empty_counts'].items():
         if count != 0:
-            problems.append('%s: expected 0 empty rows, got %d' % (key, count))
+            problems.append(f'{key}: expected 0 empty rows, got {count:d}')
     if problems:
         raise AssertionError(
             'Hard invariant violation (VERIFICATION Sec.2) -- parse bug, not a finding:\n  '
@@ -244,8 +244,7 @@ def build_lemma_records(lemmatization_doc):
 def verify_lemma_invariants(total_tokens):
     if total_tokens != EXPECTED_TOKEN_COUNT:
         raise AssertionError(
-            'Hard invariant violation (VERIFICATION Sec.2): expected %d RV tokens, got %d'
-            % (EXPECTED_TOKEN_COUNT, total_tokens))
+            f'Hard invariant violation (VERIFICATION Sec.2): expected {EXPECTED_TOKEN_COUNT:d} RV tokens, got {total_tokens:d}')
 
 
 # ---------------------------------------------------------------------------

@@ -117,7 +117,7 @@ def test_packet_id_is_deterministic():
 
 
 def test_packet_ids_differ_per_record():
-    ids = {aud.packet_id("r%d" % i) for i in range(500)}
+    ids = {aud.packet_id(f'r{i:d}') for i in range(500)}
     assert len(ids) == 500
 
 

@@ -60,9 +60,9 @@ def main():
                     ab_res += 1
 
     multi = sum(1 for k, c in key1s.items() if c > 1)
-    print('=== microstructure audit: first %d records ===' % recs)
-    print('parsed cards: %d  (parse failures: %d)' % (cards, parsefail))
-    print('homonym-numbered cards: %d  | headwords with >1 homonym: %d' % (homonyms, multi))
+    print(f'=== microstructure audit: first {recs:d} records ===')
+    print(f'parsed cards: {cards:d}  (parse failures: {parsefail:d})')
+    print(f'homonym-numbered cards: {homonyms:d}  | headwords with >1 homonym: {multi:d}')
     print('senses parsed: %d  (%.1f per card)' % (senses, senses / max(cards, 1)))
     print('equivalence-type: {}'.format(dict(eq)))
     print('<ls> citations: %d, resolved %d (%.1f%%)'

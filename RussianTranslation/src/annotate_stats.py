@@ -102,7 +102,7 @@ def homonym_of(row, idx=0):
     parseable subcard is its own group (via a per-row fallback), so it never silently
     merges into h0."""
     m = _SUBCARD_H_RE.search(row.get('subcard') or '')
-    return m.group(1) if m else ('_row%d' % idx)
+    return m.group(1) if m else (f'_row{idx:d}')
 
 
 def n_records_for(rows):

@@ -130,7 +130,7 @@ def main(argv=None):
         sys.exit('release agreement requires at least one double-reviewed item with Cohen kappa')
     alines = ['# Double-review agreement', '',
               '| metric | value |', '|---|---|',
-              '| double-reviewed items | %d |' % pair_n,
+              f'| double-reviewed items | {pair_n:d} |',
               '| percent agreement | %.1f%% |' % (100 * po),
               '| Cohen kappa | %s |' % ('n/a' if kap is None else '{:.3f}'.format(kap))]
     open(agreement_path, 'w', encoding='utf-8').write('\n'.join(alines) + '\n')

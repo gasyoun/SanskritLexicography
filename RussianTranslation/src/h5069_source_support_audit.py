@@ -225,7 +225,7 @@ def cmd_census(args):
     print("store rows: %d" % len(rows))
     print("store sha256: {}".format(file_sha256(STORE)))
     elig = sum(1 for r in rows if eligible(features(r)))
-    print("eligible (RU asserts a meaning, target != source): %d" % elig)
+    print(f'eligible (RU asserts a meaning, target != source): {elig:d}')
     for st in STRATA:
         print("  %-15s pool=%-5d picked=%d" % (st, sizes[st], len(picked[st])))
     short = [st for st in STRATA if len(picked[st]) < N_PER_STRATUM]
@@ -266,7 +266,7 @@ def cmd_freeze(args):
                 "compound": "iast has '(' or '-', or homonym has '+' or '-'",
                 "citation_dense": "n_ls >= 10",
             },
-            "within_stratum": "ascending sha256(record_id), first %d" % N_PER_STRATUM,
+            "within_stratum": f'ascending sha256(record_id), first {N_PER_STRATUM:d}',
             "seed": None,
             "note": "seedless: identical store bytes reproduce identical ids",
         },
@@ -452,7 +452,7 @@ def cmd_poolcheck(args):
             if len(ex["in_sa"]) < 3:
                 ex["in_sa"].append(r["record_id"])
     n = len(rows)
-    print("store rows: %d  (sha256 %s)" % (n, file_sha256(STORE)[:16]))
+    print(f'store rows: {n:d}  (sha256 {file_sha256(STORE)[:16]})')
     print("gloss_wrapper_loss  (RU spans < DE spans): %d/%d = %.1f%%"
           % (partial, n, 100.0 * partial / n))
     print("  of which TOTAL loss (RU spans == 0)    : %d/%d = %.1f%%"
@@ -516,7 +516,7 @@ def cmd_score(args):
             rc = 1
     ctrl_ids = {c.get("packet_id") or c["id"] for c in key["controls"]}
     n_real = sum(1 for i in got if i not in ctrl_ids)
-    print("real records graded by reviewer: %d" % n_real)
+    print(f'real records graded by reviewer: {n_real:d}')
     print("CONTROL GATE: %s" % ("PASS" if rc == 0 else "FAIL"))
     return rc
 

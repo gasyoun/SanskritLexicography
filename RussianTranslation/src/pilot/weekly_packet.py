@@ -121,7 +121,7 @@ def build_packet(root, week, now=None):
     if not lanes:
         lines.append('| _no lane ticked this week_ | | | | | |')
     lines += ['', '## Defects (spot-checks this week)',
-              '- sev-3: %d · all severities: %d' % (sev3, defects), '',
+              f'- sev-3: {sev3:d} · all severities: {defects:d}' '',
               '## Parked items awaiting a ruling (%d)' % len(parked)]
     for r in parked[:20]:
         lines.append('- `{}` — {} ({})'.format(r.get('key'), r.get('reason'),

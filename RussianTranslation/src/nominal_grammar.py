@@ -231,7 +231,7 @@ def _irregularities(slp1, lex, stem_class, compound_members):
     flags = []
     if compound_members:
         n = len(compound_members)
-        flags.append('compound:%d_members' % n)
+        flags.append(f'compound:{n:d}_members')
     # Multi-gender nominals (common adjective class)
     if lex in _LEX_ADJ:
         flags.append('tri_gender_adj')

@@ -136,7 +136,7 @@ def write_report(path, result):
         lines += ['', '### `{}`'.format(cls), '', '| stored `key1` | sub-card witness | rows |',
                   '|---|---|---|']
         for (key1, witness), n in pairs[:60]:
-            lines.append('| `%s` | `%s` | %d |' % (key1, witness, n))
+            lines.append(f'| `{key1}` | `{witness}` | {n:d} |')
         if len(pairs) > 60:
             lines.append('| … %d more pairs | | |' % (len(pairs) - 60))
     lines += ['', '## What is deliberately NOT repaired', '',

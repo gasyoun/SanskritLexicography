@@ -148,7 +148,7 @@ def run(n=50, seed=3152):
         if hit:
             hits += 1
         else:
-            misses.append({"headword": iast, "cited": "MBH. %d,%d" % (parvan, cn),
+            misses.append({"headword": iast, "cited": f'MBH. {parvan:d},{cn:d}',
                            "coordinate": loc.vulgate,
                            "verse_head": verse[:70]})
         pool = by_parvan.get(p) or []

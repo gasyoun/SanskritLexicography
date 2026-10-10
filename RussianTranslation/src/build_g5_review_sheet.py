@@ -229,7 +229,7 @@ def facet_config(items):
         values = []
         for v, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])):
             share = cardrender.corpus_share(key, v, vocab)
-            values.append((v, "%s · %d" % (v, n) if share is None
+            values.append((v, f'{v} · {n:d}'if share is None
                            else "%s · %d · %.1f%%" % (v, n, share)))
         dims.append({"key": key, "label": label, "values": values})
     return dims
@@ -273,7 +273,7 @@ def _selftest():
     items = []
     for i, (ru, de) in enumerate(_FIXTURE_CARDS):
         tags = cardrender.card_tags(ru)
-        items.append({"id": "fix:%d" % i, "filt": "na", "title": "t", "badges": [],
+        items.append({"id": f'fix:{i:d}', "filt": "na", "title": "t", "badges": [],
                       "question": "q", "facets": tags,
                       "panels": card_panels(ru, de, tags)})
 
@@ -331,7 +331,7 @@ def _selftest():
         tags = cardrender.card_tags(ru)
         left, right, store = card_split_surfaces(ru, de, tags)
         split_items.append({
-            "id": "fix:%d" % i, "filt": "na", "title": "t", "badges": [],
+            "id": f'fix:{i:d}', "filt": "na", "title": "t", "badges": [],
             "question": "q", "facets": tags, "panels": [],
             "left": left, "right": right, "store_markup": store,
         })

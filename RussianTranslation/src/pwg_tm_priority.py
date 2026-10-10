@@ -374,7 +374,7 @@ def build(limit, publication=None, out_dir=None, exclude_keys=None, wave=1,
         )
     })
     stem = stem or (
-        'priority_%d_w%d' % (limit, wave) if wave != 1 else 'priority_%d' % limit)
+        f'priority_{limit:d}_w{wave:d}' if wave != 1 else f'priority_{limit:d}')
     if out_dir:
         C.write_json(os.path.join(out_dir, stem + '.manifest.json'), manifest)
         C.write_jsonl(os.path.join(out_dir, stem + '.jsonl'), [

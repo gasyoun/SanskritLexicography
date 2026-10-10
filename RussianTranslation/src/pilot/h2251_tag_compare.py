@@ -145,7 +145,7 @@ def pair_distances(draws, key):
     within, between = [], []
     for arm, items in sorted(by_arm.items()):
         for (n1, d1), (n2, d2) in itertools.combinations(sorted(items), 2):
-            within.append({'arm': arm, 'a': '%s#%d' % (arm, n1), 'b': '%s#%d' % (arm, n2),
+            within.append({'arm': arm, 'a': f'{arm}#{n1:d}', 'b': f'{arm}#{n2:d}',
                            'distance': jaccard_distance(d1['tags'], d2['tags']),
                            'free_text_distance': jaccard_distance(free_text(d1['tags']),
                                                                   free_text(d2['tags']))})
@@ -153,7 +153,7 @@ def pair_distances(draws, key):
         for n1, d1 in sorted(by_arm[arm1]):
             for n2, d2 in sorted(by_arm[arm2]):
                 between.append({'arms': '{}|{}'.format(arm1, arm2),
-                                'a': '%s#%d' % (arm1, n1), 'b': '%s#%d' % (arm2, n2),
+                                'a': f'{arm1}#{n1:d}', 'b': f'{arm2}#{n2:d}',
                                 'distance': jaccard_distance(d1['tags'], d2['tags']),
                                 'free_text_distance': jaccard_distance(
                                     free_text(d1['tags']), free_text(d2['tags']))})

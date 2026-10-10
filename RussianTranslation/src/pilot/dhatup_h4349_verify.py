@@ -86,7 +86,7 @@ check('denominator: PWG cites %d coordinates, %d refused out of space'
 check('the citation forms that spell the gaṇa out attest 1751 of them',
       len(spelled_out) == 1751, 're-counted %d' % len(spelled_out))
 check('PWG dotted-id article count', dotted_articles == 636 == st['pwg-dotted_articles'],
-      're-counted %d' % dotted_articles)
+      f're-counted {dotted_articles:d}')
 
 # --- coverage, re-derived from the table ------------------------------------------
 counts = {}
@@ -141,7 +141,7 @@ for _r in d.get('_refused_form_c_out_of_space', []):
           isinstance(_r.get('spelled_out_ceiling'), int) and _r.get('claimants'),
           'ceiling {}, claimants {!r}'.format(_r.get('spelled_out_ceiling'), _r.get('claimants')))
 check('gaṇa 1 ceiling is 1, which is what refuses 1,840 and 1,960',
-      ceil[1] == 1, 'ceiling %d' % ceil[1])
+      ceil[1] == 1, f'ceiling {ceil[1]:d}')
 refused = {x['coord'] for x in d['_out_of_coordinate_space']}
 check('both artifacts refused and published', refused == {'1,840', '1,960'}, repr(sorted(refused)))
 check('neither refused coordinate is in the table', not (refused & set(table)))
@@ -291,7 +291,7 @@ check('all six published pw refusal terms hold',
 _buckets = sum(st.get(k, 0) for k in list(_split)
                + ['pw_refused_multiple_claimants', 'pw_refused_variant_reading'])
 check('the screen chain partitions all 41 citations', _buckets == len(pw_cited),
-      'buckets sum to %d' % _buckets)
+      f'buckets sum to {_buckets:d}')
 check('the published sum is the header it is printed under',
       sum(_split.values()) == 41)
 check('the sibling yield is still zero — both classes measured and empty',

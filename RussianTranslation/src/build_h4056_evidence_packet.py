@@ -378,7 +378,7 @@ def cmd_build(args):
             "changed_key1": len(changed),
             "method": "pwg_four_tier_store_impact.scan_corpus/changed_keys, read-only"},
         "funnel": funnel,
-        "selection": "build_g5_review_sheet.pick round-robin over sorted roots, n=%d" % args.n,
+        "selection": f'build_g5_review_sheet.pick round-robin over sorted roots, n={args.n:d}',
         "tm": {"method": "translation_memory.build from the store into scratch; "
                          "lookup content-addressed; canonical denylist applied read-only",
                "denylist_addresses": deny_n,

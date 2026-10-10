@@ -405,7 +405,7 @@ def selftest():
 
     # H2153 (G7 / #977): the content-mass gate sees what the row-count guard cannot —
     # a same-row-count content wipe — and ignores what fooled the byte size: formatting.
-    fat = [{'subcard': 'm~~%d' % i, 'ru': 'x' * 100, 'de': 'y' * 50, 'provenance': {}}
+    fat = [{'subcard': f'm~~{i:d}', 'ru': 'x' * 100, 'de': 'y' * 50, 'provenance': {}}
            for i in range(10)]
     thin = [dict(r, ru='x' * 5) for r in fat]
     try:

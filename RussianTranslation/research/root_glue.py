@@ -73,7 +73,7 @@ def report_links(root, links_path):
     print('  linked nominals: %d inline (depth<=%d, non-compound) + %d capped '
           '(leading-word compound / deeper) — full chain kept in table'
           % (len(inline), CAP_DEPTH, len(capped)))
-    out = ['<derivatives root="%s" cap_depth="%d">' % (root, CAP_DEPTH)]
+    out = [f"<derivatives root=\"{root}\" cap_depth=\"{CAP_DEPTH:d}\">"]
     bybase = {}
     for r in inline:
         bybase.setdefault(r['base'], []).append(r['hw'])

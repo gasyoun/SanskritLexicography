@@ -152,7 +152,7 @@ def main():
     print('  top derived heads: {}'.format(', '.join('%s x%d' % (repr(h), c) for h, c in heads.most_common(6))))
 
     already = sum(1 for r in targets if (r.get('provenance') or {}).get('h_reconstructed'))
-    print('  already stamped                               : %d' % already)
+    print(f'  already stamped                               : {already:d}')
 
     if not args.apply:
         print()
@@ -197,10 +197,10 @@ def main():
     print()
     print('VERIFY (re-read from disk):')
     print('  rows                  : %d (must stay %d)' % (len(fresh), EXPECT_CUR_ROWS))
-    print('  h_reconstructed rows  : %d (must be %d)' % (n_stamp, EXPECT_NULL_H))
-    print('  h == null rows        : %d (must stay 0 -- no h VALUE was changed)' % n_null)
-    print('  iast_reconstructed    : %d' % n_iast)
-    print('  grammar_defaulted     : %d' % n_gram)
+    print(f'  h_reconstructed rows  : {n_stamp:d} (must be {EXPECT_NULL_H:d})')
+    print(f'  h == null rows        : {n_null:d} (must stay 0 -- no h VALUE was changed)')
+    print(f'  iast_reconstructed    : {n_iast:d}')
+    print(f'  grammar_defaulted     : {n_gram:d}')
     ok = len(fresh) == EXPECT_CUR_ROWS and n_stamp == EXPECT_NULL_H and n_null == 0
     print('  RESULT                : %s' % ('OK' if ok else 'MISMATCH'))
     return 0 if ok else 1

@@ -229,13 +229,13 @@ def derive(manifest, events):
     if stop_reason:
         fail_reasons.append('stop:{}'.format(stop_reason))
     if parseable_n < parseable_min:
-        fail_reasons.append('parseable %d/%d' % (parseable_n, parseable_denom))
+        fail_reasons.append(f'parseable {parseable_n:d}/{parseable_denom:d}')
     if model_mismatch:
         fail_reasons.append('served_model_mismatch')
     if unevaluable:
         fail_reasons.append('unevaluable_billing')
     if pairs_complete < n_pairs and not stop_reason:
-        fail_reasons.append('pairs_incomplete %d/%d' % (pairs_complete, n_pairs))
+        fail_reasons.append(f'pairs_incomplete {pairs_complete:d}/{n_pairs:d}')
     if manifest.get('promotable') is not False:
         fail_reasons.append('promotable_not_false')
     if attempted_slots == 0:

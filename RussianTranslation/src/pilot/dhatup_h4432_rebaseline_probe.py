@@ -406,7 +406,7 @@ def main():
     check('ordered: reattributed', len(m_o), 0)
     check('ordered: 32,56 resolves to cakk', results['ordered'][0].get('32,56'), 'cakk')
 
-    print('pwg entries scanned            %d' % entries)
+    print(f'pwg entries scanned            {entries:d}')
     for label, got, want, ok in checks:
         print('%-52s %-10s %-14s %s'
               % (label, got, want if want == '(measured)' else 'want={}'.format(want),

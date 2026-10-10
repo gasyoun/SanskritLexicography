@@ -322,8 +322,7 @@ def cmd_build(args):
     print('%s [%s · ~%s]: %d groups in %d batches → %d alignments, %d failed groups logged (x%d) → %s'
           % (work, st.get('genre'), st.get('date_median'), len(groups), len(batches), wrote, failed, workers, os.path.basename(OUT)))
     if failed:
-        print('retry later: python build_corpus_lexicon.py build %s %d %d --retry-failed'
-              % (tf, n, workers))
+        print(f'retry later: python build_corpus_lexicon.py build {tf} {n:d} {workers:d} --retry-failed')
 
 
 def cmd_status(args):

@@ -80,7 +80,7 @@ CARD_CASES: list[dict] = [
         'fragment_id': 'go',
         'fragment_class': 'card',
         'source_string': 'f. Kuh; Rind; Strahl; Sprache; Erde. '
-                         + '; '.join('Sinn %d: Belegstelle %d' % (i, i)
+                         + '; '.join(f'Sinn {i:d}: Belegstelle {i:d}'
                                      for i in range(1, 25)),
         'context': 'multi-sense long card, order-preserving',
     },
@@ -272,7 +272,7 @@ def _one_call(paid: kernel.PaidCallKernel, repository, adapter, ledger,
     outcome = paid.execute(
         adapter, job_ids=[job_id], job_payloads=[CARD_CASES[0]],
         requested_model=REQUESTED_MODEL,
-        idempotency_key='h4057:%s:%d' % (job_id, ordinal),
+        idempotency_key=f'h4057:{job_id}:{ordinal:d}',
         timeout_ms=kernel.DEFAULT_TIMEOUT_MS, max_output_tokens=256,
         estimated_input_tokens=200)
     repository.transition_job(job_id, model.RUNNING, model.CAPTURED)

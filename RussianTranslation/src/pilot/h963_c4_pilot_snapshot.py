@@ -103,7 +103,7 @@ BASE_HASH = store_rec["sha256"]
 BASE_ROWS = store_rec["rows"]
 print("-" * 78)
 print("OPTIMISTIC-CONCURRENCY BASE")
-print("  store rows   : %d" % BASE_ROWS)
+print(f'  store rows   : {BASE_ROWS:d}')
 print("  store sha256 : {}".format(BASE_HASH))
 print("-" * 78)
 

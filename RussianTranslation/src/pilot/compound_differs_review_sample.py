@@ -132,7 +132,7 @@ def build_frame():
     freq = load_freq()
     rows, n_dropped = dedupe_by_card_id(load_differs())
     if n_dropped:
-        print('deduped %d row(s) sharing a (k1, hom) card id' % n_dropped,
+        print(f'deduped {n_dropped:d} row(s) sharing a (k1, hom) card id',
               file=sys.stderr)
     frame = []
     for r in rows:
@@ -295,13 +295,13 @@ def selftest():
     assert freq_bucket('x', {'x': 50}) == 'high(>=10)'
     fake = []
     for i in range(500):
-        fake.append({'k1': 'k%d' % i, 'hom': '', 'vs_index_class': 'same_count_diff_split',
+        fake.append({'k1': f'k{i:d}', 'hom': '', 'vs_index_class': 'same_count_diff_split',
                      'length_bucket': ['short(<=8)', 'medium(9-10)', 'long(>=11)'][i % 3],
                      'freq_bucket': ['no_dcs_freq', 'low(1-2)', 'mid(3-9)', 'high(>=10)'][i % 4],
                      'freq_count': '', 'panini_sutras': '', 'deriv_base': '', 'deriv_suffix': '', 'ganas': '',
                      'pwg_members': 'a + b', 'index_members': 'a + c'})
     for i in range(20):
-        fake.append({'k1': 'rare%d' % i, 'hom': '', 'vs_index_class': 'member_count_diff',
+        fake.append({'k1': f'rare{i:d}', 'hom': '', 'vs_index_class': 'member_count_diff',
                      'length_bucket': 'short(<=8)', 'freq_bucket': 'no_dcs_freq', 'freq_count': '',
                      'panini_sutras': '', 'deriv_base': '', 'deriv_suffix': '', 'ganas': '',
                      'pwg_members': 'a + b + c', 'index_members': 'a + b'})
