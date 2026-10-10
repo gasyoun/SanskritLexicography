@@ -1,0 +1,109 @@
+{
+  "_comment": "H6325 ground-truth reference transcriptions for plates-intake-qc corpus masters. Created 10-10-2026 by agent vision read (GLM 5.3) of the PNG masters in ~/Downloads (the same files the G26-C intake report 13-09-2026 verified). 'ordered_text' = text zones in natural reading order (top-to-bottom, left-to-right); the stylized logo glyph (art) is excluded, its typeset caption and year are included. 'dev_letters' = best-effort set of Devanagari glyphs visible incl. decorative tree-canopy letters (approximate: art-integrated, single vision read); used for set-based Devanagari recall only, never for ordered CER.",
+  "_note_scattered": "On g01/g02/gst01 the Devanagari in the tree canopy is scattered single aksharas with no canonical reading order. Ordered CER therefore EXCLUDES them; they are scored by set-based recall (DevRecall).",
+  "plates": [
+    {
+      "id": "g01",
+      "file": "Грамматика санскрита 01.png",
+      "size": "1920x1080",
+      "ordered_text": [
+        "Общество Ревнителей Санскрита",
+        "2006",
+        "Марцис Гасунс",
+        "Грамматика санскрита",
+        "ज",
+        "ОНЛАЙН-КУРС (ВТОРНИК)",
+        "22 сентября 2026 в 8:00",
+        "samskrtam.ru/marcis-gasuns",
+        "क"
+      ],
+      "dev_letters": ["फ", "ट", "अ", "आ", "क", "ह", "प", "व", "र", "इ", "द", "ज", "त", "य", "श", "न", "च"],
+      "dev_letters_approximate": true
+    },
+    {
+      "id": "g02",
+      "file": "Грамматика санскрита 02.png",
+      "size": "1920x1080",
+      "ordered_text": [
+        "Общество Ревнителей Санскрита",
+        "2006",
+        "Марцис Гасунс",
+        "Грамматика санскрита",
+        "ज",
+        "ОНЛАЙН-КУРС (СУББОТА)",
+        "19 сентября 2026 в 12:00",
+        "samskrtam.ru/marcis-gasuns",
+        "क"
+      ],
+      "dev_letters": ["फ", "ट", "अ", "आ", "क", "ह", "प", "व", "र", "इ", "द", "ज", "त", "य", "श", "न", "च"],
+      "dev_letters_approximate": true
+    },
+    {
+      "id": "gst01",
+      "file": "Грамматика санскрита st 01.png",
+      "size": "1080x1920",
+      "ordered_text": [
+        "Марцис Гасунс",
+        "Общество Ревнителей Санскрита",
+        "2006",
+        "Грамматика санскрита",
+        "ОНЛАЙН-КУРС (СУББОТА)",
+        "19 сентября 2026 в 12:00",
+        "ज",
+        "क"
+      ],
+      "dev_letters": ["ट", "अ", "क", "प", "व", "ह", "त", "य", "ज", "र", "स", "फ"],
+      "dev_letters_approximate": true,
+      "notes": "URL absent by design (intake report G26_C: FAIL b-в)"
+    },
+    {
+      "id": "gzero",
+      "file": "Грамматика санскрита с нуля.png",
+      "size": "1920x1080",
+      "ordered_text": [
+        "Общество Ревнителей Санскрита",
+        "2006",
+        "Марцис Гасунс",
+        "Грамматика санскрита с нуля",
+        "СКОРО!",
+        "samskrte.ru/k/grammatika-gasuns-2026",
+        "ज"
+      ],
+      "dev_letters": ["ग", "ज"],
+      "dev_letters_approximate": false,
+      "notes": "ग occurs only inside the stylized logo lockup"
+    },
+    {
+      "id": "tradst",
+      "file": "Традиции st.png",
+      "size": "1080x1920",
+      "ordered_text": [
+        "Иван Толчельников",
+        "Общество Ревнителей Санскрита",
+        "2006",
+        "Традиции толкования Упанишад",
+        "samskrtam.ru/vanya"
+      ],
+      "dev_letters": ["ग"],
+      "dev_letters_approximate": false,
+      "notes": "Devanagari only in the logo lockup"
+    },
+    {
+      "id": "rudra",
+      "file": "Рудраштакам inst.png",
+      "size": "1080x1350",
+      "ordered_text": [
+        "Максим Демченко",
+        "Общество Ревнителей Санскрита",
+        "2006",
+        "Рудраштакам",
+        "(на хинди)",
+        "СКОРО!",
+        "ॐ"
+      ],
+      "dev_letters": ["ग", "ॐ"],
+      "dev_letters_approximate": false,
+      "notes": "ॐ rendered decoratively on the deity's palm; no URL on plate"
+    }
+  ]
+}
