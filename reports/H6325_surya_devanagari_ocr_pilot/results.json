@@ -1,0 +1,133 @@
+{
+  "engines": [
+    "surya",
+    "tesseract",
+    "vision_macos"
+  ],
+  "plates": [
+    {
+      "id": "g01",
+      "file": "Грамматика санскрита 01.png",
+      "cer": {
+        "surya": 0.274,
+        "tesseract": 0.5753,
+        "vision_macos": 0.3014
+      },
+      "dev_recall": {
+        "surya": 0.1176,
+        "tesseract": 0.0588,
+        "vision_macos": 0.0
+      },
+      "raw_len": {
+        "surya": 145,
+        "tesseract": 80,
+        "vision_macos": 150
+      }
+    },
+    {
+      "id": "g02",
+      "file": "Грамматика санскрита 02.png",
+      "cer": {
+        "surya": 0.2721,
+        "tesseract": 0.5782,
+        "vision_macos": 0.3197
+      },
+      "dev_recall": {
+        "surya": 0.1176,
+        "tesseract": 0.0588,
+        "vision_macos": 0.0
+      },
+      "raw_len": {
+        "surya": 145,
+        "tesseract": 79,
+        "vision_macos": 155
+      }
+    },
+    {
+      "id": "gst01",
+      "file": "Грамматика санскрита st 01.png",
+      "cer": {
+        "surya": 0.35,
+        "tesseract": 0.55,
+        "vision_macos": 0.2583
+      },
+      "dev_recall": {
+        "surya": 0.0833,
+        "tesseract": 0.0,
+        "vision_macos": 0.0
+      },
+      "raw_len": {
+        "surya": 111,
+        "tesseract": 60,
+        "vision_macos": 121
+      }
+    },
+    {
+      "id": "gzero",
+      "file": "Грамматика санскрита с нуля.png",
+      "cer": {
+        "surya": 0.3279,
+        "tesseract": 0.6721,
+        "vision_macos": 0.2541
+      },
+      "dev_recall": {
+        "surya": 0.0,
+        "tesseract": 0.0,
+        "vision_macos": 0.0
+      },
+      "raw_len": {
+        "surya": 82,
+        "tesseract": 85,
+        "vision_macos": 115
+      }
+    },
+    {
+      "id": "tradst",
+      "file": "Традиции st.png",
+      "cer": {
+        "surya": 0.32,
+        "tesseract": 0.74,
+        "vision_macos": 0.64
+      },
+      "dev_recall": {
+        "surya": 0.0,
+        "tesseract": 0.0,
+        "vision_macos": 0.0
+      },
+      "raw_len": {
+        "surya": 92,
+        "tesseract": 57,
+        "vision_macos": 109
+      }
+    },
+    {
+      "id": "rudra",
+      "file": "Рудраштакам inst.png",
+      "cer": {
+        "surya": 0.6951,
+        "tesseract": 0.8537,
+        "vision_macos": 0.7195
+      },
+      "dev_recall": {
+        "surya": 0.0,
+        "tesseract": 0.0,
+        "vision_macos": 0.0
+      },
+      "raw_len": {
+        "surya": 81,
+        "tesseract": 103,
+        "vision_macos": 74
+      }
+    }
+  ],
+  "mean_cer": {
+    "surya": 0.3732,
+    "tesseract": 0.6615,
+    "vision_macos": 0.4155
+  },
+  "mean_dev_recall": {
+    "surya": 0.0531,
+    "tesseract": 0.0196,
+    "vision_macos": 0.0
+  }
+}
