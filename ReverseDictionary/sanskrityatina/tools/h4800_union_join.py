@@ -27,11 +27,18 @@ Outputs (beside this file's parent, LF, UTF-8, idempotent):
 
 Raw stays gitignored (raw/.gitignore). Usage:
   python3 tools/h4800_union_join.py [--raw PATH] [--union PATH]
+
+Provenance pins the exact sanskrit-util (version + git commit + package path)
+the join resolved to, the builder command, and the union-TSV sha256 — the
+H4800 verifier FAIL of 20-09-2026 showed the committed join numbers reproduce
+only under the sanskrit-util actually used, and no artifact pinned it.
 """
 from __future__ import annotations
 
 import argparse
+import datetime
 import hashlib
+import inspect
 import json
 import re
 import subprocess
@@ -85,6 +92,24 @@ def _import_sanskrit_util():
         "to ~/Documents/GitHub/sanskrit-util (H3222 sibling-clone layout).")
 
 
+def _sanskrit_util_pin(su) -> dict:
+    """H4800 FAIL-fix (12-10-2026): pin the exact sanskrit-util the join used."""
+    mod_dir = Path(inspect.getfile(su)).resolve().parent
+    commit = ""
+    try:
+        commit = subprocess.check_output(
+            ["git", "-C", str(mod_dir.parent.parent), "rev-parse", "HEAD"],
+            text=True, timeout=15, stderr=subprocess.DEVNULL).strip()
+    except Exception:
+        commit = ""
+    return {
+        "import": "sanskrit_util",
+        "version": getattr(su, "__version__", "unknown"),
+        "package_path": str(mod_dir),
+        "git_commit": commit or "unknown (not a git checkout)",
+    }
+
+
 def _sha256(p: Path) -> str:
     h = hashlib.sha256()
     with open(p, "rb") as f:
@@ -125,6 +150,9 @@ def main() -> int:
     args = ap.parse_args()
 
     su = _import_sanskrit_util()
+    su_pin = _sanskrit_util_pin(su)
+    builder_cmd = "python3 tools/h4800_union_join.py" + (
+        " " + " ".join(sys.argv[1:]) if len(sys.argv) > 1 else "")
 
     raw = Path(args.raw)
     if not raw.is_file():
@@ -201,8 +229,13 @@ def main() -> int:
     prov = {
         "dataset": "sanskrityatina-reverse-vs-union16",
         "handoff": "H4800",
-        "generated": "2026-09-19",
-        "executor": "OxAlpha (opencode/z-ai/glm-5.3-flash), drain worker on Claude/c4",
+        "generated": datetime.date.today().isoformat(),
+        "executor": "OxAlpha (opencode/z-ai/glm-5.3) — H4800 FAIL-prescription re-run; "
+                    "original build 19-09-2026 OxAlpha (opencode/z-ai/glm-5.3-flash)",
+        "builder": {
+            "command": builder_cmd,
+            "sanskrit_util": su_pin,
+        },
         "stock_source": {
             "path": DOC_REMOTE,
             "local_size_bytes": raw.stat().st_size,
@@ -215,6 +248,7 @@ def main() -> int:
         },
         "union_source": {
             "path": "HeadwordLists/union-16dicts/union_headwords_16.tsv (H4797)",
+            "sha256": _sha256(union_path),
             "rows": n_union_rows,
             "join_key": "sanskrit-util slp1_form_key(union slp1) == form_key(headword_iast)",
         },
@@ -244,6 +278,13 @@ def main() -> int:
             "Residue (in_union=0) = forms attested in MG's Schwarz-based reverse stock "
             "but absent from ALL 16 Cologne dictionaries of the H4797 union — the "
             "Russian-school-only slice.",
+            "2026-10-12 refresh (H4800 verifier FAIL, 20-09-2026, headless Deepseek): the "
+            "19-09-2026 committed artifacts were produced under a superseded pre-H3975 "
+            "form_key (no medial-anusvāra-before-labial fold) — they read in_union 243,985 / "
+            "residue 22,718 / coverage 91.48 %. Regenerated against the sanskrit-util pinned "
+            "in builder.sanskrit_util; extraction counts unchanged; the complementary xlsm "
+            "lane was unaffected per the verifier (20-09-2026: 205,149 / 81.37 % / 46,985 "
+            "reproduced exactly).",
         ],
     }
     with open(HERE / "h4800_provenance.json", "w", encoding="utf-8", newline="\n") as f:
