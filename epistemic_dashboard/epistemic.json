@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-09-19T18:15:51Z",
+ "generated_at": "2026-10-13T11:43:24Z",
  "side": "Sanskrit-data",
  "repo_url": "https://github.com/gasyoun/SanskritLexicography/blob/master",
  "core": {
   "key": "FINDINGS",
   "act": "measuring — the settled facts the seven siblings graduate into",
   "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md",
-  "total": 295,
+  "total": 301,
   "by_importance": {
-   "3": 118,
-   "2": 141,
-   "1": 36
+   "3": 119,
+   "2": 142,
+   "1": 40
   },
   "by_origin": {
    "auto": 0,
-   "human": 295
+   "human": 301
   }
  },
  "layers": [
@@ -169,10 +169,10 @@
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#9-corpus-kāṇḍas-67-are-labelled-southern-leonov-but-their-text-is-the-baroda-critical-edition"
     },
     {
-     "title": "§10. Union headword total: 323,425 vs 323,426",
+     "title": "§10. Union headword total: 323,422 vs 323,422",
      "importance": 2,
      "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#10-union-headword-total-323425-vs-323426"
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md#10-union-headword-total-323422-vs-323422"
     },
     {
      "title": "§11. kosha.db: manifest build vs live-build census disagree under one name",
@@ -508,10 +508,10 @@
      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#4-varga-diachrony--cramérs-v-0037--reproduce"
     },
     {
-     "title": "§5. Cross-dict union headword index (323,425 / PWG∩MW=94,753) → reproduce",
+     "title": "§5. Cross-dict union headword index (323,422 / PWG∩MW=94,753) → reproduce",
      "importance": 3,
      "origin": "human",
-     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#5-cross-dict-union-headword-index-323425--pwgmw94753--reproduce"
+     "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RECIPES.md#5-cross-dict-union-headword-index-323422--pwgmw94753--reproduce"
     },
     {
      "title": "§6. Correction loci census (39,540 records) → reproduce",
@@ -686,6 +686,6 @@
   "candidates": 6,
   "categories": 21,
   "interlinks": 62,
-  "findings": 295
+  "findings": 301
  }
 }
