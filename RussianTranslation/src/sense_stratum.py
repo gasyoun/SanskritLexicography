@@ -30,7 +30,13 @@ import renou
 SMAP = renou.load_map('pwg')
 PWG = os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 
-SENSE_RE = re.compile(r'<div n="1">\s*(?:[—-]\s*)?(\d+)\)')
+# H6496: csl-orig 7d90e9d (19-06-2026) migrated the PWG sense markers from the
+# paren form '<div n="1"> 1)' / '— 2)' to the angle form '... 1〉' / '— 2〉'
+# (AB v1e copy). The two surviving paren occurrences in today's pwg.txt are
+# inline prose ("— 2) <lex>f.</lex>", "— 10)" inside a parenthesis), NOT sense
+# markers -- so the marker regex matches the angle form only; matching both
+# closers would count those two prose spans as senses.
+SENSE_RE = re.compile(r'<div n="1">\s*(?:[—-]\s*)?(\d+)〉')
 LS_RE = re.compile(r'<ls\b[^>]*>(.*?)</ls>', re.S)
 
 # Renou state -> Russian era label (matches the prompt's vocabulary).
