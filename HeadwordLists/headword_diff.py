@@ -180,41 +180,130 @@ def main():
     open(os.path.join(HERE, "NOW_VS_THEN.md"), "w", encoding="utf-8", newline="\n").write("\n".join(md))
     print(f"\nWrote NOW_VS_THEN.md; full per-list diffs in {OUT}/")
 
+def _has_bom(path):
+    """True iff the file byte-begins with a UTF-8 BOM (efbbbf)."""
+    with open(path, "rb") as fh:
+        return fh.read(3) == b"\xef\xbb\xbf"
+
+def _pin_name(code, kt):
+    """Pinned alias: the existing now-2026 output filename for this dict+keytype,
+    whose count N was true when it was first written. Regen OVERWRITES it in
+    place (no rename churn); the name only changes in a data-refresh PR that
+    deliberately re-pins. If several legacy files exist for the pair (should
+    not happen), the highest-N one is the pin and the rest are stale."""
+    best, n_best = None, -1
+    for old in os.listdir(NOW2026):
+        m2 = re.match(rf"^{code}-unique-key{kt}-(\d+)\.txt$", old)
+        if m2 and int(m2.group(1)) > n_best:
+            best, n_best = old, int(m2.group(1))
+    return best, n_best
+
 def write_now():
-    """Regenerate every list from current csl-orig into now-2026/ (filename = now
-    count), Sanskrit-collated. THEN files in then-2014/ are kept untouched for
-    comparison. key1 = raw <k1> (machine key, accent-stripped); key2 = clean SLP1
-    print form via key2_forms() (keeps `/` accent, `-`, `(...)`, `*`, `˚`)."""
-    os.makedirs(NOW2026, exist_ok=True)
+    """Regenerate every list from current csl-orig into now-2026/, Sanskrit-
+    collated. THEN files in then-2014/ are kept untouched for comparison.
+    key1 = raw <k1> (machine key, accent-stripped); key2 = clean SLP1 print
+    form via key2_forms() (keeps `/` accent, `-`, `(...)`, `*`, `˚`).
+
+    Write contract (H6518):
+    1. STABLE / PINNED-ALIAS NAMES — when a now-2026 file already exists for
+       the dict+keytype it is the pin: output is OVERWRITTEN IN PLACE, never
+       renamed, so consecutive regens diff in place instead of churning
+       add/delete pairs. Only a first generation (no pin) mints the
+       count-bearing name `<CODE>-unique-key<k>-<count>.txt`. If the live
+       count drifts off the pin's N, the name is kept and the drift is
+       recorded in now-2026/NOW_COUNT_DELTA.md + printed loudly (re-pinning
+       is a data-refresh decision: test floors, prose numbers, consumers).
+    2. BOM PRESERVATION — the output byte-begins with the then-2014 sibling's
+       BOM where that sibling has one (MW-unique-key1 does, its key2 sibling
+       does not — AGENTS.md danger fact); never added where absent.
+    3. FAIL-CLOSED — exits non-zero when ZERO snapshots were written (missing
+       csl-orig is a loud error naming the CSL_ORIG_V02 override, never a
+       silent exit-0); 2 when then-2014 has no snapshot inputs at all.
+
+    Returns the process exit code (0 ok · 1 zero-written · 2 no inputs)."""
+    if not os.path.isdir(THEN2014):
+        print(f"ERROR: then-2014 snapshot dir not found: {THEN2014}", file=sys.stderr)
+        return 2
     files = sorted(f for f in os.listdir(THEN2014)
                    if re.match(r'^[A-Z]+-unique-key[12]-\d+\.txt$', f))
-    written, skipped = [], []
+    if not files:
+        print(f"ERROR: no *-unique-key[12]-N.txt snapshots in {THEN2014} — nothing to regenerate",
+              file=sys.stderr)
+        return 2
+    os.makedirs(NOW2026, exist_ok=True)
+    written, skipped, delta, drifted = [], [], [], []
     for f in files:
-        m = re.match(r'^([A-Z]+)-unique-key([12])-\d+\.txt$', f)
+        m = re.match(r'^([A-Z]+)-unique-key([12])-(\d+)\.txt$', f)
         code, kt = m.group(1), m.group(2)
+        then_path = os.path.join(THEN2014, f)
         d = CODE2DIR.get(code)
         src = src_path(d) if d else (PD_SRC if code == "PD" and os.path.exists(PD_SRC) else None)
         if not src:
             skipped.append(f"{code} key{kt} (no csl-orig source)"); continue
         keys = sorted(now_set(src, kt), key=sanskrit_key)
-        out = os.path.join(NOW2026, f"{code}-unique-key{kt}-{len(keys)}.txt")
-        # drop any stale now-2026/ file for this dict+keytype (count may have changed)
-        for old in os.listdir(NOW2026):
-            if re.match(rf'^{code}-unique-key{kt}-\d+\.txt$', old):
-                os.remove(os.path.join(NOW2026, old))
-        open(out, "w", encoding="utf-8", newline="\n").write("\n".join(keys) + "\n")
-        written.append(os.path.basename(out))
-    print(f"\nWrote {len(written)} now-2026/ snapshots:")
+        pin, pin_n = _pin_name(code, kt)
+        out_name = pin if pin else f"{code}-unique-key{kt}-{len(keys)}.txt"
+        if pin:
+            # stale same-pair duplicates (legacy multi-snapshot) must not linger
+            for old in os.listdir(NOW2026):
+                if old != pin and re.match(rf"^{code}-unique-key{kt}-\d+\.txt$", old):
+                    os.remove(os.path.join(NOW2026, old))
+        out = os.path.join(NOW2026, out_name)
+        enc = "utf-8-sig" if _has_bom(then_path) else "utf-8"
+        with open(out, "w", encoding=enc, newline="\n") as fh:
+            fh.write("\n".join(keys) + "\n")
+        written.append(out_name + (" [BOM]" if enc == "utf-8-sig" else ""))
+        if pin and pin_n != len(keys):
+            drifted.append((out_name, pin_n, len(keys)))
+        delta.append((f, out_name, pin_n, len(keys), enc == "utf-8-sig"))
+    print(f"\nWrote {len(written)} now-2026/ snapshots (pinned names, written in place):")
     for w in written:
         print("  now-2026/" + w)
     if skipped:
         print(f"\nSkipped {len(skipped)}:")
         for s in skipped:
             print("  " + s)
+    if drifted:
+        print("\nPIN DRIFT — pinned name kept, drift recorded in NOW_COUNT_DELTA.md "
+              "(re-pinning = data-refresh PR: test floors, prose numbers, consumers):")
+        for name, was, now_n in drifted:
+            print(f"  {name}: pinned {was}, regenerated {now_n}")
+    if not written:
+        print("ERROR: 0 now-2026/ snapshots written — every list lacked its source. "
+              "This exporter is FAIL-CLOSED (H6518): exiting NON-ZERO instead of "
+              "reporting success.\n"
+              f"  Looked for csl-orig under: {ORIG}\n"
+              f"  PD source: {PD_SRC} (exists: {os.path.exists(PD_SRC)})\n"
+              "  Point CSL_ORIG_V02 at the csl-orig/v02 checkout and retry, e.g.:\n"
+              "    CSL_ORIG_V02=/path/to/csl-orig/v02 python3 HeadwordLists/headword_diff.py now",
+              file=sys.stderr)
+        return 1
+    # count-delta sidecar: the pinned name freezes its first-generation count;
+    # this table is where the live counts live between deliberate re-pins.
+    md = ["# now-2026/ — pinned-name count delta (regeneration record)",
+          "",
+          "_Generated by [`headword_diff.py now`](../headword_diff.py). Output names are "
+          "PINNED: a regen overwrites the existing file in place and never renames it "
+          "(H6518), so a pin's `N` is the count at first generation. This table carries "
+          "the live counts; re-pinning a name is a deliberate data-refresh PR "
+          "(test floors, prose numbers, downstream consumers)._",
+          "",
+          "| then-2014 snapshot | pinned now-2026 file | pin count | regenerated count | BOM |",
+          "|---|---|--:|--:|:-:|"]
+    for then_f, out_name, pin_n, now_n, bom in delta:
+        pin_txt = str(pin_n) if pin_n is not None else "— (first generation)"
+        mark = "" if pin_n in (None, now_n) else " ⚠️"
+        md.append(f"| [`{then_f}`](../then-2014/{then_f}) | `{out_name}` | {pin_txt} "
+                  f"| {now_n}{mark} | {'✅' if bom else '—'} |")
+    md.append("")
+    with open(os.path.join(NOW2026, "NOW_COUNT_DELTA.md"), "w", encoding="utf-8", newline="\n") as fh:
+        fh.write("\n".join(md) + "\n")
+    print(f"\nCount-delta record: {os.path.join(NOW2026, 'NOW_COUNT_DELTA.md')}")
+    return 0
 
 if __name__ == "__main__":
     import sys as _s
     if len(_s.argv) > 1 and _s.argv[1] == "now":
-        write_now()
+        _s.exit(write_now())
     else:
         main()
