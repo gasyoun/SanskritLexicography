@@ -12,8 +12,8 @@ CI ([`.github/workflows/ci.yml`](https://github.com/gasyoun/SanskritLexicography
 - the RussianTranslation gates (also the `master` required check that makes releases PR-only);
 - docs-site pytest ([`docs_site/test_docs_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/test_docs_site.py));
 - the **offline contract-pins** job (H4353) running
-  [`tests/run_offline_suite.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/run_offline_suite.py) — **201 pins** over the 62 in-scope modules outside `RussianTranslation`, network off, fixtures under `tests/fixtures` only, literal record-count floors per headword list (evidence:
-  [`tests/OFFLINE_CONTRACT_PINS_08-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/OFFLINE_CONTRACT_PINS_08-09-2026.md)). The pin count is verified, never retyped (H5426): `python tests/run_offline_suite.py --collect-only -q` prints the per-test-file breakdown (it summed to 201 on 24-09-2026: 6+4+18+15+30+110+11+7).
+  [`tests/run_offline_suite.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/run_offline_suite.py) — **222 pins** over the 62 in-scope modules outside `RussianTranslation`, network off, fixtures under `tests/fixtures` only, literal record-count floors per headword list (evidence:
+  [`tests/OFFLINE_CONTRACT_PINS_08-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/OFFLINE_CONTRACT_PINS_08-09-2026.md)). The pin count is verified, never retyped (H5426): `python tests/run_offline_suite.py --collect-only -q` prints the per-test-file breakdown (it summed to 222 on 13-10-2026: 6+4+19+15+30+110+9+11+11+7).
 
 Pre-commit hooks ([`.pre-commit-config.yaml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.pre-commit-config.yaml)): `check-yaml`, `end-of-file-fixer`, `trailing-whitespace`, `check-merge-conflict`, plus local `russian-translation-review-changelog`.
 
