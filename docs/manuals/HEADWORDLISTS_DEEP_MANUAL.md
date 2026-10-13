@@ -118,6 +118,12 @@ regeneration runs weeks apart differ by a handful of lines: the on-disk
 carries 88,867 while the later NOW_VS_THEN run measured 88,869 from the same
 recipe. Neither is wrong — each `N` is true *for its run date*. Cite the file
 you actually used, never "the AP count"; refresh both together when it matters.
+Since H6518 (13-10-2026) the `now` regen is **pin-stable**: it overwrites the
+existing count-bearing file in place and never renames it, so the on-disk `N`
+stays the first-generation count and the live counts land in
+`now-2026/NOW_COUNT_DELTA.md`; re-pinning a name is a deliberate data-refresh
+PR (floor bumps + prose numbers together), and a source-less run exits
+non-zero instead of silently writing nothing.
 
 ## 3. Script census — all 47, what they read and write
 
