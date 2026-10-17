@@ -38,7 +38,6 @@ import json
 import re
 import subprocess
 import sys
-import time
 from collections import Counter
 from pathlib import Path
 
@@ -255,9 +254,10 @@ def main() -> int:
             f.write(f"{w}\t{c}\t{fk}\t{flag}\t{dicts}\n")
 
     cov = in_union / len(unique_entries)
+    # Provenance stays deterministic across reruns: the dataset date is fixed and
+    # the rework is a constant fact, never the wall clock (a rerun must reproduce
+    # h4800_provenance.json byte-for-byte, not just the TSVs).
     gen = "2026-09-19"
-    if extraction_mode != "raw-doc":
-        gen = time.strftime("%Y-%m-%d")
     if raw is not None:
         stock_source = {
             "path": DOC_REMOTE,
@@ -286,6 +286,13 @@ def main() -> int:
         "generated": gen,
         "executor": "OxAlpha (opencode/z-ai/glm-5.3-flash), drain worker on Claude/c4",
         "extraction_mode": extraction_mode,
+        "rework": {
+            "date": "2026-10-17",
+            "cause": "independent verifier FAIL 2026-09-20: artifacts keyed with a "
+                     "superseded pre-H3975 form_key (243,985 / 91.48 % / 22,718)",
+            "fix": "rejoin on pinned sanskrit-util 0.12.0 -> 244,195 / 91.56 % / 22,508",
+            "pr": "SanskritLexicography#2419",
+        },
         "sanskrit_util": util_info,
         "stock_source": stock_source,
         "union_source": {
