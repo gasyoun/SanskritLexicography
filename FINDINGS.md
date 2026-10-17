@@ -3498,7 +3498,8 @@ structural tokens (`I.`, `II.`, `Ed.`, `App.`), language labels (`Skt.`, `Pr.`, 
 Sanskrit": it mostly does, but not purely.
 
 **Standing caveat on any PD-derived denominator:** PD is published only from `a-` to about
-`apaca-` (6 of 37+ planned volumes, 104,959 lemmas — [`dictionary_inventory.csv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/dictionary_inventory.csv)).
+`apaca-` (**35 fascicle-volumes / 6,056 pp by 2019** — the publisher ledger count, not a volume
+count against the ~37-volume plan; 104,959 lemmas — [`dictionary_inventory.csv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/dictionary_inventory.csv); framing per [PD_COMPLETION_ARITHMETIC_2026-10-17.md](https://github.com/gasyoun/Uprava/blob/main/papers/A68/PD_COMPLETION_ARITHMETIC_2026-10-17.md) §7.4).
 A harvested siglum list is *PD's canon as exercised under the letter a-*, not its full
 declared canon; the printed front-matter "List of Works and Abbreviations" is what would
 close that gap.
@@ -3762,7 +3763,7 @@ DCS's bounded 276-text inventory and adjudicates the head by hand rather than cl
 > DCS = [`VisualDCS` Corpus-Delta 2021–2026](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Corpus-Delta-2021-2026/per_text_token_delta.csv) ·
 > [H1336](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1336-Opus_csl-atlas_pd-abbrev-vs-dcs-corpus-coverage_19.07.26.md)
 > ([csl-atlas PR #276](https://github.com/sanskrit-lexicon/csl-atlas/pull/276)) — csl-atlas · 20-07-2026, Opus 4.8 (`claude-opus-4-8[1m]`).
-> **Scope caveat:** PD published a–~`apaca-` only (6 of 37+ vols) — this is PD's canon *as exercised under a-*, not its full declared canon.
+> **Scope caveat:** PD published a–~`apaca-` only (35 fascicle-volumes / 6,056 pp by 2019, ≈16 % of the ~37,333-page plan) — this is PD's canon *as exercised under a-*, not its full declared canon.
 ### §458. A Sanskrit dictionary's big letters are big because they head *preverb families* — and testing "entries shrink over publication" needs an outlier-robust estimator, not a parametric regression (encyclopedic dicts have single 300k-char articles)
 
 🔴 **The per-letter law.** Extending [§457](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)'s
