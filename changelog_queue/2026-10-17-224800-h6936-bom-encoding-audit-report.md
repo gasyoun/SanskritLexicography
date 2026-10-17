@@ -19,3 +19,5 @@
 - `python Uprava/tools/encoding_bom_audit.py SanskritLexicography/HeadwordLists` → 224 rows, summary `6 with a BOM, 0 invalid UTF-8, 0 mixed line endings, 1 flag`; `--selftest` → `selftest: OK`, including the new 64 KiB-boundary regression.
 - No data diff: `git status --porcelain HeadwordLists` and `git diff --stat -- HeadwordLists` are empty in this PR (the only `HeadwordLists/` change is the README pointer row).
 - Positive control: a repo-wide run (5,018 files) still flags the genuine invalid-UTF-8 file outside this tree (`RussianTranslation/src/pilot/h4342_fixes/h4213_wave_launch_ATTEMPTS_LOG_06-10.09.2026.txt`).
+
+**Ruled 17-10-2026 (MG): keep** — the strip/keep call raised above is answered, not pending: the flag is documented, intentional state, not a defect (report §4).

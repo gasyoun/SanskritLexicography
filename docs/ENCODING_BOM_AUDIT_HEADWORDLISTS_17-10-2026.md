@@ -60,6 +60,8 @@ Consequences that made the fix step a **no-op by rule**, not by oversight:
 
 **Ruling needed (MG):** keep the flag as documented behaviour, or explicitly authorise a one-time strip of the 3 bytes in a *separate* handoff that also re-pins `headword_diff.py`'s write contract. This pass did not pre-empt that decision.
 
+**Ruled 17-10-2026 (MG): keep.** The 3 bytes are preserved, nothing is stripped, and `headword_diff.py`'s write contract is untouched. The handoff's *"re-run reports zero sibling inconsistencies"* clause is superseded by this ruling: the inconsistency is intentional and named, not a defect to remove. A future strip would need its own handoff that re-pins the write contract and the §4 census in the same pass.
+
 ## 5. Tool defect found and fixed in this pass
 
 The audit's first run reported a **false** non-UTF-8 file:
@@ -92,6 +94,8 @@ No deleted BOM, no added BOM, no re-encoded file, no line-ending normalisation. 
 |---:|---|---|
 | 1 | `then-2014/MW-unique-key1-193978.txt` BOM (3 bytes) vs its BOM-free `key2` twins | Stripping is forbidden by `CLAUDE.md` § Encoding + FINDINGS §37, and the H6518 write contract (PR #2416) names this file as the preservation example. §4. |
 | 2 | Repo-wide (out of scope here): `RussianTranslation/src/pilot/h4342_fixes/h4213_wave_launch_ATTEMPTS_LOG_06-10.09.2026.txt` is invalid UTF-8 | Needs a re-encode decision on the file's own ownership lane; listed, never rewritten. |
+
+**Resolved:** row 1 — *keep* (MG, 17-10-2026; see §4); the flag is documented, intentional state and stays flagged, not fixed. Row 2 stays open — it is outside this tree and belongs to the RussianTranslation lane.
 
 ## 8. Per-file table — every file in the tree
 
