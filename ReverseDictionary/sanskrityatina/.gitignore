@@ -1,0 +1,4 @@
+# Bytecode stays out: the parent ReverseDictionary/.gitignore wildcard-whitelists
+# this subtree (!sanskrityatina/**), which overrides the repo-root __pycache__ rule.
+__pycache__/
+*.pyc
