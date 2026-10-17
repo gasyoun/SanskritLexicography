@@ -43,6 +43,7 @@ Rework (this revision) fixes exactly that, without touching the extraction:
 - **Version pin.** `h4800_provenance.json` now carries a `sanskrit_util` block (`version 0.12.0`, `commit 7968fde…`, local path) and an `extraction_mode` field; the join re-ran against that pinned library.
 - **Artifacts refreshed** to the reproducible numbers above. Diff against the superseded commit: **1,707 form_key cells**, **210 `in_union` flips** (all in one direction — the fold rescues 210 forms), 1,455 `union_dicts` changes, 3,003 rows touched in total.
 - **Rejoin path.** The raw `.doc` is an off-git yadisk asset and the WebDAV host answered `503` throughout the rework window, so the builder gained `--stock-tsv`: the join stage re-executes from the committed extraction (whose 266,703 headwords the verifier independently re-derived), re-keys and re-looks-up without the doc. Extraction counts are left `null` rather than copied forward. Pipeline still: extract (needs the doc) → join (reproducible without it).
+- **Deterministic provenance.** The date fields are constants (dataset date + the rework record), never the wall clock, so a rerun on any later day reproduces `h4800_provenance.json` byte-for-byte along with both TSVs — verified by a clean-checkout rerun leaving `git status` empty.
 - **Not re-proven here:** extraction itself. It stands on the 20-09-2026 verifier's independent OLE2 re-derivation (doc `sha256=79ae7a55…b284826`, WordDocument 13,555,774 B, 266,709 / 6,691 / 6 / 266,703) and is unchanged by this revision.
 
 ## 4. Verified limits
