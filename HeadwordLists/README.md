@@ -160,6 +160,15 @@ does **not**). Check `head -c 3 file | xxd` before transforming, and preserve th
 file's existing BOM state on write. The org-level "no BOM" rule does **not** hold
 in this directory.
 
+Measured state, re-verified 17-10-2026 (H6936): **6 of 224 files carry a BOM** —
+byte-identical to the 11-07-2026 census in the
+[HeadwordLists manual](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md) §4,
+so no drift in three months. All 220 text files are LF, and no file in the tree
+is invalid UTF-8. The one sibling BOM mismatch (`MW-unique-key1` vs its BOM-free
+`key2` twins) is the documented preservation case, not a defect. Full per-file
+table and the human-ruling queue:
+[ENCODING_BOM_AUDIT_HEADWORDLISTS_17-10-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/ENCODING_BOM_AUDIT_HEADWORDLISTS_17-10-2026.md).
+
 ## Dictionary codes present
 
 Codes follow the **CDSL abbreviation scheme**; the canonical, authoritative
