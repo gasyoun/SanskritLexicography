@@ -9739,4 +9739,8 @@ probe before reporting the absence — but having proved it, report the absence 
 
 > Source: csl-atlas PR #545 (GLM-5.3-Flash via ZCode, H6409) — SanskritLexicography · 10-10-2026 -- SanskritLexicography -- 10-10-2026
 
-§648 takes the next number.
+🟠 **§648. MW compound markup counts internal joints, not immediate constituents: in 47.3 % of the valid 3-em-dash rows ByT5 reads two members, so compoundSegmentCount overstates member depth in the deep class.** Evidence: 8,638 MW records (8,394 distinct surfaces) at em-dash depth >= 3; 5,489 valid model reads; of the 4,488 markup-3 rows, 2,121 (47.3 %) parse as 2 members and 1,544 (34.4 %) as 3. The hyphen-privative bracket is separately unsupported: 3+ in 1.5 % of 2,713 valid rows (95 % CI 1.1-2.0). Implication: Label markup-derived depth a JOINT count; never quote 8,638 as the number of 3-member compounds. Immediate-constituent depth needs a constituency parse or the model baseline, and the two brackets must not be compared across different denominators.
+
+> Source: csl-atlas/reports/COMPOUND_DEPTH_TYPOGRAPHY_PROBE_2026-10-17.md (18-10-2026) -- csl-atlas -- 18-10-2026
+
+§649 takes the next number.
