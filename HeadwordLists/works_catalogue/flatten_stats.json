@@ -1,0 +1,36 @@
+{
+ "basis": {
+  "blank": 6255,
+  "inferred": 2313,
+  "printed": 14941
+ },
+ "distinct_acc_records": 11436,
+ "distinct_works": 20634,
+ "hi1_lines": 26982,
+ "reconciled": 26982,
+ "records_per_work": {
+  "1": 18885,
+  "2": 1195,
+  "3": 358,
+  "4": 103,
+  "5": 42,
+  "6": 20,
+  "7": 10,
+  "8": 8,
+  "9": 3,
+  "10": 1,
+  "11": 1,
+  "12": 2,
+  "13": 1,
+  "18": 1,
+  "26": 2,
+  "29": 1,
+  "100": 1
+ },
+ "records_with_hi": 11436,
+ "rows_with_author": 13333,
+ "rows_with_school": 7933,
+ "sum_hi1_count": 26982,
+ "unattributed": 0,
+ "work_rows": 23509
+}
