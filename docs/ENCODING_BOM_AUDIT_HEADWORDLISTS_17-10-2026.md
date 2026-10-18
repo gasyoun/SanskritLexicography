@@ -146,10 +146,17 @@ The single remaining flag is the documented `MW-unique-key1` BOM (§4), not a de
 second scan of all 5,156 tracked text files for the console-mojibake class
 (`тЖТ`/`тАФ`/`тАУ`/`тАЬ`/`тАЭ`/`вЂ`) now finds **none**.
 
-**Still absent, named as residual:** the repo has no CI gate for UTF-8 validity — the
-defect was caught by a hand-run audit, not by a check. The read-only tool that caught it
-lives in [`Uprava/tools/encoding_bom_audit.py`](https://github.com/gasyoun/Uprava/blob/main/tools/encoding_bom_audit.py);
-wiring it (or a vendored equivalent) into CI is a separate unit, not done here.
+**Wired 18-10-2026 — the residual is closed by a committed gate, not by borrowing the
+read-only audit tool.** [`tools/utf8_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tools/utf8_gate.py)
+stream-decodes every tracked file with an incremental decoder (so a multi-byte character
+split across a chunk edge is legal, the H6936 regression), classifies binaries by content
+rather than extension (so an unusual filename cannot slip past), and refuses UTF-16/32
+with or without a BOM. Its 10-case `--selftest` carries both controls: valid inputs pass,
+invalid/truncated/UTF-16 inputs are refused. Surfaces: **CI job `UTF-8 validity`**
+(required on `master`), **`.githooks/pre-commit`** (staged files) and
+**`.pre-commit-config.yaml`**. Trip receipts are in PR
+[#2427](https://github.com/gasyoun/SanskritLexicography/pull/2427). The Uprava audit tool
+remains the census reporter (BOM/eol/size); the gate is the enforcement.
 
 ## 8. Per-file table — every file in the tree
 

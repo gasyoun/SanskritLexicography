@@ -108,6 +108,12 @@ exports carry a UTF-8 BOM, some don't (e.g.
 **not**). Before transforming a file: `head -c 3 file | xxd`, preserve the
 existing BOM state on write, never silently add/strip one. All UTF-8.
 
+A repo-wide gate enforces it: [`tools/utf8_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tools/utf8_gate.py)
+refuses a tracked text file that is not valid UTF-8 (content-based binary
+sniff; UTF-16/32 with or without a BOM is refused), in CI (job
+`UTF-8 validity`, required on `master`) and in the pre-commit hook. After
+editing the gate, run `python tools/utf8_gate.py --selftest`.
+
 Files too large for an editor: `sanhw1.xlsx`,
 `DCS_statistical_evaluation.htm` (~75 MB), `DCS-Moniers-roots-w-references.html`
 (~16 MB), PWG/PWK error lists — use streaming/CLI tools, not Read.
