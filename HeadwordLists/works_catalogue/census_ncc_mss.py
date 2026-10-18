@@ -21,15 +21,24 @@ over all 140,848 rows of the VisualDCS counting spreadsheet, including
 Author/Commentary rows and catalogue range serials.  It is a workbook total,
 not a distinct-manuscript count.
 
+H7073 adds the edition/journal/series filter measured by the H6995 pilot:
+roman volume markers are removed from the catalogue lexicon, and journal,
+series, year-like and page-prefixed candidates are rejected before they become
+units.  ``--no-edition-filter`` reproduces the pre-filter baseline;
+``--adjudication-sample N --seed S`` draws the seeded, volume-stratified sample
+for hand adjudication (it leaves verdict/reason empty).
+
 Usage:
     python census_ncc_mss.py --ncc ncc.jsonl --pilot 500
     python census_ncc_mss.py --ncc ncc.jsonl --canary
-    python census_ncc_mss.py --ncc ncc.jsonl --full   # only after the canary
+    python census_ncc_mss.py --ncc ncc.jsonl --adjudication-sample 100
+    python census_ncc_mss.py --ncc ncc.jsonl --full   # only after a GO
 """
 import argparse
 import csv
 import json
 import os
+import random
 import re
 import sys
 import unicodedata
@@ -41,13 +50,28 @@ TAG_RE = re.compile(r'<[^>]+>')
 LITERAL_NEWLINE_RE = re.compile(r'\\n')
 PAREN_RE = re.compile(r'\([^)]*\)')
 SPACE_RE = re.compile(r'\s+')
-ROMAN_RE = re.compile(r'^(?=[IVXLCDM]+\.?$)[IVXLCDM]+\.?$')
+ROMAN_RE = re.compile(
+    r'^(?=[IVXLCDM]+\.?$)'
+    r'M{0,4}(?:CM|CD|D?C{0,3})(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{0,3})\.?$')
 RANGE_RE = re.compile(r'(?<![\w.])(\d{1,6})\s*[-\u2013]\s*(\d{1,6})(?![\w])')
 NUMBER_RE = re.compile(r'(?<![\w.])(\d{1,6}[A-Za-z]?)(?![\w])')
 PAGE_RE = re.compile(
     r'\b(?:p{1,2}|pp?)[.]{0,2}\s*\d+(?:\s*[-\u2013]\s*\d+)?[A-Za-z]?'
     r'|\bvol\.?\s*[IVXLCDM]+\.?|\bno\.?\s*\d+', re.I)
 YEAR_CONTEXT_RE = re.compile(r'(?:\b(?:A\.?\s?D\.?|C\.?\s?E\.?|ed\.|pub\.|cent\.|c\.)\s*)$', re.I)
+
+# Edition/journal/series references measured as false positives in the H6995
+# pilot: "JPTS 1890", "JRAS 1911", "Bk 1938", "Series 51", "RASB II 777".
+# These are not manuscript catalogues, so their "numbers" are years, volumes
+# or page ranges rather than accession numbers.
+NON_ACCESSION_SIGLA = {
+    'bk', 'book', 'jpts', 'jras', 'jrasb', 'rasb', 'bbras', 'series', 'ser',
+    'extr', 'extract', 'j', 'j.', 'journ', 'journal', 'rep', 'report',
+}
+PAGE_PREFIX_RE = re.compile(r'^[\s.,;]*(?:p{1,2}|pt|vol|no)\.{0,2}\s*\d', re.I)
+YEAR_LIKE_RE = re.compile(r'^(?:1[5-9]\d{2}|20\d{2})$')
+YEAR_FOLLOWER_RE = re.compile(
+    r'^(?:[,;]\s*(?:\d|p{1,2}\.|pp?\.)|\s*(?:ff|p\.|pp\.))', re.I)
 
 # 18 Mahapurana + the two epics = the 20-work canary named in the handoff.
 CANARY_WORKS = [
@@ -183,7 +207,15 @@ def read_vdcs_detail_keys(xlsx_path):
 
 
 def catalogue_regex(lexicon):
-    alts = '|'.join(re.escape(c) for c in lexicon)
+    """Regex over true catalogue sigla; roman volume markers are dropped.
+
+    A roman numeral in the lexicon is a volume marker harvested from the
+    shipped witness strings, not a catalogue.  Keeping it as a match would
+    end the preceding catalogue's segment before its accession (so
+    "Adyar D. IV. 950" lost 950) and mint a phantom unit of its own.
+    """
+    keys = [c for c in lexicon if not ROMAN_RE.match(norm_cat(c))]
+    alts = '|'.join(re.escape(c) for c in keys)
     return re.compile(r'(?<![A-Za-zĀ-ſ])(?:' + alts + r')(?![A-Za-zĀ-ſ])')
 
 
@@ -210,20 +242,56 @@ PREFIX_TOKEN_RE = re.compile(
 )
 
 
-def extract_units(body, cat_re):
+def edition_reference_reason(cat, acc, seg, rest=''):
+    """Return the false-positive class for a candidate unit, else ``None``.
+
+    The H6995 pilot measured four non-accession classes: roman volume markers
+    harvested as if they were catalogue sigla, journal/series sigla whose
+    number is a volume or page, page/volume-prefixed references, and a
+    year-like number followed by a year list (``1890, 91``).
+    """
+    if ROMAN_RE.match(norm_cat(cat)):
+        return 'roman_volume'
+    if cat_key(cat) in NON_ACCESSION_SIGLA:
+        return 'journal_or_series'
+    if PAGE_PREFIX_RE.match(seg):
+        return 'page_ref_prefix'
+    if YEAR_LIKE_RE.match(acc) and YEAR_FOLLOWER_RE.match(rest.lstrip()):
+        return 'year_like'
+    return None
+
+
+def extract_units(body, cat_re, filter_editions=True):
     """Extract (catalogue, accession) pairs from one body.
 
     Only the *prefix* of the text after a catalogue mention is harvested:
     consecutive roman volume markers, accession numbers, ranges, page refs and
     punctuation.  The first ordinary word ends the list, which keeps
     bibliographic prose ("New Delhi, 1991", "ed. by ...") out.
+
+    Candidates in the measured edition/journal/series classes are removed
+    before the unit is returned; ``stats['raw_units']`` counts the pre-filter
+    harvest and ``stats['filtered']`` the per-class removals.
     """
     text = PAREN_RE.sub(' ', clean_body(body))
     matches = list(cat_re.finditer(text))
     units = []
     bare = 0
+    stats = {'mentions': len(matches), 'no_number_segments': 0,
+             'raw_units': 0, 'filtered': Counter()}
     if not matches:
-        return units, {'mentions': 0, 'no_number_segments': 0}
+        return units, stats
+
+    def harvest(cat, num, seg, rest):
+        stats['raw_units'] += 1
+        if filter_editions:
+            reason = edition_reference_reason(cat, num, seg, rest)
+            if reason:
+                stats['filtered'][reason] += 1
+                return False
+        units.append((cat, num))
+        return True
+
     for i, m in enumerate(matches):
         before = text[max(0, m.start() - 6):m.start()].strip().lower()
         if before.endswith(('new', 'old')):
@@ -242,17 +310,18 @@ def extract_units(body, cat_re):
             if not mm:
                 break
             pos = mm.end()
+            rest = seg[mm.end():]
             if mm.group('range'):
                 a, b = re.split(r'\s*[-\u2013]\s*', mm.group('range'))
                 for n in _expand_range(int(a), int(b)):
-                    units.append((cat, n))
+                    harvest(cat, n, seg, rest)
                     got += 1
             elif mm.group('num'):
-                units.append((cat, mm.group('num')))
+                harvest(cat, mm.group('num'), seg, rest)
                 got += 1
         if not got and stripped:
             bare += 1
-    stats = {'mentions': len(matches), 'no_number_segments': bare}
+    stats['no_number_segments'] = bare
     return units, stats
 
 
@@ -287,28 +356,32 @@ def pilot_sample(rows, n):
     return [ordered[int(i * step)] for i in range(n)]
 
 
-def run_pilot(rows, cat_re, n, out_path):
+def run_pilot(rows, cat_re, n, out_path, filter_editions=True):
     sample = pilot_sample(rows, n)
     stats = Counter()
+    filtered = Counter()
     per_vol = Counter()
     with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
         w = csv.writer(f, delimiter='\t', lineterminator='\n')
         w.writerow(['ncc_id', 'volume', 'iast', 'mentions', 'raw_units',
                     'distinct_units', 'no_number_segments'])
         for r in sample:
-            units, st = extract_units(r['body_html'], cat_re)
+            units, st = extract_units(r['body_html'], cat_re, filter_editions)
             d = dedupe(units)
             per_vol[volume_of(r)] += 1
             stats['entries'] += 1
             stats['mentions'] += st['mentions']
-            stats['raw_units'] += len(units)
+            stats['raw_units'] += st['raw_units']
+            stats['post_filter_units'] += len(units)
+            filtered.update(st['filtered'])
             stats['distinct_units'] += len(d)
             if not d:
                 stats['entries_without_units'] += 1
             w.writerow([r['ncc_id'], volume_of(r), r['iast'], st['mentions'],
-                        len(units), len(d), st.get('no_number_segments', 0)])
+                        st['raw_units'], len(d), st.get('no_number_segments', 0)])
     stats['volumes'] = len(per_vol)
     stats['sample'] = len(sample)
+    stats['removed_by_pattern'] = dict(filtered)
     return stats
 
 
@@ -330,8 +403,10 @@ def run_canary(rows, cat_re, out_path, vdcs_path=None):
             for t in titles:
                 hits.extend(by_title.get(unicodedata.normalize('NFC', t), []))
             units = []
+            raw_units = 0
             for r in hits:
-                u, _ = extract_units(r['body_html'], cat_re)
+                u, st = extract_units(r['body_html'], cat_re)
+                raw_units += st['raw_units']
                 units.extend(u)
             d = dedupe(units)
             v = vdcs.get(label, fallback)
@@ -344,7 +419,7 @@ def run_canary(rows, cat_re, out_path, vdcs_path=None):
             else:
                 delta = len(d) - v
                 status = 'DIFF'
-            results.append((label, len(hits), len(units), len(d), v, delta, status))
+            results.append((label, len(hits), raw_units, len(d), v, delta, status))
             w.writerow(results[-1])
     return results
 
@@ -391,27 +466,117 @@ def read_vdcs_canary(xlsx_path):
     return out
 
 
+def _source_span(text, cat, acc):
+    """Short body quote around the catalogue mention, for hand review."""
+    m = re.search(r'(?<![A-Za-z\u00c0-\u017f])' + re.escape(cat) +
+                  r'(?![A-Za-z\u00c0-\u017f])', text)
+    if not m:
+        return ''
+    start = max(0, m.start() - 80)
+    span = text[start:m.start() + 160]
+    return SPACE_RE.sub(' ', span).strip()
+
+
+def stratified_sample(units_by_volume, n, minimum=2):
+    """Proportional allocation with a per-volume floor, capped by supply."""
+    sizes = {v: len(u) for v, u in units_by_volume.items()}
+    total = sum(sizes.values())
+    if total <= n:
+        return {v: sizes[v] for v in sizes}
+    quotas = {v: min(sizes[v], max(minimum, int(round(n * sizes[v] / float(total)))))
+              for v in sizes}
+    while sum(quotas.values()) > n:
+        over = [v for v in quotas if quotas[v] > minimum]
+        if not over:
+            over = [v for v in quotas if quotas[v] > 0]
+        if not over:
+            break
+        v = max(over, key=lambda x: (quotas[x], x))
+        quotas[v] -= 1
+    while sum(quotas.values()) < n:
+        under = [v for v in quotas if quotas[v] < sizes[v]]
+        if not under:
+            break
+        v = max(under, key=lambda x: (sizes[x] - quotas[x], x))
+        quotas[v] += 1
+    return quotas
+
+
+def run_adjudication_sample(rows, cat_re, n, out_path, seed=20261018, pilot_n=500):
+    """Seeded, volume-stratified sample of post-filter pilot units.
+
+    ``verdict``/``reason`` are left empty: this writes the draw, not the
+    hand verdicts.  ``source_span`` is a review quote from the body.
+    """
+    by_vol = defaultdict(list)
+    for r in pilot_sample(rows, pilot_n):
+        units, _ = extract_units(r['body_html'], cat_re)
+        text = PAREN_RE.sub(' ', clean_body(r['body_html']))
+        for cat, acc in dedupe(units):
+            by_vol[volume_of(r)].append({
+                'ncc_id': r['ncc_id'],
+                'catalogue_siglum': cat,
+                'accession_number': acc,
+                'volume': volume_of(r),
+                'verdict': '',
+                'reason': '',
+                'source_span': _source_span(text, cat, acc),
+            })
+    quotas = stratified_sample(by_vol, n)
+    rng = random.Random(seed)
+    drawn = []
+    for vol in sorted(by_vol, key=lambda v: (int(v) if v.isdigit() else 999, v)):
+        drawn.extend(rng.sample(by_vol[vol], quotas.get(vol, 0)))
+    drawn.sort(key=lambda u: (int(u['volume']) if u['volume'].isdigit() else 999,
+                              u['ncc_id'], u['catalogue_siglum'], u['accession_number']))
+    with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
+        w = csv.DictWriter(f, fieldnames=['ncc_id', 'catalogue_siglum',
+                                          'accession_number', 'volume', 'verdict',
+                                          'reason', 'source_span'],
+                           delimiter='\t', lineterminator='\n')
+        w.writeheader()
+        w.writerows(drawn)
+    return {'seed': seed, 'sample': len(drawn), 'volumes': len(quotas),
+            'quota': dict(quotas), 'out': out_path}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--ncc', default=os.path.join(HERE, 'ncc.jsonl'))
     ap.add_argument('--vdcs-details',
                     help='VisualDCS counting .xlsx (abbreviation keys only)')
     ap.add_argument('--pilot', type=int, default=0)
+    ap.add_argument('--no-edition-filter', action='store_true',
+                    help='measure the pre-filter baseline')
     ap.add_argument('--canary', action='store_true')
     ap.add_argument('--full', action='store_true')
+    ap.add_argument('--adjudication-sample', type=int, default=0,
+                    help='seeded stratified draw of post-filter pilot units')
+    ap.add_argument('--seed', type=int, default=20261018)
+    ap.add_argument('--adjudication-out')
     ap.add_argument('--out-dir', default=HERE)
     args = ap.parse_args()
 
     rows = load_rows(args.ncc)
     lexicon = build_lexicon(rows, args.vdcs_details)
     cat_re = catalogue_regex(lexicon)
-    print(f'rows={len(rows)} catalogue_sigla={len(lexicon)}', file=sys.stderr)
+    roman = sum(1 for c in lexicon if ROMAN_RE.match(norm_cat(c)))
+    print(f'rows={len(rows)} catalogue_sigla={len(lexicon) - roman} '
+          f'roman_sigla_excluded={roman}', file=sys.stderr)
 
     if args.pilot:
         p = os.path.join(args.out_dir, f'ncc_mss_census_pilot_{args.pilot}.tsv')
-        st = run_pilot(rows, cat_re, args.pilot, p)
+        st = run_pilot(rows, cat_re, args.pilot, p,
+                       filter_editions=not args.no_edition_filter)
         print(json.dumps(st, ensure_ascii=False), file=sys.stderr)
         print(f'pilot -> {p}', file=sys.stderr)
+    if args.adjudication_sample:
+        p = args.adjudication_out or os.path.join(
+            args.out_dir, f'ncc_mss_adjudication_{args.adjudication_sample}.tsv')
+        st = run_adjudication_sample(rows, cat_re, args.adjudication_sample, p,
+                                     seed=args.seed)
+        print(json.dumps(st, ensure_ascii=False), file=sys.stderr)
+        print(f'adjudication sample -> {p}', file=sys.stderr)
     if args.canary:
         p = os.path.join(args.out_dir, 'ncc_mss_canary_20.tsv')
         res = run_canary(rows, cat_re, p, args.vdcs_details)
