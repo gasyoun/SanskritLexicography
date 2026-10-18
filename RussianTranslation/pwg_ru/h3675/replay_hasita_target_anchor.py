@@ -23,8 +23,8 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'src'))
 
-import german_anchor  # noqa: E402
-import target_anchor  # noqa: E402
+import german_anchor
+import target_anchor
 
 DEFAULT_ROOT = r"D:\ClaudeTools\profiles\claude1\.pwg_ru_evidence\c1\h3659"
 KEY = 'hasita~~h0_zz_pw'
@@ -56,11 +56,11 @@ def main():
         manifest = json.load(handle)
     inp = manifest['inputs'][KEY]
     field = manifest['field']
-    print('key            : %s' % KEY)
-    print('field          : %s' % field)
+    print('key            : {}'.format(KEY))
+    print('field          : {}'.format(field))
     print('source counts  : ls=%d sk=%d' % (inp['ls'], inp['sk']))
 
-    card = target_anchor._card  # noqa: F841  (keeps the module import honest under linters)
+    card = target_anchor._card
     card = build_masked_card()
     senses = target_anchor.card_senses(card)
     for index, sense in enumerate(senses):
@@ -71,17 +71,16 @@ def main():
     # The H3665 result, restated so the two replays can be read side by side.
     g_ok, g_info = german_anchor.plan(card, inp['skeleton'])
     print('')
-    print('german_anchor.plan   -> ok=%s info=%s' % (g_ok, json.dumps(g_info, ensure_ascii=False)))
+    print('german_anchor.plan   -> ok={} info={}'.format(g_ok, json.dumps(g_info, ensure_ascii=False)))
 
     ok, info = target_anchor.reanchor(card, field)
-    print('target_anchor.reanchor -> ok=%s' % ok)
+    print('target_anchor.reanchor -> ok={}'.format(ok))
     if not ok:
-        print('   info=%s' % json.dumps(info, ensure_ascii=False))
+        print('   info={}'.format(json.dumps(info, ensure_ascii=False)))
         print('')
         print('VERDICT: the target repair REFUSED this card.')
         return 1
-    print('   reinjected=%s stamp=%s'
-          % (info['missing'], json.dumps(target_anchor.stamp(info), ensure_ascii=False)))
+    print('   reinjected={} stamp={}'.format(info['missing'], json.dumps(target_anchor.stamp(info), ensure_ascii=False)))
     print('')
     for index, sense in enumerate(target_anchor.card_senses(card)):
         print('sense %d %s -> %s' % (index + 1, field, sense[field]))
@@ -94,11 +93,10 @@ def main():
         got = target_anchor.tokens(sense[field])
         want = target_anchor.tokens(sense['german'])
         assert got == want, (index, got, want)
-    print('VERIFIER: every sense\'s %s token sequence now equals its german anchor exactly.'
-          % field)
+    print('VERIFIER: every sense\'s {} token sequence now equals its german anchor exactly.'.format(field))
     print('VERDICT: `hasita~~h0_zz_pw` is REPAIRED by the target-side anchor -- the card that')
     print('         cost a paid window and was requeued as unfixable is promotable.')
-    print('         `german_anchor` on the same card: %s.' % g_info.get('reason'))
+    print('         `german_anchor` on the same card: {}.'.format(g_info.get('reason')))
     return 0
 
 

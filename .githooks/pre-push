@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
-# Uprava pre-push guard — stale-base silent-revert block (Uprava#1516, H2280).
+# Uprava pre-push guard — stale-base silent-revert block (Uprava#1516, H2280),
+# CRLF-in-blob gate (H2301), CHANGELOG [Unreleased] queue gate + committed
+# conflict-marker gate (both H3355, 26-08-2026).
+#
+# NOTE: the exec bit on THIS FILE is load-bearing — git silently skips a
+# non-executable hook (that is how this whole file was dead code on clones
+# that never chmod'ed it by hand; fixed 26-08-2026 under H3355).
 #
 # git feeds pre-push one line per ref being pushed on stdin:
 #     <local ref> <local sha> <remote ref> <remote sha>
@@ -21,6 +27,61 @@
 
 set -uo pipefail
 
+# ---- interpreter floor (H3541) -------------------------------------------
+# Every guard below is Python, so this hook must pick an interpreter that can
+# actually RUN them. Bare `command -v python3` is not enough: on macOS it
+# resolves to the system 3.9.6 while a newer Homebrew build is reachable only
+# as `python3.13`, and a below-floor pick used to die mid-guard with a raw
+# TypeError (registry half-rewritten). The required version is declared ONCE in
+# tools/pyfloor.py (FLOOR_STR) and read from there — never re-spelled here, so
+# raising the floor is a one-line edit in one file. Repos that carry this hook
+# without pyfloor.py fall back to the conservative 3.9.
+UPRAVA_TOPLEVEL="$(git rev-parse --show-toplevel 2>/dev/null || true)"
+PY_FLOOR=""
+for _pf in "$UPRAVA_TOPLEVEL/tools/pyfloor.py" "$UPRAVA_TOPLEVEL/scripts/pyfloor.py"; do
+    if [ -f "$_pf" ]; then
+        PY_FLOOR="$(sed -n 's/^FLOOR_STR = "\([0-9][0-9.]*\)".*/\1/p' "$_pf" | head -1)"
+        [ -n "$PY_FLOOR" ] && break
+    fi
+done
+[ -n "$PY_FLOOR" ] || PY_FLOOR="3.9"
+
+# exit 0 iff $1 is an interpreter at or above $PY_FLOOR
+py_meets_floor() {
+    [ -n "${1:-}" ] || return 1
+    "$1" -c 'import sys
+floor = tuple(int(p) for p in sys.argv[1].split("."))
+raise SystemExit(0 if sys.version_info[:len(floor)] >= floor else 1)' "$PY_FLOOR" >/dev/null 2>&1
+}
+
+# Preference order: whatever the caller pinned, then the plain names (a floor
+# AT the system interpreter is satisfied by these on every box), then explicit
+# minor-version binaries newest-first, then the usual Homebrew/local prefixes.
+_pinned="${PY:-}"
+PY=""
+for _cand in "$_pinned" python3 python \
+             python3.14 python3.13 python3.12 python3.11 python3.10 python3.9 \
+             /usr/bin/python3 \
+             /opt/homebrew/bin/python3 /opt/homebrew/bin/python3.13 \
+             /usr/local/bin/python3 /usr/local/bin/python3.13; do
+    [ -n "$_cand" ] || continue
+    _resolved="$(command -v "$_cand" 2>/dev/null || true)"
+    if py_meets_floor "$_resolved"; then
+        PY="$_resolved"
+        break
+    fi
+done
+
+if [ -z "$PY" ]; then
+    _found="$(command -v python3 2>/dev/null || command -v python 2>/dev/null || true)"
+    _found_v="?"
+    [ -n "$_found" ] && _found_v="$("$_found" -c 'import sys;print("%d.%d.%d" % sys.version_info[:3])' 2>/dev/null || echo "?")"
+    echo "pre-push: WARNING python-based guards will be SKIPPED — no interpreter at the floor." >&2
+    echo "  required : Python >= $PY_FLOOR  (declared in tools/pyfloor.py, FLOOR)" >&2
+    echo "  found    : ${_found:-none} ${_found_v}" >&2
+    echo "  fix      : install Python $PY_FLOOR or newer, or  PY=/path/to/python3 git push ..." >&2
+fi
+
 TOPLEVEL="$(git rev-parse --show-toplevel 2>/dev/null || true)"
 CHECKER="$TOPLEVEL/scripts/pre_push_stale_base_check.py"
 # Uprava keeps the census in tools/; cologne_batch_deploy ships it to the other
@@ -32,15 +93,53 @@ EOL_CENSUS="$TOPLEVEL/tools/eol_census.py"
 remote_name="${1:-origin}"
 status=0
 
+# ---- S27 telemetry (29-08-2026): the central guard-firing record ----------
+# Every verdict below appends ONE JSONL line to logs/guard_firings.jsonl in
+# the MAIN checkout of this clone (all linked worktrees share it through the
+# common .git dir). While that file does not exist, guard-refusal counts are
+# unknown — never zero-filled (S27 row 8,
+# reports/S27_MAIN_TREE_CONTENTION_COST_WEEKLY_29-08-2026.md; S2 census
+# verdict). Fail-open by contract: the helper itself never exits nonzero and
+# every call below is `|| true`-guarded, so a telemetry failure can never
+# change a verdict or block a push. The stale-base checker (gate 1) records
+# its own refuse/circuit-break verdicts internally — the hook only records
+# what the checker cannot see: escapes, skips, and the other gates.
+log_firing() { # $1 = guard, $2 = verdict, $3 = detail
+    [ -n "$PY" ] || return 0
+    [ -f "$TOPLEVEL/scripts/guard_firing_log.py" ] || return 0
+    "$PY" "$TOPLEVEL/scripts/guard_firing_log.py" \
+        --toplevel "$TOPLEVEL" --guard "$1" --verdict "$2" --detail "$3" \
+        >/dev/null 2>&1 || true
+}
+
 while read -r local_ref local_sha remote_ref remote_sha; do
-    # Branch deletion: local sha is all zeros. Nothing of ours to install.
-    case "$local_sha" in
-        *[!0]*) ;;
-        *) continue ;;
+    # H3249: a hand-pushed REAL vX.Y.Z tag must drop matching reserve-vX.Y.Z.
+    # This is the path `--tag` already covered; `--apply` then `git push origin
+    # vX.Y.Z` by hand used to leak the reservation (papercut c82aa29e8315).
+    # Best-effort, never blocks the tag push. Fail-open when cut_release.py is
+    # missing — this hook is copied to repos that do not carry that tool.
+    # `refs/tags/reserve-v*` is NOT a real tag (pattern requires v + digit
+    # immediately after refs/tags/).
+    case "$remote_ref" in
+        refs/tags/v[0-9]*)
+            case "$local_sha" in
+                *[!0]*)
+                    if [ -n "$PY" ] && [ -f "$TOPLEVEL/tools/cut_release.py" ]; then
+                        _ver="${remote_ref#refs/tags/v}"
+                        if ! "$PY" "$TOPLEVEL/tools/cut_release.py" "$TOPLEVEL" \
+                                --release-reservation "$_ver" --remote "$remote_name"
+                        then
+                            echo "pre-push: WARNING reservation release failed for v${_ver} (push proceeds)" >&2
+                        fi
+                    fi
+                    ;;
+            esac
+            continue
+            ;;
     esac
 
-    # New remote branch (remote sha all zeros): nothing upstream to revert.
-    case "$remote_sha" in
+    # Branch deletion: local sha is all zeros. Nothing of ours to install.
+    case "$local_sha" in
         *[!0]*) ;;
         *) continue ;;
     esac
@@ -59,17 +158,68 @@ while read -r local_ref local_sha remote_ref remote_sha; do
         *) continue ;;
     esac
 
+    # New remote branch (remote sha all zeros): the upstream-comparison checks
+    # (1)+(2) have nothing to compare against and skip — but the H3355 gates
+    # (3)+(4) MUST still run (a feature branch's FIRST push is exactly how
+    # unreviewed content reaches a PR), so this is a flag now, not a skip.
+    # H3355 fix 26-08-2026: the old `continue` here silently bypassed every
+    # gate below on first pushes of a branch.
+    new_branch=0
+    case "$remote_sha" in
+        *[!0]*) ;;
+        *) new_branch=1 ;;
+    esac
+
     # Compare against the remote-tracking ref for the branch actually being
     # updated — `git push origin HEAD:main` from a feature branch must check
     # origin/main, not origin/<feature>.
     short_remote="${remote_ref#refs/heads/}"
     tracking="$remote_name/$short_remote"
 
+    # Effective BASE for the H3355 gates below: normally the sha the remote
+    # currently holds; for a NEW-branch push (all-zero remote sha) fall back
+    # to the newest ancestor shared with main so legacy content inherited by
+    # the branch is not flagged as "newly added".
+    eff_base="$remote_sha"
+    case "$eff_base" in
+        *[!0]*) ;;
+        *) eff_base="$(git merge-base "$local_sha" "$remote_name/main" 2>/dev/null || git merge-base "$local_sha" origin/main 2>/dev/null || true)" ;;
+    esac
+
     # (1) stale-base silent-revert check — BLOCKS since 16-08-2026 (MG), see the header.
-    if [ -z "${ALLOW_STALE_BASE_PUSH:-}" ] && [ -f "$CHECKER" ]; then
-        if ! python "$CHECKER" "$local_sha" "$tracking"; then
+    #     Fail-open if the checker is missing (a partially-deployed clone), but
+    #     never silently — an inert guard must be distinguishable from a working
+    #     one (FINDINGS §263/§333 class).
+    if [ "$new_branch" -eq 1 ]; then
+        :
+    elif [ -n "${ALLOW_STALE_BASE_PUSH:-}" ]; then
+        # H3978: an escape hatch is addressed to a human. The gate refuses this
+        # override when it was set inside the same agent session that just hit
+        # this guard's refusal (the H3880 shape) and no human ruling rides along
+        # in GUARD_ESCAPE_HUMAN_RULING. Missing gate or missing interpreter =>
+        # exactly the old behaviour, never a new way to fail.
+        # H4327: the vendored copy (scripts/guard_escape_gate.py, next to this
+        # hook's checker) comes first so the refusal does not silently degrade
+        # to the old, overridable text on a HOME without ~/.claude/hooks or a
+        # claude-config checkout -- any CI runner, for one.
+        ESCAPE_GATE="$(dirname "$CHECKER")/guard_escape_gate.py"
+        [ -f "$ESCAPE_GATE" ] || ESCAPE_GATE="$HOME/.claude/hooks/guard_escape_gate.py"
+        [ -f "$ESCAPE_GATE" ] || ESCAPE_GATE="$HOME/Documents/GitHub/claude-config/hooks/guard_escape_gate.py"
+        if [ -n "$PY" ] && [ -f "$ESCAPE_GATE" ] \
+           && ! "$PY" "$ESCAPE_GATE" --check ALLOW_STALE_BASE_PUSH --repo Uprava; then
+            log_firing stale-base escape-refused "agent self-override refused"
             status=1
+        else
+            log_firing stale-base escape "ALLOW_STALE_BASE_PUSH=1; line-level check skipped"
         fi
+    elif [ ! -f "$CHECKER" ]; then
+        echo "pre-push: WARNING stale-base guard SKIPPED: $CHECKER missing — push proceeds unchecked." >&2
+        log_firing stale-base skip "checker missing: $CHECKER"
+    elif [ -z "$PY" ]; then
+        echo "pre-push: WARNING stale-base guard SKIPPED: no python3/python on PATH." >&2
+        log_firing stale-base skip "no interpreter at the floor"
+    elif ! "$PY" "$CHECKER" "$local_sha" "$tracking"; then
+        status=1
     fi
 
     # (2) CRLF-in-blob gate (H2301). Unlike (1) this BLOCKS, because it has no
@@ -83,13 +233,180 @@ while read -r local_ref local_sha remote_ref remote_sha; do
     #     reads the pushed BLOBS instead, scoped to the paths the push changes
     #     (~2 s, against ~34 s for a whole-repo scan).
     #     Escape hatch: ALLOW_CRLF_BLOB_PUSH=1 git push ...
-    if [ -z "${ALLOW_CRLF_BLOB_PUSH:-}" ] && [ -f "$EOL_CENSUS" ]; then
-        if ! python "$EOL_CENSUS" --repo "$TOPLEVEL" --ref "$local_sha" \
-                    --changed-since "$tracking"; then
-            echo "pre-push: BLOCKED — see above. Override: ALLOW_CRLF_BLOB_PUSH=1" >&2
-            status=1
-        fi
+    if [ "$new_branch" -eq 1 ]; then
+        :
+    elif [ -n "${ALLOW_CRLF_BLOB_PUSH:-}" ]; then
+        log_firing crlf-blob escape "ALLOW_CRLF_BLOB_PUSH=1"
+    elif [ ! -f "$EOL_CENSUS" ]; then
+        echo "pre-push: WARNING CRLF-blob guard SKIPPED: $EOL_CENSUS missing — push proceeds unchecked." >&2
+        log_firing crlf-blob skip "checker missing: $EOL_CENSUS"
+    elif [ -z "$PY" ]; then
+        echo "pre-push: WARNING CRLF-blob guard SKIPPED: no python3/python on PATH." >&2
+        log_firing crlf-blob skip "no interpreter at the floor"
+    elif ! "$PY" "$EOL_CENSUS" --repo "$TOPLEVEL" --ref "$local_sha" \
+                --changed-since "$tracking"; then
+        echo "pre-push: BLOCKED — see above. Override: ALLOW_CRLF_BLOB_PUSH=1" >&2
+        status=1
+        log_firing crlf-blob refuse "CR byte in a text-attributed blob of this push"
     fi
+
+    # (3) launch-graph truth on push to main (H3259 / FINDINGS §503).
+    # Fail the AUTHOR who introduces an ungated row, not later PRs. Compares
+    # local_sha against the remote-tracking tip so pre-existing main
+    # violations do not hostage this push. Uprava-only: silent skip when the
+    # checker is absent (this hook is copied to other repos). Escape:
+    # ALLOW_QUEUE_TRUTH_PUSH=1
+    QUEUE_TRUTH="$TOPLEVEL/scripts/pre_push_queue_truth.py"
+    case "$short_remote" in
+        main|master)
+            if [ -n "${ALLOW_QUEUE_TRUTH_PUSH:-}" ]; then
+                log_firing queue-truth escape "ALLOW_QUEUE_TRUTH_PUSH=1"
+            elif [ ! -f "$QUEUE_TRUTH" ]; then
+                :
+            elif [ -z "$PY" ]; then
+                echo "pre-push: WARNING queue-truth guard SKIPPED: no python on PATH." >&2
+                log_firing queue-truth skip "no interpreter at the floor"
+            elif ! "$PY" "$QUEUE_TRUTH" "$local_sha" "$tracking"; then
+                status=1
+                log_firing queue-truth refuse "ungated launch-graph row pushed to main"
+            fi
+            ;;
+    esac
+
+    # (4) CHANGELOG [Unreleased] direct-append gate (H3355, 26-08-2026) —
+    #     mirrors the pre-commit 4c gate at the push chokepoint, because
+    #     commits can arrive here via --no-verify, plumbing update-ref paths
+    #     or sequencer continuations that never ran pre-commit. Entries
+    #     belong in changelog_queue/ (one file per entry — distinct filenames
+    #     cannot race; cut_release.py consumes them at release-cut).
+    #     Escape hatch: ALLOW_CHANGELOG_DIRECT_APPEND=1 git push ...
+    if [ -n "${ALLOW_CHANGELOG_DIRECT_APPEND:-}" ]; then
+        log_firing changelog-unreleased escape "ALLOW_CHANGELOG_DIRECT_APPEND=1"
+    elif [ -z "$eff_base" ]; then
+        echo "pre-push: WARNING changelog-queue gate SKIPPED: no base commit resolvable for this push." >&2
+        log_firing changelog-unreleased skip "no base commit resolvable"
+    elif [ ! -f "$TOPLEVEL/scripts/changelog_unreleased_gate.py" ]; then
+        echo "pre-push: WARNING changelog-queue gate SKIPPED: scripts/changelog_unreleased_gate.py missing." >&2
+        log_firing changelog-unreleased skip "checker missing: scripts/changelog_unreleased_gate.py"
+    elif [ -z "$PY" ]; then
+        echo "pre-push: WARNING changelog-queue gate SKIPPED: no python3/python on PATH." >&2
+        log_firing changelog-unreleased skip "no interpreter at the floor"
+    elif ! "$PY" "$TOPLEVEL/scripts/changelog_unreleased_gate.py" \
+                --blob "$local_sha" --base "$eff_base"; then
+        echo "pre-push: BLOCKED — see above. Override: ALLOW_CHANGELOG_DIRECT_APPEND=1" >&2
+        status=1
+        log_firing changelog-unreleased refuse "direct - bullet appended under [Unreleased]"
+    fi
+
+    # (5) committed-conflict-marker gate (H3355, 26-08-2026) — the 26-08
+    #     incident pushed an UNRESOLVED CHANGELOG merge to origin/main
+    #     (bf8b7d3a8), repaired 43 s later by cc3187cf1; the H1133 pre-commit
+    #     guard never saw it. This re-checks every changed blob of the push
+    #     for BOTH marker ends (`git diff --check` candidates, verified per
+    #     blob so prose quoting one end never trips it).
+    #     Escape hatch: ALLOW_CONFLICT_MARKER_PUSH=1 git push ...
+    if [ -n "${ALLOW_CONFLICT_MARKER_PUSH:-}" ]; then
+        log_firing conflict-marker-push escape "ALLOW_CONFLICT_MARKER_PUSH=1"
+    elif [ -z "$eff_base" ]; then
+        echo "pre-push: WARNING marker gate SKIPPED: no base commit resolvable for this push." >&2
+        log_firing conflict-marker-push skip "no base commit resolvable"
+    elif [ ! -f "$TOPLEVEL/scripts/pushed_conflict_markers.py" ]; then
+        echo "pre-push: WARNING marker gate SKIPPED: scripts/pushed_conflict_markers.py missing." >&2
+        log_firing conflict-marker-push skip "checker missing: scripts/pushed_conflict_markers.py"
+    elif [ -z "$PY" ]; then
+        echo "pre-push: WARNING marker gate SKIPPED: no python3/python on PATH." >&2
+        log_firing conflict-marker-push skip "no interpreter at the floor"
+    elif ! "$PY" "$TOPLEVEL/scripts/pushed_conflict_markers.py" \
+                "$TOPLEVEL" "$local_sha" "$eff_base"; then
+        echo "pre-push: BLOCKED — see above. Override: ALLOW_CONFLICT_MARKER_PUSH=1" >&2
+        status=1
+        log_firing conflict-marker-push refuse "unresolved conflict marker in a pushed blob"
+    fi
+
+    # (6) changelog duplicate-bullet gate (H3747 follow-up, 31-08-2026) — the
+    #     same defect class as the fan-out incident in the script's own
+    #     docstring, live in this repo: three concurrent release cuts each
+    #     re-promoted [Unreleased] without checking a bullet already shipped
+    #     two versions earlier, landing 6 whole-entry duplicates across
+    #     0.195.363/364/365 that only a manual /cut-release run ever caught.
+    #     Checks the PUSHED blob at $local_sha (--ref), not the working tree —
+    #     a rebase or a different worktree can leave the two out of sync.
+    #     Escape hatch: ALLOW_CHANGELOG_DUPLICATE_PUSH=1 git push ...
+    if [ -n "${ALLOW_CHANGELOG_DUPLICATE_PUSH:-}" ]; then
+        log_firing changelog-dupe-bullet escape "ALLOW_CHANGELOG_DUPLICATE_PUSH=1"
+    elif [ ! -f "$TOPLEVEL/scripts/changelog_duplicate_bullets.py" ]; then
+        echo "pre-push: WARNING changelog-dupe guard SKIPPED: scripts/changelog_duplicate_bullets.py missing." >&2
+        log_firing changelog-dupe-bullet skip "checker missing: scripts/changelog_duplicate_bullets.py"
+    elif [ -z "$PY" ]; then
+        echo "pre-push: WARNING changelog-dupe guard SKIPPED: no python3/python on PATH." >&2
+        log_firing changelog-dupe-bullet skip "no interpreter at the floor"
+    elif ! "$PY" "$TOPLEVEL/scripts/changelog_duplicate_bullets.py" --ref "$local_sha"; then
+        echo "pre-push: BLOCKED — see above. Override: ALLOW_CHANGELOG_DUPLICATE_PUSH=1" >&2
+        status=1
+        log_firing changelog-dupe-bullet refuse "same changelog entry in more than one section"
+    fi
+
+    # (7) main-line plausibility gate (H4157, H4082 drill gaps G2/G6) —
+    #     the shallow-clone force-push class of 27-08 (INCIDENT_POPULATION N1)
+    #     slipped past gate (1) twice: a `fetch --depth=1` rewrites what
+    #     "base" means, and throwaway clones carry no hooks at all. This gate
+    #     checks the LINE itself, not the diff on it: refuse pushes to
+    #     main/master from a grafted (shallow) clone, refuse non-ancestor
+    #     (rewriting) updates, refuse a remote line that SHRANK against the
+    #     last witnessed commit count (logs/main_line_witness.json, per-clone
+    #     gitignored evidence — the live 4-vs-17793 catch). Escape hatch:
+    #     ALLOW_MAIN_LINE_REWIND=1 git push ...
+    MAIN_LINE_GATE="$TOPLEVEL/scripts/pre_push_main_line_gate.py"
+    case "$short_remote" in
+        main|master)
+            if [ "$new_branch" -eq 1 ]; then
+                :
+            elif [ -n "${ALLOW_MAIN_LINE_REWIND:-}" ]; then
+                log_firing main-line-witness escape "ALLOW_MAIN_LINE_REWIND=1"
+            elif [ ! -f "$MAIN_LINE_GATE" ]; then
+                echo "pre-push: WARNING main-line gate SKIPPED: $MAIN_LINE_GATE missing — push proceeds unchecked." >&2
+                log_firing main-line-witness skip "checker missing: $MAIN_LINE_GATE"
+            elif [ -z "$PY" ]; then
+                echo "pre-push: WARNING main-line gate SKIPPED: no interpreter at the floor." >&2
+                log_firing main-line-witness skip "no interpreter at the floor"
+            elif ! "$PY" "$MAIN_LINE_GATE" "$local_sha" "$tracking" "$remote_sha"; then
+                status=1
+                log_firing main-line-witness refuse "implausible main line (shallow/rewrite/shrunk)"
+            fi
+            ;;
+    esac
+
+    # (8) test-manifest coverage gate (H4202, 06-09-2026) — the CI
+    #     "Manifest coverage" step went red on EVERY push for a full day
+    #     (email spam) because six tools/test_*.py modules landed without
+    #     manifest rows and nothing checked at push time. Runs the same
+    #     --check against the pushing tree (for a clean tree the worktree
+    #     checkout IS the pushed content; a dirty tree can fool this — CI
+    #     remains the backstop, this gate is the early tripwire). Fires only
+    #     when the push adds/changes tools/test_*.py or the manifest itself.
+    #     Uprava-only: silent skip when the builder is absent (this hook is
+    #     copied to repos without the manifest). Escape hatch:
+    #     ALLOW_MANIFEST_PUSH=1 git push ...
+    MANIFEST_BUILDER="$TOPLEVEL/tools/build_test_manifest.py"
+    case "$short_remote" in
+        main|master)
+            if [ -n "${ALLOW_MANIFEST_PUSH:-}" ]; then
+                log_firing manifest-coverage escape "ALLOW_MANIFEST_PUSH=1"
+            elif [ ! -f "$MANIFEST_BUILDER" ]; then
+                :
+            elif [ -z "$PY" ]; then
+                echo "pre-push: WARNING manifest gate SKIPPED: no interpreter at the floor." >&2
+                log_firing manifest-coverage skip "no interpreter at the floor"
+            elif ! git diff --name-only --diff-filter=ACMR "$tracking" "$local_sha" 2>/dev/null \
+                    | grep -q -e '^tools/test_.*\.py$' -e '^tools/test_manifest\.json$'; then
+                :  # push does not touch test modules or the manifest
+            elif ! "$PY" "$MANIFEST_BUILDER" --check; then
+                echo "pre-push: BLOCKED — register the new tools/test_*.py row(s): python tools/build_test_manifest.py --write. Override: ALLOW_MANIFEST_PUSH=1" >&2
+                status=1
+                log_firing manifest-coverage refuse "unregistered tools/test_*.py pushed to main"
+            fi
+            ;;
+    esac
 done
 
 exit "$status"

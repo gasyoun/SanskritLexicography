@@ -274,8 +274,8 @@ def sort_key(did):
 
 
 def bullets(items):
-    return '<ul style="margin:0;padding-left:18px">%s</ul>' % ''.join(
-        '<li style="margin-bottom:4px">%s</li>' % esc(x) for x in items)
+    return '<ul style="margin:0;padding-left:18px">{}</ul>'.format(''.join(
+        '<li style="margin-bottom:4px">{}</li>'.format(esc(x)) for x in items))
 
 
 def build_item(did, card, table, source_map):
@@ -284,33 +284,31 @@ def build_item(did, card, table, source_map):
     rows = []
     for s in sigla:
         r = works[s]
-        rows.append('<li><b>%s</b> — %s · curated %s…%s · phase-1 point %s · %s citations</li>' % (
+        rows.append('<li><b>{}</b> — {} · curated {}…{} · phase-1 point {} · {} citations</li>'.format(
             esc(s), esc(r['name']), esc(r['earliest']), esc(r['latest']),
             esc(r['map_date']), '{:,}'.format(source_map[s]['citations'])))
     refs = sorted({src['ref'] for s in sigla for src in works[s]['sources']})
-    bib = ''.join('<li><b>%s</b> — %s</li>' % (esc(k), esc(table['sources'][k]['citation']))
+    bib = ''.join('<li><b>{}</b> — {}</li>'.format(esc(k), esc(table['sources'][k]['citation']))
                   for k in refs)
 
     # V13 identity gate: no reviewer sees a bare PWG siglum. Every siglum this card
     # moves is expanded in the question itself, in the fixed «· SIGLUM = Work» form
     # the gate's pattern reads.
-    identity = ' '.join('· %s = %s' % (esc(s), esc(works[s]['name'])) for s in sigla)
+    identity = ' '.join('· {} = {}'.format(esc(s), esc(works[s]['name'])) for s in sigla)
 
-    question = ('<b>%s</b>'
-                '<div class="muted" style="margin-top:6px;font-weight:normal">%s</div>'
-                '<div style="margin-top:8px">Approve = <b>%s</b></div>'
+    question = ('<b>{}</b>'
+                '<div class="muted" style="margin-top:6px;font-weight:normal">{}</div>'
+                '<div style="margin-top:8px">Approve = <b>{}</b></div>'
                 '<div class="muted" style="margin-top:8px;font-weight:normal">'
-                'Sigla in this card %s</div>'
-                % (esc(card['title']), esc(card['fork']), esc(card['propose']), identity))
+                'Sigla in this card {}</div>'.format(esc(card['title']), esc(card['fork']), esc(card['propose']), identity))
 
     panels = [
         ('What the evidence says', bullets(card['evidence'])),
         ('Recommendation',
-         '<div>%s</div><div class="muted" style="margin-top:6px">Would be reversed by: %s</div>'
-         % (esc(card['recommend']), esc(card['reverses']))),
+         '<div>{}</div><div class="muted" style="margin-top:6px">Would be reversed by: {}</div>'.format(esc(card['recommend']), esc(card['reverses']))),
         ('Sigla this decision moves (%d)' % len(sigla),
-         '<ul style="margin:0;padding-left:18px">%s</ul>' % ''.join(rows)),
-        ('Sources cited on these rows', '<ul style="margin:0;padding-left:18px">%s</ul>' % bib),
+         '<ul style="margin:0;padding-left:18px">{}</ul>'.format(''.join(rows))),
+        ('Sources cited on these rows', '<ul style="margin:0;padding-left:18px">{}</ul>'.format(bib)),
     ]
     return {
         'id': did,
@@ -332,7 +330,7 @@ def main():
         if args[i] == '--out':
             out_path = args[i + 1]; i += 2
         else:
-            raise SystemExit('unknown option: %s' % args[i])
+            raise SystemExit('unknown option: {}'.format(args[i]))
 
     with open(TABLE, encoding='utf-8') as fh:
         table = json.load(fh)
@@ -341,10 +339,10 @@ def main():
 
     missing = sorted(set(table['decisions']) - set(CARDS))
     if missing:
-        raise SystemExit('no card written for decision(s): %s' % ', '.join(missing))
+        raise SystemExit('no card written for decision(s): {}'.format(', '.join(missing)))
     stray = sorted(set(CARDS) - set(table['decisions']))
     if stray:
-        raise SystemExit('card(s) for decisions absent from the table: %s' % ', '.join(stray))
+        raise SystemExit('card(s) for decisions absent from the table: {}'.format(', '.join(stray)))
 
     works = table['works']
     items = [build_item(d, CARDS[d], table, source_map)
@@ -406,7 +404,7 @@ def main():
         },
     }
     config.update(standard_config(
-        save_as='RussianTranslation\\review\\%s_decisions.json' % SHEET_ID))
+        save_as='RussianTranslation\\review\\{}_decisions.json'.format(SHEET_ID)))
 
     doc = render_review_sheet(
         items, config, extras=True, manifest=manifest,

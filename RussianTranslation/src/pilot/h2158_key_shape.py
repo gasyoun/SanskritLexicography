@@ -48,14 +48,14 @@ def classify(value):
 def report(source, name, raw):
     value = raw.strip().strip('"').strip("'")
     prefix, meaning = classify(value)
-    print('  source      : %s' % source)
-    print('  name        : %s' % name)
+    print('  source      : {}'.format(source))
+    print('  name        : {}'.format(name))
     print('  length      : %d (after stripping quotes/whitespace)' % len(value))
     print('  raw length  : %d %s' % (len(raw),
                                      '(!! stray whitespace or quotes in the file)'
                                      if len(raw) != len(value) else ''))
-    print('  prefix      : %s...' % prefix)
-    print('  verdict     : %s' % meaning)
+    print('  prefix      : {}...'.format(prefix))
+    print('  verdict     : {}'.format(meaning))
     if any(c in value for c in ' \t\r\n'):
         print('  !! the value contains an INTERNAL space/newline -- likely a wrapped paste')
     print()
@@ -78,9 +78,9 @@ def main():
                     found = True
                     report(SECRETS_ENV, name.strip(), raw.rstrip('\n'))
     else:
-        print('  %s does not exist' % SECRETS_ENV)
+        print('  {} does not exist'.format(SECRETS_ENV))
     if not found:
-        print('  no Anthropic credential found in the environment or in %s' % SECRETS_ENV)
+        print('  no Anthropic credential found in the environment or in {}'.format(SECRETS_ENV))
     return 0
 
 

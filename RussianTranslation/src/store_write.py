@@ -39,7 +39,7 @@ import sys
 import tempfile
 import uuid
 
-from promote_lock import PromoteClaim, ClaimBusy, DEFAULT_TTL_SECONDS  # noqa: F401
+from promote_lock import PromoteClaim, ClaimBusy, DEFAULT_TTL_SECONDS
 
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
@@ -127,9 +127,8 @@ def _refresh_integrity_extract(store):
     except BaseException as exc:  # includes the SystemExit for "csl_pyutil absent"
         sys.stderr.write(
             'WARNING: the store was written, but the H2891 review-overlay extract '
-            'could not be refreshed (%s: %s).\n'
-            '         Run `python src/build_integrity_extract.py` before committing.\n'
-            % (type(exc).__name__, exc))
+            'could not be refreshed ({}: {}).\n'
+            '         Run `python src/build_integrity_extract.py` before committing.\n'.format(type(exc).__name__, exc))
 
 
 def locked_store_rewrite(store, rows, tag, no_backup=False, steal_lock=False,
@@ -152,7 +151,7 @@ def locked_store_rewrite(store, rows, tag, no_backup=False, steal_lock=False,
             _fsynced_backup(store, bak)
         directory = os.path.dirname(os.path.abspath(store)) or '.'
         os.makedirs(directory, exist_ok=True)
-        fd, tmp = tempfile.mkstemp(prefix='.%s.' % os.path.basename(store),
+        fd, tmp = tempfile.mkstemp(prefix='.{}.'.format(os.path.basename(store)),
                                    suffix='.tmp', dir=directory)
         try:
             with os.fdopen(fd, 'wb') as fh:

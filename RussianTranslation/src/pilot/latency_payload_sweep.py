@@ -14,11 +14,16 @@ load-representative task (one clear ``{"ok": true}`` instruction + ``padding_byt
 domain-shaped filler) under ``--permission-mode plan`` -- NOT the old 63 B ``PREFIX`` + N*'x'
 (that padding tripped Sonnet-5's plan-mode refusal, a false NO-GO). Two byte counts are reported
 and must not be conflated (sol.md #4):
-  * ``padding_bytes``       -- the ``--ladder`` / ``MEASURED_SIZE`` argument (the filler size).
+  * ``padding_bytes``       -- the ``--ladder`` / ``MEASURED_SIZE`` argument (since H4527 the
+                               filler is padding_bytes + 4 238 B, the retired prefix's bytes).
   * ``actual_prompt_bytes`` -- the TRUE encoded prompt size, derived from the SAME
                                ``_probe_prompt`` the probe sends (single source of truth, cannot
                                drift; == ``total_input_bytes``, kept under both names).
-For the D-K measured acceptance size, padding_bytes=6491 -> actual_prompt_bytes=6828 (v1.9.17+).
+For the D-K measured acceptance size, padding_bytes=6491 -> actual_prompt_bytes=6828 (v1.9.17+),
+10 729 after H3157/H4277 prepended the TASK SHAPE block and bridge, 11 082 since H4527 (15-09-2026)
+replaced both with one honest question and kept their bytes as reference text. Readings across
+that change are NOT latency-comparable (the question needs far less thinking); probe event rows
+carry ``probe_prompt_sha`` to split the series.
 Output is validated by result-envelope structure ({"ok": true}); only its BYTE
 COUNT is recorded -- never the output content, never credentials.
 
@@ -49,9 +54,9 @@ sys.stderr.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from max_account_orchestrator import (_probe_call, _probe_prompt, EXACT_GEN_MODEL,
-                                      write_synthetic_preflight)  # noqa: E402
-from call_reservation import CallLimitReached, CallReservationLedger  # noqa: E402
-from execution_contract import ActiveCallClaim, config_dir_fingerprint  # noqa: E402
+                                      write_synthetic_preflight)
+from call_reservation import CallLimitReached, CallReservationLedger
+from execution_contract import ActiveCallClaim, config_dir_fingerprint
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MEASURED_SIZE = 6491  # padding_bytes of the D-K measured acceptance probe (-> 6828 actual, v1.9.17+)
@@ -115,10 +120,8 @@ def one_call(config_dir, claude, padding_bytes, *, route, window, account_label,
         'output_bytes': output_bytes,            # BYTE COUNT only -- never the output content
         'wall_s': round(time.monotonic() - t0, 2),
     }
-    tag = 'warmup' if warmup else 'seq=%s' % sample_index
-    print('%s route=%s window=%s %s pad=%dB actual=%dB -> %d ms %s'
-          % (ts, route, window, tag, padding_bytes, actual_bytes,
-             latency_ms, cls), flush=True)
+    tag = 'warmup' if warmup else 'seq={}'.format(sample_index)
+    print(f'{ts} route={route} window={window} {tag} pad={padding_bytes:d}B actual={actual_bytes:d}B -> {latency_ms:d} ms {cls}', flush=True)
     return row
 
 

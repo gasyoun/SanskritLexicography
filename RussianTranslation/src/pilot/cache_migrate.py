@@ -23,8 +23,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import cache_identity as ident  # noqa: E402
-import prompt_compiler as compiler  # noqa: E402
+import cache_identity as ident
+import prompt_compiler as compiler
 
 KNOWN_LEGACY = (
     'legacy_claude_v0',
@@ -90,7 +90,7 @@ def detect_kind(obj):
         # v1 record that also carries a kind tag is not ambiguous if schema wins.
         if ident.REQUEST_SCHEMA in unique and declared == ident.REQUEST_SCHEMA:
             return ident.REQUEST_SCHEMA
-        raise MigrationError('ambiguous legacy artifact: %s' % ','.join(unique))
+        raise MigrationError('ambiguous legacy artifact: {}'.format(','.join(unique)))
     return unique[0]
 
 
@@ -197,7 +197,7 @@ def convert_obj(obj):
         known = set(obj)
         return _wrap(ident.build_request_record(fields), obj, kind, {})
 
-    raise MigrationError('no converter for kind %s' % kind)
+    raise MigrationError('no converter for kind {}'.format(kind))
 
 
 def check_obj(obj):
@@ -221,7 +221,7 @@ def verify_pair(legacy, converted):
     for key in ('provider', 'requested_model', 'stable_prefix_sha256',
                 'volatile_tail_sha256', 'response_schema_sha256'):
         if fresh.get(key) != converted.get(key):
-            raise MigrationError('field %s drifted' % key)
+            raise MigrationError('field {} drifted'.format(key))
     return {'ok': True, 'request_id': fresh['request_id']}
 
 
@@ -334,7 +334,7 @@ def main(argv=None):
         if args.cmd == 'verify':
             return cmd_verify(args)
     except MigrationError as exc:
-        print('REFUSE: %s' % exc, file=sys.stderr)
+        print('REFUSE: {}'.format(exc), file=sys.stderr)
         return 2
     return 1
 

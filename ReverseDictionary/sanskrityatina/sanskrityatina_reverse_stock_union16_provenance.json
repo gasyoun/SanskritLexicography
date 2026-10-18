@@ -1,0 +1,252 @@
+{
+  "handoff": "H4800",
+  "generated": "19-09-2026",
+  "executor": "OxAlpha (opencode/z-ai/glm-5.3-flash)",
+  "join_key": "sanskrit-util slp1_form_key -- master = slp1_form_key(to_slp1(word)); union16 key = slp1_form_key(bare slp1 column); identical pipeline both sides",
+  "inputs": {
+    "xlsm_master": {
+      "path": "/Users/mac/Documents/GitHub/SanskritLexicography-h4800-drain/ReverseDictionary/sanskrityatina/raw/IAST-hyphenation_b7.xlsm",
+      "sha256": "b5acfd060964b43739000658942cb3de3fa282adef0a6f25a994d8313eb157cf",
+      "source": "yadisk:Sanskrityatina/04_Reverse/IAST-hyphenation_b7.xlsm (2014-09-10)",
+      "sheet": "All_TEXT_NEW",
+      "data_rows": 252134
+    },
+    "union16": {
+      "path": "/Users/mac/Documents/GitHub/SanskritLexicography-h4800-drain/ReverseDictionary/sanskrityatina/../../HeadwordLists/union-16dicts/union_headwords_16.tsv",
+      "sha256": "2e02c6606d57c0f9b7944b49296930fec1dc8e0317fa603f396c5d60cc74b71b",
+      "unique_keys": 374078,
+      "form_key_collided_union_rows": 996
+    },
+    "union15": {
+      "path": "/Users/mac/Documents/GitHub/SanskritLexicography-h4800-drain/ReverseDictionary/sanskrityatina/../../HeadwordLists/union/union_headwords.tsv",
+      "sha256": "1e8260144f68e57c9ceb4628a683f741160232a9759e031bb5df83ad4bf6586f",
+      "unique_keys": 280619,
+      "form_key_collided_union_rows": 925
+    }
+  },
+  "results": {
+    "master_words": 252134,
+    "in_union16": 205149,
+    "residue_vs_union16": 46985,
+    "coverage_pct": 81.37,
+    "in_union15": 204788,
+    "words_longer_than_15": 28060,
+    "normalization_counts": {
+      "hyph": 35622,
+      "acc": 55586,
+      "space": 2
+    },
+    "unmapped_words_total": 68,
+    "unmapped_examples": [
+      {
+        "word": "kṛ́ṣṇo'syāk--hareṣṭhaka",
+        "chars": [
+          "'",
+          "-",
+          "́"
+        ]
+      },
+      {
+        "word": "apuro'nu--vākyàka",
+        "chars": [
+          "'",
+          "-",
+          "à"
+        ]
+      },
+      {
+        "word": "niḥkа°",
+        "chars": [
+          "°",
+          "а"
+        ]
+      },
+      {
+        "word": "khe$ṭa",
+        "chars": [
+          "$"
+        ]
+      },
+      {
+        "word": "ba̱ta̱",
+        "chars": [
+          "̱"
+        ]
+      },
+      {
+        "word": "kr4andita",
+        "chars": [
+          "4"
+        ]
+      },
+      {
+        "word": "paro'śītá",
+        "chars": [
+          "'",
+          "á"
+        ]
+      },
+      {
+        "word": "OṂkṛta",
+        "chars": [
+          "Ṃ"
+        ]
+      },
+      {
+        "word": "unam1da",
+        "chars": [
+          "1"
+        ]
+      },
+      {
+        "word": "niḥpа°",
+        "chars": [
+          "°",
+          "а"
+        ]
+      },
+      {
+        "word": "catuḥpа°",
+        "chars": [
+          "°",
+          "а"
+        ]
+      },
+      {
+        "word": "duḥpа°",
+        "chars": [
+          "°",
+          "а"
+        ]
+      },
+      {
+        "word": "araṇye'--nuvākyà",
+        "chars": [
+          "'",
+          "-",
+          "à"
+        ]
+      },
+      {
+        "word": "araṇye'--nū́cya",
+        "chars": [
+          "'",
+          "-",
+          "́"
+        ]
+      },
+      {
+        "word": "araṇye$nūcya",
+        "chars": [
+          "$"
+        ]
+      }
+    ],
+    "form_keys_with_multiple_raw_words": 5132,
+    "coverage_by_tag": {
+      "(none)": {
+        "words": 112830,
+        "in_union16": 96382,
+        "residue": 16448,
+        "coverage_pct": 85.42
+      },
+      "A": {
+        "words": 9040,
+        "in_union16": 7696,
+        "residue": 1344,
+        "coverage_pct": 85.13
+      },
+      "B": {
+        "words": 4797,
+        "in_union16": 4212,
+        "residue": 585,
+        "coverage_pct": 87.8
+      },
+      "G": {
+        "words": 29314,
+        "in_union16": 25466,
+        "residue": 3848,
+        "coverage_pct": 86.87
+      },
+      "H": {
+        "words": 10829,
+        "in_union16": 9343,
+        "residue": 1486,
+        "coverage_pct": 86.28
+      },
+      "I": {
+        "words": 6144,
+        "in_union16": 548,
+        "residue": 5596,
+        "coverage_pct": 8.92
+      },
+      "M": {
+        "words": 65321,
+        "in_union16": 53774,
+        "residue": 11547,
+        "coverage_pct": 82.32
+      },
+      "N": {
+        "words": 2396,
+        "in_union16": 1876,
+        "residue": 520,
+        "coverage_pct": 78.3
+      },
+      "P": {
+        "words": 1544,
+        "in_union16": 182,
+        "residue": 1362,
+        "coverage_pct": 11.79
+      },
+      "R": {
+        "words": 2013,
+        "in_union16": 913,
+        "residue": 1100,
+        "coverage_pct": 45.36
+      },
+      "S": {
+        "words": 5858,
+        "in_union16": 4278,
+        "residue": 1580,
+        "coverage_pct": 73.03
+      },
+      "U": {
+        "words": 1580,
+        "in_union16": 185,
+        "residue": 1395,
+        "coverage_pct": 11.71
+      },
+      "V": {
+        "words": 468,
+        "in_union16": 294,
+        "residue": 174,
+        "coverage_pct": 62.82
+      }
+    },
+    "n_dicts_histogram_matched": {
+      "1": 59783,
+      "2": 38879,
+      "3": 39837,
+      "4": 25674,
+      "5": 15792,
+      "6": 9488,
+      "7": 5515,
+      "8": 3773,
+      "9": 2790,
+      "10": 1840,
+      "11": 1004,
+      "12": 511,
+      "13": 205,
+      "14": 47,
+      "15": 8,
+      "16": 3
+    }
+  },
+  "caveats": [
+    "The 187,992-headword CODED stock has NO surviving per-headword list (legend only -- H4475 section 5, meta backlog item 2); this join measures the recoverable per-headword artifact of the same 04_Reverse workshop: the 252,134-word IAST-hyphenation_b7 master word list. Class-level stock numbers stay legend-only.",
+    "The one-letter source tags (M 19,956 / H 2,556 / G 2,491 / ...) are carried verbatim as opaque provenance; their dictionary mapping is undocumented in the workbook.",
+    "Workshop markup is normalized to the union's bare-lemma key space exactly as H4797 normalized accented key2 forms: sandhi hyphens ('--'), Vedic pitch accents, and stray inner spaces are stripped, flagged in the `norm` column and counted per class (results.normalization_counts) -- never silently.",
+    "Workbook noise (junk forms like 'uṃṃ') is data: rows are counted, never silently dropped; form_key folds case/nasals exactly as on the union side.",
+    "Words with characters outside the SLP1 alphabet after transcoding are counted (unmapped) and cannot key-match."
+  ]
+}

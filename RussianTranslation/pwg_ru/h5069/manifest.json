@@ -1,0 +1,251 @@
+{
+  "generated": "2026-09-20",
+  "handoff": "H5069",
+  "n_selected": 30,
+  "records": [
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:7aaed6a68941c199642e4f0039ec0ee0494ab6fcabab0eafa55ece52a8a03ece",
+      "sense_id": "pwg.sense:vid:vid:1:1",
+      "source_hash": "9a6fc489772cff787c325b5046ecc240ef876e846041aa611a71463d9a82cdeb",
+      "stratum": "short_gloss",
+      "target_hash": "745c4803400e5f65f2b330f208ad4b70ffecacc1c45ddf42c8c5e12402c5ab81"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-fragment:ru:5a8d6f28b8ef4d16958cae446a2ac43295c983db5daca0ca2e484df086971fb7",
+      "sense_id": "pwg.sense:vid:3:1",
+      "source_hash": "90a20acdc207d08774a11be2eb8e1f743213f519f9324e51ac4e1d969e65d651",
+      "stratum": "short_gloss",
+      "target_hash": "15fbcd2b92ede3f85b7a8fca51822b338a7c128431c7af2bcfe75da46ef51bf1"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-fragment:ru:00a3bb57cbf5d315072cc55ef06a913dd08912ca3f4fc2075e822cc50a40509d",
+      "sense_id": "pwg.sense:vid:3:1",
+      "source_hash": "2458a5561a63c416d06151bf90c1dcf19ba93b64423542cc69f9d445b049f783",
+      "stratum": "short_gloss",
+      "target_hash": "56f1c6f5efbf8ce7be8775c59f052e3088a8b5844798778914fed7efd1f6bc24"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:ecee6044cbc19776e5e31e6ae9b17397b6df1010577dfe9fa50bb7729df7a1ee",
+      "sense_id": "pwg.sense:laB:pari-labh:1:1",
+      "source_hash": "5d4a627e2720fe24a7c686765bcc7a0f242bc88a418537b37b25928a4c4e1034",
+      "stratum": "short_gloss",
+      "target_hash": "736f80e87ee20c26408c0b7a86a2539d290ff3c62e317a4b5a4280fcd7fcb523"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:ce51eb9709b5f67fb8e87dfd788d304a22d548a378b819f7cf571c7d34a8515e",
+      "sense_id": "pwg.sense:Sru:pratisam+śru:1:1",
+      "source_hash": "44e23b6056fa3f84ab327ef92d34620f8dfc11c7a703a82571f322cc58578a8d",
+      "stratum": "short_gloss",
+      "target_hash": "011543568e6a2b4824ddd5571a0db61a587de7d011d5431f6350de40f537d44f"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:78ec5075c7a0bd8f94783c8940c4c7c7b227d1fcd5327cab6795c5954f072986",
+      "sense_id": "pwg.sense:nI:pratiparānī-nī:1:1",
+      "source_hash": "93e105049738e1c5fc4caeb39dcee0d14b57a217e8f3d09dc53ba34fb2262940",
+      "stratum": "short_gloss",
+      "target_hash": "2aa1418dadbf1f6a48023436d0cc35a46a5f85c1664f727b289b708b55a87375"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:9e4693af19acf80f4f0b9b2e6a90d0faa3d23688ae996aba7d3c90417b714f6d",
+      "sense_id": "pwg.sense:unresolved:han:0",
+      "source_hash": "09832cee4515e6aa191d8bd665f9697d0f0b6111ae8d447514c9a43928dd4fbf",
+      "stratum": "uncertainty",
+      "target_hash": "7fd8ec6517c0f2fecda2a757c8978276216ff705b8432bb3650617dbe50bf13c"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:9fd97fb29219baff39a21e01dc4e58426c39e8cc7e4815708f45cd2516a9b387",
+      "sense_id": "pwg.sense:unresolved:DA:0",
+      "source_hash": "de33896ed9e6b8bc60c930e84713d59e66c597d62afff0e010a259cfebe83ca9",
+      "stratum": "uncertainty",
+      "target_hash": "b2429d50e4378615e0b0b818c51041239e9e295b59292c94035bce91332193c2"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:f54d183b9571e8c55dad2fb451e1d6d08ca6132fd17cc1a944172995b67008e0",
+      "sense_id": "pwg.sense:unresolved:vas:0",
+      "source_hash": "78f1bf438861a34aeed0435859f24d781b14a02f6e1849ef6f486f0a8f3fbca4",
+      "stratum": "uncertainty",
+      "target_hash": "4e0bedc76833b85b7733abef03f1abcbe3ec60683093378d66eb78eea7bd3f18"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:6483d89d3899637380a6a03f5468e3ff2cce7b3cd381f31d31ab8491c4e35757",
+      "sense_id": "pwg.sense:unresolved:jYA:0",
+      "source_hash": "a27564b16e9217a1de4948502820ba44c469e9fca931d53d324b7a6b17ce0399",
+      "stratum": "uncertainty",
+      "target_hash": "0509f4f1b1f0dce283d7085766123eb3fc0784c635d24f48627fd55b971091cc"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:2cd1b48f4dd5eb9a61e9eef5dedd2d7177ef299808577bb7cb59a898872a18e5",
+      "sense_id": "pwg.sense:unresolved:muc:0",
+      "source_hash": "4c9b0985d6544ffe4b76e7dad5e421c9198944938adde622bb098a2999dba078",
+      "stratum": "uncertainty",
+      "target_hash": "135cbc931d1909ae0f3ae2719fb2f5fb9069eb55dfcd70559abc0238b9914396"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:d655bf049c89c2f9d160358eec78b454272aa2cb746e26391a5a06d9bf3b06be",
+      "sense_id": "pwg.sense:unresolved:yA:0",
+      "source_hash": "8ab573378a89217c7092658f92040594d3a00a3daf161dccb0b6e95e913ba2b3",
+      "stratum": "uncertainty",
+      "target_hash": "9b5031fc620860cc8630d46ea0d768afb74ddef1d0f7bc189654b4bb8e8144cc"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:b11e71dd6389e65c23e997daf262d862d9d17b90382fb2a6268dc8ba15c591f6",
+      "sense_id": "pwg.sense:unresolved:gam:0",
+      "source_hash": "927c75a8661729e25ef4b7f07b7a7a27d982bb9f3ae53c4f9e4343a615e551f8",
+      "stratum": "polysemy",
+      "target_hash": "73d3c63d6c674381ead49ec87fbd0e5905633c603051d282f27b9dc096700487"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:4b5fd987d0945110751218ea74fb170ce76725945b52b6fa9f39eef7739f8a41",
+      "sense_id": "pwg.sense:unresolved:gA:0",
+      "source_hash": "b86427a1c2af9bd1b05b995b2fe56739b2015a36d51d103186780e80330a5cc1",
+      "stratum": "polysemy",
+      "target_hash": "1ae2a6a1d0b64d41fd7fbd67f0aaf52722d096f5214859a07ee4de28b8e1b4a6"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:c5b749b2ac1c1e99124e1465ee32be91bf514a6a8a7420e4970c778cc2c06bbb",
+      "sense_id": "pwg.sense:unresolved:jan:0",
+      "source_hash": "9fb14c26a7d2c05fe13ba89cbc0f1ebd3a5b4a91f878e7c9eed13f453dae8fc8",
+      "stratum": "polysemy",
+      "target_hash": "801bb653073920d1c6bc913ed8c805a4c4525df08fa8d1fcc2a8f4eae3d289ea"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:6c2a320deea070815e8b7bcc514a1b79dcbb133d7749606585d33ca80072db0e",
+      "sense_id": "pwg.sense:unresolved:yat:0",
+      "source_hash": "633bb5fda7ad94412c8755ff0b6601627aff184aff440124714765df0d2eb325",
+      "stratum": "polysemy",
+      "target_hash": "ba628788b88d4cc68fbb86da0ee52bdae1367e337ac5e4bd88aa75848bdfa619"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:b9fa0fe720696c78ba3e17c00f2f98dceefff450842a16b8d935a772fc797a6d",
+      "sense_id": "pwg.sense:unresolved:gam:0",
+      "source_hash": "0b7d7588dfea1e43002b4813b287203a8b871862cf0def45d140f2af8a198cc9",
+      "stratum": "polysemy",
+      "target_hash": "eaee2e361b9bbe0521d93efe6b5b5887aa76c10645a2183b5700a8e0eae362c8"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:5f87d7ba5df9ac689c992132bd4e9cde3dcc4bb8add816c6764b44cd8ec06938",
+      "sense_id": "pwg.sense:unresolved:vah:0",
+      "source_hash": "febbd0033276d5d0c3380f57f91459663dae2e76b467186078de22760f208ba8",
+      "stratum": "polysemy",
+      "target_hash": "f767b79c5bcd8314da8e54abaf4534046e3f155d162fe537cd66a57df64fd540"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:a172722def8015326710159d4bb8d8262f96d58cc014243dbbaa6a9bb7156f42",
+      "sense_id": "pwg.sense:vraj:pari-vraj:1:1",
+      "source_hash": "f5852af24731d38618b0619bc8eab443903d599bae681c3416a8ded5c20af14a",
+      "stratum": "compound",
+      "target_hash": "7a5bea326f58ab71da090901af1d7a2c85b4ac490c1c33e0197193f0a1f45a4f"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:082f5e20e478d9c9d728b05c573a4e71841e3cb08287ff97e19e2276072d3a3a",
+      "sense_id": "pwg.sense:vid:adhi + vid:1:1",
+      "source_hash": "9bcd0a723a47f409945858517b3ef6412812cb91f61132b87789152287a0a6d8",
+      "stratum": "compound",
+      "target_hash": "d8df9ca375246ce42e60eb679c53f34088b398e390e7aa0cb33a034d4cf2939c"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:e6306eb63ae68438f5f5d7b695684f32720085530bce3d45456f04d2597d5508",
+      "sense_id": "pwg.sense:unresolved:dA:0",
+      "source_hash": "0b8e11a953879bc70e3feca478dc1655a66aea2d1d9753b7a75151cf278cdd99",
+      "stratum": "compound",
+      "target_hash": "6558930bfbea64b748685d2b362230b51f8cfead1a4b219c9c286657f17770e8"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:30226764f2c3caf41f3302793f4a7393f87258c043bf7803a73305a4ddcb27f3",
+      "sense_id": "pwg.sense:unresolved:gam:0",
+      "source_hash": "cc50da9615d198da2399be32ab4aa6480d17dab9b771a1f78d1cb3a96ff38e82",
+      "stratum": "compound",
+      "target_hash": "d24d307a6d8be92027b0fe9aeea658612c596358b7a97882da217ce2bbb3ad35"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:11b94c0564a77d802f380e1340d51a5b179b9fc42a3f83300ad60391a44693e4",
+      "sense_id": "pwg.sense:unresolved:banD:0",
+      "source_hash": "e4f70b364afa9f1cba8b1431de280a7c7998e78e2c556f933d6db5e1419097ab",
+      "stratum": "compound",
+      "target_hash": "e78c2255fa6fe2bb392bc0dee74be502966ad82fc16d569a86d570b5b349b75c"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:1ab1c6d35f2177c0f66e7745d23ef7d362bb05841f4daa38eef785810e67fcbf",
+      "sense_id": "pwg.sense:unresolved:car:0",
+      "source_hash": "553f0c58267a251ba82a24cde8bae2ef32c93e3e3e366f1d0f584bfb63679ffb",
+      "stratum": "compound",
+      "target_hash": "a12eb7901a4b8a6dbdd8a8256ba2ff8a063f616d4754982b363533079bde3d71"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:20810e6e8936a487c355a622befb7da8d7e46b9b846efafbda420fef13aa675e",
+      "sense_id": "pwg.sense:gA:āgā:1:1",
+      "source_hash": "f4d1361e60494f09606214ad0699b250efa03045bc99d8d43fb830c242810ced",
+      "stratum": "citation_dense",
+      "target_hash": "e14781b60d45030a0ab5f6d4fdee17718599024da9a323220d10d5f2b5b5983b"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:a085399cde883ad3d7d3ce9e54e526d9a04f036d2775b264b1eb88d11a5ce735",
+      "sense_id": "pwg.sense:unresolved:banD:0",
+      "source_hash": "502d8eb92030ade88b47d1013d74b1c087ebd037f7580b5ba0f7dc669a7d27b6",
+      "stratum": "citation_dense",
+      "target_hash": "a8d15f6976b940fddc7ebf7f8c62b8be7d3f399afc3af1e4b1d6503fe50640e8"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:2c2cfdfdc12e596cf5ef8fa065c3a0454feb41149ab0467639fa44e9b6b72310",
+      "sense_id": "pwg.sense:unresolved:vah:0",
+      "source_hash": "e3bbc3db97f39df6f89a6937a5aaa2ec383c0b68711ed59e002793a0161d410f",
+      "stratum": "citation_dense",
+      "target_hash": "e83c2d845f88d352907d24c82502fb1e9f3d917feb1aaa320c8827a44d91466f"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:f69aebe57dbc1076f11adb45d9e2bb0be050194b24b7f5467a3802dee59f0cdd",
+      "sense_id": "pwg.sense:vas:vas 3:3_main_sense:1",
+      "source_hash": "46de7a4a45c8a4a9daa9d4329924308d01c0b203cd03249675989af6c47a4b74",
+      "stratum": "citation_dense",
+      "target_hash": "4619b8920e89a8636b636271855beb4b07fcfcf0d6bf615d6104005695b47b9f"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:2e7a61451023ecf7f593a2a521f0f0717cf938000ebf6aa2166118b5b5176042",
+      "sense_id": "pwg.sense:unresolved:brU:0",
+      "source_hash": "feada54aa7b7b3fcb733373c67776b7ea67fd0552481455c3dda6f73c0d3a285",
+      "stratum": "citation_dense",
+      "target_hash": "d5f13a9e7e875d92a994cb81bed9ed0d68101ca378ad7fccccf7adb56bd89181"
+    },
+    {
+      "record_id": "pwg.tm.v1:exact-card:ru:3cd870d3cb0225a652690b203157c8f0d0406a575bb4ffcaa45f61f985d2c64b",
+      "sense_id": "pwg.sense:unresolved:yA:0",
+      "source_hash": "bcdf47b89ff326b1992d0ecf5abd1401dae0ffe89be4b766394a03f1699162a2",
+      "stratum": "citation_dense",
+      "target_hash": "25f0b129d9272410f4b877018228ce2e779120c7eb4163a22538314c7595e3dd"
+    }
+  ],
+  "sample_sha256": "cb0434a9e35754dfc9169472130656f9183678d56f3a635a43c095d2deeb4074",
+  "selection_rule": {
+    "eligibility": "n_gloss_de >= 1 AND source_hash != target_hash AND target_string non-empty",
+    "note": "seedless: identical store bytes reproduce identical ids",
+    "seed": null,
+    "strata_predicates": {
+      "citation_dense": "n_ls >= 10",
+      "compound": "iast has '(' or '-', or homonym has '+' or '-'",
+      "polysemy": "n_senses >= 5",
+      "short_gloss": "src_len <= 200 AND n_senses == 1",
+      "uncertainty": "German hedge marker present (UNCERTAIN_RE)"
+    },
+    "strata_priority": [
+      "short_gloss",
+      "uncertainty",
+      "polysemy",
+      "compound",
+      "citation_dense"
+    ],
+    "within_stratum": "ascending sha256(record_id), first 6"
+  },
+  "store": {
+    "bytes": 23796159,
+    "path": "RussianTranslation/release/pwg_tm_canonical/canonical.v1.jsonl",
+    "rows": 2392,
+    "sha256": "b9ad8e9ff99d561de72029e9af40664e9cf7bfabe1575faf7858d88b757bbe82"
+  },
+  "strata_pool_sizes": {
+    "citation_dense": 241,
+    "compound": 328,
+    "polysemy": 279,
+    "short_gloss": 644,
+    "uncertainty": 233
+  }
+}

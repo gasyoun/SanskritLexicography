@@ -18,7 +18,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 PWG = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 STRATA = json.load(open(os.path.join(HERE, 'corpus_strata.json'), encoding='utf-8'))
@@ -124,7 +124,7 @@ def main():
     cov_corpus = cov_tag = 0
     for key, meta in CANON.items():
         assert meta.get('renou') in ('I', 'II', 'III', 'IV', 'V'), \
-            'CANON[%r] missing a valid renou state (I–V)' % key
+            'CANON[{!r}] missing a valid renou state (I–V)'.format(key)
         n = freq.get(key, 0)
         rec = {'name': meta['name'], 'citations': n, 'renou': meta['renou']}
         if 'corpus_prefix' in meta:
@@ -164,7 +164,7 @@ def main():
     for st in ('I', 'II', 'III', 'IV', 'V'):
         print('  %-3s %-15s %3d sources · %7d citations'
               % (st, RENOU_NAME[st], by_state_src.get(st, 0), by_state_cit.get(st, 0)))
-    print('→ %s' % os.path.basename(OUT))
+    print('→ {}'.format(os.path.basename(OUT)))
 
 
 if __name__ == '__main__':

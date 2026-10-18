@@ -1,0 +1,152 @@
+{
+  "schema": "zaliznyak_qa_moves_stats/1",
+  "tool": "data/zaliznyak_qa_moves/annotate_qa_moves.py",
+  "inputs": {
+    "transcripts": "/Users/mac/Documents/GitHub/BookIndex/data/imports/lectures-v2/transcripts",
+    "itkin": [
+      "src/content/itkin-i.-b..md",
+      "src/content/itkin-a.-i..md"
+    ]
+  },
+  "files_annotated": 29,
+  "files_with_rows": 27,
+  "rows_total": 239,
+  "rows_excluded_audience_speaker": 10,
+  "class_totals": {
+    "answer_hold": 3,
+    "coinference": 215,
+    "deferred": 3,
+    "refusal_generalize": 3,
+    "trap": 4,
+    "uncertainty_sign": 11
+  },
+  "per_file": {
+    "3xK_iAkr3rY": {
+      "coinference": 7,
+      "uncertainty_sign": 1
+    },
+    "5lUKwBvBe5g": {
+      "coinference": 1,
+      "uncertainty_sign": 2
+    },
+    "BZQgfGBtCho": {},
+    "DT2grBrX7u4": {
+      "coinference": 13
+    },
+    "F3DthX6tsV0": {
+      "uncertainty_sign": 1,
+      "coinference": 4
+    },
+    "GyKR4vwumwg": {
+      "coinference": 1
+    },
+    "H6RAja4HOzs": {
+      "coinference": 4,
+      "refusal_generalize": 2
+    },
+    "Hf1kFHCFb4E": {
+      "coinference": 4
+    },
+    "IAMi0Lo7tMM": {
+      "coinference": 6
+    },
+    "IuGMs_6G5a0": {
+      "coinference": 8,
+      "uncertainty_sign": 2
+    },
+    "JNI6DtX65dg": {
+      "coinference": 3
+    },
+    "LJlxadWkzPc": {
+      "coinference": 7,
+      "deferred": 1
+    },
+    "P0G948VmXtM": {
+      "coinference": 4
+    },
+    "Xf2GBzzKb_0": {
+      "uncertainty_sign": 3,
+      "coinference": 28,
+      "refusal_generalize": 1
+    },
+    "YnFUfF18Pzk": {
+      "coinference": 11,
+      "uncertainty_sign": 1
+    },
+    "Zj7fSZFSaBU": {
+      "coinference": 2
+    },
+    "bHRD_IHAwQo": {
+      "coinference": 6
+    },
+    "fo10NKM_0JM": {
+      "coinference": 5
+    },
+    "hkaJuyLERgE": {
+      "coinference": 1
+    },
+    "itkin-a-i": {},
+    "itkin-i-b": {
+      "coinference": 11
+    },
+    "mBKJLH0EU7M": {
+      "coinference": 2
+    },
+    "qIVmupl5ZjU": {
+      "answer_hold": 2,
+      "deferred": 1,
+      "coinference": 7
+    },
+    "qrzM9kqAD40": {
+      "coinference": 35,
+      "trap": 2,
+      "deferred": 1
+    },
+    "sjTVG_aUtl4": {
+      "coinference": 1
+    },
+    "tv87ggs0yq4": {
+      "coinference": 13,
+      "answer_hold": 1,
+      "trap": 2
+    },
+    "uwdJRBZMmn0": {
+      "coinference": 24,
+      "uncertainty_sign": 1
+    },
+    "uzzjnpPmEDQ": {
+      "coinference": 5
+    },
+    "yBdll96bosQ": {
+      "coinference": 2
+    }
+  },
+  "top_markers": {
+    "почему?": 56,
+    "как вы думаете": 25,
+    "попробуйте": 22,
+    "давайте посмотр": 14,
+    "подумайте": 8,
+    "давайте": 5,
+    "давайте попроб": 4,
+    "точно не знаем": 3,
+    "что вы думаете": 3,
+    "а почему?": 3,
+    "давайте еще посмотр": 3,
+    "неясно": 2,
+    "угадаете": 2,
+    "почему так?": 2,
+    "трудно судить": 2,
+    "почему нет?": 2,
+    "возможность подумать тем": 2,
+    "оставим в стороне": 2,
+    "почему в этом слове это могло произойти?": 2,
+    "вы не можете вывести": 2,
+    "ловушка": 2,
+    "осторожно": 1,
+    "почему неизвестно?": 1,
+    "почему вы не ходите на зализняка?": 1,
+    "почему тут у обозначено не оу, а у?": 1
+  },
+  "provenance": "H5171; classes per Uprava docs/ZALIZNYAK_HINTING_STYLE_ANALYSIS_19-09-2026.md §3"
+}

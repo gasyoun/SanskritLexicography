@@ -1,0 +1,18 @@
+{
+ "classification": "success",
+ "attempts": [
+  {
+   "label": "b0",
+   "keys": [
+    "_apta"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 139901,
+   "classification": "success"
+  }
+ ],
+ "null_keys": [],
+ "cli_safe_mode_effective": true,
+ "manifest_sha256": "9523136b626966ee320367a0ff830d90c518c713514a1a55536682d3b12b833f",
+ "result_sha256": "e10733d799111e7e18baa3fd8e69e53a6c7e559d2aa4d3bf8f57020d77e41c54"
+}

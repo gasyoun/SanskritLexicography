@@ -17,3 +17,6 @@
 !*/
 !*.mdx
 !*_media/**
+# H4475: Sanskrityatina 04_Reverse coding-legend landing — curated dataset;
+# sanskrityatina/raw/ keeps its own .gitignore and stays local-only (yadisk fetch)
+!sanskrityatina/**

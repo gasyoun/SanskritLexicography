@@ -23,7 +23,7 @@ actionability for this project, transcript (when available).
 
 <!-- Next entry template:
 ## <Name>
-- **Video:** [<title>](<url>)
+- **Video:** <title>
 - **Date added:** DD-MM-YYYY
 - **Transcript:** <inline text, or link to a committed transcript file>
 - **Actionable for us?** <verdict + why>

@@ -218,7 +218,14 @@ def terminate_tree(proc, deadline):
 _PROGRESS_POLL_SECONDS = 0.05
 
 
-def _drain_pipe(stream, chunks, state, lock, is_result):
+def _mark_progress(state, now):
+    state['last_progress'] = now
+    state['progress_events'] += 1
+    if state['first_progress_s'] is None:
+        state['first_progress_s'] = now - state['start']
+
+
+def _drain_pipe(stream, chunks, state, lock, is_result, progress_filter=None):
     """Read one pipe to EOF, recording byte arrivals as progress.
 
     Only RESULT bytes (stdout) reset the quiet window. Stderr is counted separately and
@@ -226,8 +233,16 @@ def _drain_pipe(stream, chunks, state, lock, is_result):
     account chatters on stderr while producing no result at all (FINDINGS §270), and treating
     that chatter as liveness would make the watchdog blind to the one hang it most needs to
     see. The stderr count is still recorded, so a reading can say which pipe was alive.
+
+    H4528: ``progress_filter`` (a callable over one complete stdout line, bytes) narrows
+    "result bytes" to "result LINES the filter accepts". A token-streaming CLI puts its own
+    bookkeeping on stdout too — `system/api_retry` lines every few seconds while it retries a
+    429 internally — so on that format "any stdout byte" is the same blind spot stderr was.
+    Without a filter the byte-granular behaviour above is unchanged, byte for byte.
+    ``bytes_seen`` still counts EVERY stdout byte either way; only the liveness clock moves.
     """
     fd = stream.fileno()
+    pending = b''
     try:
         while True:
             block = os.read(fd, 65536)
@@ -235,15 +250,25 @@ def _drain_pipe(stream, chunks, state, lock, is_result):
                 break
             with lock:
                 chunks.append(block)
-                if is_result:
-                    state['bytes_seen'] += len(block)
-                    state['last_progress'] = time.monotonic()
-                else:
+                if not is_result:
                     state['stderr_bytes_seen'] += len(block)
+                    continue
+                state['bytes_seen'] += len(block)
+                now = time.monotonic()
+                if progress_filter is None:
+                    _mark_progress(state, now)
+                    continue
+                pending += block
+                *lines, pending = pending.split(b'\n')
+                if any(progress_filter(line) for line in lines):
+                    _mark_progress(state, now)
     except (OSError, ValueError):
         # The pipe is closed under us when the tree is killed. That is the normal end of
         # this thread, not a fault: whatever was drained before the kill is kept.
         pass
+    if pending and progress_filter is not None and progress_filter(pending):
+        with lock:                                   # a final line with no trailing newline
+            _mark_progress(state, time.monotonic())
 
 
 def _feed_stdin(proc, payload):
@@ -257,7 +282,7 @@ def _feed_stdin(proc, payload):
         pass
 
 
-def _communicate_with_progress(proc, payload, timeout, window_s, state):
+def _communicate_with_progress(proc, payload, timeout, window_s, state, progress_filter=None):
     """`communicate` with a stalled-output watchdog. Returns (stdout_bytes, stderr_bytes).
 
     Raises ``subprocess.TimeoutExpired`` carrying ``killed_reason`` / ``bytes_seen`` /
@@ -271,7 +296,8 @@ def _communicate_with_progress(proc, payload, timeout, window_s, state):
         threads.append(threading.Thread(target=_feed_stdin, args=(proc, payload), daemon=True))
     if proc.stdout is not None:
         threads.append(threading.Thread(
-            target=_drain_pipe, args=(proc.stdout, out_chunks, state, lock, True), daemon=True))
+            target=_drain_pipe, args=(proc.stdout, out_chunks, state, lock, True, progress_filter),
+            daemon=True))
     if proc.stderr is not None:
         threads.append(threading.Thread(
             target=_drain_pipe, args=(proc.stderr, err_chunks, state, lock, False), daemon=True))
@@ -317,11 +343,23 @@ def _communicate_with_progress(proc, payload, timeout, window_s, state):
 def _progress_state():
     start = time.monotonic()
     return {'start': start, 'last_progress': start, 'bytes_seen': 0,
-            'stderr_bytes_seen': 0, 'quiet_s': 0.0, 'killed_reason': None}
+            'stderr_bytes_seen': 0, 'quiet_s': 0.0, 'killed_reason': None,
+            'progress_events': 0, 'first_progress_s': None}
+
+
+def _first_progress_ms(state):
+    first = state['first_progress_s']
+    return None if first is None else int(first * 1000)
 
 
 def _publish_progress(state, progress_out):
-    """Copy the bounded reading into the caller's dict. Five scalars, no payload."""
+    """Copy the bounded reading into the caller's dict. Seven scalars, no payload.
+
+    H4528 adds ``progress_events`` (how many arrivals counted as liveness) and
+    ``first_progress_ms`` (spawn start -> first counted arrival; None if there never was one).
+    On a token-streaming spawn the second is the time-to-first-token the no-progress window
+    has to clear, recorded per call so the window can be re-derived from production itself.
+    """
     if progress_out is None:
         return
     progress_out['bytes_seen'] = state['bytes_seen']
@@ -329,11 +367,13 @@ def _publish_progress(state, progress_out):
     progress_out['quiet_ms'] = int(state['quiet_s'] * 1000)
     progress_out['killed_reason'] = state['killed_reason']
     progress_out['elapsed_ms'] = int((time.monotonic() - state['start']) * 1000)
+    progress_out['progress_events'] = state['progress_events']
+    progress_out['first_progress_ms'] = _first_progress_ms(state)
 
 
 def run_tree_kill(argv, input=None, timeout=None, text=True, encoding='utf-8',
                   capture_output=False, cwd=None, env=None, progress_window_ms=None,
-                  progress_out=None, **_ignored):
+                  progress_out=None, progress_filter=None, **_ignored):
     """Drop-in for ``subprocess.run`` (Popen + ``communicate(timeout=)``) that, on timeout,
     performs bounded best-effort termination of the ENTIRE process tree instead of just the
     immediate child — so a killed call is bounded and no orphaned native binary keeps holding the
@@ -358,6 +398,9 @@ def run_tree_kill(argv, input=None, timeout=None, text=True, encoding='utf-8',
 
     Both require ``capture_output`` -- there are no pipes to watch otherwise, so the request
     degrades to the classic path rather than pretending to observe something.
+
+    H4528: ``progress_filter`` (callable over one complete stdout line, as bytes) decides which
+    stdout lines count as liveness; see ``_drain_pipe``. None keeps H2878's byte-granular rule.
     """
     pipe = subprocess.PIPE if capture_output else None
     # H2878: the watchdog needs byte-granular arrivals, which only raw binary pipes give
@@ -424,7 +467,7 @@ def run_tree_kill(argv, input=None, timeout=None, text=True, encoding='utf-8',
                 raise OSError('Windows Job Object setup failed: %s' % setup_trouble) from exc
     if watching:
         return _run_watched(proc, argv, input, timeout, encoding, text,
-                            progress_window_ms, progress_out)
+                            progress_window_ms, progress_out, progress_filter)
     start = time.monotonic()
     try:
         out, err = proc.communicate(input=input, timeout=timeout)
@@ -482,7 +525,8 @@ def run_tree_kill(argv, input=None, timeout=None, text=True, encoding='utf-8',
     return subprocess.CompletedProcess(argv, proc.returncode, out, err)
 
 
-def _run_watched(proc, argv, payload, timeout, encoding, text, progress_window_ms, progress_out):
+def _run_watched(proc, argv, payload, timeout, encoding, text, progress_window_ms, progress_out,
+                 progress_filter=None):
     """The H2878 progress-watched half of ``run_tree_kill``, split out so the classic path
     above stays byte-for-byte what it was. Same contract, same tree-kill, same bounded drain;
     the only additions are the stalled-output bound and the reading it produces."""
@@ -493,7 +537,8 @@ def _run_watched(proc, argv, payload, timeout, encoding, text, progress_window_m
     state = _progress_state()
     try:
         try:
-            out, err = _communicate_with_progress(proc, payload, timeout, window_s, state)
+            out, err = _communicate_with_progress(proc, payload, timeout, window_s, state,
+                                                  progress_filter)
         except subprocess.TimeoutExpired as exc:
             # Identical bounded-cleanup shape to the classic path: terminate the TREE while the
             # parent still lives, then reap within a small proportional grace. The budget is
@@ -532,6 +577,8 @@ def _run_watched(proc, argv, payload, timeout, encoding, text, progress_window_m
             exc.bytes_seen = state['bytes_seen']
             exc.stderr_bytes_seen = state['stderr_bytes_seen']
             exc.quiet_ms = int(state['quiet_s'] * 1000)
+            exc.progress_events = state['progress_events']          # H4528
+            exc.first_progress_ms = _first_progress_ms(state)
             _publish_progress(state, progress_out)
             raise
         except BaseException as exc:

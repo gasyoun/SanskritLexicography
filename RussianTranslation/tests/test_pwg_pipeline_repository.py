@@ -14,9 +14,9 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import (audit, import_legacy, kernel, model,  # noqa: E402
+from pwg_pipeline import (audit, import_legacy, kernel, model,
                           providers, repository)
-from pwg_pipeline.evidence import sha256_text, tree_digest  # noqa: E402
+from pwg_pipeline.evidence import sha256_text, tree_digest
 
 CAMPAIGN = 'test-campaign'
 
@@ -235,12 +235,12 @@ def test_call_count_is_never_inferred_from_returned_rows(tmp_path):
     """One batch call covering three jobs is still exactly one Call row."""
     repo = make_repo(tmp_path)
     for index in range(3):
-        add_job(repo, identity='pwg.batch.%d' % index, job_id='job%d' % index)
+        add_job(repo, identity=f'pwg.batch.{index:d}', job_id=f'job{index:d}')
     paid = make_kernel(repo, tmp_path)
     adapter = providers.FakeAdapter(model.ROUTE_XAI)
-    payload = [{'fragment_id': 'f%d' % index,
+    payload = [{'fragment_id': f'f{index:d}',
                 'fragment_class': 'definition_gloss',
-                'source_string': 'w%d' % index} for index in range(3)]
+                'source_string': f'w{index:d}'} for index in range(3)]
     outcome = paid.execute(adapter, job_ids=['job0', 'job1', 'job2'],
                            job_payloads=payload, requested_model='grok-4.6',
                            idempotency_key='batch')

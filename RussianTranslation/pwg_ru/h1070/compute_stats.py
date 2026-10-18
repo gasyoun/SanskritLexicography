@@ -37,8 +37,7 @@ def main():
         print('%-5s n=%3d  correct=%3d  acceptable-variant=%3d  wrong-sense=%d  register-mismatch=%d'
               % (tranche, n, c.get('correct', 0), c.get('acceptable-variant', 0),
                  ws, c.get('register-mismatch', 0)))
-        print('       clean(C+AV)=%.1f%%  wrong-sense=%.2f%% Wilson95 [%.2f%%, %.2f%%]'
-              % (100 * clean / n, 100 * ws / n, 100 * lo, 100 * hi))
+        print('       clean(C+AV)={:.1f}%  wrong-sense={:.2f}% Wilson95 [{:.2f}%, {:.2f}%]'.format(100 * clean / n, 100 * ws / n, 100 * lo, 100 * hi))
     print()
     cls = collections.Counter()
     for r in rows:

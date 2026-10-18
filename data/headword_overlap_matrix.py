@@ -43,7 +43,13 @@ def main():
             / "union_headwords.tsv"
         ),
     )
+    ap.add_argument(
+        "--outdir",
+        default=None,
+        help="output directory (default: beside this script, as before)",
+    )
     args = ap.parse_args()
+    outdir = Path(args.outdir) if args.outdir else Path(__file__).resolve().parent
 
     totals = Counter()  # dict -> headwords containing it
     uniques = Counter()  # dict -> headwords only it attests
@@ -64,16 +70,15 @@ def main():
                     pair_shared[(a, b)] += 1
 
     codes = sorted(totals)
-    here = Path(__file__).resolve().parent
 
-    with open(here / "headword_overlap_matrix.tsv", "w", encoding="utf-8", newline="\n") as fh:
+    with open(outdir / "headword_overlap_matrix.tsv", "w", encoding="utf-8", newline="\n") as fh:
         fh.write("dict_a\tdict_b\tshared\tunion\tjaccard\n")
         for a, b in combinations(codes, 2):
             shared = pair_shared[(a, b)]
             uni = totals[a] + totals[b] - shared
             fh.write(f"{a}\t{b}\t{shared}\t{uni}\t{shared / uni:.4f}\n")
 
-    with open(here / "headword_unique_counts.tsv", "w", encoding="utf-8", newline="\n") as fh:
+    with open(outdir / "headword_unique_counts.tsv", "w", encoding="utf-8", newline="\n") as fh:
         fh.write("dict\theadwords\tunique_to_dict\tunique_share\n")
         for d in codes:
             fh.write(f"{d}\t{totals[d]}\t{uniques[d]}\t{uniques[d] / totals[d]:.4f}\n")

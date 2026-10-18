@@ -1,6 +1,6 @@
 # Covered texts — Russian translations of record for PWG citations
 
-_Created: 19-07-2026 · Last updated: 07-08-2026_
+_Created: 19-07-2026 · Last updated: 07-09-2026_
 
 When a PWG card cites a passage of a text that **already has a published or aligned
 Russian translation** (R., MBH., ṚV., KATHĀS., …), the card's citation should **reuse
@@ -261,9 +261,13 @@ was extracted and the concordance upgraded from structural draft to CONTENT-BASE
    ([`src/ramayana_southern_critical_concordance.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/ramayana_southern_critical_concordance.tsv)) —
    content-based (char-n-gram similarity + per-kāṇḍa monotonic anchoring) over the
    SamudraManthanam Southern corpus vs the DCS critical text (text_id 143): 18,993
-   Southern verses → **81.4% matched/fuzzy** (15,459), 3,398 southern-only (CE-excised
-   material; e.g. the R. 2,91 Bharadvāja-feast sarga is southern-only, as expected).
-   Kāṇḍas 6–7 align near-identically — those corpus files are already CE-keyed.
+   Southern verses → **43.9% matched/fuzzy** (8,345 across kāṇḍas 1/2/3/5), 3,398
+   southern-only (CE-excised material; e.g. the R. 2,91 Bharadvāja-feast sarga is
+   southern-only, as expected). Kāṇḍas 6–7 (7,116 rows) are `self_aligned_critical`,
+   not counted in that share — those corpus files ARE the critical edition under a
+   Southern filename (H3538 adjudication, applied H3960: `SOUTHERN_FILES` in
+   [`build_ramayana_concordance.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ramayana_concordance.py)
+   no longer designates them Southern; `CRITICAL_KEYED_FILES` does; see SL#822).
 3. **Gorresio e-text**
    ([`src/gorresio_etext.jsonl`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/gorresio_etext.jsonl)) —
    **19,852 verses in IAST — all 7 kāṇḍas, all 672 sargas** (H1689 closed the
@@ -358,8 +362,17 @@ What *does* exist is the Sanskrit and, for kāṇḍa 6, the alignment work:
 | 7 uttara | 232 | yes — `07_ramayana-uttarakanda.jsonl`, 2,690 verses, **Sanskrit-only and CRITICAL-edition text** (H1705, see below) | inventory only | **none** | the Russian — and, before any map, a Bombay↔critical bridge the numbering does not give for free |
 
 Kāṇḍa 6 is the sharp line: H1656's concordance already maps 2,295 Gorresio verses onto
-Southern yuddha loci, so the day a Russian yuddhakāṇḍa is ingested, 288 PWG references
-become reusable with no further alignment work. Kāṇḍa 4 needs the whole chain.
+"Southern yuddha" loci, so the day a Russian yuddhakāṇḍa is ingested, 288 PWG references
+become reusable with no further alignment work — **only if that future translation is
+keyed to the same numbering as `06_ramayana-yuddhakanda.jsonl` today.** It is not: H3960
+confirmed that file is the critical edition, not the vulgate/Southern text, so its
+sarga.verse loci differ from a genuine Southern kāṇḍa-6 translation's own numbering by
+the same 1.2–3.0%-identity margin kāṇḍas 1/2/3/5 show against the critical text. The
+"reusable with no further alignment work" claim therefore does not survive H3960 as
+stated — flagged, not fixed, since re-keying the Gorresio↔yuddha map is out of this
+handoff's fence (H3960 relabels `SOUTHERN_FILES`/`CRITICAL_KEYED_FILES` and the
+Southern↔Critical concordance only; it leaves `build-gorresio`'s kāṇḍa-6/7 rows
+untouched). Kāṇḍa 4 needs the whole chain.
 
 ### Kāṇḍa 7 — what H1705 measured (27-07-2026)
 
@@ -371,7 +384,7 @@ measurements say so without ambiguity:
 | question | measured | consequence |
 |---|---|---|
 | does the corpus file carry Russian? | **no — 2,690 `sa` segments, 0 `ru`** (kāṇḍa 6 likewise; kāṇḍas 1/2/3/5 are fully paired) | there is nothing to reuse even from a perfect map |
-| is it the Southern text of record? | **no** — 2,688/2,690 rows of `ramayana_southern_critical_concordance.tsv` align to the DCS **critical** edition at the identical `sarga.verse`, 95.5% at score 1.0; kāṇḍas 1/2/3/5 sit at 1–3% identity | the "Southern" column is a mislabel for kāṇḍas 6–7 |
+| is it the Southern text of record? | **no** — 2,688/2,690 rows of `ramayana_southern_critical_concordance.tsv` align to the DCS **critical** edition at the identical `sarga.verse`, 95.5% at score 1.0; kāṇḍas 1/2/3/5 sit at 1–3% identity | relabeled H3960: kāṇḍa 7 moved from `SOUTHERN_FILES` to `CRITICAL_KEYED_FILES`, its concordance rows are `self_aligned_critical` |
 | is Bombay ≈1:1 with it? | **no** — Bombay 111 sargas + 13 interpolated vs 100; identical verse count in **11/100** sargas; delta −14…+18, mean +4.7 | a direct-with-offset scheme would be dishonest |
 | how much PWG mass is at stake? | **1,765** plain `R.` book-7 citations in the full digitisation (4.5% of 39,222), sargas 1–111, + 16 edition-qualified (`R. ed. Bomb.` 14, `R. SCHL.` 2); **127** cite a sarga >100 | those 127 cannot resolve against a 100-sarga text at all |
 

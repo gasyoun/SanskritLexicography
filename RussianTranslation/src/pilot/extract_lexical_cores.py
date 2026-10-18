@@ -38,7 +38,7 @@ OUT_DIR = os.path.join(HERE, 'lexical_cores')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import build_src                                               # noqa: E402  canonical IAST->SLP1
+import build_src
 
 # core -> (filename, kind, lemma columns [0-based], pos column | None)
 # Приложение 5 is 7 periods x 2 cols (lemma, POS); lemmas sit in the even columns.
@@ -79,7 +79,7 @@ def read_core(core):
     fname, kind, lemma_cols, pos_col = CORES[core]
     path = os.path.join(CORES_DIR, fname)
     if not os.path.exists(path):
-        sys.exit('missing source xls: %s' % path)
+        sys.exit('missing source xls: {}'.format(path))
     rows = list(_iter_xls_rows(path) if kind == 'xls' else _iter_xlsx_rows(path))
     order, meta, spread = [], {}, {}
     for i, row in enumerate(rows):

@@ -85,6 +85,7 @@ The `lemma/<key1>` spine (SLP1 `form_key`) is the join key for every layer — *
 | `〉` audit | `RussianTranslation/reports/pwg_sense_glyph_audit.json` | per-record merged-sense count + store-contamination totals |
 | Quarantine marker | `RussianTranslation/reports/pwg_ru_glyph_quarantine.jsonl` | `{key1, senseId, reason}` — **side file, store untouched** |
 | Citations layer | extend `csl-atlas/data/lexico/senses_pwg.jsonl` / a `pwg_citations.jsonl` | `{key1, ls_raw, resolved_source, confidence}` |
+| Scan-pair devanagari layer (H4536) | `RussianTranslation/pwg_ru/pwg_scan_devanagari_join.tsv` + builder `RussianTranslation/src/pilot/pwg_scan_devanagari_join.py` | `{L, key1, devanagari, translit, sense, pc, anchor}` per scan sense — MG 2013 yadisk scan pair joined to the pwg.txt spine page+word-confirmed; 92 619/106 082 key1 (87.31%); census: `RussianTranslation/pwg_ru/PWG_SCAN_DEVANAGARI_PAIR_CENSUS_11-09-2026.md` |
 | Xref edges | extend `csl-atlas/data/lexico/xref_edges.csv` | `{src_key1, redirect_type: s|vgl, tgt_key1, resolved: bool}` |
 | Government layer | extend the H1308 index | `{key1, senseId, case, kind: single|variation}` |
 | OntoLex graph | `RussianTranslation/release/fixture/pwg_de_lexicon.ttl` | additive properties on `entry/<key1>/de` |

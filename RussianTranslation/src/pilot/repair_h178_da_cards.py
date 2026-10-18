@@ -34,7 +34,7 @@ SRC = os.path.dirname(HERE)
 for p in (SRC, HERE):
     if p not in sys.path:
         sys.path.insert(0, p)
-from store_path import canonical_store  # noqa: E402
+from store_path import canonical_store
 
 HANDOFF = 'H1302'
 DATE = '2026-07-19'
@@ -72,8 +72,7 @@ def repair_row(r):
             ru = ru.replace(old, new)
             changed += 1
         elif new not in ru:
-            print('  WARN %s|%s|%s: neither old nor new text present -- verify manually'
-                  % key, file=sys.stderr)
+            print('  WARN {}|{}|{}: neither old nor new text present -- verify manually'.format(*key), file=sys.stderr)
     r['ru'] = ru
     prov = r.setdefault('provenance', {})
     repairs = prov.setdefault('repairs', [])
@@ -89,7 +88,7 @@ def main():
     a = ap.parse_args()
     store = canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
     if not os.path.exists(store):
-        sys.exit('STORE ABSENT: %s' % store)
+        sys.exit('STORE ABSENT: {}'.format(store))
     rows = []
     with open(store, encoding='utf-8') as f:
         for line in f:
@@ -108,7 +107,7 @@ def main():
     missing = set(REPAIRS) - found
     if missing:
         for m in missing:
-            print('  MISSING ROW: %s' % (m,), file=sys.stderr)
+            print('  MISSING ROW: {}'.format(m), file=sys.stderr)
         sys.exit('ERROR: %d target row(s) not found in store' % len(missing))
     print('cards repaired : %d | edits : %d%s' % (len(found), total_changes,
                                                   ' (DRY RUN)' if a.dry_run else ''))
@@ -117,13 +116,13 @@ def main():
         if not os.path.exists(bak):
             import shutil
             shutil.copyfile(store, bak)
-            print('backup : %s' % bak)
+            print('backup : {}'.format(bak))
         # H2146: locked (PromoteClaim) + unique per-run backup + atomic replace — the
         # fixed '.tmp' rewrite was unlocked (last-writer-wins, FINDINGS §513); the
         # one-time .h1302.bak above stays as the pre-campaign forensic copy.
         from store_write import locked_store_rewrite
         locked_store_rewrite(store, rows, tag='h1302repair')
-        print('wrote  : %s' % store)
+        print('wrote  : {}'.format(store))
 
 
 if __name__ == '__main__':

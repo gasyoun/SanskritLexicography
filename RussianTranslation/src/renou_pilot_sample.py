@@ -38,7 +38,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 CSL = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02'))
 CANON = ('pwg', 'mw', 'pw', 'ap', 'ap90', 'ben', 'sch', 'bhs')
@@ -47,8 +47,8 @@ _ORDER = {s: i for i, s in enumerate(STATES)}
 SEED = 42
 
 sys.path.insert(0, HERE)
-import renou            # noqa: E402  (PWG/MW <ls> resolution + siglum map)
-import renou_sigla      # noqa: E402  (ap/ap90/ben/bhs siglum resolution)
+import renou
+import renou_sigla
 
 PWG_STYLE = {'pwg', 'pw', 'pwk', 'pwkvn', 'sch'}
 INLINE = {'ap', 'ap90', 'ben', 'bhs'}
@@ -278,7 +278,7 @@ def build_sample(seed=SEED):
     item_id = 1
     composition = {}
     for label, name, fn, n in STRATA:
-        rng = random.Random('%d:%s' % (seed, label))
+        rng = random.Random(f'{seed:d}:{label}')
         picked = fn(all_recs, rng, n)
         composition[label] = {}
         for code, rec, state in picked:
@@ -303,7 +303,7 @@ def main():
         elif a == '--seed':
             seed = int(args[i + 1]); i += 2
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
 
     items, composition = build_sample(seed)
     with open(out, 'w', encoding='utf-8', newline='\n') as f:
@@ -315,7 +315,7 @@ def main():
         by_dict = composition.get(label, {})
         print('  %s (%s): %d items across %d dicts — %s'
               % (label, name, sum(by_dict.values()), len(by_dict),
-                 ', '.join('%s=%d' % (k, v) for k, v in sorted(by_dict.items()))))
+                 ', '.join(f'{k}={v:d}' for k, v in sorted(by_dict.items()))))
 
 
 if __name__ == '__main__':

@@ -71,7 +71,7 @@ def main():
     for lineno, stamp, body in users:
         marker = '  <-- BEFORE DISPATCH' if lineno < DISPATCH_LINE else ''
         snippet = ' '.join(body.split())[:300]
-        print('\n  [line %s | %s]%s\n    %s' % (lineno, stamp, marker, snippet))
+        print('\n  [line {} | {}]{}\n    {}'.format(lineno, stamp, marker, snippet))
     return 0
 
 

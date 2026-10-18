@@ -17,7 +17,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from parse_ncc import match_key_for  # noqa: E402
+from parse_ncc import match_key_for
 
 
 # (headword, expected key, the wrong key the pre-fix code produced)

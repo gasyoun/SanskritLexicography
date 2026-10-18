@@ -19,9 +19,11 @@ schema change could silently rot --
 This selftest builds into a scratch dir against a scratch ``--config-dir`` and asserts all
 three, then diffs the fresh build against the committed golden artifact beside the fixture
 (``dq_canary_puregloss~~h0_zz_pw.manifest.v2.json``) so a later session can see exactly what
-changed. Two fields are volatile by construction and excluded from that diff: ``generated_at``
-(a timestamp) and ``config_dir_fingerprint`` (machine-bound) -- the fingerprint is instead
-asserted to equal the live hash of the scratch config dir, which is the stronger check.
+changed. Fields that are volatile by construction are excluded from that diff:
+``generated_at`` (a timestamp), ``config_dir_fingerprint`` (machine-bound) and
+``tm_available``/``suggest_tm`` (host TM-sidecar presence) -- the fingerprint is asserted to
+equal the live re-hash and the TM flags to equal the live existence probes, which are the
+stronger checks.
 
 Run standalone (``python src/pilot/canary_manifest_build_selftest.py``) or via
 ``window_selftest.py`` (``test_h2245_canary_manifest_builder``). Spends nothing.
@@ -39,15 +41,20 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import canary_manifest_build as cmb                                      # noqa: E402
-from execution_contract import (SCHEMA_V2, config_dir_fingerprint,       # noqa: E402
+import canary_manifest_build as cmb
+from execution_contract import (SCHEMA_V2, config_dir_fingerprint,
                                 validate_manifest, validate_profile)
 
 GOLDEN = os.path.join(cmb.REPO, 'pwg_ru', 'h994', 'canary',
                       cmb.CANARY_KEY + '.manifest.v2.json')
-# Volatile by construction: a timestamp and a machine-bound hash. Excluded from the golden
-# diff and checked separately (the fingerprint against a live re-hash, which is stricter).
-VOLATILE = ('generated_at', 'config_dir_fingerprint')
+# Volatile by construction: a timestamp and machine/host-bound facts. Excluded from the
+# golden diff and checked separately -- the fingerprint against a live re-hash (stronger),
+# tm_available/suggest_tm against the same live existence probe the builder ran
+# (translation_memory's canonical resolvers): whether the gitignored TM sidecars exist on
+# THIS host is runtime state, not builder shape, and pinning either to the regen host's
+# state made the golden diff fail on every host whose TM posture differed (H5948: CI red
+# since the golden picked up tm_available=true from a sidecar-equipped machine).
+VOLATILE = ('generated_at', 'config_dir_fingerprint', 'tm_available', 'suggest_tm')
 
 
 def check(condition, message):
@@ -81,15 +88,15 @@ def assert_contract(manifest, config_dir):
     validate_profile(manifest, config_dir, only_profile='c4')
 
     check(manifest['schema'] == SCHEMA_V2,
-          'canary manifest must be %s, got %r' % (SCHEMA_V2, manifest.get('schema')))
+          'canary manifest must be {}, got {!r}'.format(SCHEMA_V2, manifest.get('schema')))
     keys = manifest['meta']['selected_keys']
     check(keys == [cmb.CANARY_KEY],
-          'canary manifest must select exactly the canary key, got %r' % (keys,))
+          'canary manifest must select exactly the canary key, got {!r}'.format(keys))
     check(manifest['batches'] == [[cmb.CANARY_KEY]],
-          'canary batches must drive exactly the one canary key, got %r' % (manifest['batches'],))
+          'canary batches must drive exactly the one canary key, got {!r}'.format(manifest['batches']))
     check(manifest['key_provenance'] == {cmb.CANARY_KEY: 'synthetic_control'},
           'the canary MUST stay synthetic_control -- canary_gate and the promoter C-05 '
-          'refusal both key off it; got %r' % (manifest['key_provenance'],))
+          'refusal both key off it; got {!r}'.format(manifest['key_provenance']))
     check(manifest['execution']['model_identifier'] == manifest['model'],
           'v2 execution model_identifier must equal the executable model')
 
@@ -100,17 +107,29 @@ def assert_contract(manifest, config_dir):
           'config_dir_fingerprint is not the live hash of the bound config dir -- a copied '
           'literal would let this manifest fire against a profile it was never bound to')
 
+    # tm_available / suggest_tm are LIVE-COMPUTED host probes too (H5948): re-run the same
+    # existence probe the builder did (translation_memory's canonical resolvers) and require
+    # an exact match, so the golden diff can ignore them without losing the assertion.
+    import translation_memory as _tm
+    check(manifest['meta']['tm_available'] == os.path.exists(_tm.tm_path('ru')),
+          'tm_available does not match the live TM sidecar probe -- a stale copied literal '
+          'would misreport the reuse posture this canary will actually get')
+    check(manifest['meta']['suggest_tm'] == (
+        os.path.basename(_tm.suggest_tm_path('ru'))
+        if os.path.exists(_tm.suggest_tm_path('ru')) else None),
+        'suggest_tm does not match the live suggest-TM sidecar probe -- a stale copied '
+        'literal would misreport the suggest posture this canary will actually get')
+
 
 def assert_canary_geometry(manifest):
     """The D-Q silent-SAN-LOSS geometry (H994) the control exists to exercise."""
     payload = manifest['inputs'][cmb.CANARY_KEY]
     check(payload['ls'] == 0 and payload['sk'] == 0,
-          'the canary must carry ZERO <ls> and ZERO {#..#}: that is what makes a dropped '
-          'sense INVISIBLE to the accept() fidelity gate (0 == 0 passes). Got ls=%r sk=%r'
-          % (payload['ls'], payload['sk']))
+          'the canary must carry ZERO <ls> and ZERO {{#..#}}: that is what makes a dropped '
+          'sense INVISIBLE to the accept() fidelity gate (0 == 0 passes). Got ls={!r} sk={!r}'.format(payload['ls'], payload['sk']))
     check(payload['senses'] == 3 and payload['source_senses'] == 3,
           'the canary must carry exactly 3 senses (the SAN-LOSS soft guard counts them); '
-          'got senses=%r source_senses=%r' % (payload['senses'], payload['source_senses']))
+          'got senses={!r} source_senses={!r}'.format(payload['senses'], payload['source_senses']))
 
     # Prompt shape (H2245 step 2): the canary rides the PRODUCTION masked-inline path, and on
     # pure gloss the mask is provably an IDENTITY transform -- zero placeholders emitted. That
@@ -118,18 +137,16 @@ def assert_canary_geometry(manifest):
     # change ever produced a placeholder here, the canary would stop being pure gloss and this
     # assertion is where that is caught.
     check(manifest['placeholder_maps'][cmb.CANARY_KEY] == [],
-          'the pure-gloss canary must mask to ZERO {Tn} placeholders (identity transform); '
-          'a non-empty map means the canary is no longer pure gloss: %r'
-          % (manifest['placeholder_maps'][cmb.CANARY_KEY],))
+          'the pure-gloss canary must mask to ZERO {{Tn}} placeholders (identity transform); '
+          'a non-empty map means the canary is no longer pure gloss: {!r}'.format(manifest['placeholder_maps'][cmb.CANARY_KEY]))
     check(manifest['meta']['mode'] == 'nominal_masked',
-          'the canary must ride the production nominal_masked prompt path, got %r'
-          % (manifest['meta']['mode'],))
+          'the canary must ride the production nominal_masked prompt path, got {!r}'.format(manifest['meta']['mode']))
 
 
 def assert_matches_golden(manifest):
     """Diff the fresh build against the committed known-good artifact."""
     if not os.path.exists(GOLDEN):
-        raise AssertionError('golden canary manifest missing: %s' % GOLDEN)
+        raise AssertionError('golden canary manifest missing: {}'.format(GOLDEN))
     with open(GOLDEN, encoding='utf-8') as fh:
         golden = json.load(fh)
     validate_manifest(golden, require_v2=True)          # the committed artifact is itself valid
@@ -140,11 +157,11 @@ def assert_matches_golden(manifest):
         differing = sorted(k for k in set(fresh_cmp) | set(golden_cmp)
                            if fresh_cmp.get(k) != golden_cmp.get(k))
         raise AssertionError(
-            'builder output drifted from the committed golden manifest in %r.\n'
+            'builder output drifted from the committed golden manifest in {!r}.\n'
             'If the change is intended, regenerate the artifact:\n'
             '  python src/pilot/canary_manifest_build.py --profile-slot c4 '
             '--config-dir <dir> --outdir <tmp>\n'
-            'and copy execution_manifest.canary.json over %s' % (differing, GOLDEN))
+            'and copy execution_manifest.canary.json over {}'.format(differing, GOLDEN))
 
 
 def assert_safe_mode_pin_is_explicit_and_sha_bound(tmp):
@@ -162,17 +179,16 @@ def assert_safe_mode_pin_is_explicit_and_sha_bound(tmp):
     """
     shas = {}
     for pin in (True, False):
-        config_dir = os.path.join(tmp, 'pin%s' % pin, '.claude')
+        config_dir = os.path.join(tmp, 'pin{}'.format(pin), '.claude')
         os.makedirs(config_dir)
         manifest_path, _harness, _pf, sha = cmb.build(
-            'c4', config_dir, os.path.join(tmp, 'out%s' % pin), 'nominal_c4canary',
+            'c4', config_dir, os.path.join(tmp, 'out{}'.format(pin)), 'nominal_c4canary',
             cli_safe_mode=pin)
         with open(manifest_path, encoding='utf-8') as fh:
             manifest = json.load(fh)
         validate_manifest(manifest, require_v2=True)     # pinning must not break the contract
         check(manifest['execution']['cli_safe_mode'] is pin,
-              'cli_safe_mode=%r was not pinned into the execution block, got %r'
-              % (pin, manifest['execution'].get('cli_safe_mode')))
+              'cli_safe_mode={!r} was not pinned into the execution block, got {!r}'.format(pin, manifest['execution'].get('cli_safe_mode')))
         check(sha == cmb.sha256_file(manifest_path),
               'the returned sha256 does not cover the pinned manifest -- the arm the '
               'receipt claims could be swapped behind a digest the worker still accepts')

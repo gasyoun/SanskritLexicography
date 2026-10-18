@@ -20,7 +20,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
-import ru_style_sweep as rss  # noqa: E402
+import ru_style_sweep as rss
 
 
 def _sha256_bytes(data):

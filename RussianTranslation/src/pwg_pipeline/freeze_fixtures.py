@@ -19,7 +19,7 @@ if __package__ in (None, ''):  # pragma: no cover - direct-script invocation
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     __package__ = 'pwg_pipeline'
 
-from . import replay  # noqa: E402
+from . import replay
 
 
 def main(argv: list[str] | None = None) -> int:

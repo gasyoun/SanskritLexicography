@@ -1,0 +1,60 @@
+{
+ "schema": "pwg.call_reservation.v1",
+ "runs": {
+  "h5402-canary-250925": {
+   "max_calls": 1,
+   "calls_spent": 1,
+   "next_ordinal": 2,
+   "reservations": [
+    {
+     "reservation_id": "63fd7ec7c74d43259dc153753b8aa096",
+     "ordinal": 1,
+     "reserved_at_ns": 1790291430284769700,
+     "pid": 27952,
+     "purpose": "headless:translate",
+     "profile": "c1",
+     "detail": "b0",
+     "finalized": true,
+     "finalized_at_ns": 1790291449356164400,
+     "telemetry": {
+      "cost_evaluable": false,
+      "input_tokens": 2,
+      "output_tokens": 1312,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 34431,
+      "subagent_tokens": 35745,
+      "observed_cost_usd": 0,
+      "duration_ms": 16475,
+      "duration_api_ms": 15926,
+      "accounting": {
+       "schema": "pwg.usage_accounting.v1",
+       "usage_evaluable": true,
+       "input_tokens": 2,
+       "output_tokens": 1312,
+       "cache_creation_tokens": 34431,
+       "cache_read_tokens": 0,
+       "billing_mode": "unknown_gateway",
+       "observed_cash_usd": null,
+       "list_equivalent_usd": null,
+       "credit_equivalent_usd": null,
+       "pricing_policy": "anthropic-opus-5-2026-08-11.v1",
+       "credit_claim_evidence": null
+      }
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 2,
+    "output_tokens": 1312,
+    "cache_read_tokens": 0,
+    "cache_creation_tokens": 34431,
+    "subagent_tokens": 35745,
+    "observed_cost_usd": 0.0,
+    "cost_evaluable": false,
+    "finalized_calls": 1,
+    "unevaluable_calls": 1,
+    "pending_calls": 0
+   }
+  }
+ }
+}

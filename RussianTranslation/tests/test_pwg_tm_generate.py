@@ -9,10 +9,10 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import pwg_tm_canonical as C  # noqa: E402
-import pwg_tm_gates as G  # noqa: E402
-import pwg_tm_generate as Gen  # noqa: E402
-import pwg_tm_quality as Q  # noqa: E402
+import pwg_tm_canonical as C
+import pwg_tm_gates as G
+import pwg_tm_generate as Gen
+import pwg_tm_quality as Q
 
 PILOT = os.path.join(SRC, 'pilot')
 

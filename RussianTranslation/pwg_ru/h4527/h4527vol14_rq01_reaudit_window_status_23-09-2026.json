@@ -1,0 +1,481 @@
+{
+ "root": null,
+ "workflow": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator\\artifacts\\h4527vol14\\requeue\\rq01-defect\\wf_output.h4527vol14.json",
+ "state": "clean",
+ "recorded_at": "2026-09-23T16:23:21Z",
+ "workflow_meta": {
+  "schema_version": "pwg_ru.workflow_meta.v1",
+  "generator": "gen_opt_harness2.batched-masked",
+  "generated_at": "2026-09-22T13:28:46Z",
+  "root": "h4527vol14",
+  "safe_root": "h4527vol14",
+  "lang": "ru",
+  "gen_model": "claude-sonnet-5",
+  "source_profile": "no_pwg_supplement_chain",
+  "source_profiles": {
+   "kast_ur_i~~h0_zz_pw": "no_pwg_supplement_chain"
+  },
+  "mode": "nominal_masked",
+  "nominal": true,
+  "nominal_keymap": {
+   "kast~005fur~005fi~007e~007eh0~005fzz~005fpw": "kast_ur_i~~h0_zz_pw"
+  },
+  "grammar_layer": "none",
+  "selected_keys": [
+   "kast_ur_i~~h0_zz_pw"
+  ],
+  "batches": [
+   [
+    "kast_ur_i~~h0_zz_pw"
+   ]
+  ],
+  "batch_count": 1,
+  "rootmap_sha256": null,
+  "input_hashes": {
+   "kast_ur_i~~h0_zz_pw": {
+    "raw_sha256": "9fc7654a6a66ad7f764a49563025853dd612bd5a33ef04ef54d28b54f11d9492",
+    "portrait_sha256": "3cdb50881fc11979c97e7b9dc4a482c2468c0f86f0916d8277ab12f87bcf4908"
+   }
+  },
+  "input_payload_keys": [
+   "kast_ur_i~~h0_zz_pw"
+  ],
+  "selfheal": true,
+  "selfheal_group_budget": 12,
+  "selfheal_cards": {
+   "kast_ur_i~~h0_zz_pw": 1
+  },
+  "binary_split": true,
+  "output_budget": 1,
+  "sense_presplit_budget": 20,
+  "kill": true,
+  "kill_gate": {
+   "factor": 2.0,
+   "base_ms": 20000,
+   "slope_ms": 45,
+   "floor_ms": 45000,
+   "ceil_ms": 600000
+  },
+  "kill_switch": true,
+  "agent_budget_strategy": "split-pools-per-card-heal",
+  "max_agents": 18,
+  "max_translate_agents": 13,
+  "max_heal_agents": 5,
+  "translate_agent_expected": 1,
+  "heal_budget_groups": 1,
+  "heal_budget_cards": 1,
+  "max_agents_factor": 3.0,
+  "max_agents_headroom": 10,
+  "max_wide": 3,
+  "stagger_ms": 2000,
+  "per_card_heal_budget": true,
+  "per_card_heal_factor": 1.5,
+  "per_card_heal_headroom": 3,
+  "kill_timeout_no_bisect": true,
+  "presplit_group_cite_budget": 60,
+  "presplit_group_sense_cap": 18,
+  "presplit_group_call_weight": 12000,
+  "presplit_keys": [],
+  "tm": null,
+  "tm_auto": false,
+  "tm_available": false,
+  "tm_cards": 0,
+  "tm_hits": [],
+  "frag_tm": null,
+  "frag_tm_cards": [],
+  "frag_tm_fragments": 0,
+  "suggest_tm": null,
+  "suggest_profile": "semantic",
+  "suggest_tm_cards": [],
+  "suggest_tm_top": {},
+  "degenerate_passthrough_keys": [],
+  "agent_expected_after_tm": 1,
+  "execution_manifest_schema": "pwg.headless_execution_manifest.v2",
+  "execution": {
+   "profile_slot": "c1",
+   "config_dir_fingerprint": "9321e2c138f02c1d19ec9c249ad096841813c82414b76d6caf3e3f3b518acd6b",
+   "execution_route": "claude-cli-headless",
+   "executor_lane": "serial-whole-card",
+   "validation_method": "audit_window+final_schema",
+   "model_identifier": "claude-sonnet-5"
+  },
+  "provenance_classes": {
+   "kast_ur_i~~h0_zz_pw": "real"
+  },
+  "execution_manifest_sha256": "7a595f5e09fad6daba9e5f3a786a2a059aef2984c0d5e188c41ffc5cc89db5f4"
+ },
+ "stale_check": {
+  "ok": true,
+  "stale": false,
+  "warnings": [],
+  "errors": [],
+  "workflow_meta": {
+   "schema_version": "pwg_ru.workflow_meta.v1",
+   "generator": "gen_opt_harness2.batched-masked",
+   "generated_at": "2026-09-22T13:28:46Z",
+   "root": "h4527vol14",
+   "safe_root": "h4527vol14",
+   "lang": "ru",
+   "gen_model": "claude-sonnet-5",
+   "source_profile": "no_pwg_supplement_chain",
+   "source_profiles": {
+    "kast_ur_i~~h0_zz_pw": "no_pwg_supplement_chain"
+   },
+   "mode": "nominal_masked",
+   "nominal": true,
+   "nominal_keymap": {
+    "kast~005fur~005fi~007e~007eh0~005fzz~005fpw": "kast_ur_i~~h0_zz_pw"
+   },
+   "grammar_layer": "none",
+   "selected_keys": [
+    "kast_ur_i~~h0_zz_pw"
+   ],
+   "batches": [
+    [
+     "kast_ur_i~~h0_zz_pw"
+    ]
+   ],
+   "batch_count": 1,
+   "rootmap_sha256": null,
+   "input_hashes": {
+    "kast_ur_i~~h0_zz_pw": {
+     "raw_sha256": "9fc7654a6a66ad7f764a49563025853dd612bd5a33ef04ef54d28b54f11d9492",
+     "portrait_sha256": "3cdb50881fc11979c97e7b9dc4a482c2468c0f86f0916d8277ab12f87bcf4908"
+    }
+   },
+   "input_payload_keys": [
+    "kast_ur_i~~h0_zz_pw"
+   ],
+   "selfheal": true,
+   "selfheal_group_budget": 12,
+   "selfheal_cards": {
+    "kast_ur_i~~h0_zz_pw": 1
+   },
+   "binary_split": true,
+   "output_budget": 1,
+   "sense_presplit_budget": 20,
+   "kill": true,
+   "kill_gate": {
+    "factor": 2.0,
+    "base_ms": 20000,
+    "slope_ms": 45,
+    "floor_ms": 45000,
+    "ceil_ms": 600000
+   },
+   "kill_switch": true,
+   "agent_budget_strategy": "split-pools-per-card-heal",
+   "max_agents": 18,
+   "max_translate_agents": 13,
+   "max_heal_agents": 5,
+   "translate_agent_expected": 1,
+   "heal_budget_groups": 1,
+   "heal_budget_cards": 1,
+   "max_agents_factor": 3.0,
+   "max_agents_headroom": 10,
+   "max_wide": 3,
+   "stagger_ms": 2000,
+   "per_card_heal_budget": true,
+   "per_card_heal_factor": 1.5,
+   "per_card_heal_headroom": 3,
+   "kill_timeout_no_bisect": true,
+   "presplit_group_cite_budget": 60,
+   "presplit_group_sense_cap": 18,
+   "presplit_group_call_weight": 12000,
+   "presplit_keys": [],
+   "tm": null,
+   "tm_auto": false,
+   "tm_available": false,
+   "tm_cards": 0,
+   "tm_hits": [],
+   "frag_tm": null,
+   "frag_tm_cards": [],
+   "frag_tm_fragments": 0,
+   "suggest_tm": null,
+   "suggest_profile": "semantic",
+   "suggest_tm_cards": [],
+   "suggest_tm_top": {},
+   "degenerate_passthrough_keys": [],
+   "agent_expected_after_tm": 1,
+   "execution_manifest_schema": "pwg.headless_execution_manifest.v2",
+   "execution": {
+    "profile_slot": "c1",
+    "config_dir_fingerprint": "9321e2c138f02c1d19ec9c249ad096841813c82414b76d6caf3e3f3b518acd6b",
+    "execution_route": "claude-cli-headless",
+    "executor_lane": "serial-whole-card",
+    "validation_method": "audit_window+final_schema",
+    "model_identifier": "claude-sonnet-5"
+   },
+   "provenance_classes": {
+    "kast_ur_i~~h0_zz_pw": "real"
+   },
+   "execution_manifest_sha256": "7a595f5e09fad6daba9e5f3a786a2a059aef2984c0d5e188c41ffc5cc89db5f4"
+  },
+  "current": {
+   "ok": true,
+   "root": "h4527vol14",
+   "safe_root": "h4527vol14",
+   "nominal": true,
+   "rootmap_path": null,
+   "rootmap_sha256": null,
+   "root_keys": [
+    "kast_ur_i~~h0_zz_pw"
+   ],
+   "selected_keys": [
+    "kast_ur_i~~h0_zz_pw"
+   ],
+   "input_hashes": {
+    "kast_ur_i~~h0_zz_pw": {
+     "raw_sha256": "9fc7654a6a66ad7f764a49563025853dd612bd5a33ef04ef54d28b54f11d9492",
+     "portrait_sha256": "3cdb50881fc11979c97e7b9dc4a482c2468c0f86f0916d8277ab12f87bcf4908"
+    }
+   },
+   "missing_inputs": []
+  },
+  "execution_manifest": {
+   "schema": "pwg.headless_execution_manifest.v2",
+   "root": "h4527vol14",
+   "nominal": true,
+   "selected_keys": [
+    "kast_ur_i~~h0_zz_pw"
+   ]
+  }
+ },
+ "rootmap_sha256": null,
+ "selected_key_count": 1,
+ "workflow_keys": 1,
+ "root_subcards": 1,
+ "translated": 1,
+ "pending": 0,
+ "requeue_count": 0,
+ "requeue_keys": [],
+ "requeue_transient_count": 0,
+ "requeue_defect_count": 0,
+ "judge_sample": {
+  "rate": 0.1,
+  "minimum": 5,
+  "seed": "91a85dd4fc10dfd7",
+  "clean_key_count": 1,
+  "clean_sample_count": 1,
+  "python_gate_failure_count": 0,
+  "sample_count": 1,
+  "clean_sample_keys": [
+   "kast_ur_i~~h0_zz_pw"
+  ],
+  "python_gate_failure_keys": [],
+  "keys": [
+   "kast_ur_i~~h0_zz_pw"
+  ]
+ },
+ "judge_sample_count": 1,
+ "judge_sample_seed": "91a85dd4fc10dfd7",
+ "clean_key_count": 1,
+ "next_action": "Send judge_sample.keys.txt to sampled semantic judging outside Python.",
+ "production_metrics": {
+  "wall_clock_minutes": 740.612,
+  "wall_clock_source": "derived_mtime"
+ },
+ "gen_model": "claude-sonnet-5",
+ "host": "WIN-NJTORH3267V",
+ "profile": "c1",
+ "crashed": [],
+ "prompt_rules": {
+  "rule_count": 15,
+  "target_count": 1,
+  "scanned_target_count": 1,
+  "missing_rule_count": 0,
+  "missing_files": [],
+  "live_manual_coverage": [
+   "Apresjan",
+   "Hartmann",
+   "Gonda/Vogel",
+   "Tubb",
+   "Baalbaki",
+   "Apte/Gillon/Inglese-Geupel",
+   "Mitrenina/Zaliznyak-Paducheva/Ruppel"
+  ],
+  "methodology_only_manuals": [
+   "Riemer",
+   "Klosa"
+  ],
+  "targets": [
+   {
+    "path": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography-h4527r-2309\\RussianTranslation\\src\\pilot\\run_pilot_wf.js",
+    "exists": true,
+    "rules": [
+     {
+      "id": "apresjan_near_synonym",
+      "category": "Apresjan",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "apresjan_manner_position",
+      "category": "Apresjan",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "apresjan_register",
+      "category": "Apresjan",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "apresjan_anti_circular",
+      "category": "Apresjan",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "hartmann_equivalence_type",
+      "category": "Hartmann",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "hartmann_punctuation_grouping",
+      "category": "Hartmann",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "gonda_vogel_two_source",
+      "category": "Gonda/Vogel",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "tubb_sastric_formulas",
+      "category": "Tubb",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "baalbaki_synonym_cardinality",
+      "category": "Baalbaki/Apresjan",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "compound_samasa",
+      "category": "Apte/Gillon/Inglese-Geupel",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "correlatives_yad_tad",
+      "category": "Mitrenina/Zaliznyak-Paducheva/Ruppel",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "government_verbatim",
+      "category": "D4/H338",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "ru_style_no_yo",
+      "category": "H1305",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "ru_style_terse_metalanguage",
+      "category": "H1305",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     },
+     {
+      "id": "ru_style_ed_bomb_siglum",
+      "category": "H1305",
+      "severity": "required",
+      "status": "pass",
+      "missing_phrases": []
+     }
+    ],
+    "missing": []
+   }
+  ]
+ },
+ "semantic_risks": {
+  "risk_count": 0,
+  "risky_key_count": 0,
+  "high_confidence_count": 0,
+  "high_confidence_keys": [],
+  "review_queue": {
+   "limit": 25,
+   "total": 0,
+   "keys": [],
+   "items": []
+  }
+ },
+ "gates": {
+  "final_schema": {
+   "returncode": 0,
+   "requeue_count": 0,
+   "seconds": 0.0
+  },
+  "nws": {
+   "returncode": 0,
+   "requeue_count": 0,
+   "seconds": 0.001
+  },
+  "sense_loss": {
+   "returncode": 0,
+   "requeue_count": 0,
+   "seconds": 0.001
+  },
+  "prompt_semantic": {
+   "returncode": 0,
+   "requeue_count": 0,
+   "seconds": 0.007
+  },
+  "translation": {
+   "returncode": 0,
+   "requeue_count": 0,
+   "seconds": 0.003
+  },
+  "stage2_mechanical": {
+   "returncode": 0,
+   "requeue_count": 0,
+   "seconds": 0.005
+  },
+  "coverage": {
+   "returncode": 0,
+   "requeue_count": 0,
+   "seconds": 0.002
+  },
+  "sense_dupes": {
+   "returncode": 0,
+   "requeue_count": 0,
+   "seconds": 0.042
+  },
+  "ru_style": {
+   "returncode": 0,
+   "requeue_count": 0,
+   "seconds": 0.009
+  }
+ },
+ "collect_seconds": 0.192,
+ "glue": {
+  "returncode": null,
+  "summary": null,
+  "nested_exists": null,
+  "seconds": null
+ }
+}

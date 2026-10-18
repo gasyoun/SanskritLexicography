@@ -219,7 +219,7 @@ mass here is the digitisation cleaning its own keys.
 Per-dictionary counts, however audited, still double-count the family's shared inheritance.
 The cross-dictionary union — built from the current `<k1>` of the 15 dictionaries that
 have one, with 237 gender-confirmed *-inī* feminines folded onto their *-in* base
-(323,662 raw keys → **323,425 union headwords**) — supplies the honest denominators
+(323,662 raw keys → **323,422 union headwords**) — supplies the honest denominators
 ([UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md)).
 Its provenance distribution is itself a portrait of the collection:
 
@@ -249,7 +249,7 @@ collapsed, gender-confirmed feminine folds).*
 Only eleven headwords occur in all fifteen dictionaries; **142,673 — 44.1 % of the
 union — occur in exactly one**. Against the union, the collection's headline size
 overstates its lexical diversity by roughly a factor of five (1.72 million snapshot lines
-against 323,425 distinct keys), and the pairwise-overlap matrix computed over the same
+against 323,422 distinct keys), and the pairwise-overlap matrix computed over the same
 union — cited here, not recomputed
 ([HEADWORD_OVERLAP_UNION15_2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/data/HEADWORD_OVERLAP_UNION15_2026.md)) —
 resolves that redundancy into structure. Three of its findings bear directly on how this
@@ -328,7 +328,7 @@ release denominator (98,606 distinct attested lemmas) with a homograph control; 
 DCS-2021-by-LemmaId figure (91,406) is a third, distinct number, and the three are never
 mixed in one rate.*
 
-Union-wide, **61,340 of 323,425** headwords match a DCS-2021 attested key (**19.0 %**,
+Union-wide, **61,340 of 323,422** headwords match a DCS-2021 attested key (**19.0 %**,
 upper bound; same denominator and join). The separation tracks each dictionary's
 *purpose*, not its size: the corpus-facing Vedic lexica — the Vedic Index at 69.8 % and
 Grassmann at 68.1 %, both built directly off a fixed corpus — sit at the top; the
@@ -464,7 +464,7 @@ Audited as a set and over time, the digitised Sanskrit headword record is neithe
 monument nor an undifferentiated heap. It grows — by +14.3 % across the comparable lists
 in twelve years — but almost entirely where active re-editing concentrates, while the
 canonical lexica stand still; it sheds headwords mostly as key hygiene, with an
-identifiable residue owed entry-level review; it collapses, under the union, to 323,425
+identifiable residue owed entry-level review; it collapses, under the union, to 323,422
 distinct keys of which 44.1 % belong to exactly one dictionary, organised around a single
 Böhtlingk–Monier-Williams core with principled isolates; and it is corpus-visible in
 proportion to each dictionary's purpose, from the Vedic Index's 69.8 % down to the

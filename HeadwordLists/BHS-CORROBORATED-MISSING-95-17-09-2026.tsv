@@ -1,0 +1,96 @@
+hw_slp1	iast	dcs_band	bhs_class	bhs_L	bhs_pc	bhs_mvy_refs	pw_mahavy_refs	corr_n	corr_dicts	evidence	proposed_action
+aBinirhAra	abhinirhāra	3	full	1528	052,2	593		2	bhs;sch	A:aBinimroka;A:aBinivizwaka	add-entry
+agaRya	agaṇya	2	full	96	004,1			9	ap;ap90;bhs;md;pwg;sch;stc;vcp;yat		add-entry
+cAturdvIpaka	cāturdvīpaka	2	full	6184	227,1	3046	154,1	2	bhs;sch	B:cAturDAkAraRika	add-entry
+icCantika	icchantika	2	full	3122	113,1	2210, 2223	110	2	bhs;sch	A:icCAsadfSa	add-entry
+kalandakanivApa	kalandakanivāpa	2	full	4559	171,2	4138	193	2	bhs;sch	B:kalatra;B:kalamagopavaDU	add-entry
+kowanaka	koṭanaka	2	full	5218	193,2	9156		3	bhs;mci;sch	B:kocavaka	add-entry
+AdarSamuKa	ādarśamukha	1	full	2673	093,1	3297	167	2	bhs;sch	B:AdarSa	add-entry
+KARu	khāṇu	1	full	5493	204,2	6970	245,564	3	bhs;ieg;sch	B:KAtaka	add-entry
+Kusta	khusta	1	full	5529	206,1			2	bhs;sch	A:KuramAlin	add-entry
+kuwukuYcaka	kuṭukuñcaka	1	full	4927	185,1	2491		2	bhs;sch		add-entry
+tuRava	tuṇava	1	full	6997	255,1	5015	218,8	2	bhs;sch	B:tuj;B:tuRqicela	add-entry
+ASAwavI	āśāṭavī	0	crossref	3039	109,2			2	bhs;sch	B:ASaNkya;A:ASAtanA	add-entry
+AkASAsaNgavimuktinirupalepa	ākāśāsaṅgavimuktinirupalepa	0	full	2531	087,1	623	21	2	bhs;sch	A:AkiMcanyAyatana	add-entry
+AkASasParaRa	ākāśaspharaṇa	0	full	2527	087,1	528	21	2	bhs;sch		add-entry
+AkArABinirhAra	ākārābhinirhāra	0	full	2516	086,2	593		2	bhs;sch		add-entry
+AsParaRakasamADi	āspharaṇakasamādhi	0	full	3090	111,2	1487	67	2	bhs;sch	B:AsPAla	add-entry
+BrUkuwika	bhrūkuṭika	0	full	11368	413,2	2405	126,56	2	bhs;sch	B:BrUkuMsa;B:BrURa	add-entry
+DanuzkalApaka	dhanuṣkalāpaka	0	full	7673	275,1	5005	217,33	2	bhs;sch	B:DanurmArga	add-entry
+EhipaSyika	aihipaśyika	0	full	4169	158,2	1296	63	2	bhs;sch	B:EzAvIra	add-entry
+Gowakamfga	ghoṭakamṛga	0	full	5980	220,2	4798	213,29	2	bhs;sch	B:GftAhuti	add-entry
+KAdyakacAraka	khādyakacāraka	0	full	5503	205,1	9059	274,4	2	bhs;sch	B:KAdanIya;B:KAnam	add-entry
+KaYjAhva	khañjāhva	0	full	5426	202,2	4911	213,140	2	bhs;sch	B:KaYja;B:KawakA	add-entry
+KalupaScAdBaktika	khalupaścādbhaktika	0	full	5483	204,1	1133	49	2	bhs;sch	B:Kalu;A:KalekapotanyAya	add-entry
+KamBIrapati	khambhīrapati	0	full	5460	203,2	3702	186,33	2	bhs;sch	A:KanyavAdin;B:Karajru	add-entry
+UrDvaBAgIya	ūrdhvabhāgīya	0	full	3976	150,2	2155	109	2	bhs;sch	A:UrDvaBAgahara;B:UrDvaBAsin	add-entry
+aBilapanatA	abhilapanatā	0	full	1618	056,1	2795	138	2	bhs;sch	B:aBilakzaRa;B:aBilazaRa	add-entry
+aBisamitAvin	abhisamitāvin	0	full	1677	058,2	2884	142	2	bhs;sch		add-entry
+aNgadinna	aṅgadinna	0	full	158	006,1			2	bhs;sch		add-entry
+aNgulIPaRahastaka	aṅgulīphaṇahastaka	0	full	174	006,1	8776		2	bhs;sch	B:aNgulivezwaka;A:aNgulIBaNga	add-entry
+aSuBaBAvanA	aśubhabhāvanā	0	full	2318	080,1	1155; 1156—64; 4; 1; 2; 3; 5; 6; 7; 9; 8; 7	52	2	bhs;sch	A:aSuBacintaka	add-entry
+abahumAna	abahumāna	0	full	1443	049,2			2	bhs;sch		add-entry
+akOsIdya	akausīdya	0	full	52	002,2			2	bhs;sch	B:akOSala;A:akkA	add-entry
+alpotsuka	alpotsuka	0	full	2015	069,1			2	bhs;sch	B:alpeSAKya;B:avaka	add-entry
+amanasikAra	amanasikāra	0	full	1779	062,2		68	2	bhs;sch		add-entry
+anAdarSaka	anādarśaka	0	full	656	022,2			2	bhs;sch		add-entry
+anAkftsnagatA	anākṛtsnagatā	0	full	641	022,1			2	bhs;sch	B:anAkula	add-entry
+anaBilapya	anabhilapya	0	full	596	020,2			2	bhs;sch	B:anaBilakzita	add-entry
+anaDimUrCita	anadhimūrchita	0	full	528	019,2			2	bhs;sch	B:anaDikArin	add-entry
+apratiSaraRa	apratiśaraṇa	0	full	1393	048,1		63	2	bhs;sch	B:apratiSAsana	add-entry
+apratipudgala	apratipudgala	0	full	1380	047,2	42	1	2	bhs;sch	B:apratipatti	add-entry
+apratyudAvartya	apratyudāvartya	0	full	1413	048,2	357	278	2	bhs;sch	A:apratyutTAyuka	add-entry
+apratyudDArya	apratyuddhārya	0	full	1414	048,2		278	2	bhs;sch	A:aptur	add-entry
+araRasamavasaraRa	araṇasamavasaraṇa	0	full	1868	065,1	617	21	2	bhs;sch	B:araqA;A:araRAvihArin	add-entry
+arajovirajonayayukta	arajovirajonayayukta	0	full	1866	064,2	616	21	2	bhs;sch	A:arajovittA	add-entry
+aravAqa	aravāḍa	0	full	1878	065,1	3282	167	2	bhs;sch	B:arare	add-entry
+asaMprajanya	asaṃprajanya	0	full	2430	083,2	1978	104	2	bhs;sch		add-entry
+avalokitalakzmI	avalokitalakṣmī	0	full	2161	074,2			2	bhs;sch	A:avalokanaka;A:avalopa	add-entry
+avaraBAgIya	avarabhāgīya	0	full	2135	073,2	2156	109	2	bhs;sch	B:avaratas	add-entry
+avaragodAnIya	avaragodānīya	0	full	2134	073,2		154	2	bhs;sch	B:avara	add-entry
+avirajas	avirajas	0	full	2257	078,1	8195	251	2	bhs;sch	B:avimokza;B:avirata	add-entry
+boDipakzanirdeSa	bodhipakṣanirdeśa	0	full	11018	402,2	1382	65,57	2	bhs;sch	B:boDicittavivaraRa;B:boDisattvacaryA	add-entry
+cApodara	cāpodara	0	full	6199	227,2	5207	223,133	2	bhs;sch	B:cApaveda;B:cAmara	add-entry
+cakawi	cakaṭi	0	full	5995	221,1			2	bhs;sch	B:GrA	add-entry
+catuzkumBikA	catuṣkumbhikā	0	full	6067	223,2	9311	281,111	2	bhs;sch	B:catuzkizku;B:catuzpaTa	add-entry
+ekAvacAraka	ekāvacāraka	0	full	4084	154,2	7615; 7615	245,1027	2	bhs;sch	A:ekArzeya	add-entry
+ekavIcika	ekavīcika	0	full	4058	153,2	1013	46	2	bhs;sch	A:ekavfkzIya	add-entry
+eqAkzipuzpa	eḍākṣipuṣpa	0	full	4102	155,1	6177		2	bhs;sch	B:eRaka	add-entry
+eqameqa	eḍameḍa	0	crossref	4101	155,1			2	bhs;sch	B:eqa	add-entry
+fRaDara	ṛṇadhara	0	full	3997	151,1			2	bhs;sch	B:fRa	add-entry
+gamBIraGozasvaranAdita	gambhīraghoṣasvaranādita	0	full	5666	210,1	686	23,42	2	bhs;sch	B:gamBara	add-entry
+gocarapariSudDa	gocarapariśuddha	0	full	5841	215,2	1376	65,51	2	bhs;sch	A:gocara	add-entry
+indraSrI	indraśrī	0	full	3171	115,1			2	bhs;sch	B:indrasava	add-entry
+jvalanolka	jvalanolka	0	full	6751	246,2	599	21,94	2	bhs;sch	B:jvalana;B:jvalita	add-entry
+kAyakalisaMpramaTana	kāyakalisaṃpramathana	0	full	4725	178,1	621	21,116	2	bhs;sch	B:kAya	add-entry
+kAzWahAraka	kāṣṭhahāraka	0	full	4832	182,2	3776	186,106	2	bhs;sch	B:kAzWAluka	add-entry
+kaSambakajAta	kaśambakajāta	0	full	4631	174,1	9139; 9143—4	278	2	bhs;sch	B:kaSa;B:kaSyapottarasaMhitA	add-entry
+kalmAzadamya	kalmāṣadamya	0	full	4612	173,2			2	bhs;sch		add-entry
+kftsnAyatana	kṛtsnāyatana	0	full	5130	191,2		72	2	bhs;sch		add-entry
+kiMpratyaya	kiṃpratyaya	0	full	4871	183,1			2	bhs;sch	B:kiri	add-entry
+kirIwavatsa	kirīṭavatsa	0	full	4880	183,2			2	bhs;sch	B:kirmira;B:kila	add-entry
+kubjottarA	kubjottarā	0	full	4981	187,1			2	bhs;sch	A:kubji;B:kuBra	add-entry
+kulopaka	kulopaka	0	full	5033	188,1			2	bhs;sch	B:kulodBava	add-entry
+kurukuci	kurukuci	0	full	5008	187,2		127,50	2	bhs;sch	B:kurukzetra	add-entry
+mahAhatamanda	mahāhatamanda	0	crossref	11910	427,1			2	bhs;sch	B:mahAsvapna;B:mahAhava	add-entry
+niScikIrzA	niścikīrṣā	0	full	8520	306,2	2456	127,15	2	bhs;sch	B:niScayin;B:niScitArTa	add-entry
+oqigalla	oḍigalla	0	full	4193	159,1			2	bhs;sch	B:otu	add-entry
+pElottika	pailottika	0	full	9794	354,2		281,242	2	bhs;sch	B:pEnya;B:pESunika	add-entry
+paligoDa	paligodha	0	full	9314	337,2	6524	245,122	2	bhs;sch	B:palASa;B:palita	add-entry
+tilakocavaka	tilakocavaka	0	full	6969	254,1	6099	238,29	2	bhs;sch	B:tilakAvala;B:tilaDenu	add-entry
+uBayatoBAgavimukta	ubhayatobhāgavimukta	0	full	3898	147,2	1028	46	2	bhs;sch		add-entry
+ucCaNga	ucchaṅga	0	full	3261	118,2		248	2	bhs;sch	A:ucCalana	add-entry
+ucCiraska	ucchiraska	0	full	3274	119,1			2	bhs;sch	A:ucCuzma	add-entry
+udakamaRi	udakamaṇi	0	full	3489	128,1			2	bhs;sch	A:udakarakzikA	add-entry
+udguRWikA	udguṇṭhikā	0	full	3538	129,2	8540; 8606	263,17	1	bhs	B:udgAra	add-entry
+ujjaNkikA	ujjaṅkikā	0	full	3291	119,2	8546	263	1	bhs	B:ucCvAsa	add-entry
+ullaNGikA	ullaṅghikā	0	full	3923	148,2	8547	263,24	2	bhs;sch		add-entry
+umeSvara	umeśvara	0	full	3901	148,1			2	bhs;sch		add-entry
+upAdAyarUpa	upādāyarūpa	0	full	3849	146,1	1846	101,10	2	bhs;sch		add-entry
+upaDivAra	upadhivāra	0	full	3684	136,1			2	bhs;sch	A:upaDi;A:upaDenu	add-entry
+uqigalla	uḍigalla	0	full	3302	120,1			2	bhs;sch	A:uwwIkita	add-entry
+utkfzwikA	utkṛṣṭikā	0	full	3335	121,2	8541; 8607	263,18	2	bhs;sch	A:utketana	add-entry
+utkuwukikA	utkuṭukikā	0	full	3329	121,1	8548	263,25	2	bhs;sch	B:utkuwuka;B:utkUjita	add-entry
+utkzepaRIya	utkṣepaṇīya	0	full	3346	122,1	8646	265	2	bhs;sch	A:utkzepa;A:utKanana	add-entry
+vfzikA	vṛṣikā	0	full	14418	507,2	8991; 9005		2	bhs;sch	B:vfzwi	add-entry
+yaTApi	yathāpi	0	full	12381	442,2		225,71	1	bhs	B:yaTA;B:yaTAkulam	add-entry

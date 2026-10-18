@@ -20,6 +20,7 @@ second accounting authority.
 from __future__ import annotations
 
 import dataclasses
+import json
 import os
 import sys
 import threading
@@ -31,11 +32,11 @@ for _path in (SRC, os.path.join(SRC, 'pilot')):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-import call_reservation  # noqa: E402  (hardened reservation ledger, reused)
+import call_reservation
 
-from . import faults, model, providers  # noqa: E402
-from .evidence import seal  # noqa: E402
-from .repository import Repository, new_id  # noqa: E402
+from . import faults, model, providers
+from .evidence import seal
+from .repository import Repository, new_id
 
 SCHEMA = 'pwg.pipeline.kernel.v1'
 
@@ -104,7 +105,7 @@ def _run_with_timeout(function: Callable[[], Any], timeout_ms: int) -> Any:
     def target() -> None:
         try:
             box['value'] = function()
-        except BaseException as exc:  # noqa: BLE001 - re-raised on the caller
+        except BaseException as exc:
             box['error'] = exc
 
     worker = threading.Thread(target=target, daemon=True,
@@ -112,7 +113,7 @@ def _run_with_timeout(function: Callable[[], Any], timeout_ms: int) -> Any:
     worker.start()
     worker.join(timeout_ms / 1000.0)
     if worker.is_alive():
-        raise TimeoutError('provider call exceeded %d ms' % timeout_ms)
+        raise TimeoutError(f'provider call exceeded {timeout_ms:d} ms')
     if 'error' in box:
         raise box['error']
     return box['value']
@@ -157,8 +158,7 @@ class PaidCallKernel:
         """
         if self.remaining_calls() <= 0:
             raise KernelRefusal(
-                'call ceiling reached for campaign %s (max_calls=%d)'
-                % (self.campaign_id, self.campaign.max_calls),
+                f'call ceiling reached for campaign {self.campaign_id} (max_calls={self.campaign.max_calls:d})',
                 failure_class=FAILURE_BUDGET)
         try:
             estimate = providers.estimate_cost_usd(
@@ -166,16 +166,14 @@ class PaidCallKernel:
                 max_output_tokens=max_output_tokens)
         except providers.ProviderError as exc:
             raise KernelRefusal(
-                'no verified price card for route %r; a dollar-bounded campaign'
-                ' (ceiling USD %.2f) fails closed: %s'
-                % (route, self.campaign.cost_ceiling_usd, exc),
+                'no verified price card for route {!r}; a dollar-bounded campaign'
+                ' (ceiling USD {:.2f}) fails closed: {}'.format(route, self.campaign.cost_ceiling_usd, exc),
                 failure_class=FAILURE_CEILING) from exc
         projected = self.spent_usd() + estimate
         if projected > self.campaign.cost_ceiling_usd + 1e-9:
             raise KernelRefusal(
-                'worst-case cost USD %.4f would exceed the campaign ceiling'
-                ' USD %.2f (already spent USD %.4f)'
-                % (projected, self.campaign.cost_ceiling_usd, self.spent_usd()),
+                'worst-case cost USD {:.4f} would exceed the campaign ceiling'
+                ' USD {:.2f} (already spent USD {:.4f})'.format(projected, self.campaign.cost_ceiling_usd, self.spent_usd()),
                 failure_class=FAILURE_CEILING)
         return estimate
 
@@ -188,17 +186,30 @@ class PaidCallKernel:
                 attempt_id: str | None = None,
                 timeout_ms: int = DEFAULT_TIMEOUT_MS,
                 max_output_tokens: int = DEFAULT_MAX_OUTPUT_TOKENS,
-                estimated_input_tokens: int = 1000) -> CallOutcome:
-        """Reserve, dispatch, seal and finalize exactly one provider call."""
+                estimated_input_tokens: int | None = None) -> CallOutcome:
+        """Reserve, dispatch, seal and finalize exactly one provider call.
+
+        ``estimated_input_tokens`` feeds only the pre-spend ceiling projection;
+        left unset it is derived from the payload size (~4 chars/token floor,
+        H5707 L4 — the old flat 1000-token guess under-projected real windows,
+        which are ≥5 KB). A timeout abandons the worker thread (SDK calls are
+        not cancellable): the ledger records the call as terminal `timeout`
+        while the provider may still complete and bill it — a known, accepted
+        undercount of ``observed_cost_usd`` against the provider invoice.
+        """
         route = adapter.route
         model.require_choice(route, model.ROUTES, 'adapter.route')
         if route not in model.BILLABLE_ROUTES:
             raise KernelRefusal(
-                'route %r is not billable and must not enter the paid kernel'
-                % route, failure_class=FAILURE_ROUTE)
+                'route {!r} is not billable and must not enter the paid kernel'.format(route), failure_class=FAILURE_ROUTE)
         if not job_ids:
             raise KernelRefusal('a call must be bound to at least one job',
                                 failure_class=FAILURE_BUDGET)
+
+        if estimated_input_tokens is None:
+            payload_chars = len(json.dumps(job_payloads, ensure_ascii=False,
+                                           default=str))
+            estimated_input_tokens = max(1000, payload_chars // 4)
 
         # 1. validate budget -- strictly before any I/O.
         self.assert_budget(route, input_tokens=estimated_input_tokens,
@@ -246,7 +257,7 @@ class PaidCallKernel:
             return self._finalize_failure(call, request, artifacts,
                                           FAILURE_TIMEOUT, str(exc),
                                           model.CALL_TIMED_OUT)
-        except BaseException as exc:  # noqa: BLE001 - always terminally accounted
+        except BaseException as exc:
             return self._finalize_failure(call, request, artifacts,
                                           FAILURE_EXCEPTION, repr(exc),
                                           model.CALL_ERRORED)
@@ -269,18 +280,17 @@ class PaidCallKernel:
                 'provider usage is missing or not evaluable',
                 model.CALL_MALFORMED, response=response)
             raise GlobalStop(
-                'unevaluable usage on call %s: accounting uncertainty halts the'
-                ' wave' % call.call_id, failure_class=FAILURE_UNEVALUABLE,
+                'unevaluable usage on call {}: accounting uncertainty halts the'
+                ' wave'.format(call.call_id), failure_class=FAILURE_UNEVALUABLE,
                 dispatched=True)
         served = response.served_model
         if served and requested_model and served != requested_model:
             self._finalize_failure(
                 call, request, artifacts, FAILURE_ROUTE,
-                'requested %r but %r was served' % (requested_model, served),
+                'requested {!r} but {!r} was served'.format(requested_model, served),
                 model.CALL_MALFORMED, response=response, usage=usage)
             raise GlobalStop(
-                'route substitution on call %s: requested %r, served %r'
-                % (call.call_id, requested_model, served),
+                'route substitution on call {}: requested {!r}, served {!r}'.format(call.call_id, requested_model, served),
                 failure_class=FAILURE_ROUTE, dispatched=True)
 
         try:
@@ -328,7 +338,7 @@ class PaidCallKernel:
               ) -> dict[str, Any]:
         directory = os.path.join(self.evidence_dir, call_id)
         os.makedirs(directory, exist_ok=True)
-        receipt = seal(os.path.join(directory, '%s.json' % kind), dict(value))
+        receipt = seal(os.path.join(directory, '{}.json'.format(kind)), dict(value))
         artifact = model.Artifact(
             artifact_id=new_id('artifact'), campaign_id=self.campaign_id,
             kind=kind, path=receipt['path'], sha256=receipt['sha256'])

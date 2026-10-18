@@ -36,14 +36,14 @@ def main():
     apply = '--apply' in args
     recs = grammar_for(root)
     if not recs:
-        sys.exit('no Whitney grammar record for root %r — nothing to attach' % root)
+        sys.exit('no Whitney grammar record for root {!r} — nothing to attach'.format(root))
     ambiguous = len(recs) > 1
     grammar = {'records': recs, 'join': 'pwg_root_slp1==whitney_root_slp1',
                'homonym_aligned': not ambiguous}
 
-    paths = sorted(glob.glob(os.path.join(INP, '%s~~*.portrait.json' % root)))
+    paths = sorted(glob.glob(os.path.join(INP, '{}~~*.portrait.json'.format(root))))
     if not paths:
-        sys.exit('no portraits for root %r under %s' % (root, INP))
+        sys.exit('no portraits for root {!r} under {}'.format(root, INP))
 
     changed = 0
     sample = None
@@ -63,7 +63,7 @@ def main():
              'written' if apply else 'would enrich', changed))
     if not apply and sample:
         name, port = sample
-        print('\n=== enriched portrait sample: %s ===' % name)
+        print('\n=== enriched portrait sample: {} ==='.format(name))
         print(json.dumps(port, ensure_ascii=False, indent=2)[:2600])
 
 

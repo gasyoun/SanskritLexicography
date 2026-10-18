@@ -49,7 +49,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from probe_wsd_strata import (  # noqa: E402  (local module, path set above)
+from probe_wsd_strata import (
     BANDS, DEFAULT_LAYER, MIN_TOKENS_PER_LEMMA,
     dcs_token_counts, fetch_tokens, lemma_pool, load_store,
 )

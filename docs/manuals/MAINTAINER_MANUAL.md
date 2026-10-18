@@ -1,6 +1,6 @@
 # Maintainer Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 20-08-2026_
+_Created: 10-07-2026 · Last updated: 04-10-2026_
 
 
 For the person (or agent) who **operates and extends** this repository. If you
@@ -44,7 +44,7 @@ live tooling embedded in the active subprojects.
 | [RussianTranslation/](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation) | Two LLM translation pipelines: `mw_ru` (Monier-Williams → RU, 287,358 cards, **done**) and `pwg_ru` (Petersburg Dict → RU/EN, **live production on headless CLI / manifest v2**, ~106k headwords, store **11,603** rows as of 24-07-2026 — gitignored, not re-counted this pass) + grammar/TM assets. Gitignored local store/TM not in a clone. Operator depth: [RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md). | Active | maintainer + researcher |
 | [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) | Headword exports across ~16 CDSL dictionaries; key1/key2 semantics; comparison + union tooling | Active | data-reuser |
 | [Digital_Sanskrit_Lexicography-BOOK/](https://github.com/gasyoun/SanskritLexicography/tree/master/Digital_Sanskrit_Lexicography-BOOK) | Book draft — all 14 chapter files (`ch01`–`ch14`) plus intro, 5 part-bridges, and conclusion exist as of 20-08-2026, plus BOOK_PLAN / BRILL_PROPOSAL / RIGHTS_TABLE / LITERATURE_CROSSWALK and its own CHANGELOG (venue: de Gruyter primary since the M01 ruling) | Active | researcher |
-| [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | Paper-pipeline notes/reviews/data (A30–A67 as of 20-08-2026: 27 `.md` + 9 `.csv` under `papers/`; A30, A31, A33–A36, A40, A42, A43, A58, A67 plus scoping notes) | Active | researcher |
+| [papers/](https://github.com/gasyoun/SanskritLexicography/tree/master/papers) | **Swept 04-10-2026** under STANDING_POLICY_PAPER_WORK_PRIVATE_REPOS_ONLY ([#2385](https://github.com/gasyoun/SanskritLexicography/pull/2385)): manuscripts (A30–A67) live only in private repos; the public dir keeps only the sweep canary ([CANARY_paper_priv.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/CANARY_paper_priv.md)). Paper registry: [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) | Active | researcher |
 | [Syntax-Lectures/](https://github.com/gasyoun/SanskritLexicography/tree/master/Syntax-Lectures) | Russian particle-syntax lectures + interactive HTML explorer | Active | **student** |
 | [ReverseDictionary/](https://github.com/gasyoun/SanskritLexicography/tree/master/ReverseDictionary) | Working materials for an unpublished reverse dictionary (~266,820 headwords) | Active | researcher/student |
 | [IndischeSprueche/](https://github.com/gasyoun/SanskritLexicography/tree/master/IndischeSprueche) | Böhtlingk subhāṣita dataset (7,537 JSONL records) | Active (minimal) | data-reuser |
@@ -63,7 +63,7 @@ each append-only:
 
 - [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
   — the empirical registry. **Schema per finding:** a `### §N` heading (the
-  number is the stable citation, never reused/shifted — append-only; **a norm with known breaches**: H616 renumbered seven duplicate pairs to §70–§75 on 11-07-2026; the 18-07-2026 duplicate headings at §80/§86/§87 are **gone** as of 20-08-2026 — unique `### §N` count is 231, max §577 — still cite by number **plus date/title** because FINDINGS §92 measured ~65 wrong downstream §-refs), the
+  number is the stable citation, never reused/shifted — append-only; **a norm with known breaches**: H616 renumbered seven duplicate pairs to §70–§75 on 11-07-2026; the 18-07-2026 duplicate headings at §80/§86/§87 are **gone** as of 20-08-2026 — unique `### §N` count is 300, max §646 (re-censused 04-10-2026) — still cite by number **plus date/title** because FINDINGS §92 measured ~65 wrong downstream §-refs), the
   **claim** in bold with a colour dot (🔴 important · 🟠 medium · 🟡 minor),
   then `Evidence:` (a number / file+line), `Implication:` (what to do), and a
   blockquoted `Source` line tagged `— repo · date`. **No HTML, ever** — use a

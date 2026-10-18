@@ -4,7 +4,7 @@ _Created: 01-08-2026 · Last updated: 05-09-2026_
 
 **Question.** The scale-up's main path uses an **Opus** QA judge (per the pilot). A **Sonnet**
 judge would roughly halve the API-reference cost of the top-500 batch ($277 → $143, since the
-judges are ~$167 of the $277 — see [`PILOT_COST.md` §7](../PILOT_COST.md)). But cheaper is only
+judges are ~$167 of the $277 — see `PILOT_COST.md` §7). But cheaper is only
 acceptable if a Sonnet judge **agrees with Opus on real cards** and, critically, **catches the
 defects Opus catches**. This is that empirical test, run before committing the longer run.
 
@@ -53,7 +53,7 @@ call, **Opus judges remain the main path**; Sonnet is a validated-promising **al
 1. **Small N (7).** Seven cards, two of them synthetic. A handful of agreements is encouraging,
    not conclusive.
 2. **Ad-hoc rubric ≠ production judge.** This used a condensed single-judge rubric on *unmasked*
-   input; production runs the locked [`2_qa_sudya_opus.txt`](../pwg_ru_prompts/2_qa_sudya_opus.txt)
+   input; production runs the locked `2_qa_sudya_opus.txt`
    on `{Tn}`-masked pairs, as a **two-judge** panel (Opus + YandexGPT). The real question is
    whether the *production* Sonnet judge holds up.
 3. **Infra flakiness.** Two Opus agent runs failed to read the `/tmp` data file (sandbox path
@@ -69,7 +69,7 @@ call, **Opus judges remain the main path**; Sonnet is a validated-promising **al
   **and** Sonnet false-clear rate on Opus-sev≥3 ≈ 0.
 - **Hedge regardless:** even if Sonnet judges the bulk, keep **Opus for the repass of rejects**
   and for a judged **sample** — cheap insurance, small cost.
-- Score any such run mechanically with [`src/judge_ab_score.py`](../src/judge_ab_score.py)
+- Score any such run mechanically with `src/judge_ab_score.py`
   (verdict agreement, severity Δ, Sonnet false-clears).
 
 *This run's verdicts are recorded inline above rather than as data files (the agent runs were
@@ -84,9 +84,9 @@ Addresses run 1's small-N. 26 already-translated cards stratified across **parts
 diversity axis): **5 adjectives, 5 m-nouns, 4 f-nouns, 4 n-nouns, 3 indeclinables, 3 verb
 roots, 2 unmarked**. Each judged by an Opus and a Sonnet agent on identical inputs (batch
 of ~6 per agent, reading the pairs file by absolute repo path — no `/tmp`). Verdicts:
-[`judge_ab_run2_opus.jsonl`](RussianTranslation/research/judge_ab_run2_opus.jsonl) ·
-[`judge_ab_run2_sonnet.jsonl`](RussianTranslation/research/judge_ab_run2_sonnet.jsonl), scored by
-[`../src/judge_ab_score.py`](../src/judge_ab_score.py).
+`judge_ab_run2_opus.jsonl` ·
+`judge_ab_run2_sonnet.jsonl`, scored by
+`../src/judge_ab_score.py`.
 
 **Metrics:** BAD/not-BAD agreement **26/26, Cohen κ = 1.00** · severity exact 11/26, **within
 ±1 on 25/26** (lone Δ2 = `akzan`, both still OK) · **Sonnet false-clears = 0** · over-flags = 0.
@@ -115,8 +115,8 @@ once non-a-section translations exist, across more of the alphabet), scored by t
 
 Ran the **entire** translated a-section through both judges as a background workflow (21
 chunks × Opus + Sonnet = 42 batch-judge agents, deterministic scoring). Verdicts:
-[`judge_ab_run3_opus.jsonl`](RussianTranslation/research/judge_ab_run3_opus.jsonl) ·
-[`judge_ab_run3_sonnet.jsonl`](RussianTranslation/research/judge_ab_run3_sonnet.jsonl). One Opus chunk (10 cards
+`judge_ab_run3_opus.jsonl` ·
+`judge_ab_run3_sonnet.jsonl`. One Opus chunk (10 cards
 `akanizWa`…`akartana`) died on an API 500, so **191/201 cards have both verdicts**.
 
 ### A/B result (the valid conclusion) — holds decisively at scale
@@ -165,7 +165,7 @@ in the verdict files. A clean defect audit needs homonym-correct pairing (done b
 
 Re-paired every Russian row of the 14 multi-homonym keys to its **own** German homonym (matched
 by `key2`; 30 rows, 0 unmatched) and re-judged with the main-path **Opus** judge. Verdicts:
-[`judge_ab_homonym_opus.jsonl`](RussianTranslation/research/judge_ab_homonym_opus.jsonl).
+`judge_ab_homonym_opus.jsonl`.
 
 **Result: 28/29 rows clean** (the 30th, `akzarapaNkti~h2`, wasn't returned — agent slip, not a
 defect). When each homonym's Russian is matched to its own German, the previously "catastrophic"
@@ -198,8 +198,8 @@ defect per card and kept controls —
 
 Both judges scored the **blinded** battery (no ground-truth fields visible). The API was
 unstable (two passes + a resume; transient connection-closed/403 errors), so **Opus judged 239,
-Sonnet 209**. Verdicts: [`judge_ab_battery_opus.jsonl`](RussianTranslation/research/judge_ab_battery_opus.jsonl) ·
-[`judge_ab_battery_sonnet.jsonl`](RussianTranslation/research/judge_ab_battery_sonnet.jsonl).
+Sonnet 209**. Verdicts: `judge_ab_battery_opus.jsonl` ·
+`judge_ab_battery_sonnet.jsonl`.
 
 ### Result — a statistical tie
 
@@ -260,7 +260,7 @@ verifies ground truth). **Abandoned on the editor's objection, which is correct:
 **The honest gate instead: mine real Opus-vs-Sonnet disagreements in production.** Both judges
 score every card; the editor adjudicates **only** the cards where they disagree, each shown with
 the complete German + Russian entry (real context, the editor is ground truth). Tooled by
-[`../src/judge_disagreements.py`](../src/judge_disagreements.py).
+`../src/judge_disagreements.py`.
 
 **Already near-conclusive on the data we have:** `judge_disagreements.py` finds **0 conflicts in
 run 3 (191 real a-section cards)** and **2 in run 4 (209)** — a ~0.5 % rate. The adjudication

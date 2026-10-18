@@ -1,0 +1,245 @@
+<!ELEMENT MadhaviyaDhP3 (#PCDATA | sUtra | sectionHeader | sectionFooter)*>
+<!-- Nov 1, 2009. Note on interpretation of pAWAntara entries (ejf note)
+  a. It is the case that each instance of a <pAWAntara> element has as a child
+     at least one <entry> element.
+  b. In some cases (e.g., sutra 1.76), the pAWAntara <entry> element may be
+     incomplete (or even empty).  In such cases, the missing <entry> 
+     elements or attributes may be inferred from those of the non-pAWAntara
+     entrie(s). For instance, in the case of 1.76, the preds attribute,
+     the fullDAtu and lemma elements of the pAWAntara entry are inferred from
+     the non-pAWAntara entry;  the sense element present in
+     the pAWAntara element is to be used for the sense of the pAWAntara entry.
+-->
+<!-- Oct 26, 2009. Notes on MadhaviyaDhP3.
+  MadhaviyaDhP3.xml is created programmatically from MadhaviaDhP2.xml by the command
+   'sh can9a.sh' in directory  /Volumes/Sanskrit-RAID/Lexical/Funderburk/mdhvcanonical/can9.
+      (As of this writing, this program is run on another server; the version of PHP on the Brown server
+        does not support the simpleXML functions used by the program can9a.php).
+   MadhaviyaDhP3 adds two attributes (preds, predsrc) to sUtra elements which have entries.
+    - predsrc is a comma-delimited list of  sUtra ids (sid) for the predicate sutras used to derive the 'preds' value.
+    - preds is either 
+      - 'none' (when no predicate sutras were found to apply to the sutra) or
+      - or a 4-character string. 
+        character 1:  rootAccent
+          u = udAtta
+          a = anudAtta
+          s = svarita (no cases found)
+           x = unassigned
+        character 2:  i-augment
+           s = sa-iw
+           a = an-iw
+            v = vA-iw (no cases found)
+            x = unassigned
+       character 3:  markerAccent (same value scheme as for rootAccent)
+           u = udAtta
+          a = anudAtta
+          s = svarita
+           x = unassigned
+       character 4:  pada
+           p = parasmE-pada
+           a = Atmane-pada
+           u = uBaya-pada
+           x = unassigned
+       
+       When the rootAccent is present, its value implies the value of the i-augment by the rule:
+           u  implies s, a implies a, s implies v
+       When the markerAccent is present, its value imples the value of the pada by the rule:
+           u implies p,  a implies a,  s implies u
+            (sutra sid="4.83" has viBAzitaH which implies svarita marker accent and uBayapadI instead of udAttet as stated by the predicate-providing sUtra 4.89)
+       
+       Here is the distribution of the 'preds' values for all 1469 sutras marked:
+ ncount = 1469
+preds="usup"  510
+preds="none"  292
+preds="usaa"  245
+preds="aaup"  120
+preds="ussu"  46
+preds="xxxa"  45
+preds="aasu"  35
+preds="aaxa"  29
+preds="aaxu"  28
+preds="aaxp"  26
+preds="usxp"  22
+preds="usxx"  20
+preds="aaaa"  20
+preds="usxu"  11
+preds="usxa"  9
+preds="xxaa"  4
+preds="xxup"  3
+preds="xxsu"  2
+preds="aaxx"  1
+preds="aauu"  1
+
+-->
+<!--  NOTES FROM MadhaviyaDhP2.xml, moved as of Oct. 26, 2009 "file:/Users/pscharf/Cittasaya/SanskritLibrary/LexicalSources/Brown/Dhatupatha/MadhaviyaDhatuVrtti/MDhVHeadings.dtd"
+PMS: added:
+sUtra type="textonly" with children sUtraNum, sUtraText, page?, MDhVExtract?
+addition has children: exception?, MDhVExtract?
+exception had children: rootAccent?, i-augment?, final?
+MDhVExtract with child: verb
+2009-07-28. Added missing entries glevf, etc. discovered from comparison of constructed text with sutra text.  Added pada-final pound sign (#) in compounds and {se pragfhya} duals to prevent sandhi when reconstructing the complete {se sUtra} text (PMS).
+2009-09-24. Removed exception tag from sectionHeader 1.1.3.2 leaving it only in the sUtras, where it is explicitly stated.
+
+Usage notes
+The scope attribute indicates what the range of applicability of the item within which it occurs is.  It is placed within the tag of the most specific item that has that scope, for example, list, pronoun, etc., or sUtra, section.
+The sUtraRef includes the sUtra number and the root.  If the gaRaNum.sUtraNum alone is indicated, it means that every root in that sUtra is referred to; if the entry contains ":root" then it refers just to that root in that sUtra.  It is not legal to have the same sUtra number in a sUtraRef without colon and again with.  sUtraRef does not contain leading zeros after the decimal for the sUtraNum, which may be between 1-3 digits.
+The sUtra type="rootPred" contains an entry with a particular root as well as a predicate that is interpretable.
+There are 159 SectionHeaders with corresponding sectionFooters.  These are not strictly nested, though most are, but the correspondence is indicated by a matching secNum parameter.  156 SectionHeaders announce attributes of following roots and have 156 matching empty sectionFooters.  Three sectionFooters announce attributes of preceding roots and have matching empty sectionHeaders.  Generally attributes are hierarchical as follows: rootAccent (i-augment), final, markerAccent (pada); however, this applies strictly only in the first half of the first class.
+The sections marked in this file go beyond the headings that actually appear in the MDhV but are not entirely comprehensive.  sUtras are more likely to be comprehensive but may also leave small gaps in attribution of necessary attributes.  While sUtras often attribute more than one attribute at once to preceding roots, and sections as stated in the MDhV often do the same, in this file sections attempt to separate attributes: each section states that the sUtras within its scope have a single attribute.
+Root accent:
+anudAtta root accent implies lack of the augment {s i} in a monosyllabic root (A. 7.2.10)
+All vowel-final roots are anudAtta, except the following:
+a.	Those ending in short 'a' (in class 10 beginning with 10.242 kaTa) none of which are monosyllabic. (A. 7.2.10 {st kASikA}: {s sarve svarAntAH ekAcaH anudAttAH adantAdIn varjayitvA}.  Roots ending in short 'a' are udAtta {s adantAdayaH udAttAH}.
+b.	Those ending in 'F'
+c.	'vfN' and 'vfY' among those ending in 'f'.
+etc.  See A. 7.2.10 {st kASikA} for exhaustive details.
+Marker accent:
+anudAtta marker accent implies Atmanepada terminations (A. 1.3.12)
+svarita marker accent implies both Atmanepada and parasmEpada terminations, the former if the result of the action accrues to the agent (A. 1.3.72).
+udAtta marker accent implies parasmEpada terminations (A. 1.3.78)
+The pound sign (#) is used to inhibit sandhi.
+
+The entry attribute "non-lexical" indicates that a root is listed only for inclusion in subordinate special-purpose list, not for the purpose of providing a stem-forming affix by inclusion in one of the major ten classes. Such roots are not to be subjected to conjugation; rather their listing causes certain operations to apply to the root already listed elsewhere in the DhP.
+-->
+<!--Principal elements and their attributes-->
+<!ELEMENT sUtra (entry | pAWAntara | sUtraText | sense | MDhVExtract | subject | predicate | exception | pronoun | terminus | particle | specifier | text | list | preverb)* >
+<!ELEMENT pAWAntara (entry | sense | MDhVExtract)*>
+<!ELEMENT text (#PCDATA) >
+<!ATTLIST sUtra AS CDATA #IMPLIED>
+<!ATTLIST sUtra sid CDATA #IMPLIED>
+<!ATTLIST sUtra comment CDATA #IMPLIED>
+<!ATTLIST sUtra correction CDATA #IMPLIED>
+<!ATTLIST sUtra type CDATA #IMPLIED>
+<!ATTLIST sUtra page CDATA #IMPLIED>
+
+<!ELEMENT sectionHeader (#PCDATA | final | rootAccent | i-augment | markerAccent | pada | MDhVExtract | inflectedRoot | particle |  exception | list | usage)*>
+<!ATTLIST sectionHeader gaRaNum CDATA #IMPLIED>
+<!ATTLIST sectionHeader i-augmentation CDATA #IMPLIED>
+<!ATTLIST sectionHeader final CDATA #IMPLIED>
+<!ATTLIST sectionHeader rootAccent CDATA #IMPLIED>
+<!ATTLIST sectionHeader markerAccent CDATA #IMPLIED>
+<!ATTLIST sectionHeader pada CDATA #IMPLIED>
+<!ATTLIST sectionHeader type CDATA #IMPLIED>
+<!ATTLIST sectionHeader AS CDATA #IMPLIED>
+<!ATTLIST sectionHeader inferred CDATA #IMPLIED>
+<!ATTLIST sectionHeader list CDATA #IMPLIED>
+<!ATTLIST sectionHeader secNum CDATA #IMPLIED>
+<!ATTLIST sectionHeader sUtraRef CDATA #IMPLIED>
+<!ATTLIST sectionHeader scope CDATA #IMPLIED>
+<!ATTLIST sectionHeader page CDATA #IMPLIED>
+<!ATTLIST sectionHeader correction CDATA #IMPLIED>
+<!ATTLIST sectionHeader comment CDATA #IMPLIED>
+
+<!ELEMENT sectionFooter (#PCDATA | particle)*>
+<!ATTLIST sectionFooter secNum CDATA #REQUIRED>
+<!ATTLIST sectionFooter sUtraRef CDATA #IMPLIED>
+<!ATTLIST sectionFooter scope CDATA #IMPLIED>
+<!ATTLIST sectionFooter page CDATA #IMPLIED>
+
+<!--Subordinate sUtra elements and their attributes-->
+<!ELEMENT subject (#PCDATA | list | inflectedRoot | specifier | pronoun | particle | preverb | marker | sense | root | terminus | entry | text)*>
+<!ATTLIST subject sUtraRef CDATA #IMPLIED>
+<!ATTLIST subject scope CDATA #IMPLIED>
+<!ELEMENT entry ( fullDAtu | lemma  | MDhVExtract | sense |  exception | particle | inflectedRoot | specifier | preverb)*>
+<!ATTLIST entry id CDATA #REQUIRED>
+<!ATTLIST entry correction CDATA #IMPLIED>
+<!ATTLIST entry type CDATA #IMPLIED >
+<!ATTLIST senseterm type CDATA #IMPLIED>
+<!ATTLIST senseterm inherited CDATA #IMPLIED>
+<!ATTLIST senseterm inferred CDATA #IMPLIED>
+<!ELEMENT premarker (#PCDATA) >
+<!ELEMENT root (#PCDATA) >
+<!ELEMENT marker (#PCDATA) >
+
+<!ELEMENT InhMean (#PCDATA) > <!-- inherited meaning -->
+
+<!ELEMENT predicate (#PCDATA | rootAccent | pada | markerAccent | markerExtension | particle|text |
+  i-augment)*>
+<!ATTLIST predicate sUtraRef CDATA #IMPLIED>
+<!ATTLIST predicate scope CDATA #IMPLIED>
+
+<!ELEMENT MDhVExtract (#PCDATA)>
+<!ATTLIST MDhVExtract sUtraRef CDATA #IMPLIED>
+<!ATTLIST MDhVExtract page CDATA #IMPLIED>
+<!ATTLIST MDhVExtract comment CDATA #IMPLIED>
+<!ELEMENT exception (#PCDATA | inflectedRoot | rootAccent  | final | particle | i-augment)*>
+<!ATTLIST exception scope CDATA #IMPLIED>
+<!ATTLIST exception rootAccent CDATA #IMPLIED>
+<!ATTLIST exception pada CDATA #IMPLIED>
+
+<!ELEMENT terminus (#PCDATA)>
+<!ATTLIST terminus scope CDATA #REQUIRED>
+
+<!ELEMENT particle (#PCDATA)>
+<!ATTLIST particle inherited CDATA #IMPLIED>
+
+<!ELEMENT specifier (#PCDATA)>
+<!ATTLIST specifier scope CDATA #IMPLIED>
+
+<!ELEMENT sense (#PCDATA | senseterm | particle)*>
+<!ATTLIST sense senses CDATA #REQUIRED>
+
+<!ELEMENT list (#PCDATA)>
+<!ATTLIST list scope CDATA #IMPLIED>
+<!ATTLIST list AS CDATA #IMPLIED>
+
+<!ELEMENT sUtraText (#PCDATA)>
+
+<!--Subordinate section elements and their attributes-->
+<!ELEMENT final (#PCDATA)>
+<!ATTLIST final inferred CDATA #IMPLIED>
+<!ELEMENT rootAccent (#PCDATA)>
+<!ATTLIST rootAccent inferred CDATA #IMPLIED >
+<!ELEMENT markerAccent (#PCDATA)>
+<!ATTLIST markerAccent inferred CDATA #IMPLIED>
+<!ELEMENT pada (#PCDATA)>
+<!ATTLIST pada inferred CDATA #IMPLIED>
+
+<!ELEMENT inflectedRoot (#PCDATA)>
+<!ATTLIST inflectedRoot sUtraRef CDATA #IMPLIED>
+<!ATTLIST inflectedRoot scope CDATA #IMPLIED>
+
+<!--Elements lower in the hierarchy and their attributes-->
+<!--Oct 26, 2009. fullDAtu included because of  entry id="1356"-->
+<!ELEMENT lemma (fullDAtu?,preverb?,premarker?,inflectedRoot?,root,marker?) >
+<!-- <!ELEMENT lemma (#PCDATA | root | marker)*> -->
+<!ATTLIST root normal  CDATA #IMPLIED> <!-- the 'normalized' root, if different from the (canonical) root -->
+<!ATTLIST root inherited  CDATA #IMPLIED> 
+<!ATTLIST senseterm paren CDATA #IMPLIED >
+<!ATTLIST senseterm variant CDATA #IMPLIED >
+<!ATTLIST senseterm nref CDATA #IMPLIED >
+<!ATTLIST root nref CDATA #IMPLIED >
+ <!--The tag listed="no" is added to an entry in MDhV to indicate that the root, which appears elsewhere in the DhP, is referred to in the commentary without the intention to list it in the sutra commented upon.-->
+<!ATTLIST entry listed CDATA #IMPLIED >
+<!ATTLIST entry denigrate  CDATA #IMPLIED >
+<!ATTLIST entry nref  CDATA #IMPLIED >
+
+<!ELEMENT preverb (#PCDATA)>
+<!ATTLIST preverb inherited CDATA #IMPLIED>
+<!ATTLIST preverb stem CDATA #IMPLIED >
+<!ATTLIST marker scope CDATA #IMPLIED>
+<!ATTLIST marker inferred CDATA #IMPLIED>
+<!ELEMENT senseterm (#PCDATA | pronoun)*>
+<!ATTLIST senseterm scope CDATA #IMPLIED>
+<!ATTLIST entry comment CDATA #IMPLIED> <!-- Chandrashekar's comments -->
+<!ATTLIST entry notfound CDATA #IMPLIED>  <!-- item in MDhV index not found in MDhV text-->
+<!ATTLIST entry variant CDATA #IMPLIED >
+<!ATTLIST particle variant CDATA #IMPLIED>
+
+<!ELEMENT pronoun (#PCDATA)>
+<!ATTLIST pronoun sUtraRef CDATA #IMPLIED>
+<!ATTLIST pronoun scope CDATA #IMPLIED>
+<!ELEMENT markerExtension (#PCDATA)>
+<!ELEMENT fullDAtu (#PCDATA)>
+<!ATTLIST root inferred CDATA #IMPLIED >
+<!ATTLIST sUtra preds CDATA #IMPLIED >
+<!ATTLIST sUtra predsrc CDATA #IMPLIED >
+<!ELEMENT i-augment (#PCDATA)>
+<!ELEMENT usage (#PCDATA)>
+<!ATTLIST usage type CDATA #IMPLIED >
+<!ATTLIST fullDAtu inferred CDATA #IMPLIED>
+<!ATTLIST sectionHeader i-augment  CDATA #IMPLIED>
+<!ATTLIST sUtra usage  CDATA #IMPLIED >
+<!ATTLIST i-augment  inferred  CDATA #IMPLIED >
+<!-- Nov 1, 2009 -->
+<!ATTLIST entry preds CDATA #IMPLIED >

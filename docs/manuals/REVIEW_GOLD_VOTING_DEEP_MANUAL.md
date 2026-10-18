@@ -1,6 +1,6 @@
 # Review / gold / voting-sheet deep manual — the human-judgment subsystem
 
-_Created: 25-07-2026 · Last updated: 20-08-2026_
+_Created: 25-07-2026 · Last updated: 04-10-2026_
 
 The subsystem deep manual for the RussianTranslation **human-review machinery**:
 the G5/G6/G7 release gates, the 15-script gold chain, the HTML voting sheets,
@@ -106,14 +106,14 @@ LLM-judged fidelity track — adjacent, NOT part of G5/G6/G7).
 
 | Piece | File | Role |
 |---|---|---|
-| Emitter | `csl_pyutil.render_review_sheet` (external; repo-root [requirements.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/requirements.txt) pins `csl-pyutil@v0.17.1`; this pass `csl_pyutil.__version__` = **0.20.0** — re-verify when anchors misbehave) | the ONE sheet template (V1–V8 standard, V9 evidence preflight in later tags); never forked |
+| Emitter | `csl_pyutil.render_review_sheet` (external; repo-root [requirements.txt](https://github.com/gasyoun/SanskritLexicography/blob/master/requirements.txt) pins `csl-pyutil` to a git commit (`b1606944`); this pass `csl_pyutil.__version__` = **0.25.0** — re-verify when anchors misbehave) | the ONE sheet template (V1–V8 standard, V9 evidence preflight in later tags); never forked |
 | Repo lookups | [`src/review_sheet_standard.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_sheet_standard.py) | V4 entry links, SLP1→IAST, shared config, `DA_RATING` |
 | Binding | [`src/review_binding.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/review_binding.py) | `content_hash()` · `stamp()` · `write_lock()` · retro locks |
 | Schema | [`schemas/decisions.schema.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/schemas/decisions.schema.json) | the export shape, `content_hash` required |
 | Gate | [`src/validate_decisions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/validate_decisions.py) | refuses unbound/mismatched/drifted exports |
 | Router | [`src/apply_decisions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/apply_decisions.py) | validator-first; G5→run_batch, G6→gold_ingest |
 | Locks | `review/locks/<sheet_id>.lock.json` (tracked) | sheet_id + hash + card ids; the durable anchor |
-| Generators | `build_g5_review_sheet.py` · `build_g6_mqm_gold_sheet.py` · `build_h180_review_sheets.py` · `build_kochergina_sheet.py` · `build_renou_pilot_sheet.py` · `h178_eval_bakeoff.py` plus later sheets (reglue, RV-divergence, abbrev, style, …) — **13** `src/build_*sheet*.py` as of 20-08-2026 | all stamp + lock at generation time |
+| Generators | `build_g5_review_sheet.py` · `build_g6_mqm_gold_sheet.py` · `build_h180_review_sheets.py` · `build_kochergina_sheet.py` · `build_renou_pilot_sheet.py` · `h178_eval_bakeoff.py` plus later sheets (reglue, RV-divergence, abbrev, style, …) — **16** `src/build_*sheet*.py` as of 04-10-2026 (was 13 on 20-08-2026) | all stamp + lock at generation time |
 
 ## 3. The sheet lifecycle, stage by stage
 

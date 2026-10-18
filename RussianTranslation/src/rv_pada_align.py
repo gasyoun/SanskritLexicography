@@ -109,7 +109,7 @@ def slp1_iast(s):
         pilot = os.path.join(HERE, 'pilot')
         if pilot not in sys.path:
             sys.path.insert(0, pilot)
-        from build_article_site import slp1_iast as _canonical  # noqa: PLC0415
+        from build_article_site import slp1_iast as _canonical
         return _canonical(s)
     except Exception:
         s = _ACCENT.sub('', s or '')
@@ -572,10 +572,10 @@ def verdict(gloss_ru, alignment):
         return 'undecidable', 'no Russian gloss governs this citation'
     rs = _stems(' '.join(alignment['ru_lines']))
     if gs & rs:
-        return 'agrees', 'gloss stem(s) %s present in the published pāda(s)' % ', '.join(
-            sorted(gs & rs))
+        return 'agrees', 'gloss stem(s) {} present in the published pāda(s)'.format(', '.join(
+            sorted(gs & rs)))
     joined = ' '.join(alignment['ru_lines'])
-    return 'diverges', 'PWG «%s» ↮ pāda(s) %s «%s»' % (
+    return 'diverges', 'PWG «{}» ↮ pāda(s) {} «{}»'.format(
         (gloss_ru or '').strip(), ''.join(alignment['padas']),
         joined if len(joined) <= 160 else joined[:157] + '…')
 
@@ -640,7 +640,7 @@ def default_store():
     """
     local = os.path.join(HERE, 'pwg_ru_translated.jsonl')
     try:
-        from store_path import canonical_store  # noqa: PLC0415
+        from store_path import canonical_store
         return canonical_store(local)
     except Exception:
         return local
@@ -738,15 +738,14 @@ def cmd_card(args):
             continue
         row = _row_for(cit, rvdir)
         print('=' * 78)
-        print('%s  (%s · %s)' % (row['iast'] or row['key1'], row['key1'], row['subcard']))
-        print('PWG gloss   : %s' % row['gloss_ru'])
-        print('Citation    : %s  ->  %s' % (row['raw_ls'], row['locus']))
-        print('Quoted      : %s' % row['quote_iast'])
-        print('Pādas       : %s   (coverage %s, quote %.2f, %s confidence)'
-              % (row['padas'] or '—', row['coverage'], row['quote_coverage'], row['confidence']))
+        print('{}  ({} · {})'.format(row['iast'] or row['key1'], row['key1'], row['subcard']))
+        print('PWG gloss   : {}'.format(row['gloss_ru']))
+        print('Citation    : {}  ->  {}'.format(row['raw_ls'], row['locus']))
+        print('Quoted      : {}'.format(row['quote_iast']))
+        print('Pādas       : {}   (coverage {}, quote {:.2f}, {} confidence)'.format(row['padas'] or '—', row['coverage'], row['quote_coverage'], row['confidence']))
         for letter, line in zip(row['padas'], row['ru_lines']):
-            print('  %s) %s' % (letter, line))
-        print('Verdict     : %s — %s' % (row['verdict'], row['verdict_why']))
+            print('  {}) {}'.format(letter, line))
+        print('Verdict     : {} — {}'.format(row['verdict'], row['verdict_why']))
         print('=' * 78)
     return 0
 
@@ -765,11 +764,11 @@ def cmd_report(args):
     print('RV Saṃhitā citations : %d' % len(rows))
     print('distinct entries     : %d' % len(entries))
     print('distinct loci        : %d' % len(loci))
-    print('verdicts (all)       : %s' % dict(verdicts.most_common()))
+    print('verdicts (all)       : {}'.format(dict(verdicts.most_common())))
     for sc in ('pāda', 'verse'):
         c = Counter(r['verdict'] for r in rows if r['scope'] == sc)
         print('verdicts (%-5s)    : %s' % (sc, dict(c.most_common())))
-    print('join confidence      : %s' % dict(conf.most_common()))
+    print('join confidence      : {}'.format(dict(conf.most_common())))
     scoped = [r for r in rows if r['padas'] and r['scope'] == 'pāda']
     print('pāda-scoped joins    : %d (%.1f%%)' % (
         len(scoped), 100.0 * len(scoped) / max(len(rows), 1)))
@@ -777,15 +776,15 @@ def cmd_report(args):
     print('multi-pāda joins     : %d (%.1f%% of pāda-scoped)' % (
         spanning, 100.0 * spanning / max(len(scoped), 1)))
     print('no published Russian : %d' % sum(1 for r in rows if not r['has_published_ru']))
-    print('reasons for no join  : %s' % dict(
-        Counter(r['reason'] for r in rows if not r['padas']).most_common(6)))
+    print('reasons for no join  : {}'.format(dict(
+        Counter(r['reason'] for r in rows if not r['padas']).most_common(6))))
     if args.out:
         out = args.out if os.path.isabs(args.out) else os.path.join(os.path.dirname(HERE), args.out)
         os.makedirs(os.path.dirname(out), exist_ok=True)
         with open(out, 'w', encoding='utf-8', newline='\n') as fh:
             for r in rows:
                 fh.write(json.dumps(r, ensure_ascii=False) + '\n')
-        print('wrote %s' % out)
+        print('wrote {}'.format(out))
     return 0
 
 
@@ -814,7 +813,7 @@ def cmd_sample(args):
         out.append('--- %02d %s %s | sel=%s %s q=%.2f reg=%.1f'
                    % (i, loc, r['key1'], r['padas'], r['confidence'],
                       r['quote_coverage'], reg))
-        out.append('    QUOTE: %s' % r['quote_iast'])
+        out.append('    QUOTE: {}'.format(r['quote_iast']))
         for j, p in enumerate(padas):
             mark = '>>' if PADA_LETTERS[j] in r['padas'] else '  '
             out.append('  %s %s) %-46s | %s'
@@ -827,7 +826,7 @@ def cmd_sample(args):
         os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, 'w', encoding='utf-8', newline='\n') as fh:
             fh.write(text + '\n')
-        print('\nwrote %s' % path)
+        print('\nwrote {}'.format(path))
     return 0
 
 
@@ -883,7 +882,7 @@ def cmd_gate(args):
           % (stats['citations'], stats['published'], stats['quoted'],
              stats['passed_through'], len(violations)))
     for v in violations[:20]:
-        print('  VIOLATION %s (%s): %s' % (v['locus'], v['key1'], v['quote_slp1'][:70]))
+        print('  VIOLATION {} ({}): {}'.format(v['locus'], v['key1'], v['quote_slp1'][:70]))
     return 3 if violations else 0
 
 
@@ -891,7 +890,7 @@ def cmd_gate(args):
 
 
 def selftest():
-    from rv_pada_align_selftest import run  # noqa: PLC0415
+    from rv_pada_align_selftest import run
     return run()
 
 

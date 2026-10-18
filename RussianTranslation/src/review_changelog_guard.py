@@ -13,13 +13,15 @@ CHANGELOG = "RussianTranslation/CHANGELOG.md"
 # H3355: [Unreleased] bullets are hook-blocked; entries land in changelog_queue/ and
 # are consumed at release-cut. A queued entry in the same diff satisfies this guard
 # (02-09-2026, H3864 — the guard predated the queue and refused every queued audit).
-CHANGELOG_QUEUE_PREFIX = "changelog_queue/"
+# git diff paths are repo-root relative, so the RussianTranslation queue is matched with
+# its folder prefix too (23-09-2026, H5261: the bare prefix refused every queued entry).
+CHANGELOG_QUEUE_PREFIXES = ("changelog_queue/", "RussianTranslation/changelog_queue/")
 
 
 def has_changelog_touch(changed):
     if CHANGELOG in changed:
         return True
-    return any(p.startswith(CHANGELOG_QUEUE_PREFIX) and p.endswith(".md") for p in changed)
+    return any(p.startswith(CHANGELOG_QUEUE_PREFIXES) and p.endswith(".md") for p in changed)
 BYPASS_MARKER = "Changelog: not applicable"
 REVIEW_PATTERNS = (
     "RussianTranslation/*REVIEW*.md",
@@ -34,7 +36,7 @@ def run_git(args):
     p = subprocess.run(["git"] + args, text=True, encoding="utf-8",
                        stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     if p.returncode:
-        raise SystemExit(p.stderr.strip() or "git command failed: %s" % " ".join(args))
+        raise SystemExit(p.stderr.strip() or "git command failed: {}".format(" ".join(args)))
     return p.stdout
 
 
@@ -49,13 +51,13 @@ def changed_files(args):
         out = run_git(["diff", "--cached", "--name-only", "--diff-filter=ACMR"])
         return [norm(p) for p in out.splitlines() if p.strip()]
     if args.base and args.head:
-        spec = "%s...%s" % (args.base, args.head)
+        spec = "{}...{}".format(args.base, args.head)
         p = subprocess.run(["git", "diff", "--name-only", "--diff-filter=ACMR", spec],
                            text=True, encoding="utf-8", stdout=subprocess.PIPE,
                            stderr=subprocess.PIPE)
         if p.returncode:
             out = run_git(["diff", "--name-only", "--diff-filter=ACMR",
-                           "%s..%s" % (args.base, args.head)])
+                           "{}..{}".format(args.base, args.head)])
             return [norm(x) for x in out.splitlines() if x.strip()]
         return [norm(x) for x in p.stdout.splitlines() if x.strip()]
     out = run_git(["diff", "--name-only", "--diff-filter=ACMR", "HEAD"])
@@ -86,11 +88,10 @@ def check(paths):
     unwaived = [p for p in review_files if not has_bypass_marker(p)]
     if not unwaived:
         return 0
-    print("Major review/audit files changed without %s:" % CHANGELOG, file=sys.stderr)
+    print("Major review/audit files changed without {}:".format(CHANGELOG), file=sys.stderr)
     for path in unwaived:
-        print("  - %s" % path, file=sys.stderr)
-    print("\nAdd a changelog entry, or add an auditable '%s' marker to the review file."
-          % BYPASS_MARKER, file=sys.stderr)
+        print("  - {}".format(path), file=sys.stderr)
+    print("\nAdd a changelog entry, or add an auditable '{}' marker to the review file.".format(BYPASS_MARKER), file=sys.stderr)
     return 1
 
 
@@ -105,6 +106,8 @@ def selftest():
     assert check(["RussianTranslation/README.md"]) == 0
     assert check(["RussianTranslation/docs/X_AUDIT_02-09-2026.md",
                   "changelog_queue/2026-09-02-x.md"]) == 0
+    assert check(["RussianTranslation/docs/X_AUDIT_02-09-2026.md",
+                  "RussianTranslation/changelog_queue/2026-09-22-x.md"]) == 0
     with contextlib.redirect_stderr(io.StringIO()):
         assert check(["RussianTranslation/docs/X_AUDIT_02-09-2026.md",
                       "changelog_queue/README.txt"]) == 1

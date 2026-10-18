@@ -1,0 +1,28 @@
+{
+ "fetched_utc": "doc-example (ruscorpora/public-api), not live",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "кошка",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_FREQUENCY"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "frequencyData": {
+   "category": 3,
+   "ipm": 44.0418
+  },
+  "possiblePos": [
+   "S",
+   "V"
+  ]
+ }
+}

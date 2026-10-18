@@ -117,8 +117,8 @@ def seal(path: str, value: Any) -> dict[str, Any]:
         if existing == payload:
             return receipt(path, digest, len(payload))
         raise SealError(
-            'sealed artifact already exists with different bytes: %s '
-            '(sealed=%s, incoming=%s)' % (path, sha256_bytes(existing), digest))
+            'sealed artifact already exists with different bytes: {} '
+            '(sealed={}, incoming={})'.format(path, sha256_bytes(existing), digest))
     atomic_write_bytes(path, payload)
     return receipt(path, digest, len(payload))
 
@@ -140,7 +140,7 @@ def read_sealed(path: str) -> Any:
         payload = handle.read()
     value = json.loads(payload.decode('utf-8'))
     if canonical_bytes(value) != payload:
-        raise SealError('artifact is not in canonical sealed form: %s' % path)
+        raise SealError('artifact is not in canonical sealed form: {}'.format(path))
     return value
 
 
@@ -159,7 +159,7 @@ def tree_digest(root: str) -> str:
         for name in sorted(files):
             full = os.path.join(base, name)
             relative = os.path.relpath(full, root).replace('\\', '/')
-            entries.append('%s:%s' % (relative, sha256_file(full)))
+            entries.append('{}:{}'.format(relative, sha256_file(full)))
     return sha256_text('\n'.join(entries))
 
 
@@ -168,7 +168,7 @@ def bind(receipt_value: Mapping[str, Any]) -> tuple[str, str]:
     path = receipt_value.get('path')
     digest = receipt_value.get('sha256')
     if not path or not digest:
-        raise SealError('receipt is not hash-bound: %r' % (dict(receipt_value),))
+        raise SealError('receipt is not hash-bound: {!r}'.format(dict(receipt_value)))
     return str(path), str(digest)
 
 

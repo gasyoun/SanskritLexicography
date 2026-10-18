@@ -1536,40 +1536,167 @@ def test_mask_preamble_carries_task_shape():
                  '(%r) — that is the exact shape the model refused twice' % banned)
 
 
-def test_health_probe_shares_the_production_task_shape():
-    """H3157 repair (a) / FINDINGS §498 rule 1: the cheap gate half must be able to fail the
-    way the expensive half fails.
+def test_gloss_wrapper_prompt_preservation_h4270():
+    """H4015 residual (H4270): the generation prompt must order {%…%} wrapper preservation.
 
-    H994 fixed this probe's plan-mode refusal in its PROMPT while keeping `--permission-mode
-    plan`, so the probe matched the paid call in spawn shape and was immunised in the one input
-    the model reasons about. On 19-08-2026 that produced a Step-1 PASS on both ceilings minutes
-    before the Step-2 canary refused — same profile, same flag, same model. A gate whose cheap
-    half cannot detect the failure its expensive half is exposed to reports healthy right up to
-    the moment it spends.
+    Two independent c1 windows lost the German {%…%} gloss wrappers in the Russian output on
+    _apta (8 wrappers in, 1 kept, zero «») while every {Tn}-masked span survived — because
+    pwg_mask.mask keeps DE {%…%} spans INLINE (unmasked), so nothing told the model the
+    wrapper is markup it must reproduce. H3658 Lane B ruled the class not deterministically
+    repairable post-hoc and PR #789 forbids guessing gloss boundaries, so the prompt is the
+    fix: an explicit preservation rule + a worked example, pinned here on MASK_PREAMBLE (the
+    shared source of the manifest-v2 preamble and the generated JS) and end-to-end on a mini
+    manifest whose golden output requires {%…%} spans.
+    """
+    import gen_opt_harness2 as gh
+    from gen_opt_harness2 import MASK_PREAMBLE as preamble
 
-    The fix is that the probe now carries the generation lane's OWN TASK SHAPE block, so a
-    regression there refuses cheaply at Step 1 instead of expensively at Step 2. Asserted on
-    the assembled prompt, not on the import, so deleting the prepend is caught too.
+    # 1) The rule, on the shared source text.
+    for needle in ('{%…%}', 'GLOSS-DE-RESIDUE', 'MUST reappear',
+                   'Never drop the wrapper', 'never replace it with «…»',
+                   'never leave the'):
+        if needle not in preamble:
+            fail('MASK_PREAMBLE lost the gloss-wrapper clause %r — the model will keep '
+                 'stripping {%…%} wrappers and every window re-defects (H4015, twice)' % needle)
+    # 1b) H4277 (a′): the tightening clause — the H4270 window over-applied the rule to a
+    #     MASKED English span ({%equation of a degree%} -> {%уравнение степени%}, sense 4b,
+    #     high-confidence foreign_gloss_translated) instead of echoing {Tn} for restore.
+    for needle in ('applies ONLY to {%…%} spans you can SEE in your masked source',
+                   'stays {Tn} VERBATIM in both fields', 'never translate it',
+                   'never wrap it in {%…%}'):
+        if needle not in preamble:
+            fail('MASK_PREAMBLE lost the {Tn}-verbatim tightening clause %r — the model will '
+                 'over-apply the wrapper rule to masked spans again (H4270 sense 4b)' % needle)
+    # 2) The worked example, spans verbatim.
+    for needle in ('a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.',
+                   'а) {%некий%} <is>Arhant</is> <ls>H. 25</ls>.'):
+        if needle not in preamble:
+            fail('MASK_PREAMBLE lost the gloss-wrapper worked example %r' % needle)
+    # 2b) #2109: the EN lane must see the demonstration in the language it produces. The rule
+    #     itself was always shared (`.replace('`russian`', field)` reaches both lanes), but the
+    #     worked example stayed RU-illustrated, so an `--lang en` window read a Russian target
+    #     string as the model for its own English output. Both renderings are pinned here.
+    en_preamble = gh.mask_preamble('english')
+    for needle in ('a〉 {%ein%} <is>Arhant</is> <ls>H. 25</ls>.',
+                   'EN `a) {%a certain%} <is>Arhant</is> <ls>H. 25</ls>.`',
+                   'must read `a) {%a certain%} {T1} {T2}.`',
+                   '`english` field'):
+        if needle not in en_preamble:
+            fail('the EN-lane preamble lost %r — an --lang en window is back to being shown a '
+                 'Russian worked example for its own English output (#2109)' % needle)
+    if 'некий' in en_preamble:
+        fail('the EN-lane preamble still carries the Russian worked example (#2109) — the '
+             'example must be keyed to `field`, not copied from the RU rendering')
+    if 'a certain' in preamble:
+        fail('the RU-lane preamble picked up the English worked example (#2109)')
+    # The rule text itself stays byte-identical across lanes apart from the field name and the
+    # example, so the shared-verdict half of the ledger pair keeps holding.
+    for needle in ('GLOSS-DE-RESIDUE', 'MUST reappear', 'Never drop the wrapper',
+                   'applies ONLY to {%…%} spans you can SEE in your masked source',
+                   'stays {Tn} VERBATIM in both fields'):
+        if needle not in en_preamble:
+            fail('the EN-lane preamble lost the shared wrapper rule %r' % needle)
+
+    # 3) End-to-end mini manifest: the DE {%…%} span stays inline in the masked skeleton AND
+    #    the generated JS prompt carries the rule (ensure_ascii escapes the Cyrillic example;
+    #    the ASCII skeleton of the clause survives verbatim).
+    raw = '<L>1<pc>1<k1>a<k2>a<h>1\n{#a#}¦ a) {%eins%} <is>Arhant</is> <ls>H. 25</ls>.\n'
+    d = tempfile.mkdtemp()
+    keys = ['zz_key_a', 'zz_key_b']
+    saved_ip = gh.input_paths
+    try:
+        for k in keys:
+            with open(os.path.join(d, k + '.raw.txt'), 'w', encoding='utf-8') as f:
+                f.write(raw)
+            with open(os.path.join(d, k + '.portrait.json'), 'w', encoding='utf-8') as f:
+                f.write('{}')
+        gh.input_paths = lambda k, input_dir=None: (
+            os.path.join(d, k + '.raw.txt'), os.path.join(d, k + '.portrait.json'))
+        js, _batches = gh.build('zz', keys, None, 12000, nominal=True,
+                                grammar_on=False, tm_path=None)
+        import re as _re
+        if 'GLOSS WRAPPERS' not in js or '{%ein%}' not in js:
+            fail('generated JS prompt lost the gloss-wrapper rule/example — the paid lane '
+                 'would translate bare prose again (H4015 class)')
+        inputs = json.loads(_re.search(r'^const INPUTS = (.*)$', js, _re.M).group(1))
+        for k in keys:
+            skel = inputs[k]['skeleton']
+            if '{%eins%}' not in skel:
+                fail('masked skeleton dropped the DE gloss wrapper for %s: %r — golden output '
+                     'cannot carry {%…%} spans the input no longer shows' % (k, skel))
+            if '{T' not in skel:
+                fail('masked skeleton lost its {Tn} spans for %s: %r' % (k, skel))
+    finally:
+        gh.input_paths = saved_ip
+        shutil.rmtree(d, ignore_errors=True)
+
+
+def test_health_probe_asks_an_honest_question():
+    """H4527 (15-09-2026) — H4213 §6.3 option (b): the readiness probe asks ONE honest question
+    whose true answer is `{"ok": true}`, over reference text that makes it true.
+
+    Supersedes the H3157 (a) prepend of the production TASK SHAPE block and the H4277 provenance
+    bridge. With both in place the probe kept answering `{"ok": false}` on healthy routes — four
+    refusals against two passes between 10-09 and 15-09, the last two WITH the lane's
+    `--safe-mode`, which rules the profile surface out. The 15-09 14:27Z transcript names the
+    reason in the model's own words: an embedded "READINESS CHECK" block claiming shared
+    authority, over-justifying itself as "not a bypass", an "ignore this" sample block, and a card
+    task with no cards — "the shape of a prompt injection". The model was right.
+
+    What H3157 wanted the probe to detect is detected upstream on the cohort-acceptance route:
+    `bounded_staged_run --execute --only-profile <p>` runs `canary_gate.enforce` (production
+    preamble + a real synthetic card, same profile, <= 6 h) before `probe_fleet`. It is NOT
+    covered on `max_account_orchestrator staged-run`, which has no canary, nor under
+    `--skip-canary-gate` / a multi-profile run on one receipt — routed to Uprava H4916 (see
+    `_probe_prompt`'s docstring). The probe keeps its spawn shape, ceilings and payload size, and
+    `{"ok": true}` stays the only passing answer; only the text it reasons about is now a
+    question with a true answer instead of an order dressed as a task.
     """
     import max_account_orchestrator as mao
-    from gen_opt_harness2 import MASK_PREAMBLE as preamble
 
     prompt = mao._probe_prompt(6491)
 
-    if preamble.strip() not in prompt:
-        fail('the health probe no longer carries the production TASK SHAPE block — a Step-1 '
-             'PASS would again carry no information about whether Step 2 will refuse (§498)')
-    if not prompt.startswith('=== TASK SHAPE (read first) ==='):
-        fail('the TASK SHAPE block must OPEN the probe prompt, as it does in production — the '
-             'model refuses before reaching a later block')
-    # H994's own fix must survive: a natural, completable task, never a bare tool-demand.
-    if '{"ok": true}' not in prompt:
-        fail('the probe lost its natural completable task (H994) — a degenerate tool-demand is '
-             'the shape that triggered the refusal in the first place')
-    # The payload floor is what makes the reading load-representative; the prepend must not
-    # have been paid for out of the filler.
-    if len(prompt.encode('utf-8')) < 6491:
-        fail('probe prompt fell below the >=5 KB payload floor after the preamble was added')
+    if not prompt.startswith(mao._PROBE_QUESTION):
+        fail('the probe prompt must OPEN with the readiness question — nothing may be prepended '
+             'to it (H4527: the prepended production block read as the injection frame)')
+    if '"ok" is true if the text mentions it' not in prompt:
+        fail('the readiness question no longer maps its true answer onto the schema field')
+    head, sep, reference = prompt.partition('--- reference text ---')
+    if not sep:
+        fail('the probe lost the reference-text marker between the question and its text')
+    # The answer must actually BE true: the reference text names what the question asks about.
+    if 'Petersburg Sanskrit dictionary' not in reference:
+        fail('the reference text no longer contains what the question asks about — the '
+             'correct answer would be false and every reading a NO-GO')
+    # Payload parity with every production_v4 reading (preamble 2 896 + bridge 1 342 + 6 491
+    # filler = 10 729 B): the probe must not become cheaper to pass than the series its
+    # ceilings were read from.
+    if len(prompt.encode('utf-8')) < 10729:
+        fail('probe prompt fell below the 10 729-byte production_v4 size (%d B)'
+             % len(prompt.encode('utf-8')))
+
+
+def test_health_probe_carries_no_injection_shape():
+    """H4527 (15-09-2026): pin the ABSENCE of every feature the refusing calls named.
+
+    The 07-09 and 15-09 transcripts list them: a block claiming the same issuer as the text
+    above it, a card task that declares zero cards, an order to return one fixed string and
+    "nothing else", a pre-emptive "not a bypass", an "ignore"/"inert" sample block, and the
+    production TASK SHAPE block promising cards that never arrive. A later "hardening" that
+    re-adds any of them re-introduces the false NO-GO loudly and offline, not at ~$0.07 and one
+    of two rationed daily readings per profile.
+    """
+    import max_account_orchestrator as mao
+
+    prompt = mao._probe_prompt(6491)
+    for banned in ('SAME ISSUER', 'ZERO cards', 'nothing else', 'bypass', 'inert sample',
+                   'ignore', 'do not analyse', 'TASK SHAPE', '=== CARD', 'READINESS CHECK'):
+        if banned in prompt:
+            fail('the probe prompt carries %r again — a feature the refusing call named as the '
+                 'prompt-injection signature (H4527, 15-09-2026 transcript)' % banned)
+    for gone in ('_PROBE_PROVENANCE_BRIDGE', '_production_task_shape_preamble'):
+        if hasattr(mao, gone):
+            fail('%s is back in max_account_orchestrator — H4527 retired it' % gone)
 
 
 def test_prompt_rule_audit_missing_blocks():
@@ -1780,6 +1907,20 @@ def test_braced_gloss_audit():
     if {r['id'] for r in sanskrit_collision} & {'untranslated_braced_german_gloss'}:
         fail('braced gloss audit flagged a gloss that only collided with an embedded '
              'Sanskrit citation substring, not a real leak')
+
+    # H4527 (23-09-2026, kast_ur_i~~h0_zz_pw): a Latin binomial wrapped in PWG markup
+    # ({%<bot>Hibiscus abelmoschus</bot>%}) and kept verbatim in the Russian is the
+    # convention, not an untranslated German gloss -- the anchored LATIN_BINOMIAL used to be
+    # defeated by the leading tag. The other direction must still fire: a bare German
+    # {%Moschus%} echoed with no Cyrillic rendering is a genuine miss, tagged or not.
+    for bot in ('{%<bot>Hibiscus abelmoschus</bot>%}', '{%<bot>Amaryllis zeylanica</bot>%}'):
+        bot_ids = {r['id'] for r in braced_gloss_risks(bot, bot, '1')}
+        if bot_ids & {'untranslated_braced_german_gloss', 'foreign_gloss_translated'}:
+            fail('braced gloss audit flagged a verbatim <bot> Latin binomial: %s' % bot)
+    for ger in ('{%Moschus%}', '{%<bot>Moschus</bot>%}'):
+        ger_ids = {r['id'] for r in braced_gloss_risks(ger, ger, '1')}
+        if 'untranslated_braced_german_gloss' not in ger_ids:
+            fail('braced gloss audit missed a bare untranslated German echo: %s' % ger)
 
 
 def semantic_card_risk_ids(russian, german='{%nachgehen%}'):
@@ -2553,11 +2694,37 @@ def test_h3627_salvage_never_publishes_an_infra_starved_window():
     salvage got wrong by returning a payload for every HardFailure.
     """
     import headless_worker as hw
-    for reason in ('rate_limit', 'authentication', 'connection', 'timeout', 'budget_exceeded'):
+    for reason in ('rate_limit', 'authentication', 'connection', 'timeout', 'budget_exceeded',
+                   'no_progress_kill'):
         if not hw.is_infra_failure(reason):
             fail('%r must be an infra failure, or salvage will publish a starved window' % reason)
     if hw.is_infra_failure('process'):
         fail("'process' must NOT be infra -- it is exactly the salvageable per-call defect")
+
+def test_h4528_no_progress_kill_is_infra_not_a_content_defect():
+    """H4528: a card whose call the no-output-progress watchdog killed is NOT a defective card.
+
+    The watchdog's kill carries its own class, `no_progress_kill`, so it can never be read as a
+    hard-ceiling `timeout` -- but for the audit's transient-vs-defect split it must land on the
+    SAME side as `timeout`: infra. Filed as content it would denylist a healthy card and discard
+    the TM of the fragments that did translate (H2077 / #947), and salvage would publish a
+    starved window (H2056 #944).
+    """
+    import headless_worker as hw
+    if not hw.is_infra_failure('no_progress_kill'):
+        fail("'no_progress_kill' must be an infra failure")
+    engine = object.__new__(hw.HeadlessEngine)
+    engine.m = {'fragment_groups': {'agni': [[0, 1]]}}
+    engine.failures = {'agni_f0': 'no_progress_kill', 'agni_f1': 'fragment-fidelity-reject'}
+    if engine._selfheal_stop_reason('agni') != 'no_progress_kill':
+        fail('a watchdog-killed heal must surface as no_progress_kill, got %r'
+             % engine._selfheal_stop_reason('agni'))
+    if engine._partial_cause('agni') != 'no_progress_kill':
+        fail('the partial cause must be the infra kill, got %r' % engine._partial_cause('agni'))
+    engine.failures = {'agni_f0': 'fragment-fidelity-reject'}
+    if engine._selfheal_stop_reason('agni') != 'selfheal-nothing-resolved':
+        fail('a genuine content failure must still read as content')
+
 
 def test_lang_parity_ledger_complete():
     """LANG_PARITY.md's ledger must have a verdict for every entry (SHARED /
@@ -2594,6 +2761,119 @@ def test_lang_parity_hash_crlf_independent():
         if lf_hash != crlf_hash:
             fail('file_sha256 is not CRLF/LF-independent: %s != %s' % (lf_hash, crlf_hash))
 
+
+def test_lang_parity_ledger_refuses_duplicate_keys():
+    """H5259 follow-up (22-09-2026): recovered PR #2305 replayed an old re-hash hunk on a newer
+    base and appended 7 duplicate keys with stale hashes inside one entry's verified_sha256.
+    Plain json.loads keeps the LAST copy silently, so the checker reported 8 misleading
+    "changed since last parity verification" drifts instead of the cause. The loader must
+    refuse a repeated key at any level, naming the entry and the key as a merge/replay
+    artifact, and --update-hash must refuse too -- leaving the file byte-identical rather
+    than silently deduping it on the rewrite."""
+    import tempfile
+    import lang_parity_check as lpc
+    good, stale = 'a' * 64, 'b' * 64
+    entry = ('[{"id": "dup_entry", "verdict": "SHARED", "files": ["x.py"], '
+             '"verified_sha256": {%s}}]')
+    with tempfile.TemporaryDirectory() as tmp:
+        md = os.path.join(tmp, 'LANG_PARITY.md')
+
+        def write(block):
+            with open(md, 'w', encoding='utf-8', newline='\n') as f:
+                f.write('# ledger\n\n```json lang_parity_ledger\n%s\n```\n' % block)
+
+        write(entry % ('"x.py": "%s"' % good))                  # control: clean ledger loads
+        if lpc.load_ledger(md)[0][0]['verified_sha256'] != {'x.py': good}:
+            fail('a clean ledger no longer loads through the strict parser')
+        write(entry % ('"x.py": "%s", "x.py": "%s"' % (good, stale)))
+        before = open(md, 'rb').read()
+        for label, call in (('load_ledger', lambda: lpc.load_ledger(md)),
+                            ('--update-hash', lambda: lpc.update_hash('dup_entry', path=md))):
+            try:
+                call()
+            except lpc.DuplicateKeyError as exc:
+                msg = str(exc)
+            else:
+                fail('%s accepted a repeated verified_sha256 key (kept the stale last copy)'
+                     % label)
+            for needle in ("entry 'dup_entry'", "key 'x.py'", 'verified_sha256', 'merge/replay'):
+                if needle not in msg:
+                    fail('%s refusal does not name %s: %s' % (label, needle, msg))
+        if open(md, 'rb').read() != before:
+            fail('--update-hash rewrote a ledger it refused (silent dedupe)')
+    # Any level: an entry's own field, and the lang_parity_coverage `exempt` map.
+    for raw, needle in (('[{"id": "e1", "verdict": "SHARED", "verdict": "GAP"}]',
+                         "entry 'e1': key 'verdict' repeated in its top level"),
+                        ('{"exempt": {"src/a.py": "r1", "src/a.py": "r2"}}',
+                         "key 'src/a.py' repeated in exempt")):
+        try:
+            lpc.parse_ledger_json(raw)
+        except lpc.DuplicateKeyError as exc:
+            if needle not in str(exc):
+                fail('duplicate-key refusal does not say %r: %s' % (needle, exc))
+        else:
+            fail('parse_ledger_json accepted a repeated key: %s' % raw)
+
+
+
+def test_lang_parity_ledger_refuses_duplicate_entry_ids():
+    """H5259 verifier gap (22-09-2026): the duplicate-KEY refusal cannot see a replay that
+    re-appends a WHOLE entry -- two list items with one id and no key repeated inside either.
+    check() would evaluate both copies (the stale one reads as drift) and --update-hash would
+    re-stamp every match, so the duplicate would persist silently. The loader, --update-hash
+    and parity_restamp must refuse it naming the id as a merge/replay artifact; a second
+    ```json lang_parity_ledger fence (only the first is ever read) must be refused too."""
+    import tempfile
+    import lang_parity_check as lpc
+    import parity_restamp
+    one = ('{"id": "%s", "verdict": "SHARED", "files": ["x.py"], '
+           '"verified_sha256": {"x.py": "%s"}}')
+    clean = '[%s, %s]' % (one % ('e_a', 'a' * 64), one % ('e_b', 'a' * 64))
+    dup = '[%s, %s, %s]' % (one % ('e_a', 'a' * 64), one % ('e_b', 'a' * 64),
+                            one % ('e_a', 'b' * 64))
+    fence = '```json lang_parity_ledger\n%s\n```\n'
+    with tempfile.TemporaryDirectory() as tmp:
+        md = os.path.join(tmp, 'LANG_PARITY.md')
+
+        def write(body):
+            with open(md, 'w', encoding='utf-8', newline='\n') as f:
+                f.write('# ledger\n\n' + body)
+
+        write(fence % clean)                                    # control: distinct ids load
+        if [e['id'] for e in lpc.load_ledger(md)[0]] != ['e_a', 'e_b']:
+            fail('a ledger with distinct entry ids no longer loads')
+        for label, body, needles in (
+                ('duplicate entry id', fence % dup,
+                 ("entry id 'e_a' repeated at list positions 0, 2", 'merge/replay')),
+                ('second ledger fence', fence % clean + '\n' + fence % clean,
+                 ('2 ```json lang_parity_ledger fenced blocks', 'merge/replay'))):
+            write(body)
+            before = open(md, 'rb').read()
+            calls = [('load_ledger', lambda: lpc.load_ledger(md)),
+                     ('--update-hash', lambda: lpc.update_hash('e_a', path=md))]
+            old_ledger = parity_restamp.LEDGER
+            parity_restamp.LEDGER = type(old_ledger)(md)
+            calls.append(('parity_restamp.load_ledger', parity_restamp.load_ledger))
+            try:
+                for name, call in calls:
+                    try:
+                        call()
+                    except lpc.DuplicateKeyError as exc:
+                        msg = str(exc)
+                    else:
+                        fail('%s accepted a %s' % (name, label))
+                    for needle in needles:
+                        if needle not in msg:
+                            fail('%s refusal of a %s does not say %r: %s'
+                                 % (name, label, needle, msg))
+            finally:
+                parity_restamp.LEDGER = old_ledger
+            if open(md, 'rb').read() != before:
+                fail('a refused %s ledger was rewritten' % label)
+    # The id check is ledger-only: the coverage block is a map, not an entry list.
+    if lpc.parse_ledger_json('{"exempt": {"a": "r"}}', block='lang_parity_coverage') != {
+            'exempt': {'a': 'r'}}:
+        fail('the coverage block must not go through the entry-id check')
 
 def test_sense_dupe_norm_strips_trailing_period():
     """P5 (H1422): norm() stripped a trailing ')'/'〉' but not '.', so tag '1.' and plain
@@ -4486,6 +4766,137 @@ def test_no_pwg_residual_registry_and_audit_command():
             fail('a no-PWG head with only blocked residuals must be omitted')
 
 
+def test_no_pwg_require_senses_gate():
+    """H4527: --require-senses must prove a repair lane before a paid call is spent.
+
+    `agent_budget` derives the per-card self-heal pool from sense groups, so a
+    zero-sense sub-card runs with `max_heal_agents: 0` — one shot, no repair. The
+    16-09-2026 acceptance window paid for exactly that topology and came back null.
+    """
+    import no_pwg_scale_plan as plan
+    from types import SimpleNamespace
+
+    with tempfile.TemporaryDirectory() as tmp:
+        rich = 'darv_i~~h0_zz_pw'
+        poor = 'darv_i~~h0_zz_nws00'
+        with open(os.path.join(tmp, rich + '.portrait.json'), 'w', encoding='utf-8') as f:
+            json.dump({'key': rich, 'source_senses': 3}, f)
+        with open(os.path.join(tmp, rich + '.raw.txt'), 'w', encoding='utf-8') as f:
+            f.write('1\u3009 first sense\n2\u3009 second sense\n')
+        with open(os.path.join(tmp, poor + '.raw.txt'), 'w', encoding='utf-8') as f:
+            f.write('an unnumbered supplement gloss\n')
+
+        # the stamped portrait count wins over a recount of the raw blob
+        if plan.subcard_source_senses(rich, tmp) != 3:
+            fail('--require-senses must read the portrait sidecar stamp first')
+        # no portrait -> deterministic recount, not a guess
+        if plan.subcard_source_senses(poor, tmp) != 0:
+            fail('a sense-poor sub-card without a portrait must recount to 0')
+        # neither sidecar -> unprovable, and unprovable is never zero
+        if plan.subcard_source_senses('absent~~h0_zz_pw', tmp) is not None:
+            fail('a missing sidecar pair must read as None (unprovable), never 0')
+
+        kept, skipped = plan.filter_sense_poor_subcards(
+            [rich, poor, 'absent~~h0_zz_pw'], 1, tmp)
+        if kept != [rich]:
+            fail('--require-senses kept a sub-card that cannot prove the minimum: %r' % kept)
+        if [row['key'] for row in skipped] != [poor, 'absent~~h0_zz_pw']:
+            fail('--require-senses did not report every skipped sub-card')
+        if skipped[0]['source_senses'] != 0 or skipped[1]['source_senses'] is not None:
+            fail('skipped rows must carry the measured count, unknown as None')
+        if plan.filter_sense_poor_subcards([rich], 4, tmp)[0]:
+            fail('--require-senses must refuse a count below the requested minimum')
+
+        # a head whose eligible sub-cards are ALL sense-poor is omitted, like a
+        # fully-blocked head -- and nothing is written to the residual registry
+        originals = {name: getattr(plan, name) for name in
+                     ('run_cmd', 'existing_subcards', 'read_store_keys',
+                      'subcard_source_senses', 'filter_sense_poor_subcards')}
+        plan.run_cmd = lambda *_args, **_kwargs: ''
+        plan.existing_subcards = lambda _head: [poor]
+        plan.read_store_keys = lambda: set()
+        plan.subcard_source_senses = lambda key, input_dir=None: (
+            originals['subcard_source_senses'](key, tmp))
+        try:
+            omitted = plan.prepare_window(
+                SimpleNamespace(prefix='fixture_w', blocked_residuals={},
+                                require_senses=1),
+                1, ['darv_i'], [], False)
+            if not omitted.get('omitted') or omitted.get('subcards'):
+                fail('a head with only sense-poor sub-cards must be omitted')
+            if [row['key'] for row in omitted['sense_skipped']] != [poor]:
+                fail('the omitted window must name the sense-poor sub-cards it skipped')
+            if omitted['residual_skipped']:
+                fail('the sense gate must not invent residual-registry rows')
+
+            # off by default: an args object without the attribute never reaches the gate
+            def refuse(*_args, **_kwargs):
+                fail('--require-senses gate ran while the flag was off')
+            plan.filter_sense_poor_subcards = refuse
+            try:
+                blocked = {poor: {'key': poor, 'reason': 'repeat failure',
+                                  'source_window': 'old'}}
+                legacy = plan.prepare_window(
+                    SimpleNamespace(prefix='fixture_w', blocked_residuals=blocked),
+                    2, ['darv_i'], [], False)
+            finally:
+                plan.filter_sense_poor_subcards = originals['filter_sense_poor_subcards']
+            if not legacy.get('omitted') or legacy.get('sense_skipped'):
+                fail('the historical (flag-off) path must be byte-identical')
+        finally:
+            for name, value in originals.items():
+                setattr(plan, name, value)
+
+        # the manifest records the gate and everything it skipped
+        planner_originals = {name: getattr(plan, name) for name in
+                             ('read_queue', 'read_store_heads', 'read_still_null',
+                              'read_residuals', 'prepare_window')}
+        manifest = os.path.join(tmp, 'plan.json')
+        plan.read_queue = lambda: [{'key1': 'darv_i'}, {'key1': 'gl_ana'}]
+        plan.read_store_heads = lambda: set()
+        plan.read_still_null = lambda: []
+        plan.read_residuals = lambda _path: {}
+
+        def prepare_stub(args, index, heads, _still_null, _tail_mode):
+            if args.require_senses != 2:
+                fail('--require-senses did not reach prepare_window: %r' % args.require_senses)
+            if heads[0] == 'darv_i':
+                return {'omitted': True, 'root': 'sense_w%02d' % index,
+                        'headwords': heads, 'residual_skipped': [],
+                        'sense_skipped': [{'key': poor, 'source_senses': 0,
+                                           'reason': 'source senses 0 < --require-senses 2'}]}
+            return {'root': 'sense_w%02d' % index, 'mode': 'queue', 'headwords': heads,
+                    'subcards': ['gl_ana~~h0_zz_pw'], 'harness': 'run.js',
+                    'workflow_output': 'wf.json', 'preflight': {},
+                    'headless': {'projected_calls': 1},
+                    'residual_skipped': [], 'sense_skipped': []}
+
+        try:
+            plan.prepare_window = prepare_stub
+            plan.main(['--window-size', '1', '--limit-windows', '1',
+                       '--start-index', '920', '--force-index',
+                       '--prefix', 'sense_w', '--manifest', manifest,
+                       '--require-senses', '2'])
+            payload = json.load(open(manifest, encoding='utf-8'))
+            if payload.get('require_senses') != 2:
+                fail('the plan manifest must record the sense gate it ran under')
+            if [row['key'] for row in payload.get('sense_skipped') or []] != [poor]:
+                fail('the plan manifest must carry every sense-skipped sub-card')
+            if payload['prepared_windows'] != 1 or payload['windows'][0]['root'] != 'sense_w921':
+                fail('a sense-omitted head must not consume the preparation quota')
+        finally:
+            for name, value in planner_originals.items():
+                setattr(plan, name, value)
+
+    try:
+        plan.main(['--plan-only', '--require-senses', '-1'])
+    except SystemExit as exc:
+        if '--require-senses must be >= 0' not in str(exc):
+            fail('a negative --require-senses must be refused by name: %s' % exc)
+    else:
+        fail('a negative --require-senses was accepted')
+
+
 def test_no_pwg_preparation_advances_past_omitted_chunks():
     import no_pwg_scale_plan as plan
 
@@ -4686,6 +5097,45 @@ def test_coordinator_defect_requeue_uses_no_tm_and_out():
             fail('coordinator requeue must use an explicit harness output path')
         if '--manifest-out=%s' % manifest_out not in cmd:
             fail('coordinator requeue must bind the harness to its exact manifest')
+
+
+def test_transient_requeue_no_tm_flag_h4527():
+    """H4527: a transient requeue stays TM-on by default; `--no-tm` (passed by the coordinator
+    for a defect-repair lease, whose card is in the TM) forces TM-off."""
+    import requeue_from_audit as rq
+
+    for extra, want in (([], False), (['--no-tm'], True)):
+        with tempfile.TemporaryDirectory() as tmp:
+            inp = os.path.join(tmp, 'input')
+            os.makedirs(inp)
+            with open(os.path.join(inp, 'a.raw.txt'), 'w', encoding='utf-8') as f:
+                f.write('raw')
+            rqfile = os.path.join(tmp, 'requeue.transient.keys.txt')
+            with open(rqfile, 'w', encoding='utf-8') as f:
+                f.write('a\n')
+            captured = {}
+
+            class FakeProc:
+                returncode = 0
+                stdout = ''
+                stderr = ''
+
+            def fake_run(cmd, **_kwargs):
+                captured['cmd'] = cmd
+                return FakeProc()
+
+            old_inp, old_run, old_argv = rq.INP, rq.subprocess.run, sys.argv[:]
+            rq.INP = inp
+            rq.subprocess.run = fake_run
+            sys.argv = ['requeue_from_audit.py', 'nominal_selftest', '--transient', '--nominal',
+                        '--requeue-file=%s' % rqfile,
+                        '--out=%s' % os.path.join(tmp, 'h.js')] + extra
+            try:
+                rq.main()
+            finally:
+                rq.INP, rq.subprocess.run, sys.argv = old_inp, old_run, old_argv
+        if ('--no-tm' in (captured.get('cmd') or [])) != want:
+            fail('transient requeue %r: --no-tm should be %s' % (extra, want))
 
 
 def test_coordinator_requeue_attempt_manifests():
@@ -4971,6 +5421,8 @@ def test_coordinator_mixed_lane_public_state_sequence():
     from types import SimpleNamespace
 
     old_coord = os.environ.get('PWG_COORDINATOR_DIR')
+    old_store_env = os.environ.get('PWG_RU_STORE')
+    old_tm_dir_env = os.environ.get('PWG_RU_TM_DIR')
     original_run = coordinator.run_cmd
     original_audit = coordinator.run_audit
     original_store = coordinator.promote_final_cards.DEFAULT_STORE
@@ -4980,6 +5432,15 @@ def test_coordinator_mixed_lane_public_state_sequence():
         store = os.path.join(tmp, 'store.jsonl')
         open(store, 'w', encoding='utf-8').close()
         coordinator.promote_final_cards.DEFAULT_STORE = store
+        # H5948: the promotion's derived-TM rebuild calls translation_memory.build() with
+        # out=None, and since 9b1936cd that refuses any non-canonical source store. This
+        # fixture's scratch store IS this test's whole universe, so make it canonical via
+        # the sanctioned env seams (store file + sidecar dir) instead of letting the build
+        # resolve the real main-worktree sidecar.
+        tm_dir = os.path.join(tmp, 'tm')
+        os.makedirs(tm_dir)
+        os.environ['PWG_RU_STORE'] = store
+        os.environ['PWG_RU_TM_DIR'] = tm_dir
         initial_dir = os.path.join(tmp, 'artifacts', 'lease')
         os.makedirs(initial_dir)
         origin_manifest = os.path.join(initial_dir, 'execution_manifest.lease.json')
@@ -5158,6 +5619,14 @@ def test_coordinator_mixed_lane_public_state_sequence():
                 os.environ.pop('PWG_COORDINATOR_DIR', None)
             else:
                 os.environ['PWG_COORDINATOR_DIR'] = old_coord
+            if old_store_env is None:
+                os.environ.pop('PWG_RU_STORE', None)
+            else:
+                os.environ['PWG_RU_STORE'] = old_store_env
+            if old_tm_dir_env is None:
+                os.environ.pop('PWG_RU_TM_DIR', None)
+            else:
+                os.environ['PWG_RU_TM_DIR'] = old_tm_dir_env
 
 
 def test_promote_nominal_key1():
@@ -9517,8 +9986,67 @@ def test_h2173_g10_declared_budgets_are_read_or_labelled():
     print('  G10: manifest budgets feed the executor; translation_limit binds from state')
 
 
+def test_h4529_width_policy_and_pool_split():
+    """H4529: width is telemetry-driven, and the two agent pools stay disjoint.
+
+    Three invariants, all offline:
+
+    1. The generator no longer OWNS the width numbers — `width_policy` does, and
+       the pinned A5/H1283 defaults are what the harness still starts from.
+    2. The policy narrows on the H255 w07 degraded fixture and refuses to widen
+       without consecutive measured-healthy load-representative windows, so no
+       code path can re-run the Slice-D/H317 unconditional width raise.
+    3. `--max-agents` below the key count is refused at generation time with the
+       C2_M50 ledger id in the message (H1610/H1618 total-vs-width footgun), and
+       the H437 all-heal window gives every card its full per-card heal ceiling.
+    """
+    import agent_budget
+    import gen_opt_harness2 as gen
+    import width_policy
+
+    assert gen.MAX_WIDE == width_policy.DEFAULT_MAX_WIDE == 3
+    assert gen.STAGGER_MS == width_policy.DEFAULT_STAGGER_MS == 2000
+    assert gen.WIDTH_DECISION is None, 'no telemetry => no decision => manifest key absent'
+
+    degraded = {'keys_total': 36, 'null_keys': 31, 'kill_timeouts': 32, 'max_wide': 0}
+    narrowed = width_policy.decide_width([degraded], current_max_wide=3)
+    assert narrowed.action == 'narrow' and narrowed.max_wide < 3, narrowed
+
+    healthy = {'keys_total': 12, 'null_keys': 0, 'kill_timeouts': 0, 'conn_errors': 0,
+               'max_wide': 3}
+    assert width_policy.decide_width([healthy] * 6, current_max_wide=3).max_wide == 3, \
+        'the adaptive ceiling is the measured A5 default; above it is calibration, not policy'
+    assert width_policy.decide_width([healthy], current_max_wide=2).action == 'hold'
+    assert width_policy.decide_width([healthy, healthy], current_max_wide=2).action == 'widen'
+    assert width_policy.probe_gate_verdict({'concurrency': 1}, 3)[0] == 'NO-GO', \
+        'an isolated warm-up cannot clear a 3-wide window (H255 w07)'
+    # The ceiling binds on every branch, including a caller that starts ABOVE it — otherwise
+    # `hold` parks a width the policy would never have chosen and only a degraded window can
+    # undo it (independent-verifier defect, 11-09-2026).
+    assert width_policy.decide_width([], current_max_wide=5, ceiling=3).max_wide == 3
+    assert width_policy.decide_width([healthy] * 4, current_max_wide=5, ceiling=3).max_wide == 3
+
+    try:
+        agent_budget.refuse_starvation_override(50, 1)
+    except ValueError as exc:
+        assert 'C2_M50_W1_MAX_AGENTS1_2026-07-24' in str(exc)
+    else:
+        raise AssertionError('--max-agents=1 on a 50-key window must be refused')
+    assert agent_budget.refuse_starvation_override(50, 1, force=True).startswith('WARNING')
+
+    all_heal = agent_budget.derive_agent_budget(12, {'k%d' % i: 12 for i in range(12)})
+    per_card = agent_budget._per_card_heal_cap(12, 1.5, 3)
+    assert all_heal.max_heal_agents == 12 * per_card, 'heal pool must be the SUM of card caps'
+    assert all_heal.max_heal_agents - 11 * per_card == per_card, \
+        'the last card to heal still has its whole per-card cap (the H437 starvation class)'
+
+    width_policy.selftest()
+    agent_budget.selftest()
+
+
 def main():
     tests = [
+        test_h4529_width_policy_and_pool_split,
         test_restore_covers_every_promoted_field,
         test_h1339_b21_promoted_pairs_cover_store_write_set,
         test_h1339_b02_stitched_card_schema_complete,
@@ -9564,6 +10092,7 @@ def main():
         test_coordinator_lock_replaces_stale_dead_owner,
         test_coordinator_lock_creates_parent_dir,
         test_coordinator_defect_requeue_uses_no_tm_and_out,
+        test_transient_requeue_no_tm_flag_h4527,
         test_coordinator_requeue_attempt_manifests,
         test_coordinator_mixed_lane_public_state_sequence,
         test_promote_nominal_key1,
@@ -9619,6 +10148,7 @@ def main():
         test_atomic_control_writes_preserve_previous_file,
         test_no_pwg_residual_registry_and_audit_command,
         test_no_pwg_preparation_advances_past_omitted_chunks,
+        test_no_pwg_require_senses_gate,
         test_no_pwg_card_source_profile_taxonomy,
         test_no_pwg_supplement_card_renders_without_pwg,
         test_h920_sense_count_top_level_ordinals,
@@ -9639,7 +10169,9 @@ def main():
         # the TASK SHAPE block had never executed. An unregistered test is indistinguishable
         # from a passing one in every report that matters.
         test_mask_preamble_carries_task_shape,
-        test_health_probe_shares_the_production_task_shape,
+        test_gloss_wrapper_prompt_preservation_h4270,
+        test_health_probe_asks_an_honest_question,
+        test_health_probe_carries_no_injection_shape,
         test_semantic_risk_checker,
         test_h1152_guard1_en_polyseme_checklist,
         test_braced_gloss_audit,
@@ -9678,11 +10210,14 @@ def main():
         test_h3627_structured_output_exhaustion_is_parked_not_window_fatal,
         test_h3627_aborted_window_still_yields_its_paid_cards,
         test_h3627_salvage_never_publishes_an_infra_starved_window,
+        test_h4528_no_progress_kill_is_infra_not_a_content_defect,
         test_lang_parity_ledger_complete,
         test_lang_parity_coverage,
         test_card_coverage_lang_symmetric,
         test_degenerate_xref_vocab_single_source,
         test_lang_parity_hash_crlf_independent,
+        test_lang_parity_ledger_refuses_duplicate_keys,
+        test_lang_parity_ledger_refuses_duplicate_entry_ids,
         test_frag_groups_presplit_parity,
         test_defect_fragment_denylist_round_trip,
         test_opt7_last_audit_tm_refuse_without_no_tm,

@@ -34,13 +34,19 @@ def pujol_entry(hw):
     w = unicodedata.normalize('NFC', w).replace('-', '')
     nfd = unicodedata.normalize('NFD', w)
     base, acc_idx = [], []
+    # Only the ACCENT marks are lifted off the base; every other combining mark
+    # (macron of ā, dot-below of ṛ/ṃ/ṣ, dot-above of ṅ, tilde of ñ, acute of ś)
+    # is part of the letter and stays. The first version dropped ALL combining
+    # marks, so `kṛṣṇa` keyed as `krsna` and only pure-ASCII lemmas ever met
+    # their Cologne form (H4353, 08-09-2026).
     for ch in nfd:
-        if unicodedata.combining(ch):
-            if ch in (ACUTE, GRAVE) and base:
+        if ch in (ACUTE, GRAVE) and not (ch == ACUTE and base and base[-1] == 's'):
+            # (an acute on `s` is the letter ś, which NFD spells s + U+0301)
+            if base:
                 acc_idx.append(len(base) - 1)
             continue
         base.append(ch)
-    base_str = ''.join(base)
+    base_str = unicodedata.normalize('NFC', ''.join(base))
     try:
         key = ascii_clean(su.strip_slp1_accents(su.to_slp1(base_str)))
     except Exception:
@@ -50,7 +56,7 @@ def pujol_entry(hw):
     ords = set()
     for i in acc_idx:
         try:
-            pre = su.to_slp1(''.join(base[:i + 1]))
+            pre = su.to_slp1(unicodedata.normalize('NFC', ''.join(base[:i + 1])))
         except Exception:
             continue
         ords.add(slp_vowel_ordinal(pre))

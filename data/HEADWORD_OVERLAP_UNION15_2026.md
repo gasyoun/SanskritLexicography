@@ -14,7 +14,7 @@ dictionary. Handoff:
 
 - Input: the existing
   [union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv)
-  (**323,425 rows, 15 dictionaries** — AP BHS BUR CAE CCS GRA INM MD MW PWG PWK
+  (**323,422 rows, 15 dictionaries** — AP BHS BUR CAE CCS GRA INM MD MW PWG PWK
   SCH SKD VCP VEI), consumed as-is per the reuse rule — the union is never
   rebuilt here.
 - **Key normalization (per
@@ -34,7 +34,7 @@ dictionary. Handoff:
   (per dict: total, unique-to-dict, unique share).
 - **The stale "94,753" resolved.** Older references (including the H684 handoff
   itself and the census row) describe the union as "94 k". The union is
-  323,425; **94,753 is exactly the MW∩PWG shared-headword count** computed
+  323,422; **94,753 is exactly the MW∩PWG shared-headword count** computed
   here — the old figure was an intersection mislabeled as the union.
 
 ## Per-dict totals and unique inventories

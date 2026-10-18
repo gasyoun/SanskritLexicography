@@ -16,6 +16,7 @@ on:
 permissions:
   contents: write
   issues: write
+  pull-requests: write
 
 jobs:
   cologne-drift:
@@ -46,7 +47,9 @@ jobs:
           python watch_upstream.py cologne
           python layer_versions.py snapshot
 
-      - name: Commit updated watcher state
+      - name: Commit updated watcher state (PR — master is protected)
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -54,10 +57,20 @@ jobs:
                   RussianTranslation/src/pilot/layer_version_log.jsonl
           if git diff --cached --quiet; then
             echo "no watcher state change"
-          else
-            git commit -m "chore(pwg_ru): monthly upstream-watch state $(date -u +%Y-%m)"
-            git push
+            exit 0
           fi
+          git commit -m "chore(pwg_ru): monthly upstream-watch state $(date -u +%Y-%m)"
+          # master requires the 'RussianTranslation gates' status check, so a
+          # direct bot push can never pass (GH006, seen on the 2026-10-01 run).
+          # Ship the state through a bot-owned branch and let the PR
+          # auto-merge once the required gates pass on it.
+          BRANCH="bot/pwg-ru-watcher-state"
+          git push -f origin "HEAD:$BRANCH"
+          BODY="Automated monthly upstream-watch state (watch_upstream.py cologne + layer_versions.py snapshot). Auto-merges when 'RussianTranslation gates' passes."
+          gh pr create --head "$BRANCH" --base master \
+            --title "chore(pwg_ru): monthly upstream-watch state $(date -u +%Y-%m)" \
+            --body "$BODY" 2>/dev/null || true
+          gh pr merge "$BRANCH" --squash --auto || gh pr merge "$BRANCH" --squash
 
       - name: Open / update drift issue when rows are flagged
         env:

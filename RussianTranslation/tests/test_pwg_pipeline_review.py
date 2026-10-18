@@ -14,8 +14,8 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import faults, review, wave1_evidence  # noqa: E402
-from pwg_pipeline.evidence import seal  # noqa: E402
+from pwg_pipeline import faults, review, wave1_evidence
+from pwg_pipeline.evidence import seal
 
 SECTIONS = {name: {'present': True} for name in review.REQUIRED_SECTIONS
             if name != 'schema_summary'}

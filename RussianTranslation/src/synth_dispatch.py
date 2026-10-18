@@ -11,11 +11,15 @@ run (see PIPELINE_HISTORY.md "H234" entry):
   #3 34-min silent hang -> every attempt has a wall-clock kill-guard: if its
                            output file has not grown in --kill-after seconds
                            (default 600), the worker is killed.
-  #4 watcher wipe       -> workers author in a STAGING dir outside the repo;
-                           the wrapper lands the finished text atomically and
-                           re-verifies the landed sha after a delay (the
-                           /watcher-safe-commit pattern) — never a bare
-                           gitignored file the watcher can wipe mid-build.
+   #4 watcher wipe       -> workers author in a STAGING dir outside the repo;
+                            the wrapper lands the finished text atomically and
+                            re-verifies the landed sha after a delay (the
+                            /watcher-safe-commit pattern) — never a bare
+                            gitignored file the watcher can wipe mid-build.
+                            H5758: a re-land re-lands from MEMORY (the staged
+                            text is kept on the attempt, never re-read from a
+                            possibly-wiped staging file), and OSError in the
+                            poll loop re-dispatches instead of crashing run().
   #5 zombie overwrite   -> each attempt owns its own staging file and only the
                            CURRENT owner of a job may land; a re-dispatch only
                            happens after the old process is confirmed dead
@@ -163,20 +167,29 @@ def assemble_entry(key1, recs):
 
 # ------------------------------------------------- failure #4: watcher-safe land
 
+def land_atomic(text, final_path):
+    """One write/replace cycle of the watcher-safe landing -> expected sha."""
+    os.makedirs(os.path.dirname(final_path) or ".", exist_ok=True)
+    data = text.encode("utf-8")
+    tmp = final_path + ".landing.tmp"
+    with open(tmp, "wb") as fh:
+        fh.write(data)
+    os.replace(tmp, final_path)
+    return hashlib.sha256(data).hexdigest()
+
+
 def land_watcher_safe(text, final_path, recheck_s=LAND_RECHECK_S,
                       retries=LAND_RETRIES, _post_land_hook=None):
     """Land `text` at final_path the watcher-safe way: atomic replace, sha
     verify, wait, re-verify the file survived (the repo watcher wipes
     untracked files mid-build — failure #4). Returns the number of landing
-    attempts used; raises RuntimeError if the file will not stay put."""
-    os.makedirs(os.path.dirname(final_path) or ".", exist_ok=True)
-    data = text.encode("utf-8")
-    want = hashlib.sha256(data).hexdigest()
+    attempts used; raises RuntimeError if the file will not stay put.
+
+    BLOCKING (it sleeps the recheck window): the dispatcher itself must use
+    the non-blocking split (land_atomic + Dispatcher._confirm_landing) so the
+    kill-guard keeps polling while a landing is in flight."""
     for attempt in range(1, retries + 1):
-        tmp = final_path + ".landing.tmp"
-        with open(tmp, "wb") as fh:
-            fh.write(data)
-        os.replace(tmp, final_path)
+        want = land_atomic(text, final_path)
         if sha256_file(final_path) != want:
             continue
         if _post_land_hook:            # selftest hook: simulate a watcher wipe
@@ -198,6 +211,14 @@ class Attempt:
         self.started = time.monotonic()
         self.last_growth = self.started
         self.size = -1
+        # non-blocking watcher-safe landing state (H5707 L8)
+        self.land_sha = None
+        self.land_attempts = 0
+        self.land_confirm_at = None
+        # H5758: the landed text is held IN MEMORY from the first read — a
+        # re-land after a watcher wipe must never re-read the staging file
+        # (the watcher can wipe that too, failure #4).
+        self.land_text = None
 
     @property
     def id(self):
@@ -288,12 +309,48 @@ class Dispatcher:
         if not (os.path.exists(att.staging) and os.path.getsize(att.staging) > 0):
             return False
         text = io.open(att.staging, encoding="utf-8").read()
-        n = land_watcher_safe(text, job.final_path, recheck_s=self.land_recheck_s)
-        job.state = "landed"
-        job.history.append(f"landed by {att.id} (landing attempts {n})")
-        log(f"LANDED {att.id} -> {os.path.basename(job.final_path)} "
-            f"({os.path.getsize(job.final_path)} B)")
-        return True
+        # H5758: hold the text in memory from this FIRST read — the poll-loop
+        # re-land path must never depend on the staging file still existing.
+        att.land_text = text
+        # Start the watcher-safe landing NON-blocking: land atomically now and
+        # confirm on a later poll pass (H5707 L8 — the old time.sleep(recheck_s)
+        # here stalled kill-guard polling for every concurrently running worker
+        # during each landing/re-verify window). None = pending confirmation.
+        att.land_sha = land_atomic(text, job.final_path)
+        att.land_attempts = 1
+        att.land_confirm_at = time.monotonic() + self.land_recheck_s
+        return None
+
+    def _confirm_landing(self, att):
+        """Second half of _maybe_land, run from the poll loop: after the
+        recheck window, re-verify the landed file survived the watcher.
+        True = confirmed landed; False = still waiting (or re-landed and
+        waiting again). Raises RuntimeError when retries are exhausted."""
+        if att.land_confirm_at is None or time.monotonic() < att.land_confirm_at:
+            return False
+        job = att.job
+        if os.path.exists(job.final_path) and sha256_file(job.final_path) == att.land_sha:
+            job.state = "landed"
+            job.history.append(f"landed by {att.id} (landing attempts {att.land_attempts})")
+            log(f"LANDED {att.id} -> {os.path.basename(job.final_path)} "
+                f"({os.path.getsize(job.final_path)} B)")
+            return True
+        att.land_attempts += 1
+        if att.land_attempts > LAND_RETRIES:
+            raise RuntimeError(f"could not keep {job.final_path} in place after "
+                               f"{LAND_RETRIES} landings")
+        # H5758: re-land from MEMORY — the watcher that wiped the landed file
+        # can wipe the staging file too, and re-reading it here let
+        # FileNotFoundError escape run(), crashing the dispatcher and
+        # orphaning every concurrently running worker.
+        text = att.land_text
+        if text is None:   # unreachable via _maybe_land; guard against state loss
+            raise RuntimeError(f"{att.id}: landed text lost from memory (H5758)")
+        att.land_sha = land_atomic(text, job.final_path)
+        att.land_confirm_at = time.monotonic() + self.land_recheck_s
+        log(f"WATCHER wiped/changed {os.path.basename(job.final_path)} after landing "
+            f"(attempt {att.land_attempts}/{LAND_RETRIES}) — re-landing")
+        return False
 
     def _fail_or_redispatch(self, att, why):
         job = att.job
@@ -316,14 +373,42 @@ class Dispatcher:
                 self._start(self.queue.pop(0))
             for key in list(self.running):
                 att = self.running[key]
+                if att.land_confirm_at is not None:
+                    # landing in flight — confirm without blocking the loop, so
+                    # every OTHER running worker's kill-guard keeps polling
+                    try:
+                        if self._confirm_landing(att):
+                            del self.running[key]
+                    # H5758: OSError joins RuntimeError — the watcher race can
+                    # surface as FileNotFoundError (staging/tmp wipe, wiped
+                    # outdir) and must never crash run(), which would orphan
+                    # every concurrently running worker.
+                    except (RuntimeError, OSError) as exc:
+                        self._fail_or_redispatch(att, str(exc))
+                    continue
                 rc = att.proc.poll()
                 if rc is not None:                      # worker exited by itself
-                    if rc == 0 and self._maybe_land(att):
-                        del self.running[key]
+                    if rc != 0:
+                        self._fail_or_redispatch(att, f"exit rc={rc}")
                     else:
-                        self._fail_or_redispatch(
-                            att, f"exit rc={rc}"
-                            + ("" if rc else " with empty/unlandable output"))
+                        try:
+                            landed = self._maybe_land(att)
+                        except (OSError, ValueError) as exc:
+                            # H5758: watcher wiped the staging file between the
+                            # exists-check and the first read (or the outdir
+                            # itself), or the worker wrote non-UTF-8 bytes
+                            # (UnicodeDecodeError is a ValueError) — nothing
+                            # usable in memory, redispatch cleanly
+                            self._fail_or_redispatch(
+                                att, f"staging unreadable/vanished before first land: {exc}")
+                            continue
+                        if landed is None:              # landing started, confirm later
+                            continue
+                        if landed is not True:
+                            self._fail_or_redispatch(
+                                att, "exit rc=0 with empty/unlandable output")
+                        else:
+                            del self.running[key]
                 elif not self._alive_by_output(att):    # failure #1/#3 kill-guard
                     self._kill_confirm_dead(att)        # confirmed dead BEFORE re-dispatch
                     self._fail_or_redispatch(
@@ -501,8 +586,35 @@ def cmd_selftest(_args):
     assert n == 2 and io.open(target, encoding="utf-8").read() == "survives\n"
     ok += 1; print("PASS 7: watcher wipe detected on re-verify; re-landed")
 
+    # 8. H5758 watcher wipe BETWEEN confirmations: staging AND final vanish —
+    #    the re-land must come from MEMORY (the old code re-read the wiped
+    #    staging file, FileNotFoundError escaped run() and every concurrently
+    #    running worker was orphaned)
+    job8 = Job("w8", "-", os.path.join(tmp, "w8.final.txt"))
+    d8 = Dispatcher([job8], [py, worker, "good", "{output}", "{attempt}"],
+                    os.path.join(tmp, "staging8"), stagger_s=0, poll_s=0.05,
+                    land_recheck_s=0.05)
+    att8 = Attempt(job8, 1, subprocess.Popen([py, "-c", "pass"]),
+                   os.path.join(d8.staging_dir, "w8.attempt1.out"))
+    att8.proc.wait()
+    d8.running["w8"] = att8
+    job8.state = "running"
+    io.open(att8.staging, "w", encoding="utf-8").write(
+        "memory payload <ls>R. 1, 2</ls>\n")
+    assert d8._maybe_land(att8) is None and att8.land_text is not None
+    os.remove(att8.staging)              # the watcher wipe: staging AND final
+    os.remove(job8.final_path)
+    time.sleep(0.06)
+    assert d8._confirm_landing(att8) is False          # re-landed — from memory
+    assert not os.path.exists(att8.staging)            # proof: no staging re-read
+    assert io.open(job8.final_path, encoding="utf-8").read() == att8.land_text
+    time.sleep(0.06)
+    assert d8._confirm_landing(att8) is True and job8.state == "landed"
+    ok += 1; print("PASS 8: staging wiped between confirmations — "
+                   "re-landed from memory, dispatcher survived")
+
     shutil.rmtree(tmp, ignore_errors=True)
-    print(f"\nselftest: {ok}/7 PASS")
+    print(f"\nselftest: {ok}/8 PASS")
 
 
 def main():

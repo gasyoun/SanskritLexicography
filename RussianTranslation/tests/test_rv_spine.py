@@ -24,7 +24,7 @@ PWG_RU_DIR = os.path.normpath(os.path.join(HERE, '..', 'pwg_ru'))
 SCHEMAS_DIR = os.path.normpath(os.path.join(HERE, '..', 'schemas'))
 
 sys.path.insert(0, os.path.join(HERE, '..', 'src'))
-import rv_spine_build  # noqa: E402
+import rv_spine_build
 
 GRIFFITH_PATH = os.path.join(PWG_RU_DIR, 'griffith_en_1896.json')
 JB_PATH = os.path.join(PWG_RU_DIR, 'jamison_brereton_en_2014.json')
@@ -240,10 +240,10 @@ def test_renou_naming_does_not_collide_with_the_1956_register_axis():
 # Wave 1b (H1844) — typing, layer B, pipeline bridge, wisdomlib
 # =============================================================================
 
-import rv_divergence_type  # noqa: E402
-import rv_pipeline_bridge  # noqa: E402
-import rv_wisdomlib_bridge  # noqa: E402
-import rv_wordlevel_align  # noqa: E402
+import rv_divergence_type
+import rv_pipeline_bridge
+import rv_wisdomlib_bridge
+import rv_wordlevel_align
 
 PILOT_PATH = os.path.join(PWG_RU_DIR, 'rv_divergence_pilot.jsonl')
 PRECISION_REPORT = os.path.normpath(
@@ -504,8 +504,8 @@ def test_wisdomlib_bridge_makes_no_network_calls():
 # H1910 — Jamison–Brereton 2014 as the fifth column, Renou EVP as a witness
 # =============================================================================
 
-import build_rv_divergence_gate_sheet as gate  # noqa: E402
-import rv_renou_evp_witness as evp             # noqa: E402
+import build_rv_divergence_gate_sheet as gate
+import rv_renou_evp_witness as evp
 
 JB_UNTRANSLATED = {'10.106.5', '10.106.6', '10.106.7', '10.106.8'}
 

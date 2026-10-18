@@ -52,13 +52,13 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 
-from csl_pyutil import RU_UI_STRINGS, esc, mark_cyrillic, render_review_sheet  # noqa: E402
-from csl_pyutil.evidence import find_slp1  # noqa: E402
+from csl_pyutil import RU_UI_STRINGS, esc, mark_cyrillic, render_review_sheet
+from csl_pyutil.evidence import find_slp1
 
-from packset_output import emit_sheet  # noqa: E402
-from review_binding import stamp, write_lock  # noqa: E402
-from review_evidence_preflight import EvidenceManifest  # noqa: E402
-from review_sheet_standard import standard_config  # noqa: E402
+from packset_output import emit_sheet
+from review_binding import stamp, write_lock
+from review_evidence_preflight import EvidenceManifest
+from review_sheet_standard import standard_config
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -120,9 +120,9 @@ def build_items(rows):
         gloss = r["koch_gloss"]
 
         badges = [
-            BAND_LABEL.get(band, "band %s" % band),
+            BAND_LABEL.get(band, "band {}".format(band)),
             POS_LABEL.get(pos, pos),
-            "полисемия %s (%s знач.)" % (polysemy, n_senses),
+            "полисемия {} ({} знач.)".format(polysemy, n_senses),
         ]
         panels = [
             ("Kochergina gloss", mark_cyrillic(esc(gloss))),
@@ -130,7 +130,7 @@ def build_items(rows):
         out.append({
             "id": slp1,
             "filt": "band" + band,
-            "title": "%s / %s" % (slp1, slp1_iast(slp1)),
+            "title": "{} / {}".format(slp1, slp1_iast(slp1)),
             "badges": badges,
             "question": "",
             "panels": panels,
@@ -248,14 +248,13 @@ def main(pack_size=0, hub_name=None, out_dir=None, locks_dir=None):
         # save_banner overridden: RU_UI_STRINGS omits it on purpose (its default
         # bakes in the caller's own sheet_id/save_as).
         "ui_strings": dict(RU_UI_STRINGS, save_banner=(
-            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
-            '&rarr; сохраните его в <code>RussianTranslation\\review\\%s_decisions.json</code> '
-            '(значение <code>sheet_id</code> внутри файла — <code>%s</code> — так следующая '
-            'сессия узнаёт, к какому листу относятся эти решения).'
-            % (SHEET_ID, SHEET_ID, SHEET_ID))),
+            '&#128229; Ваш экспорт скачивается как <code>{}_decisions.json</code> '
+            '&rarr; сохраните его в <code>RussianTranslation\\review\\{}_decisions.json</code> '
+            '(значение <code>sheet_id</code> внутри файла — <code>{}</code> — так следующая '
+            'сессия узнаёт, к какому листу относятся эти решения).'.format(SHEET_ID, SHEET_ID, SHEET_ID))),
     }
     config.update(standard_config(
-        save_as=r"RussianTranslation\review\%s_decisions.json" % SHEET_ID))
+        save_as=r"RussianTranslation\review\{}_decisions.json".format(SHEET_ID)))
 
     screening = {
         "deterministic": 0,

@@ -15,7 +15,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 SM = os.path.normpath(os.path.join(GITHUB, 'SamudraManthanam',
                                    'web', 'corpus_builder', 'jsonl'))
@@ -79,7 +79,7 @@ with open(tmp, 'w', encoding='utf-8', newline='') as out:
             drop_by_work[r.get('work')] = drop_by_work.get(r.get('work'), 0) + 1
 
 os.replace(tmp, LEX)
-print('kept=%d  dropped=%d' % (kept, dropped))
+print(f'kept={kept:d}  dropped={dropped:d}')
 print('dropped by work:')
 for w, c in sorted(drop_by_work.items(), key=lambda x: -x[1]):
     print('  %7d  %s' % (c, w))

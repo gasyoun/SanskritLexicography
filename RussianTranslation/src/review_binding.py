@@ -97,21 +97,21 @@ def stamp(html_text):
     # 1. every IIFE that declares SHEET_ID gets a CONTENT_HASH beside it (the
     #    bakeoff widget splice is a second, separate IIFE with its own decl).
     stamped, n_decl = _SHEET_ID_DECL.subn(
-        lambda m: m.group(1) + "\n  var CONTENT_HASH = %s;" % json.dumps(chash),
+        lambda m: m.group(1) + "\n  var CONTENT_HASH = {};".format(json.dumps(chash)),
         html_text)
     # 2. every export payload site now echoes the hash.
     n_sites = stamped.count(_PAYLOAD_ANCHOR)
     if n_sites == 0:
-        raise ValueError("no export payload site ('%s') found — emitter layout "
-                         "changed, re-check the anchors" % _PAYLOAD_ANCHOR.strip())
+        raise ValueError("no export payload site ('{}') found — emitter layout "
+                         "changed, re-check the anchors".format(_PAYLOAD_ANCHOR.strip()))
     stamped = stamped.replace(_PAYLOAD_ANCHOR, _PAYLOAD_STAMPED)
     # 3. visible chip beside the header's sheet_id (best-effort — the emitter's
     #    core template carries this anchor; a hand-rolled shell may not).
-    chip_anchor = "sheet_id <code>%s</code>" % sheet_id
+    chip_anchor = "sheet_id <code>{}</code>".format(sheet_id)
     if chip_anchor in stamped:
         chip = (chip_anchor + ' &middot; bound <code class="bindchip" title="content_hash '
                 "— binds this sheet's decisions.json export to exactly this HTML"
-                '">%s…</code>' % chash[:19])
+                '">{}…</code>'.format(chash[:19]))
         stamped = stamped.replace(chip_anchor, chip, 1)
     return stamped, chash
 
@@ -144,12 +144,11 @@ def write_lock(sheet_id, chash, ids, generated, locks_dir=None, gate=None,
     if (existing and existing.get("content_hash") not in (None, chash)
             and not force and os.environ.get("REVIEW_LOCK_FORCE") != "1"):
         raise LockCollision(
-            "lock for '%s' already binds %s, this run rendered %s.\n"
+            "lock for '{}' already binds {}, this run rendered {}.\n"
             "  Votes cast against the committed generation would stop validating.\n"
             "  Deliberate re-cut: pass force=True or set REVIEW_LOCK_FORCE=1.\n"
             "  To REPRODUCE the committed generation instead, check out the commit\n"
-            "  that created the lock — its inputs have since moved — and run there."
-            % (sheet_id, existing.get("content_hash"), chash))
+            "  that created the lock — its inputs have since moved — and run there.".format(sheet_id, existing.get("content_hash"), chash))
     lock = {
         "schema": LOCK_SCHEMA,
         "sheet_id": sheet_id,
@@ -192,14 +191,13 @@ def lock_from_html(html_path, locks_dir=None, gate=None, retro=False):
         doc = fh.read()
     if retro:
         if "var CONTENT_HASH" in doc:
-            raise ValueError("%s is already stamped — retro-lock is only for "
-                             "pre-standard sheets" % html_path)
+            raise ValueError("{} is already stamped — retro-lock is only for "
+                             "pre-standard sheets".format(html_path))
         chash = content_hash(doc)
         mode = "retro-unstamped"
     else:
         if "var CONTENT_HASH" not in doc:
-            raise ValueError("%s is not stamped — run stamp first (or use retro-lock)"
-                             % html_path)
+            raise ValueError("{} is not stamped — run stamp first (or use retro-lock)".format(html_path))
         m = re.search(r'var CONTENT_HASH = ("sha256:[0-9a-f]{64}");', doc)
         if not m:
             raise ValueError("stamped CONTENT_HASH declaration not parseable")
@@ -289,10 +287,9 @@ def write_packset_lock(sheet_id, parent_html, pack_htmls, generated,
                 % (sheet_id, existing.get("content_hash"), len(packs), pshash))
         if prior.get("packset_hash") != pshash:
             raise LockCollision(
-                "lock for '%s' already binds packset %s, this run rendered %s.\n"
+                "lock for '{}' already binds packset {}, this run rendered {}.\n"
                 "  Votes cast against the committed generation would stop validating.\n"
-                "  Deliberate re-cut: pass force=True or set REVIEW_LOCK_FORCE=1."
-                % (sheet_id, prior.get("packset_hash"), pshash))
+                "  Deliberate re-cut: pass force=True or set REVIEW_LOCK_FORCE=1.".format(sheet_id, prior.get("packset_hash"), pshash))
 
     lock = {
         "schema": LOCK_SCHEMA,
@@ -464,10 +461,10 @@ def main(argv):
             with io.open(path, "w", encoding="utf-8", newline="\n") as fh:
                 fh.write(stamped)
             lock_path = lock_from_html(path, locks_dir=locks_dir, gate=gate)
-            print("stamped %s\n  %s\n  lock -> %s" % (path, chash, lock_path))
+            print("stamped {}\n  {}\n  lock -> {}".format(path, chash, lock_path))
         else:
             lock_path = lock_from_html(path, locks_dir=locks_dir, gate=gate, retro=True)
-            print("retro lock for %s -> %s" % (path, lock_path))
+            print("retro lock for {} -> {}".format(path, lock_path))
     return 0
 
 

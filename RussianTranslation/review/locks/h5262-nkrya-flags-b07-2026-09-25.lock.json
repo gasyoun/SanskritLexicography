@@ -1,0 +1,24 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h5262-nkrya-flags-b07-2026-09-25",
+  "content_hash": "sha256:3f455d1c5b9c899810c76f13a8aa404a33a59fafe59c396070d655252a96f4f8",
+  "generated": "2026-09-25",
+  "gate": null,
+  "n_items": 10,
+  "ids": [
+    "L-вздыбливаться",
+    "L-упорядоченно",
+    "L-закладывание",
+    "L-испытываться",
+    "L-перечисленный",
+    "L-раскалывание",
+    "L-выбраковывать",
+    "L-схлопываться",
+    "L-упраздняться",
+    "L-обмолачивать"
+  ],
+  "source_html": "sanskritlexicography-h5262-nkrya-flags-b07_10.html",
+  "mode": "stamped",
+  "created": "2026-09-25",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

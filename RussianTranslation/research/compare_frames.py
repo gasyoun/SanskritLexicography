@@ -50,9 +50,9 @@ def main():
 
     metas = {}
     for f in FRAMES:
-        p = os.path.join(a.dir, 'pwg_sense_dcs_attestation_%s.meta.json' % STEM[f])
+        p = os.path.join(a.dir, 'pwg_sense_dcs_attestation_{}.meta.json'.format(STEM[f]))
         if not os.path.isfile(p):
-            raise SystemExit('missing %s — run the pilot with --frame-mode %s' % (p, f))
+            raise SystemExit('missing {} — run the pilot with --frame-mode {}'.format(p, f))
         metas[f] = json.load(open(p, encoding='utf-8'))
 
     S = {f: metas[f]['summary'] for f in FRAMES}
@@ -83,33 +83,25 @@ def main():
 
     L.append('## Headline')
     L.append('')
-    L.append('| | %s | %s | %s |' % tuple(LABEL[f] for f in FRAMES))
+    L.append('| | {} | {} | {} |'.format(*tuple(LABEL[f] for f in FRAMES)))
     L.append('|---|---:|---:|---:|')
-    L.append('| headword groups | %s | %s | %s |'
-             % tuple('{:,}'.format(S[f]['n_pilot_groups']) for f in FRAMES))
-    L.append('| **attested in DCS (lemma level)** | **%s** | **%s** | **%s** |'
-             % tuple(pct(S[f]['n_lemma_attested'] / S[f]['n_pilot_groups'])
-                     for f in FRAMES))
-    L.append('| with ≥1 DCS `m_wordsem` sense | %s | %s | %s |'
-             % tuple(pct(S[f]['n_wordsem_tagged'] / S[f]['n_pilot_groups'])
-                     for f in FRAMES))
-    L.append('| DCS tokens under the frame | %s | %s | %s |'
-             % tuple('{:,}'.format(S[f]['mass_dcs_lemma_tokens']) for f in FRAMES))
-    L.append('| …carrying a sense tag (ceiling) | %s | %s | %s |'
-             % tuple(pct(S[f]['sensetagged_mass_share']) for f in FRAMES))
-    L.append('| PWG leaf senses | %s | %s | %s |'
-             % tuple('{:,}'.format(S[f]['pwg_senses_total']) for f in FRAMES))
-    L.append('| **sense-level grounding** | **%s** | %s | %s |'
-             % tuple(
+    L.append('| headword groups | {} | {} | {} |'.format(*tuple('{:,}'.format(S[f]['n_pilot_groups']) for f in FRAMES)))
+    L.append('| **attested in DCS (lemma level)** | **{}** | **{}** | **{}** |'.format(*tuple(pct(S[f]['n_lemma_attested'] / S[f]['n_pilot_groups'])
+                     for f in FRAMES)))
+    L.append('| with ≥1 DCS `m_wordsem` sense | {} | {} | {} |'.format(*tuple(pct(S[f]['n_wordsem_tagged'] / S[f]['n_pilot_groups'])
+                     for f in FRAMES)))
+    L.append('| DCS tokens under the frame | {} | {} | {} |'.format(*tuple('{:,}'.format(S[f]['mass_dcs_lemma_tokens']) for f in FRAMES)))
+    L.append('| …carrying a sense tag (ceiling) | {} | {} | {} |'.format(*tuple(pct(S[f]['sensetagged_mass_share']) for f in FRAMES)))
+    L.append('| PWG leaf senses | {} | {} | {} |'.format(*tuple('{:,}'.format(S[f]['pwg_senses_total']) for f in FRAMES)))
+    L.append('| **sense-level grounding** | **{}** | {} | {} |'.format(*tuple(
                  ('%.2f%% (%d/%d)' % (100 * S[f]['pwg_sense_join_rate'],
                                       S[f]['pwg_senses_grounded'],
                                       S[f]['pwg_senses_total_known']))
                  if S[f]['pwg_sense_join_rate'] is not None else 'not computed'
-                 for f in FRAMES))
-    L.append('| …aligner coverage of the frame | %s | %s | %s |'
-             % tuple('%s/%s' % ('{:,}'.format(S[f]['n_groups_grounding_computed']),
+                 for f in FRAMES)))
+    L.append('| …aligner coverage of the frame | {} | {} | {} |'.format(*tuple('{}/{}'.format('{:,}'.format(S[f]['n_groups_grounding_computed']),
                                 '{:,}'.format(S[f]['n_pilot_groups']))
-                     for f in FRAMES))
+                     for f in FRAMES)))
     L.append('')
     L.append('⚠️ **Read the grounding row against the coverage row beneath it.** The '
              'random frame\'s %s is computed over the %d of %s groups that happen to '
@@ -127,39 +119,35 @@ def main():
 
     L.append('## What the unbiased frames change')
     L.append('')
-    L.append('**1. Lemma-level attestation is ~40%%, not 100%%.** Across all %s PWG '
-             'headword groups, **%s (%s)** have a DCS lemma. The original frame\'s 100%% '
-             'was a selection artefact; the real figure means **%s PWG headwords '
-             '(%s) have no DCS attestation at any granularity** — for those, no '
-             'sense-level join is even conceivable.'
-             % ('{:,}'.format(alll['n_pilot_groups']),
+    L.append('**1. Lemma-level attestation is ~40%, not 100%.** Across all {} PWG '
+             'headword groups, **{} ({})** have a DCS lemma. The original frame\'s 100% '
+             'was a selection artefact; the real figure means **{} PWG headwords '
+             '({}) have no DCS attestation at any granularity** — for those, no '
+             'sense-level join is even conceivable.'.format('{:,}'.format(alll['n_pilot_groups']),
                 '{:,}'.format(alll['n_lemma_attested']), pct(p_pop),
                 '{:,}'.format(alll['n_pilot_groups'] - alll['n_lemma_attested']),
                 pct(1 - p_pop)))
     L.append('')
-    L.append('**2. The random sample validates against the population.** The %s-group '
-             'sample estimates %.1f%% (±%.1f%% at 95%%); the population value is %.1f%%. '
-             'The interval %s the population value, so the sampling frame is sound and '
-             'a %s-group draw is sufficient for this quantity.'
-             % ('{:,}'.format(n), 100 * p_hat, 100 * 1.96 * se, 100 * p_pop,
+    L.append('**2. The random sample validates against the population.** The {}-group '
+             'sample estimates {:.1f}% (±{:.1f}% at 95%); the population value is {:.1f}%. '
+             'The interval {} the population value, so the sampling frame is sound and '
+             'a {}-group draw is sufficient for this quantity.'.format('{:,}'.format(n), 100 * p_hat, 100 * 1.96 * se, 100 * p_pop,
                 'covers' if covered else 'does NOT cover', '{:,}'.format(n)))
     L.append('')
-    L.append('**3. The sense-tag ceiling is stable across frames** (%s / %s / %s). '
+    L.append('**3. The sense-tag ceiling is stable across frames** ({} / {} / {}). '
              'Roughly a ninth of DCS token mass carries a `m_wordsem` tag regardless of '
              'which PWG headwords you select, so this ceiling is a property of the '
-             'corpus annotation, not of the frame.'
-             % tuple(pct(S[f]['sensetagged_mass_share']) for f in FRAMES))
+             'corpus annotation, not of the frame.'.format(*tuple(pct(S[f]['sensetagged_mass_share']) for f in FRAMES)))
     L.append('')
     L.append('**4. Sense-level grounding did not scale *with the frame alone*, and is '
              'never reported as zero.** As measured here the H1455 aligner ran over 500 '
-             'headwords, covering %s of the %s in the full frame; for the other %s the '
+             'headwords, covering {} of the {} in the full frame; for the other {} the '
              'grounded count is **unknown**, and the reports class them '
-             '`R0_grounding_not_computed` rather than 0. Publishing 0%% there would '
+             '`R0_grounding_not_computed` rather than 0. Publishing 0% there would '
              'manufacture a dictionary-wide rate out of the absence of a job — the exact '
              'failure this work exists to avoid. (H1670 has since run the aligner over a '
-             '32× wider frame at full passage depth, shrinking that unknown class by 43%% '
-             '— see the correction below.)'
-             % ('{:,}'.format(alll['n_groups_grounding_computed']),
+             '32× wider frame at full passage depth, shrinking that unknown class by 43% '
+             '— see the correction below.)'.format('{:,}'.format(alll['n_groups_grounding_computed']),
                 '{:,}'.format(alll['n_pilot_groups']),
                 '{:,}'.format(alll['n_groups_grounding_unknown'])))
     L.append('')
@@ -171,13 +159,11 @@ def main():
     L.append('')
     L.append('| # | Constriction | Size | Can more compute fix it? |')
     L.append('|---|---|---:|---|')
-    L.append('| 1 | PWG headwords with no DCS lemma at all | %s of PWG | **No** — and '
+    L.append('| 1 | PWG headwords with no DCS lemma at all | {} of PWG | **No** — and '
              '**not by a bigger tagged corpus either**: DCS already *is* the largest '
-             'tagged Sanskrit corpus. See the note below. |'
-             % pct(1 - p_pop))
-    L.append('| 2 | DCS tokens with no `m_wordsem` sense tag | %s of token mass | '
-             '**No** — upstream annotation coverage (219/270 texts). |'
-             % pct(1 - alll['sensetagged_mass_share']))
+             'tagged Sanskrit corpus. See the note below. |'.format(pct(1 - p_pop)))
+    L.append('| 2 | DCS tokens with no `m_wordsem` sense tag | {} of token mass | '
+             '**No** — upstream annotation coverage (219/270 texts). |'.format(pct(1 - alll['sensetagged_mass_share'])))
     L.append('| 3 | Attested + tagged, but no shared locus to bind a PWG sense | the '
              'residue | **Yes, and far more than this table assumed** — see the H1670 '
              'correction below. |')
@@ -205,11 +191,10 @@ def main():
              '(111,298 tokens); the obstacle is its numbering, not its absence.')
     L.append('')
     L.append('With the same predicate, the same tiers and no heuristic added, grounded '
-             'PWG leaf senses went **52 → 7,372** and the rate **0.67%% → 12.25%%**. Full '
+             'PWG leaf senses went **52 → 7,372** and the rate **0.67% → 12.25%**. Full '
              'per-lever attribution, the precision defects the fix exposed, and what is '
              'genuinely left in the residue: '
-             '[`PWG_SENSE_DCS_GROUNDING_LEVERS.md`](%s/PWG_SENSE_DCS_GROUNDING_LEVERS.md).'
-             % BLOB)
+             '[`PWG_SENSE_DCS_GROUNDING_LEVERS.md`]({}/PWG_SENSE_DCS_GROUNDING_LEVERS.md).'.format(BLOB))
     L.append('')
     L.append('Constrictions 1 and 2 stand unchanged — they moved by 52 and 754 groups '
              'respectively out of 109,050, which is what a real data limit looks like.')
@@ -224,8 +209,7 @@ def main():
     L.append('| An untagged corpus… | effect |')
     L.append('|---|---|')
     L.append('| …raises **lemma-level attestation** (is the headword attested anywhere?) '
-             '| **yes** — it can shrink the %s "absent everywhere" class |'
-             % pct(1 - p_pop))
+             '| **yes** — it can shrink the {} "absent everywhere" class |'.format(pct(1 - p_pop)))
     L.append('| …raises **sense-level grounding** | **no** — there are no sense tags to '
              'bind to, and none to be had without lemmatising and tagging it ourselves |')
     L.append('')
@@ -241,8 +225,7 @@ def main():
     L.append('## Per-frame reports')
     L.append('')
     for f in FRAMES:
-        L.append('- **%s** — [`PWG_SENSE_DCS_ATTESTATION_%s.md`](%s/PWG_SENSE_DCS_ATTESTATION_%s.md)'
-                 % (LABEL[f], STEM[f].upper(), BLOB, STEM[f].upper()))
+        L.append('- **{}** — [`PWG_SENSE_DCS_ATTESTATION_{}.md`]({}/PWG_SENSE_DCS_ATTESTATION_{}.md)'.format(LABEL[f], STEM[f].upper(), BLOB, STEM[f].upper()))
     L.append('')
     L.append('## Reproduce')
     L.append('')
@@ -262,11 +245,10 @@ def main():
 
     out = os.path.join(a.dir, 'PWG_SENSE_DCS_FRAME_COMPARISON.md')
     open(out, 'w', encoding='utf-8', newline='\n').write('\n'.join(L) + '\n')
-    print('lemma-attested: kosha %s · random %s · all %s'
-          % tuple(pct(S[f]['n_lemma_attested'] / S[f]['n_pilot_groups'])
-                  for f in FRAMES))
-    print('random CI covers population: %s' % covered)
-    print('wrote %s' % out)
+    print('lemma-attested: kosha {} · random {} · all {}'.format(*tuple(pct(S[f]['n_lemma_attested'] / S[f]['n_pilot_groups'])
+                  for f in FRAMES)))
+    print('random CI covers population: {}'.format(covered))
+    print('wrote {}'.format(out))
 
 
 if __name__ == '__main__':

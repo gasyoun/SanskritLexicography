@@ -30,7 +30,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import cache_identity as ident  # noqa: E402
+import cache_identity as ident
 
 TERMINAL_KINDS = frozenset({
     'terminal_response', 'park', 'stop', 'completion', 'tm_short_circuit',
@@ -88,17 +88,16 @@ def read_events(path):
     prev_seq = 0
     for index, line in enumerate(lines, 1):
         if not line:
-            raise LedgerError('empty ledger line at %d' % index)
+            raise LedgerError(f'empty ledger line at {index:d}')
         try:
             event = json.loads(line)
         except json.JSONDecodeError as exc:
-            raise LedgerError('torn/interleaved ledger at line %d: %s' % (index, exc))
+            raise LedgerError(f'torn/interleaved ledger at line {index:d}: {exc}')
         if not isinstance(event, dict):
-            raise LedgerError('ledger line %d is not an object' % index)
+            raise LedgerError(f'ledger line {index:d} is not an object')
         seq = event.get('seq')
         if not isinstance(seq, int) or seq != prev_seq + 1:
-            raise LedgerError('ledger seq gap at line %d (prev=%s got=%s)' % (
-                index, prev_seq, seq))
+            raise LedgerError(f'ledger seq gap at line {index:d} (prev={prev_seq} got={seq})')
         prev_seq = seq
         events.append(event)
     return events

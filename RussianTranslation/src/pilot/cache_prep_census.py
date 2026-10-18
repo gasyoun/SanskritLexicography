@@ -20,12 +20,12 @@ for path in (HERE, H1210, os.path.dirname(HERE)):
     if path not in sys.path:
         sys.path.insert(0, path)
 
-import autosplit_requeue as autosplit  # noqa: E402
-import cache_baseline_freeze as freeze  # noqa: E402
-import cache_identity as ident  # noqa: E402
-import cache_reuse as reuse  # noqa: E402
-import prep_pack  # noqa: E402
-from store_path import canonical_sidecar  # noqa: E402
+import autosplit_requeue as autosplit
+import cache_baseline_freeze as freeze
+import cache_identity as ident
+import cache_reuse as reuse
+import prep_pack
+from store_path import canonical_sidecar
 
 RT = os.path.dirname(os.path.dirname(HERE))
 REPO = os.path.dirname(RT)
@@ -68,7 +68,7 @@ def poly_class(n_senses):
 
 
 def stable_hex(salt, key1):
-    return ident.sha256_bytes('%s:%s' % (salt, key1))
+    return ident.sha256_bytes('{}:{}'.format(salt, key1))
 
 
 def load_first200_keys():
@@ -209,7 +209,7 @@ def allocate_stratified(rows, n, salt):
         assigned += quotas[key]
     leftover_keys = sorted(
         groups,
-        key=lambda k: (stable_hex(salt, '%s|%s' % k), k),
+        key=lambda k: (stable_hex(salt, '{}|{}'.format(*k)), k),
     )
     while assigned < n:
         progressed = False
@@ -248,11 +248,11 @@ def build_census(run_dir):
     drain_dir = os.path.join(RT, 'experiments', 'H2675_w1_prep')
     if drain_dir not in sys.path:
         sys.path.insert(0, drain_dir)
-    import build_drain_head as drain  # noqa: E402
+    import build_drain_head as drain
     slots = drain.load_assembled_de(assembled_path)
     missing = [k for k in first200 if k not in slots]
     if missing:
-        raise CensusError('first-200 keys missing assembled DE: %s' % missing[:8])
+        raise CensusError('first-200 keys missing assembled DE: {}'.format(missing[:8]))
     committed = committed_prep_keys()
     tm_card = canonical_sidecar(os.path.join(HERE, 'translation_memory.ru.json'))
     tm_frag = canonical_sidecar(os.path.join(HERE, 'translation_memory.frag.ru.jsonl'))

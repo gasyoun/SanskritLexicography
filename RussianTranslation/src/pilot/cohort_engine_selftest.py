@@ -74,16 +74,16 @@ sys.stderr.reconfigure(encoding='utf-8')
 # resolve store/coordinator constants at import time). See selftest_isolation.py.
 if os.path.dirname(os.path.abspath(__file__)) not in sys.path:
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from selftest_isolation import guard as _isolation_guard  # noqa: E402
+from selftest_isolation import guard as _isolation_guard
 _isolation_guard()
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import bounded_staged_run as bsr                     # noqa: E402
-import bounded_supervisor as bs                      # noqa: E402
-import max_account_orchestrator as mao               # noqa: E402
+import bounded_staged_run as bsr
+import bounded_supervisor as bs
+import max_account_orchestrator as mao
 
 
 class MissingBehavior(AssertionError):
@@ -102,7 +102,7 @@ ENGINE_MISSING = (
 
 def load_cohort_engine():
     try:
-        import cohort_engine                          # noqa: F401
+        import cohort_engine
     except ModuleNotFoundError as exc:
         # Codex review #8: ONLY the engine module itself being absent is the sanctioned
         # Phase 0 RED. A transitive import failure inside an existing cohort_engine.py is
@@ -219,8 +219,8 @@ class FakeWorker:
             if event is not None:
                 event.wait(2.0)
             if wid in self.crash_ids:
-                raise SimulatedCrash('simulated worker crash on %s' % wid)
-            path = os.path.join(self.td, 'wf_%s.json' % wid)
+                raise SimulatedCrash('simulated worker crash on {}'.format(wid))
+            path = os.path.join(self.td, 'wf_{}.json'.format(wid))
             with open(path, 'w', encoding='utf-8', newline='\n') as f:
                 json.dump({'meta': {'window': wid}, 'results': []}, f)
             with self._log_lock:
@@ -250,7 +250,7 @@ class FakePromoter:
         ids = tuple(m['id'] if isinstance(m, dict) else m for m in members)
         with open(self.store_path, 'a', encoding='utf-8', newline='\n') as f:
             for member_id in ids:
-                f.write('%s\n' % member_id)
+                f.write('{}\n'.format(member_id))
         self.commits.append(ids)
         return {'receipt': len(self.commits), 'members': list(ids)}
 
@@ -320,17 +320,16 @@ def test_1_barrier_concurrency(td):
                  'width 2 must never overlap')
     summary = engine.run()
     assert probe2.peak >= 2, (
-        'measured peak_concurrency=%d — the cohort was not dispatched concurrently'
-        % probe2.peak)
+        f'measured peak_concurrency={probe2.peak:d} — the cohort was not dispatched concurrently')
     assert summary.get('peak_concurrency', 0) >= 2, summary
     assert probe2.peak_by_profile.get('c1', 0) <= 1, (
         'the two c1-bound leases overlapped (constraint 2: at most one job per '
-        'account): %r' % probe2.peak_by_profile)
+        'account): {!r}'.format(probe2.peak_by_profile))
     assert max(probe2.peak_by_profile.values()) <= 1, (
         'a single profile ran two jobs at once (constraint 2: at most one job per '
-        'account): %r' % probe2.peak_by_profile)
+        'account): {!r}'.format(probe2.peak_by_profile))
     assert sorted(probe2.launches) == ['leaseA', 'leaseB', 'leaseC'], (
-        'every cohort member must launch exactly once: %r' % probe2.launches)
+        'every cohort member must launch exactly once: {!r}'.format(probe2.launches))
 
 
 def test_2_reverse_completion_determinism(td):
@@ -354,8 +353,7 @@ def test_2_reverse_completion_determinism(td):
     EXPECTED_STORE = b'leaseA\nleaseB\n'
     EXPECTED_ORDER = ['leaseA', 'leaseB']
     assert _store_bytes(serial_store) == EXPECTED_STORE, (
-        'serial reference must actually promote both members in plan order: %r'
-        % _store_bytes(serial_store))
+        'serial reference must actually promote both members in plan order: {!r}'.format(_store_bytes(serial_store)))
     assert serial_summary.get('accepted_order') == EXPECTED_ORDER, serial_summary
 
     # Width=2 with completion REVERSED: leaseA's worker holds until leaseB has finished.
@@ -377,10 +375,9 @@ def test_2_reverse_completion_determinism(td):
     # completion trace is the proof that B genuinely finished before A.
     assert worker.completion_log == ['leaseB', 'leaseA'], (
         'the reversed-completion fixture did not actually reverse: observed completion '
-        'order %r (leaseB must complete before leaseA)' % worker.completion_log)
+        'order {!r} (leaseB must complete before leaseA)'.format(worker.completion_log))
     assert _store_bytes(reversed_store) == EXPECTED_STORE, (
-        'store bytes diverge from the serial reference under reversed completion: %r vs %r'
-        % (_store_bytes(reversed_store), EXPECTED_STORE))
+        'store bytes diverge from the serial reference under reversed completion: {!r} vs {!r}'.format(_store_bytes(reversed_store), EXPECTED_STORE))
     assert reversed_summary.get('accepted_order') == EXPECTED_ORDER, (
         serial_summary, reversed_summary)
 
@@ -414,17 +411,16 @@ def test_3_crash_resumes_only_its_lease(td):
     assert probe1.launches.count('leaseA') == 1, probe1.launches
     # Codex review #6: the crash must be attributable — leaseB launched and died.
     assert probe1.launches.count('leaseB') == 1, (
-        'leaseB must have launched (and crashed) in life 1: %r' % probe1.launches)
+        'leaseB must have launched (and crashed) in life 1: {!r}'.format(probe1.launches))
     # Codex review #6: durability means ON DISK. Before any resume, the checkpoint must
     # exist and record leaseA's completed receipt — module/class memory keyed by the
     # checkpoint path is not a receipt.
     assert os.path.exists(checkpoint), (
-        'no durable checkpoint written by life 1 at %s' % checkpoint)
+        'no durable checkpoint written by life 1 at {}'.format(checkpoint))
     with open(checkpoint, 'rb') as f:
         receipt_bytes = f.read()
     assert b'leaseA' in receipt_bytes, (
-        'the durable checkpoint does not record the completed leaseA receipt: %r'
-        % receipt_bytes[:200])
+        'the durable checkpoint does not record the completed leaseA receipt: {!r}'.format(receipt_bytes[:200]))
 
     # Codex review #6: purge any in-memory engine state so life 2 can ONLY resume from
     # the on-disk receipts (build_engine re-imports the module fresh).
@@ -440,8 +436,7 @@ def test_3_crash_resumes_only_its_lease(td):
                  'per-lease receipts; the completed sibling is never relaunched')
     engine2.run()
     assert probe2.launches == ['leaseB'], (
-        'resume relaunched %r — completed model work must never be re-run (constraint 5)'
-        % probe2.launches)
+        'resume relaunched {!r} — completed model work must never be re-run (constraint 5)'.format(probe2.launches))
     assert len(promoter.commits) == 1, promoter.commits
     assert set(promoter.commits[0]) == {'leaseA', 'leaseB'}, promoter.commits
 
@@ -475,7 +470,7 @@ def test_4_rejection_requeues_only_its_keys(td):
         % (len(promoter.commits), promoter.commits))
     assert promoter.commits[0] == ('leaseA', 'leaseC'), (
         'both clean siblings must batch into the ONE wave promotion, unblocked by the '
-        'rejected member and in plan order: %r' % (promoter.commits,))
+        'rejected member and in plan order: {!r}'.format(promoter.commits))
     assert summary.get('requeue_backlog_keys') == ['kB1', 'kB2'], summary
     accepted = {m for commit in promoter.commits for m in commit}
     assert 'leaseB' not in accepted, 'a rejected member must never be promoted'
@@ -510,8 +505,7 @@ def test_5_promotion_barrier_crash_exactly_once(td):
     # Pre-resume state: the crash was BEFORE the commit, so nothing may be committed and
     # no TM rebuild may have succeeded yet.
     assert len(promoter_a.commits) == 0, (
-        'crash BEFORE the commit must leave zero commits pre-resume: %r'
-        % (promoter_a.commits,))
+        'crash BEFORE the commit must leave zero commits pre-resume: {!r}'.format(promoter_a.commits))
     assert tm_a.successes == 0, tm_a.successes
     _forget_engine_module()
     engine_resumed = build_engine(windows, FakeWorker(td, ConcurrencyProbe()), cp_a,
@@ -541,10 +535,9 @@ def test_5_promotion_barrier_crash_exactly_once(td):
         'normally instead')
     # Pre-resume state: the commit landed, the TM rebuild did not.
     assert len(promoter_b.commits) == 1, (
-        'crash AFTER the commit must leave exactly one commit pre-resume: %r'
-        % (promoter_b.commits,))
+        'crash AFTER the commit must leave exactly one commit pre-resume: {!r}'.format(promoter_b.commits))
     assert tm_b.successes == 0, (
-        'the TM crash must leave zero SUCCESSFUL rebuilds pre-resume: %d' % tm_b.successes)
+        f'the TM crash must leave zero SUCCESSFUL rebuilds pre-resume: {tm_b.successes:d}')
     _forget_engine_module()
     engine_b_resumed = build_engine(windows, FakeWorker(td, ConcurrencyProbe()), cp_b,
                                     audit=clean_audit, promote_wave=promoter_b,
@@ -585,7 +578,7 @@ def test_6_reservation_ledger_max_calls(td):
 
     def worker(window):
         launches.append(window['id'])
-        path = os.path.join(td, 'wf_%s.json' % window['id'])
+        path = os.path.join(td, 'wf_{}.json'.format(window['id']))
         with open(path, 'w', encoding='utf-8', newline='\n') as f:
             json.dump({'meta': {}, 'results': []}, f)
         return path
@@ -655,7 +648,7 @@ def test_6_reservation_ledger_max_calls(td):
         contract='max_calls=3 must fit 2 probes + 1 call and refuse the 4th consumption')
     summary = engine.run()
     consumed = len(probes_made) + summary.get('calls_spent', 0)
-    assert consumed <= 3, 'reservation exceeded: %d consumed of 3' % consumed
+    assert consumed <= 3, f'reservation exceeded: {consumed:d} consumed of 3'
     assert len(probe3.launches) == 1, probe3.launches
 
     # Codex review #3 (failures + retries consume the SAME ledger): a failed probe and a
@@ -687,14 +680,11 @@ def test_6_reservation_ledger_max_calls(td):
         pass                                    # the engine may surface either failure
     total_attempts = len(probe_attempts) + len(probe_f.launches)
     assert total_attempts <= 3, (
-        'failures/retries escaped the reservation ledger: %d attempts of 3 '
-        '(probes=%r launches=%r)' % (total_attempts, probe_attempts, probe_f.launches))
+        f'failures/retries escaped the reservation ledger: {total_attempts:d} attempts of 3 (probes={probe_attempts!r} launches={probe_f.launches!r})')
     assert probe_f.launches.count('leaseA') <= 1, (
-        'the crashed leaseA worker was RETRIED against an exhausted reservation: %r'
-        % probe_f.launches)
+        'the crashed leaseA worker was RETRIED against an exhausted reservation: {!r}'.format(probe_f.launches))
     assert 'leaseB' not in probe_f.launches, (
-        'leaseB spawned although the reservation was exhausted by failures: %r'
-        % probe_f.launches)
+        'leaseB spawned although the reservation was exhausted by failures: {!r}'.format(probe_f.launches))
 
     # Codex review #3 (reservation is taken ATOMICALLY before spawn): two leases race
     # for ONE reservation under width 2 — a check-then-act engine reserves post-hoc and
@@ -714,8 +704,7 @@ def test_6_reservation_ledger_max_calls(td):
         'concurrent spawn beat the reservation ledger (check-then-act race): %d workers '
         'launched against max_calls=1: %r' % (len(probe_r.launches), probe_r.launches))
     assert worker_r.met_barrier == [], (
-        'both racing workers rendezvoused — the reservation was not atomic: %r'
-        % worker_r.met_barrier)
+        'both racing workers rendezvoused — the reservation was not atomic: {!r}'.format(worker_r.met_barrier))
 
 
 def test_7_coord_dir_and_admitted_parked_filtering(td):
@@ -772,8 +761,7 @@ def test_7_coord_dir_and_admitted_parked_filtering(td):
             % dispatch_entered['n'])
     if not stop_msg or 'parked' not in stop_msg.lower():
         problems.append(
-            'the stop does not name the admitted-fleet-all-parked condition (got %r)'
-            % stop_msg)
+            'the stop does not name the admitted-fleet-all-parked condition (got {!r})'.format(stop_msg))
 
     # (7b) THE ENGINE PIN — width from the admitted-minus-parked fleet only, and the
     # custom coordinator dir OBSERVED FROM INSIDE every child (the H1386 D4 exactness the
@@ -804,16 +792,16 @@ def test_7_coord_dir_and_admitted_parked_filtering(td):
             problems.append('a lease bound to a PARKED profile was dispatched')
         if summary.get('effective_width') not in (1,):
             problems.append('effective width must collapse to the admitted-minus-parked '
-                            'fleet (expected 1, got %r)' % summary.get('effective_width'))
+                            'fleet (expected 1, got {!r})'.format(summary.get('effective_width')))
         expected_coord = os.path.abspath(coord)
         if not child_observed or any(obs != expected_coord for obs in child_observed):
             problems.append('the coordinator dir was not observable from inside the '
-                            'child(ren) at call time (observed %r, expected %r) — an '
+                            'child(ren) at call time (observed {!r}, expected {!r}) — an '
                             'engine-summary echo of the constructor argument is not '
-                            'propagation' % (child_observed, expected_coord))
+                            'propagation'.format(child_observed, expected_coord))
         if summary.get('coord_dir') != expected_coord:
             problems.append('the custom coordinator dir did not reach the engine children '
-                            '(expected %r)' % expected_coord)
+                            '(expected {!r})'.format(expected_coord))
     except MissingBehavior as exc:
         problems.append(str(exc))
 
@@ -844,11 +832,10 @@ def test_7_coord_dir_and_admitted_parked_filtering(td):
             stop_reason = str(exc)
         if probe_p.launches:
             problems.append('with all admitted profiles parked the engine still '
-                            'dispatched %r (the excluded healthy c3 must not count)'
-                            % probe_p.launches)
+                            'dispatched {!r} (the excluded healthy c3 must not count)'.format(probe_p.launches))
         if 'parked' not in stop_reason.lower():
             problems.append('the engine stop does not name the admitted-fleet-all-parked '
-                            'condition (got %r)' % stop_reason)
+                            'condition (got {!r})'.format(stop_reason))
     except MissingBehavior as exc:
         problems.append(str(exc))
     if problems:
@@ -897,22 +884,19 @@ def test_8_transient_probe_failure_is_reprobed_on_resume(td):
     except SimulatedCrash:
         crashed = True
     assert crashed, 'fixture defect: the injected leaseB crash must propagate'
-    assert 'c1' in probe_calls_1, ('fixture defect: c1 must have been probed in life 1: %r'
-                                   % probe_calls_1)
+    assert 'c1' in probe_calls_1, ('fixture defect: c1 must have been probed in life 1: {!r}'.format(probe_calls_1))
     assert 'leaseA' not in meter1.launches, (
-        'fixture defect: leaseA must not have launched behind a failed probe: %r'
-        % meter1.launches)
+        'fixture defect: leaseA must not have launched behind a failed probe: {!r}'.format(meter1.launches))
 
     # THE PIN (durability half): the failure must not survive on disk in EITHER form.
     with open(checkpoint, encoding='utf-8') as f:
         cp = json.load(f)
     assert 'c1' not in (cp.get('probed') or []), (
         'a FAILED probe was persisted as probed — resume will never re-probe c1 and its '
-        'leases strand forever: probed=%r' % (cp.get('probed'),))
+        'leases strand forever: probed={!r}'.format(cp.get('probed')))
     assert 'c1' not in (cp.get('failed_profiles') or []), (
         'the per-life failed-profile set was persisted — resume inherits a permanent '
-        'verdict from one transient exception: failed_profiles=%r'
-        % (cp.get('failed_profiles'),))
+        'verdict from one transient exception: failed_profiles={!r}'.format(cp.get('failed_profiles')))
 
     _forget_engine_module()
 
@@ -934,17 +918,14 @@ def test_8_transient_probe_failure_is_reprobed_on_resume(td):
 
     # THE PIN (recovery half).
     assert 'c1' in probe_calls_2, (
-        'c1 was never re-probed on resume — the transient failure became permanent: %r'
-        % probe_calls_2)
+        'c1 was never re-probed on resume — the transient failure became permanent: {!r}'.format(probe_calls_2))
     assert 'leaseA' in meter2.launches, (
         'leaseA never dispatched on resume — it is stranded behind a stale probe verdict: '
-        '%r' % meter2.launches)
+        '{!r}'.format(meter2.launches))
     assert 'c2' not in probe_calls_2, (
-        'c2 probed twice — a SUCCESSFUL probe is durable and must not be repaid: %r'
-        % probe_calls_2)
+        'c2 probed twice — a SUCCESSFUL probe is durable and must not be repaid: {!r}'.format(probe_calls_2))
     assert summary.get('stop_reason') is None, (
-        'a fully-dispatched wave must settle with no stranding reason: %r'
-        % summary.get('stop_reason'))
+        'a fully-dispatched wave must settle with no stranding reason: {!r}'.format(summary.get('stop_reason')))
     assert len(promoter.commits) == 1, promoter.commits
     assert set(promoter.commits[0]) == {'leaseA', 'leaseB'}, promoter.commits
 
@@ -979,22 +960,22 @@ def test_9_settling_with_undispatched_leases_reports_stop_reason(td):
     # The wave still settles (partial-wave semantics unchanged) ...
     assert summary['wave']['promoted'] is True, summary['wave']
     assert promoter.commits == [('leaseB',)], (
-        'only the dispatched lease may be promoted: %r' % promoter.commits)
+        'only the dispatched lease may be promoted: {!r}'.format(promoter.commits))
     assert meter.launches == ['leaseB'], meter.launches
 
     # ... but it must NO LONGER do so silently.
     reason = summary.get('stop_reason')
     assert reason, (
         'the wave settled with leaseA never dispatched and reported NO stop_reason — this '
-        'is the silent stranding H9 exists to end: %r' % summary)
-    assert 'leaseA' in reason, ('the stop_reason must name the stranded lease: %r' % reason)
-    assert 'c1' in reason, ('the stop_reason must name the stranded profile: %r' % reason)
+        'is the silent stranding H9 exists to end: {!r}'.format(summary))
+    assert 'leaseA' in reason, ('the stop_reason must name the stranded lease: {!r}'.format(reason))
+    assert 'c1' in reason, ('the stop_reason must name the stranded profile: {!r}'.format(reason))
 
     # Durable: an operator reading the checkpoint (not just this process) must see it.
     with open(checkpoint, encoding='utf-8') as f:
         cp = json.load(f)
     assert cp.get('stop_reason') == reason, (
-        'the stranding reason was not persisted to the checkpoint: %r' % cp.get('stop_reason'))
+        'the stranding reason was not persisted to the checkpoint: {!r}'.format(cp.get('stop_reason')))
 
 
 def test_10_h3_checkpoint_fsync(td):
@@ -1029,12 +1010,181 @@ def test_10_h3_checkpoint_fsync(td):
         os.fsync, os.replace = real_fsync, real_replace
 
     if [kind for kind, _ in calls] != ['fsync', 'replace']:
-        raise AssertionError('expected exactly fsync-then-replace, got %r' % calls)
+        raise AssertionError('expected exactly fsync-then-replace, got {!r}'.format(calls))
     if calls[0][1] <= 0:
-        raise AssertionError('fsynced an empty descriptor: %r' % calls)
+        raise AssertionError('fsynced an empty descriptor: {!r}'.format(calls))
     raw = open(checkpoint, 'rb').read()
     if b'\r\n' in raw or not raw.endswith(b'\n'):
         raise AssertionError('checkpoint bytes changed (CRLF or missing trailing newline)')
+
+
+def _exit_code_of(summary):
+    """Score a real engine summary through the SHIPPED cohort exit contract (H5209)."""
+    return bsr.cohort_exit_code(summary)
+
+
+def test_11_resume_unparks_a_profile_after_promote_reports_stranded_lease(td):
+    """H5211 state (B): a promoted-but-not-TM-rebuilt wave resumed with a profile UNPARKED.
+
+    Life 1 settles clean with c2 parked (only leaseA runs and is promoted) and crashes
+    between promote and the TM rebuild, leaving promoted=True / tm_done=False. Life 2
+    resumes with c2 unparked. Its lease leaseB is now admitted and runnable, but dispatch
+    is gated on `not promoted`, and the terminal barrier used to BREAK before
+    `stop_reason` was assigned while `_promote_and_tm()` still flipped tm_done — so the
+    wave reported stop_reason None, promoted/tm_done True, accepted ['leaseA'] and exited
+    0 with leaseB absent from `summary['leases']` entirely. Dispatch stays unchanged (a
+    promoted wave admits nothing new); the pin is that the engine SAYS so.
+    """
+    td = os.path.join(td, 't11'); os.makedirs(td)
+    windows = [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'}]
+    checkpoint = os.path.join(td, 'cp.json')
+    promoter = FakePromoter(os.path.join(td, 'store.txt'))
+    contract = ('a resumed wave that cannot dispatch an admitted, unparked plan member '
+                'must record a stop_reason naming it, never settle silently')
+
+    # Life 1: c2 parked; the TM rebuild crashes after the promotion commit.
+    meter1 = ConcurrencyProbe()
+    engine = build_engine(
+        windows, FakeWorker(td, meter1), checkpoint, audit=clean_audit,
+        promote_wave=promoter, rebuild_tm=FakeTM(fail_times=1), width=2,
+        admitted={'c1', 'c2'}, parked={'c2'}, contract=contract)
+    crashed = False
+    try:
+        engine.run()
+    except SimulatedCrash:
+        crashed = True
+    assert crashed, 'fixture defect: the injected TM crash must propagate'
+    with open(checkpoint, encoding='utf-8') as f:
+        cp = json.load(f)
+    assert cp['wave']['promoted'] is True and cp['wave']['tm_done'] is False, (
+        'fixture defect: life 1 must end promoted/not-TM-rebuilt: {!r}'.format(cp['wave']))
+    assert 'leaseB' not in (cp.get('leases') or {}), (
+        'fixture defect: parked leaseB must never have run in life 1: {!r}'.format(cp['leases']))
+    assert cp.get('stop_reason') is None, cp.get('stop_reason')
+
+    _forget_engine_module()
+
+    # Life 2: resume with c2 UNPARKED.
+    meter2 = ConcurrencyProbe()
+    tm2 = FakeTM()
+    engine2 = build_engine(
+        windows, FakeWorker(td, meter2), checkpoint, audit=clean_audit,
+        promote_wave=promoter, rebuild_tm=tm2, width=2, admitted={'c1', 'c2'},
+        parked=(), resume=True, contract=contract)
+    summary = engine2.run()
+
+    # Unchanged behaviour: nothing new dispatched, one promotion, TM finished.
+    assert meter2.launches == [], meter2.launches
+    assert promoter.commits == [('leaseA',)], promoter.commits
+    assert tm2.successes == 1, tm2.successes
+    assert summary['wave']['promoted'] and summary['wave']['tm_done'], summary['wave']
+
+    # THE PIN.
+    reason = summary.get('stop_reason')
+    assert reason, ('state (B): resumed wave stranded leaseB and reported NO stop_reason '
+                    '— exit %d: %r' % (_exit_code_of(summary), summary))
+    assert 'leaseB' in reason and 'c2' in reason, reason
+    assert _exit_code_of(summary) != 0, (
+        'state (B) must not exit 0: {!r}'.format(summary))
+    with open(checkpoint, encoding='utf-8') as f:
+        assert json.load(f).get('stop_reason') == reason, 'reason not persisted'
+
+    # Control: the same TM-only resume WITHOUT unparking is a clean wave and stays 0.
+    td_c = os.path.join(td, 'control'); os.makedirs(td_c)
+    cp_c = os.path.join(td_c, 'cp.json')
+    promoter_c = FakePromoter(os.path.join(td_c, 'store.txt'))
+    try:
+        build_engine(windows, FakeWorker(td_c, ConcurrencyProbe()), cp_c,
+                     audit=clean_audit, promote_wave=promoter_c,
+                     rebuild_tm=FakeTM(fail_times=1), width=2, admitted={'c1', 'c2'},
+                     parked={'c2'}, contract=contract).run()
+    except SimulatedCrash:
+        pass
+    _forget_engine_module()
+    clean = build_engine(windows, FakeWorker(td_c, ConcurrencyProbe()), cp_c,
+                         audit=clean_audit, promote_wave=promoter_c, rebuild_tm=FakeTM(),
+                         width=2, admitted={'c1', 'c2'}, parked={'c2'}, resume=True,
+                         contract=contract).run()
+    assert clean.get('stop_reason') is None, clean.get('stop_reason')
+    assert _exit_code_of(clean) == 0, ('control: a TM-only resume with nothing stranded '
+                                       'must still exit 0: {!r}'.format(clean))
+
+
+def test_12_settled_wave_resumed_with_a_new_plan_member_reports_it(td):
+    """H5211 state (C): a fully settled wave whose plan later gained a lease.
+
+    The checkpoint is CRAFTED by hand (not produced by a prior engine life): leaseA done,
+    promoted, TM rebuilt. The resumed plan adds leaseB on an admitted, unparked profile.
+    `run()` used to return at the "Already fully settled on resume?" early exit without
+    ever looking at the plan, so leaseB was never dispatched, never named, absent from
+    `summary['leases']`, and the wave exited 0.
+    """
+    td = os.path.join(td, 't12'); os.makedirs(td)
+    checkpoint = os.path.join(td, 'cp.json')
+    wf_a = os.path.join(td, 'wf_leaseA.json')
+    with open(wf_a, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump({'meta': {'window': 'leaseA'}, 'results': []}, f)
+
+    def craft(path):
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            json.dump({
+                'schema': 'pwg.cohort_engine.v1',
+                'leases': {'leaseA': {'phase': 'done', 'wf_output': wf_a,
+                                      'report': clean_audit(wf_a, {})}},
+                'wave': {'promoted': True, 'tm_done': True,
+                         'receipt': {'receipt': 1, 'members': ['leaseA']}},
+                'calls_spent': 1, 'calls_reserved': 1, 'peak_concurrency': 1,
+                'requeue_backlog_keys': [], 'accepted_order': ['leaseA'],
+                'stop_reason': None, 'effective_width': 1, 'probed': [],
+                'coord_dir': None,
+            }, f)
+    craft(checkpoint)
+
+    contract = ('a settled wave resumed with a new admitted plan member must name it, '
+                'never return early as a clean wave')
+    grown = [{'id': 'leaseA', 'profile': 'c1'}, {'id': 'leaseB', 'profile': 'c2'}]
+    meter = ConcurrencyProbe()
+    promoter = FakePromoter(os.path.join(td, 'store.txt'))
+    tm = FakeTM()
+    summary = build_engine(
+        grown, FakeWorker(td, meter), checkpoint, audit=clean_audit,
+        promote_wave=promoter, rebuild_tm=tm, width=2, admitted={'c1', 'c2'},
+        resume=True, contract=contract).run()
+
+    # Unchanged behaviour: a settled wave dispatches, promotes and rebuilds nothing.
+    assert meter.launches == [], meter.launches
+    assert promoter.commits == [], promoter.commits
+    assert tm.attempts == 0, tm.attempts
+
+    # THE PIN.
+    reason = summary.get('stop_reason')
+    assert reason, ('state (C): settled wave never inspected new plan member leaseB and '
+                    'reported NO stop_reason — exit %d: %r' % (_exit_code_of(summary),
+                                                               summary))
+    assert 'leaseB' in reason and 'c2' in reason, reason
+    assert _exit_code_of(summary) != 0, 'state (C) must not exit 0: {!r}'.format(summary)
+    with open(checkpoint, encoding='utf-8') as f:
+        assert json.load(f).get('stop_reason') == reason, 'reason not persisted'
+
+    # Control: the SAME crafted checkpoint resumed with the ORIGINAL plan stays clean/0.
+    _forget_engine_module()
+    craft(checkpoint)
+    clean = build_engine(
+        [{'id': 'leaseA', 'profile': 'c1'}], FakeWorker(td, ConcurrencyProbe()),
+        checkpoint, audit=clean_audit, promote_wave=promoter, rebuild_tm=tm, width=2,
+        admitted={'c1', 'c2'}, resume=True, contract=contract).run()
+    assert clean.get('stop_reason') is None, clean.get('stop_reason')
+    assert _exit_code_of(clean) == 0, ('control: an unchanged settled wave must still '
+                                       'exit 0: {!r}'.format(clean))
+    # ... and a new member on a PARKED profile is not runnable, so it is not stranded.
+    _forget_engine_module()
+    craft(checkpoint)
+    parked = build_engine(
+        grown, FakeWorker(td, ConcurrencyProbe()), checkpoint, audit=clean_audit,
+        promote_wave=promoter, rebuild_tm=tm, width=2, admitted={'c1', 'c2'},
+        parked={'c2'}, resume=True, contract=contract).run()
+    assert parked.get('stop_reason') is None, parked.get('stop_reason')
+    assert _exit_code_of(parked) == 0, parked
 
 
 TESTS = [
@@ -1048,6 +1198,8 @@ TESTS = [
     ('8 H9: transient probe failure re-probed on resume', test_8_transient_probe_failure_is_reprobed_on_resume),
     ('9 H9: settling with undispatched leases reports stop_reason', test_9_settling_with_undispatched_leases_reports_stop_reason),
     ('10 H3: _save_checkpoint fsyncs the live fd before os.replace', test_10_h3_checkpoint_fsync),
+    ('11 H5211(B): unparked-after-promote resume names its stranded lease', test_11_resume_unparks_a_profile_after_promote_reports_stranded_lease),
+    ('12 H5211(C): settled wave with a new plan member names it', test_12_settled_wave_resumed_with_a_new_plan_member_reports_it),
 ]
 
 
@@ -1059,9 +1211,9 @@ def main():
                 fn(td)
             except AssertionError as exc:
                 failures.append((label, str(exc)))
-                print('  RED   (%s):\n        %s' % (label, exc))
+                print('  RED   ({}):\n        {}'.format(label, exc))
             else:
-                print('  GREEN (%s)' % label)
+                print('  GREEN ({})'.format(label))
     total = len(TESTS)
     if failures:
         print('cohort_engine_selftest: %d RED / %d GREEN — RED is the EXPECTED H1437 '
@@ -1069,7 +1221,7 @@ def main():
               'fixture defect. The suite must flip GREEN with no edits outside the '
               'build_engine adapter.' % (len(failures), total - len(failures)))
         return 1
-    print('cohort_engine_selftest: PASS (%d pins)' % total)
+    print(f'cohort_engine_selftest: PASS ({total:d} pins)')
     return 0
 
 

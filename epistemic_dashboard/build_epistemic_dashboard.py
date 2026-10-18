@@ -212,6 +212,16 @@ def main():
                 "total": f_total, "by_importance": f_imp,
                 "by_origin": {"auto": 0, "human": f_total}}
 
+    # Loud refusal, never a silently empty page (H4353): a directory with no
+    # registry, or a FINDINGS.md that yields zero findings, is a wrong --dir or
+    # a broken file — not a dashboard with nothing in it.
+    if not layers and core is None:
+        sys.exit(f"REFUSED: no epistemic registry ({', '.join(k for k, _ in LAYERS)} or "
+                 f"FINDINGS.md) found under {root} — wrong --dir?")
+    if core is not None and core["total"] == 0:
+        sys.exit(f"REFUSED: {fp} parsed to 0 findings (no '### §N.' headings) — "
+                 f"malformed registry, not an empty dashboard")
+
     # verifiability (H1362) — the re-derivability class split over FINDINGS, if the sidecar exists
     verifiability = None
     vp = root / "epistemic_dashboard" / "verifiability.json"

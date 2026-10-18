@@ -22,7 +22,7 @@ both answers on their own terms.
 
 The European answer is the alphabetical headword inventory, and its first virtue is that
 it can be audited as a *set*. Chapter 3 performs that audit across the collection: the
-union headword index over the digitised family — 323,425 headwords with per-dictionary
+union headword index over the digitised family — 323,422 headwords with per-dictionary
 provenance — read as a coverage geometry: how the dictionaries overlap and differ in
 what they admit as a word; how the digitised record grew as the collection was rebuilt
 and corrected across a decade; and, where the corpus can see at all, what fraction of

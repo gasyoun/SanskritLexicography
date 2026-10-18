@@ -176,9 +176,9 @@ class GateEvidence(object):
     def __init__(self, gate_id, description=None):
         if gate_id not in LEGITIMATE_EMPTY:
             raise KeyError(
-                'gate_id %r is not registered in LEGITIMATE_EMPTY. Register it with its '
+                'gate_id {!r} is not registered in LEGITIMATE_EMPTY. Register it with its '
                 'legitimate-empty classes (an empty tuple is a valid, deliberate claim) '
-                'so the spike stays the single list of what may legally be empty.' % gate_id)
+                'so the spike stays the single list of what may legally be empty.'.format(gate_id))
         self.gate_id = gate_id
         self.description = description
         self.started_at = utc_now()
@@ -212,7 +212,7 @@ class GateEvidence(object):
                     # 0-byte input (C2-2's mtime-only freshness check is exactly this)
                     # can no longer hide that fact behind a green line.
                     self.warnings.append(
-                        '%s: examined a 0-byte input (%s)' % (name, os.path.basename(path)))
+                        '{}: examined a 0-byte input ({})'.format(name, os.path.basename(path)))
             elif present:
                 record['size_bytes'] = None
                 record['sha256'] = None
@@ -263,11 +263,10 @@ class GateEvidence(object):
         allowed = LEGITIMATE_EMPTY[self.gate_id]
         if name not in allowed:
             raise KeyError(
-                '%s: %r is not a declared legitimate-empty class for this gate '
-                '(declared: %s). Emptiness a gate did not anticipate is a FAIL, not a '
+                '{}: {!r} is not a declared legitimate-empty class for this gate '
+                '(declared: {}). Emptiness a gate did not anticipate is a FAIL, not a '
                 'silence — add it to LEGITIMATE_EMPTY with its rationale in the spike '
-                'doc, or fix the input.'
-                % (self.gate_id, name, ', '.join(allowed) or 'none — this gate has no '
+                'doc, or fix the input.'.format(self.gate_id, name, ', '.join(allowed) or 'none — this gate has no '
                    'legitimately-empty input class'))
         self.expected_empty.append({'class': name, 'reason': reason})
 
@@ -275,7 +274,7 @@ class GateEvidence(object):
 
     def set_verdict(self, verdict):
         if verdict not in VERDICTS:
-            raise ValueError('verdict must be one of %s, got %r' % (VERDICTS, verdict))
+            raise ValueError('verdict must be one of {}, got {!r}'.format(VERDICTS, verdict))
         self.verdict = verdict
         return verdict
 
@@ -300,7 +299,7 @@ class GateEvidence(object):
         """
         if self.verdict is None:
             raise VacuousGateError(
-                '%s: set_verdict() must be called before assert_nonvacuous()' % self.gate_id)
+                '{}: set_verdict() must be called before assert_nonvacuous()'.format(self.gate_id))
         if self.verdict != 'pass':
             return self
         if self.vacuity == 'vacuous':
@@ -362,8 +361,7 @@ def load_sidecar(path):
     with open(path, encoding='utf-8') as f:
         payload = json.load(f)
     if payload.get('schema') != SCHEMA:
-        raise MissingEvidenceError('%s: not a %s sidecar (schema=%r)'
-                                   % (path, SCHEMA, payload.get('schema')))
+        raise MissingEvidenceError('{}: not a {} sidecar (schema={!r})'.format(path, SCHEMA, payload.get('schema')))
     return payload
 
 
@@ -376,17 +374,15 @@ def require_sidecar(path, gate_id=None, verdict='pass'):
     """
     if not os.path.exists(path):
         raise MissingEvidenceError(
-            'no gate-evidence sidecar at %s — after W1 a gate that leaves no evidence '
-            'has not passed, it has not run (#1803)' % path)
+            'no gate-evidence sidecar at {} — after W1 a gate that leaves no evidence '
+            'has not passed, it has not run (#1803)'.format(path))
     payload = load_sidecar(path)
     if gate_id is not None and payload.get('gate_id') != gate_id:
-        raise MissingEvidenceError('%s: expected gate_id %r, found %r'
-                                   % (path, gate_id, payload.get('gate_id')))
+        raise MissingEvidenceError('{}: expected gate_id {!r}, found {!r}'.format(path, gate_id, payload.get('gate_id')))
     if verdict is not None and payload.get('verdict') != verdict:
-        raise MissingEvidenceError('%s: verdict is %r, expected %r'
-                                   % (path, payload.get('verdict'), verdict))
+        raise MissingEvidenceError('{}: verdict is {!r}, expected {!r}'.format(path, payload.get('verdict'), verdict))
     if payload.get('vacuity') == 'vacuous':
-        raise MissingEvidenceError('%s: sidecar records a vacuous run' % path)
+        raise MissingEvidenceError('{}: sidecar records a vacuous run'.format(path))
     return payload
 
 
@@ -565,7 +561,7 @@ def main(argv=None):
                       % (gate_id, payload['vacuity'], payload['units_examined'],
                          payload['evaluations'], payload['hits']))
         for line in failures:
-            print('MISSING GATE EVIDENCE: %s' % line, file=sys.stderr)
+            print('MISSING GATE EVIDENCE: {}'.format(line), file=sys.stderr)
         return 1 if failures else 0
     if args.show:
         print(json.dumps(load_sidecar(args.show), ensure_ascii=False, indent=2))

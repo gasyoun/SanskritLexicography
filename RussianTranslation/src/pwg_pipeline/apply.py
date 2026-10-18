@@ -47,8 +47,7 @@ class ApplyService:
         allowed = LEGAL_INTENTS.get(verdict.verdict_class, frozenset())
         if intent not in allowed:
             raise ApplyRefusal(
-                'intent %r is illegal for a %r verdict (allowed: %s)'
-                % (intent, verdict.verdict_class,
+                'intent {!r} is illegal for a {!r} verdict (allowed: {})'.format(intent, verdict.verdict_class,
                    ', '.join(sorted(allowed)) or 'none'))
         payload_sha = canonical_sha256(payload)
         intent_id = self.repository.record_intent(
@@ -107,8 +106,7 @@ class ApplyService:
                           rows: Sequence[Mapping[str, Any]]) -> str:
         """Record the promote intent.  Execution belongs to PromotionService."""
         if verdict.verdict_class != model.VERDICT_CLEAN:
-            raise ApplyRefusal('only a clean verdict may be promoted (got %r)'
-                               % verdict.verdict_class)
+            raise ApplyRefusal('only a clean verdict may be promoted (got {!r})'.format(verdict.verdict_class))
         intent_id = self.record(verdict=verdict, intent=model.INTENT_PROMOTE,
                                 payload=list(rows))
         state = self.repository.job_state(verdict.job_id)
@@ -130,7 +128,7 @@ class ApplyService:
             return self.prepare_promotion(verdict, list(payload))  # type: ignore[arg-type]
         handler = handlers.get(intent)
         if handler is None:
-            raise ApplyRefusal('unknown intent: %r' % (intent,))
+            raise ApplyRefusal('unknown intent: {!r}'.format(intent))
         return handler(verdict, payload)  # type: ignore[arg-type]
 
 

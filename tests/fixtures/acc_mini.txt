@@ -1,0 +1,12 @@
+<L>1<pc>1-1<k1>rAmAyaRa<k2>rAmAyaRa
+{{Lbody=1.1}}¦ {#rAmAyaRa#} by {%Vālmīki%}. {@Ed.@} Bombay 1888. Baroda 1960; Aufrecht 1, 2 {??} [Page 12] <b>bold</b> Adyar. p. 45
+<LEND>
+<L>2<pc>1-1<k1>yogasUtra<k2>yoga_sUtra
+¦ by Patañjali. TCD. 627 IO. 3183
+<LEND>
+<L>3<pc>1-2<k1>broken header without k2
+¦ this record must be skipped with a warning
+<LEND>
+<L>4<pc>1-2<k1>aMSanAqIPala(keralIya)<k2>aMSanAqIPala
+¦ variant spelling parenthetical in k1
+<LEND>

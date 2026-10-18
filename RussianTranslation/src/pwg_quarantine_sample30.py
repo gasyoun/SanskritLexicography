@@ -58,7 +58,7 @@ for _path in (HERE, os.path.join(HERE, 'pilot')):
     if _path not in sys.path:
         sys.path.insert(0, _path)
 
-from pwg_pipeline import faults, kernel, model, providers, repository as repo_mod  # noqa: E402
+from pwg_pipeline import faults, kernel, model, providers, repository as repo_mod
 
 SCHEMA = 'h4053.quarantine_sample30.v1'
 
@@ -169,9 +169,7 @@ def freeze_sample(parent_sample_path: str = DEFAULT_PARENT_SAMPLE,
             substitutions.append({
                 'replaces_parent_index': unavailable[slot]['parent_index'],
                 'key1': row.get('key1'), 'subcard': row.get('subcard'),
-                'rule': 'same stratified round-robin over the fresh '
-                        'population, deterministic order (subcard-sorted '
-                        'positional index), seed %d' % seed})
+                'rule': f'same stratified round-robin over the fresh population, deterministic order (subcard-sorted positional index), seed {seed:d}'})
             resolved.append((None, {}, row))
 
     picked: list[tuple] = []
@@ -228,7 +226,7 @@ def freeze_sample(parent_sample_path: str = DEFAULT_PARENT_SAMPLE,
         'review_classes': list(REVIEW_CLASSES),
         'review_class_assignment': (
             'assigned only by independent human review after an actual paid '
-            'generation; this packet ships every card as %s' % UNMEASURED),
+            'generation; this packet ships every card as {}'.format(UNMEASURED)),
         'cards': cards,
     }
 
@@ -261,7 +259,7 @@ def _load_cards(args: argparse.Namespace) -> tuple[list[dict], str, str]:
         with open(source, encoding='utf-8') as handle:
             packet = json.load(handle)
         if packet.get('kind') != 'frozen_nested_sample':
-            raise SystemExit('%s is not a frozen_nested_sample packet' % source)
+            raise SystemExit('{} is not a frozen_nested_sample packet'.format(source))
         cards = packet['cards']
     else:
         cards = []
@@ -296,7 +294,7 @@ def _old_ru_join(store_path: str, subcard: str) -> dict:
 def _open_call_rows(repository_db: str) -> list[dict]:
     """Read-only listing of unfinalized calls across ALL campaigns."""
     import sqlite3
-    connection = sqlite3.connect('file:%s?mode=ro' % repository_db, uri=True)
+    connection = sqlite3.connect('file:{}?mode=ro'.format(repository_db), uri=True)
     connection.row_factory = sqlite3.Row
     try:
         rows = connection.execute(
@@ -386,8 +384,8 @@ def run_sample(cards: list[dict], *, workdir: str, evidence_dir: str,
     campaign_id = BASE_CAMPAIGN + (
         '-r%d' % len(prior_campaigns) if done else '')
     plan = [{
-        'job_id': '%s.job.%d' % (campaign_id, index),
-        'idempotency_key': sha256_text('%s:%s:%s' % (
+        'job_id': f'{campaign_id}.job.{index:d}',
+        'idempotency_key': sha256_text('{}:{}:{}'.format(
             BASE_CAMPAIGN, card.get('subcard'), card.get('input_hash'))),
         'card': card,
     } for index, card in enumerate(cards)]
@@ -459,7 +457,7 @@ def run_sample(cards: list[dict], *, workdir: str, evidence_dir: str,
                         rows.append(prior['packet_row'])
                     continue
                 if key in retired_keys:
-                    key = '%s:resume%d' % (key, retired_keys[key])
+                    key = f'{key}:resume{retired_keys[key]:d}'
                 prior = done.get(item['idempotency_key'])
                 if prior and prior.get('state') == model.CALL_SUCCEEDED:
                     receipt['resumed_skipped'] += 1
@@ -586,7 +584,7 @@ def cmd_run(args: argparse.Namespace) -> int:
                          if row.get('state') == model.CALL_SUCCEEDED}
         campaign_prefix = 'h4053-quarantine-sample30'
         fresh = [card for card in cards
-                 if sha256_text('%s:%s:%s' % (
+                 if sha256_text('{}:{}:{}'.format(
                      campaign_prefix, card.get('subcard'),
                      card.get('input_hash'))) not in done_keys]
         if len(fresh) > args.max_calls:
@@ -618,10 +616,10 @@ def cmd_run(args: argparse.Namespace) -> int:
     summary['guard_unchanged'] = receipt.get('guard_unchanged')
     print(json.dumps(summary, ensure_ascii=False))
     if receipt.get('packet_path'):
-        print('packet -> %s' % receipt['packet_path'])
+        print('packet -> {}'.format(receipt['packet_path']))
     if receipt['refusals']:
         for ref in receipt['refusals']:
-            print('refusal: %s %s' % (ref['failure_class'], ref['detail']))
+            print('refusal: {} {}'.format(ref['failure_class'], ref['detail']))
         return EXIT_STOP
     if not args.dry_run and not receipt['guard_unchanged']:
         sys.stderr.write('run: guard surface changed — refusing to end\n')
@@ -668,7 +666,7 @@ def selftest() -> dict:
     cards = [{'subcard': 'vid~~h0_zz_pw%02d' % index, 'key1': 'vid',
               'h': 'vid', 'sense_tag': '1',
               'reason': 'card sense-count changed',
-              'input_hash': sha256_text('card-%d' % index),
+              'input_hash': sha256_text(f'card-{index:d}'),
               'review_class': UNMEASURED,
               'ru_quality_verdict': NOT_MEASURED}
              for index in range(6)]
@@ -806,7 +804,7 @@ def cmd_selftest(_args: argparse.Namespace) -> int:
     started = time.time()
     results = selftest()
     for name, detail in results.items():
-        print('PASS %s: %s' % (name, json.dumps(detail, ensure_ascii=False)))
+        print('PASS {}: {}'.format(name, json.dumps(detail, ensure_ascii=False)))
     print('selftest 6/6 in %.1fs' % (time.time() - started))
     return EXIT_OK
 

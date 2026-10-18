@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 05-09-2026_
+_Created: 01-08-2026 · Last updated: 08-09-2026_
 
 # Sanskrit–Catalan word list vs. the Cologne (CDSL) wordlists
 
@@ -155,15 +155,17 @@ The list is in **accented IAST with an explicit morphological-analysis layer** �
 
 | vs dict | both-accented shared lemmas | **same position** | differ | accented in Pujol only | accented in dict only |
 |---|--:|--:|--:|--:|--:|
-| **GRA** (Grassmann RV) | 1,023 | **991 = 96.9 %** | 32 | 46 | 242 |
-| **MW** | 1,611 | **1,564 = 97.1 %** | 47 | 534 | 524 |
+| **GRA** (Grassmann RV) | 2,284 | **2,239 = 98.0 %** | 45 | 63 | 650 |
+| **MW** | 4,037 | **3,994 = 98.9 %** | 43 | 469 | 2,056 |
 
-- **~97 % place the udātta on the same vowel** — Pujol's accentuation is essentially the standard Vedic/MW accent, just in a different notation.
-- **Coverage is selective and asymmetric.** Pujol accents ~11,535 lemmas total (mostly the Vedic stratum); GRA accents 242 shared lemmas Pujol leaves bare, and against MW each side accents ~520 the other doesn't. So Pujol is *not* an exhaustive accent source — absence of a Pujol accent ≠ the word is unaccented.
-- **~3 % genuine position disagreements** (32 vs GRA, 47 vs MW). Spot-checked, these are real notation/analysis differences, and where they conflict with the Rigveda the **Cologne/GRA reading is generally the canonical one** — e.g. `bhaga` Pujol vowel 2 vs GRA vowel 1 (RV *bhága*, first-syllable udātta), `amatra` Pujol 3 vs GRA/MW 1, `dvāra` Pujol 1 vs 2.
-- **Adjudication list ready.** [`accent_review.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/accent_review.py) → [`accent_disagreements.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Catalan-Pujol/accent_disagreements.tsv) renders all **63** disagreeing lemmas (32 vs GRA, 31 vs MW-only) as **accented IAST on both sides** (`bhagá` vs `bhága`) with a `recommend` column (Cologne RV/MW canonical). The print list (the CDSL union) already uses the Cologne accents; this is the QA list to send back to the Catalan editors.
+_Regenerated 08-09-2026 after the H4353 diacritics fix. The earlier figures (GRA 1,023 both-accented → 991 = 96.9 %, 32 differ; MW 1,611 → 1,564 = 97.1 %, 47 differ) were computed on a join key that dropped **every** combining mark, so only pure-ASCII IAST lemmas ever met their Cologne form and `ś` (= `s` + U+0301) was miscounted as an udātta. Both the shared-lemma base (GRA 1,567 → 3,520; MW 13,787 → 52,503) and the true accented-lemma count (11,535 phantom → **4,697** real) change under the fix._
 
-> Method caveat: positions are computed in SLP1 vowel-ordinal space; diphthong/transcoding edge cases and the any-variant match mean the ~3 % is an *upper-ish* bound on real conflicts, not an exact error count.
+- **~98 % place the udātta on the same vowel** — Pujol's accentuation is essentially the standard Vedic/MW accent, just in a different notation. The agreement rate went *up* under the fix (96.9/97.1 % → 98.0/98.9 %): the lemmas the broken key had excluded agree at a higher rate than the ASCII fraction it kept.
+- **Coverage is selective and asymmetric.** Pujol accents **4,697** lemmas (mostly the Vedic stratum); GRA accents 650 shared lemmas Pujol leaves bare, and MW 2,056, against 63 and 469 the other way. So Pujol is *not* an exhaustive accent source — absence of a Pujol accent ≠ the word is unaccented.
+- **~1–2 % genuine position disagreements** (45 vs GRA, 43 vs MW). Spot-checked, these are real notation/analysis differences, and where they conflict with the Rigveda the **Cologne/GRA reading is generally the canonical one** — e.g. `bhaga` Pujol vowel 2 vs GRA vowel 1 (RV *bhága*, first-syllable udātta), `āśita` Pujol 3 vs GRA 1, `śārada` Pujol 3 vs GRA 1.
+- **Adjudication list ready.** [`accent_review.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/accent_review.py) → [`accent_disagreements.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Catalan-Pujol/accent_disagreements.tsv) renders all **76** disagreeing lemmas (45 vs GRA, 31 vs MW-only) as **accented IAST on both sides** (`bhagá` vs `bhága`) with a `recommend` column (Cologne RV/MW canonical). The print list (the CDSL union) already uses the Cologne accents; this is the QA list to send back to the Catalan editors.
+
+> Method caveat: positions are computed in SLP1 vowel-ordinal space; diphthong/transcoding edge cases and the any-variant match mean the ~1–2 % is an *upper-ish* bound on real conflicts, not an exact error count.
 
 ## 8. Use cases
 
@@ -178,6 +180,6 @@ What this analysis is *for*:
 
 ---
 
-*Counts: 61,266 lemmas → 59,377 unique normalised keys; 4,950 with `√`, 3,947 vowel-accented (≈11,535 carry an accent counting all variants). Matching is accent- and compound-insensitive lemma identity against `<k1>` of CDSL dictionaries in `csl-orig/v02` (15 for §2's greedy table, all 43 for §4's uncovered list) and against the DCS-2021 lemma index for §5; §7 compares accent position against the accented `<k2>` of GRA and MW.*
+*Counts: 61,266 lemmas → 59,377 unique normalised keys; 4,950 with `√`, 3,947 vowel-accented (**4,697** normalised keys carry an accent counting all variants — the earlier ≈11,535 was the phantom count from the pre-H4353 key, which read the acute of `ś` as an udātta). Matching is accent- and compound-insensitive lemma identity against `<k1>` of CDSL dictionaries in `csl-orig/v02` (15 for §2's greedy table, all 43 for §4's uncovered list) and against the DCS-2021 lemma index for §5; §7 compares accent position against the accented `<k2>` of GRA and MW.*
 
 _Dr. Mārcis Gasūns_

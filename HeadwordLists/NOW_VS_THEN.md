@@ -1,12 +1,14 @@
-_Created: 01-08-2026 · Last updated: 05-09-2026_
+_Created: 01-08-2026 · Last updated: 06-09-2026_
 
 # HeadwordLists — now (2026) vs then (2014)
 
-Each `*-unique-key{1,2}-N.txt` in [`then-2014/`](then-2014/) is a snapshot whose filename count `N` is its line count when extracted (first committed **2014-10-05**, "Cologne headwords"). This compares each against the **current** csl-orig ("now", 2026), regenerating the same field (`<k1>`/`<k2>`). The current key1 lists are written to [`now-2026/`](now-2026/). Reproduce with [`headword_diff.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/headword_diff.py); full word-level diffs land in `_diff/`.
+Mārcis Gasūns, independent scholar ([ORCID 0000-0003-4513-884X](https://orcid.org/0000-0003-4513-884X)), gasyoun@ya.ru
+
+Each `*-unique-key{1,2}-N.txt` in [`then-2014/`](then-2014/) is a snapshot whose filename count `N` is its line count when extracted (first committed **2014-10-05**, "Cologne headwords"). Here I compare each against the **current** csl-orig ("now", 2026), regenerating the same field (`<k1>`/`<k2>`). The current key1 lists are written to [`now-2026/`](now-2026/). Reproduce with [`headword_diff.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/headword_diff.py); full word-level diffs land in `_diff/`.
 
 - **growth** = (now − then) / then. **overlap** = share of the *then* keys still present now.
 - **comparable** — the committed list and the live field share key format, so `added`/`removed`/`growth` are genuine headword changes.
-- **format-migrated** — the committed *2014* `<k2>` snapshot is in the *legacy Cologne numeric transliteration* (`am2s4a` = aṃśa) while csl-orig is now SLP1; the raw then-vs-now diff is ~100 % and **not** a real headword change. The current key2 has been re-extracted as clean SLP1 into [`now-2026/`](now-2026/), so it is usable directly even though it can't be line-diffed against the numeric 2014 file.
+- **format-migrated** — the committed *2014* `<k2>` snapshot is in the *legacy Cologne numeric transliteration* (`am2s4a` = aṃśa) while csl-orig is now SLP1; the raw then-vs-now diff is ~100 % and not a real headword change. The current key2 has been re-extracted as clean SLP1 into [`now-2026/`](now-2026/), so it is usable directly even though it cannot be line-diffed against the numeric 2014 file.
 - **PD** is not in csl-orig, but its full-text digitization is on disk in the sibling [`SanskritSpellCheck`](https://github.com/gasyoun/SanskritSpellCheck) repo (`external_src/pd/pd.txt`) in the same `<k1>`/`<k2>` tag convention as every csl-orig dict (107,630 tagged entries, matching the then-2014 extraction size exactly) — compared here the same way as the csl-orig-backed dicts (H1365, 20-07-2026).
 
 | List | then (2014) | now (2026) | added | removed | overlap | growth | verdict |
@@ -43,10 +45,10 @@ _Grand total of all 26 snapshots' *then* line counts: **1721983**._
 
 ## Use cases
 
-1. **Refresh the snapshots.** Several lists have drifted hard from the 2014 extraction (AP 36,030 → 88,869; PWK 131,918 → 151,349); the current key1 **and** key2 lists are in [`now-2026/`](now-2026/) (regenerate with `headword_diff.py now`).
-2. **`removed` = a data-loss / correction audit.** Headwords present *then* and gone *now* are merges, corrections, or accidental deletions — review the `_diff/<list>.removed.txt` lists to catch anything dropped by mistake.
-3. **Print-ready key2.** The 2014 key2 files are legacy numeric transliteration; `now-2026/` carries the **current key2 as clean SLP1** (the print/citation form — keeps `/` accent, `-`, `(...)`), ready for a printed headword list.
-4. **Provenance / dictionary-growth tracking.** The then→now deltas record how each dictionary's headword count has evolved — useful for citation and for deciding which `csl-orig` dictionaries have changed enough to re-run downstream analyses (e.g. the Catalan/Huet coverage studies).
+1. **Refresh the snapshots.** Several lists have drifted hard from the 2014 extraction (AP 36,030 → 88,869; PWK 131,918 → 151,349); the current key1 and key2 lists are in [`now-2026/`](now-2026/) (regenerate with `headword_diff.py now`).
+2. **`removed` as a data-loss / correction audit.** Headwords present *then* and gone *now* are merges, corrections, or accidental deletions — review the `_diff/<list>.removed.txt` lists to catch anything dropped by mistake.
+3. **Print-ready key2.** The 2014 key2 files are legacy numeric transliteration; `now-2026/` carries the current key2 as clean SLP1 (the print/citation form, which keeps the `/` accent, `-` and `(...)`), ready for a printed headword list.
+4. **Provenance / dictionary-growth tracking.** The then→now deltas record how each dictionary's headword count has evolved, and they are useful for citation and for deciding which `csl-orig` dictionaries have changed enough to re-run downstream analyses (e.g. the Catalan/Huet coverage studies).
 
 ## Genuine changes (comparable lists)
 

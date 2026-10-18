@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-from h3171_classify import CLASSES  # noqa: E402
+from h3171_classify import CLASSES
 
 GOLD_DIR = Path(__file__).resolve().parents[1]
 rows = [json.loads(l) for l in (GOLD_DIR / "h3171_results.jsonl").read_text(encoding="utf-8").splitlines()]

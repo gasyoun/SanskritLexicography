@@ -13,7 +13,7 @@ C4.
 Source: **M. Mayrhofer, _Kurzgefaßtes etymologisches Wörterbuch des
 Altindischen_ (KEWA), 1953–1980** — the OCRed heading index only, at
 `SamudraManthanam/Index/lib/x86_64-win64/Data/KEWA.txt`. No article text was
-read, and none is emitted (see [Rights](#rights) below).
+read, and none is emitted (see Rights below).
 
 ## 1. What was built
 

@@ -282,7 +282,7 @@ def _mark_gaps(html_body):
             status = MINTABLE if re.search(r"\d", visible) else NO_LOCUS
         stats[status] += 1
         mark = "⚑" if status == MINTABLE else "∅"
-        return "%s%s<sup>%s</sup>%s" % (m.group(1), m.group(3), mark, m.group(4))
+        return "{}{}<sup>{}</sup>{}".format(m.group(1), m.group(3), mark, m.group(4))
 
     out = _UNRESOLVED_LS.sub(sub, html_body)
     stats[HIT] = out.count("<a class=ls ")
@@ -309,8 +309,8 @@ def render_body(raw, mode=EXPANDED, nl=None):
         nl["kept"] += n_kept
     clusters = gloss_clusters(text)
     if clusters:
-        inner = "".join("<li>%s</li>" % print_panel(c) for c in clusters)
-        body = '<ol class="clusters">%s</ol>' % inner
+        inner = "".join("<li>{}</li>".format(print_panel(c)) for c in clusters)
+        body = '<ol class="clusters">{}</ol>'.format(inner)
     else:
         body = print_panel(text)
     return _mark_gaps(body)
@@ -353,41 +353,38 @@ def _supp_head(sup):
         (sup.get("op", "?"), "?", "restates", "неклассифицированный подтип"))
     sign = sup.get("sign") or rd.ABRIDGE
     tip = sup.get("delta_tip") or gloss
-    lang = (' <span class="tchip t-meta">‹<code>%s</code>›</span>' % esc(sup["lang"])
+    lang = (' <span class="tchip t-meta">‹<code>{}</code>›</span>'.format(esc(sup["lang"]))
              if sup.get("lang") else "")
     cancels = (' <span class="tchip t-cancels">отменяет PWG</span>'
                if sup.get("cancels") else "")
     why = PLACEMENT_REASON_LABEL.get(sup.get("placement_reason"))
     unplaced = (' <span class="tchip t-meta" title="знак говорит, ЧЕМ дополнение '
                 'отличается; он не утверждает целевое значение">'
-                '%s</span>' % esc("%s — %s" % (UNBOUND_LABEL, why))) if why else ""
-    head = ('<span class="tchip t-%s" title="%s">%s</span>'
-            '<span class="tchip t-meta"><code>%s</code></span>%s%s%s'
-            % (klass, esc(tip), esc(sign), esc(sup.get("badge", "?")),
+                '{}</span>'.format(esc("{} — {}".format(UNBOUND_LABEL, why)))) if why else ""
+    head = ('<span class="tchip t-{}" title="{}">{}</span>'
+            '<span class="tchip t-meta"><code>{}</code></span>{}{}{}'.format(klass, esc(tip), esc(sign), esc(sup.get("badge", "?")),
                lang, cancels, unplaced))
     return head, klass
 
 
 def sign_legend_html():
     """The sign key, once at the top of the sheet (decisions 9 + 13)."""
-    items = " · ".join('<b>%s</b> %s' % (esc(s), esc(label))
+    items = " · ".join('<b>{}</b> {}'.format(esc(s), esc(label))
                        for s, label in rd.LEGEND)
-    return ('<b>Знаки различия дополнения</b>: %s<br>'
+    return ('<b>Знаки различия дополнения</b>: {}<br>'
             '<small>Знак отвечает на вопрос «в чём именно переформулировка»: он '
             'вычислен сравнением немецкого текста дополнения с немецким текстом '
             'смысла PWG. Полный список дельт — во всплывающей подсказке. '
             'Пустое тело смысла PWG делает дельты неразличимыми; такие случаи '
-            'получают %s и помечены как неразрешимые.</small><br>'
-            % (items, esc(rd.ABRIDGE)))
+            'получают {} и помечены как неразрешимые.</small><br>'.format(items, esc(rd.ABRIDGE)))
 
 
 def render_supplement(sup, mode=EXPANDED, nl=None):
     head, klass = _supp_head(sup)
     body, stats = render_body(sup.get("ru", ""), mode, nl)
     if mode == COMPACT:
-        return ('<span class="csupp"> %s %s</span>' % (head, body)), stats, klass
-    return ('<div class="supp">%s<div class="body">%s</div></div>'
-            % (head, body)), stats, klass
+        return ('<span class="csupp"> {} {}</span>'.format(head, body)), stats, klass
+    return ('<div class="supp">{}<div class="body">{}</div></div>'.format(head, body)), stats, klass
 
 
 def render_card(key1, obj, mode=EXPANDED, nl=None):
@@ -402,20 +399,18 @@ def render_card(key1, obj, mode=EXPANDED, nl=None):
     n_placed = n_new = 0
     compact = mode == COMPACT
     for hom in obj["homonyms"]:
-        chunks.append("<h4>омоним %s</h4>" % esc(hom["h"]))
+        chunks.append("<h4>омоним {}</h4>".format(esc(hom["h"])))
         for s in hom["senses"]:
             pwg_body, st = render_body(s.get("pwg_ru", ""), mode, nl)
             ls_stats += st
-            pair = "%s:%s" % (hom["h"], s["sense"])
+            pair = "{}:{}".format(hom["h"], s["sense"])
             if compact:
-                block = ['<span class="csense" data-pair="%s"><span class="cmark">%s)</span>%s'
-                         % (esc(pair), esc(s["sense"]), pwg_body)]
+                block = ['<span class="csense" data-pair="{}"><span class="cmark">{})</span>{}'.format(esc(pair), esc(s["sense"]), pwg_body)]
             else:
                 # H3152 B4 (MG review 5a): «значение PWG 2» read both as "PWG's
                 # second meaning" and as "the meaning called PWG 2". Name the
                 # relation instead of the thing.
-                block = ['<div class="sense" data-pair="%s"><div class="hd">%s</div>%s'
-                         % (esc(pair), esc(BOUND_LABEL % s["sense"]), pwg_body)]
+                block = ['<div class="sense" data-pair="{}"><div class="hd">{}</div>{}'.format(esc(pair), esc(BOUND_LABEL % s["sense"]), pwg_body)]
             for sup in s["supplements"]:
                 h, st2, kl = render_supplement(sup, mode, nl)
                 ls_stats += st2
@@ -436,7 +431,7 @@ def render_card(key1, obj, mode=EXPANDED, nl=None):
                 n_new += 1
                 chunks.append(h)
             chunks.append("</span>" if compact else "</div>")
-    body = ('<div class="cflow">%s</div>' % "".join(chunks)) if compact \
+    body = ('<div class="cflow">{}</div>'.format("".join(chunks))) if compact \
         else "".join(chunks)
     cov = ('<div class="cov">цитаты: <b>%d</b> связаны с Cologne · '
            '<b>%d</b> ⚑ без цели у резолвера (локус есть, привязки нет) · <b>%d</b> ∅ '
@@ -461,9 +456,8 @@ def insertion_chip(sup, pair):
     """Typology chip on the DE column: sign + layer, full German `de` in tooltip."""
     head, _klass = _supp_head(sup)
     de = sup.get("de") or ""
-    return ('<span class="ins-chip chip" data-pair="%s">%s'
-            '<span class="chip-tip">%s</span></span>'
-            % (esc(pair), head, esc(de)))
+    return ('<span class="ins-chip chip" data-pair="{}">{}'
+            '<span class="chip-tip">{}</span></span>'.format(esc(pair), head, esc(de)))
 
 
 def render_de_column(obj, mode=EXPANDED, nl=None):
@@ -472,33 +466,30 @@ def render_de_column(obj, mode=EXPANDED, nl=None):
     compact = mode == COMPACT
     n_chips = 0
     for hom in obj["homonyms"]:
-        chunks.append("<h4>омоним %s</h4>" % esc(hom["h"]))
+        chunks.append("<h4>омоним {}</h4>".format(esc(hom["h"])))
         for s in hom["senses"]:
-            pair = "%s:%s" % (hom["h"], s["sense"])
+            pair = "{}:{}".format(hom["h"], s["sense"])
             pwg_body, _st = render_de_body(s.get("pwg_de", ""), mode, nl)
             chips = "".join(insertion_chip(sup, pair) for sup in s["supplements"])
             n_chips += len(s["supplements"])
-            chip_wrap = ('<span class="chips">%s</span>' % chips) if chips else ""
+            chip_wrap = ('<span class="chips">{}</span>'.format(chips)) if chips else ""
             if compact:
                 chunks.append(
-                    '<span class="csense" data-pair="%s"><span class="cmark">%s)</span>%s%s</span>'
-                    % (esc(pair), esc(s["sense"]), pwg_body, chip_wrap))
+                    '<span class="csense" data-pair="{}"><span class="cmark">{})</span>{}{}</span>'.format(esc(pair), esc(s["sense"]), pwg_body, chip_wrap))
             else:
                 chunks.append(
-                    '<div class="sense" data-pair="%s"><div class="hd">PWG %s</div>%s%s</div>'
-                    % (esc(pair), esc(s["sense"]), pwg_body, chip_wrap))
+                    '<div class="sense" data-pair="{}"><div class="hd">PWG {}</div>{}{}</div>'.format(esc(pair), esc(s["sense"]), pwg_body, chip_wrap))
         if hom["new_senses"]:
             chips = "".join(insertion_chip(sup, "unplaced") for sup in hom["new_senses"])
             n_chips += len(hom["new_senses"])
             if compact:
                 chunks.append(
-                    '<span class="csense" data-pair="unplaced"><span class="cmark">＋</span>%s</span>'
-                    % chips)
+                    '<span class="csense" data-pair="unplaced"><span class="cmark">＋</span>{}</span>'.format(chips))
             else:
                 chunks.append(
                     '<div class="unplaced" data-pair="unplaced"><div class="hd">'
-                    "некуда вставить</div>%s</div>" % chips)
-    body = ('<div class="cflow">%s</div>' % "".join(chunks)) if compact else "".join(chunks)
+                    "некуда вставить</div>{}</div>".format(chips))
+    body = ('<div class="cflow">{}</div>'.format("".join(chunks))) if compact else "".join(chunks)
     return body, n_chips
 
 
@@ -527,9 +518,9 @@ def digest_guard(bodies_before, bodies_after, raw_before, raw_after):
     ra = store_digest(*raw_before)
     rb = store_digest(*raw_after)
     if a != b:
-        raise SystemExit("STORE MUTATED: sense bodies %s -> %s" % (a[:16], b[:16]))
+        raise SystemExit("STORE MUTATED: sense bodies {} -> {}".format(a[:16], b[:16]))
     if ra != rb:
-        raise SystemExit("RAW PANEL MUTATED: %s -> %s" % (ra[:16], rb[:16]))
+        raise SystemExit("RAW PANEL MUTATED: {} -> {}".format(ra[:16], rb[:16]))
     return a, ra
 
 
@@ -542,7 +533,7 @@ def build():
     for key1, nlayers in ORDER:
         p = os.path.join(REGLUE_DIR, key1 + ".json")
         if not os.path.exists(p):
-            print("  [skip] %s: no reglue json (run build_reglue.py first)" % key1)
+            print("  [skip] {}: no reglue json (run build_reglue.py first)".format(key1))
             continue
         obj = json.load(io.open(p, encoding="utf-8"))
         raw_md = os.path.join(REGLUE_DIR, key1 + ".md")
@@ -569,7 +560,7 @@ def build():
         if klass_stats["cancels"]:
             badges.append("%d отмен/исправлений" % klass_stats["cancels"])
         items.append({
-            "id": "reglue2::%s" % key1,
+            "id": "reglue2::{}".format(key1),
             "filt": "%dL" % nlayers,
             "title": slp1_iast(key1),
             "title_href": pwg_entry_href(key1),
@@ -585,10 +576,10 @@ def build():
                 'сформированность карточки.)</span>'),
             "note_placeholder": "если отклоняете: какое дополнение, какой правильный подтип/значение",
             "panels": [],
-            "left": ('<div class="render-expanded">%s</div>'
-                     '<div class="render-compact">%s</div>' % (de_exp, de_cmp)),
-            "right": ('<div class="render-expanded">%s</div>'
-                      '<div class="render-compact">%s</div>' % (expanded, compact)),
+            "left": ('<div class="render-expanded">{}</div>'
+                     '<div class="render-compact">{}</div>'.format(de_exp, de_cmp)),
+            "right": ('<div class="render-expanded">{}</div>'
+                      '<div class="render-compact">{}</div>'.format(expanded, compact)),
             "store_markup": anatomy.highlight(raw),
         })
     digests = digest_guard(bodies_before, bodies_after, raw_before, raw_after)
@@ -677,11 +668,10 @@ def main():
         # except `save_banner` (its default bakes in this sheet's own
         # sheet_id/save_as, so a fixed preset string would drop them).
         "ui_strings": dict(RU_UI_STRINGS, save_banner=(
-            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
-            '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
-            'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
-            'листу относятся эти решения).'
-            % (esc(sheet_id), esc(config["save_as"]), esc(sheet_id)))),
+            '&#128229; Ваш экспорт скачивается как <code>{}_decisions.json</code> '
+            '&rarr; сохраните его в <code>{}</code> (значение <code>sheet_id</code> '
+            'внутри файла — <code>{}</code> — так следующая сессия узнаёт, к какому '
+            'листу относятся эти решения).'.format(esc(sheet_id), esc(config["save_as"]), esc(sheet_id)))),
     })
     sc = screening_block(
         deterministic=totals[HIT] + totals[NO_LOCUS], lookup=totals[MINTABLE],
@@ -718,8 +708,7 @@ def main():
           % (totals["adds"], totals["restates"], totals["cancels"]))
     print("  line-wraps: %d collapsed · %d structural breaks kept"
           % (nl["collapsed"], nl["kept"]))
-    print("  store unchanged: sense bodies sha256 %s · raw panel sha256 %s"
-          % (body_hash, raw_hash))
+    print("  store unchanged: sense bodies sha256 {} · raw panel sha256 {}".format(body_hash, raw_hash))
     return 0
 
 
@@ -740,7 +729,7 @@ def selftest():
     check("⚑" not in out and "<sup>∅</sup>" in out,
           "the ≈крит address carries ∅, not the mintable flag")
     check(st[NO_LOCUS] == 1 and st[MINTABLE] == 0,
-          "…and is counted as no-locus (%s)" % dict(st))
+          "…and is counted as no-locus ({})".format(dict(st)))
     _unres = '<span class=ls title="t">KĀTH. 24,5.</span>'
     out2, st2 = _mark_gaps(_unres)
     check("<sup>⚑</sup>" in out2 and st2[MINTABLE] == 1,
@@ -761,7 +750,7 @@ def selftest():
     # a period inside an unclosed parenthetical is not a cluster boundary
     cl2 = gloss_clusters("идти куда-л. (Lok или нар. места). происходить")
     check(cl2 == ["идти куда-л. (Lok или нар. места)", "происходить"],
-          "no split inside «(Lok или нар. места)»: %r" % (cl2,))
+          "no split inside «(Lok или нар. места)»: {!r}".format(cl2))
 
     # a Sanskrit span's internal periods are never split points
     check(gloss_clusters("{#a. b. c#} одно. другое") == ["{#a. b. c#} одно", "другое"],
@@ -789,12 +778,12 @@ def selftest():
     unclassified = {base_subtype(s) for s in _SUBTYPES
                     if base_subtype(s) not in ("base", "unknown")} - set(TYPOLOGY)
     check(not unclassified,
-          "every classifier subtype is in TYPOLOGY (missing: %r)" % unclassified)
+          "every classifier subtype is in TYPOLOGY (missing: {!r})".format(unclassified))
     for _s in ("restate_unplaced", "nws_at_sense_unplaced", "a2a_unplaced"):
         _op, _dir, _kl, _gl = TYPOLOGY.get(
             base_subtype(_s), (None, None, "restates", "неклассифицированный подтип"))
         check(_gl != "неклассифицированный подтип",
-              "an unplaced twin must not fall through to the fallback: %r" % _s)
+              "an unplaced twin must not fall through to the fallback: {!r}".format(_s))
     # …and the class it resolves to is the PLACED one's: an unplaced restate is
     # still an abridgement, not an addition. Reading it as `adds` would turn the
     # #1736 defect into a green ＋ chip, which is worse than the amber one.
@@ -886,7 +875,7 @@ def selftest():
     printviews = "".join(re.findall(r'<div class="printview">.*?</div>', de_html, re.S))
     print_text = re.sub(r"<[^>]+>", "", printviews)
     check(not re.search(r"[А-Яа-яЁё]", print_text),
-          "no Russian bodies in .printview of the DE column: %r" % print_text[:80])
+          "no Russian bodies in .printview of the DE column: {!r}".format(print_text[:80]))
     check("gehen" in de_html and "идти" not in de_html.split("ins-chip")[0],
           "left column shows PWG German, not the glued Russian")
 

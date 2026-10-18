@@ -11,7 +11,7 @@ _Created: 20-07-2026 · Last updated: 20-07-2026_
 **What this is.** The published cross-dict union
 ([UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md),
 [union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv))
-records, for each of 323,425 headwords, **how many of 15 dictionaries attest
+records, for each of 323,422 headwords, **how many of 15 dictionaries attest
 it** — and publishes that "in N dicts" distribution. In practice that count is
 read as **corroboration**: a headword "in 15 dicts" looks fifteen-times
 confirmed. This document builds the **witness-independence map** — which of the
@@ -287,7 +287,7 @@ Reproducing the published "in N dicts" distribution surfaced a discrepancy worth
 recording. **UNION.md's table sums to 323,662** (142,673 singletons + 180,989 in
 ≥2), but the current canonical
 [union_headwords.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv)
-holds **323,425** rows. The published table was computed on the **pre-fold**
+holds **323,422** rows. The published table was computed on the **pre-fold**
 union; the live file is **post-fold** — 237 gender-confirmed `-inī` feminines
 have since been folded onto their `-in` base (per UNION.md's own method note).
 Total per-bucket drift is exactly **237 headwords**, all attributable to that

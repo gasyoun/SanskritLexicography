@@ -10,7 +10,7 @@ digitizations, the OCRed Cologne front matter (§4.5),
 `RussianTranslation/src/koch.jsonl` (local-only, gitignored —
 in-copyright content, never on GitHub),
 [wg_text.txt](https://github.com/gasyoun/WhitneyRoots/blob/main/src/wg_text.txt) and the
-[csl-whitroot print scans](https://github.com/sanskrit-lexicon/csl-whitroot/tree/master/jpg).
+csl-whitroot print scans.
 Trigger: the pwg_ru compound-position glyph vote (лист `h2805_q3_deploy` on the
 [vote hub](https://gasyoun.github.io/vote/)). PRs:
 [#1760](https://github.com/gasyoun/SanskritLexicography/pull/1760) ·
@@ -135,7 +135,7 @@ not profiled (same method applies; markup per dict).
   §4.5), classic elision rings.
 - **Whitney** (§561): no ring at all. Roots 1885: leading hyphen = bound stem
   (`-kartin`, `-karttṛ`; read from the
-  [whit-023 scan](https://github.com/sanskrit-lexicon/csl-whitroot/blob/master/jpg/whit-023-kft2.jpg));
+  whit-023 scan);
   Grammar: attested compounds quoted solid with accent, hyphens only in
   analysis. Böhtlingk abbreviates, Whitney classifies.
 - **Mylius** (§557): **named gap** — no digitization in the org (only the

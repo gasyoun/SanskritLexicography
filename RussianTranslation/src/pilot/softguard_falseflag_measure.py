@@ -80,8 +80,8 @@ if SRC not in sys.path:
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from store_path import canonical_store                      # noqa: E402  -- shared resolver
-from sense_count import count_source_senses                 # noqa: E402  -- REAL, imported
+from store_path import canonical_store
+from sense_count import count_source_senses
 
 H963 = os.path.join(RT, 'pwg_ru', 'h963')
 MANIFEST = os.path.join(H963, 'artifact_manifest.sha256')
@@ -199,7 +199,7 @@ def run_real_accept(harness_path, cases, tmpdir):
     p = subprocess.run(['node', runner, harness_path, cases_path, out_path],
                         capture_output=True, text=True, encoding='utf-8', timeout=120)
     if p.returncode:
-        raise RuntimeError('softguard_falseflag_accept_run.js failed:\n%s\n%s' % (p.stdout, p.stderr))
+        raise RuntimeError('softguard_falseflag_accept_run.js failed:\n{}\n{}'.format(p.stdout, p.stderr))
     with open(out_path, encoding='utf-8') as f:
         return json.load(f)
 
@@ -266,9 +266,9 @@ def classify_sanloss(flagged_results):
         key = r['key']
         if key not in SANLOSS_CLASSIFICATION:
             raise RuntimeError(
-                'SANLOSS flag on %r has no manual classification on record -- inspect its de/ru '
+                'SANLOSS flag on {!r} has no manual classification on record -- inspect its de/ru '
                 'text and add a SANLOSS_CLASSIFICATION entry before trusting this report (never '
-                'guess a verdict programmatically).' % key)
+                'guess a verdict programmatically).'.format(key))
         verdict, rationale = SANLOSS_CLASSIFICATION[key]
         if verdict == 'true_drop':
             true_drop += 1

@@ -49,7 +49,7 @@ def extract_result(path):
         return obj["result"], obj.get("logs") or []
     if isinstance(obj, dict) and "summary" in obj:
         return obj, []
-    raise SystemExit("could not locate run payload in %s" % path)
+    raise SystemExit("could not locate run payload in {}".format(path))
 
 
 print("=" * 78)
@@ -79,27 +79,26 @@ for label, taskfile, manifest_name, expect_root in RUNS:
     checks["guards_soft"] = (summ["sanloss_hard_reject"] is False
                              and summ["tnmask_hard_reject"] is False)
 
-    print("\n--- run: %s  (manifest root=%s)" % (label, meta["root"]))
+    print("\n--- run: {}  (manifest root={})".format(label, meta["root"]))
     for k, v in checks.items():
         print("   %-28s %s" % (k, "OK" if v else "*** FAIL ***"))
     print("   cards=%d ok=%d null=%d healed=%d"
           % (summ["cards"], summ["ok"], summ["null"], summ["healed"]))
     print("   agents_spent=%d/%d  kill_timeouts=%d  conn_errors=%d"
           % (summ["agents_spent"], meta["max_agents"], summ["kill_timeouts"], summ["conn_errors"]))
-    print("   budget_kill_switch_tripped=%s translate_tripped=%s heal_tripped=%s"
-          % (summ["budget_kill_switch_tripped"], summ["translate_budget_tripped"],
+    print("   budget_kill_switch_tripped={} translate_tripped={} heal_tripped={}".format(summ["budget_kill_switch_tripped"], summ["translate_budget_tripped"],
              summ["heal_budget_tripped"]))
     print("   sanloss_shortfalls=%d  tnmask_mismatches=%d"
           % (summ["sanloss_shortfalls"], summ["tnmask_mismatches"]))
-    print("   null_keys=%s  partial_keys=%s" % (summ["null_keys"], summ["partial_keys"]))
+    print("   null_keys={}  partial_keys={}".format(summ["null_keys"], summ["partial_keys"]))
     if summ.get("failures"):
         for k, v in summ["failures"].items():
             print("   FAILURE %-8s %s" % (k, v))
     for line in logs:
-        print("   LOG  %s" % line)
+        print("   LOG  {}".format(line))
 
     # --- write the canonical wf_output artifact -------------------------------
-    out = os.path.join(AT, "wf_output.%s.json" % meta["root"])
+    out = os.path.join(AT, "wf_output.{}.json".format(meta["root"]))
     with open(out, "w", encoding="utf-8", newline="\n") as f:
         json.dump(res, f, ensure_ascii=False, indent=1)
     clean = [r for r in res["results"] if r.get("card")]
@@ -122,12 +121,12 @@ for label, taskfile, manifest_name, expect_root in RUNS:
         "input_hashes": meta["input_hashes"],
         "promotable_clean_keys": [r["key"] for r in clean],
     }
-    print("   wrote %s" % out)
+    print("   wrote {}".format(out))
 
 rp = os.path.join(AT, "pilot_measurement.json")
 with open(rp, "w", encoding="utf-8", newline="\n") as f:
     json.dump(report, f, ensure_ascii=False, indent=1)
-print("\nwrote %s" % rp)
+print("\nwrote {}".format(rp))
 
 # --- promotion gate ----------------------------------------------------------
 real = report["runs"]["real"]

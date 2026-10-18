@@ -1,0 +1,12 @@
+{
+  "doc": "Prose-number claims this repo's pre-commit/CI refuse to let go stale (H5421, E016 wave 3). Source of truth: Uprava data/derived_surfaces.json 'prose_claims' (https://github.com/gasyoun/Uprava/blob/main/data/derived_surfaces.json) -- update this file's 'display'/'stale_values' by hand whenever that entry's 'value' changes, same pass as the Uprava-side fix.",
+  "claims": [
+    {
+      "id": "union-headword-count",
+      "display": "323,422",
+      "stale_values": ["323,425", "323,426", "323,417"],
+      "allow_paths": ["CHANGELOG.md", "changelog_queue/*", "changelog_queue/**"],
+      "source": "kosha data/manifest/datasets.json datasets[id=union-headwords].rows"
+    }
+  ]
+}

@@ -161,7 +161,7 @@ def write_report(target, copied, mismatches, packed, secrets):
               'packed': packed, 'secrets_findings': secrets,
               'parity_ok': not mismatches, 'secrets_ok': not secrets,
               'files': copied}
-    out = os.path.join(target, 'telemetry', 'migration_parity_%s.json' % date)
+    out = os.path.join(target, 'telemetry', 'migration_parity_{}.json'.format(date))
     os.makedirs(os.path.dirname(out), exist_ok=True)
     tmp = out + '.tmp'
     with open(tmp, 'w', encoding='utf-8', newline='\n') as f:
@@ -210,8 +210,7 @@ def main(argv=None):
     out, report = write_report(args.target, copied, mismatches, packed, secrets)
     print('migrated %d files + %d packed archives -> %s' % (len(copied), len(packed),
                                                             args.target))
-    print('parity: %s   secrets: %s   report: %s'
-          % ('OK' if report['parity_ok'] else 'FAIL (%d mismatches)' % len(mismatches),
+    print('parity: {}   secrets: {}   report: {}'.format('OK' if report['parity_ok'] else 'FAIL (%d mismatches)' % len(mismatches),
              'CLEAN' if report['secrets_ok'] else 'FINDINGS — DO NOT PUSH', out))
     if not report['parity_ok'] or not report['secrets_ok']:
         return 1
@@ -231,7 +230,7 @@ def selftest():
                   encoding='utf-8') as f:
             f.write('raw payload')
         for i in range(4):
-            with open(os.path.join(rt, 'src', 'pilot', 'nws', 'k%d.json' % i), 'w',
+            with open(os.path.join(rt, 'src', 'pilot', 'nws', f'k{i:d}.json'), 'w',
                       encoding='utf-8') as f:
                 f.write('{"n":%d}' % i)
         inv = {'schema': 'pwg.data_inventory.v1', 'rt_root': rt, 'rows': [

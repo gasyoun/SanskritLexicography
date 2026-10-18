@@ -75,6 +75,17 @@ ALLOWED = {
     'host_total_phys_mb', 'host_avail_phys_mb', 'host_commit_limit_mb',
     'host_commit_used_mb', 'host_commit_pct', 'host_memory_load_pct',
     'host_proc_node', 'host_proc_python',
+
+    # H4527 (15-09-2026): whether the readiness probe spawned with the paid lane's `--safe-mode`.
+    # Without it a probe row cannot say whether it certified the call the lane sends or one
+    # carrying the whole interactive profile (hooks, CLAUDE.md, skills) — the difference behind
+    # the 11-09 false {"ok": false}. One boolean; no path, no payload.
+    'cli_safe_mode_effective',
+
+    # H4527 pass 2 (15-09-2026): a 12-hex sha256 prefix of the exact readiness-probe prompt. The
+    # honest-question prompt replaced an order-shaped one of the same `payload_bytes`; this is how
+    # a latency series tells the two apart. A hash, never the text.
+    'probe_prompt_sha',
 }
 
 # per-key relation events: kept for key<->call provenance / repeated-failure tracking, but

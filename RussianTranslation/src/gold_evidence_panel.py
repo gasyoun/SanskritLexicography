@@ -169,15 +169,15 @@ def route_dictionaries(period, work):
     if vedic_period or vedic_work:
         why = []
         if vedic_period:
-            why.append("period=%s" % period)
+            why.append("period={}".format(period))
         if vedic_work:
-            why.append("work=%s" % work)
+            why.append("work={}".format(work))
         if RIGVEDIC_WORK.match(work):
-            return ["GRA", "MW", "PWG"], "ведийская маршрутизация (%s) → GRA первым" % ", ".join(why)
+            return ["GRA", "MW", "PWG"], "ведийская маршрутизация ({}) → GRA первым".format(", ".join(why))
         return ["GRA", "MW", "PWG"], (
-            "ведийская маршрутизация (%s) → GRA первым; GRA покрывает только РВ, "
-            "поэтому MW/PWG остаются в цепочке" % ", ".join(why))
-    return ["MW", "PWG"], "непедийская маршрутизация (period=%s, work=%s) → MW + PWG" % (
+            "ведийская маршрутизация ({}) → GRA первым; GRA покрывает только РВ, "
+            "поэтому MW/PWG остаются в цепочке".format(", ".join(why)))
+    return ["MW", "PWG"], "непедийская маршрутизация (period={}, work={}) → MW + PWG".format(
         period or "?", work or "?")
 
 
@@ -521,7 +521,7 @@ def dictionary_panel(row, dict_entries, lemmas):
     for code in codes:
         per_dict = dict_entries.get(code) or {}
         for key, why in keys:
-            searched.append("%s k1=%s (%s)" % (code, key, why))
+            searched.append("{} k1={} ({})".format(code, key, why))
             for entry in per_dict.get(key, []):
                 if len(found) >= MAX_DICT_ENTRIES_SHOWN:
                     break
@@ -563,10 +563,10 @@ def headword_variants(form):
         """
         for key, tag in ((base, why),
                          (base.replace("ai", "E").replace("au", "O"),
-                          "%s + ai/au → E/O" % why)):
+                          "{} + ai/au → E/O".format(why))):
             add(key, tag)
             if key.endswith("H") and len(key) > 2:
-                add(key[:-1], "%s без конечной висарги" % tag)
+                add(key[:-1], "{} без конечной висарги".format(tag))
 
     form = form or ""
     expand(form, "как в карточке")
@@ -607,7 +607,7 @@ def root_panel(row, lemmas, l2r, mw_roots, xwalk, whitney,
     kept, dropped = split_lemmas(lemmas)
     searched, roots, seen = [], [], set()
     for lemma, upos, _n in dropped:
-        searched.append("омограф отклонён по частотности: %s (%s)" % (lemma, upos))
+        searched.append("омограф отклонён по частотности: {} ({})".format(lemma, upos))
 
     def add(root_slp1, lemma, how, src):
         if not root_slp1 or (root_slp1, src) in seen:
@@ -617,7 +617,7 @@ def root_panel(row, lemmas, l2r, mw_roots, xwalk, whitney,
         iast = _norm_root_iast(mw.get("root_iast") or "")
         wid, wline = None, None
         if iast:
-            searched.append("root_crosswalk[%s]" % iast)
+            searched.append("root_crosswalk[{}]".format(iast))
             for cand in xwalk.get(iast, []):
                 wid = cand.get("whitney_id")
                 wline = whitney.get(wid)
@@ -647,20 +647,19 @@ def root_panel(row, lemmas, l2r, mw_roots, xwalk, whitney,
     for lemma in order:
         tags = set(u for u in by_upos[lemma] if u)
         if tags and not (tags & set(ROOTABLE_UPOS)):
-            searched.append("%s (%s) — не глагольная часть речи, корень не выводится"
-                            % (lemma, "/".join(sorted(tags))))
+            searched.append("{} ({}) — не глагольная часть речи, корень не выводится".format(lemma, "/".join(sorted(tags))))
             continue
-        searched.append("dcs_lemma2root[%s]" % lemma)
+        searched.append("dcs_lemma2root[{}]".format(lemma))
         for root_slp1, how in l2r.get(lemma, []):
             add(root_slp1, lemma, how, "DCS")
-        searched.append("mw_etymology[%s]" % lemma)
+        searched.append("mw_etymology[{}]".format(lemma))
         for root_slp1, via, deriv in mw_etym.get(lemma, []):
             add(root_slp1, lemma, via or deriv or "fr-root", "MW")
-        searched.append("pwg_etymology[%s]" % lemma)
+        searched.append("pwg_etymology[{}]".format(lemma))
         for src_slp1, marker, _gloss in pwg_etym.get(lemma, []):
             add(src_slp1, lemma, marker or "von", "PWG")
     if not lemmas:
-        searched.append("dcs_form2lemma[%s] — лемма не найдена" % row.get("slp1"))
+        searched.append("dcs_form2lemma[{}] — лемма не найдена".format(row.get("slp1")))
     return {"panel": "root", "found": bool(roots), "roots": roots,
             "lemmas": [{"lemma": lm, "upos": u, "n": n} for lm, u, n in kept],
             "dropped_lemmas": [{"lemma": lm, "upos": u, "n": n} for lm, u, n in dropped],
@@ -677,7 +676,7 @@ def context_panel(row, corpus_dir, surface):
         for g in surface.get(form, []):
             if work in g.get("works", {}):
                 attested = (attested or 0) + g["works"][work]
-        searched.append("surface_glossary[%s].works[%s]" % (form, work))
+        searched.append("surface_glossary[{}].works[{}]".format(form, work))
         if attested:
             tier = "glossary"
     return {"panel": "contexts", "found": bool(hits), "tier": tier,
@@ -697,7 +696,7 @@ def glossary_panel(row, surface):
                                         key=lambda kv: -kv[1])[:5]})
     return {"panel": "glossary", "found": bool(out), "glosses": out,
             "n_variants": len(rows),
-            "searched": ["surface_glossary[%s]" % form]}
+            "searched": ["surface_glossary[{}]".format(form)]}
 
 
 # ------------------------------------------------------------------- batch API
@@ -742,8 +741,7 @@ def _esc(s):
 
 
 def _not_found(panel):
-    return ('<div class="muted"><b>evidence not found</b>: искали — %s</div>'
-            % _esc(" · ".join(panel.get("searched") or ["(ничего)"])))
+    return ('<div class="muted"><b>evidence not found</b>: искали — {}</div>'.format(_esc(" · ".join(panel.get("searched") or ["(ничего)"]))))
 
 
 def _key_iast(key):
@@ -757,21 +755,20 @@ def _key_iast(key):
 
 
 def render_dictionary(panel):
-    head = '<div class="muted">%s</div>' % _esc(panel["routing"])
+    head = '<div class="muted">{}</div>'.format(_esc(panel["routing"]))
     if not panel["found"]:
         return head + _not_found(panel)
     parts = [head]
     for e in panel["entries"]:
-        hom = (" <sup>%s</sup>" % _esc(e["hom"])) if e.get("hom") else ""
+        hom = (" <sup>{}</sup>".format(_esc(e["hom"]))) if e.get("hom") else ""
         cites = ("" if not e.get("citation_lines") else
                  ' <span class="muted">(+%d строк цитат)</span>' % e["citation_lines"])
         # The headword is what a human reads, so it is shown in IAST; the SLP1 form
         # stays visible but demoted, because it is the machine join key (H1889 V9:
         # "humans read IAST; SLP1 belongs in ids and machine columns only").
-        parts.append('<div><b>%s</b>%s · <i>%s</i> · заголовок <b>%s</b> '
-                     '<span class="muted">(SLP1 %s · %s)</span> · L%s pc%s%s'
-                     '<pre>%s</pre></div>'
-                     % (_esc(e["dict"]), hom, _esc(e["dict_name"]),
+        parts.append('<div><b>{}</b>{} · <i>{}</i> · заголовок <b>{}</b> '
+                     '<span class="muted">(SLP1 {} · {})</span> · L{} pc{}{}'
+                     '<pre>{}</pre></div>'.format(_esc(e["dict"]), hom, _esc(e["dict_name"]),
                         _esc(_key_iast(e["key"])), _esc(e["key"]),
                         _esc(e.get("via") or ""), _esc(e["L"]), _esc(e["pc"]),
                         cites, _esc(e["text"])))
@@ -786,15 +783,14 @@ def render_root(panel):
         return _not_found(panel)
     parts = []
     if panel.get("lemmas"):
-        parts.append('<div class="muted">лемма: %s</div>' % _esc(", ".join(
-            "%s (%s, %d×)" % (d["lemma"], d["upos"], d["n"]) for d in panel["lemmas"])))
+        parts.append('<div class="muted">лемма: {}</div>'.format(_esc(", ".join(
+            "%s (%s, %d×)" % (d["lemma"], d["upos"], d["n"]) for d in panel["lemmas"]))))
     for r in panel["roots"]:
-        w = ("Whitney %s — %s" % (r["whitney_id"], r["whitney_line"])
+        w = ("Whitney {} — {}".format(r["whitney_id"], r["whitney_line"])
              if r.get("whitney_line") else
              "Whitney: соответствие не найдено (root_crosswalk)")
-        cls = (" · класс %s" % r["mw_classes"]) if r.get("mw_classes") else ""
-        parts.append('<div>√<b>%s</b>%s <span class="muted">(%s: %s ← %s)</span><br>%s</div>'
-                     % (_esc(r["root_iast"] or r["root_slp1"]), _esc(cls),
+        cls = (" · класс {}".format(r["mw_classes"])) if r.get("mw_classes") else ""
+        parts.append('<div>√<b>{}</b>{} <span class="muted">({}: {} ← {})</span><br>{}</div>'.format(_esc(r["root_iast"] or r["root_slp1"]), _esc(cls),
                         _esc(r.get("source") or "?"), _esc(r["how"]),
                         _esc(r["lemma"]), _esc(w)))
     return "".join(parts)
@@ -813,8 +809,7 @@ def render_contexts(panel):
     for h in panel["hits"]:
         ru = (_esc(h["ru"]) if h.get("has_ru")
               else '<span class="muted">русского сегмента для этого пассажа нет</span>')
-        parts.append('<div><b>%s %s</b><pre>%s</pre><pre>%s</pre></div>'
-                     % (_esc(h["work"]), _esc(h["passage"]), _esc(h["sa"]), ru))
+        parts.append('<div><b>{} {}</b><pre>{}</pre><pre>{}</pre></div>'.format(_esc(h["work"]), _esc(h["passage"]), _esc(h["sa"]), ru))
     return "".join(parts)
 
 
@@ -1130,7 +1125,7 @@ def selftest():
     # --- render layer never crashes on any panel ---------------------------
     for cid, panels in P.items():
         for title, body in render_panels(panels):
-            check(isinstance(body, str) and body, "render %s/%s empty" % (cid, title))
+            check(isinstance(body, str) and body, "render {}/{} empty".format(cid, title))
 
     cov = coverage(P)
     print("selftest: %d cards · dictionary %d · root %d · contexts %d · glossary %d"
@@ -1140,7 +1135,7 @@ def selftest():
             print("FAIL:", f)
         print("selftest: %d/%d checks FAILED" % (len(fails), len(fails)))
         return 1
-    print("selftest: OK (iast layer: %s)" % IAST_LAYER)
+    print("selftest: OK (iast layer: {})".format(IAST_LAYER))
     return 0
 
 

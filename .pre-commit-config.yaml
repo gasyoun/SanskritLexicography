@@ -16,6 +16,11 @@ repos:
         entry: python RussianTranslation/src/review_changelog_guard.py --staged
         language: system
         pass_filenames: false
+      - id: utf8-validity
+        name: UTF-8 validity gate (staged text files)
+        entry: python tools/utf8_gate.py --staged
+        language: system
+        pass_filenames: false
       - id: epistemic-integrity-check
         name: Epistemic registry integrity (§-numbers, Index parity, dashboards)
         entry: python tools/epistemic_integrity_check.py --dir .

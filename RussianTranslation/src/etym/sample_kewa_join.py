@@ -26,6 +26,10 @@ QUOTA = {
     "sandhi/diacritic-normalized": 6,
     "unmatched": 6,
     "exact": 2,
+    # H4749: the two new rule rungs are exactly the class a wrong join would
+    # fabricate an etymology in - no per-row witness stands behind them.
+    "present-stem->root": 6,
+    "feminine->stem": 6,
 }
 
 

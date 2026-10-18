@@ -2,6 +2,8 @@
 
 _Created: 06-07-2026 · Last updated: 14-08-2026_
 
+> **Entry pointer (H5762 greppability pilot, 03-10-2026):** the TMX public release-slice record (H215 Slice 3, L0 + alignment) is documented in [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) under "Source: H215 Slice 3" (~line 874).
+
 H2685 added `python src/build_tmx.py build-canonical` — a **second input path**
 over PWG TM canonical JSONL (`srclang=de`). The corpus Sa→Ru `build` command
 below is unchanged. See
@@ -39,7 +41,7 @@ Each L1 unit becomes one TMX `<tu>`:
 TMX emits the **L1** (word/phrase) layer by default; **Slice 3** adds the **L0**
 verse-segment layer (real `<tu segtype="block">` segment pairs) via `build --l0`,
 and a real word-alignment cross-check — see
-[the L0 + alignment section](#l0-verse-segment-layer--alignment-cross-check-slice-3)
+[the L0 + alignment section](#l0-verse-segment-layer-alignment-cross-check-slice-3)
 below. The composite A/B/C grade is
 assigned by **Slice 2** ([`src/tm_grade.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/tm_grade.py),
 below); `build_tmx build --grades <sidecar>` stamps those real grades. Without a

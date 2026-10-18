@@ -28,11 +28,11 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import pipeline_version  # noqa: E402
-import pwg_page_index  # noqa: E402
-import run_batch  # noqa: E402
-from promote_lock import PromoteClaim  # noqa: E402
-from store_write import ClaimBusy  # noqa: E402
+import pipeline_version
+import pwg_page_index
+import run_batch
+from promote_lock import PromoteClaim
+from store_write import ClaimBusy
 
 
 def _rows():

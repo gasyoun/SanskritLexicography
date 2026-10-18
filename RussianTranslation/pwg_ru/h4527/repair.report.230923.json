@@ -1,0 +1,158 @@
+{
+ "schema": "pwg.bounded_staged_run.v1",
+ "run_id": "h4527-repair-230923",
+ "plan_view": {
+  "schema": "pwg.bounded_staged_run.v1",
+  "mode": "dry-run (no generation call made)",
+  "scope": {
+   "lease_ids": [
+    "h4527vol14",
+    "h4527dr01"
+   ],
+   "expected_windows": 2,
+   "expected_headwords": 2,
+   "expected_subcards": 2,
+   "projected_calls_from_plan": 2,
+   "importable_prepared_leases": [
+    "h4527dr01",
+    "h4527vol14"
+   ],
+   "windows_not_prepared_skipped": [],
+   "repair_leases": [
+    {
+     "lease_id": "h4527vol14",
+     "repair": "requeue",
+     "job_id": "h4527vol14::rq01-defect",
+     "subcards": [
+      "kast_ur_i~~h0_zz_pw"
+     ],
+     "projected_calls": 1
+    },
+    {
+     "lease_id": "h4527dr01",
+     "repair": "defect-repair",
+     "job_id": "h4527dr01",
+     "subcards": [
+      "darv_i~~h0_zz_pw"
+     ],
+     "projected_calls": 1
+    }
+   ]
+  },
+  "ceilings": {
+   "max_windows": null,
+   "max_calls": 4,
+   "max_clean": null,
+   "cost_ceiling": null,
+   "empty_streak": null,
+   "max_accounts": 0
+  },
+  "cost_basis": {
+   "evaluable": true,
+   "reason": "no cost ceiling requested"
+  },
+  "account_allocation": {
+   "validated_accounts": [
+    "c1"
+   ],
+   "max_accounts_cap": null,
+   "allocated": [
+    "c1"
+   ]
+  },
+  "checkpoint_path": "..\\..\\pwg_ru\\h4527\\repair.checkpoint.json",
+  "stop_policy": [
+   "window-count ceiling (max_windows=None)",
+   "call-count ceiling (max_calls=4)",
+   "clean-rows quota (max_clean=None)",
+   "cost/quota ceiling (cost_ceiling=None; UNEVALUABLE cost -> STOP_COST_UNEVALUABLE, fail closed)",
+   "consecutive non-productive streak (empty_streak=None)",
+   "clean-target drain (plan queue + requeue backlog both empty)",
+   "any failed job or all-accounts-parked -> fail closed"
+  ],
+  "live_requires": "explicit --execute AND a healthy fleet probe (STOP-on-any-NO-GO)",
+  "cohort": {
+   "requested_width": 1,
+   "mode": "serial (production default, width 1)",
+   "live_policy": "H1437 live-acceptance gate: attempt/result/run binding, promotion-receipt reconciliation and the campaign reservation ledger must be proven on a LIVE serial window and signed off by Codex review before any cohort width > 1 may execute",
+   "live_admission": {
+    "admitted": true,
+    "reason": "serial route (width 1)",
+    "record_path": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\pwg_ru\\h4527\\COHORT_LIVE_ACCEPTANCE.json"
+   }
+  }
+ },
+ "summary": {
+  "peak_concurrency": 1,
+  "accepted_order": [
+   "h4527dr01"
+  ],
+  "requeue_backlog_keys": [
+   "kast_ur_i~~h0_zz_pw"
+  ],
+  "calls_spent": 2,
+  "calls_reserved": 2,
+  "effective_width": 1,
+  "coord_dir": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator",
+  "stop_reason": null,
+  "wave": {
+   "promoted": true,
+   "tm_done": true,
+   "receipt": {
+    "schema": "pwg.cohort_live_dispatch.v1",
+    "members": [
+     "h4527dr01"
+    ],
+    "lease_ids": [
+     "h4527dr01"
+    ],
+    "gen_model_version": "claude-sonnet-5",
+    "promoted": true,
+    "returncode": 0,
+    "stdout_tail": "backed up prior store -> pwg_ru_translated.jsonl.premerge.20260923T014956.193518Z.p23836.16a649e923e1.bak\nBATCH PROMOTE: 1 lease(s), 1 subcard(s), 3 sense rows; store 11534 -> 11534 rows\n  h4527dr01: 1 subcard(s), 3 row(s)\npromoted 1 lease(s)\n",
+    "promoted_at": "2026-09-23T01:50:05Z"
+   }
+  },
+  "leases": {
+   "h4527vol14": {
+    "phase": "done",
+    "wf_output": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator\\artifacts\\h4527vol14\\requeue\\rq01-defect\\workflow_result.headless.h4527vol14.rq01-defect.json",
+    "report": {
+     "requeue_keys": [
+      "kast_ur_i~~h0_zz_pw"
+     ],
+     "satisfied_keys": [],
+     "clean_count": 0,
+     "calls": 1,
+     "cost": null,
+     "audit_state": "needs_requeue",
+     "lease_state": "needs_requeue",
+     "store_delta": null
+    }
+   },
+   "h4527dr01": {
+    "phase": "done",
+    "wf_output": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\coordinator\\artifacts\\h4527dr01\\workflow_result.headless.h4527dr01.json",
+    "report": {
+     "requeue_keys": [],
+     "satisfied_keys": [],
+     "clean_count": 1,
+     "calls": 1,
+     "cost": null,
+     "audit_state": "clean",
+     "lease_state": "ready",
+     "store_delta": null
+    }
+   }
+  },
+  "cohort": {
+   "path": "live",
+   "requested_width": 1,
+   "fleet": [
+    "c1"
+   ],
+   "reason": "fleet admits width 1: c1"
+  },
+  "agent_ops_code": null
+ }
+}

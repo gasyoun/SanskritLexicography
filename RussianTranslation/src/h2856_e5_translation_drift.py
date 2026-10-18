@@ -364,13 +364,13 @@ def write_report(n, split_n, merge_n, drop_n, mean_disagreement, mean_has_rel, m
     lines.append('## Does a PW<->PWG relationship record correlate with more PWG-ru/Kochergina disagreement?')
     lines.append('')
     if mean_has_rel is not None and mean_no_rel is not None:
-        lines.append('Mean disagreement for headwords **with** a relationship record: **%.3f**; '
-                     '**without**: **%.3f**.' % (mean_has_rel, mean_no_rel))
+        lines.append('Mean disagreement for headwords **with** a relationship record: **{:.3f}**; '
+                     '**without**: **{:.3f}**.'.format(mean_has_rel, mean_no_rel))
         direction = 'higher' if mean_has_rel > mean_no_rel else 'lower'
-        lines.append('Headwords with a PW<->PWG relationship record show **%s** PWG-ru/Kochergina '
-                     'disagreement than headwords without one — %s the memo\'s directional claim '
+        lines.append('Headwords with a PW<->PWG relationship record show **{}** PWG-ru/Kochergina '
+                     'disagreement than headwords without one — {} the memo\'s directional claim '
                      '(more internal editorial complexity co-occurs with more external translation '
-                     'divergence).' % (direction, 'consistent with' if direction == 'higher' else 'contrary to'))
+                     'divergence).'.format(direction, 'consistent with' if direction == 'higher' else 'contrary to'))
     else:
         lines.append('Insufficient overlap to compare (too few matched headwords carry a relationship record).')
     lines.append('')

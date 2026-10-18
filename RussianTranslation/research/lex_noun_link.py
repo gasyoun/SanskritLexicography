@@ -138,17 +138,17 @@ def main(path, rootspath):
         if d is None:
             u, r = strip_upasarga(k1, rootset)
             if r:
-                res = {'root': r, 'base': '%s+%s' % (u, r), 'upa': u,
+                res = {'root': r, 'base': '{}+{}'.format(u, r), 'upa': u,
                        'dtype': 'prefix_root', 'src': 'morph', 'depth': 2,
-                       'lwc': False, 'chain': [k1, '%s+%s' % (u, r), r]}
+                       'lwc': False, 'chain': [k1, '{}+{}'.format(u, r), r]}
         elif d['type'] == 'prefix_root':
             r, u = clean(d['base']), clean(d['upa'])
             if not r or not u:
                 memo[k1] = None
                 return None
-            res = {'root': r, 'base': '%s+%s' % (u, r), 'upa': u,
+            res = {'root': r, 'base': '{}+{}'.format(u, r), 'upa': u,
                    'dtype': 'prefix_root', 'src': 'pwg', 'depth': 2,
-                   'lwc': False, 'chain': [k1, '%s+%s' % (u, r), r]}
+                   'lwc': False, 'chain': [k1, '{}+{}'.format(u, r), r]}
         elif d['type'] in ('derived', 'xref'):
             X = clean(d['base'])
             sub = resolve(X, seen) if X else None

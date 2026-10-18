@@ -45,19 +45,21 @@ def pujol_accents():
         w = unicodedata.normalize('NFC', w).replace('-', '')
         nfd = unicodedata.normalize('NFD', w)
         base, acc = [], []
+        # Lift only the accent marks; keep every other combining mark as part of
+        # its letter (same fix as Catalan-Pujol/accent_compare.py, H4353).
         for ch in nfd:
-            if unicodedata.combining(ch):
-                if ch in (ACUTE, GRAVE) and base: acc.append(len(base) - 1)
+            if ch in (ACUTE, GRAVE) and not (ch == ACUTE and base and base[-1] == 's'):
+                if base: acc.append(len(base) - 1)   # (s + U+0301 is the letter ś)
                 continue
             base.append(ch)
         try:
-            key = ascii_clean(su.strip_slp1_accents(su.to_slp1(''.join(base))))
+            key = ascii_clean(su.strip_slp1_accents(su.to_slp1(unicodedata.normalize('NFC', ''.join(base)))))
         except Exception:
             continue
         if not key: continue
         ords = set()
         for i in acc:
-            try: ords.add(sum(1 for c in su.to_slp1(''.join(base[:i + 1])) if c in SLP_VOWELS))
+            try: ords.add(sum(1 for c in su.to_slp1(unicodedata.normalize('NFC', ''.join(base[:i + 1]))) if c in SLP_VOWELS))
             except Exception: pass
         out[key].add(frozenset(ords))
     return out

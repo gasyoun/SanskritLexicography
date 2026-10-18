@@ -101,7 +101,7 @@ def cmd_prep(args):
     n = int(args[0]) if len(args) > 0 else 10
     offset = int(args[1]) if len(args) > 1 else 0
     if not os.path.exists(MANIFEST):
-        sys.exit('no %s — run: python scale_route.py a' % os.path.basename(MANIFEST))
+        sys.exit('no {} — run: python scale_route.py a'.format(os.path.basename(MANIFEST)))
     keys = [e['key1'] for e in json.load(open(MANIFEST, encoding='utf-8'))]
     batch = keys[offset:offset + n]
     if not batch:
@@ -115,8 +115,8 @@ def cmd_prep(args):
 
     # write OFFSET/LIMIT into the workflow so it translates exactly this window
     js = open(WF, encoding='utf-8').read()
-    js2 = re.sub(r'const OFFSET = \d+', 'const OFFSET = %d' % offset, js, count=1)
-    js2 = re.sub(r'const LIMIT = \d+', 'const LIMIT = %d' % n, js2, count=1)
+    js2 = re.sub(r'const OFFSET = \d+', f'const OFFSET = {offset:d}', js, count=1)
+    js2 = re.sub(r'const LIMIT = \d+', f'const LIMIT = {n:d}', js2, count=1)
     if js2 != js:
         open(WF, 'w', encoding='utf-8').write(js2)
 
@@ -124,8 +124,8 @@ def cmd_prep(args):
     print('  batch    :', ' '.join(batch))
     print('  fresh    : %d (%s)' % (len(fresh), ' '.join(fresh) or '—'))
     print('  protected: %d (%s)  ← will NOT be overwritten' % (len(prot), ' '.join(prot) or '—'))
-    print('  run_pilot_wf.js set to OFFSET=%d LIMIT=%d' % (offset, n))
-    print('  batch saved → %s' % os.path.basename(BATCH_FILE))
+    print(f'  run_pilot_wf.js set to OFFSET={offset:d} LIMIT={n:d}')
+    print('  batch saved → {}'.format(os.path.basename(BATCH_FILE)))
     print('\nNEXT (on your Max):')
     print('  1) run the workflow run_pilot_wf.js through your harness; save its JSON → wf_output.json')
     print('  2) python run_real_test.py audit wf_output.json')
@@ -143,7 +143,7 @@ def cmd_audit(args):
         sys.exit('usage: python run_real_test.py audit <wf_output.json>')
     wf_out = args[0]
     if not os.path.exists(wf_out):
-        sys.exit('no workflow output %r' % wf_out)
+        sys.exit('no workflow output {!r}'.format(wf_out))
     batch_meta = json.load(open(BATCH_FILE, encoding='utf-8')) if os.path.exists(BATCH_FILE) else {}
     batch = batch_meta.get('batch')
     protected = PROTECTED | set(batch_meta.get('protected') or [])
@@ -186,17 +186,16 @@ def cmd_audit(args):
 
     print('\n=== REPORT ===')
     print('  cards audited      : %d' % len(keys))
-    print('  NWS audit CLEAN    : %d' % clean)
+    print(f'  NWS audit CLEAN    : {clean:d}')
     print('  F12 misattribution : %d %s' % (misattr, ('→ ' + ' '.join(bad_cards)) if bad_cards else ''))
-    print('  no-NWS / other     : %d' % noidx)
+    print(f'  no-NWS / other     : {noidx:d}')
     print('  judge pass rate    : see "publishable" line in section 1 above')
 
     gate_fail = [k for k in bad_cards if k not in protected]
     if gate_fail:
         print('\n  GATE: FAIL — %d card(s) rejected (F12 slide): %s' % (len(rejected), ' '.join(rejected)))
         if any(k in protected for k in bad_cards):
-            print('  (note: %s is protected & misattributed — fix the hand-authored card by hand)'
-                  % ' '.join(k for k in bad_cards if k in protected))
+            print('  (note: {} is protected & misattributed — fix the hand-authored card by hand)'.format(' '.join(k for k in bad_cards if k in protected)))
         sys.exit(1)
     print('\n  GATE: PASS — no F12 misattribution in fresh cards')
 

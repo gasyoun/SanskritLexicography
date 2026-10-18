@@ -130,10 +130,9 @@ def main():
         print('=' * 78)
         print('%s   %d citations' % (ab, counts.get(ab, 0)))
         print('  pwgbib: %s' % (entry if entry else '(NOT IN pwgbib)'))
-        print('  components: %s   max per component: %s'
-              % (ncomp.most_common(4), dict(sorted(comp_max.items()))))
+        print('  components: {}   max per component: {}'.format(ncomp.most_common(4), dict(sorted(comp_max.items()))))
         if nonnum:
-            print('  non-numeric parts: %s' % nonnum.most_common(6))
+            print('  non-numeric parts: {}'.format(nonnum.most_common(6)))
         for h, r, _l in rows[::step][:a.sample]:
             print('    %-18s %s' % (h, r))
     with open(a.out, 'w', encoding='utf-8', newline='\n') as f:

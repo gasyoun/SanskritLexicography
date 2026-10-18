@@ -23,7 +23,7 @@ def main():
     d = json.load(open(sys.argv[1], encoding='utf-8'))
     res = d.get('result')
     if not isinstance(res, dict) or 'verdicts' not in res:
-        sys.exit('FAIL: %s carries no control result (keys: %s)' % (sys.argv[1], list(d)))
+        sys.exit('FAIL: {} carries no control result (keys: {})'.format(sys.argv[1], list(d)))
     agents = [r for r in (d.get('workflowProgress') or []) if r.get('type') == 'workflow_agent']
     res['usage'] = {
         'agents': len(agents),

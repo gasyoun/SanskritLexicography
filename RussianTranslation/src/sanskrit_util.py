@@ -18,7 +18,7 @@ import os
 import sys
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(_HERE)
 _SIBLING = os.path.normpath(os.path.join(
     GITHUB, 'sanskrit-util', 'py', 'sanskrit_util', '__init__.py'))

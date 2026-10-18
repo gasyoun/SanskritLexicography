@@ -104,14 +104,12 @@ def advisory_html(key1, crosswalk, iast=None):
     for vol, page, slp1, basis in rows:
         shown = html.escape(iast) if iast else html.escape(slp1 or "?")
         out.append(
-            "<tr><td>KEWA т.%s с.%s</td><td><i>%s</i></td>"
-            "<td>%s</td></tr>"
-            % (html.escape(vol or "?"), html.escape(page or "?"),
+            "<tr><td>KEWA т.{} с.{}</td><td><i>{}</i></td>"
+            "<td>{}</td></tr>".format(html.escape(vol or "?"), html.escape(page or "?"),
                shown, html.escape(basis or "?")))
     out.append("</table>")
     if more:
-        out.append('<div class="etymadv-more">… ещё %d вхождений KEWA</div>'
-                   % more)
+        out.append(f"<div class=\"etymadv-more\">… ещё {more:d} вхождений KEWA</div>")
     out.append(_FOOT)
     return "".join(out)
 

@@ -1,0 +1,24 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h5262-nkrya-flags-b13-2026-09-25",
+  "content_hash": "sha256:d6c1adb16b152fb292d46957b20b38bbb0634b567a2eb7a54de9097ff77bf457",
+  "generated": "2026-09-25",
+  "gate": null,
+  "n_items": 10,
+  "ids": [
+    "L-выстреливать",
+    "L-приветственно",
+    "L-уничтожаться",
+    "L-накидываться",
+    "L-обустраивать",
+    "L-факультативный",
+    "L-оплодотворять",
+    "L-неблагоприятно",
+    "L-нищенствовать",
+    "L-безумствовать"
+  ],
+  "source_html": "sanskritlexicography-h5262-nkrya-flags-b13_10.html",
+  "mode": "stamped",
+  "created": "2026-09-25",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

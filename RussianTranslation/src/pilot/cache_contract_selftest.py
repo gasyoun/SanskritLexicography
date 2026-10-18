@@ -18,12 +18,12 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import cache_event_ledger  # noqa: E402
-import cache_identity  # noqa: E402
-import cache_migrate  # noqa: E402
-import cache_reuse  # noqa: E402
-import cache_scheduler  # noqa: E402
-import prompt_compiler  # noqa: E402
+import cache_event_ledger
+import cache_identity
+import cache_migrate
+import cache_reuse
+import cache_scheduler
+import prompt_compiler
 
 
 def main():

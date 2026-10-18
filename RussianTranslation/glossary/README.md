@@ -27,6 +27,15 @@ is why the glossary has its own repo.
 | [`build_rollup_glossaries.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_rollup_glossaries.py) | D — lemma/root rollup | `lemma_glossary.*`, `root_glossary.*`, `surface_dcs_misses.tsv`, `ambiguity_homographs.tsv` |
 | [`build_vidyut_fallback.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_vidyut_fallback.py) | C — Vidyut fallback | `vidyut_form2lemma.tsv`, `vidyut_ambiguity.tsv` |
 | [`build_ru_gloss_gap_stats.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_ru_gloss_gap_stats.py) | per-dict gap-list (H685) | `ru_gloss_gap_stats.json`, `ru_gloss_gaps.tsv` |
+| [`scl_morph_glossary.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/scl_morph_glossary.py) | SCL morph.cgi validation witness (H4740) | `glossary/scl_morph_cache.jsonl` (gitignored), [`reports/H4740_scl_morph_coverage.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4740_scl_morph_coverage.json) + sample jsonl |
+
+**H4740 SCL witness (VALIDATION-ONLY).** [`scl_morph_glossary.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/scl_morph_glossary.py)
+calls the live [Samsaadhanii morph.cgi](https://scl.samsaadhanii.in/scl/) on a stratified
+DCS form sample and converts analyses to the house record shape (form → [{stem, tags}]).
+The Samsaadhanii outputs carry **no LICENSE** — the layer is a second independent
+form→analysis witness beside vidyut.kosha + DCS fallback, never an overwrite of
+human-reviewed data ([SAMSAADHANII_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/SAMSAADHANII_INDEX.md)
+license gate). Cached + throttled + identified User-Agent; `--selftest` is offline.
 | [`measure_wave1_delta.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/measure_wave1_delta.py) | wave-1 delta (H1349) | prints the before/after defect-fix table |
 
 Bucket filenames are **case-folded to upper** (`a` and `A` share one file): SLP1 is

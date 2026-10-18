@@ -75,25 +75,25 @@ def main():
             p = p.replace(tok, val)
         prompts.append({'key': c['key'], 'prompt': p})
     js = """// AUTO-GENERATED blind pairwise A/B judge for the nominal grammar A/B test.
-export const meta = {
+export const meta = {{
   name: 'nominal-grammar-ab-judge',
   description: 'blind pairwise Opus judge: nominal grammar layer ON vs OFF, 8 PWG headwords',
-  phases: [{ title: 'Judge', detail: 'one Opus judge per card, blind to arm identity' }],
-}
+  phases: [{{ title: 'Judge', detail: 'one Opus judge per card, blind to arm identity' }}],
+}}
 
-const VERDICT_SCHEMA = %(schema)s
-const CARDS = %(cards)s
+const VERDICT_SCHEMA = {schema}
+const CARDS = {cards}
 
 phase('Judge')
 const verdicts = await parallel(CARDS.map((c, i) => () =>
-  agent(c.prompt, { label: 'judge:' + c.key, phase: 'Judge', schema: VERDICT_SCHEMA, model: 'opus', tools: [] })
-    .then(v => (v ? { ...v, key: c.key } : { key: c.key, winner: 'tie', error: true }))
+  agent(c.prompt, {{ label: 'judge:' + c.key, phase: 'Judge', schema: VERDICT_SCHEMA, model: 'opus', tools: [] }})
+    .then(v => (v ? {{ ...v, key: c.key }} : {{ key: c.key, winner: 'tie', error: true }}))
 ))
-return { verdicts }
-""" % {
-        'schema': json.dumps(VERDICT_SCHEMA, ensure_ascii=True),
-        'cards': json.dumps(prompts, ensure_ascii=True),
-    }
+return {{ verdicts }}
+""".format(
+        schema=json.dumps(VERDICT_SCHEMA, ensure_ascii=True),
+        cards=json.dumps(prompts, ensure_ascii=True),
+    )
     open(OUT, 'w', encoding='utf-8').write(js)
     print('wrote', OUT, len(js), 'bytes |', len(prompts), 'judge cards')
 

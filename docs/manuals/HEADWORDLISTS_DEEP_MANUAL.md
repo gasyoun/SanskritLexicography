@@ -1,6 +1,6 @@
 # HeadwordLists deep manual — SanskritLexicography
 
-_Created: 11-07-2026 · Last updated: 20-08-2026_
+_Created: 11-07-2026 · Last updated: 04-10-2026_
 
 Subsystem depth for
 [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists)
@@ -23,7 +23,7 @@ record throughout.
 |---|---|---|---|
 | 2014 exports | [then-2014/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/then-2014) | 31 `.txt`: key1/key2 exports for 16 dict codes + 2 `fehlerhaft` + SCH accents + the HK join + the Huet list | **frozen** (extracted 2014-10-05) |
 | 2026 regenerations | [now-2026/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026) | 25 `.txt` (20-08-2026): current key1+key2 for 15 csl-orig dicts **plus PD** from `PD_SRC` (not csl-orig) | regenerable |
-| Cross-dict union | [union/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) | the merged 323,425-headword index + fold/coverage sidecars — **the print target** | regenerable |
+| Cross-dict union | [union/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/union) | the merged 323,422-headword index + fold/coverage sidecars — **the print target** | regenerable |
 | Alternate/feminine candidates | [f_candidates/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/f_candidates) | MW + SKD fem↔masc / orphan-fem / variant TSVs (print-readiness item F) | regenerable |
 | External spines | [Catalan-Pujol/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/Catalan-Pujol) + [Huet-INRIA-Wordlist-vs-Cologne.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Huet-INRIA-Wordlist-vs-Cologne.md) | Pujol Sanskrit–Catalan lemma list; INRIA Heritage 2014 stem list; their CDSL/DCS coverage studies | raw lists **frozen imports**; analyses regenerable |
 | Heritage/INRIA layer | `heritage_*` at [HeadwordLists/](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) root | MW↔Heritage crosswalk, French-gloss witness, inflected-forms oracle | regenerable from the **gitignored** mirror (§7) |
@@ -118,8 +118,14 @@ regeneration runs weeks apart differ by a handful of lines: the on-disk
 carries 88,867 while the later NOW_VS_THEN run measured 88,869 from the same
 recipe. Neither is wrong — each `N` is true *for its run date*. Cite the file
 you actually used, never "the AP count"; refresh both together when it matters.
+Since H6518 (13-10-2026) the `now` regen is **pin-stable**: it overwrites the
+existing count-bearing file in place and never renames it, so the on-disk `N`
+stays the first-generation count and the live counts land in
+`now-2026/NOW_COUNT_DELTA.md`; re-pinning a name is a deliberate data-refresh
+PR (floor bumps + prose numbers together), and a source-less run exits
+non-zero instead of silently writing nothing.
 
-## 3. Script census — all 30, what they read and write
+## 3. Script census — all 47, what they read and write
 
 All scripts are **read-only toward their sources** (csl-orig, VisualDCS, the
 mirror, sibling repos) and write only derived outputs inside `HeadwordLists/`
@@ -127,9 +133,12 @@ mirror, sibling repos) and write only derived outputs inside `HeadwordLists/`
 write-location exception: `build_p2_sheet.py` writes its HTML review sheet to
 the repo-root `review/` directory, not inside `HeadwordLists/`. All 30 follow
 the repo Windows-encoding rule (`sys.stdout.reconfigure(encoding='utf-8')`).
-Census 20-08-2026: 16 root + 5 Catalan-Pujol + 9 works_catalogue (was 25:
-`heritage_freq_diff.py` plus `adjudicate_p2.py`, `build_p2_spotcheck_sheet.py`,
-`p2_precision_gate.py`, `test_parse_ncc.py`).
+Census 04-10-2026: 33 root + 5 Catalan-Pujol + 9 works_catalogue (was 16+5+9 = 30 on
+20-08-2026; the +17 root scripts are the MW-Nachträge/absorbed-census line —
+`mw_unabsorbed_census.py`, `mw_nachtrag_typology.py`, `mw_pwk*_nachtraege_*`,
+`pw_nachtrag_*`, `mw72_*` — plus `build_union16.py`, `cdsl_index.py`,
+`enrichment_compare.py`/`bhs_enrichment_decompose.py`, `bhs_dcs_mw_key2_crosswalk.py`;
+same read-only-toward-sources contract).
 
 **Root — export/diff/union/print-readiness (10):**
 
@@ -224,10 +233,11 @@ its cause.
 ## 6. The union and print-readiness — current state
 
 [union/UNION.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md):
-**323,425** headwords across all 15 csl-orig dicts (`slp1, iast, n_dicts,
+**323,422** headwords across all 15 csl-orig dicts (`slp1, iast, n_dicts,
 dicts, gender, fem_fold`), after auto-folding 237 gender-confirmed
-`-inī`→`-in` feminines; post-fold, 180,804 headwords in ≥2 dicts and
-142,621 singletons (measured on the shipped `union_headwords.tsv`).
+`-inī`→`-in` feminines; post-fold, 180,807 headwords in ≥2 dicts and
+142,615 singletons (re-measured on the shipped `union_headwords.tsv`
+04-10-2026).
 The remaining editor worklists: 3,995 ranked `-ā/-ī` fold candidates (the 426
 low-confidence ones gloss-screened down to **7** to eyeball), plus per-dict
 alternate/variant candidates in `f_candidates/` (MW: 5,036 fem↔masc pairs,

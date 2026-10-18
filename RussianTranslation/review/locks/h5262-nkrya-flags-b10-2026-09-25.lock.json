@@ -1,0 +1,24 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h5262-nkrya-flags-b10-2026-09-25",
+  "content_hash": "sha256:3ba5a655e4c4e4852cbc744b72e6b11ab254668066f5db430c1949defeac8737",
+  "generated": "2026-09-25",
+  "gate": null,
+  "n_items": 10,
+  "ids": [
+    "L-обустроиться",
+    "L-сосредотачивать",
+    "L-нагромождать",
+    "L-круговращение",
+    "L-вспрыгивать",
+    "L-четырехкратный",
+    "L-превозноситься",
+    "L-удостоверяться",
+    "L-одурманивать",
+    "L-словообразование"
+  ],
+  "source_html": "sanskritlexicography-h5262-nkrya-flags-b10_10.html",
+  "mode": "stamped",
+  "created": "2026-09-25",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

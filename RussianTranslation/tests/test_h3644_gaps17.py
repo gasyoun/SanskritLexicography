@@ -14,8 +14,8 @@ SRC = os.path.join(ROOT, 'src')
 PILOT = os.path.join(SRC, 'pilot')
 sys.path.insert(0, SRC)
 
-import pwg_tm_canonical as C  # noqa: E402
-import pwg_tm_gates as G  # noqa: E402
+import pwg_tm_canonical as C
+import pwg_tm_gates as G
 
 
 def _frag(src, tgt, klass='sense', fid='t'):

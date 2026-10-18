@@ -168,6 +168,10 @@ def collect_metrics():
 def main():
     md = (REPO / 'FINDINGS.md').read_text(encoding='utf-8')
     findings = parse_findings(md)
+    if not findings:
+        # Loud refusal, never a silently empty page (H4353).
+        sys.exit(f"REFUSED: {REPO / 'FINDINGS.md'} parsed to 0 findings "
+                 f"(no '### §N. …' headings) — malformed registry, data.json left untouched")
     now = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 
     by_imp = {}

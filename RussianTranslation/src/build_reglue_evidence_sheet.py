@@ -160,8 +160,8 @@ def build_items():
         target = ro.placement_target(idx, r)
         if not target:
             census["no_target"] += 1
-            census["no_target_%s" % r["relationship"].get(
-                "placement_reason", "unknown")] += 1
+            census["no_target_{}".format(r["relationship"].get(
+                "placement_reason", "unknown"))] += 1
             continue
         if not ro.compare(target.get("de", ""), rec.get("de", ""))["comparable"]:
             census["too_thin"] += 1
@@ -185,17 +185,15 @@ def build_items():
             layer = r["layer"]
 
             pwg_side = (
-                '<div class="side"><div class="who">PWG — смысл %s (немецкий оригинал)</div>'
-                '<div class="de">%s</div><div class="ru">%s</div></div>'
-                % (esc(ip.get("target_sense")),
+                '<div class="side"><div class="who">PWG — смысл {} (немецкий оригинал)</div>'
+                '<div class="de">{}</div><div class="ru">{}</div></div>'.format(esc(ip.get("target_sense")),
                    de_html(target.get("de", "")), ru_html(target.get("ru", ""))))
             supp_side = (
-                '<div class="side"><div class="who">%s — эта добавка (немецкий оригинал)</div>'
-                '<div class="de">%s</div><div class="ru">%s</div></div>'
-                % (esc(layer.upper()), de_html(rec.get("de", "")), ru_html(rec.get("ru", ""))))
+                '<div class="side"><div class="who">{} — эта добавка (немецкий оригинал)</div>'
+                '<div class="de">{}</div><div class="ru">{}</div></div>'.format(esc(layer.upper()), de_html(rec.get("de", "")), ru_html(rec.get("ru", ""))))
 
             cit = m["citation_overlap"]
-            cit_s = ("%.0f%% (%s)" % (100 * cit, ", ".join(m["shared_citations"]) or "—")
+            cit_s = ("{:.0f}% ({})".format(100 * cit, ", ".join(m["shared_citations"]) or "—")
                      if cit is not None else "у смысла PWG нет цитат")
             weak = ("" if m["comparable"] else
                     ' <span class="weak">— слишком короткие глоссы, доля слов здесь '
@@ -223,19 +221,18 @@ def build_items():
                 # lock literally carried `vas~~h0_zz_pw01::1` twice, so two
                 # cards shared one vote slot.
                 "id": r.get("row_key")
-                      or "%s::%s" % (r["subcard"], r["sense_tag"]),
+                      or "{}::{}".format(r["subcard"], r["sense_tag"]),
                 "filt": layer,
-                "title": "%s · %s → смысл %s" % (slp1_iast(r["key1"]), layer.upper(),
+                "title": "{} · {} → смысл {}".format(slp1_iast(r["key1"]), layer.upper(),
                                                  ip.get("target_sense")),
                 "title_href": pwg_entry_href(r["key1"]),
                 "badges": [subtype, CLASS_LABEL[kl]],
                 "question": (
                     'Сравните два немецких текста выше. '
-                    '<b>Добавка стоит в нужном смысле PWG, и метка «%s» верна?</b>'
+                    '<b>Добавка стоит в нужном смысле PWG, и метка «{}» верна?</b>'
                     '<span class="muted"> — «Да» = и место, и метка верны; '
                     '«Нет» = что-то не так (укажите что в поле ниже); '
-                    '«Не знаю» = не хватает данных.</span>'
-                    % esc(CLASS_LABEL[kl])),
+                    '«Не знаю» = не хватает данных.</span>'.format(esc(CLASS_LABEL[kl]))),
                 "note_placeholder": "если «нет»: неверное место / неверная метка / и то и другое — и как правильно",
                 "panels": [
                     ("1 · что говорит PWG и что говорит добавка", pwg_side + supp_side),
@@ -311,11 +308,10 @@ def main():
         # H3103: Russian-only reviewer chrome (U6). save_banner needs its own
         # override because the RU_UI_STRINGS default bakes in no sheet_id/save_as.
         "ui_strings": dict(RU_UI_STRINGS, save_banner=(
-            '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
-            '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
-            'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
-            'листу относятся эти решения).'
-            % (esc(SHEET_ID), esc(config["save_as"]), esc(SHEET_ID)))),
+            '&#128229; Ваш экспорт скачивается как <code>{}_decisions.json</code> '
+            '&rarr; сохраните его в <code>{}</code> (значение <code>sheet_id</code> '
+            'внутри файла — <code>{}</code> — так следующая сессия узнаёт, к какому '
+            'листу относятся эти решения).'.format(esc(SHEET_ID), esc(config["save_as"]), esc(SHEET_ID)))),
     })
     sc = screening_block(
         deterministic=0, lookup=0, agent=0, human=len(items),
@@ -337,7 +333,7 @@ def main():
     print("  %d cards drawn from %d checkable pairs (of %d supplements; %d have no PWG target, %d too thin) -> %s"
           % (len(items), census["checkable"], census["total"], census["no_target"], census["too_thin"], out))
     for k, v in sorted(sampled.items()):
-        print("     %-24s %d" % ("%s / %s" % k, v))
+        print("     %-24s %d" % ("{} / {}".format(*k), v))
     return 0
 
 

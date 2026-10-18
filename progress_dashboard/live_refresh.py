@@ -265,7 +265,7 @@ def main():
             log(f"ERROR: command failed: {e}")
             if args.once:
                 raise
-        except Exception as e:  # noqa: BLE001
+        except Exception as e:
             log(f"ERROR: {e}")
             if args.once:
                 raise

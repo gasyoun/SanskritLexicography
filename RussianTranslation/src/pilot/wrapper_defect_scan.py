@@ -67,7 +67,7 @@ def scan_store(store_path):
             row = json.loads(line)
             ru = row.get('ru') or ''
             de = row.get('de') or ''
-            label = '%s|%s|%s' % (row.get('key1'), row.get('subcard'), row.get('sense_tag'))
+            label = '{}|{}|{}'.format(row.get('key1'), row.get('subcard'), row.get('sense_tag'))
 
             d1_hits = find_d1(ru)
             if d1_hits:
@@ -91,10 +91,10 @@ def main():
     default_local = os.path.join(SRC, 'pwg_ru_translated.jsonl')
     store = args.store or canonical_store(default_local)
     if not os.path.exists(store):
-        sys.exit('STORE ABSENT: %s' % store)
+        sys.exit('STORE ABSENT: {}'.format(store))
 
     d1_rows, d3_rows, d4_rows = scan_store(store)
-    print('store   : %s' % store)
+    print('store   : {}'.format(store))
     print('D1 Cyrillic-in-{#...#}  : %d rows (%d spans)' % (
         len(d1_rows), sum(n for _, _, n in d1_rows)))
     print('D3 gloss-wrapper drift  : %d rows' % len(d3_rows))

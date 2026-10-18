@@ -420,13 +420,12 @@ def adjudicate(k1, P, I, Pstar, why, Istar, n_variants, attested, freq):
         if Pstar is None:
             return (REJECT, 'pwg_layer_unparsed_chain',
                     "PWG's parenthesis does not resolve to a top-level member chain "
-                    "(%s), so the shipped PWG members are unverifiable against the "
-                    "source; MW's segmentation is faithful to its own <k2>" % why, ex)
+                    "({}), so the shipped PWG members are unverifiable against the "
+                    "source; MW's segmentation is faithful to its own <k2>".format(why), ex)
         return (REJECT, 'pwg_layer_inner_chain',
                 "the shipped PWG members are the INNER bracketed sub-analysis; PWG's "
-                "own top-level chain for this headword is `%s` — the extractor's "
-                "first-chain rule is not bracket-aware; MW's segmentation is faithful"
-                % ' + '.join(Pstar), ex)
+                "own top-level chain for this headword is `{}` — the extractor's "
+                "first-chain rule is not bracket-aware; MW's segmentation is faithful".format(' + '.join(Pstar)), ex)
     if p_faithful and not i_faithful:
         if n_variants > 1:
             return (APPROVE, 'mw_variant_fusion',
@@ -436,8 +435,7 @@ def adjudicate(k1, P, I, Pstar, why, Istar, n_variants, attested, freq):
                     % (n_variants, ex['mw_k2_first_variant']), ex)
         return (APPROVE, 'mw_layer_unfaithful',
                 "the shipped index members do not match MW's own <k2> segmentation "
-                "(`%s`); PWG's chain is faithful to its source"
-                % ex['mw_k2_first_variant'], ex)
+                "(`{}`); PWG's chain is faithful to its source".format(ex['mw_k2_first_variant']), ex)
 
     # --- tier 2: both faithful — a convention difference ---------------------
     fp, fi = [fold(x) for x in P], [fold(x) for x in I]
@@ -458,7 +456,7 @@ def adjudicate(k1, P, I, Pstar, why, Istar, n_variants, attested, freq):
                  and levenshtein(a, b) <= 2 and abs(len(a) - len(b)) <= 2
                  and not seam_compatible(a, b)]
         if typos and len(typos) == sum(1 for a, b in zip(P, I) if a != b):
-            ex['pwg_typo_pairs'] = '; '.join('%s|%s' % t for t in typos)
+            ex['pwg_typo_pairs'] = '; '.join('{}|{}'.format(*t) for t in typos)
             return (REJECT, 'pwg_member_typo_in_source',
                     'PWG\'s own text spells the member `%s` where the word is `%s` '
                     '(edit distance %d, unattested vs attested) — a transcription '
@@ -474,25 +472,24 @@ def adjudicate(k1, P, I, Pstar, why, Istar, n_variants, attested, freq):
         if suf and P[-1] in attested:
             ex['taddhita_suffix'] = suf
             return (APPROVE, 'pwg_lexeme_vs_mw_suffixed_tail',
-                    "only the final member differs: PWG's `%s` is an attested "
-                    "headword and MW's `%s` is that lexeme plus `-%s`, a suffix that "
-                    "derives the WHOLE compound rather than being one of its members"
-                    % (P[-1], I[-1], suf), ex)
+                    "only the final member differs: PWG's `{}` is an attested "
+                    "headword and MW's `{}` is that lexeme plus `-{}`, a suffix that "
+                    "derives the WHOLE compound rather than being one of its members".format(P[-1], I[-1], suf), ex)
         suf2 = suffix_of(P[-1], I[-1])
         if suf2 and I[-1] in attested and P[-1] not in attested:
             return (REJECT, 'mw_lexeme_vs_pwg_overlong_tail',
-                    "only the final member differs and MW's `%s` is the attested "
-                    "headword while PWG's `%s` is not" % (I[-1], P[-1]), ex)
+                    "only the final member differs and MW's `{}` is the attested "
+                    "headword while PWG's `{}` is not".format(I[-1], P[-1]), ex)
 
     # T2.2 — same analysis, two spellings of the same members
     if same_split(P, I):
         diffs = [(a, b) for a, b in zip(P, I) if a != b]
-        ex['form_diffs'] = '; '.join('%s|%s' % d for d in diffs)
+        ex['form_diffs'] = '; '.join('{}|{}'.format(*d) for d in diffs)
         return (APPROVE, 'same_split_pwg_lemma_form',
                 'both sources cut the word in the same place; the members differ '
-                'only in form (%s) — MW spells each segment as it stands in the '
+                'only in form ({}) — MW spells each segment as it stands in the '
                 'compound (sandhi applied), PWG names the lexeme behind it, which '
-                'is what a member list is for' % ex['form_diffs'], ex)
+                'is what a member list is for'.format(ex['form_diffs']), ex)
 
     if len(P) == len(I):
         # T2.2b — MW's cut absorbs the member's initial vowel into the seam. MW's
@@ -507,17 +504,16 @@ def adjudicate(k1, P, I, Pstar, why, Istar, n_variants, attested, freq):
             if len(p_m) > len(i_m) and p_m.endswith(i_m) and p_m[0] in 'aAiIuUfeo':
                 ex['absorbed_vowel'] = p_m[:len(p_m) - len(i_m)]
                 return (APPROVE, 'mw_cut_absorbs_initial_vowel',
-                        "MW's segment `%s` is PWG's member `%s` with its initial `%s` "
+                        "MW's segment `{}` is PWG's member `{}` with its initial `{}` "
                         "eaten by sandhi at the seam — the fragment is not the word, "
-                        "PWG names it" % (i_m, p_m, ex['absorbed_vowel']), ex)
+                        "PWG names it".format(i_m, p_m, ex['absorbed_vowel']), ex)
             # mum-āgama: MW puts the linking nasal on the RIGHT of the boundary and
             # hyphenates it (`jala—M-gama`), PWG keeps the accusative (`jalam + gama`)
             if j > 0 and i_m.startswith('M') and P[j - 1].endswith('m'):
                 return (APPROVE, 'mw_anusvara_right_of_boundary',
-                        "MW puts the linking anusvāra on the right of the cut (`%s`, "
+                        "MW puts the linking anusvāra on the right of the cut (`{}`, "
                         "hyphenated in its own <k2>) while PWG keeps it on the "
-                        "accusative first member (`%s`) — MW's `%s` is not a word"
-                        % (i_m, P[j - 1], i_m), ex)
+                        "accusative first member (`{}`) — MW's `{}` is not a word".format(i_m, P[j - 1], i_m), ex)
 
         # T2.3 — the privative: PWG negates the whole, MW's hyphen negates member 1
         if P[0] == 'a' and any(s.startswith('a-') for s in Istar):
@@ -532,19 +528,18 @@ def adjudicate(k1, P, I, Pstar, why, Istar, n_variants, attested, freq):
         if p_all and not i_all:
             return (APPROVE, 'mw_cut_leaves_nonword',
                     'the two segmentations differ and every PWG member is an '
-                    'attested headword while MW\'s `%s` is not a word — MW cuts '
+                    'attested headword while MW\'s `{}` is not a word — MW cuts '
                     'inside a sandhi-fused seam (mahA+arha -> mahA|rha) or spells '
-                    'the seam\'s surface form' % ex['index_members_unattested'], ex)
+                    'the seam\'s surface form'.format(ex['index_members_unattested']), ex)
         if i_all and not p_all:
             return (REJECT, 'pwg_cut_leaves_nonword',
                     'the cut differs and every MW member is an attested headword '
-                    'while PWG\'s `%s` is not' % ex['pwg_members_unattested'], ex)
+                    'while PWG\'s `{}` is not'.format(ex['pwg_members_unattested']), ex)
         if p_all and i_all:
             return (DEFER, 'cut_moved_both_readings_lexical',
                     'the two sources cut the word in different places and BOTH '
-                    'readings decompose into attested headwords (`%s` vs `%s`) — a '
-                    'genuine lexicographic disagreement, not a notation difference'
-                    % (' + '.join(P), ' + '.join(I)), ex)
+                    'readings decompose into attested headwords (`{}` vs `{}`) — a '
+                    'genuine lexicographic disagreement, not a notation difference'.format(' + '.join(P), ' + '.join(I)), ex)
         return (DEFER, 'cut_moved_neither_reading_lexical',
                 'the cut differs and neither reading decomposes into attested '
                 'headwords throughout', ex)
@@ -555,8 +550,8 @@ def adjudicate(k1, P, I, Pstar, why, Istar, n_variants, attested, freq):
             all(seam_compatible(p, s) for p, s in zip(P, I[:-1])):
         ex['mw_suffix_member'] = I[-1]
         return (APPROVE, 'mw_splits_derivational_suffix',
-                'MW gives `%s` its own member; it is a secondary suffix applied to '
-                'the finished compound, not one of the words compounded' % I[-1], ex)
+                'MW gives `{}` its own member; it is a secondary suffix applied to '
+                'the finished compound, not one of the words compounded'.format(I[-1]), ex)
     if len(I) > len(P):
         merged_ok = _merges_to(fi, fp)
         ex['mw_is_finer'] = merged_ok
@@ -564,9 +559,9 @@ def adjudicate(k1, P, I, Pstar, why, Istar, n_variants, attested, freq):
             extra = [m for m in I if m not in attested]
             if p_all and extra:
                 return (APPROVE, 'mw_splits_bound_morph',
-                        'MW cuts the same string finer and its extra piece(s) `%s` '
+                        'MW cuts the same string finer and its extra piece(s) `{}` '
                         'are not attested headwords, i.e. bound morphs, while every '
-                        'PWG member is attested' % ', '.join(extra), ex)
+                        'PWG member is attested'.format(', '.join(extra)), ex)
             # MG's ruling, 30-07-2026 (H1918): a compound's vigraha is always binary
             # (a dvandva excepted, and a dvandva is never detectable from arity
             # alone — so this rule only fires where PWG's OWN list is length 2). An
@@ -583,20 +578,18 @@ def adjudicate(k1, P, I, Pstar, why, Istar, n_variants, attested, freq):
                         'competing arity for the headword itself'
                         % (len(I), ' + '.join(I), ' + '.join(P)), ex)
             return (DEFER, 'granularity_ic_vs_full_decomposition',
-                    'MW decomposes a lexicalised member further (`%s` vs `%s`) and '
+                    'MW decomposes a lexicalised member further (`{}` vs `{}`) and '
                     'every piece is an attested headword — immediate constituents vs '
                     'full decomposition is a convention choice, and neither entry '
-                    'states which one this field wants'
-                    % (' + '.join(I), ' + '.join(P)), ex)
+                    'states which one this field wants'.format(' + '.join(I), ' + '.join(P)), ex)
     else:
         if _merges_to(fp, fi):
             ex['pwg_is_finer'] = True
             extra = [m for m in P if m not in attested]
             if i_all and extra:
                 return (REJECT, 'pwg_splits_bound_morph',
-                        'PWG cuts the same string finer and its extra piece(s) `%s` '
-                        'are not attested headwords while every MW member is'
-                        % ', '.join(extra), ex)
+                        'PWG cuts the same string finer and its extra piece(s) `{}` '
+                        'are not attested headwords while every MW member is'.format(', '.join(extra)), ex)
             return (DEFER, 'granularity_pwg_finer',
                     'PWG cuts the same string finer and every piece is an attested '
                     'headword — the same granularity choice, mirrored', ex)
@@ -867,7 +860,7 @@ def run(write=False):
         verdict, rule, reason, ex = adjudicate(
             r['k1'], r['P'], r['I'], Pstar, why, Istar, len(variants), attested, freq)
         verdicts.append({
-            'id': '%s~~h%s' % (r['k1'], r['hom']) if r['hom'] else r['k1'],
+            'id': '{}~~h{}'.format(r['k1'], r['hom']) if r['hom'] else r['k1'],
             'k1': r['k1'], 'hom': r['hom'], 'L_id': r['L_id'],
             'verdict': verdict, 'rule': rule, 'reason': reason,
             'pwg_members': ' + '.join(r['P']), 'index_members': ' + '.join(r['I']),
@@ -876,7 +869,7 @@ def run(write=False):
             'pwg_source_split': ex.get('pwg_source_split', ''),
             'mw_first_variant': ex.get('mw_k2_first_variant', ''),
             'mw_variant_count': ex.get('mw_k2_variants', 0),
-            'evidence': '; '.join('%s=%s' % (k, v) for k, v in sorted(ex.items())
+            'evidence': '; '.join('{}={}'.format(k, v) for k, v in sorted(ex.items())
                                   if k not in ('pwg_source_split', 'mw_k2_first_variant',
                                                'mw_k2_variants') and v not in ('', None)),
             'dcs_freq': freq.get(r['k1'], ''),
@@ -909,7 +902,7 @@ def run(write=False):
     for a in arms:
         pooled.update(a['_by_stratum'])
 
-    print('\nverdicts: %s' % dict(by_verdict))
+    print('\nverdicts: {}'.format(dict(by_verdict)))
     print('\nby rule:')
     for rule, n in by_rule.most_common():
         print('   %-42s %6d  %5.1f%%' % (rule, n, 100.0 * n / len(verdicts)))
@@ -930,9 +923,9 @@ def run(write=False):
         line = '   %-42s %7d' % (s, n)
         for a in arms:
             c = a['_by_stratum'].get(s, 0)
-            line += ' %6d %7s' % (c, ('%.3f' % wilson_lower(c, c)) if c else '—')
+            line += ' %6d %7s' % (c, ('{:.3f}'.format(wilson_lower(c, c))) if c else '—')
         p = pooled.get(s, 0)
-        line += ' %6d %7s' % (p, ('%.3f' % wilson_lower(p, p)) if p else '—')
+        line += ' %6d %7s' % (p, ('{:.3f}'.format(wilson_lower(p, p))) if p else '—')
         print(line)
 
     if not write:
@@ -1010,7 +1003,7 @@ def run(write=False):
         json.dump(plan, fh, ensure_ascii=False, indent=1)
         fh.write('\n')
     print('\nwrote %d verdicts -> %s' % (len(verdicts), OUT_TSV))
-    print('wrote promotion plan -> %s' % OUT_PLAN)
+    print('wrote promotion plan -> {}'.format(OUT_PLAN))
     return verdicts, by_stratum, arm, arms
 
 

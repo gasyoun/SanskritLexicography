@@ -58,10 +58,10 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.environ.get("SANSKRIT_UTIL_PY",
                                   r"C:/Users/user/Documents/GitHub/sanskrit-util/py"))
-import sanskrit_util as su  # noqa: E402
+import sanskrit_util as su
 
 sys.path.insert(0, HERE)
-from parse_ncc import match_key_for  # noqa: E402  (canonical NCC key derivation)
+from parse_ncc import match_key_for
 
 ACC_JSONL = os.path.join(HERE, "acc.jsonl")
 NCC_JSONL = os.path.join(HERE, "ncc.jsonl")

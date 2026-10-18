@@ -11,7 +11,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SRC_PILOT = os.path.normpath(os.path.join(HERE, '..', '..', 'src', 'pilot'))
 if SRC_PILOT not in sys.path:
     sys.path.insert(0, SRC_PILOT)
-from window_common import input_paths  # noqa: E402
+from window_common import input_paths
 
 MAIN_INPUT = os.environ.get('PWG_INPUT_DIR') or os.path.join(
     r'C:\Users\user\Documents\GitHub\SanskritLexicography',

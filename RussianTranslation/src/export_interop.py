@@ -93,7 +93,7 @@ def card_glosses(card, translations, emitted=None):
         if d.get('gloss'):
             rows.append(('dict', d.get('code') or d.get('source') or 'dict', d.get('gloss')))
     for i, s in enumerate(card.get('kow_reference') or [], 1):
-        rows.append(('kow', 'kow-%d' % i, s))
+        rows.append(('kow', f'kow-{i:d}', s))
     for st in (card.get('corpus_lexicon') or {}).get('strata') or []:
         for r in st.get('renderings') or []:
             if r.get('lemma'):
@@ -125,23 +125,21 @@ def export_tei(args):
         f.write('  <teiHeader><fileDesc><titleStmt><title>PWG Russian assembled export</title></titleStmt>')
         note = ('Project release artifact.' if not args.preview_machine else
                 'NON-CITABLE machine-preview artifact: includes machine-gated internal rows.')
-        f.write('<publicationStmt><p>%s</p></publicationStmt>' % q(note))
+        f.write('<publicationStmt><p>{}</p></publicationStmt>'.format(q(note)))
         f.write('<sourceDesc><p>Generated from assembled_cards.jsonl.</p></sourceDesc></fileDesc></teiHeader>\n')
         f.write('  <text><body>\n')
         emitted, idn = set(), collections.Counter()
         for card in iter_cards(args.cards, args.limit):
             key1 = card.get('key1')
             idn[key1] += 1                      # unique xml:id across same-key1 homograph entries
-            cid = 'pwg-%s' % safe_id(key1) + ('' if idn[key1] == 1 else '-%d' % idn[key1])
-            f.write('    <entry xml:id="%s">\n' % q(cid))
-            f.write('      <form><orth>%s</orth><pron notation="iast">%s</pron></form>\n'
-                    % (q(card.get('key1')), q(card.get('iast'))))
+            cid = 'pwg-{}'.format(safe_id(key1)) + ('' if idn[key1] == 1 else f'-{idn[key1]:d}')
+            f.write('    <entry xml:id="{}">\n'.format(q(cid)))
+            f.write('      <form><orth>{}</orth><pron notation="iast">{}</pron></form>\n'.format(q(card.get('key1')), q(card.get('iast'))))
             for source, ref, text in card_glosses(card, translations, emitted):
-                f.write('      <sense source="%s" n="%s"><def>%s</def></sense>\n'
-                        % (q(source), q(ref), q(text)))
+                f.write('      <sense source="{}" n="{}"><def>{}</def></sense>\n'.format(q(source), q(ref), q(text)))
             f.write('    </entry>\n')
         f.write('  </body></text>\n</TEI>\n')
-    print('TEI Lex-0 export -> %s' % out)
+    print('TEI Lex-0 export -> {}'.format(out))
 
 
 def export_ontolex(args):
@@ -156,23 +154,23 @@ def export_ontolex(args):
         for card in iter_cards(args.cards, args.limit):
             key1 = card.get('key1')
             idn[key1] += 1
-            sid = safe_id(key1) + ('' if idn[key1] == 1 else '_%d' % idn[key1])
-            f.write('pwg:%s a ontolex:LexicalEntry ;\n' % sid)
-            f.write('  ontolex:canonicalForm [ ontolex:writtenRep "%s"@sa-Latn ] ;\n' % ttl(card.get('key1')))
+            sid = safe_id(key1) + ('' if idn[key1] == 1 else f'_{idn[key1]:d}')
+            f.write('pwg:{} a ontolex:LexicalEntry ;\n'.format(sid))
+            f.write('  ontolex:canonicalForm [ ontolex:writtenRep "{}"@sa-Latn ] ;\n'.format(ttl(card.get('key1'))))
             senses = card_glosses(card, translations, emitted)
             if senses:
                 refs = ', '.join('pwg:%s_sense_%d' % (sid, i + 1) for i in range(len(senses)))
-                f.write('  ontolex:sense %s .\n' % refs)
+                f.write('  ontolex:sense {} .\n'.format(refs))
                 for i, (source, ref, text) in enumerate(senses, 1):
                     f.write('pwg:%s_sense_%d a ontolex:LexicalSense ;\n' % (sid, i))
-                    f.write('  lexinfo:termElement "%s" ;\n' % ttl(source))
-                    f.write('  pwg:sourceRef "%s" ;\n' % ttl(ref))
-                    f.write('  ontolex:usage "%s"@ru .\n' % ttl(text))
+                    f.write('  lexinfo:termElement "{}" ;\n'.format(ttl(source)))
+                    f.write('  pwg:sourceRef "{}" ;\n'.format(ttl(ref)))
+                    f.write('  ontolex:usage "{}"@ru .\n'.format(ttl(text)))
             else:
-                f.write('  ontolex:sense pwg:%s_sense_0 .\n' % sid)
-                f.write('pwg:%s_sense_0 a ontolex:LexicalSense .\n' % sid)
+                f.write('  ontolex:sense pwg:{}_sense_0 .\n'.format(sid))
+                f.write('pwg:{}_sense_0 a ontolex:LexicalSense .\n'.format(sid))
             f.write('\n')
-    print('OntoLex export -> %s' % out)
+    print('OntoLex export -> {}'.format(out))
 
 
 def export_reverse_index(args):
@@ -197,7 +195,7 @@ def export_reverse_index(args):
                                         'iast': card.get('iast'), 'source': source,
                                         'ref': ref}, ensure_ascii=False) + '\n')
                     count += 1
-    print('reverse index: %d row(s) -> %s' % (count, out))
+    print(f'reverse index: {count:d} row(s) -> {out}')
 
 
 def main():

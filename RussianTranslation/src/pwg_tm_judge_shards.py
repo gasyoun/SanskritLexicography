@@ -14,7 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_tm_canonical as C  # noqa: E402
+import pwg_tm_canonical as C
 
 
 def main(argv=None):

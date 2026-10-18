@@ -80,8 +80,8 @@ def sha256sums(art_dir: str) -> str:
     for name in ARTIFACTS:
         p = os.path.join(art_dir, name)
         if not os.path.exists(p):
-            raise SystemExit('missing artifact: %s' % p)
-        lines.append('%s  %s' % (sha256(p), name))
+            raise SystemExit('missing artifact: {}'.format(p))
+        lines.append('{}  {}'.format(sha256(p), name))
     return '\n'.join(lines) + '\n'
 
 
@@ -155,13 +155,12 @@ def build(args) -> dict:
                      ensure_ascii=False, indent=1, sort_keys=True) + '\n')
 
     missing = [n for n in PROSE if not os.path.exists(os.path.join(pack, n))]
-    print('DE sidecar pack -> %s' % pack)
+    print('DE sidecar pack -> {}'.format(pack))
     print('  artifacts hashed: %d' % len(ARTIFACTS))
     print('  entries %d / senses %d' % (manifest.get('entries', 0),
                                         manifest.get('exported_rows', 0)))
     if missing:
-        print('  WARNING: prose files not present (author them): %s'
-              % ', '.join(missing))
+        print('  WARNING: prose files not present (author them): {}'.format(', '.join(missing)))
     return manifest
 
 
@@ -195,25 +194,25 @@ def selftest() -> None:
         check(sums.endswith('\n'), 'SHA256SUMS ends with a newline')
         # sha256("x"), so the format is verifiable by hand, not just self-consistent
         check(sums.startswith('2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db'),
-              'sha256 of "x" is wrong: %r' % sums[:64])
+              'sha256 of "x" is wrong: {!r}'.format(sums[:64]))
         check('  pwg_de_edition.ttl' in sums, 'two-space sha256sum separator')
 
         z = zenodo_metadata(manifest, 'v1.0.0')['metadata']
         check(z['upload_type'] == 'dataset', 'upload_type must be dataset')
-        check(z['license'] == DATA_LICENSE, 'license: %r' % z['license'])
+        check(z['license'] == DATA_LICENSE, 'license: {!r}'.format(z['license']))
         check(z['version'] == 'v1.0.0', 'version passthrough')
         check('10.5281/zenodo.21306715' not in json.dumps(z),
               'must NOT reuse the repository concept DOI for a dataset record')
         check('no translation' in z['description'],
               'description must state the DE-only fence')
         check('9 edition senses' in z['description'],
-              'description must carry real counts: %r' % z['description'][:200])
+              'description must carry real counts: {!r}'.format(z['description'][:200]))
         check(zenodo_metadata(manifest, None)['metadata'].get('version') is None,
               'version omitted when not supplied')
 
     if fails:
         for f in fails:
-            print('FAIL: %s' % f)
+            print('FAIL: {}'.format(f))
         raise SystemExit(1)
     print('build_de_sidecar_pack --selftest: OK')
 

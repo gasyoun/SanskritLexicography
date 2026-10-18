@@ -23,10 +23,10 @@ if __package__ in (None, ''):  # pragma: no cover - direct-script invocation
     sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     __package__ = 'pwg_pipeline'
 
-from . import (audit, compat, faults, import_legacy, model,  # noqa: E402
+from . import (audit, compat, faults, import_legacy, model,
                promotion, providers, replay, review, validation)
-from .evidence import seal  # noqa: E402
-from .repository import open_repository  # noqa: E402
+from .evidence import seal
+from .repository import open_repository
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RT_ROOT = os.path.normpath(os.path.join(HERE, '..', '..'))
@@ -164,10 +164,9 @@ def canary_section() -> dict:
         'executed': False,
         'disposition': (
             'ready to run' if all(available.values()) else
-            'NOT RUN: %s credential(s) absent; each adapter track stops alone'
-            ' and its unused call is never released to the other provider'
-            % ', '.join(sorted(name for name, present in available.items()
-                               if not present))),
+            'NOT RUN: {} credential(s) absent; each adapter track stops alone'
+            ' and its unused call is never released to the other provider'.format(', '.join(sorted(name for name, present in available.items()
+                               if not present)))),
         'command': ('python -m pwg_pipeline canary --providers xai,deepseek'
                     ' --max-calls 2 --cost-ceiling-usd 4 --no-retry'
                     ' --non-promotable'),

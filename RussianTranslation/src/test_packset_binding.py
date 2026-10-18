@@ -28,22 +28,22 @@ import tempfile
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.stdout.reconfigure(encoding="utf-8")
 
-import review_binding as rb  # noqa: E402
+import review_binding as rb
 
-from csl_pyutil import render_review_sheet_packset  # noqa: E402
+from csl_pyutil import render_review_sheet_packset
 
 FAILS = []
 
 
 def check(cond, label):
-    print("  %s %s" % ("ok  " if cond else "FAIL", label))
+    print("  {} {}".format("ok  " if cond else "FAIL", label))
     if not cond:
         FAILS.append(label)
 
 
 def _items(n):
-    return [{"id": "P%03d" % i, "filt": "a", "title": "card %d" % i,
-             "question": "Is card %d right?" % i, "panels": []}
+    return [{"id": "P%03d" % i, "filt": "a", "title": f'card {i:d}',
+             "question": f'Is card {i:d} right?', "panels": []}
             for i in range(1, n + 1)]
 
 
@@ -199,7 +199,7 @@ def main():
 
     print()
     if FAILS:
-        print("packset binding selftest FAILED: %s" % ", ".join(FAILS))
+        print("packset binding selftest FAILED: {}".format(", ".join(FAILS)))
         return 1
     print("packset binding selftest OK")
     return 0

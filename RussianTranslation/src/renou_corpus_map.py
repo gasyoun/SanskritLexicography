@@ -55,7 +55,7 @@ def to_register(genre, work=''):
 
 _emitted = {r for _, r in WORK_OVERRIDE} | {r for _, r in GENRE_SUPPLEMENT}
 _bad = _emitted - set(REGISTERS)
-assert not _bad, 'non-canonical register codes: %s' % _bad
+assert not _bad, 'non-canonical register codes: {}'.format(_bad)
 
 
 if __name__ == '__main__':
@@ -72,7 +72,7 @@ if __name__ == '__main__':
         if reg == 'other':
             other_genres[r.get('genre')] += 1
     total = sum(by.values())
-    print('corpus attestations by Renou register (%d total):' % total)
+    print(f'corpus attestations by Renou register ({total:d} total):')
     for reg, n in by.most_common():
         print('  %-10s %9d  %4.1f%%' % (reg, n, 100 * n / total))
     if other_genres:

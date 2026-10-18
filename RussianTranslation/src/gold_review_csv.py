@@ -40,7 +40,7 @@ def load_context():
 
 def main():
     if not os.path.exists(GOLD):
-        sys.exit('no %s' % GOLD)
+        sys.exit('no {}'.format(GOLD))
     ctx = load_context()
     rows = []
     with open(GOLD, encoding='utf-8') as f:

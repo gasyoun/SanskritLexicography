@@ -1,0 +1,51 @@
+{
+  "schema": "pwg.canary_gate_receipt.v1",
+  "verdict": "GO",
+  "judged_at_epoch": 1790127505.91692,
+  "wf_output": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\h4527vgate23\\out.canary.json",
+  "wf_sha256": "ae7e52c5c4f808f393001a5729b3cd287b7f0dee894b45bef911187d9c3ed235",
+  "expect_senses": 3,
+  "profile_slot": "c1",
+  "cli_safe_mode": null,
+  "reasons": [],
+  "facts": {
+    "keys": [
+      "dq_canary_puregloss~~h0_zz_pw"
+    ],
+    "sense_counts": [
+      [
+        "dq_canary_puregloss~~h0_zz_pw",
+        3
+      ]
+    ],
+    "tn_hits": [],
+    "marker_hits": []
+  },
+  "evidence": {
+    "commit": "646f69740e42d63e02e631681b7578c8637b4710",
+    "manifest_sha256": "4cd6a08ca0b3ce66aa32a2238e7ca74e2bc5a8b0ee464d1aeb0937737414badd",
+    "manifest_path": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\h4527vgate23\\execution_manifest.canary.json",
+    "status_path": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\h4527vgate23\\status.canary.json",
+    "call_reservation_path": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\src\\pilot\\output\\h4527vgate23\\calls.canary.json",
+    "run_id": "h4527-canary-230923",
+    "calls_spent": 1,
+    "max_calls": 3,
+    "observed_cost_usd": 0.0,
+    "cost_evaluable": false,
+    "unevaluable_calls": 1,
+    "api_latency_ms": 11772,
+    "wall_latency_ms": 12224,
+    "kill_switch": {
+      "declared": null,
+      "max_agents": 18,
+      "max_translate_agents": 13,
+      "max_heal_agents": 5,
+      "bounded": true,
+      "budget_stops": 0
+    },
+    "cli_safe_mode_effective": true,
+    "timeout_ceil_ms": 600000,
+    "hard_timeout_ms": 600000,
+    "gen_model": "claude-sonnet-5"
+  }
+}

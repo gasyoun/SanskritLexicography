@@ -22,6 +22,9 @@ Supersede mode (default): the new store replaces the old run_batch store (which 
                                                    # promote -> src/pwg_ru_translated.jsonl
   python src/promote_final_cards.py --dry-run        # report coverage, write nothing
   python src/promote_final_cards.py --glob 'wf_output.sd.*.json'   # a subset
+  python src/promote_final_cards.py --merge --apply --glob 'src/pilot/output/wf_output.w01.json' \
+                                  # per-root catch-up: --merge is dry-run unless --apply
+                                  # (H5706 / FINDINGS §611.2 — --apply is the one write switch)
 
 Coverage is reported honestly: per-root card counts plus a WARNING for roots whose per-root file
 is a requeue subset (the full Slice-C originals were overwritten; re-run or recover them, then
@@ -1251,7 +1254,8 @@ def main():
                          'present in THIS run, keep every other row (including a root\'s already-'
                          'translated sub-cards not in this run). Use for a per-root catch-up — the '
                          'default full overwrite WIPES any root whose wf_output file is no longer '
-                         'on disk (the gam-RU loss mode).')
+                         'on disk (the gam-RU loss mode). DRY-RUN BY DEFAULT since H5706 '
+                         '(FINDINGS §611.2): pass --apply to write.')
     ap.add_argument('--override-reviewed', action='store_true',
                     help='H2146: allow machine replacement of subcards whose store rows a '
                          'human has touched (reviewer set, non-ai_* review_status, or an '
@@ -1291,8 +1295,10 @@ def main():
                          '(ready_partial clean-subset). Default is dry-run; pass --apply to write '
                          '(still uses --store; wave-1 agents must not target the live store).')
     ap.add_argument('--apply', action='store_true',
-                    help='with --ready-partial-report: actually write the clean subset '
-                         '(default is dry-run only)')
+                    help='actually write: with --ready-partial-report the clean subset, with '
+                         '--merge the merged store. Since H5706 (FINDINGS §611.2) this is the '
+                         'ONE write switch for every single-mode lane — both are dry-run/refused '
+                         'without it (default is dry-run only).')
     args = ap.parse_args()
     if args.batch_manifest:
         if not args.journal or not args.promotion_id:
@@ -1374,6 +1380,17 @@ def main():
         sys.exit(
             'refusing --merge with the implicit broad glob %r; pass --glob explicitly '
             '(normally src/pilot/output/wf_output.<window>.json)' % DEFAULT_GLOB)
+    # H5706 / FINDINGS §611.2: --apply used to gate only the --ready-partial-report
+    # path, so a plain --merge PROMOTED FOR REAL (the H3663 accident — correct in
+    # content, but a write nobody intended). --apply is now the ONE write switch
+    # for every single-mode lane; a plain --merge refuses instead of writing.
+    # --dry-run stays the explicit preview form.
+    if args.merge and not args.apply and not args.dry_run:
+        sys.exit(
+            'REFUSED: --merge is dry-run by default since H5706 (FINDINGS §611.2) — '
+            'a plain --merge used to write the store. Pass --apply to promote for '
+            'real (the same write switch --ready-partial-report uses), or --dry-run '
+            'for the explicit preview.')
     # H2089: single-mode --merge into the LIVE default store without a promotion id
     # is a coordinator bypass (silent route around journaled batch_promote). Refuse
     # unless override flag/env is set.

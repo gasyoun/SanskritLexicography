@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 05-09-2026_
+_Created: 01-08-2026 · Last updated: 11-09-2026_
 
 # HeadwordLists
 
@@ -83,6 +83,51 @@ fileable typos across 11 dicts (spine MW 4 + PWG 12 first; then SHS 37, YAT 27, 
 with IAST + error type + entry-body evidence, assembled from SanskritSpellCheck by
 [`assemble_typo_queue.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/assemble_typo_queue.py); verify on scan, then file.
 
+**MW↔PWK corrigenda pairs:** [`MW_PWK_CORRIGENDA_PAIRS_11-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW_PWK_CORRIGENDA_PAIRS_11-09-2026.md)
++ [`mw_pwk_corrigenda_pairs.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwk_corrigenda_pairs.tsv) — **260,568** MW↔PWK pairs (17 with an
+explicit MG typo call) consolidated from MG's 2013-2014 yadisk fuzzy-correction workbooks
+(derived-only, raw stays on yadisk); a **csl-corrections candidate feed**, not yet filed — note
+the naming trap (MG's "PWK" = Cologne `pwg`, not `pwk`) documented at the top of the report.
+
+**MW missing PWK-Nachträge entries (csl-corrections #119):** [`MW_PWK_NACHTRAEGE_MISSING_ENTRIES_TRIAL_14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW_PWK_NACHTRAEGE_MISSING_ENTRIES_TRIAL_14-09-2026.md)
++ [`mw_pwk_nachtraege_candidates_14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwk_nachtraege_candidates_14-09-2026.tsv) — trial comparing MW against the Böhtlingk
+*kürzere Fassung* Nachträge (`sup_7`): 13,208 Nachträge entries → **1,751 absent from MW** (547 ranked A = an
+annexure-carried alphabetical neighbour, the `kāritra` class), 1,918 near-form review flags; **30 %** of MW's
+annexure headwords are verbatim `sup_7` entries. Builder [`mw_pwk_nachtraege_missing_entries.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwk_nachtraege_missing_entries.py).
+
+**Independent recheck of that trial (two more methods + DeepSeek verifier):** [`MW_PWK_NACHTRAEGE_TRIAL_INDEPENDENT_RECHECK_14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW_PWK_NACHTRAEGE_TRIAL_INDEPENDENT_RECHECK_14-09-2026.md) + [`mw_pwkvn_missing_entries.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwkvn_missing_entries.py) (all 24,976 `pwkvn` headwords vs MW: 9,096 absent rows / 5,237 unique; annexure enrichment **7.84×**) + [`mw_pw_sup7_missing_entries.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pw_sup7_missing_entries.py) (stricter `sup_7` tiers: 3,302 absent; reverse 1,798/6,067 = **29.6 %**). Verifier round 2: **PASS**, 60/60 spot-checks; the trial's §3 tier rows sum to 13,129 not 13,208 (79 short headwords dropped by the builder's `len(hw) < 3` guard — now disclosed). Counting-conventions table in §0 before comparing any two numbers.
+
+**MW annexure provenance — uptake, corroboration, enrichment metrics:** [`MW_NACHTRAG_UPTAKE_AND_PROVENANCE_DETAILS_15-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW_NACHTRAG_UPTAKE_AND_PROVENANCE_DETAILS_15-09-2026.md) + [`nachtrag_uptake_details.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/nachtrag_uptake_details.py) — years on every source, the enrichment metric family (**PW Nachträge 7.79–7.91×** vs **Edgerton BHS 2.09×** in the MW99 annexure), the MW72→MW99 per-layer uptake table (60 % of the pool MW72 lacked; 4,112 never-seen; 27 dropped), the homonym/sense-extension census (**36 %** of `sup_7` entries are extensions of words PW already had), DCS-band 10-word samples for every big list, and the machine-usable [`MW-NACHTRAG-PROPOSALS-15-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-PROPOSALS-15-09-2026.tsv) (572 corroborated adds). Guide version: [csl-guides annexure-provenance](https://github.com/gasyoun/csl-guides/blob/main/docs/dictionaries/annexure-provenance.mdx).
+
+**BHS annexure enrichment (2.09×) decomposed (H5057):** [`BHS_ANNEXURE_DECOMPOSITION_17-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/BHS_ANNEXURE_DECOMPOSITION_17-09-2026.md) + [`bhs_enrichment_decompose.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/bhs_enrichment_decompose.py) (`--selftest` pins all ten headline counts) — the 2.09× headline re-derived under both k1 conventions and decomposed by BHS entry class: **full gloss-bearing entries carry it at 2.12×, Edgerton's 712 cross-reference entries are enrichment-neutral (1.09×)**, plus Mvy/`<tib>` marker cuts; the **95 BHS-corroborated confirmed-missing candidates** enumerated with DCS bands (84 of 95 unattested in DCS-2021 — Buddhist canon is outside its corpus) and both MAHAVY ref surfaces in [`BHS-CORROBORATED-MISSING-95-17-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/BHS-CORROBORATED-MISSING-95-17-09-2026.tsv).
+Feeds [H4837](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4837-OxAlpha_SanskritLexicography_mw-missing-pw-nachtrag-adjudication_14.09.26.md) (the wider-scope adjudication unit). ⚠️ the code mapping in the
+paragraph above is contested — the kürzere Fassung is Cologne `pw`, not `pwg`: [CONTRADICTIONS §18](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md).
+
+**pwg core vs the MW99 annexure — the other half of the PW/PWG-influence question (H5058):** [`PWG_MW99_ENRICHMENT_17-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/PWG_MW99_ENRICHMENT_17-09-2026.md) + [`pwg_mw99_enrichment_17-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/pwg_mw99_enrichment_17-09-2026.tsv) (pwg = Böhtlingk-Roth great PW, **1855–1875** per TEI sourceDesc, measured with the H5056 [`enrichment_compare.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/enrichment_compare.py) under conventions C1–C4 against MW99 1899) — **the great-PW core DEPLETES in the annexure at 0.33×** (1,001 of 6,067 = 16.5 % annexure share vs 93,778 of 188,016 = 49.9 % main share) while 89.3 % of pwg's 106,082 k1 appear in MW99 at all, 98.9 % of the overlap in the main body. With the Nachträge rows (7.79–7.91×) the two halves close the loop: PW-influence on MW99 splits by genre — core absorption into MAIN vs annexure supplement-genre enrichment. Registry row appended to [`enrichment_metrics_registry_17-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/enrichment_metrics_registry_17-09-2026.tsv)/`.json`. Shares are set-overlap signatures, not causation (MW99 postdates pwg 1875).
+**Native kośas vs the MW99 annexure — 6×2 enrichment matrix with publication years (H5059):** [`NATIVE_DICTS_MW99_ENRICHMENT_17-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NATIVE_DICTS_MW99_ENRICHMENT_17-09-2026.md) + [`native_dicts_mw99_enrichment_17-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/native_dicts_mw99_enrichment_17-09-2026.tsv) (ap90 **1890**, ap **1957–1959**, sch **1928**, vcp **1873–1884**, skd **1821–1851**, mw72 **1872** — years read from each digitization's TEI sourceDesc in csl-orig v02, measured with the H5056 [`enrichment_compare.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/enrichment_compare.py) under conventions C1–C4) — **five of six native dictionaries DEPLETE below 1× (0.23×–0.61×; skd 0.23×: only 66 of the 6,067 annexure headwords)**, while `sch` — Schmidt's 1928 **Nachträge**, a supplement not a kośa — enriches at **5.12×** (34.0 % of the annexure is also Schmidt k1), landing the batch on the same supplement-genre line as pw 7.79–7.91×. Registry rows appended to [`enrichment_metrics_registry_17-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/enrichment_metrics_registry_17-09-2026.tsv)/`.json` (now 10 measured pairs). Shares are set-overlap signatures, not causation — MW99 (1899) predates sch (1928) and ap (1957–59).
+
+**MW-unabsorbed census, widened — every class, all layers, POS cross-cut (H5011, 16-09-2026):** [`MW-UNABSORBED-CENSUS-WIDENED-16-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-WIDENED-16-09-2026.md) + [`mw_unabsorbed_census.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_unabsorbed_census.py) — the **new homonym-extension class: 571** pw volume-7 entries whose `<hom>N.</hom>` exceeds MW99's main-body maximum homonym (supersedes the stale 564; canary-locked on `kārin³`, band 498–626 stated in full); POS cross-cut of the 571 (**`adj.` 296 = 51.8 %**); corroboration from a direct 36-dictionary scan (**517/571 ≥1 outside the Böhtlingk tradition**); the broad extension class is 85.6 % POS-untagged (sparsity reported, not forced); all-layer table sup_1…sup_7. Outputs: [`MW-UNABSORBED-CENSUS-HOMONYM-EXTENSIONS-16-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-HOMONYM-EXTENSIONS-16-09-2026.tsv) · [`…-POS-CLASS-…tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-POS-CLASS-16-09-2026.tsv) · [`…-ALL-LAYERS-…tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-ALL-LAYERS-16-09-2026.tsv); guide: [manual §7 five-class taxonomy](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_AGENTS.md); book/article routing: [`MW-UNABSORBED-CENSUS-ROUTING-16-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-ROUTING-16-09-2026.md). Feeds [csl-corrections#119](https://github.com/sanskrit-lexicon/csl-corrections/issues/119) (drafted, posting = MG ruling).
+
+**H4837 adjudication — the frozen MW-missing list + verdict workbook (OxAlpha/GLM, 14-09-2026):**
+[`MW-missing-PW-Nachtrag-candidates-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-missing-PW-Nachtrag-candidates-14-09-2026.md)
++ [`.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-missing-PW-Nachtrag-candidates-14-09-2026.tsv) — starred-k2 Nachträge headwords absent from MW99:
+**3,353** unique (tiers by cross-dict corroboration A 889 / B 1,335 / C 1,129; **273 cite MAHĀVY** — matches the mint's derived stat exactly; MW cleaned union 194,283; `kāritra` canary reproduced). Adjudication (renamed STARRED under H4878):
+[`MW-STARRED-NACHTRAG-ADJUDICATION-14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-STARRED-NACHTRAG-ADJUDICATION-14-09-2026.tsv) (2,743 confirmed-missing, 610 variant-form-in-MW, DCS lemma/form attestation),
+Tier-A draft entry stubs [`MW-STARRED-NACHTRAG-TIERA-STUBS-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-STARRED-NACHTRAG-TIERA-STUBS-14-09-2026.md) (889; 349 clean adds),
+ Builders [`pw_nachtrag_vs_mw.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/pw_nachtrag_vs_mw.py) + [`pw_nachtrag_adjudicate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/pw_nachtrag_adjudicate.py), byte-identical rerun proven.
+Stratified 30-sample spot-check: **0/30 false positives** ([evidence](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-STARRED-NACHTRAG-SPOTCHECK-30-14-09-2026.tsv)).
+⚠️ the handoff's quoted 3,024/618/1,427/979 baseline artifacts were never landed (untracked-only); Δ329 documented in the companion §3.
+
+**H4878 canonical adjudication — the `sup_7` deterministic pipeline, every candidate verdicted (OxAlpha/GLM, 14-09-2026):**
+[`MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv) — **4,151 rows = re-derived pipeline count** (regen byte-identical to master):
+**1,751 confirmed-missing** (572 corroborated ≥2 dicts), 482 covered-by-MW-stem-form, 227 covered-by-fold-twin-flagged (the `Akalita`/`akalita` trap), 1,691 near-form-needs-eyes;
+MAHĀVY cites + DCS lemma/form attestation per row; rank A/B/C preserved. Tier-A stubs:
+[`MW-NACHTRAG-TIERA-STUBS-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-TIERA-STUBS-14-09-2026.md) (572).
+Adjudicator [`mw_pwk_nachtraege_adjudicate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_pwk_nachtraege_adjudicate.py); fresh 30-sample spot-check **0/30 false positives**
+([evidence](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-SPOTCHECK-30-14-09-2026.tsv)). Draft #119 reply:
+[`DRAFT_REPLY_csl-corrections-119-14-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/DRAFT_REPLY_csl-corrections-119-14-09-2026.md) (posting = MG ruling).
+Feeds [H4878](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4878-OxAlpha_SanskritLexicography_mw-nachtrag-adjudication-rescoped_14.09.26.md) (supersedes H4837).
+
 **Coverage additions (item B):** [`COVERAGE_ADDITIONS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/COVERAGE_ADDITIONS.md) — DCS-corpus
 lemmas absent from all CDSL dicts, ranked by band ([`coverage_additions.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/coverage_additions.py)),
 then **cross-tagged** with Catalan/Huet external attestation
@@ -90,12 +135,12 @@ then **cross-tagged** with Catalan/Huet external attestation
 externally corroborated, ~8 genuine real words — CDSL coverage is essentially complete.
 
 **Accent adjudication (item C):** [`Catalan-Pujol/accent_disagreements.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/Catalan-Pujol/accent_disagreements.tsv)
-([`accent_review.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/accent_review.py)) — the 63 Pujol-vs-Cologne udātta-position disagreements
+([`accent_review.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/accent_review.py)) — the 76 Pujol-vs-Cologne udātta-position disagreements
 rendered as accented IAST on both sides (`bhagá` vs `bhága`), recommend = Cologne/RV canonical.
 The print list uses the Cologne accents; this is the QA list for the Catalan editors.
 
 **Cross-dict union (the print target):** [`union/UNION.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/UNION.md) — a single merged
-headword index across all **15** csl-orig dicts (**323,425** headwords with per-dict provenance
+headword index across all **15** csl-orig dicts (**323,422** headwords with per-dict provenance
 + gender), feminines folded under the masculine (`mf(ā/ī)`; 237 `-inī` auto-folded, 3,995 `-ā/-ī`
 candidates ranked high/low for the editor); built by [`build_union.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/build_union.py).
 
@@ -115,13 +160,22 @@ does **not**). Check `head -c 3 file | xxd` before transforming, and preserve th
 file's existing BOM state on write. The org-level "no BOM" rule does **not** hold
 in this directory.
 
+Measured state, re-verified 17-10-2026 (H6936): **6 of 224 files carry a BOM** —
+byte-identical to the 11-07-2026 census in the
+[HeadwordLists manual](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/HEADWORDLISTS_DEEP_MANUAL.md) §4,
+so no drift in three months. All 220 text files are LF, and no file in the tree
+is invalid UTF-8. The one sibling BOM mismatch (`MW-unique-key1` vs its BOM-free
+`key2` twins) is the documented preservation case, not a defect. Full per-file
+table and the human-ruling queue:
+[ENCODING_BOM_AUDIT_HEADWORDLISTS_17-10-2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/ENCODING_BOM_AUDIT_HEADWORDLISTS_17-10-2026.md).
+
 ## Dictionary codes present
 
 Codes follow the **CDSL abbreviation scheme**; the canonical, authoritative
 code→dictionary mapping is on the
 [CDSL site](https://www.sanskrit-lexicon.uni-koeln.de/). Titles below were
 cross-checked against that site and the org-level
-[../../CLAUDE.md](../../CLAUDE.md) table.
+[../../CLAUDE.md](../../Uprava-h4060-drain/CLAUDE.md) table.
 
 | Code | Dictionary | Keys present here |
 |---|---|---|

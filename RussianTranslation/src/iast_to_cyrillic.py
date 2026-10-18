@@ -104,7 +104,7 @@ def main():
         print(__doc__)
         return
     name = ' '.join(sys.argv[1:])
-    print('%s -> %s  (prose form: %s)' % (name, transliterate(name), name_for_ru_prose(name)))
+    print('{} -> {}  (prose form: {})'.format(name, transliterate(name), name_for_ru_prose(name)))
 
 
 if __name__ == '__main__':

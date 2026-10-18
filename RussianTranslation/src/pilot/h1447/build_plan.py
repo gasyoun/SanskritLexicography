@@ -30,14 +30,14 @@ def main():
     windows = []
     for w in WINDOWS:
         adir = os.path.join(BASE, w)
-        harness = os.path.join(adir, 'run_pilot_wf.%s.js' % w)
-        manifest = os.path.join(adir, 'execution_manifest.%s.json' % w)
+        harness = os.path.join(adir, 'run_pilot_wf.{}.js'.format(w))
+        manifest = os.path.join(adir, 'execution_manifest.{}.json'.format(w))
         preflight = os.path.join(adir, 'preflight.json')
         man = json.load(open(manifest, encoding='utf-8'))
         pf = json.load(open(preflight, encoding='utf-8'))
         lease = leases[w]
         if lease['state'] != 'prepared':
-            raise SystemExit('%s not prepared: %s' % (w, lease['state']))
+            raise SystemExit('{} not prepared: {}'.format(w, lease['state']))
         windows.append({
             'root': w,
             'mode': 'medium50',

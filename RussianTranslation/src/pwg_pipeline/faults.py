@@ -54,13 +54,13 @@ class InjectedFault(RuntimeError):
     """A test-only fault fired at a named irreversible boundary."""
 
     def __init__(self, point: str) -> None:
-        super().__init__('injected fault at %s' % point)
+        super().__init__('injected fault at {}'.format(point))
         self.point = point
 
 
 def require_point(point: str) -> str:
     if point not in FAULT_POINTS:
-        raise ValueError('unknown fault point: %r' % (point,))
+        raise ValueError('unknown fault point: {!r}'.format(point))
     return point
 
 

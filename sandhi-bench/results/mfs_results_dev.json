@@ -1,0 +1,27 @@
+{
+  "n": 478,
+  "exact_acc": 0.0941,
+  "macro_acc_by_category": 0.1105,
+  "unanswered": 0,
+  "per_category": {
+    "anusvāra / nasal": {
+      "acc": 0.2,
+      "n": 10
+    },
+    "consonant / other": {
+      "acc": 0.0905,
+      "n": 210
+    },
+    "visarga": {
+      "acc": 0.0556,
+      "n": 18
+    },
+    "vowel coalescence": {
+      "acc": 0.0958,
+      "n": 240
+    }
+  },
+  "split": "dev",
+  "system": "MFS (surface, train-only)",
+  "surface_oov_rate": 0.9017
+}

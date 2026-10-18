@@ -26,7 +26,7 @@ FIELDS = ('input_tokens', 'output_tokens', 'cache_creation_input_tokens',
 def parse(stamp):
     try:
         return dt.datetime.fromisoformat(str(stamp).replace('Z', '+00:00'))
-    except Exception:                                          # noqa: BLE001
+    except Exception:
         return None
 
 
@@ -38,7 +38,7 @@ for path in glob.glob(os.path.join(TDIR, '*.jsonl')):
         for line in handle:
             try:
                 row = json.loads(line)
-            except Exception:                                  # noqa: BLE001
+            except Exception:
                 continue
             when = parse(row.get('timestamp'))
             if when:

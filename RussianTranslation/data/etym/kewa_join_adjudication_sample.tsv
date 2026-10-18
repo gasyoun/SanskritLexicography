@@ -63,11 +63,23 @@ sandhi/diacritic-normalized	2497	I	342	गूथः	gūthaḥ	gUTaH	gUTa	rule
 sandhi/diacritic-normalized	3271	I	456	टङ्कः	ṭaṅkaḥ	waNkaH	waNka	rule	waNka	
 sandhi/diacritic-normalized	8261	III	342	शिरिः	śiriḥ	SiriH	Siri	rule		
 sandhi/diacritic-normalized	9319	III	608-609	हेरम्बः	herambaḥ	herambaH	heramba	rule	heramba	
-unmatched	1680	I	224	कुड्यपुच्छा	kuḍyapucchā	kuqyapucCA				
-unmatched	2250	I	307	खल्लते	khallate	Kallate				
-unmatched	2884	I	398	चूला	cūlā	cUlA				
-unmatched	4094	I	568	घोषति	ghóṣati	Gozati				
-unmatched	6297	II	525	भेरण्डकः	bheraṇḍakaḥ	BeraRqakaH				
-unmatched	8302	III	351	शीरी	śīrī	SIrI				
-exact	5118	II	217	परिंश	pariṃśá	pariMSa	pariMSa	PWG-key1	pariMSa	
-exact	6999	III	21	युप्-	yup-	yup	yup	PWG-key1	yup	bound-prefix-or-stem
+unmatched	1603	I	215	कीरिन्-	kīrin-	kIrin				bound-prefix-or-stem
+unmatched	2217	I	301	खनित्रा	khanítrā	KanitrA				
+unmatched	4285	II	39	दाहयति	dāhayati	dAhayati				
+unmatched	6697	II	640	मिलिन्दः	milindaḥ	milindaH				
+unmatched	7105	III	46	रव्-	rav-	rav				bound-prefix-or-stem
+unmatched	9129	III	558	स्रोया	sroyā	sroyA				
+exact	961	I	122	ऋतया	ṛtayā́	ftayA	ftayA	PWG-key1	ftayA	
+exact	7082	III	40	रन्	rán	ran	ran	PWG-key1	ran	
+present-stem->root	2930	I	404	छमति	chámati	Camati	Cam	rule		rule-rung-applied
+present-stem->root	4099	I	568	जरते	járate	jarate	jar	rule		rule-rung-applied
+present-stem->root	4118	II	10	दक्षति	dákṣati	dakzati	dakz	rule		rule-rung-applied
+present-stem->root	5712	II	362-363	प्रथति	práthati	praTati	praT	rule		rule-rung-applied
+present-stem->root	7018	III	26	यूषति	yū́ṣati	yUzati	yUz	rule		rule-rung-applied
+present-stem->root	7933	III	245-246	वृणोति	vṛṇoti	vfRoti	vfR	rule		rule-rung-applied
+feminine->stem	3234	I	452	झम्पी	jhampī	JampI	Jampin	rule		rule-rung-applied
+feminine->stem	4439	II	65	देशिनी	deśinī	deSinI	deSin	rule		rule-rung-applied
+feminine->stem	6857	II	684	मेदिनी	medinī	medinI	medin	rule		rule-rung-applied
+feminine->stem	8133	III	309	शर्करी	śarkarī	SarkarI	Sarkara	rule		rule-rung-applied
+feminine->stem	8896	III	498-499	सृणी	sṛṇī́	sfRI	sfRa	rule		rule-rung-applied
+feminine->stem	8918	III	503	सेवनी	sevanī	sevanI	sevanin	rule		rule-rung-applied

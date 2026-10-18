@@ -57,11 +57,11 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 sys.path.insert(0, HERE)
-import build_p2_sheet as sheet  # noqa: E402  (shared renderer)
+import build_p2_sheet as sheet
 
 # H1404 binding (stamp/write_lock) lives under RussianTranslation; import path.
 sys.path.insert(0, os.path.join(REPO_ROOT, 'RussianTranslation', 'src'))
-from review_binding import write_lock  # noqa: E402
+from review_binding import write_lock
 
 VERDICTS = os.path.join(HERE, "p2_agent_verdicts.jsonl.gz")
 CANDIDATES = os.path.join(HERE, "crosswalk_candidates.jsonl.gz")
@@ -101,8 +101,8 @@ def _stamp_p2_sheet(html_text, card_ids):
     if 'const SHEET_ID =' not in html_text:
         raise ValueError('expected const SHEET_ID declaration in P2 sheet')
     stamped = html_text.replace(
-        'const SHEET_ID = "%s";' % SHEET_ID,
-        'const SHEET_ID = "%s";\nconst CONTENT_HASH = %s;\nconst IDS = %s;' % (
+        'const SHEET_ID = "{}";'.format(SHEET_ID),
+        'const SHEET_ID = "{}";\nconst CONTENT_HASH = {};\nconst IDS = {};'.format(
             SHEET_ID, json.dumps(chash), json.dumps(list(card_ids))),
         1,
     )
@@ -122,8 +122,7 @@ def _stamp_p2_sheet(html_text, card_ids):
     # Visible chip in the header title area (best-effort).
     chip = (
         ' &middot; bound <code class="bindchip" title="content_hash — binds this '
-        'sheet\'s decisions.json export to exactly this HTML">%s…</code>'
-        % chash[:19]
+        'sheet\'s decisions.json export to exactly this HTML">{}…</code>'.format(chash[:19])
     )
     # Insert after the heading text if present.
     marker = 'adjudicator spot-check (blind)'

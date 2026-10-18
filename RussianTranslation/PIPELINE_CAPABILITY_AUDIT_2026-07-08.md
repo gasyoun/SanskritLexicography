@@ -16,10 +16,10 @@ Store numbers measured on the live gitignored `src/pwg_ru_translated.jsonl`
 
 | Workstream | Question | Verdict | Effort to close |
 |---|---|---|---|
-| [W1](#w1--3-account-concurrency-safety) | Is the pipeline safe under 3 concurrent Max accounts? | **MISSING** (unsafe same-clone; per-clone runs safe until merge) | M — protocol is free, hardening ~1 session |
-| [W2](#w2--per-sense-evidence-provenance) | "Which senses did Grintser/Kossovich support?" queryable? | **MISSING** (evidence assembled then discarded; gate never ran) | M — deterministic backfill, ~1–2 sessions |
-| [W3](#w3--case-government-управление) | How many government markers in PWG; queryable per sense? | **PARTIAL** (schema slot exists, 0 populated; census now done: **3,853 markers**) | S — extractor+backfill ~1 session |
-| [W4](#w4--per-sense-genre-attribution) | "Which senses occur in kāvya?" | **PARTIAL — mostly EXISTS** (per-sense Renou state already shipped; literal genre is one join away) | S — join+query ~1 session |
+| [W1](#w1-3-account-concurrency-safety) | Is the pipeline safe under 3 concurrent Max accounts? | **MISSING** (unsafe same-clone; per-clone runs safe until merge) | M — protocol is free, hardening ~1 session |
+| [W2](#w2-per-sense-evidence-provenance) | "Which senses did Grintser/Kossovich support?" queryable? | **MISSING** (evidence assembled then discarded; gate never ran) | M — deterministic backfill, ~1–2 sessions |
+| [W3](#w3-case-government-управление) | How many government markers in PWG; queryable per sense? | **PARTIAL** (schema slot exists, 0 populated; census now done: **3,853 markers**) | S — extractor+backfill ~1 session |
+| [W4](#w4-per-sense-genre-attribution) | "Which senses occur in kāvya?" | **PARTIAL — mostly EXISTS** (per-sense Renou state already shipped; literal genre is one join away) | S — join+query ~1 session |
 
 ---
 

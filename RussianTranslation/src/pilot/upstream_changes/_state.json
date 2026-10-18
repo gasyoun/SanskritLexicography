@@ -1,10 +1,10 @@
 {
   "schema": "pwg_ru.upstream_watch_state.v1",
   "cologne": {
-    "pwg": "cc2d19927f0c39cd039f39e4a0fd585a8d3a7295",
-    "pw": "cc2d19927f0c39cd039f39e4a0fd585a8d3a7295",
-    "sch": "cc2d19927f0c39cd039f39e4a0fd585a8d3a7295",
-    "pwkvn": "cc2d19927f0c39cd039f39e4a0fd585a8d3a7295"
+    "pwg": "55e8addbd96e8d9001b8789026b026763f4049c1",
+    "pw": "55e8addbd96e8d9001b8789026b026763f4049c1",
+    "sch": "55e8addbd96e8d9001b8789026b026763f4049c1",
+    "pwkvn": "55e8addbd96e8d9001b8789026b026763f4049c1"
   },
   "nws": {}
 }

@@ -172,7 +172,7 @@ def build_genre(sqlite_path):
               'not genuinely register-less) — top 10 by text_id:' % (len(unmatched), len(id2regs)),
               file=sys.stderr)
         for tid, name in unmatched[:10]:
-            print('  text_id=%s  name=%r' % (tid, name), file=sys.stderr)
+            print('  text_id={}  name={!r}'.format(tid, name), file=sys.stderr)
     con = sqlite3.connect(sqlite_path)
     cur = con.cursor()
     genre = collections.defaultdict(collections.Counter)
@@ -300,14 +300,14 @@ def main():
     if args.selftest:
         return selftest()
     if not os.path.exists(args.sqlite):
-        sys.exit('missing DCS sqlite: %s' % args.sqlite)
+        sys.exit('missing DCS sqlite: {}'.format(args.sqlite))
     pos = build_pos(args.sqlite)
     genre = build_genre(args.sqlite)
     table = finalize(pos, genre)
     with open(args.out, 'w', encoding='utf-8') as f:
         json.dump(table, f, ensure_ascii=False)
     m = table['meta']
-    print('wrote %s' % args.out)
+    print('wrote {}'.format(args.out))
     print('  lemmas with POS    : %d (%d tags: %s)' % (m['lemmas_with_pos'], len(m['pos_tags']), ', '.join(m['pos_tags'])))
     print('  lemmas with genre  : %d (%d genres -> %d eras)' % (m['lemmas_with_genre'], len(m['genres']), len(m['eras'])))
 

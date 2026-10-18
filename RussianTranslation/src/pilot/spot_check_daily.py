@@ -34,6 +34,7 @@ import math
 import os
 import random
 import re
+import shlex
 import subprocess
 import sys
 import time
@@ -47,15 +48,15 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from store_path import canonical_store  # noqa: E402
-import gate_evidence as ge  # noqa: E402
+from store_path import canonical_store
+import gate_evidence as ge
 
 SCHEMA = 'pwg.spotcheck_daily.v1'
 
 # single-sourced content policies (promote_final_cards owns TN_RE; canary_gate owns
 # the SAN-LOSS literal class) — import, never restate (H2158 lesson).
-import promote_final_cards as pfc  # noqa: E402
-import markup_fidelity_gates  # noqa: E402 — real span-survival gate (H3593/FINDINGS §589)
+import promote_final_cards as pfc
+import markup_fidelity_gates
 
 SAN_LOSS_RE = re.compile(r'SAN-LOSS|UNMAPPED')
 CONTENT_FIELDS = pfc.CONTENT_MASS_FIELDS
@@ -152,10 +153,10 @@ def check_card(key, rows):
                 continue
             if pfc.TN_RE.search(value):
                 defects.append({'key': key, 'severity': 3, 'check': 'tn_residue',
-                                'detail': 'unrestored {Tn} in %s' % field})
+                                'detail': 'unrestored {{Tn}} in {}'.format(field)})
             if field in ('ru', 'en') and SAN_LOSS_RE.search(value):
                 defects.append({'key': key, 'severity': 3, 'check': 'san_loss',
-                                'detail': 'SAN-LOSS/UNMAPPED literal in %s' % field})
+                                'detail': 'SAN-LOSS/UNMAPPED literal in {}'.format(field)})
         if not (row.get('ru') or row.get('en')):
             defects.append({'key': key, 'severity': 3, 'check': 'empty_translation',
                             'detail': 'promoted row with no ru/en content'})
@@ -164,7 +165,7 @@ def check_card(key, rows):
                             'detail': 'missing h/grammar on a promoted row'})
         if row.get('layer') not in KNOWN_LAYERS:
             defects.append({'key': key, 'severity': 1, 'check': 'layer_vocab',
-                            'detail': 'layer %r outside %s' % (row.get('layer'),
+                            'detail': 'layer {!r} outside {}'.format(row.get('layer'),
                                                                '/'.join(KNOWN_LAYERS))})
     if total_senses and len(rows) < 0.8 * total_senses:
         defects.append({'key': key, 'severity': 2, 'check': 'sense_shortfall',
@@ -218,7 +219,10 @@ def judge_card(judge_cmd, key, rows, workdir):
     payload_path = os.path.join(workdir, 'judge_payload_%d.json' % abs(hash(key)))
     with open(payload_path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump({'key': key, 'rows': rows}, f, ensure_ascii=False, indent=1)
-    cmd = judge_cmd.replace('{payload}', payload_path)
+    # H4209 (audit F2): the template is run with shell=True, so every substituted
+    # value must be POSIX-quoted — a payload path containing a space (or worse)
+    # otherwise splits in the shell and every card comes back judge_error.
+    cmd = judge_cmd.replace('{payload}', shlex.quote(payload_path))
     try:
         proc = subprocess.run(cmd, shell=True, capture_output=True, text=True,
                               encoding='utf-8', timeout=600)
@@ -227,7 +231,7 @@ def judge_card(judge_cmd, key, rows, workdir):
         assert 0 <= sev <= 3
         return {'key': key, 'severity': sev, 'notes': verdict.get('notes'),
                 'status': 'judged'}
-    except Exception as exc:  # noqa: BLE001 — any judge failure is inconclusive
+    except Exception as exc:
         return {'key': key, 'status': 'judge_error', 'detail': str(exc)[:500]}
 
 
@@ -309,8 +313,8 @@ def write_evidence(report, records_dir, store, evidence_path):
     if not report['population']:
         ev.declare_expected_empty(
             'no_promotions_for_date',
-            'no auto-promotion landed on %s: sampling 10%% of nothing is not a failure '
-            'of the sampler' % report['date'])
+            'no auto-promotion landed on {}: sampling 10% of nothing is not a failure '
+            'of the sampler'.format(report['date']))
     ev.assert_nonvacuous()
     ev.emit(evidence_path)
     return ev
@@ -340,7 +344,7 @@ def main(argv=None):
     os.makedirs(args.out_dir, exist_ok=True)
     report = build_report(args.date, args.fraction, args.records_dir, store,
                           judge_cmd=args.judge_cmd, workdir=args.out_dir)
-    out = os.path.join(args.out_dir, 'spotcheck_%s.json' % args.date)
+    out = os.path.join(args.out_dir, 'spotcheck_{}.json'.format(args.date))
     tmp = out + '.tmp'
     with open(tmp, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(report, f, ensure_ascii=False, indent=1)
@@ -407,28 +411,42 @@ def selftest():
         san_hit_subcards = {h['subcard'] for h in store_san_loss_scan(store)}
         assert 'dA~~h0_regress' in san_hit_subcards, (
             'real span-loss with no literal marker must be caught by the gate, not '
-            'missed like the old marker-grep: %r' % san_hit_subcards)
+            'missed like the old marker-grep: {!r}'.format(san_hit_subcards))
         assert rep['judge'] == 'skipped'
         # determinism: same date -> same sample
         rep2 = build_report(today, 1.0, td, store)
         assert rep2['sampled'] == rep['sampled']
         # judge hook: a sev-3 judge verdict lands as a defect; a broken judge is
         # judge_error (inconclusive), not silently clean
-        judge_ok = '%s -c "import json;print(json.dumps({\'severity\':3,\'notes\':\'reg\'}))"' \
-            % json.dumps(sys.executable)
+        judge_ok = '{} -c "import json;print(json.dumps({{\'severity\':3,\'notes\':\'reg\'}}))"'.format(json.dumps(sys.executable))
         rep3 = build_report(today, 1.0, td, store, judge_cmd=judge_ok, workdir=td)
         assert any(d['check'] == 'judge' for d in rep3['defects'])
         rep4 = build_report(today, 1.0, td, store,
                             judge_cmd=json.dumps(sys.executable) + ' -c "print(41+"',
                             workdir=td)
         assert all(j['status'] == 'judge_error' for j in rep4['judge']['results'])
+        # H4209 (audit F2): {payload} lands in a shell=True template; a payload
+        # path containing a space used to split in the shell -> judge_error for
+        # every card. The judge below READS the payload, so 'judged' proves the
+        # quoted path both survived the shell and pointed at the right file.
+        work_sp = os.path.join(td, 'work dir')
+        os.makedirs(work_sp)
+        jcode = ("import json,sys;"
+                 "print(json.dumps({'severity': 0, 'notes': "
+                 "json.load(open(sys.argv[1], encoding='utf-8'))['key']}))")
+        judge_sp = '{} -c {} {{payload}}'.format(json.dumps(sys.executable),
+                                           json.dumps(jcode))
+        j = judge_card(judge_sp, 'rootA~~a', [{'ru': 'чистый'}], work_sp)
+        assert j['status'] == 'judged' and j['severity'] == 0 and \
+            j['notes'] == 'rootA~~a', j
         # a promoted key with NO store rows is a sev-3 presence defect
         _mk_promotion(td, 'w3', ['ghost~~g'], now)
         rep5 = build_report(today, 1.0, td, store)
         assert ('ghost~~g', 'presence') in {(d['key'], d['check']) for d in rep5['defects']}
     print('spot_check_daily selftest: PASS (day scoping, deterministic sample, gate '
           'suite severities, store SAN-LOSS scan, judge hook + inconclusive-on-error, '
-          'ghost-key presence)')
+          'quoted {payload} substitution with a spacey path (H4209), ghost-key '
+          'presence)')
     return 0
 
 

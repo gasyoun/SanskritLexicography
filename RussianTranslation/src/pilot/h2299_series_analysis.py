@@ -28,9 +28,9 @@ DEFAULT_ROOT = r'C:\Users\user\Documents\GitHub\SanskritLexicography\RussianTran
 def _require(path):
     if not os.path.exists(path):
         raise SystemExit(
-            'ledger not found: %s\n'
+            'ledger not found: {}\n'
             'Both ledgers are gitignored local-only telemetry written where the gate ran.\n'
-            'Pass --root <the checkout that actually ran the gate>.' % path)
+            'Pass --root <the checkout that actually ran the gate>.'.format(path))
     return path
 
 
@@ -201,15 +201,15 @@ def main():
                      fmt(t.get('output_tokens'), 7), fmt(t.get('cache_read_tokens'), 11),
                      fmt(t.get('cache_creation_tokens'), 13),
                      fmt(t.get('subagent_tokens'), 11),
-                     ('%.4f' % t['observed_cost_usd']) if t.get('observed_cost_usd') is not None else '—',
+                     ('{:.4f}'.format(t['observed_cost_usd'])) if t.get('observed_cost_usd') is not None else '—',
                      fmt(t.get('duration_ms'), 9)))
         u = run.get('usage') or {}
         print('%-26s %-16s %6s %7s %11s %13s %11s %10s %9s'
               % ('', '  -> run total', '', fmt(u.get('output_tokens'), 7),
                  fmt(u.get('cache_read_tokens'), 11), fmt(u.get('cache_creation_tokens'), 13),
                  fmt(u.get('subagent_tokens'), 11),
-                 ('%.4f' % u['observed_cost_usd']) if u.get('observed_cost_usd') is not None else '—',
-                 'evaluable=%s unev=%s' % (u.get('cost_evaluable'), u.get('unevaluable_calls'))))
+                 ('{:.4f}'.format(u['observed_cost_usd'])) if u.get('observed_cost_usd') is not None else '—',
+                 'evaluable={} unev={}'.format(u.get('cost_evaluable'), u.get('unevaluable_calls'))))
     print()
 
     # --- Table 8: sitting spacing (candidate 1: quota/throttle) ---------------------------

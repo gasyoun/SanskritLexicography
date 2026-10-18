@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
 """H2160 — offline shape probe for the non-terminating whole-card `b0` translate call.
 
-The `b0` call in the medium50 windows dies at every ceiling tried (180 044 ms, then
-300 073 ms), so it is non-terminating rather than slow. Before spending a paid call on
+The `b0` call in the medium50 windows died at every ceiling tried at the time (180 044 ms,
+then 300 073 ms), which was read as non-terminating rather than slow.
+
+Correction (15-09-2026, H4842, from H4528 §1-§2): that reading did not hold. The same
+nakzatra card later completed eleven times, at wall times up to 511 908 ms, so the call
+is slow, not non-terminating; the one kill never followed by a finish (H2250 b5,
+900 000 ms) is censored, not proven infinite. See
+pwg_ru/h4528/H4528_WHOLE_CARD_HANG_FORENSICS_14-09-2026.md.
+
+Before spending a paid call on
 the question, this reads the five prepared `h1447-m50-w{1..5}` execution manifests
 OFFLINE and answers, per window:
 

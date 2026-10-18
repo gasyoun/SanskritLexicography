@@ -1,6 +1,6 @@
 # FAIR Release #1 — citation graph, markup census, headword-overlap matrix
 
-_Created: 13-07-2026 · Last updated: 23-07-2026_
+_Created: 13-07-2026 · Last updated: 07-09-2026_
 
 **What this is.** Q1-WS1.4 of the
 [org statistics census & analytics roadmap](../ROADMAP_STATISTICS_ORG_CENSUS_2026_2027.md):
@@ -14,6 +14,29 @@ upload using the metadata prepared here.
 
 ## Why a manual deposit, not a GitHub→Zenodo webhook
 
+**Superseded 07-09-2026 ([CONTRADICTIONS §17](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md), ruled via
+[H3961](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3961-Sonnet_SanskritLexicography_zenodo-governance-match-live-archival_02.09.26.md)):**
+the rationale below — that a whole-repo GitHub→Zenodo integration was avoided
+because it would sweep in untracked scan PDFs of uncertain rights — is kept
+as the record of why the question was open, but it was never accurate and is
+not why a curated deposit is kept. A GitHub release archive is a snapshot of
+the **tracked git tree** at the tag; the untracked PDFs it worried about were
+never part of one. The repo-level integration **is** live — concept DOI
+`10.5281/zenodo.21306715`, verified against the Zenodo API 31-07-2026, 143
+`v1.14x` tags cut as of 07-09-2026 — and MG ruled that live posture is the
+intended one, not something to disable. See [DATA_LICENSE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/DATA_LICENSE.md) for
+the full amendment.
+
+**The curated deposit is still wanted, for a different reason than the
+retired one:** the repo-level [`.zenodo.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/.zenodo.json) record is typed
+`upload_type: software`, MIT-licensed, and its own description states
+plainly that "this record's DOI covers the repository, not any dataset
+within it." It gives the two TSV files below no individually citable,
+CC-BY-licensed, dataset-typed DOI of their own — only this curated deposit
+does. The paragraph below is retained as the original (rights-based)
+justification, which is superseded; the deposit itself proceeds on the
+metadata already prepared here.
+
 [csl-observatory](https://github.com/sanskrit-lexicon/csl-observatory) and
 [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) are small,
 purpose-built repos where a whole-repo GitHub→Zenodo release integration is
@@ -21,9 +44,9 @@ appropriate (csl-atlas already carries a prepared
 [`.zenodo.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/.zenodo.json)
 for exactly that). **This repository is not that shape** — it is a large,
 mixed-content research workspace (headword exports, translation drafts,
-occasional untracked scan PDFs of uncertain third-party rights). Archiving
+occasional untracked scan PDFs of uncertain third-party rights). ~~Archiving
 the whole repo to Zenodo would sweep in content this repo does not have clear
-rights to redistribute. FAIR Release #1 is therefore a **curated, file-level**
+rights to redistribute.~~ FAIR Release #1 is therefore a **curated, file-level**
 deposit: only the two named TSV files below, described by the metadata in
 this document, uploaded by hand through the Zenodo web UI (or API once a
 token exists).
@@ -125,6 +148,15 @@ files attached: `markup_tag_census.tsv`, `headword_overlap_matrix.tsv`):
   of this file-level deposit.
 - [ ] Once both DOIs exist, flip the roadmap's Part-0 rows and Q1 target
   ("FAIR release #1 minted") to ✅ with the DOI links.
+- [x] **07-09-2026 ([H3961](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3961-Sonnet_SanskritLexicography_zenodo-governance-match-live-archival_02.09.26.md)):**
+  the deposit verdict is **still wanted, not redundant** — the live repo-level
+  Zenodo integration is a whole-repo `software`/MIT record that explicitly
+  disclaims dataset-level DOI coverage, so this curated CC-BY dataset deposit
+  remains the only path to a citable DOI for these two files. The
+  FAIR-release-#2 hold recorded in [CONTRADICTIONS §17](https://github.com/gasyoun/SanskritLexicography/blob/master/CONTRADICTIONS.md)
+  is **lifted** — the rights-posture question that blocked it is ruled, not
+  that this deposit's own upload is now done (the two @DO rows above are
+  still open).
 
 ## Related
 

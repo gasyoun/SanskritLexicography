@@ -39,7 +39,7 @@ REGISTER_LABEL = {
 def draw_dict(code, data, outdir):
     both = data['both_route_registers']
     if not both:
-        print('  %s: no both-route registers, skipping figure' % code)
+        print('  {}: no both-route registers, skipping figure'.format(code))
         return
     rows = sorted(both.items(), key=lambda kv: abs(kv[1]['log2_bias'] or 0), reverse=True)
     regs = [REGISTER_LABEL.get(r, r) for r, _ in rows]
@@ -68,7 +68,7 @@ def draw_dict(code, data, outdir):
     ax.set_xlim(left=0)
     fig.tight_layout()
 
-    out = os.path.join(outdir, 'h4_citation_vs_usage_%s.svg' % code)
+    out = os.path.join(outdir, 'h4_citation_vs_usage_{}.svg'.format(code))
     fig.savefig(out, format='svg')
     plt.close(fig)
     print('  %s -> %s (%d registers)' % (code, os.path.basename(out), n))
@@ -86,7 +86,7 @@ def main():
         elif a == '--outdir':
             outdir = args[i + 1]; i += 2
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
 
     os.makedirs(outdir, exist_ok=True)
     data = json.load(open(in_path, encoding='utf-8'))

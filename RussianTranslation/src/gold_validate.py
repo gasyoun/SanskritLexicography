@@ -26,7 +26,7 @@ def read_rows(path):
         rows = list(csv.DictReader(f))
     missing = REQUIRED - set(rows[0].keys() if rows else [])
     if missing:
-        fail('missing CSV columns: %s' % ', '.join(sorted(missing)))
+        fail('missing CSV columns: {}'.format(', '.join(sorted(missing))))
     return rows
 
 
@@ -41,20 +41,20 @@ def validate_rows(rows):
         conf = (r.get('confidence') or '').strip().lower()
         adj = (r.get('needs_adjudication') or '').strip().lower()
         if not rid:
-            errors.append('line %d: id required' % i)
+            errors.append(f'line {i:d}: id required')
         else:
             unique_ids.add(rid)
         if not reviewer:
-            errors.append('line %d id=%s: reviewer_id required' % (i, rid))
+            errors.append(f'line {i:d} id={rid}: reviewer_id required')
         if label not in LABELS:
-            errors.append('line %d id=%s: bad human_label %r' % (i, rid, label))
+            errors.append(f'line {i:d} id={rid}: bad human_label {label!r}')
         if conf not in CONFIDENCE:
-            errors.append('line %d id=%s: bad confidence %r' % (i, rid, conf))
+            errors.append(f'line {i:d} id={rid}: bad confidence {conf!r}')
         if adj not in BOOLS:
-            errors.append('line %d id=%s: bad needs_adjudication %r' % (i, rid, adj))
+            errors.append(f'line {i:d} id={rid}: bad needs_adjudication {adj!r}')
         key = (rid, reviewer)
         if key in seen:
-            errors.append('line %d id=%s: duplicate reviewer %s' % (i, rid, reviewer))
+            errors.append(f'line {i:d} id={rid}: duplicate reviewer {reviewer}')
         seen.add(key)
     return errors, unique_ids
 
@@ -81,5 +81,5 @@ if __name__ == '__main__':
     try:
         main()
     except Exception as e:
-        print('HUMAN GOLD CHECK FAILED: %s' % e, file=sys.stderr)
+        print('HUMAN GOLD CHECK FAILED: {}'.format(e), file=sys.stderr)
         raise SystemExit(1)

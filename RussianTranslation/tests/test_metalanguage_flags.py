@@ -27,8 +27,8 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import store_flags  # noqa: E402
-import sanskrit_util  # noqa: E402
+import store_flags
+import sanskrit_util
 
 
 def _row(de, ru):

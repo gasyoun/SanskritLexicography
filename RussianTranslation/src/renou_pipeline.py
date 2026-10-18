@@ -39,7 +39,7 @@ def ensure_bhs():
 
 def build(code, wl_path):
     if not os.path.exists(DCS):
-        raise SystemExit('missing %s — run build_dcs_renou.py first' % os.path.basename(DCS))
+        raise SystemExit('missing {} — run build_dcs_renou.py first'.format(os.path.basename(DCS)))
     ensure_bhs()
     final = os.path.join(HERE, code + '.renou.jsonl')
     with tempfile.TemporaryDirectory() as td:

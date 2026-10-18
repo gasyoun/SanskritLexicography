@@ -14,7 +14,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root, require_sibling  # noqa: E402
+from sibling_root import sibling_root, require_sibling
 GH = sibling_root(HERE)
 AB = os.path.join(GH, 'csl-pywork', 'v02', 'distinctfiles', 'pwg', 'pywork', 'pwgab', 'pwgab_input.txt')
 PWG = os.path.join(GH, 'csl-orig', 'v02', 'pwg', 'pwg.txt')
@@ -45,7 +45,7 @@ def table():
             # when CSL_SIBLING_ROOT was explicitly set (H1902) — that is the operator
             # asserting the siblings exist, so a missing table there is an error, not
             # a degradation.
-            sys.stderr.write('pwg_ab: table source not found (%s); <ab> tooltips disabled\n' % AB)
+            sys.stderr.write('pwg_ab: table source not found ({}); <ab> tooltips disabled\n'.format(AB))
             return _AB
         for line in open(AB, encoding='utf-8'):
             if '\t' not in line:
@@ -88,7 +88,7 @@ def is_diasystem(en):
 
 def cmd_lookup(args):
     r = resolve(args[0])
-    print('%s = %s / %s' % (r['abbrev'], r['de'], r['en']) if r else '(not in pwgab)')
+    print('{} = {} / {}'.format(r['abbrev'], r['de'], r['en']) if r else '(not in pwgab)')
 
 
 def cmd_coverage(args):

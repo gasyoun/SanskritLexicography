@@ -8,10 +8,42 @@ quietly to measured=False — never raise.
 from __future__ import annotations
 
 import json
+import os
 import re
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+
+def _atomic_write_text(path: Path, text: str) -> None:
+    """Write *text* to *path* atomically: tmp file + os.replace (H5582).
+
+    The single shared writer for the progress dashboard: quality_timeseries_append
+    (H5582) uses it, and build_kitchen_data.py / build_progress_data.py route
+    their JSON writes through it since H5625 (H5534's claim that they already
+    did was wrong — no PR #2360 ever landed). A crash mid-write can no longer
+    leave a truncated quality_timeseries.json behind, and a concurrent builder
+    can never be observed half-written — the payload lands in a sibling tmp
+    file (unique per pid) that is flushed + fsync'd, then moved over the
+    target with os.replace (atomic on POSIX and Windows; on Windows a
+    target held open by another process can make os.replace raise
+    PermissionError — the old target then stays intact and the error is
+    re-raised). Output bytes are identical to ``Path.write_text`` (same open
+    defaults).
+    """
+    tmp = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    try:
+        with open(tmp, "w", encoding="utf-8") as fh:
+            fh.write(text)
+            fh.flush()
+            os.fsync(fh.fileno())
+        os.replace(tmp, path)
+    except BaseException:
+        try:
+            os.unlink(tmp)
+        except OSError:
+            pass
+        raise
 
 
 def _parse_ts(raw):
@@ -72,7 +104,7 @@ def operator_strip(window_status: Path, speed: dict, act: dict) -> dict:
     if window_status.exists():
         try:
             ws = json.loads(window_status.read_text(encoding="utf-8"))
-        except Exception:  # noqa: BLE001
+        except Exception:
             ws = {}
     newest = speed.get("newest_card_at")
     oldest = speed.get("oldest_card_at")
@@ -540,7 +572,7 @@ def quality_slice(pilot_out: Path, rows: list[dict], events: Path) -> dict:
                 "ci95_wilson": fid.get("ci95_wilson"),
             }
             out["measured"] = True
-        except Exception:  # noqa: BLE001
+        except Exception:
             pass
 
     if rows:
@@ -649,7 +681,7 @@ def quality_timeseries_append(ts_path: Path, quality: dict, generated_at: str, t
     if ts_path.exists():
         try:
             ts = json.loads(ts_path.read_text(encoding="utf-8"))
-        except Exception:  # noqa: BLE001
+        except Exception:
             ts = {"snapshots": []}
     fid = quality.get("fidelity") or {}
     jdg = quality.get("judge_coverage") or {}
@@ -664,7 +696,7 @@ def quality_timeseries_append(ts_path: Path, quality: dict, generated_at: str, t
     }
     ts["snapshots"] = [s for s in ts.get("snapshots", []) if s.get("date") != today] + [row]
     ts["snapshots"].sort(key=lambda s: s["date"])
-    ts_path.write_text(json.dumps(ts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    _atomic_write_text(ts_path, json.dumps(ts, ensure_ascii=False, indent=2) + "\n")
     return ts
 
 
@@ -744,7 +776,7 @@ def eta_verb(rt: Path, speed: dict) -> dict:
         return {"measured": False}
     try:
         v = json.loads(wl.read_text(encoding="utf-8"))
-    except Exception:  # noqa: BLE001
+    except Exception:
         return {"measured": False}
 
     def n(key):
@@ -830,7 +862,7 @@ def measure_medium50_band(rt: Path, medium50_wl_path: Path | None = None) -> dic
         return out
     try:
         m50_wl = json.loads(m50_path.read_text(encoding="utf-8-sig"))
-    except Exception:  # noqa: BLE001 — missing/corrupt worklist must not crash builders
+    except Exception:
         return out
     m50_keys = m50_wl.get("keys") or []
     m50_total = m50_wl.get("n_selected") or len(m50_keys)
@@ -911,7 +943,7 @@ def eta_nominal(rt: Path, medium50_wl_path: Path | None = None) -> dict:
         return {"measured": False}
     try:
         nm = json.loads(wl.read_text(encoding="utf-8-sig"))
-    except Exception:  # noqa: BLE001
+    except Exception:
         return {"measured": False}
 
     def n(key):
@@ -1121,7 +1153,7 @@ def load_subscription(path: Path) -> dict:
         }
     try:
         raw = json.loads(path.read_text(encoding="utf-8"))
-    except Exception as e:  # noqa: BLE001
+    except Exception as e:
         return {
             "measured": False,
             "error": str(e)[:200],
@@ -1541,7 +1573,7 @@ def _live_orchestrator_jobs(db_path: Path | None, cap: int = 12) -> list[dict]:
                 }
             )
         con.close()
-    except Exception:  # noqa: BLE001
+    except Exception:
         return []
     return out
 

@@ -1,0 +1,25 @@
+class_code	headwords	description	is_stock_total
+0	187992	In two or more dictionaries	1
+1	6357	key1=X+am and X+a is found	0
+2	1773	SKD nouns shown in nominative singular	0
+3a	19238	prefix of known word	0
+3b	11095	suffix of known word	0
+0a	8823	special words (icf, foreign, etc.)	0
+4a	2589	probable f. nouns ending in 'A'	0
+4b	618	inflected form	0
+cpd1	74009	simple compound of 2 parts, first ending in 'aiufeoAIOxs'	0
+cpd1a	8749	simple compound of 2 parts, first ending at 'A,I'	0
+cpd1b	698	simple compound of 2 parts, first ending at 't'	0
+cpd2	9712	simple compound of 3 or more parts, each part ending in 'aiufeo'	0
+cpd2a	4441	simple compound of 3 or more parts, each part ending in 'aiufeoAI'	0
+cpdsrs1	17696	Simple compound with vowel sandhi at 'AIUoeEOvy'	0
+cpdsrs1a	3319	non-Simple compound with vowel sandhi at 'AIUoeEOvy'	0
+5a	16	kar<->kf	0
+5b	57	Ikf, IBU, Ikfta, IBUta	0
+3bcpd	810	Compound word + suffix	0
+3acpd	629	prefix + Compound word	0
+cpdsandhi1	1103	Compound word with sandhi	0
+3a1	819	prefix of known compound	0
+cpdsandhi2	95	Compound word with sandhi	0
+cpdsrs1b	2555	non-Simple compound with vowel sandhi at 'AIUoeEOvy'	0
+gray	21818	Not yet whitelisted	0

@@ -103,16 +103,22 @@ reported `no intersection with incoming keys` on its own.
 python src/promote_final_cards.py --merge \
     --glob 'src/pilot/output/h3663/promote/out.*.json' \
     --defect-keys src/pilot/output/h3663/requeue.blocked.keys.txt \
-    --gen-model-version claude-sonnet-5 --promotion-id h3663-lane-a
+    --gen-model-version claude-sonnet-5 --promotion-id h3663-lane-a --apply
 ```
 
 `--override-reviewed` was deliberately **not** passed, so human-touched rows stay protected.
+_(H5706 amendment, 02-10-2026: `--apply` added above so the recipe stays copy-pasteable under
+the corrected contract; the 29-08 run itself predates the write gate and ran without it.)_
 
-> **Trap worth pinning: `--merge` is not dry-run by default.** `--apply` gates only
-> `--ready-partial-report`; a plain `--merge` invocation **writes the store**. H3654's recipe
-> carried `--apply`, so the asymmetry never surfaced there. This run intended a dry run and got a
-> real promotion — correct in content (the same 7 cards, guard clean, automatic backup taken) but
-> one step earlier than intended. Read the flag's help, not its name.
+> **Trap worth pinning: `--merge` used to not be dry-run by default — CLOSED by H5706
+> (02-10-2026).** `--apply` gated only `--ready-partial-report`; a plain `--merge` invocation
+> **wrote the store**. H3654's recipe carried `--apply`, so the asymmetry never surfaced there.
+> This run intended a dry run and got a real promotion — correct in content (the same 7 cards,
+> guard clean, automatic backup taken) but one step earlier than intended. Since H5706
+> (FINDINGS §611.2) `--apply` is the **one write switch for every single-mode lane**: a plain
+> `--merge` now refuses (`REFUSED: --merge is dry-run by default since H5706`), and
+> `--merge --apply` writes with the automatic `.premerge.*.bak`. The lesson stands regardless:
+> read the flag's help, not its name.
 
 ## 6. Gates after the write
 

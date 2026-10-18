@@ -33,7 +33,7 @@ N = 2
 # H818 defect). headless_worker.claude_argv_prefix already resolves it to
 # [node, <cli>.cjs] -- reuse it rather than re-deriving the resolution.
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from headless_worker import claude_argv_prefix  # noqa: E402
+from headless_worker import claude_argv_prefix
 
 ARGV = claude_argv_prefix('claude') + [
     '-p', PROMPT, '--model', 'claude-sonnet-5',
@@ -52,7 +52,7 @@ def one_call(cwd):
     try:
         w = json.loads(proc.stdout)
     except Exception as exc:
-        return {'error': 'unparseable envelope: %s' % exc, 'wall_ms': wall}
+        return {'error': 'unparseable envelope: {}'.format(exc), 'wall_ms': wall}
     u = w.get('usage', {}) or {}
     cc = u.get('cache_creation', {}) or {}
     return {

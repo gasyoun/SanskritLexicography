@@ -237,7 +237,7 @@ def ap_units(path, universe):
             units[k1].append((l_id, 'pre', body[:marks[0].start()]))
         for i, m in enumerate(marks):
             end = marks[i + 1].start() if i + 1 < len(marks) else len(body)
-            units[k1].append(('%s.%s' % (l_id, m.group(1)), 'num', body[m.end():end]))
+            units[k1].append(('{}.{}'.format(l_id, m.group(1)), 'num', body[m.end():end]))
     return units
 
 
@@ -339,7 +339,7 @@ def main():
                     'segment': segment, 'verdict': v, 'score': score,
                     'n_tokens': len(fp['tokens']), 'n_cits': len(fp['cits']),
                     'shared_tokens': sorted(st)[:8],
-                    'shared_cits': sorted('%s %s' % (w, ','.join(map(str, n)))
+                    'shared_cits': sorted('{} {}'.format(w, ','.join(map(str, n)))
                                           for w, n in sc)[:4],
                     'best': best,
                     'text_head': re.sub(r'\s+', ' ', text).strip()[:140],

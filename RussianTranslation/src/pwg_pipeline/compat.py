@@ -64,16 +64,16 @@ def facade_invocation(module: str, verb: str) -> tuple[str, ...]:
     """The facade command a legacy verb maps to."""
     table = SHIM_MAP.get(module)
     if table is None:
-        raise ShimRefusal('no shim table for %r' % (module,))
+        raise ShimRefusal('no shim table for {!r}'.format(module))
     if verb not in table:
-        raise ShimRefusal('%s has no facade mapping for %r' % (module, verb))
+        raise ShimRefusal('{} has no facade mapping for {!r}'.format(module, verb))
     return table[verb]
 
 
 def deprecation_notice(module: str, verb: str) -> str:
     target = ' '.join(facade_invocation(module, verb))
-    return ('%s %s is a Wave-1 compatibility shim; the supported entry point is'
-            ' `python -m pwg_pipeline %s`' % (module, verb, target))
+    return ('{} {} is a Wave-1 compatibility shim; the supported entry point is'
+            ' `python -m pwg_pipeline {}`'.format(module, verb, target))
 
 
 def warn_deprecated(module: str, verb: str) -> str:

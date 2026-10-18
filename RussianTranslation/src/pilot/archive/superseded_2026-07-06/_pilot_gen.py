@@ -33,7 +33,7 @@ def main():
             raws[k1].append('\n'.join(buf[1:]))
     for k in CARDS:
         if not portraits[k]:
-            print('  MISSING: %s' % k); continue
+            print('  MISSING: {}'.format(k)); continue
         json.dump(portraits[k], open(os.path.join(OUT, safe_name(k) + '.portrait.json'), 'w', encoding='utf-8'),
                   ensure_ascii=False, indent=1)
         # label records: first = main entry, rest = Nachträge/Addenda (patches keyed
@@ -41,15 +41,14 @@ def main():
         labeled = []
         for i, body in enumerate(raws[k]):
             role = ('MAIN ENTRY' if i == 0 else
-                    'NACHTRÄGE / ADDENDA #%d — patches (added citations, corrigenda, new senses) '
-                    'keyed to the MAIN entry sense numbers; render every one in full' % i)
+                    f'NACHTRÄGE / ADDENDA #{i:d} — patches (added citations, corrigenda, new senses) keyed to the MAIN entry sense numbers; render every one in full')
             labeled.append('=== RECORD %d — %s ===\n\n%s' % (i + 1, role, body))
         open(os.path.join(OUT, safe_name(k) + '.raw.txt'), 'w', encoding='utf-8').write('\n\n'.join(labeled))
         ns = sum(len([s for s in p['senses'] if s['n'] != '0']) for p in portraits[k])
         print('  %-12s %d record(s), %d senses, corpus n=%s'
               % (k, len(portraits[k]), ns,
                  sum((p.get('corpus_synonyms') or {}).get('n', 0) for p in portraits[k])))
-    print('wrote pilot inputs → %s' % OUT)
+    print('wrote pilot inputs → {}'.format(OUT))
 
 
 if __name__ == '__main__':

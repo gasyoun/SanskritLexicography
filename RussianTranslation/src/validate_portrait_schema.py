@@ -45,24 +45,24 @@ def fail(msg):
 def need_keys(obj, keys, where):
     miss = sorted(k for k in keys if k not in obj)
     if miss:
-        fail('%s missing keys: %s' % (where, ', '.join(miss)))
+        fail('{} missing keys: {}'.format(where, ', '.join(miss)))
 
 
 def need_list(obj, key, where):
     if not isinstance(obj.get(key), list):
-        fail('%s.%s must be a list' % (where, key))
+        fail('{}.{} must be a list'.format(where, key))
 
 
 def validate_portrait(p):
     need_keys(p, CARD_REQUIRED, 'portrait')
     if p['schema_version'] != EXPECTED_VERSION:
-        fail('bad schema_version: %r' % p['schema_version'])
+        fail('bad schema_version: {!r}'.format(p['schema_version']))
     if not p.get('key1'):
         fail('key1 is empty')
     for key in ('pos', 'diasystem', 'labels', 'senses'):
         need_list(p, key, 'portrait')
     if not p['senses']:
-        fail('%s has no senses' % p['key1'])
+        fail('{} has no senses'.format(p['key1']))
     if p.get('corpus_synonyms') is not None:
         cs = p['corpus_synonyms']
         need_keys(cs, {'n', 'by_stratum', 'candidates'}, 'corpus_synonyms')
@@ -72,17 +72,17 @@ def validate_portrait(p):
             fail('corpus_synonyms.by_stratum must be an object')
         need_list(cs, 'candidates', 'corpus_synonyms')
     for i, s in enumerate(p['senses']):
-        where = 'sense[%d]' % i
+        where = f'sense[{i:d}]'
         need_keys(s, SENSE_REQUIRED, where)
         if s['equivalence_type'] not in EQ_TYPES:
-            fail('%s bad equivalence_type: %r' % (where, s['equivalence_type']))
+            fail('{} bad equivalence_type: {!r}'.format(where, s['equivalence_type']))
         for key in ('equivalents_de', 'grammar', 'ab_labels', 'diasystem',
                     'citations', 'examples_sa'):
             need_list(s, key, where)
         if not isinstance(s['citations_resolved'], dict):
-            fail('%s.citations_resolved must be an object' % where)
+            fail('{}.citations_resolved must be an object'.format(where))
         if not isinstance(s['strata'], dict):
-            fail('%s.strata must be an object' % where)
+            fail('{}.strata must be an object'.format(where))
 
 
 def parse_args():
@@ -113,12 +113,12 @@ def main():
         checked += 1
         if checked >= n:
             break
-    print('portrait schema validation OK: %d portrait(s)' % checked)
+    print(f'portrait schema validation OK: {checked:d} portrait(s)')
 
 
 if __name__ == '__main__':
     try:
         main()
     except Exception as e:
-        print('PORTRAIT SCHEMA CHECK FAILED: %s' % e, file=sys.stderr)
+        print('PORTRAIT SCHEMA CHECK FAILED: {}'.format(e), file=sys.stderr)
         raise SystemExit(1)

@@ -29,11 +29,11 @@
   "recommended_action": "defer-calibrate",
   "warnings": [
     "presplit keys need fragment fallback, but translation_memory.frag.ru.jsonl is empty; run `python src/pilot/translation_memory.py build-frags --lang ru` after a heal Workflow emits frag_prov; no fragment provenance available yet",
-    "COST-GATE: est ~5464800 tokens / ~$10.31 (~$10.31 per translated card, ceiling $2.00) тАФ window-level gate is high; use cost_partition.run_now and route cost_partition.defer_monster to a human-budgeted lane before launching (H191)."
+    "COST-GATE: est ~5464800 tokens / ~$10.31 (~$10.31 per translated card, ceiling $2.00) — window-level gate is high; use cost_partition.run_now and route cost_partition.defer_monster to a human-budgeted lane before launching (H191)."
   ],
   "generator_log": [
-    "  tm: 0/1 cards pre-resolved from translation_memory.ru.json (0 tokens) тАФ no source-SHA matches (all cards will translate)",
-    "  presplit: _a_d_ana portrait alone (27493 B) exceeds the 12000 B call-weight cap тАФ one fragment per call",
+    "  tm: 0/1 cards pre-resolved from translation_memory.ru.json (0 tokens) — no source-SHA matches (all cards will translate)",
+    "  presplit: _a_d_ana portrait alone (27493 B) exceeds the 12000 B call-weight cap — one fragment per call",
     "  presplit: _a_d_ana (50 <ls> exceeds output budget 90; 22 senses/fragments exceed sense budget 20) -> direct fragment translation",
     "  lanes: tm_cards=0 frag_tm_cards=0 degenerate_passthrough=0 agent_expected_after_tm=22"
   ],
