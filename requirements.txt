@@ -16,7 +16,7 @@ csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@b1606944fe8d9bbb
 # H6979 (18-10-2026): HeadwordLists/build_union16.py writes its data-layer
 # sidecar through `sanskrit_util.write_sidecar` (0.13.0). Merge order:
 # sanskrit-util#82 first, then re-pin to the v0.13.0 tag.
-sanskrit-util @ git+https://github.com/sanskrit-lexicon/sanskrit-util@bf33074fa32ecf9cead5cdde9db6981533a3429f#subdirectory=py
+cdsl-sanskrit-util @ git+https://github.com/sanskrit-lexicon/sanskrit-util@bf33074fa32ecf9cead5cdde9db6981533a3429f#subdirectory=py  # import name is sanskrit_util; the distribution is cdsl-sanskrit-util
 requests
 indic-transliteration
 rdflib
