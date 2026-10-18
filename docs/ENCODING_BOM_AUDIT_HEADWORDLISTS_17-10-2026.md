@@ -1,6 +1,6 @@
 # Encoding / BOM audit — `HeadwordLists`
 
-_Created: 17-10-2026 · Last updated: 17-10-2026_
+_Created: 17-10-2026 · Last updated: 18-10-2026_
 
 Executor: **DeepSeek Flash (`deepseek-flash`)** — handoff [H6936](https://github.com/gasyoun/Uprava/blob/main/handoffs/H6936-DeepSeek_SanskritLexicography_headwordlists-bom-encoding-audit_17.10.26.md), 17-10-2026. Read-only audit: **no data byte was rewritten by this pass** (see §6 for the byte receipt).
 
@@ -77,7 +77,7 @@ Fixed in [`Uprava/tools/encoding_bom_audit.py`](https://github.com/gasyoun/Uprav
 - New exact `size_bytes` column; summary line reports text/binary split, BOM count, invalid-UTF-8 count, mixed-EOL count and total bytes.
 - `--selftest` gained the regression: a multi-byte character placed at the 64 KiB boundary must come back `utf-8`; plus genuinely-invalid bytes, `LF`/`CRLF`/`mixed`, the split-`CRLF` chunk edge, and exact byte sizes.
 
-Positive control that the checker still catches real bad bytes: a repo-wide run (5,018 files, 4,975 text) still flags a genuine one outside this tree — [`RussianTranslation/src/pilot/h4342_fixes/h4213_wave_launch_ATTEMPTS_LOG_06-10.09.2026.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h4342_fixes/h4213_wave_launch_ATTEMPTS_LOG_06-10.09.2026.txt) → `non-UTF-8?`. The same run finds **9** BOM files repo-wide: the 6 below plus three outside `HeadwordLists/` (`DCS-Moniers-roots-w-references.html`, `DCS_statistical_evaluation.htm`, `RussianTranslation/gold/decisions_g6-mqm-gold-starter-2026-07-25.csv`).
+Positive control that the checker still catches real bad bytes: a repo-wide run (5,018 files, 4,975 text) still flags a genuine one outside this tree — [`RussianTranslation/src/pilot/h4342_fixes/h4213_wave_launch_ATTEMPTS_LOG_06-10.09.2026.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/h4342_fixes/h4213_wave_launch_ATTEMPTS_LOG_06-10.09.2026.txt) → `non-UTF-8?` (re-encoded 18-10-2026, §7.1; a re-run now reports **0** invalid UTF-8). The same run finds **9** BOM files repo-wide: the 6 below plus three outside `HeadwordLists/` (`DCS-Moniers-roots-w-references.html`, `DCS_statistical_evaluation.htm`, `RussianTranslation/gold/decisions_g6-mqm-gold-starter-2026-07-25.csv`).
 
 ## 6. Byte receipt — nothing was rewritten
 
@@ -88,14 +88,68 @@ git -C SanskritLexicography diff --stat -- HeadwordLists       # → empty
 
 No deleted BOM, no added BOM, no re-encoded file, no line-ending normalisation. The audit is read-only by contract, and the fix predicate (*“valid UTF-8 **and** the only defect is a stray BOM”*) matched **no** file in this tree.
 
-## 7. Human-ruling queue
+## 7. Human-ruling queue — both rows now ruled
 
-| # | item | why it is not auto-fixable |
+| # | item | ruling / why it was not auto-fixable |
 |---:|---|---|
 | 1 | `then-2014/MW-unique-key1-193978.txt` BOM (3 bytes) vs its BOM-free `key2` twins | Stripping is forbidden by `CLAUDE.md` § Encoding + FINDINGS §37, and the H6518 write contract (PR #2416) names this file as the preservation example. §4. |
-| 2 | Repo-wide (out of scope here): `RussianTranslation/src/pilot/h4342_fixes/h4213_wave_launch_ATTEMPTS_LOG_06-10.09.2026.txt` is invalid UTF-8 | Needs a re-encode decision on the file's own ownership lane; listed, never rewritten. |
+| 2 | Repo-wide (out of scope here): `RussianTranslation/src/pilot/h4342_fixes/h4213_wave_launch_ATTEMPTS_LOG_06-10.09.2026.txt` is invalid UTF-8 | **Resolved 18-10-2026 — re-encoded to UTF-8 on the file's own RussianTranslation lane, with the 27 cp866-as-CP1251 glyph runs repaired (§7.1).** |
 
-**Resolved:** row 1 — *keep* (MG, 17-10-2026; see §4); the flag is documented, intentional state and stays flagged, not fixed. Row 2 stays open — it is outside this tree and belongs to the RussianTranslation lane.
+**Resolved:** row 1 — *keep* (MG, 17-10-2026; see §4); the flag is documented, intentional state and stays flagged, not fixed. Row 2 — *fix* (18-10-2026; see §7.1): the file is now valid UTF-8 and the repo-wide invalid-UTF-8 count is 0. Both rows are closed; nothing in this table is pending.
+
+### 7.1 Follow-up 18-10-2026 — row 2 closed: the out-of-tree file is re-encoded
+
+MG ruled the open row to a fix, on the file's own lane. The file was **CP1251 console
+capture**, not arbitrary binary: 147 lines, no BOM, LF, `12,393` bytes, and the only
+non-CP1251-decodable truth was that it was never UTF-8. The bytes were the PowerShell
+console codepage; two UTF-8 glyphs had been through a CP866→CP1251 double decode before
+the file was written, so they arrived as three-letter runs:
+
+| run found (CP1251) | bytes | originally | repaired to |
+|---|---|---|---|
+| `тЖТ` | `F2 C6 D2` | U+2192 `→` (UTF-8 `E2 86 92` read as CP866) | `→` ×18 |
+| `тАФ` | `F2 C0 D4` | U+2014 `—` (UTF-8 `E2 80 94` read as CP866) | `—` ×9 |
+
+Repair: decode the whole file as CP1251, map the two runs, re-encode as UTF-8 without a
+BOM. Nothing else changed — every other character, line and empty final line is identical
+by construction (`cp1251 → map → utf-8`), and `знак:6` (the genuine Cyrillic in the
+PowerShell error text) is carried through untouched.
+
+Byte receipt:
+
+```sh
+# before
+sha256 896c4b37b16ece7f772a9ff770d5a9131a0bc676613de494743b22c0172bac8d  12,393 B
+# after
+sha256 f53d3726820170d9c31e8dbb66edc9249b0619f95686ad65561d3b3b512b8d6f  12,421 B
+python3 -c "open('.../h4213_wave_launch_ATTEMPTS_LOG_06-10.09.2026.txt', encoding='utf-8').read()"  # no error
+```
+
+The same corruption class was then swept over every tracked text file, not only this one.
+Two more files were **valid UTF-8 but carried the same `тАФ` run** — 3 occurrences each, in
+human-readable message strings, no code consumer:
+
+| file | runs repaired | after |
+|---|---:|---|
+| [`RussianTranslation/pwg_ru/h3228/perf_preflight_ABIra.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h3228/perf_preflight_ABIra.json) | 3 | parses, 28 keys |
+| [`RussianTranslation/pwg_ru/h3228/perf_preflight_ADAna.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/h3228/perf_preflight_ADAna.json) | 3 | parses, 28 keys |
+
+Repo-wide re-run after the fix, in the fixed worktree — `python Uprava/tools/encoding_bom_audit.py
+SanskritLexicography`:
+
+```
+# summary: 5020 file(s) / 4977 text, 9 with a BOM, 0 invalid UTF-8,
+#          0 mixed line endings, 1 flag(s), 590146652 bytes
+```
+
+The single remaining flag is the documented `MW-unique-key1` BOM (§4), not a defect. A
+second scan of all 5,156 tracked text files for the console-mojibake class
+(`тЖТ`/`тАФ`/`тАУ`/`тАЬ`/`тАЭ`/`вЂ`) now finds **none**.
+
+**Still absent, named as residual:** the repo has no CI gate for UTF-8 validity — the
+defect was caught by a hand-run audit, not by a check. The read-only tool that caught it
+lives in [`Uprava/tools/encoding_bom_audit.py`](https://github.com/gasyoun/Uprava/blob/main/tools/encoding_bom_audit.py);
+wiring it (or a vendored equivalent) into CI is a separate unit, not done here.
 
 ## 8. Per-file table — every file in the tree
 
