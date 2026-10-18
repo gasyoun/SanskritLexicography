@@ -1,0 +1,48 @@
+{
+  "layer": "union-headwords-16dicts",
+  "made_by": "ai",
+  "model": "z-ai/glm-5.3-flash",
+  "handoff": "H4797",
+  "status": "active",
+  "consumers": [
+    {
+      "kind": "repo",
+      "id": "SanskritLexicography",
+      "use": "data/headword_overlap_matrix.py — 120-pair overlap matrix and per-dict profile"
+    },
+    {
+      "kind": "repo",
+      "id": "csl-atlas",
+      "use": "H4802 full-csl-orig crosswalk (s2d jaccard)"
+    },
+    {
+      "kind": "paper",
+      "id": "A40",
+      "use": "headword-inventory paper"
+    }
+  ],
+  "novelty": "Includes PD and the current csl-orig counts (16 dicts, 25 data files) where the published union is 15 dicts and predates them, and keys each dict as key1 UNION normalized-key2 — the print-form key2 spellings (parentheticals, udātta, hyphens, avagraha) that a key1-only union cannot reach. Deterministic: bare-SLP1 keys, residue counted per class and never guessed.",
+  "builder": "HeadwordLists/build_union16.py",
+  "artifact": "union_headwords_16.tsv",
+  "sha256": "2e02c6606d57c0f9b7944b49296930fec1dc8e0317fa603f396c5d60cc74b71b",
+  "rows": 417184,
+  "dicts": [
+    "AP",
+    "BHS",
+    "BUR",
+    "CAE",
+    "CCS",
+    "GRA",
+    "INM",
+    "MD",
+    "MW",
+    "PD",
+    "PWG",
+    "PWK",
+    "SCH",
+    "SKD",
+    "VCP",
+    "VEI"
+  ],
+  "built_at": "2026-10-18"
+}

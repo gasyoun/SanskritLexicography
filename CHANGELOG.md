@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 01-10-2026_
+_Created: 01-08-2026 · Last updated: 18-10-2026_
 
 # Changelog
 
@@ -16,6 +16,7 @@ not an error.
 
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
+- **H6979 (DeepSeek Flash `deepseek-flash`) — the 16-dict union gets a data-layer sidecar, written by the builder through the shared gate.** [`HeadwordLists/build_union16.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/build_union16.py) now emits [`union-16dicts/union-headwords-16dicts.meta.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union-16dicts/union-headwords-16dicts.meta.json) via `sanskrit_util.write_sidecar` (0.13.0): `layer`/`made_by`/`model`/`handoff` H4797/`status`/three named `consumers` (the overlap-matrix script, the csl-atlas H4802 crosswalk, paper A40)/`novelty`. The gate REFUSES an un-consumed layer that does not declare itself `dormant` with an owner and a review date — that is the point of the sidecar, not a formatting nicety. The union artifact is unchanged by the pass: **417,184 headwords**, byte-identical to the committed `union_headwords_16.tsv`; `python3 HeadwordLists/build_union16.py --selftest` and `pytest tests -k union -q` (8 passed) green. Spec: [kosha `docs/LAYER_SIDECAR_SPEC.md`](https://github.com/gasyoun/kosha/blob/main/docs/LAYER_SIDECAR_SPEC.md); `requirements.txt` gains the `sanskrit-util` pin (sanskrit-util#82 lands 0.13.0).
 
 ## [1.144.171] - 2026-09-18
 
