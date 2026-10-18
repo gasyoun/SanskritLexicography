@@ -1,0 +1,21 @@
+work	entries	raw_units	distinct_units	visualdcs_mss	delta	status
+Mahābhārata	1	2585	2519	21	2498	DIFF
+Rāmāyaṇa	10	1097	1006	2762	-1756	DIFF
+Skandapurāṇa	0	0	0	17		INCONCLUSIVE (absent from bodies)
+Bhāgavata	4	16560	6699	2248	4451	DIFF
+Viṣṇupurāṇa	3	1018	839			COMPARED (no VisualDCS canary)
+Nāradapurāṇa	1	44	43			COMPARED (no VisualDCS canary)
+Garuḍapurāṇa	1	295	280			COMPARED (no VisualDCS canary)
+Padmapurāṇa	2	392	389			COMPARED (no VisualDCS canary)
+Varāhapurāṇa	1	473	441			COMPARED (no VisualDCS canary)
+Matsyapurāṇa	1	441	417			COMPARED (no VisualDCS canary)
+Kūrmapurāṇa	3	135	132			COMPARED (no VisualDCS canary)
+Liṅgapurāṇa	1	316	302			COMPARED (no VisualDCS canary)
+Śivapurāṇa	5	572	524			COMPARED (no VisualDCS canary)
+Agnipurāṇa	1	123	123			COMPARED (no VisualDCS canary)
+Bhaviṣyapurāṇa	2	223	218			COMPARED (no VisualDCS canary)
+Brahmavaivartapurāṇa	1	447	411			COMPARED (no VisualDCS canary)
+Mārkaṇḍeyapurāṇa	1	935	856			COMPARED (no VisualDCS canary)
+Vāmanapurāṇa	2	199	191			COMPARED (no VisualDCS canary)
+Brahmāṇḍapurāṇa	2	2270	1435			COMPARED (no VisualDCS canary)
+Vāyupurāṇa	1	292	289			COMPARED (no VisualDCS canary)
