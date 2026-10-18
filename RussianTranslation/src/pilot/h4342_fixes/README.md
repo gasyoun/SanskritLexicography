@@ -1,4 +1,4 @@
-_Created: 08-09-2026 · Last updated: 15-09-2026_
+_Created: 08-09-2026 · Last updated: 18-10-2026_
 
 # H4342 fixes — applied 11-09-2026 (H4530)
 
@@ -7,6 +7,16 @@ written 08-09-2026 but not executed then (Claude Code's auto-mode permission cla
 correctly holds store mutation / main-tree edits for a human). **H4530 reviewed, corrected
 and executed both on 11-09-2026** — see the corrections below before re-reading the 08-09
 prose, which described the pre-correction scripts.
+
+## `h4213_wave_launch_ATTEMPTS_LOG_06-10.09.2026.txt` — encoding fixed 18-10-2026
+
+The attempts log was captured from the PowerShell console and committed as **CP1251**,
+which made it the one invalid-UTF-8 file in the repository (flagged by the H6936 audit,
+[report §7.1](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/ENCODING_BOM_AUDIT_HEADWORDLISTS_17-10-2026.md#71-follow-up-18-10-2026--row-2-closed-the-out-of-tree-file-is-re-encoded),
+which had left it for this lane by design). It is now UTF-8 without a BOM, LF, and the two
+double-decoded glyphs are restored: `тЖТ` → `→` (18×) and `тАФ` → `—` (9×). Every other
+character is unchanged. The same `тАФ` run was present in two valid-UTF-8 preflight JSONs
+and was repaired in the same pass.
 
 ## `h4342_requeue_sanloss.py` — item (e), break the SAN-LOSS freeze loop
 
