@@ -92,9 +92,9 @@ def describe(parvan):
     if not r:
         return None
     if r["volume_ru"] == NO_EDITION:
-        return "%s (%s): полного русского перевода нет — %s" % (
+        return "{} ({}): полного русского перевода нет — {}".format(
             r["name_ru"], r["name_iast"], r["note"])
-    return "%s (%s): %s, пер. %s, %s, %s [%s]" % (
+    return "{} ({}): {}, пер. {}, {}, {} [{}]".format(
         r["name_ru"], r["name_iast"], r["volume_ru"], r["translator"],
         r["year"], r["publisher"], r["confidence"])
 
@@ -128,7 +128,7 @@ def selftest():
     # A6 acceptance: not one empty cell anywhere
     empty = [(p, c) for p in sorted(rows) for c, v in rows[p].items()
              if v is None or not str(v).strip()]
-    check(not empty, "no empty cell in any row (%r)" % empty[:4])
+    check(not empty, "no empty cell in any row ({!r})".format(empty[:4]))
 
     # absence is written in words, never left blank
     for p in (12, 13):
@@ -142,7 +142,7 @@ def selftest():
 
     # every confidence value is from the vocabulary — no ad-hoc third state
     bad = sorted({r["confidence"] for r in rows.values()} - set(CONFIDENCE))
-    check(not bad, "confidence values are all from the vocabulary (%r)" % bad)
+    check(not bad, "confidence values are all from the vocabulary ({!r})".format(bad))
 
     # the org-verified rows must name the file that verifies them
     for p, r in rows.items():
@@ -175,7 +175,7 @@ def main(argv=None):
     if a.parvan:
         d = describe(a.parvan)
         if not d:
-            print("no such parvan: %s (1–18)" % a.parvan)
+            print("no such parvan: {} (1–18)".format(a.parvan))
             return 1
         print(d)
         return 0

@@ -59,6 +59,19 @@ jobs:
           sys.exit(fail)
           "
 
+  utf8-validity:
+    name: UTF-8 validity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+      - name: Gate selftest (positive and negative controls)
+        run: python tools/utf8_gate.py --selftest
+      - name: Refuse non-UTF-8 tracked text files
+        run: python tools/utf8_gate.py
+
   # Conditional Python lint
   python-lint:
     name: Python lint (if any .py present)

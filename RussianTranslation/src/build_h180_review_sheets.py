@@ -85,23 +85,22 @@ def write_sheet(slug, cfg, items):
     # emitter — same localStorage key scheme as the hand-rolled donor template,
     # so prior in-browser votes survive.
     config = standard_config(
-        save_as="RussianTranslation\\pwg_ru\\eval\\h180_%s.decisions.json" % slug)
+        save_as="RussianTranslation\\pwg_ru\\eval\\h180_{}.decisions.json".format(slug))
     config.update(cfg)
     config["generated"] = GENERATED
     # H3103/U6: reviewer chrome (download/save buttons, keyboard hints, timer
     # strings) via RU_UI_STRINGS; save_banner excluded from the preset (bakes
     # in sheet_id/save_as), built here per its docstring.
     config["ui_strings"] = dict(RU_UI_STRINGS, save_banner=(
-        '&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> '
-        '&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> '
-        'внутри файла — <code>%s</code> — так следующая сессия узнаёт, к какому '
-        'листу относятся эти решения).'
-        % (esc(config["sheet_id"]), esc(config["save_as"]), esc(config["sheet_id"]))))
+        '&#128229; Ваш экспорт скачивается как <code>{}_decisions.json</code> '
+        '&rarr; сохраните его в <code>{}</code> (значение <code>sheet_id</code> '
+        'внутри файла — <code>{}</code> — так следующая сессия узнаёт, к какому '
+        'листу относятся эти решения).'.format(esc(config["sheet_id"]), esc(config["save_as"]), esc(config["sheet_id"]))))
     # H1650/H1649: screening banner required (csl-pyutil ≥0.8.0)
     sc = screening_block(
         deterministic=0, lookup=0, agent=0, human=len(items),
         evidence_path="RussianTranslation/pwg_ru/SCREENING_H1650.md",
-        rules=["citation_tm", "h180-%s" % slug],
+        rules=["citation_tm", "h180-{}".format(slug)],
     )
     doc = render_review_sheet(items, config, extras=True, screening=sc)
     # H1404 binding standard: stamp the content_hash into every export site and

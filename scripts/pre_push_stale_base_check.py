@@ -314,7 +314,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "tools"))
 try:
-    from generated_artifact_paths import GENERATED_SINGLE_WRITER_PATHS  # noqa: E402
+    from generated_artifact_paths import GENERATED_SINGLE_WRITER_PATHS
 except ImportError:
     # H4348: this file is vendored (cologne_batch_deploy.py, prepush-guard row)
     # into 14 sibling repos that never carry tools/generated_artifact_paths.py --
@@ -332,7 +332,7 @@ except ImportError:
 # design: a missing/broken logger degrades to exactly the old behaviour.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 try:
-    from guard_firing_log import log_firing  # noqa: E402
+    from guard_firing_log import log_firing
 except Exception:  # noqa: SE3 -- telemetry is optional; the guard is not
     log_firing = None
 
@@ -355,7 +355,7 @@ for _gate_dir in (Path(__file__).resolve().parent,
     if _gate_file.exists():
         try:
             sys.path.insert(0, str(_gate_dir))
-            import guard_escape_gate  # noqa: E402
+            import guard_escape_gate
         except Exception:  # noqa: SE3 -- advisory layer, never fatal
             guard_escape_gate = None
         break
@@ -372,9 +372,9 @@ def escape_first_line(human_line: str) -> str:
     """
     if guard_escape_gate is None or guard_escape_gate.agent_caller() is None:
         return human_line
-    return ("%s -- LOCAL guard refusal, not a moved remote tip. Retrying cannot "
+    return ("{} -- LOCAL guard refusal, not a moved remote tip. Retrying cannot "
             "clear it, and the override is a HUMAN's to issue -- see the end of "
-            "this banner." % REFUSAL_MARKER)
+            "this banner.".format(REFUSAL_MARKER))
 
 
 GATE_INERT_NOTE = (
@@ -400,12 +400,12 @@ def escape_paragraph(human_line: str) -> str:
     doctrine as the pre-push hook's own "fail-open, but never silently".
     """
     if guard_escape_gate is None:
-        return "%s\n%s" % (human_line, GATE_INERT_NOTE % "import failed at startup")
+        return "{}\n{}".format(human_line, GATE_INERT_NOTE % "import failed at startup")
     try:
         guard_escape_gate.record_refusal(ESCAPE_ENV, "Uprava", REFUSAL_MARKER)
         return guard_escape_gate.refusal_hint(ESCAPE_ENV, "Uprava", human_line=human_line)
     except Exception as exc:  # noqa: SE3
-        return "%s\n%s" % (human_line, GATE_INERT_NOTE % ("raised %s" % type(exc).__name__))
+        return "{}\n{}".format(human_line, GATE_INERT_NOTE % ("raised {}".format(type(exc).__name__)))
 
 ESCAPE_ENV = "ALLOW_STALE_BASE_PUSH"
 STRICT_ENV = "STALE_BASE_PUSH_STRICT"
@@ -472,7 +472,7 @@ def git(*args: str, check: bool = False) -> str:
         errors="replace",
     )
     if check and proc.returncode != 0:
-        raise RuntimeError("git %s failed: %s" % (" ".join(args), proc.stderr.strip()))
+        raise RuntimeError("git {} failed: {}".format(" ".join(args), proc.stderr.strip()))
     return proc.stdout
 
 
@@ -539,11 +539,11 @@ def blob_lines(ref: str, path: str) -> list:
     registry bookkeeping, expired claim rows, class-5 near match) silently
     failed for the two thousand lines after it.
     """
-    return git("show", "%s:%s" % (ref, path)).split("\n")
+    return git("show", "{}:{}".format(ref, path)).split("\n")
 
 
 def pushed_commits(remote_ref: str, local_ref: str) -> set[str]:
-    out = git("rev-list", "%s..%s" % (remote_ref, local_ref))
+    out = git("rev-list", "{}..{}".format(remote_ref, local_ref))
     return {line.strip() for line in out.splitlines() if line.strip()}
 
 
@@ -614,7 +614,7 @@ def blame_map(remote_ref: str, path: str,
         )
     except subprocess.TimeoutExpired as exc:
         raise BlameTimeout(
-            "%s exceeded %ss" % (path, timeout_seconds)
+            "{} exceeded {}s".format(path, timeout_seconds)
         ) from exc
     out = proc.stdout
     result: dict[int, list] = {}
@@ -706,11 +706,11 @@ def changelog_tag_drift(remote_ref: str, local_ref: str,
             touched = [n for n in added if b0 <= n <= b1]
             if not touched:
                 continue  # untouched section: never diffed (170+ sections must not cost)
-            tag = "v%s" % ver.split()[0].lstrip("v")
+            tag = "v{}".format(ver.split()[0].lstrip("v"))
             if not git("rev-parse", "--verify", "--quiet",
-                       "refs/tags/%s" % tag).strip():
+                       "refs/tags/{}".format(tag)).strip():
                 continue  # [Unreleased], untagged versions: allowed by design
-            tag_blob = git("show", "%s:%s" % (tag, path))
+            tag_blob = git("show", "{}:{}".format(tag, path))
             if not tag_blob.strip():
                 continue  # file absent at the tag: unverifiable, fail open
             tag_sections = {v: (s0, s1) for v, s0, s1 in
@@ -741,9 +741,9 @@ def report_tag_drift(findings: list[dict]) -> None:
     total = sum(len(f["lines"]) for f in findings)
     e = sys.stderr
     print("", file=e)
-    print("%s — LOCAL guard refusal, not a moved remote tip." % TAG_DRIFT_MARKER,
+    print("{} — LOCAL guard refusal, not a moved remote tip.".format(TAG_DRIFT_MARKER),
           file=e)
-    print("  Override:  %s=1 git push ..." % TAG_DRIFT_ENV, file=e)
+    print("  Override:  {}=1 git push ...".format(TAG_DRIFT_ENV), file=e)
     print("PUSH BLOCKED — this push adds or changes %d line(s) inside "
           "CHANGELOG.md section(s) already published under a pushed tag, in "
           "%d section(s)." % (total, len(findings)), file=e)
@@ -753,8 +753,8 @@ def report_tag_drift(findings: list[dict]) -> None:
     print("", file=e)
     shown = 0
     for f in findings:
-        print("  %s" % f["path"], file=e)
-        print("      %s  (tag %s)" % (f["heading"], f["tag"]), file=e)
+        print("  {}".format(f["path"]), file=e)
+        print("      {}  (tag {})".format(f["heading"], f["tag"]), file=e)
         for ln, kind in f["lines"]:
             if shown >= MAX_LISTED:
                 break
@@ -766,7 +766,7 @@ def report_tag_drift(findings: list[dict]) -> None:
             break
     print("", file=e)
     print("If the change IS deliberate (fixing the section's prose, never its "
-          "meaning):  %s=1 git push ..." % TAG_DRIFT_ENV, file=e)
+          "meaning):  {}=1 git push ...".format(TAG_DRIFT_ENV), file=e)
     print("", file=e)
 
 
@@ -820,7 +820,7 @@ def changelog_structure_findings(text: str) -> list[dict]:
     for a, b in zip(ranked, ranked[1:]):
         if not (a[0] < b[0]):
             findings.append({"kind": "order-violation",
-                             "version": "%s then %s" % (a[1], b[1]),
+                             "version": "{} then {}".format(a[1], b[1]),
                              "line": b[2], "first_line": a[2]})
     return findings
 
@@ -843,7 +843,7 @@ def changelog_structure_path_findings(remote_ref: str, local_ref: str,
     for path in changed_paths(remote_ref, local_ref)[:max_paths]:
         if posix_basename(path) not in CHANGELOG_BASENAMES:
             continue
-        pushed = git("show", "%s:%s" % (local_ref, path))
+        pushed = git("show", "{}:{}".format(local_ref, path))
         if not pushed.strip():
             continue  # file deleted in this push: not this check's class
         f = changelog_structure_findings(pushed)
@@ -855,9 +855,9 @@ def changelog_structure_path_findings(remote_ref: str, local_ref: str,
 def report_structure_drift(findings: list[dict], path: str) -> None:
     e = sys.stderr
     print("", file=e)
-    print("%s — LOCAL guard refusal, not a moved remote tip." % TAG_DRIFT_MARKER,
+    print("{} — LOCAL guard refusal, not a moved remote tip.".format(TAG_DRIFT_MARKER),
           file=e)
-    print("  Override:  %s=1 git push ..." % TAG_DRIFT_ENV, file=e)
+    print("  Override:  {}=1 git push ...".format(TAG_DRIFT_ENV), file=e)
     print("PUSH BLOCKED — %s is structurally broken in this push: "
           "%d finding(s)." % (path, len(findings)), file=e)
     print("FINDINGS (29-08-2026 #2335 collision): a duplicated `## [v]` "
@@ -876,7 +876,7 @@ def report_structure_drift(findings: list[dict], path: str) -> None:
         shown += 1
     print("", file=e)
     print("If the change IS deliberate (repairing the leaked layout):  "
-          "%s=1 git push ..." % TAG_DRIFT_ENV, file=e)
+          "{}=1 git push ...".format(TAG_DRIFT_ENV), file=e)
     print("", file=e)
 
 
@@ -890,7 +890,7 @@ def surviving_text(local_ref: str, path: str) -> set[str]:
     real deletion. (Found by dogfooding: the guard blocked its own landing commit for
     exactly this, which is the false-positive class that gets a blocking hook disabled.)
     """
-    out = git("show", "%s:%s" % (local_ref, path))
+    out = git("show", "{}:{}".format(local_ref, path))
     return {ln.strip() for ln in out.splitlines() if ln.strip()}
 
 
@@ -968,7 +968,7 @@ def cross_file_survivors(remote_ref: str, local_ref: str, path: str) -> set[str]
     key = path.replace("\\", "/").lower()
     sibling = CROSS_FILE_ARCHIVE_PAIRS.get(key)
     if sibling:
-        out = git("show", "%s:%s" % (local_ref, sibling))
+        out = git("show", "{}:{}".format(local_ref, sibling))
         return {ln.strip() for ln in out.splitlines() if ln.strip()}
     if key in REGISTRY_RELOCATION_PAIR:
         return set(added_line_texts(remote_ref, local_ref,
@@ -1158,7 +1158,7 @@ def is_mint_stub(remote_ref: str, path: str) -> bool:
     """
     if "/handoffs/" not in "/" + path.replace("\\", "/"):
         return False
-    return STUB_MARKER in git("show", "%s:%s" % (remote_ref, path))
+    return STUB_MARKER in git("show", "{}:{}".format(remote_ref, path))
 
 
 # FINDINGS §457: the live mint_handoff.py claim subjects (checked against
@@ -1315,7 +1315,7 @@ def is_same_lane_close_prep(path: str, sha: str,
     toward silence.
     """
     norm = path.replace("\\", "/")
-    if "/handoffs/" not in "/%s" % norm:
+    if "/handoffs/" not in "/{}".format(norm):
         return False
     m = HID_RE.search(posix_basename(norm))
     if not m:
@@ -1528,7 +1528,7 @@ def pre_image_lines(sha: str, path: str) -> set[str] | None:
 
     None means unknowable here (no parent, no blob at that revision) — callers
     treat None as 'cannot prove this is a forward edit' and keep blocking."""
-    out = git("show", "%s~1:%s" % (sha, path))
+    out = git("show", "{}~1:{}".format(sha, path))
     if not out.strip():
         return None
     return {ln.strip() for ln in out.splitlines() if ln.strip()}
@@ -1710,7 +1710,7 @@ def scan(local_ref: str, remote_ref: str, recent_days: float,
         except BlameTimeout as exc:
             uncheckable[path] = {
                 "removed": len(removed),
-                "reason": "git blame timeout: %s" % exc,
+                "reason": "git blame timeout: {}".format(exc),
             }
             continue
         budget = [max_near_pairs]
@@ -1758,7 +1758,7 @@ def report_lane_warnings(warned: dict[str, list], e=None) -> None:
           "the file (same-lane close-prep, the H4265 shape; MG 06-09-2026 "
           "«Флип разрешить», GTD 0x):" % (LANE_WARN_MARKER, n_warn), file=e)
     for path, warns in warned.items():
-        print("  %s" % path, file=e)
+        print("  {}".format(path), file=e)
         for w in warns:
             print("      line %-6d added by %s (%s)" % (w["line"], w["sha"],
                                                         w["author"]), file=e)
@@ -1787,7 +1787,7 @@ def report_non_ff(found: dict[str, list], remote_ref: str,
           "that is not this commit's parent — refetch, rebuild on the current "
           "tip, and push again." % (NON_FF_MARKER, remote_ref, total), file=e)
     for path, hits in sorted(found.items()):
-        print("  %s" % path, file=e)
+        print("  {}".format(path), file=e)
         for line, sha, author in hits[:5]:
             print("      line %-6d added by %s (%s)" % (line, sha, author), file=e)
         if len(hits) > 5:
@@ -1836,9 +1836,8 @@ def report(found: dict[str, list], modified: dict[str, list],
     # budget re-asking a question this refusal never depends on the remote tip
     # to answer. This is always a LOCAL hook decision (a genuine non-fast-forward
     # never reaches this script — git itself rejects it first).
-    print(escape_first_line("%s — LOCAL guard refusal, not a moved remote tip."
-                            "  Override:  %s=1 git push ..."
-                            % (REFUSAL_MARKER, ESCAPE_ENV)), file=e)
+    print(escape_first_line("{} — LOCAL guard refusal, not a moved remote tip."
+                            "  Override:  {}=1 git push ...".format(REFUSAL_MARKER, ESCAPE_ENV)), file=e)
     print("PUSH BLOCKED — this push deletes %d line(s) that landed on %s"
           % (total, remote_ref), file=e)
     print("within the last %g day(s), in %d file(s), and your commits never "
@@ -1846,7 +1845,7 @@ def report(found: dict[str, list], modified: dict[str, list],
     print("", file=e)
     shown = 0
     for path, hits in found.items():
-        print("  %s" % path, file=e)
+        print("  {}".format(path), file=e)
         for ln, sha, author in hits:
             if shown >= MAX_LISTED:
                 break
@@ -1860,7 +1859,7 @@ def report(found: dict[str, list], modified: dict[str, list],
         print("Also warned (class 10 same-lane close-prep — listed, not blocked, "
               "but this push is refused for the OTHER lines above):", file=e)
         for path, warns in warned.items():
-            print("  %s" % path, file=e)
+            print("  {}".format(path), file=e)
             for w in warns:
                 print("      line %-6d added by %s (%s)" % (w["line"], w["sha"],
                                                             w["author"]), file=e)
@@ -1871,13 +1870,12 @@ def report(found: dict[str, list], modified: dict[str, list],
     print("checkout — the branch ref moved, the working tree did not).", file=e)
     print("", file=e)
     print("If you did NOT mean to touch those lines, your file content is stale:", file=e)
-    print("    git fetch origin && git rebase %s" % remote_ref, file=e)
+    print("    git fetch origin && git rebase {}".format(remote_ref), file=e)
     print("and if `git status` lists files you never edited, do NOT `git add -A` and", file=e)
     print("do NOT lift a patch out of that tree (a patch encodes its base, FINDINGS", file=e)
-    print("§308) — rebuild on a fresh worktree off %s and re-apply your edits." % remote_ref, file=e)
+    print("§308) — rebuild on a fresh worktree off {} and re-apply your edits.".format(remote_ref), file=e)
     print("", file=e)
-    print(escape_paragraph("If the revert IS deliberate:  %s=1 git push ..."
-                           % ESCAPE_ENV), file=e)
+    print(escape_paragraph("If the revert IS deliberate:  {}=1 git push ...".format(ESCAPE_ENV)), file=e)
     if truncated:
         print("", file=e)
         print("NOTE: only the first %d changed paths were scanned (--max-paths)." % max_paths, file=e)
@@ -1897,21 +1895,21 @@ def report_circuit_break(uncheckable: dict[str, dict], ref_ok: bool,
     print("%s — %d path(s) SKIPPED by the work bound, UNCHECKED at line level "
           "(FINDINGS §543, §605)." % (CIRCUIT_MARKER, len(uncheckable)), file=e)
     for path, info in uncheckable.items():
-        print("  %s: %s" % (path, info["reason"]), file=e)
+        print("  {}: {}".format(path, info["reason"]), file=e)
     if ref_ok:
-        print("  Degraded to ref-level verification: %s IS an ancestor of the "
+        print("  Degraded to ref-level verification: {} IS an ancestor of the "
               "pushed tip (clean fast-forward) — allowed, but these paths were "
-              "NOT scanned for silent line-level reverts." % remote_ref, file=e)
+              "NOT scanned for silent line-level reverts.".format(remote_ref), file=e)
     else:
-        print("  PUSH BLOCKED — ref-level verification FAILED: %s is NOT an "
+        print("  PUSH BLOCKED — ref-level verification FAILED: {} is NOT an "
               "ancestor of the pushed tip (forced/non-fast-forward update), "
               "and a bulk rewrite of unscanned paths on such an update is "
-              "refused fail-closed." % remote_ref, file=e)
-        print("  " + escape_first_line("Override:  %s=1 git push ..." % ESCAPE_ENV),
+              "refused fail-closed.".format(remote_ref), file=e)
+        print("  " + escape_first_line("Override:  {}=1 git push ...".format(ESCAPE_ENV)),
               file=e)
     print("  If this push might revert ANOTHER SESSION's lines on those paths, "
           "verify by hand first:", file=e)
-    print("    git blame --line-porcelain %s -- <path>" % remote_ref, file=e)
+    print("    git blame --line-porcelain {} -- <path>".format(remote_ref), file=e)
     print("", file=e)
 
 

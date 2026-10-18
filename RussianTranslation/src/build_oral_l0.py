@@ -184,8 +184,7 @@ def detect_source_type(transcript_text, has_companion_pdf=False):
                              'why': 'Sanskrit-only transcript but NO companion PDF -> '
                                     'no Russian side to align; needs the handout/sample'}
 
-    return 'ambiguous', {**ev, 'why': 'no clear Sa/Ru shape (ru_share=%.2f sa_share=%.2f)'
-                                      % (ru_share, sa_share)}
+    return 'ambiguous', {**ev, 'why': 'no clear Sa/Ru shape (ru_share={:.2f} sa_share={:.2f})'.format(ru_share, sa_share)}
 
 
 # ------------------------------------------------------------ (2) PDF-role classify
@@ -232,8 +231,8 @@ def companion_to_mdx(path):
         with open(path, encoding='utf-8') as f:
             return f.read()
     raise RuntimeError(
-        'convert %s with the /docx-to-md skill first (-> .mdx); build_oral_l0 does not '
-        're-implement PDF/DOCX extraction' % path)
+        'convert {} with the /docx-to-md skill first (-> .mdx); build_oral_l0 does not '
+        're-implement PDF/DOCX extraction'.format(path))
 
 
 # --------------------------------------------------- (3) per-shape pair extractors
@@ -340,10 +339,10 @@ def ingest(transcript_path, work, out_path, pdf_path=None, sample=None):
     text = open(transcript_path, encoding='utf-8').read()
     pdf_text = companion_to_mdx(pdf_path) if pdf_path else None
     st, ev = detect_source_type(text, has_companion_pdf=bool(pdf_path))
-    print('detect: %s -- %s' % (st, ev.get('why')))
+    print('detect: {} -- {}'.format(st, ev.get('why')))
     if st == 'ambiguous':
         sys.exit('ambiguous source shape -> route this transcript to the human '
-                 'reviewable sample; not auto-ingested (%s)' % ev.get('why'))
+                 'reviewable sample; not auto-ingested ({})'.format(ev.get('why')))
 
     if st == 'bi':
         pairs, orality = pairs_bilingual(text), ORALITY_RECITED
@@ -353,7 +352,7 @@ def ingest(transcript_path, work, out_path, pdf_path=None, sample=None):
         if not pdf_text:
             sys.exit('sa+pdf shape needs --pdf (the Russian handout)')
         role, rev = classify_pdf_role(pdf_text)
-        print('pdf-role: %s -- %s' % (role, rev.get('why')))
+        print('pdf-role: {} -- {}'.format(role, rev.get('why')))
         if role == 'sanskrit-source':
             sys.exit('companion is the Sanskrit source, not a Russian rendering -> no '
                      'Russian side to align from this PDF (needs an edited-ru handout)')
@@ -364,17 +363,17 @@ def ingest(transcript_path, work, out_path, pdf_path=None, sample=None):
     extra = {'orality': orality, 'source_type': st}
     rows, kept, dropped = ingest_oral.to_corpus_rows(pairs, work, extra=extra)
     if not rows:
-        sys.exit('0 valid oral pairs after the never-invent guards (shape=%s). Check '
-                 'the Russian side carries Cyrillic / the alignment produced pairs.' % st)
+        sys.exit('0 valid oral pairs after the never-invent guards (shape={}). Check '
+                 'the Russian side carries Cyrillic / the alignment produced pairs.'.format(st))
     os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
     with open(out_path, 'w', encoding='utf-8', newline='\n') as out:
         for r in rows:
             out.write(json.dumps(r, ensure_ascii=False) + '\n')
-    print('build_oral_l0: shape=%s orality=%s -> %s' % (st, orality, out_path))
+    print('build_oral_l0: shape={} orality={} -> {}'.format(st, orality, out_path))
     print('  %d pairs kept, %d dropped (guard), %d seg-rows, work=%s'
           % (kept, dropped, len(rows), work))
-    print('  next: copy to SamudraManthanam/web/corpus_builder/jsonl/%s.jsonl, then '
-          '`python build_l0.py build --work %s`' % (work, work))
+    print('  next: copy to SamudraManthanam/web/corpus_builder/jsonl/{}.jsonl, then '
+          '`python build_l0.py build --work {}`'.format(work, work))
     return 0
 
 
@@ -435,7 +434,7 @@ def selftest():
         and build_tmx.has_cyr(bp[0]['ru']), bp
     cp = pairs_ru_citation(FIX_RU_CIT)
     assert len(cp) >= 2 and all(build_tmx.has_cyr(p['ru']) for p in cp), cp
-    assert any(p['passage'] == '2.47' for p in cp), 'verse ref not captured: %s' % cp
+    assert any(p['passage'] == '2.47' for p in cp), 'verse ref not captured: {}'.format(cp)
     sp = pairs_sa_plus_pdf(FIX_SA_ONLY, FIX_PDF_EDITED_RU)
     assert len(sp) == 2 and sp[0]['passage'] == '2.47' \
         and sp[0]['align'] == 'placeholder-versekey', sp

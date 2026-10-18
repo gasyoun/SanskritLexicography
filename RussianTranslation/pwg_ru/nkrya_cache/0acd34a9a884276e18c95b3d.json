@@ -1,0 +1,642 @@
+{
+ "fetched_utc": "2026-09-24T15:20:11Z",
+ "request": {
+  "endpoint": "/lex-gramm/concordance",
+  "method": "POST",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lexGramm": {
+    "sectionValues": [
+     {
+      "conditionValues": [
+       {
+        "fieldName": "disambmod",
+        "text": {
+         "v": "main"
+        }
+       }
+      ],
+      "subsectionValues": [
+       {
+        "conditionValues": [
+         {
+          "fieldName": "lex",
+          "text": {
+           "v": "проступиться"
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "params": {
+    "pageParams": {
+     "docsPerPage": 1,
+     "page": 0,
+     "snippetsPerDoc": 1
+    },
+    "seed": 5261
+   }
+  }
+ },
+ "response": {
+  "corpusStats": {
+   "sentenceCount": 34933864,
+   "textCount": 140804,
+   "wordUsageCount": 426186466
+  },
+  "groups": [
+   {
+    "docs": [
+     {
+      "info": {
+       "allExamplesNum": 5,
+       "docExplainInfo": {
+        "items": [
+         {
+          "parsingFields": [
+           {
+            "name": "author",
+            "value": [
+             {
+              "valString": {
+               "v": "И. С. Шмелев"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sex",
+            "value": [
+             {
+              "valString": {
+               "v": "муж"
+              }
+             }
+            ]
+           },
+           {
+            "name": "birthday",
+            "value": [
+             {
+              "valString": {
+               "v": "1873"
+              }
+             }
+            ]
+           },
+           {
+            "name": "header",
+            "value": [
+             {
+              "valString": {
+               "v": "Богомолье"
+              }
+             }
+            ]
+           },
+           {
+            "name": "created",
+            "value": [
+             {
+              "valString": {
+               "v": "1930-1931"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sphere",
+            "value": [
+             {
+              "valString": {
+               "v": "художественная"
+              }
+             }
+            ]
+           },
+           {
+            "name": "genre_fi",
+            "value": [
+             {
+              "valString": {
+               "v": "документальная проза"
+              }
+             }
+            ]
+           },
+           {
+            "name": "chronotop",
+            "value": [
+             {
+              "valString": {
+               "v": "Россия: XIX век"
+              }
+             }
+            ]
+           },
+           {
+            "name": "type",
+            "value": [
+             {
+              "valString": {
+               "v": "повесть"
+              }
+             }
+            ]
+           },
+           {
+            "name": "style",
+            "value": [
+             {
+              "valString": {
+               "v": "сниженный"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sentences",
+            "value": [
+             {
+              "valString": {
+               "v": "4316"
+              }
+             }
+            ]
+           },
+           {
+            "name": "words",
+            "value": [
+             {
+              "valString": {
+               "v": "40802"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_age",
+            "value": [
+             {
+              "valString": {
+               "v": "н-возраст"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_level",
+            "value": [
+             {
+              "valString": {
+               "v": "н-уровень"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_size",
+            "value": [
+             {
+              "valString": {
+               "v": "очень большая"
+              }
+             }
+            ]
+           },
+           {
+            "name": "medium",
+            "value": [
+             {
+              "valString": {
+               "v": "книга"
+              }
+             }
+            ]
+           },
+           {
+            "name": "source",
+            "value": [
+             {
+              "valString": {
+               "v": "Шмелев И. С. Избранные сочинения: в 2-х тт. Т.2 Рассказы. Богомолье. Лето Господне. М.: Литература, 1999"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publ_year",
+            "value": [
+             {
+              "valString": {
+               "v": "1999"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publication",
+            "value": [
+             {
+              "valString": {
+               "v": "Шмелев И. С. Избранные сочинения: в 2-х тт. Т.2"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publisher",
+            "value": [
+             {
+              "valString": {
+               "v": "Литература"
+              }
+             }
+            ]
+           },
+           {
+            "name": "subcorpus",
+            "value": [
+             {
+              "valString": {
+               "v": "ПК письменных текстов"
+              }
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       "homonymyStatus": "auto",
+       "showAllExamples": true,
+       "source": {
+        "docId": "source/pre1950/xx-1/shmelev/bogomolie.xml"
+       },
+       "title": "И. С. Шмелев. Богомолье (1930-1931)"
+      },
+      "snippetGroups": [
+       {
+        "snippets": [
+         {
+          "langInfo": {
+           "lang": "rus"
+          },
+          "nextSnippetSource": {},
+          "prevSnippetSource": {},
+          "sequences": [
+           {
+            "words": [
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136
+              },
+              "text": "Вот",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 1
+              },
+              "text": "тот",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 2
+              },
+              "text": "старец",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 3
+              },
+              "text": "благословил",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 4
+              },
+              "text": "их",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 5
+              },
+              "text": "на",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 6
+              },
+              "text": "хорошую",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 7
+              },
+              "text": "роботку",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 8
+              },
+              "text": "и",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 9
+              },
+              "text": "говорит",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 10
+              },
+              "text": "пареньку",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 11
+              },
+              "text": "Мартыну",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": "-",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 12
+              },
+              "text": "то",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ":  «",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 13
+              },
+              "text": "Будет",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 14
+              },
+              "text": "тебе",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 15
+              },
+              "text": "талан",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 16
+              },
+              "text": "от",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 17
+              },
+              "text": "Бога",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 18
+              },
+              "text": "только",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 136,
+               "wordId": 19
+              },
+              "text": "не",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "source": {
+               "sentId": 136,
+               "wordId": 20
+              },
+              "text": "проступись",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": "!»  ",
+              "type": "PLAIN"
+             }
+            ]
+           }
+          ],
+          "source": {
+           "docSource": {
+            "docId": "source/pre1950/xx-1/shmelev/bogomolie.xml"
+           },
+           "end": 140,
+           "start": 133
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "pagination": {
+   "maxAvailablePage": 22,
+   "totalPageCount": 22
+  },
+  "queryStats": {
+   "textCount": 22,
+   "wordUsageCount": 28
+  },
+  "sorting": {
+   "currentSorting": "grstd"
+  },
+  "subcorpStats": {}
+ }
+}

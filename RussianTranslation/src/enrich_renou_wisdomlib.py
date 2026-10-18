@@ -125,7 +125,7 @@ def run(path, wl_path, out, report_only):
     print('  states wl contributed ALONE (no ls/dcs):',
           {s: stats['wl_only'].get(s, 0) for s in STATES})
     if tmp:
-        print('→ %s' % out)
+        print('→ {}'.format(out))
 
 
 def main():
@@ -145,7 +145,7 @@ def main():
         elif a == '--report':
             report_only = True; i += 1
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
     if not wl_path:
         raise SystemExit('require --wl word_traditions.jsonl')
     if out is None and not report_only:

@@ -22,7 +22,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import parity_restamp as pr  # noqa: E402
+import parity_restamp as pr
 
 STAMP = ('H4943 (16-09-2026, Sonnet 5 `claude-sonnet-5`): re-derived, SHARED stands. '
          'coordinator.py drifted solely because `claim`, `prepare`, `prepare_requeue` and '

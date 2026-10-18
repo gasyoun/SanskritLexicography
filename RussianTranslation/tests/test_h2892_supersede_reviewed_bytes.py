@@ -29,8 +29,8 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import store_write  # noqa: E402
-from promote_final_cards import human_touched, merge_store_rows  # noqa: E402
+import store_write
+from promote_final_cards import human_touched, merge_store_rows
 
 #: A row a human has ruled on: named reviewer AND an out-of-machine status.
 #: Non-ASCII on purpose — a serializer that flips ensure_ascii would rewrite this
@@ -96,13 +96,12 @@ def test_supersede_without_override_leaves_reviewed_bytes_identical(tmp_path):
         [REVIEWED, MACHINE], promoted, override_reviewed=False)
 
     assert protected == [REVIEWED['subcard']], (
-        'the reviewed subcard must be refused, got protected=%r downgraded=%r'
-        % (protected, downgraded))
+        'the reviewed subcard must be refused, got protected={!r} downgraded={!r}'.format(protected, downgraded))
 
     _write(store, merged)
     after = _line_for(store, REVIEWED['subcard'])
     assert after == before, (
-        'the supersede rewrote the reviewed row.\nbefore: %r\nafter:  %r' % (before, after))
+        'the supersede rewrote the reviewed row.\nbefore: {!r}\nafter:  {!r}'.format(before, after))
 
     landed = json.loads(_line_for(store, MACHINE['subcard']).decode('utf-8'))
     assert landed['ru'] == 'новый машинный перевод', (
@@ -144,7 +143,7 @@ def test_every_arm_of_the_predicate_protects_the_bytes(tmp_path, stamp):
     row.pop('reviewer', None)
     row.pop('review_status', None)
     row.update(stamp)
-    assert human_touched(row), 'fixture must be human_touched: %r' % stamp
+    assert human_touched(row), 'fixture must be human_touched: {!r}'.format(stamp)
 
     store = str(tmp_path / 'pwg_ru_translated.jsonl')
     _write(store, [row])

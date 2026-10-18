@@ -39,8 +39,8 @@ RARE_CLASS_QUOTA = 20   # guaranteed oversample of the rare member_count_diff cl
 GENERATED = '26-07-2026'
 
 sys.path.insert(0, SRC)
-from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config  # noqa: E402
-from review_binding import stamp, write_lock  # noqa: E402
+from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config
+from review_binding import stamp, write_lock
 
 
 def _members(s):
@@ -132,7 +132,7 @@ def build_frame():
     freq = load_freq()
     rows, n_dropped = dedupe_by_card_id(load_differs())
     if n_dropped:
-        print('deduped %d row(s) sharing a (k1, hom) card id' % n_dropped,
+        print(f'deduped {n_dropped:d} row(s) sharing a (k1, hom) card id',
               file=sys.stderr)
     frame = []
     for r in rows:
@@ -213,28 +213,28 @@ def build_items(sample):
     items = []
     for r in sample:
         k1, hom = r['k1'], r['hom']
-        iid = '%s~~h%s' % (k1, hom) if hom else k1
+        iid = '{}~~h{}'.format(k1, hom) if hom else k1
         display = slp1_iast(k1)
         href = pwg_entry_href(k1)
-        title = display + (' (h%s)' % hom if hom else '')
+        title = display + (' (h{})'.format(hom) if hom else '')
         badges = [r['vs_index_class'], r['length_bucket'], r['freq_bucket']]
         if r.get('freq_count'):
-            badges.append('DCS n=%s' % r['freq_count'])
+            badges.append('DCS n={}'.format(r['freq_count']))
         question = (
-            '<p><b>PWG-членение:</b> <code>%s</code></p>'
-            '<p><b>Членение в указателе (index):</b> <code>%s</code></p>'
-            '<p style="opacity:.75">Класс расхождения: <code>%s</code></p>'
-        ) % (_esc(r['pwg_members']) or '&mdash;', _esc(r['index_members']) or '&mdash;',
+            '<p><b>PWG-членение:</b> <code>{}</code></p>'
+            '<p><b>Членение в указателе (index):</b> <code>{}</code></p>'
+            '<p style="opacity:.75">Класс расхождения: <code>{}</code></p>'
+        ).format(_esc(r['pwg_members']) or '&mdash;', _esc(r['index_members']) or '&mdash;',
              _esc(r['vs_index_class']))
         panels = []
         extra = []
         if r.get('deriv_suffix'):
-            extra.append('<b>Суффикс:</b> %s (%s), база: %s' % (
+            extra.append('<b>Суффикс:</b> {} ({}), база: {}'.format(
                 _esc(r['deriv_suffix']), _esc(r.get('deriv_base', '')), _esc(r.get('deriv_base', ''))))
         if r.get('panini_sutras'):
-            extra.append('<b>Пāṇini:</b> %s' % _esc(r['panini_sutras']))
+            extra.append('<b>Пāṇini:</b> {}'.format(_esc(r['panini_sutras'])))
         if r.get('ganas'):
-            extra.append('<b>Gaṇa:</b> %s' % _esc(r['ganas']))
+            extra.append('<b>Gaṇa:</b> {}'.format(_esc(r['ganas'])))
         if extra:
             panels.append(('Дополнительно (deriv/pāṇini/gaṇa)', '<br>'.join(extra)))
         item = {
@@ -269,7 +269,7 @@ def render_sheet(sample, generated):
         'filters': [('member_count_diff', 'Разное число членов'),
                     ('same_count_diff_split', 'Одно число, другое членение')],
         'generated': generated,
-        'save_as': r'RussianTranslation\review\%s_decisions.json' % SHEET_ID,
+        'save_as': r'RussianTranslation\review\{}_decisions.json'.format(SHEET_ID),
     }
     config.update(standard_config(save_as=config['save_as']))
     return render_review_sheet(items, config)
@@ -295,13 +295,13 @@ def selftest():
     assert freq_bucket('x', {'x': 50}) == 'high(>=10)'
     fake = []
     for i in range(500):
-        fake.append({'k1': 'k%d' % i, 'hom': '', 'vs_index_class': 'same_count_diff_split',
+        fake.append({'k1': f'k{i:d}', 'hom': '', 'vs_index_class': 'same_count_diff_split',
                      'length_bucket': ['short(<=8)', 'medium(9-10)', 'long(>=11)'][i % 3],
                      'freq_bucket': ['no_dcs_freq', 'low(1-2)', 'mid(3-9)', 'high(>=10)'][i % 4],
                      'freq_count': '', 'panini_sutras': '', 'deriv_base': '', 'deriv_suffix': '', 'ganas': '',
                      'pwg_members': 'a + b', 'index_members': 'a + c'})
     for i in range(20):
-        fake.append({'k1': 'rare%d' % i, 'hom': '', 'vs_index_class': 'member_count_diff',
+        fake.append({'k1': f'rare{i:d}', 'hom': '', 'vs_index_class': 'member_count_diff',
                      'length_bucket': 'short(<=8)', 'freq_bucket': 'no_dcs_freq', 'freq_count': '',
                      'panini_sutras': '', 'deriv_base': '', 'deriv_suffix': '', 'ganas': '',
                      'pwg_members': 'a + b + c', 'index_members': 'a + b'})
@@ -350,9 +350,9 @@ def main():
         lock_path = write_lock(SHEET_ID, chash, ids, GENERATED, gate='G6-compound',
                                source_html=SHEET_HTML)
         print('wrote %d-row sample frame -> %s' % (len(sample), SAMPLE_FRAME_TSV))
-        print('wrote review sheet -> %s' % SHEET_HTML)
-        print('  %s' % chash)
-        print('  lock -> %s' % lock_path)
+        print('wrote review sheet -> {}'.format(SHEET_HTML))
+        print('  {}'.format(chash))
+        print('  lock -> {}'.format(lock_path))
         return
     sys.exit('usage: compound_differs_review_sample.py --report | --write | --selftest')
 

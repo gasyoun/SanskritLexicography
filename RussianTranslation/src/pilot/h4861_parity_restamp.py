@@ -34,7 +34,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import parity_restamp as pr  # noqa: E402
+import parity_restamp as pr
 
 ENTRY_ID = 'deferred_monsters_ledger_sandbox_h4861'
 STAMP = ('H4861 (14-09-2026, Opus 5 `claude-opus-5`): re-derived, SHARED stands. The drift is '

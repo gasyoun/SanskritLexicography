@@ -121,7 +121,7 @@ def main():
     a = ap.parse_args()
 
     dcs = a.dcs or find_up('VisualDCS', 'src', 'DCS-data-2026', 'dcs_full.sqlite')
-    con = sqlite3.connect('file:%s?mode=ro' % dcs.replace('\\', '/'), uri=True)
+    con = sqlite3.connect('file:{}?mode=ro'.format(dcs.replace('\\', '/')), uri=True)
 
     if a.text:
         names = list(dict.fromkeys(a.text))
@@ -138,7 +138,7 @@ def main():
     for nm in names:
         p = profile(con, nm)
         if p is None:
-            print('NOT IN DCS: %s' % nm, file=sys.stderr)
+            print('NOT IN DCS: {}'.format(nm), file=sys.stderr)
             continue
         out[nm] = p
         print('%-34s %7s tok %5d ch  lead<=%-5s ctr %5.1f%% (max %-5s) %s'

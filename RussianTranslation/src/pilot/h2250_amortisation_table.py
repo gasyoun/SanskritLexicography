@@ -113,7 +113,7 @@ def main():
 
     found = batches(args.root)
     if not found:
-        print('no envelopes under %s' % args.root, file=sys.stderr)
+        print('no envelopes under {}'.format(args.root), file=sys.stderr)
         return 2
 
     for name, rows in found.items():
@@ -149,8 +149,7 @@ def main():
                      '-' if r['gap_s'] is None else r['gap_s'],
                      r['create'], r['read'], r['create'] + r['read'],
                      r['api_ms'], r['output'], r['verdict']))
-    print('\nsubtypes seen: %s'
-          % sorted({r['subtype'] for rows in found.values() for r in rows}))
+    print('\nsubtypes seen: {}'.format(sorted({r['subtype'] for rows in found.values() for r in rows})))
     return 0
 
 

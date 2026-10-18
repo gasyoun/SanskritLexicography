@@ -111,7 +111,7 @@ def try_repairs(ll, tag):
     attrs, body = m.group(1), m.group(2)
 
     def attempt(b, trail):
-        cand = "<ls%s>%s</ls>" % (attrs, b)
+        cand = "<ls{}>{}</ls>".format(attrs, b)
         st, href = ll.resolve(cand)
         return (("+".join(trail), href) if st == HIT else None)
 
@@ -193,9 +193,9 @@ def write_report(r):
 
 def main():
     if not os.path.exists(STORE):
-        print("store not found: %s — set PWG_RU_DATA_ROOT" % STORE)
+        print("store not found: {} — set PWG_RU_DATA_ROOT".format(STORE))
         return 1
-    print("scanning + repairing %s ..." % STORE)
+    print("scanning + repairing {} ...".format(STORE))
     r = scan()
     m = max(r["mintable"], 1)
     print("\n<ls> occurrences       : %d" % r["total"])
@@ -215,7 +215,7 @@ def main():
     for s, n in r["unrepaired_by_source"].most_common(15):
         print("  %-18s %5d" % (s, n))
     a, b = write_report(r)
-    print("\nwrote %s\n      %s" % (a, b))
+    print("\nwrote {}\n      {}".format(a, b))
     return 0
 
 
@@ -238,13 +238,13 @@ def selftest():
     for tag, want in cases:
         got = try_repairs(ll, tag)
         check(got is not None and got[0].split("+")[0] == want,
-              "%s -> %s" % (tag[:38], (got[0] + " " + got[1][:44]) if got else "NO REPAIR"))
+              "{} -> {}".format(tag[:38], (got[0] + " " + got[1][:44]) if got else "NO REPAIR"))
 
     # a repair must never rescue a work that genuinely has no viewer
     for tag in ("<ls>TS. PRĀT. 3,10.</ls>", "<ls>AV. PRĀT. 1,1.</ls>",
                 "<ls>SUŚR. 1,2,3</ls>", "<ls>DAŚAK. 19,8</ls>"):
         check(try_repairs(ll, tag) is None,
-              "no false rescue for %s (distinct work, no viewer)" % tag[:32])
+              "no false rescue for {} (distinct work, no viewer)".format(tag[:32]))
 
     # an already-resolving citation is never touched
     st, href = ll.resolve("<ls>MBH. 1,71,17.</ls>")

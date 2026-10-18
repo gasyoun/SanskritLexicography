@@ -49,11 +49,11 @@ if SRC not in sys.path:
 if PILOT not in sys.path:
     sys.path.insert(0, PILOT)
 
-import microstructure as M      # noqa: E402
-import dict_merge as dm         # noqa: E402
-import corpus_gate as cg        # noqa: E402
-from store_path import canonical_store   # noqa: E402
-from safe_filename import decode_safe_name   # noqa: E402
+import microstructure as M
+import dict_merge as dm
+import corpus_gate as cg
+from store_path import canonical_store
+from safe_filename import decode_safe_name
 
 # `output/` is a gitignored runtime dir that lives in the MAIN checkout; a linked worktree
 # has none. Resolve the frequency manifest the same way the store is resolved.
@@ -350,7 +350,7 @@ def main():
         'keys': [f['key1'] for f in picked],
         'detail': picked,
     }
-    out_path = os.path.join(HERE, 'H1210_ab100_worklist.%s.json' % a.date)
+    out_path = os.path.join(HERE, 'H1210_ab100_worklist.{}.json'.format(a.date))
     with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
         f.write('\n')

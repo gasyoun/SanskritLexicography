@@ -1,0 +1,491 @@
+{
+ "fetched_utc": "2026-09-24T16:16:19Z",
+ "request": {
+  "endpoint": "/lex-gramm/concordance",
+  "method": "POST",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lexGramm": {
+    "sectionValues": [
+     {
+      "conditionValues": [
+       {
+        "fieldName": "disambmod",
+        "text": {
+         "v": "main"
+        }
+       }
+      ],
+      "subsectionValues": [
+       {
+        "conditionValues": [
+         {
+          "fieldName": "lex",
+          "text": {
+           "v": "удостоверяться"
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "params": {
+    "pageParams": {
+     "docsPerPage": 1,
+     "page": 0,
+     "snippetsPerDoc": 1
+    },
+    "seed": 5261
+   }
+  }
+ },
+ "response": {
+  "corpusStats": {
+   "sentenceCount": 34933864,
+   "textCount": 140804,
+   "wordUsageCount": 426186466
+  },
+  "groups": [
+   {
+    "docs": [
+     {
+      "info": {
+       "allExamplesNum": 1,
+       "docExplainInfo": {
+        "items": [
+         {
+          "parsingFields": [
+           {
+            "name": "author",
+            "value": [
+             {
+              "valString": {
+               "v": "Ляна Шарова"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sex",
+            "value": [
+             {
+              "valString": {
+               "v": "жен"
+              }
+             }
+            ]
+           },
+           {
+            "name": "header",
+            "value": [
+             {
+              "valString": {
+               "v": "Трассовики"
+              }
+             }
+            ]
+           },
+           {
+            "name": "created",
+            "value": [
+             {
+              "valString": {
+               "v": "2003"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sphere",
+            "value": [
+             {
+              "valString": {
+               "v": "публицистика"
+              }
+             }
+            ]
+           },
+           {
+            "name": "topic",
+            "value": [
+             {
+              "valString": {
+               "v": "политика и общественная жизнь"
+              }
+             }
+            ]
+           },
+           {
+            "name": "type",
+            "value": [
+             {
+              "valString": {
+               "v": "статья"
+              }
+             }
+            ]
+           },
+           {
+            "name": "style",
+            "value": [
+             {
+              "valString": {
+               "v": "нейтральный"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sentences",
+            "value": [
+             {
+              "valString": {
+               "v": "97"
+              }
+             }
+            ]
+           },
+           {
+            "name": "words",
+            "value": [
+             {
+              "valString": {
+               "v": "1202"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_age",
+            "value": [
+             {
+              "valString": {
+               "v": "н-возраст"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_level",
+            "value": [
+             {
+              "valString": {
+               "v": "н-уровень"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_size",
+            "value": [
+             {
+              "valString": {
+               "v": "большая"
+              }
+             }
+            ]
+           },
+           {
+            "name": "medium",
+            "value": [
+             {
+              "valString": {
+               "v": "газета"
+              }
+             }
+            ]
+           },
+           {
+            "name": "source",
+            "value": [
+             {
+              "valString": {
+               "v": "«Ежедневные новости» (Владивосток), 17.01.2003"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publ_year",
+            "value": [
+             {
+              "valString": {
+               "v": "2003.01.17"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publication",
+            "value": [
+             {
+              "valString": {
+               "v": "«Ежедневные новости» (Владивосток)"
+              }
+             }
+            ]
+           },
+           {
+            "name": "subcorpus",
+            "value": [
+             {
+              "valString": {
+               "v": "ПК письменных текстов"
+              }
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       "homonymyStatus": "manual",
+       "source": {
+        "docId": "standard/post1950/baranov/en_0117_1.xml"
+       },
+       "title": "Ляна Шарова. Трассовики // «Ежедневные новости» (Владивосток), 2003.01.17"
+      },
+      "snippetGroups": [
+       {
+        "snippets": [
+         {
+          "langInfo": {
+           "lang": "rus"
+          },
+          "nextSnippetSource": {},
+          "prevSnippetSource": {},
+          "sequences": [
+           {
+            "words": [
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90
+              },
+              "text": "Так",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 1
+              },
+              "text": "же",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 2
+              },
+              "text": "они",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 3
+              },
+              "text": "пасли",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 4
+              },
+              "text": "коммерсантов",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 5
+              },
+              "text": "около",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 6
+              },
+              "text": "бара",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " — ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "source": {
+               "sentId": 90,
+               "wordId": 7
+              },
+              "text": "удостоверялись",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 8
+              },
+              "text": "что",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 9
+              },
+              "text": "те",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 10
+              },
+              "text": "готовятся",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 11
+              },
+              "text": "к",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 12
+              },
+              "text": "поездке",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ". ",
+              "type": "PLAIN"
+             }
+            ]
+           }
+          ],
+          "source": {
+           "docSource": {
+            "docId": "standard/post1950/baranov/en_0117_1.xml"
+           },
+           "end": 94,
+           "start": 87
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "pagination": {
+   "maxAvailablePage": 164,
+   "totalPageCount": 164
+  },
+  "queryStats": {
+   "textCount": 164,
+   "wordUsageCount": 187
+  },
+  "sorting": {
+   "currentSorting": "grstd"
+  },
+  "subcorpStats": {}
+ }
+}

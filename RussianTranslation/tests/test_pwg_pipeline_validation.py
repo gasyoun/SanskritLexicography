@@ -15,13 +15,13 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import validation  # noqa: E402
-from pwg_pipeline.evidence import sha256_file  # noqa: E402
+from pwg_pipeline import validation
+from pwg_pipeline.evidence import sha256_file
 
 
 def clean_row(index):
     return {
-        'tm_record_id': 'row-%d' % index,
+        'tm_record_id': f'row-{index:d}',
         'target_string': 'огонь',
         'generation': {'route_id': 'xai-tm', 'pipeline_version': 'v1'},
         'nested': {'deep': [{'note': 'fine'}]},

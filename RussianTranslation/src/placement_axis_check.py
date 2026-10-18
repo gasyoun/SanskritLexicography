@@ -29,8 +29,8 @@ sys.path.insert(0, HERE)
 # H3300: both inputs live in the MAIN checkout (gitignored); resolving them
 # relative to HERE made this gate unrunnable — and the sheet unverifiable — in
 # any linked worktree, i.e. exactly the sanctioned workflow.
-from store_path import canonical_store, main_worktree_root          # noqa: E402
-from rt_io import read_jsonl                                        # noqa: E402
+from store_path import canonical_store, main_worktree_root
+from rt_io import read_jsonl
 
 STORE = canonical_store(os.path.join(HERE, "pwg_ru_translated.jsonl"))
 _MAIN = main_worktree_root(HERE)
@@ -38,7 +38,7 @@ REL = (os.path.join(_MAIN, "RussianTranslation", "src",
                     "pwg_ru_relationships.jsonl") if _MAIN
        else os.path.join(HERE, "pwg_ru_relationships.jsonl"))
 
-from edition_rel import (  # noqa: E402
+from edition_rel import (
     ALL_SUBTYPES, SENSE_ASSERTING, base_subtype, build_pwg_sense_index,
     homonym_of, is_unplaced_label, lead_int, normalize_sense_tag,
     placement_label_consistent, pwg_correction_marker, sch_correction_marker,
@@ -72,7 +72,7 @@ def main():
     notes = []
 
     def fail(tag, msg):
-        failures.append("%s: %s" % (tag, msg))
+        failures.append("{}: {}".format(tag, msg))
 
     # ---- A5 — canonical store untouched --------------------------------
     sha = sha256_of(STORE)
@@ -122,10 +122,10 @@ def main():
     reasons = collections.Counter(
         r["relationship"].get("placement_reason") for r in rel)
     print("A4  placement_reason: " + " · ".join(
-        "%s=%d" % (k, reasons[k]) for k in REASONS))
+        f'{k}={reasons[k]:d}' for k in REASONS))
     unknown = set(reasons) - set(REASONS)
     if unknown:
-        fail("A4", "placement_reason outside the contract: %r" % sorted(unknown))
+        fail("A4", "placement_reason outside the contract: {!r}".format(sorted(unknown)))
     # every out_of_range must really exceed the article's normalised maximum
     bad_oor = []
     for r in rel:
@@ -160,7 +160,7 @@ def main():
     print("HYP placement_hypothesis rows: %d · leaks into fact: %d"
           % (n_hyp, len(leaks)))
     if leaks:
-        fail("HYP", "a guess was promoted to a fact: %r" % leaks[:5])
+        fail("HYP", "a guess was promoted to a fact: {!r}".format(leaks[:5]))
 
     # ---- A9 — every sidecar row carries the axis ------------------------
     missing = [r.get("subcard") for r in rel
@@ -197,7 +197,7 @@ def main():
     w2_placed = sum(1 for r in w2 if r["relationship"].get("placement"))
     print("W2  pwg_internal_correction rows: %d · placed %d (%.1f%%) · %s"
           % (len(w2), w2_placed, 100.0 * w2_placed / max(len(w2), 1),
-             " ".join("%s=%d" % (k, w2_reasons[k]) for k in REASONS)))
+             " ".join(f'{k}={w2_reasons[k]:d}' for k in REASONS)))
 
     # W2a — every such row really sits on the pwg layer and really carries a
     # marker. A row pulled out of the skeleton without a named printed cue
@@ -252,7 +252,7 @@ def main():
         r["relationship"].get("subtype") for r in w3)
     print("W3  sch rows: %d · corrective %d (%.1f%%) · %s"
           % (len(sch), len(w3), 100.0 * len(w3) / max(len(sch), 1),
-             " ".join("%s=%d" % (k, w3_kinds[k])
+             " ".join(f'{k}={w3_kinds[k]:d}'
                       for k in ("sch_correct", "sch_cancel"))))
 
     # W3a — the layer must be ABLE to be corrective. This is the whole point of
@@ -305,7 +305,7 @@ def main():
     fired = [d for d in decoys if sch_correction_marker(d) is not None]
     print("W3c look-alike additive strings wrongly convicted: %d" % len(fired))
     if fired:
-        fail("W3c", "STOP — the cue set matches descriptive text: %r" % fired)
+        fail("W3c", "STOP — the cue set matches descriptive text: {!r}".format(fired))
 
     # W3d — an SCH edit renders as a cancellation, deliberately unlike wave 2's
     # `amend`: 'lies X' and 'streiche Y' really do withdraw the printed reading.
@@ -363,7 +363,7 @@ def main():
         (w5_unplaced if is_unplaced_label(st) else w5_placed)[base] += 1
     print("W5b sense-asserting labels · unplaced %d / placed %d · %s"
           % (sum(w5_unplaced.values()), sum(w5_placed.values()),
-             " ".join("%s=%d+%d" % (k, w5_placed[k], w5_unplaced[k])
+             " ".join(f'{k}={w5_placed[k]:d}+{w5_unplaced[k]:d}'
                       for k in sorted(SENSE_ASSERTING))))
 
     # W5c — STOP: the fix must not have emptied the corpus. `direction` and `op`
@@ -383,7 +383,7 @@ def main():
                          if rr.get("subtype") not in ALL_SUBTYPES})
     print("W5d labels outside the declared vocabulary: %d" % len(undeclared))
     if undeclared:
-        fail("W5d", "the sidecar emits undeclared labels: %r" % undeclared[:5])
+        fail("W5d", "the sidecar emits undeclared labels: {!r}".format(undeclared[:5]))
 
     # W5e — an unplaced label must never sit on a row whose target resolves;
     # A1's structural twin, now on the label side.

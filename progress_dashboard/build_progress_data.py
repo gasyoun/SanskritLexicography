@@ -61,7 +61,7 @@ def _load_json(rel):
     try:
         with p.open(encoding="utf-8-sig") as fh:
             return json.load(fh)
-    except Exception as e:  # noqa: BLE001 — a missing local artifact must not crash the build
+    except Exception as e:
         print(f"  ! could not read {rel}: {e}")
         return None
 
@@ -163,7 +163,7 @@ def store_depth():
                 continue
             try:
                 d = json.loads(line)
-            except Exception:  # noqa: BLE001
+            except Exception:
                 continue
             senses += 1
             k = d.get("key1") or d.get("h") or d.get("root")
@@ -215,7 +215,7 @@ def review_queue():
         try:
             with f.open(encoding="utf-8-sig") as fh:
                 data = json.load(fh)
-        except Exception:  # noqa: BLE001 — a malformed sheet must not crash the build
+        except Exception:
             continue
         items = data.get("items") or []
         sheet_decided = sum(1 for it in items if it.get("decision"))
@@ -263,7 +263,7 @@ def review_transitions():
                 continue
             try:
                 d = json.loads(line)
-            except Exception:  # noqa: BLE001
+            except Exception:
                 continue
             rs = d.get("review_status") or "unknown"
             if rs == "approved":
@@ -357,7 +357,7 @@ def kitchen_slice():
     """
     # Local import: kitchen_slices is co-located; keep build_progress_data
     # import surface small for scripts that only need progress lanes.
-    import kitchen_slices as ks  # noqa: PLC0415
+    import kitchen_slices as ks
 
     p = OUT / "kitchen_data.json"
     if not p.exists():
@@ -365,7 +365,7 @@ def kitchen_slice():
     try:
         with p.open(encoding="utf-8-sig") as fh:
             kd = json.load(fh)
-    except Exception as e:  # noqa: BLE001 — a malformed kitchen build must not crash this one
+    except Exception as e:
         print(f"  ! could not read kitchen_data.json: {e}")
         return {"measured": False}
     return ks.progress_kitchen_slice(kd)
@@ -435,8 +435,12 @@ def main():
         "review_throughput": rt_x,
     }
 
-    (OUT / "progress_data.json").write_text(
-        json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    # H5625: shared atomic writer (kitchen_slices, H5582) — no local copy;
+    # local import keeps the module import surface small (H2268 pin).
+    import kitchen_slices as ks
+
+    ks._atomic_write_text(
+        OUT / "progress_data.json", json.dumps(data, ensure_ascii=False, indent=2) + "\n"
     )
     print(f"progress_data.json written ({generated_at}).")
 
@@ -446,7 +450,7 @@ def main():
     if ts_path.exists():
         try:
             ts = json.loads(ts_path.read_text(encoding="utf-8"))
-        except Exception:  # noqa: BLE001
+        except Exception:
             ts = {"snapshots": []}
     rb = st.get("review_breakdown") or {}
     row = {
@@ -473,7 +477,7 @@ def main():
     }
     ts["snapshots"] = [s for s in ts.get("snapshots", []) if s.get("date") != today] + [row]
     ts["snapshots"].sort(key=lambda s: s["date"])
-    ts_path.write_text(json.dumps(ts, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    ks._atomic_write_text(ts_path, json.dumps(ts, ensure_ascii=False, indent=2) + "\n")
     print(f"progress_timeseries.json: {len(ts['snapshots'])} snapshot(s).")
 
     # console summary

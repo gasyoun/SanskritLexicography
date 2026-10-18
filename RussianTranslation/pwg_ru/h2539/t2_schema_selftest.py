@@ -16,7 +16,7 @@ HERE = Path(__file__).resolve().parent
 SCHEMA_PATH = HERE / 'evidence' / 't2_schema.json'
 sys.path.insert(0, str(HERE.parents[1] / 'src' / 'pilot'))
 
-from gateway_route import validate_complete_schema  # noqa: E402
+from gateway_route import validate_complete_schema
 
 SCHEMA = json.loads(SCHEMA_PATH.read_text(encoding='utf-8'))
 
@@ -99,8 +99,8 @@ def main():
         validate_complete_schema(GOOD, SCHEMA)
         print('PASS  accepts the golden 3/3 instance')
     except ValueError as exc:
-        failures.append('golden instance REJECTED: %s' % exc)
-        print('FAIL  golden instance rejected: %s' % exc)
+        failures.append('golden instance REJECTED: {}'.format(exc))
+        print('FAIL  golden instance rejected: {}'.format(exc))
 
     for name, fn in BAD_CASES.items():
         payload = mutate(fn)
@@ -109,8 +109,8 @@ def main():
         except ValueError as exc:
             print('PASS  rejects %-24s (%s)' % (name, str(exc)[:70]))
         else:
-            failures.append('defect NOT caught: %s' % name)
-            print('FAIL  accepted defective instance: %s' % name)
+            failures.append('defect NOT caught: {}'.format(name))
+            print('FAIL  accepted defective instance: {}'.format(name))
 
     print('\n%d/%d checks passed' % (
         1 + len(BAD_CASES) - len(failures), 1 + len(BAD_CASES)))

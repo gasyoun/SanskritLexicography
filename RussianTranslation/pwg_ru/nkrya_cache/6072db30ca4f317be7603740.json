@@ -1,0 +1,781 @@
+{
+ "fetched_utc": "2026-09-24T17:16:39Z",
+ "request": {
+  "endpoint": "/lex-gramm/concordance",
+  "method": "POST",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lexGramm": {
+    "sectionValues": [
+     {
+      "conditionValues": [
+       {
+        "fieldName": "disambmod",
+        "text": {
+         "v": "main"
+        }
+       }
+      ],
+      "subsectionValues": [
+       {
+        "conditionValues": [
+         {
+          "fieldName": "lex",
+          "text": {
+           "v": "подкрепление"
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "params": {
+    "pageParams": {
+     "docsPerPage": 1,
+     "page": 0,
+     "snippetsPerDoc": 1
+    },
+    "seed": 5261
+   }
+  }
+ },
+ "response": {
+  "corpusStats": {
+   "sentenceCount": 34933864,
+   "textCount": 140804,
+   "wordUsageCount": 426186466
+  },
+  "groups": [
+   {
+    "docs": [
+     {
+      "info": {
+       "allExamplesNum": 1,
+       "docExplainInfo": {
+        "items": [
+         {
+          "parsingFields": [
+           {
+            "name": "author",
+            "value": [
+             {
+              "valString": {
+               "v": "коллективный"
+              }
+             }
+            ]
+           },
+           {
+            "name": "header",
+            "value": [
+             {
+              "valString": {
+               "v": "Модификация функциональной структуры действия при нарушении зрительного контроля."
+              }
+             }
+            ]
+           },
+           {
+            "name": "created",
+            "value": [
+             {
+              "valString": {
+               "v": "2003"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sphere",
+            "value": [
+             {
+              "valString": {
+               "v": "учебно-научная"
+              }
+             }
+            ]
+           },
+           {
+            "name": "topic",
+            "value": [
+             {
+              "valString": {
+               "v": "наука и технологии, психология"
+              }
+             }
+            ]
+           },
+           {
+            "name": "type",
+            "value": [
+             {
+              "valString": {
+               "v": "статья"
+              }
+             }
+            ]
+           },
+           {
+            "name": "style",
+            "value": [
+             {
+              "valString": {
+               "v": "специальный"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sentences",
+            "value": [
+             {
+              "valString": {
+               "v": "242"
+              }
+             }
+            ]
+           },
+           {
+            "name": "words",
+            "value": [
+             {
+              "valString": {
+               "v": "3970"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_age",
+            "value": [
+             {
+              "valString": {
+               "v": "н-возраст"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_level",
+            "value": [
+             {
+              "valString": {
+               "v": "н-уровень"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_size",
+            "value": [
+             {
+              "valString": {
+               "v": "большая"
+              }
+             }
+            ]
+           },
+           {
+            "name": "medium",
+            "value": [
+             {
+              "valString": {
+               "v": "журнал"
+              }
+             }
+            ]
+           },
+           {
+            "name": "source",
+            "value": [
+             {
+              "valString": {
+               "v": "«Вопросы психологии», 2003, №6"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publ_year",
+            "value": [
+             {
+              "valString": {
+               "v": "2003"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publication",
+            "value": [
+             {
+              "valString": {
+               "v": "«Вопросы психологии»"
+              }
+             }
+            ]
+           },
+           {
+            "name": "subcorpus",
+            "value": [
+             {
+              "valString": {
+               "v": "ПК письменных текстов"
+              }
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       "homonymyStatus": "manual",
+       "source": {
+        "docId": "standard/post1950/nauka/vopr_psixol/517915.xml"
+       },
+       "title": "Модификация функциональной структуры действия при нарушении зрительного контроля. // «Вопросы психологии», 2003"
+      },
+      "snippetGroups": [
+       {
+        "snippets": [
+         {
+          "langInfo": {
+           "lang": "rus"
+          },
+          "nextSnippetSource": {},
+          "prevSnippetSource": {},
+          "sequences": [
+           {
+            "words": [
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90
+              },
+              "text": "Как",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 1
+              },
+              "text": "правило",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 2
+              },
+              "text": "курсор",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 3
+              },
+              "text": "находится",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 4
+              },
+              "text": "далеко",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 5
+              },
+              "text": "за",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 6
+              },
+              "text": "зоной",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 7
+              },
+              "text": "цели",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 8
+              },
+              "text": "после",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 9
+              },
+              "text": "чего",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 10
+              },
+              "text": "следует",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 11
+              },
+              "text": "возвратное",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 12
+              },
+              "text": "движение",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 13
+              },
+              "text": "снова",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 14
+              },
+              "text": "остановка",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 15
+              },
+              "text": "ожидание",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 16
+              },
+              "text": "зрительного",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "source": {
+               "sentId": 90,
+               "wordId": 17
+              },
+              "text": "подкрепления",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 18
+              },
+              "text": "следующее",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 19
+              },
+              "text": "движение",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 20
+              },
+              "text": "и",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 21
+              },
+              "text": "т",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ". ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 22
+              },
+              "text": "д",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": "., ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 23
+              },
+              "text": "до",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 24
+              },
+              "text": "тех",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 25
+              },
+              "text": "пор",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 26
+              },
+              "text": "пока",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 27
+              },
+              "text": "курсор",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 28
+              },
+              "text": "не",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 29
+              },
+              "text": "попадет",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 30
+              },
+              "text": "в",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 31
+              },
+              "text": "зону",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 90,
+               "wordId": 32
+              },
+              "text": "цели",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ". ",
+              "type": "PLAIN"
+             }
+            ]
+           }
+          ],
+          "source": {
+           "docSource": {
+            "docId": "standard/post1950/nauka/vopr_psixol/517915.xml"
+           },
+           "end": 94,
+           "start": 87
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "pagination": {
+   "maxAvailablePage": 1500,
+   "totalPageCount": 1671
+  },
+  "queryStats": {
+   "textCount": 1671,
+   "wordUsageCount": 3321
+  },
+  "sorting": {
+   "currentSorting": "grstd"
+  },
+  "subcorpStats": {}
+ }
+}

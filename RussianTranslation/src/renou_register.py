@@ -126,7 +126,7 @@ if __name__ == '__main__':
     HERE = os.path.dirname(os.path.abspath(__file__))
     for f in ('ls_source_map.json', 'ls_source_map_mw.json'):
         m = json.load(open(os.path.join(HERE, f), encoding='utf-8'))
-        print('=== %s ===' % f)
+        print('=== {} ==='.format(f))
         for k, v in sorted(m.items()):
             print('  %-14s %-3s %s' % (k[:14], v.get('renou'),
                                        sorted(ls_registers(v)) or '—'))

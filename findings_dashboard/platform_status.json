@@ -1,28 +1,26 @@
 {
- "generated_at": "2026-09-20T10:07:41Z",
+ "generated_at": "2026-10-03T06:32:26Z",
  "probe_host": "residential (local machine)",
  "results": [
   {
    "name": "michaelmeyer.fr (41 dicts)",
    "url": "https://michaelmeyer.fr/sanskrit",
-   "verdict": "ok",
-   "http": 200,
-   "final_url": "https://michaelmeyer.fr/sanskrit",
-   "ms": 1158
+   "verdict": "timeout",
+   "error": "_ssl.c:1063: The handshake operation timed out"
   },
   {
    "name": "CDSL simple search",
    "url": "https://www.sanskrit-lexicon.uni-koeln.de/simple/",
    "verdict": "http-403",
    "http": 403,
-   "ms": 5145
+   "ms": 5382
   },
   {
    "name": "CDSL home",
    "url": "https://www.sanskrit-lexicon.uni-koeln.de/",
    "verdict": "http-403",
    "http": 403,
-   "ms": 4715
+   "ms": 4917
   },
   {
    "name": "Heritage (Inria)",
@@ -30,7 +28,7 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://sanskrit.inria.fr/DICO/index.en.html",
-   "ms": 992
+   "ms": 1021
   },
   {
    "name": "Heritage mirror (UoHyd)",
@@ -38,20 +36,22 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://sanskrit.uohyd.ac.in/scl/",
-   "ms": 1425
+   "ms": 1277
   },
   {
    "name": "DCS (plain HTTP; cert broken)",
    "url": "http://www.sanskrit-linguistics.org/dcs/",
-   "verdict": "error",
-   "error": "RemoteDisconnected: Remote end closed connection without response"
+   "verdict": "ok",
+   "http": 200,
+   "final_url": "https://www.sanskrit-linguistics.org/dcs/",
+   "ms": 1582
   },
   {
    "name": "VedaWeb (Tekst)",
    "url": "https://vedaweb.uni-koeln.de/",
-   "verdict": "http-403",
-   "http": 403,
-   "ms": 5035
+   "verdict": "http-429",
+   "http": 429,
+   "ms": 1039
   },
   {
    "name": "learnsanskrit.cc",
@@ -70,7 +70,7 @@
    "url": "https://learnsanskrit.org/dictionary",
    "verdict": "http-404",
    "http": 404,
-   "ms": 1226
+   "ms": 684
   },
   {
    "name": "Ambuda dictionaries",
@@ -78,14 +78,14 @@
    "verdict": "ok",
    "http": 200,
    "final_url": "https://ambuda.org/tools/dictionaries/",
-   "ms": 4464
+   "ms": 1255
   },
   {
    "name": "sanskritdictionary.com",
    "url": "https://sanskritdictionary.com/",
    "verdict": "http-403",
    "http": 403,
-   "ms": 1090
+   "ms": 680
   }
  ]
 }

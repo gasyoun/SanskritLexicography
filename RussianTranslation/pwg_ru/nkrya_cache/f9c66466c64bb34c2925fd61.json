@@ -1,0 +1,589 @@
+{
+ "fetched_utc": "2026-09-24T16:30:19Z",
+ "request": {
+  "endpoint": "/lex-gramm/concordance",
+  "method": "POST",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lexGramm": {
+    "sectionValues": [
+     {
+      "conditionValues": [
+       {
+        "fieldName": "disambmod",
+        "text": {
+         "v": "main"
+        }
+       }
+      ],
+      "subsectionValues": [
+       {
+        "conditionValues": [
+         {
+          "fieldName": "lex",
+          "text": {
+           "v": "перевязывание"
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "params": {
+    "pageParams": {
+     "docsPerPage": 1,
+     "page": 0,
+     "snippetsPerDoc": 1
+    },
+    "seed": 5261
+   },
+   "subcorpus": {
+    "sectionValues": [
+     {
+      "conditionValues": [
+       {
+        "fieldName": "created",
+        "intRange": {
+         "begin": 1800,
+         "end": 1899
+        }
+       }
+      ]
+     }
+    ]
+   }
+  }
+ },
+ "response": {
+  "corpusStats": {
+   "sentenceCount": 34933864,
+   "textCount": 140804,
+   "wordUsageCount": 426186466
+  },
+  "groups": [
+   {
+    "docs": [
+     {
+      "info": {
+       "allExamplesNum": 1,
+       "docExplainInfo": {
+        "items": [
+         {
+          "parsingFields": [
+           {
+            "name": "author",
+            "value": [
+             {
+              "valString": {
+               "v": "И. Ю. Попович-Липовац"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sex",
+            "value": [
+             {
+              "valString": {
+               "v": "муж"
+              }
+             }
+            ]
+           },
+           {
+            "name": "birthday",
+            "value": [
+             {
+              "valString": {
+               "v": "1856"
+              }
+             }
+            ]
+           },
+           {
+            "name": "header",
+            "value": [
+             {
+              "valString": {
+               "v": "Черногорские женщины"
+              }
+             }
+            ]
+           },
+           {
+            "name": "created",
+            "value": [
+             {
+              "valString": {
+               "v": "1897"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sphere",
+            "value": [
+             {
+              "valString": {
+               "v": "публицистика, нехудожественная"
+              }
+             }
+            ]
+           },
+           {
+            "name": "topic",
+            "value": [
+             {
+              "valString": {
+               "v": "наука и технологии, этнография"
+              }
+             }
+            ]
+           },
+           {
+            "name": "type",
+            "value": [
+             {
+              "valString": {
+               "v": "статья"
+              }
+             }
+            ]
+           },
+           {
+            "name": "style",
+            "value": [
+             {
+              "valString": {
+               "v": "нейтральный"
+              }
+             }
+            ]
+           },
+           {
+            "name": "sentences",
+            "value": [
+             {
+              "valString": {
+               "v": "684"
+              }
+             }
+            ]
+           },
+           {
+            "name": "words",
+            "value": [
+             {
+              "valString": {
+               "v": "11179"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_age",
+            "value": [
+             {
+              "valString": {
+               "v": "н-возраст"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_level",
+            "value": [
+             {
+              "valString": {
+               "v": "н-уровень"
+              }
+             }
+            ]
+           },
+           {
+            "name": "audience_size",
+            "value": [
+             {
+              "valString": {
+               "v": "большая"
+              }
+             }
+            ]
+           },
+           {
+            "name": "medium",
+            "value": [
+             {
+              "valString": {
+               "v": "журнал"
+              }
+             }
+            ]
+           },
+           {
+            "name": "source",
+            "value": [
+             {
+              "valString": {
+               "v": "«Вестник Европы», № 10, 1879. http://az.lib.ru/p/popowichlipowac_i_j/"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publ_year",
+            "value": [
+             {
+              "valString": {
+               "v": "1879"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publication",
+            "value": [
+             {
+              "valString": {
+               "v": "«Вестник Европы», № 10"
+              }
+             }
+            ]
+           },
+           {
+            "name": "publisher",
+            "value": [
+             {
+              "valString": {
+               "v": "М. М. Стасюлевич"
+              }
+             }
+            ]
+           },
+           {
+            "name": "subcorpus",
+            "value": [
+             {
+              "valString": {
+               "v": "ПК письменных текстов"
+              }
+             }
+            ]
+           }
+          ]
+         }
+        ]
+       },
+       "homonymyStatus": "auto",
+       "source": {
+        "docId": "source/pre1950/xix/popovich_lipovats/popovi01.xml"
+       },
+       "title": "И. Ю. Попович-Липовац. Черногорские женщины (1897) // «Вестник Европы», № 10, 1879"
+      },
+      "snippetGroups": [
+       {
+        "snippets": [
+         {
+          "langInfo": {
+           "lang": "rus"
+          },
+          "nextSnippetSource": {},
+          "prevSnippetSource": {},
+          "sequences": [
+           {
+            "words": [
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615
+              },
+              "text": "Послѣ",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 1
+              },
+              "text": "полночи",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 2
+              },
+              "text": "войска",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 3
+              },
+              "text": "собрались",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 4
+              },
+              "text": "въ",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 5
+              },
+              "text": "Рагами",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " — ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 6
+              },
+              "text": "и",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 7
+              },
+              "text": "началось",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {
+               "hit": true
+              },
+              "source": {
+               "sentId": 615,
+               "wordId": 8
+              },
+              "text": "перевязыванье",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 9
+              },
+              "text": "ранъ",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 10
+              },
+              "text": "и",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 11
+              },
+              "text": "погребеніе",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 12
+              },
+              "text": "мертвыхъ",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ", ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 13
+              },
+              "text": "которыхъ",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 14
+              },
+              "text": "было",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 15
+              },
+              "text": "нѣсколько",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": " ",
+              "type": "PLAIN"
+             },
+             {
+              "displayParams": {},
+              "source": {
+               "sentId": 615,
+               "wordId": 16
+              },
+              "text": "сотъ",
+              "type": "WORD"
+             },
+             {
+              "displayParams": {},
+              "source": {},
+              "text": ". ",
+              "type": "PLAIN"
+             }
+            ]
+           }
+          ],
+          "source": {
+           "docSource": {
+            "docId": "source/pre1950/xix/popovich_lipovats/popovi01.xml"
+           },
+           "end": 619,
+           "start": 612
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "pagination": {
+   "maxAvailablePage": 5,
+   "totalPageCount": 5
+  },
+  "queryStats": {
+   "textCount": 5,
+   "wordUsageCount": 5
+  },
+  "sorting": {
+   "currentSorting": "grstd"
+  },
+  "subcorpStats": {
+   "textCount": 8348,
+   "wordUsageCount": 82049244
+  }
+ }
+}

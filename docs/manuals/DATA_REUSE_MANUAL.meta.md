@@ -1,6 +1,6 @@
 # DATA_REUSE_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 20-08-2026_
+_Created: 18-07-2026 · Last updated: 04-10-2026_
 
 Companion record for [docs/manuals/DATA_REUSE_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/DATA_REUSE_MANUAL.md).
 
@@ -15,10 +15,12 @@ Authored 10-07-2026 (H479/H535), consolidated H604. Refreshed 18-07-2026 under [
 ## Verification
 
 ```
-LAST_VERIFIED: 20-08-2026
-VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
-COMMANDS_SPOT_RUN: 6
+LAST_VERIFIED: 04-10-2026
+VERIFIED_BY: GLM 5.3 Flash (zai-start-plan/GLM-5.3-Flash), H5991
+COMMANDS_SPOT_RUN: 8
 ```
+
+H5991 (04-10-2026): 22 cited paths exist; era rule re-measured across all 31 then-2014 / 25 now-2026 files (AP 36,030→36,029 = N−1 and 88,867 = N confirm it); CP spine BOM `EF BB BF` + wc-l 61,266 = 61,267−1; headword_index.tsv 98,640 lines − 1 header = 98,639; Sprüche 7,537; mw-apte 202,566 lines; FINDINGS §7/§8/§9/§67 present. Drift fixed: relationships_rollup.tsv is now a **14-row** table summing **6,326** (was 11/6,374); "30 then-2014 files" → 31 (all added 26-06-2026; all no-trailing-newline).
 
 H3059 (20-08-2026): now-2026 25 txt (was 23); BOM still 6; union 323,422 data rows; AP 88,867; headword_index.tsv 98,639 data rows; Indische Sprüche 7,537; relationships_rollup.tsv is an 11-row subtype table summing to 6,374 (not 5,603 per-sense rows).
 
@@ -49,6 +51,7 @@ Refreshed by [/workspace-manual](https://github.com/gasyoun/claude-config/blob/m
 
 | Date | Change | By |
 |---|---|---|
+| 04-10-2026 | H5991 manual_staleness refresh (LAST_VERIFIED bump + 8 spot probes; rollup 11→14 rows / 6,374→6,326; then-2014 count 30→31) | GLM 5.3 Flash (zai-start-plan/GLM-5.3-Flash) |
 | 20-08-2026 | H3059 manual_staleness fact-check refresh (LAST_VERIFIED bump + real command/count probes) | Grok 4.6 (grok-4.6) |
 | 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |

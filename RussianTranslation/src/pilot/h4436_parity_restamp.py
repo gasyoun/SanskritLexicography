@@ -30,7 +30,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import parity_restamp as pr  # noqa: E402
+import parity_restamp as pr
 
 ENTRY_ID = 'profile_init_safe_mode_h4436'
 

@@ -75,7 +75,7 @@ def main():
     n, good, part, err, p, lo, hi = stats(lambda m: True)
     lines += ['| metric | value |', '|---|---|',
               '| sample size | %d |' % n,
-              '| **precision (good)** | **%.1f%%**  (95%% CI %.1f–%.1f) |' % (100 * p, 100 * lo, 100 * hi),
+              '| **precision (good)** | **{:.1f}%**  (95% CI {:.1f}–{:.1f}) |'.format(100 * p, 100 * lo, 100 * hi),
               '| partial (marginal) | %.1f%% |' % (100 * part / n),
               '| errors (wrong-sense + hallucinated) | %.1f%% |' % (100 * err / n),
               '| good + partial | %.1f%% |' % (100 * (good + part) / n), '',

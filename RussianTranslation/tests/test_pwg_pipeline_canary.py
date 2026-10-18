@@ -20,8 +20,8 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import cli, kernel, model, promotion, providers  # noqa: E402
-from pwg_pipeline.evidence import read_sealed  # noqa: E402
+from pwg_pipeline import cli, kernel, model, promotion, providers
+from pwg_pipeline.evidence import read_sealed
 
 
 @pytest.fixture(autouse=True)
@@ -107,7 +107,7 @@ def test_the_canary_seals_one_envelope_per_provider(tmp_path):
     run_cli(['--database', str(tmp_path / 'c.sqlite'), 'canary',
              '--workdir', workdir])
     for name in cli.CANARY_PROVIDERS:
-        path = os.path.join(workdir, 'envelope.%s.json' % name)
+        path = os.path.join(workdir, 'envelope.{}.json'.format(name))
         assert os.path.exists(path)
         envelope = read_sealed(path)
         assert envelope['provider'] == name
@@ -176,5 +176,5 @@ def test_env_example_documents_both_provider_keys():
     assert 'DEEPSEEK_API_KEY=' in text
     for line in text.splitlines():
         for name in ('XAI_API_KEY', 'DEEPSEEK_API_KEY'):
-            if line.strip().startswith('%s=' % name):
-                assert line.strip() == '%s=' % name, 'no value may be committed'
+            if line.strip().startswith('{}='.format(name)):
+                assert line.strip() == '{}='.format(name), 'no value may be committed'

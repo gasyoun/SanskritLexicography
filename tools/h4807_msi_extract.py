@@ -96,7 +96,7 @@ with gzip.open(out_tsv, "wt", encoding="utf-8", compresslevel=6) as out:
                                     stats["gloss_blocks"] += 1
                                     if "cologne digital sanskrit dictionaries" in src.lower():
                                         stats["src_cologne"] += 1
-                                    out.write("%s\t%s\t%s\n" % (
+                                    out.write("{}\t{}\t{}\n".format(
                                         slug, src.replace("\t", " "), gloss.replace("\t", " ")))
                                 elif gloss:
                                     stats["gloss_no_source"] += 1
@@ -110,8 +110,8 @@ with gzip.open(out_tsv, "wt", encoding="utf-8", compresslevel=6) as out:
                         if gloss:
                             stats["gloss_no_source"] += 1
         except Exception as e:
-            stats["shard_err_%s" % shard] += 1
-            sys.stderr.write("ERR %s: %r\n" % (shard, e))
+            stats["shard_err_{}".format(shard)] += 1
+            sys.stderr.write("ERR {}: {!r}\n".format(shard, e))
             continue
         stats["pages_shard_" + shard.split(".")[0]] = n_shard_pages
 

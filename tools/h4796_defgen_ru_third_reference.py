@@ -169,7 +169,7 @@ def ru_blob(rurows):
 
 def load_gen(arm):
     out = {}
-    with io.open(os.path.join(KDATA, "gen_%s.jsonl" % arm), encoding="utf-8") as f:
+    with io.open(os.path.join(KDATA, "gen_{}.jsonl".format(arm)), encoding="utf-8") as f:
         for line in f:
             r = json.loads(line)
             out[r["slp1"]] = r.get("gloss") or ""
@@ -332,8 +332,8 @@ def cmd_build():
     with io.open(SUBSET_META, "w", encoding="utf-8", newline="\n") as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    print("census: %s" % json.dumps(census))
-    print("cells: %s" % json.dumps(meta["cells"]))
+    print("census: {}".format(json.dumps(census)))
+    print("cells: {}".format(json.dumps(meta["cells"])))
     print("subset n=%d -> %s" % (len(kept), SUBSET))
 
 
@@ -408,9 +408,8 @@ def cmd_metrics():
             c = (s["freq_band"], s["poly_band"])
             cell[c]["chrf_mw"].append(c_mw)
             cell[c]["chrf_fr"].append(c_fr)
-            per.write("%s\t%s\t%s\t%s\t%.2f\t%.2f\t%.2f\t%.2f\t%.2f\t"
-                      "%.4f\t%.4f\t%.4f\n"
-                      % (s["slp1"], s["freq_band"], s["poly_band"], arm,
+            per.write("{}\t{}\t{}\t{}\t{:.2f}\t{:.2f}\t{:.2f}\t{:.2f}\t{:.2f}\t"
+                      "{:.4f}\t{:.4f}\t{:.4f}\n".format(s["slp1"], s["freq_band"], s["poly_band"], arm,
                          c_mw, c_fr, c_ru, c_m2, c_m3, t_mw, t_fr, t_ru))
         summary["arms"][arm] = {
             "corpus_chrf_mw": round(sacrebleu.corpus_chrf(cands, [mw]).score, 2),
@@ -445,7 +444,7 @@ def cmd_metrics():
     with io.open(SCORES, "w", encoding="utf-8", newline="\n") as f:
         json.dump(prev, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    print("-> %s, %s" % (PER_ITEM, SCORES))
+    print("-> {}, {}".format(PER_ITEM, SCORES))
 
 
 def cmd_threeway():
@@ -522,7 +521,7 @@ def cmd_threeway():
     with io.open(SCORES, "w", encoding="utf-8", newline="\n") as f:
         json.dump(scores, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    print("-> %s (threeway)" % SCORES)
+    print("-> {} (threeway)".format(SCORES))
 
 
 def mean_sent(arm, key):
@@ -572,7 +571,7 @@ def _deepseek(user, system):
     req = urllib.request.Request(
         "https://api.deepseek.com/chat/completions", data=body,
         headers={"Content-Type": "application/json",
-                 "Authorization": "Bearer %s" % key})
+                 "Authorization": "Bearer {}".format(key)})
     for attempt in range(3):
         try:
             with urllib.request.urlopen(req, timeout=90) as resp:
@@ -598,7 +597,7 @@ def cmd_judge(workers, limit):
         subset = subset[:limit]
     for arm in ARMS:
         gen = load_gen(arm)
-        out_path = os.path.join(OUT, "judge_ru_%s.jsonl" % arm)
+        out_path = os.path.join(OUT, "judge_ru_{}.jsonl".format(arm))
         done = set()
         if os.path.exists(out_path):
             with io.open(out_path, encoding="utf-8") as f:
@@ -617,10 +616,9 @@ def cmd_judge(workers, limit):
         out_f = io.open(out_path, "a", encoding="utf-8", newline="\n")
 
         def work(k, arm=arm, gen=gen, out_f=out_f):
-            user = ("Headword: %s\nRUSSIAN REFERENCE renderings (sa-ru-glossary, "
-                    "ranked): %s\nCANDIDATE English gloss: %s\n"
-                    "Respond in JSON: {\"adequacy\": <0-5>}"
-                    % (k, rutext[k][0], gen.get(k, "")))
+            user = ("Headword: {}\nRUSSIAN REFERENCE renderings (sa-ru-glossary, "
+                    "ranked): {}\nCANDIDATE English gloss: {}\n"
+                    "Respond in JSON: {{\"adequacy\": <0-5>}}".format(k, rutext[k][0], gen.get(k, "")))
             raw = _deepseek(user, JUDGE_RU_SYS)
             score = None
             if raw:
@@ -690,11 +688,9 @@ def cmd_report():
     A("")
     A("| Pair | corpus chrF | mean token-F1 |")
     A("|---|---|---|")
-    A("| MW-EN vs Heritage-FR | %.2f | %.4f |"
-      % (div["chrf_mw_vs_fr"], div["mean_token_f1_mw_vs_fr"]))
-    A("| MW-EN vs sa-ru-RU | %.2f | %.4f |"
-      % (div["chrf_mw_vs_ru"], div["mean_token_f1_mw_vs_ru"]))
-    A("| Heritage-FR vs sa-ru-RU | %.2f | — |" % div["chrf_fr_vs_ru"])
+    A("| MW-EN vs Heritage-FR | {:.2f} | {:.4f} |".format(div["chrf_mw_vs_fr"], div["mean_token_f1_mw_vs_fr"]))
+    A("| MW-EN vs sa-ru-RU | {:.2f} | {:.4f} |".format(div["chrf_mw_vs_ru"], div["mean_token_f1_mw_vs_ru"]))
+    A("| Heritage-FR vs sa-ru-RU | {:.2f} | — |".format(div["chrf_fr_vs_ru"]))
     A("")
     A("Cross-lingual pairs are structurally near-degenerate — the triangle "
       "quantifies the degeneracy, it does not measure semantic agreement. Mean "
@@ -709,7 +705,7 @@ def cmd_report():
     for arm in ARMS:
         r = t["arms"][arm]
         praw = r["sign_test_p_raw"]
-        ptxt = ("<1e-6" if 0 < praw < 1e-6 else "%.2g" % praw)
+        ptxt = ("<1e-6" if 0 < praw < 1e-6 else "{:.2g}".format(praw))
         A("| %s | %+.3f | [%+.3f, %+.3f] | %d | %d | %d | %s |"
           % (arm, r["mean_chrf_mw_minus_fr"], r["ci95"][0], r["ci95"][1],
              r["n_nonzero"], r["mw_higher"], r["fr_higher"], ptxt))
@@ -717,8 +713,7 @@ def cmd_report():
     A("Positive d = candidates sit measurably closer to the MW wording than to "
       "the independent FR authority on this subset — the surface analogue of "
       "the H2408 MW-familiarity premium, reproduced without any provider call. "
-      "Per-item chrF_MW~chrF_FR Spearman (pooled over arms): **%.4f**."
-      % t.get("spearman_item_chrf_mw_vs_fr", float("nan")))
+      "Per-item chrF_MW~chrF_FR Spearman (pooled over arms): **{:.4f}**.".format(t.get("spearman_item_chrf_mw_vs_fr", float("nan"))))
     A("")
     A("Two reading guards. **Floor:** the seeded-derangement arm A0 shows the "
       "SMALLEST gradient (+2.9 vs +8…+14 for system arms) — a random string "
@@ -731,8 +726,7 @@ def cmd_report():
       "the adequacy-grade result and is neither reproduced nor overturned "
       "here.")
     A("")
-    A("Surface arm ranking: by chrF-MW `%s`; by chrF-FR `%s`; identical: **%s**."
-      % (" > ".join(t["_ranking"]["by_chrf_mw"]),
+    A("Surface arm ranking: by chrF-MW `{}`; by chrF-FR `{}`; identical: **{}**.".format(" > ".join(t["_ranking"]["by_chrf_mw"]),
          " > ".join(t["_ranking"]["by_chrf_fr"]),
          t["_ranking"]["identical"]))
     A("")
@@ -742,8 +736,7 @@ def cmd_report():
     A("|---|---|---|---|")
     for arm in ARMS:
         d = t["arms"][arm]["ru_surface_degeneracy"]
-        A("| %s | %.4f | %.4f | %.2f |"
-          % (arm, d["mean_token_f1_ru"], d["max_token_f1_ru"],
+        A("| {} | {:.4f} | {:.4f} | {:.2f} |".format(arm, d["mean_token_f1_ru"], d["max_token_f1_ru"],
              d["mean_sent_chrf_ru"]))
     A("")
     A("EN candidates against Cyrillic references score structurally ~0 on "
@@ -760,8 +753,7 @@ def cmd_report():
     A("|---|---|---|---|---|---|")
     for arm in ARMS:
         a = m["arms"][arm]
-        A("| %s | %.2f | %.2f | %.2f | %.2f | %.2f |"
-          % (arm, a["corpus_chrf_mw"], a["corpus_chrf_fr"], a["corpus_chrf_ru"],
+        A("| {} | {:.2f} | {:.2f} | {:.2f} | {:.2f} | {:.2f} |".format(arm, a["corpus_chrf_mw"], a["corpus_chrf_fr"], a["corpus_chrf_ru"],
              a["corpus_chrf_multi_mw_fr"], a["corpus_chrf_multi_mw_fr_ru"]))
     A("")
     A("Adding RU to the multi-reference pool moves corpus chrF by ~0 (script "
@@ -794,7 +786,7 @@ def cmd_report():
                             "DEFGEN_RU_THIRD_REFERENCE_REPORT_2026-09-19.md")
     with io.open(out_path, "w", encoding="utf-8", newline="\n") as f:
         f.write("\n".join(lines) + "\n")
-    print("-> %s" % out_path)
+    print("-> {}".format(out_path))
 
 
 def main():

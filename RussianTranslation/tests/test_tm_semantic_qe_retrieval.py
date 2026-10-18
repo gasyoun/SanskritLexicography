@@ -9,9 +9,9 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import nn_api  # noqa: E402
-import tm_grade  # noqa: E402
-import tm_retrieval_eval as E  # noqa: E402
+import nn_api
+import tm_grade
+import tm_retrieval_eval as E
 
 
 def test_comet_name_never_aliases_labse_or_proxy():

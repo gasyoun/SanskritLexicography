@@ -14,7 +14,7 @@ if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
 import backfill_tn_residue as repair
-from rt_io import write_jsonl  # noqa: E402
+from rt_io import write_jsonl
 
 
 def raw(path, text):
@@ -53,8 +53,8 @@ def fixture(td):
     meta = {'generated_at': '2026-01-01T00:00:00Z',
             'input_hashes': {harness_key: {'raw_sha256': harness_sha}}}
     with open(os.path.join(harnesses, 'attempt.js'), 'w', encoding='utf-8') as fh:
-        fh.write('const PH = %s\n' % json.dumps({harness_key: ['{#harness#}']}))
-        fh.write('const META = %s\n' % json.dumps(meta))
+        fh.write('const PH = {}\n'.format(json.dumps({harness_key: ['{#harness#}']})))
+        fh.write('const META = {}\n'.format(json.dumps(meta)))
 
     q_rows = []
     for key in sorted(repair.QUARANTINE_SUBCARDS):

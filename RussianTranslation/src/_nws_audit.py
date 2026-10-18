@@ -31,7 +31,7 @@ def headword_files():
 
 def main():
     section = sys.argv[1] if len(sys.argv) > 1 else 'a'
-    keys = [l.strip() for l in open(os.path.join(OUT, '_keys_%s.txt' % section), encoding='utf-8') if l.strip()]
+    keys = [l.strip() for l in open(os.path.join(OUT, '_keys_{}.txt'.format(section)), encoding='utf-8') if l.strip()]
     files = headword_files()
 
     match = mismatch = missing = unreadable = 0
@@ -86,7 +86,7 @@ def main():
 
     dups = sum(c - 1 for c in seen.values() if c > 1)
     n = len(keys)
-    print('=== NWS audit — section %r ===' % section)
+    print('=== NWS audit — section {!r} ==='.format(section))
     print('keys                : %d' % n)
     print('files on disk        : %d' % len(files))
     print('-- coverage + integrity --')
@@ -105,7 +105,7 @@ def main():
     print('  refusal/error str  : %d' % refusal)
     print('  longest NWS frag   : %d chars' % longest)
     verdict = 'CLEAN' if (missing == 0 and mismatch == 0 and unreadable == 0 and dups == 0) else 'ISSUES'
-    print('VERDICT: %s' % verdict)
+    print('VERDICT: {}'.format(verdict))
 
 
 if __name__ == '__main__':

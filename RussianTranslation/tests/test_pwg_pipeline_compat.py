@@ -18,7 +18,7 @@ SRC = os.path.join(ROOT, 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-from pwg_pipeline import cli, compat, model, providers  # noqa: E402
+from pwg_pipeline import cli, compat, model, providers
 
 
 def run_cli(argv, database=None):

@@ -25,7 +25,7 @@ import renou
 import corpus_gate as cg
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 MW = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'mw', 'mw.txt'))
 DEFAULT_INDEX = os.path.join(HERE, 'dcs_lemma_renou.json')
@@ -118,17 +118,17 @@ def run(out, index_path, report_only):
 
 def report(s, out):
     n = s['entries']
-    print('MW entries: %d' % n)
+    print(f'MW entries: {n:d}')
     print('  <ls>-tagged: %d (%.1f%%) · DCS-hit: %d (%.1f%%)'
           % (s['ls_tagged'], 100.0 * s['ls_tagged'] / n if n else 0,
              s['dcs_hit'], 100.0 * s['dcs_hit'] / n if n else 0))
     for label, key in (('<ls> citations', 'ls_state'), ('DCS attestation', 'dcs_state'),
                        ('enriched (ls ∪ dcs)', 'enr_state')):
-        print('  %s — entries carrying each state:' % label)
+        print('  {} — entries carrying each state:'.format(label))
         for st in STATES:
             print('    %-3s %-15s %d' % (st, renou.RENOU_NAME[st], s[key].get(st, 0)))
     if out:
-        print('→ %s' % out)
+        print('→ {}'.format(out))
 
 
 def main():
@@ -144,7 +144,7 @@ def main():
         elif a == '--report':
             report_only = True; i += 1
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
     run(out, index_path, report_only)
 
 

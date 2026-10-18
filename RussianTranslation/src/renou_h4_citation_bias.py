@@ -46,8 +46,8 @@ import numpy as np
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from renou_register import REGISTERS       # noqa: E402
-import renou_corpus_map as rcm             # noqa: E402
+from renou_register import REGISTERS
+import renou_corpus_map as rcm
 
 CANON = ('pwg', 'mw', 'pw', 'ap', 'ap90', 'ben', 'sch', 'bhs')
 
@@ -159,16 +159,14 @@ def main():
         elif a == '--out':
             out_path = args[i + 1]; i += 2
         else:
-            raise SystemExit('unknown option: %s' % a)
+            raise SystemExit('unknown option: {}'.format(a))
 
     u_shares, u_total, u_counts = usage_shares()
     # registers reachable by the usage route at all (>0 attestations)
     usage_reachable = {r for r, s in u_shares.items() if s > 0}
 
     result = {
-        'method': 'H4 dictionary citation bias — log2(citation_share / usage_share), '
-                  'entry-level citation unit, attestation-level usage unit, '
-                  '%d-rep bootstrap CI over entries' % reps,
+        'method': f'H4 dictionary citation bias — log2(citation_share / usage_share), entry-level citation unit, attestation-level usage unit, {reps:d}-rep bootstrap CI over entries',
         'seed': seed, 'reps': reps,
         'usage_side': {'total_attestations': u_total,
                         'shares': {r: u_shares.get(r, 0.0) for r in REGISTERS if r in usage_reachable}},
@@ -181,7 +179,7 @@ def main():
         n_entries = len(entries)
         n_with_ls_reg = sum(1 for s in reg_sets if s)
         c_shares = shares_from_sets(reg_sets, REGISTERS)
-        cis = bootstrap_ci(reg_sets, REGISTERS, reps, seed='%d:%s' % (seed, code))
+        cis = bootstrap_ci(reg_sets, REGISTERS, reps, seed=f'{seed:d}:{code}')
 
         both_route = {}
         one_route_ls_only = {}
@@ -215,7 +213,7 @@ def main():
 
     with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
         json.dump(result, f, ensure_ascii=False, indent=1)
-    print('wrote %s' % out_path)
+    print('wrote {}'.format(out_path))
 
     # console summary: headline registers
     for code in CANON:
@@ -225,7 +223,7 @@ def main():
         for r in ('epic', 'rgveda', 'kavya'):
             if r in br:
                 b = br[r]
-                line.append('%s log2=%.2f [%.2f,%.2f]' % (
+                line.append('{} log2={:.2f} [{:.2f},{:.2f}]'.format(
                     r, b['log2_bias'],
                     b['log2_bias_ci95'][0] if b['log2_bias_ci95'][0] is not None else float('nan'),
                     b['log2_bias_ci95'][1] if b['log2_bias_ci95'][1] is not None else float('nan')))

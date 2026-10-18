@@ -96,9 +96,7 @@ def detect(text, owner=None):
 # ---------------------------------------------------------------- masking
 GRAM = re.compile(r'\b(Subst|Adj|Adv|Indekl|PostP)\b\s*(mfn|ifc|m\.?|n\.?|f\.?)?'
                   r'|\b(mfn|ifc|NPr|Pl|Sg|Du|Akk|Lok|Dat|Gen|Instr|Nom|Vok)\b:?')
-INLINE_SA = re.compile(r'\{#.*?#\}|<is>.*?</is>')
-LS = re.compile(r'<ls\b[^>]*>.*?</ls>|<ab\b[^>]*>.*?</ab>|<lex\b[^>]*>.*?</lex>'
-                r'|<[^>]+>')
+INLINE_SA = re.compile(r'\{#.*?#\}|<is>.*?</is>', re.S)
 PCT = re.compile(r'\{%(.*?)%\}', re.S)
 # a {%…%} span that is purely lowercase IAST (a Sanskrit headword like aṃśa,
 # kenāṃśena) is NOT a German gloss — keep it verbatim, never translate it
@@ -123,13 +121,22 @@ def mask_nws_gloss(gloss, owner):
     # (it is what slid av's + upa gloss from Geldner onto Rivelex).
     g = re.sub(r'^[\s,;]*[^>]*?;\s*[A-ZÀ-ÖØ-ÞĀ-ỿ][^>:]*?\s:\s[\dIVXLCDM]+[A-Za-z]?\s*>\s*', '', g)
     if owner:                                       # drop the trailing owner cite
-        g = re.sub(re.escape(owner.split(' (s.v')[0]).replace(r'\ ', r'\s*')
-                   + r'.*$', '', g).rstrip(' .')
+        # H5707 L1: cut from the LAST occurrence only when it actually sits at
+        # the tail — the old first-occurrence `.*$` cut destroyed everything
+        # after a mid-gloss mention of the same source, and without re.S a
+        # cite followed by a newline was never stripped at all. When a lot of
+        # prose follows the last occurrence it is a mid-gloss reference, not
+        # the attribution: keep it (a leaked cite in translation is noise;
+        # a wrong cut is unrecoverable text loss).
+        base = re.escape(owner.split(' (s.v')[0]).replace(r'\ ', r'\s*')
+        last = None
+        for last in re.finditer(base, g):
+            pass
+        if last and (len(g) - last.start()) <= 2 * len(base) + 40:
+            g = g[:last.start()].rstrip(' .')
     for m in INLINE_SA.findall(g):
         keep.append(m)
     g = INLINE_SA.sub(' ', g)
-    for m in GRAM.findall(re.sub(r'\s+', ' ', g)):
-        pass
     g = GRAM.sub(' ', g)
     # pull internal references (kept verbatim, never translated)
     for m in REF.finditer(g):
@@ -222,10 +229,10 @@ def to_md(man):
     for u in man['units']:
         if u['layer'] != cur:
             cur = u['layer']
-            L += ['', '## %s' % cur, '',
+            L += ['', '## {}'.format(cur), '',
                   '| ref | lang | to translate | keep |', '|---|---|---|---|']
         keep = ' · '.join(u['keep'])[:60]
-        L.append('| %s | %s | %s | %s |' % (
+        L.append('| {} | {} | {} | {} |'.format(
             u['ref'][:32], ','.join(u['lang']),
             u['text'].replace('|', '\\|')[:120], keep.replace('|', '\\|')))
     return '\n'.join(L) + '\n'
@@ -284,8 +291,8 @@ def run_all(emit_md=False):
             print('  ... %d/%d (%.0fs)' % (i + 1, len(keys), time.time() - t0))
     rep = ['# a-section translatable-content compile — summary',
            '', '- cards compiled: **%d** (%d errors)' % (len(keys) - len(errors), len(errors)),
-           '- cards with an NWS layer: **%d**' % nws_cards,
-           '- total translatable units: **%d**' % tot_units,
+           f'- cards with an NWS layer: **{nws_cards:d}**',
+           f'- total translatable units: **{tot_units:d}**',
            '- elapsed: %.0fs' % (time.time() - t0), '',
            '## language spread (per unit / per card)', '',
            '| lang | units | cards |', '|---|---|---|']
@@ -293,7 +300,7 @@ def run_all(emit_md=False):
         rep.append('| %s | %d | %d |' % (l, lang_units.get(l, 0), cards_with.get(l, 0)))
     if errors:
         rep += ['', '## errors (first 30)', '']
-        rep += ['- `%s` — %s' % (k, e) for k, e in errors[:30]]
+        rep += ['- `{}` — {}'.format(k, e) for k, e in errors[:30]]
     open(os.path.join(OUT, '_SUMMARY.md'), 'w', encoding='utf-8').write('\n'.join(rep) + '\n')
     print('\n'.join(l for l in rep if not l.startswith('|') or l.startswith('| lang')))
     print('  wrote %d manifests -> %s  (summary: _SUMMARY.md)'

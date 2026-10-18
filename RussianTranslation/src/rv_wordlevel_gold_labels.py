@@ -152,7 +152,7 @@ def main():
     if unmatched:
         print('  UNMATCHED (key not found in the gold file) -- these are a bug, not a result:')
         for k in unmatched:
-            print('    %s' % (k,))
+            print('    {}'.format(k))
         return 1
     return 0
 

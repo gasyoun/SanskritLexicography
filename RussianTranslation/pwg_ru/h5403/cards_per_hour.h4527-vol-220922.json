@@ -1,0 +1,22 @@
+{
+ "calls_reserved": 5,
+ "cards_per_hour_dispatch": 60.42,
+ "cards_per_hour_wall": 55.73,
+ "cards_per_paid_call": 0.5714,
+ "cards_promoted": 4,
+ "dispatch_s": 238.321,
+ "gen_model_version": "claude-sonnet-5",
+ "leases_attempted": 5,
+ "paid_calls_cards": 5,
+ "paid_calls_probe_legs": 2,
+ "paid_calls_total": 7,
+ "requeue_backlog_keys": [
+  "kast_ur_i~~h0_zz_pw"
+ ],
+ "run_id": "h4527-vol-220922",
+ "schema": "pwg.cards_per_hour.v1",
+ "sense_rows_promoted": 10,
+ "wall_clock_s": 258.376,
+ "window_end_utc": "2026-09-22T11:50:02.675000Z",
+ "window_start_utc": "2026-09-22T11:45:44.299000Z"
+}

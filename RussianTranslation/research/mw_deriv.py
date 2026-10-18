@@ -114,7 +114,7 @@ def write_link_table(D):
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else 'demo'
     if not os.path.exists(ANALYSIS):
-        print('missing %s — fetch from github.com/funderburkjim/MWderivations' % ANALYSIS)
+        print('missing {} — fetch from github.com/funderburkjim/MWderivations'.format(ANALYSIS))
         return
     D = load()
     if cmd == 'link':

@@ -81,14 +81,14 @@ def main():
             try:
                 normalize_telemetry({
                     'cost_evaluable': True, 'observed_cost_usd': bad})
-                raise AssertionError('invalid telemetry accepted: %r' % bad)
+                raise AssertionError('invalid telemetry accepted: {!r}'.format(bad))
             except ValueError:
                 pass
             try:
                 normalize_telemetry({
                     'cost_evaluable': True, 'observed_cost_usd': 0,
                     'input_tokens': bad})
-                raise AssertionError('invalid token telemetry accepted: %r' % bad)
+                raise AssertionError('invalid token telemetry accepted: {!r}'.format(bad))
             except ValueError:
                 pass
 
@@ -229,7 +229,7 @@ def _test_h2079_945_duration_capture():
         except ValueError:
             pass
         else:
-            raise AssertionError('normalize_telemetry accepted duration %r' % (junk,))
+            raise AssertionError('normalize_telemetry accepted duration {!r}'.format(junk))
 
     # 5. it survives a real reserve/finalize round trip AND the ledger's own consistency re-read
     with tempfile.TemporaryDirectory() as td:

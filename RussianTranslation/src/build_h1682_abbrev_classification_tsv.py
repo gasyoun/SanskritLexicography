@@ -19,7 +19,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
-import h1682_abbrev_collapse as coll  # noqa: E402
+import h1682_abbrev_collapse as coll
 
 OUT = os.path.join(RT, 'pwg_ru', 'H1682_ABBREV_RULE_COLLAPSE_CLASSIFICATION_2026-07-26.tsv')
 

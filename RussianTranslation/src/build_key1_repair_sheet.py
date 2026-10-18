@@ -21,14 +21,14 @@ import sys
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
-from csl_pyutil import render_review_sheet   # noqa: E402
-from csl_pyutil.evidence import EvidenceManifest   # noqa: E402
+from csl_pyutil import render_review_sheet
+from csl_pyutil.evidence import EvidenceManifest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 GITHUB = os.path.normpath(os.path.join(REPO, '..', '..'))
 sys.path.insert(0, os.path.join(GITHUB, 'sanskrit-util', 'py'))
-from sanskrit_util import from_slp1, source_text_to_iast   # noqa: E402  (canonical SLP1->IAST)
+from sanskrit_util import from_slp1, source_text_to_iast
 
 SRC = os.path.join(REPO, 'pwg_ru', 'key1_repair_proposals.jsonl')
 OUT = os.path.join(REPO, 'pwg_ru', 'key1_repair_vote_2026-08-17.html')
@@ -67,12 +67,12 @@ def build_items(props):
         items.append({
             'id': p['id'],
             'filt': p['class'],
-            'title': '%s → %s [%s]' % (_iast(p['key1']), intended, label),
+            'title': '{} → {} [{}]'.format(_iast(p['key1']), intended, label),
             'badges': [label, '%d строк' % p['rows_affected']],
             'question': q,
             'panels': [('Первая строка карточки (de, IAST)',
-                        '<code>%s</code>' % html.escape(
-                            source_text_to_iast(p['sample_de'], 'pwg')))],
+                        '<code>{}</code>'.format(html.escape(
+                            source_text_to_iast(p['sample_de'], 'pwg'))))],
         })
     return items
 

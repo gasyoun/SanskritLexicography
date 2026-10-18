@@ -33,7 +33,7 @@ senses = result['cards'][0]['records'][0]['senses']
 # --- 1. what the prompt told the model to reproduce, verbatim from the fixture ---
 skeleton_lines = [ln for ln in raw.splitlines() if ln.strip().startswith('—')]
 pinned = [
-    schema['$defs']['sense%d' % n]['properties']['german']['const']
+    schema['$defs'][f'sense{n:d}']['properties']['german']['const']
     for n in (1, 2, 3)
 ]
 
@@ -42,9 +42,9 @@ print('The T2 prompt said: reproduce that sense\'s German skeleton line EXACTLY 
 for i, (line, const, got) in enumerate(
         zip(skeleton_lines, pinned, [s['german'] for s in senses]), start=1):
     print('\nsense %d' % i)
-    print('  fixture skeleton line   = %r' % line)
-    print('  schema pinned const     = %r' % const)
-    print('  model returned          = %r' % got)
+    print('  fixture skeleton line   = {!r}'.format(line))
+    print('  schema pinned const     = {!r}'.format(const))
+    print('  model returned          = {!r}'.format(got))
     print('  model == skeleton line? %s' % (got == line))
     print('  model == pinned const?  %s' % (got == const))
     print('  schema const == line?   %s' % (const == line))

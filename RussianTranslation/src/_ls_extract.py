@@ -13,7 +13,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 PWG = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 
@@ -56,7 +56,7 @@ def main():
         if key not in samples:
             samples[key] = re.sub(r'<[^>]+>', '', inner).strip()[:50]
     print('PWG <ls> citations: %d total, %d distinct source keys' % (total, len(freq)))
-    print('top %d sources (key | count | sample):' % topn)
+    print(f'top {topn:d} sources (key | count | sample):')
     for k, c in freq.most_common(topn):
         print('  %-16s %7d   %s' % (k, c, samples.get(k, '')))
 

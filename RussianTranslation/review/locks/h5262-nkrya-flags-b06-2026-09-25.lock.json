@@ -1,0 +1,24 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h5262-nkrya-flags-b06-2026-09-25",
+  "content_hash": "sha256:8ccc1bf7fbf7f2b6456c160e4766dab31f9a0896c87f5ab04b5b5d1233ca3094",
+  "generated": "2026-09-25",
+  "gate": null,
+  "n_items": 10,
+  "ids": [
+    "L-прокоротать",
+    "L-обвязываться",
+    "L-умерщвить",
+    "L-возжигание",
+    "L-закупориваться",
+    "L-проступиться",
+    "L-негордый",
+    "L-окладывать",
+    "L-преходящесть",
+    "L-самообуздание"
+  ],
+  "source_html": "sanskritlexicography-h5262-nkrya-flags-b06_10.html",
+  "mode": "stamped",
+  "created": "2026-09-25",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

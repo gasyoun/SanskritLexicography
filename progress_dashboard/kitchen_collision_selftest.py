@@ -27,8 +27,8 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent / "RussianTranslation" / "src" / "pilot"))
 
-import kitchen_slices as ks  # noqa: E402
-from dashboard_events import (  # noqa: E402
+import kitchen_slices as ks
+from dashboard_events import (
     OPERATOR_ONE_LINER_COLLISION,
     emit_collision,
 )
@@ -43,7 +43,7 @@ def _write_jsonl(path: Path, rows: list[dict]) -> None:
 
 def test_fixture_blocks_banner():
     fixture = HERE / "examples" / "collision_events.example.jsonl"
-    assert fixture.exists(), "example fixture missing: %s" % fixture
+    assert fixture.exists(), "example fixture missing: {}".format(fixture)
     out = ks.collision_guard(fixture)
     assert out["measured"] is True
     assert out["blocked"] is True

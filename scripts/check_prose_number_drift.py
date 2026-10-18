@@ -49,10 +49,30 @@ def load_claims() -> list[dict]:
     return json.loads(CLAIMS_PATH.read_text(encoding="utf-8"))["claims"]
 
 
+# Thousands separators prose actually uses for these figures: the canonical
+# comma, plain space, NBSP, narrow NBSP, thin space. H5509 miss (05-10-2026):
+# «323 425» lived in the published explainer for nine days because the gate
+# pinned comma forms only -- RU-locale prose re-separates thousands with spaces.
+_SEP_CLASS = r"[,\u00a0\u202f\u2009 ]"
+
+
 def build_regex(claim: dict) -> re.Pattern:
     values = sorted({*claim["stale_values"], claim["display"]}, key=len, reverse=True)
-    alts = "|".join(re.escape(v) for v in values)
-    return re.compile(rf"(?<![\d,])(?:{alts})(?![\d,])")
+    alts = []
+    for v in values:
+        if v == claim["display"]:
+            # display: literal only -- prose may legally re-separate the
+            # CORRECT figure (RU convention writes «323 422»), so only the
+            # canonical form is ever "matched then skipped" by main()
+            alts.append(re.escape(v))
+        else:
+            # stale: every separator variant of the same digit groups hits
+            alts.append(re.escape(v).replace(re.escape(","), _SEP_CLASS))
+    return re.compile(
+        rf"(?<![\d,])(?<!\d{_SEP_CLASS})"
+        rf"(?:{'|'.join(alts)})"
+        rf"(?![\d,])(?![,\u00a0\u202f\u2009 ]\d)"
+    )
 
 
 def is_allowed(rel_posix: str, allow_globs: list[str]) -> bool:

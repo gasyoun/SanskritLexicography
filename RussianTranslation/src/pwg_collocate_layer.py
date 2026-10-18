@@ -35,7 +35,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from _sanskrit_util_vendored import to_slp1  # noqa: E402
+from _sanskrit_util_vendored import to_slp1
 
 DEFAULT_CSV = os.path.join(
     HERE, '..', '..', '..', 'VisualDCS', 'derived-data', 'Lexical-Cores',
@@ -151,7 +151,7 @@ def selftest(tmp_dir):
     with open(fx_idx, 'w', encoding='utf-8', newline='') as f:
         f.write('k1\thom\n')
         for r in FIXTURE_INDEX:
-            f.write('%s\t%s\n' % (r['k1'], r['hom']))
+            f.write('{}\t{}\n'.format(r['k1'], r['hom']))
     rows, stats = build(fx, fx_idx, top_n=12)
     by = {(r['k1'], r['hom']): r for r in rows}
     checks = [
@@ -203,8 +203,7 @@ def spot_check(tsv_path, csv_path, n, seed=4708):
         prof = profiles.get(r['lemma_iast'])
         if prof is None:
             fails.append(r['k1'])
-            print('%s\t%s\t%s\t-\t-\t-\tFAIL(lemma gone)' %
-                  (r['k1'], r['hom'], r['lemma_iast']))
+            print('{}\t{}\t{}\t-\t-\t-\tFAIL(lemma gone)'.format(r['k1'], r['hom'], r['lemma_iast']))
             continue
         top3 = '|'.join('%s:%d' % c for c in prof['collocates'][:3])
         ok = (str(prof['total']) == r['total_occ']
@@ -216,7 +215,7 @@ def spot_check(tsv_path, csv_path, n, seed=4708):
                         for tok in [t for t, _ in prof['collocates'][:3]])
         if not ok:
             fails.append(r['k1'])
-        print('%s\t%s\t%s\t%s\t%s\t%s\t%s' % (
+        print('{}\t{}\t{}\t{}\t{}\t{}\t{}'.format(
             r['k1'], r['hom'], r['lemma_iast'], prof['total'], prof['cooccur'],
             top3, 'PASS' if ok else 'FAIL'))
     return fails
@@ -236,7 +235,7 @@ def main():
         import tempfile
         checks = selftest(os.path.join(tempfile.gettempdir(), 'h4708_selftest'))
         for name, ok in checks:
-            print('%s  %s' % ('PASS' if ok else 'FAIL', name))
+            print('{}  {}'.format('PASS' if ok else 'FAIL', name))
         if not all(ok for _, ok in checks):
             sys.exit(1)
         print('selftest: %d/%d PASS' % (sum(ok for _, ok in checks),
@@ -253,7 +252,7 @@ def main():
     write_tsv(rows, args.out)
     stats['out'] = args.out
     stats['out_bytes'] = os.path.getsize(args.out)
-    print('coverage: %s' % stats)
+    print('coverage: {}'.format(stats))
 
 
 if __name__ == '__main__':

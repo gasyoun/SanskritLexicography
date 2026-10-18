@@ -27,6 +27,8 @@ Outputs (beside this file's parent, LF, UTF-8, idempotent):
 
 Raw stays gitignored (raw/.gitignore). Usage:
   python3 tools/h4800_union_join.py [--raw PATH] [--union PATH]
+  python3 tools/h4800_union_join.py --stock-tsv sanskrityatina_reverse_full_stock.tsv
+      # rejoin only (no raw .doc): re-key + re-look-up the committed extraction
 """
 from __future__ import annotations
 
@@ -67,7 +69,7 @@ _LEGEND_ANCHORS = ("aṃśagaṇa", "paryantīkṛta", "paryavadāpayitar")
 
 def _import_sanskrit_util():
     try:
-        import sanskrit_util  # noqa: F401
+        import sanskrit_util
         return sanskrit_util
     except ImportError:
         pass
@@ -76,7 +78,7 @@ def _import_sanskrit_util():
         if cand.is_dir():
             sys.path.insert(0, str(cand))
             try:
-                import sanskrit_util  # noqa: F401
+                import sanskrit_util
                 return sanskrit_util
             except ImportError:
                 sys.path.pop(0)
@@ -117,21 +119,75 @@ def extract_stock(doc_path: Path):
     return entries, junk, len(wd)
 
 
+def load_stock_tsv(stock_path: Path):
+    """Committed stock TSV -> [(headword_iast, source_code)], file order kept.
+
+    The rejoin path exists because the raw .doc is an off-git yadisk asset: when
+    the WebDAV host is unreachable the join stage must still be reproducible from
+    the committed extraction (whose 266,703 headwords are independently
+    re-derivable — H4800 verifier, 20-09-2026). It does NOT re-prove extraction.
+    """
+    rows = []
+    with open(stock_path, encoding="utf-8") as f:
+        header = f.readline().rstrip("\n").split("\t")
+        assert header[:3] == ["headword_iast", "source_code", "form_key"], header
+        for ln in f:
+            cols = ln.rstrip("\n").split("\t")
+            if len(cols) < 3:
+                continue
+            rows.append((cols[0], cols[1]))
+    return rows
+
+
+def _sanskrit_util_info() -> dict:
+    """Version + checkout commit of the library that defines form_key (FAIL pin)."""
+    mod = _import_sanskrit_util()
+    info = {"version": getattr(mod, "__version__", None)}
+    root = Path(mod.__file__).resolve().parent
+    info["commit"] = None
+    for cand in (root, *root.parents[:4]):
+        if (cand / ".git").exists():
+            try:
+                info["commit"] = subprocess.check_output(
+                    ["git", "-C", str(cand), "rev-parse", "HEAD"],
+                    text=True, stderr=subprocess.DEVNULL).strip()
+            except (OSError, subprocess.CalledProcessError):
+                pass
+            break
+    info["path"] = str(root)
+    return info
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--raw", default=str(HERE / "raw" / "reverse-index-full.doc"))
     ap.add_argument("--union", default=str(
         REPO / "HeadwordLists" / "union-16dicts" / "union_headwords_16.tsv"))
+    ap.add_argument("--stock-tsv", default=None, help=(
+        "rejoin an already-extracted committed stock TSV instead of re-extracting "
+        "the raw .doc (join stage only; use when the yadisk raw is unreachable)"))
     args = ap.parse_args()
 
     su = _import_sanskrit_util()
+    util_info = _sanskrit_util_info()
 
-    raw = Path(args.raw)
-    if not raw.is_file():
-        raise SystemExit(f"raw doc not found: {raw}\n"
-                         f"refetch: rclone copy '{DOC_REMOTE}' raw/")
-
-    entries, junk_lines, wd_bytes = extract_stock(raw)
+    if args.stock_tsv:
+        stock_path = Path(args.stock_tsv)
+        if not stock_path.is_file():
+            raise SystemExit(f"stock TSV not found: {stock_path}")
+        raw = None
+        entries = load_stock_tsv(stock_path)
+        stock_sha = _sha256(stock_path)      # before the output overwrites it
+        junk_lines = None                    # not re-derived in rejoin mode
+        wd_bytes = None
+        extraction_mode = "rejoin-from-stock-tsv"
+    else:
+        raw = Path(args.raw)
+        if not raw.is_file():
+            raise SystemExit(f"raw doc not found: {raw}\n"
+                             f"refetch: rclone copy '{DOC_REMOTE}' raw/")
+        entries, junk_lines, wd_bytes = extract_stock(raw)
+        extraction_mode = "raw-doc"
 
     # ---- dedupe census (doc order preserved for the TSV) ----
     seen = set()
@@ -198,12 +254,12 @@ def main() -> int:
             f.write(f"{w}\t{c}\t{fk}\t{flag}\t{dicts}\n")
 
     cov = in_union / len(unique_entries)
-    prov = {
-        "dataset": "sanskrityatina-reverse-vs-union16",
-        "handoff": "H4800",
-        "generated": "2026-09-19",
-        "executor": "OxAlpha (opencode/z-ai/glm-5.3-flash), drain worker on Claude/c4",
-        "stock_source": {
+    # Provenance stays deterministic across reruns: the dataset date is fixed and
+    # the rework is a constant fact, never the wall clock (a rerun must reproduce
+    # h4800_provenance.json byte-for-byte, not just the TSVs).
+    gen = "2026-09-19"
+    if raw is not None:
+        stock_source = {
             "path": DOC_REMOTE,
             "local_size_bytes": raw.stat().st_size,
             "sha256": _sha256(raw),
@@ -212,14 +268,40 @@ def main() -> int:
                           "entries = lines entirely within the IAST word alphabet; "
                           "coded lines 'SOURCE_CODE<TAB|SP>word' (single capital letter); "
                           "binary junk lines excluded",
+        }
+    else:
+        stock_source = {
+            "path": DOC_REMOTE,
+            "extraction": "NOT re-derived in this run — headwords read from the "
+                          "committed extraction TSV (rejoin mode)",
+            "rejoined_from_tsv": {
+                "path": "ReverseDictionary/sanskrityatina/sanskrityatina_reverse_full_stock.tsv",
+                "sha256_pre_rejoin": stock_sha,
+            },
+            "sha256_source_doc": "79ae7a5562e5a44ea9e15ee5e0c92badac467e26a97d87bb620419125b284826",
+        }
+    prov = {
+        "dataset": "sanskrityatina-reverse-vs-union16",
+        "handoff": "H4800",
+        "generated": gen,
+        "executor": "OxAlpha (opencode/z-ai/glm-5.3-flash), drain worker on Claude/c4",
+        "extraction_mode": extraction_mode,
+        "rework": {
+            "date": "2026-10-17",
+            "cause": "independent verifier FAIL 2026-09-20: artifacts keyed with a "
+                     "superseded pre-H3975 form_key (243,985 / 91.48 % / 22,718)",
+            "fix": "rejoin on pinned sanskrit-util 0.12.0 -> 244,195 / 91.56 % / 22,508",
+            "pr": "SanskritLexicography#2419",
         },
+        "sanskrit_util": util_info,
+        "stock_source": stock_source,
         "union_source": {
             "path": "HeadwordLists/union-16dicts/union_headwords_16.tsv (H4797)",
             "rows": n_union_rows,
             "join_key": "sanskrit-util slp1_form_key(union slp1) == form_key(headword_iast)",
         },
         "counts": {
-            "raw_entries_extracted": len(entries),
+            "raw_entries_extracted": len(entries) if raw is not None else None,
             "junk_nonentry_lines": junk_lines,
             "duplicate_headwords": dupes,
             "unique_headwords": len(unique_entries),
@@ -246,6 +328,14 @@ def main() -> int:
             "Russian-school-only slice.",
         ],
     }
+    if extraction_mode != "raw-doc":
+        prov["notes"].append(
+            "REJOIN RUN: headwords came from the committed stock TSV, not the raw .doc "
+            "(yadisk WebDAV unavailable at rework time). Extraction counts are therefore "
+            "not re-derived; only the join (form_key + union lookup) is re-executed, "
+            "against the pinned sanskrit-util recorded above. H4800 verifier FAIL 20-09-2026: "
+            "the pre-rework artifacts were keyed with a superseded pre-H3975 form_key "
+            "(243,985 / 91.48 % / 22,718); the pinned library yields 244,195 / 91.56 % / 22,508.")
     with open(HERE / "h4800_provenance.json", "w", encoding="utf-8", newline="\n") as f:
         json.dump(prov, f, ensure_ascii=False, indent=2)
         f.write("\n")

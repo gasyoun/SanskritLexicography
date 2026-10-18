@@ -97,7 +97,7 @@ def _wf_index() -> dict[str, Path]:
 def _read_wf_meta(path: Path) -> dict:
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
-    except Exception:  # noqa: BLE001
+    except Exception:
         return {}
     if not isinstance(data, dict):
         return {}

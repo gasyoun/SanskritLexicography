@@ -21,8 +21,8 @@ if HERE not in sys.path:
 if H1210 not in sys.path:
     sys.path.insert(0, H1210)
 
-import cache_identity as ident  # noqa: E402
-import det_gate  # noqa: E402
+import cache_identity as ident
+import det_gate
 
 
 def _canonical(obj):

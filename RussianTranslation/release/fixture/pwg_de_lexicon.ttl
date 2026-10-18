@@ -605,7 +605,7 @@ gr:pwg-source a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/
   pwglex:renouYoungest "IV" ;
   pwglex:dateMin "-900"^^xsd:integer ;
   pwglex:dateMax "1830"^^xsd:integer ;
-  pwglex:datedCitations "27"^^xsd:integer .
+  pwglex:datedCitations "26"^^xsd:integer .
 <https://w3id.org/sanskrit-lexicon/repwg/attestation/a/2> a pwglex:StratumAttestation, prov:Entity ;
   skos:prefLabel "паниниевский–эпический"@ru ;
   pwglex:renouOldest "II" ;
@@ -1228,7 +1228,6 @@ gr:pwg-source a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/
   pwglex:renouStratum "Epic / early-Classical" ;
   pwglex:renouStratum "Vedic" ;
   dct:references <https://w3id.org/sanskrit-lexicon/repwg/citation/AV_x2e__x2d_10_x2c_8_x2c_36>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_12_x2c_3596>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_8_x2c_3542>, <https://w3id.org/sanskrit-lexicon/repwg/citation/ed_x2e__x2d_Bomb_x2e_> ;
-  pwglex:attestation <https://w3id.org/sanskrit-lexicon/repwg/attestation/rakz/1> ;
   pwglex:evidenceGrade gr:pwg-source .
 <https://w3id.org/sanskrit-lexicon/repwg/sense/rakz/de/2/2> a ontolex:LexicalSense ;
   skos:definition "fürchten, sich retten vor"@de ;
@@ -1252,7 +1251,6 @@ gr:pwg-source a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/
   pwglex:equivalenceType "explanatory" ;
   pwglex:grammar "adj." ;
   dct:references <https://w3id.org/sanskrit-lexicon/repwg/citation/VOP_x2e__x2d_3_x2c_136> ;
-  pwglex:attestation <https://w3id.org/sanskrit-lexicon/repwg/attestation/rakz/1> ;
   pwglex:evidenceGrade gr:pwg-source .
 <https://w3id.org/sanskrit-lexicon/repwg/sense/rakz/de/4/1> a ontolex:LexicalSense ;
   skos:definition "beschädigen, verletzen"@de ;
@@ -1262,7 +1260,6 @@ gr:pwg-source a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/
   pwglex:diasystem "Vedic" ;
   pwglex:renouStratum "Vedic" ;
   dct:references <https://w3id.org/sanskrit-lexicon/repwg/citation/AV_x2e__x2d_5_x2c_7_x2c_1> ;
-  pwglex:attestation <https://w3id.org/sanskrit-lexicon/repwg/attestation/rakz/1> ;
   pwglex:evidenceGrade gr:pwg-source .
 <https://w3id.org/sanskrit-lexicon/repwg/citation/ed_x2e__x2d_Bomb_x2e_> a pwglex:Citation, prov:Entity ;
   rdfs:label "ed. Bomb." ;
@@ -1468,13 +1465,6 @@ gr:pwg-source a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/
   pwglex:sourceSigla "AV." ;
   pwglex:locus "5,7,1" ;
   pwglex:lsRaw "AV. 5,7,1" .
-<https://w3id.org/sanskrit-lexicon/repwg/attestation/rakz/1> a pwglex:StratumAttestation, prov:Entity ;
-  skos:prefLabel "ведийский–эпический"@ru ;
-  pwglex:renouOldest "I" ;
-  pwglex:renouYoungest "III" ;
-  pwglex:dateMin "-940"^^xsd:integer ;
-  pwglex:dateMax "80"^^xsd:integer ;
-  pwglex:datedCitations "3"^^xsd:integer .
 <https://w3id.org/sanskrit-lexicon/repwg/attestation/rakz/2> a pwglex:StratumAttestation, prov:Entity ;
   skos:prefLabel "ведийский–классический"@ru ;
   pwglex:renouOldest "I" ;
@@ -1531,7 +1521,7 @@ gr:pwg-source a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/
   pwglex:renouYoungest "IV" ;
   pwglex:dateMin "-900"^^xsd:integer ;
   pwglex:dateMax "1830"^^xsd:integer ;
-  pwglex:datedCitations "27"^^xsd:integer .
+  pwglex:datedCitations "26"^^xsd:integer .
 
 <https://w3id.org/sanskrit-lexicon/repwg/entry/aMSa-4/de> a ontolex:LexicalEntry ;
   rdfs:label "aṃśa"@sa-Latn ;
@@ -1664,7 +1654,6 @@ gr:pwg-source a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/
   pwglex:equivalenceType "explanatory" ;
   pwglex:diasystem "Classical" ;
   dct:references <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_ed_x2e__x2d_Bomb_x2e__x2d_2_x2c_12_x2c_19>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_208>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d__x28_II_x29__x2d_5221>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d__x28_II_x29__x2d_6634> ;
-  pwglex:attestation <https://w3id.org/sanskrit-lexicon/repwg/attestation/rakz/1> ;
   pwglex:evidenceGrade gr:pwg-source .
 <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_208> a pwglex:Citation, prov:Entity ;
   rdfs:label "Spr. 208" ;
@@ -1682,11 +1671,4 @@ gr:pwg-source a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/
   rdfs:label "Spr. (II) 6634" ;
   pwglex:sourceSigla "Spr. (II) 6634" ;
   pwglex:lsRaw "Spr. (II) 6634" .
-<https://w3id.org/sanskrit-lexicon/repwg/attestation/rakz/1> a pwglex:StratumAttestation, prov:Entity ;
-  skos:prefLabel "ведийский–эпический"@ru ;
-  pwglex:renouOldest "I" ;
-  pwglex:renouYoungest "III" ;
-  pwglex:dateMin "-940"^^xsd:integer ;
-  pwglex:dateMax "80"^^xsd:integer ;
-  pwglex:datedCitations "3"^^xsd:integer .
 

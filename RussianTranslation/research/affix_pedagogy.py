@@ -154,13 +154,13 @@ def mw_counts():
                 s = b['method'].split(':')[1] if ':' in b['method'] else b['method']
                 d[s] = d.get(s, 0) + 1
     except Exception as e:
-        print('  (MW counts unavailable: %s)' % e)
+        print('  (MW counts unavailable: {})'.format(e))
     return d
 
 
 def main():
     if not os.path.exists(AP.BABYLON):
-        print('missing %s' % AP.BABYLON); return
+        print('missing {}'.format(AP.BABYLON)); return
     rows = load_map()
     roots, examples = mine(rows)
     mw = mw_counts()

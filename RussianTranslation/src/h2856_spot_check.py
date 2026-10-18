@@ -88,10 +88,7 @@ def write_report(results, n_total_absent):
     lines.append('')
     lines.append('_Created: 18-08-2026 · Last updated: 18-08-2026_')
     lines.append('')
-    lines.append('Computed by Sonnet 5 (`claude-sonnet-5`). Driver: '
-                  '[`src/h2856_spot_check.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/h2856_spot_check.py). '
-                  'Deterministic sample (every %dth row of the %d exact-match-absent headwords in '
-                  '`research/h2856_ghost_headword_census.jsonl`), not random.' % (SAMPLE_STRIDE, n_total_absent))
+    lines.append(f'Computed by Sonnet 5 (`claude-sonnet-5`). Driver: [`src/h2856_spot_check.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/h2856_spot_check.py). Deterministic sample (every {SAMPLE_STRIDE:d}th row of the {n_total_absent:d} exact-match-absent headwords in `research/h2856_ghost_headword_census.jsonl`), not random.')
     lines.append('')
     lines.append('For each sampled headword: (1) does its `key1` occur as a **prefix** of some '
                  '`corpus_lexicon.jsonl` `slp1` token (an inflected-form hint), and (2) does the '
@@ -101,8 +98,8 @@ def write_report(results, n_total_absent):
     lines.append('| key1 | renou_any_dcs | prefix hits in corpus_lexicon.jsonl | verdict |')
     lines.append('|---|---|---|---|')
     for r in results:
-        hits_str = '; '.join('`%s`' % h['slp1'] for h in r['prefix_hits']) or '—'
-        lines.append('| `%s` | %s | %s | %s |' % (r['key1'], r['renou_any_dcs'], hits_str, r['verdict']))
+        hits_str = '; '.join('`{}`'.format(h['slp1']) for h in r['prefix_hits']) or '—'
+        lines.append('| `{}` | {} | {} | {} |'.format(r['key1'], r['renou_any_dcs'], hits_str, r['verdict']))
     lines.append('')
     lines.append('## Result')
     lines.append('')

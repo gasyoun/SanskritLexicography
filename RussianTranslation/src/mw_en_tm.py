@@ -154,11 +154,11 @@ def main():
     if args.selftest:
         return selftest()
     if not os.path.exists(args.mw):
-        sys.exit('MW source not found: %s' % args.mw)
+        sys.exit('MW source not found: {}'.format(args.mw))
     by = build(args.mw)
     if args.keys:
         for k in args.keys.split(','):
-            print('%s -> %s' % (k, by.get(k.strip(), '(no MW entry)')))
+            print('{} -> {}'.format(k, by.get(k.strip(), '(no MW entry)')))
         return
     with open(args.out, 'w', encoding='utf-8') as f:
         json.dump(by, f, ensure_ascii=False)

@@ -10,8 +10,8 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
-import saru_gloss_sample as S      # noqa: E402
-import saru_gloss_aggregate as A   # noqa: E402
+import saru_gloss_sample as S
+import saru_gloss_aggregate as A
 
 
 def test_freq_band_boundaries():

@@ -56,17 +56,17 @@ def invocation(man: dict, window: str, out_js: Path, out_manifest: Path,
     root = meta.get('root') or f'nominal_{window}'
     cmd = [sys.executable, str(HERE / 'gen_opt_harness2.py'), root,
            '--nominal', '--no-grammar',
-           '--keys=%s' % ','.join(keys),
-           '--out=%s' % out_js,
-           '--manifest-out=%s' % out_manifest]
+           '--keys={}'.format(','.join(keys)),
+           '--out={}'.format(out_js),
+           '--manifest-out={}'.format(out_manifest)]
     slot = execu.get('profile_slot')
     if slot:
-        cmd += ['--profile-slot=%s' % slot]
+        cmd += ['--profile-slot={}'.format(slot)]
         # The manifest records only the config-dir FINGERPRINT, never the path, so the path
         # is supplied by the caller and verified against that fingerprint after regeneration.
         cfg = config_dir or execu.get('config_dir')
         if cfg:
-            cmd += ['--config-dir=%s' % os.path.abspath(cfg)]
+            cmd += ['--config-dir={}'.format(os.path.abspath(cfg))]
         cmd += ['--execution-route=%s' % (execu.get('execution_route') or 'claude-cli-headless'),
                 '--executor-lane=%s' % (execu.get('executor_lane') or 'serial'),
                 '--validation-method=%s' % (execu.get('validation_method')

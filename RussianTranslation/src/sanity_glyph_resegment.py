@@ -26,8 +26,8 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import pwg_mask  # noqa: E402
-import microstructure as ms  # noqa: E402
+import pwg_mask
+import microstructure as ms
 
 REPORTS_DIR = os.path.join(HERE, '..', 'reports')
 AUDIT_PATH = os.path.join(REPORTS_DIR, 'pwg_sense_glyph_audit.json')
@@ -148,7 +148,7 @@ def run(n, sample=None, post_fn=None):
     if post is None:
         key = load_key()
         if not key:
-            return None, 'no DEEPSEEK_API_KEY found (checked %s and %s)' % (_LOCAL_ENV, _MAIN_TREE_ENV)
+            return None, 'no DEEPSEEK_API_KEY found (checked {} and {})'.format(_LOCAL_ENV, _MAIN_TREE_ENV)
         try:
             import requests
         except ImportError:
@@ -188,7 +188,7 @@ def run(n, sample=None, post_fn=None):
                     % (rec['new_sense_count'], buf_text[:2500]))
             try:
                 verdict = post(user)
-            except Exception as exc:  # noqa: BLE001 -- classify as a skipped sample, not a hard stop
+            except Exception as exc:
                 row = {'record_id': rid, 'error': str(exc)[:200]}
             else:
                 row = {'record_id': rid, 'key1': rec.get('key1'),
@@ -217,7 +217,7 @@ def _selftest():
         def fake_records(limit=None):
             calls['n'] += 1
             for rid in ('1', '2', '3'):
-                yield ['<L>%s<pc>p<k1>k<k2>k' % rid, 'card %s body' % rid]
+                yield ['<L>{}<pc>p<k1>k<k2>k'.format(rid), 'card {} body'.format(rid)]
 
         pwg_mask.records = fake_records
 
@@ -256,7 +256,7 @@ def _selftest():
 
         res, skip = run(3, sample=sample, post_fn=counting_post)
         if skip:
-            failures.append('resume run skipped: %s' % skip)
+            failures.append('resume run skipped: {}'.format(skip))
         if counting['n'] != 2:
             failures.append('resume re-posted paid verdicts: %d posts, want exactly 2 (records 2,3)'
                             % counting['n'])
@@ -264,7 +264,7 @@ def _selftest():
             failures.append('run #2 made %d total records() passes (want exactly 1 per run)' % calls['n'])
         ok_rows = [r for r in res if 'agrees' in r]
         if [r['record_id'] for r in ok_rows] != ['1', '2', '3']:
-            failures.append('resume results wrong: %r' % res)
+            failures.append('resume results wrong: {!r}'.format(res))
     finally:
         pwg_mask.records = orig_records
         globals()['REPORTS_DIR'] = old_reports
@@ -293,10 +293,10 @@ def main():
     out_path = os.path.join(REPORTS_DIR, 'pwg_glyph_sanity.json')
 
     if skip_reason:
-        print('SANITY CHECK SKIPPED: %s' % skip_reason)
+        print('SANITY CHECK SKIPPED: {}'.format(skip_reason))
         with open(out_path, 'w', encoding='utf-8') as f:
             json.dump({'schema': 'pwg_glyph_sanity/0.1', 'skipped': True, 'reason': skip_reason}, f, indent=1)
-        print('wrote %s (skipped)' % out_path)
+        print('wrote {} (skipped)'.format(out_path))
         sys.exit(0)
 
     scored = [r for r in results if 'agrees' in r]

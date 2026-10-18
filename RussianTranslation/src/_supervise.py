@@ -33,17 +33,17 @@ stall = run = 0
 while True:
     run += 1
     before = groups()
-    print('[supervise] run %d start: %d groups' % (run, before), flush=True)
+    print(f'[supervise] run {run:d} start: {before:d} groups', flush=True)
     try:
         subprocess.run([sys.executable, '-u', 'build_corpus_lexicon.py', 'buildall', '12'], cwd=HERE)
     except Exception as e:
-        print('[supervise] run %d crashed: %s' % (run, e), flush=True)
+        print(f'[supervise] run {run:d} crashed: {e}', flush=True)
     after = groups()
     print('[supervise] run %d end: %d -> %d groups (+%d)' % (run, before, after, after - before), flush=True)
     if after <= before:
         stall += 1
         if stall >= 2:
-            print('[supervise] no progress x2 -> stopping at %d groups' % after, flush=True)
+            print(f'[supervise] no progress x2 -> stopping at {after:d} groups', flush=True)
             break
     else:
         stall = 0

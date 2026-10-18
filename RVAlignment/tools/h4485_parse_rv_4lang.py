@@ -79,7 +79,7 @@ def pua_inventory(text: str):
     inv = {}
     for c in text:
         if 0xE000 <= ord(c) <= 0xF8FF:
-            k = "U+%04X" % ord(c)
+            k = "U+{:04X}".format(ord(c))
             inv[k] = inv.get(k, 0) + 1
     return inv
 
@@ -214,21 +214,21 @@ def selftest() -> int:
         failures.append("fixture verse count %d != 2" % len(recs))
     r0 = recs[0]
     if r0["key"] != "rv01.001.01":
-        failures.append("key %r" % r0["key"])
+        failures.append("key {!r}".format(r0["key"]))
     if r0["sa"] != "अ॒ग्निमी॑ळे पु॒रोहि॑तं॥":
-        failures.append("sa %r" % r0["sa"])
+        failures.append("sa {!r}".format(r0["sa"]))
     if r0["hn"] != "agnim īḷe purohitam ||":
-        failures.append("hn %r" % r0["hn"])
+        failures.append("hn {!r}".format(r0["hn"]))
     if r0["ru"] != "Агни призываю я.\nВторая строка.":
-        failures.append("ru newline handling: %r" % r0["ru"])
+        failures.append("ru newline handling: {!r}".format(r0["ru"]))
     if r0["de"] != "Agni berufe ich." or r0["en"] != "I Laud Agni.":
-        failures.append("de/en %r %r" % (r0["de"], r0["en"]))
+        failures.append("de/en {!r} {!r}".format(r0["de"], r0["en"]))
     # entity unescape
     recs2 = list(parse_html('<p class="stamp">rv02.003.04</p>'
                             '<p class="sa">x</p><p class="hn">a &amp; b</p>'
                             '<p class="ru">у</p><p class="de">d</p><p class="en">e</p>'))
     if recs2[0]["hn"] != "a & b":
-        failures.append("entity unescape: %r" % recs2[0]["hn"])
+        failures.append("entity unescape: {!r}".format(recs2[0]["hn"]))
     # census catches continuity + script issues
     bad = list(parse_html('<p class="stamp">rv01.001.01</p>'
                           '<p class="sa">x</p><p class="hn">a</p>'
@@ -238,11 +238,11 @@ def selftest() -> int:
                           '<p class="ru">у</p><p class="de">d</p><p class="en">e</p>'))
     cen = build_census(bad)
     if len(cen["continuity_errors"]) != 1:
-        failures.append("continuity: %r" % cen["continuity_errors"])
+        failures.append("continuity: {!r}".format(cen["continuity_errors"]))
     if cen["script_bad"]["sa"] != 1:  # 'x' has no Devanagari
-        failures.append("script_bad sa: %r" % cen["script_bad"])
+        failures.append("script_bad sa: {!r}".format(cen["script_bad"]))
     if cen["script_bad"]["ru"] != 0:
-        failures.append("script_bad ru: %r" % cen["script_bad"])
+        failures.append("script_bad ru: {!r}".format(cen["script_bad"]))
     # faithful parse: PUA preserved, not repaired
     recs3 = list(parse_html('<p class="stamp">rv01.001.01</p>'
                             '<p class="sa">व॒\ue003 सु</p><p class="hn">vaḥ su</p>'

@@ -140,11 +140,11 @@ def main():
         r9 = os.path.join(d, 'r9'); os.makedirs(r9)
         ready = os.path.join(d, 'holder.ready')
         holder_code = (
-            'import sys, os, time; sys.path.insert(0, %r);'
+            'import sys, os, time; sys.path.insert(0, {!r});'
             'from execution_contract import ActiveCallClaim;'
-            'c = ActiveCallClaim(%r, %r); c.__enter__();'
-            'open(%r, "w").close(); time.sleep(120)'
-        ) % (srcdir, fp, r9, ready)
+            'c = ActiveCallClaim({!r}, {!r}); c.__enter__();'
+            'open({!r}, "w").close(); time.sleep(120)'
+        ).format(srcdir, fp, r9, ready)
         holder = subprocess.Popen([sys.executable, '-c', holder_code])
         try:
             for _ in range(200):

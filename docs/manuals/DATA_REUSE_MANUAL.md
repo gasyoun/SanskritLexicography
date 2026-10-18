@@ -1,6 +1,6 @@
 # Data-Reuse Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 20-08-2026_
+_Created: 10-07-2026 · Last updated: 04-10-2026_
 
 For the **programmer / data engineer / NLP researcher** who wants to *consume*
 the data here in scripts. This manual is about the committed, reusable datasets —
@@ -42,7 +42,7 @@ to operate the pipelines see the
   **not** hold here. All files are UTF-8.
 - **Filename counts are true counts, not `wc -l`.** In
   `{DICT}-unique-{key}-{N}.txt`, `N` is the entry count. Era matters for `wc -l`
-  (verified across every list 18-07-2026; file census re-checked 20-08-2026): all 30 `then-2014/` files end WITHOUT
+  (verified across every list 18-07-2026; file census re-checked 04-10-2026): all 31 `then-2014/` files end WITHOUT
   a trailing newline (`wc -l` = `N − 1`); all 25 `now-2026/` files are
   newline-terminated (`wc -l` = `N` exactly).
 - **Accented-IAST spines need normalizing before matching** — strip `√`,
@@ -106,7 +106,7 @@ These are committed and reusable (the *translation text* is not). Details in
 | Reverse paradigm index | Zaliznyak-style index token → every headword in that paradigm | [src/reverse_paradigm_index.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/reverse_paradigm_index.json) |
 | Paradigm statistics | stem-class / index-token distribution across the lexicon | [src/paradigm_stats.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/paradigm_stats.tsv) |
 | Frictionless descriptor | data-package metadata for the grammar dataset (CC-BY-SA-4.0) | [src/datapackage.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/datapackage.json) |
-| Addenda-relationship rollup | 11-row subtype table (counts sum **6,374** as of 20-08-2026; the older 5,603 figure was the H180 classification total before later layer-type splits) | [pwg_ru/relationships_rollup.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/relationships_rollup.tsv) |
+| Addenda-relationship rollup | 14-row subtype table (counts sum **6,326** as of 04-10-2026; the older 5,603 figure was the H180 classification total before later layer-type splits) | [pwg_ru/relationships_rollup.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru/relationships_rollup.tsv) |
 
 The Sa→Ru **translation memory** (1.09M verse-aligned pairs + a 10,132-pair
 precision-gated mined tier + a specialist glossary tier) is graded A/B/C and

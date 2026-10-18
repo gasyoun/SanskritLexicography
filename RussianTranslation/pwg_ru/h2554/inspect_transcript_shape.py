@@ -46,13 +46,13 @@ def main():
             if not isinstance(block, dict):
                 continue
             if block.get('id') in agent_ids:
-                matched.append('tool_use:%s' % block.get('id'))
+                matched.append('tool_use:{}'.format(block.get('id')))
                 prompt = (block.get('input') or {}).get('prompt')
                 if isinstance(prompt, str):
                     structural_prompt_hash = hashlib.sha256(
                         prompt.encode('utf-8')).hexdigest()
             if block.get('tool_use_id') in agent_ids:
-                matched.append('tool_result:%s' % block.get('tool_use_id'))
+                matched.append('tool_result:{}'.format(block.get('tool_use_id')))
         structural = {
             key: event.get(key) for key in (
                 'type', 'uuid', 'parentUuid', 'timestamp', 'isSidechain',
@@ -84,7 +84,7 @@ def main():
         structural['event_keys'] = sorted(event)
         if matched or any(event.get(key) in agent_ids for key in (
                 'parentToolUseID', 'toolUseID')):
-            print('%s\t%s\t%s' % (
+            print('{}\t{}\t{}'.format(
                 lineno, ','.join(matched) or 'linked-event',
                 json.dumps(structural, ensure_ascii=False, sort_keys=True)))
     return 0

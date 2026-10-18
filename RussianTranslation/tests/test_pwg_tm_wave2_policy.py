@@ -6,9 +6,9 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import pwg_tm_generate as Gen  # noqa: E402
-import pwg_tm_priority as P  # noqa: E402
-import pwg_tm_wave2_policy as W2  # noqa: E402
+import pwg_tm_generate as Gen
+import pwg_tm_priority as P
+import pwg_tm_wave2_policy as W2
 
 
 def test_policy_selftest():

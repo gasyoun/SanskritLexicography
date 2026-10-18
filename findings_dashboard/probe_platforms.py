@@ -64,7 +64,7 @@ def probe(url):
                 else 'timeout' if isinstance(reason, (socket.timeout, TimeoutError))
                 else 'unreachable')
         return {'verdict': kind, 'error': str(reason)[:120]}
-    except Exception as e:  # noqa: BLE001 — a liveness probe never crashes the run
+    except Exception as e:
         return {'verdict': 'error', 'error': f'{e.__class__.__name__}: {e}'[:120]}
 
 

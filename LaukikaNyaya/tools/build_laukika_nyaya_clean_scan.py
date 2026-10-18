@@ -35,7 +35,7 @@ SANSKRIT_UTIL_PATH = REPO_ROOT.parent / "sanskrit-util" / "py"
 
 sys.path.insert(0, str(SANSKRIT_UTIL_PATH))
 try:
-    from sanskrit_util import deva_to_iast, deva_to_slp1  # noqa: E402
+    from sanskrit_util import deva_to_iast, deva_to_slp1
 except ImportError as exc:  # pragma: no cover
     raise SystemExit(
         f"Could not import sanskrit_util from {SANSKRIT_UTIL_PATH} -- "

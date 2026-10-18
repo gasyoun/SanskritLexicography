@@ -37,17 +37,17 @@ for p in (HERE, SRC):
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from store_path import canonical_store            # noqa: E402
-import promote_final_cards as pfc                 # noqa: E402
-from promote_lock import PromoteClaim              # noqa: E402
-import spot_check_daily as scd                    # noqa: E402
+from store_path import canonical_store
+import promote_final_cards as pfc
+from promote_lock import PromoteClaim
+import spot_check_daily as scd
 
 SCHEMA = 'pwg.lane_freeze.v1'
 SEV3_FREEZE_THRESHOLD = 2      # R4.1: >=2 sev-3/day freezes; 1 does not
 
 
 def freeze_path(freeze_dir, lane):
-    return os.path.join(freeze_dir, 'lane_freeze_%s.json' % lane)
+    return os.path.join(freeze_dir, 'lane_freeze_{}.json'.format(lane))
 
 
 def frozen(freeze_dir, lane):
@@ -130,18 +130,17 @@ def run(args):
     date = report.get('date')
     freeze, reasons = evaluate(report)
     if not freeze:
-        print('lane %s: no freeze (sev3=%s, san_loss_in_store=%s) — R4.1 threshold not met'
-              % (args.lane, report.get('sev3_count'), report.get('san_loss_in_store')))
+        print('lane {}: no freeze (sev3={}, san_loss_in_store={}) — R4.1 threshold not met'.format(args.lane, report.get('sev3_count'), report.get('san_loss_in_store')))
         return 0
     os.makedirs(args.freeze_dir, exist_ok=True)
     records = scd.day_promotion_records(args.records_dir, date) if args.records_dir else []
     quarantine = os.path.join(args.freeze_dir,
-                              'lane_revert_%s_%s.quarantine.jsonl' % (args.lane, date))
+                              'lane_revert_{}_{}.quarantine.jsonl'.format(args.lane, date))
     store = args.store or canonical_store(os.path.join(SRC, 'pwg_ru_translated.jsonl'))
     removed, protected, keys = revert_windows(records, store, quarantine,
                                               execute=args.execute)
     requeue = os.path.join(args.freeze_dir,
-                           'lane_revert_%s_%s.requeue.keys.txt' % (args.lane, date))
+                           'lane_revert_{}_{}.requeue.keys.txt'.format(args.lane, date))
     if args.execute:
         with open(requeue, 'w', encoding='utf-8', newline='\n') as f:
             for k in keys:

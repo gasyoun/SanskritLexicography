@@ -32,7 +32,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.environ.get("SANSKRIT_UTIL_PY", r"C:/Users/user/Documents/GitHub/sanskrit-util/py"))
-import sanskrit_util as su  # noqa: E402
+import sanskrit_util as su
 
 ACC_TXT = os.environ.get(
     "ACC_TXT", r"C:/Users/user/Documents/GitHub/csl-orig/v02/acc/acc.txt")

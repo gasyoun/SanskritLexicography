@@ -37,11 +37,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import anthropic_batches_route as abr  # noqa: E402
-import headless_worker as hw  # noqa: E402
-from call_reservation import CallReservationLedger  # noqa: E402
-from execution_contract import PRODUCTION_HARD_TIMEOUT_MS  # noqa: E402
-from route_transport import (  # noqa: E402
+import anthropic_batches_route as abr
+import headless_worker as hw
+from call_reservation import CallReservationLedger
+from execution_contract import PRODUCTION_HARD_TIMEOUT_MS
+from route_transport import (
     TransportRefusal,
     atomic_json,
     build_request,
@@ -87,7 +87,7 @@ def build_requests(manifest_path, model=abr.MODEL, limit=None):
         prompt = hw.build_prompt(manifest, [key])
         request = build_request(
             prompt=prompt, output_schema=schema, requested_model=model,
-            purpose='%s:%s' % (PURPOSE, key), manifest_sha256=manifest_sha,
+            purpose='{}:{}'.format(PURPOSE, key), manifest_sha256=manifest_sha,
             hard_timeout_ms=PRODUCTION_HARD_TIMEOUT_MS,
             max_output_tokens=MAX_OUTPUT_TOKENS)
         requests.append({'key': key, 'request': request})
@@ -114,7 +114,7 @@ def cmd_build(args):
     atomic_json(spot['requests'], bundle)
     print('built %d one-card requests (%d prompt bytes total) -> %s'
           % (len(rows), bundle['prompt_bytes_total'], spot['requests']))
-    print('manifest_sha256: %s' % bundle['manifest_sha256'])
+    print('manifest_sha256: {}'.format(bundle['manifest_sha256']))
     return 0
 
 
@@ -131,8 +131,8 @@ def _call(spot, max_calls=None):
     client, _ = abr.api_client()
     note = abr.credential_note()
     if client is None:
-        raise TransportRefusal('no Anthropic credential: %s' % note)
-    print('credential: %s' % note)
+        raise TransportRefusal('no Anthropic credential: {}'.format(note))
+    print('credential: {}'.format(note))
     return abr.AnthropicBatchesCall(ledger, abr.sdk_transport(client)), ledger
 
 
@@ -149,7 +149,7 @@ def cmd_submit(args):
     print('batch submitted: requests=%d status=%s ceiling=%d spent=%d'
           % (receipt['request_count'], receipt['processing_status'],
              args.max_calls, ledger.spent()))
-    print('batch_id recorded in %s (redacted from stdout on purpose)' % spot['receipt'])
+    print('batch_id recorded in {} (redacted from stdout on purpose)'.format(spot['receipt']))
     return 0
 
 
@@ -166,7 +166,7 @@ def cmd_collect(args):
         with open(spot['poll_log'], 'a', encoding='utf-8', newline='\n') as handle:
             handle.write(json.dumps({'epoch': time.time(), **status},
                                     ensure_ascii=False, sort_keys=True) + '\n')
-        print('status=%s counts=%s' % (status['processing_status'], status['request_counts']))
+        print('status={} counts={}'.format(status['processing_status'], status['request_counts']))
         time.sleep(args.poll_seconds)
         status = call.poll(receipt)
     with open(spot['poll_log'], 'a', encoding='utf-8', newline='\n') as handle:
@@ -188,7 +188,7 @@ def summarise(spot):
     receipt = read_json(spot['receipt'], 'batches submission receipt')
     rows = []
     for ordinal, custom_id in enumerate(receipt['custom_ids'], start=1):
-        path = os.path.join(spot['envelopes'], '%s.envelope.json' % custom_id)
+        path = os.path.join(spot['envelopes'], '{}.envelope.json'.format(custom_id))
         if not os.path.isfile(path):
             continue
         envelope = verify_envelope(read_json(path, 'batches envelope'))

@@ -27,7 +27,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', '..', '..', 'WhitneyRoots', 'scripts'))
-from sanskrit_util import to_slp1, iast_to_devanagari   # noqa: E402
+from sanskrit_util import to_slp1, iast_to_devanagari
 
 DSG_BASE = 'https://samskrtam.ru/sanskrit-lexicon/dsg/'
 
@@ -48,7 +48,7 @@ def anchors():
         f.write('pratyaya\tpratyaya_deva\tslp1_anchor\tdsg_url\n')
         for a in ped['affixes']:
             anc = slp1(a['pratyaya'])
-            f.write('%s\t%s\t%s\t%s#t-%s\n' % (a['pratyaya'], a['pratyaya_deva'], anc, DSG_BASE, anc))
+            f.write('{}\t{}\t{}\t{}#t-{}\n'.format(a['pratyaya'], a['pratyaya_deva'], anc, DSG_BASE, anc))
             n += 1
     print('wrote %s (%d affix→DSG anchors). Verify against dsg.json once the source lands.' % (out, n))
 
@@ -76,11 +76,11 @@ def read_records(path):
 
 def ingest(path):
     if not os.path.exists(path):
-        sys.exit('DSG source not found: %s\nDrop the CDSL DSG digitization (<L>/<k1> .txt) there '
-                 'or pass its path. Then: python build_dsg.py ingest <path>' % path)
+        sys.exit('DSG source not found: {}\nDrop the CDSL DSG digitization (<L>/<k1> .txt) there '
+                 'or pass its path. Then: python build_dsg.py ingest <path>'.format(path))
     recs = read_records(path)
     if not recs:
-        sys.exit('No <L> records parsed from %s — is it the CDSL-format DSG digitization?' % path)
+        sys.exit('No <L> records parsed from {} — is it the CDSL-format DSG digitization?'.format(path))
     entries = []
     for r in recs:
         k1 = r['k1']
@@ -95,9 +95,8 @@ def ingest(path):
     rows = []
     for e in entries:
         body = re.sub(r'\{[#%][^}]*\}|<[^>]+>', lambda m: m.group(0), e['body'])  # keep markup verbatim for now
-        rows.append('<section class="dsg-entry" id="%s"><h3>%s <span class="d">%s</span> '
-                    '<a class="pl" href="#%s">#</a></h3><div class="b">%s</div></section>'
-                    % (e['slug'], e['term_iast'], e['term_deva'], e['slug'],
+        rows.append('<section class="dsg-entry" id="{}"><h3>{} <span class="d">{}</span> '
+                    '<a class="pl" href="#{}">#</a></h3><div class="b">{}</div></section>'.format(e['slug'], e['term_iast'], e['term_deva'], e['slug'],
                        body.replace('\n', '<br>')))
     html = ('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/>'
             '<meta name="viewport" content="width=device-width, initial-scale=1"/>'
@@ -122,7 +121,7 @@ def ingest(path):
             anc = slp1(a['pratyaya'])
             present = anc in have
             hit += present
-            f.write('%s\t%s\t%s\t%s\n' % (a['pratyaya'], anc, 'Y' if present else 'N',
+            f.write('{}\t{}\t{}\t{}\n'.format(a['pratyaya'], anc, 'Y' if present else 'N',
                     (DSG_BASE + '#t-' + anc) if present else ''))
     print('DSG ingest: %d entries -> dsg.json + dsg.html (deep-linkable #t-<slp1>) + %s'
           % (len(entries), os.path.basename(out)))
@@ -139,7 +138,7 @@ def from_html(path):
     .transl2) and (1) inject a STABLE per-term anchor id="t-<slp1>" next to each numeric id,
     (2) emit dsg.json, (3) emit the verified affix crosswalk. Output beside the source."""
     if not os.path.exists(path):
-        sys.exit('DSG html not found: %s' % path)
+        sys.exit('DSG html not found: {}'.format(path))
     out_html = os.path.join(os.path.dirname(path), 'dsg_anchored.html')
     lines = open(path, encoding='utf-8').read().split('\n')
     entries, seen = [], {}
@@ -157,14 +156,14 @@ def from_html(path):
         iast = mi.group(1).strip().strip('/').split('/')[0].split(',')[0].strip()
         slug = slugify(iast)
         n = seen.get(slug, 0); seen[slug] = n + 1
-        anchor = 't-%s' % slug if n == 0 else 't-%s-%d' % (slug, n + 1)
+        anchor = 't-{}'.format(slug) if n == 0 else 't-%s-%d' % (slug, n + 1)
         sa = (rx_sa.search(ln) or [None, ''])[1]
         en = strip((rx_en.search(ln) or [None, ''])[1])
         ru = strip((rx_ru.search(ln) or [None, ''])[1])
         entries.append({'id': m.group(1), 'anchor': anchor, 'slp1': slp1(iast),
                         'iast': iast, 'deva': sa, 'en': en[:1200], 'ru': ru[:1200]})
         # inject the stable anchor right after the numeric one (minimal, keeps the page intact)
-        lines[i] = ln.replace(m.group(0), '%s<a id="%s"></a>' % (m.group(0), anchor), 1)
+        lines[i] = ln.replace(m.group(0), '{}<a id="{}"></a>'.format(m.group(0), anchor), 1)
     open(out_html, 'w', encoding='utf-8').write('\n'.join(lines))
     json.dump(entries, open(os.path.join(HERE, 'dsg.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=1)
@@ -179,12 +178,12 @@ def from_html(path):
             anc = slp1(a['pratyaya'])
             present = anc in have
             hit += present
-            f.write('%s\t%s\t%s\t%s\n' % (a['pratyaya'], anc, 'Y' if present else 'N',
+            f.write('{}\t{}\t{}\t{}\n'.format(a['pratyaya'], anc, 'Y' if present else 'N',
                     (DSG_BASE + '#' + have[anc]) if present else ''))
     print('DSG html: %d entries → %s (stable id="t-<slp1>" anchors) + dsg.json + %s'
           % (len(entries), os.path.basename(out_html), os.path.basename(out)))
     print('  affix pratyayas found in DSG: %d / %d' % (hit, len(ped['affixes'])))
-    print('  deploy: upload %s to samskrtam.ru/sanskrit-lexicon/dsg/index.html' % out_html)
+    print('  deploy: upload {} to samskrtam.ru/sanskrit-lexicon/dsg/index.html'.format(out_html))
 
 
 if __name__ == '__main__':

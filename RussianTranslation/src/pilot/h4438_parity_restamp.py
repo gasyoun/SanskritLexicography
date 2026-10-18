@@ -52,7 +52,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import parity_restamp as pr  # noqa: E402
+import parity_restamp as pr
 
 ENTRY_IDS = ("dhatup_palsule_enrichment_h1333", "ed_bomb_ru_display_h2005")
 

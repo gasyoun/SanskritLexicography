@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 09-09-2026_
+_Created: 01-08-2026 · Last updated: 18-10-2026_
 
 # Changelog
 
@@ -16,6 +16,7 @@ not an error.
 
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
+- **H6979 (DeepSeek Flash `deepseek-flash`) — the 16-dict union gets a data-layer sidecar, written by the builder through the shared gate.** [`HeadwordLists/build_union16.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/build_union16.py) now emits [`union-16dicts/union-headwords-16dicts.meta.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union-16dicts/union-headwords-16dicts.meta.json) via `sanskrit_util.write_sidecar` (0.13.0): `layer`/`made_by`/`model`/`handoff` H4797/`status`/three named `consumers` (the overlap-matrix script, the csl-atlas H4802 crosswalk, paper A40)/`novelty`. The gate REFUSES an un-consumed layer that does not declare itself `dormant` with an owner and a review date — that is the point of the sidecar, not a formatting nicety. The union artifact is unchanged by the pass: **417,184 headwords**, byte-identical to the committed `union_headwords_16.tsv`; `python3 HeadwordLists/build_union16.py --selftest` and `pytest tests -k union -q` (8 passed) green. Spec: [kosha `docs/LAYER_SIDECAR_SPEC.md`](https://github.com/gasyoun/kosha/blob/main/docs/LAYER_SIDECAR_SPEC.md); `requirements.txt` gains the `sanskrit-util` pin (sanskrit-util#82 lands 0.13.0).
 
 ## [1.144.171] - 2026-09-18
 
@@ -119,7 +120,11 @@ not an error.
 
 ## 1.144.168 — tagged and released without a master section (flow-doc mirror class) - 2026-09-11
 
-> **No `## [1.144.168]` heading ever existed on `master` and none is created (18-09-2026).** [v1.144.168](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.168) was cut from a branch head — "release: cut v1.144.168 (H4527 cohort live-admission gate + rung-4 live dispatch wiring)" ([PR #2186](https://github.com/gasyoun/SanskritLexicography/pull/2186)) — and tagged + released 11-09, with the section never reaching `master` (same mirror class as 1.144.169 above). Tag and release stand; the number is consumed. **Numbering ledger after this repair: 168, 169 spent by these branch-head cuts; master sections run …167, 170, 171; the next root number is 1.144.172.**
+> **No `## [1.144.168]` heading ever existed on `master` and none is created (18-09-2026).** [v1.144.168](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.168) was cut from a branch head — "release: cut v1.144.168 (H4527 cohort live-admission gate + rung-4 live dispatch wiring)" ([PR #2186](https://github.com/gasyoun/SanskritLexicography/pull/2186)) — and tagged + released 11-09, with the section never reaching `master` (same mirror class as 1.144.169 above). Tag and release stand; the number is consumed. **Numbering ledger (amended 01-10-2026): 168, 169, 172 spent by branch-head cuts; master sections run …167, 170, 171; the next root number is 1.144.173.**
+
+## 1.144.172 — tagged and released without a master section (flow-doc mirror class) - 2026-10-01
+
+> **No `## [1.144.172]` heading ever existed on `master` and none is created (01-10-2026).** [v1.144.172](https://github.com/gasyoun/SanskritLexicography/releases/tag/v1.144.172) was cut 24-09 — "Release 1.144.172 (pwg_ru): consume 14 changelog_queue fragments" ([PR #2340](https://github.com/gasyoun/SanskritLexicography/pull/2340), tag commit an ancestor of `master`) — yet no `## [1.144.172]` section exists at the tag or on `master` (the consume commit landed without one; same mirror class as 1.144.168/169 above). The GitHub release had been missing since the cut and was published 01-10-2026 from generated notes. Tag and release stand; the number is consumed. (GLM 5.3-Flash `zai-start-plan/GLM-5.3-Flash`)
 
 ## [1.144.167] - 2026-09-11
 

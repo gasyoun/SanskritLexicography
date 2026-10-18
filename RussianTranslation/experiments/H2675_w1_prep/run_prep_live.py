@@ -26,10 +26,10 @@ H1210 = os.path.join(RT, 'src', 'pilot', 'h1210')
 if H1210 not in sys.path:
     sys.path.insert(0, H1210)
 
-import deepseek_arm as ds  # noqa: E402
-import prep_pack  # noqa: E402
+import deepseek_arm as ds
+import prep_pack
 
-from build_drain_head import (  # noqa: E402
+from build_drain_head import (
     MAIN_ASSEMBLED,
     load_assembled_de,
     manifest_input,
@@ -69,9 +69,9 @@ def score_sidecars(out_dir: str, keys: list[str]) -> dict:
         try:
             from safe_filename import safe_name
             stem = safe_name(key1)
-        except Exception:  # noqa: BLE001
+        except Exception:
             stem = key1
-        path = os.path.join(out_dir, '%s.json' % stem)
+        path = os.path.join(out_dir, '{}.json'.format(stem))
         if not os.path.exists(path):
             missing.append(key1)
             continue
@@ -144,7 +144,7 @@ def _write_batch_manifest(keys: list[str], assembled: dict, path: str) -> str:
 def run_batch(keys: list[str], *, out_dir: str, manifest_path: str,
               journal_path: str, env_file: str, store: str, workers: int) -> None:
     if ds.DEFAULT_MAX_TOKENS < 32768:
-        raise SystemExit('FAIL: DEFAULT_MAX_TOKENS=%s (need 32768)' % ds.DEFAULT_MAX_TOKENS)
+        raise SystemExit('FAIL: DEFAULT_MAX_TOKENS={} (need 32768)'.format(ds.DEFAULT_MAX_TOKENS))
     ds.refuse_if_peak()
     argv = [
         '--keys', ','.join(keys),
@@ -160,7 +160,7 @@ def run_batch(keys: list[str], *, out_dir: str, manifest_path: str,
     ]
     rc = prep_pack.main(argv)
     if rc:
-        raise SystemExit('prep_pack --live exited %s' % rc)
+        raise SystemExit('prep_pack --live exited {}'.format(rc))
 
 
 def main(argv=None) -> int:
@@ -196,8 +196,7 @@ def main(argv=None) -> int:
             raise SystemExit('no first200.stats.json — run --phase first200')
         gate = _load_json(first200_path)
         if not gate.get('parse_gate'):
-            print('D22 STOP: first-200 parse %.2f%% < 80%% — no scale-out'
-                  % gate.get('parse_pct', 0), flush=True)
+            print('D22 STOP: first-200 parse {:.2f}% < 80% — no scale-out'.format(gate.get('parse_pct', 0)), flush=True)
             return 2
 
     print('assembled index…', flush=True)
@@ -238,11 +237,10 @@ def main(argv=None) -> int:
         if stats['n_store_write'] or stats['n_tm_fence_write']:
             raise SystemExit('FAIL: TM/store write claimed')
         if not stats['parse_gate']:
-            print('D22 STOP: parse %.2f%% < 80%% — no remaining 4800 --live'
-                  % stats['parse_pct'], flush=True)
+            print('D22 STOP: parse {:.2f}% < 80% — no remaining 4800 --live'.format(stats['parse_pct']), flush=True)
             return 2
         if stats.get('cost_stop'):
-            print('COST STOP: $%.4f/card > $0.04 — no scale-out' % stats['usd_per_card'])
+            print('COST STOP: ${:.4f}/card > $0.04 — no scale-out'.format(stats['usd_per_card']))
             return 3
         return 0
 
@@ -255,9 +253,9 @@ def main(argv=None) -> int:
         try:
             from safe_filename import safe_name
             stem = safe_name(key1)
-        except Exception:  # noqa: BLE001
+        except Exception:
             stem = key1
-        if not os.path.exists(os.path.join(out_dir, '%s.json' % stem)):
+        if not os.path.exists(os.path.join(out_dir, '{}.json'.format(stem))):
             still.append(key1)
     remaining = still
     if args.max_keys is not None:
@@ -272,9 +270,9 @@ def main(argv=None) -> int:
             try:
                 from safe_filename import safe_name
                 stem = safe_name(key1)
-            except Exception:  # noqa: BLE001
+            except Exception:
                 stem = key1
-            if not os.path.exists(os.path.join(out_dir, '%s.json' % stem)):
+            if not os.path.exists(os.path.join(out_dir, '{}.json'.format(stem))):
                 todo.append(key1)
         if not todo:
             print('batch %d-%d already on disk' % (start + i, start + i + len(batch)),

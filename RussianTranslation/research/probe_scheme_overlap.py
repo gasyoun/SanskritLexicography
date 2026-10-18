@@ -135,7 +135,7 @@ def main():
                     tuples[key][tuple(int(x) for x in _NUM.findall(loc))] += 1
 
     dcs = a.dcs or find_up('VisualDCS', 'src', 'DCS-data-2026', 'dcs_full.sqlite')
-    con = sqlite3.connect('file:%s?mode=ro' % dcs.replace('\\', '/'), uri=True)
+    con = sqlite3.connect('file:{}?mode=ro'.format(dcs.replace('\\', '/')), uri=True)
     cache, out = {}, []
     for ab, tx in pairs:
         if tx not in cache:
@@ -205,7 +205,7 @@ def main():
             row['top3'] = [{'text': nm, 'hit_pct': round(s, 1)} for s, nm in board[:3]]
             print('%-20s -> %-28s rank %3s/%d   top: %s'
                   % (ab, row['dcs_text'][:28], pos, len(board),
-                     ', '.join('%s %.0f%%' % (nm[:22], s) for s, nm in board[:3])))
+                     ', '.join('{} {:.0f}%'.format(nm[:22], s) for s, nm in board[:3])))
 
     # ---- null model ------------------------------------------------------- #
     # A hit rate only means something against the rate the SAME PWG tuples get

@@ -95,13 +95,11 @@ def enrich_path(p, slp1, lex, apply=False):
 def enrich_one(slp1, lex, apply=False):
     p = _portrait_path(slp1)
     if not p:
-        print('no portrait for %r (tried %s) under %s'
-              % (slp1, candidate_names(slp1), INP))
+        print('no portrait for {!r} (tried {}) under {}'.format(slp1, candidate_names(slp1), INP))
         return 0
     port, grammar = enrich_path(p, slp1, lex, apply=apply)
-    print('%s [%s]: %s (%s)%s | %s: %s'
-          % (slp1, lex, grammar['stem_class'], grammar['declension_sections'],
-             ' compound:%s' % '+'.join(grammar['compound_members']) if grammar['compound_members'] else '',
+    print('{} [{}]: {} ({}){} | {}: {}'.format(slp1, lex, grammar['stem_class'], grammar['declension_sections'],
+             ' compound:{}'.format('+'.join(grammar['compound_members'])) if grammar['compound_members'] else '',
              'written' if apply else 'would enrich', os.path.basename(p)))
     if not apply:
         print('\n=== enriched portrait sample ===')

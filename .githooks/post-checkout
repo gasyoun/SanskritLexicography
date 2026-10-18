@@ -1,0 +1,115 @@
+#!/bin/sh
+# Uprava post-checkout guard — shared main-tree branch-switch block (03-10-2026).
+#
+# The pre-commit sibling only sees COMMITS. A `git checkout <foreign-branch>`
+# (or `git switch -c`, or a detached `git checkout <sha>`) in the SHARED main
+# checkout is invisible to it, yet it moves every concurrent session's base
+# out from under them — the SanskritSpellCheck shared tree left diverged on a
+# foreign branch (GTD, 24-09-2026) is the live harm class. git has no
+# pre-checkout hook, so this runs right AFTER the switch and immediately
+# restores the default branch: the net state of the shared tree stays on
+# $DEFAULT_BRANCH. Reverting is content-preserving in the non-force case (a
+# switch that would clobber local changes is already refused by git); a
+# deliberate `git checkout -f` loses dirty state at the switch itself, before
+# any hook runs.
+#
+# Scope: only the canonical main checkout. The per-clone `core.hooksPath`
+# pointer carries this hook into every linked worktree too, but each worktree
+# has its own toplevel path, so the block below never fires there — worktrees
+# may check out anything. File checkouts (`git checkout -- <path>`, third
+# argument 0) never fire the guard. Return-to-default checkouts are always
+# allowed, so a legacy off-default tree can always be walked home.
+#
+# Conservative revert: the automatic restore fires only when the tree was
+# sitting on the default branch's tip BEFORE this checkout, i.e. this switch
+# is what moved it off-default. A tree already off-default (a legacy diverged
+# shared tree with its own recovery route, e.g. /branch-contention-recover)
+# is warned about loudly, never auto-switched under a running actor.
+#
+# Escape hatch:  ALLOW_MAIN_TREE_CHECKOUT=1 git checkout <branch>   (solo,
+# deliberate; the actor then owns returning the tree to DEFAULT_BRANCH — the
+# scheduled lossless heal never switches branches).
+#
+# NOTE for deploys: CANONICAL_MAIN_TREE and DEFAULT_BRANCH are substituted
+# per-repo by tools/shared_tree_guard_onboard.py (adapt_postcheckout). Keep
+# each literal assignment on ONE line, exactly in this shape.
+
+CANONICAL_MAIN_TREE="C:/Users/user/Documents/GitHub/SanskritLexicography"
+# Crossbox twin (same convention as the pre-commit sibling): the canonical
+# checkout lives at $HOME/Documents/GitHub/<repo> on every box of the estate.
+CANONICAL_MAIN_TREE_HOME="${HOME:-}/Documents/GitHub/SanskritLexicography"
+DEFAULT_BRANCH="master"
+
+if [ -n "${ALLOW_MAIN_TREE_CHECKOUT:-}" ]; then
+    exit 0
+fi
+# Recursion guard for the revert checkout below (belt; the branch==default
+# short-circuit underneath is the suspenders).
+if [ -n "${GUARD_CHECKOUT_REVERT:-}" ]; then
+    exit 0
+fi
+[ "${3:-0}" = "1" ] || exit 0
+
+toplevel="$(git rev-parse --show-toplevel 2>/dev/null || true)"
+[ -n "$toplevel" ] || exit 0
+
+_norm() { printf '%s' "$1" | tr 'A-Z' 'a-z' | tr '\\' '/'; }
+norm_toplevel="$(_norm "$toplevel")"
+norm_canonical="$(_norm "$CANONICAL_MAIN_TREE")"
+norm_canonical_home="$(_norm "$CANONICAL_MAIN_TREE_HOME")"
+if [ "$norm_toplevel" != "$norm_canonical" ] && [ "$norm_toplevel" != "$norm_canonical_home" ]; then
+    exit 0
+fi
+
+branch="$(git symbolic-ref --short HEAD 2>/dev/null || true)"
+if [ "$branch" = "$DEFAULT_BRANCH" ]; then
+    exit 0
+fi
+
+_log_firing() {
+    [ -f "$toplevel/scripts/guard_firing_log.py" ] || return 0
+    for _py in python3 python; do
+        _resolved="$(command -v "$_py" 2>/dev/null || true)"
+        if [ -n "$_resolved" ]; then
+            "$_resolved" "$toplevel/scripts/guard_firing_log.py" \
+                --toplevel "$toplevel" --guard main-tree-checkout --verdict "$1" --detail "$2" \
+                >/dev/null 2>&1 || true
+            return 0
+        fi
+    done
+    return 0
+}
+
+default_tip="$(git rev-parse --verify "refs/heads/$DEFAULT_BRANCH" 2>/dev/null || true)"
+if [ -n "$default_tip" ] && [ "${1:-}" = "$default_tip" ]; then
+    echo "" >&2
+    echo "BLOCKED: checkout of '$branch' in the shared SanskritLexicography main tree — restoring '$DEFAULT_BRANCH'." >&2
+    echo "" >&2
+    echo "This checkout is used by multiple concurrent sessions; switching its" >&2
+    echo "branch moves every session's base. Checkout work belongs in a worktree:" >&2
+    echo "" >&2
+    echo "  git worktree add -b <branch> ../SanskritLexicography-<slug> origin/$DEFAULT_BRANCH" >&2
+    echo "" >&2
+    echo "Deliberate override (solo, you own returning the tree):" >&2
+    echo "  ALLOW_MAIN_TREE_CHECKOUT=1 git checkout <branch>" >&2
+    echo "" >&2
+    # No `--` here: after `--` git parses the word as a PATHSPEC, not a
+    # branch, and the revert would fail on every repo without a file named
+    # like the default branch (caught by the selftest fixtures 03-10-2026).
+    GUARD_CHECKOUT_REVERT=1 git checkout -q "$DEFAULT_BRANCH" 2>/dev/null || {
+        echo "main-tree checkout guard: REVERT FAILED — the tree is still on '$branch'." >&2
+        echo "Return it by hand:  git checkout $DEFAULT_BRANCH" >&2
+        _log_firing revert-failed "checkout $branch kept; auto-revert to $DEFAULT_BRANCH failed"
+        exit 1
+    }
+    echo "main-tree checkout guard: tree restored to '$DEFAULT_BRANCH' (content preserved)." >&2
+    _log_firing revert "checkout $branch reverted to $DEFAULT_BRANCH in the shared main tree"
+    exit 1
+fi
+
+echo "WARNING: shared SanskritLexicography main tree is on '$branch', not '$DEFAULT_BRANCH'." >&2
+echo "The checkout guard only auto-restores a tree that was on '$DEFAULT_BRANCH'" >&2
+echo "before the switch; this one was already off-default. Return it when safe:" >&2
+echo "  git checkout $DEFAULT_BRANCH" >&2
+_log_firing warn "tree already off-default ($branch); no auto-switch"
+exit 0

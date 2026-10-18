@@ -1,6 +1,6 @@
 # MANUAL_LEXICON_WORKSPACE_AGENTS.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 20-08-2026_
+_Created: 18-07-2026 · Last updated: 04-10-2026_
 
 Companion record for [MANUAL_LEXICON_WORKSPACE_AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/MANUAL_LEXICON_WORKSPACE_AGENTS.md) (root thin sheet).
 
@@ -15,10 +15,12 @@ Authored 10-07-2026 (H479), consolidated H604. Re-thinned 18-07-2026 under [H124
 ## Verification
 
 ```
-LAST_VERIFIED: 20-08-2026
-VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
-COMMANDS_SPOT_RUN: 2
+LAST_VERIFIED: 04-10-2026
+VERIFIED_BY: GLM 5.3 Flash (zai-start-plan/GLM-5.3-Flash), H5991
+COMMANDS_SPOT_RUN: 7
 ```
+
+H5991 (04-10-2026): all 20 §2 canonical-doc paths exist; `probe_log.py --help` and `check_launch_ledger.py --help` exit 0; `mw_unabsorbed_census.py` re-ran end-to-end via `CSL_ORIG_V02` (4.7 s, class counts unchanged: 571 extensions / 4,112 never-seen / 27 dropped). Drift fixed: §4's pinned P2 correction still said "MG's vote on the local 49,019-row sheet" — updated to the H1657 shape (all 49,019 rows carry agent verdicts; the gate is the 686-card spot-check + `p2_precision_gate.py`).
 
 H3059 (20-08-2026): every canonical-doc path in §2 exists; `probe_log.py --help` exits 0. Thin-sheet contract still holds (no state snapshot). Live-pointer in §4 still correct.
 
@@ -48,6 +50,7 @@ Re-checked on each [/workspace-manual](https://github.com/gasyoun/claude-config/
 
 | Date | Change | By |
 |---|---|---|
+| 04-10-2026 | H5991 manual_staleness refresh (LAST_VERIFIED bump + 7 spot probes; §4 P2 gate re-pinned to the H1657 spot-check shape) | GLM 5.3 Flash (zai-start-plan/GLM-5.3-Flash) |
 | 20-08-2026 | H3059 manual_staleness fact-check refresh (LAST_VERIFIED bump + real command/count probes) | Grok 4.6 (grok-4.6) |
 | 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 25-07-2026 | H1623 freshness re-verify (LAST_VERIFIED bump + spot probes) | Grok 4.5 (grok-4.5) |

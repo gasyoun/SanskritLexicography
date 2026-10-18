@@ -35,12 +35,12 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 sys.path.insert(0, os.path.join(HERE, '..', 'research'))
 sys.path.insert(0, HERE)
-import root_segment_proto as RS                       # noqa: E402  segment()/glue()/read_record()
-from safe_filename import safe_name                    # noqa: E402
+import root_segment_proto as RS
+from safe_filename import safe_name
 
 PWG = os.path.normpath(os.path.join(GITHUB, 'csl-orig', 'v02', 'pwg', 'pwg.txt'))
 # H1386 P3f: PWG_INPUT_DIR points a hermetic harness at a sandbox input dir.
@@ -102,18 +102,18 @@ def check_lossless_and_segmentation(strict):
                     missed[m.group(1).strip() if m else '(no <ab> label)'] += 1
     np_miss = np_raw - np_recognized
     print('## A. Losslessness (hard invariant)')
-    print('   records with boundaries scanned : %d' % n_rec)
+    print(f'   records with boundaries scanned : {n_rec:d}')
     print('   round-trip FAILURES             : %d  -> %s'
-          % (n_lossy, 'PASS' if n_lossy == 0 else 'FAIL ' + ', '.join('%s/%s' % w for w in worst[:10])))
+          % (n_lossy, 'PASS' if n_lossy == 0 else 'FAIL ' + ', '.join('{}/{}'.format(*w) for w in worst[:10])))
     print('## B. Segmentation correctness (warn%s)' % (', escalated by --strict' if strict else ''))
     print('   <div n="p"> total / recognised-as-boundary / NOT-split : %d / %d / %d (%.1f%%)'
           % (np_raw, np_recognized, np_miss, 100.0 * np_miss / max(np_raw, 1)))
-    print('   secondary sub-cards split out (caus/desid/intens/partic/pass/insens): %d' % n_secondary)
+    print(f'   secondary sub-cards split out (caus/desid/intens/partic/pass/insens): {n_secondary:d}')
     if missed:
         print('   still-merged <div n="p"> labels: '
-              + ', '.join('%s=%d' % (k, v) for k, v in missed.most_common(8)))
+              + ', '.join(f'{k}={v:d}' for k, v in missed.most_common(8)))
     seclike = sum(v for k, v in missed.items() if k.strip().rstrip('.').lower() in SECLABELS)
-    print('   => %d secondary-conjugation blocks still merged into the preceding sub-card.' % seclike)
+    print(f'   => {seclike:d} secondary-conjugation blocks still merged into the preceding sub-card.')
     lossless_ok = n_lossy == 0
     seg_ok = seclike == 0                              # all caus/desid/intens/partic now split
     return lossless_ok, seg_ok, seclike

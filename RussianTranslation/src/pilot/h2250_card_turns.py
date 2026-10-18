@@ -31,7 +31,7 @@ def main():
     paths = sorted(glob.glob(os.path.join(ROOT, '*', '*card*nakzatra*.json')),
                    key=os.path.getmtime)
     if not paths:
-        print('no card envelopes under %s' % ROOT, file=sys.stderr)
+        print('no card envelopes under {}'.format(ROOT), file=sys.stderr)
         return 2
     print('%-26s %6s %8s %9s %9s %9s %8s %8s'
           % ('batch', 'turns', 'api_ms', 'create', 'read', 'total', 'out', 'usd'))

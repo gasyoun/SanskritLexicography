@@ -1,0 +1,24 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h5262-nkrya-flags-b05-2026-09-25",
+  "content_hash": "sha256:51ae7e00a329c929ed48ff020f2bc131bce3e80074a9930c544006e7a09f1359",
+  "generated": "2026-09-25",
+  "gate": null,
+  "n_items": 10,
+  "ids": [
+    "L-испражниться",
+    "L-перевязывание",
+    "L-скотоложство",
+    "L-даятель",
+    "L-десятикратное",
+    "L-закалать",
+    "L-вычерпывание",
+    "L-неискусственный",
+    "L-окольцовывать",
+    "L-переуступать"
+  ],
+  "source_html": "sanskritlexicography-h5262-nkrya-flags-b05_10.html",
+  "mode": "stamped",
+  "created": "2026-09-25",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

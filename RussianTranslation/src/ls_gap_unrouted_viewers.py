@@ -92,8 +92,8 @@ def routed_apps():
 
 def main():
     if not os.path.exists(INVENTORY):
-        print("inventory missing: %s\n  gh api users/sanskrit-lexicon-scans/repos "
-              "--paginate --jq '.[].name' > %s" % (INVENTORY, INVENTORY))
+        print("inventory missing: {}\n  gh api users/sanskrit-lexicon-scans/repos "
+              "--paginate --jq '.[].name' > {}".format(INVENTORY, INVENTORY))
         return 1
     hosted = {l.strip() for l in io.open(INVENTORY, encoding="utf-8") if l.strip()}
     text_viewers = {h for h in hosted if h not in NON_TEXT}
@@ -104,7 +104,7 @@ def main():
     print("  of them citable text scans : %d" % len(text_viewers))
     print("  routed to by the resolver  : %d" % len(text_viewers & routed))
     print("  HOSTED BUT UNROUTED        : %d" % len(unrouted))
-    print("    %s" % ", ".join(unrouted))
+    print("    {}".format(", ".join(unrouted)))
 
     gaps = {}
     if os.path.exists(GAPS):

@@ -165,37 +165,34 @@ class TransitionError(ModelError):
 
 def require_sha256(value: Any, field: str) -> str:
     if not isinstance(value, str) or not SHA_RE.match(value):
-        raise ModelError('%s must be a lowercase sha256 hex digest' % field)
+        raise ModelError('{} must be a lowercase sha256 hex digest'.format(field))
     return value
 
 
 def require_choice(value: Any, allowed: tuple[str, ...], field: str) -> str:
     if value not in allowed:
-        raise ModelError('%s must be one of %s (got %r)'
-                         % (field, ', '.join(allowed), value))
+        raise ModelError('{} must be one of {} (got {!r})'.format(field, ', '.join(allowed), value))
     return str(value)
 
 
 def assert_job_transition(current: str, following: str) -> None:
     """Raise unless ``current -> following`` is a legal job move."""
     if current not in JOB_TRANSITIONS:
-        raise TransitionError('unknown job state: %r' % (current,))
+        raise TransitionError('unknown job state: {!r}'.format(current))
     if following not in JOB_STATES:
-        raise TransitionError('unknown job state: %r' % (following,))
+        raise TransitionError('unknown job state: {!r}'.format(following))
     if following not in JOB_TRANSITIONS[current]:
-        raise TransitionError('illegal job transition %s -> %s'
-                              % (current, following))
+        raise TransitionError('illegal job transition {} -> {}'.format(current, following))
 
 
 def assert_call_transition(current: str, following: str) -> None:
     """Raise unless ``current -> following`` is a legal call move."""
     if current not in CALL_TRANSITIONS:
-        raise TransitionError('unknown call state: %r' % (current,))
+        raise TransitionError('unknown call state: {!r}'.format(current))
     if following not in CALL_STATES:
-        raise TransitionError('unknown call state: %r' % (following,))
+        raise TransitionError('unknown call state: {!r}'.format(following))
     if following not in CALL_TRANSITIONS[current]:
-        raise TransitionError('illegal call transition %s -> %s'
-                              % (current, following))
+        raise TransitionError('illegal call transition {} -> {}'.format(current, following))
 
 
 def reachable_job_states(start: str = PLANNED) -> frozenset[str]:
@@ -375,7 +372,7 @@ class Promotion:
         for name in ('before_sha256', 'after_sha256'):
             value = getattr(self, name)
             if value is not None:
-                require_sha256(value, 'promotion.%s' % name)
+                require_sha256(value, 'promotion.{}'.format(name))
 
 
 def entity_from_row(row: Mapping[str, Any], cls: type) -> Any:

@@ -7,7 +7,7 @@ SRC = os.path.join(os.path.dirname(HERE), 'src')
 if SRC not in sys.path:
     sys.path.insert(0, SRC)
 
-import pwg_quarantine_sample30 as sample30  # noqa: E402
+import pwg_quarantine_sample30 as sample30
 
 
 def test_six_offline_proofs():

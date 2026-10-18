@@ -21,7 +21,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import no_pwg_scale_plan as plan  # noqa: E402
+import no_pwg_scale_plan as plan
 
 
 def main(argv=None):
@@ -34,26 +34,24 @@ def main(argv=None):
     live = sorted(n for n in (os.listdir(artifacts) if os.path.isdir(artifacts) else []))
     print('coordinator artifacts: %s (%d entries)' % (artifacts, len(live)))
     for name in live:
-        print('   %s' % name)
+        print('   {}'.format(name))
 
     used = plan.used_window_indices(args.prefix, coord_dir=args.coord_dir)
-    print('used indices for prefix %r (incl. coordinator artifacts): %s'
-          % (args.prefix, sorted(used)))
+    print('used indices for prefix {!r} (incl. coordinator artifacts): {}'.format(args.prefix, sorted(used)))
 
     roots = []
     simulated = set(used)
     for attempt in (1, 2):
         idx = max([1] + sorted(simulated)) + 1
         root = '%s%02d' % (args.prefix, idx)
-        print('re-arm %d -> %s' % (attempt, root))
+        print(f're-arm {attempt:d} -> {root}')
         if root in roots:
-            print('FAIL: re-arm %d re-picked %s (the H4342 stall)' % (attempt, root))
+            print(f'FAIL: re-arm {attempt:d} re-picked {root} (the H4342 stall)')
             return 1
         roots.append(root)
         simulated.add(idx)          # the attempt prepares, then dies before wf_output
 
-    print('PASS: two consecutive re-arms, static prefix, zero manual id bumps -> %s'
-          % ', '.join(roots))
+    print('PASS: two consecutive re-arms, static prefix, zero manual id bumps -> {}'.format(', '.join(roots)))
     return 0
 
 

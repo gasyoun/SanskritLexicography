@@ -68,7 +68,7 @@ def load_records(path):
                 return {lid: idx.record(lid) for lid in idx.ids()}
             finally:
                 idx.close()
-        except Exception as exc:  # noqa: BLE001 -- degrade to the legacy whole-file path
+        except Exception as exc:
             print(f"cdsl_index sidecar unavailable for {path.name}: {exc}",
                   file=sys.stderr)
     txt = path.read_text(encoding="utf-8")

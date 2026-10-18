@@ -25,7 +25,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
-import kitchen_slices as ks  # noqa: E402
+import kitchen_slices as ks
 
 
 NOW = datetime(2026, 8, 6, 15, 0, 0, tzinfo=timezone.utc)

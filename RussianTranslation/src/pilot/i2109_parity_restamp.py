@@ -47,27 +47,27 @@ TRACKING = "https://github.com/gasyoun/SanskritLexicography/issues/2109"
 
 # H4408: ledger/checker mechanics live in parity_restamp.py; this receipt keeps
 # the #2109 MECHANISM/NOTE verdict text above.
-import os  # noqa: E402
+import os
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import parity_restamp as pr  # noqa: E402
+import parity_restamp as pr
 
 
 def flip_entry():
     text, start, end, entries = pr.load_ledger()
     hit = [e for e in entries if e.get("id") == ENTRY_ID]
     if not hit:
-        raise SystemExit("no ledger entry with id %r" % ENTRY_ID)
+        raise SystemExit("no ledger entry with id {!r}".format(ENTRY_ID))
     e = hit[0]
     if e.get("verdict") == "SHARED":
-        print("ledger entry %s already SHARED" % ENTRY_ID)
+        print("ledger entry {} already SHARED".format(ENTRY_ID))
         return False
     e["mechanism"] = MECHANISM
     e["verdict"] = "SHARED"
     e["note"] = NOTE
     e["tracking"] = TRACKING
     pr.write_ledger(text, start, end, entries)
-    print("flipped ledger entry %s GAP -> SHARED" % ENTRY_ID)
+    print("flipped ledger entry {} GAP -> SHARED".format(ENTRY_ID))
     return True
 
 

@@ -13,8 +13,8 @@ REPO = os.path.dirname(os.path.dirname(HERE))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import gateway_canary_contract as contract  # noqa: E402
-from gateway_route import validate_complete_schema  # noqa: E402
+import gateway_canary_contract as contract
+from gateway_route import validate_complete_schema
 
 
 def senses(value):
@@ -70,7 +70,7 @@ def test_prompt_derived_mutations_fail_closed():
         mutate(bad)
         try:
             validate_complete_schema(bad, schema)
-            raise AssertionError('mutation accepted: %s' % name)
+            raise AssertionError('mutation accepted: {}'.format(name))
         except ValueError:
             pass
 

@@ -6,7 +6,7 @@ PILOT = os.path.normpath(os.path.join(
     os.path.dirname(os.path.abspath(__file__)), '..', 'src', 'pilot'))
 sys.path.insert(0, PILOT)
 
-import cache_prep_h2756 as h2756  # noqa: E402
+import cache_prep_h2756 as h2756
 
 
 def test_conclusions_replay_from_sealed_summaries():

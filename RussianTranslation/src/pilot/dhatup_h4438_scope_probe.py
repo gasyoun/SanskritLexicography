@@ -173,7 +173,7 @@ def scan(pwg, forms=_ABC, lex_scope='before', head_scope='line', strict_vl=False
             lex_line = bool(_HEAD_LEX.search(line))
             for rx in forms:
                 for mm in rx.finditer(line):
-                    coord = '%s,%s' % (mm.group(1), mm.group(2))
+                    coord = '{},{}'.format(mm.group(1), mm.group(2))
                     c = coords[coord][key]
                     c[0 if at_head else 1] += 1
                     if not at_head:
@@ -242,8 +242,8 @@ class Checks(object):
         self.n += 1
         ok = got == want
         if not ok:
-            self.fails.append('%s: got %r, expected %r' % (label, got, want))
-        print('  %-58s %-22s %s' % (label, got, 'OK' if ok else 'FAIL (want %r)' % (want,)))
+            self.fails.append('{}: got {!r}, expected {!r}'.format(label, got, want))
+        print('  %-58s %-22s %s' % (label, got, 'OK' if ok else 'FAIL (want {!r})'.format(want)))
 
 
 def dump(pwg, wanted):
@@ -264,7 +264,7 @@ def dump(pwg, wanted):
                 continue
             for rx, tag in ((_DHATUP, 'A'), (_DHATUP_N, 'B'), (_DHATUP_N_FULL, 'C')):
                 for mm in rx.finditer(line):
-                    c = '%s,%s' % (mm.group(1), mm.group(2))
+                    c = '{},{}'.format(mm.group(1), mm.group(2))
                     if c in want:
                         lo = max(0, mm.start() - 110)
                         print('%-9s %-14s form=%s %-4s %s' % (
@@ -284,7 +284,7 @@ def main():
 
     for p in (a.pwg, a.mw):
         if not os.path.exists(p):
-            print('corpus absent: %s' % p)
+            print('corpus absent: {}'.format(p))
             print('CHECKED NOTHING — exit 2, never a silent pass.')
             return 2
 
@@ -367,7 +367,7 @@ def main():
             for mm in _DHATUP_N_FULL.finditer(line):
                 occ += 1
                 on_head += 1 if first else 0
-                formc['%s,%s' % (mm.group(1), mm.group(2))] += 1
+                formc['{},{}'.format(mm.group(1), mm.group(2))] += 1
             first = False
     seen_ab = set(coords_ab)
     new = [x for x in formc if x not in seen_ab]
@@ -400,7 +400,7 @@ def main():
 
     print('6  the shipped artifact')
     if not os.path.exists(a.artifact):
-        print('  artifact absent: %s' % a.artifact)
+        print('  artifact absent: {}'.format(a.artifact))
         c.fails.append('artifact absent')
     else:
         with open(a.artifact, encoding='utf-8') as f:
@@ -431,7 +431,7 @@ def main():
 
     print('\n%d checks, %d failed' % (c.n, len(c.fails)))
     for f in c.fails:
-        print('  FAIL %s' % f)
+        print('  FAIL {}'.format(f))
     return 1 if c.fails else 0
 
 

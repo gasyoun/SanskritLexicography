@@ -24,8 +24,10 @@ Union key = bare SLP1 lemma (no accents, no compound hyphens, no marks):
 
 Per dict the membership set is norm(key1) | norm(key2). Outputs (in
 union-16dicts/): union_headwords_16.tsv (``slp1 n_dicts dicts`` — the column
-the overlap-matrix script consumes), per_dict_profile.tsv, and this run's
-summary on stdout. No BOM is written (now-2026 inputs are all BOM-less).
+the overlap-matrix script consumes), per_dict_profile.tsv, the H6979
+``union-headwords-16dicts.meta.json`` provenance sidecar (written through
+``sanskrit_util.write_sidecar``, which refuses an un-consumed layer that does
+not declare itself ``dormant``), and this run's summary on stdout. No BOM is written (now-2026 inputs are all BOM-less).
 
 ``--selftest`` runs assertions on synthetic mini-files (no disk inputs).
 
@@ -37,9 +39,16 @@ Run: python3 HeadwordLists/build_union16.py [--selftest]
 import argparse
 import collections
 import glob
+import hashlib
 import os
 import re
 import sys
+
+try:  # H6979 layer-sidecar gate, shared library — imported, never re-implemented
+    from sanskrit_util import write_sidecar
+except ImportError as exc:  # pragma: no cover - the pin is in requirements.txt
+    raise SystemExit(
+        "sanskrit-util >= 0.13.0 is required for the layer sidecar (H6979): %s" % exc)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "now-2026")
@@ -83,9 +92,9 @@ def norm_k2(line):
 
 def load_dict(code):
     """-> (membership:set, profile:dict) for one dict from its now-2026 files."""
-    files = sorted(glob.glob(os.path.join(SRC, "%s-unique-key*.txt" % code)))
+    files = sorted(glob.glob(os.path.join(SRC, "{}-unique-key*.txt".format(code))))
     if not files:
-        raise SystemExit("no now-2026 files for %s" % code)
+        raise SystemExit("no now-2026 files for {}".format(code))
     member = set()
     prof = {"files": " ".join(os.path.basename(f) for f in files),
             "raw_lines": 0, "bare_keys": 0,
@@ -135,10 +144,44 @@ def build():
             fh.write("\t".join([code, p["files"], str(p["raw_lines"]),
                                 str(p["bare_keys"])] +
                                [str(p[c]) for c in cols[4:]]) + "\n")
+    # H6979: the layer's provenance sidecar. `active` because this index has
+    # named consumers; a layer nobody reads would have to be `dormant` with an
+    # owner and a review date, and write_sidecar would refuse it otherwise.
+    sha256 = hashlib.sha256(open(tsv, "rb").read()).hexdigest()
+    write_sidecar(os.path.join(OUT, "union-headwords-16dicts.meta.json"), {
+        "layer": "union-headwords-16dicts",
+        "made_by": "ai",
+        "model": "z-ai/glm-5.3-flash",
+        "handoff": "H4797",
+        "status": "active",
+        "consumers": [
+            {"kind": "repo", "id": "SanskritLexicography",
+             "use": "data/headword_overlap_matrix.py — 120-pair overlap matrix "
+                    "and per-dict profile"},
+            {"kind": "repo", "id": "csl-atlas",
+             "use": "H4802 full-csl-orig crosswalk (s2d jaccard)"},
+            {"kind": "paper", "id": "A40",
+             "use": "headword-inventory paper"},
+        ],
+        "novelty": (
+            "Includes PD and the current csl-orig counts (16 dicts, 25 data "
+            "files) where the published union is 15 dicts and predates them, and "
+            "keys each dict as key1 UNION normalized-key2 — the print-form key2 "
+            "spellings (parentheticals, udātta, hyphens, avagraha) that a key1-"
+            "only union cannot reach. Deterministic: bare-SLP1 keys, residue "
+            "counted per class and never guessed."),
+        "builder": "HeadwordLists/build_union16.py",
+        "artifact": "union_headwords_16.tsv",
+        "sha256": sha256,
+        "rows": len(rows),
+        "dicts": DICTS,
+        "built_at": __import__("datetime").date.today().isoformat(),
+    })
+
     byn = collections.Counter(len(v) for v in union.values())
     print("union over %d dicts: %d headwords -> %s" % (len(DICTS), len(union), tsv))
-    print("corroboration: %s" % ", ".join("n=%d:%d" % (n, byn.get(n, 0))
-                                          for n in sorted(byn)))
+    print("corroboration: {}".format(", ".join("n=%d:%d" % (n, byn.get(n, 0))
+                                          for n in sorted(byn))))
     return union, profiles
 
 

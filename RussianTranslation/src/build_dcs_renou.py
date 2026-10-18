@@ -24,7 +24,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-from sibling_root import sibling_root  # noqa: E402
+from sibling_root import sibling_root
 GITHUB = sibling_root(HERE)
 DCS = os.path.normpath(os.path.join(GITHUB, 'VisualDCS', 'src',
                                     'DCS-data-2026', 'conllu'))
@@ -319,7 +319,7 @@ def main():
         elif args[i] == '--limit':
             limit = int(args[i + 1]); i += 2
         else:
-            raise SystemExit('unknown option: %s' % args[i])
+            raise SystemExit('unknown option: {}'.format(args[i]))
     final, texts = build_index(limit)
     tmp = out + '.tmp'
     json.dump(final, open(tmp, 'w', encoding='utf-8'),
@@ -335,7 +335,7 @@ def main():
     print('lemmas indexed: %d' % len(final))
     print('lemmas carrying each state:', {k: cov.get(k, 0) for k in STATES})
     print('lemmas carrying each register:', {k: rcov.get(k, 0) for k in REGISTERS})
-    print('→ %s' % os.path.basename(out))
+    print('→ {}'.format(os.path.basename(out)))
 
 
 if __name__ == '__main__':

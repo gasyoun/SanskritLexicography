@@ -59,7 +59,7 @@ SRC = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(SRC)
 GITHUB_ROOT = os.path.dirname(os.path.dirname(RT))
 sys.path.insert(0, SRC)
-from build_src import iast_to_slp1  # noqa: E402
+from build_src import iast_to_slp1
 
 HEADWORDS_FILE = os.path.join(RT, '..', 'HeadwordLists', 'now-2026', 'PWG-unique-key1-106082.txt')
 CORPUS_LEXICON = os.path.join(SRC, 'corpus_lexicon.jsonl')
@@ -418,7 +418,7 @@ def write_report(n, n_absent_exact, n_absent_renou, n_corpus_rows, corpus_slp1,
     lines.append('| term | β | SE | odds ratio | 95% CI |')
     lines.append('|---|--:|--:|--:|--:|')
     for name, b, se, or_, lo, hi in model_rows:
-        lines.append('| %s | %.4f | %.4f | %.3f | [%.3f, %.3f] |' % (name, b, se, or_, lo, hi))
+        lines.append('| {} | {:.4f} | {:.4f} | {:.3f} | [{:.3f}, {:.3f}] |'.format(name, b, se, or_, lo, hi))
     lines.append('')
     ls_row = [r for r in model_rows if r[0] == 'ls_only'][0]
     lines.append('**Headline: the `ls_only` (lexicographers-only-citation) odds ratio is %.2f '

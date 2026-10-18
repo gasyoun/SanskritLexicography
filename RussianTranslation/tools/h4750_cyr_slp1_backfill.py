@@ -46,9 +46,9 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent / "src"))
 
-from h3985_cyr_slp1_table import LEXICON, ONOMASTICON, index_headwords, load_headwords  # noqa: E402
-from iast_to_cyrillic import name_for_ru_prose, transliterate  # noqa: E402
-from indic_transliteration import sanscript  # noqa: E402
+from h3985_cyr_slp1_table import LEXICON, ONOMASTICON, index_headwords, load_headwords
+from iast_to_cyrillic import name_for_ru_prose, transliterate
+from indic_transliteration import sanscript
 
 SL = HERE.parents[1]
 TABLE = SL / "RussianTranslation" / "data" / "cyrillic_proper_noun_slp1.tsv"

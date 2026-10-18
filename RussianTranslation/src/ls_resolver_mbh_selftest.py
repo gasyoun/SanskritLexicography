@@ -45,10 +45,9 @@ def main():
     for locus in ("1,71,17.", "8,33,31.", "5,163,4.", "13,93,117", "13,23,79."):
         mixed = href("MBh. " + locus)
         upper = href("MBH. " + locus)
-        check(mixed is not None, "MBh. %s resolves (was None)" % locus)
+        check(mixed is not None, "MBh. {} resolves (was None)".format(locus))
         check(mixed == upper,
-              "MBh. %s lands where MBH. %s already did%s"
-              % (locus, locus, "" if mixed == upper else " (%s != %s)" % (mixed, upper)))
+              "MBh. {} lands where MBH. {} already did{}".format(locus, locus, "" if mixed == upper else " ({} != {})".format(mixed, upper)))
 
     # --- edition is chosen by arity, not by case --------------------------
     three = href("MBh. 1,71,17.")
@@ -61,7 +60,7 @@ def main():
     for form in ("MBh. 1,71,17.", "MBh. (ed. Bomb.) 1,71,17.", "MBh. (ed. Calc.) 1,2,3"):
         h = href(form) or ""
         check("mahabharata/calc" not in h and "mahabharata/bomb" not in h,
-              "%s does not emit a renamed-away host" % form)
+              "{} does not emit a renamed-away host".format(form))
 
     # --- a 3-coordinate Calcutta citation is malformed; do not guess ------
     check(href("MBh. (ed. Calc.) 1,2,3") is None,
@@ -74,9 +73,9 @@ def main():
     for up, mixed in pairs:
         hu, hm = href(up), href(mixed)
         if hu and hm:
-            check(hu != hm, "%r and %r still resolve to DIFFERENT editions" % (up, mixed))
+            check(hu != hm, "{!r} and {!r} still resolve to DIFFERENT editions".format(up, mixed))
         else:
-            check(True, "%r / %r unchanged (one side unresolved, as before)" % (up, mixed))
+            check(True, "{!r} / {!r} unchanged (one side unresolved, as before)".format(up, mixed))
 
     # --- regression: a sample of already-working citations is untouched ---
     frozen = {
@@ -88,7 +87,7 @@ def main():
     }
     for cit, want in frozen.items():
         got = href(cit)
-        check(got == want, "unchanged: %s -> %s" % (cit, got if got == want else "%s (want %s)" % (got, want)))
+        check(got == want, "unchanged: {} -> {}".format(cit, got if got == want else "{} (want {})".format(got, want)))
 
     ok = all(OK)
     print("\nls_resolver_mbh selftest: %s (%d/%d)"

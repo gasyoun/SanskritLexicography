@@ -34,7 +34,7 @@ def emit(tag, g, n, t0, g0, n0):
         eta_h = (TOTAL - g) / rate / 3600.0
         apg = (n - n0) / dg                             # align/group, live window
         need = (TOTAL - g) * apg * COST_PER_ALIGN       # $ still to spend
-        tail = 'rate=%.0f grp/min  eta=%.1fh  need=$%.2f  total=$%.2f' % (
+        tail = 'rate={:.0f} grp/min  eta={:.1f}h  need=${:.2f}  total=${:.2f}'.format(
             rate * 60, eta_h, need, spent + need)
     else:
         tail = 'rate=… (warming up)'

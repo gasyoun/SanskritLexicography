@@ -1,0 +1,35 @@
+{
+  "n": 100,
+  "exact_acc": 0.03,
+  "macro_acc_by_category": 0.0127,
+  "unanswered": 4,
+  "per_category": {
+    "anusvāra / nasal": {
+      "acc": 0.0,
+      "n": 2
+    },
+    "consonant / other": {
+      "acc": 0.0508,
+      "n": 59
+    },
+    "visarga": {
+      "acc": 0.0,
+      "n": 9
+    },
+    "vowel coalescence": {
+      "acc": 0.0,
+      "n": 30
+    }
+  },
+  "split": "test",
+  "system": "LLM local · qwen2.5:7b-instruct (5-shot, temp 0)",
+  "protocol": {
+    "model": "qwen2.5:7b-instruct",
+    "n_shot": 5,
+    "temperature": 0,
+    "sample": 100,
+    "sample_seed": 20261006,
+    "few_shot_source": "train split only"
+  },
+  "wall_seconds": 118.7
+}

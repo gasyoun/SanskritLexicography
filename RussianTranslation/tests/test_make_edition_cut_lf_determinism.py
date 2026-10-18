@@ -25,7 +25,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
-import make_edition_cut as mec  # noqa: E402
+import make_edition_cut as mec
 
 
 def _sha256_bytes(data):

@@ -15,7 +15,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-import cohort_live_admission as cla  # noqa: E402
+import cohort_live_admission as cla
 
 VALID = {
     'schema': cla.SCHEMA,
@@ -114,7 +114,7 @@ def test_e_every_missing_field_refuses(td):
         record = copy.deepcopy(VALID)
         mutate(record)
         ok, why, _ = cla.admit(2, path=_write(td, record))
-        assert not ok, 'a record broken at [%s] was ADMITTED: %s' % (label, why)
+        assert not ok, 'a record broken at [{}] was ADMITTED: {}'.format(label, why)
     print('  (e) %d record defects each refuse width 2 (no "assume yes" branch): PASS'
           % len(cases))
 

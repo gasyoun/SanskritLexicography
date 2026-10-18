@@ -64,7 +64,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 sys.path.insert(0, os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..')))
-from terminology_build import GLOSS_RE, clean_gloss  # noqa: E402  (reused {%...%} extractor)
+from terminology_build import GLOSS_RE, clean_gloss
 
 # A usable sense menu entry must show the annotator actual Russian. clean_gloss()
 # falls back to a markup-stripped snippet when a subcard carries no {%...%} span,

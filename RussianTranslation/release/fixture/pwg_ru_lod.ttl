@@ -199,7 +199,6 @@ gr:corpus a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/repw
   pwglex:model "claude-sonnet-5" ;
   prov:generatedAtTime "2026-06-30T05:05:13Z"^^xsd:dateTime ;
   dct:references <https://w3id.org/sanskrit-lexicon/repwg/citation/AK_x2e__x2d_3_x2c_2_x2c_55_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/AV_x2e__x2d_11_x2c_5_x2c_8_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/AV_x2e__x2d_12_x2c_1_x2c_18_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/AV_x2e__x2d_18_x2c_4_x2c_70_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BHA_xe1__xb9__xac__xe1__xb9__xac__x2e__x2d_15_x2c_87_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BHA_xe1__xb9__xac__xe1__xb9__xac__x2e__x2d_2_x2c_27_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BHA_xe1__xb9__xac__xe1__xb9__xac__x2e__x2d_3_x2c_13_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BHA_xe1__xb9__xac__xe1__xb9__xac__x2e__x2d_3_x2c_16_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BHA_xe1__xb9__xac__xe1__xb9__xac__x2e__x2d_9_x2c_79_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BH_xc4__x80_G_x2e__x2d_P_x2e__x2d_10_x2c_73_x2c_21_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BH_xc4__x80_G_x2e__x2d_P_x2e__x2d_1_x2c_13_x2c_32_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BH_xc4__x80_G_x2e__x2d_P_x2e__x2d_1_x2c_16_x2c_22_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BH_xc4__x80_G_x2e__x2d_P_x2e__x2d_1_x2c__x2d_18_x2c_43_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BH_xc4__x80_G_x2e__x2d_P_x2e__x2d_3_x2c_16_x2c_18_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BH_xc4__x80_G_x2e__x2d_P_x2e__x2d_4_x2c_14_x2c_17_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BH_xc4__x80_G_x2e__x2d_P_x2e__x2d_8_x2c_22_x2c_35_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/BH_xc4__x80_G_x2e__x2d_P_x2e__x2d_9_x2c_14_x2c_21_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/CAURAP_x2e__x2d_35_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/DH_xc4__x80_TUP_x2e__x2d_17_x2c_6_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/GORR_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/GORR_x2e__x2d_2_x2c__x2d_113_x2c_22>, <https://w3id.org/sanskrit-lexicon/repwg/citation/GORR_x2e__x2d_2_x2c__x2d_94_x2c_8>, <https://w3id.org/sanskrit-lexicon/repwg/citation/HARIV_x2e__x2d_10011_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/HARIV_x2e__x2d_14687_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/HARIV_x2e__x2d_7115_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/HARIV_x2e__x2d_7874_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/HIT_x2e__x2d_86_x2c_18_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/H_x2e__x2d_1497_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Ind_x2e__x2d_St_x2e__x2d_9_x2c_98_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_13_x2c_135_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_13_x2c_163_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_18_x2c_115_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_18_x2c_137_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_20_x2c_19_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_20_x2c_65_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_26_x2c_145_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_30_x2c_113_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_45_x2c_50_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_53_x2c_64_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_62_x2c_82_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_72_x2c_333_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KATH_xc4__x80_S_x2e__x2d_88_x2c_14_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/KIR_x2e__x2d_5_x2c_50_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/K_xc4__x80_TY_x2e__x2d__xc5__x9a_R_x2e__x2d_8_x2c_9_x2c_25_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_13_x2c_2221>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_1_x2c_3196_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_1_x2c_5573_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_1_x2c_6153_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_1_x2c_6186_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_1_x2c_698>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_1_x2c__x2d_6309_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_1_x2c__x2d_699_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_1_x2c__x2d_718_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c_10570_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c_11814_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c_2144_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c_2238_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c_2519_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c_529_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c_8762_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c_8886_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c__x2d_10562_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c__x2d_11816_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c__x2d_208_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c__x2d_2155_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c__x2d_2356_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_3_x2c__x2d_2711_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_4_x2c_1292_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_4_x2c_2104_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_5_x2c_5431_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_5_x2c_7068_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_5_x2c__x2d_7230_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_5_x2c__x2d_7234_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_5_x2c__x2d_7256_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_5_x2c__x2d_7484_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_x2e__x2d_10_x2c_118_x2e__x2d_fg_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_x2e__x2d_11_x2c_23_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_x2e__x2d_2_x2c_114_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_x2e__x2d_7_x2c_36_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_x2e__x2d_8_x2c_307_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_x2e__x2d_9_x2c_12_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_x2e__x2d_9_x2c_15_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_x2e__x2d_9_x2c_328_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_x2e__x2d_9_x2c_6_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_x2e__x2d_9_x2c_7_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_x2e__x2d_9_x2c__x2d_9_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_xc4__x80_RK_x2e__x2d_P_x2e__x2d_52_x2c_20_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_xc4__x80_RK_x2e__x2d_P_x2e__x2d_72_x2c_2_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_xc4__x80_RK_x2e__x2d_P_x2e__x2d_72_x2c__x2d_4_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_xc4__x80_RK_x2e__x2d_P_x2e__x2d_95_x2c_17_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/M_xe1__xb9__x9a_CCH_x2e__x2d_174_x2c_18_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/N_xe1__xb9__x9a_S_x2e__x2d_T_xc4__x80_P_x2e__x2d_UP_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/PA_xc3__x91_CAT_x2e__x2d_23_x2c_11_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/PA_xc3__x91_CAT_x2e__x2d_44_x2c_12_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/PRA_xc5__x9a_NOP_x2e__x2d_2_x2c_13_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/P_x2e__x2d_2_x2c_1_x2c_36_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/P_x2e__x2d_3_x2c_2_x2c_188_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/RAGH_x2e__x2d_11_x2c_24_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/RAGH_x2e__x2d_11_x2c_87_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/RAGH_x2e__x2d_2_x2c_50_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/RAGH_x2e__x2d_2_x2c_66_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_1_x2c_32_x2c_6_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_1_x2c_48_x2c_21_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_1_x2c_61_x2c_18_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_2_x2c_106_x2c_28>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_2_x2c_23_x2c_29_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_2_x2c_51_x2c_6_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_2_x2c_51_x2c__x2d_8_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_2_x2c__x2d_112_x2c_11_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_2_x2c__x2d_112_x2c_27_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_2_x2c__x2d_31_x2c_20>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_2_x2c__x2d_73_x2c_12_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_2_x2c__x2d_86_x2c_7>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_5_x2c_36_x2c_18_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_5_x2c_84_x2c_15_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_6_x2c_3_x2c_1_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_6_x2c__x2d_16_x2c_69_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_7_x2c_59_x2c_1_x2c_13_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_GORR_x2e__x2d_1_x2c_41_x2c_12_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_GORR_x2e__x2d_2_x2c_30_x2c_33_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_GORR_x2e__x2d_2_x2c_32_x2c_41_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_x2e__x2d_GORR_x2e__x2d_3_x2c_51_x2c_37_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_1_x2c_78_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_1_x2c_99_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_1_x2c__x2d_192_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_2_x2c_159_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_2_x2c_97_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_3_x2c_408_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_3_x2c_97_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_5_x2c_220_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/R_xc4__x80_JA_x2d_TAR_x2e__x2d_6_x2c_190_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_1319_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_149_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_1569_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_1774_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_1830_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_199_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_208_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_233_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_233_x2e__x2d_fgg_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_234_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_2384_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_2609_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_2719_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_2720_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_3204_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_3303_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_355_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_4183_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_4247_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_4692_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_4803_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_4926_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_4928_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_4943_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_5010_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_5254_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_5285_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/Spr_x2e__x2d_583>, <https://w3id.org/sanskrit-lexicon/repwg/citation/VAR_xc4__x80_H_x2e__x2d_B_xe1__xb9__x9a_H_x2e__x2d_S_x2e__x2d_27_x2c_8_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/VET_x2e__x2d_in_x2d_LA_x2e__x2d__x28_III_x29__x2d_10_x2c_2_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/VET_x2e__x2d_in_x2d_LA_x2e__x2d__x28_III_x29__x2d_14_x2c_3_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/VIKR_x2e__x2d_18_x2c_6_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/VS_x2e__x2d_19_x2c_10_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xc5__x9a_AT_x2e__x2d_BR_x2e__x2d_13_x2c_1_x2c_6_x2c_3_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xc5__x9a_AT_x2e__x2d_BR_x2e__x2d_2_x2c_1_x2c_4_x2c_15_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xc5__x9a_VET_xc4__x80__xc5__x9a_V_x2e__x2d_UP_x2e__x2d_5_x2c_10_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xc5__x9a__xc4__x80_K_x2e__x2d_13_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xc5__x9a__xc4__x80_K_x2e__x2d_155_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xc5__x9a__xc4__x80_K_x2e__x2d_90_x2c_2_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_10_x2c_68_x2c_1_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_1_x2c_146_x2c_4_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_1_x2c_160_x2c_2_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_1_x2c_34_x2c_8_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_1_x2c_72_x2c_5_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_1_x2c__x2d_41_x2c_1_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_1_x2c__x2d_62_x2c_10_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_1_x2c__x2d_96_x2c_6_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_2_x2c_23_x2c_5_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_2_x2c_27_x2c_4_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_3_x2c_56_x2c_13_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_4_x2c_27_x2c_1_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_6_x2c_8_x2c_2_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_7_x2c_12_x2c_2_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_7_x2c_12_x2c__x2d_13_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_7_x2c_61_x2c_3_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_7_x2c__x2d_15_x2c_3_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_9_x2c_68_x2c_4_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/_xe1__xb9__x9a_V_x2e__x2d_9_x2c_87_x2c_2_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/ed_x2e__x2d_Bomb_x2e_> ;
-  pwglex:attestation <https://w3id.org/sanskrit-lexicon/repwg/attestation/rakz/1> ;
   prov:wasAttributedTo <https://w3id.org/sanskrit-lexicon/repwg/prov/export-lod> .
 <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_01_x5f_sec_x5f_1/caus_x2e_> a ontolex:LexicalSense ;
   skos:definition "<div n=\"p\">— <ab>caus.</ab> {#rakzayati, ararakzat#}\n<ls>P. 7,4,93</ls>, <ab>Sch.</ab>\n{%защищать%}: {#ko 'smAnatra vane rakzayizyati#}\n<ls>PAÑCAT. 70,13.</ls> {%хранить%}: {#svAkAraM rakzayedyastu sa Bftyo 'rho mahIBujAm#}\n<ls>Spr. 1367.</ls>"@ru ;
@@ -401,7 +400,6 @@ gr:corpus a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/repw
   pwglex:model "claude-sonnet-5" ;
   prov:generatedAtTime "2026-06-30T05:05:13Z"^^xsd:dateTime ;
   dct:references <https://w3id.org/sanskrit-lexicon/repwg/citation/AV_x2e__x2d_10_x2c_8_x2c_36_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_12_x2c_3596_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/MBH_x2e__x2d_8_x2c_3542_x2e_>, <https://w3id.org/sanskrit-lexicon/repwg/citation/ed_x2e__x2d_Bomb_x2e_> ;
-  pwglex:attestation <https://w3id.org/sanskrit-lexicon/repwg/attestation/rakz/1> ;
   prov:wasAttributedTo <https://w3id.org/sanskrit-lexicon/repwg/prov/export-lod> .
 <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_13_x5f_prati/2> a ontolex:LexicalSense ;
   skos:definition "<div n=\"1\">— 2) {%бояться, спасаться от%}: {#pra\\ti\\rakza^nnasu\\rya^m#}\n<ls>VS. 8,24.</ls>"@ru ;
@@ -479,7 +477,7 @@ gr:corpus a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/repw
   prov:generatedAtTime "2026-06-30T05:05:13Z"^^xsd:dateTime ;
   prov:wasAttributedTo <https://w3id.org/sanskrit-lexicon/repwg/prov/export-lod> .
 <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_3> a ontolex:LexicalSense ;
-  skos:definition "[Ved , unsp] защищать, оберегать кого-л. (Akk). беречь, охранять, хранить что-л. (Akk), поддерживать в его существовании. хранить, охранять божественные установления или законы (чтобы они не нарушались). [ о богах. ] оберегать кого-л. (Akk) от (Abl). med: внимательно наблюдать за (Akk, Lok). быть бдительным (на страже). Int: усердно хранить. Направительные слова ánu , abhí , ā́ , pári привносят к вышеуказанным значениям лишь едва уловимые оттенки"@ru ;
+  skos:definition "[Ved , unsp] защищать, оберегать кого-л. (Acc.). беречь, охранять, хранить что-л. (Acc.), поддерживать в его существовании. хранить, охранять божественные установления или законы (чтобы они не нарушались). [ о богах. ] оберегать кого-л. (Acc.) от (Abl). med: внимательно наблюдать за (Acc., Loc.). быть бдительным (на страже). Int: усердно хранить. Направительные слова ánu , abhí , ā́ , pári привносят к вышеуказанным значениям лишь едва уловимые оттенки"@ru ;
   pwglex:sourceGloss "[Ved , unsp] jemand (Akk) beschützen, behüten. etwas (Akk) behüten, bewachen, bewahren, in seinem Bestehen erhalten. die göttlichen Ordnungen oder Gesetze bewahren, bewachen (dass sie nicht verletzt werden). [ von Göttern. ] jemand (Akk) behüten vor (Abl). med: aufmerkend achten auf (Akk, Lok). wachsam sein (in der Hut). Int: fleissig hüten. Die Richtungswörter ánu , abhí , ā́ , pári fügen den oben angeführten Begriffen nur leise und leicht erkennbare Schattirungen bei"@de ;
   pwglex:senseTag "NWS-3" ;
   pwglex:homonym "h0" ;
@@ -2844,13 +2842,6 @@ gr:corpus a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/repw
   rdfs:label "Spr. (II) 6634." ;
   pwglex:sourceSigla "Spr. (II) 6634." ;
   pwglex:lsRaw "Spr. (II) 6634." .
-<https://w3id.org/sanskrit-lexicon/repwg/attestation/rakz/1> a pwglex:StratumAttestation, prov:Entity ;
-  skos:prefLabel "ведийский–эпический"@ru ;
-  pwglex:renouOldest "I" ;
-  pwglex:renouYoungest "III" ;
-  pwglex:dateMin "-940"^^xsd:integer ;
-  pwglex:dateMax "80"^^xsd:integer ;
-  pwglex:datedCitations "3"^^xsd:integer .
 <https://w3id.org/sanskrit-lexicon/repwg/attestation/rakz/2> a pwglex:StratumAttestation, prov:Entity ;
   skos:prefLabel "ведийский–классический"@ru ;
   pwglex:renouOldest "I" ;
@@ -2858,7 +2849,31 @@ gr:corpus a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/repw
   pwglex:dateMin "-940"^^xsd:integer ;
   pwglex:dateMax "1150"^^xsd:integer ;
   pwglex:datedCitations "30"^^xsd:integer .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_1/1> a vartrans:SenseRelation ;
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/_xc4__x81__x2b_rak_xe1__xb9__xa3__x20__xe2__x80__x94__x20_Nachtrag/1> a vartrans:SenseRelation ;
+  vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_08_x5f__x5f_a/_xc4__x81__x2b_rak_xe1__xb9__xa3__x20__xe2__x80__x94__x20_Nachtrag> ;
+  vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
+  vartrans:category "amend/internal" ;
+  pwglex:relOp "amend" ;
+  pwglex:relDirection "internal" ;
+  pwglex:relSubtype "pwg_internal_correction" ;
+  pwglex:layer "pwg" ;
+  pwglex:targetHomonym "h0" ;
+  pwglex:targetSenseTag "*new" ;
+  pwglex:confidence "llm" ;
+  rdfs:comment "PWG-internal correction (nachtrag); sense_tag='ā+rakṣ — Nachtrag'" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/pari_x2b_rak_xe1__xb9__xa3__x20__xe2__x80__x94__x20_Nachtrag/2> a vartrans:SenseRelation ;
+  vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_10_x5f_pari/pari_x2b_rak_xe1__xb9__xa3__x20__xe2__x80__x94__x20_Nachtrag> ;
+  vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
+  vartrans:category "amend/internal" ;
+  pwglex:relOp "amend" ;
+  pwglex:relDirection "internal" ;
+  pwglex:relSubtype "pwg_internal_correction" ;
+  pwglex:layer "pwg" ;
+  pwglex:targetHomonym "h0" ;
+  pwglex:targetSenseTag "*new" ;
+  pwglex:confidence "llm" ;
+  rdfs:comment "PWG-internal correction (nachtrag); sense_tag='pari+rakṣ — Nachtrag'" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_1/3> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_1> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;
@@ -2870,67 +2885,67 @@ gr:corpus a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/repw
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
   rdfs:comment "NWS fragment in EN (heuristic); sense_tag='NWS-1'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_2/2> a vartrans:SenseRelation ;
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_2/4> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_2> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;
   pwglex:relOp "add" ;
   pwglex:relDirection "additive" ;
-  pwglex:relSubtype "nws_at_sense" ;
+  pwglex:relSubtype "nws_at_sense_unplaced" ;
   pwglex:layer "nws" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "NWS additive at PWG sense *new; sense_tag='NWS-2'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_3/3> a vartrans:SenseRelation ;
+  rdfs:comment "NWS additive, no PWG sense named; sense_tag='NWS-2'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_3/5> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_3> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;
   pwglex:relOp "add" ;
   pwglex:relDirection "additive" ;
-  pwglex:relSubtype "nws_at_sense" ;
+  pwglex:relSubtype "nws_at_sense_unplaced" ;
   pwglex:layer "nws" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "NWS additive at PWG sense *new; sense_tag='NWS-3'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_4/4> a vartrans:SenseRelation ;
+  rdfs:comment "NWS additive, no PWG sense named; sense_tag='NWS-3'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_4/6> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_4> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;
   pwglex:relOp "add" ;
   pwglex:relDirection "additive" ;
-  pwglex:relSubtype "nws_at_sense" ;
+  pwglex:relSubtype "nws_at_sense_unplaced" ;
   pwglex:layer "nws" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "NWS additive at PWG sense *new; sense_tag='NWS-4'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_5/5> a vartrans:SenseRelation ;
+  rdfs:comment "NWS additive, no PWG sense named; sense_tag='NWS-4'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_5/7> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_5> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;
   pwglex:relOp "add" ;
   pwglex:relDirection "additive" ;
-  pwglex:relSubtype "nws_at_sense" ;
+  pwglex:relSubtype "nws_at_sense_unplaced" ;
   pwglex:layer "nws" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "NWS additive at PWG sense *new; sense_tag='NWS-5'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_6/6> a vartrans:SenseRelation ;
+  rdfs:comment "NWS additive, no PWG sense named; sense_tag='NWS-5'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_6/8> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_6> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;
   pwglex:relOp "add" ;
   pwglex:relDirection "additive" ;
-  pwglex:relSubtype "nws_at_sense" ;
+  pwglex:relSubtype "nws_at_sense_unplaced" ;
   pwglex:layer "nws" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "NWS additive at PWG sense *new; sense_tag='NWS-6'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_7/7> a vartrans:SenseRelation ;
+  rdfs:comment "NWS additive, no PWG sense named; sense_tag='NWS-6'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_7/9> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_7> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;
@@ -2942,7 +2957,7 @@ gr:corpus a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/repw
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
   rdfs:comment "NWS fragment in EN (heuristic); sense_tag='NWS-7'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_8/8> a vartrans:SenseRelation ;
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_8/10> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_8> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;
@@ -2954,379 +2969,379 @@ gr:corpus a skos:Concept ; skos:inScheme <https://w3id.org/sanskrit-lexicon/repw
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
   rdfs:comment "NWS fragment in EN (heuristic); sense_tag='NWS-8'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_9/9> a vartrans:SenseRelation ;
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_9/11> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_9> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;
   pwglex:relOp "add" ;
   pwglex:relDirection "additive" ;
-  pwglex:relSubtype "nws_at_sense" ;
+  pwglex:relSubtype "nws_at_sense_unplaced" ;
   pwglex:layer "nws" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "NWS additive at PWG sense *new; sense_tag='NWS-9'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_10/10> a vartrans:SenseRelation ;
+  rdfs:comment "NWS additive, no PWG sense named; sense_tag='NWS-9'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_10/12> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_10> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;
   pwglex:relOp "add" ;
   pwglex:relDirection "additive" ;
-  pwglex:relSubtype "nws_at_sense" ;
+  pwglex:relSubtype "nws_at_sense_unplaced" ;
   pwglex:layer "nws" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "NWS additive at PWG sense *new; sense_tag='NWS-10'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_11/11> a vartrans:SenseRelation ;
+  rdfs:comment "NWS additive, no PWG sense named; sense_tag='NWS-10'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_11/13> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_11> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;
   pwglex:relOp "add" ;
   pwglex:relDirection "additive" ;
-  pwglex:relSubtype "nws_at_sense" ;
+  pwglex:relSubtype "nws_at_sense_unplaced" ;
   pwglex:layer "nws" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "NWS additive at PWG sense *new; sense_tag='NWS-11'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_12/12> a vartrans:SenseRelation ;
+  rdfs:comment "NWS additive, no PWG sense named; sense_tag='NWS-11'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/NWS_x2d_12/14> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_nws00/NWS_x2d_12> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;
   pwglex:relOp "add" ;
   pwglex:relDirection "additive" ;
-  pwglex:relSubtype "nws_at_sense" ;
+  pwglex:relSubtype "nws_at_sense_unplaced" ;
   pwglex:layer "nws" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "NWS additive at PWG sense *new; sense_tag='NWS-12'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_1_xe3__x80__x89_/13> a vartrans:SenseRelation ;
+  rdfs:comment "NWS additive, no PWG sense named; sense_tag='NWS-12'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_1_xe3__x80__x89_/15> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_1_xe3__x80__x89_> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW 1〉'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_2_xe3__x80__x89_/14> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW 1〉'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_2_xe3__x80__x89_/16> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_2_xe3__x80__x89_> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW 2〉'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_3_xe3__x80__x89_/15> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW 2〉'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_3_xe3__x80__x89_/17> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_3_xe3__x80__x89_> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW 3〉'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_4_xe3__x80__x89_/16> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW 3〉'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_4_xe3__x80__x89_/18> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_4_xe3__x80__x89_> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW 4〉'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_5_xe3__x80__x89_/17> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW 4〉'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_5_xe3__x80__x89_/19> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_5_xe3__x80__x89_> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW 5〉'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_anu/18> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW 5〉'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_anu/20> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_anu> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit anu'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_desid/19> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit anu'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_desid/21> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_desid> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW desid'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_intens/20> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW desid'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_intens/22> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_intens> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW intens'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_abhi/21> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW intens'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_abhi/23> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_abhi> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit abhi'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_anu2/22> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit abhi'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_anu2/24> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_anu2> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit anu2'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_sam/23> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit anu2'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_sam/25> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_sam> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit sam'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_vi/24> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit sam'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_vi/26> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_vi> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit vi'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_prati_x20_corr/25> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit vi'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_prati_x20_corr/27> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_prati_x20_corr> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit prati corr'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_sampari/26> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit prati corr'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_sampari/28> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_sampari> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit sampari'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_samanu/27> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit sampari'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_samanu/29> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_samanu> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit samanu'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_pra/28> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit samanu'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_pra/30> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_pra> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit pra'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_sam2_x20_1_xe3__x80__x89_/29> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit pra'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_sam2_x20_1_xe3__x80__x89_/31> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_sam2_x20_1_xe3__x80__x89_> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW sam2 1〉'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_sam2_x20_2_xe3__x80__x89_/30> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW sam2 1〉'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_sam2_x20_2_xe3__x80__x89_/32> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_sam2_x20_2_xe3__x80__x89_> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW sam2 2〉'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_pari/31> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW sam2 2〉'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_pari/33> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_pari> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit pari'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_pra2/32> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit pari'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_pra2/34> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_pra2> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit pra2'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_prati/33> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit pra2'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_prati/35> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_prati> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit prati'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_vi2/34> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit prati'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_vi2/36> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_vi2> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit vi2'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_sam3/35> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit vi2'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_mit_x20_sam3/37> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_mit_x20_sam3> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW mit sam3'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_hom2/36> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW mit sam3'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_hom2/38> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_hom2> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW hom2'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_hom3/37> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW hom2'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_hom3/39> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_hom3> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW hom3'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_hom4_x20_Nachtrag/38> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW hom3'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/PW_x20_hom4_x20_Nachtrag/40> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pw/PW_x20_hom4_x20_Nachtrag> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "restate/abridging" ;
   pwglex:relOp "restate" ;
   pwglex:relDirection "abridging" ;
-  pwglex:relSubtype "restate" ;
+  pwglex:relSubtype "restate_unplaced" ;
   pwglex:layer "pw" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PW abridging restatement; sense_tag='PW hom4 Nachtrag'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/samanu/39> a vartrans:SenseRelation ;
+  rdfs:comment "PW abridging restatement; sense_tag='PW hom4 Nachtrag'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/samanu/41> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_pwkvn/samanu> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "relocate/additive" ;
   pwglex:relOp "relocate" ;
   pwglex:relDirection "additive" ;
-  pwglex:relSubtype "a2a" ;
+  pwglex:relSubtype "a2a_unplaced" ;
   pwglex:layer "pwkvn" ;
   pwglex:targetHomonym "h0" ;
   pwglex:targetSenseTag "*new" ;
   pwglex:confidence "llm" ;
-  rdfs:comment "PWKVN Nachtraege-to-Nachtraege (addenda-to-addenda); sense_tag='samanu'" .
-<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/samanu/40> a vartrans:SenseRelation ;
+  rdfs:comment "PWKVN Nachtraege-to-Nachtraege (a2a); sense_tag='samanu'; no identified PWG target (no_target_marker)" .
+<https://w3id.org/sanskrit-lexicon/repwg/rel/rakz/samanu/42> a vartrans:SenseRelation ;
   vartrans:source <https://w3id.org/sanskrit-lexicon/repwg/sense/entry/rakz/tr/rakz_x7e__x7e_h0_x5f_zz_x5f_sch/samanu> ;
   vartrans:target <https://w3id.org/sanskrit-lexicon/repwg/entry/rakz> ;
   vartrans:category "add/additive" ;

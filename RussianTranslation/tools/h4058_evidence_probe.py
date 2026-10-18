@@ -23,7 +23,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
 RT = os.path.dirname(HERE)
 sys.path.insert(0, os.path.join(RT, 'src', 'pilot'))
-import translation_memory as tm  # noqa: E402
+import translation_memory as tm
 
 DATA = os.path.normpath(os.path.join(RT, '..', '..', 'pwg-ru-data'))
 STORE = os.path.join(DATA, 'tm', 'pwg_ru_translated.jsonl')

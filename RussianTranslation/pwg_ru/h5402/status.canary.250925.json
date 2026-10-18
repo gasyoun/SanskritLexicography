@@ -1,0 +1,20 @@
+{
+ "classification": "success",
+ "attempts": [
+  {
+   "label": "b0",
+   "keys": [
+    "dq_canary_puregloss~~h0_zz_pw"
+   ],
+   "returncode": 0,
+   "elapsed_ms": 19064,
+   "classification": "success"
+  }
+ ],
+ "null_keys": [],
+ "cli_safe_mode_effective": true,
+ "cli_token_stream_effective": false,
+ "progress_window_ms_effective": null,
+ "manifest_sha256": "16d1596c5b79cebf5f214c6d56f3caac4343c264762f1aa1e29883045294b8a4",
+ "result_sha256": "15c9a8b2eded3f36ca47577a7efc0e815d6414ca557bb57d548cb36dd7084fd1"
+}

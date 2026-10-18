@@ -1,0 +1,66 @@
+{
+ "schema": "pwg.bounded_staged_run.v1",
+ "mode": "dry-run (no generation call made)",
+ "scope": {
+  "lease_ids": [
+   "h5403vol25",
+   "h5403vol35",
+   "h5403vol39",
+   "h5403vol40"
+  ],
+  "expected_windows": 4,
+  "expected_headwords": 4,
+  "expected_subcards": 4,
+  "projected_calls_from_plan": 4,
+  "importable_prepared_leases": [
+   "h5403vol25",
+   "h5403vol35",
+   "h5403vol39",
+   "h5403vol40"
+  ],
+  "windows_not_prepared_skipped": [],
+  "repair_leases": []
+ },
+ "ceilings": {
+  "max_windows": null,
+  "max_calls": 6,
+  "max_clean": null,
+  "cost_ceiling": null,
+  "empty_streak": null,
+  "max_accounts": 0
+ },
+ "cost_basis": {
+  "evaluable": true,
+  "reason": "no cost ceiling requested"
+ },
+ "account_allocation": {
+  "validated_accounts": [
+   "c1"
+  ],
+  "max_accounts_cap": null,
+  "allocated": [
+   "c1"
+  ]
+ },
+ "checkpoint_path": "C:\\Users\\user\\AppData\\Local\\Temp\\h5403dry\\dry.checkpoint.json",
+ "stop_policy": [
+  "window-count ceiling (max_windows=None)",
+  "call-count ceiling (max_calls=6)",
+  "clean-rows quota (max_clean=None)",
+  "cost/quota ceiling (cost_ceiling=None; UNEVALUABLE cost -> STOP_COST_UNEVALUABLE, fail closed)",
+  "consecutive non-productive streak (empty_streak=None)",
+  "clean-target drain (plan queue + requeue backlog both empty)",
+  "any failed job or all-accounts-parked -> fail closed"
+ ],
+ "live_requires": "explicit --execute AND a healthy fleet probe (STOP-on-any-NO-GO)",
+ "cohort": {
+  "requested_width": 1,
+  "mode": "serial (production default, width 1)",
+  "live_policy": "H1437 live-acceptance gate: attempt/result/run binding, promotion-receipt reconciliation and the campaign reservation ledger must be proven on a LIVE serial window and signed off by Codex review before any cohort width > 1 may execute",
+  "live_admission": {
+   "admitted": true,
+   "reason": "serial route (width 1)",
+   "record_path": "C:\\Users\\user\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\pwg_ru\\h4527\\COHORT_LIVE_ACCEPTANCE.json"
+  }
+ }
+}

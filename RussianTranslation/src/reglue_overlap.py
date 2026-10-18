@@ -51,7 +51,7 @@ DATA = os.environ.get("PWG_RU_DATA_ROOT", os.path.dirname(HERE))
 # linked worktree (FileNotFoundError) — i.e. the published sheet's "re-run to
 # reproduce" promise could never even be exercised in the sanctioned workflow.
 # Same resolution `build_reglue.py` already uses via store_path.py.
-from store_path import canonical_store, main_worktree_root          # noqa: E402
+from store_path import canonical_store, main_worktree_root
 
 STORE = canonical_store(os.path.join(DATA, "src", "pwg_ru_translated.jsonl"))
 _MAIN = main_worktree_root(HERE)
@@ -101,7 +101,7 @@ def strip_markup(text):
     t = PAGE.sub(" ", text or "")
     t = LS_RE.sub(" ", t)
     t = SANSKRIT.sub(" ", t)
-    t = GLOSS.sub(lambda m: " %s " % m.group(1), t)
+    t = GLOSS.sub(lambda m: " {} ".format(m.group(1)), t)
     t = TAG.sub(" ", t)
     return re.sub(r"\s+", " ", t).strip()
 
@@ -293,7 +293,7 @@ def klass(subtype):
 
 def main():
     if not os.path.exists(STORE) or not os.path.exists(REL):
-        print("store/sidecar missing under %s — set PWG_RU_DATA_ROOT" % DATA)
+        print("store/sidecar missing under {} — set PWG_RU_DATA_ROOT".format(DATA))
         return 1
     rows = measure_all()
     if not rows:
@@ -328,9 +328,8 @@ def main():
 
     # does the measurement separate the classes at all?
     med = {k: (stats([r["gloss_overlap"] for r in (by.get(k) or [])])[2]) for k in by}
-    print("\nmedian gloss overlap — restates %.3f vs adds %.3f"
-          % (med.get("restates", 0.0), med.get("adds", 0.0)))
-    print("wrote %s" % out)
+    print("\nmedian gloss overlap — restates {:.3f} vs adds {:.3f}".format(med.get("restates", 0.0), med.get("adds", 0.0)))
+    print("wrote {}".format(out))
     return 0
 
 
@@ -350,8 +349,7 @@ def selftest():
     near = compare(a, b)
     far = compare(a, c)
     check(near["gloss_overlap"] > far["gloss_overlap"],
-          "a near-duplicate gloss scores higher than an unrelated one (%.3f > %.3f)"
-          % (near["gloss_overlap"], far["gloss_overlap"]))
+          "a near-duplicate gloss scores higher than an unrelated one ({:.3f} > {:.3f})".format(near["gloss_overlap"], far["gloss_overlap"]))
     check(near["citation_overlap"] == 1.0, "identical citation -> overlap 1.0")
     check(far["citation_overlap"] == 0.0, "different citation -> overlap 0.0")
 
@@ -371,7 +369,7 @@ def selftest():
 
     # length ratio
     lr = compare("a" * 100, "b" * 25)["length_ratio"]
-    check(lr == 0.25, "length_ratio is supplement/pwg (%.2f)" % lr)
+    check(lr == 0.25, "length_ratio is supplement/pwg ({:.2f})".format(lr))
 
     # empty side never divides by zero
     e = compare("", "gehen")
@@ -387,7 +385,7 @@ def selftest():
              "ru": "два", "layer": "sch"}]
     idx = StoreIndex(recs)
     check(idx.duplicate_pairs == {("s~~h0_zz_pw01", "1"): 2},
-          "duplicate pairs reported: %r" % idx.duplicate_pairs)
+          "duplicate pairs reported: {!r}".format(idx.duplicate_pairs))
     check(idx.lookup("s~~h0_zz_pw01", "1", 0)["de"] == "eins"
           and idx.lookup("s~~h0_zz_pw01", "1", 1)["de"] == "eins (2)",
           "dup_ordinal resolves each duplicate to ITS OWN record")

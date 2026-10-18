@@ -130,17 +130,16 @@ def parse_ledger_json(raw, path=LEDGER_MD, block='lang_parity_ledger'):
             'Fix by hand: delete the stale copy of each entry, re-check the kept entry\'s verdict, '
             'then run `python src/pilot/lang_parity_check.py --update-hash <id>`.'
             % (path, block, len(id_dups), '\n  - '.join(
-                'entry id %r repeated at list positions %s' % (k, ', '.join(map(str, ix)))
+                'entry id {!r} repeated at list positions {}'.format(k, ', '.join(map(str, ix)))
                 for k, ix in id_dups)))
     if not dups:
         return data
     lines = []
     for p, key in dups:
         if p and isinstance(p[0], int) and isinstance(data, list) and isinstance(data[p[0]], dict):
-            lines.append('entry %r: key %r repeated in %s'
-                         % (data[p[0]].get('id', '<entry %d>' % p[0]), key, _where(p[1:])))
+            lines.append('entry {!r}: key {!r} repeated in {}'.format(data[p[0]].get('id', '<entry %d>' % p[0]), key, _where(p[1:])))
         else:
-            lines.append('key %r repeated in %s' % (key, _where(p)))
+            lines.append('key {!r} repeated in {}'.format(key, _where(p)))
     raise DuplicateKeyError(
         '%s: the ```json %s block repeats %d JSON key(s) -- refusing to load it:\n  - %s\n'
         'A repeated key is a merge/replay artifact (e.g. an old hunk re-applied on a newer '
@@ -170,7 +169,7 @@ def load_ledger(path=LEDGER_MD):
     text = open(path, encoding='utf-8').read()
     m = FENCE_RE.search(text)
     if not m:
-        raise SystemExit('no ```json lang_parity_ledger fenced block found in %s' % path)
+        raise SystemExit('no ```json lang_parity_ledger fenced block found in {}'.format(path))
     refuse_second_ledger_fence(text, path)
     return parse_ledger_json(m.group(1), path), text, m.span(1)
 
@@ -205,16 +204,16 @@ def coverage_violations(candidates, tracked, exempt):
     """Pure set logic (filesystem-free, so the selftest can exercise it directly)."""
     v = []
     for c in sorted(set(candidates) - set(tracked) - set(exempt)):
-        v.append('coverage: %s is a language-aware pipeline file but is neither ledger-tracked nor '
+        v.append('coverage: {} is a language-aware pipeline file but is neither ledger-tracked nor '
                  'exempt — add a LANG_PARITY entry (SHARED / INTENTIONAL-DIVERGENCE / GAP), or list it '
-                 'in the lang_parity_coverage `exempt` map with a one-line reason.' % c)
+                 'in the lang_parity_coverage `exempt` map with a one-line reason.'.format(c))
     for f, reason in sorted(exempt.items()):
         if not str(reason).strip():
-            v.append('coverage: exempt file %s has an empty reason (name what it does + why no RU/EN '
-                     'drift is possible)' % f)
+            v.append('coverage: exempt file {} has an empty reason (name what it does + why no RU/EN '
+                     'drift is possible)'.format(f))
         if f in set(tracked):
-            v.append('coverage: %s is BOTH ledger-tracked and exempt — drop it from `exempt` (the '
-                     'ledger entry is authoritative)' % f)
+            v.append('coverage: {} is BOTH ledger-tracked and exempt — drop it from `exempt` (the '
+                     'ledger entry is authoritative)'.format(f))
     return v
 
 
@@ -225,7 +224,7 @@ def coverage_check(entries, coverage):
     v = coverage_violations(candidate_files(), tracked, exempt)
     for f in sorted(exempt):
         if not os.path.exists(os.path.join(REPO_ROOT, f)):
-            v.append('coverage: exempt file %s no longer exists — drop it from `exempt`' % f)
+            v.append('coverage: exempt file {} no longer exists — drop it from `exempt`'.format(f))
     return v
 
 
@@ -245,27 +244,26 @@ def check(entries):
         eid = e.get('id', '<missing id>')
         verdict = e.get('verdict')
         if verdict not in VALID_VERDICTS:
-            violations.append('%s: verdict %r is not one of %s' % (eid, verdict, sorted(VALID_VERDICTS)))
+            violations.append('{}: verdict {!r} is not one of {}'.format(eid, verdict, sorted(VALID_VERDICTS)))
             continue
         if verdict == 'INTENTIONAL-DIVERGENCE' and not e.get('note', '').strip():
-            violations.append('%s: INTENTIONAL-DIVERGENCE requires a non-empty note (the one-line why)' % eid)
+            violations.append('{}: INTENTIONAL-DIVERGENCE requires a non-empty note (the one-line why)'.format(eid))
         if verdict == 'GAP' and not e.get('tracking', '').strip():
-            violations.append('%s: GAP requires a non-empty tracking reference (task id / handoff / PR)' % eid)
+            violations.append('{}: GAP requires a non-empty tracking reference (task id / handoff / PR)'.format(eid))
         snapshot = e.get('verified_sha256', {})
         for rel_path in e.get('files', []):
             recorded = snapshot.get(rel_path)
             if recorded is None:
-                violations.append('%s: file %s has no recorded verified_sha256 entry' % (eid, rel_path))
+                violations.append('{}: file {} has no recorded verified_sha256 entry'.format(eid, rel_path))
                 continue
             current = file_sha256(rel_path)
             if current is None:
-                violations.append('%s: tracked file %s no longer exists — update or retire this entry' % (eid, rel_path))
+                violations.append('{}: tracked file {} no longer exists — update or retire this entry'.format(eid, rel_path))
             elif current != recorded:
                 violations.append(
-                    '%s: %s changed since last parity verification (recorded %s..., now %s...) — '
-                    're-check the %s verdict still holds, then run '
-                    '`python src/pilot/lang_parity_check.py --update-hash %s`'
-                    % (eid, rel_path, recorded[:12], current[:12], verdict, eid))
+                    '{}: {} changed since last parity verification (recorded {}..., now {}...) — '
+                    're-check the {} verdict still holds, then run '
+                    '`python src/pilot/lang_parity_check.py --update-hash {}`'.format(eid, rel_path, recorded[:12], current[:12], verdict, eid))
     return violations
 
 
@@ -281,14 +279,14 @@ def update_hash(entry_id, path=None):
             for rel_path in e.get('files', []):
                 h = file_sha256(rel_path)
                 if h is None:
-                    raise SystemExit('cannot update-hash: %s no longer exists' % rel_path)
+                    raise SystemExit('cannot update-hash: {} no longer exists'.format(rel_path))
                 e.setdefault('verified_sha256', {})[rel_path] = h
     if not found:
-        raise SystemExit('no ledger entry with id %r' % entry_id)
+        raise SystemExit('no ledger entry with id {!r}'.format(entry_id))
     new_block = json.dumps(entries, indent=2, ensure_ascii=False)
     new_text = text[:span[0]] + new_block + '\n' + text[span[1]:]
     open(path, 'w', encoding='utf-8', newline='\n').write(new_text)
-    print('updated verified_sha256 for %r' % entry_id)
+    print('updated verified_sha256 for {!r}'.format(entry_id))
 
 
 def main():

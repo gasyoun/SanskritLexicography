@@ -72,7 +72,7 @@ def build_packet(*, commit: str, implementer: str,
     }
     missing = [name for name in REQUIRED_SECTIONS if not packet.get(name)]
     if missing:
-        raise ReviewRefusal('review packet lacks %s' % ', '.join(missing))
+        raise ReviewRefusal('review packet lacks {}'.format(', '.join(missing)))
     packet['bundle_sha256'] = canonical_sha256(
         {name: packet[name] for name in REQUIRED_SECTIONS})
     return packet
@@ -88,8 +88,7 @@ def sign(packet: Mapping[str, Any], *, reviewer: str,
     """Produce a hash-bound receipt.  Self-signing is refused here, not later."""
     if reviewer == packet.get('implementer'):
         raise ReviewRefusal(
-            'the implementer (%s) may not sign their own review receipt'
-            % reviewer)
+            'the implementer ({}) may not sign their own review receipt'.format(reviewer))
     return {
         'schema': RECEIPT_SCHEMA,
         'reviewer': reviewer,
@@ -104,7 +103,7 @@ def verify(packet_path: str, receipt_path: str) -> dict[str, Any]:
     """Verify a receipt against its packet.  Refuses anything unbound."""
     for path in (packet_path, receipt_path):
         if not os.path.exists(path):
-            raise ReviewRefusal('missing review artifact: %s' % path)
+            raise ReviewRefusal('missing review artifact: {}'.format(path))
     packet = read_sealed(packet_path)
     receipt = read_sealed(receipt_path)
     recomputed = canonical_sha256(

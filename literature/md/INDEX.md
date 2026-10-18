@@ -23,6 +23,16 @@ OCR-noise body (*needs OCR*), or a multi-paper bundle where the cited paper isn'
 | [Speyer-Syntax1886.md](Speyer-Syntax1886.md) | J.S. Speyer · 1886 | **MWS**, **GRA**, SaLex | Sanskrit syntax citation source; `<ls>` link target ("Spe." abbreviation in MW/GRA entries); foundational for syntax annotation papers |
 | [Tubb-ScholasticSans-2007.md](Tubb-ScholasticSans-2007.md) | Gary Tubb · 2007 | **MWS**, **RuTrans**, SaLex | Scholastic Sanskrit register decisions; markup choices for scholastic/kāvya vocabulary in MWS; cited in Renou nominal-style note. **RuTrans:** śāstric/bhāṣya register metalanguage — the five services of a commentary + glossing formulae (`iti`, `ity arthaḥ`, `iti yāvat`, `-ādi`, vigraha) for the pwg\_ru commentary layer; calibrates the Renou `bhāṣya` register tag and the translate/QA masking that preserves quoted commentarial Sanskrit untranslated |
 
+### Sanskrit Library free PDFs (landed 26-09-2026, H5510) — no `.md` twins yet
+
+| PDF | Author · Year | Repos | Primary use |
+|---|---|---|---|
+| [lies_sl.pdf](../lies_sl.pdf) ⚠ blocked (no extraction) | Scharf & Hyman · 2011 | **csl-orig**, SaLex, csl-standards | Encoding-theory foundation (3 axes, SLP encodings) — feeds the standards divergence line and any Lex-0 gap note; deep read = [H5511](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5511-Sonnet_SanskritLexicography_lies-2010-deep-read_26.09.26.md) |
+| [scharf-ReviewOfRajpopat-InPaniniWeTrust.pdf](../scharf-ReviewOfRajpopat-InPaniniWeTrust.pdf) ⚠ blocked (no extraction) | Scharf · 2022 | **GRA**, SaLex | Pāṇinian rule-conflict resolution debate (A. 1.4.2); pointer in [BibliothecaSanscritica](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/RAJPOPAT_REVIEW_POINTER.md) |
+| [chars.pdf](../chars.pdf) ⚠ blocked (no extraction) | Scharf · 2023 | csl-websanlexicon, SaLex | 12-font conjunct coverage tables — font-pick authority for Devanāgarī web rendering; crossrow in [sanskrit-fonts](https://github.com/sanskrit-lexicon/sanskrit-fonts/blob/gh-pages/README.md) |
+
+Rights note: [SANSKRITLIBRARY_PDFS_RIGHTS_NOTE_26-09-2026.md](../../docs/SANSKRITLIBRARY_PDFS_RIGHTS_NOTE_26-09-2026.md) — redistribution beyond research use pending rights confirmation; derived measurements free.
+
 ---
 
 ## Lexicography-Manuals/

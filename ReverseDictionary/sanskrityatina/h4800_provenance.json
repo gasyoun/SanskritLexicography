@@ -3,12 +3,26 @@
   "handoff": "H4800",
   "generated": "2026-09-19",
   "executor": "OxAlpha (opencode/z-ai/glm-5.3-flash), drain worker on Claude/c4",
+  "extraction_mode": "rejoin-from-stock-tsv",
+  "rework": {
+    "date": "2026-10-17",
+    "cause": "independent verifier FAIL 2026-09-20: artifacts keyed with a superseded pre-H3975 form_key (243,985 / 91.48 % / 22,718)",
+    "fix": "rejoin on pinned sanskrit-util 0.12.0 -> 244,195 / 91.56 % / 22,508",
+    "pr": "SanskritLexicography#2419"
+  },
+  "sanskrit_util": {
+    "version": "0.12.0",
+    "commit": "7968fdecce7b8890768292aa3a6c4c633210cbe8",
+    "path": "/Users/mac/Documents/GitHub/sanskrit-util/py/sanskrit_util"
+  },
   "stock_source": {
     "path": "yadisk:Sanskrityatina/04_Reverse/.doc.pdf/reverse-index-full.doc",
-    "local_size_bytes": 13846528,
-    "sha256": "79ae7a5562e5a44ea9e15ee5e0c92badac467e26a97d87bb620419125b284826",
-    "worddocument_stream_bytes": 13555774,
-    "extraction": "WordDocument stream decoded UTF-16LE, split on \\r; entries = lines entirely within the IAST word alphabet; coded lines 'SOURCE_CODE<TAB|SP>word' (single capital letter); binary junk lines excluded"
+    "extraction": "NOT re-derived in this run — headwords read from the committed extraction TSV (rejoin mode)",
+    "rejoined_from_tsv": {
+      "path": "ReverseDictionary/sanskrityatina/sanskrityatina_reverse_full_stock.tsv",
+      "sha256_pre_rejoin": "10dce0391965225f40c3247d12f9dd394b18b5befb04d95e71592dab0cf70edd"
+    },
+    "sha256_source_doc": "79ae7a5562e5a44ea9e15ee5e0c92badac467e26a97d87bb620419125b284826"
   },
   "union_source": {
     "path": "HeadwordLists/union-16dicts/union_headwords_16.tsv (H4797)",
@@ -16,9 +30,9 @@
     "join_key": "sanskrit-util slp1_form_key(union slp1) == form_key(headword_iast)"
   },
   "counts": {
-    "raw_entries_extracted": 266709,
-    "junk_nonentry_lines": 6691,
-    "duplicate_headwords": 6,
+    "raw_entries_extracted": null,
+    "junk_nonentry_lines": null,
+    "duplicate_headwords": 0,
     "unique_headwords": 266703,
     "coded": 134797,
     "uncoded": 131906,
@@ -41,36 +55,36 @@
       "paryantīkṛta": true,
       "paryavadāpayitar": true
     },
-    "in_union": 243985,
-    "residue_not_in_union": 22718,
-    "coverage_pct": 91.48,
+    "in_union": 244195,
+    "residue_not_in_union": 22508,
+    "coverage_pct": 91.56,
     "per_dict_overlapping_stock_headwords": {
-      "MW": 196281,
-      "PWK": 147381,
-      "PWG": 108392,
-      "AP": 43798,
-      "VCP": 43156,
-      "CAE": 37976,
-      "CCS": 29156,
-      "MD": 20415,
-      "BUR": 19880,
-      "BHS": 18000,
-      "SCH": 16611,
-      "SKD": 14769,
-      "GRA": 10559,
-      "PD": 10054,
-      "INM": 9506,
-      "VEI": 3896
+      "MW": 195308,
+      "PWK": 148425,
+      "PWG": 109089,
+      "AP": 44113,
+      "VCP": 42976,
+      "CAE": 38257,
+      "CCS": 29325,
+      "MD": 20479,
+      "BUR": 19810,
+      "BHS": 18085,
+      "SCH": 16722,
+      "SKD": 14734,
+      "GRA": 10537,
+      "PD": 10076,
+      "INM": 9488,
+      "VEI": 3902
     },
     "residue_by_source_code": {
-      "A": 12171,
-      "I": 5464,
-      "P": 1438,
-      "R": 1170,
-      "S": 1032,
-      "M": 749,
+      "A": 12124,
+      "I": 5453,
+      "P": 1435,
+      "S": 1030,
+      "R": 1026,
+      "M": 748,
       "B": 240,
-      "(none)": 170,
+      "(none)": 168,
       "G": 158,
       "N": 63,
       "H": 47,
@@ -79,6 +93,7 @@
   },
   "notes": [
     "The doc is the FULL working reverse index (superset of the legend's 187,992 'class 0' stock); single-letter source codes are carried verbatim, semantics NOT adjudicated here (H4475 legend names IEG/PD/BHS/MW/SCH as the coding's source-dict universe).",
-    "Residue (in_union=0) = forms attested in MG's Schwarz-based reverse stock but absent from ALL 16 Cologne dictionaries of the H4797 union — the Russian-school-only slice."
+    "Residue (in_union=0) = forms attested in MG's Schwarz-based reverse stock but absent from ALL 16 Cologne dictionaries of the H4797 union — the Russian-school-only slice.",
+    "REJOIN RUN: headwords came from the committed stock TSV, not the raw .doc (yadisk WebDAV unavailable at rework time). Extraction counts are therefore not re-derived; only the join (form_key + union lookup) is re-executed, against the pinned sanskrit-util recorded above. H4800 verifier FAIL 20-09-2026: the pre-rework artifacts were keyed with a superseded pre-H3975 form_key (243,985 / 91.48 % / 22,718); the pinned library yields 244,195 / 91.56 % / 22,508."
   ]
 }

@@ -9,10 +9,10 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 SRC = os.path.join(ROOT, 'src')
 sys.path.insert(0, SRC)
 
-import pwg_tm_canonical as C  # noqa: E402
-import pwg_tm_fragmentize as F  # noqa: E402
-import pwg_tm_migrate_v1 as M  # noqa: E402
-import pwg_tm_priority as P  # noqa: E402
+import pwg_tm_canonical as C
+import pwg_tm_fragmentize as F
+import pwg_tm_migrate_v1 as M
+import pwg_tm_priority as P
 
 FIX = os.path.join(ROOT, 'schemas', 'fixtures',
                    'pwg_tm_canonical.publication.fixture.jsonl')

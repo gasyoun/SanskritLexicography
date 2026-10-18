@@ -28,7 +28,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_page_index as fixed  # noqa: E402
+import pwg_page_index as fixed
 
 DEFAULT_REV = '7435178e0'
 REPO = os.path.normpath(os.path.join(HERE, '..', '..'))
@@ -40,11 +40,11 @@ class RevisionUnavailable(RuntimeError):
 
 
 def load_prefix_module(rev, workdir):
-    proc = subprocess.run(['git', '-C', REPO, 'show', '%s:%s' % (rev, GIT_PATH)],
+    proc = subprocess.run(['git', '-C', REPO, 'show', '{}:{}'.format(rev, GIT_PATH)],
                           stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                           encoding='utf-8', errors='replace')
     if proc.returncode:
-        raise RevisionUnavailable(proc.stderr.strip() or 'git show failed for %s' % rev)
+        raise RevisionUnavailable(proc.stderr.strip() or 'git show failed for {}'.format(rev))
     src = proc.stdout
     path = os.path.join(workdir, 'pwg_page_index_prefix.py')
     with io.open(path, 'w', encoding='utf-8', newline='\n') as f:
@@ -82,12 +82,12 @@ def main():
     except RevisionUnavailable as exc:
         # Deliberately NOT wired into CI, whose checkout is shallow. Reported loudly rather
         # than swallowed, so a "skip" can never be mistaken for a pass.
-        print('SKIPPED: revision %s is not in this clone (%s).' % (args.rev, exc))
+        print('SKIPPED: revision {} is not in this clone ({}).'.format(args.rev, exc))
         print('Run in a full clone, or `git fetch --unshallow` first.')
         return 2
     got = [r.get('column') for r in old_rows]
 
-    print('pre-fix rev      : %s' % args.rev)
+    print('pre-fix rev      : {}'.format(args.rev))
     print('pre-fix counters : matched=%d unmatched=%d total=%d' % counters)
     print('%-28s %-10s %-10s %s' % ('subcard', 'pre-fix', 'fixed', 'verdict'))
     disagreements = 0
@@ -100,7 +100,7 @@ def main():
     if not disagreements:
         print('FAIL: the pin is green on pre-fix code and proves nothing')
         return 1
-    print('PASS: the pin is RED against %s' % args.rev)
+    print('PASS: the pin is RED against {}'.format(args.rev))
     return 0
 
 

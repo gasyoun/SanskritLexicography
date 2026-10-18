@@ -13,7 +13,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 PILOT = os.path.normpath(os.path.join(HERE, '..', '..', '..', 'src', 'pilot'))
 sys.path.insert(0, PILOT)
 
-import cache_prep_h2756 as h2756  # noqa: E402
+import cache_prep_h2756 as h2756
 
 RUN = os.path.join(HERE, 'h2756', 'run')
 SUMMARY = os.path.join(RUN, 'summary.json')
@@ -35,7 +35,7 @@ def pct(value):
 def usd(value):
     if value is None:
         return 'n/a'
-    return '$%.6f' % value
+    return '${:.6f}'.format(value)
 
 
 def main():
@@ -58,8 +58,7 @@ def main():
         '',
         '_Created: 14-08-2026 · Last updated: 14-08-2026_',
         '',
-        '**Flash-only verdict: %s.** Residual of [H2754 (Grok 4.6) — Flash PREP one-shot vs incremental warm (correct denominator)](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2754-Grok_SanskritLexicography_pwg-cache-flash-oneshot-vs-warm_14.08.26.md), which is locked by precheck exit 4 on [SanskritLexicography#1713](https://github.com/gasyoun/SanskritLexicography/pull/1713). Product adoption from H2704 stays **NO-GO**. `DEFAULT_MODEL` is not flipped. Canonical hashes %s.'
-        % (verdict, 'unchanged' if after.get('equal') else 'CHANGED'),
+        '**Flash-only verdict: {}.** Residual of [H2754 (Grok 4.6) — Flash PREP one-shot vs incremental warm (correct denominator)](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2754-Grok_SanskritLexicography_pwg-cache-flash-oneshot-vs-warm_14.08.26.md), which is locked by precheck exit 4 on [SanskritLexicography#1713](https://github.com/gasyoun/SanskritLexicography/pull/1713). Product adoption from H2704 stays **NO-GO**. `DEFAULT_MODEL` is not flipped. Canonical hashes {}.'.format(verdict, 'unchanged' if after.get('equal') else 'CHANGED'),
         '',
         'Rule: [VERDICT_RULE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2756_flash/VERDICT_RULE.md). Spend: [SPEND_AUTH.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2756_flash/SPEND_AUTH.md). Summary: [h2756/run/summary.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/experiments/pwg_cache_economy/h2756_flash/h2756/run/summary.json).',
         '',
@@ -67,57 +66,44 @@ def main():
         '',
         '| Gate | Sealed | Measured | Hold |',
         '|---|---|---|:---:|',
-        '| Pairs | 50 fresh first-200 misses, disjoint from H2704 | %s | %s |'
-        % (summary.get('n_pairs'), 'yes' if summary.get('n_pairs') == 50 else 'no'),
-        '| Parseable | ≥95/100 | %s/%s | %s |'
-        % (summary.get('parseable'), summary.get('attempted_slots'),
+        '| Pairs | 50 fresh first-200 misses, disjoint from H2704 | {} | {} |'.format(summary.get('n_pairs'), 'yes' if summary.get('n_pairs') == 50 else 'no'),
+        '| Parseable | ≥95/100 | {}/{} | {} |'.format(summary.get('parseable'), summary.get('attempted_slots'),
            'yes' if (summary.get('parseable') or 0) >= 95 else 'no'),
         '| Served model | deepseek-v4-flash | 99/99 parseable slots; `iz` cold empty transport | yes |',
-        '| Cost-evaluable | every parseable slot | %s/%s | %s |'
-        % (summary.get('cost_evaluable_slots'), summary.get('parseable'),
+        '| Cost-evaluable | every parseable slot | {}/{} | {} |'.format(summary.get('cost_evaluable_slots'), summary.get('parseable'),
            'yes' if summary.get('cost_evaluable_slots') == summary.get('parseable') else 'no'),
-        '| Retry amplification | 1.0 | %s | %s |'
-        % (summary.get('retry_amplification'),
+        '| Retry amplification | 1.0 | {} | {} |'.format(summary.get('retry_amplification'),
            'yes' if summary.get('retry_amplification') in (1, 1.0) else 'no'),
-        '| Canonical hashes | equal freeze | %s | %s |'
-        % (after.get('equal'), 'yes' if after.get('equal') else 'no'),
+        '| Canonical hashes | equal freeze | {} | {} |'.format(after.get('equal'), 'yes' if after.get('equal') else 'no'),
         '| Promotable | false | false | yes |',
         '',
-        'Stop reason: `%s`. Lane: %s. Verdict reasons: %s. One cold slot (`iz`) returned empty transport (unparseable, not billed); its warm sibling is excluded from denominator B (n=49 complete pairs).'
-        % (summary.get('stop_reason'), summary.get('prep_lane_verdict')
+        'Stop reason: `{}`. Lane: {}. Verdict reasons: {}. One cold slot (`iz`) returned empty transport (unparseable, not billed); its warm sibling is excluded from denominator B (n=49 complete pairs).'.format(summary.get('stop_reason'), summary.get('prep_lane_verdict')
            or summary.get('generation_lane_verdict'), reason_txt),
         '',
         '## Three denominators',
         '',
         '| Denominator | Value | Role |',
         '|---|---|---|',
-        '| **A. Pair cost / unique cards** | %s vs H2675 $0.000873 → %s | *not scored* (H2704-comparable) |'
-        % (usd(dens['A_pair_per_unique_not_scored']['usd']),
+        '| **A. Pair cost / unique cards** | {} vs H2675 $0.000873 → {} | *not scored* (H2704-comparable) |'.format(usd(dens['A_pair_per_unique_not_scored']['usd']),
            pct(dens['A_pair_per_unique_not_scored']['vs_h2675'])),
-        '| **B. Same-card incremental save** (cold − warm) / cold | **%s** bootstrap 95%% CI [%s, %s] n=%s | **primary** |'
-        % (pct(dens['B_paired_incremental_primary']['point_save']),
+        '| **B. Same-card incremental save** (cold − warm) / cold | **{}** bootstrap 95% CI [{}, {}] n={} | **primary** |'.format(pct(dens['B_paired_incremental_primary']['point_save']),
            pct((ci or {}).get('lo')), pct((ci or {}).get('hi')), save.get('n')),
-        '| **C. One-shot cold / parseable card** | %s vs H2675 $0.000873 → %s | historical context |'
-        % (usd(dens['C_oneshot_cold_context']['usd']),
+        '| **C. One-shot cold / parseable card** | {} vs H2675 $0.000873 → {} | historical context |'.format(usd(dens['C_oneshot_cold_context']['usd']),
            pct(dens['C_oneshot_cold_context']['vs_h2675'])),
         '',
-        'Paired dollar delta (cold − warm): mean %s bootstrap 95%% CI [%s, %s].'
-        % (usd(save.get('dollar_mean')), usd((dci or {}).get('lo')),
+        'Paired dollar delta (cold − warm): mean {} bootstrap 95% CI [{}, {}].'.format(usd(save.get('dollar_mean')), usd((dci or {}).get('lo')),
            usd((dci or {}).get('hi'))),
         '',
         '## Cold / warm arms',
         '',
         '| Arm | n | total USD | mean USD | median USD | mean cache-hit tokens |',
         '|---|---:|---:|---:|---:|---:|',
-        '| cold | %s | %s | %s | %s | %s |'
-        % (cold.get('n'), cold.get('total_usd'), cold.get('mean_usd'),
+        '| cold | {} | {} | {} | {} | {} |'.format(cold.get('n'), cold.get('total_usd'), cold.get('mean_usd'),
            cold.get('median_usd'), cold.get('mean_cache_hit_tokens')),
-        '| warm | %s | %s | %s | %s | %s |'
-        % (warm.get('n'), warm.get('total_usd'), warm.get('mean_usd'),
+        '| warm | {} | {} | {} | {} | {} |'.format(warm.get('n'), warm.get('total_usd'), warm.get('mean_usd'),
            warm.get('median_usd'), warm.get('mean_cache_hit_tokens')),
         '',
-        'Total attributable USD **%s**. Amortized mean USD after R repeats: R=2 %s, R=5 %s, R=10 %s.'
-        % (usd(summary.get('total_usd')),
+        'Total attributable USD **{}**. Amortized mean USD after R repeats: R=2 {}, R=5 {}, R=10 {}.'.format(usd(summary.get('total_usd')),
            usd(dens['amortized']['R2']), usd(dens['amortized']['R5']),
            usd(dens['amortized']['R10'])),
         '',
@@ -127,13 +113,12 @@ def main():
         '|---|---:|',
     ]
     for klass in sorted(blinds):
-        lines.append('| %s | %s |' % (klass, blinds[klass]))
+        lines.append('| {} | {} |'.format(klass, blinds[klass]))
     lines.extend([
         '',
         '## Verdict',
         '',
-        '**%s** on denominator B. %s'
-        % (verdict, (
+        '**{}** on denominator B. {}'.format(verdict, (
             'Point save is positive and the CI excludes zero — use provider prefix cache on Flash PREP repeats.'
             if verdict == 'GO' else
             'Point save is positive but the CI includes zero. Keep the point estimate. This is not “no economy”.'
@@ -148,7 +133,7 @@ def main():
     ])
     with open(OUT, 'w', encoding='utf-8', newline='\n') as handle:
         handle.write('\n'.join(lines))
-    print('wrote %s verdict=%s point=%s' % (OUT, verdict, save.get('point_save')))
+    print('wrote {} verdict={} point={}'.format(OUT, verdict, save.get('point_save')))
     return 0
 
 

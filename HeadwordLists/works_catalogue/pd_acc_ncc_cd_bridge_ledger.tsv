@@ -1,0 +1,51 @@
+acc_L	acc_title	ncc_id	ncc_title	tier	score	pd_sigla_acc	pd_sigla_ncc	shared_pd_sigla	matched_side	contradiction_verdict	reason	provenance	flag
+28859	somaviDAna	33_258_b_2799	Śāmāvidhāna	D	0.909		SāmViBr.;SāmaViBr.;SāmaViBṛ.;SāmaviBr.;SāmāViBr.		NCC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+27365	sarasvatIrahasyopanizad	38_74_b_915	Sarasvatīrahasyopaniṣat	D	0.957	SaraRaU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+38446	sarasvatIrahasyopanizad	38_74_b_915	Sarasvatīrahasyopaniṣat	D	0.957	SaraRaU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+27670	sAtvatatantra	34_18_a_168	Śāśvatatantra	D	0.923	SātvT.;SātvaT.;SātvaTa.;SātvaṬ.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+9857	dAnahArAvalI	9_13_b_191	Dānahīrāvalī	D	0.917	Hārāva.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+9857	dAnahArAvalI	9_13_b_192	Dānahīrāvalī	D	0.917	Hārāva.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+30987	dAnahArAvalI	9_13_b_191	Dānahīrāvalī	D	0.917	Hārāva.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+30987	dAnahArAvalI	9_13_b_192	Dānahīrāvalī	D	0.917	Hārāva.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+660.1	sarvasAropanizad	38_162_a_2048	Sarvasāropaniṣat	D	0.938	SarvaSāU.;SarvasāU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+27497	sarvasAropanizad	38_162_a_2048	Sarvasāropaniṣat	D	0.938	SarvaSāU.;SarvasāU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+38489	sarvasAropanizad	38_162_a_2048	Sarvasāropaniṣat	D	0.938	SarvaSāU.;SarvasāU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+47723	sarvasAropanizad	38_162_a_2048	Sarvasāropaniṣat	D	0.938	SarvaSāU.;SarvasāU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+26430	zaqdarSinIniGaRwu	36_274_a_2961	Ṣaḍdarśanīnighaṇṭu	D	0.944	Nigh.	Nigh.	Nigh.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+19619	rAjABizekapadDati	24_297_b_2976	Rāmābhiṣekapaddhati	D	0.947	Abhise.;Abhiṣe.	Abhise.;Abhiṣe.	Abhise.;Abhiṣe.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+36278	rAjABizekaviDi	24_297_b_2977	Rāmābhiṣekavidhi	D	0.938	Abhise.;Abhiṣe.	Abhise.;Abhiṣe.	Abhise.;Abhiṣe.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+20603	rudrahfdayopanizad	25_227_b_1386	Rudrahṛdayopaniṣat	D	0.944	RudrHṛU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+36523	rudrahfdayopanizad	25_227_b_1386	Rudrahṛdayopaniṣat	D	0.944	RudrHṛU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+21818	vAdiKaRqana	28_91_a_840	Vādakhaṇḍana	D	0.917		MāyāKha.		NCC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+40706	mahApurARe	19_88_b_985	Mahāpurāṇa	D	0.900		BhaViP.;BhaviP.;BhāviP.		NCC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+40706	mahApurARe	19_88_b_986	Mahāpurāṇa	D	0.900		BhaViP.;BhaviP.;BhāviP.		NCC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+40706	mahApurARe	19_89_b_987	Mahāpurāṇa	D	0.900		BhaViP.;BhaviP.;BhāviP.		NCC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+40706	mahApurARe	19_90_a_988	Mahāpurāṇa	D	0.900		BhaViP.;BhaviP.;BhāviP.		NCC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+17342	mahASArIrakopanizad	19_257_b_2235	Mahāśārīrakopaniṣat	D	0.947	ŚārīU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+15808	BasmajAbAlopanizad	16_238_a_1473	Bhasmajābālopaniṣat	D	0.947	JābālaU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+35208	BasmajAbAlopanizad	16_238_a_1473	Bhasmajābālopaniṣat	D	0.947	JābālaU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+16004	BAvanopanizad	17_66_b_627	Bhāvanopaniṣat	D	0.929	BhavṛU.;BhāvU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+35260	BAvanopanizad	17_66_b_627	Bhāvanopaniṣat	D	0.929	BhavṛU.;BhāvU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+45313	BAvanopanizad	17_66_b_627	Bhāvanopaniṣat	D	0.929	BhavṛU.;BhāvU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+14890	bahvfcopanizad	13_251_a_3361	Bahavṛcopaniṣad	D	0.933	BahvṛU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+10456	draviqopanizattAtparyaratnAvalI	9_178_a_2964	Dramiḍopaniṣattātparyaratnāvali	D	0.968	Ratnā.	Ratnā.	Ratnā.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+10456	draviqopanizattAtparyaratnAvalI	9_178_a_2965	Dramiḍopaniṣattātparyaratnāvali	D	0.968	Ratnā.	Ratnā.	Ratnā.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+7271	cAturvarRyaDarmasaMgraha	6_321_a_5486	Caturvarṇadharmasaṅgraha	D	0.920	DharmaSaṃ.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+7271	cAturvarRyaDarmasaMgraha	7_17_b_211	Cāturvarṇadharmasaṅgraha	D	0.920	DharmaSaṃ.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+3805	kAmikatantra	4_50_b_675	Kālikātantra	D	0.917	Kātan.	Kātan.	Kātan.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+42518	kAmikatantra	4_50_b_675	Kālikātantra	D	0.917	Kātan.	Kātan.	Kātan.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+5006	keSavaniGaRqu	5_65_b_808	Keśavanighaṇṭu(keśavakalpadruma)	D	0.929		Nigh.		NCC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+32897	cARakyasAra	7_8_b_69	Cāṇikyasāra	D	0.909	CāṇaSāSaṃ.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+6563	govindaBAzyapIWaka	6_203_a_3270	Govindabhāṣyapīṭhikā	D	0.950	GoviBh.	GoviBh.	GoviBh.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+21143	liNgopanizad	26_272_a_2842	Liṅgopaniṣat	D	0.917	LiṅgU.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+40937	rAmacandrabAlacarita	24_101_b_1049	Rāmacandrabālacaritra	D	0.952	BālC.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+17665	mAnasaraYjinI	20_134_a_1182	Mānasarañjanī	D	0.923	MānSā.;MānaSa.;MānaSā.	MānSā.;MānaSa.;MānaSā.	MānSā.;MānaSa.;MānaSā.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+11462	nAmamAtrikAniGaRwu	10_44_b_714	Nāmamātṛkānighaṇṭu	D	0.947	Nigh.	Nigh.	Nigh.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+3251	kapPinAByudaya	3_156_a_2287	Kappha(pphi)ṇābhyudaya	D	0.938	Kapphiṃā.;Kapphiṇā.;Kapphīṇā.;Kappiṇā.;Kāpphiṇā.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+31970	kapPinAByudaya	3_156_a_2287	Kappha(pphi)ṇābhyudaya	D	0.938	Kapphiṃā.;Kapphiṇā.;Kapphīṇā.;Kappiṇā.;Kāpphiṇā.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+42412	kapPinAByudaya	3_156_a_2287	Kappha(pphi)ṇābhyudaya	D	0.938	Kapphiṃā.;Kapphiṇā.;Kapphīṇā.;Kappiṇā.;Kāpphiṇā.			ACC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+4923	keladevaniGaRwu	5_43_a_434	Ke(kai)yadevanighaṇṭu	D	0.938	Nigh.	Nigh.	Nigh.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+3600	kavisevAdiniGaRwu	3_287_b_4162	Kavisenādinighaṇṭu	D	0.944	Nigh.	Nigh.	Nigh.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+42860	kOtsavyaniruktaniGaRwa	5_107_a_1432	Kautsavyaniruktanighaṇṭu	D	0.958		Nigh.		NCC	PASS	one-sided PD match	cd_bridge	interim, AOB denominator
+10458	draviqopanizatsAraratnAvalIvyAKyA	9_178_b_2967	Dramiḍopaniṣatsāraratnāvalīvyākhyā	D	0.971	Ratnā.	Ratnā.	Ratnā.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator
+44581	paYcANgarudrARAM nyAsapUrvakaM japahomArcanABizekaviDiH	11_69_b_1136	Pañcāṅgarudrāṇāṃ_Nyāsapūrvakajapahomārcanābhiṣekavidhi	D	0.981	Abhise.;Abhiṣe.	Abhise.;Abhiṣe.	Abhise.;Abhiṣe.	both	REJECT	contradiction: same PD siglum matches two different titles	cd_bridge	interim, AOB denominator

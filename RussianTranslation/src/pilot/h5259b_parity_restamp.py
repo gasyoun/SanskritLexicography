@@ -23,7 +23,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import parity_restamp as pr  # noqa: E402
+import parity_restamp as pr
 
 STAMP = ('H5259 follow-up (22-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. '
          '`src/pilot/window_selftest.py` drifted only by ONE added test-only pin, '

@@ -23,9 +23,9 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-import h2189_min_profile as mp                                       # noqa: E402
-import h2189_profile_ab as ab                                        # noqa: E402
-from headless_worker import build_prompt                             # noqa: E402
+import h2189_min_profile as mp
+import h2189_profile_ab as ab
+from headless_worker import build_prompt
 
 MANIFEST = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                         'h1209_slice3.manifest.json')
@@ -66,7 +66,7 @@ def test_every_arm_changes_exactly_one_thing_against_the_baseline():
     for name in ('minimal', 'safe', 'clean_cwd'):
         changed = [k for k, v in levers(ab.ARMS[name]).items() if v]
         assert len(changed) == 1, \
-            'arm %s changes %s; a multi-lever arm cannot attribute its delta' % (name, changed)
+            'arm {} changes {}; a multi-lever arm cannot attribute its delta'.format(name, changed)
     assert levers(ab.ARMS['minimal'])['dir']
     assert levers(ab.ARMS['safe'])['flags']
     assert levers(ab.ARMS['clean_cwd'])['cwd']
@@ -131,8 +131,8 @@ def test_bare_is_never_an_arm():
     """`--bare` forces ANTHROPIC_API_KEY auth: a billing-identity change, not a cache tweak."""
     for name, arm in ab.ARMS.items():
         assert '--bare' not in arm['extra'], (
-            'arm %s carries --bare, which moves this lane off the subscription identity. '
-            'That is a human ruling (PROMPT_CACHING_PWG_RU 4), not a harness default.' % name)
+            'arm {} carries --bare, which moves this lane off the subscription identity. '
+            'That is a human ruling (PROMPT_CACHING_PWG_RU 4), not a harness default.'.format(name))
 
 
 def test_trivial_phase_translates_nothing():
@@ -230,9 +230,9 @@ def main():
             fn()
         except AssertionError as exc:
             failed += 1
-            print('FAIL %s: %s' % (fn.__name__, exc))
+            print('FAIL {}: {}'.format(fn.__name__, exc))
         else:
-            print('ok   %s' % fn.__name__)
+            print('ok   {}'.format(fn.__name__))
     print('\n%d/%d passed' % (len(tests) - failed, len(tests)))
     return 1 if failed else 0
 

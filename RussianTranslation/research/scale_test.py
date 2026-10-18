@@ -18,7 +18,7 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-import root_segment_proto as RS                              # noqa: E402
+import root_segment_proto as RS
 
 PWG = os.path.join(HERE, '..', '..', '..', 'csl-orig', 'v02', 'pwg', 'pwg.txt')
 PREVERB = os.path.join(HERE, '..', '..', '..', 'PWG', 'verbs01', 'pwg_preverb1.txt')
@@ -73,18 +73,17 @@ def main():
         biggest.append((npfx, k1, L, rep))
     biggest.sort(reverse=True)
     print('PWG root segmenter — scale test over %d verbs01 roots' % len(targets))
-    print('  records found & segmented: %d' % n)
+    print(f'  records found & segmented: {n:d}')
     print('  LOSSLESS round-trips:      %d / %d  (%s)'
           % (lossless, n, 'ALL PASS' if lossless == n else '*** %d FAIL ***' % (n - lossless)))
-    print('  prefix sub-cards (slicer): %d   vs verbs01 vetted upasargas: %d  (slicer >= vetted, the FP gap)'
-          % (tot_pfx, tot_rep))
-    print('  roots where slicer count != vetted count: %d (FP-guard candidates)' % gaps)
+    print(f'  prefix sub-cards (slicer): {tot_pfx:d}   vs verbs01 vetted upasargas: {tot_rep:d}  (slicer >= vetted, the FP gap)')
+    print(f'  roots where slicer count != vetted count: {gaps:d} (FP-guard candidates)')
     print('  biggest roots (slicer prefix-cards / vetted): '
-          + ', '.join('%s %d/%d' % (k, p, r) for p, k, L, r in biggest[:8]))
+          + ', '.join(f'{k} {p:d}/{r:d}' for p, k, L, r in biggest[:8]))
     if fails:
         print('  FAILURES (%d):' % len(fails))
         for L, k1, why in fails[:20]:
-            print('    L=%s k1=%s : %s' % (L, k1, why))
+            print('    L={} k1={} : {}'.format(L, k1, why))
 
 
 if __name__ == '__main__':

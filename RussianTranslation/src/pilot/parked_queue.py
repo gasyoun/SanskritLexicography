@@ -54,12 +54,12 @@ def park(key, reason, source, lane=None, extra=None, env=None):
     d = parked_dir(env)
     os.makedirs(d, exist_ok=True)
     day = time.strftime('%Y-%m-%d', time.gmtime())
-    base = '%s_%s' % (day, _safe(str(key)))
+    base = '{}_{}'.format(day, _safe(str(key)))
     path = os.path.join(d, base + '.json')
     n = 1
     while os.path.exists(path):
         n += 1
-        path = os.path.join(d, '%s.%d.json' % (base, n))
+        path = os.path.join(d, f'{base}.{n:d}.json')
     record = {'schema': SCHEMA, 'parked_at': int(time.time()), 'date': day,
               'key': str(key), 'reason': str(reason).strip().splitlines()[0],
               'source': source, 'lane': lane or os.environ.get('PWG_LANE') or None}
@@ -87,7 +87,7 @@ def list_parked(env=None, since_epoch=None):
         try:
             rec = json.load(open(p, encoding='utf-8'))
         except (OSError, ValueError) as exc:
-            rec = {'schema': SCHEMA, 'key': name, 'reason': 'UNREADABLE parked record: %s' % exc,
+            rec = {'schema': SCHEMA, 'key': name, 'reason': 'UNREADABLE parked record: {}'.format(exc),
                    'source': 'parked_queue.list_parked', 'parked_at': None}
         rec['_path'] = p
         if since_epoch is not None and (rec.get('parked_at') or 0) < since_epoch:

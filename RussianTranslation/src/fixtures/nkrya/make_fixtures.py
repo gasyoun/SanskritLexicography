@@ -18,7 +18,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..")))
-import nkrya_client as nk  # noqa: E402
+import nkrya_client as nk
 
 # sketches.md, relation amod_S_A for «слово» (10 collocates, dice) + first nsubj_S_V row
 AMOD = [("честный", 10.3028), ("последний", 9.53909), ("божий", 8.68628),

@@ -24,7 +24,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-import pwg_tm_canonical as C  # noqa: E402
+import pwg_tm_canonical as C
 
 HEADWORD_INDEX = os.path.join(HERE, 'headword_index.tsv')
 FREQ_ORDER = os.path.join(HERE, 'pwg_freq_order.tsv')
@@ -374,7 +374,7 @@ def build(limit, publication=None, out_dir=None, exclude_keys=None, wave=1,
         )
     })
     stem = stem or (
-        'priority_%d_w%d' % (limit, wave) if wave != 1 else 'priority_%d' % limit)
+        f'priority_{limit:d}_w{wave:d}' if wave != 1 else f'priority_{limit:d}')
     if out_dir:
         C.write_json(os.path.join(out_dir, stem + '.manifest.json'), manifest)
         C.write_jsonl(os.path.join(out_dir, stem + '.jsonl'), [

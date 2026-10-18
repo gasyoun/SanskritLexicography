@@ -1,0 +1,24 @@
+{
+  "schema": "review-lock/v1",
+  "sheet_id": "h5262-nkrya-flags-b01-2026-09-24",
+  "content_hash": "sha256:fccba64bc3c22b92892cc993f592679fe6b2e717f0152303d7b6d0578e687532",
+  "generated": "2026-09-24",
+  "gate": null,
+  "n_items": 10,
+  "ids": [
+    "L-избегнутый",
+    "L-благополучствовать",
+    "L-брахманка",
+    "L-вергать",
+    "L-взборозденный",
+    "L-гелиакически",
+    "L-гелиактически",
+    "L-достигшийся",
+    "L-колебаяться",
+    "L-кусывать"
+  ],
+  "source_html": "sanskritlexicography-h5262-nkrya-flags-b01_10.html",
+  "mode": "stamped",
+  "created": "2026-09-24",
+  "tool": "review_binding.py (H1404 binding standard)"
+}

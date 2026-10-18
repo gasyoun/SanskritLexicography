@@ -80,7 +80,7 @@ def _lease_files(artifacts, lease):
                     blob = json.load(fh)
                 schema = blob.get('schema') if isinstance(blob, dict) else None
             except Exception as exc:                      # unreadable is a finding
-                schema = 'unreadable:%s' % type(exc).__name__
+                schema = 'unreadable:{}'.format(type(exc).__name__)
         out[_normalise(name, lease)] = schema
     return out
 
@@ -135,7 +135,7 @@ def compare(artifacts=None):
     cohort = _lease_files(artifacts, COHORT_LEASE)
     if serial is None or cohort is None:
         missing = [n for n, v in ((SERIAL_LEASE, serial), (COHORT_LEASE, cohort)) if v is None]
-        return {'ok': False, 'reason': 'lease artifacts absent: %s' % ', '.join(missing)}
+        return {'ok': False, 'reason': 'lease artifacts absent: {}'.format(', '.join(missing))}
 
     serial_names, cohort_names = set(serial), set(cohort)
     only_serial = sorted(serial_names - cohort_names)

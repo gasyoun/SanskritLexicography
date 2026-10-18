@@ -61,7 +61,7 @@ def get_transcoder(root: str):
     """The canonical sanskrit-util transcoder from the caller's GitHub root."""
     sys.path.insert(0, os.path.join(root, "sanskrit-util", "py"))
     try:
-        from sanskrit_util import to_slp1  # noqa: E402
+        from sanskrit_util import to_slp1
         return to_slp1
     except ImportError:  # pragma: no cover - layout differs
         return None

@@ -2,6 +2,8 @@
 
 _Created: 06-07-2026 · Last updated: 14-08-2026_
 
+> **Entry pointer (H5762 greppability pilot, 03-10-2026):** the TMX public release-slice record (H215 Slice 3, L0 + alignment) is documented in [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) under "Source: H215 Slice 3" (~line 874).
+
 H2685 added `python src/build_tmx.py build-canonical` — a **second input path**
 over PWG TM canonical JSONL (`srclang=de`). The corpus Sa→Ru `build` command
 below is unchanged. See

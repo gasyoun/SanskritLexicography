@@ -140,14 +140,13 @@ def main():
                     if ab and x.upper().rstrip('.').startswith(ab.upper())
                     and ''.join(ch for ch in x if ch.isdigit() or ch == ',')
                         .strip(',') == tail.replace(' ', '')]
-            print('- %s (hom %s) sense %s   [%s, conf %s]  %s'
-                  % (r['slp1'], r['hom'] or '-', r['sense_id'], r['method'],
+            print('- {} (hom {}) sense {}   [{}, conf {}]  {}'.format(r['slp1'], r['hom'] or '-', r['sense_id'], r['method'],
                      r['conf'], 'CITED-ON-SENSE ✓' if hits else 'ls-match: see list'))
-            print('    PWG gloss : %s' % gloss_de[:150])
-            print('    PWG <ls>  : %s' % '; '.join(ls[:14]))
-            print('    DCS locus : %s' % r['locus'])
-            print('    DCS sent  : %s' % r['sent'][:150])
-            print('    DCS gloss : %s' % r['gloss'][:130])
+            print('    PWG gloss : {}'.format(gloss_de[:150]))
+            print('    PWG <ls>  : {}'.format('; '.join(ls[:14])))
+            print('    DCS locus : {}'.format(r['locus']))
+            print('    DCS sent  : {}'.format(r['sent'][:150]))
+            print('    DCS gloss : {}'.format(r['gloss'][:130]))
             print()
 
 

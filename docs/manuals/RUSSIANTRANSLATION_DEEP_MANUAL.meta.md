@@ -1,6 +1,6 @@
 # RUSSIANTRANSLATION_DEEP_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 20-08-2026_
+_Created: 18-07-2026 · Last updated: 04-10-2026_
 
 Companion record for [docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md) (subsystem deep manual, H606).
 
@@ -15,10 +15,12 @@ Authored 11-07-2026 (H606). Refreshed 18-07-2026 under H1245. Headless-first rew
 ## Verification
 
 ```
-LAST_VERIFIED: 20-08-2026
-VERIFIED_BY: Grok 4.6 (grok-4.6), H3059
-COMMANDS_SPOT_RUN: 6
+LAST_VERIFIED: 04-10-2026
+VERIFIED_BY: GLM 5.3 Flash (zai-start-plan/GLM-5.3-Flash), H5991
+COMMANDS_SPOT_RUN: 7
 ```
+
+H5991 (04-10-2026): 38 document-map/entry-point paths exist (bare census names resolve under `src/`); `root_window_status.py`/`perf_preflight.py`/`audit_window.py` `--help` exit 0; LAUNCH_STATS still carries the 473-window denominator; store file absent in the worktree as documented (11,603 stays the 24-07-2026 dated figure); pipeline fixture selftests green in the same-day CI run on PR #2391. Drift fixed: §10 census 306 (24-07) → 340 (29-07, per committed SCRIPT_CENSUS.md) + `--check` DRIFT note for 04-10-2026.
 
 H3059 (20-08-2026): `probe_log.py --help`, `preflight_remaining_gates.py --help`, `nominal_grammar.py --help`, `reverse_index.py --help`, plus the four review selftests used by the sibling review manual. Store file absent in this worktree (gitignored) — 11,603 remains the 24-07-2026 dated figure. Headless/manifest-v2 §0 still matches RUN_FREQ_MAX.
 
@@ -60,6 +62,7 @@ Re-run `script_census.py` and `harvest_launch_stats.py` when the pipeline tree o
 
 | Date | Change | By |
 |---|---|---|
+| 04-10-2026 | H5991 manual_staleness refresh (LAST_VERIFIED bump + 7 spot probes; §10 census 306→340 + DRIFT-gate note) | GLM 5.3 Flash (zai-start-plan/GLM-5.3-Flash) |
 | 20-08-2026 | H3059 manual_staleness fact-check refresh (LAST_VERIFIED bump + real command/count probes) | Grok 4.6 (grok-4.6) |
 | 01-08-2026 | H2078 manual_staleness refresh (LAST_VERIFIED bump + spot probes; COMMANDS_SPOT_RUN integer) | Grok 4.5 (grok-4.5) |
 | 31-07-2026 | §2d: autostart residual + human `@DO` for logged-off stored credentials; links windows/README inventory | Grok 4.5 (grok-4.5) |

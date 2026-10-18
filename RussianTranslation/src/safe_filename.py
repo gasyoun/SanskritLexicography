@@ -11,14 +11,14 @@ import re
 
 _RESERVED = {
     'CON', 'PRN', 'AUX', 'NUL',
-    *(('COM%d' % i) for i in range(1, 10)),
-    *(('LPT%d' % i) for i in range(1, 10)),
+    *((f'COM{i:d}') for i in range(1, 10)),
+    *((f'LPT{i:d}') for i in range(1, 10)),
 }
 _SAFE = re.compile(r'[a-z0-9-]')
 
 
 def _escape(ch):
-    return '~%04x' % ord(ch)
+    return '~{:04x}'.format(ord(ch))
 
 
 def safe_name(key):

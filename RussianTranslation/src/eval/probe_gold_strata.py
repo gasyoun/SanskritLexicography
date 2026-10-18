@@ -171,7 +171,7 @@ def _canonical_to_slp1():
         raise SystemExit(
             'sanskrit-util is required to transcode IAST DCS keys to SLP1 '
             '(SHARED_CODE.md §1). Clone/install sanskrit-util rather than '
-            'hand-rolling an SLP1 table here. Original error: %s' % exc)
+            'hand-rolling an SLP1 table here. Original error: {}'.format(exc))
     return to_slp1
 
 

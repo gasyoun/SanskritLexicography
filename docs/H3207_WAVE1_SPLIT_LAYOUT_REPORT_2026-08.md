@@ -2,6 +2,8 @@
 
 _Created: 21-08-2026 · Last updated: 21-08-2026_
 
+Closed 21-08-2026: [SanskritLexicography#1848](https://github.com/gasyoun/SanskritLexicography/pull/1848) · [csl-pyutil#37](https://github.com/sanskrit-lexicon/csl-pyutil/pull/37) · [gasyoun.github.io#24](https://github.com/gasyoun/gasyoun.github.io/pull/24) · [Uprava#2155](https://github.com/gasyoun/Uprava/pull/2155). Hub [h180_reglue_v6.html](https://gasyoun.github.io/vote/sheets/h180_reglue_v6.html) HTTP 200. G5 `--pin-ids` still STOP 2.
+
 Override executor: Grok 4.6 (`grok-4.6`) on a Sonnet-named file
 ([H3207 (Sonnet 5) — Wave 1 exec: DE|RU split vote layout](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3207-Sonnet_SanskritLexicography_h3199-wave1-exec_20.08.26.md)).
 Grok × non-Fable: no dual-run residual.
@@ -49,6 +51,6 @@ Result: **1 of 150** pinned cards changed content since the lock:
 
 ## Browser pass
 
-See the session close; v6 `gā` is the long-card canary.
+Live hub fetch of [h180_reglue_v6.html](https://gasyoun.github.io/vote/sheets/h180_reglue_v6.html) (21-08-2026): card `gā` shows German *durchgehen, durchwandern* on the left, insertion chips, glued Russian on the right. Not a click-through of pair-highlight, chip pin, sticky-bar card switch, or 360px stack. v5 still HTTP 200.
 
 _Dr. Mārcis Gasūns_

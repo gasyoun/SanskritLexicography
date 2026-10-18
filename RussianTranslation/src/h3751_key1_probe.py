@@ -23,7 +23,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 if HERE not in sys.path:
     sys.path.insert(0, HERE)
 
-from store_path import canonical_store   # noqa: E402
+from store_path import canonical_store
 
 DEFAULT_STORE = canonical_store(os.path.join(HERE, 'pwg_ru_translated.jsonl'))
 
@@ -56,18 +56,18 @@ def main():
                                 ('conflating_key1', CONFLATING, by_key1),
                                 ('junk_key1', JUNK_KEY1, by_key1),
                                 ('degraded_iast', DEGRADED_IAST, by_iast)):
-        print('--- %s ---' % label)
+        print('--- {} ---'.format(label))
         for name in names:
             n = table.get(name, 0)
             out[label][name] = n
-            print('  %-22s %s' % (name, ('%d row(s) STILL PRESENT' % n) if n else 'absent'))
+            print('  %-22s %s' % (name, (f'{n:d} row(s) STILL PRESENT') if n else 'absent'))
 
     total = sum(sum(v.values()) for v in out.values() if isinstance(v, dict))
-    print('issue #1767 named examples still present: %d' % total)
+    print(f'issue #1767 named examples still present: {total:d}')
     if args.json:
         with io.open(args.json, 'w', encoding='utf-8', newline='\n') as f:
             json.dump(out, f, ensure_ascii=False, indent=1)
-        print('wrote %s' % args.json)
+        print('wrote {}'.format(args.json))
     return 0
 
 

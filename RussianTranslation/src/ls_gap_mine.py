@@ -193,9 +193,9 @@ def summarize(rows, totals):
 
 def main():
     if not os.path.exists(STORE):
-        print("store not found: %s — set PWG_RU_DATA_ROOT" % STORE)
+        print("store not found: {} — set PWG_RU_DATA_ROOT".format(STORE))
         return 1
-    print("scanning %s ..." % STORE)
+    print("scanning {} ...".format(STORE))
     per, totals = scan(STORE)
     rows = build_rows(per)
     tsv, jl = write_outputs(rows, totals)
@@ -217,7 +217,7 @@ def main():
         print("  %-22s %-11s %7d %8d  %s"
               % (r["source_key"][:22], r["class"], r["mintable"],
                  r["resolved_same_source"], r["top_shapes"][:34]))
-    print("\nwrote %s\n      %s" % (tsv, jl))
+    print("\nwrote {}\n      {}".format(tsv, jl))
     return 0
 
 

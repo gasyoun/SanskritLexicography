@@ -257,7 +257,7 @@ def selftest():
                   encoding='utf-8') as f:
             f.write('{"subcard":"a"}\n')
         for i in range(3):
-            with open(os.path.join(td, 'src', 'pilot', 'nws', 'k%d.json' % i), 'w',
+            with open(os.path.join(td, 'src', 'pilot', 'nws', f'k{i:d}.json'), 'w',
                       encoding='utf-8') as f:
                 f.write('{}')
         with open(os.path.join(td, 'src', 'pilot', 'input', 'a.raw.txt'), 'w',

@@ -171,7 +171,7 @@ def classify():
 def selftest():
     result = classify()
     n = len(result['by_token'])
-    assert n == 269, 'expected 269 real ab-tokens (H1303 21-07-2026 inventory), got %d' % n
+    assert n == 269, f'expected 269 real ab-tokens (H1303 21-07-2026 inventory), got {n:d}'
     n_bulk = sum(1 for r in result['by_token'].values() if not r['residue'])
     n_residue = sum(1 for r in result['by_token'].values() if r['residue'])
     assert n_bulk + n_residue == n

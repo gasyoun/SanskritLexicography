@@ -72,7 +72,7 @@ def parse_block(blk):
 def build():
     path = os.path.join(SRC, FILE)
     if not os.path.exists(path):
-        sys.exit('not found: %s' % path)
+        sys.exit('not found: {}'.format(path))
     with open(path, encoding='utf-8') as f:
         blocks = re.split(r'\r?\n\r?\n', f.read())
     out_path = os.path.join(HERE, 'meulenbeld_plants.jsonl')
@@ -86,7 +86,7 @@ def build():
             n += 1
             if rec['binomials']:
                 n_binom += 1
-    print('meulenbeld_plants.jsonl: %d headwords, %d with >=1 Latin binomial' % (n, n_binom))
+    print(f'meulenbeld_plants.jsonl: {n:d} headwords, {n_binom:d} with >=1 Latin binomial')
     return n
 
 if __name__ == '__main__':

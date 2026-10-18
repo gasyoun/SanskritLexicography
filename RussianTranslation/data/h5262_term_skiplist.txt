@@ -1,0 +1,24 @@
+# H5262/H5468 — Indological terms and onomastics the NKRYa ipm audit must not measure.
+#
+# Created: 24-09-2026 · Last updated: 24-09-2026
+#
+# Scope. The audit asks one question: is the RUSSIAN word a PWG-RU gloss uses too rare or
+# too archaic for a reader? A Sanskrit term carried into Russian scholarly prose
+# («бодхисаттва», «дхарма») is not that kind of word — its NKRYa ipm measures how often the
+# general corpus discusses Indology, not whether the gloss is readable. pymorphy3 also
+# mis-lemmatises such terms («бодхисаттв» -> «бодхисаттво»), so the verdict is doubly
+# meaningless. The audit already excludes names via pymorphy's Name/Surn/Geox grammemes and
+# via the sentence-internal-capital test (H5468); this file is for what both miss.
+#
+# Format. One entry per line, lowercase, `#` comments and blank lines ignored. An entry
+# matches EITHER a surface token OR a pymorphy lemma, so a mis-lemmatised term can be named
+# by whichever form is stable. Add the witness — the spot-check row or report section that
+# proved the measurement wrong — as a trailing comment.
+#
+# Bar for adding a row. A spot-check verdict of `measurement: artifact` naming the term, or
+# an equally explicit witness. Never a guess: an entry here silently removes a lemma from
+# the census, so an over-broad list hides real gloss defects.
+
+бодхисаттв       # surface; reports/H5262_spotcheck.json — pymorphy lemma «бодхисаттво»
+бодхисаттво      # pymorphy lemma of the above
+бодхисаттва      # attested Russian form of the same term

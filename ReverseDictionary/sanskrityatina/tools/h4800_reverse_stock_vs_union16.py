@@ -223,7 +223,7 @@ def main() -> int:
     else:
         print("FATAL: sanskrit-util sibling clone not found", file=sys.stderr)
         return 2
-    from sanskrit_util import SLP1_ALPHABET, slp1_form_key, to_slp1  # noqa: PLC0415
+    from sanskrit_util import SLP1_ALPHABET, slp1_form_key, to_slp1
 
     if not args.xlsm.is_file():
         print(f"FATAL: xlsm not found: {args.xlsm} (refetch: rclone copy "

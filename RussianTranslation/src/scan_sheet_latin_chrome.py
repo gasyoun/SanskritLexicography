@@ -115,9 +115,9 @@ def main(argv):
         if hits:
             print("%s: %d disallowed Latin run(s) in chrome" % (path, len(hits)))
             for label, word in hits[:40]:
-                print("  [%s] %r" % (label, word))
+                print("  [{}] {!r}".format(label, word))
         else:
-            print("%s: 0 (clean)" % path)
+            print("{}: 0 (clean)".format(path))
     return 1 if total else 0
 
 
