@@ -1,0 +1,58 @@
+{
+  "handoff": "H7073",
+  "date": "2026-10-18",
+  "parser": "census_ncc_mss.py",
+  "ncc_rows": 152526,
+  "lexicon_without_workbook": {
+    "sigla": 991,
+    "roman_excluded": 67,
+    "real_sigla": 924
+  },
+  "pilot_entries": 500,
+  "baseline_no_filter": {
+    "mentions": 1648,
+    "raw_units": 1854,
+    "per_entry_distinct_units": 1809,
+    "entries_without_units": 202,
+    "volumes": 39
+  },
+  "post_filter": {
+    "mentions": 1648,
+    "raw_units": 1854,
+    "post_filter_units": 1326,
+    "per_entry_distinct_units": 1290,
+    "entries_without_units": 237,
+    "volumes": 39
+  },
+  "removed_by_pattern": {
+    "journal_or_series": 452,
+    "year_like": 57,
+    "page_ref_prefix": 19,
+    "total": 528
+  },
+  "workbook": "VisualDCS/non-derived/NCC/Works-Share-NCC/NCC-mss-counting-1 031 077.xlsx",
+  "workbook_present": false,
+  "canary_after_filter": {
+    "Mahābhārata": {
+      "body_units": 1798,
+      "visualdcs_mss": 21
+    },
+    "Rāmāyaṇa": {
+      "body_units": 668,
+      "visualdcs_mss": 2762
+    },
+    "Skandapurāṇa": {
+      "body_units": 0,
+      "status": "INCONCLUSIVE (absent from bodies)",
+      "visualdcs_mss": 17
+    }
+  },
+  "sample": {
+    "seed": 20261018,
+    "drawn": 100,
+    "volumes": 39
+  },
+  "adjudication": "NOT RUN - workbook absent (handoff fallback path)",
+  "verdict": "HOLD",
+  "publication_guard": "never quote 1,032,077 as a census; --full not run"
+}
