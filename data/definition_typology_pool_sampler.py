@@ -140,21 +140,34 @@ def allocate_quotas(class_totals: dict[str, int], total: int,
         for c in order[:left]:
             base[c] += 1
     quotas = {**fixed, **zeroed, **{c: floored[c] + base[c] for c in floored}}
-    # Cap at class size, pushing overflow to the largest under-cap class.
+    # Cap at class size, pushing overflow to under-cap classes.
+    # BUGHUNT §14: the old step dumped the WHOLE overflow on ONE donor without
+    # re-checking that donor's cap, so a capped class could push a second class
+    # over its own size and the allocation died at the next guard even though a
+    # feasible distribution existed. Water-fill instead: hand out at most each
+    # donor's remaining capacity, repeatedly, until the overflow is absorbed.
     for c in sorted(quotas, key=lambda c: -quotas[c]):
         if class_totals[c] < quotas[c]:
             over = quotas[c] - class_totals[c]
             quotas[c] = class_totals[c]
-            donors = [d for d in quotas
-                      if d != c and quotas[d] < class_totals[d]]
-            if not donors:
-                raise ValueError("no donor class for capped quota overflow")
-            donors.sort(key=lambda d: (-(class_totals[d] - quotas[d]), d))
-            quotas[donors[0]] += over
+            while over:
+                donors = [d for d in quotas
+                          if d != c and quotas[d] < class_totals[d]]
+                if not donors:
+                    raise ValueError("no donor class for capped quota overflow")
+                donors.sort(key=lambda d: (-(class_totals[d] - quotas[d]), d))
+                donor = donors[0]
+                give = min(over, class_totals[donor] - quotas[donor])
+                quotas[donor] += give
+                over -= give
     for c, q in quotas.items():
         if q > class_totals[c]:
             raise ValueError(f"quota {q} exceeds class size {class_totals[c]}")
-        if 0 < class_totals[c] and q < min_quota:
+        # The floor binds only where the class could have given more. A class
+        # smaller than the floor is the documented "take everything it has" path
+        # (`fixed` above) and must NOT be rejected by the very check that made
+        # that path dead (BUGHUNT §14).
+        if 0 < q < class_totals[c] and q < min_quota:
             raise ValueError(f"floor violated for {c}: {q} < {min_quota}")
     if sum(quotas.values()) != total:
         raise ValueError(

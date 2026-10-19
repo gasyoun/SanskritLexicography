@@ -36,6 +36,19 @@ exemption is the committed allowlist ``ncc_roman_catalogue_allowlist.json``
 run without the workbook behaves identically.  ``--dump-vdcs-keys`` regenerates
 the workbook-vocabulary artifact that the allowlist's selftest reads.
 
+BUGHUNT §9 (19-10-2026): "behaves identically without the workbook" is true of
+the ALLOWLIST and false of the LEXICON. ``--vdcs-details`` also adds the
+workbook's ``Details`` keys to the catalogue-siglum lexicon (925 → 1,227
+sigla), which changes how catalogue segments are cut and therefore the unit
+counts (pilot 1,319 vs 1,477; canary Mahābhārata 1,839 vs 2,355).  Every run
+now records the mode in a ``<output>.meta.json`` sidecar and a stderr warning
+fires when the workbook is absent, so a published number can no longer be
+detached from the population it was measured on.
+
+BUGHUNT §10: ``--no-edition-filter`` reaches ``run_canary`` as well (it used to
+reach only ``--pilot``, so asking for the pre-filter canary silently returned
+the filtered numbers).
+
 Usage:
     python census_ncc_mss.py --ncc ncc.jsonl --pilot 500
     python census_ncc_mss.py --ncc ncc.jsonl --canary
@@ -454,7 +467,7 @@ def pilot_sample(rows, n):
     return [ordered[int(i * step)] for i in range(n)]
 
 
-def run_pilot(rows, cat_re, n, out_path, filter_editions=True):
+def run_pilot(rows, cat_re, n, out_path, filter_editions=True, meta=None):
     sample = pilot_sample(rows, n)
     stats = Counter()
     filtered = Counter()
@@ -480,10 +493,16 @@ def run_pilot(rows, cat_re, n, out_path, filter_editions=True):
     stats['volumes'] = len(per_vol)
     stats['sample'] = len(sample)
     stats['removed_by_pattern'] = dict(filtered)
+    write_run_meta(out_path, meta)
     return stats
 
 
-def run_canary(rows, cat_re, out_path, vdcs_path=None):
+def run_canary(rows, cat_re, out_path, vdcs_path=None, filter_editions=True,
+               meta=None):
+    """Canary rows. BUGHUNT §10: `filter_editions` used to be absent here, so
+    `--no-edition-filter` was silently ignored for `--canary` (a byte-identical
+    output to the filtered run) while the flag is documented as "measure the
+    pre-filter baseline". `meta` is persisted beside the TSV (BUGHUNT §9)."""
     by_title = defaultdict(list)
     for r in rows:
         by_title[unicodedata.normalize('NFC', r['iast'])].append(r)
@@ -503,11 +522,26 @@ def run_canary(rows, cat_re, out_path, vdcs_path=None):
             units = []
             raw_units = 0
             for r in hits:
-                u, st = extract_units(r['body_html'], cat_re)
+                u, st = extract_units(r['body_html'], cat_re, filter_editions)
                 raw_units += st['raw_units']
                 units.extend(u)
             d = dedupe(units)
-            v = vdcs.get(label, fallback)
+            # BUGHUNT §13: when a workbook WAS supplied, a missing or unreadable
+            # `mss` cell used to fall back to the hardcoded constant silently,
+            # so the column labelled "VisualDCS mss" could print a number that
+            # was never read from the workbook and still compute a DIFF from it.
+            # Under a supplied workbook, an absent label is now a refusal; the
+            # constants remain only for the documented workbook-absent run.
+            if vdcs_path and os.path.exists(vdcs_path):
+                if label not in vdcs:
+                    raise ValueError(
+                        f"VisualDCS workbook {vdcs_path!r} was supplied but has no "
+                        f"readable `mss` value for {label!r} — refusing to substitute "
+                        f"the hardcoded {fallback!r} into a column labelled "
+                        f"'VisualDCS mss' (BUGHUNT §13)")
+                v = vdcs[label]
+            else:
+                v = fallback
             if not hits:
                 # H7078 gate 1 settled the open question behind this status: the
                 # `स्क` block is absent from the bundled 2022 NCC database itself
@@ -526,7 +560,35 @@ def run_canary(rows, cat_re, out_path, vdcs_path=None):
                 status = 'DIFF'
             results.append((label, len(hits), raw_units, len(d), v, delta, status))
             w.writerow(results[-1])
+    write_run_meta(out_path, meta)
     return results
+
+
+def _sha256(path):
+    """First-16-hex digest of a run input, for the meta sidecar (BUGHUNT §9)."""
+    import hashlib
+    h = hashlib.sha256()
+    with open(path, 'rb') as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b''):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def write_run_meta(out_path, meta):
+    """Persist the population a published number was measured on (BUGHUNT §9).
+
+    Without this sidecar two runs of the same command can publish different
+    populations under identical column names: the catalogue-siglum lexicon
+    depends on whether `--vdcs-details` was supplied, and nothing in the TSV or
+    the JSON said which one produced a count.
+    """
+    if not meta:
+        return None
+    p = out_path + '.meta.json'
+    with open(p, 'w', encoding='utf-8', newline='\n') as fh:
+        json.dump(meta, fh, ensure_ascii=False, indent=1, sort_keys=True)
+        fh.write('\n')
+    return p
 
 
 def read_vdcs_canary(xlsx_path):
@@ -741,15 +803,40 @@ def main():
     allowlisted = sorted(c for c in lexicon
                          if cat_key(c) in ROMAN_CATALOGUE_ALLOW_KEYS)
     dropped = roman - len(allowlisted)
+    # BUGHUNT §9: name the population. The workbook is optional and changes the
+    # lexicon (925 vs 1,227 sigla), hence the unit counts; silence here is how a
+    # published number gets detached from what it measured.
+    workbook_used = bool(args.vdcs_details and os.path.exists(args.vdcs_details))
+    lexicon_mode = 'workbook' if workbook_used else 'witness-prefix-only'
+    run_meta = {
+        'ncc': os.path.abspath(args.ncc),
+        'ncc_sha256': _sha256(args.ncc),
+        'lexicon_mode': lexicon_mode,
+        'vdcs_details': os.path.abspath(args.vdcs_details) if workbook_used else None,
+        'catalogue_sigla': len(lexicon) - dropped,
+        'roman_sigla_excluded': dropped,
+        'edition_filter': not args.no_edition_filter,
+        'no_roman_allowlist': bool(args.no_roman_allowlist),
+    }
     print(f'rows={len(rows)} catalogue_sigla={len(lexicon) - dropped} '
+          f'lexicon_mode={lexicon_mode} '
+          f'edition_filter={not args.no_edition_filter} '
           f'roman_sigla_excluded={dropped} '
           f'roman_catalogue_allowlisted={",".join(allowlisted) or "-"}',
           file=sys.stderr)
+    if not workbook_used:
+        print('WARNING: no --vdcs-details workbook — the sigla lexicon is '
+              'witness-prefix-only, so unit counts are NOT comparable to '
+              'workbook-based published numbers (pilot 1,477 vs 1,319; canary '
+              'Mahābhārata 2,355 vs 1,839, Rāmāyaṇa 819 vs 688). See '
+              'BUGHUNT-FINDINGS-SanskritLexicography-19.10.2026.md §9.',
+              file=sys.stderr)
 
     if args.pilot:
         p = os.path.join(args.out_dir, f'ncc_mss_census_pilot_{args.pilot}.tsv')
         st = run_pilot(rows, cat_re, args.pilot, p,
-                       filter_editions=not args.no_edition_filter)
+                       filter_editions=not args.no_edition_filter,
+                       meta=dict(run_meta, mode='pilot', sample_size=args.pilot))
         print(json.dumps(st, ensure_ascii=False), file=sys.stderr)
         print(f'pilot -> {p}', file=sys.stderr)
     if args.adjudication_sample:
@@ -768,7 +855,9 @@ def main():
         print(f'enriched -> {args.enrich_out}', file=sys.stderr)
     if args.canary:
         p = os.path.join(args.out_dir, 'ncc_mss_canary_20.tsv')
-        res = run_canary(rows, cat_re, p, args.vdcs_details)
+        res = run_canary(rows, cat_re, p, args.vdcs_details,
+                         filter_editions=not args.no_edition_filter,
+                         meta=dict(run_meta, mode='canary'))
         for r in res:
             print('\t'.join(str(x) for x in r), file=sys.stderr)
         print(f'canary -> {p}', file=sys.stderr)

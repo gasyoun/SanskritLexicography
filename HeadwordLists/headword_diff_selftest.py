@@ -155,20 +155,46 @@ def test_fail_closed_no_inputs():
 
 
 def test_bom_preservation():
-    print("test 3 — BOM: output byte-begins with the then-2014 sibling's BOM where present")
+    print("test 3 — BOM: the OUTPUT file's own BOM state is preserved, never the "
+          "then-2014 sibling's")
+    # BUGHUNT §1: the contract is "preserve the file's existing BOM state on
+    # write" (FINDINGS §37), i.e. of the file being overwritten. Reading the
+    # then-2014 sibling injected a BOM into the committed now-2026/MW-unique-key1
+    # (whose sibling has one and which carries none) and reddened the suite pin.
     sb = Sandbox(then_files=BOM_PAIR, sources=SOURCES)
     @with_sandbox(sb)
     def body():
+        # Pre-seed the now-2026 outputs so "existing state" is defined:
+        # key1 WITH a BOM, key2 WITHOUT.
+        os.makedirs(sb.now_dir, exist_ok=True)
+        with open(os.path.join(sb.now_dir, "MW-unique-key1-4.txt"), "wb") as fh:
+            fh.write(b"\xef\xbb\xbfstale\n")
+        with open(os.path.join(sb.now_dir, "MW-unique-key2-4.txt"), "wb") as fh:
+            fh.write(b"stale\n")
         rc = run_now()
         check("positive run exits 0", rc == 0, f"rc={rc}")
         p1 = os.path.join(sb.now_dir, "MW-unique-key1-4.txt")
         p2 = os.path.join(sb.now_dir, "MW-unique-key2-4.txt")
         with open(p1, "rb") as fh:
-            check("MW key1 regenerated WITH the then-2014 BOM (efbbbf)",
+            check("an existing BOM on the OUTPUT file survives the rewrite (efbbbf)",
                   fh.read(3) == b"\xef\xbb\xbf")
         with open(p2, "rb") as fh:
-            check("MW key2 regenerated with NO BOM (sibling has none)",
-                  fh.read(3) != b"\xef\xbb\xbf")
+            check("a BOM-free OUTPUT file stays BOM-free", fh.read(3) != b"\xef\xbb\xbf")
+    body()
+
+
+def test_bom_never_inherited_from_then_2014():
+    print("test 3b — BOM: a BRAND-NEW output does not inherit the then-2014 sibling's BOM")
+    sb = Sandbox(then_files=BOM_PAIR, sources=SOURCES)
+    @with_sandbox(sb)
+    def body():
+        rc = run_now()
+        check("positive run exits 0", rc == 0, f"rc={rc}")
+        for name in ("MW-unique-key1-4.txt", "MW-unique-key2-4.txt"):
+            with open(os.path.join(sb.now_dir, name), "rb") as fh:
+                check(f"{name} minted BOM-free although its 2014 sibling has one"
+                      if name.startswith("MW-unique-key1") else f"{name} minted BOM-free",
+                      fh.read(3) != b"\xef\xbb\xbf")
     body()
 
 
@@ -231,6 +257,7 @@ def main():
     test_fail_closed_zero_written()
     test_fail_closed_no_inputs()
     test_bom_preservation()
+    test_bom_never_inherited_from_then_2014()
     test_stable_names_and_pin_drift()
     test_positive_control_and_stale_duplicate_cleanup()
     print()

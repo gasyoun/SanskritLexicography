@@ -194,3 +194,187 @@ def test_features_index_rows_parser():
     codes = [c for c, _ in af.rows(live)]
     assert len(codes) >= 15 and "MW" in codes and "PWG" in codes
     assert af.REPO_COL == 6 and af.HEADER == "| Code | Dictionary |"
+
+
+# ============================================================ bughunt 19-10-2026
+# Regression pins for BUGHUNT-FINDINGS-SanskritLexicography-19.10.2026.md, one
+# per gate that was found reading the wrong artifact. Each pin holds BOTH
+# directions where a false verdict has a mirror: the defect must be refused AND
+# the legitimate case must still pass.
+
+def _git(repo: Path, *args: str) -> None:
+    subprocess.run(["git", *args], cwd=repo, check=True, capture_output=True)
+
+
+def _git_repo(path: Path, files: dict[str, bytes]) -> Path:
+    path.mkdir(parents=True, exist_ok=True)
+    _git(path, "init", "-q")
+    _git(path, "config", "user.email", "pin@example.invalid")
+    _git(path, "config", "user.name", "pin")
+    for name, payload in files.items():
+        target = path / name
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_bytes(payload)
+    _git(path, "add", "-A")
+    _git(path, "commit", "-qm", "base")
+    return path
+
+
+# ------------------------------------------------------- §2 utf8_gate --staged
+def test_utf8_gate_staged_reads_the_index_not_the_worktree(tmp_path):
+    ug = load_module("tools/utf8_gate.py")
+    repo = _git_repo(tmp_path / "r", {"a.txt": b"seed\n"})
+
+    # invalid blob staged, file then fixed without re-staging → MUST fail
+    (repo / "a.txt").write_bytes(b"ok \xff bad\n")
+    _git(repo, "add", "a.txt")
+    (repo / "a.txt").write_bytes(b"now valid utf8\n")
+    assert ug.run_staged(ug.staged_blobs(repo), repo) == 1
+
+    # valid blob staged, worktree still invalid → must NOT be refused
+    (repo / "a.txt").write_bytes(b"valid staged\n")
+    _git(repo, "add", "a.txt")
+    (repo / "a.txt").write_bytes(b"worktree \xff junk\n")
+    assert ug.run_staged(ug.staged_blobs(repo), repo) == 0
+
+
+# -------------------------------------------------- §5 utf8_gate UTF-16 sniff
+def test_utf8_gate_refuses_non_latin_utf16_without_a_bom():
+    ug = load_module("tools/utf8_gate.py")
+    for payload in ("Привет, мир.\n".encode("utf-16-le"),
+                    "नमस्ते\n".encode("utf-16-le"),
+                    "नमस्ते\n".encode("utf-16-be")):
+        status, reason, _ = ug.check_bytes(payload)
+        assert status == "error", (payload[:8], status, reason)
+        assert "UTF-16 without BOM" in reason
+    # a real binary stays skipped, not refused
+    assert ug.check_bytes(b"\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDR")[0] == "binary"
+
+
+# ------------------------------------------- §3 stale-base removed-line numbers
+def test_stale_base_line_numbers_survive_a_dash_rule(tmp_path):
+    pps = load_module("scripts/pre_push_stale_base_check.py")
+    repo = _git_repo(tmp_path / "r", {"doc.md": b"intro\n---\nold line\ntail\n"})
+    (repo / "doc.md").write_bytes(b"intro\ntail\n")
+    _git(repo, "add", "-A")
+    _git(repo, "commit", "-qm", "drop the rule and the line after it")
+    import os
+    cwd = os.getcwd()
+    os.chdir(repo)
+    try:
+        # line 2 is the markdown rule, line 3 the line that actually vanished
+        assert pps.removed_line_numbers("HEAD~1", "HEAD", "doc.md") == [2, 3]
+    finally:
+        os.chdir(cwd)
+
+
+def test_stale_base_added_line_texts_keep_a_plus_initial_line(tmp_path):
+    pps = load_module("scripts/pre_push_stale_base_check.py")
+    repo = _git_repo(tmp_path / "r", {"doc.md": b"intro\n"})
+    (repo / "doc.md").write_bytes(b"intro\n+++ counter value\n")
+    _git(repo, "add", "-A")
+    _git(repo, "commit", "-qm", "add a +++-initial line")
+    import os
+    cwd = os.getcwd()
+    os.chdir(repo)
+    try:
+        assert pps.added_line_texts("HEAD~1", "HEAD", "doc.md") == ["+++ counter value"]
+    finally:
+        os.chdir(cwd)
+
+
+# ------------------------------------- §7 changelog gate path normalisation
+def test_changelog_gate_normalises_a_relative_repo_path(tmp_path, monkeypatch):
+    dupe = tmp_path / "dupe"
+    dupe.mkdir()
+    (dupe / "CHANGELOG.md").write_text(
+        "# Changelog\n\n## 1.0\n\n- same bullet text here\n\n"
+        "## 0.9\n\n- same bullet text here\n", encoding="utf-8")
+    gate = REPO / "scripts/changelog_dupe_evidence_gate.py"
+    monkeypatch.chdir(tmp_path)
+    r = subprocess.run([sys.executable, str(gate), "--repo", "./dupe",
+                        "--evidence", str(tmp_path / "ev.json")],
+                       capture_output=True, text=True, encoding="utf-8")
+    assert r.returncode == 1, r.stdout + r.stderr
+    assert "hit" in (r.stdout + r.stderr)
+
+
+# ------------------------------------------------ §4 envelope CHK-5 verdict
+def test_envelope_chk5_refuses_a_dead_tag_and_a_missing_commit(tmp_path):
+    ec = load_module("scripts/envelope_check.py")
+    repo = _git_repo(tmp_path / "r", {"f.txt": b"x\n"})
+    sha = subprocess.run(["git", "rev-parse", "HEAD"], cwd=repo,
+                         capture_output=True, text=True).stdout.strip()
+    _git(repo, "tag", "v1")
+    ok, detail = ec.code_revision_verdict({"tag": "v1", "commit": sha}, repo=repo)
+    assert ok, detail
+    # dead tag with no recorded commit was `None == None` → PASS before the fix
+    ok, detail = ec.code_revision_verdict({"tag": "v-dead"}, repo=repo)
+    assert not ok and "does not resolve" in detail, detail
+    # a resolving tag still cannot vouch for an unrecorded commit
+    ok, detail = ec.code_revision_verdict({"tag": "v1"}, repo=repo)
+    assert not ok and "no commit recorded" in detail, detail
+    # wrong commit is a mismatch, not a pass
+    ok, detail = ec.code_revision_verdict({"tag": "v1", "commit": "0" * 40}, repo=repo)
+    assert not ok and "resolves to" in detail, detail
+
+
+# ------------------------------------- §8 eol census reads the REF's attributes
+def test_eol_census_reads_attributes_from_the_ref_not_the_checkout(tmp_path):
+    eol = load_module("scripts/eol_census.py")
+    repo = _git_repo(tmp_path / "r", {"data.txt": b"a\r\nb\r\n"})
+    _git(repo, "config", "core.autocrlf", "false")
+    # ref B adds the attributes only; the CR-bearing blob came from A
+    (repo / ".gitattributes").write_bytes(b"* text=auto\n")
+    _git(repo, "add", ".gitattributes")
+    _git(repo, "commit", "-qm", "add attributes")
+    ref_b = subprocess.run(["git", "rev-parse", "HEAD"], cwd=repo,
+                           capture_output=True, text=True).stdout.strip()
+    _git(repo, "reset", "-q", "--hard", "HEAD~1")      # checkout has no attributes
+    assert not (repo / ".gitattributes").exists()
+    rc = eol.cmd_census(repo, ref_b, quiet=True)
+    assert rc == 1, "a CR blob that only the REF marks as text must be a violation"
+
+
+# ------------------------------------- §10/§9 canary honours the filter, names its run
+def test_canary_honours_the_edition_filter_and_writes_meta(tmp_path, monkeypatch):
+    cen = load_module("HeadwordLists/works_catalogue/census_ncc_mss.py")
+    calls = []
+
+    def fake_extract(body, cat_re, filter_editions=True, trace=None):
+        calls.append(filter_editions)
+        unit = ("Cat", "1")
+        return ([unit] if filter_editions else [unit, ("Cat", "2")]), {"raw_units": 2}
+
+    monkeypatch.setattr(cen, "extract_units", fake_extract)
+    monkeypatch.setattr(cen, "CANARY_WORKS", [("Test", "Test", None)])
+    rows = [{"iast": "Test", "body_html": "<p>body</p>"}]
+    out = tmp_path / "canary.tsv"
+    cen.run_canary(rows, None, str(out), filter_editions=False,
+                   meta={"lexicon_mode": "witness-prefix-only", "mode": "canary"})
+    assert calls and calls[0] is False, "run_canary must pass filter_editions through"
+    meta = out.with_name(out.name + ".meta.json")
+    assert meta.exists()
+    assert '"lexicon_mode": "witness-prefix-only"' in meta.read_text(encoding="utf-8")
+
+
+# ------------------------------------- §14 quota allocator on feasible frames
+def test_quota_allocator_accepts_a_below_floor_class():
+    smp = load_module("data/definition_typology_pool_sampler.py")
+    q = smp.allocate_quotas({"synonym": 5, "equivalent": 100,
+                             "encyclopedic": 100, "residual": 100}, 300)
+    assert sum(q.values()) == 300 and q["synonym"] == 5
+    q = smp.allocate_quotas({"a": 3, "b": 4, "c": 500}, 200)
+    assert sum(q.values()) == 200 and q["c"] == 193
+    for totals, q in (({"a": 100, "b": 100, "c": 100, "d": 100}, 300),):
+        alloc = smp.allocate_quotas(totals, q)
+        assert all(alloc[c] <= totals[c] for c in alloc)
+
+
+# ------------------------------------- §1 the snapshot writer's BOM contract
+def test_headword_diff_selftest_green():
+    """Locks the write contract, including the BOM source, into CI."""
+    r = subprocess.run([sys.executable, "HeadwordLists/headword_diff_selftest.py"],
+                       cwd=REPO, capture_output=True, text=True, encoding="utf-8")
+    assert r.returncode == 0, r.stdout + r.stderr
+    assert "SELFTEST GREEN" in r.stdout
