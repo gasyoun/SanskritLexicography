@@ -133,19 +133,6 @@ def git(repo: Path, *args: str, input_bytes: bytes | None = None) -> subprocess.
     return proc
 
 
-def git_soft(repo: Path, *args: str) -> subprocess.CompletedProcess:
-    """git WITHOUT the fail-closed raise — for probes where a non-zero exit is
-    a legitimate answer (unborn HEAD, path absent at HEAD). The strict `git()`
-    helper turns ANY non-zero exit into GateError, which is right for the
-    evaluation path and wrong for a question whose answer can be «нет».
-    """
-    cmd = ["git", "-C", str(repo), *args]
-    try:
-        return subprocess.run(cmd, capture_output=True, check=False)
-    except FileNotFoundError as exc:
-        raise GateError("git не найден в PATH") from exc
-
-
 def resolve_repo() -> Path:
     try:
         proc = subprocess.run(["git", "rev-parse", "--show-toplevel"],
@@ -431,12 +418,20 @@ def split_commands(path: str, chunks: list) -> list[str]:
 # --------------------------------------------------------------------------
 
 def head_blob_size(repo: Path, path: str) -> int | None:
-    """Size of `path` at HEAD, or None if HEAD has no such file (or no HEAD)."""
-    proc = git_soft(repo, "cat-file", "-s", f"HEAD:{path}")
-    if proc.returncode != 0:
+    """Size of `path` at HEAD, or None if HEAD has no such file (or no HEAD).
+
+    git() is fail-closed (it raises on any non-zero exit), and an unborn HEAD
+    or a path absent at HEAD is a legitimate "no" here — not a gate error.
+    Reusing git() (rather than a second subprocess call site) also keeps the
+    repo's ruff baseline unchanged: a new subprocess.run(["git", ...]) call
+    site would add one more S607 violation than the documented baseline.
+    """
+    try:
+        out = git(repo, "cat-file", "-s", f"HEAD:{path}").stdout.strip()
+    except GateError:
         return None
     try:
-        return int(proc.stdout.strip())
+        return int(out)
     except (TypeError, ValueError):
         return None
 
