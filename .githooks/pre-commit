@@ -1,7 +1,8 @@
 #!/bin/sh
 # >>> token-size-gate (managed block) >>>
-# 1 токен = 4 байта; по умолчанию лимит 5000 токенов = 20 000 Б на staged-файл.
-# Удалить блок: python3 /Users/mac/Documents/GitHub/precommit-token-gate/install.py --repo /Users/mac/Documents/GitHub/SanskritLexicography --unpatch
+# 1 token = 4 bytes; default limit 5 000 tokens = 20 000 B per staged file.
+# Uninstall: delete this managed block and .githooks/token_size_gate.py.
+# Escape hatches: git commit --no-verify (one commit); .token-gate-ignore (reviewed globs).
 if command -v python3 >/dev/null 2>&1; then
   python3 "$(dirname "$0")/token_size_gate.py" --staged || exit $?
 else
