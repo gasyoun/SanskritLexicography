@@ -9743,4 +9743,10 @@ probe before reporting the absence — but having proved it, report the absence 
 
 > Source: csl-atlas/reports/COMPOUND_DEPTH_TYPOGRAPHY_PROBE_2026-10-17.md (18-10-2026) -- csl-atlas -- 18-10-2026
 
-§649 takes the next number.
+### §649. The VisualDCS NCC MSS counting workbook is not a like-for-like comparator: its `mss` cell mixes partial index rows with catalogue page-range totals, so the 20-work canary cannot validate the body parser by agreement
+
+🟠 **Evidence:** Mahābhārata's workbook row lists 3 catalogues (21 accessions) while the bodies name 121 (2,355 printed references); Rāmāyaṇa's row counts `Bṛhatsūcī, Nepal: 427` from `p. 132-150` and enumerates 387. Union-of-all-rows closes 19.6 % of the Rāmāyaṇa gap (−381 of −1,943) and 0 % of the Mahābhārata gap; 3 of 102 single-row works (mss ≥ 500) in the head of the index agree with the parser within ±5 %. Implication: the canary clause ("names both numbers") is vacuous as a gate; keep the printed-reference unit and treat the workbook as comparison only.
+
+> Source: [NCC_MSS_UNIT_SEMANTICS_2026-10-19.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_2026-10-19.md) + [ncc_mss_unit_semantics.py](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/ncc_mss_unit_semantics.py) — SanskritLexicography · 19-10-2026 (DeepSeek v4.1 Flash `deepseek-flash`, H7085)
+
+§650 takes the next number.

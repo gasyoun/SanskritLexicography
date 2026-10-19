@@ -127,6 +127,14 @@ Artifact: [`ncc_mss_canary_20.tsv`](ncc_mss_canary_20.tsv).
   The 17 is unverifiable here, not confirmed, and stays unverifiable until an NCC
   fascicle past vol 39 p. 378 (or a newer database export) arrives.
 
+> **Unit semantics settled (19-10-2026, H7085).** The body count and the workbook `mss`
+> are not one quantity: the workbook row is a partial index slice (Mahābhārata 3
+> catalogues vs 121 in the bodies) and counts catalogue page ranges as manuscripts
+> (Rāmāyaṇa `Bṛhatsūcī, Nepal: 427` from `p. 132-150`). Union-of-all-rows closes 19.6 %
+> of the Rāmāyaṇa gap and 0 % of the Mahābhārata gap. See
+> [NCC_MSS_UNIT_SEMANTICS_2026-10-19.md](NCC_MSS_UNIT_SEMANTICS_2026-10-19.md) and the
+> v2 proposal.
+
 ## Why no full run
 
 The pre-registered order is pilot → canary → full. The canary did **not** clear:

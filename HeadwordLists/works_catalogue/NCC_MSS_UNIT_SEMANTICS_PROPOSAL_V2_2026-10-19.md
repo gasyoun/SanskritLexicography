@@ -16,8 +16,9 @@ and v1 remains the rule in force until a human ratifies v2 here.
 ## Why it needs amendment
 
 The canary clause is satisfiable only **vacuously**. "Names both numbers" is already
-true (H7080: Mahābhārata 2,355 · Rāmāyaṇa 814), yet both numbers disagree with the
-workbook by 112× in one direction and 0.29× in the other. The measurement in
+true (H7080: Mahābhārata 2,355 · Rāmāyaṇa 814; H7084 post-`MD`: 2,355 · 819), yet both
+numbers disagree with the
+workbook by 112× in one direction and 0.30× in the other. The measurement in
 [`NCC_MSS_UNIT_SEMANTICS_2026-10-19.md`](NCC_MSS_UNIT_SEMANTICS_2026-10-19.md) shows
 that no slicing of the workbook rows can make the epics agree:
 
@@ -26,7 +27,7 @@ that no slicing of the workbook rows can make the epics agree:
   (`Bṛhatsūcī, Nepal: 427` from `p. 132-150`);
 - union-of-all-rows closes **19.6 %** of the Rāmāyaṇa gap and **0 %** of the
   Mahābhārata gap;
-- controls exist but are rare — **4 of 102** single-row works in the head of the index
+- controls exist but are rare — **3 of 102** single-row works in the head of the index
   agree within ±5 %.
 
 Leaving the clause as a gate therefore does one of two dishonest things: it passes
@@ -36,11 +37,11 @@ compute.
 ## Proposed amendment (v2-2026-10-19) — replacement text for the canary clause only
 
 > **Canary (v2, 19-10-2026).** The canary re-run after the edition/journal filter must
-> name, in one table: (a) the Mahābhārata and Rāmāyaṇa body counts; (b) the four
-> positive controls — Vājasaneyisaṃhitā, Vṛttaratnākara, Chāndogyopaniṣad,
-> Mārkaṇḍeyapurāṇa — each with the workbook `mss` cell, the body count and the delta;
+> name, in one table: (a) the Mahābhārata and Rāmāyaṇa body counts; (b) the three
+> positive controls — Vājasaneyisaṃhitā, Chāndogyopaniṣad, Mārkaṇḍeyapurāṇa — each
+> with the workbook `mss` cell, the body count and the delta;
 > (c) Skandapurāṇa as **absent** (block missing from the 2022 NCC database, H7078). The
-> canary is a **reported diagnostic, not a gate**. The four controls must agree within
+> canary is a **reported diagnostic, not a gate**. The three controls must agree within
 > ±5 %; the two epics are reported as measured exceptions and are **not** required to
 > agree. No workbook `mss` value is a census denominator.
 
@@ -63,8 +64,8 @@ bound ≥ 90 %, `AMBIGUOUS ≤ 10`, measured on a pre-declared fresh seed.
 | epics cannot be reconciled by row slicing | §2 table, `ncc_mss_unit_semantics_2026-10-19.tsv` |
 | workbook rows are partial | Mahābhārata row 3 catalogues vs body 121; Rāmāyaṇa 27 vs 128 |
 | page ranges inflate the workbook | `Bṛhatsūcī, Nepal: 427` vs 387 enumerated / 7 in body |
-| controls exist but are rare | 4 of 102 single-row works within ±5 % |
-| union repair is small | Rāmāyaṇa −381 of −1,948 (19.6 %); Mahābhārata 0 |
+| controls exist but are rare | 3 of 102 single-row works within ±5 % |
+| union repair is small | Rāmāyaṇa −381 of −1,943 (19.6 %); Mahābhārata 0 |
 
 Reproduce with the commands in the report's §8.
 
