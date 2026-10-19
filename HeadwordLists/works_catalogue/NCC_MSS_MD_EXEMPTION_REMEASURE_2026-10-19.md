@@ -284,13 +284,26 @@ already recorded: the body parser counts strict `(catalogue, accession)` witness
 catalogue an entry mentions; VisualDCS's `mss` column counts one work's manuscripts in one
 aggregation. A GO on precision alone would still ship a canary whose two epics disagree by thousands.
 
+That question was measured in the parallel pass
+[H7085](NCC_MSS_UNIT_SEMANTICS_2026-10-19.md) (merged five minutes before this report), which
+settles it: the workbook's `mss` is **not one object** — its rows are partial index slices and, where
+complete, count catalogue page ranges as manuscripts — so the locked canary clause is satisfiable
+only vacuously. The census is to publish under the **printed-reference unit** (this parser's unit),
+the workbook stays comparison only, and a versioned amendment awaits human ratification
+([proposal v2](NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md)). H7085 measured on `44fb7fe1`,
+i.e. *before* this pass's `MD` exemption; the 2,355 / 819 numbers above are the post-exemption
+values, and the +5 Rāmāyaṇa difference is `MD`'s contribution.
+
 ## What this number does *not* cover
 
 1. **A unit is a witness, not a work.** The 100 units cover **77 distinct `ncc_id`** (one entry
    supplies four units), so a downstream join on `ncc_id` fans out silently.
 2. **The population is the 500-entry pilot**, not the 152,526-entry corpus: this estimates *this
    parser on this pilot*. `--full` was not run and is not authorised by a HOLD.
-3. **The canary mismatch is untouched** — see above; it is a semantics question, not a counting bug.
+3. **The canary delta is untouched by this pass.** Its *unit semantics* are settled separately by
+   [H7085](NCC_MSS_UNIT_SEMANTICS_2026-10-19.md) (printed-reference unit, workbook comparison only,
+   v2 amendment pending ratification); the measured delta itself remains, and precision cannot close
+   it.
 4. **The `MD` repair is correct but not exhaustive.** `AMIA`, `MIM`, or other roman-letter catalogue
    sigla that the workbook does not list would still be dropped; the allowlist makes that a one-line
    evidence-backed addition rather than a rule change, and the vocabulary test fails if one appears.
