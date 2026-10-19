@@ -70,6 +70,18 @@ regenerating `now-2026/` from live csl-orig and diffing against the frozen
 a falsifiable two-dictionary comparative test (omission / sense-order /
 fitted-index) runs through [`/dict-comparative-test`](https://github.com/gasyoun/claude-config/blob/main/commands/dict-comparative-test.md).
 
+**NCC MSS census unit (H7085).** The census counts printed `(catalogue, reference)`
+pairs from `ncc.jsonl` bodies
+([`works_catalogue/census_ncc_mss.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/census_ncc_mss.py)),
+ranges expanded. The VisualDCS counting workbook's `mss` cell is **comparison only** —
+its rows are partial index slices and count catalogue page ranges as manuscripts —
+never a census denominator. Change the unit definition ⇒ re-run
+[`works_catalogue/ncc_mss_unit_semantics.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/ncc_mss_unit_semantics.py)
+and update
+[`NCC_MSS_UNIT_SEMANTICS_2026-10-19.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_2026-10-19.md)
+(with its [v2 proposal](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md))
+in the same PR.
+
 ## Dual changelog — shared 1.144.x namespace (H3258)
 
 Two Keep-a-Changelog files share the **same** version series;

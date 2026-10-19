@@ -2,7 +2,7 @@
 
 _Created: 19-10-2026 · H7085 (DeepSeek v4.1 Flash, `deepseek-flash`) · measurement report + decision brief · read-only against corpus and workbook_
 
-Measured on `origin/master` **44fb7fe1** (before H7084's `MD` exemption lands). Parser:
+Measured on `origin/master` **55df10a6** (H7084's `MD` exemption, PR #2439, already landed). Parser:
 [`census_ncc_mss.py`](census_ncc_mss.py). Workbook:
 `VisualDCS/non-derived/NCC/Works-Share-NCC/NCC-mss-counting-1 031 077.xlsx`
 (sheet `NCC_mss_counting- 1 032 077`, 140,848 data rows).
@@ -11,14 +11,15 @@ Measured on `origin/master` **44fb7fe1** (before H7084's `MD` exemption lands). 
 
 **The locked canary clause is satisfiable only vacuously.** Read literally — *"the
 canary re-run with the filter still names both numbers"* — it is already satisfied:
-H7080's re-run named Mahābhārata 2,355 and Rāmāyaṇa 814. Read as a validation that the
+H7080's re-run named Mahābhārata 2,355 and Rāmāyaṇa 814; H7084's post-`MD` re-run names
+2,355 and 819. Either way both numbers are named. Read as a validation that the
 parser reproduces the workbook, it is **not satisfiable** under any slicing of the
 workbook rows, and the reason is measurable: the workbook's `mss` column is not one
 object. Its rows are **partial index slices** (the Mahābhārata row records 3 catalogues;
 the bodies name 121) and, where complete, count **catalogue page ranges as manuscripts**
 (Rāmāyaṇa's `Bṛhatsūcī, Nepal: 427` comes from `p. 132-150`). A union of all rows
 corrects a real defect — the current code compares the body's union across entries to
-the *first* workbook row — but it closes only **381 of the 1,948-unit Rāmāyaṇa gap** and
+the *first* workbook row — but it closes only **381 of the 1,943-unit Rāmāyaṇa gap** and
 **0 of the 2,334-unit Mahābhārata gap**.
 
 **Decision.** The census publishes under the **printed-reference unit**: one distinct
@@ -58,7 +59,7 @@ ranges expanded — the only workbook number whose *unit* is the parser's.
 | # | body text | parser (A) | workbook (B / B″) | why they differ |
 |---|---|---|---:|---|
 | 1 | Mahābhārata: `Bikaner 851-946`, `MD. 1915-53`, `RORI III. A. 1346-98` | 2,355 | 21 / 21 | workbook row lists `Bikaner: 9 {78327 1636 72470 181 73441 5862-63 441 1039}` — **accession numbers**; the body prints **serial ranges**. The row covers 3 catalogues; the body names **121**. |
-| 2 | Rāmāyaṇa: `Bṛhatsūcī, Nepal II. p.. 132-150 (one text). 151` | 814 | 2,762 / 2,381 | workbook chunk `Bṛhatsūcī, Nepal: 427` — a **catalogue page-range total**; the brace list enumerates 387 and the body yields 7 for that catalogue. 27 catalogues in the row vs **128** in the body. |
+| 2 | Rāmāyaṇa: `Bṛhatsūcī, Nepal II. p.. 132-150 (one text). 151` | 819 | 2,762 / 2,381 | workbook chunk `Bṛhatsūcī, Nepal: 427` — a **catalogue page-range total**; the brace list enumerates 387 and the body yields 7 for that catalogue. 27 catalogues in the row vs **128** in the body. |
 | 3 | Vājasaneyisaṃhitā: enumerated accessions on both sides | 762 | 776 / 624 | **control**: one complete row, 13 catalogues, body enumerates the same accessions → 1.8 % agreement. |
 | 4 | Rāmāyaṇa: `Adyar I. p. 122a (15 mss.; 4 inc.)` | 0 | counted in the catalogue total | page reference plus a parenthetical count: no printed accession. |
 | 5 | Mahābhārata: `MD. 1915-53` | 39 | 19 (`MD.`) | serial range vs enumerated accession list. |
@@ -78,8 +79,8 @@ machine summary [`ncc_mss_unit_semantics_2026-10-19.json`](ncc_mss_unit_semantic
 | work | body A | B first (current) | B′ sum of rows | B″ enumerated union | A−B | A−B′ | A−B″ |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Mahābhārata | 2,355 | 21 | 21 | 21 | +2,334 | +2,334 | +2,334 |
-| Rāmāyaṇa | 814 | 2,762 | 2,799 | 2,381 | −1,948 | −1,985 | −1,567 |
-| Bhāgavata | 5,472 | 2,248 | 2,250 | 2,259 | +3,224 | +3,222 | +3,213 |
+| Rāmāyaṇa | 819 | 2,762 | 2,799 | 2,381 | −1,943 | −1,980 | −1,562 |
+| Bhāgavata | 5,419 | 2,248 | 2,250 | 2,259 | +3,171 | +3,169 | +3,160 |
 | Skandapurāṇa | 0 | 17 | 17 | 17 | −17 | −17 | −17 |
 
 Reading:
@@ -112,19 +113,18 @@ a single row. See the TSV for all 20.
 Control rule, stated before use: **a work with exactly one workbook row, declared
 `mss` ≥ 500, and ≥ 100 body units** — the row-slicing question is moot, only the unit
 question remains. Pool: the 200 works with the largest workbook `mss` sum (head of the
-index; not a census run). **102 works match the rule; 4 agree within ±5 %:**
+index; not a census run). **102 works match the rule; 3 agree within ±5 %:**
 
 | control | body A | workbook B | delta | rel. |
 |---|---:|---:|---:|---:|
 | Vājasaneyisaṃhitā | 762 | 776 | −14 | 1.8 % |
-| Vṛttaratnākara | 710 | 687 | +23 | 3.2 % |
-| Chāndogyopaniṣad | 561 | 537 | +24 | 4.3 % |
-| Mārkaṇḍeyapurāṇa | 565 | 593 | −28 | 4.7 % |
+| Chāndogyopaniṣad | 562 | 537 | +25 | 4.4 % |
+| Mārkaṇḍeyapurāṇa | 570 | 593 | −23 | 3.9 % |
 
-**4 of 102 = 3.9 %.** The controls prove the pipeline *can* reproduce a workbook figure
+**3 of 102 = 2.9 %.** The controls prove the pipeline *can* reproduce a workbook figure
 when the row is a complete enumeration; they also show that this is the exception. Under
-the enumerated-union definition the agreeing set is different (2 of 102: Muṇḍakopaniṣad,
-Manusmṛti) — **no single workbook column is a stable comparator across works.**
+the enumerated-union definition the agreeing set is different (4 of 102: Kenopaniṣad,
+Manusmṛti, Taittirīyasaṃhitā, Muṇḍakopaniṣad) — **no single workbook column is a stable comparator across works.**
 
 ## 4. Which definition the census publishes under, and its numbers
 
@@ -133,8 +133,8 @@ unit `(catalogue, accession)`", H6995) and the only one computable from the corp
 hold; the workbook's declared count is a catalogue-level estimate that cannot be turned
 into distinct references without a catalogue concordance we do not have.
 
-Under A, the canary's numbers are the body column: **Mahābhārata 2,355 · Rāmāyaṇa 814 ·
-Bhāgavata 5,472 · Skandapurāṇa 0 (absent)**. The delta to each workbook definition is the
+Under A, the canary's numbers are the body column: **Mahābhārata 2,355 · Rāmāyaṇa 819 ·
+Bhāgavata 5,419 · Skandapurāṇa 0 (absent)**. The delta to each workbook definition is the
 table in §2. The **total census number is not computed** — no `--full` run, by
 constraint — and is not this handoff's output.
 
@@ -148,7 +148,7 @@ The locked GO rule
 > Rāmāyaṇa numbers. HOLD otherwise.
 
 - **Literal reading** — *names* both numbers: **satisfiable and already satisfied**
-  (2,355 / 814). Nothing to amend; H7080's table already records "both named".
+  (2,355 / 819, H7084). Nothing to amend; H7080's table already records "both named".
 - **Substantive reading** — the canary validates that the body count reproduces the
   workbook: **not satisfiable**. Three measured reasons: (i) rows are partial index
   slices (Mahābhārata 3 catalogues vs 121); (ii) where complete they count page ranges
@@ -163,7 +163,7 @@ The locked GO rule
 
 [`NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md`](NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md)
 — `v2-2026-10-19`. In one line: **demote the canary from a gate to a reported
-diagnostic**: the re-run must name both epic numbers, the four positive controls with
+diagnostic**: the re-run must name both epic numbers, the three positive controls with
 their deltas, and Skandapurāṇa as absent; the GO gate stays precision-based. The locked
 v1 rule remains in force until a human ratifies v2.
 
@@ -196,7 +196,7 @@ Outputs: the TSV above (20 canary rows + 102 control rows), the JSON summary, an
   this report and the v2 proposal.
 - **Unchanged:** `ncc.jsonl`, the workbook, `census_ncc_mss.py`, the committed pilot and
   canary TSVs, the H6995 report, the locked GO rule, every existing count.
-- **Checks:** `--selftest` OK; full run 23 s; 20 canary works + 102 control works; 4/102
+- **Checks:** `--selftest` OK; full run 23 s; 20 canary works + 102 control works; 3/102
   controls within ±5 %.
 - **Risks:** the workbook reader takes the first exact-label row (title-variant
   sensitive); the control rule is a selection rule, disclosed; the parser's own false
