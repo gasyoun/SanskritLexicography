@@ -30,7 +30,7 @@ import time
 from dataclasses import dataclass, field
 from pathlib import Path
 
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 DEFAULT_LIMIT_TOKENS = 5000
 DEFAULT_BYTES_PER_TOKEN = 4
 MARKER_SCAN_BYTES = 8192
@@ -131,6 +131,19 @@ def git(repo: Path, *args: str, input_bytes: bytes | None = None) -> subprocess.
         err = proc.stderr.decode("utf-8", "replace").strip()
         raise GateError(f"git {' '.join(args)}: {err or 'exit ' + str(proc.returncode)}")
     return proc
+
+
+def git_soft(repo: Path, *args: str) -> subprocess.CompletedProcess:
+    """git WITHOUT the fail-closed raise — for probes where a non-zero exit is
+    a legitimate answer (unborn HEAD, path absent at HEAD). The strict `git()`
+    helper turns ANY non-zero exit into GateError, which is right for the
+    evaluation path and wrong for a question whose answer can be «нет».
+    """
+    cmd = ["git", "-C", str(repo), *args]
+    try:
+        return subprocess.run(cmd, capture_output=True, check=False)
+    except FileNotFoundError as exc:
+        raise GateError("git не найден в PATH") from exc
 
 
 def resolve_repo() -> Path:
@@ -417,6 +430,46 @@ def split_commands(path: str, chunks: list) -> list[str]:
 # Evaluation
 # --------------------------------------------------------------------------
 
+def head_blob_size(repo: Path, path: str) -> int | None:
+    """Size of `path` at HEAD, or None if HEAD has no such file (or no HEAD)."""
+    proc = git_soft(repo, "cat-file", "-s", f"HEAD:{path}")
+    if proc.returncode != 0:
+        return None
+    try:
+        return int(proc.stdout.strip())
+    except (TypeError, ValueError):
+        return None
+
+
+def grandfather_verdict(head_size: int | None, new_size: int, max_bytes: int) -> str | None:
+    """Skip reason if the file is grandfathered, else None.
+
+    The estate's real repos carry hundreds of files that were already over the
+    budget BEFORE the gate existed (hubs, dashboards, registries, evidence
+    blobs). A gate that refuses every edit to them is not a budget, it is a
+    freeze: on 19-10-2026 it blocked the daily FINDINGS/GTD appends and every
+    edit to a pre-existing large tool.
+
+    Rule: a file that was ALREADY over the budget at HEAD may be committed as
+    long as it did not grow by more than ONE budget in this commit
+    (new_size <= head_size + max_bytes). A file that was under the budget at
+    HEAD and crosses it is still refused — the gate's teeth stay exactly where
+    they were aimed (a NEW oversized file), and the grandfather only stops
+    existing debt from freezing the estate.
+
+    Growth beyond the allowance is still a violation: debt may be paid down,
+    not compounded. Hubs that must grow freely belong in `.token-gate-ignore`,
+    which is an explicit, reviewable list.
+    """
+    if head_size is None or head_size <= max_bytes:
+        return None
+    growth = new_size - head_size
+    if growth <= max_bytes:
+        return (f"grandfathered: на HEAD уже было {head_size} Б (> {max_bytes} Б), "
+                f"прирост {growth} Б ≤ одного бюджета")
+    return None
+
+
 def evaluate(repo: Path, cfg: Config, items: list[Item], ignore: list[str],
              source: str, want_plan: bool = True) -> Result:
     skipped: list[tuple[str, int, str]] = []
@@ -462,6 +515,12 @@ def evaluate(repo: Path, cfg: Config, items: list[Item], ignore: list[str],
         if marker:
             skipped.append((item.path, item.size,
                             f"маркер сгенерированного кода: {marker!r}"))
+            continue
+
+        grand = grandfather_verdict(head_blob_size(repo, item.path), item.size,
+                                    cfg.max_bytes)
+        if grand:
+            skipped.append((item.path, item.size, grand))
             continue
 
         parts = math.ceil(item.size / cfg.max_bytes)
@@ -824,6 +883,20 @@ def selftest() -> int:
     check(path_skip_reason("logo.png") is not None, "binary suffix")
     check(path_skip_reason("docs/readme.md") is None, "ordinary doc")
     check(path_skip_reason("token_size_gate.py") is not None, "gate source")
+
+    # grandfather: existing debt may be touched, not compounded
+    check(grandfather_verdict(None, 30_000, 20_000) is None,
+          "new file over budget is NOT grandfathered")
+    check(grandfather_verdict(19_000, 30_000, 20_000) is None,
+          "a file that was UNDER the budget at HEAD is not grandfathered")
+    check(grandfather_verdict(25_000, 30_000, 20_000) is not None,
+          "file already over budget at HEAD, growth within one budget -> grandfathered")
+    check(grandfather_verdict(25_000, 25_000, 20_000) is not None,
+          "file already over budget, no growth -> grandfathered")
+    check(grandfather_verdict(25_000, 45_001, 20_000) is None,
+          "growth beyond one budget is NOT grandfathered")
+    check(grandfather_verdict(25_000, 45_000, 20_000) is not None,
+          "growth exactly one budget is grandfathered")
     check(path_skip_reason("CHANGELOG.md") is not None, "changelog is a log")
     check(path_skip_reason(".ai_state.md") is not None, "state journal is a log")
     check(path_skip_reason("build/app.log") is not None, ".log suffix")
