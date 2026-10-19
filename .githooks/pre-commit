@@ -1,4 +1,14 @@
 #!/bin/sh
+# >>> token-size-gate (managed block) >>>
+# 1 токен = 4 байта; по умолчанию лимит 5000 токенов = 20 000 Б на staged-файл.
+# Удалить блок: python3 /Users/mac/Documents/GitHub/precommit-token-gate/install.py --repo /Users/mac/Documents/GitHub/SanskritLexicography --unpatch
+if command -v python3 >/dev/null 2>&1; then
+  python3 "$(dirname "$0")/token_size_gate.py" --staged || exit $?
+else
+  echo "token-size-gate: python3 не найден — коммит заблокирован (fail-closed)" >&2
+  exit 1
+fi
+# <<< token-size-gate <<<
 # Refuse commits made directly in the canonical SanskritLexicography main-tree
 # checkout — force all local work through a git worktree instead.
 #

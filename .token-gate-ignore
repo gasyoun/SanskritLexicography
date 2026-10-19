@@ -1,0 +1,11 @@
+# token-size-gate: files here are not agent-authored — generated data/assets.
+# Code, docs and reports stay under the 5000-token limit.
+RussianTranslation/pwg_ru/**
+RussianTranslation/release/**
+HeadwordLists/then-2014/**
+HeadwordLists/now-2026/**
+literature/**
+ReverseDictionary/**
+data/**
+*.html
+*.htm
