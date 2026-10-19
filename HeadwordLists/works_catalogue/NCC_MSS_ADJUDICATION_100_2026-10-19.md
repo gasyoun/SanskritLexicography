@@ -9,7 +9,7 @@ _Created: 19-10-2026 · DeepSeek v4.1 Flash (`deepseek-flash`) · launch box: Ma
 | gate | value | threshold | pass |
 |---|---|---:|---|
 | point precision | **87 / 99 = 87.9 %** | ≥ 95 % | **NO** |
-| Wilson 95 % lower bound | **80.0 %** | ≥ 90 % | **NO** |
+| Wilson 95 % lower bound | **79.999 %** | ≥ 90 % | **NO** |
 | `AMBIGUOUS` count | **1** | ≤ 10 | yes |
 | canary names both numbers | Mahābhārata 2,355 · Rāmāyaṇa 814 | both named | yes (but both DIFF — see below) |
 
@@ -39,8 +39,12 @@ The workbook is present on this box:
     `id` == `ncc_numid` in ncc.jsonl
 ```
 
-so the blocked half is executable here. Nothing in that workbook is used as an answer: the
-`mss` count is never quoted, `1,032,077` is never quoted as a census, and `--full` was not run.
+so the blocked half is executable here.
+
+Provenance discipline: the workbook's `mss` column is used **only** as the canary comparison at
+the end of this report (21 / 2,762 / 17) — never as a result, never as a precision input. Its
+`Details` strings are a second opinion only. `1,032,077` is never quoted as a census, and
+`--full` was not run.
 
 ## Sample design (locked, unchanged)
 
@@ -81,7 +85,8 @@ so the blocked half is executable here. Nothing in that workbook is used as an a
 | AMBIGUOUS | **1** |
 | **total** | **100** |
 
-`precision = 87 / 99 = 0.8788` → **87.9 %**, Wilson 95 % CI **[80.00 %, 92.93 %]**.
+`precision = 87 / 99 = 0.8788` → **87.9 %**, Wilson 95 % CI **[79.999 %, 92.928 %]**
+(exact bounds 0.7999934 and 0.9292845 — the floor is a hair below 80 %, not above it).
 
 Reproduce from the committed TSV alone:
 
@@ -94,24 +99,24 @@ awk -F'\t' 'NR>1 && $5=="SUPPORTED"{s++} NR>1 && $5=="FALSE_POSITIVE"{f++} NR>1 
 
 | class | n | units |
 |---|---:|---|
-| volume / part marker | 5 | `Vol 190`, `Vol 303`, `Vol 448`, `Vol 510`, `Pt 1129` |
+| volume / part marker | 4 | `Vol 190`, `Vol 448`, `Vol 510`, `Pt 1129` |
 | scholar / editor name | 2 | `Dutt 3`, `Fausboll 164` |
 | subject marker | 1 | `Bud 35` |
 | bibliographic page in a secondary source | 1 | `Sn 919` |
-| year range expanded into accessions | 1 | `Ben 1900` |
+| year / page range expanded into accessions | 2 | `Ben 1900`, `Vol 303` |
 | **`MD` folded into the preceding segment** | 2 | `Adyar 6571`, `Jain 8771` |
 
 | # | vol | siglum | acc | evidence |
 |---:|---:|---|---:|---|
 | 10 | 3 | Dutt | 3 | `English transl. by J. C. Dutt. 3 Vol.` — translator's name + volume count |
 | 11 | 3 | Fausboll | 164 | `Fausboll 148 … Fausboll 164` — editor's name; the workbook's `D.` set here is body-derived |
-| 28 | 10 | Bud | 35 | `Bud.` is a subject marker (Buddhist) throughout the corpus; 35 belongs to `Hod. Bud.` |
+| 28 | 10 | Bud | 35 | `Bud.` is a subject marker (Buddhist) throughout the corpus; 35 belongs to `Hod. Bud.` (the sampled span stops at `Hod. Bud. 34`, so this verdict rests on the corpus, not on the cited span) |
 | 31 | 11 | Adyar | 6571 | body reads `Adyar II. p. 211a . MD. 6571-74` — 6571 is **MD's** accession |
-| 45 | 18 | Ben | 1900 | `Skt. Col.. Ben. 1897-1901. p. 173` — acquisition years, not serials |
+| 45 | 18 | Ben | 1900 | `Skt. Col.. Ben. 1897-1901. p. 173` — acquisition years, not serials: corpus-wide `Ben.` + 4 digits co-occurs with a page reference (1,250 of 2,863 instances), while `Ben.` + 2–3 digits is the serial form (2,208 instances) |
 | 54 | 22 | Sn | 919 | `See M. Krishnamachariar, HCSL., Sn. 919` — page in a published history |
 | 67 | 28 | Jain | 8771 | `Jain. MD. 8771. 8772` — subject marker + 8771 is **MD's** accession |
 | 74 | 31 | Vol | 190 | `Ser. 10. Vol. XIX. 163-93` — volume marker; 190 is a page-range member |
-| 75 | 31 | Vol | 303 | volume marker |
+| 75 | 31 | Vol | 303 | volume marker **and** a member of the page range `221-305` |
 | 76 | 31 | Vol | 448 | volume marker |
 | 77 | 31 | Vol | 510 | volume marker; 510 closes the page range `429-510` |
 | 82 | 33 | Pt | 1129 | `Pt.` is a part marker; `p. 993 . 1129` is a page run |
@@ -158,19 +163,27 @@ print('matches       :', [m.group(0) for m in re_.finditer('Adyar II. p. 211a . 
 PY
 ```
 
-Blast radius, measured on the pilot:
+Blast radius, measured on the pilot. Definitions are given so each row re-derives:
 
 | probe | value |
 |---|---:|
 | dropped lexicon sigla that match `ROMAN_RE` | 67 |
-| of those, genuine workbook catalogues | **1** (`MD`) |
-| pilot-500 entries whose body mentions `MD.` | 27 |
-| harvested pilot units whose own segment swallows an `MD.` reference | **14 / 730 = 1.9 %** |
+| of those, a catalogue in the workbook's own catalogue vocabulary | **1** (`MD`) |
+| `MD` witnesses in the shipped `mss_witnesses` field (3rd largest siglum after `II` 31,166 and `III` 14,387) | **11,672** |
+| the next-largest dropped siglum with witnesses (`DC` 6, `CM` 1 — negligible, not claimed as catalogues) | 6 |
+| pilot-500 entries whose body matches `(?<![A-Za-z])MD\.\s*\d` | 27 |
+| harvested pilot units whose own segment swallows an `MD.` reference | **14 / 730 = 1.92 %** |
 | sampled units misattributed because of it | **2 / 100** |
+
+The 730 denominator is a scratch count — the first accession token of every non-empty segment
+across the pilot-500 — not a column of any committed table. It is reproducible from
+`census_ncc_mss.py`'s own functions, but it is not an artifact.
 
 Corroborating evidence that `MD` is a real catalogue and not a volume marker: its numbers behave
 exactly like other catalogues (`MD. 6571-74`, `MD. 8771`, `MD. 4695`), it appears as
-`MD.: n { … }` in the workbook's own `Details` vocabulary, and no volume in NCC runs to 1,500.
+`MD.: n { … }` in the workbook's own `Details` vocabulary, it carries 11,672 witnesses **always
+at position 0** of the witness string (a volume marker cannot lead a witness field), and no
+volume in NCC runs to 1,500.
 
 **Not fixed in this pass on purpose.** Changing the lexicon now would change the sampled
 population after the first verdict row was read — the failure mode the locked design forbids.
@@ -212,6 +225,22 @@ This is a **semantic** mismatch, not a counting bug alone: the body parser count
 column counts that work's manuscripts in one aggregation. A GO on precision alone would still
 ship a canary whose two computable epics disagree by thousands.
 
+Two caveats on the numbers above. The VisualDCS values are the `mss` cell of **one** exact-row
+match per work, which is the canary contract inherited from H6995 — for Rāmāyaṇa, the eight rows
+whose IAST is exactly `Rāmāyaṇa` sum to **2,799**, so the 2,762 compares one row, not the work
+total. And the body units are witness units, not works.
+
+## What this precision number does *not* cover
+
+Two structural limits, stated so the figure is not over-read:
+
+1. **`MD` is the corpus's third-largest siglum (11,672 witnesses) and the sampled population
+   contains none of it** — 0 of the 100 drawn units carry siglum `MD`, because the lexicon drops
+   it. The 87.9 % therefore describes the parser *with its largest catalogue excluded*. The
+   defect is a coverage hole, not merely a ~2-point bias.
+2. **A unit is a witness, not a work.** The 100 units cover **80 distinct works** (`ncc_id`
+   repeats up to four times), so any downstream join on `ncc_id` fans out silently.
+
 ## Acceptance state
 
 | required | state |
@@ -220,9 +249,9 @@ ship a canary whose two computable epics disagree by thousands.
 | `NCC_MSS_ADJUDICATION_100_2026-10-19.md` — precision, Wilson 95 % CI, GO/HOLD | **done** (this file) |
 | precision arithmetic reproducible from the TSV | **done** (awk above) |
 | false-positive classes counted with examples | **done** (6 classes, 12 units) |
-| parser defect quantified with reproduction | **done** (`MD` / `ROMAN_RE`, 1.9 % blast radius) |
+| parser defect quantified with reproduction | **done** (`MD` / `ROMAN_RE`, 1.92 % blast radius) |
 | own-data canary after the filter | **done** (2,355 / 814 / INCONCLUSIVE) |
-| explicit GO/HOLD | **HOLD** — precision 87.9 % < 95 %, Wilson floor 80.0 % < 90 % |
+| explicit GO/HOLD | **HOLD** — precision 87.9 % < 95 %, Wilson floor 79.999 % < 90 % |
 
 ## Delivery (five fields)
 
@@ -230,8 +259,9 @@ ship a canary whose two computable epics disagree by thousands.
   this report. No parser, no sampler, no filter and no committed pilot/canary artifact is touched.
 - **Unchanged:** `census_ncc_mss.py`, `ncc.jsonl`, `ncc_mss_census_pilot_500*.tsv`,
   `ncc_mss_canary_20.tsv`, `ncc_mss_filter_delta_2026-10-18.json`,
-  `NCC_MSS_PRECISION_100_2026-10-18.md` and its locked GO rule. No workbook `mss` count is quoted
-  and `1,032,077` appears nowhere except as a path component.
+  `NCC_MSS_PRECISION_100_2026-10-18.md` and its locked GO rule. The workbook `mss` column is
+  quoted only in the canary comparison, never as a result, and `1,032,077` is never quoted as a
+  census.
 - **Checks:** `wc -l ncc_mss_adjudication_100.tsv` → 101; verdict counts 87 + 12 + 1 = 100; the
   awk precision line reproduces 0.8788; the seed-20261018 re-draw is byte-identical; the `MD`
   reproduction above prints `True`/`True`/`['Adyar']`.
