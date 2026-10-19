@@ -94,6 +94,92 @@ def test_sampler_marks_unreviewed_rows(tmp_path):
     assert all(r['source_span'] for r in rows)
 
 
+# --- H7084: the MD exemption, its provenance gate and producing spans ---------
+
+WB_PATH = os.environ.get(
+    'NCC_VDCS_WORKBOOK',
+    os.path.expanduser('~/Documents/GitHub/VisualDCS/non-derived/NCC/'
+                       'Works-Share-NCC/NCC-mss-counting-1 031 077.xlsx'))
+
+
+def test_md_is_not_dropped_as_a_roman_volume_marker():
+    lexicon = sorted(['Adyar', 'Adyar D.', 'II', 'MD', 'TD'], key=len, reverse=True)
+    cat_re = c.catalogue_regex(lexicon)
+    assert 'MD' in cat_re.pattern
+    assert 'II' not in cat_re.pattern
+    got, _ = c.extract_units('Adyar II. p. 211a . MD. 6571-74.', cat_re)
+    assert ('MD', '6571') in got and ('MD', '6574') in got
+    assert not any(cat == 'Adyar' for cat, _ in got)
+
+
+def test_allowlisted_roman_siglum_passes_the_edition_filter():
+    assert c.edition_reference_reason('MD', '6571', ' 6571-74.') is None
+    assert c.edition_reference_reason('XIV', '12', ' 12.') == 'roman_volume'
+
+
+def test_no_roman_allowlist_restores_the_drop():
+    """The pre-H7084 baseline must stay reproducible for the delta."""
+    lexicon = sorted(['Adyar', 'II', 'MD', 'TD'], key=len, reverse=True)
+    cat_re = c.catalogue_regex(lexicon, allowlist=())
+    assert 'MD' not in cat_re.pattern
+    got, _ = c.extract_units('Adyar II. p. 211a . MD. 6571.', cat_re)
+    assert ('Adyar', '6571') in got          # the H7080 defect, on demand
+
+
+def test_offline_regex_still_matches_an_allowlisted_siglum():
+    cat_re = c.catalogue_regex(sorted(['Adyar', 'II'], key=len, reverse=True))
+    assert cat_re.search('MD. 6571') is not None
+
+
+def test_allowlist_equals_the_committed_workbook_vocabulary():
+    """Fails when the allowlist and the workbook's catalogue keys disagree."""
+    import json
+    with open(c.VDCS_CATALOGUE_KEYS_ARTIFACT, encoding='utf-8') as f:
+        keys = json.load(f)['keys']
+    assert c.roman_keys_in_vocabulary(keys) == list(c.ROMAN_CATALOGUE_ALLOWLIST)
+
+
+def test_allowlist_matches_the_live_workbook_when_present():
+    if not os.path.exists(WB_PATH):
+        print('skip: workbook absent at %s' % WB_PATH)
+        return
+    live = set(c.read_vdcs_detail_keys(WB_PATH))
+    assert c.roman_keys_in_vocabulary(live) == list(c.ROMAN_CATALOGUE_ALLOWLIST)
+
+
+def test_producing_span_points_at_the_producing_mention():
+    filler = 'word ' * 120
+    body = '<p>TD. 11. %sLater on, see MD. 6571-74 and more.</p>' % filler
+    lexicon = sorted(['TD', 'MD'], key=len, reverse=True)
+    cat_re = c.catalogue_regex(lexicon)
+    trace = []
+    c.extract_units(body, cat_re, trace=trace)
+    text = c.PAREN_RE.sub(' ', c.clean_body(body))
+    span = c.producing_span(text, 'MD', '6572', trace)
+    assert 'MD. 6571-74' in span
+    assert 'TD. 11' not in span
+
+
+def test_enrich_adjudication_spans_appends_the_column(tmp_path):
+    body = '<p>TD. 11. Later on, see MD. 6571-74.</p>'
+    lexicon = sorted(['TD', 'MD'], key=len, reverse=True)
+    cat_re = c.catalogue_regex(lexicon)
+    src = os.path.join(str(tmp_path), 'in.tsv')
+    dst = os.path.join(str(tmp_path), 'out.tsv')
+    with open(src, 'w', encoding='utf-8', newline='\n') as f:
+        f.write('ncc_id\tcatalogue_siglum\taccession_number\tvolume\tverdict'
+                '\treason\tsource_span\n')
+        f.write('1_1_a_1\tMD\t6573\t1\t\t\t\n')
+    rows = [{'ncc_id': '1_1_a_1', 'body_html': body}]
+    st = c.enrich_adjudication_spans(src, dst, rows, cat_re)
+    assert st['without_producing_span'] == 0
+    with open(dst, encoding='utf-8') as f:
+        header = f.readline().rstrip('\n').split('\t')
+        data = f.readline().rstrip('\n').split('\t')
+    assert header[-1] == 'producing_span'
+    assert 'MD. 6571-74' in data[-1]
+
+
 if __name__ == '__main__':
     import tempfile
     for name, fn in sorted(globals().items()):
