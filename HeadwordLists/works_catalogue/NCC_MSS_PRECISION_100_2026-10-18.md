@@ -168,3 +168,20 @@ the workbook total is never quoted as a census.
   the Wilson interval remain the gate.
 - **Inspect:** `census_ncc_mss.py:edition_reference_reason` and
   `catalogue_regex` first, then the delta JSON and `test_census_ncc_mss.py`.
+
+## Change log (append-only)
+
+- **18-10-2026 — v1 locked.** The GO rule above was locked before any verdict row existed
+  (H7073).
+- **19-10-2026 — measurement.** H7085 showed the canary clause is satisfiable only
+  vacuously: the workbook `mss` is a partial, page-range-inflated index, and
+  union-of-all-rows closes 19.6 % of the Rāmāyaṇa gap and 0 % of the Mahābhārata gap.
+  Proposal [`NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md`](NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md)
+  filed.
+- **19-10-2026 — v2 RATIFIED by MG.** The canary clause is replaced by the v2 text: the
+  canary re-run must name both epic counts, the three positive controls
+  (Vājasaneyisaṃhitā, Chāndogyopaniṣad, Mārkaṇḍeyapurāṇa) with workbook cell, body count
+  and delta, and Skandapurāṇa as absent; the three controls must agree within ±5 %; the
+  epics are reported exceptions, not required to agree. Precision conditions unchanged
+  (point ≥ 95 %, Wilson lower ≥ 90 %, `AMBIGUOUS ≤ 10`). The v1 text above stays
+  verbatim as the historical lock.

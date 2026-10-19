@@ -1,11 +1,11 @@
 # Proposal v2-2026-10-19 — amend the NCC MSS canary clause
 
-_Proposed: 19-10-2026 · H7085 (DeepSeek v4.1 Flash, `deepseek-flash`) · **status: PROPOSED, not in force** · human ratification required_
+_Proposed: 19-10-2026 · H7085 (DeepSeek v4.1 Flash, `deepseek-flash`) · **RATIFIED 19-10-2026 by MG** · in force from 19-10-2026_
 
 This is a versioned proposal to amend **one clause** of the locked GO rule in
 [`NCC_MSS_PRECISION_100_2026-10-18.md`](NCC_MSS_PRECISION_100_2026-10-18.md). That rule
 was locked before results and is immutable after them; **this file does not edit it**,
-and v1 remains the rule in force until a human ratifies v2 here.
+and v1's text remains the historical lock; v2 was ratified on 19-10-2026 (see Ratification below).
 
 ## The clause in v1 (verbatim, unchanged)
 
@@ -78,4 +78,10 @@ Reproduce with the commands in the report's §8.
 3. H7084's fresh-seed re-measure and this decision are independent; a GO still requires
    the precision conditions.
 
-_Ratification: pending._
+## Ratification
+
+**Ratified 19-10-2026 by Dr. Mārcis Gasūns (MG).** In force from the ratification
+date. v2 replaces the v1 canary clause; the precision conditions are unchanged. The
+ratification is recorded in the GO rule's append-only change log
+([`NCC_MSS_PRECISION_100_2026-10-18.md`](NCC_MSS_PRECISION_100_2026-10-18.md)), not by
+editing the locked v1 text.
