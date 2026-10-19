@@ -13,9 +13,11 @@ stopping conditions fired:
    bundled 2022 NCC desktop database
    ([`ncc.rar`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/NCC/files/ncc/ncc.rar))
    but were dropped from the export. They do not: the archive holds **zero** `स्क`/`Sk`
-   titles across all seven of its title tables, and the export is a complete,
-   order-faithful serialization of it — 152,526 records, identical `vol_page_col_seq`
-   **sets and order**, 0 rows either way — so the gap is the database's, not the
+   titles across all seven of its title tables, and the export carries exactly the same
+   records, titles and order as it — 152,526 records, identical `vol_page_col_seq`
+   **sets and order**, 0 rows either way, **0** titles differing (bodies differ in 26
+   records, where the archive *truncates* and the export is the fuller source) — so the
+   gap is the database's, not the
    export's. Records run in catalogue order to vol 39 p. 378 (`सुहोदित · Suhodita`),
    the database's frontier. The canary therefore stays **INCONCLUSIVE**, now with a
    measured reason instead of an open question. Proof:
@@ -119,8 +121,9 @@ Artifact: [`ncc_mss_canary_20.tsv`](ncc_mss_canary_20.tsv).
   mechanism, and it is why the workbook total (1,032,077) must never be published.
 - **Skandapurāṇa 17 → INCONCLUSIVE.** No body entry exists in `ncc.jsonl`; the letter
   block is missing from this bodies export. H7078 (gate 1, 19-10-2026) then showed the
-  block is missing from the bundled **2022 database itself** and that the export is a
-  complete serialization of it — so this is not an export defect awaiting re-extraction.
+  block is missing from the bundled **2022 database itself** and that the export carries
+  the same records, titles and order (bodies differ in 26) — so this is not an export
+  defect awaiting re-extraction.
   The 17 is unverifiable here, not confirmed, and stays unverifiable until an NCC
   fascicle past vol 39 p. 378 (or a newer database export) arrives.
 
