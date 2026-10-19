@@ -79,7 +79,7 @@ never a census denominator. Change the unit definition ⇒ re-run
 [`works_catalogue/ncc_mss_unit_semantics.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/ncc_mss_unit_semantics.py)
 and update
 [`NCC_MSS_UNIT_SEMANTICS_2026-10-19.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_2026-10-19.md)
-(with its [v2 proposal](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md))
+(with its [v2 proposal](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md), ratified 19-10-2026)
 in the same PR.
 
 ## Dual changelog — shared 1.144.x namespace (H3258)

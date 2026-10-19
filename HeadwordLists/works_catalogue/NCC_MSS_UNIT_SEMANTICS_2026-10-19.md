@@ -26,7 +26,7 @@ the *first* workbook row — but it closes only **381 of the 1,943-unit Rāmāya
 `(catalogue, printed reference)` pair per body, catalogue ranges expanded. It is the only
 definition computable from the corpus we hold, and the workbook is comparison only — its
 `mss` column is never an answer and its total is never a census. The locked GO rule is
-**not edited**; a versioned amendment for human ratification is
+**not edited**; a versioned amendment ratified by MG on 19-10-2026 is
 [`NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md`](NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md).
 
 No precision claim is made here; the precision gate stands where H7080 left it (HOLD).
@@ -157,15 +157,16 @@ The locked GO rule
   Mahābhārata gap.
 - **Consequence**: the clause as written is **vacuous** as a validation. It must not be
   treated as evidence that the parser tracks the workbook. This report does not edit it;
-  the amendment is put to a human as a versioned proposal (§6).
+  the amendment was ratified by MG on 19-10-2026 (§6).
 
-## 6. Versioned proposal (for human ratification — NOT in force)
+## 6. Versioned proposal (RATIFIED 19-10-2026 — in force)
 
 [`NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md`](NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md)
 — `v2-2026-10-19`. In one line: **demote the canary from a gate to a reported
 diagnostic**: the re-run must name both epic numbers, the three positive controls with
 their deltas, and Skandapurāṇa as absent; the GO gate stays precision-based. The locked
-v1 rule remains in force until a human ratifies v2.
+v1 text stays verbatim in the GO rule as the historical lock; v2 was ratified by MG on
+19-10-2026.
 
 ## 7. Constraints honoured
 
@@ -193,7 +194,7 @@ Outputs: the TSV above (20 canary rows + 102 control rows), the JSON summary, an
 ## Delivery (five fields)
 
 - **Changed:** new `ncc_mss_unit_semantics.py`, its selftest, its TSV + JSON outputs,
-  this report and the v2 proposal.
+  this report and the v2 proposal (ratified 19-10-2026).
 - **Unchanged:** `ncc.jsonl`, the workbook, `census_ncc_mss.py`, the committed pilot and
   canary TSVs, the H6995 report, the locked GO rule, every existing count.
 - **Checks:** `--selftest` OK; full run 23 s; 20 canary works + 102 control works; 3/102

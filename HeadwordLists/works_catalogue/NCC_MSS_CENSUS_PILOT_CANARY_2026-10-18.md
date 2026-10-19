@@ -133,7 +133,7 @@ Artifact: [`ncc_mss_canary_20.tsv`](ncc_mss_canary_20.tsv).
 > (Rāmāyaṇa `Bṛhatsūcī, Nepal: 427` from `p. 132-150`). Union-of-all-rows closes 19.6 %
 > of the Rāmāyaṇa gap and 0 % of the Mahābhārata gap. See
 > [NCC_MSS_UNIT_SEMANTICS_2026-10-19.md](NCC_MSS_UNIT_SEMANTICS_2026-10-19.md) and the
-> v2 proposal.
+> v2 proposal (ratified 19-10-2026).
 
 ## Why no full run
 
