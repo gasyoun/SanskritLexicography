@@ -280,15 +280,37 @@ def main():
     record("CHK-4-source-pins", pins_ok, "{} pin(s)".format(len(env["source_pins"])))
     extras.extend(pin_msgs)
 
-    # CHK-5 code revision: tag resolves to the recorded commit
-    cr = env["code_revision"]
-    tag_commit = git(REPO, "rev-parse", "{}^{{commit}}".format(cr.get("tag", "")))
-    record("CHK-5-code-revision", tag_commit == cr.get("commit"),
-           "{} -> {}{}".format(cr.get("tag"), str(cr.get("commit"))[:12],
-                               "" if tag_commit == cr.get("commit") else " (tag resolves to {})".format(str(tag_commit)[:12])))
+    # CHK-5 code revision: tag resolves to the recorded commit.
+    ok5, detail5 = code_revision_verdict(env["code_revision"])
+    record("CHK-5-code-revision", ok5, detail5)
 
     print(report(results, extra=extras))
     return 0 if all(r != "FAIL" for _, r, _ in results) else 1
+
+
+def code_revision_verdict(cr, repo=None):
+    """(ok, detail) for CHK-5: does `tag` resolve to the recorded `commit`?
+
+    BUGHUNT §4: the check used to record `tag_commit == cr.get("commit")`, which
+    is `None == None` — TRUE — whenever the tag does not resolve AND the envelope
+    records no commit, so a dead tag printed `[pass] CHK-5 … -> None` and the
+    envelope passed. Both sides must be present before the comparison is
+    meaningful; a tag that does not resolve in this clone is named as such.
+    """
+    repo = REPO if repo is None else repo
+    want = cr.get("commit")
+    tag = cr.get("tag")
+    tag_commit = git(repo, "rev-parse", "{}^{{commit}}".format(tag)) if tag else None
+    if not tag or tag_commit is None:
+        why = (" (tag does not resolve in this clone — fetch tags and re-run)"
+               if tag else " (no tag recorded)")
+        ok = False
+    elif not want:
+        ok, why = False, " (no commit recorded — a tag alone cannot be verified)"
+    else:
+        ok = tag_commit == want
+        why = "" if ok else " (tag resolves to {})".format(str(tag_commit)[:12])
+    return ok, "{} -> {}{}".format(tag, str(want)[:12], why)
 
 
 def report(results, fatal=None, extra=None):

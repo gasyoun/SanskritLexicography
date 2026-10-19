@@ -553,17 +553,28 @@ def changed_paths(remote_ref: str, local_ref: str) -> list[str]:
 
 
 def removed_line_numbers(remote_ref: str, local_ref: str, path: str) -> list[int]:
-    """Line numbers AT THE REMOTE TIP that this push removes or rewrites."""
+    """Line numbers AT THE REMOTE TIP that this push removes or rewrites.
+
+    Only the header run BEFORE the first ``@@`` may be skipped. A removed
+    CONTENT line that itself begins with ``--`` renders as ``----`` (a markdown
+    ``---`` rule, a YAML fence, a ``--flag`` line), so the old
+    ``line.startswith("---")`` test swallowed it *without advancing old_line*
+    and every later removed line in that file's diff was misnumbered by one —
+    the guard then blamed the wrong line and missed a fresh revert entirely
+    (BUGHUNT §3; 249 tracked .md files contain a ``---`` line).
+    """
     out = git("diff", "-w", "-U0", remote_ref, local_ref, "--", path)
     numbers: list[int] = []
     old_line = 0
+    in_hunk = False
     for line in out.splitlines():
         m = HUNK_RE.match(line)
         if m:
             old_line = int(m.group(1))
+            in_hunk = True
             continue
-        if line.startswith("---") or line.startswith("+++"):
-            continue
+        if not in_hunk:
+            continue            # diff --git / index / --- a/ / +++ b/ headers
         if line.startswith("-"):
             numbers.append(old_line)
             old_line += 1
@@ -571,19 +582,26 @@ def removed_line_numbers(remote_ref: str, local_ref: str, path: str) -> list[int
 
 
 def added_line_numbers(remote_ref: str, local_ref: str, path: str) -> list[int]:
-    """Line numbers IN THE PUSHED FILE that this push adds or rewrites."""
+    """Line numbers IN THE PUSHED FILE that this push adds or rewrites.
+
+    Same header/content distinction as :func:`removed_line_numbers`: an ADDED
+    content line beginning with ``++`` renders as ``+++…`` and was skipped
+    without advancing ``new_line`` (BUGHUNT §3).
+    """
     out = git("diff", "-w", "-U0", remote_ref, local_ref, "--", path)
     numbers: list[int] = []
     new_line = 0
+    in_hunk = False
     for line in out.splitlines():
         # The plus side of the hunk header carries the NEW start; HUNK_RE above
         # captures only the minus side, so this needs its own pattern.
         hm = re.match(r"^@@ -\d+(?:,\d+)? \+(\d+)", line)
         if hm:
             new_line = int(hm.group(1))
+            in_hunk = True
             continue
-        if line.startswith("---") or line.startswith("+++"):
-            continue
+        if not in_hunk:
+            continue            # diff --git / index / --- a/ / +++ b/ headers
         if line.startswith("+"):
             numbers.append(new_line)
             new_line += 1
@@ -1535,11 +1553,22 @@ def pre_image_lines(sha: str, path: str) -> set[str] | None:
 
 
 def added_line_texts(remote_ref: str, local_ref: str, path: str) -> list[str]:
-    """Stripped non-empty ADDED (+) lines of this push for `path`."""
+    """Stripped non-empty ADDED (+) lines of this push for `path`.
+
+    Header-aware like :func:`added_line_numbers`: an added content line that
+    begins with ``++`` renders ``+++…`` and must not be mistaken for the
+    ``+++ b/<path>`` header (BUGHUNT §3).
+    """
     out = git("diff", "-w", "-U0", remote_ref, local_ref, "--", path)
     texts: list[str] = []
+    in_hunk = False
     for line in out.splitlines():
-        if line.startswith("+") and not line.startswith("+++"):
+        if re.match(r"^@@ -\d+(?:,\d+)? \+(\d+)", line):
+            in_hunk = True
+            continue
+        if not in_hunk:
+            continue
+        if line.startswith("+"):
             t = line[1:].strip()
             if t:
                 texts.append(t)
@@ -1818,10 +1847,14 @@ def report(found: dict[str, list], modified: dict[str, list],
                                                      m["similarity"], m["sha"]), file=e)
         if sum(len(v) for v in warned.values()):
             report_lane_warnings(warned, e)
-        if n_mod or warned:
-            if truncated:
-                print("NOTE: only the first %d changed paths were scanned (--max-paths)."
-                      % max_paths, file=e)
+        # BUGHUNT §6: the truncation NOTE used to sit INSIDE `if n_mod or warned`,
+        # so a push touching more than --max-paths files whose scanned prefix was
+        # clean printed ZERO bytes and exited 0 — silent sampling is the one
+        # outcome the docstring promises never happens. Print it unconditionally.
+        if truncated:
+            print("NOTE: only the first %d changed paths were scanned (--max-paths)."
+                  % max_paths, file=e)
+        if n_mod or warned or truncated:
             print("", file=e)
         return
     # The banner must match what main() actually returns — the H2656 lesson, kept

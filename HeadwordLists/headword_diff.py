@@ -249,7 +249,18 @@ def write_now():
                 if old != pin and re.match(rf"^{code}-unique-key{kt}-\d+\.txt$", old):
                     os.remove(os.path.join(NOW2026, old))
         out = os.path.join(NOW2026, out_name)
-        enc = "utf-8-sig" if _has_bom(then_path) else "utf-8"
+        # BOM PRESERVATION — preserve the BOM state OF THE FILE BEING WRITTEN.
+        # BUGHUNT §1 (19-10-2026): this used to read the THEN-2014 sibling's BOM
+        # (`_has_bom(then_path)`), i.e. the encoding of the file being overwritten
+        # was decided by a different file. The one pair where that bites is
+        # MW-unique-key1: then-2014 carries EF BB BF, now-2026 does not, and
+        # tests/test_headword_snapshots.py pins "no BOM" for every now-2026 list —
+        # so the first real regeneration injected a BOM, turned the first headword
+        # into "\ufeffa" for every plain-utf-8 reader (dropping `a` from the set)
+        # and reddened that pin. The standing rule (FINDINGS §37, CLAUDE.md
+        # "Encoding") is "preserve the file's existing BOM state on write" — the
+        # file's OWN state, never the ancestor's. A brand-new output is BOM-free.
+        enc = "utf-8-sig" if os.path.exists(out) and _has_bom(out) else "utf-8"
         with open(out, "w", encoding=enc, newline="\n") as fh:
             fh.write("\n".join(keys) + "\n")
         written.append(out_name + (" [BOM]" if enc == "utf-8-sig" else ""))

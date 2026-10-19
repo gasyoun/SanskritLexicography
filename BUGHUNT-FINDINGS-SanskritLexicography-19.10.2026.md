@@ -276,4 +276,30 @@ Landing this report hit `STALE_BASE_GUARD_REFUSAL` on the branch that carried it
 
 Worth noting, because this report contains two findings against that same guard (§3, §6): the guard's own refusal message was accurate about *what* changed and wrong about *whose* work it was, which is the same "reads the right rule about the wrong artifact" pattern as §1–§8. Its banner already offers the correct remedy (*rebuild on a fresh worktree and re-apply*), so no change is proposed here — only the datum, for whoever tunes the 3-day window.
 
+
+## Fix ledger — 19-10-2026 (same day, after the report merged)
+
+MG: *«fix»*. Ten of the fourteen findings are closed in this pass; every closure carries the command that proves the refusal fires, and the four open ones are open for a stated reason, not for lack of time.
+
+| § | sev | status | change | proof observed |
+|---|---|---|---|---|
+| §1 | HIGH | **fixed** | [`headword_diff.py:252`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/headword_diff.py#L252) consults the file being written; selftest re-pinned (output's own BOM preserved, a brand-new output never inherits the 2014 sibling's); `test_bom_never_inherited_from_then_2014` added | reran the original trap with the committed 2014 file: before `efbbbf` + `\ufeffa`, after `610a61` + `a` |
+| §2 | HIGH | **fixed** | [`utf8_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tools/utf8_gate.py): `--staged` decodes `git cat-file blob :<path>`; selftest gained both staged directions | invalid index + valid worktree → `rc=1` naming the file; valid index + invalid worktree → `rc=0` |
+| §3 | HIGH | **fixed** | three parsers in [`pre_push_stale_base_check.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/scripts/pre_push_stale_base_check.py) now skip only the pre-hunk header run | `removed_line_numbers()` → `[2, 3]` (was `[2]`); `added_line_texts()` keeps a `+++`-initial line |
+| §4 | HIGH | **fixed** | CHK-5 extracted to `code_revision_verdict()`: dead tag or missing commit now FAIL, with the reason named | `[FAIL] CHK-5 — v-does-not-exist -> None (tag does not resolve…)`; control `[pass] 1.144.6 -> 3f0be6a3ecd3` |
+| §5 | MED | **fixed** | structural UTF-16 probe (decode the head; ≥95 % printable) + a 2 % control-density rule | all four non-Latin UTF-16 controls refuse, including the no-NUL Devanagari case; **0 classification changes across 5,402 tracked files** |
+| §6 | MED | **fixed** | truncation NOTE printed whenever `truncated`, outside the found/warned branch | code-verified; the silent `--max-paths` path now always speaks |
+| §7 | MED | **fixed** | `--repo` normalised to absolute on both sides; a found changelog can never take the empty branch | `--repo ./dup` → `rc=1`, same as the absolute path (was `rc=0` "nothing to check") |
+| §8 | MED | **fixed** | attributes resolved with `check-attr --source=<ref>`; a zero-text-denominator census now refuses (`rc=2`) instead of printing OK | CR blob + ref-only `.gitattributes`: `rc=0` → `rc=1`; at `origin/master` the denominator moved 5,343 → 5,345 |
+| §9 | HIGH | **partial** | the mode is now named: `lexicon_mode`/`catalogue_sigla`/input sha in a `<output>.meta.json` sidecar, a loud stderr WARNING without the workbook, and the false "behaves identically" docstring corrected | canary run writes `"lexicon_mode": "witness-prefix-only"` + `catalogue_sigla: 925` |
+| §10 | HIGH | **fixed** | `filter_editions` threaded through `run_canary`/`main` | canary now differs: Mahābhārata 1,839 vs 1,888, Rāmāyaṇa 688 vs 737 (was byte-identical) |
+| §11 | MED | **open** | — | changing the join key moves a published count (978 works / 96,835 → 97,150 occurrences); that needs a regeneration + a human read, not a silent PR |
+| §12 | MED | **open** | — | binding every report number to its TSV is only meaningful *after* §11 settles the numbers; the checker's tautology is harmless until then and is documented here |
+| §13 | MED | **fixed** | under a supplied workbook an unreadable/absent `mss` cell now refuses instead of substituting the hardcoded constant; the constants survive only for the documented workbook-absent run | `ValueError: … has no readable mss value for 'Rāmāyaṇa' — refusing to substitute` |
+| §14 | MED-LOW | **fixed** | the floor exempts classes we take whole; overflow is water-filled across all under-cap donors | `{'synonym':5,…}, 300` → 5/98/99/98 (was `ValueError`); `{'a':3,'b':4,'c':500}, 200` → 3/4/193 |
+
+Repo gates after the pass: **232-test offline suite green** (was 222 — the 10 new pins are one per fixed gate, each holding both the refusal and its legitimate mirror), `utf8_gate --selftest` 16/16, H6518 selftest green, prose-number drift clean, epistemic `--structural-only` OK, `eol_census --ref origin/master` still `0 CR bytes`.
+
+**What the fixes did NOT touch:** no data byte, no published table, no store row. §1 writes nothing today (it only makes the *next* regeneration safe); §10–§13 change what a *future* run produces, and the committed artifacts are unchanged until someone regenerates them deliberately.
+
 — end of report —
