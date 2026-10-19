@@ -631,13 +631,32 @@ def suggestion_block(rows):
             'unsupported senses) ---\n' + '\n'.join(lines))
 
 
+def nkrya_block(inp):
+    """Advisory NKRYa corpus evidence for this card, or '' when the card carries none.
+
+    H5263. The renderer lives in ``src/nkrya_prompt_evidence.py`` next to the query path it
+    shares with the H5261 evidence card; it is imported LAZILY so a manifest without an
+    ``nkrya`` input never pays for the import and never depends on the NKRYa module at all.
+    Absent key => empty string => byte-identical prompt (proven by that module's selftest
+    and by ``nkrya_prompt_evidence.py diff``).
+    """
+    evidence = inp.get('nkrya')
+    if not evidence:
+        return ''
+    src = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    if src not in sys.path:
+        sys.path.insert(0, src)
+    import nkrya_prompt_evidence as npe
+    return npe.render_block(evidence)
+
+
 def card_block(manifest, key):
     inp = manifest['inputs'][key]
     grammar = manifest['prompt'].get('grammars', {}).get(key, '')
     return (grammar + '\n\n=== CARD ' + key + ' ===\n'
             '--- masked German (translatable only; {Tn}=masked span) ---\n' +
             inp['skeleton'] + suggestion_block(manifest.get('suggestions', {}).get(key, [])) +
-            '\n--- portrait (evidence) ---\n' + inp['portrait'])
+            '\n--- portrait (evidence) ---\n' + inp['portrait'] + nkrya_block(inp))
 
 
 def build_prompt(manifest, keys):

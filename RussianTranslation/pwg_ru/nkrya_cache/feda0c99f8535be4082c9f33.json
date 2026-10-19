@@ -1,0 +1,1282 @@
+{
+ "fetched_utc": "2026-09-24T15:12:57Z",
+ "request": {
+  "endpoint": "/word-portrait/",
+  "method": "GET",
+  "payload": {
+   "corpus": {
+    "type": "MAIN"
+   },
+   "lemma": "союз",
+   "pos": "S",
+   "resultType": [
+    "PORTRAIT_SKETCH"
+   ],
+   "seed": 5261
+  }
+ },
+ "response": {
+  "possiblePos": [
+   "S"
+  ],
+  "sketchData": {
+   "collocates": [
+    {
+     "collocations": [
+      {
+       "collocate": {
+        "valString": {
+         "v": "советский"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 11.6951
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "профессиональный"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.53655
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "всероссийский"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.53598
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "тройственный"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.42143
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "европейский"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.40644
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "брачный"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.39966
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "священный"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.86741
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "земский"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.63275
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "творческий"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.53593
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "международный"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.52422
+        }
+       ]
+      }
+     ],
+     "queryFormValue": {
+      "sectionValues": [
+       {
+        "conditionValues": [
+         {
+          "fieldName": "disambmod",
+          "text": {
+           "v": "main"
+          }
+         },
+         {
+          "fieldName": "distmod",
+          "text": {
+           "v": "no_zeros"
+          }
+         }
+        ],
+        "subsectionValues": [
+         {
+          "conditionValues": [
+           {
+            "fieldName": "lex",
+            "text": {
+             "v": "союз"
+            }
+           },
+           {
+            "fieldName": "gramm",
+            "text": {
+             "v": "S"
+            }
+           }
+          ]
+         },
+         {
+          "conditionValues": [
+           {
+            "fieldName": "gramm",
+            "text": {
+             "v": "A"
+            }
+           },
+           {
+            "fieldName": "syntax_link",
+            "text": {
+             "v": "amod"
+            }
+           },
+           {
+            "fieldName": "syntax_to_word",
+            "int": {
+             "v": "1"
+            }
+           },
+           {
+            "fieldName": "syntax_direction",
+            "text": {
+             "v": "child"
+            }
+           },
+           {
+            "fieldName": "dist",
+            "intRange": {
+             "begin": -10,
+             "end": 10
+            }
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     "sketchSynRelation": "amod_S_A"
+    },
+    {
+     "collocations": [
+      {
+       "collocate": {
+        "valString": {
+         "v": "распасться"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.22878
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "образоваться"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.54405
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "организовывать"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 5.86711
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "развалиться"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 5.81566
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "постановить"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 5.78144
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "объединять"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 5.67149
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "организоваться"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 5.44772
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "возникнуть"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 5.44266
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "организовать"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 5.43351
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "существовать"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 5.41026
+        }
+       ]
+      }
+     ],
+     "queryFormValue": {
+      "sectionValues": [
+       {
+        "conditionValues": [
+         {
+          "fieldName": "disambmod",
+          "text": {
+           "v": "main"
+          }
+         },
+         {
+          "fieldName": "distmod",
+          "text": {
+           "v": "no_zeros"
+          }
+         }
+        ],
+        "subsectionValues": [
+         {
+          "conditionValues": [
+           {
+            "fieldName": "lex",
+            "text": {
+             "v": "союз"
+            }
+           },
+           {
+            "fieldName": "gramm",
+            "text": {
+             "v": "S"
+            }
+           }
+          ]
+         },
+         {
+          "conditionValues": [
+           {
+            "fieldName": "gramm",
+            "text": {
+             "v": "V"
+            }
+           },
+           {
+            "fieldName": "syntax_link",
+            "text": {
+             "v": "nsubj"
+            }
+           },
+           {
+            "fieldName": "syntax_to_word",
+            "int": {
+             "v": "1"
+            }
+           },
+           {
+            "fieldName": "syntax_direction",
+            "text": {
+             "v": "parent"
+            }
+           },
+           {
+            "fieldName": "dist",
+            "intRange": {
+             "begin": -10,
+             "end": 10
+            }
+           },
+           {
+            "fieldName": "syntax",
+            "text": {
+             "v": "root"
+            }
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     "sketchSynRelation": "nsubj_S_V"
+    },
+    {
+     "collocations": [
+      {
+       "collocate": {
+        "valString": {
+         "v": "заключить"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 10.7314
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "заключать"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.62208
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "скрепить"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.24436
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "образовать"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.94979
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "расторгнуть"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.51007
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "возглавлять"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.48493
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "развалить"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.26806
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "благословить"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.21956
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "укрепить"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.16825
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "разорвать"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.09943
+        }
+       ]
+      }
+     ],
+     "queryFormValue": {
+      "sectionValues": [
+       {
+        "conditionValues": [
+         {
+          "fieldName": "disambmod",
+          "text": {
+           "v": "main"
+          }
+         },
+         {
+          "fieldName": "distmod",
+          "text": {
+           "v": "no_zeros"
+          }
+         }
+        ],
+        "subsectionValues": [
+         {
+          "conditionValues": [
+           {
+            "fieldName": "lex",
+            "text": {
+             "v": "союз"
+            }
+           },
+           {
+            "fieldName": "gramm",
+            "text": {
+             "v": "S"
+            }
+           }
+          ]
+         },
+         {
+          "conditionValues": [
+           {
+            "fieldName": "gramm",
+            "text": {
+             "v": "V"
+            }
+           },
+           {
+            "fieldName": "syntax_link",
+            "text": {
+             "v": "obj"
+            }
+           },
+           {
+            "fieldName": "syntax_to_word",
+            "int": {
+             "v": "1"
+            }
+           },
+           {
+            "fieldName": "syntax_direction",
+            "text": {
+             "v": "parent"
+            }
+           },
+           {
+            "fieldName": "dist",
+            "intRange": {
+             "begin": -10,
+             "end": 10
+            }
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     "sketchSynRelation": "obj_S_V"
+    },
+    {
+     "collocations": [
+      {
+       "collocate": {
+        "valString": {
+         "v": "соединить"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.30491
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "соединиться"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.26239
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "соединяться"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.55329
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "соединять"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.18714
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "служить"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.90132
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "заручиться"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.73146
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "укрепить"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.56815
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "начинаться"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.55217
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "сочетаться"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.37155
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "симпатизировать"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.29333
+        }
+       ]
+      }
+     ],
+     "queryFormValue": {
+      "sectionValues": [
+       {
+        "conditionValues": [
+         {
+          "fieldName": "disambmod",
+          "text": {
+           "v": "main"
+          }
+         },
+         {
+          "fieldName": "distmod",
+          "text": {
+           "v": "no_zeros"
+          }
+         }
+        ],
+        "subsectionValues": [
+         {
+          "conditionValues": [
+           {
+            "fieldName": "lex",
+            "text": {
+             "v": "союз"
+            }
+           },
+           {
+            "fieldName": "gramm",
+            "text": {
+             "v": "S"
+            }
+           }
+          ]
+         },
+         {
+          "conditionValues": [
+           {
+            "fieldName": "gramm",
+            "text": {
+             "v": "V"
+            }
+           },
+           {
+            "fieldName": "syntax_link",
+            "text": {
+             "v": "iobj"
+            }
+           },
+           {
+            "fieldName": "syntax_to_word",
+            "int": {
+             "v": "1"
+            }
+           },
+           {
+            "fieldName": "syntax_direction",
+            "text": {
+             "v": "parent"
+            }
+           },
+           {
+            "fieldName": "dist",
+            "intRange": {
+             "begin": -10,
+             "end": 10
+            }
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     "sketchSynRelation": "iobj_S_V"
+    },
+    {
+     "collocations": [
+      {
+       "collocate": {
+        "valString": {
+         "v": "вступить"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.22207
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "исключить"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.12442
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "вступать"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.67124
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "объединиться"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.12885
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "объединить"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.91048
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "примкнуть"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.48299
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "исключать"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.3153
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "напасть"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.28778
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "принять"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.16926
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "присоединиться"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 6.1543
+        }
+       ]
+      }
+     ],
+     "queryFormValue": {
+      "sectionValues": [
+       {
+        "conditionValues": [
+         {
+          "fieldName": "disambmod",
+          "text": {
+           "v": "main"
+          }
+         },
+         {
+          "fieldName": "distmod",
+          "text": {
+           "v": "no_zeros"
+          }
+         }
+        ],
+        "subsectionValues": [
+         {
+          "conditionValues": [
+           {
+            "fieldName": "lex",
+            "text": {
+             "v": "союз"
+            }
+           },
+           {
+            "fieldName": "gramm",
+            "text": {
+             "v": "S"
+            }
+           }
+          ]
+         },
+         {
+          "conditionValues": [
+           {
+            "fieldName": "gramm",
+            "text": {
+             "v": "V"
+            }
+           },
+           {
+            "fieldName": "syntax_link",
+            "text": {
+             "v": "obl"
+            }
+           },
+           {
+            "fieldName": "syntax_to_word",
+            "int": {
+             "v": "1"
+            }
+           },
+           {
+            "fieldName": "syntax_direction",
+            "text": {
+             "v": "parent"
+            }
+           },
+           {
+            "fieldName": "dist",
+            "intRange": {
+             "begin": -10,
+             "end": 10
+            }
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     "sketchSynRelation": "obl_S_V"
+    },
+    {
+     "collocations": [
+      {
+       "collocate": {
+        "valString": {
+         "v": "союз"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 10.1355
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "республика"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 9.49127
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "ассоциация"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.29026
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "штат"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 8.243
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "страна"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.98811
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "общество"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.84374
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "объединение"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.77933
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "комитет"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.77253
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "салют"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.76565
+        }
+       ]
+      },
+      {
+       "collocate": {
+        "valString": {
+         "v": "федерация"
+        }
+       },
+       "metrics": [
+        {
+         "name": "dice",
+         "value": 7.70872
+        }
+       ]
+      }
+     ],
+     "queryFormValue": {
+      "sectionValues": [
+       {
+        "conditionValues": [
+         {
+          "fieldName": "disambmod",
+          "text": {
+           "v": "main"
+          }
+         },
+         {
+          "fieldName": "distmod",
+          "text": {
+           "v": "no_zeros"
+          }
+         }
+        ],
+        "subsectionValues": [
+         {
+          "conditionValues": [
+           {
+            "fieldName": "lex",
+            "text": {
+             "v": "союз"
+            }
+           },
+           {
+            "fieldName": "gramm",
+            "text": {
+             "v": "S"
+            }
+           }
+          ]
+         },
+         {
+          "conditionValues": [
+           {
+            "fieldName": "gramm",
+            "text": {
+             "v": "S"
+            }
+           },
+           {
+            "fieldName": "syntax_link",
+            "text": {
+             "v": "conj"
+            }
+           },
+           {
+            "fieldName": "syntax_to_word",
+            "int": {
+             "v": "1"
+            }
+           },
+           {
+            "fieldName": "syntax_direction",
+            "text": {
+             "v": "child"
+            }
+           },
+           {
+            "fieldName": "dist",
+            "intRange": {
+             "begin": -10,
+             "end": 10
+            }
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     "sketchSynRelation": "conj_S_S"
+    }
+   ],
+   "lex": "союз"
+  }
+ }
+}

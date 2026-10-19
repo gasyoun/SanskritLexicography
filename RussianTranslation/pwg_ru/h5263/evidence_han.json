@@ -1,0 +1,191 @@
+{
+ "heads": [
+  {
+   "lemma": "туча",
+   "pos": "S",
+   "freq": {
+    "ipm": 42.3969,
+    "category": 3
+   },
+   "relations": {
+    "amod_S_A": 10,
+    "nsubj_S_V": 10,
+    "obj_S_V": 10,
+    "iobj_S_V": 10,
+    "obl_S_V": 10,
+    "conj_S_S": 10
+   }
+  },
+  {
+   "lemma": "облако",
+   "pos": "S",
+   "freq": {
+    "ipm": 65.7506,
+    "category": 3
+   },
+   "relations": {
+    "amod_S_A": 10,
+    "nsubj_S_V": 10,
+    "obj_S_V": 10,
+    "iobj_S_V": 10,
+    "obl_S_V": 10,
+    "conj_S_S": 10
+   }
+  }
+ ],
+ "candidates": [
+  {
+   "surface": "связный",
+   "lemma": "связный",
+   "pos": "A",
+   "freq": {
+    "ipm": 2.70539,
+    "category": 2
+   },
+   "per_head": [
+    {
+     "head": "туча",
+     "sketch": [],
+     "pair_main": null,
+     "pair_19c": null
+    },
+    {
+     "head": "облако",
+     "sketch": [],
+     "pair_main": null,
+     "pair_19c": null
+    }
+   ]
+  },
+  {
+   "surface": "сплочённый",
+   "lemma": "сплочённый",
+   "pos": "A",
+   "freq": {
+    "ipm": 0.93621,
+    "category": 1
+   },
+   "per_head": [
+    {
+     "head": "туча",
+     "sketch": [],
+     "pair_main": null,
+     "pair_19c": null
+    },
+    {
+     "head": "облако",
+     "sketch": [],
+     "pair_main": 1,
+     "pair_19c": null
+    }
+   ]
+  },
+  {
+   "surface": "сплошной",
+   "lemma": "сплошной",
+   "pos": "A",
+   "freq": {
+    "ipm": 35.2052,
+    "category": 3
+   },
+   "per_head": [
+    {
+     "head": "туча",
+     "sketch": [],
+     "pair_main": 95,
+     "pair_19c": 16
+    },
+    {
+     "head": "облако",
+     "sketch": [],
+     "pair_main": 98,
+     "pair_19c": 15
+    }
+   ]
+  },
+  {
+   "surface": "сгущающийся",
+   "lemma": "сгущаться",
+   "pos": "V",
+   "freq": {
+    "ipm": 4.89692,
+    "category": 2
+   },
+   "per_head": [
+    {
+     "head": "туча",
+     "sketch": [
+      {
+       "relation": "nsubj_S_V",
+       "rank": 1,
+       "dice": 8.93597
+      }
+     ],
+     "pair_main": 226,
+     "pair_19c": 12
+    },
+    {
+     "head": "облако",
+     "sketch": [],
+     "pair_main": 54,
+     "pair_19c": 11
+    }
+   ]
+  },
+  {
+   "surface": "сомкнутый",
+   "lemma": "сомкнуть",
+   "pos": "V",
+   "freq": {
+    "ipm": 5.16675,
+    "category": 2
+   },
+   "per_head": [
+    {
+     "head": "туча",
+     "sketch": [],
+     "pair_main": 1,
+     "pair_19c": null
+    },
+    {
+     "head": "облако",
+     "sketch": [],
+     "pair_main": null,
+     "pair_19c": null
+    }
+   ]
+  }
+ ],
+ "cache_keys": [
+  "02579b33256eaf52f6b795c1",
+  "0f08e589070ff33adcd02a1d",
+  "23de6b33832bed3fdef5f262",
+  "2873c73b402fea0e1ab5ab8f",
+  "38c1f30e60e92c2628ae87da",
+  "484a329da49ebf4f26eec9a0",
+  "4b1395a2e6aa98966b6a1b01",
+  "4c27f01371419c560a8a6a07",
+  "524385c5e3613fc9a4bb3d04",
+  "5a4415780eeda7a3334506d2",
+  "5ff3e81f825e9022b1c88c11",
+  "63c3c7dd7de5040d02d1f25b",
+  "72033f1493e0c8241b9366a9",
+  "73fc0d5ac4ca4549b327a624",
+  "7487c699c144cd15f75f1767",
+  "7fd54e43a1fd54a9c9dfde09",
+  "88bcce92f0fb9a4cf329fcc1",
+  "8c37d0f24df4ad023bef4a97",
+  "8fa4efaddb932befc33a6ed9",
+  "a3f30996141e64997bd501a2",
+  "ac67c56a631f355a77bf24ef",
+  "ad2db82b3ee24417702edf5a",
+  "c09606ec0fef587cf7c53b37",
+  "dc2957acc5807ccec2e47d53",
+  "df80a7536efe6c3318c9bcfb",
+  "f04b1aad127a80dd6d8b7ce9",
+  "f17021c63d4557d4ffca7afd",
+  "fd44a504235d6140e55625a1",
+  "fe5a0f859db0294b64febbc2"
+ ],
+ "card": "han~~h0_57_sam_0"
+}

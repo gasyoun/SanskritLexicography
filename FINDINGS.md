@@ -9743,4 +9743,10 @@ probe before reporting the absence — but having proved it, report the absence 
 
 > Source: csl-atlas/reports/COMPOUND_DEPTH_TYPOGRAPHY_PROBE_2026-10-17.md (18-10-2026) -- csl-atlas -- 18-10-2026
 
-§649 takes the next number.
+### §649. The shared NKRYa client's disk-cache key carries the concordance `n`, so asking for fewer lines MISSES every entry a previous run paid for
+
+🟡 **`csl_pyutil.nkrya.NkryaClient.concordance()` hashes the whole request payload into its cache key, and `n` (the number of concordance lines) is part of that payload.** A caller that only wants the *hit count* and therefore asks for `n=0` builds a different key from the `n=3` entry the H5261 evidence card already cached — offline it raises `NkryaOffline: not cached`, and online it silently spends a fresh live call against a 6-requests/min throttle. The H5263 prompt-evidence block hit exactly this: it needs counts, not lines, but must request `n=3` to reuse the committed cache and drop the lines in Python afterwards. **Apply:** when reusing an NKRYa cache another tool populated, match its request shape (`n`, `dist`, corpus, subcorpus conditions) exactly and discard what you do not need client-side — the cache is keyed on the request, not on the answer. Same reasoning for any payload-hashed HTTP cache. **Second, editorial half:** when rendering a pair count for a model or a human, an absent count renders `n/a`, never `0` — the NKRYa API returns no number rather than a zero, and printing `0` converts "we have no reading" into the false claim "never co-occurs" (sibling of the client's own top-10 rule, where "not in top 10" never means "unattested").
+
+> **Source:** [`RussianTranslation/src/nkrya_prompt_evidence.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/nkrya_prompt_evidence.py) `build_evidence()` · [`RussianTranslation/docs/H5263_NKRYA_C1_PROMPT_EVIDENCE_AB_24-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/H5263_NKRYA_C1_PROMPT_EVIDENCE_AB_24-09-2026.md) · [PR #2333](https://github.com/gasyoun/SanskritLexicography/pull/2333) — SanskritLexicography · 24-09-2026 (Claude Code Opus 5 `claude-opus-5`, [H5263](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5263-Opus_SanskritLexicography_nkrya-c1-prompt-evidence-ab_22.09.26.md))
+
+§650 takes the next number.
