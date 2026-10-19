@@ -49,8 +49,10 @@ The sanctioned fix is evidence-based and lives in a committed allowlist, not in 
 [`ncc_roman_catalogue_allowlist.json`](ncc_roman_catalogue_allowlist.json) — one entry, `MD`, with
 its roman value (1,500), its 7,771 workbook `Details` mentions, its 11,672 witnesses, the evidence
 that it is a catalogue, and the defect it closes. [`census_ncc_mss.py`](census_ncc_mss.py) reads it at
-import and **fails loudly if it is missing** — silently falling back to "drop every roman-shaped
-siglum" is the defect, so an empty allowlist must not be possible.
+import and **fails loudly if the file is missing** (it prints the path and says not to fall back to
+dropping every roman-shaped siglum). The loader cannot tell a *deliberately* empty allowlist from a
+lost one, so the emptiness guard is the selftest, not the loader: if the workbook vocabulary loses
+its last roman-shaped key, the vocabulary test below must be updated in the same change.
 
 Provenance is a second committed artifact: [`ncc_vdcs_catalogue_keys_2026-10-19.json`](ncc_vdcs_catalogue_keys_2026-10-19.json)
 holds the workbook's **435 catalogue keys** and their `Details` mention counts, dumped by
@@ -100,10 +102,10 @@ cell reproduces from the two flags, no workbook edit involved:
 
 ```bash
 WB="$HOME/Documents/GitHub/VisualDCS/non-derived/NCC/Works-Share-NCC/NCC-mss-counting-1 031 077.xlsx"
-python census_ncc_mss.py --ncc ncc.jsonl --pilot 500 --out-dir /tmp/h7084                      # no workbook, no exemption
-python census_ncc_mss.py --ncc ncc.jsonl --pilot 500 --no-roman-allowlist --out-dir /tmp/h7084 # baseline
-python census_ncc_mss.py --ncc ncc.jsonl --vdcs-details "$WB" --pilot 500 --out-dir /tmp/h7084
-python census_ncc_mss.py --ncc ncc.jsonl --vdcs-details "$WB" --pilot 500 --no-roman-allowlist --out-dir /tmp/h7084
+python census_ncc_mss.py --ncc ncc.jsonl --pilot 500 --out-dir /tmp/h7084                      # no workbook, exemption on
+python census_ncc_mss.py --ncc ncc.jsonl --pilot 500 --no-roman-allowlist --out-dir /tmp/h7084 # no workbook, exemption off (H7073 baseline)
+python census_ncc_mss.py --ncc ncc.jsonl --vdcs-details "$WB" --pilot 500 --out-dir /tmp/h7084 # workbook, exemption on (corrected)
+python census_ncc_mss.py --ncc ncc.jsonl --vdcs-details "$WB" --pilot 500 --no-roman-allowlist --out-dir /tmp/h7084 # workbook, exemption off (H7080 state)
 ```
 
 | lexicon | `MD` | mentions | raw units | kept after filter | per-entry distinct |
@@ -198,18 +200,21 @@ awk -F'\t' 'NR>1 && $5=="SUPPORTED"{s++} NR>1 && $5=="FALSE_POSITIVE"{f++} NR>1 
 | 82 | 33 | Jaipur Mus. Ser | 2 | `Jaipur Mus. Ser. 2. p. 110.` — series volume, page follows |
 | 93 | 36 | Jaipur Mus. Ser | 8 | `Jaipur Mus. Ser. 8. p.. 125-27.` — series volume |
 
-Three patterns account for 11 of the 14 and are new relative to H7080's class list:
+Three patterns account for **10 of the 14** (6 + 3 + 1) and are new relative to H7080's class list:
 
-1. **The page marker is shielded by a roman volume number** (`Cordier III. p.`, `Ujjain I. p.`) —
-   `PAGE_PREFIX_RE` only looks at the character immediately after the siglum, so `I.`/`III.` hides
-   the following `p.`. The same shielding explains four of the `Vol` units: `NON_ACCESSION_SIGLA` has
-   no `vol`, and `PAGE_PREFIX_RE` requires `vol.` to be followed by a *digit*, so `Vol. XIX. 163-93`
-   never trips it.
+1. **The page marker is shielded by a roman volume number** — 6 units (`Cordier 543`,
+   `Ujjain 87`, and the four `Vol` units): `PAGE_PREFIX_RE` only looks at the character immediately
+   after the siglum, so `I.`/`III.` hides the following `p.`. For the `Vol` units the shield is the
+   same defect in a different place: `NON_ACCESSION_SIGLA` has no `vol`, and `PAGE_PREFIX_RE`
+   requires `vol.` to be followed by a *digit*, so `Vol. XIX. 163-93` never trips it.
 2. **Compound series keys bypass the journal filter** (`L.D. Ser`, `Jaipur Mus. Ser.` are keys whose
-   tail is `Ser`, but the set holds only the bare `Ser`).
+   tail is `Ser`, but the set holds only the bare `Ser`) — 3 units.
 3. **A comma after an accession introduces folios, not accessions** (`Udaipur II. 213, 15, 14`) —
-   the single largest silent inflator this draw exposes, because it multiplies one manuscript into
-   two or three units.
+   1 unit, and the single largest silent inflator this draw exposes, because it multiplies one
+   manuscript into two or three units.
+
+The remaining 4 are the two imprint/year units (`Leipzig 1920`, `Ben 1897`) and the two journal-page
+units (`Bulletin 2`, `Ind 219`), which are H7080 classes in a new spelling rather than new patterns.
 
 H7080's six classes are otherwise gone from this draw: no scholar-name siglum, no subject marker, no
 bibliographic page in a secondary source, and — the point of the pass — **no `MD`-fold unit**.
@@ -235,8 +240,11 @@ for label, re_ in (('dropped (pre-fix)', M.catalogue_regex(lex, allowlist=())),
                    ('exempt  (H7084)  ', M.catalogue_regex(lex))):
     print(label, [m.group(0) for m in re_.finditer('Adyar II. p. 211a . MD. 6571-74.')])
 PY
-# dropped: ['Adyar', 'II']   exempt: ['Adyar', 'II', 'MD']
+# dropped: ['Adyar']   exempt: ['Adyar', 'MD']
 ```
+
+`II` is absent from **both** lists on purpose: it is a genuine volume marker, it is not on the
+allowlist, and it is still dropped — which is exactly why `211a` is not harvested as an accession.
 
 `MD 8771` and `MD 8772` are drawn as `MD` units in this sample and both are SUPPORTED — under
 H7080's lexicon `8771` was a FALSE_POSITIVE recorded as `Jain 8771`. `MD 14142` is the third.
@@ -336,7 +344,7 @@ values, and the +5 Rāmāyaṇa difference is `MD`'s contribution.
 - **Checks:** `python -m pytest -q HeadwordLists/works_catalogue/test_census_ncc_mss.py` → **16
   passed**; `awk` precision line → `S=86 F=14 A=0 precision=0.8600`; the four-cell pilot matrix above
   (1,854/1,290 · 1,882/1,319 · 2,021/1,449 · 2,046/1,477); the seed-20261019 draw byte-identical on a
-  second run; the `MD` reproduction prints `['Adyar', 'II']` vs `['Adyar', 'II', 'MD']`.
+  second run; the `MD` reproduction prints `['Adyar']` vs `['Adyar', 'MD']`.
 - **Risks:** the precision estimate is of the pilot, not the corpus; 14 false positives in five
   classes are all still live in the parser (the `Vol`/page-range cluster alone is 4 and comes from
   one entry); `Details` corroboration is body-derived and cannot break a tie on its own; the canary
