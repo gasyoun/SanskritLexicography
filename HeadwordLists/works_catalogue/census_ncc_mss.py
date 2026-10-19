@@ -411,7 +411,14 @@ def run_canary(rows, cat_re, out_path, vdcs_path=None):
             d = dedupe(units)
             v = vdcs.get(label, fallback)
             if not hits:
-                status = 'INCONCLUSIVE (absent from bodies)'
+                # H7078 gate 1 settled the open question behind this status: the
+                # `स्क` block is absent from the bundled 2022 NCC database itself
+                # (ncc.rar), not merely from the bodies export, and the export is
+                # a complete, order-faithful serialization of that database. So
+                # this is not an export defect awaiting re-extraction. Proof:
+                # VisualDCS reports/NCC_SK_BLOCK_COVERAGE_2026-10-19.md.
+                status = ('INCONCLUSIVE (absent from bodies; स्क block absent from '
+                          'the 2022 NCC DB, H7078)')
                 delta = ''
             elif v is None:
                 status = 'COMPARED (no VisualDCS canary)'
