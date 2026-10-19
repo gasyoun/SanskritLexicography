@@ -1,16 +1,30 @@
 # NCC MSS census from bodies — strict witness unit, 500-entry pilot and 20-work canary
 
-_Created: 18-10-2026 · H6995 (DeepSeek v4.1 Flash) · pilot + canary only; full run deliberately withheld_
+_Created: 18-10-2026 · Last updated: 19-10-2026 (H7078, gate 1 — Skandapurāṇa canary reason now measured) · H6995 (DeepSeek v4.1 Flash) · pilot + canary only; full run deliberately withheld_
 
 ## Verdict first
 
 The pilot and canary ran, but **the full census is not publishable yet**. Two named
 stopping conditions fired:
 
-1. **Skandapurāṇa is absent from the bodies file.** `ncc.jsonl` (152,526 rows, the
-   `SkhNewCatalogus`-derived bodies) contains **no IAST title beginning `Sk`** at all
-   (also no `Sl`, `Sm`, `Sn`, `So`, `Sr`, `St`). The Skandapurāṇa canary cannot be
-   computed from these bodies, so that canary is **INCONCLUSIVE**, not PASS.
+1. **Skandapurāṇa is absent from the bodies file — and the block is not recoverable
+   from the 2022 database either (settled 19-10-2026, H7078).** `ncc.jsonl` (152,526
+   rows) carries **no** `स्क`/`Sk` title. Gate 1 asked whether the fascicles sit in the
+   bundled 2022 NCC desktop database
+   ([`ncc.rar`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/NCC/files/ncc/ncc.rar))
+   but were dropped from the export. They do not: the archive holds **zero** `स्क`/`Sk`
+   titles across all seven of its title tables, and the export is a complete,
+   order-faithful serialization of it — 152,526 records, identical `vol_page_col_seq`
+   **sets and order**, 0 rows either way — so the gap is the database's, not the
+   export's. Records run in catalogue order to vol 39 p. 378 (`सुहोदित · Suhodita`),
+   the database's frontier. The canary therefore stays **INCONCLUSIVE**, now with a
+   measured reason instead of an open question. Proof:
+   [`NCC_SK_BLOCK_COVERAGE_2026-10-19.md`](https://github.com/gasyoun/VisualDCS/blob/main/reports/NCC_SK_BLOCK_COVERAGE_2026-10-19.md).
+   Prefix note from the same measurement: `Sm`/`So`/`Sr` are empty as *printed*
+   prefixes but three titles are printed parenthetical-first
+   (`(स्मृति)_रत्नमञ्जूषा`, `(सोसले)_रेवणाराध्य`, `(स्री)सागरसेन`) and reach
+   those letters only after normalization; `St` holds exactly one entry — the junk
+   title `Study.`
 2. **Naive body parsing still over-counts edition/page references.** Only 67.0 % of
    pilot units have their accession literal in the VisualDCS `Details` string for the
    same entry (after range expansion). The rest include journal/year references such as
@@ -74,7 +88,7 @@ distinct units from this pass.
 |---|---:|---:|---:|---:|---:|---|
 | Mahābhārata | 1 | 2,585 | **2,519** | 21 | +2,498 | DIFF |
 | Rāmāyaṇa | 10 | 1,097 | **1,006** | 2,762 | −1,756 | DIFF |
-| Skandapurāṇa | 0 | 0 | **0** | 17 | — | **INCONCLUSIVE (absent from bodies)** |
+| Skandapurāṇa | 0 | 0 | **0** | 17 | — | **INCONCLUSIVE (absent from bodies; `स्क` block absent from the 2022 NCC DB, H7078)** |
 | Bhāgavata | 4 | 16,560 | **6,699** | 2,248 | +4,451 | DIFF |
 | Viṣṇupurāṇa | 3 | 1,018 | **839** | — | — | compared |
 | Nāradapurāṇa | 1 | 44 | **43** | — | — | compared |
@@ -104,8 +118,11 @@ Artifact: [`ncc_mss_canary_20.tsv`](ncc_mss_canary_20.tsv).
   (e.g. `Bṛhatsūcī, Nepal II. p.. 132-150` → 427) as manuscripts. That is the inflation
   mechanism, and it is why the workbook total (1,032,077) must never be published.
 - **Skandapurāṇa 17 → INCONCLUSIVE.** No body entry exists in `ncc.jsonl`; the letter
-  block is missing from this bodies export. The 17 is therefore unverifiable here, not
-  confirmed.
+  block is missing from this bodies export. H7078 (gate 1, 19-10-2026) then showed the
+  block is missing from the bundled **2022 database itself** and that the export is a
+  complete serialization of it — so this is not an export defect awaiting re-extraction.
+  The 17 is unverifiable here, not confirmed, and stays unverifiable until an NCC
+  fascicle past vol 39 p. 378 (or a newer database export) arrives.
 
 ## Why no full run
 
@@ -117,8 +134,15 @@ not a footnote.
 
 Next gates:
 
-1. Recover the missing `Sk`/`Sl`/`Sm`/`Sn`/`So`/`Sr`/`St` fascicles (or prove the bodies
-   export is complete and the titles are filed elsewhere).
+1. ~~Recover the missing `Sk`/`Sl`/`Sm`/`Sn`/`So`/`Sr`/`St` fascicles (or prove the bodies
+   export is complete and the titles are filed elsewhere).~~ **Closed 19-10-2026 (H7078).**
+   The export *is* complete and the bundled 2022 database does not hold the block, so
+   recovery is no longer an analysis on our data — it needs an acquisition: an NCC
+   fascicle past vol 39 p. 378, or a current NCC database export to re-run
+   [`tools/ncc_sk_block_probe.py`](https://github.com/gasyoun/VisualDCS/blob/main/tools/ncc_sk_block_probe.py).
+   The `St` half of this gate was never a gap: the single `St` entry is `Study.`, a junk
+   title, and `Sm`/`So`/`Sr` are empty only as printed prefixes (three parenthetical-first
+   titles reach them after normalization).
 2. Add an edition/journal filter and hand-adjudicate 100 pilot units; target ≥95 % precision.
 3. Only then run `--full` and publish per-work distinct counts with the strict unit stated.
 
@@ -131,7 +155,17 @@ python HeadwordLists/works_catalogue/census_ncc_mss.py \
   --pilot 500 --canary
 ```
 
-The workbook is not committed (rights + size); pass its path explicitly.
+The workbook is not committed (rights + size) — it is tracked in VisualDCS at
+`non-derived/NCC/Works-Share-NCC/NCC-mss-counting-1 031 077.xlsx`; pass its path explicitly.
+
+> **Caveat (19-10-2026, H7078).** This command no longer reproduces the committed
+> [`ncc_mss_canary_20.tsv`](ncc_mss_canary_20.tsv) numbers, and that is pre-existing, not
+> a regression from gate 1: H7073 made the edition/journal filter default-on inside
+> `extract_units`, which `run_canary()` does not parameterise, so a fresh run measures the
+> post-filter figure (Mahābhārata 2,585 → 2,457 with the workbook, 1,922 without) while
+> the committed table is the pre-filter one. Gate 1 therefore **carried the 18-10-2026
+> numbers unchanged** and edited only the `Skandapurāṇa` status cell; no count was
+> recomputed. Reconciling the two baselines belongs to H7073's own gate, not here.
 
 ## Delivery (five fields)
 
