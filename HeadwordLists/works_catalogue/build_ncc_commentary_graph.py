@@ -58,8 +58,9 @@ sys.stderr.reconfigure(encoding='utf-8')
 
 from ncc_commentary_extract import (ACC_TXT, CROSSWALK, NCC_JSONL, XLS_2022,
                                     TitleIndex, acc_backfill_edges, fold,
-                                    load_ncc, ncc_edges, parse_acc,
-                                    resolve_target, sa_tail_ha, title_node)
+                                    load_authority, load_ncc, ncc_edges,
+                                    parse_acc, resolve_target, sa_tail_ha,
+                                    title_node)
 from ncc_commentary_graph import (ENTRIES_BY_ID, _order_cache, build_clusters,
                                   build_graph, coverage_tables, order_key,
                                   order_key_by_id, pagerank, set_entries,
@@ -75,6 +76,8 @@ def main():
     ap.add_argument('--acc', default=ACC_TXT)
     ap.add_argument('--xls', default=XLS_2022)
     ap.add_argument('--crosswalk', default=CROSSWALK)
+    ap.add_argument('--authority', default=os.path.join(
+        HERE, 'ncc_name_authority_adjudication.tsv'))
     ap.add_argument('--out', default=os.path.join(HERE, 'ncc_commentary_ranking.tsv'))
     ap.add_argument('--edges', default=os.path.join(HERE, 'ncc_commentary_edges.tsv'))
     ap.add_argument('--report', default=os.path.join(HERE, 'ncc_commentary_report.json'))
@@ -123,7 +126,14 @@ def main():
                 fold_map[fo] = 'AMBIG'   # ambiguous fold: unusable
 
     def resolve(raw):
-        return resolve_target(raw, index, fold_map)
+        return resolve_target(raw, index, fold_map, authority)
+
+    # H7215 name-authority merges: adjudicated t:<fold> -> entry match_key
+    authority = {}
+    if args.authority and os.path.exists(args.authority):
+        by_key = {nid: e.get('match_key') for nid, e in ENTRIES_BY_ID.items()}
+        authority = load_authority(args.authority, by_key)
+        print(f'authority merges loaded: {len(authority)}', file=sys.stderr)
 
     print('extracting NCC relations …', file=sys.stderr)
     body_folds = []
@@ -363,6 +373,7 @@ def main():
         strict_nodes=len(graphs['strict']['nodes']),
         fuzzy_nodes=len(graphs['fuzzy']['nodes']),
         ranked_works=len(universe),
+        authority_merges=len(authority),
         precision_sample_size=sample_n,
         precision_sample_file=args.out + '.precision_sample.tsv',
         canary_top20=canary,
