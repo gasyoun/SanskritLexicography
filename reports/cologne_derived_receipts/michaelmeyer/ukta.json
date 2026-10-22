@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/ukta",
+ "http": 200,
+ "page_sha256": "50a0c5367b6e65f4aa1eb2ecec059c1c8dd76248bc514899f1cb2ef3f7bcc119",
+ "page_bytes": 17721,
+ "dc_year": "2026",
+ "dict": "mw",
+ "L": "30012.1",
+ "headword": "ukta",
+ "iast": "ukta",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 171, col. 3 . uktá mfn. ( p.p. of √ vac , q.v. , uktá , RV. ), uttered, said, spoken ☞ p. 171, col. 3 . uktá m. N. of a divine being ( v.l. for uktha , q.v. ), Hariv. ☞ p. 171, col. 3 . uktá n. word, sentence, Śiś. &c. ☞ p. 171, col. 3 . uktá nf. ( am , ā ) a s",
+ "role": "edge",
+ "verdict": "PRESENT"
+}

@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/a%E1%B9%83%C5%9Ba",
+ "http": 200,
+ "page_sha256": "0aff96359fe36f271dfdb433cf203c148c11dbb3d576220e952ca5f225315274",
+ "page_bytes": 34661,
+ "dc_year": "2019",
+ "dict": "mw",
+ "L": "10",
+ "headword": "aMSa",
+ "iast": "aṃśa",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 1, col. 1 . áṃśa m. (probably fr. √ 1. aś , perf. ān-áṃśa , and not from the above √ aṃś fictitiously formed to serve as root), a share, portion, part, party ☞ p. 1, col. 1 . partition, inheritance ☞ p. 1, col. 1 . a share of booty ☞ p. 1, col. 1 . earnest mone",
+ "role": "control",
+ "verdict": "PRESENT"
+}

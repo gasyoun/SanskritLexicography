@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/nirbhakta",
+ "http": 200,
+ "page_sha256": "41213c7104919d476bc6141571a3c40ad2ebb15625901dc874e1f79420cd898a",
+ "page_bytes": 3008,
+ "dc_year": "2025",
+ "dict": "mw",
+ "L": "107106",
+ "headword": "nirBakta",
+ "iast": "nirbhakta",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 541, col. 2 . nir—bhakta a mfn. (medicine) taken without eating, Suśr. ☞ p. 555, col. 3 . nir-°bhakta b mfn. excluded from participation, MW.",
+ "role": "sample",
+ "verdict": "PRESENT"
+}

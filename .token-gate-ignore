@@ -22,3 +22,8 @@ HeadwordLists/works_catalogue/ncc_commentary_ranking.tsv.precision_sample.tsv
 # adjudication table (13,891 verdict rows) and its machine summary.
 HeadwordLists/works_catalogue/ncc_name_authority_adjudication.tsv
 HeadwordLists/works_catalogue/ncc_name_authority_summary.json
+# H7223 (22-10-2026): generated census of tools/cologne_entry_census.py —
+# 4.44M-row per-record git-log census, shipped gzipped (27.6 MB, over the
+# 20 KB gate by construction; regenerate with the committed tool).
+reports/cologne_entry_census.tsv
+reports/cologne_entry_census.tsv.gz

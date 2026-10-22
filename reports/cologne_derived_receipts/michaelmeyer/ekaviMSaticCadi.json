@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/ekavi%E1%B9%83%C5%9Baticchadi",
+ "http": 200,
+ "page_sha256": "149d0293a5e2372da6b69331074b1890865522b33547c764c5ce369297bb6609",
+ "page_bytes": 1441,
+ "dc_year": "2026",
+ "dict": "mw",
+ "L": "39587.1",
+ "headword": "ekaviMSaticCadi",
+ "iast": "ekaviṃśaticchadi",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 1323, col. 1 . eka—viṃśati-cchadi ( éka- ), mfn. having 21 roofs, TS.",
+ "role": "edge",
+ "verdict": "PRESENT"
+}

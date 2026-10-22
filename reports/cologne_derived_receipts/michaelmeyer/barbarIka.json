@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/barbar%C4%ABka",
+ "http": 200,
+ "page_sha256": "90a6e1aaa42a825da77b2b874a377099655e7b4f0330bda294473abff0a2d04e",
+ "page_bytes": 4191,
+ "dc_year": "2026",
+ "dict": "mw",
+ "L": "142943.2",
+ "headword": "barbarIka",
+ "iast": "barbarīka",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 722, col. 1 . barbarīka n. (only L. ) curly hair or a partic. mode of wearing the hair ☞ p. 722, col. 1 . a kind of vegetable ☞ p. 722, col. 1 . Ocimum Villosum ☞ p. 722, col. 1 . Clerodendrum Siphonantus ☞ p. 722, col. 1 . barbarīka m. a form of Śiva.",
+ "role": "sample",
+ "verdict": "PRESENT"
+}
