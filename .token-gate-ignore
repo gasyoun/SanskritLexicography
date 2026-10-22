@@ -12,3 +12,9 @@ data/**
 
 # append-only хабы: обязаны расти свободно, делить нельзя (один логический документ, читается grep-ом). Правило v1.1.0 grandfather снимает заморозку, но ограничивает прирост одним бюджетом за коммит — для ежедневного хаба это лишнее.
 FINDINGS.md
+# H7202 (22-10-2026): generated outputs of build_ncc_commentary_graph.py —
+# the commentary ranking/edge data assets and their machine report/sample.
+HeadwordLists/works_catalogue/ncc_commentary_ranking.tsv
+HeadwordLists/works_catalogue/ncc_commentary_edges.tsv
+HeadwordLists/works_catalogue/ncc_commentary_report.json
+HeadwordLists/works_catalogue/ncc_commentary_ranking.tsv.precision_sample.tsv
