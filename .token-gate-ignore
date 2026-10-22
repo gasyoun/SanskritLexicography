@@ -22,3 +22,5 @@ HeadwordLists/works_catalogue/ncc_commentary_ranking.tsv.precision_sample.tsv
 # adjudication table (13,891 verdict rows) and its machine summary.
 HeadwordLists/works_catalogue/ncc_name_authority_adjudication.tsv
 HeadwordLists/works_catalogue/ncc_name_authority_summary.json
+# H7222 (22-10-2026): the 217-row pass-2 delta of the authority table.
+HeadwordLists/works_catalogue/ncc_name_authority_pass2.tsv

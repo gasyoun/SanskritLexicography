@@ -26,14 +26,35 @@ Evidence classes, in ladder order (first hit wins):
   spelling-variant edit distance <= 1 (sandhi a.h~as, consonant doubling,
                    single-vowel) to ONE cluster fold, length >= 8, AND
                    body-alias or crosswalk evidence.
+  filter-pass      (H7222) a suffix / d<=1 structural candidate whose
+                   body-alias and crosswalk evidence both failed is accepted
+                   when the candidate cluster is a WORK filing by the
+                   author-vs-work filter below; fold floor >= 8 chars.  A
+                   d<=1 candidate must still be within the class bound: the
+                   deletion-signature index is symmetric and admits distance
+                   <= 2, so the pair is re-checked (Damerau-Levenshtein <= 1)
+                   before an unevidenced identity is accepted.
+                   Evidence: the filter clause + the quoted head/subentry.
+  person-filing    (H7222) the same structural candidate, but the cluster is
+                   a PERSON filing: rejected with the filter clause that
+                   fired (never merged into a person's name).
+
+The author-vs-work filter and the d<=1 class-bound recheck live in
+ncc_name_authority_pass2.py (head-role / bare-work-list clauses; structural,
+no hand-listed names) and are documented there.
 
 Everything else is rejected with a named class: artifact-short,
 artifact-roman, artifact-series (library sigla / page / volume noise),
 generic-title (bare genre word: tika/bhasya/vrtti/... the "C. <genre word>"
 list-side usage), ambiguous (>=2 structural candidates -- the homograph
 trap, H7202's rival-claimant rule), variant-no-evidence (structural
-candidate exists, evidence gate failed -- auditable, revisitable),
-no-candidate.
+candidate exists, evidence gate failed and the filter could not decide --
+auditable, revisitable), no-candidate.
+
+The table is cumulative: rows whose t:<fold> nodes have since been resolved
+out of the edge population by this very table are carried forward unchanged
+(they are the merges that removed the node), so the table remains the
+complete authority over every fold it has ever adjudicated.
 
 Seeds (handoff): H7202's FOLD_ALIASES is carried as the first table row
 (source=seed:h7202-fold-alias, verdict MERGE -- the build keeps resolving it
@@ -48,6 +69,7 @@ Inputs default to the estate checkout like build_ncc_commentary_graph.py
 (ESTATE_ROOT env overrides).  Deterministic: same inputs -> byte-identical
 TSV (no RNG, sorted iteration everywhere).
 """
+import argparse
 import csv
 import json
 import os
@@ -67,15 +89,25 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 EDGES_TSV = os.path.join(HERE, 'ncc_commentary_edges.tsv')
 OUT_TSV = os.path.join(HERE, 'ncc_name_authority_adjudication.tsv')
 OUT_SUMMARY = os.path.join(HERE, 'ncc_name_authority_summary.json')
+OUT_PASS2 = os.path.join(HERE, 'ncc_name_authority_pass2.tsv')
 
 from ncc_name_authority_lib import (GENRE_FOLDS, ROMAN_RE, SEED_FOLDS,
                                     SEED_ROWS, annot_token_ok,
                                     del1_variants, fold_regex)
-
-
-
+from ncc_name_authority_pass2 import (carry_forward, filter_decision,
+                                      write_pass2, write_summary, write_table)
 
 def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--edges', default=EDGES_TSV,
+                    help='t:<fold> edge snapshot to adjudicate (default: the '
+                         'committed table; the reproducible H7215 base is '
+                         '`git show 4e4f4bd0:HeadwordLists/works_catalogue/'
+                         'ncc_commentary_edges.tsv`)')
+    ap.add_argument('--out', default=OUT_TSV)
+    ap.add_argument('--summary', default=OUT_SUMMARY)
+    ap.add_argument('--pass2', default=OUT_PASS2)
+    args = ap.parse_args()
     print('loading NCC …', file=sys.stderr)
     entries = load_ncc(NCC_JSONL)
     set_entries(entries)
@@ -142,7 +174,7 @@ def main():
     as_base = Counter()
     as_comm = Counter()
     raws = defaultdict(Counter)
-    with open(EDGES_TSV, encoding='utf-8') as f:
+    with open(args.edges, encoding='utf-8') as f:
         for r in csv.DictReader(f, delimiter='\t'):
             for idc, tc, ctr in (('commentary_id', 'commentary_title', as_comm),
                                  ('base_id', 'base_title', as_base)):
@@ -212,6 +244,13 @@ def main():
             row['evidence'] = evidence
             out_rows.append(row)
             stats[verdict + ':' + klass] += 1
+
+        def filter_verdict(c, fold_, stage_ev, d1_stage=False):
+            """H7222: author-vs-work filter + d<=1 class-bound recheck."""
+            verdict, klass, evidence = filter_decision(
+                members.get(c, []), fold_, stage_ev, d1_stage, cluster_folds[c])
+            row['source'] = 'h7222-pass2'
+            finish(verdict, klass, c if verdict == 'MERGE' else None, evidence)
 
         if len(fo) < 4:
             finish('REJECT', 'artifact-short')
@@ -316,9 +355,9 @@ def main():
                        ('body-alias in %s' % cluster_rep[c]['iast']) if ba == [c]
                        else xw)
             else:
-                finish('REJECT', 'variant-no-evidence',
-                       evidence='suffix candidate %s lacks body-alias/crosswalk'
-                       % cluster_rep[c]['iast'])
+                filter_verdict(c, fo,
+                               'suffix candidate %s lacks body-alias/crosswalk'
+                               % cluster_rep[c]['iast'])
             continue
         if len(suf_cands) > 1:
             finish('REJECT', 'ambiguous',
@@ -336,7 +375,8 @@ def main():
                           for x in cluster_folds[c])}
         if len(d1_hits) == 1 and len(fo) >= 8:
             c = next(iter(d1_hits))
-            near = min(cluster_folds[c], key=lambda x: abs(len(x) - len(fo)))
+            near = min(cluster_folds[c],
+                       key=lambda x: (abs(len(x) - len(fo)), x))
             ba = body_alias_clusters(fo)
             xw = crosswalk_evidence(fo, c)
             if ba == [c] or (xw and not ba):
@@ -345,10 +385,11 @@ def main():
                         % (fo, near, cluster_rep[c]['iast'])) if ba == [c]
                        else 'fold %s ~ %s (d<=1); %s' % (fo, near, xw))
             else:
-                finish('REJECT', 'variant-no-evidence',
-                       evidence='d<=1 candidate %s (%s~%s) lacks '
-                                'body-alias/crosswalk'
-                                % (cluster_rep[c]['iast'], fo, near))
+                filter_verdict(c, fo,
+                               'd<=1 candidate %s (%s~%s) lacks '
+                               'body-alias/crosswalk'
+                               % (cluster_rep[c]['iast'], fo, near),
+                               d1_stage=True)
             continue
         if len(d1_hits) > 1:
             finish('REJECT', 'ambiguous',
@@ -365,36 +406,14 @@ def main():
         if pref:
             finish('REJECT', 'ambiguous' if len(pref) > 1 else 'no-evidence',
                    evidence='structural: %s'
-                   % ', '.join(sorted(cluster_rep[c]['iast'] for c in list(pref)[:4])))
+                   % ', '.join(sorted(cluster_rep[c]['iast'] for c in pref)[:4]))
         else:
             finish('REJECT', 'no-candidate')
 
-    with open(OUT_TSV, 'w', encoding='utf-8', newline='') as f:
-        w = csv.writer(f, delimiter='\t', lineterminator='\n')
-        w.writerow(['fold', 'edge_n', 'as_base_n', 'as_comm_n', 'raw_sample',
-                    'verdict', 'class', 'merge_cluster', 'merge_title',
-                    'evidence', 'source'])
-        for r in out_rows:
-            w.writerow([r['fold'], r['edge_n'], r['as_base_n'], r['as_comm_n'],
-                        r['raw_sample'], r['verdict'], r['klass'],
-                        r['merge_cluster'], r['merge_title'], r['evidence'],
-                        r['source']])
-
-    merged = [r for r in out_rows if r['verdict'] == 'MERGE' and r['source'] == 'h7215-ladder']
-    summary = dict(
-        t_nodes_total=len(nodes),
-        t_edges_total=sum(tn.values()),
-        rows_written=len(out_rows),
-        verdicts=dict(stats),
-        merges=len(merged),
-        merge_edge_weight=sum(r['edge_n'] for r in merged),
-        merge_by_class=dict(Counter(r['klass'] for r in merged)),
-        top_merges=sorted(([r['edge_n'], r['fold'], r['merge_title'], r['klass']]
-                           for r in merged), reverse=True)[:20],
-    )
-    with open(OUT_SUMMARY, 'w', encoding='utf-8') as f:
-        json.dump(summary, f, ensure_ascii=False, indent=1)
-    print(json.dumps(summary, ensure_ascii=False, indent=1))
+    carried = carry_forward(args.out, out_rows, stats)
+    write_table(args.out, out_rows)
+    pass2_rows = write_summary(args.summary, out_rows, stats, nodes, tn, carried)
+    write_pass2(args.pass2, pass2_rows)
 
 
 if __name__ == '__main__':
