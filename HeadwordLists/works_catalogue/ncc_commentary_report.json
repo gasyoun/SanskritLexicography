@@ -5,22 +5,23 @@
   "see_pairs": 627,
   "cw_union": 210323
  },
- "ncc_edge_instances": 30193,
- "strict_edges_dedup": 8323,
+ "ncc_edge_instances": 30191,
+ "strict_edges_dedup": 10172,
  "strict_edges_acc": 13,
- "fuzzy_edges_dedup": 28164,
- "strict_nodes": 8752,
- "fuzzy_nodes": 30524,
- "ranked_works": 30524,
- "precision_sample_size": 60,
- "precision_sample_file": "/Users/mac/Documents/GitHub/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7202-60478/HeadwordLists/works_catalogue/ncc_commentary_ranking.tsv.precision_sample.tsv",
+ "fuzzy_edges_dedup": 28000,
+ "strict_nodes": 10251,
+ "fuzzy_nodes": 29143,
+ "ranked_works": 29143,
+ "authority_merges": 1792,
+ "precision_sample_size": 0,
+ "precision_sample_file": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7215-42148/HeadwordLists/works_catalogue/ncc_commentary_ranking.tsv.precision_sample.tsv",
  "canary_top20": [
   {
    "xls_name": "Amarakośa",
    "xls_total": 834,
-   "rebuilt_strict": 84,
-   "rebuilt_fuzzy": 98,
-   "in_edges_strict": 115,
+   "rebuilt_strict": 136,
+   "rebuilt_fuzzy": 154,
+   "in_edges_strict": 182,
    "in_edges_acc": 0,
    "mention_entries": 499,
    "matched": true
@@ -28,9 +29,9 @@
   {
    "xls_name": "Brahmasūtra",
    "xls_total": 575,
-   "rebuilt_strict": 8,
-   "rebuilt_fuzzy": 10,
-   "in_edges_strict": 12,
+   "rebuilt_strict": 11,
+   "rebuilt_fuzzy": 13,
+   "in_edges_strict": 14,
    "in_edges_acc": 0,
    "mention_entries": 639,
    "matched": true
@@ -38,9 +39,9 @@
   {
    "xls_name": "Tattvacintāmaṇi",
    "xls_total": 395,
-   "rebuilt_strict": 29,
-   "rebuilt_fuzzy": 38,
-   "in_edges_strict": 26,
+   "rebuilt_strict": 31,
+   "rebuilt_fuzzy": 42,
+   "in_edges_strict": 27,
    "in_edges_acc": 0,
    "mention_entries": 445,
    "matched": true
@@ -48,9 +49,9 @@
   {
    "xls_name": "Taittirīyopaniṣad",
    "xls_total": 338,
-   "rebuilt_strict": 2,
-   "rebuilt_fuzzy": 10,
-   "in_edges_strict": 11,
+   "rebuilt_strict": 4,
+   "rebuilt_fuzzy": 25,
+   "in_edges_strict": 17,
    "in_edges_acc": 0,
    "mention_entries": 79,
    "matched": true
@@ -58,9 +59,9 @@
   {
    "xls_name": "Rāmasiddhāntasaṅgraha",
    "xls_total": 336,
-   "rebuilt_strict": 0,
+   "rebuilt_strict": 1,
    "rebuilt_fuzzy": 1,
-   "in_edges_strict": 0,
+   "in_edges_strict": 1,
    "in_edges_acc": 0,
    "mention_entries": 3,
    "matched": true
@@ -68,9 +69,9 @@
   {
    "xls_name": "Raghuvaṃśa",
    "xls_total": 335,
-   "rebuilt_strict": 22,
-   "rebuilt_fuzzy": 49,
-   "in_edges_strict": 63,
+   "rebuilt_strict": 36,
+   "rebuilt_fuzzy": 60,
+   "in_edges_strict": 90,
    "in_edges_acc": 0,
    "mention_entries": 218,
    "matched": true
@@ -78,9 +79,9 @@
   {
    "xls_name": "Kāvyaprakāśa",
    "xls_total": 319,
-   "rebuilt_strict": 45,
-   "rebuilt_fuzzy": 83,
-   "in_edges_strict": 70,
+   "rebuilt_strict": 54,
+   "rebuilt_fuzzy": 93,
+   "in_edges_strict": 85,
    "in_edges_acc": 0,
    "mention_entries": 297,
    "matched": true
@@ -88,9 +89,9 @@
   {
    "xls_name": "Meghadūta",
    "xls_total": 306,
-   "rebuilt_strict": 34,
-   "rebuilt_fuzzy": 69,
-   "in_edges_strict": 56,
+   "rebuilt_strict": 45,
+   "rebuilt_fuzzy": 78,
+   "in_edges_strict": 70,
    "in_edges_acc": 0,
    "mention_entries": 163,
    "matched": true
@@ -98,9 +99,9 @@
   {
    "xls_name": "Bhāgavata",
    "xls_total": 295,
-   "rebuilt_strict": 44,
-   "rebuilt_fuzzy": 53,
-   "in_edges_strict": 49,
+   "rebuilt_strict": 58,
+   "rebuilt_fuzzy": 71,
+   "in_edges_strict": 69,
    "in_edges_acc": 0,
    "mention_entries": 1120,
    "matched": true
@@ -109,8 +110,8 @@
    "xls_name": "Bhagavadgītā",
    "xls_total": 269,
    "rebuilt_strict": 24,
-   "rebuilt_fuzzy": 43,
-   "in_edges_strict": 23,
+   "rebuilt_fuzzy": 42,
+   "in_edges_strict": 29,
    "in_edges_acc": 0,
    "mention_entries": 326,
    "matched": true
@@ -118,9 +119,9 @@
   {
    "xls_name": "Laghuśabdenduśekhara",
    "xls_total": 254,
-   "rebuilt_strict": 4,
-   "rebuilt_fuzzy": 24,
-   "in_edges_strict": 14,
+   "rebuilt_strict": 8,
+   "rebuilt_fuzzy": 26,
+   "in_edges_strict": 17,
    "in_edges_acc": 0,
    "mention_entries": 47,
    "matched": true
@@ -128,9 +129,9 @@
   {
    "xls_name": "Rāmāyaṇa",
    "xls_total": 226,
-   "rebuilt_strict": 6,
-   "rebuilt_fuzzy": 7,
-   "in_edges_strict": 7,
+   "rebuilt_strict": 11,
+   "rebuilt_fuzzy": 12,
+   "in_edges_strict": 16,
    "in_edges_acc": 0,
    "mention_entries": 706,
    "matched": true
@@ -148,9 +149,9 @@
   {
    "xls_name": "Tarkasaṅgraha",
    "xls_total": 220,
-   "rebuilt_strict": 17,
-   "rebuilt_fuzzy": 50,
-   "in_edges_strict": 19,
+   "rebuilt_strict": 23,
+   "rebuilt_fuzzy": 47,
+   "in_edges_strict": 27,
    "in_edges_acc": 0,
    "mention_entries": 151,
    "matched": true
@@ -158,9 +159,9 @@
   {
    "xls_name": "Gītagovinda",
    "xls_total": 213,
-   "rebuilt_strict": 20,
-   "rebuilt_fuzzy": 16,
-   "in_edges_strict": 18,
+   "rebuilt_strict": 25,
+   "rebuilt_fuzzy": 24,
+   "in_edges_strict": 23,
    "in_edges_acc": 0,
    "mention_entries": 247,
    "matched": true
@@ -168,8 +169,8 @@
   {
    "xls_name": "Padārthadharmasaṅgraha",
    "xls_total": 213,
-   "rebuilt_strict": 3,
-   "rebuilt_fuzzy": 8,
+   "rebuilt_strict": 4,
+   "rebuilt_fuzzy": 9,
    "in_edges_strict": 1,
    "in_edges_acc": 0,
    "mention_entries": 37,
@@ -178,9 +179,9 @@
   {
    "xls_name": "Vṛttaratnākara",
    "xls_total": 203,
-   "rebuilt_strict": 24,
-   "rebuilt_fuzzy": 38,
-   "in_edges_strict": 24,
+   "rebuilt_strict": 27,
+   "rebuilt_fuzzy": 35,
+   "in_edges_strict": 30,
    "in_edges_acc": 0,
    "mention_entries": 165,
    "matched": true
@@ -198,9 +199,9 @@
   {
    "xls_name": "Līlāvatī",
    "xls_total": 199,
-   "rebuilt_strict": 18,
+   "rebuilt_strict": 20,
    "rebuilt_fuzzy": 35,
-   "in_edges_strict": 37,
+   "in_edges_strict": 39,
    "in_edges_acc": 0,
    "mention_entries": 192,
    "matched": true
@@ -208,9 +209,9 @@
   {
    "xls_name": "Devīmāhātmya",
    "xls_total": 193,
-   "rebuilt_strict": 18,
-   "rebuilt_fuzzy": 34,
-   "in_edges_strict": 30,
+   "rebuilt_strict": 26,
+   "rebuilt_fuzzy": 43,
+   "in_edges_strict": 44,
    "in_edges_acc": 0,
    "mention_entries": 208,
    "matched": true
@@ -224,15 +225,15 @@
    ],
    [
     100,
-    12.0
+    13.0
    ],
    [
     250,
-    7.2
+    8.8
    ],
    [
     500,
-    5.0
+    5.8
    ],
    [
     1000,
@@ -242,7 +243,7 @@
   "pd164": [
    [
     50,
-    18.0
+    20.0
    ],
    [
     100,
@@ -250,37 +251,37 @@
    ],
    [
     250,
-    9.6
+    10.0
    ],
    [
     500,
-    7.0
+    7.6
    ],
    [
     1000,
-    4.6
+    4.9
    ]
   ],
   "pwg": [
    [
     50,
-    32.0
+    30.0
    ],
    [
     100,
-    26.0
+    28.0
    ],
    [
     250,
-    18.0
+    19.2
    ],
    [
     500,
-    14.2
+    13.2
    ],
    [
     1000,
-    9.0
+    9.1
    ]
   ],
   "acc": [
@@ -290,19 +291,19 @@
    ],
    [
     100,
-    88.0
+    86.0
    ],
    [
     250,
-    80.0
+    78.8
    ],
    [
     500,
-    73.8
+    74.4
    ],
    [
     1000,
-    68.4
+    67.8
    ]
   ]
  },
@@ -322,71 +323,71 @@
    ],
    [
     100,
-    12.0
+    13.0
    ],
    [
     130,
-    10.8
+    12.3
    ],
    [
     160,
-    9.4
+    10.6
    ],
    [
     190,
-    8.9
+    10.0
    ],
    [
     220,
-    8.2
+    9.1
    ],
    [
     250,
-    7.2
+    8.8
    ],
    [
     280,
-    7.5
+    8.6
    ],
    [
     310,
-    7.1
+    7.7
    ],
    [
     340,
-    7.1
+    7.4
    ],
    [
     370,
-    6.5
+    6.8
    ],
    [
     400,
-    6.2
+    6.5
    ],
    [
     430,
-    5.8
+    6.3
    ],
    [
     460,
-    5.4
+    6.1
    ],
    [
     490,
-    5.1
+    5.7
    ],
    [
     520,
-    4.8
+    5.8
    ],
    [
     550,
-    4.5
+    5.5
    ],
    [
     580,
-    4.5
+    5.2
    ],
    [
     610,
@@ -394,51 +395,51 @@
    ],
    [
     640,
-    4.7
+    4.8
    ],
    [
     670,
-    4.5
+    4.6
    ],
    [
     700,
-    4.4
+    4.6
    ],
    [
     730,
-    4.4
+    4.7
    ],
    [
     760,
-    4.3
+    4.6
    ],
    [
     790,
-    4.3
+    4.6
    ],
    [
     820,
-    4.1
+    4.5
    ],
    [
     850,
-    4.0
+    4.4
    ],
    [
     880,
-    3.9
+    4.2
    ],
    [
     910,
-    3.8
+    4.2
    ],
    [
     940,
-    3.9
+    4.1
    ],
    [
     970,
-    3.9
+    4.0
    ],
    [
     1000,
@@ -452,11 +453,11 @@
    ],
    [
     40,
-    20.0
+    22.5
    ],
    [
     70,
-    14.3
+    15.7
    ],
    [
     100,
@@ -464,23 +465,23 @@
    ],
    [
     130,
-    13.8
+    12.3
    ],
    [
     160,
-    12.5
+    11.2
    ],
    [
     190,
-    11.1
+    12.1
    ],
    [
     220,
-    9.5
+    11.4
    ],
    [
     250,
-    9.6
+    10.0
    ],
    [
     280,
@@ -500,31 +501,31 @@
    ],
    [
     400,
-    7.8
+    8.2
    ],
    [
     430,
-    7.2
+    8.1
    ],
    [
     460,
-    6.7
+    7.8
    ],
    [
     490,
-    6.7
+    7.3
    ],
    [
     520,
-    6.9
+    7.5
    ],
    [
     550,
-    6.5
+    7.1
    ],
    [
     580,
-    6.4
+    6.7
    ],
    [
     610,
@@ -532,61 +533,61 @@
    ],
    [
     640,
-    6.4
+    6.9
    ],
    [
     670,
-    6.1
+    6.6
    ],
    [
     700,
-    5.9
+    6.3
    ],
    [
     730,
-    5.8
+    6.3
    ],
    [
     760,
-    5.5
+    6.2
    ],
    [
     790,
-    5.3
+    6.1
    ],
    [
     820,
-    5.1
+    5.9
    ],
    [
     850,
-    4.9
+    5.6
    ],
    [
     880,
-    4.8
+    5.5
    ],
    [
     910,
-    4.6
+    5.3
    ],
    [
     940,
-    4.6
+    5.2
    ],
    [
     970,
-    4.6
+    5.1
    ],
    [
     1000,
-    4.6
+    4.9
    ]
   ],
   "pwg": [
    [
     10,
-    40.0
+    50.0
    ],
    [
     40,
@@ -594,79 +595,79 @@
    ],
    [
     70,
-    30.0
+    31.4
    ],
    [
     100,
-    26.0
+    28.0
    ],
    [
     130,
-    23.1
+    25.4
    ],
    [
     160,
-    20.6
+    23.1
    ],
    [
     190,
-    20.0
+    21.6
    ],
    [
     220,
-    18.6
+    20.5
    ],
    [
     250,
-    18.0
+    19.2
    ],
    [
     280,
-    16.4
+    17.9
    ],
    [
     310,
-    16.1
+    16.5
    ],
    [
     340,
-    15.9
+    16.2
    ],
    [
     370,
-    14.6
+    14.9
    ],
    [
     400,
-    14.2
+    15.5
    ],
    [
     430,
-    13.7
+    14.9
    ],
    [
     460,
-    13.7
+    14.1
    ],
    [
     490,
-    13.9
+    13.5
    ],
    [
     520,
-    13.7
+    12.9
    ],
    [
     550,
-    13.1
+    12.5
    ],
    [
     580,
-    12.6
+    12.1
    ],
    [
     610,
-    12.3
+    12.1
    ],
    [
     640,
@@ -674,51 +675,51 @@
    ],
    [
     670,
-    11.5
+    11.8
    ],
    [
     700,
-    11.1
+    11.4
    ],
    [
     730,
-    10.7
+    11.2
    ],
    [
     760,
-    10.3
+    11.1
    ],
    [
     790,
-    10.3
+    10.6
    ],
    [
     820,
-    10.0
+    10.5
    ],
    [
     850,
-    9.6
+    10.2
    ],
    [
     880,
-    9.4
+    9.9
    ],
    [
     910,
-    9.5
+    9.6
    ],
    [
     940,
-    9.4
+    9.6
    ],
    [
     970,
-    9.2
+    9.4
    ],
    [
     1000,
-    9.0
+    9.1
    ]
   ],
   "acc": [
@@ -728,7 +729,7 @@
    ],
    [
     40,
-    87.5
+    85.0
    ],
    [
     70,
@@ -736,99 +737,99 @@
    ],
    [
     100,
-    88.0
+    86.0
    ],
    [
     130,
-    85.4
+    86.2
    ],
    [
     160,
-    83.1
+    85.6
    ],
    [
     190,
-    82.1
+    81.6
    ],
    [
     220,
-    81.4
+    79.5
    ],
    [
     250,
-    80.0
-   ],
-   [
-    280,
-    79.6
-   ],
-   [
-    310,
-    78.7
-   ],
-   [
-    340,
     78.8
    ],
    [
+    280,
+    77.9
+   ],
+   [
+    310,
+    78.4
+   ],
+   [
+    340,
+    76.5
+   ],
+   [
     370,
-    77.8
+    76.5
    ],
    [
     400,
-    77.8
+    75.5
    ],
    [
     430,
-    75.3
+    76.3
    ],
    [
     460,
-    73.7
+    76.1
    ],
    [
     490,
-    73.7
+    74.3
    ],
    [
     520,
-    74.0
+    74.6
    ],
    [
     550,
-    73.5
+    73.1
    ],
    [
     580,
-    72.9
+    72.6
    ],
    [
     610,
-    73.0
+    72.0
    ],
    [
     640,
-    73.3
+    71.6
    ],
    [
     670,
-    72.7
+    71.3
    ],
    [
     700,
-    72.3
+    70.6
    ],
    [
     730,
-    72.2
+    70.8
    ],
    [
     760,
-    71.8
+    70.9
    ],
    [
     790,
-    71.4
+    70.1
    ],
    [
     820,
@@ -836,27 +837,27 @@
    ],
    [
     850,
-    69.9
-   ],
-   [
-    880,
     70.0
    ],
    [
-    910,
+    880,
     69.8
    ],
    [
-    940,
-    69.3
+    910,
+    69.1
    ],
    [
-    970,
+    940,
     68.9
    ],
    [
+    970,
+    67.9
+   ],
+   [
     1000,
-    68.4
+    67.8
    ]
   ]
  }

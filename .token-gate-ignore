@@ -18,3 +18,7 @@ HeadwordLists/works_catalogue/ncc_commentary_ranking.tsv
 HeadwordLists/works_catalogue/ncc_commentary_edges.tsv
 HeadwordLists/works_catalogue/ncc_commentary_report.json
 HeadwordLists/works_catalogue/ncc_commentary_ranking.tsv.precision_sample.tsv
+# H7215 (22-10-2026): generated outputs of ncc_name_authority.py — the
+# adjudication table (13,891 verdict rows) and its machine summary.
+HeadwordLists/works_catalogue/ncc_name_authority_adjudication.tsv
+HeadwordLists/works_catalogue/ncc_name_authority_summary.json

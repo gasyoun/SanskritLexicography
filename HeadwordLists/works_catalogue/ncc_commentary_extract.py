@@ -171,10 +171,12 @@ FOLD_ALIASES = {
 }
 
 
-def resolve_target(raw, index, fold_map):
-    """Four-stage target resolution: exact/unique-prefix match_key, authority
-    alias, generic-suffix strip (Bhagavatapurana -> Bhagavata), then the
-    cluster fold map (merged synonym families)."""
+def resolve_target(raw, index, fold_map, authority=None):
+    """Five-stage target resolution: exact/unique-prefix match_key, authority
+    alias, generic-suffix strip (Bhagavatapurana -> Bhagavata), the cluster
+    fold map (merged synonym families), then the H7215 name-authority table
+    (adjudicated t:<fold> -> catalogue entry match_key, body/crosswalk-
+    evidenced merges only)."""
     hit = index.resolve(raw)
     if hit is not None:
         return hit
@@ -192,7 +194,39 @@ def resolve_target(raw, index, fold_map):
         e = fold_map.get(k)
         if e is not None and e != 'AMBIG':
             return e
+    if authority:
+        tgt = authority.get(fold(raw))
+        if tgt:
+            hit = index.by_key.get(tgt)
+            if hit:
+                return hit
     return None
+
+
+def load_authority(path, entries_by_key):
+    """H7215 adjudication TSV -> {fold: match_key} over MERGE rows.  A row's
+    merge_cluster is a canonical cluster id; its entry is found through any
+    member (the adjudicator guarantees the cluster id is a catalogue
+    ncc_id).  Unresolvable rows are skipped loudly -- the table must never
+    silently degrade."""
+    import csv as _csv
+    authority = {}
+    skipped = []
+    with open(path, encoding='utf-8') as f:
+        for row in _csv.DictReader(f, delimiter='\t'):
+            if row.get('verdict') != 'MERGE':
+                continue
+            if row.get('source', '').startswith('seed:'):
+                continue   # seed rows ride FOLD_ALIASES as before
+            key = entries_by_key.get(row.get('merge_cluster', ''))
+            if key is None:
+                skipped.append(row.get('fold', ''))
+                continue
+            authority[row['fold']] = key
+    if skipped:
+        print('authority rows with unknown cluster id (skipped): %d %s'
+              % (len(skipped), skipped[:5]), file=sys.stderr)
+    return authority
 
 
 SUFFIX_KEYS = tuple(sorted({match_key_of(s) for s in (

@@ -1,0 +1,151 @@
+{
+ "t_nodes_total": 13890,
+ "t_edges_total": 21071,
+ "rows_written": 13891,
+ "verdicts": {
+  "REJECT:artifact-short": 125,
+  "REJECT:no-candidate": 8807,
+  "REJECT:ambiguous": 1193,
+  "MERGE:annotated-title": 1495,
+  "REJECT:no-evidence": 1589,
+  "REJECT:variant-no-evidence": 217,
+  "MERGE:title-owner": 254,
+  "MERGE:suffix-variant": 11,
+  "MERGE:spelling-variant": 27,
+  "REJECT:generic-title": 161,
+  "REJECT:artifact-roman": 5,
+  "MERGE:body-alias": 5,
+  "REJECT:rival-claimant": 1
+ },
+ "merges": 1792,
+ "merge_edge_weight": 2171,
+ "merge_by_class": {
+  "annotated-title": 1495,
+  "title-owner": 254,
+  "suffix-variant": 11,
+  "spelling-variant": 27,
+  "body-alias": 5
+ },
+ "top_merges": [
+  [
+   22,
+   "avacuribori",
+   "Avacūri",
+   "annotated-title"
+  ],
+  [
+   20,
+   "muhurtacintamani",
+   "Muhūrttacintāmaṇi",
+   "spelling-variant"
+  ],
+  [
+   19,
+   "avacurichani",
+   "Avacūri",
+   "annotated-title"
+  ],
+  [
+   18,
+   "vidyabhusan",
+   "Vidyābhūṣaṇa",
+   "spelling-variant"
+  ],
+  [
+   18,
+   "avacuribpp",
+   "Avacūri",
+   "annotated-title"
+  ],
+  [
+   15,
+   "upanisanmangalabharanamt",
+   "Upaniṣanmaṅgalābharaṇa",
+   "annotated-title"
+  ],
+  [
+   14,
+   "laksmisenap",
+   "Lakṣmīsena",
+   "annotated-title"
+  ],
+  [
+   13,
+   "amarakosaseezdmg",
+   "Amarakośa",
+   "annotated-title"
+  ],
+  [
+   12,
+   "damodar",
+   "Dāmodarīya",
+   "suffix-variant"
+  ],
+  [
+   11,
+   "avacuriibid",
+   "Avacūri",
+   "annotated-title"
+  ],
+  [
+   10,
+   "raghuvamsa",
+   "Raghuvaṃśa",
+   "title-owner"
+  ],
+  [
+   8,
+   "amarakosai",
+   "Amarakośa",
+   "annotated-title"
+  ],
+  [
+   8,
+   "advaitaratnakaraan",
+   "Advaitaratnākara",
+   "annotated-title"
+  ],
+  [
+   6,
+   "sodasavaranamaharudrarcanapaddhati",
+   "Ṣoḍaśāvaraṇamahārudrārcanāpaddhati",
+   "title-owner"
+  ],
+  [
+   6,
+   "brhatsamhita",
+   "Bṛhatsaṃhitā",
+   "title-owner"
+  ],
+  [
+   6,
+   "asyavamiyasukta",
+   "Asyavāmīyasūkta",
+   "title-owner"
+  ],
+  [
+   6,
+   "amarakosaczdmg",
+   "Amarakośa",
+   "annotated-title"
+  ],
+  [
+   5,
+   "vedantavibhavanaan",
+   "Vedāntavibhāvanā",
+   "annotated-title"
+  ],
+  [
+   5,
+   "mimamsasutras",
+   "Karmamīmāṃsāsūtra",
+   "suffix-variant"
+  ],
+  [
+   5,
+   "laghutikachani",
+   "Laghuṭīkā",
+   "annotated-title"
+  ]
+ ]
+}
