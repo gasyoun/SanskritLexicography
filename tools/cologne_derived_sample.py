@@ -97,6 +97,7 @@ def fetch(url: str, timeout: int = 30):
 
 def is_cf_wall(http: int, body: str) -> bool:
     b = (body or "").lower()
+    # codeql[py/incomplete-url-substring-sanitization] — page-body marker, not URL sanitisation
     return (http in (403, 503) and ("just a moment" in b or "challenges.cloudflare.com" in b)) or http == 0
 
 
