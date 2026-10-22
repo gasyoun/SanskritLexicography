@@ -8,19 +8,22 @@
   "REJECT:ambiguous": 1193,
   "MERGE:annotated-title": 1495,
   "REJECT:no-evidence": 1589,
-  "REJECT:variant-no-evidence": 217,
+  "MERGE:filter-pass": 169,
   "MERGE:title-owner": 254,
   "MERGE:suffix-variant": 11,
   "MERGE:spelling-variant": 27,
+  "REJECT:variant-no-evidence": 34,
+  "REJECT:person-filing": 14,
   "REJECT:generic-title": 161,
   "REJECT:artifact-roman": 5,
   "MERGE:body-alias": 5,
   "REJECT:rival-claimant": 1
  },
- "merges": 1792,
- "merge_edge_weight": 2171,
+ "merges": 1961,
+ "merge_edge_weight": 2384,
  "merge_by_class": {
   "annotated-title": 1495,
+  "filter-pass": 169,
   "title-owner": 254,
   "suffix-variant": 11,
   "spelling-variant": 27,
@@ -94,6 +97,18 @@
    "title-owner"
   ],
   [
+   9,
+   "mahimnasstotra",
+   "Mahimnaḥstotra",
+   "filter-pass"
+  ],
+  [
+   8,
+   "mahimnasstava",
+   "Mahimnaḥstava",
+   "filter-pass"
+  ],
+  [
    8,
    "amarakosai",
    "Amarakośa",
@@ -134,18 +149,14 @@
    "vedantavibhavanaan",
    "Vedāntavibhāvanā",
    "annotated-title"
-  ],
-  [
-   5,
-   "mimamsasutras",
-   "Karmamīmāṃsāsūtra",
-   "suffix-variant"
-  ],
-  [
-   5,
-   "laghutikachani",
-   "Laghuṭīkā",
-   "annotated-title"
   ]
- ]
+ ],
+ "carried_rows": 0,
+ "pass2": {
+  "rows": 217,
+  "filter_pass": 169,
+  "person_filing": 14,
+  "outside_d1": 34,
+  "undecided": 0
+ }
 }
