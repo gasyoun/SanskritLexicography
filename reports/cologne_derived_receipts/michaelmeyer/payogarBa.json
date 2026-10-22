@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/payogarbha",
+ "http": 200,
+ "page_sha256": "a42661f43ee0f6afabd3b6b008549701cd6ee18a6964c5fe4db3d54cfbf8884a",
+ "page_bytes": 1087,
+ "dc_year": "2026",
+ "dict": "mw",
+ "L": "115953.1",
+ "headword": "payogarBa",
+ "iast": "payogarbha",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 1330, col. 1 . pa°yo-garbha m. a cloud, L.",
+ "role": "sample",
+ "verdict": "PRESENT"
+}

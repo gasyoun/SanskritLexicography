@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/ambuj%C4%ABvin",
+ "http": 200,
+ "page_sha256": "c0552f233ca4238bb3fec28b7cb5952e107f48622831b1f199f38ba76c7d80a1",
+ "page_bytes": 1501,
+ "dc_year": "2026",
+ "dict": "mw",
+ "L": "14503.2",
+ "headword": "ambujIvin",
+ "iast": "ambujīvin",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 1315, col. 3 . ambu—jīvin mfn. living by water (as a fisherman &c.), Viṣṇ.",
+ "role": "sample",
+ "verdict": "PRESENT"
+}

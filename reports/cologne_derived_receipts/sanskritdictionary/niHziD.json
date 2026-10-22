@@ -1,0 +1,14 @@
+{
+ "site": "sanskritdictionary.com",
+ "url": "https://sanskritdictionary.com/?q=dharma&iencoding=iast",
+ "http": 403,
+ "cf_wall": true,
+ "page_sha256": "46b8188f04653b92a8326d80cee8db623ef728ed72fe75a8f8fab55090b20706",
+ "page_bytes": 4000,
+ "excerpt": "Just a moment... *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131;font-family:system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"",
+ "headword": "niHziD",
+ "iast": "niḥṣidh",
+ "marker": "",
+ "role": "sample",
+ "verdict": "BLOCKED-CF"
+}

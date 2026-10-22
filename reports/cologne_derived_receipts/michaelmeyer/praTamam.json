@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/prathamam",
+ "http": 200,
+ "page_sha256": "bc2b99ef654c5237e96f9f74633f7448d9e19f41cfa980393f0efd96ea9bed12",
+ "page_bytes": 1437,
+ "dc_year": "2026",
+ "dict": "mw",
+ "L": "134508.1",
+ "headword": "praTamam",
+ "iast": "prathamam",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 678, col. 3 . prathamám ( ám ), ind.",
+ "role": "sample",
+ "verdict": "PRESENT"
+}

@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/barbara",
+ "http": 200,
+ "page_sha256": "48a67ac7195d248d844fd7ccf8788984af56d3f4d5379e860c0cc35ca2da3f1c",
+ "page_bytes": 29144,
+ "dc_year": "2026",
+ "dict": "mw",
+ "L": "142940",
+ "headword": "barbara",
+ "iast": "barbara",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 722, col. 1 . barbara mfn. (also written varvara ) stammering (See -tā ) ☞ p. 722, col. 1 . curly, Kāṭh. ☞ p. 722, col. 1 . barbara m. ( pl. ) the non- Āryan s, barbarians, MBh. ; R. &c. ☞ p. 722, col. 1 . the country of the barbarians, W. ☞ p. 722, col. 1 . a ",
+ "role": "sample",
+ "verdict": "PRESENT"
+}
