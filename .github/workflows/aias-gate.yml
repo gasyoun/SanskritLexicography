@@ -1,0 +1,35 @@
+# AIAS data-manifest gate (H7119, 24-10-2026).
+#
+# The AIAS declaration must travel with the DATA, not only with the prose: a
+# dataset whose provenance nobody declared is the artefact the Xena Project
+# calls worse than none, and the one thing a reader cannot recover later.
+#
+# tools/aias_manifest_check.py is a vendored copy of
+# Uprava/tools/aias_manifest_check.py (see its header). --require-root turns
+# "no aias.yaml" from a green no-op into a named refusal, so this job fails
+# when the manifest is deleted, emptied, points at review evidence that does
+# not exist, or declares a level outside 1-5.
+#
+# Negative control, proven 24-10-2026 (H7119): with aias.yaml moved aside the
+# same command exits 1 with "REFUSED: no aias.yaml at ..." — the gate fires on
+# absence, it is not decorative. A `not declared` manifest PASSES by design:
+# an admitted gap is valid because it stays visible and countable.
+name: AIAS data manifest
+on:
+  pull_request:
+  push:
+    branches: [master]
+permissions:
+  contents: read
+jobs:
+  aias-manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validator selftest (the vendored copy is alive)
+        run: python tools/aias_manifest_check.py --selftest
+      - name: aias.yaml present, well-formed and honest
+        run: python tools/aias_manifest_check.py --strict --require-root .
