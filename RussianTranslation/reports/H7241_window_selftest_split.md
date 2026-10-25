@@ -58,6 +58,22 @@ Module map (full list of test → module → old line number in
 | `python src/pilot/window_selftest.py` (AFTER, legacy wrapper) | `ran 229/229 defined -- 221 passed, 8 failed` |
 | `h7241_split_window_selftest.py --check` | PASS, 243/243 definitions body-identical |
 
+**CI (Linux, the platform where the suite is green)** — `RussianTranslation gates` on PR #2464
+runs `window_selftest.py` against the split tree:
+
+```
+window selftest: ran 229/229 defined -- 228 passed, 1 failed
+FAILED (1): test_lang_parity_ledger_complete
+```
+
+All seven tests that fail on this Windows box (`test_split_agent_pools_all_heal_runtime`,
+`test_lowwide_staggered_dispatch`, `test_h960_accept_sanloss_soft_gate`,
+`test_tnmask_persist_and_offline_detect`, `test_grammar_field_restore_behavioral`,
+`test_german_anchor_repair_behavioral`, `test_h3675_target_anchor_repair_behavioral`) **PASS
+on CI with the split in place** — they are platform-specific and pre-existing, not moved
+assertions breaking. So on the platform that matters the split is 228/229 green and the sole
+red is the ledger hash gate below.
+
 **Failure-set parity** (`reports/H7241_parity.json`): the two runners agree exactly —
 identical 8-failure set, identical 221 passes. Versus the pre-split baseline:
 
@@ -94,7 +110,22 @@ agent's call (see the policy comment that travels with this suite). So this PR l
    the verdict still holds.
 3. Re-run `python -m pytest src/pilot/tests -q` → expected `7 failed, 222 passed`.
 
-Re-hashing the wrapper alone would be wrong: the wrapper no longer holds the evidence.
+Re-hashing the wrapper alone would be wrong (it would silently end the ledger's coverage of the
+test bodies, which now live in `tests/`), and rewriting 42 provenance entries is a data-governance
+change that needs an independent check — so it is deliberately **not** in this PR. Residual is
+tracked as GTD row `WH3`.
+
+## Definition of done — status
+
+| DoD item | status |
+|---|---|
+| `pilot/tests/test_<area>.py` modules that pytest collects | ✅ 229 collected |
+| every assertion preserved | ✅ AST-identical, 243/243 |
+| no test invented / skipped | ✅ 229 in = 229 out, no marks |
+| old file removed or left as a thin wrapper | ✅ 314-line wrapper, same CLI |
+| before/after pass counts recorded and equal | ⚠️ equal except the one human-gated ledger entry (`228/1` vs `229/0` on CI) |
+| no behaviour change | ✅ both runners agree on every test outcome |
+
 
 ## Risks
 
