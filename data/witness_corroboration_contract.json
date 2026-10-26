@@ -1,0 +1,73 @@
+{
+  "schema_version": "witness-corroboration-consumer.v1",
+  "handoff": "H7299",
+  "default_policy": "P3",
+  "required_fields": ["evidence_class", "dictionaries"],
+  "evidence_classes": {
+    "inventory": "Dictionary membership or uniqueness only; independent_witnesses is forbidden.",
+    "within-family-replication": "At least two dictionaries in exactly one witness family; not independent confirmation.",
+    "cross-family-confirmation": "At least two distinct witness families; independent_witnesses must equal the family count."
+  },
+  "rules": [
+    "Never infer independent witnesses from headword agreement or dictionary count.",
+    "Every new cross-dictionary claim must label within-family replication versus cross-family confirmation.",
+    "PD's single-dictionary-unique inventory is inventory-only, not independent textual attestation.",
+    "DCS and Dharmamitra chronology agreement is one collaborative lineage, not two confirmations.",
+    "Apte remains an independent European control; indigenous koshas remain separate anchors."
+  ],
+  "canaries": [
+    {
+      "id": "reject-n-dictionaries-equals-n-independent",
+      "expect": "reject",
+      "claim": {
+        "evidence_class": "cross-family-confirmation",
+        "dictionaries": ["PWG", "PWK", "MW"],
+        "independent_witnesses": 3
+      }
+    },
+    {
+      "id": "accept-petersburg-replication",
+      "expect": "accept",
+      "claim": {
+        "evidence_class": "within-family-replication",
+        "dictionaries": ["PWG", "PWK", "MW"],
+        "independent_witnesses": 1
+      }
+    },
+    {
+      "id": "accept-apte-petersburg-confirmation",
+      "expect": "accept",
+      "claim": {
+        "evidence_class": "cross-family-confirmation",
+        "dictionaries": ["PWG", "AP"],
+        "independent_witnesses": 2
+      }
+    },
+    {
+      "id": "accept-pd-as-separate-family",
+      "expect": "accept",
+      "claim": {
+        "evidence_class": "cross-family-confirmation",
+        "dictionaries": ["PWG", "PD"],
+        "independent_witnesses": 2
+      }
+    },
+    {
+      "id": "reject-pd-unique-as-attestation",
+      "expect": "reject",
+      "claim": {
+        "evidence_class": "inventory",
+        "dictionaries": ["PD"],
+        "independent_witnesses": 1
+      }
+    },
+    {
+      "id": "reject-unlabelled-cross-dictionary-claim",
+      "expect": "reject",
+      "claim": {
+        "dictionaries": ["PWG", "AP"],
+        "independent_witnesses": 2
+      }
+    }
+  ]
+}
