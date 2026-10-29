@@ -1,0 +1,40 @@
+{
+  "snapshots": [
+    {
+      "date": "2026-08-02",
+      "generated_at": "2026-08-02T15:40:00Z",
+      "fidelity_precision": 0.98,
+      "fidelity_n": 100,
+      "judge_coverage_pct": 76.1,
+      "clean_windows": 3,
+      "crashes": 5
+    },
+    {
+      "date": "2026-08-03",
+      "generated_at": "2026-08-03T12:07:53Z",
+      "fidelity_precision": 0.98,
+      "fidelity_n": 100,
+      "judge_coverage_pct": 76.1,
+      "clean_windows": 3,
+      "crashes": 5
+    },
+    {
+      "date": "2026-08-04",
+      "generated_at": "2026-08-04T05:54:54Z",
+      "fidelity_precision": 0.98,
+      "fidelity_n": 100,
+      "judge_coverage_pct": 76.1,
+      "clean_windows": 3,
+      "crashes": 5
+    },
+    {
+      "date": "2026-08-06",
+      "generated_at": "2026-08-06T17:02:58Z",
+      "fidelity_precision": 0.98,
+      "fidelity_n": 100,
+      "judge_coverage_pct": 76.1,
+      "clean_windows": 3,
+      "crashes": 5
+    }
+  ]
+}
