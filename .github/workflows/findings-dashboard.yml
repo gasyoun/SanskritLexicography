@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   refresh:
@@ -46,13 +47,29 @@ jobs:
         # Now the dashboards are fresh; prove file↔dashboard count/importance parity.
         run: python tools/epistemic_integrity_check.py --dir .
 
-      - name: Commit data to master
+      - name: Commit data to master (PR — master is protected)
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add findings_dashboard/data.json findings_dashboard/timeseries.json epistemic_dashboard/epistemic.json
-          git diff --cached --quiet || git commit -m "chore(dashboards): monthly data refresh [skip ci]"
-          git push
+          if git diff --cached --quiet; then
+            echo "no dashboard data change"
+            exit 0
+          fi
+          git commit -m "chore(dashboards): monthly data refresh [skip ci]"
+          # master requires the 'RussianTranslation gates' status check, so a
+          # direct GITHUB_TOKEN push can never pass (GH006, 03-10-2026 run).
+          # Ship the data through a bot-owned branch; the PR auto-merges once
+          # required checks pass. The gh-pages publish below uses the local
+          # files, so it stays fresh either way.
+          BRANCH="bot/findings-dashboard-data"
+          git push -f origin "HEAD:$BRANCH"
+          gh pr create --head "$BRANCH" --base master \
+            --title "chore(dashboards): monthly data refresh ($(date -u +%Y-%m))" \
+            --body "Automated monthly FINDINGS-dashboard data refresh. Auto-merges when required checks pass." 2>/dev/null || true
+          gh pr merge "$BRANCH" --squash --auto || gh pr merge "$BRANCH" --squash
 
       - uses: actions/checkout@v7
         with:
