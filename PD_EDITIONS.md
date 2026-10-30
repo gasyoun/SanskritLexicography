@@ -7,7 +7,11 @@ Historical Principles* — not a bilingual gloss dictionary but a large historic
 thesaurus that arranges each word's senses **in chronological order of attestation**
 (Ṛgveda → *Hāsyārṇava*, 1850 CE), citing the references for each.
 
-- Conceived by **S. M. Katre (1948)**; vol. 1 published **1978** (gen. ed. **A. M. Ghatage**).
+- Conceived by **S. M. Katre (1948)**; first fascicle **1976** (opening «a»), first bound volume
+  **1978** (gen. ed. **A. M. Ghatage**) — the sourced form per
+  [PD_KNOWLEDGE_INDEX.md §2](https://github.com/gasyoun/Uprava/blob/main/papers/A68/PD_KNOWLEDGE_INDEX.md)
+  (H7493, 30-10-2026; reconciles the «1976–2009» fascicle span in
+  `corrections_draft/PD/readme.md` and the «PD 1976» chronology row in `.ai_state.md`).
 - **~35 volumes** published so far, **~125,000 vocables**, built on a primary corpus of
   **1,469 Sanskrit treatises**. Still in progress — published volumes cover only the
   early part of the alphabet, so PD is **incomplete by design** (a multi-decade project).
@@ -22,15 +26,24 @@ thesaurus that arranges each word's senses **in chronological order of attestati
 | Coverage *now* | the digitized published volumes — **currently more matter online** than KoshaSHRI | newer portal; **less matter exposed so far** (per observation 2026-06-24) |
 | Growth | fixed snapshot of what was digitized | the **live editorial project** — grows as new volumes/edits land |
 
-## Local copy — already downloaded, do NOT re-fetch from Cologne
+## Local copy — staging is per machine; re-stage with one command
 
-The CDSL PDScan text is **already on disk** (downloaded in another session):
-`SanskritSpellCheck/external_src/pd/pd.txt` — a local, gitignored download in
-the sibling clone of drdhaval2785/SanskritSpellCheck (not on GitHub)
-— 55 MB, **107,630 `<L>` records**, 879,172 lines, standard csl `<L>/<k1>/<k2>/<h>` markup
-(header: *DFG-Sanskrit-Projekt 2010, PD1-8_FINAL, 2011-10-14*). Use this copy; do not
-re-download from `sanskrit-lexicon.uni-koeln.de`. (The `SanskritSpellCheck/o_vs_O/output/PD.txt`
-files are detector outputs, not the source.)
+**Staging state (30-10-2026, this machine): NOT STAGED.** `external_src/` is gitignored,
+so machine migrations never carry it — the 30-10 PD estate audit found the sole local
+copy gone with the old estate. Never let this file's «already on disk» outrun reality:
+check the file before relying on it.
+
+Re-stage from the canonical Cologne PDScan-2020 download (one command, in the
+SanskritSpellCheck clone):
+
+    python detectors/get_external_source.py PD
+
+→ `SanskritSpellCheck/external_src/pd/pd.txt` — 55 MB, **107,630 `<L>` records**, 879,172
+lines, standard csl `<L>/<k1>/<k2>/<h>` markup (header: *DFG-Sanskrit-Projekt 2010,
+PD1-8_FINAL, 2011-10-14*); the script self-verifies the `<L>` count. License
+CC BY-NC-SA 3.0 © The Sanskrit Library / Thomas Malten — never commit the file, and
+never re-derive it from any source other than the canonical Cologne `pdtxt.zip`.
+(The `SanskritSpellCheck/o_vs_O/output*/PD.txt` files are detector outputs, not the source.)
 
 ## Differences that matter for our use
 
