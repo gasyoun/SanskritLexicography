@@ -1630,8 +1630,11 @@ French dictionaries after ~1890 — the signal is regime-bounded, not a universa
 1865 (PWG's range). With PW dated to its own print run (kürzere Fassung 1879–1889, midpoint
 ≈1884) the five-point correlation drops to ρ = −0.70 (exact permutation p = 0.23) and strict
 monotonicity fails; the defensible German line is the no-PW series (n = 4, ρ = −1.00). The
-retraction is stated in the paper itself: A37 §5 ([papers/A37_dsh/A37_ortho_drift_paper.md:293–299](https://github.com/gasyoun/Uprava/blob/main/papers/A37_dsh/A37_ortho_drift_paper.md)
-in the Uprava A37_dsh pack, 31-10-2026). Additionally, the 5.5× DTA-expanded reform map broke
+retraction is stated in the paper itself: A37 §5, the "Within a language, monotonicity tracks
+the regime, with one retraction" paragraph
+([papers/A37_dsh/A37_ortho_drift_paper.md](https://github.com/gasyoun/Uprava/blob/main/papers/A37_dsh/A37_ortho_drift_paper.md)
+in the Uprava A37_dsh pack; lines 293–299 at handoff mint, 311–322 after the H7497 bounds
+pass, 31-10-2026). Additionally, the 5.5× DTA-expanded reform map broke
 the monotone-by-date ordering at the top — GRA 27.69 above PWG 26.84 (SanskritSpellCheck
 `docs/ORTHO_DRIFT_FINDINGS.md` §O3) — so the scalar German gradient is map-dependent; the
 per-era composition control (SCH 1928 ß-dominant) survives intact. The regime-stratification
