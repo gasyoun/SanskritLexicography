@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 18-10-2026_
+_Created: 01-08-2026 · Last updated: 01-11-2026_
 
 # Changelog
 
@@ -16,6 +16,9 @@ not an error.
 
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
+
+## [1.144.175] - 2026-11-01
+- **H7594 (GLM Flash `GLM-5.3-Flash`) — FINDINGS supersession DAG + dashboard panel + stale-pointer flag.** [`tools/findings_supersession.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tools/findings_supersession.py) parses the registry's supersession annotations (SUPERSEDED/extended/refuted/closed by §N|H####, «extends §N», header «prior: §N» blurbs, in-place SUPERSEDED IN PART / Update notes, narrow builds-on citations) into [`data/findings_supersession.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/findings_supersession.json) — 306 findings, 17 edges, 10 chains, 7 in-place annotations, 0 flags. The dashboard ([`index.html`](https://github.com/gasyoun/SanskritLexicography/blob/master/findings_dashboard/index.html)) gains a «Supersession chains» panel with CURRENT-leaf badges, in-place and closed-by-handoff tags, and a red banner on flags; [`build_findings_data.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/findings_dashboard/build_findings_data.py) embeds it in `data.json` and writes the DAG JSON, declared single-writer in [`tools/generated_artifact_paths.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tools/generated_artifact_paths.py). Gates: `--check` exits 1 on ghost index rows (the §103→§451 class), drifted index anchors, dangling §-targets; `--selftest` pins the known chains (§40 in-place H7497, §458→§650, §447→§453, §508→§651, §465 in-place H1670) 9/9. En route fixed: the stale §647 index row (title+anchor predated the heading update — the exact defect class the flag targets); anchor drift compares modulo slugger dialect so dialect-only differences do not flag. Tests: 28 new in [`tests/test_findings_supersession.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/test_findings_supersession.py); offline suite 268 passed.
 
 ## [1.144.174] - 2026-10-26
 

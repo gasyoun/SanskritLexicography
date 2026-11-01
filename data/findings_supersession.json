@@ -1,0 +1,23 @@
+{
+ "generated_at": "2026-11-01T00:03:47Z",
+ "findings_count": 3,
+ "edges": [],
+ "in_place": [],
+ "prose_superseded": [],
+ "chains": [],
+ "flags": {
+  "ghost_index_rows": [],
+  "anchor_drift": [],
+  "dangling_edge_targets": []
+ },
+ "panels": {
+  "chains": [],
+  "lone_in_place": [],
+  "handoff_edges": [],
+  "flags": {
+   "ghost_index_rows": [],
+   "anchor_drift": [],
+   "dangling_edge_targets": []
+  }
+ }
+}

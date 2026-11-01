@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T21:02:01Z",
+ "generated_at": "2026-10-31T23:32:13Z",
  "stale_days_threshold": 180,
  "counts": {
   "total": 306,
@@ -2765,5 +2765,203 @@
    "age_days": null,
    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#652-the-inherited-goldstücker-dossier-is-misattributed-at-three-points-academy-iii48-is-the-executors-letter-not-a-müller-obituary-the-seal-year-is-1922-on-the-memoirs-own-testimony-1920-is-source-free-eb1911-and-the-four-contemporary-quotations-pin-to-page-level-loci"
   }
- ]
+ ],
+ "supersession": {
+  "chains": [
+   {
+    "chain": [
+     18,
+     579
+    ],
+    "leaf": 579,
+    "fork": false,
+    "leaf_title": "Citation density is a cliff, not a spectrum — 16 dicts wrap citations in `<ls>`, 22 have literally zero, and PWG alone carries 801 788 of them; tag-presence misclassifies GRA, whose printed proof lives in prose",
+    "leaf_anchor": "579-citation-density-is-a-cliff-not-a-spectrum--16-dicts-wrap-citations-in-ls-22-have-literally-zero-and-pwg-alone-carries-801-788-of-them-tag-presence-misclassifies-gra-whose-printed-proof-lives-in-prose",
+    "relations": [
+     "extends"
+    ],
+    "in_place": []
+   },
+   {
+    "chain": [
+     447,
+     453
+    ],
+    "leaf": 453,
+    "fork": false,
+    "leaf_title": "PWG's sense-closing glyph \"〉\" nests FOUR enumeration tiers, not two — Greek letters and roman-numeral markers are unrecognised by the RU pipeline's splitter",
+    "leaf_anchor": "453-pwgs-sense-closing-glyph--nests-four-enumeration-tiers-not-two--greek-letters-and-roman-numeral-markers-are-unrecognised-by-the-ru-pipelines-splitter",
+    "relations": [
+     "builds_on"
+    ],
+    "in_place": []
+   },
+   {
+    "chain": [
+     458,
+     650
+    ],
+    "leaf": 650,
+    "fork": false,
+    "leaf_title": "The post-pa entry-size step is real and VCP-only: Vācaspatyam's entries shrink by a third right at letter pa while SKD and every control dictionary stays flat — a between-letter level shift the prior within-letter rank test could not see by construction",
+    "leaf_anchor": "650-the-post-pa-entry-size-step-is-real-and-vcp-only-vācaspatyams-entries-shrink-by-a-third-right-at-letter-pa-while-skd-and-every-control-dictionary-stays-flat--a-between-letter-level-shift-the-prior-within-letter-rank-test-could-not-see-by-construction",
+    "relations": [
+     "builds_on"
+    ],
+    "in_place": []
+   },
+   {
+    "chain": [
+     508,
+     651
+    ],
+    "leaf": 651,
+    "fork": false,
+    "leaf_title": "Victorian periodical issues on archive.org come in PAIRED items with swapped issue labels — verify the masthead, never the item id — and the fetch layer needs 504 retries, the page/n{leaf} endpoint and scandata.xml; a nil grep over one OCR pass is nil-with-caveat, not absence",
+    "leaf_anchor": "651-victorian-periodical-issues-on-archiveorg-come-in-paired-items-with-swapped-issue-labels--verify-the-masthead-never-the-item-id--and-the-fetch-layer-needs-504-retries-the-pagenleaf-endpoint-and-scandataxml-a-nil-grep-over-one-ocr-pass-is-nil-with-caveat-not-absence",
+    "relations": [
+     "extends"
+    ],
+    "in_place": []
+   },
+   {
+    "chain": [
+     536,
+     537
+    ],
+    "leaf": 537,
+    "fork": false,
+    "leaf_title": "The mintable citation gap is 60 occurrences, not ~7,000 — the resolver is at the ceiling its scan corpus allows",
+    "leaf_anchor": "537-the-mintable-citation-gap-is-60-occurrences-not-7000--the-resolver-is-at-the-ceiling-its-scan-corpus-allows",
+    "relations": [
+     "superseded_by"
+    ],
+    "in_place": []
+   },
+   {
+    "chain": [
+     544,
+     546
+    ],
+    "leaf": 546,
+    "fork": false,
+    "leaf_title": "DCS ships a 180 k-row lemma→gloss layer next to the corpus — `dcs-conllu/lookup/dictionary.csv`, and almost nothing in the org reads it",
+    "leaf_anchor": "546-dcs-ships-a-180-k-row-lemmagloss-layer-next-to-the-corpus--dcs-conllulookupdictionarycsv-and-almost-nothing-in-the-org-reads-it",
+    "relations": [
+     "builds_on"
+    ],
+    "in_place": []
+   },
+   {
+    "chain": [
+     561,
+     573
+    ],
+    "leaf": 573,
+    "fork": false,
+    "leaf_title": "The leading hyphen has two senses, but no dictionary marks which — Wilson is 100 % inflectional, Macdonell is 83 % compound-member/2 % inflectional/15 % a third (taddhita) class the two-way split cannot hold",
+    "leaf_anchor": "573-the-leading-hyphen-has-two-senses-but-no-dictionary-marks-which--wilson-is-100--inflectional-macdonell-is-83--compound-member2--inflectional15--a-third-taddhita-class-the-two-way-split-cannot-hold",
+    "relations": [
+     "extends"
+    ],
+    "in_place": []
+   },
+   {
+    "chain": [
+     603,
+     604
+    ],
+    "leaf": 604,
+    "fork": false,
+    "leaf_title": "`german_anchor` reports 0 repairs on a window that DID drop a span — the `{#…#}` null class was assumed closed, never closed",
+    "leaf_anchor": "604-german_anchor-reports-0-repairs-on-a-window-that-did-drop-a-span--the--null-class-was-assumed-closed-never-closed",
+    "relations": [
+     "extends"
+    ],
+    "in_place": []
+   },
+   {
+    "chain": [
+     605,
+     608
+    ],
+    "leaf": 608,
+    "fork": false,
+    "leaf_title": "A `translation-fidelity-reject` discards the card, and `german_anchor` would refuse it anyway — the counter now says `not_reached` instead of `0`",
+    "leaf_anchor": "608-a-translation-fidelity-reject-discards-the-card-and-german_anchor-would-refuse-it-anyway--the-counter-now-says-not_reached-instead-of-0",
+    "relations": [
+     "builds_on"
+    ],
+    "in_place": []
+   },
+   {
+    "chain": [
+     606,
+     607
+    ],
+    "leaf": 607,
+    "fork": false,
+    "leaf_title": "A model's stated cause for its OWN failure is a hypothesis, not evidence — the paid lane's \"Plan Mode broke StructuredOutput\" self-diagnosis is refuted by four canary calls under one dollar",
+    "leaf_anchor": "607-a-models-stated-cause-for-its-own-failure-is-a-hypothesis-not-evidence--the-paid-lanes-plan-mode-broke-structuredoutput-self-diagnosis-is-refuted-by-four-canary-calls-under-one-dollar",
+    "relations": [
+     "refuted_by"
+    ],
+    "in_place": []
+   }
+  ],
+  "lone_in_place": [
+   {
+    "n": 40,
+    "handoff": "H7497",
+    "kind": "superseded_in_place"
+   },
+   {
+    "n": 40,
+    "handoff": "H7497",
+    "kind": "annotated_in_place"
+   },
+   {
+    "n": 48,
+    "handoff": null,
+    "kind": "update_note"
+   },
+   {
+    "n": 54,
+    "handoff": null,
+    "kind": "update_note"
+   },
+   {
+    "n": 465,
+    "handoff": null,
+    "kind": "update_note"
+   },
+   {
+    "n": 465,
+    "handoff": "H1670",
+    "kind": "update_note"
+   },
+   {
+    "n": 465,
+    "handoff": "H1691",
+    "kind": "update_note"
+   }
+  ],
+  "handoff_edges": [
+   {
+    "n": 39,
+    "handoff": "H5765",
+    "relation": "closed_by"
+   },
+   {
+    "n": 453,
+    "handoff": "H3948",
+    "relation": "extended_by"
+   }
+  ],
+  "flags": {
+   "ghost_index_rows": [],
+   "anchor_drift": [],
+   "dangling_edge_targets": []
+  }
+ }
 }

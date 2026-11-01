@@ -30,4 +30,7 @@ GENERATED_SINGLE_WRITER_PATHS = frozenset({
     "findings/data.json",
     "findings/timeseries.json",
     "findings/platform_status.json",
+    # H7594: wholesale-written by findings_supersession.write_json, called by
+    # findings_dashboard/build_findings_data.py (the monthly refresh's build step)
+    "data/findings_supersession.json",
 })

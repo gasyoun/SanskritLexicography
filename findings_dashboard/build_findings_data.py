@@ -26,6 +26,10 @@ HERE = Path(__file__).resolve().parent
 REPO = HERE.parent
 SIBLINGS = REPO.parent  # C:\Users\user\Documents\GitHub on the local machine
 
+# findings_supersession lives in tools/ — the DAG parser behind the H7594 panel
+sys.path.insert(0, str(REPO / 'tools'))
+import findings_supersession  # noqa: E402
+
 IMPORTANCE = {'🔴': 3, '🟠': 2, '🟡': 1, '🟢': 1}  # +green=low (23-08-2026: four findings dotted green by author)
 FINDINGS_URL = 'https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md'
 STALE_DAYS = 180
@@ -184,6 +188,14 @@ def main():
             'counts': {'total': len(findings), 'by_importance': by_imp,
                        'stale': len(stale)},
             'findings': findings}
+
+    # Supersession DAG panel (H7594): per-topic chains with the CURRENT leaf
+    # verdict, in-place annotations, handoff closures, stale-pointer flags —
+    # and the machine-readable graph lands as data/findings_supersession.json.
+    fsup_findings = findings_supersession.parse_findings(md)
+    fsup_sup = findings_supersession.parse_supersession(md)
+    findings_supersession.write_json(fsup_sup, fsup_findings)
+    data['supersession'] = findings_supersession.chain_panels(fsup_sup, fsup_findings)
     (HERE / 'data.json').write_text(
         json.dumps(data, ensure_ascii=False, indent=1), encoding='utf-8')
     print(f'data.json: {len(findings)} findings, {len(stale)} stale (> {STALE_DAYS}d)')
