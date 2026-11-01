@@ -1,10 +1,10 @@
 # LEXICOGRAPHY_MANUALS.meta — metadoc for the 38-work manuals library
 
-_Created: 10-07-2026 · Last updated: 11-07-2026_
+_Created: 10-07-2026 · Last updated: 01-11-2026_
 
 Directory-level metadoc (per the org metadoc convention) for
 [literature/md/Lexicography-Manuals/](https://github.com/gasyoun/SanskritLexicography/tree/master/literature/md/Lexicography-Manuals)
-— the 38-file library of lexicography, corpus-linguistics, and historical-linguistics
+— the 39-file library of lexicography, corpus-linguistics, and historical-linguistics
 manuals, handbooks, and papers in Markdown conversions.
 
 ## Purpose
@@ -60,7 +60,8 @@ carry no metadata — the identifications below are from internal evidence).
 | [The Arabic Lexicographical Tradition.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/The%20Arabic%20Lexicographical%20Tradition.md) | Baalbaki 2014 (Brill HdO 107) | Strongest non-Sanskrit comparandum: *mubawwab/muǧannas* macrostructure typology, *šawāhid* witness doctrine, millennium of documented borrowing — can carry M01's comparative part-bridge alone |
 | [The latin of roman lexicography.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/The%20latin%20of%20roman%20lexicography.md) | Ferri (ed.) 2011 (Fabrizio Serra) | Proceedings, cite essay-by-essay: Maltby (Servius registers), Lhommé (Verrius→Festus→Paul epitome descent), Gatti (Nonius citation canon) |
 | [Ancient Greek Scholarship.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/Ancient%20Greek%20Scholarship.md) | Dickey 2007 (OUP/APA) | Greek glossography/scholia guide; VMK source-precedence hierarchy = pre-digital layered evidence graph; Atticist register-marking |
-| [A history of Indian literature_ Vol_ 5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/A%20history%20of%20Indian%20literature_%20Vol_%205.md) | **Vogel, *Indian Lexicography* 1979** (HIL V.4, Harrassowitz) | THE survey of the indigenous kośa tradition — primary secondary source for M01 Ch. 4; belongs in the proposal's comparables |
+| [A history of Indian literature_ Vol_ 5.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/A%20history%20of%20Indian%20literature_%20Vol_%205.md) | **Vogel, *Indian Lexicography* 1979** (HIL V.4, Harrassowitz) | THE survey of the indigenous kośa tradition — primary secondary source for M01 Ch. 4; belongs in the proposal's comparables
+| [Vogel 2015 Indian Lexicography.md](https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Lexicography-Manuals/Vogel%202015%20Indian%20Lexicography.md) | **Vogel, *Indian Lexicography* 2015** (rev. & enl., Hanneder & Straube, Indologica Marpurgensia 6, Kirchheim) | Same survey, author-sanctioned posthumous revision — clean vision OCR (01-11-2026, 78 leaves, spot-collated); freshness check vs the 1979-pinned C2P2 datings (3/8 spot-verified substance-stable; repaginated 347→74, so 1979 stays citation-of-record); §§44–46 post-2000 additions; no modern-lexicography section (no PD content) |
 
 ### Corpus-linguistics methods (close-read core + skimmed shelf)
 
