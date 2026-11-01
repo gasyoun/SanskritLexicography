@@ -184,6 +184,35 @@ def main():
             'counts': {'total': len(findings), 'by_importance': by_imp,
                        'stale': len(stale)},
             'findings': findings}
+
+    # B-class re-probe stamps (H7593): verifiability.json carries the per-row
+    # `reprobe` verdicts written by tools/b_class_reprobe.py on the residential
+    # monthly run; this builder only SURFACES them — read-only over a committed
+    # file, no network, so CI is safe (the workflow's no-probe rule stands).
+    try:
+        v = json.loads((REPO / 'epistemic_dashboard' / 'verifiability.json')
+                       .read_text(encoding='utf-8'))
+        br_meta = v.get('b_reprobe') or {}
+        br_rows = []
+        for fid, row in v.get('findings', {}).items():
+            r = row.get('reprobe')
+            if not r:
+                continue
+            f = next((x for x in findings if x['n'] == int(fid)), None)
+            br_rows.append({'n': int(fid), 'verdict': r.get('verdict'),
+                            'checked_at': r.get('checked_at'), 'detail': r.get('detail'),
+                            'title': f['title'] if f else None,
+                            'url': f['url'] if f else None})
+        br_order = {'stale': 0, 'inconclusive': 1, 'verified': 2}
+        br_rows.sort(key=lambda x: (br_order.get(x['verdict'], 3), x['n']))
+        if br_rows:
+            data['b_reprobe'] = {'last_run': br_meta.get('last_run'),
+                                 'probe_host': br_meta.get('probe_host'),
+                                 'verdicts': br_meta.get('verdicts'), 'rows': br_rows}
+    except (OSError, ValueError) as e:
+        print(f'  b_reprobe block omitted: verifiability.json unreadable '
+              f'({e.__class__.__name__})')
+
     (HERE / 'data.json').write_text(
         json.dumps(data, ensure_ascii=False, indent=1), encoding='utf-8')
     print(f'data.json: {len(findings)} findings, {len(stale)} stale (> {STALE_DAYS}d)')

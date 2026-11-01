@@ -59,6 +59,10 @@ correction queue). Re-verify these before relying on them; 🔴 first.</p>
 <p class="mut" id="probemeta"></p>
 <table id="platforms"></table>
 
+<h2 id="bh">B-class re-probe — verifiability.json (§41 §47 §48 §49 §50 §56 §57 §68 §75 §95 §448 §451 §652)</h2>
+<p class="mut" id="bmeta"></p>
+<table id="breprobe"></table>
+
 <script>
 'use strict';
 const DOT = {3:'🔴', 2:'🟠', 1:'🟡'};
@@ -130,6 +134,26 @@ async function j(f) { try { const r = await fetch(f); return r.ok ? r.json() : n
          <td><a href="${esc(f.url)}">${esc(f.title)}</a></td>
          <td>${esc(f.evidence_date || '?')}</td><td>${f.age_days} d</td></tr>`).join('')
        : '<tr><td colspan="5" class="ok">none — the registry is fresh</td></tr>');
+
+    const br = data.b_reprobe;
+    if (br) {
+      document.getElementById('bmeta').textContent =
+        `Probed ${br.last_run || '?'} from ${br.probe_host || '?'} — ` +
+        `verified ${br.verdicts?.verified ?? 0} · stale ${br.verdicts?.stale ?? 0} · ` +
+        `inconclusive ${br.verdicts?.inconclusive ?? 0}. A stale row means the live-host ` +
+        'claim changed and the finding needs re-adjudication; inconclusive is a probe ' +
+        'failure, not evidence.';
+      const ICON = {verified: '✅', stale: '⚠️', inconclusive: '❓'};
+      const CLS = {verified: 'ok', stale: 'bad', inconclusive: 'warn'};
+      document.getElementById('breprobe').innerHTML =
+        '<tr><th></th><th>§</th><th>finding</th><th>verdict</th><th>checked</th><th>detail</th></tr>' +
+        br.rows.map(r =>
+          `<tr><td>${ICON[r.verdict] || '❓'}</td><td>§${r.n}</td>
+           <td><a href="${esc(r.url || '')}">${esc(r.title || '§' + r.n)}</a></td>
+           <td class="${CLS[r.verdict] || ''}">${esc(r.verdict)}</td>
+           <td class="mut">${esc((r.checked_at || '').slice(0, 10))}</td>
+           <td class="mut">${esc(r.detail || '')}</td></tr>`).join('');
+    }
   }
 
   const ts = await j('timeseries.json');
