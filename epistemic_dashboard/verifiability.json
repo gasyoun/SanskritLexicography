@@ -583,7 +583,12 @@
       "restricted_input": false,
       "recipe": null,
       "note": "",
-      "title": "The Sanskrit dictionary-platform landscape, probed live"
+      "title": "The Sanskrit dictionary-platform landscape, probed live",
+      "reprobe": {
+        "verdict": "inconclusive",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "signature platforms not definitive: spokensanskrit=tls-error learnsanskrit.org=timeout"
+      }
     },
     "47": {
       "class": "B",
@@ -593,7 +598,12 @@
       "restricted_input": false,
       "recipe": null,
       "note": "",
-      "title": "Heritage data is acquirable despite the Anubis wall — via a GitHub mirror; the morphology XML is not in it"
+      "title": "Heritage data is acquirable despite the Anubis wall — via a GitHub mirror; the morphology XML is not in it",
+      "reprobe": {
+        "verdict": "verified",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "mirror live (pushed_at 2025-03-02T01:06:54Z); XML/ = ['LICENSES', 'SL_morph.dtd', 'WX_morph.dtd']; gitlab.inria.fr answered 200 (wall/hardening in place)"
+      }
     },
     "43": {
       "class": "A",
@@ -633,7 +643,12 @@
       "restricted_input": false,
       "recipe": null,
       "note": "",
-      "title": "VedaWeb 2.0's resource export is an async task behind a pickup-key, not a direct GET — and the server went unresponsive "
+      "title": "VedaWeb 2.0's resource export is an async task behind a pickup-key, not a direct GET — and the server went unresponsive ",
+      "reprobe": {
+        "verdict": "verified",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "openapi 200; export routes ['/resources/{id}/export', '/search/export']; download route ['/platform/tasks/download']"
+      }
     },
     "49": {
       "class": "B",
@@ -643,7 +658,12 @@
       "restricted_input": false,
       "recipe": null,
       "note": "",
-      "title": "MW↔Heritage coverage highlighting is a duplicate-anchor pattern, not a CSS class — and the mirror's \"current\" dictionary"
+      "title": "MW↔Heritage coverage highlighting is a duplicate-anchor pattern, not a CSS class — and the mirror's \"current\" dictionary",
+      "reprobe": {
+        "verdict": "verified",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "1.html: 159 H_ anchors among 1576 anchors — duplicate-anchor pattern intact"
+      }
     },
     "50": {
       "class": "B",
@@ -653,7 +673,12 @@
       "restricted_input": false,
       "recipe": null,
       "note": "",
-      "title": "CDSL display paths are NOT uniformly `/2020/web/` — and two new digitizations landed in June 2026"
+      "title": "CDSL display paths are NOT uniformly `/2020/web/` — and two new digitizations landed in June 2026",
+      "reprobe": {
+        "verdict": "verified",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "NMMBScan/2020/web → 404, NMMBScan/2026/web → 200 — non-uniform paths hold"
+      }
     },
     "448": {
       "class": "B",
@@ -663,7 +688,12 @@
       "restricted_input": false,
       "recipe": null,
       "note": "",
-      "title": "CORRECTED — the MWScan/2020 `servepdf.php` endpoint is RIGHT (serves 1899); the 1872 first-edition scan coexists on the "
+      "title": "CORRECTED — the MWScan/2020 `servepdf.php` endpoint is RIGHT (serves 1899); the 1872 first-edition scan coexists on the ",
+      "reprobe": {
+        "verdict": "verified",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "api=1&page=277 resolves <!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\" />\n<title>MW Cologne Scan</title>\n<link rel='stylesheet' type='text/css' href='serveimg.css' />\n</head>\n<bod"
+      }
     },
     "51": {
       "class": "C",
@@ -703,7 +733,12 @@
       "restricted_input": false,
       "recipe": null,
       "note": "",
-      "title": "DICO's entry anchors nest three structural roles under one HTML class — only one is a true entry boundary"
+      "title": "DICO's entry anchors nest three structural roles under one HTML class — only one is a true entry boundary",
+      "reprobe": {
+        "verdict": "verified",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "1.html: 942 class=\"navy\" anchors — shared-class structure intact"
+      }
     },
     "55": {
       "class": "A",
@@ -723,7 +758,12 @@
       "restricted_input": false,
       "recipe": null,
       "note": "",
-      "title": "samskrtam.ru/z/ is id-addressed with no name lookup — deep-linking needs a scraped root→id table; 8 primer-basic roots a"
+      "title": "samskrtam.ru/z/ is id-addressed with no name lookup — deep-linking needs a scraped root→id table; 8 primer-basic roots a",
+      "reprobe": {
+        "verdict": "verified",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "905 verb.php?id= links in the index — id-addressing holds"
+      }
     },
     "58": {
       "class": "A",
@@ -833,7 +873,12 @@
       "restricted_input": false,
       "recipe": null,
       "note": "",
-      "title": "The Sanskrit spellchecker landscape: one dormant demo, one license-unsettled 543k wordlist, no occupant"
+      "title": "The Sanskrit spellchecker landscape: one dormant demo, one license-unsettled 543k wordlist, no occupant",
+      "reprobe": {
+        "verdict": "verified",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "sa_IN: ['hyph_sa_IN.dic', 'sa_IN.aff', 'sa_IN.dic']; COLOGNE #91 closed (not_planned) — no occupant shipped; demo site answers 200 (dormant since ~2022 per ICON 2022 paper)"
+      }
     },
     "69": {
       "class": "D",
@@ -853,7 +898,12 @@
       "restricted_input": false,
       "recipe": null,
       "note": "",
-      "title": "The full Devībhāgavata-purāṇa Sanskrit is NOT on GRETIL — only the Devigita fragment; the complete mūla lives on sanskri"
+      "title": "The full Devībhāgavata-purāṇa Sanskrit is NOT on GRETIL — only the Devigita fragment; the complete mūla lives on sanskri",
+      "reprobe": {
+        "verdict": "inconclusive",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "probe crashed: RuntimeError: http://sanskritdocuments.org/doc_purana/: TimeoutError: timed out"
+      }
     },
     "78": {
       "class": "A",
@@ -1063,7 +1113,12 @@
       "restricted_input": false,
       "recipe": null,
       "note": "",
-      "title": "DharmaMitra `unsandhied` batches return MISALIGNED results on short inputs — doubled echoes and other texts' tokens — so"
+      "title": "DharmaMitra `unsandhied` batches return MISALIGNED results on short inputs — doubled echoes and other texts' tokens — so",
+      "reprobe": {
+        "verdict": "inconclusive",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "API unreachable after 4 attempts: URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:103"
+      }
     },
     "96": {
       "class": "A",
@@ -1133,7 +1188,12 @@
       "restricted_input": false,
       "recipe": null,
       "note": "",
-      "title": "`10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos"
+      "title": "`10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos",
+      "reprobe": {
+        "verdict": "verified",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "DOI still resolves to the unrelated preprint: https://zenodo.org/records/15834721 «A Non-Surgical and Unconditional Proof of Topological Sphericity via Entropy-Spectral Dynamics (v2.2) | Zenodo»"
+      }
     },
     "104": {
       "class": "A",
@@ -1173,7 +1233,37 @@
       "restricted_input": false,
       "recipe": null,
       "note": "re-probeable: the Academy/Athenaeum/memoir/ADB loci re-fetch live; archive.org items may rotate or dark",
-      "title": "The inherited Goldstücker dossier is misattributed at three points: Academy III/48 is the executor's letter (not a Müller obituary), the seal year is 1922 on the memoir's own testimony (1920 is source-free EB1911), and the four contemporary quotations pin to page-level loci"
+      "title": "The inherited Goldstücker dossier is misattributed at three points: Academy III/48 is the executor's letter (not a Müller obituary), the seal year is 1922 on the memoir's own testimony (1920 is source-free EB1911), and the four contemporary quotations pin to page-level loci",
+      "reprobe": {
+        "verdict": "verified",
+        "checked_at": "2026-11-01T00:17:43Z",
+        "detail": "all four loci re-fetch: sim_academy-and-literature_1872-05-15_3_48: darked/empty metadata | sim_academy-and-literature_1872-05-15_3_10: live, 19 files | sim_athenaeum-uk_1872-03-09_2315: live, 20 files | in.ernet.dli.2015.31677: live, 12 files | ADB:Goldstücker, Theodor answered 200, quote fragments present"
+      }
+    }
+  },
+  "b_reprobe": {
+    "last_run": "2026-11-01T00:17:43Z",
+    "tool": "tools/b_class_reprobe.py",
+    "probe_host": "residential (local machine)",
+    "probed": [
+      "41",
+      "448",
+      "451",
+      "47",
+      "48",
+      "49",
+      "50",
+      "56",
+      "57",
+      "652",
+      "68",
+      "75",
+      "95"
+    ],
+    "verdicts": {
+      "verified": 10,
+      "stale": 0,
+      "inconclusive": 3
     }
   }
 }
