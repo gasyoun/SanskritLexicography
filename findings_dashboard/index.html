@@ -25,6 +25,13 @@
   .chart { background: var(--card); border: 1px solid var(--line); border-radius: 8px;
            padding: .6rem; margin: .6rem 0; }
   .ok  { color: #1a7f37; } .bad { color: #d1242f; } .warn { color: #9a6700; }
+  .leaf { color: #1a7f37; font-weight: 600; font-size: .72rem; border: 1px solid currentColor;
+          border-radius: 999px; padding: 0 .45rem; margin-left: .35rem; }
+  .tag { color: var(--mut); font-size: .72rem; border: 1px solid var(--line);
+         border-radius: 999px; padding: 0 .45rem; margin-left: .35rem; }
+  .flagbox { border: 1px solid #d1242f; color: #d1242f; border-radius: 8px;
+             padding: .5rem .8rem; margin: .6rem 0; }
+  .chain-row { margin: .55rem 0; padding-left: .6rem; border-left: 3px solid var(--line); }
   .dot { font-size: .8rem; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: .8rem; }
 </style>
@@ -45,6 +52,10 @@
 
 <h2>Findings by section × importance</h2>
 <table id="matrix"></table>
+
+<h2>Supersession chains</h2>
+<p class="mut">Chains of findings that supersede/extend one another, stale → current. The leaf carries the CURRENT verdict; in-place annotations stay attached to their §, handoff closures appear as tags. A red banner here means the stale-pointer flag caught something in the registry itself.</p>
+<div id="supersession"></div>
 
 <h2 id="staleh">Stale findings — evidence older than <span id="staled">180</span> days</h2>
 <p class="mut">Point-in-time measurements decay (registry §25 measured ~0.8 %/week on a
@@ -130,6 +141,40 @@ async function j(f) { try { const r = await fetch(f); return r.ok ? r.json() : n
          <td><a href="${esc(f.url)}">${esc(f.title)}</a></td>
          <td>${esc(f.evidence_date || '?')}</td><td>${f.age_days} d</td></tr>`).join('')
        : '<tr><td colspan="5" class="ok">none — the registry is fresh</td></tr>');
+
+    // Supersession chains — per-topic chain with the CURRENT leaf verdict (H7594)
+    const sup = data.supersession;
+    if (sup) {
+      const el = document.getElementById('supersession');
+      const byN = new Map(data.findings.map(f => [f.n, f]));
+      const secLink = n => {
+        const f = byN.get(n);
+        return f ? `<a href="${esc(f.url)}">§${n}</a>` : `§${n}`;
+      };
+      const inPlaceTag = a =>
+        `<span class="tag">in-place: §${a.n}${a.handoff ? ' · ' + esc(a.handoff) : ''}</span>`;
+      el.innerHTML =
+        ((sup.flags && (sup.flags.ghost_index_rows.length || sup.flags.anchor_drift.length ||
+          sup.flags.dangling_edge_targets.length)) ?
+          `<div class="flagbox">⚠️ stale-pointer flag: ` +
+          `${(sup.flags.ghost_index_rows.length + sup.flags.anchor_drift.length + sup.flags.dangling_edge_targets.length)} flagged pointer(s) in the registry — see data/findings_supersession.json</div>` : '') +
+        (sup.chains || []).map(c => {
+          const leaf = byN.get(c.leaf);
+          const chain = c.chain.map(secLink).join(' <span class="mut">→</span> ');
+          const tags =
+            (c.in_place || []).map(inPlaceTag).join('') +
+            (sup.handoff_edges || [])
+              .filter(e => c.chain.includes(e.n))
+              .map(e => `<span class="tag">${esc(e.relation)} ${esc(e.handoff)}</span>`)
+              .join('');
+          const leafLine = leaf ?
+            `<div class="mut">CURRENT: <a href="${esc(leaf.url)}">${esc(leaf.title)}</a> ${DOT[leaf.importance] || ''}</div>` : '';
+          return `<div class="chain-row"><div>${chain}${leaf ? ' <span class="leaf">CURRENT</span>' : ''}</div>${leafLine}<div>${tags}</div></div>`;
+        }).join('') +
+        (sup.lone_in_place || []).map(a =>
+          `<div class="chain-row"><div>${secLink(a.n)}</div>` +
+          `<div class="mut">in-place annotation${a.handoff ? ' (' + esc(a.handoff) + ')' : ''} · ${esc(a.kind)}</div></div>`).join('');
+    }
   }
 
   const ts = await j('timeseries.json');
