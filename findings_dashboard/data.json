@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T23:32:13Z",
+ "generated_at": "2026-11-01T00:24:27Z",
  "stale_days_threshold": 180,
  "counts": {
   "total": 306,
@@ -2963,5 +2963,120 @@
    "anchor_drift": [],
    "dangling_edge_targets": []
   }
+ },
+ "b_reprobe": {
+  "last_run": "2026-11-01T00:17:43Z",
+  "probe_host": "residential (local machine)",
+  "verdicts": {
+   "verified": 10,
+   "stale": 0,
+   "inconclusive": 3
+  },
+  "rows": [
+   {
+    "n": 41,
+    "verdict": "inconclusive",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "signature platforms not definitive: spokensanskrit=tls-error learnsanskrit.org=timeout",
+    "title": "The Sanskrit dictionary-platform landscape, probed live",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#41-the-sanskrit-dictionary-platform-landscape-probed-live"
+   },
+   {
+    "n": 75,
+    "verdict": "inconclusive",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "probe crashed: RuntimeError: http://sanskritdocuments.org/doc_purana/: TimeoutError: timed out",
+    "title": "The full Devībhāgavata-purāṇa Sanskrit is NOT on GRETIL — only the Devigita fragment; the complete mūla lives on sanskritdocuments.org without `DbhP_` markers",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#75-the-full-devībhāgavata-purāṇa-sanskrit-is-not-on-gretil--only-the-devigita-fragment-the-complete-mūla-lives-on-sanskritdocumentsorg-without-dbhp_-markers"
+   },
+   {
+    "n": 95,
+    "verdict": "inconclusive",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "API unreachable after 4 attempts: URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:103",
+    "title": "DharmaMitra `unsandhied` batches return MISALIGNED results on short inputs — doubled echoes and other texts' tokens — so every consumer must validate by surface reconstruction before display",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#95-dharmamitra-unsandhied-batches-return-misaligned-results-on-short-inputs--doubled-echoes-and-other-texts-tokens--so-every-consumer-must-validate-by-surface-reconstruction-before-display"
+   },
+   {
+    "n": 47,
+    "verdict": "verified",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "mirror live (pushed_at 2025-03-02T01:06:54Z); XML/ = ['LICENSES', 'SL_morph.dtd', 'WX_morph.dtd']; gitlab.inria.fr answered 200 (wall/hardening in place)",
+    "title": "Heritage data is acquirable despite the Anubis wall — via a GitHub mirror; the morphology XML is not in it",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#47-heritage-data-is-acquirable-despite-the-anubis-wall--via-a-github-mirror-the-morphology-xml-is-not-in-it"
+   },
+   {
+    "n": 48,
+    "verdict": "verified",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "openapi 200; export routes ['/resources/{id}/export', '/search/export']; download route ['/platform/tasks/download']",
+    "title": "VedaWeb 2.0's resource export is an async task behind a pickup-key, not a direct GET — and the server went unresponsive mid-attempt",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#48-vedaweb-20s-resource-export-is-an-async-task-behind-a-pickup-key-not-a-direct-get--and-the-server-went-unresponsive-mid-attempt"
+   },
+   {
+    "n": 49,
+    "verdict": "verified",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "1.html: 159 H_ anchors among 1576 anchors — duplicate-anchor pattern intact",
+    "title": "MW↔Heritage coverage highlighting is a duplicate-anchor pattern, not a CSS class — and the mirror's \"current\" dictionary is a different-scope asset than the 2014 reader stem list",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#49-mwheritage-coverage-highlighting-is-a-duplicate-anchor-pattern-not-a-css-class--and-the-mirrors-current-dictionary-is-a-different-scope-asset-than-the-2014-reader-stem-list"
+   },
+   {
+    "n": 50,
+    "verdict": "verified",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "NMMBScan/2020/web → 404, NMMBScan/2026/web → 200 — non-uniform paths hold",
+    "title": "CDSL display paths are NOT uniformly `/2020/web/` — and two new digitizations landed in June 2026",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#50-cdsl-display-paths-are-not-uniformly-2020web--and-two-new-digitizations-landed-in-june-2026"
+   },
+   {
+    "n": 56,
+    "verdict": "verified",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "1.html: 942 class=\"navy\" anchors — shared-class structure intact",
+    "title": "DICO's entry anchors nest three structural roles under one HTML class — only one is a true entry boundary",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#56-dicos-entry-anchors-nest-three-structural-roles-under-one-html-class--only-one-is-a-true-entry-boundary"
+   },
+   {
+    "n": 57,
+    "verdict": "verified",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "905 verb.php?id= links in the index — id-addressing holds",
+    "title": "samskrtam.ru/z/ is id-addressed with no name lookup — deep-linking needs a scraped root→id table; 8 primer-basic roots are absent",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#57-samskrtamruz-is-id-addressed-with-no-name-lookup--deep-linking-needs-a-scraped-rootid-table-8-primer-basic-roots-are-absent"
+   },
+   {
+    "n": 68,
+    "verdict": "verified",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "sa_IN: ['hyph_sa_IN.dic', 'sa_IN.aff', 'sa_IN.dic']; COLOGNE #91 closed (not_planned) — no occupant shipped; demo site answers 200 (dormant since ~2022 per ICON 2022 paper)",
+    "title": "The Sanskrit spellchecker landscape: one dormant demo, one license-unsettled 543k wordlist, no occupant",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#68-the-sanskrit-spellchecker-landscape-one-dormant-demo-one-license-unsettled-543k-wordlist-no-occupant"
+   },
+   {
+    "n": 448,
+    "verdict": "verified",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "api=1&page=277 resolves <!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\" />\n<title>MW Cologne Scan</title>\n<link rel='stylesheet' type='text/css' href='serveimg.css' />\n</head>\n<bod",
+    "title": "CORRECTED — the MWScan/2020 `servepdf.php` endpoint is RIGHT (serves 1899); the 1872 first-edition scan coexists on the portal with colliding page numbers",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#448-corrected--the-mwscan2020-servepdfphp-endpoint-is-right-serves-1899-the-1872-first-edition-scan-coexists-on-the-portal-with-colliding-page-numbers"
+   },
+   {
+    "n": 451,
+    "verdict": "verified",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "DOI still resolves to the unrelated preprint: https://zenodo.org/records/15834721 «A Non-Surgical and Unconditional Proof of Topological Sphericity via Entropy-Spectral Dynamics (v2.2) | Zenodo»",
+    "title": "`10.5281/zenodo.15834721` is a false DOI, cited as genuine in two different repos",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#451-105281zenodo15834721-is-a-false-doi-cited-as-genuine-in-two-different-repos"
+   },
+   {
+    "n": 652,
+    "verdict": "verified",
+    "checked_at": "2026-11-01T00:17:43Z",
+    "detail": "all four loci re-fetch: sim_academy-and-literature_1872-05-15_3_48: darked/empty metadata | sim_academy-and-literature_1872-05-15_3_10: live, 19 files | sim_athenaeum-uk_1872-03-09_2315: live, 20 files | in.ernet.dli.2015.31677: live, 12 files | ADB:Goldstücker, Theodor answered 200, quote fragments present",
+    "title": "The inherited Goldstücker dossier is misattributed at three points: Academy III/48 is the executor's letter (not a Müller obituary), the seal year is 1922 on the memoir's own testimony (1920 is source-free EB1911), and the four contemporary quotations pin to page-level loci",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md#652-the-inherited-goldstücker-dossier-is-misattributed-at-three-points-academy-iii48-is-the-executors-letter-not-a-müller-obituary-the-seal-year-is-1922-on-the-memoirs-own-testimony-1920-is-source-free-eb1911-and-the-four-contemporary-quotations-pin-to-page-level-loci"
+   }
+  ]
  }
 }
