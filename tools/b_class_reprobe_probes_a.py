@@ -1,10 +1,14 @@
 """Per-row probes for §41-§57 (H7593): each function implements the finding's own
 re-probe recipe. Lane contract: b_class_reprobe.py."""
 
+import json
 import re
 import sys
+import ssl
+import urllib.error
 
-from b_class_reprobe_core import (REPO, http_get, http_post_json, gh_api,
+from b_class_reprobe_core import (ARCHIVE_RETRIES, ARCHIVE_SLEEP, REPO,
+                                  http_get, http_post_json, gh_api,
                                   gh_dir_listing)
 
 def probe_41():

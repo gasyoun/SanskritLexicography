@@ -4,8 +4,11 @@ mechanics (paired items, 504-retries). Lane contract: b_class_reprobe.py."""
 import json
 import re
 import time
+import ssl
+import urllib.error
 
-from b_class_reprobe_core import (http_get, http_post_json, gh_api,
+from b_class_reprobe_core import (ARCHIVE_RETRIES, ARCHIVE_SLEEP,
+                                http_get, http_post_json, gh_api,
                                   gh_dir_listing)
 
 def probe_68():
