@@ -25,6 +25,7 @@ archive.org rows follow FINDINGS §651 mechanics: paired same-date items (the
 correct-labelled one may be darked — the sibling is the route), 504-retries, and
 "verify the masthead, never the item id".
 """
+import json
 import sys
 from pathlib import Path
 
@@ -32,7 +33,7 @@ HERE = Path(__file__).resolve().parent
 if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
 
-from b_class_reprobe_core import VERIF, VERDICTS, stamp  # noqa: E402
+from b_class_reprobe_core import B_IDS, VERIF, VERDICTS, stamp  # noqa: E402
 from b_class_reprobe_probes_a import (  # noqa: E402
     probe_41, probe_47, probe_48, probe_49, probe_50, probe_56, probe_57)
 from b_class_reprobe_probes_b import (  # noqa: E402
