@@ -5,6 +5,7 @@
 *
 !.gitignore
 !BOOK_PLAN.md
+!M01_CLAIM_LEDGER.tsv
 !CHANGELOG.md
 !.ai_state.md
 !RIGHTS_TABLE.md

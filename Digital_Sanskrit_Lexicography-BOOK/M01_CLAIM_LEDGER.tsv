@@ -1,0 +1,33 @@
+# M01 CLAIM LEDGER — the monograph's load-bearing numbers, plan vs assembled chapters.
+#
+# Format: id <TAB> check <TAB> value <TAB> referent <TAB> anchors <TAB>
+#   check = plan | pin | allow | term | contradiction
+#   plan/pin anchors = file stems (BOOK_PLAN, ch00_..., ch14_...) — a stem covers every
+#   section of that file. `plan` rows must hold in BOOK_PLAN and in every listed chapter.
+#   allow value = regex matched against the ±90-char window of a numeral; matching
+#   occurrences are suppressed as legitimate (a superseded figure quoted as history).
+#
+# Run: python tools/paper_coherence_check.py --book-dir chapters --plan BOOK_PLAN.md \
+#        --ledger M01_CLAIM_LEDGER.tsv
+#
+# Created 04-11-2026 · H#### (M01 coherence lane b) · DeepSeek Flash (`deepseek-flash`)
+# The book is 14 chapters + Introduction + 5 part-bridges; anchors name only the files that
+# actually restate a figure, because a pin is a claim about where a number lives.
+
+# --- corpus size: one exact figure, one rounded restatement ---
+P-tokens	 plan	 5,688,416	 DCS content tokens	 BOOK_PLAN;ch02_measurement_framework	 the §6.1 disclosure; exact figure
+A-rounded	 allow	 5\.7( ?M|illion)	 rounded restatement of P-tokens	 	 same measurement, one decimal — not a rival
+
+# --- the correction-event release: the figure that drifted once (H1269) ---
+P-events	 plan	 52,498	 correction events	 BOOK_PLAN;ch00_introduction_two_civilizations;ch14_error_typology;bridge_part5_living_dictionary	 released snapshot 2014-03-18 → 2026-05-30
+P-correctors	 plan	 208	 named correctors	 BOOK_PLAN;ch14_error_typology	 unique correctors in the release
+P-dicts	 plan	 43	 dictionaries in the correction release	 BOOK_PLAN;ch01_latin_discretion_screen;ch14_error_typology	 the release population (other counts — 41, 36, 15, 11 — are different populations)
+
+# --- a superseded figure may be quoted as history, but only as history ---
+A-old	 allow	 50,953	 supersed|cut|A31|earlier|pre-H	 	 the pre-H1269 cut, quoted only in the correction narrative
+A-old2	 allow	 50 953	 superseded event cut	 	 spaced variant
+
+# --- book architecture ---
+# declared-pairs: 15/14 (the plan's 15 source articles become 14 chapters — A02+A33 merge into Ch. 6; the pair is the architecture, not a drift); 208/210 (the 210 is the DISPROVEN prior count, quoted in the correction narrative: "correctors, not 210 — verified against the CSV"); 52,498/50,953 (the pre-H1269 cut, quoted only as history); 52,498/35,057 and 52,498/33,755 (subset statements: Funderburk's own events; the derived-label stratum — both inside the total, not rivals)
+P-chapters	 plan	 14	 chapters	 BOOK_PLAN	 the book is 14 chapters (A02+A33 merged into Ch. 6)
+P-articles	 plan	 15	 source articles	 BOOK_PLAN	 the articles the chapters are converted from
