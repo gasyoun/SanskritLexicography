@@ -16,7 +16,8 @@
 
 # --- corpus size: one exact figure, one rounded restatement ---
 P-tokens	 plan	 5,688,416	 DCS content tokens	 BOOK_PLAN;ch02_measurement_framework	 the §6.1 disclosure; exact figure
-A-rounded	 allow	 5\.7( ?M|illion)	 rounded restatement of P-tokens	 	 same measurement, one decimal — not a rival
+A-rounded	 allow	 5\.7\s?(M|million)	 rounded restatement of P-tokens	 	 same measurement, one decimal — not a rival
+A-trunc	 allow	 5\.6\s?M.*(truncat|rival|round)	 explained truncation of P-tokens	 	 '5.6M-token (a truncation ...)' — explained in place, not a rival
 
 # --- the correction-event release: the figure that drifted once (H1269) ---
 P-events	 plan	 52,498	 correction events	 BOOK_PLAN;ch00_introduction_two_civilizations;ch14_error_typology;bridge_part5_living_dictionary	 released snapshot 2014-03-18 → 2026-05-30
