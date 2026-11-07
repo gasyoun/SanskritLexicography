@@ -9805,6 +9805,10 @@ probe before reporting the absence — but having proved it, report the absence 
 
 > Source: [`Uprava/papers/A68/GOLDSTUCKER_VS_WILSON_CENSUS_2026-10-30.md`](https://github.com/gasyoun/Uprava/blob/main/papers/A68/GOLDSTUCKER_VS_WILSON_CENSUS_2026-10-30.md) (Uprava PR #6466) + iscls.tex footnotes (Uprava PR #6475) — SanskritLexicography · 31-10-2026 (GLM-5.3-Flash `zai-individual-coding-plan/GLM-5.3-Flash` (ZCode))
 
-§653 takes the next number.
+🟡 **§653. An errata print-vs-digitization verdict does not need the paper owner in the loop: an independent second digitization of a DIFFERENT printing of the same book that carries the SAME defective form proves the defect lives in the print tradition (kind: print).** Evidence: Kochergina lesson XXXVIII exercise IV: the repo .mdx (2017-lineage digitization) and the uztranslations-2011 transliterated electronic edition of the 1994 «Филология» printing both carry akṛkṣan (kR^iSiivalaa bhuumimakR^ikSanparaM) and pitādāditi (etaddhanaM pitaadaaditi vadantaH), sentence-for-sentence identical — SanskritGrammar PR #1162 (H7817), the estate's first two kind: print rows (.na. ids, printed page/line unpinned) Implication: Before parking an errata candidate on «the paper decides», hunt a second independent lineage (another printing's digitization, a library scan): agreement across lineages = kind print; our copy alone diverging = kind digitization. Print rows correct nothing in the files — the .mdx stays a faithful mirror of the printed defect
+
+> Source: H7817 (GLM 5.3 glm-5.3), SanskritGrammar PR #1162 merged e4d48f4; witness PDF: https://vahagnakanch.wordpress.com/wp-content/uploads/2011/04/sangrit.pdf -- SanskritGrammar -- 07-11-2026
+
+§654 takes the next number.
 
 _Dr. Mārcis Gasūns_
