@@ -120,7 +120,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pwg_mask.py": "be84374161e05e8958a9f55be14c41ad170d3e75bd6221334217649f61bfd625",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -141,7 +141,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pwg_mask.py": "be84374161e05e8958a9f55be14c41ad170d3e75bd6221334217649f61bfd625",
       "src/pilot/prompt_rule_audit.py": "05ded5041761ea579355bbb22fff97b344d27372cff004f7461dc3f4e332ca9e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -164,7 +164,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
       "src/pilot/headless_worker.py": "b5e5215688a85ec7ef102ca4d52e92d464be85247387e665990a93e0fa468d0d",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -200,7 +200,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -219,7 +219,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -238,7 +238,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -443,7 +443,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -462,7 +462,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "888f0a6c17e557403cbd709a1ff2e99894683af650f6e22a1b7dcd892b05c873",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -500,7 +500,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -559,7 +559,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
       "src/pilot/perf_preflight.py": "bc03b5b9878e526d3ffd9d2e5352bd1c1bcf69c8961ac37d673bafb9d6bf645b",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -578,7 +578,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "H2248",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -609,7 +609,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "save_and_audit.py": "e1d7a3b6c5a8c47dbc414dbcf991e9ead82b76a013e4624cffe76066e576c8b6",
       "src/pilot/audit_window.py": "6924329df761ca120a0f58c81403936913f7675fdcd086eefaee3d10e6de3fef",
       "src/pilot/autosplit_requeue.py": "59869969b9f7dd2625b27734c5ce68962c6ca18570e636085aaab7a6344462d4",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -628,7 +628,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/translation_memory.py": "ea3b6cf830df43f5cb9d9523c3d68482a5d635ca47b89b002b1d950395dc6126",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -646,7 +646,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/corpus_gate.py": "19c0ba639a5828684717a9e7c87f1acd9c6a8614a70cdd01992743fd4d7ddbb4",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -665,7 +665,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/ls_resolver.py": "c122801b11d555cc0fe5243424ca0fe2eca38be40f62437602cb78dd2eb1c538",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -795,7 +795,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/promote_lock.py": "f8dda14a7423dfecac77893f10f7735361db8bd6c79297172243aafaf1d28ef4",
       "src/promote_final_cards.py": "f5f8118865a29fec3258cf92390ecb4b5509d6134ba5da9f4312f175c285c8f3",
       "src/promote_en.py": "402c667a86cb23682d80b9f04a82416d46fb1d1a984e004b4325f5e9debe9b06",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -820,7 +820,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/requeue_from_audit.py": "251437e975744d2f9102d2a5690e67a4d2c347362b40d15e164347dda318c1c6",
       "src/pilot/root_window_status.py": "ab13516c5ffa824ddc45b2dc0d482c09f06de57d5963dcc31d73ecc638a116f3",
       "src/pilot/window_reports.py": "a8e72de3bced4f00265753e8b8b305500f2584a1734501e5dca297c8e95485a8",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -849,7 +849,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/layer_versions.py": "42e44f32db2628e3137522f5d15827cf0641b642bdacfdb76be04cdd41eaefba",
       "src/pilot/failure_capture.py": "c0ca940b54fc326e0a0b67320758c81aa5a48dd29247250996c38a85a7786e4d",
       "src/pilot/translation_memory.py": "ea3b6cf830df43f5cb9d9523c3d68482a5d635ca47b89b002b1d950395dc6126",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -869,7 +869,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/annotate_evidence.py": "d7fcfeffc887c1c96ef71bac72a0f68f01d689c8e2cf94117419df7b93535c39",
       "src/annotation_report.py": "747f46c0c213b178cfeba22c04314696f4312a55eaf738d946dac08ead06c9d0",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -888,7 +888,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/coordinator.py": "e198e48497a04a973c4c99e9e403f2c42e5f10843fc92179f8c252d396c64594",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -925,7 +925,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/koch_xref.py": "b6b3c3524f446862a25cf0f086125d53977dabf02a26cc6724972d0a05c69013",
       "src/annotate_evidence.py": "d7fcfeffc887c1c96ef71bac72a0f68f01d689c8e2cf94117419df7b93535c39",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -983,7 +983,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/fri_xref.py": "6574a4cc3a10e0697dce552b3b3082418410500b8417818c712c5abb02037233",
       "src/annotate_evidence.py": "d7fcfeffc887c1c96ef71bac72a0f68f01d689c8e2cf94117419df7b93535c39",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -1002,7 +1002,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -1021,7 +1021,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -1041,7 +1041,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7",
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba",
       "src/pilot/classify_run.py": "e3dd743ee01bf25384f6bfc1b716a037c44834862013eab9ea1874ca4ea0d682"
     }
   },
@@ -1063,7 +1063,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/agent_budget.py": "edb82662161dea5a9fc1d2891b1d769b8c57954b1ee05694cc7a6e918e2c250d",
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -1122,7 +1122,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
       "src/pilot/boundedparallel_test.js": "3d768f874e13607e235e55f9300771dabd25f6173e256001e956150ce9b33401",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -1183,7 +1183,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
       "src/pilot/window_reports.py": "a8e72de3bced4f00265753e8b8b305500f2584a1734501e5dca297c8e95485a8",
       "src/pilot/harvest_launch_stats.py": "751f4089cc2cbff3354d0f5b9506268a4ddd82e1c0f654755ffc88a11b8b6f3b",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -1202,7 +1202,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -1227,7 +1227,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/_pilot_gen_merged.py": "697c7d8f294228a8546fa0dbf8b4e4ef16840d2909afa076373caeb106d14831",
       "src/pilot/audit_window.py": "6924329df761ca120a0f58c81403936913f7675fdcd086eefaee3d10e6de3fef",
       "src/pilot/audit_window_en.py": "888f0a6c17e557403cbd709a1ff2e99894683af650f6e22a1b7dcd892b05c873",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -1249,7 +1249,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
       "src/pilot/sense_count.py": "e3ad886f8751f5e5ef877bf96219140bc5c8ccca5b02bb2e33f7f6620ec5db2c",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7",
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba",
       "src/pilot/accept_sensecount_test.js": "d644b3916760fa303a5aeb52e40e6d5e3f42a3db84b9a05da28cf8cf2427d3a8"
     }
   },
@@ -1269,7 +1269,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/cohort_clean_rates.py": "1d2a1da68eb4e897422696ec42c7845cecf9e94a2a0b8a587f8a68d3b44bfb7e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -1324,7 +1324,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "",
     "verified_sha256": {
       "src/pilot/audit_window_en.py": "888f0a6c17e557403cbd709a1ff2e99894683af650f6e22a1b7dcd892b05c873",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -1584,7 +1584,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "verified_sha256": {
       "src/ru_style_sweep.py": "9184e1859428312866623e25bd1e1e8a1b08bec773cc339303a1f4fcd7fbc64f",
       "src/pilot/audit_window.py": "6924329df761ca120a0f58c81403936913f7675fdcd086eefaee3d10e6de3fef",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7",
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba",
       "src/pilot/prompt_rule_audit.py": "05ded5041761ea579355bbb22fff97b344d27372cff004f7461dc3f4e332ca9e",
       "src/pilot/run_pilot_wf.js": "b194ceb034b458ffc470e7feb2d9c921c6f391c88088e7f05a00a1e790bcf7a4"
     }
@@ -1885,7 +1885,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/dashboard_events.py": "e967ba0993cba28b62923f93ddd206da9986fddbfccdeb56063b3f8fb4869ef1",
       "src/promote_final_cards.py": "f5f8118865a29fec3258cf92390ecb4b5509d6134ba5da9f4312f175c285c8f3",
       "src/promote_en.py": "402c667a86cb23682d80b9f04a82416d46fb1d1a984e004b4325f5e9debe9b06",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7",
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba",
       "src/pilot/audit_window_en.py": "888f0a6c17e557403cbd709a1ff2e99894683af650f6e22a1b7dcd892b05c873"
     }
   },
@@ -2015,7 +2015,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "codex/rt-pipeline-hardening-speed",
     "verified_sha256": {
       "src/pilot/audit_window.py": "6924329df761ca120a0f58c81403936913f7675fdcd086eefaee3d10e6de3fef",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -2122,7 +2122,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
       "src/pilot/window_common.py": "37f5bb3d03259374f5aecefa63cc91ff3bf064939297d56c251bee7f35ce69ee",
       "src/pipeline_version.py": "9e6632fa3e9e10a34c65df6bbca8d6a209420f05613e4c5c012c764e32e9aecb",
       "src/pilot/h1339_offline_bench.py": "5047b028e091396ac82ac1403ee50e5be6c60b1b7abf7fc36f432e0eae35ddf6",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -2270,7 +2270,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "tracking": "https://github.com/gasyoun/Uprava/blob/main/handoffs/H3144-Opus_SanskritLexicography_h858-residual-c1-window-after-canary-nogo_19.08.26.md",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -2329,7 +2329,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H4326 (07-09-2026, Opus 5 `claude-opus-5`): the entry H4270 (#2101) and H4277 (#2103) owed under policy 1 and never wrote — which is why this pair drifted 58 entries and turned the required gate red. The rule is prompt text inside the shared `MASK_PREAMBLE` constant, delivered to both lanes by the same `MASK_PREAMBLE.replace('`russian`', '`%s`' % field)` parameterization used for the target-field name (v2 execution manifest + generated JS harness), with `field = 'english' if lang == 'en' else 'russian'`. No `lang` branch, no call-site, gate or schema change: an EN window receives the wrapper-preservation rule and the {Tn}-verbatim tightening byte-for-byte as an RU window does, so SHARED. One caveat, tracked separately as `gloss_wrapper_worked_example_localisation`: the worked example inside the block is RU-illustrated and the `.replace()` does not localize it. H4528 (14-09-2026, Opus 5 `claude-opus-5`): re-derived, SHARED stands. The drift is the no-output-progress watchdog wiring only -- an opt-in token-streaming spawn shape (`execution.cli_token_stream`, default OFF), a content-line progress filter, the `no_progress_kill` kill class and its telemetry. No language branch is added and no target-language field is read; RU and EN spawns take the identical argv and kill path. H4527 pass 2 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the readiness probe's TEXT only -- one honest question over the fixed English filler replaces the TASK SHAPE prepend and the H4277 bridge -- plus two re-pinned selftests, two corrected comments (MASK_PREAMBLE, latency_payload_sweep) and one hash-only probe event field (`probe_prompt_sha`, run_observability.ALLOWED). No language branch, no target-language field read; RU and EN share one readiness probe. H4527 pass 7 (17-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the planner's new `--require-senses N` sub-card gate (`no_pwg_scale_plan.py`) and its selftest pin (`test_no_pwg_require_senses_gate`). The gate counts SOURCE senses from the input sidecars (portrait stamp, else `sense_count.count_source_senses` over the raw source blob) before any card exists; no `lang` parameter, no target-language field, no RU/EN branch. Off by default (0), so the historical planning path is unchanged. H5259 follow-up (22-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. `src/pilot/window_selftest.py` drifted only by ONE added test-only pin, `test_lang_parity_ledger_refuses_duplicate_keys`, and its registration in the runner list. It exercises the ledger parser on a throwaway ledger in a temp dir; no existing test, constant or production path changed, no target-language field is read, and no RU/EN branch exists in it, so no verdict this entry holds can move. H5259 follow-up c (22-09-2026, Opus 5.5 `claude-opus-5-5`): re-derived, verdict stands. `src/pilot/window_selftest.py` drifted only by ONE added test-only pin, `test_lang_parity_ledger_refuses_duplicate_entry_ids`, and its registration in the runner list. It exercises the ledger parser on throwaway ledgers in a temp dir; no existing test, constant or production path changed, no target-language field is read, and no RU/EN branch exists in it, so no verdict this entry holds can move. H4527 22-09 (3) critic fixes (22-09-2026, Opus 5.5 `claude-opus-5-5`): re-derived, verdict stands. `requeue_from_audit.py --no-tm` forces TM-off on a transient requeue, and `coordinator._execute_requeue_attempt` passes it (and `--no-tm` on the attempt preflight) for a `defect-repair` lease, whose card is in the TM; `bounded_staged_run.py` help documents that a repair run is not resumable once dispatched; new pins: `window_selftest` `test_transient_requeue_no_tm_flag_h4527`, `coordinator_hardening_selftest` H4527 requeue, `bounded_staged_run_selftest` (w) live-path scope. The added production lines carry zero language-keyed tokens (grepped for lang / russian / english / FIELD[ / CARD_FIELD), so RU and EN leases requeue identically. H4527 <bot> gate fix (23-09-2026, Opus 5.5 `claude-opus-5-5`): re-derived, verdict stands. `prompt_rule_audit.looks_foreign_literal` now strips markup tags (content kept) before classifying a braced SOURCE gloss, and `pwg_mask.looks_botany_binomial` does the same, so a PW `{%<bot>Latin binomial</bot>%}` is masked at stage 0 and read as foreign-literal by the residue gate instead of translated/flagged as German (5 705 PW source glosses, all strict binomials, 0 in PWG; receipt `h4527_bot_binomial_census.py`). Both read the German SOURCE span only, before any `--lang` branch, with no `lang` parameter: the masker change reaches the RU and EN lanes identically. `prompt_rule_audit` is imported by the RU auditor only, and the EN auditor already strips tags in `audit_window_en.prose()` before its word-list residue check, so the change closes a RU-side blind spot the EN side never had. `window_selftest.py` gained only test-only pins; `bounded_staged_run.py` refuses a missing `--cwd` before run(), identical for every lane. No new mechanism with a RU/EN surface, so no new ledger entry. H5948 (04-10-2026, GLM-5.3-Flash): re-derived, verdict stands — drift is H5948's own fixture-seam edit (env quarantine PWG_RU_STORE/PWG_RU_TM_DIR in test_coordinator_mixed_lane_public_state_sequence); no pinned behavior touched; full window selftest green on the new source.",
     "verified_sha256": {
       "src/pilot/gen_opt_harness2.py": "05fb183738e7f0b5816a9011de08f7d11a7871c6d74459c0bab4bb9e5b105e4e",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -2364,7 +2364,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H4326 (07-09-2026, Opus 5 `claude-opus-5`): the entry H4277 (#2103) owed under policy 1. `_probe_prompt` takes one argument, `payload_bytes`; it has no `lang` parameter, reads no target-language field, translates nothing, and its filler unit is fixed English prose used only to size the request. The gate it feeds is unchanged — `{\"ok\": true}` is still the only passing answer, with no retry inside a sitting, no ceiling raised and no profile switched. Whatever lane a batch is later dispatched for, it passes through the same readiness probe, so the repair is shared by construction. Pinned by `test_health_probe_carries_the_h4277_provenance_bridge`. H4528 (14-09-2026, Opus 5 `claude-opus-5`): re-derived, SHARED stands. The drift is the no-output-progress watchdog wiring only -- an opt-in token-streaming spawn shape (`execution.cli_token_stream`, default OFF), a content-line progress filter, the `no_progress_kill` kill class and its telemetry. No language branch is added and no target-language field is read; RU and EN spawns take the identical argv and kill path. H4527 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, SHARED stands. The drift is the readiness probe adopting the paid lane's `--safe-mode` via `headless_worker.resolve_safe_mode({}, claude)` plus one boolean event field (`cli_safe_mode_effective`). Spawn-shape only -- no prompt change, no language branch, no target-language field read; the RU and EN lanes share one readiness probe. H4527 pass 2 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the readiness probe's TEXT only -- one honest question over the fixed English filler replaces the TASK SHAPE prepend and the H4277 bridge -- plus two re-pinned selftests, two corrected comments (MASK_PREAMBLE, latency_payload_sweep) and one hash-only probe event field (`probe_prompt_sha`, run_observability.ALLOWED). No language branch, no target-language field read; RU and EN share one readiness probe. SUPERSEDED by `probe_honest_question_h4527` (H4527 pass 2, 15-09-2026): with the bridge in place the probe still refused four times against two passes (10-09..15-09), the last two with `--safe-mode`, and the 14:27Z transcript named the bridge's own sentences as the injection signature. `_PROBE_PROVENANCE_BRIDGE` is deleted; its pin became `test_health_probe_carries_no_injection_shape`. H4915 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the readiness-probe ration only -- `execution_contract.ProbeRation` (a machine-wide per-profile attempt ledger keyed by config_dir_fingerprint, at most 2 attempts per UTC day, at least 6 h apart), its check in `_probe_call` before the reservation and spawn, a no-spend preflight in `probe_fleet`, `ActiveCallClaim.ration_admitted`, and the pin `_test_h4915_probe_ration_is_code_enforced_across_evidence_roots`. The probe carries no card and no `--lang` input, so RU and EN windows are rationed by the same ledger. H4527 pass 3 (16-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is read-only reporting only -- a new `max_account_orchestrator.py probe-ration` subcommand (`cmd_probe_ration`) printing the H4915 ration ledger's recorded attempts and next legal UTC time, exit 3 when rationed; two public epoch helpers in execution_contract (`utc_day`, `utc_iso_ts`); and the pin `_test_h4527_probe_ration_status_is_readable_without_probing`. It spawns nothing, writes nothing, reads no card and takes no `--lang`, so a Russian and an English window see the identical report. H4436 (17-09-2026, Fable 5.1 `claude-fable-5-1`): re-derived, SHARED stands. The drift is the `profile:init` validation spawn in `profile_status()` adopting the paid lane's `--safe-mode` via `headless_worker.resolve_safe_mode({}, claude)`, plus its selftest pin. Spawn-shape only -- no prompt change, no language branch, no target-language field read; the RU and EN lanes validate one and the same profile. H4527 pass 7 (17-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the planner's new `--require-senses N` sub-card gate (`no_pwg_scale_plan.py`) and its selftest pin (`test_no_pwg_require_senses_gate`). The gate counts SOURCE senses from the input sidecars (portrait stamp, else `sense_count.count_source_senses` over the raw source blob) before any card exists; no `lang` parameter, no target-language field, no RU/EN branch. Off by default (0), so the historical planning path is unchanged. H5259 follow-up (22-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. `src/pilot/window_selftest.py` drifted only by ONE added test-only pin, `test_lang_parity_ledger_refuses_duplicate_keys`, and its registration in the runner list. It exercises the ledger parser on a throwaway ledger in a temp dir; no existing test, constant or production path changed, no target-language field is read, and no RU/EN branch exists in it, so no verdict this entry holds can move. H5259 follow-up c (22-09-2026, Opus 5.5 `claude-opus-5-5`): re-derived, verdict stands. `src/pilot/window_selftest.py` drifted only by ONE added test-only pin, `test_lang_parity_ledger_refuses_duplicate_entry_ids`, and its registration in the runner list. It exercises the ledger parser on throwaway ledgers in a temp dir; no existing test, constant or production path changed, no target-language field is read, and no RU/EN branch exists in it, so no verdict this entry holds can move. H4527 22-09 (3) critic fixes (22-09-2026, Opus 5.5 `claude-opus-5-5`): re-derived, verdict stands. `requeue_from_audit.py --no-tm` forces TM-off on a transient requeue, and `coordinator._execute_requeue_attempt` passes it (and `--no-tm` on the attempt preflight) for a `defect-repair` lease, whose card is in the TM; `bounded_staged_run.py` help documents that a repair run is not resumable once dispatched; new pins: `window_selftest` `test_transient_requeue_no_tm_flag_h4527`, `coordinator_hardening_selftest` H4527 requeue, `bounded_staged_run_selftest` (w) live-path scope. The added production lines carry zero language-keyed tokens (grepped for lang / russian / english / FIELD[ / CARD_FIELD), so RU and EN leases requeue identically. H4527 <bot> gate fix (23-09-2026, Opus 5.5 `claude-opus-5-5`): re-derived, verdict stands. `prompt_rule_audit.looks_foreign_literal` now strips markup tags (content kept) before classifying a braced SOURCE gloss, and `pwg_mask.looks_botany_binomial` does the same, so a PW `{%<bot>Latin binomial</bot>%}` is masked at stage 0 and read as foreign-literal by the residue gate instead of translated/flagged as German (5 705 PW source glosses, all strict binomials, 0 in PWG; receipt `h4527_bot_binomial_census.py`). Both read the German SOURCE span only, before any `--lang` branch, with no `lang` parameter: the masker change reaches the RU and EN lanes identically. `prompt_rule_audit` is imported by the RU auditor only, and the EN auditor already strips tags in `audit_window_en.prose()` before its word-list residue check, so the change closes a RU-side blind spot the EN side never had. `window_selftest.py` gained only test-only pins; `bounded_staged_run.py` refuses a missing `--cwd` before run(), identical for every lane. No new mechanism with a RU/EN surface, so no new ledger entry. H5948 (04-10-2026, GLM-5.3-Flash): re-derived, verdict stands — drift is H5948's own fixture-seam edit (env quarantine PWG_RU_STORE/PWG_RU_TM_DIR in test_coordinator_mixed_lane_public_state_sequence); no pinned behavior touched; full window selftest green on the new source.",
     "verified_sha256": {
       "src/pilot/max_account_orchestrator.py": "f9be27bbd39a1857e20f4e36ce49fcee77dc1e32d84ed153534d96e63d4058e3",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -2462,7 +2462,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H4527 pass 2 (15-09-2026, Opus 5 `claude-opus-5`). `_probe_prompt` takes one argument, `payload_bytes`; no `lang` parameter, no target-language field, no card. The question and filler are fixed English prose asked of the model, never translated, so a Russian and an English window are gated by the byte-identical probe. On the cohort-acceptance route (`bounded_staged_run --execute --only-profile`) the production TASK SHAPE check it used to duplicate is carried by the canary gate, which renders the lane's own `mask_preamble(field)` for either language; `staged-run` has no canary and is routed to Uprava H4916 -- a gap for both languages alike, so parity is unaffected. Tests: `test_health_probe_asks_an_honest_question`, `test_health_probe_carries_no_injection_shape`, max_account_orchestrator_selftest D-P pin. H4527 pass 2 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the readiness probe's TEXT only -- one honest question over the fixed English filler replaces the TASK SHAPE prepend and the H4277 bridge -- plus two re-pinned selftests, two corrected comments (MASK_PREAMBLE, latency_payload_sweep) and one hash-only probe event field (`probe_prompt_sha`, run_observability.ALLOWED). No language branch, no target-language field read; RU and EN share one readiness probe. H4916 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands -- the probe text is untouched; the drift is the new per-profile canary gate before `probe_fleet` (entry `staged_run_canary_gate_h4916`), which closes the 'staged-run has no canary' gap named above. H4915 (15-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the readiness-probe ration only -- `execution_contract.ProbeRation` (a machine-wide per-profile attempt ledger keyed by config_dir_fingerprint, at most 2 attempts per UTC day, at least 6 h apart), its check in `_probe_call` before the reservation and spawn, a no-spend preflight in `probe_fleet`, `ActiveCallClaim.ration_admitted`, and the pin `_test_h4915_probe_ration_is_code_enforced_across_evidence_roots`. The probe carries no card and no `--lang` input, so RU and EN windows are rationed by the same ledger. H4527 pass 3 (16-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is read-only reporting only -- a new `max_account_orchestrator.py probe-ration` subcommand (`cmd_probe_ration`) printing the H4915 ration ledger's recorded attempts and next legal UTC time, exit 3 when rationed; two public epoch helpers in execution_contract (`utc_day`, `utc_iso_ts`); and the pin `_test_h4527_probe_ration_status_is_readable_without_probing`. It spawns nothing, writes nothing, reads no card and takes no `--lang`, so a Russian and an English window see the identical report. H4436 (17-09-2026, Fable 5.1 `claude-fable-5-1`): re-derived, SHARED stands. The drift is the `profile:init` validation spawn in `profile_status()` adopting the paid lane's `--safe-mode` via `headless_worker.resolve_safe_mode({}, claude)`, plus its selftest pin. Spawn-shape only -- no prompt change, no language branch, no target-language field read; the RU and EN lanes validate one and the same profile. H4527 pass 7 (17-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. The drift is the planner's new `--require-senses N` sub-card gate (`no_pwg_scale_plan.py`) and its selftest pin (`test_no_pwg_require_senses_gate`). The gate counts SOURCE senses from the input sidecars (portrait stamp, else `sense_count.count_source_senses` over the raw source blob) before any card exists; no `lang` parameter, no target-language field, no RU/EN branch. Off by default (0), so the historical planning path is unchanged. H5259 follow-up (22-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. `src/pilot/window_selftest.py` drifted only by ONE added test-only pin, `test_lang_parity_ledger_refuses_duplicate_keys`, and its registration in the runner list. It exercises the ledger parser on a throwaway ledger in a temp dir; no existing test, constant or production path changed, no target-language field is read, and no RU/EN branch exists in it, so no verdict this entry holds can move. H5259 follow-up c (22-09-2026, Opus 5.5 `claude-opus-5-5`): re-derived, verdict stands. `src/pilot/window_selftest.py` drifted only by ONE added test-only pin, `test_lang_parity_ledger_refuses_duplicate_entry_ids`, and its registration in the runner list. It exercises the ledger parser on throwaway ledgers in a temp dir; no existing test, constant or production path changed, no target-language field is read, and no RU/EN branch exists in it, so no verdict this entry holds can move. H4527 22-09 (3) critic fixes (22-09-2026, Opus 5.5 `claude-opus-5-5`): re-derived, verdict stands. `requeue_from_audit.py --no-tm` forces TM-off on a transient requeue, and `coordinator._execute_requeue_attempt` passes it (and `--no-tm` on the attempt preflight) for a `defect-repair` lease, whose card is in the TM; `bounded_staged_run.py` help documents that a repair run is not resumable once dispatched; new pins: `window_selftest` `test_transient_requeue_no_tm_flag_h4527`, `coordinator_hardening_selftest` H4527 requeue, `bounded_staged_run_selftest` (w) live-path scope. The added production lines carry zero language-keyed tokens (grepped for lang / russian / english / FIELD[ / CARD_FIELD), so RU and EN leases requeue identically. H4527 <bot> gate fix (23-09-2026, Opus 5.5 `claude-opus-5-5`): re-derived, verdict stands. `prompt_rule_audit.looks_foreign_literal` now strips markup tags (content kept) before classifying a braced SOURCE gloss, and `pwg_mask.looks_botany_binomial` does the same, so a PW `{%<bot>Latin binomial</bot>%}` is masked at stage 0 and read as foreign-literal by the residue gate instead of translated/flagged as German (5 705 PW source glosses, all strict binomials, 0 in PWG; receipt `h4527_bot_binomial_census.py`). Both read the German SOURCE span only, before any `--lang` branch, with no `lang` parameter: the masker change reaches the RU and EN lanes identically. `prompt_rule_audit` is imported by the RU auditor only, and the EN auditor already strips tags in `audit_window_en.prose()` before its word-list residue check, so the change closes a RU-side blind spot the EN side never had. `window_selftest.py` gained only test-only pins; `bounded_staged_run.py` refuses a missing `--cwd` before run(), identical for every lane. No new mechanism with a RU/EN surface, so no new ledger entry. H5948 (04-10-2026, GLM-5.3-Flash): re-derived, verdict stands — drift is H5948's own fixture-seam edit (env quarantine PWG_RU_STORE/PWG_RU_TM_DIR in test_coordinator_mixed_lane_public_state_sequence); no pinned behavior touched; full window selftest green on the new source.",
     "verified_sha256": {
       "src/pilot/max_account_orchestrator.py": "f9be27bbd39a1857e20f4e36ce49fcee77dc1e32d84ed153534d96e63d4058e3",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   },
   {
@@ -2521,7 +2521,7 @@ verified_sha256   {file: hex} snapshot at last verification; drift trips the gat
     "note": "H4527 (17-09-2026, Opus 5 `claude-opus-5`). Why it exists: `agent_budget` derives a card's self-heal pool from its sense groups, so a zero-sense sub-card runs with `max_heal_agents: 0` — one paid shot and no repair lane; the 16-09-2026 live acceptance window spent a call on exactly that topology (`asa_mskfta~~h0_zz_nws00`, `senses: []`) and came back null, and the 17-09 census showed the zero is structural for the whole `~~h0_zz_nws00` class (0 of 10 declare a sense). Parity: both readings of the count describe the source entry — the portrait sidecar's stamped `source_senses` and `sense_count.count_source_senses`, which counts line-opening top-level ordinals in the raw German source — and both run before generation, so the RU and EN lanes admit the identical sub-cards. Strictly narrowing: an unprovable count (None) is skipped rather than admitted, and nothing is written to the residual registry. Test: `test_no_pwg_require_senses_gate`. H5259 follow-up (22-09-2026, Opus 5 `claude-opus-5`): re-derived, verdict stands. `src/pilot/window_selftest.py` drifted only by ONE added test-only pin, `test_lang_parity_ledger_refuses_duplicate_keys`, and its registration in the runner list. It exercises the ledger parser on a throwaway ledger in a temp dir; no existing test, constant or production path changed, no target-language field is read, and no RU/EN branch exists in it, so no verdict this entry holds can move. H5259 follow-up c (22-09-2026, Opus 5.5 `claude-opus-5-5`): re-derived, verdict stands. `src/pilot/window_selftest.py` drifted only by ONE added test-only pin, `test_lang_parity_ledger_refuses_duplicate_entry_ids`, and its registration in the runner list. It exercises the ledger parser on throwaway ledgers in a temp dir; no existing test, constant or production path changed, no target-language field is read, and no RU/EN branch exists in it, so no verdict this entry holds can move. H4527 22-09 (3) critic fixes (22-09-2026, Opus 5.5 `claude-opus-5-5`): re-derived, verdict stands. `requeue_from_audit.py --no-tm` forces TM-off on a transient requeue, and `coordinator._execute_requeue_attempt` passes it (and `--no-tm` on the attempt preflight) for a `defect-repair` lease, whose card is in the TM; `bounded_staged_run.py` help documents that a repair run is not resumable once dispatched; new pins: `window_selftest` `test_transient_requeue_no_tm_flag_h4527`, `coordinator_hardening_selftest` H4527 requeue, `bounded_staged_run_selftest` (w) live-path scope. The added production lines carry zero language-keyed tokens (grepped for lang / russian / english / FIELD[ / CARD_FIELD), so RU and EN leases requeue identically. H4527 <bot> gate fix (23-09-2026, Opus 5.5 `claude-opus-5-5`): re-derived, verdict stands. `prompt_rule_audit.looks_foreign_literal` now strips markup tags (content kept) before classifying a braced SOURCE gloss, and `pwg_mask.looks_botany_binomial` does the same, so a PW `{%<bot>Latin binomial</bot>%}` is masked at stage 0 and read as foreign-literal by the residue gate instead of translated/flagged as German (5 705 PW source glosses, all strict binomials, 0 in PWG; receipt `h4527_bot_binomial_census.py`). Both read the German SOURCE span only, before any `--lang` branch, with no `lang` parameter: the masker change reaches the RU and EN lanes identically. `prompt_rule_audit` is imported by the RU auditor only, and the EN auditor already strips tags in `audit_window_en.prose()` before its word-list residue check, so the change closes a RU-side blind spot the EN side never had. `window_selftest.py` gained only test-only pins; `bounded_staged_run.py` refuses a missing `--cwd` before run(), identical for every lane. No new mechanism with a RU/EN surface, so no new ledger entry. H5948 (04-10-2026, GLM-5.3-Flash): re-derived, verdict stands — drift is H5948's own fixture-seam edit (env quarantine PWG_RU_STORE/PWG_RU_TM_DIR in test_coordinator_mixed_lane_public_state_sequence); no pinned behavior touched; full window selftest green on the new source.",
     "verified_sha256": {
       "src/pilot/no_pwg_scale_plan.py": "3074e60501b8c2fd2ffd4780cc3dd5632d843df042d50c9466eb946f4b60372a",
-      "src/pilot/window_selftest.py": "a0e49325b9268e20c3df87f5aa3399b2474b5aed59df42f8c77fdac64c566dc7"
+      "src/pilot/window_selftest.py": "a9ede8f5d9f35e7182feb5934358acda2350192d03aca2e63d00da592ef8c0ba"
     }
   }
 ]
