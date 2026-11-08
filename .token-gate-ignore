@@ -1,0 +1,31 @@
+# token-size-gate: files here are not agent-authored — generated data/assets.
+# Code, docs and reports stay under the 5000-token limit.
+RussianTranslation/pwg_ru/**
+RussianTranslation/release/**
+HeadwordLists/then-2014/**
+HeadwordLists/now-2026/**
+literature/**
+ReverseDictionary/**
+data/**
+*.html
+*.htm
+
+# append-only хабы: обязаны расти свободно, делить нельзя (один логический документ, читается grep-ом). Правило v1.1.0 grandfather снимает заморозку, но ограничивает прирост одним бюджетом за коммит — для ежедневного хаба это лишнее.
+FINDINGS.md
+# H7202 (22-10-2026): generated outputs of build_ncc_commentary_graph.py —
+# the commentary ranking/edge data assets and their machine report/sample.
+HeadwordLists/works_catalogue/ncc_commentary_ranking.tsv
+HeadwordLists/works_catalogue/ncc_commentary_edges.tsv
+HeadwordLists/works_catalogue/ncc_commentary_report.json
+HeadwordLists/works_catalogue/ncc_commentary_ranking.tsv.precision_sample.tsv
+# H7215 (22-10-2026): generated outputs of ncc_name_authority.py — the
+# adjudication table (13,891 verdict rows) and its machine summary.
+HeadwordLists/works_catalogue/ncc_name_authority_adjudication.tsv
+HeadwordLists/works_catalogue/ncc_name_authority_summary.json
+# H7222 (22-10-2026): the 217-row pass-2 delta of the authority table.
+HeadwordLists/works_catalogue/ncc_name_authority_pass2.tsv
+# H7223 (22-10-2026): generated census of tools/cologne_entry_census.py —
+# 4.44M-row per-record git-log census, shipped gzipped (27.6 MB, over the
+# 20 KB gate by construction; regenerate with the committed tool).
+reports/cologne_entry_census.tsv
+reports/cologne_entry_census.tsv.gz

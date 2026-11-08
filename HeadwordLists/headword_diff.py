@@ -13,7 +13,8 @@ a large systematic delta means the generator used a different field/normalisatio
 import sys, re, os, collections
 sys.stdout.reconfigure(encoding='utf-8'); sys.stderr.reconfigure(encoding='utf-8')
 HERE = os.path.dirname(os.path.abspath(__file__))
-ORIG = os.environ.get("CSL_ORIG_V02", r"C:/Users/user/Documents/GitHub/csl-orig/v02")
+ORIG = os.environ.get("CSL_ORIG_V02",
+    os.path.abspath(os.path.join(os.path.dirname(HERE), os.pardir, "csl-orig", "v02")))
 OUT = os.path.join(HERE, "_diff")
 THEN2014 = os.path.join(HERE, "then-2014")   # frozen 2014 Cologne snapshots
 NOW2026 = os.path.join(HERE, "now-2026")     # current-csl-orig key1 regeneration
@@ -21,10 +22,17 @@ NOW2026 = os.path.join(HERE, "now-2026")     # current-csl-orig key1 regeneratio
 # PD (Deccan, "An Encyclopedic Dictionary of Sanskrit on Historical
 # Principles") is not in csl-orig, but its full-text digitization — same
 # <k1>/<k2> tag convention as every csl-orig dict — lives on disk in the
-# sibling SanskritSpellCheck repo. 107,630 <k1>/<k2>/<L> tags, exactly matching
-# the then-2014 snapshot's extraction size. H1365, 20-07-2026.
+# sibling SanskritSpellCheck repo: 107,630 <k1>/<k2>/<L> tags, extracted from
+# the same 107,630-record Cologne text the then-2014 snapshots derive from
+# (the then-2014 PD files themselves hold ~104.9k lines — not an exact-count
+# match). H1365, 20-07-2026. The first extraction, PDhw0.txt (107,620,
+# alternateheadwords data/PD/PDhw0.txt), is no longer staged anywhere; the
+# canonical re-derivation path is Cologne's PDScan-2020 pdtxt.zip:
+#   python detectors/get_external_source.py PD   (in SanskritSpellCheck)
+# H7493, 30-10-2026.
 PD_SRC = os.environ.get("PD_TXT",
-    r"C:/Users/user/Documents/GitHub/SanskritSpellCheck/external_src/pd/pd.txt")
+    os.path.abspath(os.path.join(os.path.dirname(HERE), os.pardir,
+                                 "SanskritSpellCheck", "external_src", "pd", "pd.txt")))
 
 # HeadwordLists DICT code -> csl-orig/v02 subdir.
 # PWK = Böhtlingk's *kürzere Fassung* = csl-orig `pw`. PD (Deccan) is not in csl-orig
@@ -249,7 +257,18 @@ def write_now():
                 if old != pin and re.match(rf"^{code}-unique-key{kt}-\d+\.txt$", old):
                     os.remove(os.path.join(NOW2026, old))
         out = os.path.join(NOW2026, out_name)
-        enc = "utf-8-sig" if _has_bom(then_path) else "utf-8"
+        # BOM PRESERVATION — preserve the BOM state OF THE FILE BEING WRITTEN.
+        # BUGHUNT §1 (19-10-2026): this used to read the THEN-2014 sibling's BOM
+        # (`_has_bom(then_path)`), i.e. the encoding of the file being overwritten
+        # was decided by a different file. The one pair where that bites is
+        # MW-unique-key1: then-2014 carries EF BB BF, now-2026 does not, and
+        # tests/test_headword_snapshots.py pins "no BOM" for every now-2026 list —
+        # so the first real regeneration injected a BOM, turned the first headword
+        # into "\ufeffa" for every plain-utf-8 reader (dropping `a` from the set)
+        # and reddened that pin. The standing rule (FINDINGS §37, CLAUDE.md
+        # "Encoding") is "preserve the file's existing BOM state on write" — the
+        # file's OWN state, never the ancestor's. A brand-new output is BOM-free.
+        enc = "utf-8-sig" if os.path.exists(out) and _has_bom(out) else "utf-8"
         with open(out, "w", encoding=enc, newline="\n") as fh:
             fh.write("\n".join(keys) + "\n")
         written.append(out_name + (" [BOM]" if enc == "utf-8-sig" else ""))

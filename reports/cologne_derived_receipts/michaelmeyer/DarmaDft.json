@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/dharmadh%E1%B9%9Bt",
+ "http": 200,
+ "page_sha256": "5f9160b77014eabe2a9761eab5d707ade1a90b8a0b6126a3e80970a7c4eed382",
+ "page_bytes": 2856,
+ "dc_year": "2021",
+ "dict": "mw",
+ "L": "100080",
+ "headword": "DarmaDft",
+ "iast": "dharmadhṛt",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 511, col. 2 . dharma—dhṛ́t mfn. ‘upholding order’, applied to the gods, AV.",
+ "role": "control",
+ "verdict": "PRESENT"
+}

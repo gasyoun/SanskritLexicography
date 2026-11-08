@@ -21,15 +21,46 @@ over all 140,848 rows of the VisualDCS counting spreadsheet, including
 Author/Commentary rows and catalogue range serials.  It is a workbook total,
 not a distinct-manuscript count.
 
+H7073 adds the edition/journal/series filter measured by the H6995 pilot:
+roman volume markers are removed from the catalogue lexicon, and journal,
+series, year-like and page-prefixed candidates are rejected before they become
+units.  ``--no-edition-filter`` reproduces the pre-filter baseline;
+``--adjudication-sample N --seed S`` draws the seeded, volume-stratified sample
+for hand adjudication (it leaves verdict/reason empty).
+
+H7084 corrects the one false drop that rule made: ``MD`` is spelled entirely in
+roman-numeral letters but is a real NCC catalogue (11,672 witnesses, the
+third-largest siglum), so it must not be treated as a volume marker.  The
+exemption is the committed allowlist ``ncc_roman_catalogue_allowlist.json``
+(provenance: the VisualDCS workbook's ``Details`` catalogue vocabulary), so a
+run without the workbook behaves identically.  ``--dump-vdcs-keys`` regenerates
+the workbook-vocabulary artifact that the allowlist's selftest reads.
+
+BUGHUNT §9 (19-10-2026): "behaves identically without the workbook" is true of
+the ALLOWLIST and false of the LEXICON. ``--vdcs-details`` also adds the
+workbook's ``Details`` keys to the catalogue-siglum lexicon (925 → 1,227
+sigla), which changes how catalogue segments are cut and therefore the unit
+counts (pilot 1,319 vs 1,477; canary Mahābhārata 1,839 vs 2,355).  Every run
+now records the mode in a ``<output>.meta.json`` sidecar and a stderr warning
+fires when the workbook is absent, so a published number can no longer be
+detached from the population it was measured on.
+
+BUGHUNT §10: ``--no-edition-filter`` reaches ``run_canary`` as well (it used to
+reach only ``--pilot``, so asking for the pre-filter canary silently returned
+the filtered numbers).
+
 Usage:
     python census_ncc_mss.py --ncc ncc.jsonl --pilot 500
     python census_ncc_mss.py --ncc ncc.jsonl --canary
-    python census_ncc_mss.py --ncc ncc.jsonl --full   # only after the canary
+    python census_ncc_mss.py --ncc ncc.jsonl --adjudication-sample 100 --seed 20261018
+    python census_ncc_mss.py --ncc ncc.jsonl --full   # only after a GO
+    python census_ncc_mss.py --vdcs-details WB.xlsx --dump-vdcs-keys KEYS.json
 """
 import argparse
 import csv
 import json
 import os
+import random
 import re
 import sys
 import unicodedata
@@ -37,17 +68,40 @@ from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
+# H7084: a roman-numeral-shaped siglum is a volume marker unless the VisualDCS
+# workbook lists it as a catalogue key.  The exemption is committed so an
+# offline run (no workbook) behaves identically; `MD` is the only entry today.
+ROMAN_CATALOGUE_ALLOWLIST_PATH = os.path.join(
+    HERE, 'ncc_roman_catalogue_allowlist.json')
+VDCS_CATALOGUE_KEYS_ARTIFACT = os.path.join(
+    HERE, 'ncc_vdcs_catalogue_keys_2026-10-19.json')
+
 TAG_RE = re.compile(r'<[^>]+>')
 LITERAL_NEWLINE_RE = re.compile(r'\\n')
 PAREN_RE = re.compile(r'\([^)]*\)')
 SPACE_RE = re.compile(r'\s+')
-ROMAN_RE = re.compile(r'^(?=[IVXLCDM]+\.?$)[IVXLCDM]+\.?$')
+ROMAN_RE = re.compile(
+    r'^(?=[IVXLCDM]+\.?$)'
+    r'M{0,4}(?:CM|CD|D?C{0,3})(?:XC|XL|L?X{0,3})(?:IX|IV|V?I{0,3})\.?$')
 RANGE_RE = re.compile(r'(?<![\w.])(\d{1,6})\s*[-\u2013]\s*(\d{1,6})(?![\w])')
 NUMBER_RE = re.compile(r'(?<![\w.])(\d{1,6}[A-Za-z]?)(?![\w])')
 PAGE_RE = re.compile(
     r'\b(?:p{1,2}|pp?)[.]{0,2}\s*\d+(?:\s*[-\u2013]\s*\d+)?[A-Za-z]?'
     r'|\bvol\.?\s*[IVXLCDM]+\.?|\bno\.?\s*\d+', re.I)
 YEAR_CONTEXT_RE = re.compile(r'(?:\b(?:A\.?\s?D\.?|C\.?\s?E\.?|ed\.|pub\.|cent\.|c\.)\s*)$', re.I)
+
+# Edition/journal/series references measured as false positives in the H6995
+# pilot: "JPTS 1890", "JRAS 1911", "Bk 1938", "Series 51", "RASB II 777".
+# These are not manuscript catalogues, so their "numbers" are years, volumes
+# or page ranges rather than accession numbers.
+NON_ACCESSION_SIGLA = {
+    'bk', 'book', 'jpts', 'jras', 'jrasb', 'rasb', 'bbras', 'series', 'ser',
+    'extr', 'extract', 'j', 'j.', 'journ', 'journal', 'rep', 'report',
+}
+PAGE_PREFIX_RE = re.compile(r'^[\s.,;]*(?:p{1,2}|pt|vol|no)\.{0,2}\s*\d', re.I)
+YEAR_LIKE_RE = re.compile(r'^(?:1[5-9]\d{2}|20\d{2})$')
+YEAR_FOLLOWER_RE = re.compile(
+    r'^(?:[,;]\s*(?:\d|p{1,2}\.|pp?\.)|\s*(?:ff|p\.|pp\.))', re.I)
 
 # 18 Mahapurana + the two epics = the 20-work canary named in the handoff.
 CANARY_WORKS = [
@@ -112,6 +166,28 @@ def norm_cat(cat):
 
 def cat_key(cat):
     return norm_cat(cat).casefold()
+
+
+def load_roman_catalogue_allowlist(path=None):
+    """Roman-shaped sigla that are real catalogues, with their provenance.
+
+    Fails loudly when the committed allowlist is missing: silently falling back
+    to "drop every roman-shaped siglum" is exactly the H7080 defect this file
+    exists to prevent, and an empty allowlist would hide it.
+    """
+    path = path or ROMAN_CATALOGUE_ALLOWLIST_PATH
+    if not os.path.exists(path):
+        raise RuntimeError(
+            'missing roman-catalogue allowlist: %s (H7084); restore it, do not '
+            'fall back to dropping every roman-shaped siglum' % path)
+    with open(path, encoding='utf-8') as f:
+        data = json.load(f)
+    return tuple(norm_cat(e['siglum']) for e in data.get('entries', []))
+
+
+ROMAN_CATALOGUE_ALLOWLIST = load_roman_catalogue_allowlist()
+ROMAN_CATALOGUE_ALLOW_KEYS = frozenset(
+    cat_key(c) for c in ROMAN_CATALOGUE_ALLOWLIST)
 
 
 def norm_acc(num):
@@ -182,8 +258,64 @@ def read_vdcs_detail_keys(xlsx_path):
                 yield key
 
 
-def catalogue_regex(lexicon):
-    alts = '|'.join(re.escape(c) for c in lexicon)
+def dump_vdcs_catalogue_keys(xlsx_path, out_path):
+    """Write the workbook's catalogue-key vocabulary as the committed artifact.
+
+    The allowlist selftest reads this file, so the exemption is auditable
+    offline; ``--dump-vdcs-keys`` regenerates it from the workbook.  Only the
+    ``Details`` keys and their mention counts are written -- the ``mss`` column
+    is never read, and no count here is a manuscript census.
+    """
+    keys = Counter(read_vdcs_detail_keys(xlsx_path))
+    payload = {
+        'schema': 'ncc-vdcs-catalogue-keys/1',
+        'created': '2026-10-19',
+        'handoff': 'H7084',
+        'source_workbook': os.path.basename(xlsx_path),
+        'source_sheet': 'NCC_mss_counting- 1 032 077',
+        'source_column': 'Details',
+        'note': ('Catalogue keys only, as an abbreviation table. The mss column '
+                 'is never read; no count here is a manuscript census.'),
+        'regenerate_with': ('python census_ncc_mss.py --vdcs-details <workbook> '
+                            '--dump-vdcs-keys ncc_vdcs_catalogue_keys_2026-10-19.json'),
+        'detail_key_mentions': sum(keys.values()),
+        'distinct_keys': len(keys),
+        'keys': {k: keys[k] for k in sorted(keys)},
+    }
+    with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump(payload, f, ensure_ascii=False, indent=1)
+        f.write('\n')
+    return payload
+
+
+def roman_keys_in_vocabulary(keys):
+    """Roman-shaped catalogue keys of a vocabulary mapping or iterable."""
+    return sorted(k for k in keys if ROMAN_RE.match(norm_cat(k)))
+
+
+def catalogue_regex(lexicon, allowlist=None):
+    """Regex over true catalogue sigla; roman volume markers are dropped.
+
+    A roman numeral in the lexicon is a volume marker harvested from the
+    shipped witness strings, not a catalogue.  Keeping it as a match would
+    end the preceding catalogue's segment before its accession (so
+    "Adyar D. IV. 950" lost 950) and mint a phantom unit of its own.
+
+    ``MD`` is the exception (H7084): it is spelled entirely in roman-numeral
+    letters yet is a real catalogue with 11,672 witnesses.  Sigla on the
+    committed allowlist stay in the alternation, and are added even when a
+    narrow lexicon does not carry them, so an offline run without the workbook
+    matches the workbook-present run.
+    """
+    allow = (ROMAN_CATALOGUE_ALLOWLIST if allowlist is None
+             else tuple(norm_cat(c) for c in allowlist))
+    allow_keys = {cat_key(c) for c in allow}
+    keys = [c for c in lexicon
+            if not ROMAN_RE.match(norm_cat(c)) or cat_key(c) in allow_keys]
+    seen = {cat_key(c) for c in keys}
+    keys.extend(c for c in allow if cat_key(c) not in seen)
+    keys = sorted(set(keys), key=len, reverse=True)
+    alts = '|'.join(re.escape(c) for c in keys)
     return re.compile(r'(?<![A-Za-zĀ-ſ])(?:' + alts + r')(?![A-Za-zĀ-ſ])')
 
 
@@ -210,20 +342,66 @@ PREFIX_TOKEN_RE = re.compile(
 )
 
 
-def extract_units(body, cat_re):
+def edition_reference_reason(cat, acc, seg, rest=''):
+    """Return the false-positive class for a candidate unit, else ``None``.
+
+    The H6995 pilot measured four non-accession classes: roman volume markers
+    harvested as if they were catalogue sigla, journal/series sigla whose
+    number is a volume or page, page/volume-prefixed references, and a
+    year-like number followed by a year list (``1890, 91``).
+
+    Allowlisted roman-shaped sigla (``MD``, H7084) are catalogues, so they are
+    never classed as roman volume markers.
+    """
+    if ROMAN_RE.match(norm_cat(cat)) and cat_key(cat) not in ROMAN_CATALOGUE_ALLOW_KEYS:
+        return 'roman_volume'
+    if cat_key(cat) in NON_ACCESSION_SIGLA:
+        return 'journal_or_series'
+    if PAGE_PREFIX_RE.match(seg):
+        return 'page_ref_prefix'
+    if YEAR_LIKE_RE.match(acc) and YEAR_FOLLOWER_RE.match(rest.lstrip()):
+        return 'year_like'
+    return None
+
+
+def extract_units(body, cat_re, filter_editions=True, trace=None):
     """Extract (catalogue, accession) pairs from one body.
 
     Only the *prefix* of the text after a catalogue mention is harvested:
     consecutive roman volume markers, accession numbers, ranges, page refs and
     punctuation.  The first ordinary word ends the list, which keeps
     bibliographic prose ("New Delhi, 1991", "ed. by ...") out.
+
+    Candidates in the measured edition/journal/series classes are removed
+    before the unit is returned; ``stats['raw_units']`` counts the pre-filter
+    harvest and ``stats['filtered']`` the per-class removals.
+
+    When ``trace`` is a list, every kept unit appends
+    ``(cat, norm_acc, span_start, span_stop)`` in body coordinates, so an
+    adjudicator can read the mention that actually produced the accession
+    instead of the first mention of that catalogue (H7084).
     """
     text = PAREN_RE.sub(' ', clean_body(body))
     matches = list(cat_re.finditer(text))
     units = []
     bare = 0
+    stats = {'mentions': len(matches), 'no_number_segments': 0,
+             'raw_units': 0, 'filtered': Counter()}
     if not matches:
-        return units, {'mentions': 0, 'no_number_segments': 0}
+        return units, stats
+
+    def harvest(cat, num, seg, rest, start=None, stop=None):
+        stats['raw_units'] += 1
+        if filter_editions:
+            reason = edition_reference_reason(cat, num, seg, rest)
+            if reason:
+                stats['filtered'][reason] += 1
+                return False
+        units.append((cat, num))
+        if trace is not None:
+            trace.append((cat, norm_acc(num), start, stop))
+        return True
+
     for i, m in enumerate(matches):
         before = text[max(0, m.start() - 6):m.start()].strip().lower()
         if before.endswith(('new', 'old')):
@@ -242,17 +420,19 @@ def extract_units(body, cat_re):
             if not mm:
                 break
             pos = mm.end()
+            rest = seg[mm.end():]
+            token_end = m.end() + mm.end()
             if mm.group('range'):
                 a, b = re.split(r'\s*[-\u2013]\s*', mm.group('range'))
                 for n in _expand_range(int(a), int(b)):
-                    units.append((cat, n))
+                    harvest(cat, n, seg, rest, m.start(), token_end)
                     got += 1
             elif mm.group('num'):
-                units.append((cat, mm.group('num')))
+                harvest(cat, mm.group('num'), seg, rest, m.start(), token_end)
                 got += 1
         if not got and stripped:
             bare += 1
-    stats = {'mentions': len(matches), 'no_number_segments': bare}
+    stats['no_number_segments'] = bare
     return units, stats
 
 
@@ -287,32 +467,42 @@ def pilot_sample(rows, n):
     return [ordered[int(i * step)] for i in range(n)]
 
 
-def run_pilot(rows, cat_re, n, out_path):
+def run_pilot(rows, cat_re, n, out_path, filter_editions=True, meta=None):
     sample = pilot_sample(rows, n)
     stats = Counter()
+    filtered = Counter()
     per_vol = Counter()
     with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
         w = csv.writer(f, delimiter='\t', lineterminator='\n')
         w.writerow(['ncc_id', 'volume', 'iast', 'mentions', 'raw_units',
                     'distinct_units', 'no_number_segments'])
         for r in sample:
-            units, st = extract_units(r['body_html'], cat_re)
+            units, st = extract_units(r['body_html'], cat_re, filter_editions)
             d = dedupe(units)
             per_vol[volume_of(r)] += 1
             stats['entries'] += 1
             stats['mentions'] += st['mentions']
-            stats['raw_units'] += len(units)
+            stats['raw_units'] += st['raw_units']
+            stats['post_filter_units'] += len(units)
+            filtered.update(st['filtered'])
             stats['distinct_units'] += len(d)
             if not d:
                 stats['entries_without_units'] += 1
             w.writerow([r['ncc_id'], volume_of(r), r['iast'], st['mentions'],
-                        len(units), len(d), st.get('no_number_segments', 0)])
+                        st['raw_units'], len(d), st.get('no_number_segments', 0)])
     stats['volumes'] = len(per_vol)
     stats['sample'] = len(sample)
+    stats['removed_by_pattern'] = dict(filtered)
+    write_run_meta(out_path, meta)
     return stats
 
 
-def run_canary(rows, cat_re, out_path, vdcs_path=None):
+def run_canary(rows, cat_re, out_path, vdcs_path=None, filter_editions=True,
+               meta=None):
+    """Canary rows. BUGHUNT §10: `filter_editions` used to be absent here, so
+    `--no-edition-filter` was silently ignored for `--canary` (a byte-identical
+    output to the filtered run) while the flag is documented as "measure the
+    pre-filter baseline". `meta` is persisted beside the TSV (BUGHUNT §9)."""
     by_title = defaultdict(list)
     for r in rows:
         by_title[unicodedata.normalize('NFC', r['iast'])].append(r)
@@ -330,13 +520,37 @@ def run_canary(rows, cat_re, out_path, vdcs_path=None):
             for t in titles:
                 hits.extend(by_title.get(unicodedata.normalize('NFC', t), []))
             units = []
+            raw_units = 0
             for r in hits:
-                u, _ = extract_units(r['body_html'], cat_re)
+                u, st = extract_units(r['body_html'], cat_re, filter_editions)
+                raw_units += st['raw_units']
                 units.extend(u)
             d = dedupe(units)
-            v = vdcs.get(label, fallback)
+            # BUGHUNT §13: when a workbook WAS supplied, a missing or unreadable
+            # `mss` cell used to fall back to the hardcoded constant silently,
+            # so the column labelled "VisualDCS mss" could print a number that
+            # was never read from the workbook and still compute a DIFF from it.
+            # Under a supplied workbook, an absent label is now a refusal; the
+            # constants remain only for the documented workbook-absent run.
+            if vdcs_path and os.path.exists(vdcs_path):
+                if label not in vdcs:
+                    raise ValueError(
+                        f"VisualDCS workbook {vdcs_path!r} was supplied but has no "
+                        f"readable `mss` value for {label!r} — refusing to substitute "
+                        f"the hardcoded {fallback!r} into a column labelled "
+                        f"'VisualDCS mss' (BUGHUNT §13)")
+                v = vdcs[label]
+            else:
+                v = fallback
             if not hits:
-                status = 'INCONCLUSIVE (absent from bodies)'
+                # H7078 gate 1 settled the open question behind this status: the
+                # `स्क` block is absent from the bundled 2022 NCC database itself
+                # (ncc.rar), not merely from the bodies export, and the export is
+                # a complete, order-faithful serialization of that database. So
+                # this is not an export defect awaiting re-extraction. Proof:
+                # VisualDCS reports/NCC_SK_BLOCK_COVERAGE_2026-10-19.md.
+                status = ('INCONCLUSIVE (absent from bodies; स्क block absent from '
+                          'the 2022 NCC DB, H7078)')
                 delta = ''
             elif v is None:
                 status = 'COMPARED (no VisualDCS canary)'
@@ -344,9 +558,37 @@ def run_canary(rows, cat_re, out_path, vdcs_path=None):
             else:
                 delta = len(d) - v
                 status = 'DIFF'
-            results.append((label, len(hits), len(units), len(d), v, delta, status))
+            results.append((label, len(hits), raw_units, len(d), v, delta, status))
             w.writerow(results[-1])
+    write_run_meta(out_path, meta)
     return results
+
+
+def _sha256(path):
+    """First-16-hex digest of a run input, for the meta sidecar (BUGHUNT §9)."""
+    import hashlib
+    h = hashlib.sha256()
+    with open(path, 'rb') as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b''):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def write_run_meta(out_path, meta):
+    """Persist the population a published number was measured on (BUGHUNT §9).
+
+    Without this sidecar two runs of the same command can publish different
+    populations under identical column names: the catalogue-siglum lexicon
+    depends on whether `--vdcs-details` was supplied, and nothing in the TSV or
+    the JSON said which one produced a count.
+    """
+    if not meta:
+        return None
+    p = out_path + '.meta.json'
+    with open(p, 'w', encoding='utf-8', newline='\n') as fh:
+        json.dump(meta, fh, ensure_ascii=False, indent=1, sort_keys=True)
+        fh.write('\n')
+    return p
 
 
 def read_vdcs_canary(xlsx_path):
@@ -391,30 +633,231 @@ def read_vdcs_canary(xlsx_path):
     return out
 
 
+def _source_span(text, cat, acc):
+    """Short body quote around the catalogue mention, for hand review."""
+    m = re.search(r'(?<![A-Za-z\u00c0-\u017f])' + re.escape(cat) +
+                  r'(?![A-Za-z\u00c0-\u017f])', text)
+    if not m:
+        return ''
+    start = max(0, m.start() - 80)
+    span = text[start:m.start() + 160]
+    return SPACE_RE.sub(' ', span).strip()
+
+
+def stratified_sample(units_by_volume, n, minimum=2):
+    """Proportional allocation with a per-volume floor, capped by supply."""
+    sizes = {v: len(u) for v, u in units_by_volume.items()}
+    total = sum(sizes.values())
+    if total <= n:
+        return {v: sizes[v] for v in sizes}
+    quotas = {v: min(sizes[v], max(minimum, int(round(n * sizes[v] / float(total)))))
+              for v in sizes}
+    while sum(quotas.values()) > n:
+        over = [v for v in quotas if quotas[v] > minimum]
+        if not over:
+            over = [v for v in quotas if quotas[v] > 0]
+        if not over:
+            break
+        v = max(over, key=lambda x: (quotas[x], x))
+        quotas[v] -= 1
+    while sum(quotas.values()) < n:
+        under = [v for v in quotas if quotas[v] < sizes[v]]
+        if not under:
+            break
+        v = max(under, key=lambda x: (sizes[x] - quotas[x], x))
+        quotas[v] += 1
+    return quotas
+
+
+def run_adjudication_sample(rows, cat_re, n, out_path, seed=20261018, pilot_n=500):
+    """Seeded, volume-stratified sample of post-filter pilot units.
+
+    ``verdict``/``reason`` are left empty: this writes the draw, not the
+    hand verdicts.  ``source_span`` is a review quote from the body.
+    """
+    by_vol = defaultdict(list)
+    for r in pilot_sample(rows, pilot_n):
+        units, _ = extract_units(r['body_html'], cat_re)
+        text = PAREN_RE.sub(' ', clean_body(r['body_html']))
+        for cat, acc in dedupe(units):
+            by_vol[volume_of(r)].append({
+                'ncc_id': r['ncc_id'],
+                'catalogue_siglum': cat,
+                'accession_number': acc,
+                'volume': volume_of(r),
+                'verdict': '',
+                'reason': '',
+                'source_span': _source_span(text, cat, acc),
+            })
+    quotas = stratified_sample(by_vol, n)
+    rng = random.Random(seed)
+    drawn = []
+    for vol in sorted(by_vol, key=lambda v: (int(v) if v.isdigit() else 999, v)):
+        drawn.extend(rng.sample(by_vol[vol], quotas.get(vol, 0)))
+    drawn.sort(key=lambda u: (int(u['volume']) if u['volume'].isdigit() else 999,
+                              u['ncc_id'], u['catalogue_siglum'], u['accession_number']))
+    with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
+        w = csv.DictWriter(f, fieldnames=['ncc_id', 'catalogue_siglum',
+                                          'accession_number', 'volume', 'verdict',
+                                          'reason', 'source_span'],
+                           delimiter='\t', lineterminator='\n')
+        w.writeheader()
+        w.writerows(drawn)
+    return {'seed': seed, 'sample': len(drawn), 'volumes': len(quotas),
+            'quota': dict(quotas), 'out': out_path}
+
+
+def producing_span(text, cat, acc, trace, before=100, after=90):
+    """Quote around the mention that actually produced ``(cat, acc)``.
+
+    ``_source_span`` is keyed on the first mention of a catalogue in the body;
+    where a body mentions that catalogue twice, the first span can point at an
+    occurrence that produced a different accession.  ``trace`` comes from
+    ``extract_units(..., trace=[])`` and carries body coordinates per unit.
+    """
+    key = (cat_key(cat), norm_acc(acc))
+    for tcat, tacc, start, stop in trace:
+        if start is not None and (cat_key(tcat), tacc) == key:
+            return SPACE_RE.sub(
+                ' ', text[max(0, start - before):stop + after]).strip()
+    return ''
+
+
+def enrich_adjudication_spans(in_path, out_path, rows, cat_re):
+    """Append a ``producing_span`` column to a drawn adjudication TSV.
+
+    Leaves the sampler's own output untouched (so re-draws stay byte-identical)
+    and only adds evidence: for each unit, the body quote around the catalogue
+    mention whose segment yielded that accession.
+    """
+    by_id = {r['ncc_id']: r for r in rows}
+    with open(in_path, encoding='utf-8') as f:
+        reader = csv.DictReader(f, delimiter='\t')
+        fields = list(reader.fieldnames or [])
+        drawn = list(reader)
+    if 'producing_span' not in fields:
+        fields.append('producing_span')
+    for row in drawn:
+        span = ''
+        r = by_id.get(row['ncc_id'])
+        if r is not None:
+            trace = []
+            extract_units(r['body_html'], cat_re, trace=trace)
+            text = PAREN_RE.sub(' ', clean_body(r['body_html']))
+            span = producing_span(text, row['catalogue_siglum'],
+                                  row['accession_number'], trace)
+        row['producing_span'] = span
+    with open(out_path, 'w', encoding='utf-8', newline='\n') as f:
+        w = csv.DictWriter(f, fieldnames=fields, delimiter='\t',
+                           lineterminator='\n')
+        w.writeheader()
+        w.writerows(drawn)
+    return {'rows': len(drawn), 'out': out_path,
+            'without_producing_span': sum(1 for r in drawn
+                                          if not r['producing_span'])}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--ncc', default=os.path.join(HERE, 'ncc.jsonl'))
     ap.add_argument('--vdcs-details',
                     help='VisualDCS counting .xlsx (abbreviation keys only)')
     ap.add_argument('--pilot', type=int, default=0)
+    ap.add_argument('--no-edition-filter', action='store_true',
+                    help='measure the pre-filter baseline')
+    ap.add_argument('--no-roman-allowlist', action='store_true',
+                    help='H7084 baseline: treat every roman-shaped siglum, MD '
+                         'included, as a volume marker again')
     ap.add_argument('--canary', action='store_true')
     ap.add_argument('--full', action='store_true')
+    ap.add_argument('--adjudication-sample', type=int, default=0,
+                    help='seeded stratified draw of post-filter pilot units')
+    ap.add_argument('--seed', type=int, default=20261018)
+    ap.add_argument('--adjudication-out')
+    ap.add_argument('--enrich-spans',
+                    help='drawn adjudication TSV to annotate with producing_span')
+    ap.add_argument('--enrich-out')
+    ap.add_argument('--dump-vdcs-keys',
+                    help='write the workbook catalogue-key vocabulary artifact')
     ap.add_argument('--out-dir', default=HERE)
     args = ap.parse_args()
 
+    if args.dump_vdcs_keys:
+        if not args.vdcs_details:
+            ap.error('--dump-vdcs-keys needs --vdcs-details <workbook.xlsx>')
+        payload = dump_vdcs_catalogue_keys(args.vdcs_details, args.dump_vdcs_keys)
+        print(f'dumped {payload["distinct_keys"]} catalogue keys -> '
+              f'{args.dump_vdcs_keys}', file=sys.stderr)
+        print('roman-shaped keys: %s' % ', '.join(
+            roman_keys_in_vocabulary(payload['keys'])), file=sys.stderr)
+        return
+
     rows = load_rows(args.ncc)
+    if args.no_roman_allowlist:
+        global ROMAN_CATALOGUE_ALLOWLIST, ROMAN_CATALOGUE_ALLOW_KEYS
+        ROMAN_CATALOGUE_ALLOWLIST = ()
+        ROMAN_CATALOGUE_ALLOW_KEYS = frozenset()
     lexicon = build_lexicon(rows, args.vdcs_details)
     cat_re = catalogue_regex(lexicon)
-    print(f'rows={len(rows)} catalogue_sigla={len(lexicon)}', file=sys.stderr)
+    roman = sum(1 for c in lexicon if ROMAN_RE.match(norm_cat(c)))
+    allowlisted = sorted(c for c in lexicon
+                         if cat_key(c) in ROMAN_CATALOGUE_ALLOW_KEYS)
+    dropped = roman - len(allowlisted)
+    # BUGHUNT §9: name the population. The workbook is optional and changes the
+    # lexicon (925 vs 1,227 sigla), hence the unit counts; silence here is how a
+    # published number gets detached from what it measured.
+    workbook_used = bool(args.vdcs_details and os.path.exists(args.vdcs_details))
+    lexicon_mode = 'workbook' if workbook_used else 'witness-prefix-only'
+    run_meta = {
+        'ncc': os.path.abspath(args.ncc),
+        'ncc_sha256': _sha256(args.ncc),
+        'lexicon_mode': lexicon_mode,
+        'vdcs_details': os.path.abspath(args.vdcs_details) if workbook_used else None,
+        'catalogue_sigla': len(lexicon) - dropped,
+        'roman_sigla_excluded': dropped,
+        'edition_filter': not args.no_edition_filter,
+        'no_roman_allowlist': bool(args.no_roman_allowlist),
+    }
+    print(f'rows={len(rows)} catalogue_sigla={len(lexicon) - dropped} '
+          f'lexicon_mode={lexicon_mode} '
+          f'edition_filter={not args.no_edition_filter} '
+          f'roman_sigla_excluded={dropped} '
+          f'roman_catalogue_allowlisted={",".join(allowlisted) or "-"}',
+          file=sys.stderr)
+    if not workbook_used:
+        print('WARNING: no --vdcs-details workbook — the sigla lexicon is '
+              'witness-prefix-only, so unit counts are NOT comparable to '
+              'workbook-based published numbers (pilot 1,477 vs 1,319; canary '
+              'Mahābhārata 2,355 vs 1,839, Rāmāyaṇa 819 vs 688). See '
+              'BUGHUNT-FINDINGS-SanskritLexicography-19.10.2026.md §9.',
+              file=sys.stderr)
 
     if args.pilot:
         p = os.path.join(args.out_dir, f'ncc_mss_census_pilot_{args.pilot}.tsv')
-        st = run_pilot(rows, cat_re, args.pilot, p)
+        st = run_pilot(rows, cat_re, args.pilot, p,
+                       filter_editions=not args.no_edition_filter,
+                       meta=dict(run_meta, mode='pilot', sample_size=args.pilot))
         print(json.dumps(st, ensure_ascii=False), file=sys.stderr)
         print(f'pilot -> {p}', file=sys.stderr)
+    if args.adjudication_sample:
+        p = args.adjudication_out or os.path.join(
+            args.out_dir, f'ncc_mss_adjudication_{args.adjudication_sample}.tsv')
+        st = run_adjudication_sample(rows, cat_re, args.adjudication_sample, p,
+                                     seed=args.seed)
+        print(json.dumps(st, ensure_ascii=False), file=sys.stderr)
+        print(f'adjudication sample -> {p}', file=sys.stderr)
+    if args.enrich_spans:
+        if not args.enrich_out:
+            ap.error('--enrich-spans needs --enrich-out')
+        st = enrich_adjudication_spans(args.enrich_spans, args.enrich_out,
+                                       rows, cat_re)
+        print(json.dumps(st, ensure_ascii=False), file=sys.stderr)
+        print(f'enriched -> {args.enrich_out}', file=sys.stderr)
     if args.canary:
         p = os.path.join(args.out_dir, 'ncc_mss_canary_20.tsv')
-        res = run_canary(rows, cat_re, p, args.vdcs_details)
+        res = run_canary(rows, cat_re, p, args.vdcs_details,
+                         filter_editions=not args.no_edition_filter,
+                         meta=dict(run_meta, mode='canary'))
         for r in res:
             print('\t'.join(str(x) for x in r), file=sys.stderr)
         print(f'canary -> {p}', file=sys.stderr)

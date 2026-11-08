@@ -86,8 +86,18 @@ def main(argv=None):
                          'duplicated changelog entries, root changelog (C8-3)')
 
     changelogs = find_changelogs(args.repo)
+    # BUGHUNT §7: `dirname(join(repo, name))` keeps a `./` segment, so an
+    # unnormalised --repo ("./dup") never matched and the gate took the
+    # LEGITIMATE-EMPTY branch — "no changelog found", exit 0, a
+    # pass/declared_empty sidecar — for a directory whose changelog repeats a
+    # bullet. Normalise BOTH sides to absolute paths before comparing.
+    repo_abs = os.path.normpath(os.path.abspath(args.repo))
     root = next((p for p in changelogs
-                 if os.path.dirname(p) == os.path.normpath(args.repo)), None)
+                 if os.path.dirname(p) == repo_abs), None)
+    if root is None and changelogs:
+        # Safety net: a changelog WAS found, so the empty branch is a lie.
+        # Prefer the shallowest one rather than declaring nothing to check.
+        root = min(changelogs, key=lambda p: (p.count(os.sep), p))
 
     if root is None:
         ev.add_input('root_changelog', path=os.path.join(args.repo, 'CHANGELOG.md'),

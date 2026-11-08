@@ -11,10 +11,11 @@ passage and returns its translation-of-record segment, or a clean/typed miss.
 
 `lang="en"` (H2334) is a **pilot**: only ṚV./RV. is wired, of-record =
 Griffith 1896 PD from `pwg_ru/griffith_en_1896.json` (DB-independent). Other
-prefixes miss as text-not-covered / en-translation-unpublished. For mandala 8,
-sūkta ≥ 49 the EN lane refuses as `en-numbering-unverified` (H5706 / FINDINGS
-§524): the Griffith column is displaced by the vālakhilya block there, so a
-'hit' would return the wrong hymn's verse.
+prefixes miss as text-not-covered / en-translation-unpublished. H5706 refused
+mandala 8, sūkta ≥ 49 as `en-numbering-unverified` while the Griffith column
+was displaced by the vālakhilya block there; H6590 repaired the asset and the
+refusal is lifted (the alignment gate now passes that span without the H3949
+grandfather).
 
 TWO layers, deliberately separate:
 
@@ -356,7 +357,13 @@ def _fetch_en_rv(canonical):
     if not os.path.exists(GRIFFITH_EN_JSON):
         return None, loc, 'asset_absent'
     idx = _load_griffith_index()
-    return idx.get(loc), loc, 'ok'
+    text = idx.get(loc)
+    if text is not None and text.strip() == '-en-':
+        # rvlinks declared-gap marker (H6590): the source carries no Griffith
+        # verse here. Return None so the lane misses cleanly instead of serving
+        # the placeholder as if it were the of-record text.
+        text = None
+    return text, loc, 'ok'
 
 
 def lookup(prefix, locus, lang='ru'):
@@ -396,18 +403,17 @@ def lookup(prefix, locus, lang='ru'):
         resolved = _rigveda(locus)
         if resolved is None:
             return {**base, 'status': 'miss', 'reason': 'locus-parse-failed'}
-        # H5706 / FINDINGS §524: for mandala 8 from sūkta 49 on, the English
-        # column of griffith_en_1896.json is displaced against its own row key —
-        # the eleven vālakhilya hymns are keyed INLINE in the corpus at 8.49-8.59
-        # but APPENDED at the end of the Griffith source, so every EN 'hit' in
-        # 8.49-8.103 is a fluent verse of the WRONG hymn (h2361 measured 19.8%
-        # stanza agreement there vs 87-94% elsewhere; 678 of 10,552 stanzas).
-        # Refuse the range exactly as _rama_gorresio refuses rather than guess:
-        # a typed miss, never a wrong hit, until the asset itself is repaired
-        # upstream (h2361 recipe step 2). No canonical_id, no griffith_location.
-        m = re.match(r'^08_rigveda:(\d+)\.', resolved)
-        if m and int(m.group(1)) >= 49:
-            return {**base, 'status': 'miss', 'reason': 'en-numbering-unverified'}
+        # H5706 (02-10-2026) refused mandala 8, sūkta ≥ 49 as
+        # `en-numbering-unverified` because the Griffith column was displaced
+        # there by the vālakhilya block (h2361: 19.8% stanza agreement).
+        # H6590 repaired the asset itself — the ASSET column was realigned
+        # verse-by-verse on the Griffith-print-order correspondence (his hymns
+        # 93-103 are the vālakhilya, keyed inline at 8.49-8.59; his 49-92 carry
+        # critical 60-103) — and audit_griffith_en_alignment.py --selftest now
+        # passes 8.49-8.103 WITHOUT the H3949 grandfather (93.5% agreement, in
+        # the 87-94% aligned band), so the refusal is lifted in the same pass
+        # the gate went green, exactly as h5706's own close-out condition
+        # required. The `-en-` declared-gap rows still miss cleanly downstream.
         en, g_loc, asset_status = _fetch_en_rv(resolved)
         base['canonical_id'] = resolved
         if g_loc is not None:
@@ -623,27 +629,43 @@ def selftest():
           and en10.get('griffith_location') == '10.90.1',
           'ṚV. 10,90,1 lang=en -> hit, Griffith 10.90.1, EN %d chars'
           % (len(en10['en']) if en10.get('en') else 0))
-    # H5706 / FINDINGS §524: RV 8.49-8.103 is the vālakhilya block — the Griffith
-    # EN column is displaced against its own key there, so an EN 'hit' would be a
-    # fluent verse of the WRONG hymn (lookup('ṚV.','8,60,1',lang='en') used to
-    # return the text of 8.49.1's neighbour). The lane must return the typed miss
-    # and must NEVER be 'hit' until the asset is repaired upstream (h2361 step 2).
-    for locus in ('8,49,1', '8,60,1', '8,103,1'):
+    # H6590: RV 8.49-8.103 was the vālakhilya displacement (h2361) and H5706
+    # refused the whole span as `en-numbering-unverified`. The asset is repaired
+    # now (Griffith-print-order realignment) and the alignment gate passes the
+    # span WITHOUT the H3949 grandfather, so the lane hits again — and the pin
+    # is on CONTENT, not just status: each locus must return the verse that
+    # actually translates its own Sanskrit (8.60.1 = Griffith's "AGNI, come
+    # hither...", the very text h2361 found misfiled at 8.49.1).
+    for locus, g_loc, head in (
+            ('8,49,1', '8.49.1', "TO you will I sing Indra's praise"),
+            ('8,60,1', '8.60.1', 'AGNI, come hither with thy fires'),
+            ('8,103,1', '8.103.1', 'THAT noblest Furtherer hath appeared')):
         val = lookup('ṚV.', locus, lang='en')
-        check(val['status'] == 'miss'
-              and val.get('reason') == 'en-numbering-unverified'
-              and val.get('canonical_id') is None
-              and 'griffith_location' not in val,
-              'ṚV. %s lang=en -> %s/%s (vālakhilya block refused: never a hit, '
-              'no canonical_id, no griffith_location)'
-              % (locus, val['status'], val.get('reason')))
+        check(val['status'] == 'hit'
+              and val.get('griffith_location') == g_loc
+              and val.get('en')
+              and val['en'].lstrip().startswith(head),
+              'ṚV. %s lang=en -> hit, Griffith %s, EN %d chars, realigned '
+              'content pinned (h6590)'
+              % (locus, val.get('griffith_location'),
+                 len(val['en']) if val.get('en') else 0))
     val_rv = lookup('RV.', '8,60,1', lang='en')
-    check(val_rv['status'] == 'miss'
-          and val_rv.get('reason') == 'en-numbering-unverified',
-          'RV. 8,60,1 lang=en -> %s/%s (both ṚV. prefixes refused)'
-          % (val_rv['status'], val_rv.get('reason')))
-    # Control: sūkta 48 is the last aligned hymn before the block (h2361 table:
-    # 8.1-8.48 agrees at 92.2%) — it must still resolve and hit.
+    check(val_rv['status'] == 'hit'
+          and val_rv.get('griffith_location') == '8.60.1',
+          'RV. 8,60,1 lang=en -> %s (both ṚV. prefixes resolve)'
+          % (val_rv['status'],))
+    # Declared-gap scope: a verse the rvlinks source carries as `-en-` must
+    # miss cleanly, never serve the placeholder as text (h6590). 8.60.16 is
+    # such a row (Griffith's text basis ends his hymn at 15 verses).
+    gap = lookup('ṚV.', '8,60,16', lang='en')
+    check(gap['status'] == 'miss'
+          and gap.get('canonical_id') == '08_rigveda:60.16'
+          and gap.get('en') is None,
+          'ṚV. 8,60,16 lang=en -> %s/%s (declared gap: no Griffith text in '
+          'the source, placeholder never served)'
+          % (gap['status'], gap.get('reason')))
+    # Control: sūkta 48 is the last hymn before the vālakhilya span (h2361
+    # table: 8.1-8.48 agrees at 92.2%) — it must still resolve and hit.
     en848 = lookup('ṚV.', '8,48,1', lang='en')
     check(en848['status'] == 'hit'
           and en848.get('griffith_location') == '8.48.1'
@@ -651,13 +673,11 @@ def selftest():
           'ṚV. 8,48,1 lang=en -> hit, Griffith 8.48.1, EN %d chars '
           '(pre-block control, aligned)'
           % (len(en848['en']) if en848.get('en') else 0))
-    # Scope: the refusal is EN-only. The RU lane reads the corpus, whose #ru/#sa
-    # columns agree throughout (h2361), so 8.49+ keeps resolving unchanged there.
+    # Scope: the RU lane reads the corpus, whose #ru/#sa columns agree
+    # throughout (h2361), so 8.49+ keeps resolving unchanged there.
     ru_val = lookup('ṚV.', '8,60,1', lang='ru')
-    check(ru_val.get('canonical_id') == '08_rigveda:60.1'
-          and ru_val.get('reason') != 'en-numbering-unverified',
-          'ṚV. 8,60,1 lang=ru -> %s, canonical %s (RU lane unchanged; the '
-          'refusal is EN-only)'
+    check(ru_val.get('canonical_id') == '08_rigveda:60.1',
+          'ṚV. 8,60,1 lang=ru -> %s, canonical %s (RU lane unchanged)'
           % (ru_val['status'], ru_val.get('canonical_id')))
     en_ts = lookup('TS.', '2,3,1,4', lang='en')
     check(en_ts['status'] == 'miss' and en_ts.get('reason') == 'text-not-covered',

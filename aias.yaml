@@ -1,0 +1,12 @@
+# AIAS data declaration — SanskritLexicography (H7119).
+# Schema + level scale: Uprava docs/AIAS_DATA_MANIFEST_SCHEMA_2026-10-24.md
+# Checked by tools/aias_manifest_check.py (vendored) in the aias-gate workflow.
+schema_version: 1
+level: not declared
+produced_by: "not declared — the lexical datasets here were assembled over years without a provenance record; later derived tables mix agent-written and human-written scripts with no per-dataset note"
+decided_by: "not declared"
+review: none
+generated_at: 2026-10-24
+scope: "the lexical datasets and derived tables this repo publishes; nothing beyond that is claimed"
+generated_by: "H7119 pilot (DeepSeek v4.1 Flash, deepseek/deepseek-flash)"
+notes: "This is the honest value, not a gap in the work: handoffs after H3000 name an executor, but the datasets themselves predate any AIAS record, and guessing a level would overstate human review — exactly the failure mode this field exists to prevent."

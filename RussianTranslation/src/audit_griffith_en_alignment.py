@@ -25,13 +25,29 @@ actually executes in CI rather than permanently SKIPping.
   python src/audit_griffith_en_alignment.py            # per-mandala report
   python src/audit_griffith_en_alignment.py --selftest # gate: exit 1 on a NEW broken block
 
-H3949 (07-09-2026) wired this into CI. 8.49-8.103 (and the derived full-mandala-8
-row) stay broken and are GRANDFATHERED by name and date in `GRANDFATHERED` below
-rather than silently passed: repair attempts found the drift is NOT a constant
-vālakhilya-sized (11-hymn) offset -- Griffith's published hymn boundaries diverge
-from the critical/PWG numbering hymn-by-hymn across the whole 49-92 stretch of his
-own numbering, so a blind rekey would relabel most stanzas with the wrong content.
-The gate still fails hard on any block outside the grandfathered list.
+H3949 (07-09-2026) wired this into CI and grandfathered 8.49-8.103 (plus the
+derived full-mandala-8 row) by name and date: repair attempts up to then found
+the drift is NOT a constant vālakhilya-sized (11-hymn) offset -- Griffith's
+published hymn boundaries diverge from the critical/PWG numbering hymn-by-hymn
+across the whole 49-92 stretch of his own numbering, so a blind rekey would
+relabel most stanzas with the wrong content.
+
+H6590 (asset repaired 10-2026) did the hymn-by-hymn correspondence work: the
+rvlinks EN column was compiled in GRIFFITH'S OWN PRINT ORDER -- his mandala-8
+hymns 49-91 carry critical/PWG hymns 60-102, his 92 carries critical 8.103, and
+his 93-103 (appended after the main series) carry the eleven vālakhilya hymns
+that the corpus keys INLINE at 8.49-8.59. The ASSET column was realigned
+verse-by-verse on that correspondence (griffith hymn g -> critical k:
+g 49-92 -> k g+11, except 92 -> 103; g 93-103 -> k g-44), and the
+`GRANDFATHERED` exclusion is lifted: the gate now fails hard on ANY anchored
+block below the floor, including 8.49-8.103.
+
+Placeholder semantics (H6590): rows whose EN text is the rvlinks `-en-`
+declared-gap marker carry no English at all; they are SKIPPED, not counted as
+disagreements. A declared gap is not a displaced column -- the gate measures
+whether the EN that EXISTS addresses the stanza its key names. The original
+defect still fails hard under these semantics (pre-repair 8.49-8.103:
+73/262 = 27.9%; post-repair: 93.5%).
 """
 import argparse
 import json
@@ -71,27 +87,12 @@ ANCHORS = [
 # is not addressing the same stanzas as the key. Aligned material sits ~90-96%.
 FLOOR = 0.70
 
-# H3949, 07-09-2026: investigated re-keying mandala 8 sukta >=49 by the constant
-# vālakhilya offset (11 hymns). That constant shift is FALSE beyond the first few
-# hymns: checked hymn-by-hymn against corpus.db verse counts, only 13 of the 44
-# hymns in Griffith's own 49-92 range land on the same verse count as the
-# corpus hymn a constant +11 shift predicts (e.g. Griffith 81 has 9 verses,
-# corpus 92 -- the shift target -- has 33; Griffith's published hymn boundaries
-# diverge from the critical/PWG numbering throughout this stretch, not only at
-# the vālakhilya insertion). Re-keying on the constant shift would relabel most
-# of the block with the WRONG stanza, which the ambiguity policy rules out ("a
-# wrong alignment is worse than a declared gap"). Grandfathered until someone
-# does the hymn-by-hymn philological correspondence work; the gate still fails
-# on any block outside this named, dated list.
-GRANDFATHERED = {
-    'mandala 8': 'H3949 07-09-2026: sukta 49-103 hymn-boundary drift is not a '
-                 'constant offset, see  8.49-8.103 below',
-    '  8.49-8.103': 'H3949 07-09-2026: Griffith hymn numbering diverges from the '
-                     'critical/PWG numbering across this whole stretch (verified '
-                     'not a constant vālakhilya-sized shift); no reliable EN '
-                     'stanza mapping exists yet, left unaligned per the '
-                     'ambiguity policy rather than guessed',
-}
+# H3949, 07-09-2026 investigated re-keying mandala 8 sukta >=49 by the constant
+# vālakhilya offset (11 hymns) and found it false beyond the first few hymns;
+# the block was grandfathered until the hymn-by-hymn correspondence was done.
+# H6590 (10-2026) did that work and lifted the grandfather: see the module
+# docstring for the Griffith-print-order correspondence the realignment used.
+GRANDFATHERED = {}
 
 
 def load_en():
@@ -133,6 +134,11 @@ def agreement(en, sa, keep=lambda m, s: True):
             continue
         e_txt = en.get(loc)
         if not e_txt:
+            continue
+        if e_txt.strip() == '-en-':
+            # rvlinks declared-gap marker: no EN exists for this stanza (H6590).
+            # A declared gap is not a misalignment -- skip it instead of
+            # counting it as a disagreement.
             continue
         low_s, low_e = s_txt.lower(), e_txt.lower()
         for stem, name in ANCHORS:

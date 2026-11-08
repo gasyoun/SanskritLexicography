@@ -1,0 +1,29 @@
+{
+ "schema": "ncc-roman-catalogue-allowlist/1",
+ "created": "2026-10-19",
+ "handoff": "H7084",
+ "rule": "A lexicon siglum that ROMAN_RE reads as a roman numeral is dropped as a volume marker UNLESS the VisualDCS counting workbook lists it as a catalogue key in its Details column. The exemption is this committed allowlist, never a rule inferred at run time, so an offline run without the workbook behaves identically.",
+ "rejected_alternatives": [
+  "Keep roman sigla that lead a witness string: discriminates nothing, all 67 dropped sigla lead, because II/III are orphaned volume markers whose catalogue was stripped upstream ('Hpr. III. 49' split into two witnesses, leaving 'II. 48').",
+  "Keep roman sigla that rarely follow another catalogue: II reads 53-after/132-standalone, MD reads 12-after/17-standalone, so MD scores WORSE than II."
+ ],
+ "source": {
+  "workbook": "VisualDCS/non-derived/NCC/Works-Share-NCC/NCC-mss-counting-1 031 077.xlsx",
+  "sheet": "NCC_mss_counting- 1 032 077",
+  "column": "Details",
+  "workbook_total_never_a_census": "1,032,077 is the sum of the mss column over 140,848 rows of the workbook; it is never quoted as a manuscript census.",
+  "vocabulary_artifact": "ncc_vdcs_catalogue_keys_2026-10-19.json",
+  "derived_by": "python census_ncc_mss.py --vdcs-details <workbook> --dump-vdcs-keys ncc_vdcs_catalogue_keys_2026-10-19.json"
+ },
+ "entries": [
+  {
+   "siglum": "MD",
+   "roman_value": 1500,
+   "details_key_mentions": 7771,
+   "mss_witnesses": 11672,
+   "witness_rank": 3,
+   "evidence": "MD. 4397 / MD. 6571-74 / MD. 8771 / MD. 4695 are accession runs, exactly like other catalogues; 11,672 witnesses in the shipped mss_witnesses field, always at position 0 of the witness string (a volume marker cannot lead a witness field, and II/III only ever appear orphaned); the workbook's Details vocabulary lists 'MD.: n { ... }'; no NCC volume runs to 1,500.",
+   "defect_it_closes": "MD. never terminated a segment, so MD accessions folded into the catalogue before them: 2 of the 12 false positives in the H7080 seed-20261018 draw (Adyar 6571, Jain 8771), 1.92 % of pilot units (14/730), and 0 of 100 sampled rows carrying siglum MD."
+  }
+ ]
+}

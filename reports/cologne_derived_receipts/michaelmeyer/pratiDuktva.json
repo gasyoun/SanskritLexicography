@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/pratidhuktva",
+ "http": 200,
+ "page_sha256": "7c13d940704fe2bb2cf1fc796b097fb8e805c0a19c35302da5daa8fc257ed41e",
+ "page_bytes": 1495,
+ "dc_year": "2026",
+ "dict": "mw",
+ "L": "132396",
+ "headword": "pratiDuktva",
+ "iast": "pratidhuktva",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 666, col. 1 . prati-°dhuk—tva n., TS.",
+ "role": "sample",
+ "verdict": "PRESENT"
+}

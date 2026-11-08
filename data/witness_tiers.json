@@ -202,8 +202,8 @@
     "mw_l_only_headwords": 59697,
     "mw_total": 194084,
     "mw_l_rate": 0.3076,
-    "union_headwords_with_mw": 193852,
-    "corroboration_only_mw_plus_petersburg": 59717,
+    "union_headwords_with_mw": 193851,
+    "corroboration_only_mw_plus_petersburg": 59718,
     "est_mw_l_only_listing_of_those": 18368,
     "caveat": "upper-bound estimate; superseded by text_attestation_regrade"
   },
@@ -211,10 +211,10 @@
     "mask_size": 59697,
     "mw_stripped": 59618,
     "ghosts_zero_text_witness": 17386,
-    "p3_corrob_membership": 112153,
-    "p3_corrob_textgraded": 109429,
+    "p3_corrob_membership": 112155,
+    "p3_corrob_textgraded": 109432,
     "p3_share_membership": 0.3468,
-    "p3_share_textgraded": 0.3383,
+    "p3_share_textgraded": 0.3384,
     "dists": {
       "P0": {
         "12": 482,
@@ -223,14 +223,14 @@
         "9": 2824,
         "7": 5362,
         "13": 187,
-        "1": 136816,
+        "1": 136809,
         "10": 1850,
-        "2": 63136,
-        "5": 14638,
+        "2": 63140,
+        "5": 14639,
         "3": 42825,
         "0": 17386,
         "8": 3813,
-        "4": 24104,
+        "4": 24103,
         "14": 45,
         "15": 11
       },
@@ -241,11 +241,11 @@
         "7": 3176,
         "6": 4888,
         "10": 331,
-        "1": 156750,
-        "2": 80493,
-        "3": 32452,
+        "1": 156743,
+        "2": 80497,
+        "3": 32451,
         "0": 17386,
-        "4": 17111,
+        "4": 17112,
         "11": 86,
         "12": 16
       },
@@ -255,9 +255,9 @@
         "5": 5575,
         "6": 3413,
         "9": 341,
-        "1": 196610,
-        "2": 64424,
-        "3": 22481,
+        "1": 196604,
+        "2": 64426,
+        "3": 22482,
         "0": 17386,
         "4": 10457,
         "10": 88,
@@ -268,13 +268,60 @@
         "6": 2135,
         "5": 5149,
         "8": 359,
-        "1": 199839,
-        "2": 64724,
+        "1": 199833,
+        "2": 64726,
         "4": 10290,
         "0": 17386,
-        "3": 22445,
+        "3": 22446,
         "9": 91,
         "10": 16
+      }
+    }
+  },
+  "extensions": {
+    "H7299": {
+      "id": "H7299",
+      "dictionary_relations": [
+        {
+          "from": "PWG",
+          "to": "PD",
+          "type": "independent-historical-dictionary",
+          "collapse_at": null,
+          "family_id": "DECCAN_PD",
+          "confidence": "high",
+          "source": "PD_EDITIONS.md#L54-L56",
+          "evidence": "PD is explicitly not part of the Petersburg supplement chain; it is an independent historical dictionary."
+        }
+      ],
+      "families": {
+        "DECCAN_PD": [
+          "PD"
+        ]
+      },
+      "chronology_lineages": [
+        {
+          "family_id": "DCS_DHARMAMITRA_CHRONOLOGY",
+          "members": [
+            "DCS",
+            "Dharmamitra"
+          ],
+          "relation": "collaborative-lineage",
+          "independent_confirmations": 1,
+          "spearman_rho": 0.94,
+          "shared_works": 56,
+          "confidence": "high",
+          "source": "Uprava/handoffs/archive/H7116-DeepSeek_csl-atlas_sense-order-comparative_19.10.26.md#L23-L29",
+          "evidence": "One shared measuring stick; agreement is cross-validation, not a second independent chronology."
+        }
+      ],
+      "pd_inventory": {
+        "dictionary": "PD",
+        "headwords": 104962,
+        "single_dictionary_unique": 93462,
+        "single_dictionary_unique_share": 0.8903,
+        "evidence_scope": "inventory-only",
+        "source": "HeadwordLists/union-16dicts/UNION16_OVERLAP_REPORT_19-09-2026.md#L35-L36",
+        "caveat": "A unique headword listing is not independent textual attestation."
       }
     }
   }

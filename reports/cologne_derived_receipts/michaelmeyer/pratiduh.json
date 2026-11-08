@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/pratiduh",
+ "http": 200,
+ "page_sha256": "878ed75e4e3f64759b5cdb60bf3fa06cf9500e7b3304b61fd3116e93a0b8ce8e",
+ "page_bytes": 6541,
+ "dc_year": "2026",
+ "dict": "mw",
+ "L": "132395",
+ "headword": "pratiduh",
+ "iast": "pratiduh",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 666, col. 1 . prati-√ duh a ( P. impf. -aduhat aor. -adhukṣat ), to add by milking, TS. ; ( P. Pot. -duhīyat , A. Subj. -dohate ) to yield (like milk), grant, RV. ( cf. Nir. i, 7). ☞ p. 666, col. 1 . prati-°dúh b n. ( nom. dhuk ; gen. instr. also dhuṣas , °ṣā )",
+ "role": "sample",
+ "verdict": "PRESENT"
+}

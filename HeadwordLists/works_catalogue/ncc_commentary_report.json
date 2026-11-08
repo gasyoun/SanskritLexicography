@@ -1,0 +1,864 @@
+{
+ "ncc_entries": 152526,
+ "clusters": 123909,
+ "cluster_identity": {
+  "see_pairs": 627,
+  "cw_union": 210323
+ },
+ "ncc_edge_instances": 30187,
+ "strict_edges_dedup": 10332,
+ "strict_edges_acc": 13,
+ "fuzzy_edges_dedup": 27989,
+ "strict_nodes": 10418,
+ "fuzzy_nodes": 29066,
+ "ranked_works": 29066,
+ "authority_merges": 1961,
+ "precision_sample_size": 0,
+ "precision_sample_file": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7222-71108/HeadwordLists/works_catalogue/ncc_commentary_ranking.tsv.precision_sample.tsv",
+ "canary_top20": [
+  {
+   "xls_name": "Amarakośa",
+   "xls_total": 834,
+   "rebuilt_strict": 138,
+   "rebuilt_fuzzy": 154,
+   "in_edges_strict": 183,
+   "in_edges_acc": 0,
+   "mention_entries": 499,
+   "matched": true
+  },
+  {
+   "xls_name": "Brahmasūtra",
+   "xls_total": 575,
+   "rebuilt_strict": 11,
+   "rebuilt_fuzzy": 13,
+   "in_edges_strict": 14,
+   "in_edges_acc": 0,
+   "mention_entries": 639,
+   "matched": true
+  },
+  {
+   "xls_name": "Tattvacintāmaṇi",
+   "xls_total": 395,
+   "rebuilt_strict": 31,
+   "rebuilt_fuzzy": 42,
+   "in_edges_strict": 27,
+   "in_edges_acc": 0,
+   "mention_entries": 445,
+   "matched": true
+  },
+  {
+   "xls_name": "Taittirīyopaniṣad",
+   "xls_total": 338,
+   "rebuilt_strict": 4,
+   "rebuilt_fuzzy": 25,
+   "in_edges_strict": 17,
+   "in_edges_acc": 0,
+   "mention_entries": 79,
+   "matched": true
+  },
+  {
+   "xls_name": "Rāmasiddhāntasaṅgraha",
+   "xls_total": 336,
+   "rebuilt_strict": 1,
+   "rebuilt_fuzzy": 1,
+   "in_edges_strict": 1,
+   "in_edges_acc": 0,
+   "mention_entries": 3,
+   "matched": true
+  },
+  {
+   "xls_name": "Raghuvaṃśa",
+   "xls_total": 335,
+   "rebuilt_strict": 36,
+   "rebuilt_fuzzy": 59,
+   "in_edges_strict": 91,
+   "in_edges_acc": 0,
+   "mention_entries": 218,
+   "matched": true
+  },
+  {
+   "xls_name": "Kāvyaprakāśa",
+   "xls_total": 319,
+   "rebuilt_strict": 54,
+   "rebuilt_fuzzy": 93,
+   "in_edges_strict": 85,
+   "in_edges_acc": 0,
+   "mention_entries": 297,
+   "matched": true
+  },
+  {
+   "xls_name": "Meghadūta",
+   "xls_total": 306,
+   "rebuilt_strict": 45,
+   "rebuilt_fuzzy": 78,
+   "in_edges_strict": 71,
+   "in_edges_acc": 0,
+   "mention_entries": 163,
+   "matched": true
+  },
+  {
+   "xls_name": "Bhāgavata",
+   "xls_total": 295,
+   "rebuilt_strict": 58,
+   "rebuilt_fuzzy": 71,
+   "in_edges_strict": 69,
+   "in_edges_acc": 0,
+   "mention_entries": 1120,
+   "matched": true
+  },
+  {
+   "xls_name": "Bhagavadgītā",
+   "xls_total": 269,
+   "rebuilt_strict": 24,
+   "rebuilt_fuzzy": 42,
+   "in_edges_strict": 29,
+   "in_edges_acc": 0,
+   "mention_entries": 326,
+   "matched": true
+  },
+  {
+   "xls_name": "Laghuśabdenduśekhara",
+   "xls_total": 254,
+   "rebuilt_strict": 8,
+   "rebuilt_fuzzy": 26,
+   "in_edges_strict": 17,
+   "in_edges_acc": 0,
+   "mention_entries": 47,
+   "matched": true
+  },
+  {
+   "xls_name": "Rāmāyaṇa",
+   "xls_total": 226,
+   "rebuilt_strict": 11,
+   "rebuilt_fuzzy": 12,
+   "in_edges_strict": 16,
+   "in_edges_acc": 0,
+   "mention_entries": 706,
+   "matched": true
+  },
+  {
+   "xls_name": "Paribhāṣenduśekhara",
+   "xls_total": 223,
+   "rebuilt_strict": 3,
+   "rebuilt_fuzzy": 9,
+   "in_edges_strict": 3,
+   "in_edges_acc": 0,
+   "mention_entries": 94,
+   "matched": true
+  },
+  {
+   "xls_name": "Tarkasaṅgraha",
+   "xls_total": 220,
+   "rebuilt_strict": 23,
+   "rebuilt_fuzzy": 47,
+   "in_edges_strict": 27,
+   "in_edges_acc": 0,
+   "mention_entries": 151,
+   "matched": true
+  },
+  {
+   "xls_name": "Gītagovinda",
+   "xls_total": 213,
+   "rebuilt_strict": 25,
+   "rebuilt_fuzzy": 24,
+   "in_edges_strict": 23,
+   "in_edges_acc": 0,
+   "mention_entries": 247,
+   "matched": true
+  },
+  {
+   "xls_name": "Padārthadharmasaṅgraha",
+   "xls_total": 213,
+   "rebuilt_strict": 4,
+   "rebuilt_fuzzy": 9,
+   "in_edges_strict": 1,
+   "in_edges_acc": 0,
+   "mention_entries": 37,
+   "matched": true
+  },
+  {
+   "xls_name": "Vṛttaratnākara",
+   "xls_total": 203,
+   "rebuilt_strict": 27,
+   "rebuilt_fuzzy": 35,
+   "in_edges_strict": 30,
+   "in_edges_acc": 0,
+   "mention_entries": 165,
+   "matched": true
+  },
+  {
+   "xls_name": "Praśnavyākaraṇa",
+   "xls_total": 202,
+   "rebuilt_strict": 0,
+   "rebuilt_fuzzy": 3,
+   "in_edges_strict": 0,
+   "in_edges_acc": 0,
+   "mention_entries": 11,
+   "matched": true
+  },
+  {
+   "xls_name": "Līlāvatī",
+   "xls_total": 199,
+   "rebuilt_strict": 20,
+   "rebuilt_fuzzy": 35,
+   "in_edges_strict": 39,
+   "in_edges_acc": 0,
+   "mention_entries": 192,
+   "matched": true
+  },
+  {
+   "xls_name": "Devīmāhātmya",
+   "xls_total": 193,
+   "rebuilt_strict": 27,
+   "rebuilt_fuzzy": 43,
+   "in_edges_strict": 45,
+   "in_edges_acc": 0,
+   "mention_entries": 208,
+   "matched": true
+  }
+ ],
+ "coverage_cuts": {
+  "dcs288": [
+   [
+    50,
+    16.0
+   ],
+   [
+    100,
+    13.0
+   ],
+   [
+    250,
+    9.2
+   ],
+   [
+    500,
+    5.6
+   ],
+   [
+    1000,
+    4.0
+   ]
+  ],
+  "pd164": [
+   [
+    50,
+    20.0
+   ],
+   [
+    100,
+    13.0
+   ],
+   [
+    250,
+    10.4
+   ],
+   [
+    500,
+    7.2
+   ],
+   [
+    1000,
+    5.0
+   ]
+  ],
+  "pwg": [
+   [
+    50,
+    32.0
+   ],
+   [
+    100,
+    27.0
+   ],
+   [
+    250,
+    19.6
+   ],
+   [
+    500,
+    13.2
+   ],
+   [
+    1000,
+    9.1
+   ]
+  ],
+  "acc": [
+   [
+    50,
+    86.0
+   ],
+   [
+    100,
+    86.0
+   ],
+   [
+    250,
+    78.4
+   ],
+   [
+    500,
+    74.2
+   ],
+   [
+    1000,
+    67.7
+   ]
+  ]
+ },
+ "coverage_curve_every10": {
+  "dcs288": [
+   [
+    10,
+    20.0
+   ],
+   [
+    40,
+    17.5
+   ],
+   [
+    70,
+    15.7
+   ],
+   [
+    100,
+    13.0
+   ],
+   [
+    130,
+    10.8
+   ],
+   [
+    160,
+    10.6
+   ],
+   [
+    190,
+    10.0
+   ],
+   [
+    220,
+    9.1
+   ],
+   [
+    250,
+    9.2
+   ],
+   [
+    280,
+    8.9
+   ],
+   [
+    310,
+    8.4
+   ],
+   [
+    340,
+    7.9
+   ],
+   [
+    370,
+    7.3
+   ],
+   [
+    400,
+    6.8
+   ],
+   [
+    430,
+    6.3
+   ],
+   [
+    460,
+    6.1
+   ],
+   [
+    490,
+    5.7
+   ],
+   [
+    520,
+    5.6
+   ],
+   [
+    550,
+    5.5
+   ],
+   [
+    580,
+    5.2
+   ],
+   [
+    610,
+    4.9
+   ],
+   [
+    640,
+    4.7
+   ],
+   [
+    670,
+    4.8
+   ],
+   [
+    700,
+    4.7
+   ],
+   [
+    730,
+    4.5
+   ],
+   [
+    760,
+    4.6
+   ],
+   [
+    790,
+    4.6
+   ],
+   [
+    820,
+    4.5
+   ],
+   [
+    850,
+    4.5
+   ],
+   [
+    880,
+    4.3
+   ],
+   [
+    910,
+    4.3
+   ],
+   [
+    940,
+    4.1
+   ],
+   [
+    970,
+    4.1
+   ],
+   [
+    1000,
+    4.0
+   ]
+  ],
+  "pd164": [
+   [
+    10,
+    20.0
+   ],
+   [
+    40,
+    22.5
+   ],
+   [
+    70,
+    15.7
+   ],
+   [
+    100,
+    13.0
+   ],
+   [
+    130,
+    10.8
+   ],
+   [
+    160,
+    11.2
+   ],
+   [
+    190,
+    11.6
+   ],
+   [
+    220,
+    11.4
+   ],
+   [
+    250,
+    10.4
+   ],
+   [
+    280,
+    10.4
+   ],
+   [
+    310,
+    10.0
+   ],
+   [
+    340,
+    9.4
+   ],
+   [
+    370,
+    8.6
+   ],
+   [
+    400,
+    8.0
+   ],
+   [
+    430,
+    8.1
+   ],
+   [
+    460,
+    7.8
+   ],
+   [
+    490,
+    7.3
+   ],
+   [
+    520,
+    7.3
+   ],
+   [
+    550,
+    7.1
+   ],
+   [
+    580,
+    6.7
+   ],
+   [
+    610,
+    6.6
+   ],
+   [
+    640,
+    6.7
+   ],
+   [
+    670,
+    6.7
+   ],
+   [
+    700,
+    6.4
+   ],
+   [
+    730,
+    6.2
+   ],
+   [
+    760,
+    6.2
+   ],
+   [
+    790,
+    6.2
+   ],
+   [
+    820,
+    6.0
+   ],
+   [
+    850,
+    5.8
+   ],
+   [
+    880,
+    5.6
+   ],
+   [
+    910,
+    5.4
+   ],
+   [
+    940,
+    5.2
+   ],
+   [
+    970,
+    5.2
+   ],
+   [
+    1000,
+    5.0
+   ]
+  ],
+  "pwg": [
+   [
+    10,
+    50.0
+   ],
+   [
+    40,
+    30.0
+   ],
+   [
+    70,
+    32.9
+   ],
+   [
+    100,
+    27.0
+   ],
+   [
+    130,
+    24.6
+   ],
+   [
+    160,
+    23.8
+   ],
+   [
+    190,
+    21.1
+   ],
+   [
+    220,
+    20.0
+   ],
+   [
+    250,
+    19.6
+   ],
+   [
+    280,
+    18.2
+   ],
+   [
+    310,
+    17.1
+   ],
+   [
+    340,
+    16.5
+   ],
+   [
+    370,
+    15.1
+   ],
+   [
+    400,
+    15.0
+   ],
+   [
+    430,
+    14.7
+   ],
+   [
+    460,
+    13.9
+   ],
+   [
+    490,
+    13.5
+   ],
+   [
+    520,
+    12.9
+   ],
+   [
+    550,
+    12.4
+   ],
+   [
+    580,
+    12.1
+   ],
+   [
+    610,
+    11.8
+   ],
+   [
+    640,
+    11.9
+   ],
+   [
+    670,
+    11.6
+   ],
+   [
+    700,
+    11.4
+   ],
+   [
+    730,
+    11.0
+   ],
+   [
+    760,
+    10.9
+   ],
+   [
+    790,
+    10.6
+   ],
+   [
+    820,
+    10.5
+   ],
+   [
+    850,
+    10.2
+   ],
+   [
+    880,
+    9.9
+   ],
+   [
+    910,
+    9.6
+   ],
+   [
+    940,
+    9.5
+   ],
+   [
+    970,
+    9.4
+   ],
+   [
+    1000,
+    9.1
+   ]
+  ],
+  "acc": [
+   [
+    10,
+    80.0
+   ],
+   [
+    40,
+    85.0
+   ],
+   [
+    70,
+    88.6
+   ],
+   [
+    100,
+    86.0
+   ],
+   [
+    130,
+    85.4
+   ],
+   [
+    160,
+    85.6
+   ],
+   [
+    190,
+    82.1
+   ],
+   [
+    220,
+    79.1
+   ],
+   [
+    250,
+    78.4
+   ],
+   [
+    280,
+    78.2
+   ],
+   [
+    310,
+    78.4
+   ],
+   [
+    340,
+    77.6
+   ],
+   [
+    370,
+    77.0
+   ],
+   [
+    400,
+    75.8
+   ],
+   [
+    430,
+    75.8
+   ],
+   [
+    460,
+    75.4
+   ],
+   [
+    490,
+    74.7
+   ],
+   [
+    520,
+    74.8
+   ],
+   [
+    550,
+    74.0
+   ],
+   [
+    580,
+    72.8
+   ],
+   [
+    610,
+    72.3
+   ],
+   [
+    640,
+    71.7
+   ],
+   [
+    670,
+    71.6
+   ],
+   [
+    700,
+    70.9
+   ],
+   [
+    730,
+    70.8
+   ],
+   [
+    760,
+    71.3
+   ],
+   [
+    790,
+    70.5
+   ],
+   [
+    820,
+    70.4
+   ],
+   [
+    850,
+    70.2
+   ],
+   [
+    880,
+    70.1
+   ],
+   [
+    910,
+    69.8
+   ],
+   [
+    940,
+    69.0
+   ],
+   [
+    970,
+    68.7
+   ],
+   [
+    1000,
+    67.7
+   ]
+  ]
+ }
+}

@@ -1,0 +1,72 @@
+# A-class script gate — H7596, 01-11-2026.
+#
+# Finding-as-test over epistemic_dashboard/verifiability.json: every class-A row
+# declaring a primary_script must still have a runnable recipe. In-tree scripts must
+# exist; a declared --selftest must exit 0; rows whose script lives in another estate
+# repo are skipped against the committed EXTERNAL_SCRIPTS map in the checker. Red =
+# the recipe behind a class-A claim no longer runs. Mirrors the shape of
+# epistemic-integrity.yml: PR runs on the relevant paths, a push:master backstop that
+# opens a tracking issue so a red master is loud, plus a weekly cron so a script
+# deleted between PRs is caught by drift, not by the next registry edit.
+name: a-class-script-check
+
+on:
+  pull_request:
+    paths: &paths
+      - "epistemic_dashboard/verifiability.json"
+      - "tools/a_class_script_check.py"
+      - ".github/workflows/a-class-script-check.yml"
+  push:
+    branches: [master]
+    paths: *paths
+  schedule:
+    - cron: "0 4 * * 1" # weekly drift probe: catch script deletion with no registry edit
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: a-class-script-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  a-class-scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: A-class primary_script existence + declared selftests
+        run: python tools/a_class_script_check.py --dir .
+
+      - name: Open/refresh a tracking issue when master is red
+        if: failure() && github.event_name == 'push'
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const title = "⚠️ A-class script gate RED on master";
+            const marker = "<!-- a-class-script-check -->";
+            const sha = context.sha.slice(0, 8);
+            const run = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = `${marker}\nThe A-class script gate failed on \`master\` at commit ${sha}.\n\n` +
+              `A class-A verifiability.json row's primary_script is missing from the tree without a committed external home, or a declared selftest exits nonzero.\n\n` +
+              `- Failing run: ${run}\n- Reproduce locally: \`python tools/a_class_script_check.py --dir .\`\n\n` +
+              `Fix per the checker's header: commit the missing script, or add its cross-repo home to EXTERNAL_SCRIPTS with provenance, then close this issue.`;
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo, state: "open", per_page: 100,
+            });
+            const hit = existing.data.find(i => i.body && i.body.includes(marker));
+            if (hit) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo, issue_number: hit.number,
+                body: `Still red on \`master\` at ${sha} — ${run}`,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo, title, body,
+              });
+            }

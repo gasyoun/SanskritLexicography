@@ -1,0 +1,18 @@
+{
+ "site": "michaelmeyer.fr",
+ "url": "https://michaelmeyer.fr/sanskrit/meta/terms/parok%E1%B9%A3abandhu",
+ "http": 200,
+ "page_sha256": "e1e8086a34c813532d04e058b1c3eeff816ad341d9cac7e22e92879fc32e82b1",
+ "page_bytes": 1457,
+ "dc_year": "2026",
+ "dict": "mw",
+ "L": "116702.38",
+ "headword": "parokzabanDu",
+ "iast": "parokṣabandhu",
+ "marker": "",
+ "marker_found": true,
+ "mw_section": true,
+ "excerpt": "Monier-Williams Sanskrit-English Dictionary (2nd ed.) ☞ p. 589, col. 2 . paro—'kṣa—bandhu mfn. ( paro kṣa- ) not clear in its relation, MaitrS.",
+ "role": "sample",
+ "verdict": "PRESENT"
+}

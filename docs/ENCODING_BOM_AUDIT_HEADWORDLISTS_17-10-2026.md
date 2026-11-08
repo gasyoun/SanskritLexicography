@@ -62,6 +62,20 @@ Consequences that made the fix step a **no-op by rule**, not by oversight:
 
 **Ruled 17-10-2026 (MG): keep.** The 3 bytes are preserved, nothing is stripped, and `headword_diff.py`'s write contract is untouched. The handoff's *"re-run reports zero sibling inconsistencies"* clause is superseded by this ruling: the inconsistency is intentional and named, not a defect to remove. A future strip would need its own handoff that re-pins the write contract and the §4 census in the same pass.
 
+### 4.1 Amendment 19-10-2026 — the write contract now follows the OUTPUT file
+
+*`/bughunt` on [BUGHUNT-FINDINGS-SanskritLexicography-19.10.2026.md](https://github.com/gasyoun/SanskritLexicography/blob/master/BUGHUNT-FINDINGS-SanskritLexicography-19.10.2026.md) §1.*
+
+The 17-10 ruling stands unchanged for `then-2014/`: the 3 bytes are still there and still not stripped. What changed is **which file the writer consults**, and this audit's §4 read of the code is what made the defect invisible:
+
+| | before 19-10-2026 | after |
+|---|---|---|
+| line | `enc = "utf-8-sig" if _has_bom(then_path) else "utf-8"` | `enc = "utf-8-sig" if os.path.exists(out) and _has_bom(out) else "utf-8"` |
+| oracle | the 2014 ancestor — a **different file** | the file being **overwritten** |
+| consequence on the real tree | the first `headword_diff.py now` injects `EF BB BF` into `now-2026/MW-unique-key1-194084.txt`, whose first headword then decodes as `\ufeffa` under plain `utf-8` (so `a` drops out of any BOM-less reader's set) and whose suite pin at `tests/test_headword_snapshots.py:150` asserts the opposite | `now-2026/` is stable under regeneration; `then-2014/` keeps its byte |
+
+Measured before the change with the committed 2014 file as input: `write_now()` wrote `efbbbf`; after it, the same input writes `610a61` and the first headword is `a` again. The selftest's `test_bom_preservation` asserted the *injection* as the contract — it now asserts the output's own state, and a new `test_bom_never_inherited_from_then_2014` pins the trap itself. No BOM byte was added, moved or removed anywhere in the tree by this amendment: `now-2026/` remains BOM-free, so this audit's §3 census (6 BOM files) is still exact.
+
 ## 5. Tool defect found and fixed in this pass
 
 The audit's first run reported a **false** non-UTF-8 file:

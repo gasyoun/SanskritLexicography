@@ -5,7 +5,8 @@ Works in throwaway git worktrees so it never touches whatever branch the main
 checkout happens to be on (this repo sees concurrent sessions switching
 branches mid-day):
 
-  1. worktree off origin/master → build_findings_data.py + probe_platforms.py
+  1. worktree off origin/master → build_findings_data.py + b_class_reprobe.py
+     (H7593 B-class re-probe; residential-only) + probe_platforms.py
      → commit data files to master → push
   2. worktree off origin/gh-pages → copy dashboard files into findings/
      → commit → push
@@ -51,8 +52,10 @@ def main():
     try:
         run(['git', 'worktree', 'add', '--detach', str(wt_m), 'origin/master'], REPO)
         run([sys.executable, str(wt_m / 'findings_dashboard' / 'build_findings_data.py')], wt_m)
+        run([sys.executable, str(wt_m / 'tools' / 'b_class_reprobe.py')], wt_m)
         run([sys.executable, str(wt_m / 'findings_dashboard' / 'probe_platforms.py')], wt_m)
-        run(['git', 'add', 'findings_dashboard'], wt_m)
+        run(['git', 'add', 'findings_dashboard',
+             'epistemic_dashboard/verifiability.json'], wt_m)
         diff = subprocess.run(['git', 'diff', '--cached', '--quiet'], cwd=wt_m)
         if diff.returncode != 0:
             run(['git', 'commit', '-m',

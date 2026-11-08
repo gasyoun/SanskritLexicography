@@ -76,17 +76,36 @@ def ls_tree_paths(repo: Path, ref: str) -> list[str]:
     return [p.decode("utf-8", "surrogateescape") for p in out.split(b"\0") if p]
 
 
-def eol_attrs(repo: Path, paths: list[str]) -> dict[str, tuple[str, str]]:
-    """Map path -> (text, eol) as the working-tree .gitattributes assigns them.
+def eol_attrs(repo: Path, paths: list[str], ref: str | None = None) -> dict[str, tuple[str, str]]:
+    """Map path -> (text, eol) as the .gitattributes **at `ref`** assigns them.
 
-    `check-attr` consults the working-tree .gitattributes, which is the same file
-    the ref carries in every normal case; a divergence there is itself worth
-    seeing, so it is not worked around here.
+    BUGHUNT §8: `check-attr` without `--source` consults the CHECKOUT's
+    `.gitattributes`. A ref that adds `* text=auto eol=lf` together with a
+    CR-carrying blob was therefore censused against the older attribute set:
+    the file fell out of `text_paths`, the census printed
+    `0 text-attributed of N paths … OK — 0 CR bytes` and exited 0 — the one
+    direction that matters, a green verdict on a violation, while the module's
+    own docstring promised "never consults the working tree or the index".
+    `--source=<ref>` resolves the attributes from the tree being censused;
+    when git is too old to support it the checkout's attributes are used and a
+    loud WARNING says so, so a green line can never be silent about it again.
     """
     if not paths:
         return {}
     stdin = b"\0".join(p.encode("utf-8", "surrogateescape") for p in paths) + b"\0"
-    out = git_bytes(repo, "check-attr", "--stdin", "-z", "text", "eol", stdin=stdin)
+    argv = ["check-attr", "--stdin", "-z", "text", "eol"]
+    if ref:
+        argv.insert(1, "--source=" + ref)
+    try:
+        out = git_bytes(repo, *argv, stdin=stdin)
+    except RuntimeError:
+        if not ref:
+            raise
+        print("WARNING: git check-attr --source is unavailable in this git — "
+              "text attributes were read from the CHECKOUT, not from "
+              f"{ref}. A ref that changes .gitattributes is not censused "
+              "against its own attribute set.", file=sys.stderr)
+        out = git_bytes(repo, "check-attr", "--stdin", "-z", "text", "eol", stdin=stdin)
     fields = out.split(b"\0")
     attrs: dict[str, tuple[str, str]] = {}
     # -z output is a flat NUL stream of (path, attr, value) triples, one triple
@@ -218,8 +237,16 @@ def cr_candidates(repo: Path, ref: str) -> list[str]:
 
 def cmd_census(repo: Path, ref: str, quiet: bool) -> int:
     all_paths = ls_tree_paths(repo, ref)
-    attrs = eol_attrs(repo, all_paths)
+    attrs = eol_attrs(repo, all_paths, ref=ref)
     text_paths = {p for p, (text, _eol) in attrs.items() if is_text_tracked(text)}
+    if all_paths and not text_paths:
+        # BUGHUNT §8: an empty denominator used to print `OK — 0 CR bytes` and
+        # exit 0, which is a green verdict on an unmeasurable census. Refuse.
+        print(f"REFUSED — 0 of {len(all_paths)} paths at {ref} are text-attributed "
+              "under that ref's .gitattributes; a CR census here measures nothing. "
+              "Check the ref's .gitattributes (and that git supports check-attr "
+              "--source) before trusting a green line.", file=sys.stderr)
+        return 2
 
     # Prefilter C-side, then byte-count only the candidates.
     candidates = [p for p in cr_candidates(repo, ref) if p in text_paths]
@@ -267,7 +294,7 @@ def cmd_changed(repo: Path, ref: str, since: str, quiet: bool) -> int:
         print(f"eol census · {since}..{ref} · no paths changed")
         return 0
 
-    attrs = eol_attrs(repo, changed)
+    attrs = eol_attrs(repo, changed, ref=ref)
     paths = [p for p, (text, _eol) in attrs.items() if is_text_tracked(text)]
     counts = cr_counts_multi(repo, [(ref, p) for p in paths])
     dirty_now = {p: n for (_r, p), n in counts.items() if n > 0}

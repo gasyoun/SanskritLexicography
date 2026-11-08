@@ -1,0 +1,444 @@
+{
+  "tool": "tools/document_check.py",
+  "skill": "/document",
+  "legacy_name": "/artifact-propagate",
+  "generated": "2026-10-19 07:01:44",
+  "artifacts": [
+    {
+      "artifact": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_2026-10-19.md",
+      "repo": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130",
+      "kind": "doc",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130/README.md:103: - [HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_2026-10-19.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130/CLAUDE.md:81: [`NCC_MSS_UNIT_SEMANTICS_2026-10-19.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_2026-1"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130/AGENTS.md:35: | Asked \"what is an NCC MSS witness unit / is the canary valid?\" | [NCC_MSS_UNIT_SEMANTICS_2026-10-19.md](https://github.com/gasyoun/SanskritLexicography/blob/m"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "\"pointer added to NCC_MSS_CENSUS_PILOT_CANARY_2026-10-18.md under \\\"Why no full run\\\" (Unit semantics settled, H7085)\""
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_2026-10-19.md.meta.md:1: # NCC_MSS_UNIT_SEMANTICS_2026-10-19.md.meta.md — metadoc for `NCC_MSS_UNIT_SEMANTICS_2026-10-19.md`"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "\"changelog_queue/2026-10-19-070000-h7085-ncc-mss-unit-semantics.md filed in PR #2438; CHANGELOG promotion is /cut-release's job\""
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130/.ai_state.md:1379: TSV/JSON), report `NCC_MSS_UNIT_SEMANTICS_2026-10-19.md` and v2 proposal"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "\"no per-person tracking issue exists for H7085; the handoff registry is the tracker\""
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"v2 ratification minted as GTD row 25Q (@DECIDE, MG) on origin/main\""
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"close pipeline wrote the ✅ row; it links the handoff, not the report path\""
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"one-off canary audit tool + decision brief, not a product capability\""
+        },
+        {
+          "id": "reuse_index",
+          "phase": 2,
+          "label": "Uprava/REUSE_INDEX.md (reusable assets)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"one-off measurement for this canary; metadoc + report carry the pointer\""
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"no cross-repo ownership/dependency edge changed\""
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"no destructive-risk fact; read-only measurement\""
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"live decision is GTD row 25Q; QUESTIONS_LOG records MG-asked questions, not agent-minted proposals\""
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"operational unit; no thesis-level synthesis\""
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"no hook added or changed\""
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"no repo-level status shift (no archive/freeze/reboot)\""
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"dated report + proposal, not a hub file\""
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"FINDINGS §649 added: the workbook is not a like-for-like comparator\""
+        }
+      ]
+    },
+    {
+      "artifact": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md",
+      "repo": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130",
+      "kind": "doc",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130/README.md:103: - [HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_2026-10-19.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130/CLAUDE.md:82: (with its [v2 proposal](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19."
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130/AGENTS.md:35: | Asked \"what is an NCC MSS witness unit / is the canary valid?\" | [NCC_MSS_UNIT_SEMANTICS_2026-10-19.md](https://github.com/gasyoun/SanskritLexicography/blob/m"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "\"pointer added to NCC_MSS_CENSUS_PILOT_CANARY_2026-10-18.md under \\\"Why no full run\\\" (Unit semantics settled, H7085)\""
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "\"the proposal is a subordinate versioned file covered by the report metadoc NCC_MSS_UNIT_SEMANTICS_2026-10-19.md.meta.md\""
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "\"changelog_queue/2026-10-19-070000-h7085-ncc-mss-unit-semantics.md filed in PR #2438; CHANGELOG promotion is /cut-release's job\""
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub-worktrees/SanskritLexicography/SanskritLexicography-h7085-sweep-26130/.ai_state.md:1380: `NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md` filed for human ratification;"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "\"no per-person tracking issue exists for H7085; the handoff registry is the tracker\""
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"v2 ratification minted as GTD row 25Q (@DECIDE, MG) on origin/main\""
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"close pipeline wrote the ✅ row; it links the handoff, not the report path\""
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"one-off canary audit tool + decision brief, not a product capability\""
+        },
+        {
+          "id": "reuse_index",
+          "phase": 2,
+          "label": "Uprava/REUSE_INDEX.md (reusable assets)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"one-off measurement for this canary; metadoc + report carry the pointer\""
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"no cross-repo ownership/dependency edge changed\""
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"no destructive-risk fact; read-only measurement\""
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"live decision is GTD row 25Q; QUESTIONS_LOG records MG-asked questions, not agent-minted proposals\""
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"operational unit; no thesis-level synthesis\""
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"no hook added or changed\""
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"no repo-level status shift (no archive/freeze/reboot)\""
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"dated report + proposal, not a hub file\""
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "\"FINDINGS §649 added: the workbook is not a like-for-like comparator\""
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "host": "MacBook-Air.local",
+    "git_head": "55df10a6be8ace4fe5164487b976cef0ceeb272e",
+    "git_branch": "h7085-document-sweep",
+    "handoff": "H7085"
+  }
+}

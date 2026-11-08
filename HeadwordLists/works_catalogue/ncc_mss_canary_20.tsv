@@ -1,7 +1,7 @@
 work	entries	raw_units	distinct_units	visualdcs_mss	delta	status
 Mahābhārata	1	2585	2519	21	2498	DIFF
 Rāmāyaṇa	10	1097	1006	2762	-1756	DIFF
-Skandapurāṇa	0	0	0	17		INCONCLUSIVE (absent from bodies)
+Skandapurāṇa	0	0	0	17		INCONCLUSIVE (absent from bodies; स्क block absent from the 2022 NCC DB, H7078)
 Bhāgavata	4	16560	6699	2248	4451	DIFF
 Viṣṇupurāṇa	3	1018	839			COMPARED (no VisualDCS canary)
 Nāradapurāṇa	1	44	43			COMPARED (no VisualDCS canary)
