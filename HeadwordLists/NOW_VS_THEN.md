@@ -9,7 +9,7 @@ Each `*-unique-key{1,2}-N.txt` in [`then-2014/`](then-2014/) is a snapshot whose
 - **growth** = (now − then) / then. **overlap** = share of the *then* keys still present now.
 - **comparable** — the committed list and the live field share key format, so `added`/`removed`/`growth` are genuine headword changes.
 - **format-migrated** — the committed *2014* `<k2>` snapshot is in the *legacy Cologne numeric transliteration* (`am2s4a` = aṃśa) while csl-orig is now SLP1; the raw then-vs-now diff is ~100 % and not a real headword change. The current key2 has been re-extracted as clean SLP1 into [`now-2026/`](now-2026/), so it is usable directly even though it cannot be line-diffed against the numeric 2014 file.
-- **PD** is not in csl-orig, but its full-text digitization is on disk in the sibling [`SanskritSpellCheck`](https://github.com/gasyoun/SanskritSpellCheck) repo (`external_src/pd/pd.txt`) in the same `<k1>`/`<k2>` tag convention as every csl-orig dict (107,630 tagged entries, matching the then-2014 extraction size exactly) — compared here the same way as the csl-orig-backed dicts (H1365, 20-07-2026).
+- **PD** is not in csl-orig, but its full-text digitization is on disk in the sibling [`SanskritSpellCheck`](https://github.com/gasyoun/SanskritSpellCheck) repo (`external_src/pd/pd.txt`) in the same `<k1>`/`<k2>` tag convention as every csl-orig dict (107,630 tagged entries — extracted from the same 107,630-record text the then-2014 snapshots derive from, not a match of their ~104.9k line counts) — compared here the same way as the csl-orig-backed dicts (H1365, 20-07-2026; reworded H7493, 30-10-2026).
 
 | List | then (2014) | now (2026) | added | removed | overlap | growth | verdict |
 |---|--:|--:|--:|--:|--:|--:|---|

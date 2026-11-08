@@ -283,7 +283,7 @@
     "id": "E47",
     "section": "I. Data assets — query it, someone already spent the compute",
     "title": "witness-independence map + corroboration re-audit",
-    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/data/witness_independence_reaudit.tsv",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/data/witness_independence_pd_extension.py",
     "repo": "gasyoun/SanskritLexicography"
   },
   {

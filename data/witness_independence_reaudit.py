@@ -69,6 +69,45 @@ ALL_DICTS = [
     "AP", "BHS", "BUR", "CAE", "CCS", "GRA", "INM", "MD",
     "MW", "PWG", "PWK", "SCH", "SKD", "VCP", "VEI",
 ]
+ALL_DICTS16 = ALL_DICTS + ["PD"]
+
+# H7299: additive E47 extension metadata. These relations do not alter the
+# H1363 family partition or its P0..P4 maps. PD is an independent historical
+# dictionary; DCS/Dharmamitra are one collaborative chronology lineage.
+PD_E47_EXTENSION = {
+    "id": "H7299",
+    "dictionary_relations": [
+        {
+            "from": "PWG", "to": "PD",
+            "type": "independent-historical-dictionary",
+            "collapse_at": None, "family_id": "DECCAN_PD",
+            "confidence": "high",
+            "source": "PD_EDITIONS.md#L54-L56",
+            "evidence": "PD is explicitly not part of the Petersburg supplement chain; it is an independent historical dictionary.",
+        },
+    ],
+    "families": {"DECCAN_PD": ["PD"]},
+    "chronology_lineages": [
+        {
+            "family_id": "DCS_DHARMAMITRA_CHRONOLOGY",
+            "members": ["DCS", "Dharmamitra"],
+            "relation": "collaborative-lineage",
+            "independent_confirmations": 1,
+            "spearman_rho": 0.94, "shared_works": 56,
+            "confidence": "high",
+            "source": "Uprava/handoffs/archive/H7116-DeepSeek_csl-atlas_sense-order-comparative_19.10.26.md#L23-L29",
+            "evidence": "One shared measuring stick; agreement is cross-validation, not a second independent chronology.",
+        },
+    ],
+    "pd_inventory": {
+        "dictionary": "PD", "headwords": 104962,
+        "single_dictionary_unique": 93462,
+        "single_dictionary_unique_share": 0.8903,
+        "evidence_scope": "inventory-only",
+        "source": "HeadwordLists/union-16dicts/UNION16_OVERLAP_REPORT_19-09-2026.md#L35-L36",
+        "caveat": "A unique headword listing is not independent textual attestation.",
+    },
+}
 
 # --- The witness-independence map -----------------------------------------
 # Each policy maps a dict code to a *cluster id*. Two dicts sharing a cluster
@@ -105,23 +144,23 @@ PETB = "PETERSBURG"   # Boehtlingk-Roth editorial lineage (+ MW under §83)
 CAP = "CAPPELLER"     # Cappeller, one work two languages
 
 
-def _identity():
-    return {d: d for d in ALL_DICTS}
+def _identity(dicts=ALL_DICTS):
+    return {d: d for d in dicts}
 
 
-def build_policies():
-    """Return an ordered list of (id, label, evidentiary_note, cluster_map)."""
+def build_policies(dicts=ALL_DICTS):
+    """Return ordered P0..P4 policies over ``dicts`` (15-dict default)."""
     policies = []
 
     # P0 — published: each dict is its own witness (the status quo).
     policies.append((
         "P0", "published (15 independent witnesses)",
         "identity map — the count UNION.md publishes; regression anchor",
-        _identity(),
+        _identity(dicts),
     ))
 
     # P1 — same-work only (indisputable): CAE == CCS.
-    m = _identity()
+    m = _identity(dicts)
     m["CAE"] = CAP
     m["CCS"] = CAP
     policies.append((
@@ -428,6 +467,7 @@ def main():
             "caveat": "upper-bound estimate; superseded by text_attestation_regrade",
         },
         "text_attestation_regrade": ta,  # H1389 measured (empty if mask absent)
+        "extensions": {"H7299": PD_E47_EXTENSION},
     }
     with open(here / "witness_tiers.json", "w", encoding="utf-8", newline="\n") as fh:
         json.dump(tiers, fh, ensure_ascii=False, indent=2)

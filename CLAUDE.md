@@ -1,14 +1,14 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 06-10-2026_
+_Created: 06-08-2026 · Last updated: 30-10-2026 (H7474 SLA refresh — budget slim back to ≤4000 tok; dead worktree pointer fixed; claims re-verified)_
 
 This file guides Claude Code in this repository.
 
 > Org-level conventions (the wider `sanskrit-lexicon` ecosystem, the csl-orig
 > correction workflow, GitHub issue taxonomy, `.ai_state.md` protocol, Windows
-> encoding rules) live in [`../CLAUDE.md`](../Uprava-h4060-drain/CLAUDE.md) and load
-> automatically. This file covers only what is specific to **this** repository;
-> full detail for the sections trimmed here (H5964) lives in the on-demand
+> encoding rules) live in the org spine [`github-spine/CLAUDE.md`](https://github.com/gasyoun/github-spine/blob/main/CLAUDE.md)
+> and load automatically. This file covers only what is specific to **this** repository;
+> full detail for the sections trimmed here (H5964, H7474) lives in the on-demand
 > primer [docs/agents/repo-primer.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/repo-primer.md).
 
 ## What this repository is
@@ -19,22 +19,19 @@ the Petersburg Dictionary, Russian teaching material on Sanskrit syntax —
 **not code-free**: substantial Python tooling in the two translation
 pipelines under
 [`RussianTranslation/src/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src),
-the headword tooling in [`HeadwordLists/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists), the site builder
-[`docs_site/build_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/build_site.py), three dashboard
-generators (public kitchen at
-[/progress/](https://gasyoun.github.io/SanskritLexicography/progress/)). Treat
+the headword tooling in [`HeadwordLists/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) and the site builder
+[`docs_site/build_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/build_site.py). Treat
 as **hybrid**: work spans data/docs and pipeline code. Orientation by
 audience: [`docs/manuals/`](https://github.com/gasyoun/SanskritLexicography/tree/master/docs/manuals); full CI/pre-commit/hook and
 dashboard inventory: [repo primer](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/repo-primer.md).
 
-No single top-level build; tests/selftests exist and CI
+No single top-level build; CI
 ([`.github/workflows/ci.yml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/ci.yml))
 runs docs-site pytest plus an **offline contract-pins** job (H4353) running
 [`tests/run_offline_suite.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/run_offline_suite.py) — **222 pins** over the 62 in-scope
 modules outside `RussianTranslation`, network off, fixtures under
 `tests/fixtures` only, literal record-count floors per headword list
-(evidence:
-[`tests/OFFLINE_CONTRACT_PINS_08-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/OFFLINE_CONTRACT_PINS_08-09-2026.md)).
+(evidence: [`tests/OFFLINE_CONTRACT_PINS_08-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/OFFLINE_CONTRACT_PINS_08-09-2026.md)).
 **Verify the pin count, never retype it** (H5426): `python
 tests/run_offline_suite.py --collect-only -q` must sum to the number on this
 line; re-derive the module census (62) from that evidence doc before quoting
@@ -49,26 +46,22 @@ The analytical heart of the repo. Exports split by era:
 [`now-2026/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists/now-2026) current regenerated exports (slightly
 different counts). Filenames encode source/key/count:
 `{DICT}-unique-{key1|key2}-{N}.txt` (`N` = entry/line count),
-`{DICT}-fehlerhaft-{N}.txt` (flagged entries with full XML records, not bare
-headwords), `SCH-accents-IAST-{N}.txt`, cross-dictionary joins like
+`{DICT}-fehlerhaft-{N}.txt` (flagged entries with full XML records), `SCH-accents-IAST-{N}.txt`, cross-dictionary joins like
 [`mw-apte-mcdonell-hk.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/mw-apte-mcdonell-hk.txt) —
 full filename grammar and examples: [repo primer](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/repo-primer.md).
 
 **key1 vs key2:** key1 = normalized computational key, may not match any
 printed form (matching/dedup/joins); key2 = closer to printed source
-(retains `-`, `--`, `/` accents, e.g. `a/MSa`, `a--kAra`; editorial review,
-checking digitized text against the scan).
+(retains `-`, `--`, `/` accents, e.g. `a/MSa`, `a--kAra`; editorial review).
 
 Dictionary codes: AP, BHS, BUR, CAE, CCS, GRA, INM, MD, MW, PD, PWG, PWK, SCH,
 SKD, VCP, VEI (table: [`README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/README.md)).
 
 **Tooling routes (wired H5790, 03-10-2026):** entry-level census/anatomy of
-an export (lemma/grammar/etymology/senses/citations into teaching assets)
-goes through [`/entry-anatomy`](https://github.com/gasyoun/claude-config/blob/main/commands/entry-anatomy.md);
+an export goes through [`/entry-anatomy`](https://github.com/gasyoun/claude-config/blob/main/commands/entry-anatomy.md);
 regenerating `now-2026/` from live csl-orig and diffing against the frozen
 `then-2014/` snapshot is [`/headword-export-regen`](https://github.com/gasyoun/claude-config/blob/main/commands/headword-export-regen.md);
-a falsifiable two-dictionary comparative test (omission / sense-order /
-fitted-index) runs through [`/dict-comparative-test`](https://github.com/gasyoun/claude-config/blob/main/commands/dict-comparative-test.md).
+a falsifiable two-dictionary comparative test runs through [`/dict-comparative-test`](https://github.com/gasyoun/claude-config/blob/main/commands/dict-comparative-test.md).
 
 **NCC MSS census unit (H7085).** The census counts printed `(catalogue, reference)`
 pairs from `ncc.jsonl` bodies
@@ -76,11 +69,10 @@ pairs from `ncc.jsonl` bodies
 ranges expanded. The VisualDCS counting workbook's `mss` cell is **comparison only** —
 its rows are partial index slices and count catalogue page ranges as manuscripts —
 never a census denominator. Change the unit definition ⇒ re-run
-[`works_catalogue/ncc_mss_unit_semantics.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/ncc_mss_unit_semantics.py)
-and update
+[`ncc_mss_unit_semantics.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/ncc_mss_unit_semantics.py)
+and update the ratified
 [`NCC_MSS_UNIT_SEMANTICS_2026-10-19.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_2026-10-19.md)
-(with its [v2 proposal](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/works_catalogue/NCC_MSS_UNIT_SEMANTICS_PROPOSAL_V2_2026-10-19.md), ratified 19-10-2026)
-in the same PR.
+(+ its V2 proposal) in the same PR.
 
 ## Dual changelog — shared 1.144.x namespace (H3258)
 
@@ -89,14 +81,14 @@ Two Keep-a-Changelog files share the **same** version series;
 [CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/CHANGELOG.md) (repo-level),
 [RussianTranslation/CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md) (pwg_ru). Gate:
 [`Uprava/tools/cut_release.py`](https://github.com/gasyoun/Uprava/blob/main/tools/cut_release.py) unions both files, `CITATION.cff`
-`version:`, and `git ls-remote --tags` before writing a heading; a used
-`--version` fails exit 5. Auto-bump stops after 5 tries. **Do not delete one
+and `git ls-remote --tags` before writing a heading; a used
+`--version` fails exit 5; auto-bump stops after 5 tries. **Do not delete one
 changelog to resolve a collision.**
 
 **Windows alias.** `CHANGELOG.md`/`changelog.md` are the same NTFS file; git
 tracks one spelling — always `git add` the path `git ls-files` reports
-(Uprava FINDINGS §74/§100/§173/§348). `ReverseDictionary/CHANGELOG.md` and
-`Digital_Sanskrit_Lexicography-BOOK/CHANGELOG.md` keep an independent `1.0.x`
+(Uprava FINDINGS §74/§100/§173/§348). `ReverseDictionary/` and
+`Digital_Sanskrit_Lexicography-BOOK/` changelogs keep an independent `1.0.x`
 series, **not** in this union.
 
 ## Releases are PR-gated — push the tag AFTER the merge
@@ -106,10 +98,9 @@ only via PR — `cut_release.py --apply --tag --push` on a branch tags a
 commit the squash-merge orphans (measured 09-09-2026: 22 untagged headings).
 Working flow: **promote on a branch with no `--tag`/`--push` → merge the PR
 → tag the merge commit on `origin/master` (never the branch head) →
-`--verify-tag` proves it** — full procedure and history:
+`--verify-tag` proves it** — full procedure:
 [docs/agents/release-tag-flow.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/release-tag-flow.md).
-Backfills need `--latest=false` on `gh release create`; `vX.Y.Z` points at
-the commit that introduced `## [X.Y.Z]`; **never `git tag -f` a published
+Backfills need `--latest=false`; **never `git tag -f` a published
 tag**.
 
 ## Encoding — BOM is inconsistent, check before editing
@@ -134,7 +125,7 @@ Files too large for an editor: `sanhw1.xlsx`,
 
 [`mw_ru.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/mw_ru.md) documents how the AI Russian
 translation of Monier-Williams was produced (287,358 cards, multi-pass,
-multi-model; per-stage prompts — one per stage — in
+multi-model; per-stage prompts in
 [`mw_ru_prompts/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/mw_ru_prompts),
 full stage detail in the [repo primer](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/repo-primer.md)). **Key format
 invariant:** only the English "wrapper" prose is translated; Sanskrit
@@ -149,16 +140,15 @@ data; every tool/prompt/stage/doc operating on it lives here. A session in
 (H3564, ruling F6).
 
 Independent effort: PWG (Böhtlingk-Roth) → Russian (primary) + English
-(secondary), headword-by-headword at scale (~11.6k sense rows as of
-24-07-2026).
+(secondary), headword-by-headword at scale.
 
 - **Production (H1110):** headless CLI on manifest v2 (`headless_worker.py`
   / `coordinator.py` / `bounded_staged_run.py`); Max Workflow lane is
   forensics only. Orientation:
   [`PIPELINE_HISTORY.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PIPELINE_HISTORY.md). Format+status:
   [`pwg_ru.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/pwg_ru.md). Procedure:
-  [`RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md) (+
-  [deep manual](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md)).
+  [`RUN_FREQ_MAX.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md)
+  (+ [deep manual](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/RUSSIANTRANSLATION_DEEP_MANUAL.md)).
   Paid windows need a fresh live-gate GO. **Sync (H1618):**
   `--max-agents`/registry-schema/cohort-barrier changes update
   `RUN_FREQ_MAX.md` + `Agents.md` + `/pwg-bounded-run` same PR.
@@ -181,10 +171,9 @@ Independent effort: PWG (Böhtlingk-Roth) → Russian (primary) + English
   shipped `release/` by design). `~~h<N>` in a sub-card key is a 0-based
   record index, **never** the printed homonym number — resolve via
   `pwg_homonym.py`, never re-spell. Same-author sources are not independent
-  witnesses in the `DHĀTUP.`→Palsule concordance; its artifact is sha-pinned
-  to its builder. `<ab>` tokens live in three disjoint sets (`RU_MAP` must
-  stay Cyrillic, `BUCKET_B` Latin) — reclassify ⇒ `pwg_ab_ru.py census` same
-  PR.
+  witnesses in the `DHĀTUP.`→Palsule concordance (artifact sha-pinned to its
+  builder); `<ab>` tokens live in three disjoint sets (`RU_MAP` Cyrillic,
+  `BUCKET_B` Latin) — reclassify ⇒ `pwg_ab_ru.py census` same PR.
 
 ## Cyrillic proper nouns — a lookup table, never reverse-transliteration rules
 
@@ -193,20 +182,15 @@ Cyrillic back into SLP1 (FINDINGS §60). Only sanctioned mapping: the lookup
 table [cyrillic_proper_noun_slp1.tsv](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/data/cyrillic_proper_noun_slp1.tsv) — 622 rows via two intakes,
 every key taken from a named authority, **zero rule-derived keys**
 (`rule_derived_keys: 0` is the citable invariant). **Sync:** changing the
-table re-runs its builder
-[h3985_cyr_slp1_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h3985_cyr_slp1_table.py) (witness-first intake) or the backfill
-tool [h4750_cyr_slp1_backfill.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h4750_cyr_slp1_backfill.py) (onomasticon-first: key COPIED
-verbatim from an inm/pui `<k1>`) and refreshes
-[H3985_cyr_slp1_validation.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H3985_cyr_slp1_validation.json) /
-[H4750_cyr_slp1_backfill.json](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/reports/H4750_cyr_slp1_backfill.json)
+table re-runs its builder (witness-first [h3985_cyr_slp1_table.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h3985_cyr_slp1_table.py)
+or onomasticon-first [h4750_cyr_slp1_backfill.py](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/tools/h4750_cyr_slp1_backfill.py)) and refreshes its validation reports
 **same PR**. Never hand-add a row without an IAST witness or an onomasticon
 `<k1>`; render-collapsed ambiguous spellings ship disclosed, never resolved
 ([GAPS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/GAPS.md) §6).
 
 ## Authoring conventions
 
-- Markdown is the primary authored format (roadmap, changelog, lectures,
-  `mw_ru` docs); keep it lint-clean and link-check-clean (CI above).
+- Markdown is the primary authored format; keep it lint-clean and link-check-clean (CI above).
   `CHANGELOG.md` uses dated maintenance snapshots; upcoming work stays under
   `[Unreleased]` until dated.
 - [`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) frames the research
@@ -228,14 +212,14 @@ verbatim from an inm/pui `<k1>`) and refreshes
 ## Operational hazard notes
 
 Destructive-risk facts (do-not-rerun scripts, decoys, traps) are registered
-centrally in an org-private hub
+centrally in the org-private hub
 ([Uprava DANGER_FACTS.md](https://github.com/gasyoun/Uprava/blob/main/DANGER_FACTS.md), org members only); the public-safe subset is
 mirrored in the generated block of
 [AGENTS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/AGENTS.md). Check before running anything that writes.
 
 ## Memory store
 
-This repo keeps a committed memory store at [`.claude/projects/SanskritLexicography/memory/`](https://github.com/gasyoun/SanskritLexicography/tree/master/.claude/projects/SanskritLexicography/memory) per the org Memory-routing rule ([`/danger-memory`](https://github.com/gasyoun/claude-config/blob/main/commands/danger-memory.md)) — write dangerous/durable facts there and index each in its `MEMORY.md` (H4547).
+Committed memory store: [.claude/projects/SanskritLexicography/memory/](https://github.com/gasyoun/SanskritLexicography/tree/master/.claude/projects/SanskritLexicography/memory) ([`/danger-memory`](https://github.com/gasyoun/claude-config/blob/main/commands/danger-memory.md)) — dangerous/durable facts go there, indexed in its `MEMORY.md` (H4547).
 
 ## Repo guards
 

@@ -1,0 +1,183 @@
+{
+  "schema_version": "e47-pd-extension.v1",
+  "handoff": "H7299",
+  "union": {
+    "headwords": 417184,
+    "dictionaries": 16,
+    "p0_matches_n_dicts": true
+  },
+  "baseline_15_preserved": {
+    "p0_corroborated_share": 0.559,
+    "p3_corroborated_share": 0.347,
+    "apte_family": "AP",
+    "petersburg": [
+      "PWG",
+      "PWK",
+      "SCH",
+      "MW",
+      "MD"
+    ]
+  },
+  "policies": {
+    "P0": {
+      "label": "published (16 dictionary inventories)",
+      "clusters": 16,
+      "single_witness": 232375,
+      "corroborated": 184809,
+      "corroborated_share": 0.442992,
+      "newly_single_vs_p0": 0,
+      "map": {
+        "AP": "AP",
+        "BHS": "BHS",
+        "BUR": "BUR",
+        "CAE": "CAE",
+        "CCS": "CCS",
+        "GRA": "GRA",
+        "INM": "INM",
+        "MD": "MD",
+        "MW": "MW",
+        "PWG": "PWG",
+        "PWK": "PWK",
+        "SCH": "SCH",
+        "SKD": "SKD",
+        "VCP": "VCP",
+        "VEI": "VEI",
+        "PD": "PD"
+      }
+    },
+    "P1": {
+      "label": "same-work collapse (15 clusters)",
+      "clusters": 15,
+      "single_witness": 232730,
+      "corroborated": 184454,
+      "corroborated_share": 0.442141,
+      "newly_single_vs_p0": 355,
+      "map": {
+        "AP": "AP",
+        "BHS": "BHS",
+        "BUR": "BUR",
+        "CAE": "CAPPELLER",
+        "CCS": "CAPPELLER",
+        "GRA": "GRA",
+        "INM": "INM",
+        "MD": "MD",
+        "MW": "MW",
+        "PWG": "PWG",
+        "PWK": "PWK",
+        "SCH": "SCH",
+        "SKD": "SKD",
+        "VCP": "VCP",
+        "VEI": "VEI",
+        "PD": "PD"
+      }
+    },
+    "P2": {
+      "label": "editorial-lineage collapse (13 clusters)",
+      "clusters": 13,
+      "single_witness": 240300,
+      "corroborated": 176884,
+      "corroborated_share": 0.423995,
+      "newly_single_vs_p0": 7925,
+      "map": {
+        "AP": "AP",
+        "BHS": "BHS",
+        "BUR": "BUR",
+        "CAE": "CAPPELLER",
+        "CCS": "CAPPELLER",
+        "GRA": "GRA",
+        "INM": "INM",
+        "MD": "MD",
+        "MW": "MW",
+        "PWG": "PETERSBURG",
+        "PWK": "PETERSBURG",
+        "SCH": "PETERSBURG",
+        "SKD": "SKD",
+        "VCP": "VCP",
+        "VEI": "VEI",
+        "PD": "PD"
+      }
+    },
+    "P3": {
+      "label": "FINDINGS §83/§97 ruling + independent PD (12 clusters)",
+      "clusters": 12,
+      "single_witness": 298464,
+      "corroborated": 118720,
+      "corroborated_share": 0.284575,
+      "newly_single_vs_p0": 66089,
+      "map": {
+        "AP": "AP",
+        "BHS": "BHS",
+        "BUR": "BUR",
+        "CAE": "CAPPELLER",
+        "CCS": "CAPPELLER",
+        "GRA": "GRA",
+        "INM": "INM",
+        "MD": "MD",
+        "MW": "PETERSBURG",
+        "PWG": "PETERSBURG",
+        "PWK": "PETERSBURG",
+        "SCH": "PETERSBURG",
+        "SKD": "SKD",
+        "VCP": "VCP",
+        "VEI": "VEI",
+        "PD": "PD"
+      }
+    },
+    "P4": {
+      "label": "strict + MD; PD remains independent (11 clusters)",
+      "clusters": 11,
+      "single_witness": 301331,
+      "corroborated": 115853,
+      "corroborated_share": 0.277702,
+      "newly_single_vs_p0": 68956,
+      "map": {
+        "AP": "AP",
+        "BHS": "BHS",
+        "BUR": "BUR",
+        "CAE": "CAPPELLER",
+        "CCS": "CAPPELLER",
+        "GRA": "GRA",
+        "INM": "INM",
+        "MD": "PETERSBURG",
+        "MW": "PETERSBURG",
+        "PWG": "PETERSBURG",
+        "PWK": "PETERSBURG",
+        "SCH": "PETERSBURG",
+        "SKD": "SKD",
+        "VCP": "VCP",
+        "VEI": "VEI",
+        "PD": "PD"
+      }
+    }
+  },
+  "delta_p0_to_p3": {
+    "corroborated": -66089,
+    "corroborated_share": -0.158417,
+    "newly_single": 66089
+  },
+  "pd_inventory": {
+    "dictionary": "PD",
+    "headwords": 104962,
+    "single_dictionary_unique": 93462,
+    "single_dictionary_unique_share": 0.890437,
+    "evidence_scope": "inventory-only",
+    "source": "HeadwordLists/union-16dicts/UNION16_OVERLAP_REPORT_19-09-2026.md#L35-L36",
+    "caveat": "A unique headword listing is not independent textual attestation."
+  },
+  "chronology_lineages": [
+    {
+      "family_id": "DCS_DHARMAMITRA_CHRONOLOGY",
+      "members": [
+        "DCS",
+        "Dharmamitra"
+      ],
+      "relation": "collaborative-lineage",
+      "independent_confirmations": 1,
+      "spearman_rho": 0.94,
+      "shared_works": 56,
+      "confidence": "high",
+      "source": "Uprava/handoffs/archive/H7116-DeepSeek_csl-atlas_sense-order-comparative_19.10.26.md#L23-L29",
+      "evidence": "One shared measuring stick; agreement is cross-validation, not a second independent chronology."
+    }
+  ]
+}
