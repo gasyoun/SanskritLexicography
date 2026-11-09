@@ -1,6 +1,6 @@
 # Chapter 13 — Register, Not Just Period: Renou's Subsections as an Orthogonal Axis
 
-_Created: 13-07-2026 · Last updated: 13-07-2026_
+_Created: 13-07-2026 · Last updated: 09-11-2026_
 
 > **Provenance.** This chapter is the book-form version of the research note *Register, Not
 > Just Period: Renou's Subsections as an Orthogonal Axis for Evidence-Graded Sanskrit
@@ -110,7 +110,8 @@ DCS as it currently stands*, which is a curated corpus of *literary* texts and c
 construction, no inscriptions. The corpus-absence caveat of corpus linguistics applies at full
 strength: absence of a form from a bounded corpus is not evidence of its absence from the
 language, because low frequency and true non-occurrence are indistinguishable in a finite sample
-(McEnery and Brezina 2022). For the épigraphique register that caveat is not a weakness to be
+(McEnery and Brezina 2022). The phrasing follows the book's absence-inference rule
+(Chapter 2 §6.2): the figure is *unattested in DCS*, never *non-existent*. For the épigraphique register that caveat is not a weakness to be
 apologised for but the very point being measured: these are words the *literary* corpus
 structurally cannot contain, recoverable only because the lexicographers preserved the
 inscription citation.

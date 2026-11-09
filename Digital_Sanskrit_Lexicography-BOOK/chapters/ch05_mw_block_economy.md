@@ -1,6 +1,6 @@
 # Chapter 5 — The Block Economy of *Monier-Williams 1899*: a data-grounded microstructure framework, triangulated against three metalexicographic traditions
 
-_Created: 09-07-2026 · Last updated: 09-07-2026_
+_Created: 09-07-2026 · Last updated: 09-11-2026_
 
 > **Provenance.** This chapter is the book-form version of the article *The block economy
 > of Monier-Williams 1899: a data-grounded microstructure framework, triangulated against
@@ -701,7 +701,13 @@ verbatim); each is summarised below with its remaining gap.
    records each ruling with its reason). Inter-annotator exact agreement over full block
    sets was 42.5%; per-block Cohen's κ ranges from 1.0 (tag-anchored blocks
    F01/F03/F10/F13/F14/F17) down to 0.189 (F09) — the κ spread itself locating exactly
-   where block identity requires judgment rather than markup. Scored against the
+   where block identity requires judgment rather than markup. κ is read under the
+   standard agreement-coefficient methodology of computational linguistics (Artstein and
+   Poesio 2008; Krippendorff 2018) — the standing warrant for treating an agreement
+   coefficient as a statement about category reliability rather than about percent
+   agreement. Every benchmark statistic in this item — κ, per-type precision and recall
+   — is reported under the statistical-practice contract of Chapter 2 §6.3: effect size
+   first, denominators and definitional boundaries disclosed. Scored against the
    adjudicated gold, the detector achieves **macro precision 0.860 / recall 0.870 / F1
    0.876** (per-block table in §4). Three weak blocks are now quantified rather than
    suspected: **F09 precision 0.250** and **F08 precision 0.632** (the §9.1 over-counts,
@@ -985,6 +991,9 @@ Beispielkomment (examples), which requires fresh corpus work.
 
 ## References
 
+Artstein, Ron, and Massimo Poesio. 2008. "Inter-Coder Agreement for Computational
+Linguistics." *Computational Linguistics* 34 (4): 555–596.
+
 Atkins, B. T. Sue, and Michael Rundell. 2008. *The Oxford Guide to Practical
 Lexicography.* Oxford: Oxford University Press.
 
@@ -1010,6 +1019,9 @@ Kommunikationswissenschaft (HSK).*
 Hausmann, Franz Josef, and Herbert Ernst Wiegand. 1989. "Component Parts and Structures
 of General Monolingual Dictionaries: A Survey." In HSK 5.1. Berlin and New York: Walter
 de Gruyter.
+
+Krippendorff, Klaus. 2018. *Content Analysis: An Introduction to Its Methodology.* 4th
+ed. Thousand Oaks: Sage.
 
 Monier-Williams, Monier. 1899. *A Sanskrit-English Dictionary, Etymologically and
 Philologically Arranged.* 2nd edn, with Ernst Leumann and Carl Cappeller. Oxford:

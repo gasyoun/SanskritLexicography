@@ -1,11 +1,11 @@
 # Part IV — Mediostructure and the Citation Apparatus: The Dictionary's Pointers
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 09-11-2026_
 
 > **Provenance.** Part-opening bridge, **new writing for the book** under
 > [BOOK_PLAN.md §3](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md);
 > vetoable framing calls listed in
-> [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/SIGNOFF_M01_glue_framing_calls.md).
+> [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/editorial/SIGNOFF_M01_glue_framing_calls.md).
 > Sets up Chapters 9–12. Chapter 11
 > ([ch11_citation_frequency_graph.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch11_citation_frequency_graph.md))
 > landed 18-07-2026 under
@@ -45,6 +45,31 @@ well-defined until the register is named — a finding with an exact comparative
 since the mature witness doctrines of the other lexicographic civilizations (the Arabic
 *šawāhid* apparatus above all) show citation systems to be theorised, tradition-specific
 constructions rather than a single universal practice (Baalbaki 2014).
+
+One comparative thread is flagged here rather than settled, because the chapters ahead
+read differently with it in view. The Arabic tradition did not merely cite; it
+theorised citation. The *šawāhid* apparatus — the body of verse and prose admitted as
+evidence for what usage permits — was governed by explicit doctrine: the *ʿuṣūr
+al-iḥtiǧāǧ*, the epochs of reliable usage beyond which even Bedouin speech could no
+longer be trusted, and with them a screening of informants that turned witness
+admission into a rule-governed practice (Baalbaki 2014). It is the strongest possible
+answer to the question every citation apparatus implicitly raises — who counts as
+evidence, and until when — and the Arabic answer was argued in public, not assumed in
+house style. The doctrine even names its own decay: there is an epoch after which
+testimony stops being evidence, a validity condition neither register of this corpus
+ever wrote down. Set beside it, the European tagged apparatus and the indigenous quotative
+*iti* look less like the only two shapes a citation system can take and more like two
+members of a wider design space whose third member carries a published theory of its
+own validity conditions. That is the forward-pointer. When Chapters 10 and 12 put this
+family's two registers on trial — what the tags resolve to, what descent the *iti*
+trails can and cannot prove — the *šawāhid* parallel stands ready as the theorised
+control case: a civilisation that made its witness doctrine explicit, against whose
+practice the tacitness of this corpus's two registers becomes itself a question. The
+comparison decides nothing here; it marks the question the part's forensic chapters
+inherit — whether an evidence system that never wrote its theory down can be measured
+as though it had one. That question is comparative, not adversarial: every register in
+this book's corpus is a tradition-specific construction, and the comparison is what
+proves it.
 
 Chapter 11 then asks what all this citing amounts to: which texts the tradition actually
 rests on. Aggregated over the family's largest citation dataset — on the order of eight

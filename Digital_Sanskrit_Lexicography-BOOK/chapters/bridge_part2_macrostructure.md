@@ -1,11 +1,11 @@
 # Part II — Macrostructure: The Shape of the Dictionary
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 09-11-2026_
 
 > **Provenance.** Part-opening bridge, **new writing for the book** under
 > [BOOK_PLAN.md §3](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md);
 > vetoable framing calls listed in
-> [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/SIGNOFF_M01_glue_framing_calls.md).
+> [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/editorial/SIGNOFF_M01_glue_framing_calls.md).
 > Sets up Chapters 3–4. Chapter 3
 > ([ch03_headword_inventory.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch03_headword_inventory.md))
 > landed 18-07-2026 under
@@ -43,6 +43,38 @@ mass concentrated on the human world. It also establishes the caution the whole 
 must respect: the same genre digitised under headword-primary and concept-primary
 models yields entry counts that cannot be summed or compared — the digitisation
 convention is a variable, not a constant.
+
+The abstract contrast becomes concrete if a single item is walked through both
+structures at once, and the item the Introduction stages will serve. Begin
+onomasiologically, as the kośa does: from the concept *fire*. In the heaven-book's
+fire-verse, fire is placed among its synonyms, and the placing is the assertion —
+meaning, register and synonymy declared in a single stroke, gender carried by the
+verse's grammar, rank in the hierarchy carrying the cosmology. This is access from
+concept to names, the same broad family as the European thematic tradition running from
+the *nomenclator* to Roget (Jackson 2002), and Vogel's survey of the indigenous genre
+shows how structural the choice was: the synonymic kośa and its *nānārtha* rival differ
+in what a concept-order lets them assert, but both organise knowledge first and names
+second (Vogel 1979). What the kośa tradition and the European thesaurus line share is
+therefore not content but a bet: that a reader's question can be anticipated by
+arranging the world rather than the words. Now walk the same item semasiologically, as the European dictionary
+does: the string *agni* is retrieved by its letters, and only then does the entry
+decompose into ordered senses what the fire-verse asserted in one act — each sense
+separately cited, labelled and positioned. One content, two access directions: from
+concept to names, from name to meanings.
+
+A third civilisation had theorised exactly this fork. In the Arabic tradition the
+*mubawwab* (topic-ordered) and *muǧannas* (form-ordered) lexica stand on opposite sides
+of the same divide as the kośa and the alphabetical list, the practitioners debated the
+trade-off in their own terms — retrieval cost against semantic map — and the formal
+orders they invented (phonetic-permutative, alphabetical, rhyme) prove that
+"alphabetical" was never the only alternative to concept-order (Baalbaki 2014). The
+worked bridge the two chapters build between them is thus a measured mapping, not a
+translation: Chapter 3's inventory audit and Chapter 4's model of arrangement are two
+readings of one design problem, and the genealogical join closes the loop — the kośa's
+synonym-sets cross into the alphabetical format through the sense-columns of Wilson and
+his Fort William pandits, where a concept-first assertion becomes a semasiological sense
+division and the two access structures meet inside a single entry. The map and the list
+are, at bottom, two answers to one question: where does a reader begin?
 
 Two threads tie the pair together, and both run onward through the book. First, the
 contrast is not "order versus disorder" but *order versus order*: even the European

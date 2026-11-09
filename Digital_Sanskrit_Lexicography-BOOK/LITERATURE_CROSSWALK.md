@@ -1,6 +1,8 @@
 # M01 literature crosswalk — the 37-manual library against the book plan
 
-_Created: 10-07-2026 · Last updated: 17-07-2026_
+_Created: 10-07-2026 · Last updated: 09-11-2026_
+
+> ⚠️ **Pre-merge marker (numbering).** This audit was written 10-07-2026 against the 15-chapter plan; live chapter refs now carry post-merge 14-chapter numbers (old Ch. 7 = A33 folded into Ch. 6; old Ch. 8–15 = new Ch. 7–14 — old **Ch. 15** = Ch. 14), while §0's audit verdicts and quoted fork text keep their 15-chapter-era numbers.
 
 The book-scoped deliverable of handoff
 [H505](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H505-Fable_SanskritLexicography_m01_literature_crosswalk_gap_audit_10.07.26.md):
@@ -66,15 +68,15 @@ Short titles resolve in the
 | **Ch. 4 — kośa macrostructure** | **Vogel, *Indian Lexicography* (1979)** → THE survey of the kośa tradition (synonymic vs *nānārtha*; Amarakośa commentaries; Hemacandra corpus) — the chapter's primary secondary source; **Baalbaki** → *mubawwab* (onomasiological) vs *muǧannas* (semasiological) + the three formal orders (phonetic-permutative/alphabetical/rhyme) — proof "alphabetical" is not one thing, and the practitioners' own retrieval-vs-semantic-map trade-off debate; **Hartmann & James** → access structures, monoaccessible/polyaccessible; Jackson Ch. 12 → the European thematic/onomasiological tradition (Hüllen, McArthur); Partridge → the *set* case study: even the alphabet is a designed, imperfect compromise; Dickey → Greek first-letter/first-syllable partial ordering |
 | **Ch. 5 — MW block economy** | Already exemplary — ch05 engages Wiegand, Atkins & Rundell, Hausmann with a κ-scored gold benchmark; add: **Apresjan** → the entry as *lexicographic portrait* (name the ancestry); Ferri (Lhommé) → what epitomizers drop (Verrius→Festus→Paul) as the compression comparandum; Bloomsbury (Lew) → sense-division-as-judgment explains the low F09/sense κ cells |
 | **Ch. 6 — sense inheritance** | **Bloomsbury (Lew)** → sense individuation: are senses discrete entities or artifacts of dictionary structure (Hanks, Sinclair)? — must be engaged before senses become graph nodes; **Apresjan** → regular polysemy as the mechanism of sense propagation; Routledge Semantics Handbook → sense relations, semantic shift; Walter (Routledge Corpus Ch. 31) → the "salutary" finding that many dictionary senses are corpus-unattested |
-| **Ch. 7 — sense ordering** | **Apresjan** → the synchronic-derivational ("genetic") ordering principle *with its mechanism* (literal→figurative via assertive-component removal; the *vyiti* portrait) — **the chapter reads as reinventing a solved problem unless it engages this**; **Bloomsbury (Considine)** → weakly vs strongly historical dictionaries — the field's own vocabulary for M01's axis; Walter → frequency-based ordering as the modern default; Jackson §14.5 + Kipfer 1984 → sense-order indeterminacy as a named open problem; Partridge → intra-entry order as deliberate editorial choice |
-| **Ch. 8 — indigenous verbal-root microstructure** | **Vogel** → tradition context; **Apresjan** → integrated grammar–dictionary description (the Moscow-school frame for "the kośa entry presupposes the grammar"); Baalbaki → root-and-pattern (*wazn/jaḏr*) macro-microstructure as the Arabic structural analogue of *dhātu* organization; Lowe → the participle/root lemmatization boundary in Vedic; Gerow → how the indigenous apparatus was actually transmitted (framing footnote) |
-| **Ch. 9 — Pāṇinian derivation** | **Baalbaki** → *al-ištiqāq* + lexicography born as grammar's twin (*ʿAyn* ∥ Sībawayhi); Routledge Historical Handbook (Koch; Mailhammer) → morphological reconstruction, etymology methods; Ferri (Pieroni) → **caution**: Latin etymologizing is associative/rhetorical — do *not* equate it with rule-governed *vyutpatti* without the caveat; Partridge → cognate-grouping vs cross-referencing as a universal design fork (Skeat/Weekley debate) |
-| **Ch. 10 — cross-reference graphs & descent** | **Hartmann & James** → mediostructure: "a framework for their systematic study … is still to be developed" — **the explicit gap in the field's own reference work that Ch. 10 fills; claim it as the warrant**; Routledge Historical Handbook (Weiss; Hale; François; Dunn) → comparative method, trees/waves, phylogenies — the vocabulary for dictionary stemmatics; *Internet Lexicography* (Engelberg/Müller-Spitzer/Schmidt Ch. 5) → linking + access structures as the field's current frame; Ferri (Lhommé; Maltby) → Verrius→Festus→Paul and Donatus→Servius(+Auctus) as worked descent chains |
-| **Ch. 11 — two citation registers** | **Baalbaki** → the *šawāhid* apparatus + *ʿuṣūr al-iḥtiǧāǧ* (epochs of reliable usage) + Bedouin-informant screening — a *doctrinally theorized* witness system that out-formalizes the European `<ls>` register and mirrors *iti*; Ferri (Gatti) → Nonius' ~40-author *auctores* canon with ordered citations (Lindsay's law); Hartmann & James → "source code" as the field's term for citation sigla; Jackson → Murray's OED reader instructions + citation slips |
-| **Ch. 12 — citation-frequency graph** | **McEnery & Brezina (Kilgarriff 2005)** → significance is near-meaningless at N = 828 K — effect sizes and dispersion, not p-values; Routledge Corpus (O'Keeffe & Farr Ch. 10) → normalization, log-likelihood not chi-square, reference-corpus design; Ferri (Gatti) → the closed Roman citation canon as a scale-contrast comparandum (flag the asymmetry) |
-| **Ch. 13 — shared inheritance as forensic signal** | **Hartmann & James** → **"dictionary archaeology"** — the field's own term for genetic-affiliation forensics: use it, don't coin a rival; Zgusta 1988 *Copying in lexicography* (already in ch02's references — carry into Ch. 13's frame); Jackson/Landau → "all dictionaries are based on preexisting works" — the *fact* of inheritance is a textbook truism; **M01's delta is quantification at corpus scale, and must say so**; Baalbaki → a millennium of documented *and concealed* borrowing (Ibn Manẓūr absorbing the *Nihāya*; "without mentioning him as his source"); Dickey → the Homer-scholia *Viermännerkommentar* with explicit source-precedence ordering — a pre-digital layered evidence graph; Routledge Corpus Ch. 41 → forensic-linguistics fingerprinting methods; Ferri (Furno) → humanist accretion (Calepino→Estienne) |
-| **Ch. 14 — Renou's registers** | **McEnery & Brezina** → the corpus-absence caveat applies at full strength to "68.3 % corpus-absent" — reframe as DCS-coverage statement; Ferri (Maltby) → Servius' three-register system as the Roman analogue of register labelling; Dickey → Atticist lexica's normative register-marking; *Internet Lexicography* (Geyken & Lemnitzer Ch. 7) → diasystematic labelling from corpus metadata as current practice; Partridge → the slang/colloquial/catch-phrase/vulgarism scale as the informal precedent Ch. 14 formalizes |
-| **Ch. 15 — fifty thousand corrections** | ***Internet Lexicography* (Abel & Meyer Ch. 8)** → user participation: direct/indirect/accessory, user-submitted corrections, quality-voting — Ch. 15 is a *case* of this literature; ***Internet Lexicography* (Klosa-Kückelhaus & Tiberius Ch. 3)** → error handling in the lexicographic process — a near-exact abstract of the OBS-T workflow; *Internet Lexicography* (Herold/Meyer/Wiegand Ch. 1) → versioning, per-entry revision histories (OED Online) — cite, don't reinvent; Bloomsbury (Akasu) → dictionary-criticism methodology as the frame the error typology extends; Bloomsbury (Brewer) → OED revision layers as the versioned-dictionary precedent; Hartmann & James → error analysis explicitly sanctioned as evidence; Partridge → pre-digital collaborative revision |
+| **Old Ch. 7 (= A33) — sense ordering, merged into Ch. 6** | **Apresjan** → the synchronic-derivational ("genetic") ordering principle *with its mechanism* (literal→figurative via assertive-component removal; the *vyiti* portrait) — **the chapter reads as reinventing a solved problem unless it engages this**; **Bloomsbury (Considine)** → weakly vs strongly historical dictionaries — the field's own vocabulary for M01's axis; Walter → frequency-based ordering as the modern default; Jackson §14.5 + Kipfer 1984 → sense-order indeterminacy as a named open problem; Partridge → intra-entry order as deliberate editorial choice |
+| **Ch. 7 — indigenous verbal-root microstructure** | **Vogel** → tradition context; **Apresjan** → integrated grammar–dictionary description (the Moscow-school frame for "the kośa entry presupposes the grammar"); Baalbaki → root-and-pattern (*wazn/jaḏr*) macro-microstructure as the Arabic structural analogue of *dhātu* organization; Lowe → the participle/root lemmatization boundary in Vedic; Gerow → how the indigenous apparatus was actually transmitted (framing footnote) |
+| **Ch. 8 — Pāṇinian derivation** | **Baalbaki** → *al-ištiqāq* + lexicography born as grammar's twin (*ʿAyn* ∥ Sībawayhi); Routledge Historical Handbook (Koch; Mailhammer) → morphological reconstruction, etymology methods; Ferri (Pieroni) → **caution**: Latin etymologizing is associative/rhetorical — do *not* equate it with rule-governed *vyutpatti* without the caveat; Partridge → cognate-grouping vs cross-referencing as a universal design fork (Skeat/Weekley debate) |
+| **Ch. 9 — cross-reference graphs & descent** | **Hartmann & James** → mediostructure: "a framework for their systematic study … is still to be developed" — **the explicit gap in the field's own reference work that Ch. 9 fills; claim it as the warrant**; Routledge Historical Handbook (Weiss; Hale; François; Dunn) → comparative method, trees/waves, phylogenies — the vocabulary for dictionary stemmatics; *Internet Lexicography* (Engelberg/Müller-Spitzer/Schmidt Ch. 5) → linking + access structures as the field's current frame; Ferri (Lhommé; Maltby) → Verrius→Festus→Paul and Donatus→Servius(+Auctus) as worked descent chains |
+| **Ch. 10 — two citation registers** | **Baalbaki** → the *šawāhid* apparatus + *ʿuṣūr al-iḥtiǧāǧ* (epochs of reliable usage) + Bedouin-informant screening — a *doctrinally theorized* witness system that out-formalizes the European `<ls>` register and mirrors *iti*; Ferri (Gatti) → Nonius' ~40-author *auctores* canon with ordered citations (Lindsay's law); Hartmann & James → "source code" as the field's term for citation sigla; Jackson → Murray's OED reader instructions + citation slips |
+| **Ch. 11 — citation-frequency graph** | **McEnery & Brezina (Kilgarriff 2005)** → significance is near-meaningless at N = 828 K — effect sizes and dispersion, not p-values; Routledge Corpus (O'Keeffe & Farr Ch. 10) → normalization, log-likelihood not chi-square, reference-corpus design; Ferri (Gatti) → the closed Roman citation canon as a scale-contrast comparandum (flag the asymmetry) |
+| **Ch. 12 — shared inheritance as forensic signal** | **Hartmann & James** → **"dictionary archaeology"** — the field's own term for genetic-affiliation forensics: use it, don't coin a rival; Zgusta 1988 *Copying in lexicography* (already in ch02's references — carry into Ch. 12's frame); Jackson/Landau → "all dictionaries are based on preexisting works" — the *fact* of inheritance is a textbook truism; **M01's delta is quantification at corpus scale, and must say so**; Baalbaki → a millennium of documented *and concealed* borrowing (Ibn Manẓūr absorbing the *Nihāya*; "without mentioning him as his source"); Dickey → the Homer-scholia *Viermännerkommentar* with explicit source-precedence ordering — a pre-digital layered evidence graph; Routledge Corpus Ch. 41 → forensic-linguistics fingerprinting methods; Ferri (Furno) → humanist accretion (Calepino→Estienne) |
+| **Ch. 13 — Renou's registers** | **McEnery & Brezina** → the corpus-absence caveat applies at full strength to "68.3 % corpus-absent" — reframe as DCS-coverage statement; Ferri (Maltby) → Servius' three-register system as the Roman analogue of register labelling; Dickey → Atticist lexica's normative register-marking; *Internet Lexicography* (Geyken & Lemnitzer Ch. 7) → diasystematic labelling from corpus metadata as current practice; Partridge → the slang/colloquial/catch-phrase/vulgarism scale as the informal precedent Ch. 13 formalizes |
+| **Ch. 14 — fifty thousand corrections** | ***Internet Lexicography* (Abel & Meyer Ch. 8)** → user participation: direct/indirect/accessory, user-submitted corrections, quality-voting — Ch. 14 is a *case* of this literature; ***Internet Lexicography* (Klosa-Kückelhaus & Tiberius Ch. 3)** → error handling in the lexicographic process — a near-exact abstract of the OBS-T workflow; *Internet Lexicography* (Herold/Meyer/Wiegand Ch. 1) → versioning, per-entry revision histories (OED Online) — cite, don't reinvent; Bloomsbury (Akasu) → dictionary-criticism methodology as the frame the error typology extends; Bloomsbury (Brewer) → OED revision layers as the versioned-dictionary precedent; Hartmann & James → error analysis explicitly sanctioned as evidence; Partridge → pre-digital collaborative revision |
 | **Conclusion** | McEnery & Brezina → what corpus evidence licenses (the honest epistemic close); Bloomsbury (Fuertes-Olivera; Nielsen) → e-lexicography futures the evidence graph answers; Baalbaki Epilogue → the ordering trade-off as a cross-civilizational universal |
 
 ---
@@ -85,7 +87,7 @@ Ranked by referee risk at de Gruyter LSM.
 
 ### 2.1 Corpus-methods epistemics (highest risk)
 
-The plan's corpus-grounding claims (Ch. 3, 14) currently make the singular-to-universal
+The plan's corpus-grounding claims (Ch. 3, 13) currently make the singular-to-universal
 inference — corpus-absent ⇒ lexicon-phantom — that McEnery & Brezina (*Fundamental
 Principles*, 2022) dissect as "the problem of induction writ large," citing the exact
 Tognini-Bonelli passage that licenses it. Compounding factors a reviewer will stack:
@@ -93,7 +95,7 @@ Tognini-Bonelli passage that licenses it. Compounding factors a reviewer will st
 - **Size floor.** Reppen and Walter (Routledge Corpus Handbook) put lexicographic sense
   capture at tens-to-hundreds of millions of words (Biber 1990/1993); DCS is 5.6 M.
 - **No sampling frame.** A 19-century historical corpus skewed to epic + śāstra cannot be
-  "representative" of épigraphique or lyric registers — so Ch. 14's corpus-absence rate
+  "representative" of épigraphique or lyric registers — so Ch. 13's corpus-absence rate
   partly measures DCS's holes.
 - **Low-frequency vs absence.** Walter's neologism caveat is the mirror of M01's claim: in
   a small corpus the two are indistinguishable.
@@ -129,13 +131,13 @@ disarms the objection and is already implicit in the evidence-graph thesis.
 The plan's own vocabulary ("layered", "blocks", "cross-reference graphs") must be mapped
 onto the Hausmann & Wiegand macro/micro/medio/megastructure canon as codified in Hartmann
 & James — ch05 already does this; ch02 and the plan's part-titles do not yet. Free win:
-Hartmann & James flag mediostructure as *lacking* a systematic framework — Ch. 10 fills a
+Hartmann & James flag mediostructure as *lacking* a systematic framework — Ch. 9 fills a
 gap the standard reference itself names.
 
 ### 2.5 Dictionary criticism as method
 
 Akasu (Bloomsbury) and Jackson Ch. 14 document an established evaluation methodology
-(internal/external criteria, representative sampling). Ch. 15's error typology and every
+(internal/external criteria, representative sampling). Ch. 14's error typology and every
 comparative-evaluation move should position against it; Hartmann 1996's complaint that
 criticism has been "beset by personal prejudice rather than … objective criteria" is a
 ready-made warrant for the evidence-graded alternative.
@@ -150,7 +152,7 @@ ready-made warrant for the evidence-graded alternative.
   bilingual; one framing note on why M01 treats them as evidence sources rather than
   through equivalence theory.
 - **κ methodology source**: none of the 37 works treats coefficient-based agreement
-  properly — Ch. 5/15's κ apparatus must cite the computational-linguistics literature
+  properly — Ch. 5/14's κ apparatus must cite the computational-linguistics literature
   (Artstein & Poesio 2008; Krippendorff), which is *outside this library*.
 
 ---
@@ -211,8 +213,8 @@ The library supports it asymmetrically:
 
 - **Baalbaki (Arabic) can carry the bridge alone**: a theorized macrostructure typology
   (*mubawwab/muǧannas* + three formal orders) ∥ Ch. 4; a doctrinal witness system
-  (*šawāhid*, *ʿuṣūr al-iḥtiǧāǧ*) ∥ Ch. 11; a documented millennium of acknowledged and
-  concealed borrowing ∥ Ch. 10/13.
+  (*šawāhid*, *ʿuṣūr al-iḥtiǧāǧ*) ∥ Ch. 10; a documented millennium of acknowledged and
+  concealed borrowing ∥ Ch. 9/12.
 - **Ferri (Latin) is section-level**, cited essay-by-essay (Maltby → registers;
   Lhommé → epitome descent; Gatti → citation canon; Furno → accretion).
 - **Dickey (Greek) is the third leg**: glossography/scholia lineages, the
@@ -269,7 +271,7 @@ by title so the mapping cannot drift again.
   timeline; the §2.2 Introduction paragraph is the honest treatment.
 - **Separate "comparative etymology" chapter** from the Latin/Greek etymologica — the
   material is associative etymologizing, methodologically incommensurable with *vyutpatti*
-  (Ch. 9 gets a caveat, not a sibling).
+  (Ch. 8 gets a caveat, not a sibling).
 - **NLP/tooling chapter** from the Hellwig-circle papers — they serve as citations in
   Ch. 2/3; a tooling chapter would re-open the "measures the project, not the
   dictionaries" boundary error ch02 §1 explicitly quarantines.
@@ -281,7 +283,7 @@ by title so the mapping cannot drift again.
 Dispositions: **KEEP** (meets bar) · **KEEP+REframe** (survives only with named
 repositioning) · **@DECIDE** (structural call for MG). No chapter earns CUT or
 DOWNGRADE-to-appendix: the plan's §9 anti-salami clustering already absorbed the weak
-stand-alone candidates (A03/A07 into Ch. 10), and each remaining chapter holds a distinct
+stand-alone candidates (A03/A07 into Ch. 9), and each remaining chapter holds a distinct
 dataset. The bar used: how the professional literature treats the topic (under-theorized /
 solved-elsewhere / too narrow).
 
@@ -293,15 +295,15 @@ solved-elsewhere / too narrow).
 | 4 | **KEEP** | The book's most original chapter; Vogel + Baalbaki give it a comparative spine |
 | 5 | **KEEP** | Already at bar — the model chapter (triangulation + κ-scored gold benchmark) |
 | 6 | **KEEP** | Needs Lew (sense ontology) + Apresjan (regular polysemy) framing, both cheap |
-| 7 | **@DECIDE** | Apresjan solved the principle; keep only as an empirical *test* of it — or merge into Ch. 6 |
-| 8 | **KEEP** | Sound; Apresjan's integrated description supplies the missing Western frame |
-| 9 | **KEEP** | Referee-hardened already (A35 M1–M5); add the Arabic *ištiqāq* parallel + Latin caveat |
-| 10 | **KEEP** | Fills a gap Hartmann & James explicitly name — claim the mediostructure warrant |
-| 11 | **KEEP** | *šawāhid* comparison upgrades it from binary contrast to three-system typology |
-| 12 | **KEEP+REframe** | Prose (1/5) must be written to the Kilgarriff/log-likelihood/dispersion bar from day one |
-| 13 | **KEEP+REframe** | Inheritance-as-fact is a textbook truism; the chapter's claim is the quantified forensic method |
-| 14 | **KEEP+REframe** | The 68.3 % headline is the induction problem squared; reframe as DCS-coverage finding |
-| 15 | **KEEP** | Data is field-unique; must enter the existing user-participation/error-handling literature |
+| — (old 7 = A33) | **MERGED into Ch. 6** (10-07-2026) | Apresjan solved the principle; `@DECIDE` closed as (b) — folded into Ch. 6's second half ("senses: inheritance and order"), the chapter no longer exists |
+| 7 | **KEEP** | Sound; Apresjan's integrated description supplies the missing Western frame |
+| 8 | **KEEP** | Referee-hardened already (A35 M1–M5); add the Arabic *ištiqāq* parallel + Latin caveat |
+| 9 | **KEEP** | Fills a gap Hartmann & James explicitly name — claim the mediostructure warrant |
+| 10 | **KEEP** | *šawāhid* comparison upgrades it from binary contrast to three-system typology |
+| 11 | **KEEP+REframe** | Prose (1/5) must be written to the Kilgarriff/log-likelihood/dispersion bar from day one |
+| 12 | **KEEP+REframe** | Inheritance-as-fact is a textbook truism; the chapter's claim is the quantified forensic method |
+| 13 | **KEEP+REframe** | The 68.3 % headline is the induction problem squared; reframe as DCS-coverage finding |
+| 14 | **KEEP** | Data is field-unique; must enter the existing user-participation/error-handling literature |
 
 ### The four load-bearing reframes
 
@@ -320,7 +322,7 @@ per-genre dispersion, never "words that don't exist." Hellwig's tagger paper giv
 chapter an unexpected weapon: MW's inventory decisions have *measured* downstream NLP
 costs — inclusion policy is consequential, hence worth grading.
 
-**Ch. 7 (A33) — the genuine `@DECIDE`.** Apresjan's *Systematic Lexicography* establishes
+**Old Ch. 7 (A33) — the genuine `@DECIDE`.** Apresjan's *Systematic Lexicography* establishes
 synchronic-derivational ("genetic") sense ordering as the correct principle *and supplies
 its mechanism* (regular polysemy; assertive-component removal), and the field has further
 named vocabulary (Considine's weakly/strongly historical; frequency ordering as modern
@@ -336,18 +338,18 @@ inheritance and order"), yielding a 14-chapter book. Both honest; (a) preserves 
 1-article-1-chapter symmetry, (b) is structurally safer against the "two chapters on
 neighbouring sense phenomena" referee note. → `@DECIDE` row added to GTD.
 
-**Ch. 13 (A10).** Keep the dataset, rebuild the pitch: cite Landau's dictum via Jackson
+**Ch. 12 (A10).** Keep the dataset, rebuild the pitch: cite Landau's dictum via Jackson
 ("all commercial dictionaries are based to some extent on preexisting works") *first*,
 then define the contribution as the forensic method at scale (shared-error ≈ 0 %,
 citation-order agreement 0.811) — "dictionary archaeology" (Hartmann & James) done
 quantitatively, with Zgusta 1988 as the hand-probe ancestor (ch02 §7 already frames this
-correctly; Ch. 13's own text must lead with it). Baalbaki's concealed-borrowing cases and
+correctly; Ch. 12's own text must lead with it). Baalbaki's concealed-borrowing cases and
 Dickey's VMK stratification supply the cross-civilizational depth that lifts the chapter
 from a Sanskrit curiosity to a method statement.
 
 ### Under-theorized spots that are additions, not cuts
 
-- Ch. 11/12 currently treat `<ls>` vs *iti* as a two-register story; Baalbaki's *šawāhid*
+- Ch. 10/11 currently treat `<ls>` vs *iti* as a two-register story; Baalbaki's *šawāhid*
   makes it three — one added comparative section, no restructuring.
 - The method appendix (PROV-O / TEI `@cert` crosswalk) should also cite *Internet
   Lexicography* Ch. 4's TEI/LMF/RDF inventory as the standards baseline.

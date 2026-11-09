@@ -8,7 +8,7 @@ _Created: 18-07-2026 · Last updated: 18-07-2026_
 > [LITERATURE_CROSSWALK.md §4.1](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/LITERATURE_CROSSWALK.md)
 > (the Arabic, Latin and Greek traditions as structured comparanda, on the order /
 > witness / copying axes); vetoable framing calls listed in
-> [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/SIGNOFF_M01_glue_framing_calls.md).
+> [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/editorial/SIGNOFF_M01_glue_framing_calls.md).
 > Sets up Chapters 5–8.
 
 ## 1. Widening the lens

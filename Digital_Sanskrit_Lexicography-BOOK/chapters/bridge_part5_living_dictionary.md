@@ -1,11 +1,11 @@
 # Part V — The Living Dictionary
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 09-11-2026_
 
 > **Provenance.** Part-opening bridge, **new writing for the book** under
 > [BOOK_PLAN.md §3](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md);
 > vetoable framing calls listed in
-> [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/SIGNOFF_M01_glue_framing_calls.md).
+> [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/editorial/SIGNOFF_M01_glue_framing_calls.md).
 > Sets up Chapters 13–14.
 
 Everything measured so far could, in principle, have been measured on a dead corpus — a
@@ -49,6 +49,37 @@ arrives already speaking the book's evidence vocabulary — each event labelled 
 same grades the graph assigns to every other statement — is the thesis's most direct
 instantiation: the dictionary's upkeep is itself first-class, gradeable, corpus-scale
 data.
+
+Three open problems ride along into the argument that follows, and the living dictionary
+is the right place to name them, because each is a spot where the evidence graph's own
+evidence thins. The first is infrastructure. The release programme these chapters
+describe is built to FAIR principles — findable, accessible, interoperable, reusable
+(Wilkinson et al. 2016) — yet at the time of writing no dataset cited anywhere in the
+book carries a minted DOI. The data are public and the release programme is real; what
+is missing is the persistent identifier that would let an evidence citation outlive the
+URL it was found at. A book about evidence owes its reader the naming of its own
+weakest evidence-layer, and this is it; the Conclusion states the debt at full strength,
+and whether the printed book carries it as a standing confession or reports it as
+resolved before submission is one of the framing calls the signoff ledger keeps open.
+The second is the human instrument. Some of the grades the graph carries were
+single-reviewer judgements: the inter-annotator agreement figure (κ) that would
+adjudicate them is measured where the book measures it and unmeasured where it does
+not — a derived-not-adjudicated gap the chapters state rather than smooth over. Until
+that figure is adjudicated, the graph's grades are, strictly, what careful single
+readers judged — exactly the kind of claim the book's own traceability rules force it
+to declare. The
+third is a boundary kept on purpose. Everything measured here is production-side: what
+the dictionaries assert, and how well-evidenced the assertions are. What readers
+actually manage to extract — who looks a word up, how, and with what success — is the
+mature neighbouring programme of dictionary-use research, with its own methods and its
+own handbook chapters (Nesi 2013; Pastor and Alcina 2013), and this book contains no
+user study at all. Nor is the omission accidental: look-up behaviour is not recoverable
+from the corpus that the family's own maintenance produces, and the book's instruments
+stop where its evidence stops. The two programmes are complementary by design: the typed, graded
+record of what a living dictionary says and how it is maintained is exactly the
+substrate a future reception study would want, and Part V shows that record keeping
+itself current, correction by dated correction — the graph's last layer, and the last
+thing this part has to teach: a record can be alive.
 
 Together the two chapters complete the evidence graph's annotation stack — source and
 convention (Parts II–III), citation and descent (Part IV), and now register and review —
