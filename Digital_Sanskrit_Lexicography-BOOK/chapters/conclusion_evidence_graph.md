@@ -6,7 +6,7 @@ _Created: 18-07-2026 · Last updated: 18-07-2026_
 > under
 > [BOOK_PLAN.md §3](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md);
 > vetoable framing calls listed in
-> [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/SIGNOFF_M01_glue_framing_calls.md).
+> `SIGNOFF_M01_glue_framing_calls.md` (private: gasyoun/Uprava/papers/M01/).
 > Section numbering is chapter-internal; the book-wide renumbering and bibliography merge
 > are a later production pass.
 

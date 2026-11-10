@@ -1,6 +1,6 @@
 # Chapter 2 — The Measurement Framework: Measuring the Dictionary Family
 
-_Created: 09-07-2026 · Last updated: 18-07-2026_
+_Created: 09-07-2026 · Last updated: 09-11-2026_
 
 > **Provenance.** This chapter is the book-form version of the article *Measuring the
 > Dictionary Family: A Traceable Measurement Framework for Computational Lexicography*
@@ -70,6 +70,28 @@ homes, and conflating them is exactly the boundary error this framework's routin
 (§5) exists to prevent. Everything below concerns the dictionaries as research objects —
 their headwords, senses, citations, cross-references, and microstructure — and nothing
 concerns the workflow that produced them.
+
+The instrument stands on an established layer, and the concession had better be made
+once. That lexical resources can be modelled as graph databases — RDF triples as
+"statements about two resources" — that dictionaries should be versioned with per-entry
+revision histories, and that user communities can submit and vote on corrections, is
+documented practice in the field's current reference
+literature. *Internet Lexicography* (Klosa-Kückelhaus 2024: Ch. 4) states the graph
+and RDF layer of that practice, its user-participation chapter the correction and
+quality-voting layer (Abel and Meyer 2014: Ch. 8). What this framework contributes is
+therefore not "the dictionary as a graph" but its **epistemic typing** — a typed
+evidence grade (`observed` | `derived` | `inferred` | `reviewed`) and review provenance
+attached per lexicographic statement, where the encoding standardisation of
+*Internet Lexicography* stops. The object it measures is located, by name, on the
+canonical axes of metalexicographic description — macrostructure, microstructure,
+mediostructure, and the megastructure of access and distribution structures (Hausmann
+and Wiegand 1989; codified in Hartmann and James 1998) — the estimator clusters of §3
+below probing those axes in turn. And the sense nodes those estimators count are the
+dictionaries' *assertions*, not language-internal entities: lexicographic senses
+"cannot be expected to mirror linguistic reality" (Lew 2013), and whether discrete
+senses exist in the language at all is an open question of lexical semantics (Hanks;
+Sinclair; surveyed in Lew 2013) — a concession the graph can afford, since it models
+what the dictionaries say and grades the evidence for their saying it.
 
 ## 2. The measurement object
 
@@ -602,6 +624,10 @@ which this chapter states once so that they can assume it.
 
 ## References
 
+Abel, Andrea, and Christian M. Meyer. 2014. "Model of a User Behaviour and User
+Participation." In *Internet Lexicography.* [Direct/indirect/accessory user
+contribution; user-submitted corrections; quality-voting.]
+
 Ahmadi, Sina, John P. McCrae, Sanni Nimb, Fahad Khan, Monica Monachini, Bolette S.
 Pedersen, et al. 2020. "A Multilingual Evaluation Dataset for Monolingual Word Sense
 Alignment." In *Proceedings of the 12th Language Resources and Evaluation Conference
@@ -628,6 +654,14 @@ Hanneder, Jürgen. 2020. "Woher hat er das? Zum Charakter des *Sanskrit-English
 Dictionary* von Monier-Williams." *Zeitschrift der Deutschen Morgenländischen
 Gesellschaft* 170 (1): 107–117.
 
+Hartmann, R. R. K., and Gregory James. 1998. *Dictionary of Lexicography.* London and
+New York: Routledge.
+
+Hausmann, Franz Josef, and Herbert Ernst Wiegand. 1989. "Component Parts and Structures
+of General Monolingual Dictionaries: A Survey." In Hausmann, Reichmann, Wiegand and
+Zgusta (eds.), *Wörterbücher / Dictionaries / Dictionnaires,* vol. 1 (HSK 5.1), 328–360.
+Berlin and New York: Walter de Gruyter.
+
 Hellwig, Oliver. 2010–. *DCS — The Digital Corpus of Sanskrit.*
 [www.sanskrit-linguistics.org/dcs/](https://www.sanskrit-linguistics.org/dcs/) (release
 2026, CC BY-SA).
@@ -635,9 +669,19 @@ Hellwig, Oliver. 2010–. *DCS — The Digital Corpus of Sanskrit.*
 Kilgarriff, Adam. 2005. "Language Is Never, Ever, Ever, Random." *Corpus Linguistics and
 Linguistic Theory* 1 (2): 263–276.
 
+Klosa-Kückelhaus, Annette (ed.). 2024. *Internet Lexicography.* (Lexicographica. Series
+Maior 164.) Berlin and Boston: De Gruyter. [Graph data models, versioning, user
+participation as established practice; the encoding layer this chapter's epistemic
+typing sits on.]
+
 Lebo, Timothy, Satya Sahoo, and Deborah McGuinness (eds.). 2013. *PROV-O: The PROV
 Ontology.* W3C Recommendation, 30 April 2013.
 [www.w3.org/TR/prov-o/](https://www.w3.org/TR/prov-o/).
+
+Lew, Robert. 2013. "Identifying, Ordering and Defining Senses." In *The Bloomsbury
+Companion to Lexicography,* ed. Howard Jackson. London: Bloomsbury. [Sense
+individuation: senses as discrete entities vs. artifacts of dictionary structure —
+Hanks, Sinclair.]
 
 McEnery, Tony, and Vaclav Brezina. 2022. *Fundamental Principles of Corpus Linguistics.*
 Cambridge: Cambridge University Press.

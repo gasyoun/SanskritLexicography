@@ -1,6 +1,6 @@
 # How to Make the Brill Book — *Digital Sanskrit Lexicography*
 
-_Created: 06-07-2026 · Last updated: 21-07-2026_
+_Created: 06-07-2026 · Last updated: 09-11-2026_
 
 A build plan for a single-authored English monograph at Brill, drawn from work already
 committed across the `sanskrit-lexicon` / `gasyoun` GitHub repos, and coordinated with
@@ -103,7 +103,7 @@ chapter), **A37** (orthographic drift as a dater — a philology chapter).
 > [OBS-T draft](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/reports/obs_t_paper_draft.md)
 > byline is **Mārcis Gasūns** alone; Jim Funderburk and Dhaval Patel appear only as
 > *correctors within the dataset* (the 52,498 events) and as acknowledgees, not co-authors
-> (contrast the genuinely co-authored A13/A14, correctly excluded). **Ch. 15 = A12 locks;**
+> (contrast the genuinely co-authored A13/A14, correctly excluded). **Ch. 14 = A12 locks;**
 > no swap to A48 needed.
 
 ---
@@ -171,12 +171,15 @@ the two traditions teach lexicography at large. (~10–15 pp.)
 | **Data-ready, prose-thin** | A40 (data 4/5), A50 (data 4/5) | Write ~1 chapter of prose each atop committed data |
 | **New writing from scratch** | Introduction, 5 Part-bridges, Conclusion, unified method appendix, index, cross-chapter connective tissue | The genuine drafting load |
 
-**Page estimate:** a Brill monograph runs ~300–450 pp. The 15 article drafts represent on
-the order of **~180–220 pp** of existing prose; after journal→book conversion (which *removes*
-duplicated method/lit-review) plus ~40–50 pp of new framing, a realistic target is
-**~320–380 pp**. Roughly **60–70% of the raw prose already exists** — the book is closer to
-done than a from-scratch monograph by a wide margin. The Ch. 6 merge does not change this
-estimate materially — it consolidates existing prose rather than adding or cutting content.
+**Page estimate (measured 09-11-2026, `wc -w`):** the committed book text totals
+**72,701 words** (all 14 chapters + Introduction + 5 part-bridges + conclusion, `chapters/`)
+plus **990 words** of Appendix A ≈ **73.7k words ≈ 150–185 pp** at 400–450 words/page. This
+supersedes the earlier plan figures — ~180–220 pp of existing prose and a ~320–380 pp target:
+the measured draft *is* the entire book (Introduction, part-bridges and conclusion written and
+counted), so closing the gap to the ~300–450 pp a Brill monograph runs to now goes through the
+unified method appendix, the index, notes/bibliography expansion and copy-editing growth — not
+through chapter prose. The earlier "~60–70% of the raw prose already exists" claim is thereby
+closed by measurement: the prose exists and is counted (72,701 words, `wc -w`).
 
 ---
 
@@ -208,19 +211,19 @@ The book's evidentiary base already exists as committed datasets. Highest-value 
 | 1 (A36) | `A36_corpus_screen.csv` (SanskritLexicography) | 2,104 Latin-glossed senses / 11 dicts | table + figure |
 | 3 (A40) | `union_headwords.tsv` (SanskritLexicography) | 323,422 union headwords, per-dict provenance | coverage/Jaccard figure |
 | 3 (A40) | `dcs_cdsl_xref.tsv` (csl-apidev) | 15,902 DCS lemmas, 81.4% linked | corpus↔dict table |
-| 4/8 (A06/A04) | kośa macrostructure + gaṇa apparatus (csl-atlas) | 85.5% gaṇa agreement | worked example |
+| 4/7 (A06/A04) | kośa macrostructure + gaṇa apparatus (csl-atlas) | 85.5% gaṇa agreement | worked example |
 | 5 (A16) | MW block-economy tables/figures (MWS) | 286,561 entries; G5 P 0.86 / R 0.87 | figures 1–3 |
-| 9 (A35) | `mw_etymology.tsv` + oracle (csl-orig) | 9,377 derivations, 10 dicts | derivation-agreement figure |
-| 11/12 (A08/A50) | `<ls>` citation graph (csl-atlas) | 828,505 citations → 912 texts | flagship network figure |
-| 12 (A50) | [`MW-UNABSORBED-CENSUS-*.tsv` (SanskritLexicography)](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-WIDENED-16-09-2026.md) | 571 vol-7 homonym-extensions unabsorbed; 8,406 new vol-7 headwords | Appendix A tables (ALL-LAYERS + POS-CLASS), cited from Ch. 12 §3.5 (MG 17-09-2026: chapter stays prose) |
-| 15 (A12) | `correction_events_release.csv` (csl-observatory) | 52,498 events × 43 dicts × 208 correctors (released snapshot, 2014-03-18 → 2026-05-30) | figure + appendix dataset |
+| 8 (A35) | `mw_etymology.tsv` + oracle (csl-orig) | 9,377 derivations, 10 dicts | derivation-agreement figure |
+| 10/11 (A08/A50) | `<ls>` citation graph (csl-atlas) | 828,505 citations → 912 texts | flagship network figure |
+| 12 (A10) | [`MW-UNABSORBED-CENSUS-*.tsv` (SanskritLexicography)](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-WIDENED-16-09-2026.md) | 571 vol-7 homonym-extensions unabsorbed; 8,406 new vol-7 headwords | Appendix A tables (ALL-LAYERS + POS-CLASS), cited from Ch. 12 §3.5 (MG 17-09-2026: chapter stays prose) |
+| 14 (A12) | `correction_events_release.csv` (csl-observatory) | 52,498 events × 43 dicts × 208 correctors (released snapshot, 2014-03-18 → 2026-05-30) | figure + appendix dataset |
 | — (data-hub) | [kosha data-v0.1.0](https://github.com/gasyoun/kosha/releases/tag/data-v0.1.0) | 7 datasets, ~718k rows, CC BY-SA | appendix manifest |
 
 **Data blockers (the real critical path — see §9):**
 1. **No minted DOI anywhere.** `CITATION.cff` exists in only 4 repos; every DOI field is
    empty. A Brill book must cite *citable* data. → Zenodo-deposit sprint required first.
-2. **The correction dataset (Ch. 15) carries a FALSE DOI** (`10.5281/zenodo.15834721`
-   resolves to an unrelated preprint, never minted). Must be re-minted before Ch. 15 ships.
+2. **The correction dataset (Ch. 14) carries a FALSE DOI** (`10.5281/zenodo.15834721`
+   resolves to an unrelated preprint, never minted). Must be re-minted before Ch. 14 ships.
 3. **The DCS corpus denominator (Ch. 3) has no DOI** and is gated on Hellwig CC-BY sign-off
    (A38). Every corpus-grounding claim needs it.
 4. **Translation datasets are rights-blocked**, not just DOI-blocked (in-copyright RU) —
@@ -353,7 +356,7 @@ artifact to draft (open item, §11).
 
 **Resolved 06-07-2026:** ✅ the 15 (§2) **approved as proposed** · ✅ series = **de Gruyter
 LSM primary, BIL fallback** · ✅ **standard subscription** (not OA).
-**Resolved 08-07-2026:** ✅ **A12 authorship = sole-authored** (§2 note; Ch. 15 locks, no swap).
+**Resolved 08-07-2026:** ✅ **A12 authorship = sole-authored** (§2 note; Ch. 14 locks, no swap).
 
 **Resolved 18-07-2026 (MG) — the A61 question, and three riders.** Asked because
 [A61](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/README.mdx)
@@ -401,7 +404,7 @@ Still open:
 ## 11. Next actions
 
 **Done 08-07-2026 (H248 execution, Opus 4.8 `claude-opus-4-8`):**
-- ✅ **A12 authorship confirmed sole-authored** (§2/§10) — Ch. 15 locks.
+- ✅ **A12 authorship confirmed sole-authored** (§2/§10) — Ch. 14 locks.
 - ✅ **Rights table built** →
   [RIGHTS_TABLE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/RIGHTS_TABLE.md).
   Key finding: all 15 are unpublished drafts ⇒ copyright 100% author-held today; no chapter
@@ -592,7 +595,7 @@ map. Cited by Ch. 3/5/11/13 (the post-merge numbering of the "Ch. 3/5/12/14" nam
   argues the graph as a general model (transfer conditions), the FAIR infrastructure it
   requires (naming the DOI gap honestly), the two traditions' lessons, and the bounded close.
   **Voice gate:** every vetoable framing decision is enumerated in
-  [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/SIGNOFF_M01_glue_framing_calls.md)
+  `SIGNOFF_M01_glue_framing_calls.md` (private: gasyoun/Uprava/papers/M01/)
   for the author's ruling. **Ch. 3 / Ch. 11 caveat:** the Part II/IV bridges describe the two
   H1240 chapters only at plan altitude and carry boxed ⚠️ obligations to be revised against
   the chapters as merged.
@@ -642,7 +645,7 @@ in H430 on 09-07-2026; item 1 — the Ch. 3/Ch. 11 prose — closed 18-07-2026 v
 the done-entry above):
 
 1. **The author's voice pass over the glue** — rule on the framing calls in
-   [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/SIGNOFF_M01_glue_framing_calls.md)
+   `SIGNOFF_M01_glue_framing_calls.md` (private: gasyoun/Uprava/papers/M01/)
    (MG `@DO`); the unified **method appendix + index** stay gated on the chapter freeze.
 2. **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI + Hellwig
    DCS sign-off) — deferred to its ~09-08-2026 window; gates *citability at submission*, not

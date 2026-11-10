@@ -1,6 +1,6 @@
 # Chapter 14 — Surface, Not Substance: An Error Typology of Twelve Years of Collaborative Correction
 
-_Created: 13-07-2026 · Last updated: 21-07-2026_
+_Created: 13-07-2026 · Last updated: 09-11-2026_
 
 > **Provenance.** This chapter is the book-form version of the article *Surface, Not Substance:
 > A Two-Axis Error Typology of Twelve Years of Correction to the Cologne Digital Sanskrit
@@ -188,7 +188,8 @@ distributes by location (Table 3) — headword corrections are overwhelmingly sm
 **H2 — the location profile is a per-dictionary fingerprint.** A chi-square test of location ×
 dictionary (top 15 by volume, derived labels) gives χ² = 26,192.5, dof = 70, with **Cramér's
 V = 0.432** (commit-block bootstrap CI [0.407, 0.482]). Dictionaries differ in *where* their
-errors sit, not merely how many they have.
+errors sit, not merely how many they have. Per the statistical-practice contract of
+Chapter 2 §6.3, the χ² is reported beside its effect size and its N, never alone.
 
 **H3 — the profile shifts over twelve years.** Mann–Kendall trend diagnostics on yearly shares
 show directional movement: headword corrections fall (τ = −0.462; 0.88 → 0.10 of the yearly
