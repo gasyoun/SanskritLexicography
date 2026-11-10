@@ -595,7 +595,7 @@ map. Cited by Ch. 3/5/11/13 (the post-merge numbering of the "Ch. 3/5/12/14" nam
   argues the graph as a general model (transfer conditions), the FAIR infrastructure it
   requires (naming the DOI gap honestly), the two traditions' lessons, and the bounded close.
   **Voice gate:** every vetoable framing decision is enumerated in
-  [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/editorial/SIGNOFF_M01_glue_framing_calls.md)
+  `SIGNOFF_M01_glue_framing_calls.md` (private: gasyoun/Uprava/papers/M01/)
   for the author's ruling. **Ch. 3 / Ch. 11 caveat:** the Part II/IV bridges describe the two
   H1240 chapters only at plan altitude and carry boxed ⚠️ obligations to be revised against
   the chapters as merged.
@@ -645,7 +645,7 @@ in H430 on 09-07-2026; item 1 — the Ch. 3/Ch. 11 prose — closed 18-07-2026 v
 the done-entry above):
 
 1. **The author's voice pass over the glue** — rule on the framing calls in
-   [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/editorial/SIGNOFF_M01_glue_framing_calls.md)
+   `SIGNOFF_M01_glue_framing_calls.md` (private: gasyoun/Uprava/papers/M01/)
    (MG `@DO`); the unified **method appendix + index** stay gated on the chapter freeze.
 2. **FAIR/DOI sprint** (Zenodo deposits + re-mint the false correction-dataset DOI + Hellwig
    DCS sign-off) — deferred to its ~09-08-2026 window; gates *citability at submission*, not

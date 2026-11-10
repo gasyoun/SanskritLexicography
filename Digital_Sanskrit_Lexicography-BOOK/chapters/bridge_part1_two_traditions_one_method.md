@@ -5,7 +5,7 @@ _Created: 18-07-2026 · Last updated: 09-11-2026_
 > **Provenance.** Part-opening bridge, **new writing for the book** under
 > [BOOK_PLAN.md §3](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md);
 > vetoable framing calls listed in
-> [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/editorial/SIGNOFF_M01_glue_framing_calls.md).
+> `SIGNOFF_M01_glue_framing_calls.md` (private: gasyoun/Uprava/papers/M01/).
 > Sets up Chapters 1–2.
 
 A book that promises to grade the evidence behind lexicographic statements had better

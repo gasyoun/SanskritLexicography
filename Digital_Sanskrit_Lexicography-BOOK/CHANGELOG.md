@@ -137,7 +137,7 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
   - **Author gate** → every vetoable framing decision (12 rows: the opening vignette, the
     chronicle boundary, the LSM-164 concession strength, motif reuse, lengths, closing
     cadence …) is enumerated in
-    [SIGNOFF_M01_glue_framing_calls.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/editorial/SIGNOFF_M01_glue_framing_calls.md)
+    `SIGNOFF_M01_glue_framing_calls.md` (private: gasyoun/Uprava/papers/M01/)
     (added to the folder's allowlist `.gitignore`) as an MG `@DO`; BOOK_PLAN §11,
     BOOK_PLAN.meta backlog #5, and `.ai_state.md` ticked in the same pass.
 
