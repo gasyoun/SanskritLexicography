@@ -1,0 +1,231 @@
+{
+  "tool": "tools/document_check.py",
+  "skill": "/document",
+  "legacy_name": "/artifact-propagate",
+  "generated": "2026-11-11 18:10:14",
+  "artifacts": [
+    {
+      "artifact": "C:\\Users\\COMPUTER\\Documents\\GitHub\\SanskritLexicography\\RussianTranslation\\REUSE_MAP.md",
+      "repo": "C:\\Users\\COMPUTER\\Documents\\GitHub\\SanskritLexicography",
+      "kind": "doc",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "n/a - no README section owns corpus restore; the owning surfaces are REUSE_MAP §7 (recipe) + REUSE_INDEX/PROJECT_INTERLINKS rows (registered)"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "n/a - behavioral rule lives at point of use (build_tmx missing-input message, corpus_gate [availability] line); a CLAUDE.md line would duplicate it"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "n/a - orientation entry not warranted for one doc section; restore recipe fires at the consumer, not at cold start"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "real edit: docs/manuals/DATA_REUSE_MANUAL.md §0 now routes gitignored-asset restore questions to RussianTranslation/REUSE_MAP.md §7 (H8040, 11-11-2026)"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\GitHub-worktrees\\SanskritLexicography-h8040-3570\\RussianTranslation\\REUSE_MAP.meta.md:1: # REUSE_MAP.md — metadoc"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\GitHub-worktrees\\SanskritLexicography-h8040-3570\\CHANGELOG.md, C:\\Users\\COMPUTER\\Documents\\GitHub\\GitHub-worktrees\\SanskritLexicography-h8040-3570\\changelog.md exist, no mention of artifact"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\GitHub-worktrees\\SanskritLexicography-h8040-3570\\.ai_state.md:1378: availability recorded honestly in `RussianTranslation/REUSE_MAP.md §7`."
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "no tracking issue exists for H8040 (close reported no issue metadata); no other issue references this artifact"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - no human action owed: H8040 closed with zero residuals, gate none"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "missing",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\handoffs\\README.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - docs + diagnostics only; no new feature surface"
+        },
+        {
+          "id": "reuse_index",
+          "phase": 2,
+          "label": "Uprava/REUSE_INDEX.md (reusable assets)",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\REUSE_INDEX.md:108: | [corpus_lexicon](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py) | 1.09 M word-aligned Sa→Ru rows "
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\PROJECT_INTERLINKS.md:1684: [`REUSE_MAP.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REUSE_MAP.md)"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no new destroy-work-if-missed fact; the consume-only restore policy is already carried by the shadow_assets rights row and REUSE_MAP §7"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - no open question created or answered (the corpus availability question is resolved by receipts, not a new question)"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "routine ops deliverable; no thesis-level synthesis"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - no hook added/changed"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - repo status unchanged (not archived/frozen/rebooted)"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "n/a - no hub file added/removed (REUSE_MAP pre-existing)"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "appended: Uprava FINDINGS §854 (missing-input message = registry claim + LFS-pointer presence class); other registries n/a - nothing they track changed"
+        }
+      ],
+      "worktree_artifact": "C:\\Users\\COMPUTER\\Documents\\GitHub\\GitHub-worktrees\\SanskritLexicography-h8040-3570\\RussianTranslation\\REUSE_MAP.md",
+      "worktree": "C:\\Users\\COMPUTER\\Documents\\GitHub\\GitHub-worktrees\\SanskritLexicography-h8040-3570"
+    }
+  ],
+  "provenance": {
+    "host": "DESKTOP-8N57E9U",
+    "git_head": "7f18656c3d718012f6b66585530792506a2999e3",
+    "git_branch": "h8040-document-sweep",
+    "handoff": "H8040"
+  }
+}

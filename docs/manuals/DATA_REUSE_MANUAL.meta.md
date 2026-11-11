@@ -1,6 +1,6 @@
 # DATA_REUSE_MANUAL.md — metadoc
 
-_Created: 18-07-2026 · Last updated: 04-10-2026_
+_Created: 18-07-2026 · Last updated: 11-11-2026_
 
 Companion record for [docs/manuals/DATA_REUSE_MANUAL.md](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/manuals/DATA_REUSE_MANUAL.md).
 
@@ -10,7 +10,7 @@ Formats, encodings, traps, and rights for the programmer / data engineer / NLP r
 
 ## Provenance
 
-Authored 10-07-2026 (H479/H535), consolidated H604. Refreshed 18-07-2026 under [H1245](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1245-Fable_multi_big-manuals-estate-refresh-umbrella_18.07.26.md): 5 findings fixed (per-list key2 verdicts, AP 88,867 + recomputed 18-list total, the era-split `wc -l` rule, the RIGHTS_LEDGER lower-bound gate, `helpmorphids.html` un-lumped from the giant-file list).
+Authored 10-07-2026 (H479/H535), consolidated H604. Refreshed 18-07-2026 under [H1245](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1245-Fable_multi_big-manuals-estate-refresh-umbrella_18.07.26.md): 5 findings fixed (per-list key2 verdicts, AP 88,867 + recomputed 18-list total, the era-split `wc -l` rule, the RIGHTS_LEDGER lower-bound gate, `helpmorphids.html` un-lumped from the giant-file list). Refreshed 11-11-2026 under [H8040](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H8040-OxAlpha_SanskritLexicography_reuse-corpus-availability-recovery_11.11.26.md): §0 gained the pointer to `RussianTranslation/REUSE_MAP.md §7` (verified restore recipes for the gitignored corpus copies — PR [#2504](https://github.com/gasyoun/SanskritLexicography/pull/2504)).
 
 ## Verification
 

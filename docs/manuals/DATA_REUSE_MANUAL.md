@@ -1,6 +1,6 @@
 # Data-Reuse Manual — SanskritLexicography
 
-_Created: 10-07-2026 · Last updated: 04-10-2026_
+_Created: 10-07-2026 · Last updated: 11-11-2026_
 
 For the **programmer / data engineer / NLP researcher** who wants to *consume*
 the data here in scripts. This manual is about the committed, reusable datasets —
@@ -18,7 +18,10 @@ to operate the pipelines see the
   translations are **unpublished** and mostly **gitignored** (the `mw_ru`/`pwg_ru`
   translation store, TM files, learner scores). If you clone this, you get the
   *tooling and the FAIR-committed datasets*, **not** the full Russian dictionary
-  text. The TMX release is gated behind rights clearance.
+  text. The TMX release is gated behind rights clearance. Verified **restore
+  recipes** for the gitignored corpus/glossary copies (size + SHA-256 receipts,
+  per-host availability; H8040, 11-11-2026) live in
+  [RussianTranslation/REUSE_MAP.md §7](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/REUSE_MAP.md).
 - Before redistributing anything from here, check
   [REFERENCES.md](https://github.com/gasyoun/SanskritLexicography/blob/master/REFERENCES.md)
   (asset provenance), the per-dataset data statements (e.g.
