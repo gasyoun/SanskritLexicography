@@ -516,6 +516,7 @@ sweep with verbatim sample rows + git first-introduced dates (03–04-07-2026)._
 ## Related documents (awareness weave H1728)
 
 - Org repo census twin: [MASTER_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/MASTER_INDEX.md)
+- Sanskrit analysis/parsing algorithms survey (H8049, 11-11-2026): inventory + reuse-verдикты трёх слоёв (ядро по уровням · справочный · мета), 7 спот-ранов, внешний кросс-референс (DharmaMitra/vidyut/SCL/UD/Heritage), пробелы (синтаксис = build gap №1) — [SANSKRIT_ANALYSIS_ALGORITHMS_SURVEY_2026-11-11.md](https://github.com/gasyoun/Uprava/blob/main/reports/SANSKRIT_ANALYSIS_ALGORITHMS_SURVEY_2026-11-11.md) — читать перед построением или переиспользованием любого компонента разбора санскрита
 
 
 _Dr. Mārcis Gasūns_
