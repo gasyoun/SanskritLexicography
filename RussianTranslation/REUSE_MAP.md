@@ -181,8 +181,9 @@ the withdrawn phrasing can never reappear (H8040 regression check).
 
 - Registry `path_by_host.windows` names `C:\Users\user\...` (the `user` estate
   root) — that root does not exist on this host.
-- H1998 `D:\Backups` mirror — no `D:` drive on this host (mirror exists
-  elsewhere, unverified here).
+- H1998 `D:\Backups` mirror — the `D:` drive DOES exist on this host, but has
+  no `Backups` directory (probe 11-11-2026: `D:\` lists entries,
+  `D:\Backups*` empty); the mirror is therefore absent here and unverified.
 - Off-machine `samskrtam.ru/guhya/corpus_lexicon.jsonl` — unreachable since
   25-10-2026 (FTPS `530 Login incorrect`, password rotated), not re-verified.
 - Working verified copy on this host after the recipe above:
