@@ -243,11 +243,36 @@ def load_grades(path):
     return grades
 
 
+def missing_input_message(path):
+    """H8040 — restore-oriented guidance for an absent corpus_lexicon.jsonl.
+
+    The pre-H8040 message told the operator to "build it first with
+    build_corpus_lexicon.py", which CONFLICTS with the Uprava
+    shadow_assets.jsonl row `corpus_lexicon`: the 1,093,391-row DeepSeek
+    alignment is consume-only, NOT rebuildable (the API config was env-only —
+    no reproducible regeneration exists). selftest() asserts the rebuild
+    phrasing stays out of this message (the missing-input regression check).
+    """
+    return (
+        'input not found: %s\n'
+        'corpus_lexicon.jsonl is gitignored CONSUME-ONLY data and is NOT\n'
+        'rebuildable (Uprava shadow_assets.jsonl row `corpus_lexicon`).\n'
+        'Restore from an authorized copy instead:\n'
+        '  git -C <pwg-ru-data clone> lfs pull --include=corpus/corpus_lexicon.jsonl\n'
+        '  # then: python build_tmx.py build --in <pwg-ru-data>/corpus/corpus_lexicon.jsonl\n'
+        'Verify before use: size 290543363 bytes; sha256\n'
+        '  9f3d852f1f1424c275af2cc1823dab1b561e649320e597d3cab013068ccc4072\n'
+        'Other authorized copies: the H1998 D:\\Backups mirror (host-dependent);\n'
+        'the off-machine samskrtam.ru/guhya copy (FTPS credentials rotated,\n'
+        're-verification blocked as of 25-10-2026).\n'
+        'Full recipe + receipts: RussianTranslation/REUSE_MAP.md §7 (H8040).'
+    ) % path
+
+
 def build(in_path, out_path, sample=None, grade=DEFAULT_GRADE,
           modality=DEFAULT_MODALITY, grades_path=None, l0_path=None):
     if not os.path.exists(in_path):
-        sys.exit('input not found: %s\n(corpus_lexicon.jsonl is gitignored; build it '
-                 'first with build_corpus_lexicon.py)' % in_path)
+        sys.exit(missing_input_message(in_path))
     grades = load_grades(grades_path)
     units = list(iter_units(in_path))
     if sample is not None:
@@ -417,8 +442,28 @@ def selftest():
                   'sa': 'yogaḥ', 'ru': 'йога', 'work': 'w', 'passage': '1'}
     wprops = dict(re.findall(r'<prop type="([^"]+)">([^<]*)</prop>', l0_tu_xml(written_l0)))
     assert wprops.get('modality') == 'written' and 't_start' not in wprops, wprops
+
+    # H8040 missing-input regression check: an absent corpus must abort with
+    # RESTORE guidance (LFS recipe + size + sha256 receipt) and NEVER the
+    # withdrawn "build it first" rebuild advice — corpus_lexicon.jsonl is
+    # consume-only / NOT rebuildable (shadow_assets row), so a reintroduced
+    # rebuild hint is a fail, not a hint.
+    try:
+        build(os.path.join(d, 'absent_corpus_lexicon.jsonl'), out)
+    except SystemExit as e:
+        msg = str(e)
+        assert 'build it first' not in msg, \
+            'withdrawn rebuild advice reappeared in missing-input message: %r' % msg
+        assert 'NOT' in msg and 'rebuildable' in msg, \
+            'missing consume-only/NOT-rebuildable statement: %r' % msg
+        assert 'lfs pull' in msg and '290543363' in msg and '9f3d852f' in msg, \
+            'restore recipe or verification receipt missing: %r' % msg
+    else:
+        raise AssertionError('missing corpus input did not abort the build')
+
     assert assert_oral_cap(), 'oral_cap unit checks'
-    print('build_tmx selftest OK -- 3/6 rows kept, escaping + props + validation + oral L0 clean')
+    print('build_tmx selftest OK -- 3/6 rows kept, escaping + props + validation + '
+          'oral L0 clean, H8040 restore-message regression check')
     return 0
 
 

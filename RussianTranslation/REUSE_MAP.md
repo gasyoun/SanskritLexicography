@@ -1,6 +1,6 @@
 # pwg_ru — Russian reuse-source map
 
-_Created: 05-07-2026 · Last updated: 26-07-2026_
+_Created: 05-07-2026 · Last updated: 11-11-2026_
 
 Canonical inventory of every Russian Sa→Ru reuse asset available to the `pwg_ru`
 (PWG→RU) pipeline, and how to consume each — written so no future session
@@ -75,6 +75,12 @@ for the full reasoning:
 (read-only, FTS). This is the corpus-example signal in every `build_card()`
 output, not a dictionary lookup. See [`SAMUDRA_INTEGRATION.md`](SAMUDRA_INTEGRATION.md).
 
+**Since H8040 (11-11-2026):** the lexicon is consume-only and **NOT
+rebuildable** — the DeepSeek alignment API config was env-only, so no
+reproducible regeneration exists. If `src/corpus_lexicon.jsonl` is absent
+(normal for a fresh checkout), restore the verified mirror bytes per
+[§7](#7-availability--verified-restore-h8040-11-11-2026) — do not rebuild.
+
 ## 4. Running-text sources — context lookup only, NOT translation memory
 
 SamudraManthanam's FTS index over monographs/encyclopedias (Сыркин, Статьи
@@ -127,6 +133,69 @@ currently does with these sources — H186 is the tracked plan to go further.
   — weak tertiary machine Sa→Ru signal; spot-check quality before any use,
   never treat as authoritative.
 - **chandas** — prosody data, not a gloss source.
+
+## 7. Availability & verified restore (H8040, 11-11-2026)
+
+The consumer-path copies (`RussianTranslation/src/*.jsonl`) are gitignored and
+routinely absent in a fresh checkout. An 11-11-2026 audit found
+`src/corpus_lexicon.jsonl` and the seven authority/specialist sources
+(`koch`, `kna`, `fri`, `smirnov`, `kow`, `grin12`, `grin3`) absent on the
+COMPUTER host — **absence at the consumer path is not loss**: every one of
+these files is mirrored as a Git-LFS object in the private
+[`gasyoun/pwg-ru-data`](https://github.com/gasyoun/pwg-ru-data) repo under
+`corpus/`.
+
+**Restore recipe** (each file, verified on the COMPUTER host 11-11-2026):
+
+```sh
+# from any clone/worktree of gasyoun/pwg-ru-data (git-lfs >= 3.x required)
+git lfs pull --include=corpus/corpus_lexicon.jsonl          # 290 MB corpus
+git lfs pull --include=corpus/koch.jsonl,corpus/kna.jsonl,corpus/fri.jsonl,\
+corpus/smirnov.jsonl,corpus/kow.jsonl,corpus/grin12.jsonl,corpus/grin3.jsonl
+# consumer default path (build_tmx --in default, corpus_gate src/*.jsonl):
+#   copy (or symlink) the restored files into RussianTranslation/src/
+```
+
+**Verification receipts (11-11-2026):**
+
+| File | Bytes | SHA-256 | Verdict |
+|---|---|---|---|
+| `corpus_lexicon.jsonl` | 290,543,363 | `9f3d852f1f1424c275af2cc1823dab1b561e649320e597d3cab013068ccc4072` | byte-identical to Uprava `shadow_assets.jsonl` row `corpus_lexicon` (size + digest both match) |
+| `koch/kna/fri/smirnov/kow/grin12/grin3.jsonl` | see `git lfs ls-files -l` | per-LFS pointer oid | restored; `corpus_gate.evidence_status()` → `ok`, all 5 INDEP+REF + 2 SPECIALIST present |
+
+Consumer demonstration (same date): `python src/build_tmx.py build --in
+<pwg-ru-data>/corpus/corpus_lexicon.jsonl --sample 500` →
+`validate: OK — 500 <tu>, langs=ru+sa-slp1, well-formed TMX 1.4b` (exit 0), one
+provenance-bearing record `tuid=cl-1229f39bdd15ee05` (`work=01_atharvaveda`,
+`passage=1.4`) round-tripped with full props; restricted Russian bytes stayed
+in the gitignored TMX only. `python src/corpus_gate.py lookup rAma` → 4
+independent + 2 specialist glosses, `evidence_status=ok`.
+
+**Do not rebuild the corpus.** It is consume-only / NOT rebuildable (shadow
+registry status; see §3). `build_tmx.py`'s former missing-input advice
+("build it first with build_corpus_lexicon.py") conflicted with that status and
+was replaced by the restore recipe above; `build_tmx.py selftest` now asserts
+the withdrawn phrasing can never reappear (H8040 regression check).
+
+**Host availability, honestly** (recorded 11-11-2026, COMPUTER host):
+
+- Registry `path_by_host.windows` names `C:\Users\user\...` (the `user` estate
+  root) — that root does not exist on this host.
+- H1998 `D:\Backups` mirror — the `D:` drive DOES exist on this host, but has
+  no `Backups` directory (probe 11-11-2026: `D:\` lists entries,
+  `D:\Backups*` empty); the mirror is therefore absent here and unverified.
+- Off-machine `samskrtam.ru/guhya/corpus_lexicon.jsonl` — unreachable since
+  25-10-2026 (FTPS `530 Login incorrect`, password rotated), not re-verified.
+- Working verified copy on this host after the recipe above:
+  `GitHub-worktrees/pwg-ru-data-h5937/corpus/corpus_lexicon.jsonl`.
+- The five `build_src.py` dictionaries remain *additionally* rebuildable where
+  their upstream inputs exist (SamudraManthanam
+  `web/corpus_builder/jsonl/{kochergina,kossovich,knauer,frish,slovar-smirnova}.jsonl`
+  — present on this host). For `grin12`/`grin3`, `build_glossaries.py` needs the
+  raw `Data/*.txt` name-glossaries — **absent on this host** (no
+  `SamudraManthanam/Data/` directory at all), so here the LFS mirror is the only
+  route for those two. Restoring the hash-checkable mirror bytes is the cheaper
+  route anyway.
 
 ## Registration
 

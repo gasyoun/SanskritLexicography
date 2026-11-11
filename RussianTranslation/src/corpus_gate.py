@@ -137,6 +137,37 @@ def evidence_status():
     return 'ok' if any(c in SOURCES_PRESENT for c in INDEP) else 'evidence_unavailable'
 
 
+def missing_sources_diagnostic():
+    """(missing_codes, note) — H8040 honest host-availability diagnostic.
+
+    Every source jsonl read here is gitignored, so a fresh checkout (or a host
+    that never restored them) silently yields zero rows. FL7 made that
+    machine-readable (SOURCES_PRESENT / evidence_status); this names the
+    ABSENT files and the verified restore route at the CLI surface, so
+    "sources missing on this host" can never be misread as "headword
+    uncovered". Restore recipe verified 11-11-2026: the same bytes are
+    Git-LFS mirrors in gasyoun/pwg-ru-data `corpus/*.jsonl` —
+      git -C <pwg-ru-data clone> lfs pull --include=corpus/<code>.jsonl
+    Local rebuilds remain possible only where the upstream inputs exist:
+    build_src.py from SamudraManthanam web/corpus_builder/jsonl (present on
+    this host); grin12/grin3 via build_glossaries.py need the raw Data/*.txt
+    name-glossaries (ABSENT on this host as of 11-11-2026, so for those two
+    the mirror is the only route). Full receipts:
+    RussianTranslation/REUSE_MAP.md §7 (H8040)."""
+    expected = INDEP + [REF] + SPECIALIST
+    missing = [c for c in expected
+               if not os.path.exists(os.path.join(HERE, c + '.jsonl'))]
+    if not missing:
+        return [], ''
+    note = ('MISSING source jsonl at consumer path: %s — restore per '
+            'REUSE_MAP.md §7 (pwg-ru-data Git-LFS mirror, or rebuild via '
+            'build_src.py / build_glossaries.py where the upstream inputs '
+            'exist). Until restored, the affected signal is UNAVAILABLE, not '
+            'empty (evidence_status=%s).'
+            ) % (', '.join(missing), evidence_status())
+    return missing, note
+
+
 def _iter_source_rows(codes, track_present=False):
     """Yield (code, parsed_row) for every row of every present source jsonl."""
     for code in codes:
@@ -528,6 +559,11 @@ def cmd_lookup(idx, args):
     indep, kow = lookup(idx, key1, key2)
     print('PWG headword: %s (form_key %s)' % (key1, form_key(key1)))
     print('IAST: %s | search: %s' % (''.join(_S2I.get(c, c) for c in form_key(key1)), slp1_to_ascii(key1)))
+    # H8040: say so when source jsonls were never restored on THIS host, before
+    # any zero-gloss output can be misread as an uncovered headword.
+    _missing, note = missing_sources_diagnostic()
+    if note:
+        print('\n[availability] %s' % note)
     print('\nindependent glosses (%d):' % len(indep))
     for g in indep:
         print('  [%s] %s' % (g['source'], g['gloss'][:160]))
