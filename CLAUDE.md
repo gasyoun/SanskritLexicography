@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 06-08-2026 · Last updated: 30-10-2026 (H7474 SLA refresh — budget slim back to ≤4000 tok; dead worktree pointer fixed; claims re-verified)_
+_Created: 06-08-2026 · Last updated: 14-11-2026 (YE4 SLA refresh — offline pins re-collected 269/13 files; scorecard-weekly named; claims re-verified)_
 
 This file guides Claude Code in this repository.
 
@@ -21,23 +21,26 @@ pipelines under
 [`RussianTranslation/src/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/src),
 the headword tooling in [`HeadwordLists/`](https://github.com/gasyoun/SanskritLexicography/tree/master/HeadwordLists) and the site builder
 [`docs_site/build_site.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/docs_site/build_site.py). Treat
-as **hybrid**: work spans data/docs and pipeline code. Orientation by
+as **hybrid** (data/docs + pipeline code). Orientation by
 audience: [`docs/manuals/`](https://github.com/gasyoun/SanskritLexicography/tree/master/docs/manuals); full CI/pre-commit/hook and
 dashboard inventory: [repo primer](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/repo-primer.md).
 
 No single top-level build; CI
 ([`.github/workflows/ci.yml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/ci.yml))
 runs docs-site pytest plus an **offline contract-pins** job (H4353) running
-[`tests/run_offline_suite.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/run_offline_suite.py) — **222 pins** over the 62 in-scope
-modules outside `RussianTranslation`, network off, fixtures under
+[`tests/run_offline_suite.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/run_offline_suite.py) — **269 pins** (13 pytest
+files after the H7241 window_selftest split; re-collected 14-11-2026) over the
+in-scope modules outside `RussianTranslation`, network off, fixtures under
 `tests/fixtures` only, literal record-count floors per headword list
 (evidence: [`tests/OFFLINE_CONTRACT_PINS_08-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/OFFLINE_CONTRACT_PINS_08-09-2026.md)).
 **Verify the pin count, never retype it** (H5426): `python
 tests/run_offline_suite.py --collect-only -q` must sum to the number on this
-line; re-derive the module census (62) from that evidence doc before quoting
+line; re-derive the module census from that evidence doc before quoting
 it. **Regenerating a list or changing a parser updates the pinned
 floor/vector in the same PR** — a shrink or silent contract change fails CI
-by design.
+by design. A weekly OSSF Scorecard badge workflow
+([scorecard-weekly.yml](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/scorecard-weekly.yml),
+Saturdays 01:30 UTC, #2507) runs alongside.
 
 ## HeadwordLists/ — naming and key semantics
 
@@ -57,7 +60,7 @@ printed form (matching/dedup/joins); key2 = closer to printed source
 Dictionary codes: AP, BHS, BUR, CAE, CCS, GRA, INM, MD, MW, PD, PWG, PWK, SCH,
 SKD, VCP, VEI (table: [`README.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/README.md)).
 
-**Tooling routes (wired H5790, 03-10-2026):** entry-level census/anatomy of
+**Tooling routes (wired H5790):** entry-level census/anatomy of
 an export goes through [`/entry-anatomy`](https://github.com/gasyoun/claude-config/blob/main/commands/entry-anatomy.md);
 regenerating `now-2026/` from live csl-orig and diffing against the frozen
 `then-2014/` snapshot is [`/headword-export-regen`](https://github.com/gasyoun/claude-config/blob/main/commands/headword-export-regen.md);
@@ -82,12 +85,12 @@ Two Keep-a-Changelog files share the **same** version series;
 [RussianTranslation/CHANGELOG.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/CHANGELOG.md) (pwg_ru). Gate:
 [`Uprava/tools/cut_release.py`](https://github.com/gasyoun/Uprava/blob/main/tools/cut_release.py) unions both files, `CITATION.cff`
 and `git ls-remote --tags` before writing a heading; a used
-`--version` fails exit 5; auto-bump stops after 5 tries. **Do not delete one
+`--version` fails exit 5. **Do not delete one
 changelog to resolve a collision.**
 
 **Windows alias.** `CHANGELOG.md`/`changelog.md` are the same NTFS file; git
 tracks one spelling — always `git add` the path `git ls-files` reports
-(Uprava FINDINGS §74/§100/§173/§348). `ReverseDictionary/` and
+(Uprava FINDINGS §74+). `ReverseDictionary/` and
 `Digital_Sanskrit_Lexicography-BOOK/` changelogs keep an independent `1.0.x`
 series, **not** in this union.
 
@@ -109,7 +112,7 @@ Org rule "csl-orig files never have BOMs" **does not hold here**: some
 exports carry a UTF-8 BOM, some don't (e.g.
 [`MW-unique-key1-193978.txt`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/then-2014/MW-unique-key1-193978.txt) **has** BOM `EF BB BF`; its key2 sibling does
 **not**). Before transforming a file: `head -c 3 file | xxd`, preserve the
-existing BOM state on write, never silently add/strip one. All UTF-8.
+existing BOM state on write, never silently add/strip one.
 
 A repo-wide gate enforces it: [`tools/utf8_gate.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tools/utf8_gate.py)
 refuses a tracked text file that is not valid UTF-8 (content-based binary
@@ -126,8 +129,7 @@ Files too large for an editor: `sanhw1.xlsx`,
 [`mw_ru.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/mw_ru.md) documents how the AI Russian
 translation of Monier-Williams was produced (287,358 cards, multi-pass,
 multi-model; per-stage prompts in
-[`mw_ru_prompts/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/mw_ru_prompts),
-full stage detail in the [repo primer](https://github.com/gasyoun/SanskritLexicography/blob/master/docs/agents/repo-primer.md)). **Key format
+[`mw_ru_prompts/`](https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation/mw_ru_prompts)). **Key format
 invariant:** only the English "wrapper" prose is translated; Sanskrit
 (`<s>`), grammar abbreviations (`<gram>`), source refs (`<ls>`) stay
 untouched deliberately. Most content is in Russian.
@@ -190,7 +192,7 @@ or onomasticon-first [h4750_cyr_slp1_backfill.py](https://github.com/gasyoun/San
 
 ## Authoring conventions
 
-- Markdown is the primary authored format; keep it lint-clean and link-check-clean (CI above).
+- Markdown is the primary authored format; keep it lint-clean and link-check-clean.
   `CHANGELOG.md` uses dated maintenance snapshots; upcoming work stays under
   `[Unreleased]` until dated.
 - [`ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_ATLAS_FAIR_PUBLICATIONS_2026_2027.md) frames the research
@@ -211,7 +213,7 @@ or onomasticon-first [h4750_cyr_slp1_backfill.py](https://github.com/gasyoun/San
 
 ## Operational hazard notes
 
-Destructive-risk facts (do-not-rerun scripts, decoys, traps) are registered
+Destructive-risk facts are registered
 centrally in the org-private hub
 ([Uprava DANGER_FACTS.md](https://github.com/gasyoun/Uprava/blob/main/DANGER_FACTS.md), org members only); the public-safe subset is
 mirrored in the generated block of
@@ -225,8 +227,8 @@ Committed memory store: [.claude/projects/SanskritLexicography/memory/](https://
 
 The shared main tree is guarded: `.githooks/pre-commit` blocks main-tree
 commits (escape `ALLOW_MAIN_TREE_COMMIT=1`, solo only) and `.githooks/post-checkout`
-auto-reverts a foreign branch-switch back to `master` (shared-tree branch-switch guard,
-03-10-2026, PR #2375; escape `ALLOW_MAIN_TREE_CHECKOUT=1`). Work in a session-unique
+auto-reverts a foreign branch-switch back to `master` (PR #2375;
+escape `ALLOW_MAIN_TREE_CHECKOUT=1`). Work in a session-unique
 worktree; `core.hooksPath=.githooks`.
 
 _Dr. Mārcis Gasūns_
