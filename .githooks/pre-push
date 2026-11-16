@@ -112,6 +112,33 @@ log_firing() { # $1 = guard, $2 = verdict, $3 = detail
         >/dev/null 2>&1 || true
 }
 
+url_target_checked=0
+    # URL-target normalization (H8360 port from Uprava .githooks/pre-push,
+    # MG option (a) ruling 15-11-2026): `git push <URL> HEAD:main` makes $1 a
+    # URL, and "$URL/<branch>" is not a ref - every gate below that consumes
+    # $tracking fails closed with "fatal: invalid object name 'https'". For a
+    # URL target, refresh the origin tracking refs FROM THE URL (the push
+    # target is the witnessing authority) and compare against origin/<branch>
+    # instead. One fetch per push, not per ref; forced, because tracking refs
+    # are caches. If the fetch fails, fail closed: a URL push whose tip cannot
+    # be witnessed is the blind-push class these gates exist to stop. A named
+    # remote takes the case's default arm and every line below is untouched.
+    if [ "$url_target_checked" -ne 1 ]; then
+        url_target_checked=1
+        case "$remote_name" in
+            *:*)
+                if git fetch --no-tags --quiet "$remote_name" \
+                        "+refs/heads/*:refs/remotes/origin/*" 2>/dev/null; then
+                    echo "pre-push: URL push target - gates compare against refs/remotes/origin/* (refreshed from the URL)" >&2
+                    remote_name="origin"
+                else
+                    echo "pre-push: BLOCKED - the push target is a URL and fetching its branches failed; the gates cannot witness the remote tip." >&2
+                    echo "  fix: push via a named remote (git remote add ...), or repair connectivity and retry." >&2
+                    exit 1
+                fi
+                ;;
+        esac
+    fi
 while read -r local_ref local_sha remote_ref remote_sha; do
     # H3249: a hand-pushed REAL vX.Y.Z tag must drop matching reserve-vX.Y.Z.
     # This is the path `--tag` already covered; `--apply` then `git push origin
