@@ -1,0 +1,11 @@
+# PWG — переводы статей (RU / EN)
+
+> Russian and English translations of articles about the Petersburg Sanskrit-German Dictionary (PWG), served as static HTML pages.
+
+## Articles
+
+- [Home — article index](https://gasyoun.github.io/SanskritLexicography/)
+- [Abbreviations](https://gasyoun.github.io/SanskritLexicography/abbreviations.html)
+- [Government (state involvement)](https://gasyoun.github.io/SanskritLexicography/government.html)
+
+Source: https://github.com/gasyoun/SanskritLexicography
