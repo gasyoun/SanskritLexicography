@@ -1,0 +1,9 @@
+# samāsa-cakra — колесо санскритских композитов
+
+> Interactive wheel of Sanskrit compounds: 4 classes, 10 families, 58 subtypes with examples and vigrahas; IAST and Devanagari; Klammerdiagramm bracket schemes.
+
+## Pages
+
+- [samāsa-cakra app (single page)](https://gasyoun.github.io/SamasaChakram/)
+
+Source: https://github.com/gasyoun/SamasaChakram
