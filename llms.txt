@@ -1,9 +1,11 @@
-# samāsa-cakra — колесо санскритских композитов
+# PWG — переводы статей (RU / EN)
 
-> Interactive wheel of Sanskrit compounds: 4 classes, 10 families, 58 subtypes with examples and vigrahas; IAST and Devanagari; Klammerdiagramm bracket schemes.
+> Russian and English translations of articles about the Petersburg Sanskrit-German Dictionary (PWG), served as static HTML pages.
 
-## Pages
+## Articles
 
-- [samāsa-cakra app (single page)](https://gasyoun.github.io/SamasaChakram/)
+- [Home — article index](https://gasyoun.github.io/SanskritLexicography/)
+- [Abbreviations](https://gasyoun.github.io/SanskritLexicography/abbreviations.html)
+- [Government (state involvement)](https://gasyoun.github.io/SanskritLexicography/government.html)
 
-Source: https://github.com/gasyoun/SamasaChakram
+Source: https://github.com/gasyoun/SanskritLexicography
