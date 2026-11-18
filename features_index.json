@@ -1069,6 +1069,13 @@
     "repo": "gasyoun/Uprava"
   },
   {
+    "id": "L22",
+    "section": "IV. Tools — import the toolkit, call the external stacks",
+    "title": "Offline-first Sanskrit e-text scanner (H8429)",
+    "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/tools/offline_sanskrit_scanner/README.md",
+    "repo": "gasyoun/SanskritLexicography"
+  },
+  {
     "id": "L8",
     "section": "IV. Tools — import the toolkit, call the external stacks",
     "title": "ZettelkastenWiki",
