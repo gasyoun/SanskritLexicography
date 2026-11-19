@@ -1,7 +1,7 @@
 {
   "schema": "review-lock/v1",
   "sheet_id": "renou-pilot-v2-2026-07-19",
-  "content_hash": "sha256:5e30da718b5bcadab7b85ad283b93f2c6c0cf01914a17228d5f0deb5183e0dbf",
+  "content_hash": "sha256:19dd2ead84740d632fdadddf94c77571417214992fe4f307bd7b7373c9dc06b4",
   "generated": "2026-07-19",
   "gate": null,
   "n_items": 70,
@@ -78,7 +78,7 @@
     "S0-070"
   ],
   "source_html": "sanskritlexicography-renou-hypotheses_pilot_review.html",
-  "mode": "retro-unstamped",
-  "created": "2026-07-25",
+  "mode": "stamped",
+  "created": "2026-11-19",
   "tool": "review_binding.py (H1404 binding standard)"
 }

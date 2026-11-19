@@ -1,7 +1,7 @@
 {
   "schema": "review-lock/v1",
   "sheet_id": "rv_divergence_gate_2026-07-30-v5",
-  "content_hash": "sha256:b3e2e44c8761f0005cc6fb1be8537209bcbd8c2af7de71e8c4e9015c34c86ee6",
+  "content_hash": "sha256:5b0425d174185305920aa86359c880df261946b6b4213cf29251ef8f1eaccd3d",
   "generated": "2026-07-30",
   "gate": "RV-DIVERGENCE",
   "n_items": 100,
@@ -109,6 +109,6 @@
   ],
   "source_html": "rv_divergence_gate_2026-07-30-v5.html",
   "mode": "stamped",
-  "created": "2026-07-30",
+  "created": "2026-11-19",
   "tool": "review_binding.py (H1404 binding standard)"
 }
