@@ -1,16 +1,16 @@
 {
   "schema": "review-lock/v1",
   "sheet_id": "h215-gold-full-320-2026-08-14",
-  "content_hash": "sha256:93a56e117b7c469526be9945c28b9fbc374227a52e5c418d474a9b092482c9c1",
+  "content_hash": "sha256:e4083a2df33c2cafa3a9f7244e69d0c2ae1af6f973e9077ecf1c14f35aabf199",
   "packset": {
     "pack_size": 10,
     "n_packs": 32,
-    "packset_hash": "sha256:93a56e117b7c469526be9945c28b9fbc374227a52e5c418d474a9b092482c9c1",
-    "parent_hash": "sha256:af20ea16872317619c15e9dd7159593481a6c8058163e7cd4fa47a8ecf6afca2",
+    "packset_hash": "sha256:e4083a2df33c2cafa3a9f7244e69d0c2ae1af6f973e9077ecf1c14f35aabf199",
+    "parent_hash": "sha256:77effc48e643106ad8567aab887577e5e3b259779f33cca6cbceb2711a2a2207",
     "packs": [
       {
         "name": "01",
-        "content_hash": "sha256:eb670bfbacc093de664f4512eeb1e60330a8ed520a96a8737bc04dfc715d030c",
+        "content_hash": "sha256:4072c8dc420cfe2cfb9ce635569b635380ee0ee4b8fd20f4a6d5accf8c1652e2",
         "n_items": 10,
         "ids": [
           "5",
@@ -27,7 +27,7 @@
       },
       {
         "name": "02",
-        "content_hash": "sha256:9dab8255466786c8b8613bebacd054f1d62dee790e96cdccfe1b24058ba8bf0d",
+        "content_hash": "sha256:f301d2711bea515c9dc6682b7e0154ff89545c0a4a6341ef11e80de9a3e772e1",
         "n_items": 10,
         "ids": [
           "18",
@@ -44,7 +44,7 @@
       },
       {
         "name": "03",
-        "content_hash": "sha256:6a2ab74f5d62f3777cd82bb920d82c3e274693dce8d36697515da1446b16e3bf",
+        "content_hash": "sha256:9bfd94608089e52966ad4b1d14057aaff80ca901b8c3df63613b9e478c3a0663",
         "n_items": 10,
         "ids": [
           "24",
@@ -61,7 +61,7 @@
       },
       {
         "name": "04",
-        "content_hash": "sha256:d4bac980004c277a618c51b2c14278dd7e0a7ac19919405e5186d13d6a9efa60",
+        "content_hash": "sha256:063ccf98e24ad9d544d7137e24a3a84ef716a1dc03d50a5772491b10b3cfb594",
         "n_items": 10,
         "ids": [
           "14",
@@ -78,7 +78,7 @@
       },
       {
         "name": "05",
-        "content_hash": "sha256:037a5ad8c0868997122ff73cc75c7ef541f95605b859504b6a09f92b605ab386",
+        "content_hash": "sha256:f11714fad7fadcf5abf2fd7097669db4ce728460cafa257dc4e602d3178c3d70",
         "n_items": 10,
         "ids": [
           "73",
@@ -95,7 +95,7 @@
       },
       {
         "name": "06",
-        "content_hash": "sha256:ae978058a0a5d54884c02dcbf1dcbe429226715abc95d162aa0339249568496b",
+        "content_hash": "sha256:f4f47801c599927c8274905cbcb5fb503193326836cb47efd5a90bc5461878da",
         "n_items": 10,
         "ids": [
           "46",
@@ -112,7 +112,7 @@
       },
       {
         "name": "07",
-        "content_hash": "sha256:41d69247d2dd0f6a3ca3865b2d99a94990487d347c2a8ec4b4e70c8b4e43ac48",
+        "content_hash": "sha256:277c5f8e74f03b691b7c6a9aefe9e2488778937d34357c0de4957b3684f76c0d",
         "n_items": 10,
         "ids": [
           "66",
@@ -129,7 +129,7 @@
       },
       {
         "name": "08",
-        "content_hash": "sha256:a16a79f8c90917f4b24ddde0a8132798b743edc7bc7c76d8c4b1c786bd5f216b",
+        "content_hash": "sha256:f4d33587b412320c58eff6707330abd7ab68cbf634c64305363fc4b4760c1f63",
         "n_items": 10,
         "ids": [
           "45",
@@ -146,7 +146,7 @@
       },
       {
         "name": "09",
-        "content_hash": "sha256:3ca01e5b03b3e250dd21c745e5f6613da043702e0a21845b99bab757e98ce3e4",
+        "content_hash": "sha256:e2225cb9e9308ba0cfe39e968c908e8439cfc12a7fa3382c856b4fc1c8e6f48c",
         "n_items": 10,
         "ids": [
           "88",
@@ -163,7 +163,7 @@
       },
       {
         "name": "10",
-        "content_hash": "sha256:f9c19968acafd3677d9f046700a7e195d58d65168eb53213e510ba3093aa56d9",
+        "content_hash": "sha256:af3d3e79efb4475485553206fdd0ebd2b5c65c8422fc7d846d69c6ebe3eaa585",
         "n_items": 10,
         "ids": [
           "83",
@@ -180,7 +180,7 @@
       },
       {
         "name": "11",
-        "content_hash": "sha256:0f7579fce472b3ec92585d0cc7fcc7a1d5778d273416c537d1894ed19c2afbb0",
+        "content_hash": "sha256:30160a9bb798d4f2aba9a798b742d6b325dcab49fc489ecabff6ba886d961565",
         "n_items": 10,
         "ids": [
           "102",
@@ -197,7 +197,7 @@
       },
       {
         "name": "12",
-        "content_hash": "sha256:d12077ed19f72c1e0a0d511436e60989188f9631e843c884d39fd746dfb93363",
+        "content_hash": "sha256:40069ebd27582bf0037e33fade30bc0ef23e4be0f65f996231920dbc39466155",
         "n_items": 10,
         "ids": [
           "80",
@@ -214,7 +214,7 @@
       },
       {
         "name": "13",
-        "content_hash": "sha256:432a8c566a89a3b678bc00a25e46cc8281ac0f7f79118b6e28c03b1e962cb012",
+        "content_hash": "sha256:e1a9e5667469f9ca1c245ed158f7bfc9bf6b1f07ec4bd8c09ff6673a181e7506",
         "n_items": 10,
         "ids": [
           "129",
@@ -231,7 +231,7 @@
       },
       {
         "name": "14",
-        "content_hash": "sha256:3f2e6184fa6059c36e4967cbff89cf795352d409a50c1f51142be39336dfa488",
+        "content_hash": "sha256:f305e79bf394e112e76c76600aaef72243be7c93dd0d64839147d7e1efd7f311",
         "n_items": 10,
         "ids": [
           "106",
@@ -248,7 +248,7 @@
       },
       {
         "name": "15",
-        "content_hash": "sha256:83f19ae7f584477e692655f26db87fb73230258d771e0e8467794a053110cdf3",
+        "content_hash": "sha256:e8201aa5c83c817651967f21627f28bf342e63c851a23e56580774f9a84f4e13",
         "n_items": 10,
         "ids": [
           "150",
@@ -265,7 +265,7 @@
       },
       {
         "name": "16",
-        "content_hash": "sha256:52748b831711f8bf50ca12a1fce8de04f0c9a1f64f1056ec23d4a51863d4bbe2",
+        "content_hash": "sha256:1aa7d100138e972db83861a20ce1eee00a54d3cccef1c12c4b9bc85789ae349a",
         "n_items": 10,
         "ids": [
           "132",
@@ -282,7 +282,7 @@
       },
       {
         "name": "17",
-        "content_hash": "sha256:fbb5a47a722241cb070df080626a7eb2a4e45a59aba0bef9572c198a6cd569d8",
+        "content_hash": "sha256:3fa91008a46a60c8981ac3a753e9f0c7093ff37f8cc6ca137c156cd24db37b47",
         "n_items": 10,
         "ids": [
           "193",
@@ -299,7 +299,7 @@
       },
       {
         "name": "18",
-        "content_hash": "sha256:f32197daa6439bd4758ce09d302e2e64b9bcb475a62bee2ddd9199586a376ca3",
+        "content_hash": "sha256:e8a95e52ae2a09f3ee0bf41ca0b0f6d01a225a5557eccf1d169be47b2f97bec0",
         "n_items": 10,
         "ids": [
           "165",
@@ -316,7 +316,7 @@
       },
       {
         "name": "19",
-        "content_hash": "sha256:b4be74c0bad11d16410f35b75f271d30aaf85037575871919ce123670869e261",
+        "content_hash": "sha256:34b9a634af20610a5663742f31a58394187ada54d7d65c187f2c677ca78dbacd",
         "n_items": 10,
         "ids": [
           "162",
@@ -333,7 +333,7 @@
       },
       {
         "name": "20",
-        "content_hash": "sha256:3d8a2944878181ad3e55ac5a1032cd1dc3cb8472795cad59adc516b75f8890e0",
+        "content_hash": "sha256:e92aca0bdcffbd235a6162f3af13f1edc1de0f59fbf7c4222b36a23f8ed1eeed",
         "n_items": 10,
         "ids": [
           "197",
@@ -350,7 +350,7 @@
       },
       {
         "name": "21",
-        "content_hash": "sha256:63e8654b6c02212f7ffedd1dbcea8806e07c105549b5f2c99109979230927f0e",
+        "content_hash": "sha256:3596795cb09038c500dbc94dab0e4b0abb03443ebfc58d548cff878b2b165890",
         "n_items": 10,
         "ids": [
           "219",
@@ -367,7 +367,7 @@
       },
       {
         "name": "22",
-        "content_hash": "sha256:e4a32b0744be8cf2e7589ccdfd111ae59abc645c3b782872da05aa524cf8982e",
+        "content_hash": "sha256:76578310e45547ec5bb9dd614d37fd540bf987d6c16361d9a1031c24c522b9f6",
         "n_items": 10,
         "ids": [
           "189",
@@ -384,7 +384,7 @@
       },
       {
         "name": "23",
-        "content_hash": "sha256:ece82b905e80eb523db53eeaf1a63460daca92138c93a94b1825a51a8c497541",
+        "content_hash": "sha256:e0c716b2f7a84f63a7466504735c57cd0980e99c75fa16a3c21ce844913cd022",
         "n_items": 10,
         "ids": [
           "194",
@@ -401,7 +401,7 @@
       },
       {
         "name": "24",
-        "content_hash": "sha256:c3fb9340d6eb2ce6045e0710e8d41671b13d7934ec340d8780beb53b065dabe8",
+        "content_hash": "sha256:7c0281fa34ea7538cb7de5d6848e58d309a5f2641fe3f29d812b52258c64d3a9",
         "n_items": 10,
         "ids": [
           "241",
@@ -418,7 +418,7 @@
       },
       {
         "name": "25",
-        "content_hash": "sha256:87da820b9e97564e6aaac9747889d5da341dfa7c8e1eedbe6889f95b4ff775e7",
+        "content_hash": "sha256:880ee1e30c79fca373592cf8663568892a52d3273cd2dcf0bc048dc2d558f8a8",
         "n_items": 10,
         "ids": [
           "236",
@@ -435,7 +435,7 @@
       },
       {
         "name": "26",
-        "content_hash": "sha256:60abff451d1e39061a42cd9e1a5f266c48f8e4cc1641d4d28bcc47cd7e26915b",
+        "content_hash": "sha256:848c7f252c306fdcceb358c9fb706ca4d3249be9de4ecf10e236eaefcfd4375c",
         "n_items": 10,
         "ids": [
           "215",
@@ -452,7 +452,7 @@
       },
       {
         "name": "27",
-        "content_hash": "sha256:38a6def4f9f08b3bbc060adf07fdb873e7acf256453dadc91cf194ce17a49ad8",
+        "content_hash": "sha256:929816c4fe3be367f483244fae4da474503a86cea8b4973659c216a0f7c325e0",
         "n_items": 10,
         "ids": [
           "232",
@@ -469,7 +469,7 @@
       },
       {
         "name": "28",
-        "content_hash": "sha256:4226d2b603f170e9cfb345012c5e7932ea93820331364f3ecf1e57cec2de3f98",
+        "content_hash": "sha256:6f8ed882933845e07fb293dedcd5506788058fe7f6baa09f0bf721d34c2105ef",
         "n_items": 10,
         "ids": [
           "277",
@@ -486,7 +486,7 @@
       },
       {
         "name": "29",
-        "content_hash": "sha256:785b0337b5071e1cdc2e9845bcf31ff39480f82dc7bfdabd8cbee96f01e5af8a",
+        "content_hash": "sha256:7ef50d70abd68421dbf3f9194fb79fb158e34699dc9e23bbdf349c25f9fb41be",
         "n_items": 10,
         "ids": [
           "284",
@@ -503,7 +503,7 @@
       },
       {
         "name": "30",
-        "content_hash": "sha256:9081b4b21cce2bd3d41637eb3ff21223eb6217f8e38965b95d9033dae4a25c88",
+        "content_hash": "sha256:531b84b099981aebf3fd8bd4f1304c54ce97778a113725513ea4f013c6a4ad6c",
         "n_items": 10,
         "ids": [
           "278",
@@ -520,7 +520,7 @@
       },
       {
         "name": "31",
-        "content_hash": "sha256:bb86de4565b9cfba8ac622ce98e02e876376f598f23a8772f3d805dc677c0e05",
+        "content_hash": "sha256:7ce2eab27ad49d792d4b8b81ce57ce2afbf52a63bda655eb37098560314e6c01",
         "n_items": 10,
         "ids": [
           "274",
@@ -537,7 +537,7 @@
       },
       {
         "name": "32",
-        "content_hash": "sha256:2a93b194b8d4130c8a964360d08b02791a46e4426f226b61ecd0083702ba74af",
+        "content_hash": "sha256:bf23969e7c7f998a26dcec31487bdbde78fac143de8c0cb0f941c92fe6ba01a1",
         "n_items": 10,
         "ids": [
           "317",
@@ -881,6 +881,6 @@
   ],
   "source_html": "h215_gold_full_320_sheet.html",
   "mode": "stamped",
-  "created": "2026-08-18",
+  "created": "2026-11-19",
   "tool": "review_binding.py (H1404 binding standard; packsets H3098)"
 }
