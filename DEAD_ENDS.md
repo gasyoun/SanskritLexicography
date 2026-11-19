@@ -207,7 +207,7 @@ Don't retry unless: the translator's coverage actually crosses into Sū. 6 / Nid
 > **Source:** MG ruling 16-08-2026 · [H2863](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2863-Opus_SanskritLexicography_kochergina-guda-druzhinin-crosscheck_16.08.26.md) follow-up · 16-08-2026 · Opus 5 (`claude-opus-5`)
 
 
-### §15. Direct-Anthropic-API Batches transport probe (H4531) — abandoned on the credential
+### §16. Direct-Anthropic-API Batches transport probe (H4531) — abandoned on the credential
 
 🟠 ✍️ **Probing the Anthropic Message Batches API as a latency-immune, ~50 %-cost async transport for PWG→RU translation.**
 
