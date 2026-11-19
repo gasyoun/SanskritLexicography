@@ -1,6 +1,6 @@
 # DEAD_ENDS — the Sanskrit-data negative-results graveyard
 
-_Created: 08-07-2026 · Last updated: 05-09-2026_
+_Created: 08-07-2026 · Last updated: 19-11-2026_
 
 **Epistemic sibling of [`FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md).** FINDINGS is *confirmed-true*. This file holds the act FINDINGS cannot: **abandoning** an approach — a whole method that was tried and does not work, so the next session does not pay to rediscover the failure. Distinct from a single refuted hypothesis (that lives per-row in [`Uprava/QUESTIONS_LOG.md`](https://github.com/gasyoun/Uprava/blob/main/QUESTIONS_LOG.md)); a dead end is per-*approach*. One of the seven epistemic registries minted under [H356](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H356-Opus_csl-corrections_epistemic-sibling-registries_08.07.26.md). Its infra twin is [`Uprava/DEAD_ENDS.md`](https://github.com/gasyoun/Uprava/blob/main/DEAD_ENDS.md).
 
@@ -205,6 +205,22 @@ Don't retry unless: the translator's coverage actually crosses into Sū. 6 / Nid
 
 ↔ Interlinks: [§13](https://github.com/gasyoun/SanskritLexicography/blob/master/DEAD_ENDS.md) — same failure class, "no Russian translation to reuse, and none is expected". [FINDINGS §543](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) is the register-split finding this was meant to refine; [§546](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) is the on-disk gloss layer that partly substitutes for the lost lane.
 > **Source:** MG ruling 16-08-2026 · [H2863](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2863-Opus_SanskritLexicography_kochergina-guda-druzhinin-crosscheck_16.08.26.md) follow-up · 16-08-2026 · Opus 5 (`claude-opus-5`)
+
+
+### §16. Direct-Anthropic-API Batches transport probe (H4531) — abandoned on the credential
+
+🟠 ✍️ **Probing the Anthropic Message Batches API as a latency-immune, ~50 %-cost async transport for PWG→RU translation.**
+
+Failed because: **the credential will never exist.** MG ruling, 19-11-2026: *«There will be no anthropic api ever. Use it via openrouter key for nonexpensive tasks when allowed to»* — the direct-Anthropic-API arm of the lane is permanently dead, not merely blocked. The only key ever prepared authenticates (`authenticated: true`, the 15-09 401s are resolved) but has the entire `/v1/models` surface closed to it: a uniform 404 across `models.list`, `models.retrieve('claude-sonnet-5')` and a bogus-id control, with no base-URL override — so the zero-token model pre-check the paid arm requires before its first submit can never pass. The transport code itself is merged and healthy ([PR #2303](https://github.com/gasyoun/SanskritLexicography/pull/2303), offline gates green: window_selftest 225/225, lang_parity 112/112) — the lane is dead on the credential, not the code.
+
+Evidence: `h4531_auth_probe.py` verdict chain — 15-09 ×2 (`AuthenticationError:http_401`) and 19-11 (`authenticated: true` + `NotFoundError:http_404` on the models surface, probed from the prepared env file without ever printing the value); [H4531 re-probe + MG ruling notes](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4531-Opus_RussianTranslation_pwg-ru-messages-batches-api-probe_10.09.26.md).
+
+Don't retry unless: a Batches-shaped question reappears **and** OpenRouter exposes a batches-compatible surface at the allowed cost — route it through the OpenRouter key for non-expensive tasks, per the same ruling. **Do not** re-litigate the direct-Anthropic credential path: it failed on a dead key (Sep), a surface-closed key (Nov), and has now been ruled out by the principal.
+
+**What replaces it:** the headless CLI manifest-v2 synchronous route stays the production default (H1110); the original latency-blind-spot question ([speed-audit ledger #8 / action A8](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/PWG_RU_SPEED_ORCHESTRATION_BOTTLENECK_AUDIT_2026-07-20.md)) is closed by this ruling rather than by a measured GO/NO-GO — the honest verdict is NO-GO-unreachable, with the route graveyard ([Uprava/DEAD_ENDS.md](https://github.com/gasyoun/Uprava/blob/main/DEAD_ENDS.md), router.cheap NO-GO ×2) as the sibling evidence that this estate's cheap lanes route through aggregators.
+
+↔ Interlinks: [RUN_FREQ_MAX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/pilot/RUN_FREQ_MAX.md) — the synchronous route this lane tried to relieve · [H4531](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4531-Opus_RussianTranslation_pwg-ru-messages-batches-api-probe_10.09.26.md) — the handoff with the full probe history.
+> **Source:** MG ruling 19-11-2026 (chat, the §8 card #9 fork) · [H4531](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4531-Opus_RussianTranslation_pwg-ru-messages-batches-api-probe_10.09.26.md) · 19-11-2026 · GLM 5.3 (`glm-5.3`)
 
 
 _Dr. Mārcis Gasūns_
