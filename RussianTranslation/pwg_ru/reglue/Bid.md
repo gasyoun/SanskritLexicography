@@ -1,5 +1,4 @@
-_Created: 01-08-2026 · Last updated: 05-09-2026_
-
+_Created: 01-08-2026 · Last updated: 20-11-2026_
 Re-glue — Bid
 
 Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
@@ -9,20 +8,20 @@ Re-glue — Bid
 **1)** — *sam*
  1) раскалывать, разбивать, пробивать: *śiraḥ*
 [AV. 10,4,5.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av10.004.html#av10.004.05)
-[MBH. 8,3839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3839) = ≈Вульг. 8.76.19 = ≈крит. 08,54.17c *saṃbhinnajarjaritakoṣṭhaśiraḥkapāla*
+[MBH. 8,3839.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.3839) = [≈Вульг. 8.76.19](mbh/8.76.html#v19) = ≈крит. 08,54.17c *saṃbhinnajarjaritakoṣṭhaśiraḥkapāla*
 [SUŚR. 1,352,17.] *saṃbhinnacarmaghaṇṭāḥ (saṃbhinnamarma˚* [Бомбейская ред.])
-[MBH. 7,4565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4565) = ≈Вульг. 7.115.26 = ≈крит. 07,91.22c [8,499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.499) = ≈Вульг. 8.12.16 = ≈крит. 08,8.16a *saṃbhinnamaryāda* тот, кто пробил преграды
+[MBH. 7,4565.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.4565) = [≈Вульг. 7.115.26](mbh/7.115.html#v26) = ≈крит. 07,91.22c [8,499.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.499) = [≈Вульг. 8.12.16](mbh/8.12.html#v16) = ≈крит. 08,8.16a *saṃbhinnamaryāda* тот, кто пробил преграды
 [R. 2,49,5](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,49,5) ([46,7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,46,7) [GORR.]). [67,28.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,67,28) *asaṃbhinnāryamaryāda*
 [Spr. 5088.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?5088)
-[MBH. 15,383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.383) = ≈Вульг. 15.12.2 = ≈крит. 15,18.2a [2,2443](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2443) = ≈Вульг. 2.73.11 = ≈крит. 02,65.10a (где оба изд. ошибочно читают *asaṃbhinnārtha˚*). *saṃbhinnavṛtta* тот, кто прервал — оставил свой добродетельный образ жизни
-[12,788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.788) = ≈Вульг. 12.26.21 = ≈крит. 12,20.8c
-  — ʰ PW 1〉 расщеплять, взламывать, пробивать отверстие в чем-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь нее. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) = ≈Вульг. 6.92.30 = ≈крит. 06,88.27a ошибочно вм. *bhidyatām*), также в intransit. знач. трескаться, лопаться. *bhinna* разбитый, сломанный и т.д.
+[MBH. 15,383.](https://sanskrit-lexicon-scans.github.io/mbhcalc?15.383) = [≈Вульг. 15.12.2](mbh/15.12.html#v2) = ≈крит. 15,18.2a [2,2443](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2443) = [≈Вульг. 2.73.11](mbh/2.73.html#v11) = ≈крит. 02,65.10a (где оба изд. ошибочно читают *asaṃbhinnārtha˚*). *saṃbhinnavṛtta* тот, кто прервал — оставил свой добродетельный образ жизни
+[12,788.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.788) = [≈Вульг. 12.26.21](mbh/12.26.html#v21) = ≈крит. 12,20.8c
+  — ʰ PW 1〉 расщеплять, взламывать, пробивать отверстие в чем-либо, прокалывать, прорывать, взрывать, разрывать, разрезать. *setum*, *maryādām*, *sthitim*, *velām* прорывать плотину, преграды, берег. Планета или комета «прорывает» звезду, когда проходит сквозь нее. Pass. *bhidyate*, *˚ti* (метрически, но также у [BAUDH.] в [Comm. zu ĀPAST. ŚR. 5,29,12]; *bhindatām* [MBH. 6,4125](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.4125) = [≈Вульг. 6.92.30](mbh/6.92.html#v30) = ≈крит. 06,88.27a ошибочно вм. *bhidyatām*), также в intransit. знач. трескаться, лопаться. *bhinna* разбитый, сломанный и т.д.
   — ＋ PW 1〉 _Adj._ в конце Comp.
   — ＋ PW a〉 разбивающий, сокрушающий, прорывающий, пронзающий, поражающий (цель).
   — ＋ PW b〉 прогоняющий, уничтожающий.
 
 **1-sub-einen Damm durchbrechen)** [MED. n. 14.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,14) *setum, maryādām, velāṃ bhid* прорывать плотину, преграды, берег: *baddhaṃ setuṃ ko nu* (так следует читать) *bhindyāt*
-[MBH. 2,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = ≈Вульг. 2.75.5 = ≈крит. 02,66.31c *ambhasā bhidyate setuḥ*
+[MBH. 2,2483.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](mbh/2.75.html#v5) = ≈крит. 02,66.31c *ambhasā bhidyate setuḥ*
 [Spr. 119.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?119) *bhidyeransarve setavaḥ*
 [M. 7,24.](https://sanskrit-lexicon-scans.github.io/manu/index.html?7,24)
 [BHĀG. P. 3,21,54.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,21,54) *dharmasetūnbhindanti te*
@@ -66,7 +65,7 @@ Re-glue — Bid
 [PAÑCAR. 3,11,18.](https://sanskrit-lexicon-scans.github.io/pancar/app1?3,11,18) *kadambasaṃbhinnaḥ pavanaḥ* вошедший в соприкосновение
 [BHAṬṬ. 7,5.](https://sanskrit-lexicon-scans.github.io/bhattikavya/app1?7,5) *saṃbhinno māruto yasya marmasthānāni kṛntati* так преим. компактный
 [MĀRK. P. 43,14](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?43,14) = [VĀYU-P.] in [Verz. d. Oxf. H. 51,b,6.](https://sanskrit-lexicon-scans.github.io/Oxf_Cat_Aufrecht/index.html?51) *saṃbhinna* связанный neben *vibhinna* als эпит. Шивас
-[MBH. 12,10374.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10374) = ≈Вульг. 12.286.8 = ≈крит. 12,275.8a
+[MBH. 12,10374.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10374) = [≈Вульг. 12.286.8](mbh/12.286.html#v8) = ≈крит. 12,275.8a
   — ＋ PW 2〉 разрушать, в перен. знач., то есть преим. изгонять, рассеивать, уничтожать; Pass. быть уничтоженным. *bhinna* уничтоженный [104,27](https://sanskrit-lexicon-scans.github.io/bchrest2/index.html?104).
   — ≈ PW 2〉 _f._
   — ＋ PW a〉 стена [ṚV. 1,174,8](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.174.html#rv01.174.08). ср. *bhitti*.
@@ -85,7 +84,7 @@ Re-glue — Bid
   — ＋ PW 4〉 расщеплять, то есть преим. открывать; заставлять цвести; Pass. открываться, течь свободно (о воде), разливаться, выходить из берегов. *bhinna* открытый, расцветший. *˚karaṭa* или *˚gaṇḍakaraṭa* _Adj._ об слоне, у которого виски в период течки открылись и источают жидкость; также *bhinna* само по себе в том же значении знач.
 
 **5)** — 5) переубеждать, склонять к перемене взглядов: *vibhetsyati manāṃsyeṣām*
-[MBH. 5,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.124) = ≈Вульг. 5.6.16 = ≈крит. 05,6.15c pass. претерпевать перемену настроения: *paśubuddhirvibhidyate*
+[MBH. 5,124.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.124) = [≈Вульг. 5.6.16](mbh/5.6.html#v16) = ≈крит. 05,6.15c pass. претерпевать перемену настроения: *paśubuddhirvibhidyate*
 [BHĀG. P. 7,5,12.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,5,12) *vibhinna* переубежденный, переменивший взгляды
 [R. GORR. 2,28,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,28,15) ставший неверным, изменивший
 [RĀJA-TAR. 6,124.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?6,124)
@@ -93,7 +92,7 @@ Re-glue — Bid
 
 **6)** — 6) pass. меняться, претерпевать изменение: *svaraścaiva vyabhidyata*
 [R. GORR. 2,36,10.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,36,10) [3,29,14.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,29,14) *vibhinnavarṇarahita*
-[Spr. 2045](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2045), v. l. *avibhinnena mukharāgeṇa*
+[Spr. 2045](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2045), разночт. *avibhinnena mukharāgeṇa*
 [KATHĀS. 33,8.](https://sanskrit-lexicon-scans.github.io/kss/index.html?33,8)
 [RAGH. 8,42.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?8,42) *āśāvibhinna* обманувшийся в своей надежде
 [Spr. 3054.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3054)
@@ -107,7 +106,7 @@ Re-glue — Bid
 
 **8)** — 8) *vibhinna* смешанный с (instr.): *vibhinnamambhojapalāśaśobhayā*
 [KIR. 4,27. 5,34.] — caus. удалять кого-либо от кого-либо (abl.), отвращать
-[MBH. 12,4108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4108) = ≈Вульг. 12.111.66 = ≈крит. 12,112.62a
+[MBH. 12,4108.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.4108) = [≈Вульг. 12.111.66](mbh/12.111.html#v66) = ≈крит. 12,112.62a
 [R. GORR. 2,6,16](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,6,16) ([7,18] [SCHL.]). [8,55.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,8,55)
   — ＋ PW 8〉 раскалывать, делить, то есть преим. вносить раздор. *bhinna* Pl. поссорившиеся, разорвавшие отношения; *dāna˚* отколотый подарками, подкупленный.
 
@@ -124,7 +123,7 @@ Re-glue — Bid
 [MEGH. 82.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?82) *chāyābhinnasphaṭikaviśada*
 [63.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?63) *bhinno rāgaḥ kisalarucāmājyadhūmodgamena* ad
 [ŚĀK. 14.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?14)
-  — ＋ PW 9〉 Pass. отделяться, держаться в стороне от (Ins.)
+  — ＋ PW 9〉 Pass. отделяться, держаться в стороне от (Instr.)
 
 **10)** — 10) различать, проводить различие; pass. быть различным, отличаться от (abl.): *ityanye bhindanti*
 [H. 309.](https://sanskrit-lexicon-scans.github.io/abch2/app1?309)
@@ -154,21 +153,21 @@ Re-glue — Bid
 **11)** — 11) *bhinna* смешанный с —, связанный с (instr.); = *saṃgata*
 [H. an. 2,277.](https://sanskrit-lexicon-scans.github.io/anekarthasamgraha/app1?2,277)
 [MED. n. 14.](https://sanskrit-lexicon-scans.github.io/medini/app1?n,14) = *miśra, saṃvalita* схол. *bhinnāṃ rucaṃ raveḥ ketanaratnabhāsā*
-[KIR. 16,3.] *svedaleśairabhinnaṃ* (v. l. *kleśaleśai˚) gātram*
+[KIR. 16,3.] *svedaleśairabhinnaṃ* (разночт. *kleśaleśai˚) gātram*
 [ŚĀK. 37.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?37) в сочетании с дополнением
 
 : *yauvanabhinnaśaiśava*
 [RAGH. 3,32.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?3,32) *puṣpoccayaḥ pallavabhaṅgabhinnaḥ*
 [KUMĀRAS. 3,61.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?3,61)
-[ŚIŚ. 4,26. 20,56.] *tīvrāghātādabhimukhataruskandhabhinnaikadantaḥ (bhinna* v. l. вм. *bhagna)*, тем самым преим. застрявший, прилипший (= *lagna*
+[ŚIŚ. 4,26. 20,56.] *tīvrāghātādabhimukhataruskandhabhinnaikadantaḥ (bhinna* разночт. вм. *bhagna)*, тем самым преим. застрявший, прилипший (= *lagna*
 схол.) [ŚĀK. 32.](https://sanskrit-lexicon-scans.github.io/shakuntala/app1?32) *dṛṣṭvāṃ bhinnaṃ (= lagnaṃ* схол.) *kuṅkumaṃ kāpi kaṇṭhe* висящий на, прилипший
 [KUVALAY. 174,a,4.] ср. *bhinnāñjana* .
   — ＋ PW 11〉 изменять; Pass. изменяться. *bhinna* измененный, искаженный.
 
 **anu-1)** — *anu* раскалывать в длину —, разрезать вдоль: *taṃ dvedhānvabhinat*
-[ŚAT. BR. 1,6,3,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,17) pass. раскрываться: *anvabhidyetāṃ* (v. l. *nyabhi˚) karṇau*
+[ŚAT. BR. 1,6,3,17.](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?1,6,3,17) pass. раскрываться: *anvabhidyetāṃ* (разночт. *nyabhi˚) karṇau*
 [BHĀG. P. 3,26,55.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?3,26,55) — *baddhaṃ setuṃ ko 'nubhindyāt*
-[MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = ≈Вульг. 2.75.5 = ≈крит. 02,66.31c ошибочно вм. *ko nu bhi˚* .
+[MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](mbh/2.75.html#v5) = ≈крит. 02,66.31c ошибочно вм. *ko nu bhi˚* .
 
 **apa-1)** — *apa* отрубать, отбивать: *bhindhi viśvā apa dviṣaḥ*
 [ṚV. 8,45,40.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.045.html#rv08.045.40)
@@ -176,7 +175,7 @@ Re-glue — Bid
 **caus-1)** — caus.
  1) раскалывать, ломать, разбивать: *bhedayeyuḥ sthirāndrumān*
 [R. 1,16,23.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,16,23) *purodyānāni sarvāṇi bhedayāmāsa*
-[MBH. 3,620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.620) = ≈Вульг. 3.14.7 = ≈крит. 03,15.7a
+[MBH. 3,620.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.620) = [≈Вульг. 3.14.7](mbh/3.14.html#v7) = ≈крит. 03,15.7a
 [HARIV. 11905.](https://sanskrit-lexicon-scans.github.io/hariv?11905) *anayormahānnisargopajātaḥ snehaḥ kathaṃ bhedayituṃ śakyaḥ* разрушать, разрывать
 [HIT. 67,2.](https://sanskrit-lexicon-scans.github.io/hitopadesha/app2?67,2) *bhedita = bhinna*
 [AK. 3,2,50.](https://sanskrit-lexicon-scans.github.io/amara_dlc/app1?3,2,50)
@@ -185,37 +184,37 @@ Re-glue — Bid
 [SĀH. D. 18,112.](https://sanskrit-lexicon-scans.github.io/sahityadarpana/app1?18,112) Могло бы также быть _adj._ от *ṣoḍaśa — bheda*.
 
 **caus-3)** — 3) рассорить с другими или с самим собой, сбить с толку кого-либо, переманить на свою сторону
-[MBH. 1,1358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1358) [7399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7399) = ≈Вульг. 1.198.5 = ≈крит. 01,190.5a [13,555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.555) = ≈Вульг. 13.12.28 = ≈крит. 13,12.25a [558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.558) = ≈Вульг. 13.12.31 = ≈крит. 13,12.27e *suśliṣṭānapi* (так в более новой изд.) *lokeṣu bhedayan*
+[MBH. 1,1358.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1358) [7399.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7399) = [≈Вульг. 1.198.5](mbh/1.198.html#v5) = ≈крит. 01,190.5a [13,555.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.555) = [≈Вульг. 13.12.28](mbh/13.12.html#v28) = ≈крит. 13,12.25a [558.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.558) = [≈Вульг. 13.12.31](mbh/13.12.html#v31) = ≈крит. 13,12.27e *suśliṣṭānapi* (так в более новой изд.) *lokeṣu bhedayan*
 [HARIV. 3209.](https://sanskrit-lexicon-scans.github.io/hariv?3209)
 [R. 4,54,6.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,54,6) [7](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?4,54,7)
 [KATHĀS. 34,209.](https://sanskrit-lexicon-scans.github.io/kss/index.html?34,209) *bhayena bhedayedbhīruṃ śūramañjalikarmaṇā . lubdhamarthapradānena samaṃ nyūnaṃ tathaujasā ..*
 [Spr. 2017.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?2017) [3013.](https://sanskrit-lexicon-scans.github.io/boesp1/app1/?3013) *asakṛccāpyahaṃ tena tvatkṛte pārtha bheditaḥ*
-[MBH. 5,2835.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2835) = ≈Вульг. 5.82.3 = ≈крит. 05,80.3a
+[MBH. 5,2835.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.2835) = [≈Вульг. 5.82.3](mbh/5.82.html#v3) = ≈крит. 05,80.3a
 [R. GORR. 2,18,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,18,15) [77,2.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?2,77,2) *tamṛṣiṃ kauśikaṃ rambhe bhedayasva (= kāmotpādanena tapasaścālaya* схол.) *tapasvinam*, тем самым преим. поступи
 [R. SCHL. 1,64,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,64,7)
 
 **desid-1)** — desid. *vibhitsati*
 [P. 1,2,10](https://ashtadhyayi.com/sutraani/1/2/10), схол.,
 намереваться прорвать —, намереваться пробить: *anīkam*
-[MBH. 7,1480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1480) = ≈Вульг. 7.33.27 = ≈крит. 07,32.25e [1624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1624) = ≈Вульг. 7.37.37 = ≈крит. 07,36.36c
+[MBH. 7,1480.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1480) = [≈Вульг. 7.33.27](mbh/7.33.html#v27) = ≈крит. 07,32.25e [1624.](https://sanskrit-lexicon-scans.github.io/mbhcalc?7.1624) = [≈Вульг. 7.37.37](mbh/7.37.html#v37) = ≈крит. 07,36.36c
 
 **desid-2)** — ср. *bibhitsā* сл.
 
 **desid-3)** — desid. от caus. см. *bibhedayiṣu* .
 
 **head)** *bhid*, *bhinatti, bhintte*
-[DHĀTUP. 29,2.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *abhinad, bhinad*, 2. p. *abhinas* и *abhinad* (
+[DHĀTUP. 29,2.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=29) *abhinad, bhinad*, 2. с. *abhinas* и *abhinad* (
 схол. к [P. 6,1,68.](https://ashtadhyayi.com/sutraani/6/1/68) [8,2,75](https://ashtadhyayi.com/sutraani/8/2/75)), *bhinadas* (
-[ṚV. 10,89,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.089.html#rv10.089.14)), *bhinddhi (bhindhi)*, ved. *bhedati* и *abhedam; bibheda, bibhide, bibheditha* (
+[ṚV. 10,89,14](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.089.html#rv10.089.14)), *bhinddhi (bhindhi)*, вед. *bhedati* и *abhedam; bibheda, bibhide, bibheditha* (
 схол. к [P. 1,2,5.](https://ashtadhyayi.com/sutraani/1/2/5) [7,2,61.](https://ashtadhyayi.com/sutraani/7/2/61) [62.](https://ashtadhyayi.com/sutraani/7/2/62) [67](https://ashtadhyayi.com/sutraani/7/2/67)), *bibhidvaṃs* (
 [P. 7,2,67](https://ashtadhyayi.com/sutraani/7/2/67), схол.);
 *abhidat* и *abhaitsīt* (
 схол. к [P. 3,1,57.](https://ashtadhyayi.com/sutraani/3/1/57) [7,2,3](https://ashtadhyayi.com/sutraani/7/2/3)), *abhitta* (
 схол. к [P. 1,2,11.](https://ashtadhyayi.com/sutraani/1/2/11) [3,1,57](https://ashtadhyayi.com/sutraani/3/1/57)), *abhitthās, abhitsātām*
-([P. 8,2,6](https://ashtadhyayi.com/sutraani/8/2/6), схол.), ved. *bhed, bhedi, bhitthās; bhetsyati, ˚te, bhettā* (Кар. 3
+([P. 8,2,6](https://ashtadhyayi.com/sutraani/8/2/6), схол.), вед. *bhed, bhedi, bhitthās; bhetsyati, ˚te, bhettā* (Кар. 3
 из [SIDDH. K.] к [P. 7,2,10.](https://ashtadhyayi.com/sutraani/7/2/10) схол. к [7,2,61. fg.](https://ashtadhyayi.com/sutraani/7/2/61)); *bhitsīṣṭa*
 ([P. 1,2,11](https://ashtadhyayi.com/sutraani/1/2/11), схол.);
-inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
+inf. *bhettum*, вед. *bhettavai*; pass. *bhidyate, bhinna*
 ([P. 8,2,42](https://ashtadhyayi.com/sutraani/8/2/42)).
 
 **intens-1)** — intens. *bebhidīti*
@@ -251,11 +250,11 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 
 **+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] 12〉 различать, проводить различие; Pass. отличаться, быть отличным от (Abl.). *bhinna* отличный, — от (Abl. или в Comp. предшествующем); отличный также в знач. преим. отклоняющийся от обычного, от нормального.
 
-**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] 13〉 *bhinna* смешанный, соединенный с (Ins. или в Comp. предшествующем), подвешенный, прикрепленный, застрявший на (Loc. или в Comp. предшествующем).
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] 13〉 *bhinna* смешанный, соединенный с (Instr. или в Comp. предшествующем), подвешенный, прикрепленный, застрявший на (Loc. или в Comp. предшествующем).
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. *bhedayati*
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 раскалывать, ломать, разбивать [MBH. 3,135,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,135,52) = ≈Вульг. 3.3.5 = ≈крит. 03,3.5a.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 раскалывать, ломать, разбивать [MBH. 3,135,52](https://sanskrit-lexicon-scans.github.io/mbhbomb/app1?3,135,52) = [≈Вульг. 3.3.5](mbh/3.3.html#v5) = ≈крит. 03,3.5a.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 разрушать, уничтожать.
 
@@ -269,13 +268,13 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — Intens. *bebhidīti*, *bebhetti* многократно раскалывать, рубить в [BHAṬṬ.]
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *vyati*, *˚bhinna* неразрывно связанный с (Ins.) [Comm. zu NYĀYAS. 4,2,18].
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] С *vyati*, *˚bhinna* неразрывно связанный с (Instr.) [Comm. zu NYĀYAS. 4,2,18].
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] С *anu*
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] 1〉 раскалывать вдоль, разрезать вдоль.
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Pass. открываться. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = ≈Вульг. 2.75.5 = ≈крит. 02,66.31c ошибочно вм. *ko nu bhi˚*.
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] 2〉 Pass. открываться. — *ko 'nubhindyāt* [MBH. 2,2483](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.2483) = [≈Вульг. 2.75.5](mbh/2.75.html#v5) = ≈крит. 02,66.31c ошибочно вм. *ko nu bhi˚*.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] С *antar* замышлять предательство [DAŚAK. 19,8].
 
@@ -403,7 +402,7 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] h〉 различный, иной.
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] i〉 смешанный с (Ins.)
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] i〉 смешанный с (Instr.)
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — Caus. удалять кого-либо от кого-либо (Abl.), переманивать.
 
@@ -512,5 +511,3 @@ inf. *bhettum*, ved. *bhettavai*; pass. *bhidyate, bhinna*
 **sam-sense9)** — *vi*
 5) *bṛddhānāmapi yadbuddhirbālavākyairvibhidyate*
 [BHĀG. P. 10,74,31.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,74,31)
-
-_Dr. Mārcis Gasūns_

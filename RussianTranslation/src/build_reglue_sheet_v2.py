@@ -58,12 +58,12 @@ pass and shipped in the same document; the toggle is CSS-only (``:has()``), so
 there is no way for one mode to drift from the other or for a reviewer to vote
 on a card the sheet cannot show.
 
-Inputs (local, untracked — point PWG_RU_DATA_ROOT at the tree that has them):
-    <data>/src/pwg_ru_translated.jsonl
+Inputs (the reglue jsons are untracked build outputs of build_reglue.py —
+run that first; point PWG_RU_DATA_ROOT at the tree that has them):
     <data>/pwg_ru/reglue/<key1>.json
 Output (gitignored, published to the vote hub by hand):
-    <data>/review/h180_reglue_v5_sheet.html
-    <data>/review/h180_reglue_v5_sample.jsonl
+    <data>/review/h180_reglue_v8_sheet.html
+    <data>/review/h180_reglue_v8_sample.jsonl
 
 Run: python src/build_reglue_sheet_v2.py
      python src/build_reglue_sheet_v2.py --selftest
@@ -101,7 +101,11 @@ REVIEW = os.path.join(DATA, "review")
 # The 16-08 generation was built but never published; its inputs (the wave-3
 # reglue jsons) moved the same day, so it can no longer be reproduced and its
 # lock was retired rather than re-bound. 17-08 is the generation that ships.
-GENERATED = "2026-08-25"
+# v8 (20-11): the v7 inputs (untracked reglue jsons) evaporated with the tree
+# that held them; per the LockCollision discipline v7 is never silently
+# replaced — this is a RE-CUT as a new lane, rebuilt from the current
+# pwg-ru-data store (see build_reglue.py for the derivation chain).
+GENERATED = "2026-11-20"
 
 ORDER = [("gA", 5), ("Cid", 5), ("Sam", 5), ("jIv", 5), ("rakz", 5), ("vraj", 5), ("yat", 5),
          ("DA", 4), ("Ap", 4), ("Bid", 4), ("Buj", 4), ("banD", 4), ("Sru", 4),
@@ -620,13 +624,13 @@ def main():
         return 1
     body_hash, raw_hash = digests
 
-    sheet_id = "h180-reglue-spotcheck-v7-2026-08-25"
+    sheet_id = "h180-reglue-spotcheck-v8-2026-11-20"
     config = standard_config(
-        save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v7.decisions.json")
+        save_as="RussianTranslation\\pwg_ru\\eval\\h180_reglue_v8.decisions.json")
     config.update({
         "sheet_id": sheet_id,
         "split_layout": True,
-        "title": "H180 · выборочная проверка склейки с учётом содержания (v6)",
+        "title": "H180 · выборочная проверка склейки с учётом содержания (v8)",
         "subtitle": ("15 пилотных карточек: слева исходный PWG с чипами вставки, "
                      "справа русская склейка, разметка store за ссылкой. "
                      "Типология, ссылки Cologne, цепочки NWS, свёртка переносов "
@@ -689,14 +693,14 @@ def main():
             r'<details class="store-details"[^>]*>.*?</details>', "", doc, flags=re.S):
         raise SystemExit("anatomy leaked outside closed details")
 
-    sample = os.path.join(REVIEW, "h180_reglue_v7_sample.jsonl")
+    sample = os.path.join(REVIEW, "h180_reglue_v8_sample.jsonl")
     # newline="\n": the tracked sample is LF in git, and a Windows run without
     # this rewrites all 15 lines as CRLF — a whole-file diff with no content in it
     with io.open(sample, "w", encoding="utf-8", newline="\n") as fh:
         for it in items:
             fh.write(json.dumps({k: it[k] for k in ("id", "filt", "title")},
                                 ensure_ascii=False) + "\n")
-    out = os.path.join(REVIEW, "h180_reglue_v7_sheet.html")
+    out = os.path.join(REVIEW, "h180_reglue_v8_sheet.html")
     with io.open(out, "w", encoding="utf-8", newline="\n") as fh:
         fh.write(doc)
     write_lock(sheet_id, chash, [it["id"] for it in items], GENERATED, source_html=out)
