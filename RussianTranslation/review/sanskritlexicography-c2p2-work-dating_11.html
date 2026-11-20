@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="color-scheme" content="dark">
-<meta name="generator" content="csl-pyutil/0.22.0">
+<meta name="generator" content="csl-pyutil/0.25.0">
 <title>C2 phase 2 — the eleven dating decisions the evidence cannot settle — 11 items</title>
 <style>
   :root { color-scheme: dark; --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --text:#e6e6e6; --muted:#9aa0aa;
@@ -155,7 +155,7 @@
 <header class="top">
   <div>
     <h1>C2 phase 2 — the eleven dating decisions the evidence cannot settle — 11 items</h1>
-    <div class="sub">Generated 2026-09-01 &middot; sheet_id <code>c2p2-work-dating-2026-09-01</code> &middot; bound <code class="bindchip" title="content_hash — binds this sheet's decisions.json export to exactly this HTML">sha256:2c674bf1e203…</code> &middot; Curated per-work dating table for PWG's 45 cited works (H3790). Each card proposes one reading in a full sentence; approving adopts it, rejecting takes the named alternative. Nothing here is a claim about when a SENSE emerged.</div>
+    <div class="sub">Generated 2026-09-01 &middot; sheet_id <code>c2p2-work-dating-2026-09-01</code> &middot; bound <code class="bindchip" title="content_hash — binds this sheet's decisions.json export to exactly this HTML">sha256:d5cabc348317…</code> &middot; Curated per-work dating table for PWG's 45 cited works (H3790). Each card proposes one reading in a full sentence; approving adopts it, rejecting takes the named alternative. Nothing here is a claim about when a SENSE emerged.</div>
   </div>
   <div class="tally" id="tally">
     <span class="approve">&#9989; <span class="count" id="c-approve">0</span></span>
@@ -346,7 +346,7 @@
 <script>
 (function () {
   var SHEET_ID = "c2p2-work-dating-2026-09-01";
-  var CONTENT_HASH = "sha256:2c674bf1e203629f054b56b90c9122d76d874df9c0563b5c4fbffee2a62db837";
+  var CONTENT_HASH = "sha256:d5cabc34831783663faf4fba580f6241a32ff2f813e01bd121e22ca0499cfb73";
   var STORE_KEY = 'review-sheet:' + SHEET_ID;
   var GENERATED = "2026-09-01";
   var ids = ["C2P2-D1", "C2P2-D2", "C2P2-D3", "C2P2-D4", "C2P2-D5", "C2P2-D6", "C2P2-D7", "C2P2-D8", "C2P2-D9", "C2P2-D10", "C2P2-D11"];
@@ -428,22 +428,48 @@
     e.preventDefault();
   });
 
-  var saveHandle = null, saveTimer = null;
+  var saveHandle = null, saveTimer = null, saveWritePending = 0;
+  var saveWriteChain = Promise.resolve();
+  var SAVE_SAVING = 'Saving…';
+  var SAVE_SAVED = 'Saved';
+  var SAVE_FAILED = 'Save failed — retry';
   function exportPayload() {
     if (typeof syncNoteFromDom === 'function') {
       ids.forEach(function (id) { syncNoteFromDom(id); });
     }
     var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
-    return JSON.stringify({ sheet_id: SHEET_ID, content_hash: CONTENT_HASH, generated: new Date().toISOString(), decided: decided, time_total_seconds: __timeTotal(),
+    var nowIso = new Date().toISOString();
+    return JSON.stringify({ sheet_id: SHEET_ID, content_hash: CONTENT_HASH, generated: nowIso, reviewedAt: nowIso, decided: decided, time_total_seconds: __timeTotal(),
       items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '', time_seconds: __timeFor(id), reject_label: rec.reject_label || null }; }) }, null, 2);
+  }
+  function flushAutosave() {
+    if (!saveHandle) return Promise.resolve(false);
+    clearTimeout(saveTimer);
+    var payload = exportPayload();
+    saveWritePending++;
+    var writeJob = saveWriteChain.then(function () {
+      return saveHandle.createWritable().then(function (writable) {
+        return writable.write(payload).then(function () { return writable.close(); });
+      });
+    });
+    var tracked = writeJob.then(function () {
+      saveWritePending--; return true;
+    }, function (error) {
+      saveWritePending--; throw error;
+    });
+    saveWriteChain = tracked.catch(function () {});
+    return tracked;
+  }
+  function saveStatus(message) {
+    var saveBtn = document.getElementById('saveBtn');
+    if (saveBtn) saveBtn.textContent = message;
   }
   function scheduleAutosave() {
     if (!saveHandle) return;
     clearTimeout(saveTimer);
     saveTimer = setTimeout(function () {
-      saveHandle.createWritable().then(function (w) {
-        w.write(exportPayload()).then(function () { w.close(); });
-      }).catch(function () {});
+      flushAutosave().then(function () { saveStatus(SAVE_SAVED); })
+        .catch(function () { saveStatus(SAVE_FAILED); });
     }, 1000);
   }
   var _origSave = save;
@@ -453,10 +479,19 @@
     saveBtn.style.display = '';
     saveBtn.addEventListener('click', function () {
       window.showSaveFilePicker({suggestedName: SHEET_ID + '_decisions.json'}).then(function (h) {
-        saveHandle = h; scheduleAutosave();
-      }).catch(function () {});
+        saveHandle = h; saveStatus(SAVE_SAVING); return flushAutosave();
+      }).then(function (saved) {
+        if (saved) saveStatus(SAVE_SAVED);
+      }).catch(function (error) {
+        if (!error || error.name !== 'AbortError') saveStatus(SAVE_FAILED);
+      });
     });
   }
+  window.addEventListener('beforeunload', function (event) {
+    if (!saveWritePending) return;
+    event.preventDefault();
+    event.returnValue = '';
+  });
 
   var REJECT_LABELS = [["C2P2-D1", "Anchor at the collection instead (c. 1000 BCE), so \u00abearliest\u00bb means the earliest the text as B\u00f6htlingk-Roth read it existed"], ["C2P2-D2", "Keep a single conventional point date per epic and record the span only as a note"], ["C2P2-D3", "Commit to the 4th-century date (c. 350 BCE) as the project's working position"], ["C2P2-D4", "Adopt the early pre-P\u0101\u1e47inian date (c. 700 BCE) as the project position"], ["C2P2-D5", "Follow Kane's History of Dharma\u015b\u0101stra and keep the 1st\u20133rd century CE placement"], ["C2P2-D6", "Keep a single working date of 450 CE and note the uncertainty only in prose"], ["C2P2-D7", "Treat the Vikram\u0101ditya-era early date (1st century BCE) as live and widen all four ranges to hold it"], ["C2P2-D8", "Keep the redaction date (c. 400 CE) as the single anchor"], ["C2P2-D9", "Treat the Pur\u0101\u1e47as as undated for windowing purposes, the way Spr. and \u015aKDR. would be under D10"], ["C2P2-D10", "Keep both in the window but flag every affected window as carrying a known-invalid bound"], ["C2P2-D11", "Keep counting sigla, and rename the field so it says sigla rather than works"]];
   function applyRejectLabelUI(card) {
