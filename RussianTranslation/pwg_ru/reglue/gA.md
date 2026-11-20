@@ -1,5 +1,4 @@
-_Created: 01-08-2026 · Last updated: 05-09-2026_
-
+_Created: 01-08-2026 · Last updated: 20-11-2026_
 Re-glue — gA
 
 Знаки: **＋** новый оттенок значения · **→** новое управление (падеж) · **ʰ** новая форма · **§** новый источник · **≈** то же самое короче
@@ -7,8 +6,8 @@ Re-glue — gA
 ## омоним h0
 
 **1)** — *anupari* проходить насквозь, обходить, странствовать по: *yadā ca pṛthivīṃ sarvāṃ yajamāno 'nuparyagāḥ*
-[MBH. 12,8081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8081) = ≈Вульг. 12.226.6 = ≈крит. 12,219.6a
-  — ʰ NWS *gā (=pw gā 1)* идти, приходить, странствовать. уходить. приходить к кому-л. (Acc.) (с личными подлежащими). приходить к какому-л. месту (Acc.) или направляться туда (место, укрытие). идти дорогой (Acc., Ins.). враждебно нападать на (Acc.). достигать, получать что-л. (Acc.). идти куда-л. (Loc. или нар. места). происходить [о каком-л. действии]. приходить кому-л. (Dat.), т. е. появляться у него, доставаться ему. обращаться к кому-л. (Acc.) (с песнями), воспевать. другая форма для gam
+[MBH. 12,8081.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.8081) = [≈Вульг. 12.226.6](mbh/12.226.html#v6) = ≈крит. 12,219.6a
+  — ʰ NWS *gā (=pw gā 1)* идти, приходить, странствовать. уходить. приходить к кому-л. (Acc.) (с личными подлежащими). приходить к какому-л. месту (Acc.) или направляться туда (место, укрытие). идти дорогой (Acc., Ins.). враждебно нападать на (Acc.). достигать, получать что-л. (Acc.). идти куда-л. (Loc. или нар. места). происходить [о каком-л. действии]. приходить кому-л. (Dat), т. е. появляться у него, доставаться ему. обращаться к кому-л. (Acc.) (с песнями), воспевать. другая форма для gam
   — ʰ PW **1.** √*gā*, *jigāti*, **jagāti* (**jagāyāt*), **gāti* ([NAIGH. 2,14](https://sanskrit-lexicon-scans.github.io/nirukta/app2?2,14)) и **gāte* — 1〉 приходить.
   — ʰ PW **2.** *˚gā* _Adj._ идущий к, идущий, странствующий.
   — ʰ PW **4.** *gā*
@@ -17,7 +16,7 @@ Re-glue — gA
 **2)** — 2) прийти, достигнуть, настигнуть кого-либо: *pra vāṃ ghṛtācī bāhvordaghānā pari tmanā viṣurūpā jigāti*
 [ṚV. 7,84,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.084.html#rv07.084.01) *vayo vayo jarase yaddadhānaḥ pari tmanā viṣurūpo jigāsi*
 [5,15,4.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv05.015.html#rv05.015.04) *jarā balī ca māṃ tāta palitāni ca paryaguḥ*
-[MBH. 1,3647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3647) = ≈Вульг. 1.92.3 = ≈крит. 01,87.3a
+[MBH. 1,3647.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.3647) = [≈Вульг. 1.92.3](mbh/1.92.html#v3) = ≈крит. 01,87.3a
   — ＋ NWS ( III ) идти, входить в; уходить. [ṚV 10,108,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.108.html#rv10.108.09)
   — → PW — 2〉 приходить — , идти к или в направлении, направляться к, обращаться к; с Acc. или Loc.
   — ＋ PW — 2〉 *_f._ пение, стих.
@@ -41,10 +40,10 @@ Re-glue — gA
   — ＋ PW — 5〉 приходить в какое-л. состояние, положение, отношение (Acc.), приобщаться.
 
 **6)** — 6) проходить мимо, оставлять без внимания: *na cainamatyagādvahnirvelāmiva mahodadhiḥ* он внял ему, сделал то, чего тот требовал
-[MBH. 2,1157.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1157) = ≈Вульг. 2.31.53 = ≈крит. 02,28.31c *so 'mṛtasyābhayasyeśo martyamannaṃ yadatyagāt* (по
+[MBH. 2,1157.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.1157) = [≈Вульг. 2.31.53](mbh/2.31.html#v53) = ≈крит. 02,28.31c *so 'mṛtasyābhayasyeśo martyamannaṃ yadatyagāt* (по
 [BURNOUF] иное понимание)
 [BHĀG. P. 2,6,17.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,6,17) *prāptakālamidaṃ manye mā tvaṃ duryodhanātyagāḥ* упустить
-[MBH. 5,4212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4212) = ≈Вульг. 5.128.16 = ≈крит. 05,126.16a
+[MBH. 5,4212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?5.4212) = [≈Вульг. 5.128.16](mbh/5.128.html#v16) = ≈крит. 05,126.16a
   — ＋ NWS *+ áccha : hingehen ṣu (ākk).* + áti: переходить через что-л. (Acc.), проходить сквозь.
   — ＋ PW — 6〉 отправляться, уходить, удаляться [ṚV. 10,108,9](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv10.108.html#rv10.108.09). с Abl. — откуда и Loc. — куда.
 
@@ -57,7 +56,7 @@ Re-glue — gA
 [3,4,3.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv03.004.html#rv03.004.03) [7,104,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.104.html#rv07.104.17) [8,48,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.048.html#rv08.048.02) *somasya jihvā pra jigāti cakṣasā*
 [1,87,5.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.087.html#rv01.087.05) [85,6.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.085.html#rv01.085.06) [VĀLAKH. 1,2.] *prāgāddevapurā ayam*
 [AV. 5,28,9.](https://sanskrit-lexicon.github.io/avlinks/avhymns/av05.028.html#av05.028.09) *sā gadā tatkarānmuktā prāgāddroṇajighāṃsayā*
-[MBH. 6,2212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2212) = ≈Вульг. 6.53.19 = ≈крит. 06,49.19a Сюда относится по форме partic. *prajigat*, которое
+[MBH. 6,2212.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2212) = [≈Вульг. 6.53.19](mbh/6.53.html#v19) = ≈крит. 06,49.19a Сюда относится по форме partic. *prajigat*, которое
 [SĀY.] к [2.] *gā* притягивает: *kadā cana prajigato adevayoḥ*
 [ṚV. 1,150,2.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.150.html#rv01.150.02)
 
@@ -126,9 +125,9 @@ Re-glue — gA
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] *gā (=pw gā 3)* [Gen , unsp] ( gā́yati, °te I P, rarely Ā ) Pass. ( gīyáte ): a) воспеваться, прославляться в песне; b) называться, именоваться. ṚV , Mbh i, 4329 . MW : 363 (s.v. gai )
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Ved , unsp] петь. петь песнь (Acc.). петь кому-л. (Dat.; во хвалу ему). петь кому-л. хвалебную песнь (Acc.). воспевать кого-л. (Acc.). звучать, раздаваться
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Ved , unsp] петь. петь песнь (Acc.). петь кому-л. (Dat; во хвалу ему). петь кому-л. хвалебную песнь (Acc.). воспевать кого-л. (Acc.). звучать, раздаваться
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Ved , unsp] ( I meist P ) петь; петь хвалу (+ Dat.); воспевать (Acc.). [ṚV 1,167,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.167.html#rv01.167.06) , [ṚV 1,4,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.004.html#rv01.004.10) , [ṚV 8,2,38](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.38) . Geldner 1907 : 56 (s.v. gai )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] [Ved , unsp] ( I meist P ) петь; петь хвалу (+ Dat); воспевать (Acc.). [ṚV 1,167,6](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.167.html#rv01.167.06) , [ṚV 1,4,10](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.004.html#rv01.004.10) , [ṚV 8,2,38](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.38) . Geldner 1907 : 56 (s.v. gai )
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] [Jin, unsp] (2. H. 12. Jh. , Gujarat) говорить. HemPar III, 191
 
@@ -140,21 +139,21 @@ Re-glue — gA
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ abhí prá : anheben jemand (ākk) ṣu besingen.* [Ved , unsp] + abhipra : воспевать. [ṚV 1,5,1](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv01.005.html#rv01.005.01) . Ved , unsp ; Geldner 1907 : 56 (s.v. gai )
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ ava (° gīta , ppp.): (lit. sung doṭn), reduced, diminished. jhkhṃ(Ā) 11.21 .* [Buddh , unsp (s.v. avagīta )] + ava ( avagīta ): a) воспетый пренебрежительно; b) часто воспеваемый, общеизвестный, избитый; c) порицаемый, достойный осуждения, презренный, низкий. Gen. , unsp ; MW : 97 (s.v. avagīta )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ ava (° gīta , ppp.): (lit. sung doṭn), reduced, diminished. jhkhṃ(Ā) 11.21 .* [Buddh , unsp (s.v. avagīta )] + ava ( avagīta ): a) воспетый пренебрежительно; b) часто воспеваемый, общеизвестный, избитый; c) порицаемый, достойный осуждения, презренный, низкий. Gen , unsp ; MW : 97 (s.v. avagīta )
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ ā ( āgīta ): sung unto. jhū .* [Gen. , unsp (s.v. āgīta )] + ā́ : воспевать кого-л. (Acc.), петь ему. Ved , unsp
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ ā ( āgīta ): sung unto. jhū .* [Gen , unsp (s.v. āgīta )] + ā́ : воспевать кого-л. (Acc.), петь ему. Ved , unsp
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ ud (+ ghen). jhbh aid, p. 67 n. 2 .* [Ved , unsp (s.v. udgā -)] + úd : начинать пение, запевать (см. udgātṛ́ ). Ved , unsp
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ úpa : jemandem (ākk, dhat, Lok) ṣusingen, ihn besingen.* [Ved , unsp] + pra : запевать, начинать песнь, подхватывать пение. [ṚV 8,1,7](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.001.html#rv08.001.07) . Ved , unsp ; Geldner 1907 : 56 (s.v. gai )
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ prá : 1) anheben ṣu singen, oder 2) jemandem e. Lied ṣu singen oder 3) ihn ṣu besingen; 4) ertönen.* [Ved , unsp] + vi : порицать, хулить. Renou 1997, S. 739 . Gen. , unsp ; Renou 1997 : 1018 (s.v. vigāyati )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ prá : 1) anheben ṣu singen, oder 2) jemandem e. Lied ṣu singen oder 3) ihn ṣu besingen; 4) ertönen.* [Ved , unsp] + vi : порицать, хулить. Renou 1997, S. 739 . Gen , unsp ; Renou 1997 : 1018 (s.v. vigāyati )
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] *– „sing“.* [Ved , unsp (s.v. vigā -)] – ( vigīta ): „ pṛthag gītaḥ "; частично воспетый. ṢB II.3.11 , ĀpŚS XIII.15.9 . Ved , unsp ; Renou 1935 : 26 (s.v. vigīta )
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ sam (° gāyati ): lit. ‘sings in unison’ = is concordant, avoids ḍuarreling [opp. oṛ vivadati ]. khphar 142.4 .* [Buddh , unsp (s.v. saṃgāyati )] – ( saṃgīta ): a) воспетый хором (?); b) соответствующий, согласующийся. STB, S. 93, Z. 20 , Is Indon 1, 11 . Reg , unsp ; Ensink 1964 : 193 (s.v. saṃgīta )
 
-**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ sam ( saṃgīta ): sung together, sung in chorus or harmony.* [Gen. , unsp (s.v. saṃgīta )] + samanu : повторять в стихах или в метре. Caraka(MW) . Gen. , unsp ; MW : 1154 (s.v. samanugai )
+**+)** [новый смысл, в PWG соответствия нет — цель не указана] *+ sam ( saṃgīta ): sung together, sung in chorus or harmony.* [Gen , unsp (s.v. saṃgīta )] + samanu : повторять в стихах или в метре. Caraka(MW) . Gen , unsp ; MW : 1154 (s.v. samanugai )
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] *gā* [Śā , Ling] заместительная морфема для i ṇ в формах аориста. Pāṇ 2.4.45
 
@@ -162,7 +161,7 @@ Re-glue — gA
 
 **+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] — 7〉 подходить к концу [NAIṢ. 8,109].
 
-**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] — 8〉 идти, странствовать [ṚV. 8,2,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.39). с Acc. или Ins. ([ṚV. 8,5,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.005.html#rv08.005.39)) пути.
+**+)** [новый смысл, в PWG соответствия нет — номер выше диапазона PWG] — 8〉 идти, странствовать [ṚV. 8,2,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.002.html#rv08.002.39). с Acc. или Instr. ([ṚV. 8,5,39](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.005.html#rv08.005.39)) пути.
 
 **+)** [новый смысл, в PWG соответствия нет — цель не указана] — Desid. *jigīṣati* желать идти.
 
@@ -461,7 +460,7 @@ Re-glue — gA
 
 **1a)** — *saṃpra* петь: *yā gāthāḥ saṃpragāyanti*
 
-**1b)** [MBH. 8,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1836) = ≈Вульг. 8.40.21 = ≈крит. 08,27.71c произносить нараспев:
+**1b)** [MBH. 8,1836.](https://sanskrit-lexicon-scans.github.io/mbhcalc?8.1836) = [≈Вульг. 8.40.21](mbh/8.40.html#v21) = ≈крит. 08,27.71c произносить нараспев:
 
 *ikārāntaṃ caivopāyaṃ saṃpragāyanti kutsāḥ*
 [LĀṬY. 7,8,19.]
@@ -470,13 +469,13 @@ Re-glue — gA
 [AIT. BR. 6,32.](https://sanskrit-lexicon-scans.github.io/aitbr/app1?6,32)
 
 **2))** — 2) хулить, порицать: *vigīyase (ketaka) manmathadehadāhinā*
-[NAIṢ. 1,79.] ср. *vigāna*.* — vijigīta* (unregelm. форма интенсива) прославленный
+[NAIṢ. 1,79.] ср. *vigāna*.* — vijigīta* (неправ. форма интенсива) прославленный
 [BṚH. ĀR. UP. 6,4,18.]
 [ŚAṂK.] : *vividhaṃ gīto vigītaḥ* (sic);
 [ŚAT. BR. 14,9,4,17](https://sanskrit-lexicon-scans.github.io/shatapathabr/app1?14,9,4,17) читает вместо, чей *vijigīthaḥ* .
 
 **3))** — 3) петь: *rathaṃtaraṃ sāmagāścopagānti*
-[MBH. 12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) = ≈Вульг. 12.284.187 = крит. — *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
+[MBH. 12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) = [≈Вульг. 12.284.187](mbh/12.284.html#v187) = крит. — *jihvāsatī — na yopagāyatyurugāyagāthāḥ*
 [BHĀG. P. 2,3,20.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?2,3,20) *tasyedamupagāyanti* о нем поют следующее
 [5,14,41.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?5,14,41)
 
@@ -536,7 +535,7 @@ Re-glue — gA
 [4,15,26.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?4,15,26) — intens. *jegīyate*
 [P. 6,4,66.](https://ashtadhyayi.com/sutraani/6/4/66)
 [VOP. 20,4.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?20,4) *jegīyante sma gandharvāḥ*
-[MBH. 12,12200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12200) = ≈Вульг. 12.324.14 = ≈крит. 12,311.14a *jegīyate* pass.
+[MBH. 12,12200.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.12200) = [≈Вульг. 12.324.14](mbh/12.324.html#v14) = ≈крит. 12,311.14a *jegīyate* pass.
 [VARĀH. BṚH. S. 19,18.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?19,18)
 
 **acCa)** — *accha* призывать пением, призывать: *acchā vo agnimavase devaṃ gāmi* (1. aor. мед.)
@@ -567,7 +566,7 @@ Re-glue — gA
 
 **main verb: singen)** 2. *gā* *(gai), gāyati*
 [DHĀTUP. 22,20.](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-westergaard/disp/index.php?section=22) ep. *gānti*
-[MBH. 3,15850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15850) = ≈Вульг. 3.272.73 = ≈крит. 03,256.29a [12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) = ≈Вульг. 12.284.187 = крит. — *jagau; gāsyati; agāsīt, gāsiṣat; geyāt*
+[MBH. 3,15850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15850) = [≈Вульг. 3.272.73](mbh/3.272.html#v73) = ≈крит. 03,256.29a [12,10299.](https://sanskrit-lexicon-scans.github.io/mbhcalc?12.10299) = [≈Вульг. 12.284.187](mbh/12.284.html#v187) = крит. — *jagau; gāsyati; agāsīt, gāsiṣat; geyāt*
 [P. 6,4,67.](https://ashtadhyayi.com/sutraani/6/4/67)
 [VOP. 8,85.](https://sanskrit-lexicon-scans.github.io/mugdhabodha/app1?8,85) *gītvā, ˚gāya*
 [P. 6,4,69.](https://ashtadhyayi.com/sutraani/6/4/69)
@@ -590,36 +589,36 @@ Re-glue — gA
 [KAUŚ. 105. 93.] *akṣarāṇi nikrīḍayanniva gāyati*
 [LĀṬY. 7,12,9. 13.] — *na nṛtyedatha vā gāyet*
 [M. 4,64.](https://sanskrit-lexicon-scans.github.io/manu/index.html?4,64) *gāyanti divyatānaiḥ*
-[MBH. 2,133.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.133) = ≈Вульг. 2.4.38 = ≈крит. 02,4.31c
+[MBH. 2,133.](https://sanskrit-lexicon-scans.github.io/mbhcalc?2.133) = [≈Вульг. 2.4.38](mbh/2.4.html#v38) = ≈крит. 02,4.31c
 [R. 1,9,14.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,14) [3,15,15.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,15,15)
 [ŚĀK. 4,8.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?4,8) *jaguḥ kalaṃ ca gandharvāḥ*
 [R. 1,19,10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,19,10) [4,12.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,12)
 [KATHĀS. 3,64.](https://sanskrit-lexicon-scans.github.io/kss/index.html?3,64) *(mṛgāḥ) manojñaiḥ — vāgbhirgāyantīva*
 [R. 3,78,12.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?3,78,12) *gīyatāṃ pīyatāṃ ca*
-[MBH. 1,7649.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7649) = ≈Вульг. 1.207.39 = ≈крит. 01,199.37c
+[MBH. 1,7649.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.7649) = [≈Вульг. 1.207.39](mbh/1.207.html#v39) = ≈крит. 01,199.37c
 [ŚĀK. 59,6.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?59,6) *grīṣmasamayamadhikṛtya gīyatām*
 [4,5.](https://sanskrit-lexicon-scans.github.io/shakuntala/app2?4,5) *jaguśca — sāmāni sāmagāḥ*
 [R. 2,76,18.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?2,76,18) *jagurgītāni*
 [ARJ. 4,10.] *tatra sma gāthā gāyanti sāmnā paramavalgunā*
-[MBH. 3,1783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1783) = ≈Вульг. 3.43.28 = ≈крит. 03,44.28a *gīyamānamaṅgala*
+[MBH. 3,1783.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1783) = [≈Вульг. 3.43.28](mbh/3.43.html#v28) = ≈крит. 03,44.28a *gīyamānamaṅgala*
 [PAÑCAT. 158,2.](https://sanskrit-lexicon-scans.github.io/pantankose/app2?158,2) *idaṃ kāvyamagāyatām*
 [R. 1,4,13.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,13) *gīyatāmidamākhyānam*
 [10.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,4,10) *jaguḥ ślokamimam*
-[2,42.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,42) [MBH. 3,2648.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2648) = ≈Вульг. 3.67.15 = ≈крит. 03,64.14c *jagāvidam*
+[2,42.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,42) [MBH. 3,2648.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.2648) = [≈Вульг. 3.67.15](mbh/3.67.html#v15) = ≈крит. 03,64.14c *jagāvidam*
 [R. 1,2,7.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,2,7) *gāyanti sukumārāṇi manojñāni*
 [9,48.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,9,48) *gīyatāṃ nāṭyocitaṃ kiṃcit*
 [DHŪRTAS. 68,17.] *tavāmalaṃ yaśo gītvā*
 [BHĀG. P. 7,8,54.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?7,8,54) *yaṃ devaṃ viduṣo gānti*
-[MBH. 3,15850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15850) = ≈Вульг. 3.272.73 = ≈крит. 03,256.29a *vedāṅgeṣvatulabalaugha gīyase ca*
+[MBH. 3,15850.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.15850) = [≈Вульг. 3.272.73](mbh/3.272.html#v73) = ≈крит. 03,256.29a *vedāṅgeṣvatulabalaugha gīyase ca*
 [1,1295.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.1295) [MEGH. 57.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?57) [BHĀG. P. 8,1,32.](https://sanskrit-lexicon-scans.github.io/bhagp_bur/app1/?8,1,32) *prabhavastasya gīyase* так преим. называться
 [KUMĀRAS. 2,5.](https://sanskrit-lexicon-scans.github.io/kumaras/app1?2,5) *aṇīmāṇḍavya iti ca tato lokeṣu gīyate*
-[MBH. 1,4329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4329) = ≈Вульг. 1.108.8 = ≈крит. 01,101.22a
+[MBH. 1,4329.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.4329) = [≈Вульг. 1.108.8](mbh/1.108.html#v8) = ≈крит. 01,101.22a
 [RAGH. ed. Calc. 8,30.](https://sanskrit-lexicon-scans.github.io/raghuvamsacalc/app1?8,30) Об изречениях великих мудрецов
 [VARĀH. BṚH. S. 1,7.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?1,7) [31,26.](https://sanskrit-lexicon-scans.github.io/brihatsam/app1?31,26) петь кому-л. (acc.), исполнять (что-л.) с пением: *jagau jayā pratīhārīḥ*
 [KATHĀS. 1,53.](https://sanskrit-lexicon-scans.github.io/kss/index.html?1,53) — мед.: *gāye tvā namasā girā*
 [ṚV. 8,46,17.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv08.046.html#rv08.046.17) *bṛhadu gāyiṣe vacaḥ*
 [7,96,1.](https://sanskrit-lexicon.github.io/rvlinks/rvhymns/rv07.096.html#rv07.096.01) [LĀṬY. 1,8,7.] *hasate gāyate caiva*
-[MBH. 13,747.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.747) = ≈Вульг. 13.14.156 = крит. — *ime ca gāthe dve gāyethāḥ*
+[MBH. 13,747.](https://sanskrit-lexicon-scans.github.io/mbhcalc?13.747) = [≈Вульг. 13.14.154](mbh/13.14.html#v154) = крит. — *ime ca gāthe dve gāyethāḥ*
 [R. 1,62,20.](https://sanskrit-lexicon-scans.github.io/ramayanaschl/?1,62,20) *agāyata*
 [BRAHMA-P. 53,17.]
 [MĀRK. P. 29,43.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?29,43) *gaṅgāvataraṇam — jagire*
@@ -649,13 +648,13 @@ Re-glue — gA
 [RĀJA-TAR. 5,370.](https://sanskrit-lexicon-scans.github.io/rajatar/app1?5,370) *geyamudgātukāmā*
 [MEGH. 84.](https://sanskrit-lexicon-scans.github.io/meghasrnga/app1?84) *gāthāścirodgītāḥ (kaṇḍunā)*
 [R. 5,91,7.](https://sanskrit-lexicon-scans.github.io/ramayanagorr/?5,91,7) *tadetatte mayodgītaṃ yathātatham* возвещено
-[MBH. 6,2966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2966) = ≈Вульг. 6.65.69 = ≈крит. 06,61.64c *udgītametatparamaṃ tu brahma* возвещено мудрецами как высшее Br.
+[MBH. 6,2966.](https://sanskrit-lexicon-scans.github.io/mbhcalc?6.2966) = [≈Вульг. 6.65.69](mbh/6.65.html#v69) = ≈крит. 06,61.64c *udgītametatparamaṃ tu brahma* возвещено мудрецами как высшее Br.
 [ŚVETĀŚV. UP. 1,7.] воспевать: *yaśaḥ svamuccairudgīyamānaṃ vanadevatābhiḥ*
 [RAGH. 2,12.](https://sanskrit-lexicon-scans.github.io/raghuvamsa/app1?2,12)
 [PRAB. 3,14.] петь перед кем-л. (acc.): *(munim) udgīyamānaṃ gandharvaiḥ*
 [MĀRK. P. 18,23.](https://sanskrit-lexicon-scans.github.io/markandeyapurana/app1?18,23) наполнять пением: *haṃsakāraṇḍavodgītāḥ (nadyaḥ)*
-[MBH. 3,1535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1535) = ≈Вульг. 3.38.20 = ≈крит. 03,39.18a *udgīta* _n._ пение: *kiṃnarodgītabhāṣiṇī*
-[MBH. 1,6569.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6569) = ≈Вульг. 1.170.74 = ≈крит. 01,159.16a в Пракрит: *sa kālo madavibbhamuggīdāṇaṃ*
+[MBH. 3,1535.](https://sanskrit-lexicon-scans.github.io/mbhcalc?3.1535) = [≈Вульг. 3.38.20](mbh/3.38.html#v20) = ≈крит. 03,39.18a *udgīta* _n._ пение: *kiṃnarodgītabhāṣiṇī*
+[MBH. 1,6569.](https://sanskrit-lexicon-scans.github.io/mbhcalc?1.6569) = [≈Вульг. 1.170.74](mbh/1.170.html#v74) = ≈крит. 01,159.16a в Пракрит: *sa kālo madavibbhamuggīdāṇaṃ*
 [ŚĀK. CH. 117,5.]
 
 **ud tail)** — ср. *udgātar, udgāthā, udgīti, udgītha* .
@@ -761,5 +760,3 @@ Re-glue — gA
 
 **prefix_vi.umfallen)** — *vipari* падать, опрокидываться: *kathaṃ svayaṃ vai śakaṭaṃ viparyagāt*
 [BHĀG. P. 10,7,8.](https://sanskrit-lexicon-scans.github.io/bhagp_bom/app1/?10,7,8)
-
-_Dr. Mārcis Gasūns_
