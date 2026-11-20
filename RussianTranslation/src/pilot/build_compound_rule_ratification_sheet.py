@@ -46,6 +46,11 @@ Every card carries, or explicitly states why it cannot:
     python src/pilot/build_compound_rule_ratification_sheet.py --report
     python src/pilot/build_compound_rule_ratification_sheet.py --write
     python src/pilot/build_compound_rule_ratification_sheet.py --selftest
+
+`--write` also emits `review/<sheet_id>_screening_evidence.md` (H1649 gate,
+YLQ migration 20-11-2026): the screening banner's counts and that file are
+derived from the same adjudication-TSV read as the cards, so they cannot
+drift apart.
 """
 import csv
 import io
@@ -68,6 +73,9 @@ REVIEW_DIR = os.path.join(REPO, 'review')
 SHEET_ID = 'sanskritlexicography-pwg-compound-rules_ratify30'
 SHEET_HTML = os.path.join(REVIEW_DIR, '{}_review.html'.format(SHEET_ID))
 MANIFEST_JSON = os.path.join(REVIEW_DIR, '{}_evidence_manifest.json'.format(SHEET_ID))
+SCREENING_MD = os.path.join(REVIEW_DIR, '{}_screening_evidence.md'.format(SHEET_ID))
+SCREENING_REL = 'RussianTranslation/review/{}_screening_evidence.md'.format(SHEET_ID)
+SCREENING_MIGRATED = '20-11-2026'
 SEED = 1887
 TARGET = 30
 PER_RULE_FLOOR = 3
@@ -77,6 +85,7 @@ sys.path.insert(0, SRC)
 from review_sheet_standard import pwg_entry_href, slp1_iast, standard_config
 from review_evidence_preflight import (EvidenceManifest, preflight,
                                        valid_sutras, sutra_href)
+from sheet_screening import screening_block
 
 KOSHA_WHEEL = 'https://gasyoun.github.io/SamasaChakram/'
 CDSL_MW = ('https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/'
@@ -628,6 +637,138 @@ def stats_table(rule_sizes, quota, queue_total, resolved_total):
     return ''.join(rows)
 
 
+# ------------------------------------------------- H1649 screening (YLQ, 20-11-2026)
+# csl-pyutil 0.25.0 refuses extras=True without screening= (the gate this
+# generator predated — the sheet's render was live-parked on it). The migration
+# adds ONLY the screening layer: card bodies, sheet_id, localStorage key and
+# the 30-card seed-1887 sample are untouched.
+
+def screening_block_for(items, resolved):
+    """Counts for the H1649 banner, derived from the same TSV read as the cards.
+
+    Candidate population = the `pwg_members-right` rows the ratified rules
+    cover — exactly what `stratified()` samples from. Every NON-sampled row
+    carries an H1681 agent verdict (named rule + cited evidence in the TSV's
+    rule/evidence/reason columns) and waits on THIS ratification vote, not on
+    a per-row human decision: that is class (c), off the plate. The 30 rendered
+    cards ARE the human question — does the RULE hold. (a)/(b) are 0 because
+    the TSV records ONE adjudication lane, not separable deterministic-vs-
+    lookup classes (the H1664 triage §11, verdict HYBRID-B2, put the whole
+    queue in the agent lane) — inventing a split the source does not carry
+    would be a manufactured count.
+    """
+    return screening_block(
+        deterministic=0, lookup=0,
+        agent=resolved - len(items),
+        human=len(items),
+        evidence_path=SCREENING_REL,
+        rules=[RULES[k]['ru'] for k in sorted(RULES)])
+
+
+def screening_evidence_text(rows, sizes, quota, sample):
+    """The committed evidence file behind the banner's evidence_path. Every
+    number is recomputed from the same TSV rows the cards read, so the file
+    and the banner agree by construction."""
+    vc = {}
+    for r in rows:
+        vc[r['verdict']] = vc.get(r['verdict'], 0) + 1
+    pwg_right = sum(sizes.values())
+    agent = pwg_right - len(sample)
+    lines = []
+    a = lines.append
+    a('# Скрининг-отчёт: `{}`'.format(SHEET_ID))
+    a('')
+    a('_Created: {d} · Last updated: {d}_ · генератор: '
+      '[build_compound_rule_ratification_sheet.py](https://github.com/gasyoun/'
+      'SanskritLexicography/blob/master/RussianTranslation/src/pilot/'
+      'build_compound_rule_ratification_sheet.py) · гейт H1649 (миграция YLQ)'
+      .format(d=SCREENING_MIGRATED))
+    a('')
+    a('## Числа баннера (классы H1649)')
+    a('')
+    a('| класс | строк | что это |')
+    a('|---|---|---|')
+    a('| (a) детерминистическая проверка | 0 | — |')
+    a('| (b) лукап датасета | 0 | — |')
+    a('| (c) агентная адъюдикация | {} | строки с вердиктом H1681, не попавшие '
+      'в выборку: правило + цитированное доказательство уже в TSV |'
+      .format(_thou(agent)))
+    a('| (d) человеку | {} | карточки этого листа |'.format(len(sample)))
+    a('| **итого кандидатов** | {} | `pwg_members-right` по {} правилам |'
+      .format(_thou(pwg_right), len(sizes)))
+    a('')
+    a('## Откуда числа')
+    a('')
+    a('Единственный источник — коммитнутая таблица '
+      '`research/pwg_compound_differs_adjudication.tsv` (адъюдикация H1681); '
+      'те же строки читает и генератор карточек. Перепись вердиктов на момент '
+      'сборки:')
+    a('')
+    a('| вердикт | строк |')
+    a('|---|---|')
+    a('| pwg_members-right | {} |'.format(_thou(pwg_right)))
+    a('| index_members-right | {} |'.format(_thou(vc.get('index_members-right', 0))))
+    a('| unresolved | {} |'.format(_thou(vc.get('unresolved', 0))))
+    a('| всего | {} |'.format(_thou(len(rows))))
+    a('')
+    a('Кандидаты этого листа — только `pwg_members-right` ({}): ровно из них '
+      '`stratified()` (seed {}, минимум {} карточки на правило, остаток '
+      'пропорционально размеру класса) набирает {} карточек. Остальные {} '
+      'строк уже несут поименованные правило и доказательство (колонки `rule` /'
+      ' `evidence` / `reason`) — с тарелки рецензента их сняла агентная '
+      'адъюдикация H1681; они ждут ратификации ПРАВИЛ, а не построчного '
+      'голосования.'.format(_thou(pwg_right), SEED, PER_RULE_FLOOR,
+                            len(sample), _thou(agent)))
+    a('')
+    a('## Почему (a) и (b) — нули')
+    a('')
+    a('Таблица вердиктов записывает ОДНУ полосу решения — агентную адъюдикацию '
+      'H1681 с правилом и доказательством на строку. Детерминистические '
+      'проверки и лукапы работают ВНУТРИ неё как части одного классификатора, '
+      'но таблица их не разделяет — выдумывать разделение, которого источник '
+      'не несёт, нельзя (триаж H1664, §11, вердикт HYBRID-B2, отдал всю '
+      'очередь в агентную полосу).')
+    a('')
+    a('## Вне скоупа листа (в числах баннера их нет)')
+    a('')
+    a('* `index_members-right` ({}) — строки, где адъюдикатор встал на сторону '
+      'указателя; ратифицируемые здесь правила (все «за PWG») их не покрывают, '
+      'они остаются в очереди;'.format(_thou(vc.get('index_members-right', 0))))
+    a('* `unresolved` ({}) — строки без вердикта: ни одно правило их не '
+      'разбирает, они остаются в очереди.'.format(_thou(vc.get('unresolved', 0))))
+    a('')
+    a('## Правила, которые несёт баннер')
+    a('')
+    for k in sorted(sizes, key=lambda x: -sizes[x]):
+        a('* {} — {} строк очереди, {} карточек здесь'
+          .format(RULES[k]['ru'], _thou(sizes[k]), quota.get(k, 0)))
+    a('')
+    a('## История чисел')
+    a('')
+    a('Шапка генератора (29-07-2026) цитирует первый прогон H1681: 4 246 строк,'
+      ' 3 975 за PWG, 24 за указатель, 247 неразобранных. Это историческая '
+      'запись того прогона; живая таблица выше — текущий коммит TSV, и именно '
+      'из неё считаются и карточки, и баннер.')
+    a('')
+    a('## Воспроизведение')
+    a('')
+    a('    python src/pilot/build_compound_rule_ratification_sheet.py --write')
+    a('')
+    a('перегенерирует этот файл и лист из одного чтения TSV — разъехаться числа'
+      ' не могут.')
+    a('')
+    a('_Dr. Mārcis Gasūns_')
+    return '\n'.join(lines) + '\n'
+
+
+def write_screening_evidence(rows, sizes, quota, sample):
+    text = screening_evidence_text(rows, sizes, quota, sample)
+    os.makedirs(REVIEW_DIR, exist_ok=True)
+    with io.open(SCREENING_MD, 'w', encoding='utf-8', newline='\n') as f:
+        f.write(text)
+    return SCREENING_MD
+
+
 def render(sample, columns, deriv, rule_sizes, quota, queue_total, generated=GENERATED):
     from csl_pyutil import render_review_sheet
     items, suppressed, card_ev = build_items(sample, columns, deriv,
@@ -704,7 +845,8 @@ def render(sample, columns, deriv, rule_sizes, quota, queue_total, generated=GEN
         },
     }
     config.update(standard_config(save_as=config['save_as']))
-    html = render_review_sheet(items, config)
+    html = render_review_sheet(items, config, extras=True,
+                               screening=screening_block_for(items, resolved))
     return html, items, suppressed, card_ev
 
 
@@ -798,10 +940,22 @@ def selftest():
     assert rep['slp1_leak'] == [], rep['slp1_leak']
     assert rep['impossible_citations'] == [], rep['impossible_citations']
     assert not rep['prior_art_undeclared'], rep['prior_art_undeclared']
+    # YLQ (20-11-2026): the H1649 screening layer must carry the TSV's live
+    # counts, be present in the document, and agree with the evidence file.
+    assert 'data-screening="1"' in html, 'screening banner missing from render'
+    pwg_right = sum(sizes.values())
+    assert 'deterministic 0' in html and 'dataset lookup 0' in html
+    assert 'agent adjudication %d' % (pwg_right - len(items)) in html
+    assert 'Human cards: <span class="sc-d">%d</span>' % len(items) in html
+    ev = screening_evidence_text(rows, sizes, quota, sample)
+    assert _thou(pwg_right - len(sample)) in ev and _thou(pwg_right) in ev
+    assert SCREENING_REL in html
     print('selftest OK — %d cards over %d rules, deterministic under seed=%d, '
           'preflight clean (no mixed script, no SLP1 leak, no impossible citation, '
-          'no undeclared prior art), %d impossible sutra refs suppressed'
-          % (len(items), len(sizes), SEED, suppressed))
+          'no undeclared prior art), %d impossible sutra refs suppressed; '
+          'screening banner: agent %d, human %d'
+          % (len(items), len(sizes), SEED, suppressed,
+             pwg_right - len(items), len(items)))
 
 
 def main():
@@ -820,8 +974,10 @@ def main():
         with io.open(SHEET_HTML, 'w', encoding='utf-8', newline='\n') as f:
             f.write(html)
         man.write(MANIFEST_JSON)
+        write_screening_evidence(rows, sizes, quota, sample)
         print('wrote sheet    -> {}'.format(SHEET_HTML))
         print('wrote manifest -> {}'.format(MANIFEST_JSON))
+        print('wrote screening evidence -> {}'.format(SCREENING_MD))
         print('cards: %d over %d rules; suppressed %d impossible sutra refs'
               % (len(items), len(sizes), suppressed))
         print('preflight: PASS (%d prior-art artifacts declared)' % len(man.joined))
