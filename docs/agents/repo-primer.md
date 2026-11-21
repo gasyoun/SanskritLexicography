@@ -1,4 +1,4 @@
-_Created: 06-10-2026 · Last updated: 06-10-2026_
+_Created: 06-10-2026 · Last updated: 21-11-2026_
 
 # Repo primer — full detail for the sections trimmed from CLAUDE.md
 
@@ -15,6 +15,10 @@ CI ([`.github/workflows/ci.yml`](https://github.com/gasyoun/SanskritLexicography
 - the **offline contract-pins** job (H4353) running
   [`tests/run_offline_suite.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/run_offline_suite.py) — **222 pins** over the 62 in-scope modules outside `RussianTranslation`, network off, fixtures under `tests/fixtures` only, literal record-count floors per headword list (evidence:
   [`tests/OFFLINE_CONTRACT_PINS_08-09-2026.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/tests/OFFLINE_CONTRACT_PINS_08-09-2026.md)). The pin count is verified, never retyped (H5426): `python tests/run_offline_suite.py --collect-only -q` prints the per-test-file breakdown (it summed to 222 on 13-10-2026: 6+4+19+15+30+110+9+11+11+7).
+
+### Other workflows beside `ci.yml`
+
+- **A-class script gate** ([`a-class-script-check.yml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/a-class-script-check.yml), H7596, 01-11-2026) — a finding-as-test over [`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json): every class-A row that declares a `primary_script` must still have a runnable recipe ([`tools/a_class_script_check.py`](https://github.com/gasyoun/SanskritLexicography/blob/master/tools/a_class_script_check.py)). In-tree scripts must exist; a script declaring a `--selftest` must exit 0; a row whose script lives in another estate repo is skipped against the checker's committed `EXTERNAL_SCRIPTS` map (named in the output, never silently green). Triggers: `pull_request` on `verifiability.json` / the checker / the workflow, a `push` to `master` touching the same paths, **and a weekly cron — Mondays 04:00 UTC** — so a script deleted between registry edits is caught by drift, not by the next registry edit. The `push`-to-`master` backstop **opens a tracking issue** («⚠️ A-class script gate RED on master», marker `<!-- a-class-script-check -->`) on failure and comments on the existing one while it stays red, so a red `master` is loud. Measured 21-11-2026: `python tools/a_class_script_check.py --dir .` → GREEN — 51 A-class `primary_script` rows: 30 in-tree, 21 external-skip, 3 declared selftests run, 0 red.
 
 Pre-commit hooks ([`.pre-commit-config.yaml`](https://github.com/gasyoun/SanskritLexicography/blob/master/.pre-commit-config.yaml)): `check-yaml`, `end-of-file-fixer`, `trailing-whitespace`, `check-merge-conflict`, plus local `russian-translation-review-changelog`, `utf8-validity` and `epistemic-integrity-check`.
 

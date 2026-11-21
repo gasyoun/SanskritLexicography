@@ -1,12 +1,15 @@
 # FINDINGS dashboard
 
-_Created: 02-07-2026 · Last updated: 01-11-2026_
+_Created: 02-07-2026 · Last updated: 21-11-2026_
 
 Recurring visualization of the
 [FINDINGS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md)
 registry — importance/section breakdown, staleness flags, monthly time series for the
-re-measurable findings, the §41 platform-liveness board, and the H7594
-supersession chains panel (per-topic DAG with the CURRENT leaf verdict).
+re-measurable findings, the §41 platform-liveness board, the H7593 B-class re-probe
+board (13 rows re-probed on the residential monthly run, with verdict and `checked_at`
+written back into
+[`epistemic_dashboard/verifiability.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/epistemic_dashboard/verifiability.json)),
+and the H7594 supersession chains panel (per-topic DAG with the CURRENT leaf verdict).
 
 **Live page:** <https://gasyoun.github.io/SanskritLexicography/findings/>
 
@@ -21,7 +24,8 @@ is a private repo (network-topology findings) and is deliberately NOT rendered h
 | [build_findings_data.py](https://github.com/gasyoun/SanskritLexicography/blob/master/findings_dashboard/build_findings_data.py) | Parses FINDINGS.md → `data.json`; collects the tracked metrics (§12 DCS→CDSL linkage, §13 glossary coverage, §21 citation coverage, §25 queue decay) from their owning repos (local sibling first, raw.githubusercontent.com fallback) and appends one snapshot/month to `timeseries.json`. |
 | [probe_platforms.py](https://github.com/gasyoun/SanskritLexicography/blob/master/findings_dashboard/probe_platforms.py) | Probes the 12 platforms of §41 → `platform_status.json`. **Residential machine only** — several hosts block GitHub Actions IPs (Uprava §1). |
 | [monthly_refresh.py](https://github.com/gasyoun/SanskritLexicography/blob/master/findings_dashboard/monthly_refresh.py) | Local Task-Scheduler entrypoint: throwaway worktrees → build + probe → commit `master` → publish `gh-pages/findings/`. Never touches the main checkout's branch. |
-| [index.html](https://github.com/gasyoun/SanskritLexicography/blob/master/findings_dashboard/index.html) | The dashboard — single file, vanilla JS + inline SVG charts, no build step, no external deps. Since H7594 it renders the «Supersession chains» panel from `data.json` → `supersession`. |
+| [index.html](https://github.com/gasyoun/SanskritLexicography/blob/master/findings_dashboard/index.html) | The dashboard — single file, vanilla JS + inline SVG charts, no build step, no external deps. Since H7594 it renders the «Supersession chains» panel from `data.json` → `supersession`; since H7593 the «B-class re-probe» board from `data.json` → `b_reprobe` (§41 §47 §48 §49 §50 §56 §57 §68 §75 §95 §448 §451 §652). |
+| [../tools/b_class_reprobe.py](https://github.com/gasyoun/SanskritLexicography/blob/master/tools/b_class_reprobe.py) | H7593 B-class re-probe lane: runs each of the 13 `verifiability.json` B-row re-probe recipes (the `b_class_reprobe_probes_*` modules — live-host probes, residential egress only), writes `verdict` + `checked_at` + `detail` back per row, and stamps the `b_reprobe` meta block. Last committed run 01-11-2026: 10 verified · 0 stale · 3 inconclusive. |
 | [../tools/findings_supersession.py](https://github.com/gasyoun/SanskritLexicography/blob/master/tools/findings_supersession.py) | H7594 supersession-DAG parser: edges (SUPERSEDED/extended/refuted/closed by, extends, builds-on), in-place annotations, per-topic chains with the CURRENT leaf; `--check` flags ghost index rows / drifted anchors / dangling §-targets (exit 1), `--selftest` pins the known chains. Writes [`../data/findings_supersession.json`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/findings_supersession.json). |
 | [findings-dashboard.yml](https://github.com/gasyoun/SanskritLexicography/blob/master/.github/workflows/findings-dashboard.yml) | GitHub Actions monthly cron (3rd, 06:17 UTC): registry meta + metric snapshot + publish. No probes (blocked egress). |
 
@@ -30,12 +34,14 @@ is a private repo (network-topology findings) and is deliberately NOT rendered h
 - **GitHub Actions** (3rd of month): everything reachable from a datacenter — the registry
   parse and the four metric collectors (all raw.githubusercontent.com fetches of public repos).
 - **This machine** (Task Scheduler, 3rd of month 09:30, task name `SL findings dashboard
-  refresh`): the platform probes, which need residential egress; runs the full
-  `monthly_refresh.py` pipeline, so it also doubles as a fallback if the Action fails.
-  Definition repaired 18-07-2026 (H737): `StartWhenAvailable` (a missed 09:30 fires at
-  next logon), explicit working directory, log at `findings_dashboard/refresh.log`
-  (gitignored). Still `InteractiveToken` — running while logged off awaits MG's stored
-  credentials (GTD @DO).
+  refresh`): the B-class re-probes and the platform probes, which need residential egress;
+  runs the full `monthly_refresh.py` pipeline, so it also doubles as a fallback if the
+  Action fails. Since H7593 the pipeline runs `tools/b_class_reprobe.py` before
+  `probe_platforms.py` and commits `epistemic_dashboard/verifiability.json` beside
+  `findings_dashboard/`. Definition repaired 18-07-2026 (H737): `StartWhenAvailable`
+  (a missed 09:30 fires at next logon), explicit working directory, log at
+  `findings_dashboard/refresh.log` (gitignored). Still `InteractiveToken` — running
+  while logged off awaits MG's stored credentials (GTD @DO).
 
 A failed collector records `null` and the build continues — a chart simply skips that month.
 
