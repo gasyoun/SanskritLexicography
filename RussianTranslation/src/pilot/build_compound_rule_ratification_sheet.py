@@ -846,7 +846,11 @@ def render(sample, columns, deriv, rule_sizes, quota, queue_total, generated=GEN
     }
     config.update(standard_config(save_as=config['save_as']))
     html = render_review_sheet(items, config, extras=True,
-                               screening=screening_block_for(items, resolved))
+                               screening=screening_block_for(items, resolved),
+                               # V18 (csl-pyutil 0.25.1, MG 21-11-2026): the
+                               # collapsed one-line header summary carries the
+                               # rule count — «▸ … (30 шт., 8 правил)».
+                               intro_summary_note=', %d правил' % n_rules)
     return html, items, suppressed, card_ev
 
 
