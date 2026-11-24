@@ -30,7 +30,7 @@ original acquisition spec went wrong:
 
 ### 1. Monier-Williams — the one large second witness, already in the estate ★
 
-[`csl-orig/v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt)
+`csl-orig/v02/mw/mw.txt`
 cites the dhātupāṭha in Böhtlingk's own coordinates, written in Roman gaṇa numerals:
 `Dhātup. xxiv, 68`. Measured:
 
@@ -116,7 +116,7 @@ line 59 already records DCS as HTTPS-broken, plain-HTTP only. Wiring a link that
 
 ### 5. `pw` (Böhtlingk's abridged dictionary) — 44 citations, free tiebreaker
 
-[`csl-orig/v02/pw/pw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt)
+`csl-orig/v02/pw/pw.txt`
 uses the identical `DHĀTUP. x,y` notation (same author, same numbering) but only ~44
 coordinate-bearing citations against PWG's 2,768 lines. Too small to move coverage;
 worth reading in the disambiguation pass precisely because Böhtlingk is his own

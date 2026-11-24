@@ -4,8 +4,8 @@ Next free number (currently §2).
 
 ## Index
 
-- 🔴 [§1. First finding](#1)
-- 🔴 [§9. Dangling index row](#9)
+- 🔴 §1. First finding
+- 🔴 §9. Dangling index row
 
 ## A. Section
 

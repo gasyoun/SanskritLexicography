@@ -93,8 +93,8 @@ finds **517/571 (90.5 %)** corroborated by ≥1 dictionary *outside* the Böhtli
 strong axes for this class.
 
 **Examples (top DCS band):** `aBi` (√abhí, `adj.`, hom 2, MW max 1) ·
-[`aNga` hom 3, MW max 2](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L599176) ·
-[`as` hom 5, MW max 3](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L612262) ·
+`aNga` hom 3, MW max 2 ·
+`as` hom 5, MW max 3 ·
 `dAna` hom 5, MW max 3 · `hfdaya` hom 2, MW max 0 · `mArga` (both `f.` and `m.` rows) ·
 `karaRa`/`karRa` hom 2, MW max 0.
 
@@ -195,7 +195,7 @@ python HeadwordLists/mw_unabsorbed_census.py
   ([ADJ#L2900](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-ADJUDICATION-15-09-2026.tsv#L2900)) — **reproduces**, and correctly has *no* `<hom>`
   (it is not a homonym-extension). ✓
 - **`kārin³`** — homonym-extension at pw volume-7 `7-331-d`
-  ([pw.txt#L620966](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L620966)),
+  (pw.txt#L620966),
   hom 3, **MW main max 2** ⇒ extension
   ([extension TSV line 516](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-UNABSORBED-CENSUS-HOMONYM-EXTENSIONS-16-09-2026.tsv#L516)). ✓
 

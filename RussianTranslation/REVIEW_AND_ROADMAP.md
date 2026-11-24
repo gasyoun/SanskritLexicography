@@ -130,7 +130,7 @@ bulk changes.
 
 **Ranking — hybrid token × breadth × richness** (decided 2026-06-23):
 - **token** = DCS occurrence frequency — `freqBand` 1–5 (log10 orders, Hellwig DCS
-  ~2021) in [`../VisualDCS/dcs_lemma_summary.json`](../../VisualDCS/dcs_lemma_summary.json)
+  ~2021) in `../VisualDCS/dcs_lemma_summary.json`
   (83,239 lemmas), exact counts from the DCS SQLite to break ties.
 - **breadth** = `n_texts` (distinct DCS texts the lemma appears in) from
   `src/dcs_lemma_renou.json` (local-only, gitignored).

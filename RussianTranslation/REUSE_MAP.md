@@ -79,7 +79,7 @@ output, not a dictionary lookup. See [`SAMUDRA_INTEGRATION.md`](SAMUDRA_INTEGRAT
 rebuildable** — the DeepSeek alignment API config was env-only, so no
 reproducible regeneration exists. If `src/corpus_lexicon.jsonl` is absent
 (normal for a fresh checkout), restore the verified mirror bytes per
-[§7](#7-availability--verified-restore-h8040-11-11-2026) — do not rebuild.
+[§7](#7-availability-verified-restore-h8040-11-11-2026) — do not rebuild.
 
 ## 4. Running-text sources — context lookup only, NOT translation memory
 

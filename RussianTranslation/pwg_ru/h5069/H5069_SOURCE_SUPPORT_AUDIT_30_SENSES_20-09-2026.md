@@ -6,7 +6,7 @@ Executed by Claude Code Opus 5 (`claude-opus-5`). Handoff minted by Codex Astra
 (`gpt-6-astra`), 16-09-2026; filename tier `Opus`, intended executor Claude
 Opus 5 — tier matches, no provenance divergence. Class `data`, so the closing
 `## Verifier` PASS is owed to a session that is not this one; see
-[§10](#10-independent-review--pending-not-pass).
+[§10](#10-independent-review-pending-not-pass).
 
 ## 1. The question, and the question this is not
 
@@ -18,7 +18,7 @@ n=400 samples
 ([WAVE3_GATE_VERDICT.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/release/pwg_tm_canonical/wave3_receipt/WAVE3_GATE_VERDICT.md)).
 The sample here is **purposive, not random**, and nothing in this document may
 be read as a rate over the corpus. Where a corpus-wide number does appear
-([§7](#7-store-wide-census--counted-not-estimated)) it is a **census** — every
+([§7](#7-store-wide-census-counted-not-estimated)) it is a **census** — every
 one of the 2392 records counted by a deterministic predicate, nothing
 estimated from the 30.
 

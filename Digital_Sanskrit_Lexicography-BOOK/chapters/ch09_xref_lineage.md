@@ -4,7 +4,7 @@ _Created: 13-07-2026 · Last updated: 13-07-2026_
 
 > **Provenance.** This chapter is the book-form version of the article *Pointing Inward:
 > Cross-Reference Graphs as a Signal of Dictionary Descent* (source draft:
-> [paper_xref_lineage.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_xref_lineage.md)),
+> paper_xref_lineage.md),
 > which is being published separately in a journal version (target: a digital-humanities /
 > metalexicography methods venue, with the World Sanskrit Conference 2027 as an alternate);
 > where the article must remain independently citable, cite that version. It also **absorbs**

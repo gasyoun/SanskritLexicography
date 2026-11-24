@@ -9,7 +9,7 @@ prompt bytes, and the two gates that stand between here and the A/B.
 
 **Try 2 (25-09-2026) re-measured both gates: gate 1 is GONE, a third gate was found, and the
 handoff's named stop («stop after 2 tries») is now reached with the budget still at 0/5.**
-See [§ Try 2](#try-2--25-09-2026-gate-1-cleared-gate-3-found-named-stop-reached) at the end.
+See [§ Try 2](#try-2-25-09-2026-gate-1-cleared-gate-3-found-named-stop-reached) at the end.
 
 ## What shipped
 
