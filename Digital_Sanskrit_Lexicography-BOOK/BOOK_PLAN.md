@@ -79,15 +79,15 @@ papers that belong to a **different** book (§5).
 | # | ID | Chapter topic | Repo | Readiness | Lang |
 |---|----|---------------|------|:---------:|:----:|
 | 1 | **A36** | The Latin discretion-screen — history + metalanguage (1832–1959) | [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A36_latin_obscena_note.md) | 5/5 | EN |
-| 2 | **A01** | The measurement framework — evidence-graded method | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_measurement_framework.md) | 4/5 | EN |
+| 2 | **A01** | The measurement framework — evidence-graded method | csl-atlas | 4/5 | EN |
 | 3 | **A40** | The CDSL headword inventory — 12-yr growth + corpus-grounding | [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/NOW_VS_THEN.md) | data 4/5 | EN |
-| 4 | **A06** | Order is the dictionary — kośa macrostructure | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_kosha_macrostructure.md) | 4/5 | EN |
+| 4 | **A06** | Order is the dictionary — kośa macrostructure | csl-atlas | 4/5 | EN |
 | 5 | **A16** | The block economy of Monier-Williams — the European entry anatomized | [MWS](https://github.com/sanskrit-lexicon/MWS/blob/master/papers/microanalysis/PAPER.md) | 5/5 | EN |
-| 6 | **A02** | Sense inheritance — condensation, not inflation | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_sense_inheritance.md) | 4/5 | EN |
+| 6 | **A02** | Sense inheritance — condensation, not inflation | csl-atlas | 4/5 | EN |
 | 7 | **A33** | Genetic, not historical — what sense order encodes | [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A33_sense_ordering_note.md) | 4/5 | EN |
-| 8 | **A04** | Grammar without tags — indigenous verbal-root microstructure | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_indigenous_microstructure.md) | 4/5 | EN |
+| 8 | **A04** | Grammar without tags — indigenous verbal-root microstructure | csl-atlas | 4/5 | EN |
 | 9 | **A35** | Pāṇinian derivation across ten lexica | [csl-orig](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/PAPER_DRAFT.md) | 4/5 | EN |
-| 10 | **A05** | Pointing inward — cross-reference graphs & descent (absorbs A03/A07) | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_xref_lineage.md) | 4/5 | EN |
+| 10 | **A05** | Pointing inward — cross-reference graphs & descent (absorbs A03/A07) | csl-atlas | 4/5 | EN |
 | 11 | **A08** | Two citation registers — European `<ls>` vs indigenous *iti* | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_citation_registers.md) | 4/5 | EN |
 | 12 | **A50** | What the tradition cites — the `<ls>` citation-frequency graph (11 dicts) | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/A50_ls_citation_frequency_graph.md) | data 4/5 | EN |
 | 13 | **A10** | Apparatus, not errors — shared inheritance as forensic signal | [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/article_21_apparatus_not_errors.md) | 4/5 | EN |

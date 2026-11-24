@@ -4,7 +4,7 @@ _Created: 22-10-2026 · Last updated: 22-10-2026_
 
 Executor: OxAlpha pool worker 3 (opencode/z-ai/glm-5.3-flash) · Handoff:
 [H6590](https://github.com/gasyoun/Uprava/blob/main/handoffs/H6590-OxAlpha_SanskritLexicography_griffith-en-asset-column-repair_13.10.26.md)
-· Residual of [FINDINGS §524](../../FINDINGS.md), measured in
+· Residual of FINDINGS §524, measured in
 [h2361](../h2361/GRIFFITH_EN_RV_MANDALA8_VALAKHILYA_MISALIGNMENT_07-08-2026.md),
 refusal half closed by H5706 (PR #2368).
 

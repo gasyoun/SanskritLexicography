@@ -11,7 +11,7 @@
   - nested two
 - Wrapped entry
   continues on an indented prose line
-- **[`build.py`](url)** —
+- **`build.py`** —
   first substance
 
 ## [1.0.0] - 2026-08-30
@@ -19,5 +19,5 @@
 - **Fix the thing.** Details here.
 - allowlisted marker ALLOW-ME appears twice
 - allowlisted marker ALLOW-ME appears twice
-- **[`build.py`](url)** —
+- **`build.py`** —
   second, different substance

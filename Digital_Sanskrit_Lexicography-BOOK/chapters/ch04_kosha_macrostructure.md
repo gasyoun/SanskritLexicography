@@ -4,7 +4,7 @@ _Created: 13-07-2026 · Last updated: 13-07-2026_
 
 > **Provenance.** This chapter is the book-form version of the article *Order Is the
 > Dictionary: A Macrostructural Model of the Versified Synonymic Kośa* (source draft:
-> [paper_kosha_macrostructure.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_kosha_macrostructure.md)),
+> paper_kosha_macrostructure.md),
 > which is being published separately in a journal version (target: *International Journal
 > of Lexicography*, with the World Sanskrit Conference 2027 as an indological alternate);
 > where the article must remain independently citable, cite that version. Every count and

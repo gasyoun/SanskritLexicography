@@ -165,7 +165,7 @@ Condensation, survival and the citation advantage across the European family 182
 (R2 alignments): sense granularity is a family trait (r≈0 trend), cited senses survive at
 0.762 against 0.591 for uncited, descendants condense rather than expand; drift indices per
 edge. Source: csl-atlas
-[docs/articles/paper_sense_inheritance.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_sense_inheritance.md),
+docs/articles/paper_sense_inheritance.md,
 venue Lexicographica. Author pass executed 06-09-2026. **Owed:** MG read-and-sign of the
 author pass and the SKD adjudication (A02 row); the review-pool fold is H5316. Note for the
 chapter: the by-repo entry records the pooled survival pair corrected to 0.768 (82 cited),

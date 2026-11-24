@@ -5,7 +5,7 @@ _Created: 09-07-2026 · Last updated: 09-11-2026_
 > **Provenance.** This chapter is the book-form version of the article *Measuring the
 > Dictionary Family: A Traceable Measurement Framework for Computational Lexicography*
 > (source draft:
-> [paper_measurement_framework.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_measurement_framework.md)),
+> paper_measurement_framework.md),
 > which is being published separately in a journal version; where the article must remain
 > independently citable, cite that version. Every figure and measured number below is
 > carried over from the article unchanged; only the framing has been converted from

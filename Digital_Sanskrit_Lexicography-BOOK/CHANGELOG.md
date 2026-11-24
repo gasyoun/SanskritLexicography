@@ -210,7 +210,7 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
   [chapters/ch06_senses_inheritance_and_order.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch06_senses_inheritance_and_order.md).
   Per the [BOOK_PLAN §3](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/BOOK_PLAN.md)
   merge ruling: **Part I — Inheritance** = A02 *Condensation, Not Inflation* (csl-atlas
-  [paper_sense_inheritance.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_sense_inheritance.md));
+  paper_sense_inheritance.md);
   **Part II — Order** = A33 *Genetic, Not Historical* (local
   [papers/A33_sense_ordering_note.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A33_sense_ordering_note.md)).
   Both halves reframed against **Apresjan** (regular polysemy as the sense-propagation mechanism;
@@ -233,7 +233,7 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
   [chapters/ch07_indigenous_microstructure.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch07_indigenous_microstructure.md),
   the book-form version of A04 *Grammar Without Tags: The Verbal-Root Microstructure of the
   Indigenous Sanskrit Kośa* (csl-atlas source
-  [paper_indigenous_microstructure.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_indigenous_microstructure.md))
+  paper_indigenous_microstructure.md)
   — the last straight one-to-one conversion. Abstract + keywords stripped, provenance headnote
   added (A04 stays citable at IJL / WSC 2027), companion "P-numbers" remapped (root-parser
   agreement → **Ch. 2 §3.9**, sense/citation companions → **Ch. 6 / Ch. 10**, derivation sibling
@@ -361,7 +361,7 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
   [chapters/ch09_xref_lineage.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch09_xref_lineage.md),
   the book-form version of A05 *Pointing Inward: Cross-Reference Graphs as a Signal of
   Dictionary Descent* (csl-atlas source
-  [paper_xref_lineage.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_xref_lineage.md)).
+  paper_xref_lineage.md).
   Abstract + keywords stripped, provenance headnote added (A05 stays citable at a DH /
   metalexicography venue / WSC 2027), companion "P-numbers" remapped to book chapters
   (P1→Ch. 2 §3.6 metric, P2→Ch. 6, P4→Ch. 7, P6→Ch. 4), the A03 "three axes of descent"
@@ -383,7 +383,7 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
   [chapters/ch04_kosha_macrostructure.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch04_kosha_macrostructure.md),
   the book-form version of A06 *Order Is the Dictionary: A Macrostructural Model of the
   Versified Synonymic Kośa* (csl-atlas source
-  [paper_kosha_macrostructure.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_kosha_macrostructure.md)).
+  paper_kosha_macrostructure.md).
   Abstract + keywords stripped, provenance headnote added (A06 stays citable at IJL / WSC
   2027), companion "P-numbers" remapped to book chapters (P1→Ch. 2 method, P4→Ch. 7
   indigenous microstructure), the crosswalk §1 grounding woven in — Vogel (already primary),
@@ -473,7 +473,7 @@ folder. Registry ID **M01** in [Uprava/ARTICLES.md](https://github.com/gasyoun/U
 
 - [chapters/ch02_measurement_framework.md](https://github.com/gasyoun/SanskritLexicography/blob/master/Digital_Sanskrit_Lexicography-BOOK/chapters/ch02_measurement_framework.md):
   book-form sample chapter converted from the A01 journal draft
-  ([csl-atlas paper_measurement_framework.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_measurement_framework.md))
+  (csl-atlas paper_measurement_framework.md)
   — journal front/back matter stripped, re-anchored to the evidence-graph thesis,
   companion-paper pointers remapped to sibling chapters (Chs. 4/5/6/8/10/11), all figures
   and measured numbers unchanged.

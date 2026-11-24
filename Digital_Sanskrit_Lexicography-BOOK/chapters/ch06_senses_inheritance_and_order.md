@@ -5,7 +5,7 @@ _Created: 13-07-2026 · Last updated: 13-07-2026_
 > **Provenance.** This chapter is a genuine **merge** of two journal articles, not a conversion
 > of one: its first half is the book-form version of *Condensation, Not Inflation: Sense
 > Inheritance in the Sanskrit Dictionary Family, 1822–1957* (source draft:
-> [paper_sense_inheritance.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/articles/paper_sense_inheritance.md)),
+> paper_sense_inheritance.md),
 > and its second half is the book-form version of *Genetic, Not Historical: How the
 > 19th-Century European Sanskrit Dictionaries Order Senses* (source draft:
 > [A33_sense_ordering_note.md](https://github.com/gasyoun/SanskritLexicography/blob/master/papers/A33_sense_ordering_note.md)).

@@ -155,7 +155,7 @@ The controlling constraint: **no participant name, e-mail, phone, handle, or any
 
 ### 9.1 What is processed, and where
 - **Research data** (what lands in a repo): participant **code** (`P01`…`P24`), condition, block, item id, time in ms, selected sense, correctness, ease rating, coarse experience band. Contains no identifier.
-- **Identity data** (what never lands in a repo): the name/contact of a person who agreed to take part, and the consent record itself. These live only in MG's own contact store outside `GitHub/`, exactly as the [stenogrammy hard deny](https://github.com/gasyoun/claude-config/blob/main/rules/tgrep-fast-search.md) treats the student corpus — no agent indexes, greps, or serves them.
+- **Identity data** (what never lands in a repo): the name/contact of a person who agreed to take part, and the consent record itself. These live only in MG's own contact store outside `GitHub/`, exactly as the stenogrammy hard deny treats the student corpus — no agent indexes, greps, or serves them.
 - **The code↔person mapping** is generated once, held with the identity data, and is **not** needed to analyse the study. It exists only so a participant can exercise withdrawal (§9.6). Codes are assigned from a shuffled list, so `P01` carries no information about who enrolled first.
 
 ### 9.2 Why there are no recordings
@@ -171,7 +171,7 @@ The one optional free-text field (§5.6) is screened before storage: any name, c
 - Identity data and the mapping: deleted **within 30 days of the last session**, or immediately after the withdrawal window closes, whichever is later. After deletion the research data is irreversibly pseudonymous.
 - Research data: retained and published de-identified alongside P6, because a reproducible study is the point.
 - **Aggregate-only reporting, with a floor:** no cell of any published table may describe fewer than 5 participants. In a sample of ~24 drawn from a known cohort, a table like "students in year 3, female, n = 2" re-identifies people; coarse bands (experience: <1 year / 1–3 years / >3 years) are used, and no demographic beyond that band is collected at all.
-- Before anything from this study is published, it goes through [`/publish-safety-check`](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md) with `personal_data` treated as a hard NO-GO, per the [HTML-links personal-data carve-out](https://github.com/gasyoun/claude-config/blob/main/rules/html-links-github-io.md).
+- Before anything from this study is published, it goes through [`/publish-safety-check`](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md) with `personal_data` treated as a hard NO-GO, per the HTML-links personal-data carve-out.
 
 ### 9.6 Withdrawal
 A participant may withdraw at any point up to **14 days after their session**, by contacting MG; their rows are deleted from the research data and their code is retired (never reused). Withdrawal after the mapping is deleted is impossible by construction — the consent text says so plainly, because a promise that cannot be kept is worse than a clear limit.

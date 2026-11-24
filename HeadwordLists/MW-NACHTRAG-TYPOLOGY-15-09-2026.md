@@ -126,9 +126,9 @@ The canary itself — [`kāritra` ADJ#L2900](https://github.com/gasyoun/Sanskrit
 is `confirmed-missing`, corroborated bhs+sch, MAHĀVY 245; its fuzzy target was
 **`kArita` (kārita) — a false friend** ("separate pw.txt entry at 2-052-c", ADJ#L2900
 review_note), auto-resolved. Primary sources:
-[pw#L620963](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L620963) ·
-[pwkvn#L53131](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwkvn/pwkvn.txt#L53131) ·
-[bhs#L19108](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/bhs/bhs.txt#L19108).
+pw#L620963 ·
+pwkvn#L53131 ·
+bhs#L19108.
 
 ## 7. Cross-checks
 
@@ -186,33 +186,33 @@ Enlisted in full per MG standing rule (small lists go into the issue verbatim, p
 
 | # | word (IAST) | SLP1 | in MW72 | pw | other corroborating dictionaries (n) |
 |---|---|---|---|---|---|
-| 1 | ākhāta | `AKAta` | [mw72.txt#L50409](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L50409) · [pw#L210284](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L210284) | armh;bur;lrv;pwg;sch;shs;wil;yat (8) |
-| 2 | chard | `Card` | [mw72.txt#L134008](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L134008) | ap;ap90;ben;bop;bur;ccs;lrv;md;pwg;sch (10) |
-| 3 | ūhin | `Uhin` | [mw72.txt#L79000](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L79000) | ap;ap90;sch;shs;wil;yat (6) |
-| 4 | aśṛṇya | `aSfRya` | [mw72.txt#L45295](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L45295) | sch;yat (2) |
-| 5 | añjanika | `aYjanika` | [mw72.txt#L5591](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L5591) | gst;pwg;sch (3) |
-| 6 | amanasvin | `amanasvin` | [mw72.txt#L34106](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L34106) | ap;ap90;sch;stc;yat (5) |
-| 7 | amṛṣya | `amfzya` | [mw72.txt#L35024](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L35024) | sch (1) |
-| 8 | aniṅgya | `aniNgya` | [mw72.txt#L13616](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L13616) · [pw#L56735](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L56735) | acc;ap;bur;pwg;sch (5) |
-| 9 | anumāsa | `anumAsa` | [mw72.txt#L17209](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L17209) | gst;lrv;pwg;sch;stc (5) |
-| 10 | anupadeśa | `anupadeSa` | [mw72.txt#L439576](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L439576) | sch (1) |
-| 11 | apragīta | `apragIta` | [mw72.txt#L25792](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L25792) | gst;sch (2) |
-| 12 | aramaṇīya | `aramaRIya` | [mw72.txt#L36523](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L36523) | lrv;md;sch;stc (4) |
-| 13 | asaṃsthiti | `asaMsTiti` | [mw72.txt#L46461](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L46461) | lrv;sch;shs;wil (4) |
-| 14 | asevana | `asevana` | [mw72.txt#L47883](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L47883) | ap;ap90;cae;sch;shs;vcp;wil;yat (8) |
-| 15 | asvāmya | `asvAmya` | [mw72.txt#L48670](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L48670) | ap;ap90;sch;shs;vcp;wil;yat (7) |
-| 16 | avaṇḍa | `avaRqa` | [mw72.txt#L40232](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L40232) | ap;pwg;sch (3) |
-| 17 | avasarpin | `avasarpin` | [mw72.txt#L42347](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L42347) · [pw#L163994](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L163994) | ap;ap90;pwg;sch;vcp (5) |
-| 18 | dāsīka | `dAsIka` | [mw72.txt#L162169](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L162169) | sch (1) |
-| 19 | indindira | `indindira` | [mw72.txt#L62197](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L62197) | armh;bur;lrv;pwg;sch;shs;vcp;wil;yat (9) |
-| 20 | karmatas | `karmatas` | [mw72.txt#L90341](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L90341) | ben;sch (2) |
-| 21 | lavaṅga | `lavaNga` | [mw72.txt#L322217](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L322217) | cae;ccs;md;pwg;sch;shs;snp;stc;vcp;wil;yat (11) |
-| 22 | pāriṣad | `pArizad` | [mw72.txt#L218816](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L218816) | bur;sch;stc (3) |
-| 23 | pacanika | `pacanika` | [mw72.txt#L201077](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L201077) | pwg;sch (2) |
-| 24 | ḍītara | `qItara` | [mw72.txt#L143143](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L143143) | pwg;sch;vcp (3) |
-| 25 | taḍāghāta | `taqAGAta` | [mw72.txt#L143735](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L143735) | lrv;pwg;sch;shs;stc;vcp;wil;yat (8) |
-| 26 | upajīka | `upajIka` | [mw72.txt#L71832](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L71832) · [pw#L311405](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L311405) | ap;ap90;pwg;sch;vcp (5) |
-| 27 | var | `var` | [mw72.txt#L330767](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw72/mw72.txt#L330767) | ap;ap90;ben;bop;ccs;fri;lrv;pwg;sch;shs (10) |
+| 1 | ākhāta | `AKAta` | mw72.txt#L50409 · pw#L210284 | armh;bur;lrv;pwg;sch;shs;wil;yat (8) |
+| 2 | chard | `Card` | mw72.txt#L134008 | ap;ap90;ben;bop;bur;ccs;lrv;md;pwg;sch (10) |
+| 3 | ūhin | `Uhin` | mw72.txt#L79000 | ap;ap90;sch;shs;wil;yat (6) |
+| 4 | aśṛṇya | `aSfRya` | mw72.txt#L45295 | sch;yat (2) |
+| 5 | añjanika | `aYjanika` | mw72.txt#L5591 | gst;pwg;sch (3) |
+| 6 | amanasvin | `amanasvin` | mw72.txt#L34106 | ap;ap90;sch;stc;yat (5) |
+| 7 | amṛṣya | `amfzya` | mw72.txt#L35024 | sch (1) |
+| 8 | aniṅgya | `aniNgya` | mw72.txt#L13616 · pw#L56735 | acc;ap;bur;pwg;sch (5) |
+| 9 | anumāsa | `anumAsa` | mw72.txt#L17209 | gst;lrv;pwg;sch;stc (5) |
+| 10 | anupadeśa | `anupadeSa` | mw72.txt#L439576 | sch (1) |
+| 11 | apragīta | `apragIta` | mw72.txt#L25792 | gst;sch (2) |
+| 12 | aramaṇīya | `aramaRIya` | mw72.txt#L36523 | lrv;md;sch;stc (4) |
+| 13 | asaṃsthiti | `asaMsTiti` | mw72.txt#L46461 | lrv;sch;shs;wil (4) |
+| 14 | asevana | `asevana` | mw72.txt#L47883 | ap;ap90;cae;sch;shs;vcp;wil;yat (8) |
+| 15 | asvāmya | `asvAmya` | mw72.txt#L48670 | ap;ap90;sch;shs;vcp;wil;yat (7) |
+| 16 | avaṇḍa | `avaRqa` | mw72.txt#L40232 | ap;pwg;sch (3) |
+| 17 | avasarpin | `avasarpin` | mw72.txt#L42347 · pw#L163994 | ap;ap90;pwg;sch;vcp (5) |
+| 18 | dāsīka | `dAsIka` | mw72.txt#L162169 | sch (1) |
+| 19 | indindira | `indindira` | mw72.txt#L62197 | armh;bur;lrv;pwg;sch;shs;vcp;wil;yat (9) |
+| 20 | karmatas | `karmatas` | mw72.txt#L90341 | ben;sch (2) |
+| 21 | lavaṅga | `lavaNga` | mw72.txt#L322217 | cae;ccs;md;pwg;sch;shs;snp;stc;vcp;wil;yat (11) |
+| 22 | pāriṣad | `pArizad` | mw72.txt#L218816 | bur;sch;stc (3) |
+| 23 | pacanika | `pacanika` | mw72.txt#L201077 | pwg;sch (2) |
+| 24 | ḍītara | `qItara` | mw72.txt#L143143 | pwg;sch;vcp (3) |
+| 25 | taḍāghāta | `taqAGAta` | mw72.txt#L143735 | lrv;pwg;sch;shs;stc;vcp;wil;yat (8) |
+| 26 | upajīka | `upajIka` | mw72.txt#L71832 · pw#L311405 | ap;ap90;pwg;sch;vcp (5) |
+| 27 | var | `var` | mw72.txt#L330767 | ap;ap90;ben;bop;ccs;fri;lrv;pwg;sch;shs (10) |
 
 ## 10. Homonym / sense-extensions — counts and examples
 
@@ -224,12 +224,12 @@ Enlisted in full per MG standing rule (small lists go into the issue verbatim, p
   a defensible but method-sensitive figure — see §11 for the full 498–626 band and the reason.
   The "1,766 spell a word MW already heads" also recomputes to **1,779** on the same
   strip-`*`/`k1`-membership basis.)*
-- Examples: [`kārin <hom>3.</hom>`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L620966)
+- Examples: `kārin <hom>3.</hom>`
   (MW kārin¹⁻²; the entry after kāritra at 7-331-d),
-  [`saṃvara <hom>3.</hom>`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L487483) (MW ¹⁻²),
-  [`saṃvalana <hom>2.</hom>`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L487635) (MW ¹),
-  [`saṃśayita <hom>2.</hom>`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L488220),
-  [`saṃśita <hom>2.</hom>`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pw/pw.txt#L488259).
+  `saṃvara <hom>3.</hom>` (MW ¹⁻²),
+  `saṃvalana <hom>2.</hom>` (MW ¹),
+  `saṃśayita <hom>2.</hom>`,
+  `saṃśita <hom>2.</hom>`.
 
 ## 11. Widened census — every class, every layer, POS cross-cut (H5011, 16-09-2026)
 
