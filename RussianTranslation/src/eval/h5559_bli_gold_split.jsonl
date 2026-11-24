@@ -1,0 +1,321 @@
+{"_meta": "h5559_bli_gold_split.v1", "built": "25-11-2026", "n": 320, "note": "Frozen Sa->Ru BLI gold split for the H5559 Evaluate harness; derived unchanged from the frozen 320-row gold (H3172 card-3 intent, ~300 items). No row re-cut, no label rewritten; the H2401 500-frame stays label-free until its sheet is voted.", "source": "RussianTranslation/gold/gold_set.jsonl", "source_lock": "review/locks/h215-gold-full-320-2026-08-14.lock.json"}
+{"id": 0, "label": "correct", "ru": "молодым", "sa": "yuvānam", "slp1": "yuvAnam"}
+{"id": 1, "label": "lemma-variant", "ru": "деревенский", "sa": "grāmyāḥ", "slp1": "grAmyAH"}
+{"id": 2, "label": "correct", "ru": "сложив руки", "sa": "kṛtāñjali", "slp1": "kftAYjali"}
+{"id": 3, "label": "correct", "ru": "уставший", "sa": "khinna", "slp1": "Kinna"}
+{"id": 4, "label": "lemma-variant", "ru": "сансары", "sa": "saṃsāra", "slp1": "saMsAra"}
+{"id": 5, "label": "proper-name", "ru": "Икшваку", "sa": "ikṣvākūṇāṃ", "slp1": "ikzvAkURAM"}
+{"id": 6, "label": "correct", "ru": "Муж", "sa": "puruṣa", "slp1": "puruza"}
+{"id": 7, "label": "partial", "ru": "запахъ лотосовъ, расцвѣтшихъ при его прикосновеньи", "sa": "sphuṭitakamalāmodamaitrīkaṣāya", "slp1": "sPuwitakamalAmodamaitrIkazAya"}
+{"id": 8, "label": "lemma-variant", "ru": "матери", "sa": "mātṛ", "slp1": "mAtf"}
+{"id": 9, "label": "proper-name", "ru": "гандива", "sa": "gāṇḍīvam", "slp1": "gARqIvam"}
+{"id": 10, "label": "wrong-sense", "ru": "вздутия воды", "sa": "rodhāt", "slp1": "roDAt"}
+{"id": 11, "label": "correct", "ru": "апана и огонь", "sa": "vahnyapāna", "slp1": "vahnyapAna"}
+{"id": 12, "label": "correct", "ru": "земля", "sa": "pṛthivī", "slp1": "pfTivI"}
+{"id": 13, "label": "correct", "ru": "несходство с примером", "sa": "udāharaṇavaidharmya", "slp1": "udAharaRavaiDarmya"}
+{"id": 14, "label": "proper-name", "ru": "Савитар", "sa": "savitṛ", "slp1": "savitf"}
+{"id": 15, "label": "proper-name", "ru": "о бхарата", "sa": "bhārata", "slp1": "BArata"}
+{"id": 16, "label": "correct", "ru": "ревность", "sa": "samatsara", "slp1": "samatsara"}
+{"id": 17, "label": "correct", "ru": "освобождение", "sa": "mukti", "slp1": "mukti"}
+{"id": 18, "label": "partial", "ru": "три Веды", "sa": "traividya", "slp1": "traividya"}
+{"id": 19, "label": "correct", "ru": "в битве", "sa": "samare", "slp1": "samare"}
+{"id": 20, "label": "correct", "ru": "Нет у меня соперниц", "sa": "asapatnā", "slp1": "asapatnA"}
+{"id": 21, "label": "proper-name", "ru": "Дроной", "sa": "droṇa", "slp1": "droRa"}
+{"id": 22, "label": "correct", "ru": "анава", "sa": "ānava", "slp1": "Anava"}
+{"id": 23, "label": "correct", "ru": "царя", "sa": "rājānam", "slp1": "rAjAnam"}
+{"id": 24, "label": "partial", "ru": "Кундалини", "sa": "parameśvarī", "slp1": "parameSvarI"}
+{"id": 25, "label": "correct", "ru": "плот", "sa": "samghāṭa", "slp1": "samGAwa"}
+{"id": 26, "label": "correct", "ru": "обретет", "sa": "āpnoti", "slp1": "Apnoti"}
+{"id": 27, "label": "correct", "ru": "растворение", "sa": "laya", "slp1": "laya"}
+{"id": 28, "label": "correct", "ru": "показание", "sa": "sākṣyam", "slp1": "sAkzyam"}
+{"id": 29, "label": "correct", "ru": "поднимись", "sa": "ā roha", "slp1": "Aroha"}
+{"id": 30, "label": "correct", "ru": "провозглашать", "sa": "ā vad", "slp1": "Avad"}
+{"id": 31, "label": "correct", "ru": "аргхья", "sa": "arghya", "slp1": "arGya"}
+{"id": 32, "label": "proper-name", "ru": "Свана", "sa": "svana", "slp1": "svana"}
+{"id": 33, "label": "proper-name", "ru": "матсьи", "sa": "matsya", "slp1": "matsya"}
+{"id": 34, "label": "correct", "ru": "открытой раны", "sa": "vātīkārasya", "slp1": "vAtIkArasya"}
+{"id": 35, "label": "correct", "ru": "во Мне", "sa": "mayi", "slp1": "mayi"}
+{"id": 36, "label": "correct", "ru": "десять тысяч локтей", "sa": "daśa kiṣkusahasrāṇi", "slp1": "daSakizkusahasrARi"}
+{"id": 37, "label": "partial", "ru": "унеся", "sa": "pary", "slp1": "pary"}
+{"id": 38, "label": "correct", "ru": "молитвы", "sa": "manman", "slp1": "manman"}
+{"id": 39, "label": "correct", "ru": "выпиваемая постепенно", "sa": "paryāyapīta", "slp1": "paryAyapIta"}
+{"id": 40, "label": "correct", "ru": "виды колдовства", "sa": "gṛtsya", "slp1": "gftsya"}
+{"id": 41, "label": "correct", "ru": "Времени", "sa": "kālāya", "slp1": "kAlAya"}
+{"id": 42, "label": "correct", "ru": "Верховный Владыка", "sa": "parameśvara", "slp1": "parameSvara"}
+{"id": 43, "label": "correct", "ru": "всеми", "sa": "sarvaiḥ", "slp1": "sarvaiH"}
+{"id": 44, "label": "correct", "ru": "знают", "sa": "viduḥ", "slp1": "viduH"}
+{"id": 45, "label": "wrong-sense", "ru": "племен", "sa": "viśvāsām", "slp1": "viSvAsAm"}
+{"id": 46, "label": "correct", "ru": "находится", "sa": "vartate", "slp1": "vartate"}
+{"id": 47, "label": "correct", "ru": "с потомством", "sa": "prajayā", "slp1": "prajayA"}
+{"id": 48, "label": "lemma-variant", "ru": "им", "sa": "ete", "slp1": "ete"}
+{"id": 49, "label": "proper-name", "ru": "Индрадьюмна", "sa": "indradyumna", "slp1": "indradyumna"}
+{"id": 50, "label": "correct", "ru": "крепости", "sa": "puraḥ", "slp1": "puraH"}
+{"id": 51, "label": "partial", "ru": "с распустившимися верхушками ветвей", "sa": "phullāsanāgraviṭapān", "slp1": "PullAsanAgraviwapAn"}
+{"id": 52, "label": "lemma-variant", "ru": "солнца", "sa": "drav", "slp1": "drav"}
+{"id": 53, "label": "correct", "ru": "Себя", "sa": "ātmānam", "slp1": "AtmAnam"}
+{"id": 54, "label": "correct", "ru": "вкус", "sa": "rasa", "slp1": "rasa"}
+{"id": 55, "label": "lemma-variant", "ru": "двумя", "sa": "dvau", "slp1": "dvau"}
+{"id": 56, "label": "lemma-variant", "ru": "прославляет", "sa": "kīrtayantaḥ", "slp1": "kIrtayantaH"}
+{"id": 57, "label": "lemma-variant", "ru": "боги", "sa": "devaiḥ", "slp1": "devaiH"}
+{"id": 58, "label": "proper-name", "ru": "Рудра Грантхи", "sa": "rudragranthi", "slp1": "rudragranTi"}
+{"id": 59, "label": "hallucinated", "ru": "Мандара", "sa": "mandāra", "slp1": "mandAra"}
+{"id": 60, "label": "correct", "ru": "боль", "sa": "duḥkha", "slp1": "duHKa"}
+{"id": 61, "label": "correct", "ru": "не", "sa": "na", "slp1": "na"}
+{"id": 62, "label": "lemma-variant", "ru": "быками", "sa": "vṛṣabhi", "slp1": "vfzaBi"}
+{"id": 63, "label": "correct", "ru": "вашей", "sa": "yuṣmākam", "slp1": "yuzmAkam"}
+{"id": 64, "label": "correct", "ru": "проклинающего", "sa": "śapantam", "slp1": "Sapantam"}
+{"id": 65, "label": "proper-name", "ru": "Мадхурипу", "sa": "madhuripu", "slp1": "maDuripu"}
+{"id": 66, "label": "wrong-sense", "ru": "так как", "sa": "prati", "slp1": "prati"}
+{"id": 67, "label": "lemma-variant", "ru": "Турья", "sa": "tūrya", "slp1": "tUrya"}
+{"id": 68, "label": "correct", "ru": "ваю", "sa": "vāyu", "slp1": "vAyu"}
+{"id": 69, "label": "correct", "ru": "достигший", "sa": "sañjāta", "slp1": "saYjAta"}
+{"id": 70, "label": "correct", "ru": "мне", "sa": "me", "slp1": "me"}
+{"id": 71, "label": "correct", "ru": "колесница", "sa": "ratha", "slp1": "raTa"}
+{"id": 72, "label": "correct", "ru": "на помощь", "sa": "ūti", "slp1": "Uti"}
+{"id": 73, "label": "correct", "ru": "все", "sa": "sarva", "slp1": "sarva"}
+{"id": 74, "label": "wrong-sense", "ru": "нищета", "sa": "vitta", "slp1": "vitta"}
+{"id": 75, "label": "proper-name", "ru": "Ватсьяяны", "sa": "Vātsyāyana", "slp1": "VAtsyAyana"}
+{"id": 76, "label": "correct", "ru": "возникновения творога", "sa": "dadhyutpatti", "slp1": "daDyutpatti"}
+{"id": 77, "label": "correct", "ru": "затем", "sa": "tataḥ", "slp1": "tataH"}
+{"id": 78, "label": "correct", "ru": "супруга Рати", "sa": "ratipati", "slp1": "ratipati"}
+{"id": 79, "label": "correct", "ru": "тот лотос", "sa": "tatpadma", "slp1": "tatpadma"}
+{"id": 80, "label": "correct", "ru": "недвойственный", "sa": "advaita", "slp1": "advaita"}
+{"id": 81, "label": "correct", "ru": "столицу", "sa": "puram", "slp1": "puram"}
+{"id": 82, "label": "correct", "ru": "Царя богов", "sa": "vāsavam", "slp1": "vAsavam"}
+{"id": 83, "label": "correct", "ru": "из черного железа", "sa": "kālāyasa", "slp1": "kAlAyasa"}
+{"id": 84, "label": "correct", "ru": "останавливать ваю", "sa": "prāṇasaṅgrahaṇa", "slp1": "prARasaNgrahaRa"}
+{"id": 85, "label": "correct", "ru": "угодней", "sa": "priyatara", "slp1": "priyatara"}
+{"id": 86, "label": "partial", "ru": "не знает", "sa": "jānāti", "slp1": "jAnAti"}
+{"id": 87, "label": "correct", "ru": "освобождается", "sa": "pramucyate", "slp1": "pramucyate"}
+{"id": 88, "label": "correct", "ru": "достоин", "sa": "pātram", "slp1": "pAtram"}
+{"id": 89, "label": "correct", "ru": "сошедшихся", "sa": "samavetān", "slp1": "samavetAn"}
+{"id": 90, "label": "correct", "ru": "сонмы апсар", "sa": "apsarogaṇāḥ", "slp1": "apsarogaRAH"}
+{"id": 91, "label": "correct", "ru": "одобрите", "sa": "vanataṃ", "slp1": "vanataM"}
+{"id": 92, "label": "correct", "ru": "с ветвями вниз", "sa": "avāk-śākhaḥ", "slp1": "avAk-SAKaH"}
+{"id": 93, "label": "correct", "ru": "чарующее", "sa": "ramaṇī", "slp1": "ramaRI"}
+{"id": 94, "label": "correct", "ru": "молитвенник", "sa": "mandhātā", "slp1": "manDAtA"}
+{"id": 95, "label": "lemma-variant", "ru": "бессмертия", "sa": "amṛta", "slp1": "amfta"}
+{"id": 96, "label": "correct", "ru": "восседали подле", "sa": "upāsate", "slp1": "upAsate"}
+{"id": 97, "label": "correct", "ru": "могущественные", "sa": "mahaujas", "slp1": "mahaujas"}
+{"id": 98, "label": "correct", "ru": "иль", "sa": "vā", "slp1": "vA"}
+{"id": 99, "label": "correct", "ru": "представь", "sa": "paricintaya", "slp1": "paricintaya"}
+{"id": 100, "label": "proper-name", "ru": "Кали", "sa": "kālī", "slp1": "kAlI"}
+{"id": 101, "label": "lemma-variant", "ru": "одним", "sa": "ekatā", "slp1": "ekatA"}
+{"id": 102, "label": "correct", "ru": "она", "sa": "idam", "slp1": "idam"}
+{"id": 103, "label": "lemma-variant", "ru": "львы", "sa": "kesarin", "slp1": "kesarin"}
+{"id": 104, "label": "correct", "ru": "в другое место", "sa": "anyataḥ", "slp1": "anyataH"}
+{"id": 105, "label": "wrong-sense", "ru": "череп", "sa": "kāpālike", "slp1": "kApAlike"}
+{"id": 106, "label": "correct", "ru": "люди", "sa": "jana", "slp1": "jana"}
+{"id": 107, "label": "lemma-variant", "ru": "отрешенный", "sa": "atyāgin", "slp1": "atyAgin"}
+{"id": 108, "label": "correct", "ru": "без гнева", "sa": "nirāmarṣeṣu", "slp1": "nirAmarzezu"}
+{"id": 109, "label": "correct", "ru": "Атман", "sa": "ātmā", "slp1": "AtmA"}
+{"id": 110, "label": "correct", "ru": "не", "sa": "na", "slp1": "na"}
+{"id": 111, "label": "partial", "ru": "нидидхьясане", "sa": "nididhyāsana", "slp1": "nidiDyAsana"}
+{"id": 112, "label": "correct", "ru": "жрецы", "sa": "ṛtvijaḥ", "slp1": "ftvijaH"}
+{"id": 113, "label": "correct", "ru": "об этом", "sa": "tat", "slp1": "tat"}
+{"id": 114, "label": "proper-name", "ru": "Рама", "sa": "rāma", "slp1": "rAma"}
+{"id": 115, "label": "correct", "ru": "Где же", "sa": "kva", "slp1": "kva"}
+{"id": 116, "label": "correct", "ru": "отвалится", "sa": "vipatiṣyati", "slp1": "vipatizyati"}
+{"id": 117, "label": "correct", "ru": "богатством", "sa": "rayiṃ", "slp1": "rayiM"}
+{"id": 118, "label": "partial", "ru": "Аруна", "sa": "aruṇāmśub", "slp1": "aruRAmSub"}
+{"id": 119, "label": "correct", "ru": "влагой", "sa": "ambu", "slp1": "ambu"}
+{"id": 120, "label": "correct", "ru": "твоей", "sa": "te", "slp1": "te"}
+{"id": 121, "label": "lemma-variant", "ru": "своих", "sa": "ātmīya", "slp1": "AtmIya"}
+{"id": 122, "label": "correct", "ru": "словно", "sa": "na", "slp1": "na"}
+{"id": 123, "label": "partial", "ru": "Теки к", "sa": "abhi", "slp1": "aBi"}
+{"id": 124, "label": "partial", "ru": "по качествам", "sa": "guṇabhedataḥ", "slp1": "guRaBedataH"}
+{"id": 125, "label": "correct", "ru": "семь", "sa": "sapta", "slp1": "sapta"}
+{"id": 126, "label": "correct", "ru": "разъяснение", "sa": "pratipādana", "slp1": "pratipAdana"}
+{"id": 127, "label": "lemma-variant", "ru": "вложите", "sa": "dhā", "slp1": "DA"}
+{"id": 128, "label": "correct", "ru": "камень", "sa": "grāvan", "slp1": "grAvan"}
+{"id": 129, "label": "correct", "ru": "индивид", "sa": "puruṣa", "slp1": "puruza"}
+{"id": 130, "label": "lemma-variant", "ru": "клятву", "sa": "pratijñā", "slp1": "pratijYA"}
+{"id": 131, "label": "correct", "ru": "царь царей", "sa": "rājendra", "slp1": "rAjendra"}
+{"id": 132, "label": "correct", "ru": "состоящий из капель", "sa": "drapsavān", "slp1": "drapsavAn"}
+{"id": 133, "label": "partial", "ru": "нава", "sa": "nava", "slp1": "nava"}
+{"id": 134, "label": "correct", "ru": "покоя", "sa": "śānti", "slp1": "SAnti"}
+{"id": 135, "label": "partial", "ru": "подобен", "sa": "ābhāti", "slp1": "ABAti"}
+{"id": 136, "label": "correct", "ru": "бог", "sa": "deva", "slp1": "deva"}
+{"id": 137, "label": "partial", "ru": "к чему", "sa": "prayojana", "slp1": "prayojana"}
+{"id": 138, "label": "proper-name", "ru": "Вамры", "sa": "vamrasya", "slp1": "vamrasya"}
+{"id": 139, "label": "correct", "ru": "черпает наслаждение", "sa": "ramate", "slp1": "ramate"}
+{"id": 140, "label": "lemma-variant", "ru": "мне", "sa": "mām", "slp1": "mAm"}
+{"id": 141, "label": "lemma-variant", "ru": "всё побеждают", "sa": "sarvaṃ jayati", "slp1": "sarvaMjayati"}
+{"id": 142, "label": "partial", "ru": "бояться", "sa": "vyathā", "slp1": "vyaTA"}
+{"id": 143, "label": "lemma-variant", "ru": "черные", "sa": "kṛṣṇa", "slp1": "kfzRa"}
+{"id": 144, "label": "correct", "ru": "Земля", "sa": "pṛthivī", "slp1": "pfTivI"}
+{"id": 145, "label": "correct", "ru": "брахманов", "sa": "brāhmaṇān", "slp1": "brAhmaRAn"}
+{"id": 146, "label": "correct", "ru": "Все", "sa": "viśve", "slp1": "viSve"}
+{"id": 147, "label": "correct", "ru": "как", "sa": "iva", "slp1": "iva"}
+{"id": 148, "label": "correct", "ru": "неделимая", "sa": "avibhaktaṃ", "slp1": "aviBaktaM"}
+{"id": 149, "label": "partial", "ru": "считает", "sa": "dhīḥ", "slp1": "DIH"}
+{"id": 150, "label": "proper-name", "ru": "Дхананджая", "sa": "dhanañjaya", "slp1": "DanaYjaya"}
+{"id": 151, "label": "correct", "ru": "растение", "sa": "andhaḥ", "slp1": "anDaH"}
+{"id": 152, "label": "correct", "ru": "принадлежат всем", "sa": "sādhāraṇāḥ", "slp1": "sADAraRAH"}
+{"id": 153, "label": "correct", "ru": "познав", "sa": "jñātvā", "slp1": "jYAtvA"}
+{"id": 154, "label": "correct", "ru": "этого", "sa": "etasya", "slp1": "etasya"}
+{"id": 155, "label": "correct", "ru": "одолеют", "sa": "atyeṣyanti", "slp1": "atyezyanti"}
+{"id": 156, "label": "correct", "ru": "разрушение живого существа", "sa": "sattvoccheda", "slp1": "sattvocCeda"}
+{"id": 157, "label": "correct", "ru": "остальное", "sa": "śeṣa", "slp1": "Seza"}
+{"id": 158, "label": "correct", "ru": "плод жертвы", "sa": "yajñaphalaṃ", "slp1": "yajYaPalaM"}
+{"id": 159, "label": "proper-name", "ru": "Малавагауда", "sa": "mālavagauḍa", "slp1": "mAlavagauqa"}
+{"id": 160, "label": "lemma-variant", "ru": "всего", "sa": "sarvasya", "slp1": "sarvasya"}
+{"id": 161, "label": "correct", "ru": "объекты, чувства", "sa": "viṣayendriya", "slp1": "vizayendriya"}
+{"id": 162, "label": "lemma-variant", "ru": "правом", "sa": "dakṣiṇa", "slp1": "dakziRa"}
+{"id": 163, "label": "correct", "ru": "тилак", "sa": "tilaka", "slp1": "tilaka"}
+{"id": 164, "label": "correct", "ru": "является обоснованием", "sa": "sādhanabhūta", "slp1": "sADanaBUta"}
+{"id": 165, "label": "lemma-variant", "ru": "стервятника", "sa": "bhāsa", "slp1": "BAsa"}
+{"id": 166, "label": "correct", "ru": "сзади", "sa": "pṛṣṭhataḥ", "slp1": "pfzWataH"}
+{"id": 167, "label": "lemma-variant", "ru": "его предмета", "sa": "arthasya", "slp1": "arTasya"}
+{"id": 168, "label": "correct", "ru": "шаткарм", "sa": "ṣaṭkarmāṇi", "slp1": "zawkarmARi"}
+{"id": 169, "label": "lemma-variant", "ru": "Великую Душу", "sa": "mahātman", "slp1": "mahAtman"}
+{"id": 170, "label": "wrong-sense", "ru": "полночи", "sa": "sakala", "slp1": "sakala"}
+{"id": 171, "label": "lemma-variant", "ru": "подруг", "sa": "sakhī", "slp1": "saKI"}
+{"id": 172, "label": "proper-name", "ru": "Праджапати", "sa": "prajāpati", "slp1": "prajApati"}
+{"id": 173, "label": "lemma-variant", "ru": "смерти", "sa": "mṛtyu", "slp1": "mftyu"}
+{"id": 174, "label": "correct", "ru": "Не", "sa": "mā", "slp1": "mA"}
+{"id": 175, "label": "correct", "ru": "титхи", "sa": "tithim", "slp1": "tiTim"}
+{"id": 176, "label": "correct", "ru": "выше", "sa": "uttaraḥ", "slp1": "uttaraH"}
+{"id": 177, "label": "lemma-variant", "ru": "Одолей", "sa": "jetāsi", "slp1": "jetAsi"}
+{"id": 178, "label": "correct", "ru": "привязанность к материальным объектам, созданным гунами", "sa": "guṇa-saṅga", "slp1": "guRa-saNga"}
+{"id": 179, "label": "hallucinated", "ru": "сложить руки", "sa": "asahiṣṇutā", "slp1": "asahizRutA"}
+{"id": 180, "label": "wrong-sense", "ru": "Пустота", "sa": "samudgatā", "slp1": "samudgatA"}
+{"id": 181, "label": "correct", "ru": "день", "sa": "divasa", "slp1": "divasa"}
+{"id": 182, "label": "correct", "ru": "бессмертный", "sa": "amṛtam", "slp1": "amftam"}
+{"id": 183, "label": "correct", "ru": "неизменный", "sa": "avyayam", "slp1": "avyayam"}
+{"id": 184, "label": "correct", "ru": "асурические", "sa": "āsurī", "slp1": "AsurI"}
+{"id": 185, "label": "partial", "ru": "услышанных", "sa": "śravaṇa", "slp1": "SravaRa"}
+{"id": 186, "label": "correct", "ru": "неуверенных", "sa": "avyavasāyin", "slp1": "avyavasAyin"}
+{"id": 187, "label": "correct", "ru": "чистый", "sa": "amala", "slp1": "amala"}
+{"id": 188, "label": "correct", "ru": "карма", "sa": "karman", "slp1": "karman"}
+{"id": 189, "label": "correct", "ru": "истцом", "sa": "dhaneṣin", "slp1": "Danezin"}
+{"id": 190, "label": "lemma-variant", "ru": "познаваемому", "sa": "vijñāpyate", "slp1": "vijYApyate"}
+{"id": 191, "label": "correct", "ru": "наделенный гунами", "sa": "guṇānvitam", "slp1": "guRAnvitam"}
+{"id": 192, "label": "correct", "ru": "глупость", "sa": "tajjāḍya", "slp1": "tajjAqya"}
+{"id": 193, "label": "correct", "ru": "манас", "sa": "manas", "slp1": "manas"}
+{"id": 194, "label": "correct", "ru": "почитать", "sa": "pūjayet", "slp1": "pUjayet"}
+{"id": 195, "label": "lemma-variant", "ru": "бойся", "sa": "viśaṅkā", "slp1": "viSaNkA"}
+{"id": 196, "label": "correct", "ru": "пьянящего", "sa": "madasya", "slp1": "madasya"}
+{"id": 197, "label": "correct", "ru": "Когда", "sa": "ya", "slp1": "ya"}
+{"id": 198, "label": "correct", "ru": "встретившего", "sa": "sameyuṣaḥ", "slp1": "sameyuzaH"}
+{"id": 199, "label": "proper-name", "ru": "Рудра", "sa": "rudra", "slp1": "rudra"}
+{"id": 200, "label": "lemma-variant", "ru": "действия", "sa": "karma", "slp1": "karma"}
+{"id": 201, "label": "correct", "ru": "звуки и прикосновения", "sa": "dhvanisparśa", "slp1": "DvanisparSa"}
+{"id": 202, "label": "partial", "ru": "следует", "sa": "kārayet", "slp1": "kArayet"}
+{"id": 203, "label": "lemma-variant", "ru": "восприятия", "sa": "vijānāti", "slp1": "vijAnAti"}
+{"id": 204, "label": "correct", "ru": "ножницы", "sa": "kartarīṃ", "slp1": "kartarIM"}
+{"id": 205, "label": "correct", "ru": "нескончаемое", "sa": "ātyantikī", "slp1": "AtyantikI"}
+{"id": 206, "label": "correct", "ru": "охваченное", "sa": "paravaśa", "slp1": "paravaSa"}
+{"id": 207, "label": "lemma-variant", "ru": "вспыльчивый", "sa": "krodhana", "slp1": "kroDana"}
+{"id": 208, "label": "correct", "ru": "Праздник колесниц", "sa": "rathotsava", "slp1": "raTotsava"}
+{"id": 209, "label": "correct", "ru": "цветущими", "sa": "smera", "slp1": "smera"}
+{"id": 210, "label": "correct", "ru": "отвлечением", "sa": "pratyāhāraḥ", "slp1": "pratyAhAraH"}
+{"id": 211, "label": "correct", "ru": "достояний", "sa": "vibhūti", "slp1": "viBUti"}
+{"id": 212, "label": "partial", "ru": "затылок", "sa": "grīvā", "slp1": "grIvA"}
+{"id": 213, "label": "correct", "ru": "Шрути внимая", "sa": "śrutiparāyaṇa", "slp1": "SrutiparAyaRa"}
+{"id": 214, "label": "correct", "ru": "тому, кто достоин", "sa": "pātre", "slp1": "pAtre"}
+{"id": 215, "label": "correct", "ru": "в гуне благости", "sa": "sāttvika", "slp1": "sAttvika"}
+{"id": 216, "label": "correct", "ru": "играющий", "sa": "krīḍākara", "slp1": "krIqAkara"}
+{"id": 217, "label": "proper-name", "ru": "ньяи", "sa": "nyāya", "slp1": "nyAya"}
+{"id": 218, "label": "lemma-variant", "ru": "годы", "sa": "samā", "slp1": "samA"}
+{"id": 219, "label": "correct", "ru": "высшей реальности", "sa": "paramārtha", "slp1": "paramArTa"}
+{"id": 220, "label": "hallucinated", "ru": "открывается возможность", "sa": "siddhāṅganākarṣaṇa", "slp1": "sidDANganAkarzaRa"}
+{"id": 221, "label": "lemma-variant", "ru": "смерти", "sa": "prāyaṇa", "slp1": "prAyaRa"}
+{"id": 222, "label": "partial", "ru": "осталась", "sa": "avaśeṣa", "slp1": "avaSeza"}
+{"id": 223, "label": "hallucinated", "ru": "небо", "sa": "meruśṛṅga", "slp1": "meruSfNga"}
+{"id": 224, "label": "lemma-variant", "ru": "стремись терпеть", "sa": "titikṣ", "slp1": "titikz"}
+{"id": 225, "label": "correct", "ru": "жертвующий", "sa": "yajīyān", "slp1": "yajIyAn"}
+{"id": 226, "label": "correct", "ru": "наделенный", "sa": "yukta", "slp1": "yukta"}
+{"id": 227, "label": "lemma-variant", "ru": "тому", "sa": "tasya", "slp1": "tasya"}
+{"id": 228, "label": "correct", "ru": "гора", "sa": "parvata", "slp1": "parvata"}
+{"id": 229, "label": "correct", "ru": "сопровождаемое героями", "sa": "sahavīraṃ", "slp1": "sahavIraM"}
+{"id": 230, "label": "wrong-sense", "ru": "Двоих", "sa": "pṛthu", "slp1": "pfTu"}
+{"id": 231, "label": "correct", "ru": "Семь", "sa": "sapta", "slp1": "sapta"}
+{"id": 232, "label": "correct", "ru": "вверх", "sa": "ūrdhvam", "slp1": "UrDvam"}
+{"id": 233, "label": "lemma-variant", "ru": "врагов", "sa": "pareṣām", "slp1": "parezAm"}
+{"id": 234, "label": "correct", "ru": "ставит под контроль Атмана", "sa": "ātmasātkaroti", "slp1": "AtmasAtkaroti"}
+{"id": 235, "label": "partial", "ru": "опустошил", "sa": "bhakṣayitvā", "slp1": "BakzayitvA"}
+{"id": 236, "label": "hallucinated", "ru": "символ", "sa": "antardhana", "slp1": "antarDana"}
+{"id": 237, "label": "correct", "ru": "топор", "sa": "kuṭhāra", "slp1": "kuWAra"}
+{"id": 238, "label": "wrong-sense", "ru": "неверным", "sa": "tuṅga", "slp1": "tuNga"}
+{"id": 239, "label": "lemma-variant", "ru": "счастья", "sa": "lakṣmī", "slp1": "lakzmI"}
+{"id": 240, "label": "correct", "ru": "миробалана", "sa": "āmalaka", "slp1": "Amalaka"}
+{"id": 241, "label": "correct", "ru": "благополучие", "sa": "bhūtim", "slp1": "BUtim"}
+{"id": 242, "label": "hallucinated", "ru": "Брахма", "sa": "mama", "slp1": "mama"}
+{"id": 243, "label": "correct", "ru": "несуществующий", "sa": "asat", "slp1": "asat"}
+{"id": 244, "label": "correct", "ru": "огонь", "sa": "agni", "slp1": "agni"}
+{"id": 245, "label": "correct", "ru": "которая", "sa": "yā", "slp1": "yA"}
+{"id": 246, "label": "proper-name", "ru": "Бхишму", "sa": "bhīṣma", "slp1": "BIzma"}
+{"id": 247, "label": "correct", "ru": "причина", "sa": "kāraṇam", "slp1": "kAraRam"}
+{"id": 248, "label": "lemma-variant", "ru": "рассеял", "sa": "stṛ", "slp1": "stf"}
+{"id": 249, "label": "correct", "ru": "как", "sa": "katham", "slp1": "kaTam"}
+{"id": 250, "label": "proper-name", "ru": "Прашастар", "sa": "praśāstṛ", "slp1": "praSAstf"}
+{"id": 251, "label": "correct", "ru": "начале", "sa": "ārambha", "slp1": "AramBa"}
+{"id": 252, "label": "partial", "ru": "заяц", "sa": "śaśadhara", "slp1": "SaSaDara"}
+{"id": 253, "label": "hallucinated", "ru": "Апам Напате", "sa": "ghṛtam", "slp1": "Gftam"}
+{"id": 254, "label": "correct", "ru": "где их заждались женщины гарема, истомленные долгой разлукой", "sa": "ciravirahotsukāvarodhān", "slp1": "ciravirahotsukAvaroDAn"}
+{"id": 255, "label": "correct", "ru": "узришь", "sa": "drakṣyasi", "slp1": "drakzyasi"}
+{"id": 256, "label": "hallucinated", "ru": "Ману", "sa": "dviṣ", "slp1": "dviz"}
+{"id": 257, "label": "correct", "ru": "они", "sa": "te", "slp1": "te"}
+{"id": 258, "label": "correct", "ru": "безгрешный", "sa": "anagha", "slp1": "anaGa"}
+{"id": 259, "label": "partial", "ru": "опровергается", "sa": "prasaṅga", "slp1": "prasaNga"}
+{"id": 260, "label": "correct", "ru": "бесстрастен", "sa": "niḥspṛha", "slp1": "niHspfha"}
+{"id": 261, "label": "partial", "ru": "природа", "sa": "īdṛktayā", "slp1": "IdfktayA"}
+{"id": 262, "label": "correct", "ru": "широкий", "sa": "uru", "slp1": "uru"}
+{"id": 263, "label": "correct", "ru": "других", "sa": "para", "slp1": "para"}
+{"id": 264, "label": "correct", "ru": "груду чистого золота", "sa": "bhāsurahemarāśim", "slp1": "BAsurahemarASim"}
+{"id": 265, "label": "correct", "ru": "следует", "sa": "īyate", "slp1": "Iyate"}
+{"id": 266, "label": "correct", "ru": "создавая", "sa": "takṣatī", "slp1": "takzatI"}
+{"id": 267, "label": "partial", "ru": "грешнее", "sa": "viśeṣataḥ", "slp1": "viSezataH"}
+{"id": 268, "label": "correct", "ru": "освежающем теле", "sa": "śītala-tanu", "slp1": "SItala-tanu"}
+{"id": 269, "label": "correct", "ru": "силу Индры", "sa": "indriyam", "slp1": "indriyam"}
+{"id": 270, "label": "correct", "ru": "мягкость", "sa": "sāman", "slp1": "sAman"}
+{"id": 271, "label": "correct", "ru": "невозможно", "sa": "anupapatti", "slp1": "anupapatti"}
+{"id": 272, "label": "correct", "ru": "населенный чудовищами", "sa": "makarālayaḥ", "slp1": "makarAlayaH"}
+{"id": 273, "label": "correct", "ru": "как два коня колесницы", "sa": "rathyā", "slp1": "raTyA"}
+{"id": 274, "label": "correct", "ru": "постигнут", "sa": "jñeya", "slp1": "jYeya"}
+{"id": 275, "label": "correct", "ru": "провозгласит", "sa": "vocat", "slp1": "vocat"}
+{"id": 276, "label": "correct", "ru": "вкушения", "sa": "vīti", "slp1": "vIti"}
+{"id": 277, "label": "hallucinated", "ru": "22a-c. = РВ X, 18, 3a-c (с вариантами).", "sa": "suvīrāso", "slp1": "suvIrAso"}
+{"id": 278, "label": "correct", "ru": "женой-рабыней", "sa": "dāsī", "slp1": "dAsI"}
+{"id": 279, "label": "correct", "ru": "Защищайте", "sa": "pāta", "slp1": "pAta"}
+{"id": 280, "label": "lemma-variant", "ru": "у Индры", "sa": "indrasya", "slp1": "indrasya"}
+{"id": 281, "label": "correct", "ru": "предписание", "sa": "vihita", "slp1": "vihita"}
+{"id": 282, "label": "wrong-sense", "ru": "Помести", "sa": "api", "slp1": "api"}
+{"id": 283, "label": "correct", "ru": "основа", "sa": "āśraya", "slp1": "ASraya"}
+{"id": 284, "label": "correct", "ru": "быкъ Нанди, любимецъ Владыки-Шивы", "sa": "trinayanavṛṣa", "slp1": "trinayanavfza"}
+{"id": 285, "label": "correct", "ru": "пусть будет", "sa": "astu", "slp1": "astu"}
+{"id": 286, "label": "lemma-variant", "ru": "вселенной", "sa": "jagat", "slp1": "jagat"}
+{"id": 287, "label": "lemma-variant", "ru": "ракшасы", "sa": "rākṣasa", "slp1": "rAkzasa"}
+{"id": 288, "label": "partial", "ru": "Лакшми", "sa": "lakṣmīḥ", "slp1": "lakzmIH"}
+{"id": 289, "label": "partial", "ru": "двойственность", "sa": "vyavaccheda", "slp1": "vyavacCeda"}
+{"id": 290, "label": "correct", "ru": "рассказ", "sa": "kathā", "slp1": "kaTA"}
+{"id": 291, "label": "correct", "ru": "сказал: «Пока я жив, ты не избавишься живым из битвы!»", "sa": "abravīcca na me jīvañjīvato yudhi mokṣyase", "slp1": "abravIccanamejIvaYjIvatoyuDimokzyase"}
+{"id": 292, "label": "proper-name", "ru": "сурьябхедана", "sa": "sūryabhedanam", "slp1": "sUryaBedanam"}
+{"id": 293, "label": "wrong-sense", "ru": "друг друга", "sa": "iha", "slp1": "iha"}
+{"id": 294, "label": "correct", "ru": "отношение", "sa": "bhāva", "slp1": "BAva"}
+{"id": 295, "label": "wrong-sense", "ru": "следует", "sa": "yatnata", "slp1": "yatnata"}
+{"id": 296, "label": "correct", "ru": "яростно трясущий", "sa": "davidhvat", "slp1": "daviDvat"}
+{"id": 297, "label": "lemma-variant", "ru": "сделаешь", "sa": "karase", "slp1": "karase"}
+{"id": 298, "label": "lemma-variant", "ru": "идут", "sa": "gacchantyaḥ", "slp1": "gacCantyaH"}
+{"id": 299, "label": "correct", "ru": "не желая", "sa": "anabhilaṣyan", "slp1": "anaBilazyan"}
+{"id": 300, "label": "proper-name", "ru": "Индра", "sa": "indra", "slp1": "indra"}
+{"id": 301, "label": "correct", "ru": "целое", "sa": "avayavin", "slp1": "avayavin"}
+{"id": 302, "label": "correct", "ru": "обилен дарами", "sa": "sudānuḥ", "slp1": "sudAnuH"}
+{"id": 303, "label": "lemma-variant", "ru": "увидели", "sa": "dṛś", "slp1": "dfS"}
+{"id": 304, "label": "correct", "ru": "По порядку", "sa": "ānuṣak", "slp1": "Anuzak"}
+{"id": 305, "label": "partial", "ru": "заключить", "sa": "liṅga", "slp1": "liNga"}
+{"id": 306, "label": "correct", "ru": "возбуждения", "sa": "sambhrama", "slp1": "samBrama"}
+{"id": 307, "label": "partial", "ru": "доставляют", "sa": "ādāna", "slp1": "AdAna"}
+{"id": 308, "label": "correct", "ru": "атом", "sa": "aṇu", "slp1": "aRu"}
+{"id": 309, "label": "correct", "ru": "боги", "sa": "devāḥ", "slp1": "devAH"}
+{"id": 310, "label": "correct", "ru": "Срединное успокоение", "sa": "madhyaviśrānti", "slp1": "maDyaviSrAnti"}
+{"id": 311, "label": "proper-name", "ru": "Дашаратхе", "sa": "daśarathasya", "slp1": "daSaraTasya"}
+{"id": 312, "label": "correct", "ru": "его", "sa": "asya", "slp1": "asya"}
+{"id": 313, "label": "correct", "ru": "Закон", "sa": "ṛtam", "slp1": "ftam"}
+{"id": 314, "label": "correct", "ru": "ведомств", "sa": "aṅgeṣu", "slp1": "aNgezu"}
+{"id": 315, "label": "wrong-sense", "ru": "Гибнут", "sa": "kṣīṇaloka", "slp1": "kzIRaloka"}
+{"id": 316, "label": "correct", "ru": "жертвенную раздачу", "sa": "vidatha", "slp1": "vidaTa"}
+{"id": 317, "label": "correct", "ru": "приходится звать с разных сторон", "sa": "vihavyaḥ", "slp1": "vihavyaH"}
+{"id": 318, "label": "correct", "ru": "светлый", "sa": "śukra", "slp1": "Sukra"}
+{"id": 319, "label": "correct", "ru": "обработали", "sa": "aheṣata", "slp1": "ahezata"}

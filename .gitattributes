@@ -47,3 +47,10 @@
 # not emit the figure's axis labels at all and pdftotext returns an empty page, so any
 # re-extraction would delete content this file currently preserves.
 "literature/md/Lexicography-Manuals/THE ROUTLEDGE HANDBOOK OF HISTORICAL LINGUISTICS.md" binary
+
+
+# H5559 — harness-emitted machine data (frozen split, predictions, scores, per-item table): generated artifacts, not hand-written code
+RussianTranslation/src/eval/h5559_bli_gold_split.jsonl linguist-generated
+RussianTranslation/reports/H5559_per_item_table.tsv linguist-generated
+RussianTranslation/reports/H5559_predictions_*.jsonl linguist-generated
+RussianTranslation/reports/H5559_scores_*.json linguist-generated
