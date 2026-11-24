@@ -1891,7 +1891,7 @@ Cyrillic-valued and 0 comma/digit-bearing tag slots across all 11,603 rows. A ne
 write-time guard, `validate_final_card_schema.nws_tag_defects()`, rejects a future
 generation run that reintroduces either defect. The compensating Cyrillic aliases in
 `g5_card_render.DOMAIN_RU` (no longer reachable by anything) are retired. See
-[RESULTS_LOG.md § 30-07-2026](RESULTS_LOG.md#30-07-2026--nws-tag-half-translation-store-repair-beforeafter-h1903)
+[RESULTS_LOG.md § 30-07-2026](RESULTS_LOG.md)
 and [FINDINGS §504](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md#504-the-nws-tag-layer-reaches-only-22--of-the-ru-store--a-facet-bar-over-it-is-right-but-it-is-not-the-sheets-main-axis).
 
 ### Fixed — a transient probe failure could strand cohort leases forever, silently (H9 / H1940 Phase 2, 30-07-2026)
@@ -4782,7 +4782,7 @@ boundary, not a constant):
   entries whose entire gloss is a leaked Excel `#ИМЯ?` ("#NAME?") formula
   error — fixed with a narrow `corpus_gate._SPREADSHEET_ERR_RE` guard so the
   real word `имя` embedded in the error string doesn't count as meaning.
-- See [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md — W2b correction](PIPELINE_CAPABILITY_AUDIT_2026-07-08.md#w2b-correction--has_meaning-short-token-stemmer-gap-fixed--executed-09-07-2026-h409)
+- See [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md — W2b correction](PIPELINE_CAPABILITY_AUDIT_2026-07-08.md)
   for the full census table and worked examples.
 - LANG_PARITY: `koch_xref_resolution_h397`/`fri_xref_resolution_h404`
   INTENTIONAL-DIVERGENCE verdicts re-affirmed, hashes refreshed.
@@ -4841,7 +4841,7 @@ boundary, not a constant):
   redirects** — more material proportionally than koch's own count. Resolution
   is out of scope here (csl-orig changes require the correction-workflow, not
   an ad-hoc resolver); flagged as a fork for a human ruling on a future
-  handoff. See [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md §W2b](PIPELINE_CAPABILITY_AUDIT_2026-07-08.md#w2b--cross-reference-countresolve-generalized-to-every-gate-source--executed-09-07-2026-h404-h397-generalization).
+  handoff. See [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md §W2b](PIPELINE_CAPABILITY_AUDIT_2026-07-08.md).
 - LANG_PARITY: `fri_xref_resolution_h404`, INTENTIONAL-DIVERGENCE.
 
 ### H397 — koch `см. X` cross-reference resolution for the evidence lane (H337 follow-up)
@@ -4856,7 +4856,7 @@ boundary, not a constant):
   exactly); resolved glosses carry a `«см.→» ` provenance prefix. Store backfill:
   koch `provides` 143→155, `supports` 560→578, `silent` 79→74 (145-lemma current
   store — the dictionary-wide 92.3% lift materializes further as more lemmas are
-  translated). See [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md §W2](PIPELINE_CAPABILITY_AUDIT_2026-07-08.md#w2-extension--koch-см-x-cross-reference-resolution--executed-09-07-2026-h397).
+  translated). See [PIPELINE_CAPABILITY_AUDIT_2026-07-08.md §W2](PIPELINE_CAPABILITY_AUDIT_2026-07-08.md).
 - Spot-checked 20 randomly-sampled resolved xrefs: all matched the redirect's stated
   target headword, zero fabricated meanings.
 - LANG_PARITY: `koch_xref_resolution_h397`, INTENTIONAL-DIVERGENCE (koch is
@@ -4892,7 +4892,7 @@ boundary, not a constant):
   [`VisualDCS/non-derived/vedaweb/elizarenkova_ru_1989_1999.json`](https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/elizarenkova_ru_1989_1999.json)
   feed (10,552 stanzas, CC BY 4.0 confirmed 08-07-2026). Advisory/citation-context
   only — never written into `headword_index.tsv` or any reviewed store data. See
-  [CORPUS_PROVENANCE.md § RV citation witness](CORPUS_PROVENANCE.md#rv-citation-witness-vedaweb-cc-by-40--distinct-from-the-corpus-above)
+  [CORPUS_PROVENANCE.md § RV citation witness](CORPUS_PROVENANCE.md)
   for why this is a distinct rights posture from the grey-rights Elizarenkova copy
   already inside the `SamudraManthanam` corpus DB.
 

@@ -85,7 +85,7 @@ reruns `huet_coverage.py`'s pipeline on it and diffs against the 2014 set.
   ~1.8× the reader's curated subset. Of those, 72.1 % already have a CDSL entry
   and 37.7 % are DCS-attested; **187 are DCS-attested with no CDSL entry**,
   parked (unvetted, artifact-heavy) in
-  [COVERAGE_ADDITIONS.md](COVERAGE_ADDITIONS.md#heritage-inria-current-mirror-candidates-03-07-2026-unvetted).
+  [COVERAGE_ADDITIONS.md](COVERAGE_ADDITIONS.md).
 - **Coverage % dropped** (86.2→80.1 any-CDSL, 60.0→50.1 DCS) because the full
   dictionary carries far more of the "dictionary dark matter" (grammatical
   affix entries, comparative/superlative derived forms, rare proper nouns) that
