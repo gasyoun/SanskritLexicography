@@ -1,0 +1,34 @@
+{
+  "schema_version": "2.0.0",
+  "bench": "samasa-bench-v1",
+  "created": "2026-11-25",
+  "handoff": "H6260 (OxAlpha — samasa segmentation benchmark)",
+  "task": "given a Sanskrit compound (samāsa), recover its constituent members LEFT+RIGHT",
+  "answer_format": "two annotation labels (annotation1, annotation2) with kappa calculation",
+  "splits": {
+    "train": {
+      "n_items": 0
+    },
+    "dev": {
+      "n_items": 0
+    },
+    "test": {
+      "n_items": 600
+    }
+  },
+  "categories": {
+    "TP": "tatpuruṣa",
+    "KD": "karmadhāraya",
+    "BV": "bahuvrīhi",
+    "DV": "dvandva"
+  },
+  "source": {
+    "repo": "gasyoun/kosha",
+    "task": "samasa segmentation benchmark",
+    "notes": "Gold standard with double annotation and Cohen's kappa calculation"
+  },
+  "license": {
+    "bench_data": "CC BY-SA 4.0",
+    "code": "MIT"
+  }
+}
