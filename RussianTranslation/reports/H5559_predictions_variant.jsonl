@@ -1,0 +1,320 @@
+{"fidelity": 0, "id": 0, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "молодым", "ru_pred": "молодой человек", "sa": "yuvānam", "slp1": "yuvAnam"}
+{"fidelity": 0, "id": 1, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "деревенский", "ru_pred": "деревенские женщины", "sa": "grāmyāḥ", "slp1": "grAmyAH"}
+{"fidelity": 1, "id": 2, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "сложив руки", "ru_pred": "складённые руки", "sa": "kṛtāñjali", "slp1": "kftAYjali"}
+{"fidelity": 0, "id": 3, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "уставший", "ru_pred": "печальный", "sa": "khinna", "slp1": "Kinna"}
+{"fidelity": 1, "id": 4, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "сансары", "ru_pred": "жизненный цикл", "sa": "saṃsāra", "slp1": "saMsAra"}
+{"fidelity": 1, "id": 5, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Икшваку", "ru_pred": "зрачок", "sa": "ikṣvākūṇāṃ", "slp1": "ikzvAkURAM"}
+{"fidelity": 1, "id": 6, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Муж", "ru_pred": "человек", "sa": "puruṣa", "slp1": "puruza"}
+{"fidelity": 0, "id": 7, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "запахъ лотосовъ, расцвѣтшихъ при его прикосновеньи", "ru_pred": "яркий лотос", "sa": "sphuṭitakamalāmodamaitrīkaṣāya", "slp1": "sPuwitakamalAmodamaitrIkazAya"}
+{"fidelity": 1, "id": 8, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "матери", "ru_pred": "мать", "sa": "mātṛ", "slp1": "mAtf"}
+{"fidelity": 1, "id": 9, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "гандива", "ru_pred": "Гандива", "sa": "gāṇḍīvam", "slp1": "gARqIvam"}
+{"fidelity": 1, "id": 10, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "вздутия воды", "ru_pred": "препятствием", "sa": "rodhāt", "slp1": "roDAt"}
+{"fidelity": 0, "id": 11, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "апана и огонь", "ru_pred": "пожиратель огня", "sa": "vahnyapāna", "slp1": "vahnyapAna"}
+{"fidelity": 1, "id": 12, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "земля", "ru_pred": "земля", "sa": "pṛthivī", "slp1": "pfTivI"}
+{"fidelity": 0, "id": 13, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "несходство с примером", "ru_pred": "пример дхармы", "sa": "udāharaṇavaidharmya", "slp1": "udAharaRavaiDarmya"}
+{"fidelity": 0, "id": 14, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Савитар", "ru_pred": "солнце", "sa": "savitṛ", "slp1": "savitf"}
+{"fidelity": 1, "id": 15, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "о бхарата", "ru_pred": "Индия", "sa": "bhārata", "slp1": "BArata"}
+{"fidelity": 0, "id": 16, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "ревность", "ru_pred": "один мир", "sa": "samatsara", "slp1": "samatsara"}
+{"fidelity": 1, "id": 17, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "освобождение", "ru_pred": "освобождение", "sa": "mukti", "slp1": "mukti"}
+{"fidelity": 0, "id": 18, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "три Веды", "ru_pred": "три вида знания", "sa": "traividya", "slp1": "traividya"}
+{"fidelity": 1, "id": 19, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "в битве", "ru_pred": "в бою", "sa": "samare", "slp1": "samare"}
+{"fidelity": 1, "id": 20, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Нет у меня соперниц", "ru_pred": "быстрота", "sa": "asapatnā", "slp1": "asapatnA"}
+{"fidelity": 0, "id": 21, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Дроной", "ru_pred": "журавль", "sa": "droṇa", "slp1": "droRa"}
+{"fidelity": 0, "id": 22, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "анава", "ru_pred": "малый я", "sa": "ānava", "slp1": "Anava"}
+{"fidelity": 0, "id": 23, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "царя", "ru_pred": "королей", "sa": "rājānam", "slp1": "rAjAnam"}
+{"fidelity": 1, "id": 24, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Кундалини", "ru_pred": "высшая богиня", "sa": "parameśvarī", "slp1": "parameSvarI"}
+{"fidelity": 1, "id": 25, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "плот", "ru_pred": "соединение", "sa": "samghāṭa", "slp1": "samGAwa"}
+{"fidelity": 1, "id": 26, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "обретет", "ru_pred": "достигает", "sa": "āpnoti", "slp1": "Apnoti"}
+{"fidelity": 1, "id": 27, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "растворение", "ru_pred": "разрушение", "sa": "laya", "slp1": "laya"}
+{"fidelity": 0, "id": 28, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "показание", "ru_pred": "вид", "sa": "sākṣyam", "slp1": "sAkzyam"}
+{"fidelity": 1, "id": 29, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "поднимись", "ru_pred": "восхождение", "sa": "ā roha", "slp1": "Aroha"}
+{"fidelity": 1, "id": 30, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "провозглашать", "ru_pred": "говори!", "sa": "ā vad", "slp1": "Avad"}
+{"fidelity": 1, "id": 31, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "аргхья", "ru_pred": "возлияние", "sa": "arghya", "slp1": "arGya"}
+{"fidelity": 1, "id": 32, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Свана", "ru_pred": "собака", "sa": "svana", "slp1": "svana"}
+{"fidelity": 1, "id": 33, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "матсьи", "ru_pred": "рыба", "sa": "matsya", "slp1": "matsya"}
+{"fidelity": 0, "id": 34, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "открытой раны", "ru_pred": "ветренного", "sa": "vātīkārasya", "slp1": "vAtIkArasya"}
+{"fidelity": 0, "id": 35, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "во Мне", "ru_pred": "мне", "sa": "mayi", "slp1": "mayi"}
+{"fidelity": 0, "id": 36, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "десять тысяч локтей", "ru_pred": "десять тысяч", "sa": "daśa kiṣkusahasrāṇi", "slp1": "daSakizkusahasrARi"}
+{"fidelity": 0, "id": 37, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "унеся", "ru_pred": "около", "sa": "pary", "slp1": "pary"}
+{"fidelity": 0, "id": 38, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "молитвы", "ru_pred": "ум", "sa": "manman", "slp1": "manman"}
+{"fidelity": 1, "id": 39, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "выпиваемая постепенно", "ru_pred": "поочерёдно выпитый", "sa": "paryāyapīta", "slp1": "paryAyapIta"}
+{"fidelity": 0, "id": 40, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "виды колдовства", "ru_pred": "масла", "sa": "gṛtsya", "slp1": "gftsya"}
+{"fidelity": 1, "id": 41, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Времени", "ru_pred": "к времени", "sa": "kālāya", "slp1": "kAlAya"}
+{"fidelity": 1, "id": 42, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Верховный Владыка", "ru_pred": "высший бог", "sa": "parameśvara", "slp1": "parameSvara"}
+{"fidelity": 1, "id": 43, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "всеми", "ru_pred": "всеми", "sa": "sarvaiḥ", "slp1": "sarvaiH"}
+{"fidelity": 0, "id": 44, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "знают", "ru_pred": "учёный", "sa": "viduḥ", "slp1": "viduH"}
+{"fidelity": 0, "id": 45, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "племен", "ru_pred": "верующим", "sa": "viśvāsām", "slp1": "viSvAsAm"}
+{"fidelity": 1, "id": 46, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "находится", "ru_pred": "существует", "sa": "vartate", "slp1": "vartate"}
+{"fidelity": 1, "id": 47, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "с потомством", "ru_pred": "народом", "sa": "prajayā", "slp1": "prajayA"}
+{"fidelity": 1, "id": 48, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "им", "ru_pred": "эти", "sa": "ete", "slp1": "ete"}
+{"fidelity": 1, "id": 49, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Индрадьюмна", "ru_pred": "Индрадйумна", "sa": "indradyumna", "slp1": "indradyumna"}
+{"fidelity": 1, "id": 50, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "крепости", "ru_pred": "город", "sa": "puraḥ", "slp1": "puraH"}
+{"fidelity": 0, "id": 51, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "с распустившимися верхушками ветвей", "ru_pred": "лотосовый напиток", "sa": "phullāsanāgraviṭapān", "slp1": "PullAsanAgraviwapAn"}
+{"fidelity": 0, "id": 52, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "солнца", "ru_pred": "жидкость", "sa": "drav", "slp1": "drav"}
+{"fidelity": 1, "id": 53, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Себя", "ru_pred": "себя", "sa": "ātmānam", "slp1": "AtmAnam"}
+{"fidelity": 0, "id": 54, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "вкус", "ru_pred": "сок", "sa": "rasa", "slp1": "rasa"}
+{"fidelity": 1, "id": 55, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "двумя", "ru_pred": "два", "sa": "dvau", "slp1": "dvau"}
+{"fidelity": 0, "id": 56, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "прославляет", "ru_pred": "поющие", "sa": "kīrtayantaḥ", "slp1": "kIrtayantaH"}
+{"fidelity": 0, "id": 57, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "боги", "ru_pred": "богами", "sa": "devaiḥ", "slp1": "devaiH"}
+{"fidelity": 1, "id": 58, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Рудра Грантхи", "ru_pred": "узел Рудры", "sa": "rudragranthi", "slp1": "rudragranTi"}
+{"fidelity": 1, "id": 59, "label": "hallucinated", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Мандара", "ru_pred": "дворец", "sa": "mandāra", "slp1": "mandAra"}
+{"fidelity": 1, "id": 60, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "боль", "ru_pred": "страдание", "sa": "duḥkha", "slp1": "duHKa"}
+{"fidelity": 1, "id": 61, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "не", "ru_pred": "не", "sa": "na", "slp1": "na"}
+{"fidelity": 0, "id": 62, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "быками", "ru_pred": "бык", "sa": "vṛṣabhi", "slp1": "vfzaBi"}
+{"fidelity": 1, "id": 63, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "вашей", "ru_pred": "ваших", "sa": "yuṣmākam", "slp1": "yuzmAkam"}
+{"fidelity": 1, "id": 64, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "проклинающего", "ru_pred": "проклинающий", "sa": "śapantam", "slp1": "Sapantam"}
+{"fidelity": 0, "id": 65, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Мадхурипу", "ru_pred": "сладкий напиток", "sa": "madhuripu", "slp1": "maDuripu"}
+{"fidelity": 0, "id": 66, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "так как", "ru_pred": "против", "sa": "prati", "slp1": "prati"}
+{"fidelity": 1, "id": 67, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Турья", "ru_pred": "молоко", "sa": "tūrya", "slp1": "tUrya"}
+{"fidelity": 1, "id": 68, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "ваю", "ru_pred": "ветер", "sa": "vāyu", "slp1": "vAyu"}
+{"fidelity": 0, "id": 69, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "достигший", "ru_pred": "рождённый", "sa": "sañjāta", "slp1": "saYjAta"}
+{"fidelity": 0, "id": 70, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "мне", "ru_pred": "я", "sa": "me", "slp1": "me"}
+{"fidelity": 1, "id": 71, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "колесница", "ru_pred": "колесница", "sa": "ratha", "slp1": "raTa"}
+{"fidelity": 0, "id": 72, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "на помощь", "ru_pred": "кувшин", "sa": "ūti", "slp1": "Uti"}
+{"fidelity": 1, "id": 73, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "все", "ru_pred": "весь", "sa": "sarva", "slp1": "sarva"}
+{"fidelity": 1, "id": 74, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "нищета", "ru_pred": "деньги", "sa": "vitta", "slp1": "vitta"}
+{"fidelity": 0, "id": 75, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Ватсьяяны", "ru_pred": "Ватсьяна", "sa": "Vātsyāyana", "slp1": "VAtsyAyana"}
+{"fidelity": 1, "id": 76, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "возникновения творога", "ru_pred": "молния", "sa": "dadhyutpatti", "slp1": "daDyutpatti"}
+{"fidelity": 0, "id": 77, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "затем", "ru_pred": "отец", "sa": "tataḥ", "slp1": "tataH"}
+{"fidelity": 1, "id": 78, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "супруга Рати", "ru_pred": "владыка любви", "sa": "ratipati", "slp1": "ratipati"}
+{"fidelity": 1, "id": 79, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "тот лотос", "ru_pred": "тот лотос", "sa": "tatpadma", "slp1": "tatpadma"}
+{"fidelity": 1, "id": 80, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "недвойственный", "ru_pred": "недуализм", "sa": "advaita", "slp1": "advaita"}
+{"fidelity": 1, "id": 81, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "столицу", "ru_pred": "город", "sa": "puram", "slp1": "puram"}
+{"fidelity": 1, "id": 82, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Царя богов", "ru_pred": "яд", "sa": "vāsavam", "slp1": "vAsavam"}
+{"fidelity": 1, "id": 83, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "из черного железа", "ru_pred": "задержка", "sa": "kālāyasa", "slp1": "kAlAyasa"}
+{"fidelity": 1, "id": 84, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "останавливать ваю", "ru_pred": "управление дыханием", "sa": "prāṇasaṅgrahaṇa", "slp1": "prARasaNgrahaRa"}
+{"fidelity": 1, "id": 85, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "угодней", "ru_pred": "более дорогой", "sa": "priyatara", "slp1": "priyatara"}
+{"fidelity": 1, "id": 86, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "не знает", "ru_pred": "знает", "sa": "jānāti", "slp1": "jAnAti"}
+{"fidelity": 1, "id": 87, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "освобождается", "ru_pred": "освобождается", "sa": "pramucyate", "slp1": "pramucyate"}
+{"fidelity": 1, "id": 88, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "достоин", "ru_pred": "сосуд", "sa": "pātram", "slp1": "pAtram"}
+{"fidelity": 1, "id": 89, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "сошедшихся", "ru_pred": "собранных", "sa": "samavetān", "slp1": "samavetAn"}
+{"fidelity": 1, "id": 90, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "сонмы апсар", "ru_pred": "труппа апсаров", "sa": "apsarogaṇāḥ", "slp1": "apsarogaRAH"}
+{"fidelity": 1, "id": 91, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "одобрите", "ru_pred": "лес", "sa": "vanataṃ", "slp1": "vanataM"}
+{"fidelity": 1, "id": 92, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "с ветвями вниз", "ru_pred": "внешняя ветвь", "sa": "avāk-śākhaḥ", "slp1": "avAk-SAKaH"}
+{"fidelity": 1, "id": 93, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "чарующее", "ru_pred": "красавица", "sa": "ramaṇī", "slp1": "ramaRI"}
+{"fidelity": 1, "id": 94, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "молитвенник", "ru_pred": "медлительный", "sa": "mandhātā", "slp1": "manDAtA"}
+{"fidelity": 1, "id": 95, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "бессмертия", "ru_pred": "нектар", "sa": "amṛta", "slp1": "amfta"}
+{"fidelity": 1, "id": 96, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "восседали подле", "ru_pred": "почитает", "sa": "upāsate", "slp1": "upAsate"}
+{"fidelity": 0, "id": 97, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "могущественные", "ru_pred": "сияющий", "sa": "mahaujas", "slp1": "mahaujas"}
+{"fidelity": 1, "id": 98, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "иль", "ru_pred": "или", "sa": "vā", "slp1": "vA"}
+{"fidelity": 1, "id": 99, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "представь", "ru_pred": "размышляя", "sa": "paricintaya", "slp1": "paricintaya"}
+{"fidelity": 1, "id": 100, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Кали", "ru_pred": "Кали", "sa": "kālī", "slp1": "kAlI"}
+{"fidelity": 1, "id": 101, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "одним", "ru_pred": "единство", "sa": "ekatā", "slp1": "ekatA"}
+{"fidelity": 1, "id": 102, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "она", "ru_pred": "это", "sa": "idam", "slp1": "idam"}
+{"fidelity": 1, "id": 103, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "львы", "ru_pred": "шафран", "sa": "kesarin", "slp1": "kesarin"}
+{"fidelity": 0, "id": 104, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "в другое место", "ru_pred": "другой", "sa": "anyataḥ", "slp1": "anyataH"}
+{"fidelity": 1, "id": 105, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "череп", "ru_pred": "как череп", "sa": "kāpālike", "slp1": "kApAlike"}
+{"fidelity": 1, "id": 106, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "люди", "ru_pred": "народ", "sa": "jana", "slp1": "jana"}
+{"fidelity": 1, "id": 107, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "отрешенный", "ru_pred": "очень горячий", "sa": "atyāgin", "slp1": "atyAgin"}
+{"fidelity": 0, "id": 108, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "без гнева", "ru_pred": "в безупречных", "sa": "nirāmarṣeṣu", "slp1": "nirAmarzezu"}
+{"fidelity": 1, "id": 109, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Атман", "ru_pred": "душа", "sa": "ātmā", "slp1": "AtmA"}
+{"fidelity": 1, "id": 110, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "не", "ru_pred": "не", "sa": "na", "slp1": "na"}
+{"fidelity": 1, "id": 111, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "нидидхьясане", "ru_pred": "созерцание", "sa": "nididhyāsana", "slp1": "nidiDyAsana"}
+{"fidelity": 0, "id": 112, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "жрецы", "ru_pred": "ритуальный жрец", "sa": "ṛtvijaḥ", "slp1": "ftvijaH"}
+{"fidelity": 1, "id": 113, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "об этом", "ru_pred": "то", "sa": "tat", "slp1": "tat"}
+{"fidelity": 1, "id": 114, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Рама", "ru_pred": "Рама", "sa": "rāma", "slp1": "rAma"}
+{"fidelity": 1, "id": 115, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Где же", "ru_pred": "где", "sa": "kva", "slp1": "kva"}
+{"fidelity": 1, "id": 116, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "отвалится", "ru_pred": "падает", "sa": "vipatiṣyati", "slp1": "vipatizyati"}
+{"fidelity": 0, "id": 117, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "богатством", "ru_pred": "пыль", "sa": "rayiṃ", "slp1": "rayiM"}
+{"fidelity": 0, "id": 118, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Аруна", "ru_pred": "рассветный луч", "sa": "aruṇāmśub", "slp1": "aruRAmSub"}
+{"fidelity": 1, "id": 119, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "влагой", "ru_pred": "вода", "sa": "ambu", "slp1": "ambu"}
+{"fidelity": 0, "id": 120, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "твоей", "ru_pred": "тебе", "sa": "te", "slp1": "te"}
+{"fidelity": 1, "id": 121, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "своих", "ru_pred": "свой", "sa": "ātmīya", "slp1": "AtmIya"}
+{"fidelity": 1, "id": 122, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "словно", "ru_pred": "не", "sa": "na", "slp1": "na"}
+{"fidelity": 1, "id": 123, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Теки к", "ru_pred": "к", "sa": "abhi", "slp1": "aBi"}
+{"fidelity": 1, "id": 124, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "по качествам", "ru_pred": "различие качеств", "sa": "guṇabhedataḥ", "slp1": "guRaBedataH"}
+{"fidelity": 1, "id": 125, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "семь", "ru_pred": "семь", "sa": "sapta", "slp1": "sapta"}
+{"fidelity": 0, "id": 126, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "разъяснение", "ru_pred": "противодействие", "sa": "pratipādana", "slp1": "pratipAdana"}
+{"fidelity": 1, "id": 127, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "вложите", "ru_pred": "класть", "sa": "dhā", "slp1": "DA"}
+{"fidelity": 1, "id": 128, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "камень", "ru_pred": "захват", "sa": "grāvan", "slp1": "grAvan"}
+{"fidelity": 1, "id": 129, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "индивид", "ru_pred": "человек", "sa": "puruṣa", "slp1": "puruza"}
+{"fidelity": 1, "id": 130, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "клятву", "ru_pred": "клятва", "sa": "pratijñā", "slp1": "pratijYA"}
+{"fidelity": 1, "id": 131, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "царь царей", "ru_pred": "император", "sa": "rājendra", "slp1": "rAjendra"}
+{"fidelity": 0, "id": 132, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "состоящий из капель", "ru_pred": "мокрый", "sa": "drapsavān", "slp1": "drapsavAn"}
+{"fidelity": 1, "id": 133, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "нава", "ru_pred": "новый", "sa": "nava", "slp1": "nava"}
+{"fidelity": 1, "id": 134, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "покоя", "ru_pred": "мир", "sa": "śānti", "slp1": "SAnti"}
+{"fidelity": 1, "id": 135, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "подобен", "ru_pred": "сияет", "sa": "ābhāti", "slp1": "ABAti"}
+{"fidelity": 1, "id": 136, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "бог", "ru_pred": "бог", "sa": "deva", "slp1": "deva"}
+{"fidelity": 1, "id": 137, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "к чему", "ru_pred": "цель", "sa": "prayojana", "slp1": "prayojana"}
+{"fidelity": 0, "id": 138, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Вамры", "ru_pred": "черепахи", "sa": "vamrasya", "slp1": "vamrasya"}
+{"fidelity": 1, "id": 139, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "черпает наслаждение", "ru_pred": "радуется", "sa": "ramate", "slp1": "ramate"}
+{"fidelity": 1, "id": 140, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "мне", "ru_pred": "меня", "sa": "mām", "slp1": "mAm"}
+{"fidelity": 1, "id": 141, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "всё побеждают", "ru_pred": "всё побеждает", "sa": "sarvaṃ jayati", "slp1": "sarvaMjayati"}
+{"fidelity": 1, "id": 142, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "бояться", "ru_pred": "страдание", "sa": "vyathā", "slp1": "vyaTA"}
+{"fidelity": 1, "id": 143, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "черные", "ru_pred": "Кришна", "sa": "kṛṣṇa", "slp1": "kfzRa"}
+{"fidelity": 1, "id": 144, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Земля", "ru_pred": "земля", "sa": "pṛthivī", "slp1": "pfTivI"}
+{"fidelity": 1, "id": 145, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "брахманов", "ru_pred": "брахманов", "sa": "brāhmaṇān", "slp1": "brAhmaRAn"}
+{"fidelity": 0, "id": 146, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Все", "ru_pred": "в мире", "sa": "viśve", "slp1": "viSve"}
+{"fidelity": 0, "id": 147, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "как", "ru_pred": "ивовый лист", "sa": "iva", "slp1": "iva"}
+{"fidelity": 1, "id": 148, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "неделимая", "ru_pred": "неразделённое", "sa": "avibhaktaṃ", "slp1": "aviBaktaM"}
+{"fidelity": 0, "id": 149, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "считает", "ru_pred": "разум", "sa": "dhīḥ", "slp1": "DIH"}
+{"fidelity": 0, "id": 150, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Дхананджая", "ru_pred": "победитель богатства", "sa": "dhanañjaya", "slp1": "DanaYjaya"}
+{"fidelity": 1, "id": 151, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "растение", "ru_pred": "слепой", "sa": "andhaḥ", "slp1": "anDaH"}
+{"fidelity": 1, "id": 152, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "принадлежат всем", "ru_pred": "обычные", "sa": "sādhāraṇāḥ", "slp1": "sADAraRAH"}
+{"fidelity": 1, "id": 153, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "познав", "ru_pred": "узнав", "sa": "jñātvā", "slp1": "jYAtvA"}
+{"fidelity": 1, "id": 154, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "этого", "ru_pred": "этого", "sa": "etasya", "slp1": "etasya"}
+{"fidelity": 1, "id": 155, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "одолеют", "ru_pred": "превосходят", "sa": "atyeṣyanti", "slp1": "atyezyanti"}
+{"fidelity": 1, "id": 156, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "разрушение живого существа", "ru_pred": "уничтожение самости", "sa": "sattvoccheda", "slp1": "sattvocCeda"}
+{"fidelity": 1, "id": 157, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "остальное", "ru_pred": "остальное", "sa": "śeṣa", "slp1": "Seza"}
+{"fidelity": 1, "id": 158, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "плод жертвы", "ru_pred": "плод жертвоприношения", "sa": "yajñaphalaṃ", "slp1": "yajYaPalaM"}
+{"fidelity": 1, "id": 159, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Малавагауда", "ru_pred": "Малавагауда", "sa": "mālavagauḍa", "slp1": "mAlavagauqa"}
+{"fidelity": 1, "id": 160, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "всего", "ru_pred": "всего", "sa": "sarvasya", "slp1": "sarvasya"}
+{"fidelity": 1, "id": 161, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "объекты, чувства", "ru_pred": "чувствительные органы", "sa": "viṣayendriya", "slp1": "vizayendriya"}
+{"fidelity": 1, "id": 162, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "правом", "ru_pred": "юг", "sa": "dakṣiṇa", "slp1": "dakziRa"}
+{"fidelity": 1, "id": 163, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "тилак", "ru_pred": "молитвенный знак", "sa": "tilaka", "slp1": "tilaka"}
+{"fidelity": 0, "id": 164, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "является обоснованием", "ru_pred": "практический", "sa": "sādhanabhūta", "slp1": "sADanaBUta"}
+{"fidelity": 1, "id": 165, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "стервятника", "ru_pred": "язык", "sa": "bhāsa", "slp1": "BAsa"}
+{"fidelity": 1, "id": 166, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "сзади", "ru_pred": "сзади", "sa": "pṛṣṭhataḥ", "slp1": "pfzWataH"}
+{"fidelity": 1, "id": 167, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "его предмета", "ru_pred": "значения", "sa": "arthasya", "slp1": "arTasya"}
+{"fidelity": 1, "id": 168, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "шаткарм", "ru_pred": "шесть действий", "sa": "ṣaṭkarmāṇi", "slp1": "zawkarmARi"}
+{"fidelity": 1, "id": 169, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Великую Душу", "ru_pred": "величайшее Я", "sa": "mahātman", "slp1": "mahAtman"}
+{"fidelity": 1, "id": 170, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "полночи", "ru_pred": "весь", "sa": "sakala", "slp1": "sakala"}
+{"fidelity": 1, "id": 171, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "подруг", "ru_pred": "подруга", "sa": "sakhī", "slp1": "saKI"}
+{"fidelity": 1, "id": 172, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Праджапати", "ru_pred": "Творец", "sa": "prajāpati", "slp1": "prajApati"}
+{"fidelity": 1, "id": 173, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "смерти", "ru_pred": "смерть", "sa": "mṛtyu", "slp1": "mftyu"}
+{"fidelity": 1, "id": 174, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Не", "ru_pred": "не", "sa": "mā", "slp1": "mA"}
+{"fidelity": 1, "id": 175, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "титхи", "ru_pred": "дата", "sa": "tithim", "slp1": "tiTim"}
+{"fidelity": 1, "id": 176, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "выше", "ru_pred": "ответ", "sa": "uttaraḥ", "slp1": "uttaraH"}
+{"fidelity": 1, "id": 177, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Одолей", "ru_pred": "ты победил", "sa": "jetāsi", "slp1": "jetAsi"}
+{"fidelity": 1, "id": 178, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "привязанность к материальным объектам, созданным гунами", "ru_pred": "привязанность к качествам", "sa": "guṇa-saṅga", "slp1": "guRa-saNga"}
+{"fidelity": 1, "id": 179, "label": "hallucinated", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "сложить руки", "ru_pred": "нетерпимость", "sa": "asahiṣṇutā", "slp1": "asahizRutA"}
+{"fidelity": 0, "id": 180, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Пустота", "ru_pred": "собранная", "sa": "samudgatā", "slp1": "samudgatA"}
+{"fidelity": 1, "id": 181, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "день", "ru_pred": "день", "sa": "divasa", "slp1": "divasa"}
+{"fidelity": 1, "id": 182, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "бессмертный", "ru_pred": "нектар", "sa": "amṛtam", "slp1": "amftam"}
+{"fidelity": 1, "id": 183, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "неизменный", "ru_pred": "неизменный", "sa": "avyayam", "slp1": "avyayam"}
+{"fidelity": 0, "id": 184, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "асурические", "ru_pred": "демоница", "sa": "āsurī", "slp1": "AsurI"}
+{"fidelity": 1, "id": 185, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "услышанных", "ru_pred": "слушание", "sa": "śravaṇa", "slp1": "SravaRa"}
+{"fidelity": 0, "id": 186, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "неуверенных", "ru_pred": "беспорядочный", "sa": "avyavasāyin", "slp1": "avyavasAyin"}
+{"fidelity": 1, "id": 187, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "чистый", "ru_pred": "чистый", "sa": "amala", "slp1": "amala"}
+{"fidelity": 1, "id": 188, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "карма", "ru_pred": "дело", "sa": "karman", "slp1": "karman"}
+{"fidelity": 1, "id": 189, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "истцом", "ru_pred": "богатый", "sa": "dhaneṣin", "slp1": "Danezin"}
+{"fidelity": 1, "id": 190, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "познаваемому", "ru_pred": "сообщается", "sa": "vijñāpyate", "slp1": "vijYApyate"}
+{"fidelity": 1, "id": 191, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "наделенный гунами", "ru_pred": "обладающий качествами", "sa": "guṇānvitam", "slp1": "guRAnvitam"}
+{"fidelity": 0, "id": 192, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "глупость", "ru_pred": "потеря", "sa": "tajjāḍya", "slp1": "tajjAqya"}
+{"fidelity": 1, "id": 193, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "манас", "ru_pred": "ум", "sa": "manas", "slp1": "manas"}
+{"fidelity": 1, "id": 194, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "почитать", "ru_pred": "пусть почитает", "sa": "pūjayet", "slp1": "pUjayet"}
+{"fidelity": 0, "id": 195, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "бойся", "ru_pred": "Вишанка", "sa": "viśaṅkā", "slp1": "viSaNkA"}
+{"fidelity": 0, "id": 196, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "пьянящего", "ru_pred": "вина", "sa": "madasya", "slp1": "madasya"}
+{"fidelity": 0, "id": 197, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Когда", "ru_pred": "кто", "sa": "ya", "slp1": "ya"}
+{"fidelity": 0, "id": 198, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "встретившего", "ru_pred": "тот же", "sa": "sameyuṣaḥ", "slp1": "sameyuzaH"}
+{"fidelity": 1, "id": 199, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Рудра", "ru_pred": "Рудра", "sa": "rudra", "slp1": "rudra"}
+{"fidelity": 1, "id": 200, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "действия", "ru_pred": "действие", "sa": "karma", "slp1": "karma"}
+{"fidelity": 0, "id": 201, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "звуки и прикосновения", "ru_pred": "звуковой контакт", "sa": "dhvanisparśa", "slp1": "DvanisparSa"}
+{"fidelity": 1, "id": 202, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "следует", "ru_pred": "пусть сделает", "sa": "kārayet", "slp1": "kArayet"}
+{"fidelity": 1, "id": 203, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "восприятия", "ru_pred": "знает", "sa": "vijānāti", "slp1": "vijAnAti"}
+{"fidelity": 0, "id": 204, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "ножницы", "ru_pred": "делательницу", "sa": "kartarīṃ", "slp1": "kartarIM"}
+{"fidelity": 0, "id": 205, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "нескончаемое", "ru_pred": "близкая", "sa": "ātyantikī", "slp1": "AtyantikI"}
+{"fidelity": 0, "id": 206, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "охваченное", "ru_pred": "владыка", "sa": "paravaśa", "slp1": "paravaSa"}
+{"fidelity": 1, "id": 207, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "вспыльчивый", "ru_pred": "гнев", "sa": "krodhana", "slp1": "kroDana"}
+{"fidelity": 1, "id": 208, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Праздник колесниц", "ru_pred": "праздник колесниц", "sa": "rathotsava", "slp1": "raTotsava"}
+{"fidelity": 0, "id": 209, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "цветущими", "ru_pred": "радость", "sa": "smera", "slp1": "smera"}
+{"fidelity": 1, "id": 210, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "отвлечением", "ru_pred": "фонетическое сокращение", "sa": "pratyāhāraḥ", "slp1": "pratyAhAraH"}
+{"fidelity": 1, "id": 211, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "достояний", "ru_pred": "величие", "sa": "vibhūti", "slp1": "viBUti"}
+{"fidelity": 1, "id": 212, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "затылок", "ru_pred": "шея", "sa": "grīvā", "slp1": "grIvA"}
+{"fidelity": 1, "id": 213, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Шрути внимая", "ru_pred": "соответствующий писаниям", "sa": "śrutiparāyaṇa", "slp1": "SrutiparAyaRa"}
+{"fidelity": 1, "id": 214, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "тому, кто достоин", "ru_pred": "в сосуде", "sa": "pātre", "slp1": "pAtre"}
+{"fidelity": 1, "id": 215, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "в гуне благости", "ru_pred": "саттвический", "sa": "sāttvika", "slp1": "sAttvika"}
+{"fidelity": 1, "id": 216, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "играющий", "ru_pred": "игрок", "sa": "krīḍākara", "slp1": "krIqAkara"}
+{"fidelity": 1, "id": 217, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "ньяи", "ru_pred": "логика", "sa": "nyāya", "slp1": "nyAya"}
+{"fidelity": 1, "id": 218, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "годы", "ru_pred": "равный", "sa": "samā", "slp1": "samA"}
+{"fidelity": 1, "id": 219, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "высшей реальности", "ru_pred": "высшая реальность", "sa": "paramārtha", "slp1": "paramArTa"}
+{"fidelity": 0, "id": 220, "label": "hallucinated", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "открывается возможность", "ru_pred": "привлечение к совершенству", "sa": "siddhāṅganākarṣaṇa", "slp1": "sidDANganAkarzaRa"}
+{"fidelity": 0, "id": 221, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "смерти", "ru_pred": "путешествие", "sa": "prāyaṇa", "slp1": "prAyaRa"}
+{"fidelity": 1, "id": 222, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "осталась", "ru_pred": "остаток", "sa": "avaśeṣa", "slp1": "avaSeza"}
+{"fidelity": 1, "id": 223, "label": "hallucinated", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "небо", "ru_pred": "вершина Меру", "sa": "meruśṛṅga", "slp1": "meruSfNga"}
+{"fidelity": 0, "id": 224, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "стремись терпеть", "ru_pred": "гнев", "sa": "titikṣ", "slp1": "titikz"}
+{"fidelity": 0, "id": 225, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "жертвующий", "ru_pred": "жертвенный", "sa": "yajīyān", "slp1": "yajIyAn"}
+{"fidelity": 1, "id": 226, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "наделенный", "ru_pred": "соединённый", "sa": "yukta", "slp1": "yukta"}
+{"fidelity": 1, "id": 227, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "тому", "ru_pred": "его", "sa": "tasya", "slp1": "tasya"}
+{"fidelity": 1, "id": 228, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "гора", "ru_pred": "гора", "sa": "parvata", "slp1": "parvata"}
+{"fidelity": 1, "id": 229, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "сопровождаемое героями", "ru_pred": "соратник", "sa": "sahavīraṃ", "slp1": "sahavIraM"}
+{"fidelity": 1, "id": 230, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Двоих", "ru_pred": "земля", "sa": "pṛthu", "slp1": "pfTu"}
+{"fidelity": 1, "id": 231, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Семь", "ru_pred": "семь", "sa": "sapta", "slp1": "sapta"}
+{"fidelity": 1, "id": 232, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "вверх", "ru_pred": "вверх", "sa": "ūrdhvam", "slp1": "UrDvam"}
+{"fidelity": 1, "id": 233, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "врагов", "ru_pred": "других", "sa": "pareṣām", "slp1": "parezAm"}
+{"fidelity": 0, "id": 234, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "ставит под контроль Атмана", "ru_pred": "самоудовлетворяется", "sa": "ātmasātkaroti", "slp1": "AtmasAtkaroti"}
+{"fidelity": 1, "id": 235, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "опустошил", "ru_pred": "поев", "sa": "bhakṣayitvā", "slp1": "BakzayitvA"}
+{"fidelity": 0, "id": 236, "label": "hallucinated", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "символ", "ru_pred": "самоотдача", "sa": "antardhana", "slp1": "antarDana"}
+{"fidelity": 1, "id": 237, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "топор", "ru_pred": "горечь", "sa": "kuṭhāra", "slp1": "kuWAra"}
+{"fidelity": 1, "id": 238, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "неверным", "ru_pred": "высокий", "sa": "tuṅga", "slp1": "tuNga"}
+{"fidelity": 1, "id": 239, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "счастья", "ru_pred": "богатство", "sa": "lakṣmī", "slp1": "lakzmI"}
+{"fidelity": 1, "id": 240, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "миробалана", "ru_pred": "амала", "sa": "āmalaka", "slp1": "Amalaka"}
+{"fidelity": 1, "id": 241, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "благополучие", "ru_pred": "богатство", "sa": "bhūtim", "slp1": "BUtim"}
+{"fidelity": 1, "id": 242, "label": "hallucinated", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Брахма", "ru_pred": "мой", "sa": "mama", "slp1": "mama"}
+{"fidelity": 1, "id": 243, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "несуществующий", "ru_pred": "небытие", "sa": "asat", "slp1": "asat"}
+{"fidelity": 1, "id": 244, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "огонь", "ru_pred": "огонь", "sa": "agni", "slp1": "agni"}
+{"fidelity": 1, "id": 245, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "которая", "ru_pred": "которая", "sa": "yā", "slp1": "yA"}
+{"fidelity": 1, "id": 246, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Бхишму", "ru_pred": "Бхишма", "sa": "bhīṣma", "slp1": "BIzma"}
+{"fidelity": 1, "id": 247, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "причина", "ru_pred": "причина", "sa": "kāraṇam", "slp1": "kAraRam"}
+{"fidelity": 0, "id": 248, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "рассеял", "ru_pred": "стоять", "sa": "stṛ", "slp1": "stf"}
+{"fidelity": 1, "id": 249, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "как", "ru_pred": "как", "sa": "katham", "slp1": "kaTam"}
+{"fidelity": 1, "id": 250, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Прашастар", "ru_pred": "оружие", "sa": "praśāstṛ", "slp1": "praSAstf"}
+{"fidelity": 1, "id": 251, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "начале", "ru_pred": "начало", "sa": "ārambha", "slp1": "AramBa"}
+{"fidelity": 1, "id": 252, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "заяц", "ru_pred": "Луна", "sa": "śaśadhara", "slp1": "SaSaDara"}
+{"fidelity": 1, "id": 253, "label": "hallucinated", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Апам Напате", "ru_pred": "топлёное масло", "sa": "ghṛtam", "slp1": "Gftam"}
+{"fidelity": 0, "id": 254, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "где их заждались женщины гарема, истомленные долгой разлукой", "ru_pred": "долгая разлука", "sa": "ciravirahotsukāvarodhān", "slp1": "ciravirahotsukAvaroDAn"}
+{"fidelity": 1, "id": 255, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "узришь", "ru_pred": "увидишь", "sa": "drakṣyasi", "slp1": "drakzyasi"}
+{"fidelity": 1, "id": 256, "label": "hallucinated", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Ману", "ru_pred": "враг", "sa": "dviṣ", "slp1": "dviz"}
+{"fidelity": 0, "id": 257, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "они", "ru_pred": "тебе", "sa": "te", "slp1": "te"}
+{"fidelity": 1, "id": 258, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "безгрешный", "ru_pred": "безгрешный", "sa": "anagha", "slp1": "anaGa"}
+{"fidelity": 1, "id": 259, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "опровергается", "ru_pred": "следствие", "sa": "prasaṅga", "slp1": "prasaNga"}
+{"fidelity": 1, "id": 260, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "бесстрастен", "ru_pred": "бесстрастие", "sa": "niḥspṛha", "slp1": "niHspfha"}
+{"fidelity": 1, "id": 261, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "природа", "ru_pred": "этим", "sa": "īdṛktayā", "slp1": "IdfktayA"}
+{"fidelity": 1, "id": 262, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "широкий", "ru_pred": "широкий", "sa": "uru", "slp1": "uru"}
+{"fidelity": 1, "id": 263, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "других", "ru_pred": "другой", "sa": "para", "slp1": "para"}
+{"fidelity": 0, "id": 264, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "груду чистого золота", "ru_pred": "сияющий, о Марáши", "sa": "bhāsurahemarāśim", "slp1": "BAsurahemarASim"}
+{"fidelity": 0, "id": 265, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "следует", "ru_pred": "идёт", "sa": "īyate", "slp1": "Iyate"}
+{"fidelity": 0, "id": 266, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "создавая", "ru_pred": "солома", "sa": "takṣatī", "slp1": "takzatI"}
+{"fidelity": 1, "id": 267, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "грешнее", "ru_pred": "особенно", "sa": "viśeṣataḥ", "slp1": "viSezataH"}
+{"fidelity": 0, "id": 268, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "освежающем теле", "ru_pred": "бледный", "sa": "śītala-tanu", "slp1": "SItala-tanu"}
+{"fidelity": 1, "id": 269, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "силу Индры", "ru_pred": "чувство", "sa": "indriyam", "slp1": "indriyam"}
+{"fidelity": 1, "id": 270, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "мягкость", "ru_pred": "гимн", "sa": "sāman", "slp1": "sAman"}
+{"fidelity": 0, "id": 271, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "невозможно", "ru_pred": "невывод", "sa": "anupapatti", "slp1": "anupapatti"}
+{"fidelity": 1, "id": 272, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "населенный чудовищами", "ru_pred": "дом крокодила", "sa": "makarālayaḥ", "slp1": "makarAlayaH"}
+{"fidelity": 1, "id": 273, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "как два коня колесницы", "ru_pred": "колесницей", "sa": "rathyā", "slp1": "raTyA"}
+{"fidelity": 1, "id": 274, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "постигнут", "ru_pred": "известный", "sa": "jñeya", "slp1": "jYeya"}
+{"fidelity": 1, "id": 275, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "провозгласит", "ru_pred": "говорит", "sa": "vocat", "slp1": "vocat"}
+{"fidelity": 0, "id": 276, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "вкушения", "ru_pred": "ветер", "sa": "vīti", "slp1": "vIti"}
+{"fidelity": 1, "id": 277, "label": "hallucinated", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "22a-c. = РВ X, 18, 3a-c (с вариантами).", "ru_pred": "храбрый", "sa": "suvīrāso", "slp1": "suvIrAso"}
+{"fidelity": 1, "id": 278, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "женой-рабыней", "ru_pred": "рабыня", "sa": "dāsī", "slp1": "dAsI"}
+{"fidelity": 0, "id": 279, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Защищайте", "ru_pred": "падение", "sa": "pāta", "slp1": "pAta"}
+{"fidelity": 1, "id": 280, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "у Индры", "ru_pred": "Индры", "sa": "indrasya", "slp1": "indrasya"}
+{"fidelity": 0, "id": 281, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "предписание", "ru_pred": "расположенный", "sa": "vihita", "slp1": "vihita"}
+{"fidelity": 0, "id": 282, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Помести", "ru_pred": "тоже", "sa": "api", "slp1": "api"}
+{"fidelity": 1, "id": 283, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "основа", "ru_pred": "приют", "sa": "āśraya", "slp1": "ASraya"}
+{"fidelity": 1, "id": 284, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "быкъ Нанди, любимецъ Владыки-Шивы", "ru_pred": "трёхглазый бык", "sa": "trinayanavṛṣa", "slp1": "trinayanavfza"}
+{"fidelity": 1, "id": 285, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "пусть будет", "ru_pred": "пусть будет", "sa": "astu", "slp1": "astu"}
+{"fidelity": 1, "id": 286, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "вселенной", "ru_pred": "мир", "sa": "jagat", "slp1": "jagat"}
+{"fidelity": 1, "id": 287, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "ракшасы", "ru_pred": "демон", "sa": "rākṣasa", "slp1": "rAkzasa"}
+{"fidelity": 1, "id": 288, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Лакшми", "ru_pred": "богиня богатства", "sa": "lakṣmīḥ", "slp1": "lakzmIH"}
+{"fidelity": 1, "id": 289, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "двойственность", "ru_pred": "различие", "sa": "vyavaccheda", "slp1": "vyavacCeda"}
+{"fidelity": 1, "id": 290, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "рассказ", "ru_pred": "рассказ", "sa": "kathā", "slp1": "kaTA"}
+{"fidelity": 0, "id": 291, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "сказал: «Пока я жив, ты не избавишься живым из битвы!»", "ru_pred": "Не думай, что в бою от меня освободишься", "sa": "abravīcca na me jīvañjīvato yudhi mokṣyase", "slp1": "abravIccanamejIvaYjIvatoyuDimokzyase"}
+{"fidelity": 1, "id": 292, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "сурьябхедана", "ru_pred": "солнцепробивание", "sa": "sūryabhedanam", "slp1": "sUryaBedanam"}
+{"fidelity": 1, "id": 293, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "друг друга", "ru_pred": "здесь", "sa": "iha", "slp1": "iha"}
+{"fidelity": 1, "id": 294, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "отношение", "ru_pred": "состояние", "sa": "bhāva", "slp1": "BAva"}
+{"fidelity": 1, "id": 295, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "следует", "ru_pred": "усилие", "sa": "yatnata", "slp1": "yatnata"}
+{"fidelity": 0, "id": 296, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "яростно трясущий", "ru_pred": "двойной", "sa": "davidhvat", "slp1": "daviDvat"}
+{"fidelity": 0, "id": 297, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "сделаешь", "ru_pred": "делает", "sa": "karase", "slp1": "karase"}
+{"fidelity": 1, "id": 298, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "идут", "ru_pred": "идущий", "sa": "gacchantyaḥ", "slp1": "gacCantyaH"}
+{"fidelity": 1, "id": 299, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "не желая", "ru_pred": "не желающий", "sa": "anabhilaṣyan", "slp1": "anaBilazyan"}
+{"fidelity": 1, "id": 300, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Индра", "ru_pred": "бог Индра", "sa": "indra", "slp1": "indra"}
+{"fidelity": 0, "id": 301, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "целое", "ru_pred": "часть", "sa": "avayavin", "slp1": "avayavin"}
+{"fidelity": 0, "id": 302, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "обилен дарами", "ru_pred": "очень маленький", "sa": "sudānuḥ", "slp1": "sudAnuH"}
+{"fidelity": 1, "id": 303, "label": "lemma-variant", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "увидели", "ru_pred": "видеть", "sa": "dṛś", "slp1": "dfS"}
+{"fidelity": 0, "id": 304, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "По порядку", "ru_pred": "последователь", "sa": "ānuṣak", "slp1": "Anuzak"}
+{"fidelity": 1, "id": 305, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "заключить", "ru_pred": "знак, пол", "sa": "liṅga", "slp1": "liNga"}
+{"fidelity": 1, "id": 306, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "возбуждения", "ru_pred": "волнение", "sa": "sambhrama", "slp1": "samBrama"}
+{"fidelity": 1, "id": 307, "label": "partial", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "доставляют", "ru_pred": "приём", "sa": "ādāna", "slp1": "AdAna"}
+{"fidelity": 1, "id": 308, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "атом", "ru_pred": "атом", "sa": "aṇu", "slp1": "aRu"}
+{"fidelity": 1, "id": 309, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "боги", "ru_pred": "боги", "sa": "devāḥ", "slp1": "devAH"}
+{"fidelity": 1, "id": 310, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Срединное успокоение", "ru_pred": "полуденный покой", "sa": "madhyaviśrānti", "slp1": "maDyaviSrAnti"}
+{"fidelity": 0, "id": 311, "label": "proper-name", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Дашаратхе", "ru_pred": "Дашаратхи", "sa": "daśarathasya", "slp1": "daSaraTasya"}
+{"fidelity": 1, "id": 312, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "его", "ru_pred": "этого", "sa": "asya", "slp1": "asya"}
+{"fidelity": 1, "id": 313, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Закон", "ru_pred": "праведность", "sa": "ṛtam", "slp1": "ftam"}
+{"fidelity": 1, "id": 314, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "ведомств", "ru_pred": "в конечностях", "sa": "aṅgeṣu", "slp1": "aNgezu"}
+{"fidelity": 1, "id": 315, "label": "wrong-sense", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "Гибнут", "ru_pred": "мир упадка", "sa": "kṣīṇaloka", "slp1": "kzIRaloka"}
+{"fidelity": 1, "id": 316, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "жертвенную раздачу", "ru_pred": "знание", "sa": "vidatha", "slp1": "vidaTa"}
+{"fidelity": 0, "id": 317, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "приходится звать с разных сторон", "ru_pred": "смешной", "sa": "vihavyaḥ", "slp1": "vihavyaH"}
+{"fidelity": 1, "id": 318, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "светлый", "ru_pred": "белый", "sa": "śukra", "slp1": "Sukra"}
+{"fidelity": 1, "id": 319, "label": "correct", "model": "gpt-oss:120b-cloud", "prompt": "variant", "ru": "обработали", "ru_pred": "не злобный", "sa": "aheṣata", "slp1": "ahezata"}
