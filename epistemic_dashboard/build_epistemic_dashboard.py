@@ -38,7 +38,7 @@ LAYERS = [
 ENTRY = re.compile(r"^### (.+?)\s*$")
 DOT = re.compile(r"(🔴|🟠|🟡|🟢)")
 ORIGIN = re.compile(r"(⚙️|✍️)")
-STALE_ROW = re.compile(r"^\|\s*\[§(\d+)\]")
+STALE_ROW = re.compile(r"^\|\s*\[?§(\d+)\]?")   # H8648: linked `[§1](x)` and bare `§1` both parse
 STALE_FLAG = re.compile(r"(🔴|🟡|🟢|⬜)")
 # FINDINGS.md — the settled-fact CORE the seven siblings orbit. Two layouts: the Sanskrit side
 # uses `### §N.` ATX headings, the infra side uses inline `🔴 **§N.**` bold.
@@ -116,7 +116,8 @@ def _findings_index_importance(text):
     idx = rest[:nxt.start()] if nxt else rest
     out = {}
     for line in idx.split("\n"):
-        em = re.match(r"^\s*-\s*(🔴|🟠|🟡|🟢)\s*\[§(\d+)\.", line)
+        em = re.match(r"^\s*-\s*(🔴|🟠|🟡|🟢)\s*\[§(\d+)\.", line) \
+            or re.match(r"^\s*-\s*(🔴|🟠|🟡|🟢)\s*§(\d+)\.", line)  # H8648: bare row after a link-strip wave
         if em:
             out[int(em.group(2))] = em.group(1)
     return out
