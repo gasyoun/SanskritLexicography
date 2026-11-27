@@ -41,7 +41,14 @@ REGISTRIES = ["FINDINGS.md", "CONTRADICTIONS.md", "DEAD_ENDS.md", "GAPS.md",
 # and the gate reported OK; the collision surfaced only when a human read the file.
 # A number-shaped heading must be counted whatever punctuation follows it.
 HEADING = re.compile(r"^#{2,4}\s*§\s*(\d+)([a-z]?)\s*[.—–:-]", re.M)
+# H8648: the H8479 link-fix wave mechanically strips `[§N. …](…)` wrappers down to bare
+# `§N. …` — test fixtures included — so the Index grammar accepts BOTH shapes. The linked
+# pattern keeps its legacy anywhere-in-row semantics (unchanged results on linked registries);
+# the bare pattern is anchored to bullet-row starts so a mid-prose `§N.` token can never
+# masquerade as an Index entry.
 INDEX_ENTRY = re.compile(r"\[§\s*(\d+)([a-z]?)\s*[.—–:-]")
+INDEX_ENTRY_BARE = re.compile(
+    r"^-\s*(?:[🔴🟠🟡🟢🔵🟣⚫🟤]\s*)?§\s*(\d+)([a-z]?)\s*[.—–:-]", re.M)
 MARKER = re.compile(r"currently\s*§\s*(\d+)")
 
 
@@ -85,6 +92,7 @@ def check_findings_index(defects, text):
         return
     head_nums = {n for n, suf in headings(text) if suf == ""}
     idx_nums = {int(n) for n, suf in INDEX_ENTRY.findall(idx) if suf == ""}
+    idx_nums |= {int(n) for n, suf in INDEX_ENTRY_BARE.findall(idx) if suf == ""}
     missing = sorted(head_nums - idx_nums)
     dangling = sorted(idx_nums - head_nums)
     if missing:
