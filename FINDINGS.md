@@ -9824,6 +9824,10 @@ probe before reporting the absence — but having proved it, report the absence 
 
 > Source: H8641, CommentaryStrategies data/analysis/a74_a_registers.json (designations.guards_asoka_22_27.kanda_classes, .shares), PR #310; census baseline rakshasa_census_vulgate_2026-11-01.json (H7597, H7924); reproduced verse by verse over all 68 sargas. -- CommentaryStrategies -- 28-11-2026
 
-§657 takes the next number.
+🟠 **§657. Lemma-based «simple stem» counts of DCS are not «the plain word»: they include the first members of the compounds DCS splits into multiword strings. In the Yuddhakāṇḍa of the Rāmāyaṇa the leading sargas by simple stem of rākṣasa- (47: 21; 48: 19; 62 and 77: 18) are held mostly by split titles — rākṣasa-indra-, rākṣasa-adhipa-, rākṣasa-uttama-, rākṣasa-puṃgava-, rākṣasa-rājasūnu-; the feminine share is untouched (feminine forms are not titles).** Evidence: H8690 (CommentaryStrategies PR #314 and #315; release v1.28.5): yuddha.by_sarga of data/analysis/a74_a_registers.json (624 simple tokens over 116 sargas) read against the sarga sentences at the DCS pin f6ec30f2fc0340189a39be8f47a792988f9f4784 — sarga 47: rākṣasa-rāja-sainyam, rākṣasa-rāja-mukhyaḥ, rākṣasa-indrasya vapuḥ; sarga 57: rākṣasa-adhipaḥ, rākṣasa-indra-sutaḥ; sarga 60: rākṣasa-adhipatiḥ śrīmān rāvaṇaḥ, rākṣasa-rāja-sūnuḥ. The share of such split titles among the 624 was not counted; only the poem-wide figure exists (660 multiword strings of the family in the Rāmāyaṇa, 555 without a function-word part — §655). Implication: A per-sarga or per-book peak of the simple stem of rākṣasa- may be a peak of the title register (the lord and his house), not of the enemy's name as a people; before printing a density as «the war is named by its enemy», split the simple tokens into plain word vs first member of a split title. Recorded for the author as touchpoint 2 of the staged add-on of M02 (articles/intro_article_lp5_addon_guards_yuddha_staged.md); the count per kāṇḍa is an open place.
+
+> Source: H8690 (GLM 5.4), CommentaryStrategies PR #314, #315; release v1.28.5 -- SanskritLexicography -- 28-11-2026
+
+§658 takes the next number.
 
 _Dr. Mārcis Gasūns_
