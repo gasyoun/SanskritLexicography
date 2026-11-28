@@ -86,6 +86,15 @@ def _findings_module(monkeypatch, root: Path):
     monkeypatch.setattr(bf, "HERE", here)
     monkeypatch.setattr(bf, "REPO", root)
     monkeypatch.setattr(bf, "SIBLINGS", root / "siblings")
+    # bf.main() calls findings_supersession.write_json(), whose SOLE writer
+    # targets that module's own OUT_PATH (the real repo) - redirect it too,
+    # else every bare suite run regens data/findings_supersession.json's
+    # generated_at and mints phantom dirt (the 103/451 fixture size was
+    # written to the real path this way). REPO is patched alongside OUT_PATH
+    # because write_json prints OUT_PATH.relative_to(REPO).
+    fs = bf.findings_supersession
+    monkeypatch.setattr(fs, "REPO", root)
+    monkeypatch.setattr(fs, "OUT_PATH", root / "data" / "findings_supersession.json")
     return bf, here
 
 
@@ -106,6 +115,10 @@ def test_findings_data_parse_and_main_on_fixture(monkeypatch, tmp_path):
     ts = json.loads((here / "timeseries.json").read_text(encoding="utf-8"))
     assert len(ts["snapshots"]) == 1 and ts["snapshots"][0]["registry"]["total"] == 3
     assert ts["snapshots"][0]["metrics"]["dcs_cdsl_linkage_pct"] is None   # offline → null, not fabricated
+    # the supersession DAG writer must have landed in tmp_path, never the real
+    # repo's data/findings_supersession.json (bare suite runs leave zero diffs)
+    dag = json.loads((tmp_path / "data" / "findings_supersession.json").read_text(encoding="utf-8"))
+    assert dag["findings_count"] == 3 and "panels" in dag
 
 
 def test_findings_data_refuses_missing_and_empty_registry(monkeypatch, tmp_path):
