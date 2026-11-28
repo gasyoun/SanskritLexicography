@@ -1,0 +1,5 @@
+metric,value
+gold_forms,600
+observed_agreement,0.2400
+cohens_kappa,-0.0025
+forms_with_kappa,600

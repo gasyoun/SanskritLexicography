@@ -1,0 +1,10 @@
+{
+  "n": 600,
+  "mfs_exact_acc": 0.5867,
+  "llm_exact_acc": 0.3017,
+  "mfs_prediction": "TP",
+  "llm_prediction": "KD",
+  "kappa": -0.0025393265837813012,
+  "forms_with_double_annotation": 600,
+  "observed_agreement": 0.24
+}
